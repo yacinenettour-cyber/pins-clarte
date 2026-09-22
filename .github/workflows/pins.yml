@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 6,9,12,15,18 * * *"
   workflow_dispatch:
+    inputs:
+      test_seulement:
+        description: "Test uniquement (génère une image, ne publie rien sur Pinterest)"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -28,6 +33,7 @@ jobs:
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
+          TEST: ${{ github.event.inputs.test_seulement == 'true' && '1' || '' }}
         run: |
           git config user.name "robot-pins"
           git config user.email "robot-pins@users.noreply.github.com"
@@ -273,3 +279,10 @@ jobs:
               sys.exit("Make a refusé l'envoi.")
           print("Pin envoyé :", pin["titre"])
           EOF
+
+      - name: Aperçu de l'image de test
+        if: ${{ github.event.inputs.test_seulement == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: apercu-pin-test
+          path: images/*.png
