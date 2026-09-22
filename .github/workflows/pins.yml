@@ -48,43 +48,43 @@ jobs:
           # Banque de pins écrits à l'avance (gratuit, pas d'appel API).
           # Thème : le sommeil perturbé par le stress.
           BANQUE = [
-              {"titre": "Le geste du soir que presque personne ne fait (et qui change tout)",
+              {"titre": "Le geste du soir que presque personne ne fait pour mieux dormir",
                "texte_image": "Le geste du soir que personne ne fait",
                "description": "Il existe un geste tout simple à faire le soir, que très peu de personnes connaissent, et qui peut vraiment changer la qualité de l'endormissement quand le mental est encore agité. Il ne prend que quelques minutes, ne demande aucun matériel, et fonctionne même les soirs les plus stressants. Il est expliqué en détail, étape par étape, dans le guide gratuit : clique sur cette épingle pour le récupérer et l'essayer dès ce soir. #sommeil #stress #routinedusoir #bienetre #anxiete"},
               {"titre": "3 gestes du soir qui calment le mental (peu de gens les connaissent)",
                "texte_image": "3 gestes du soir méconnus",
                "description": "Le soir, le cerveau a souvent du mal à ralentir après une journée stressante. Il existe 3 gestes simples, peu connus, qui aident à faire cette transition en douceur. Ils sont détaillés pas à pas dans le guide gratuit, avec des explications concrètes pour les mettre en place dès ce soir. Clique sur l'épingle pour le recevoir. #sommeil #stress #routinedusoir #calme #bienetre"},
-              {"titre": "Ce petit rituel du soir aide à lâcher les pensées qui tournent",
+              {"titre": "Ce petit rituel du soir calme le stress qui empêche de dormir",
                "texte_image": "Le petit rituel du soir efficace",
                "description": "Ruminer au moment de dormir, presque tout le monde connaît. Il existe un petit rituel simple, expliqué en détail dans le guide gratuit, qui aide à relâcher les pensées qui tournent en boucle avant de fermer les yeux. Clique sur cette épingle pour découvrir comment le mettre en place ce soir. #sommeil #stress #routinedusoir #ruminations #detente"},
 
               {"titre": "L'erreur n°1 qui empêche de s'endormir (presque tout le monde la fait)",
                "texte_image": "L'erreur n°1 qui empêche de dormir",
                "description": "Une erreur très répandue empêche de s'endormir sans qu'on s'en rende compte, et elle a souvent l'effet inverse de ce qu'on recherche. Le guide gratuit explique exactement quelle est cette erreur et par quoi la remplacer, étape par étape. Clique sur l'épingle pour le récupérer et arrêter de la reproduire dès ce soir. #sommeil #stress #insomnie #ruminations #bienetre"},
-              {"titre": "Pourquoi rester au lit à lutter empire tout (et que faire à la place)",
+              {"titre": "Pourquoi rester au lit à lutter empire l'insomnie (et que faire)",
                "texte_image": "Ce qu'il faut faire à la place",
                "description": "Rester allongé à \"forcer\" le sommeil est un réflexe très courant, mais il aggrave souvent les nuits difficiles. Il existe une alternative simple et concrète, expliquée en détail dans le guide gratuit, pour casser ce cercle sans lutter contre soi-même. Clique sur cette épingle pour la découvrir. #sommeil #stress #insomnie #nuitsdifficiles #calme"},
-              {"titre": "L'erreur du soir qui garde ton cerveau en alerte sans que tu le saches",
+              {"titre": "L'erreur du soir qui t'empêche de dormir sans que tu le saches",
                "texte_image": "Cette erreur garde ton cerveau éveillé",
                "description": "Un geste anodin, fait presque tous les soirs, peut suffire à maintenir le cerveau en alerte au pire moment. Le guide gratuit détaille cette erreur et la routine à mettre en place pour l'éviter. Clique sur l'épingle pour y accéder. #sommeil #stress #reveilnocturne #ecrans #bienetre"},
 
               {"titre": "Cette question simple aide à calmer les pensées qui tournent la nuit",
                "texte_image": "Une question qui calme le mental la nuit",
                "description": "Il existe une question toute simple à se poser quand les pensées tournent en boucle la nuit, qui aide à prendre du recul sans nier ce qui préoccupe. Elle est expliquée avec la méthode complète dans le guide gratuit. Clique sur cette épingle pour la découvrir et l'essayer cette nuit. #sommeil #stress #ruminations #nuitblanche #anxiete"},
-              {"titre": "Et si cette pensée qui tourne pouvait attendre demain matin ?",
+              {"titre": "Et si cette pensée qui t'empêche de dormir pouvait attendre demain ?",
                "texte_image": "Cette pensée peut-elle attendre demain ?",
                "description": "La nuit, une pensée qui semble urgente paraît souvent bien plus légère une fois le jour levé. Le guide gratuit propose une méthode simple pour appliquer ce principe concrètement, au moment où le mental s'emballe. Clique sur l'épingle pour la recevoir. #sommeil #stress #ruminations #mentalclair #nuitagitee"},
               {"titre": "La question à te poser quand tu ressasses la même chose chaque nuit",
                "texte_image": "La question à te poser chaque nuit",
                "description": "Certaines pensées reviennent nuit après nuit, comme si elles étaient urgentes et définitives. Une question simple peut aider à leur redonner leur juste taille : elle est expliquée avec plus de détails dans le guide gratuit. Clique sur cette épingle pour le récupérer. #sommeil #stress #ruminations #relativiser #calmemental"},
 
-              {"titre": "La mini-routine du coucher en 4 étapes (peu de gens la connaissent)",
+              {"titre": "La mini-routine du coucher en 4 étapes pour mieux dormir",
                "texte_image": "La mini-routine du coucher méconnue",
                "description": "Il existe une mini-routine du coucher, simple et rapide, qui aide le corps à reconnaître le signal du repos même après une journée stressante. Les 4 étapes complètes sont détaillées dans le guide gratuit. Clique sur cette épingle pour les découvrir et les essayer dès ce soir. #sommeil #stress #routinedusoir #bienetre #calme"},
               {"titre": "Cette routine du soir en 4 étapes calme le mental avant de dormir",
                "texte_image": "4 étapes pour calmer le mental le soir",
                "description": "Une routine du soir courte peut suffire à préparer un sommeil plus calme, à condition de suivre les bonnes étapes dans le bon ordre. Le guide gratuit détaille cette routine en 4 étapes simples à mettre en place ce soir. Clique sur l'épingle pour la recevoir. #sommeil #stress #routinedusoir #detente #bienetre"},
-              {"titre": "La routine du coucher qui aide quand le mental tourne encore à fond",
+              {"titre": "La routine du coucher qui calme le stress quand le mental tourne",
                "texte_image": "La routine quand le mental tourne encore",
                "description": "Quand le mental tourne encore à plein régime au moment de se coucher, une petite routine bien construite peut aider à ralentir. Elle est expliquée pas à pas dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #routinedusoir #mentalcalme #bienetre"},
 
@@ -94,7 +94,7 @@ jobs:
               {"titre": "La phrase à se dire quand le mental s'emballe en pleine nuit",
                "texte_image": "La phrase à se dire en pleine nuit",
                "description": "Face à un mental qui s'agite au moment de dormir, une phrase toute simple peut aider à relâcher la pression. Le guide gratuit explique comment et quand l'utiliser pour qu'elle fonctionne vraiment. Clique sur l'épingle pour le récupérer. #sommeil #stress #anxiete #calmemental #bienetre"},
-              {"titre": "Cette phrase réconfortante aide à lâcher prise avant de fermer les yeux",
+              {"titre": "Cette phrase réconfortante aide à calmer le stress avant de dormir",
                "texte_image": "Lâcher prise avant de fermer les yeux",
                "description": "Certains soirs, une phrase rassurante suffit à desserrer la tension mentale, à condition de savoir comment se l'approprier vraiment. La méthode complète est dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #lâcherprise #calmemental #bienetre"},
 
@@ -118,13 +118,13 @@ jobs:
                "texte_image": "À éviter avant de te coucher",
                "description": "Certains gestes du soir ont tendance à relancer le mental plutôt qu'à l'apaiser, souvent sans qu'on fasse le lien. Le guide gratuit explique lesquels éviter et par quoi les remplacer. Clique sur cette épingle pour y accéder. #sommeil #stress #routinedusoir #calme #bienetre"},
 
-              {"titre": "Réveillé à 3h avec la tête pleine ? Voici ce qui aide vraiment",
+              {"titre": "Réveillé à 3h du matin, la tête pleine ? Voici ce qui aide à te rendormir",
                "texte_image": "Réveillé à 3h, la tête pleine ?",
                "description": "Se réveiller en pleine nuit avec des pensées qui s'enchaînent est fréquent en période de stress. Il existe une méthode simple, expliquée pas à pas dans le guide gratuit, pour calmer cette agitation mentale sans lutter. Clique sur cette épingle pour la recevoir. #sommeil #stress #reveilnocturne #ruminations #bienetre"},
-              {"titre": "Réveil à 3h du matin : la piste à essayer avant de paniquer",
+              {"titre": "Réveil à 3h du matin : la piste à essayer pour te rendormir",
                "texte_image": "La piste à essayer à 3h du matin",
                "description": "Un réveil nocturne avec l'esprit qui s'emballe n'a rien d'anormal en période de stress. Une piste simple et concrète, détaillée dans le guide gratuit, peut aider à redescendre en intensité sans forcer. Clique sur l'épingle pour la découvrir. #sommeil #stress #reveilnocturne #calmemental #anxiete"},
-              {"titre": "Que faire à 3h du matin quand les pensées s'enchaînent sans arrêt ?",
+              {"titre": "Que faire à 3h du matin pour calmer les pensées et te rendormir ?",
                "texte_image": "Les pensées s'enchaînent à 3h du matin ?",
                "description": "Face à un réveil nocturne où les pensées s'enchaînent, une méthode précise peut aider à redescendre en intensité et à retrouver un peu de calme. Elle est expliquée en détail dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #reveilnocturne #respiration #bienetre"},
           ]
@@ -157,6 +157,17 @@ jobs:
               return dict(random.choice(candidats))
 
 
+          def choisir_fond():
+              fonds = sorted(glob.glob("fonds/*.png") + glob.glob("fonds/*.jpg") + glob.glob("fonds/*.jpeg"))
+              if not fonds:
+                  return None
+              recents = {h.get("fond") for h in historique[-3:]}
+              candidats = [f for f in fonds if f not in recents]
+              if not candidats:
+                  candidats = fonds
+              return random.choice(candidats)
+
+
           def couper_lignes(dessin, texte, police, largeur_max):
               lignes, ligne = [], ""
               for mot in texte.split():
@@ -172,11 +183,10 @@ jobs:
               return lignes
 
 
-          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale):
+          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond):
               L, H = 1000, 1500
-              fonds = sorted(glob.glob("fonds/*.png") + glob.glob("fonds/*.jpg") + glob.glob("fonds/*.jpeg"))
-              if fonds:
-                  img = Image.open(random.choice(fonds)).convert("RGB").resize((L, H))
+              if fond:
+                  img = Image.open(fond).convert("RGB").resize((L, H))
                   voile = Image.new("RGBA", (L, H), (15, 20, 40, 110))
                   img = Image.alpha_composite(img.convert("RGBA"), voile).convert("RGB")
               else:
@@ -245,14 +255,15 @@ jobs:
           os.makedirs("images", exist_ok=True)
           nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".png"
           chemin = os.path.join("images", nom)
-          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale)
-          print("Image créée :", chemin)
+          fond = choisir_fond()
+          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
+          print("Image créée :", chemin, "(fond :", fond, ")")
 
           if TEST:
               sys.exit(0)
 
           historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
-                             "titre": pin["titre"], "image": chemin})
+                             "titre": pin["titre"], "image": chemin, "fond": fond})
           json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
           git("add", chemin, HIST)
