@@ -1,0 +1,275 @@
+name: Pins Pinterest
+
+on:
+  schedule:
+    - cron: "0 6,9,12,15,18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pins
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pillow requests
+
+      - name: Créer et envoyer un pin
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
+        run: |
+          git config user.name "robot-pins"
+          git config user.email "robot-pins@users.noreply.github.com"
+          python - <<'EOF'
+          import os, json, random, time, datetime, subprocess, sys, glob
+          import requests
+          from PIL import Image, ImageDraw, ImageFont
+
+          MARQUE = "Clarté Mentale | Stress & Énergie"
+          TEST = os.environ.get("TEST") == "1"
+
+          # Banque de pins écrits à l'avance (gratuit, pas d'appel API).
+          # Thème : le sommeil perturbé par le stress.
+          BANQUE = [
+              {"titre": "3 gestes simples le soir pour calmer un mental trop actif",
+               "texte_image": "3 gestes simples avant de dormir",
+               "description": "Le soir, le cerveau a souvent du mal à ralentir après une journée chargée. Trois gestes peuvent aider à faire la transition : éteindre les écrans un peu plus tôt, noter sur un carnet ce qui tourne en boucle dans la tête pour le \"poser\" avant de dormir, et respirer lentement quelques minutes dans le noir. Rien de compliqué, juste une habitude à répéter chaque soir pour envoyer au corps le signal que la journée est terminée. Ce n'est pas magique, mais avec de la régularité, l'endormissement devient un peu plus doux. #sommeil #stress #routinedusoir #bienetre #anxiete"},
+              {"titre": "Le soir, ces 3 gestes aident à lâcher les pensées qui tournent",
+               "texte_image": "3 gestes pour lâcher les pensées le soir",
+               "description": "Ruminer au moment de dormir, presque tout le monde connaît. Trois petits gestes peuvent changer la donne : tamiser la lumière une heure avant le coucher, écrire une phrase simple sur ce qui préoccupe pour ne plus avoir à s'en souvenir, et s'étirer doucement le cou et les épaules là où le stress se loge. Ces gestes ne suppriment pas le stress de la journée, mais ils aident le corps et l'esprit à comprendre qu'il est temps de ralentir. À tester ce soir, sans pression de résultat immédiat. #sommeil #stress #routinedusoir #ruminations #detente"},
+              {"titre": "Envie de mieux dormir ? 3 gestes du soir à essayer ce soir",
+               "texte_image": "3 gestes du soir pour mieux dormir",
+               "description": "Pas besoin d'un rituel compliqué pour préparer un sommeil plus calme. Trois gestes suffisent : marquer une vraie coupure avec les écrans, faire une courte liste des tâches du lendemain pour ne plus y penser au lit, et respirer profondément quelques instants en position allongée. L'idée n'est pas de tout changer d'un coup, mais de répéter ces gestes chaque soir jusqu'à ce qu'ils deviennent automatiques. Le mental a besoin de repères pour lâcher prise. #sommeil #stress #routinedusoir #calme #bienetre"},
+
+              {"titre": "L'erreur fréquente qui empêche vraiment de s'endormir",
+               "texte_image": "Cette erreur t'empêche de dormir",
+               "description": "Beaucoup de personnes essaient de \"forcer\" le sommeil en restant au lit à lutter contre leurs pensées, ce qui a souvent l'effet inverse : plus on insiste, plus le cerveau reste en alerte. Une piste différente consiste à se lever quelques minutes si le sommeil ne vient pas, faire une activité calme sans écran, puis retourner se coucher seulement quand la fatigue revient. Cette approche demande un peu de patience, mais elle évite d'associer le lit à la frustration. #sommeil #stress #insomnie #ruminations #bienetre"},
+              {"titre": "Pourquoi rester au lit à lutter empire l'insomnie",
+               "texte_image": "L'erreur qui aggrave l'insomnie",
+               "description": "Une erreur très répandue : rester allongé en essayant de \"forcer\" le sommeil malgré les pensées qui s'enchaînent. Le corps finit par associer le lit à la lutte plutôt qu'au repos. Une alternative plus douce consiste à changer de pièce quelques minutes, respirer calmement ou lire quelque chose de léger, puis revenir se coucher sans pression. Ce n'est pas une solution miracle, mais casser ce réflexe peut alléger les nuits difficiles avec le temps. #sommeil #stress #insomnie #nuitsdifficiles #calme"},
+              {"titre": "L'erreur du soir qui garde le cerveau en alerte",
+               "texte_image": "Une erreur qui garde le cerveau éveillé",
+               "description": "Vérifier son téléphone \"juste deux minutes\" en cas de réveil nocturne est une habitude très répandue, et pourtant elle maintient le cerveau en alerte au pire moment. La lumière de l'écran et le flot d'informations relancent l'attention alors que le corps cherche à se rendormir. Remplacer ce réflexe par une respiration lente ou une pensée neutre répétée peut aider à retrouver le calme plus facilement, sans stimulation supplémentaire. #sommeil #stress #reveilnocturne #ecrans #bienetre"},
+
+              {"titre": "Et si cette pensée pouvait attendre demain matin ?",
+               "texte_image": "Cette pensée peut-elle attendre demain ?",
+               "description": "La nuit, une pensée qui semble urgente à 2h du matin paraît souvent bien plus légère une fois le jour levé. Une question simple à se poser : cette pensée a-t-elle vraiment besoin d'être résolue maintenant, ou peut-elle attendre demain avec un esprit plus clair ? Se le rappeler ne fait pas disparaître le stress, mais ça peut aider à remettre les choses à leur juste place le temps d'une nuit. #sommeil #stress #ruminations #nuitblanche #anxiete"},
+              {"titre": "Cette pensée qui tourne la nuit, t'appartient-elle vraiment ?",
+               "texte_image": "Cette pensée t'appartient-elle vraiment ?",
+               "description": "Au milieu de la nuit, certaines pensées reviennent en boucle comme si elles étaient urgentes et définitives. Une question peut aider à prendre du recul : si un proche te racontait exactement cette même inquiétude, la trouverais-tu aussi grave que maintenant ? Souvent, la fatigue amplifie tout. Se poser cette question ne résout rien immédiatement, mais elle peut suffire à desserrer un peu l'étau du moment. #sommeil #stress #ruminations #mentalclair #nuitagitee"},
+              {"titre": "Ce que tu ressasses la nuit sera-t-il grave demain ?",
+               "texte_image": "Sera-ce encore grave demain ?",
+               "description": "Les pensées qui tournent en boucle la nuit prennent souvent une ampleur qu'elles n'ont pas vraiment. Une question utile à se poser dans ces moments : dans une semaine, est-ce que ce sujet occupera encore autant de place ? Bien souvent, la réponse aide à relativiser, sans nier ce qui préoccupe. Ce n'est pas ignorer le problème, c'est simplement lui redonner sa juste taille avant de se rendormir. #sommeil #stress #ruminations #relativiser #calmemental"},
+
+              {"titre": "Une mini-routine du coucher en 4 étapes faciles",
+               "texte_image": "Une mini-routine du coucher en 4 étapes",
+               "description": "Pas besoin d'un rituel long pour préparer un sommeil plus paisible. Une mini-routine en 4 étapes : 1) éteindre les écrans, 2) boire une tisane ou un verre d'eau, 3) noter une pensée qui traîne encore dans la tête, 4) s'installer confortablement et respirer lentement quelques minutes. Répétée chaque soir, cette routine aide le corps à reconnaître le signal du coucher et à relâcher progressivement les tensions de la journée. #sommeil #stress #routinedusoir #bienetre #calme"},
+              {"titre": "4 étapes simples pour une routine du coucher apaisante",
+               "texte_image": "4 étapes pour un coucher apaisant",
+               "description": "Une routine du soir courte peut suffire à préparer un sommeil plus calme. Voici 4 étapes simples : couper les notifications, tamiser les lumières, faire quelques étirements doux, puis s'accorder deux minutes de silence avant de fermer les yeux. L'idée est de créer une transition claire entre la journée active et le moment du repos, pour que le corps comprenne qu'il peut enfin ralentir. #sommeil #stress #routinedusoir #detente #bienetre"},
+              {"titre": "La routine du coucher en 4 étapes pour calmer le mental",
+               "texte_image": "La routine du coucher en 4 étapes",
+               "description": "Quand le mental tourne encore à plein régime au moment de se coucher, une petite routine peut aider à ralentir : 1) ranger le téléphone hors de portée, 2) écrire trois lignes sur la journée, 3) respirer profondément dix fois, 4) s'allonger sans obligation de s'endormir tout de suite. Cette routine n'a rien de rigide, elle sert surtout de repère pour préparer doucement le sommeil. #sommeil #stress #routinedusoir #mentalcalme #bienetre"},
+
+              {"titre": "Une phrase simple à se répéter pour calmer le mental le soir",
+               "texte_image": "Une phrase pour calmer le mental",
+               "description": "Quand les pensées s'emballent au coucher, se répéter une phrase simple peut aider à ramener un peu de calme : \"Je n'ai pas besoin de tout résoudre ce soir.\" Ce n'est pas une formule magique, mais répéter cette idée doucement, en respirant, peut suffire à désamorcer l'urgence ressentie et à laisser un peu de place au repos. #sommeil #stress #calmemental #bienetre #anxiete"},
+              {"titre": "La phrase à se dire quand le mental s'emballe la nuit",
+               "texte_image": "La phrase à se dire la nuit",
+               "description": "Face à un mental qui s'agite au moment de dormir, une phrase toute simple peut aider à relâcher la pression : \"Ce sera toujours là demain, je peux me reposer maintenant.\" La répéter calmement, sans forcer, peut aider à recentrer l'attention loin des pensées qui tournent en boucle et à préparer doucement l'endormissement. #sommeil #stress #anxiete #calmemental #bienetre"},
+              {"titre": "Cette phrase réconfortante aide à lâcher prise avant de dormir",
+               "texte_image": "Une phrase pour lâcher prise avant de dormir",
+               "description": "Certains soirs, le simple fait de se répéter une phrase rassurante peut aider à desserrer la tension mentale : \"Je fais ce que je peux, le reste peut attendre.\" Dite doucement en respirant profondément, cette phrase ne résout pas tout, mais elle peut suffire à interrompre le cercle des pensées et à laisser un peu de calme s'installer avant le sommeil. #sommeil #stress #lâcherprise #calmemental #bienetre"},
+
+              {"titre": "Un exercice de respiration facile à faire au lit",
+               "texte_image": "Un exercice de respiration facile",
+               "description": "Un exercice simple à faire allongé : inspirer doucement par le nez pendant 4 secondes, retenir l'air 4 secondes, puis expirer lentement par la bouche pendant 6 secondes. Répéter ce cycle cinq à dix fois en se concentrant uniquement sur la respiration. Cet exercice aide à ralentir le rythme cardiaque et à détourner l'attention des pensées qui s'agitent, sans matériel ni effort particulier. #sommeil #stress #respiration #calme #bienetre"},
+              {"titre": "La respiration 4-4-6 pour s'endormir plus facilement",
+               "texte_image": "La respiration 4-4-6 pour dormir",
+               "description": "Un exercice de respiration facile à tester au lit : inspirer sur 4 secondes, retenir l'air 4 secondes, expirer lentement sur 6 secondes, et recommencer plusieurs fois. Ce rythme plus lent que la respiration habituelle envoie un signal d'apaisement au corps. Pas besoin d'application ni de minuteur, juste compter mentalement en fermant les yeux. #sommeil #stress #respiration #relaxation #bienetre"},
+              {"titre": "Un exercice de respiration simple contre les pensées qui tournent",
+               "texte_image": "Respirer pour calmer les pensées",
+               "description": "Quand les pensées s'enchaînent au lit, ramener l'attention sur la respiration peut aider à les ralentir. Un exercice facile : poser une main sur le ventre, inspirer profondément en sentant le ventre se gonfler, puis expirer lentement en le sentant redescendre. Répéter dix fois, sans rien changer d'autre. Ce geste simple aide à recentrer l'attention loin du mental agité. #sommeil #stress #respiration #ruminations #calme"},
+
+              {"titre": "Ce qu'il vaut mieux éviter juste avant de dormir",
+               "texte_image": "À éviter juste avant de dormir",
+               "description": "Certaines habitudes du soir entretiennent sans le vouloir un mental agité : consulter ses mails professionnels tard, faire défiler les réseaux sociaux, ou planifier mentalement le lendemain une fois couché. Ces activités maintiennent le cerveau en éveil au moment où il devrait ralentir. Les remplacer par un moment calme, sans écran, dans la dernière demi-heure avant le coucher peut faire une vraie différence sur la qualité de l'endormissement. #sommeil #stress #ecrans #routinedusoir #bienetre"},
+              {"titre": "3 habitudes du soir qui empêchent de bien dormir",
+               "texte_image": "3 habitudes qui empêchent de dormir",
+               "description": "Sans s'en rendre compte, certaines habitudes du soir nourrissent le stress au moment de dormir : répondre à des messages stressants tard, regarder des contenus captivants juste avant de fermer les yeux, ou ressasser les tâches du lendemain une fois au lit. Repousser ces habitudes à un autre moment de la journée peut aider le mental à se poser plus facilement avant le sommeil. #sommeil #stress #routinedusoir #ecrans #calme"},
+              {"titre": "Évite ça juste avant de te coucher si tu dors mal",
+               "texte_image": "À éviter avant de te coucher",
+               "description": "Juste avant de dormir, certains gestes ont tendance à relancer le mental plutôt qu'à l'apaiser : consulter les actualités, avoir une discussion tendue, ou faire une longue liste de choses à faire pour le lendemain. Ces moments d'activation ne laissent pas le temps au cerveau de ralentir avant le coucher. Prévoir un vrai sas de calme, même court, avant de fermer les yeux peut aider à s'endormir plus sereinement. #sommeil #stress #routinedusoir #calme #bienetre"},
+
+              {"titre": "Se réveiller à 3h avec la tête pleine : que faire ?",
+               "texte_image": "Réveillé à 3h, la tête pleine ?",
+               "description": "Se réveiller en pleine nuit avec des pensées qui s'enchaînent est fréquent en période de stress. Plutôt que de rester allongé à lutter, il peut aider de respirer lentement quelques minutes, ou de noter sur un carnet posé près du lit ce qui traverse l'esprit, pour ne plus avoir à s'en souvenir. Le but n'est pas de se rendormir immédiatement, mais de calmer l'agitation mentale petit à petit. #sommeil #stress #reveilnocturne #ruminations #bienetre"},
+              {"titre": "Réveil à 3h du matin, le mental qui tourne : la piste à essayer",
+               "texte_image": "Le mental tourne à 3h du matin ?",
+               "description": "Un réveil nocturne avec l'esprit qui s'emballe n'a rien d'anormal en période de stress. Une piste simple : garder les yeux fermés, ralentir volontairement la respiration, et si une pensée insiste, se dire qu'elle sera toujours là le matin pour y réfléchir plus posément. Cette approche demande de la patience, mais elle évite d'ajouter du stress au stress déjà présent. #sommeil #stress #reveilnocturne #calmemental #anxiete"},
+              {"titre": "Que faire à 3h du matin quand les pensées s'enchaînent ?",
+               "texte_image": "Les pensées s'enchaînent à 3h du matin ?",
+               "description": "Face à un réveil nocturne où les pensées s'enchaînent, il peut aider de changer légèrement de position, de poser une main sur le ventre pour sentir sa respiration, et de compter lentement chaque expiration jusqu'à dix. Ce n'est pas infaillible, mais ce genre de geste simple aide souvent à redescendre en intensité et à retrouver un peu de calme pour se rendormir. #sommeil #stress #reveilnocturne #respiration #bienetre"},
+          ]
+
+          HIST = "historique.json"
+          historique = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
+
+
+          def telecharger_police(nom, url, secours):
+              try:
+                  r = requests.get(url, timeout=30)
+                  r.raise_for_status()
+                  open(nom, "wb").write(r.content)
+                  return nom
+              except Exception:
+                  return secours if os.path.exists(secours) else None
+
+
+          def charger_police(chemin, taille):
+              if chemin:
+                  return ImageFont.truetype(chemin, taille)
+              return ImageFont.load_default(size=taille)
+
+
+          def choisir_texte():
+              recents = {h["titre"] for h in historique[-len(BANQUE) + 5:]}
+              candidats = [p for p in BANQUE if p["titre"] not in recents]
+              if not candidats:
+                  candidats = BANQUE
+              return dict(random.choice(candidats))
+
+
+          def couper_lignes(dessin, texte, police, largeur_max):
+              lignes, ligne = [], ""
+              for mot in texte.split():
+                  essai = (ligne + " " + mot).strip()
+                  if dessin.textlength(essai, font=police) <= largeur_max:
+                      ligne = essai
+                  else:
+                      if ligne:
+                          lignes.append(ligne)
+                      ligne = mot
+              if ligne:
+                  lignes.append(ligne)
+              return lignes
+
+
+          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale):
+              L, H = 1000, 1500
+              fonds = sorted(glob.glob("fonds/*.png") + glob.glob("fonds/*.jpg") + glob.glob("fonds/*.jpeg"))
+              if fonds:
+                  img = Image.open(random.choice(fonds)).convert("RGB").resize((L, H))
+                  voile = Image.new("RGBA", (L, H), (15, 20, 40, 110))
+                  img = Image.alpha_composite(img.convert("RGBA"), voile).convert("RGB")
+              else:
+                  img = Image.new("RGB", (L, H))
+                  d = ImageDraw.Draw(img)
+                  haut, bas = (22, 30, 58), (58, 70, 120)
+                  for y in range(H):
+                      t = y / H
+                      d.line([(0, y), (L, y)], fill=tuple(int(haut[i] + (bas[i] - haut[i]) * t) for i in range(3)))
+                  d.ellipse([690, 120, 870, 300], fill=(236, 230, 205))
+                  t = 185 / H
+                  d.ellipse([740, 95, 920, 275], fill=tuple(int(haut[i] + (bas[i] - haut[i]) * t) for i in range(3)))
+                  for _ in range(40):
+                      x, y = random.randint(40, 960), random.randint(40, 520)
+                      r = random.choice([2, 2, 3])
+                      d.ellipse([x, y, x + r, y + r], fill=(220, 225, 245))
+
+              d = ImageDraw.Draw(img)
+              marge = 90
+              largeur = L - 2 * marge
+              taille = 110
+              while taille > 50:
+                  police = charger_police(police_grasse, taille)
+                  lignes = couper_lignes(d, texte_image, police, largeur)
+                  hauteur_ligne = int(taille * 1.25)
+                  if len(lignes) <= 5 and hauteur_ligne * len(lignes) <= 700:
+                      break
+                  taille -= 6
+
+              bloc = hauteur_ligne * len(lignes)
+              y = 560 + (560 - bloc) // 2
+              for ligne in lignes:
+                  w = d.textlength(ligne, font=police)
+                  d.text(((L - w) / 2, y), ligne, font=police, fill=(255, 255, 255))
+                  y += hauteur_ligne
+
+              d.line([(L / 2 - 60, y + 55), (L / 2 + 60, y + 55)], fill=(236, 230, 205), width=4)
+
+              police_pied = charger_police(police_normale, 34)
+              w = d.textlength(MARQUE, font=police_pied)
+              d.text(((L - w) / 2, H - 110), MARQUE, font=police_pied, fill=(225, 228, 240))
+
+              img.save(chemin_sortie, "PNG", optimize=True)
+
+
+          def git(*args):
+              return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
+
+
+          police_grasse = telecharger_police("Poppins-Bold.ttf",
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+          police_normale = telecharger_police("Poppins-Regular.ttf",
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
+
+          if TEST:
+              pin = {"titre": "Test", "description": "Test",
+                     "texte_image": os.environ.get("TEXTE", "Ton cerveau ne s'arrête pas la nuit ?")}
+          else:
+              pin = choisir_texte()
+
+          pin["titre"] = pin["titre"][:100]
+          pin["description"] = pin["description"][:800]
+
+          os.makedirs("images", exist_ok=True)
+          nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".png"
+          chemin = os.path.join("images", nom)
+          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale)
+          print("Image créée :", chemin)
+
+          if TEST:
+              sys.exit(0)
+
+          historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+                             "titre": pin["titre"], "image": chemin})
+          json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+          git("add", chemin, HIST)
+          git("commit", "-m", "Nouveau pin : " + pin["titre"][:60])
+          git("push")
+          sha = git("rev-parse", "HEAD")
+          url = f"https://raw.githubusercontent.com/{os.environ['GITHUB_REPOSITORY']}/{sha}/{chemin}"
+
+          for _ in range(18):
+              try:
+                  if requests.get(url, timeout=15).status_code == 200:
+                      break
+              except Exception:
+                  pass
+              time.sleep(5)
+          else:
+              sys.exit("L'image n'est pas accessible en ligne : " + url)
+
+          envoi = {"titre": pin["titre"], "description": pin["description"],
+                   "image_url": url, "lien": os.environ["LIEN_PAGE"]}
+          r = requests.post(os.environ["MAKE_WEBHOOK_URL"], json=envoi, timeout=60)
+          print("Réponse de Make :", r.status_code, r.text[:200])
+          if r.status_code >= 300:
+              sys.exit("Make a refusé l'envoi.")
+          print("Pin envoyé :", pin["titre"])
+          EOF
