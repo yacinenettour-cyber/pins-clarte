@@ -46,7 +46,9 @@ jobs:
           TEST = os.environ.get("TEST") == "1"
 
           # Banque de pins écrits à l'avance (gratuit, pas d'appel API).
-          # Thème : le sommeil perturbé par le stress.
+          # Thèmes : sommeil, cortisol/stress chronique, fatigue mentale,
+          # système nerveux, alimentation & stress, procrastination,
+          # somatisation, énergie, blocages mentaux & clarté.
           BANQUE = [
               {"titre": "Le geste du soir que presque personne ne fait pour mieux dormir",
                "texte_image": "Le geste n°1 du soir pour t'endormir",
@@ -127,6 +129,86 @@ jobs:
               {"titre": "Que faire à 3h du matin pour calmer les pensées et te rendormir ?",
                "texte_image": "Les pensées s'enchaînent à 3h du matin ?",
                "description": "Face à un réveil nocturne où les pensées s'enchaînent, une méthode précise peut aider à redescendre en intensité et à retrouver un peu de calme. Elle est expliquée en détail dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #reveilnocturne #respiration #bienetre"},
+
+              {"titre": "Cortisol élevé : le signe n°1 que ton corps essaie de te dire",
+               "texte_image": "Le signe n°1 d'un cortisol élevé",
+               "description": "Un cortisol chroniquement élevé envoie souvent un signal discret avant les symptômes plus visibles, et la plupart des gens passent à côté. Le guide gratuit explique ce signal et surtout comment agir dessus, étape par étape. Clique sur cette épingle pour le récupérer. #cortisol #stress #fatiguementale #bienetre #systemenerveux"},
+              {"titre": "3 habitudes qui font grimper ton cortisol sans que tu le saches",
+               "texte_image": "3 habitudes qui font grimper le cortisol",
+               "description": "Certaines habitudes quotidiennes, en apparence anodines, maintiennent le cortisol élevé toute la journée. Le guide gratuit détaille ces 3 habitudes et par quoi les remplacer concrètement. Clique sur l'épingle pour le découvrir. #cortisol #stress #hormones #bienetre #energie"},
+              {"titre": "Le cercle stress-cortisol-fatigue, et comment le casser",
+               "texte_image": "Comment casser le cercle stress-cortisol",
+               "description": "Stress, cortisol élevé et fatigue chronique s'entretiennent souvent mutuellement, dans un cercle difficile à repérer de l'intérieur. Le guide gratuit explique comment identifier où tu es dans ce cercle et la première étape pour en sortir. Clique sur cette épingle pour y accéder. #cortisol #stress #fatiguechronique #bienetre #systemenerveux"},
+
+              {"titre": "7 signes de fatigue mentale que tu ignores probablement",
+               "texte_image": "7 signes de fatigue mentale méconnus",
+               "description": "La fatigue mentale ne se limite pas à se sentir fatigué : elle a des signes plus subtils, souvent confondus avec autre chose. Le guide gratuit liste ces 7 signes et explique comment les repérer chez toi. Clique sur cette épingle pour le récupérer. #fatiguementale #stress #energie #bienetre #santementale"},
+              {"titre": "La cause n°1 de la fatigue mentale que personne ne traite",
+               "texte_image": "La cause n°1 de la fatigue mentale",
+               "description": "La fatigue mentale a souvent une cause de fond qui n'est presque jamais traitée directement, alors que c'est elle qui entretient tout le reste. Le guide gratuit explique laquelle et comment commencer à agir dessus. Clique sur cette épingle pour le découvrir. #fatiguementale #stress #energie #systemenerveux #bienetre"},
+              {"titre": "Fatigué même après 8h de sommeil ? Voici pourquoi",
+               "texte_image": "Fatigué même après 8h de sommeil ?",
+               "description": "Dormir 8h ne suffit pas toujours à faire disparaître la fatigue, et ça n'a souvent rien à voir avec la quantité de sommeil. Le guide gratuit explique ce mécanisme moins connu et la méthode pour vraiment récupérer. Clique sur l'épingle pour le recevoir. #fatiguementale #sommeil #energie #stress #bienetre"},
+
+              {"titre": "Le geste n°1 pour réguler ton système nerveux en 2 minutes",
+               "texte_image": "Le geste n°1 pour réguler ton système nerveux",
+               "description": "Un système nerveux en alerte permanente épuise le corps sans qu'on s'en rende compte. Il existe un geste simple, réalisable en 2 minutes, expliqué en détail dans le guide gratuit, pour l'aider à redescendre rapidement. Clique sur cette épingle pour le découvrir. #systemenerveux #stress #calme #bienetre #anxiete"},
+              {"titre": "Comment savoir si ton système nerveux est en surcharge",
+               "texte_image": "Ton système nerveux est-il en surcharge ?",
+               "description": "Certains signes discrets indiquent que le système nerveux tourne en surcharge depuis trop longtemps, bien avant l'épuisement total. Le guide gratuit détaille ces signes et une méthode simple pour l'aider à se réguler. Clique sur l'épingle pour y accéder. #systemenerveux #stress #fatiguementale #bienetre #calme"},
+              {"titre": "3 aliments qui apaisent le système nerveux (peu connus)",
+               "texte_image": "3 aliments qui apaisent le système nerveux",
+               "description": "Certains aliments simples ont un effet direct sur la régulation du système nerveux, sans que ce soit très connu. Le guide gratuit liste ces 3 aliments et comment les intégrer facilement au quotidien. Clique sur cette épingle pour le recevoir. #systemenerveux #alimentation #stress #bienetre #energie"},
+
+              {"titre": "L'aliment qui fait grimper ton stress sans que tu le remarques",
+               "texte_image": "L'aliment qui fait grimper ton stress",
+               "description": "Un aliment très courant, consommé presque quotidiennement, a un impact direct sur les niveaux de stress et de cortisol. Le guide gratuit explique lequel et par quoi le remplacer sans frustration. Clique sur cette épingle pour le découvrir. #alimentation #stress #cortisol #bienetre #nutrition"},
+              {"titre": "5 aliments qui aident réellement à calmer le stress",
+               "texte_image": "5 aliments qui calment le stress",
+               "description": "L'alimentation joue un rôle plus important qu'on ne le pense dans la gestion du stress au quotidien. Le guide gratuit liste 5 aliments à privilégier et pourquoi ils agissent sur le système nerveux. Clique sur l'épingle pour le recevoir. #alimentation #stress #systemenerveux #bienetre #energie"},
+              {"titre": "Pourquoi tu craques sur le sucre les jours de stress (et la solution)",
+               "texte_image": "Pourquoi tu craques sur le sucre en période de stress",
+               "description": "Les envies de sucre les jours de stress ne sont pas qu'une question de volonté : elles ont une explication physiologique précise. Le guide gratuit explique ce mécanisme et une alternative concrète à mettre en place. Clique sur cette épingle pour la découvrir. #alimentation #stress #cortisol #bienetre #energie"},
+
+              {"titre": "La vraie cause de la procrastination (ce n'est pas la paresse)",
+               "texte_image": "La vraie cause de la procrastination",
+               "description": "La procrastination est très souvent confondue avec un manque de discipline, alors qu'elle a une cause bien différente liée à la fatigue mentale. Le guide gratuit explique cette cause et une méthode concrète pour la désamorcer. Clique sur cette épingle pour le récupérer. #procrastination #fatiguementale #productivite #bienetre #stress"},
+              {"titre": "6 déclencheurs biologiques de la procrastination à connaître",
+               "texte_image": "6 déclencheurs biologiques de la procrastination",
+               "description": "La procrastination a souvent des déclencheurs biologiques précis, bien plus que des raisons de motivation. Le guide gratuit détaille ces déclencheurs et comment les contourner un par un. Clique sur l'épingle pour le découvrir. #procrastination #fatiguementale #stress #energie #bienetre"},
+              {"titre": "Pourquoi tu repousses toujours au lendemain (la vraie raison)",
+               "texte_image": "Pourquoi tu repousses toujours au lendemain",
+               "description": "Repousser sans cesse une tâche pourtant simple cache souvent un mécanisme précis lié à la fatigue mentale, plus qu'un manque de volonté. Le guide gratuit explique ce mécanisme et la première étape pour le désamorcer. Clique sur cette épingle pour y accéder. #procrastination #fatiguementale #stress #productivite #bienetre"},
+
+              {"titre": "Boule dans la gorge : ce que ton système nerveux essaie de dire",
+               "texte_image": "Boule dans la gorge : le signal à comprendre",
+               "description": "Une boule dans la gorge sans cause médicale identifiée est souvent un signal du système nerveux face à une tension non exprimée. Le guide gratuit explique ce mécanisme et comment aider le corps à relâcher cette tension. Clique sur cette épingle pour le découvrir. #somatisation #stress #systemenerveux #bienetre #anxiete"},
+              {"titre": "5 douleurs du corps que le stress peut vraiment causer",
+               "texte_image": "5 douleurs du corps causées par le stress",
+               "description": "Le stress chronique peut se traduire par des douleurs physiques bien réelles, souvent cherchées ailleurs pendant longtemps. Le guide gratuit liste ces 5 douleurs et les liens à connaître avec le stress. Clique sur l'épingle pour le recevoir. #somatisation #stress #douleurs #bienetre #systemenerveux"},
+              {"titre": "Ton corps te parle avant ton mental : les signaux à repérer",
+               "texte_image": "Ton corps te parle avant ton mental",
+               "description": "Le corps envoie souvent des signaux de surcharge bien avant que le mental ne les reconnaisse consciemment. Le guide gratuit explique comment repérer ces signaux tôt, avant l'épuisement. Clique sur cette épingle pour le découvrir. #somatisation #stress #fatiguementale #bienetre #systemenerveux"},
+
+              {"titre": "La routine anti-fatigue en 5 étapes (peu de gens la connaissent)",
+               "texte_image": "La routine anti-fatigue en 5 étapes",
+               "description": "Une routine courte et précise peut aider à reconstruire l'énergie au fil des jours, quand la fatigue devient chronique. Le guide gratuit détaille ces 5 étapes, dans l'ordre où les appliquer. Clique sur cette épingle pour la découvrir. #energie #fatiguementale #routine #bienetre #stress"},
+              {"titre": "3 fuites d'énergie invisibles à repérer dans ta journée",
+               "texte_image": "3 fuites d'énergie invisibles",
+               "description": "Certaines fuites d'énergie passent totalement inaperçues dans une journée normale, alors qu'elles expliquent une grande partie de la fatigue ressentie le soir. Le guide gratuit aide à les repérer et à les limiter. Clique sur l'épingle pour le recevoir. #energie #fatiguementale #stress #bienetre #productivite"},
+              {"titre": "Comment recharger ton énergie mentale sans dormir plus",
+               "texte_image": "Recharger ton énergie mentale sans dormir plus",
+               "description": "Il n'est pas toujours possible de dormir plus pour récupérer de l'énergie mentale, mais d'autres leviers existent et sont bien moins connus. Le guide gratuit les détaille un par un. Clique sur cette épingle pour y accéder. #energie #fatiguementale #sommeil #bienetre #stress"},
+
+              {"titre": "Le blocage mental n°1 qui t'empêche d'avancer (et comment le lever)",
+               "texte_image": "Le blocage mental n°1 qui freine tout",
+               "description": "Un blocage mental précis revient très souvent chez les personnes en fatigue mentale, et il passe presque toujours inaperçu. Le guide gratuit l'identifie et propose une façon concrète de le lever. Clique sur cette épingle pour le découvrir. #blocagemental #fatiguementale #clarte #bienetre #stress"},
+              {"titre": "5 raisons pour lesquelles tes objectifs manquent de clarté",
+               "texte_image": "5 raisons pour lesquelles tes objectifs manquent de clarté",
+               "description": "Un manque de clarté sur ses objectifs a souvent des causes précises, plus profondes qu'un simple manque d'organisation. Le guide gratuit détaille ces causes et une méthode pour y voir plus clair rapidement. Clique sur l'épingle pour le recevoir. #clarte #fatiguementale #objectifs #bienetre #productivite"},
+              {"titre": "Pourquoi ton esprit se sent brouillé (et comment y voir clair)",
+               "texte_image": "Pourquoi ton esprit se sent brouillé",
+               "description": "Cette sensation d'esprit brouillé, difficile à mettre en mots, a souvent une origine précise liée à la surcharge mentale. Le guide gratuit explique cette origine et la première étape pour retrouver de la clarté. Clique sur cette épingle pour la découvrir. #clarte #fatiguementale #stress #bienetre #systemenerveux"},
           ]
 
           HIST = "historique.json"
