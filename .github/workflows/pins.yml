@@ -2,7 +2,7 @@ name: Pins Pinterest
 
 on:
   schedule:
-    - cron: "0 6,9,12,15,18 * * *"
+    - cron: "0 6,8,10,12,14,17,20 * * *"
   workflow_dispatch:
     inputs:
       test_seulement:
