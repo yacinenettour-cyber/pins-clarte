@@ -195,7 +195,7 @@ jobs:
           desc_courte = pin["description"][:440]
           if len(pin["description"]) > 440:
               desc_courte = desc_courte.rsplit(" ", 1)[0].rstrip(" .,;:")
-          pin["description"] = desc_courte + " Enregistre cette épingle pour la retrouver plus tard."
+          pin["description"] = desc_courte + " À garder sous la main pour un soir difficile."
 
           os.makedirs("images", exist_ok=True)
           nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".jpg"
