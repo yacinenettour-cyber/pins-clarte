@@ -32,7 +32,7 @@ jobs:
           git config user.name "robot-pins"
           git config user.email "robot-pins@users.noreply.github.com"
           python - <<'EOF'
-          import os, json, random, time, datetime, subprocess, sys
+          import os, json, random, re, time, datetime, subprocess, sys
           import requests
           from PIL import Image, ImageDraw, ImageFont
 
@@ -81,12 +81,50 @@ jobs:
               return img.crop((x, y, x + L, y + H))
 
 
-          def choisir_fond(numero):
+          THEME_ALIASES = {
+              "sommeil": "sommeil", "insomnie": "sommeil", "reveilnocturne": "sommeil",
+              "reveil": "sommeil", "sieste": "sommeil", "routinedusoir": "sommeil",
+              "dimanchesoir": "sommeil", "rythmecircadien": "sommeil", "lumiere": "sommeil",
+              "ecrans": "sommeil", "ruminations": "sommeil",
+              "cortisol": "systemenerveux", "systemenerveux": "systemenerveux",
+              "respiration": "systemenerveux", "coherencecardiaque": "systemenerveux",
+              "anxiete": "systemenerveux", "detente": "systemenerveux",
+              "fatiguementale": "fatiguementale", "chargementale": "fatiguementale",
+              "fatigue": "fatiguementale", "fatiguechronique": "fatiguementale",
+              "alimentation": "alimentation", "cafeine": "alimentation",
+              "alcool": "alimentation", "digestion": "alimentation",
+              "procrastination": "procrastination",
+              "somatisation": "somatisation", "douleurs": "somatisation",
+              "energie": "energie", "recuperation": "energie",
+              "blocagemental": "blocagemental", "clarte": "blocagemental",
+              "ecriture": "blocagemental",
+          }
+
+
+          def deviner_theme(description):
+              tags = re.findall(r"#(\w+)", description)
+              if not tags:
+                  return "systemenerveux"
+              premier = tags[0].lower()
+              if premier == "stress" and "travail" in [t.lower() for t in tags[:3]]:
+                  return "posturesantistress"
+              return THEME_ALIASES.get(premier, "systemenerveux")
+
+
+          def choisir_fond(theme, historique):
               if not os.path.isdir("fonds"):
                   return None
               fichiers = sorted(f for f in os.listdir("fonds")
                                 if f.lower().endswith((".png", ".jpg", ".jpeg", ".webp")))
-              return os.path.join("fonds", fichiers[numero % len(fichiers)]) if fichiers else None
+              if not fichiers:
+                  return None
+              themes = {}
+              if os.path.exists("fonds_themes.json"):
+                  themes = json.load(open("fonds_themes.json", encoding="utf-8"))
+              sous_ensemble = [f for f in fichiers if themes.get(f) in (theme, None)] or fichiers
+              compte = sum(1 for h in historique
+                           if themes.get(os.path.basename(h.get("fond") or ""), None) == theme)
+              return os.path.join("fonds", sous_ensemble[compte % len(sous_ensemble)])
 
 
           def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond):
@@ -161,8 +199,10 @@ jobs:
           os.makedirs("images", exist_ok=True)
           nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".jpg"
           chemin = os.path.join("images", nom)
-          fond = choisir_fond(len(historique))
+          theme = deviner_theme(pin["description"])
+          fond = choisir_fond(theme, historique)
           dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
+          print("Thème détecté :", theme)
           print("Fond utilisé :", fond)
           print("Image créée :", chemin)
 
@@ -170,7 +210,7 @@ jobs:
               sys.exit(0)
 
           historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
-                             "titre": pin["titre"], "image": chemin})
+                             "titre": pin["titre"], "image": chemin, "fond": fond, "theme": theme})
           json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
           limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
