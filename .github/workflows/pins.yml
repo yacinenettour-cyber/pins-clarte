@@ -201,16 +201,27 @@ jobs:
           ]
 
           pin["titre"] = pin["titre"][:100]
-          desc_courte = pin["description"][:440]
-          if len(pin["description"]) > 440:
-              desc_courte = desc_courte.rsplit(" ", 1)[0].rstrip(" .,;:")
-          suffixe = " " + random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
-          pin["description"] = desc_courte + suffixe
+          theme = deviner_theme(pin["description"])
+
+          hashtags_m = re.search(r"(\s#\w+(?:\s#\w+)*)\s*$", pin["description"])
+          hashtags = hashtags_m.group(1).strip() if hashtags_m else ""
+          corps = pin["description"][:hashtags_m.start()] if hashtags_m else pin["description"]
+
+          phrase = random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
+          queue = " ".join(p for p in [phrase, hashtags] if p)
+          budget_corps = 495 - (len(queue) + 1 if queue else 0)
+          corps_court = corps[:budget_corps]
+          if len(corps) > budget_corps:
+              coupe_phrase = max(corps_court.rfind(". "), corps_court.rfind("! "), corps_court.rfind("? "))
+              if coupe_phrase >= budget_corps - 150:
+                  corps_court = corps_court[:coupe_phrase + 1]
+              else:
+                  corps_court = corps_court.rsplit(" ", 1)[0].rstrip(" .,;:") + "."
+          pin["description"] = corps_court + ((" " + queue) if queue else "")
 
           os.makedirs("images", exist_ok=True)
           nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".jpg"
           chemin = os.path.join("images", nom)
-          theme = deviner_theme(pin["description"])
           fond = choisir_fond(theme, historique)
           dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
           print("Thème détecté :", theme)
