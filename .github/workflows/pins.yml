@@ -192,7 +192,10 @@ jobs:
           print("Pins restants dans la banque :", len(restants))
 
           pin["titre"] = pin["titre"][:100]
-          pin["description"] = pin["description"][:800]
+          desc_courte = pin["description"][:440]
+          if len(pin["description"]) > 440:
+              desc_courte = desc_courte.rsplit(" ", 1)[0].rstrip(" .,;:")
+          pin["description"] = desc_courte + " Enregistre cette épingle pour la retrouver plus tard."
 
           os.makedirs("images", exist_ok=True)
           nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".jpg"
