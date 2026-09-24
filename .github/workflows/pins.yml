@@ -236,8 +236,21 @@ jobs:
           else:
               sys.exit("L'image n'est pas accessible en ligne : " + url)
 
+          TABLEAUX = {
+              "sommeil": "Calmer l'esprit le soir",
+              "systemenerveux": "Vivre sans stress",
+              "fatiguementale": "Stress & fatigue mentale",
+              "alimentation": "Alimentation & stress",
+              "procrastination": "Procrastination & fatigue",
+              "somatisation": "Somatisation & signaux",
+              "blocagemental": "Blocages mentaux & clarté",
+              "posturesantistress": "Postures anti-stress au travail",
+              "energie": "Routine anti fatigue",
+          }
+
           envoi = {"titre": pin["titre"], "description": pin["description"],
-                   "image_url": url, "lien": os.environ["LIEN_PAGE"]}
+                   "image_url": url, "lien": os.environ["LIEN_PAGE"],
+                   "theme": theme, "tableau": TABLEAUX.get(theme, "Vivre sans stress")}
           r = requests.post(os.environ["MAKE_WEBHOOK_URL"], json=envoi, timeout=60)
           print("Réponse de Make :", r.status_code, r.text[:200])
           if r.status_code >= 300:
