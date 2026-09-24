@@ -191,11 +191,21 @@ jobs:
           pin = restants[0]
           print("Pins restants dans la banque :", len(restants))
 
+          PHRASES_ENREGISTRER = [
+              "À garder sous la main pour un soir difficile.",
+              "Utile à ressortir quand tu en as besoin.",
+              "Pratique pour un soir où le mental s'emballe.",
+              "Un repère simple à retrouver facilement.",
+              "Ça peut aider de l'avoir sous la main.",
+              "Pratique à ressortir les jours plus difficiles.",
+          ]
+
           pin["titre"] = pin["titre"][:100]
           desc_courte = pin["description"][:440]
           if len(pin["description"]) > 440:
               desc_courte = desc_courte.rsplit(" ", 1)[0].rstrip(" .,;:")
-          pin["description"] = desc_courte + " À garder sous la main pour un soir difficile."
+          suffixe = " " + random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
+          pin["description"] = desc_courte + suffixe
 
           os.makedirs("images", exist_ok=True)
           nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".jpg"
