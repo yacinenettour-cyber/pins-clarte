@@ -2,13 +2,8 @@ name: Pins Pinterest
 
 on:
   schedule:
-    - cron: "0 6,8,10,12,14,17,20 * * *"
+    - cron: "0 6,8,10,12,14,16,18 * * *"
   workflow_dispatch:
-    inputs:
-      test_seulement:
-        description: "Test uniquement (génère une image, ne publie rien sur Pinterest)"
-        type: boolean
-        default: true
 
 permissions:
   contents: write
@@ -33,183 +28,16 @@ jobs:
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
-          TEST: ${{ github.event.inputs.test_seulement == 'true' && '1' || '' }}
         run: |
           git config user.name "robot-pins"
           git config user.email "robot-pins@users.noreply.github.com"
           python - <<'EOF'
-          import os, json, random, time, datetime, subprocess, sys, glob
+          import os, json, random, time, datetime, subprocess, sys
           import requests
           from PIL import Image, ImageDraw, ImageFont
 
           MARQUE = "Clarté Mentale | Stress & Énergie"
           TEST = os.environ.get("TEST") == "1"
-
-          # Banque de pins écrits à l'avance (gratuit, pas d'appel API).
-          # Thèmes : sommeil, cortisol/stress chronique, fatigue mentale,
-          # système nerveux, alimentation & stress, procrastination,
-          # somatisation, énergie, blocages mentaux & clarté.
-          BANQUE = [
-              {"titre": "Le geste du soir que presque personne ne fait pour mieux dormir",
-               "texte_image": "Le geste n°1 du soir pour t'endormir",
-               "description": "Il existe un geste tout simple à faire le soir, que très peu de personnes connaissent, et qui peut vraiment changer la qualité de l'endormissement quand le mental est encore agité. Il ne prend que quelques minutes, ne demande aucun matériel, et fonctionne même les soirs les plus stressants. Il est expliqué en détail, étape par étape, dans le guide gratuit : clique sur cette épingle pour le récupérer et l'essayer dès ce soir. #sommeil #stress #routinedusoir #bienetre #anxiete"},
-              {"titre": "3 gestes du soir qui calment le mental (peu de gens les connaissent)",
-               "texte_image": "3 gestes du soir méconnus",
-               "description": "Le soir, le cerveau a souvent du mal à ralentir après une journée stressante. Il existe 3 gestes simples, peu connus, qui aident à faire cette transition en douceur. Ils sont détaillés pas à pas dans le guide gratuit, avec des explications concrètes pour les mettre en place dès ce soir. Clique sur l'épingle pour le recevoir. #sommeil #stress #routinedusoir #calme #bienetre"},
-              {"titre": "Ce petit rituel du soir calme le stress qui empêche de dormir",
-               "texte_image": "Le rituel en 3 minutes pour t'endormir",
-               "description": "Ruminer au moment de dormir, presque tout le monde connaît. Il existe un petit rituel simple, expliqué en détail dans le guide gratuit, qui aide à relâcher les pensées qui tournent en boucle avant de fermer les yeux. Clique sur cette épingle pour découvrir comment le mettre en place ce soir. #sommeil #stress #routinedusoir #ruminations #detente"},
-
-              {"titre": "L'erreur n°1 qui empêche de s'endormir (presque tout le monde la fait)",
-               "texte_image": "L'erreur n°1 qui empêche de dormir",
-               "description": "Une erreur très répandue empêche de s'endormir sans qu'on s'en rende compte, et elle a souvent l'effet inverse de ce qu'on recherche. Le guide gratuit explique exactement quelle est cette erreur et par quoi la remplacer, étape par étape. Clique sur l'épingle pour le récupérer et arrêter de la reproduire dès ce soir. #sommeil #stress #insomnie #ruminations #bienetre"},
-              {"titre": "Pourquoi rester au lit à lutter empire l'insomnie (et que faire)",
-               "texte_image": "L'erreur n°2 qui empêche de dormir",
-               "description": "Rester allongé à \"forcer\" le sommeil est un réflexe très courant, mais il aggrave souvent les nuits difficiles. Il existe une alternative simple et concrète, expliquée en détail dans le guide gratuit, pour casser ce cercle sans lutter contre soi-même. Clique sur cette épingle pour la découvrir. #sommeil #stress #insomnie #nuitsdifficiles #calme"},
-              {"titre": "L'erreur du soir qui t'empêche de dormir sans que tu le saches",
-               "texte_image": "L'erreur n°3 qui garde ton cerveau éveillé",
-               "description": "Un geste anodin, fait presque tous les soirs, peut suffire à maintenir le cerveau en alerte au pire moment. Le guide gratuit détaille cette erreur et la routine à mettre en place pour l'éviter. Clique sur l'épingle pour y accéder. #sommeil #stress #reveilnocturne #ecrans #bienetre"},
-
-              {"titre": "Cette question simple aide à calmer les pensées qui tournent la nuit",
-               "texte_image": "La question n°1 à te poser la nuit",
-               "description": "Il existe une question toute simple à se poser quand les pensées tournent en boucle la nuit, qui aide à prendre du recul sans nier ce qui préoccupe. Elle est expliquée avec la méthode complète dans le guide gratuit. Clique sur cette épingle pour la découvrir et l'essayer cette nuit. #sommeil #stress #ruminations #nuitblanche #anxiete"},
-              {"titre": "Et si cette pensée qui t'empêche de dormir pouvait attendre demain ?",
-               "texte_image": "Cette pensée peut-elle attendre demain ?",
-               "description": "La nuit, une pensée qui semble urgente paraît souvent bien plus légère une fois le jour levé. Le guide gratuit propose une méthode simple pour appliquer ce principe concrètement, au moment où le mental s'emballe. Clique sur l'épingle pour la recevoir. #sommeil #stress #ruminations #mentalclair #nuitagitee"},
-              {"titre": "La question à te poser quand tu ressasses la même chose chaque nuit",
-               "texte_image": "La question à te poser chaque nuit",
-               "description": "Certaines pensées reviennent nuit après nuit, comme si elles étaient urgentes et définitives. Une question simple peut aider à leur redonner leur juste taille : elle est expliquée avec plus de détails dans le guide gratuit. Clique sur cette épingle pour le récupérer. #sommeil #stress #ruminations #relativiser #calmemental"},
-
-              {"titre": "La mini-routine du coucher en 4 étapes pour mieux dormir",
-               "texte_image": "La routine en 4 étapes pour t'endormir",
-               "description": "Il existe une mini-routine du coucher, simple et rapide, qui aide le corps à reconnaître le signal du repos même après une journée stressante. Les 4 étapes complètes sont détaillées dans le guide gratuit. Clique sur cette épingle pour les découvrir et les essayer dès ce soir. #sommeil #stress #routinedusoir #bienetre #calme"},
-              {"titre": "Cette routine du soir en 4 étapes calme le mental avant de dormir",
-               "texte_image": "4 étapes pour calmer le mental le soir",
-               "description": "Une routine du soir courte peut suffire à préparer un sommeil plus calme, à condition de suivre les bonnes étapes dans le bon ordre. Le guide gratuit détaille cette routine en 4 étapes simples à mettre en place ce soir. Clique sur l'épingle pour la recevoir. #sommeil #stress #routinedusoir #detente #bienetre"},
-              {"titre": "La routine du coucher qui calme le stress quand le mental tourne",
-               "texte_image": "La routine en 4 étapes quand le mental tourne",
-               "description": "Quand le mental tourne encore à plein régime au moment de se coucher, une petite routine bien construite peut aider à ralentir. Elle est expliquée pas à pas dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #routinedusoir #mentalcalme #bienetre"},
-
-              {"titre": "Cette phrase toute simple aide à calmer le mental avant de dormir",
-               "texte_image": "La phrase n°1 pour calmer le mental",
-               "description": "Il existe une phrase très simple à se répéter quand les pensées s'emballent au coucher, qui aide à désamorcer l'urgence ressentie. Elle est expliquée avec le contexte complet dans le guide gratuit. Clique sur cette épingle pour la découvrir. #sommeil #stress #calmemental #bienetre #anxiete"},
-              {"titre": "La phrase à se dire quand le mental s'emballe en pleine nuit",
-               "texte_image": "La phrase à se dire en pleine nuit",
-               "description": "Face à un mental qui s'agite au moment de dormir, une phrase toute simple peut aider à relâcher la pression. Le guide gratuit explique comment et quand l'utiliser pour qu'elle fonctionne vraiment. Clique sur l'épingle pour le récupérer. #sommeil #stress #anxiete #calmemental #bienetre"},
-              {"titre": "Cette phrase réconfortante aide à calmer le stress avant de dormir",
-               "texte_image": "Lâcher prise avant de fermer les yeux",
-               "description": "Certains soirs, une phrase rassurante suffit à desserrer la tension mentale, à condition de savoir comment se l'approprier vraiment. La méthode complète est dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #lâcherprise #calmemental #bienetre"},
-
-              {"titre": "Cet exercice de respiration facile calme le mental en quelques minutes",
-               "texte_image": "L'exercice de respiration n°1 contre le stress",
-               "description": "Un exercice de respiration simple peut aider à ralentir le rythme cardiaque et détourner l'attention des pensées qui s'agitent, sans matériel ni effort particulier. Il est expliqué pas à pas dans le guide gratuit. Clique sur cette épingle pour le recevoir et l'essayer ce soir. #sommeil #stress #respiration #calme #bienetre"},
-              {"titre": "La respiration qui aide à s'endormir plus facilement (peu connue)",
-               "texte_image": "La respiration qui aide à dormir",
-               "description": "Un rythme de respiration particulier, plus lent que l'habituel, peut envoyer un signal d'apaisement au corps au moment du coucher. Il est détaillé étape par étape dans le guide gratuit. Clique sur l'épingle pour le découvrir. #sommeil #stress #respiration #relaxation #bienetre"},
-              {"titre": "Cet exercice simple aide à calmer les pensées qui tournent au lit",
-               "texte_image": "Calmer les pensées qui tournent au lit",
-               "description": "Quand les pensées s'enchaînent au lit, un exercice de respiration bien précis peut aider à recentrer l'attention loin du mental agité. La méthode complète est expliquée dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #respiration #ruminations #calme"},
-
-              {"titre": "Ce qu'il vaut mieux éviter avant de dormir (presque personne ne le sait)",
-               "texte_image": "L'erreur n°1 à éviter avant de dormir",
-               "description": "Certaines habitudes du soir, en apparence anodines, entretiennent sans le vouloir un mental agité au pire moment. Le guide gratuit liste ces habitudes et ce qu'il vaut mieux faire à la place. Clique sur cette épingle pour le récupérer. #sommeil #stress #ecrans #routinedusoir #bienetre"},
-              {"titre": "3 habitudes du soir qui empêchent de bien dormir sans qu'on le sache",
-               "texte_image": "3 habitudes qui empêchent de dormir",
-               "description": "Sans s'en rendre compte, certaines habitudes du soir nourrissent le stress au moment de dormir. Le guide gratuit détaille ces 3 habitudes et comment les remplacer progressivement. Clique sur l'épingle pour le découvrir. #sommeil #stress #routinedusoir #ecrans #calme"},
-              {"titre": "Évite ça avant de te coucher si tu as du mal à dormir",
-               "texte_image": "À éviter avant de te coucher",
-               "description": "Certains gestes du soir ont tendance à relancer le mental plutôt qu'à l'apaiser, souvent sans qu'on fasse le lien. Le guide gratuit explique lesquels éviter et par quoi les remplacer. Clique sur cette épingle pour y accéder. #sommeil #stress #routinedusoir #calme #bienetre"},
-
-              {"titre": "Réveillé à 3h du matin, la tête pleine ? Voici ce qui aide à te rendormir",
-               "texte_image": "Réveillé à 3h, la tête pleine ?",
-               "description": "Se réveiller en pleine nuit avec des pensées qui s'enchaînent est fréquent en période de stress. Il existe une méthode simple, expliquée pas à pas dans le guide gratuit, pour calmer cette agitation mentale sans lutter. Clique sur cette épingle pour la recevoir. #sommeil #stress #reveilnocturne #ruminations #bienetre"},
-              {"titre": "Réveil à 3h du matin : la piste à essayer pour te rendormir",
-               "texte_image": "La piste n°1 à essayer à 3h du matin",
-               "description": "Un réveil nocturne avec l'esprit qui s'emballe n'a rien d'anormal en période de stress. Une piste simple et concrète, détaillée dans le guide gratuit, peut aider à redescendre en intensité sans forcer. Clique sur l'épingle pour la découvrir. #sommeil #stress #reveilnocturne #calmemental #anxiete"},
-              {"titre": "Que faire à 3h du matin pour calmer les pensées et te rendormir ?",
-               "texte_image": "Les pensées s'enchaînent à 3h du matin ?",
-               "description": "Face à un réveil nocturne où les pensées s'enchaînent, une méthode précise peut aider à redescendre en intensité et à retrouver un peu de calme. Elle est expliquée en détail dans le guide gratuit. Clique sur cette épingle pour y accéder. #sommeil #stress #reveilnocturne #respiration #bienetre"},
-
-              {"titre": "Cortisol élevé : le signe n°1 que ton corps essaie de te dire",
-               "texte_image": "Le signe n°1 d'un cortisol élevé",
-               "description": "Un cortisol chroniquement élevé envoie souvent un signal discret avant les symptômes plus visibles, et la plupart des gens passent à côté. Le guide gratuit explique ce signal et surtout comment agir dessus, étape par étape. Clique sur cette épingle pour le récupérer. #cortisol #stress #fatiguementale #bienetre #systemenerveux"},
-              {"titre": "3 habitudes qui font grimper ton cortisol sans que tu le saches",
-               "texte_image": "3 habitudes qui font grimper le cortisol",
-               "description": "Certaines habitudes quotidiennes, en apparence anodines, maintiennent le cortisol élevé toute la journée. Le guide gratuit détaille ces 3 habitudes et par quoi les remplacer concrètement. Clique sur l'épingle pour le découvrir. #cortisol #stress #hormones #bienetre #energie"},
-              {"titre": "Le cercle stress-cortisol-fatigue, et comment le casser",
-               "texte_image": "Comment casser le cercle stress-cortisol",
-               "description": "Stress, cortisol élevé et fatigue chronique s'entretiennent souvent mutuellement, dans un cercle difficile à repérer de l'intérieur. Le guide gratuit explique comment identifier où tu es dans ce cercle et la première étape pour en sortir. Clique sur cette épingle pour y accéder. #cortisol #stress #fatiguechronique #bienetre #systemenerveux"},
-
-              {"titre": "7 signes de fatigue mentale que tu ignores probablement",
-               "texte_image": "7 signes de fatigue mentale méconnus",
-               "description": "La fatigue mentale ne se limite pas à se sentir fatigué : elle a des signes plus subtils, souvent confondus avec autre chose. Le guide gratuit liste ces 7 signes et explique comment les repérer chez toi. Clique sur cette épingle pour le récupérer. #fatiguementale #stress #energie #bienetre #santementale"},
-              {"titre": "La cause n°1 de la fatigue mentale que personne ne traite",
-               "texte_image": "La cause n°1 de la fatigue mentale",
-               "description": "La fatigue mentale a souvent une cause de fond qui n'est presque jamais traitée directement, alors que c'est elle qui entretient tout le reste. Le guide gratuit explique laquelle et comment commencer à agir dessus. Clique sur cette épingle pour le découvrir. #fatiguementale #stress #energie #systemenerveux #bienetre"},
-              {"titre": "Fatigué même après 8h de sommeil ? Voici pourquoi",
-               "texte_image": "Fatigué même après 8h de sommeil ?",
-               "description": "Dormir 8h ne suffit pas toujours à faire disparaître la fatigue, et ça n'a souvent rien à voir avec la quantité de sommeil. Le guide gratuit explique ce mécanisme moins connu et la méthode pour vraiment récupérer. Clique sur l'épingle pour le recevoir. #fatiguementale #sommeil #energie #stress #bienetre"},
-
-              {"titre": "Le geste n°1 pour réguler ton système nerveux en 2 minutes",
-               "texte_image": "Le geste n°1 pour réguler ton système nerveux",
-               "description": "Un système nerveux en alerte permanente épuise le corps sans qu'on s'en rende compte. Il existe un geste simple, réalisable en 2 minutes, expliqué en détail dans le guide gratuit, pour l'aider à redescendre rapidement. Clique sur cette épingle pour le découvrir. #systemenerveux #stress #calme #bienetre #anxiete"},
-              {"titre": "Comment savoir si ton système nerveux est en surcharge",
-               "texte_image": "Ton système nerveux est-il en surcharge ?",
-               "description": "Certains signes discrets indiquent que le système nerveux tourne en surcharge depuis trop longtemps, bien avant l'épuisement total. Le guide gratuit détaille ces signes et une méthode simple pour l'aider à se réguler. Clique sur l'épingle pour y accéder. #systemenerveux #stress #fatiguementale #bienetre #calme"},
-              {"titre": "3 aliments qui apaisent le système nerveux (peu connus)",
-               "texte_image": "3 aliments qui apaisent le système nerveux",
-               "description": "Certains aliments simples ont un effet direct sur la régulation du système nerveux, sans que ce soit très connu. Le guide gratuit liste ces 3 aliments et comment les intégrer facilement au quotidien. Clique sur cette épingle pour le recevoir. #systemenerveux #alimentation #stress #bienetre #energie"},
-
-              {"titre": "L'aliment qui fait grimper ton stress sans que tu le remarques",
-               "texte_image": "L'aliment qui fait grimper ton stress",
-               "description": "Un aliment très courant, consommé presque quotidiennement, a un impact direct sur les niveaux de stress et de cortisol. Le guide gratuit explique lequel et par quoi le remplacer sans frustration. Clique sur cette épingle pour le découvrir. #alimentation #stress #cortisol #bienetre #nutrition"},
-              {"titre": "5 aliments qui aident réellement à calmer le stress",
-               "texte_image": "5 aliments qui calment le stress",
-               "description": "L'alimentation joue un rôle plus important qu'on ne le pense dans la gestion du stress au quotidien. Le guide gratuit liste 5 aliments à privilégier et pourquoi ils agissent sur le système nerveux. Clique sur l'épingle pour le recevoir. #alimentation #stress #systemenerveux #bienetre #energie"},
-              {"titre": "Pourquoi tu craques sur le sucre les jours de stress (et la solution)",
-               "texte_image": "Pourquoi tu craques sur le sucre en période de stress",
-               "description": "Les envies de sucre les jours de stress ne sont pas qu'une question de volonté : elles ont une explication physiologique précise. Le guide gratuit explique ce mécanisme et une alternative concrète à mettre en place. Clique sur cette épingle pour la découvrir. #alimentation #stress #cortisol #bienetre #energie"},
-
-              {"titre": "La vraie cause de la procrastination (ce n'est pas la paresse)",
-               "texte_image": "La vraie cause de la procrastination",
-               "description": "La procrastination est très souvent confondue avec un manque de discipline, alors qu'elle a une cause bien différente liée à la fatigue mentale. Le guide gratuit explique cette cause et une méthode concrète pour la désamorcer. Clique sur cette épingle pour le récupérer. #procrastination #fatiguementale #productivite #bienetre #stress"},
-              {"titre": "6 déclencheurs biologiques de la procrastination à connaître",
-               "texte_image": "6 déclencheurs biologiques de la procrastination",
-               "description": "La procrastination a souvent des déclencheurs biologiques précis, bien plus que des raisons de motivation. Le guide gratuit détaille ces déclencheurs et comment les contourner un par un. Clique sur l'épingle pour le découvrir. #procrastination #fatiguementale #stress #energie #bienetre"},
-              {"titre": "Pourquoi tu repousses toujours au lendemain (la vraie raison)",
-               "texte_image": "Pourquoi tu repousses toujours au lendemain",
-               "description": "Repousser sans cesse une tâche pourtant simple cache souvent un mécanisme précis lié à la fatigue mentale, plus qu'un manque de volonté. Le guide gratuit explique ce mécanisme et la première étape pour le désamorcer. Clique sur cette épingle pour y accéder. #procrastination #fatiguementale #stress #productivite #bienetre"},
-
-              {"titre": "Boule dans la gorge : ce que ton système nerveux essaie de dire",
-               "texte_image": "Boule dans la gorge : le signal à comprendre",
-               "description": "Une boule dans la gorge sans cause médicale identifiée est souvent un signal du système nerveux face à une tension non exprimée. Le guide gratuit explique ce mécanisme et comment aider le corps à relâcher cette tension. Clique sur cette épingle pour le découvrir. #somatisation #stress #systemenerveux #bienetre #anxiete"},
-              {"titre": "5 douleurs du corps que le stress peut vraiment causer",
-               "texte_image": "5 douleurs du corps causées par le stress",
-               "description": "Le stress chronique peut se traduire par des douleurs physiques bien réelles, souvent cherchées ailleurs pendant longtemps. Le guide gratuit liste ces 5 douleurs et les liens à connaître avec le stress. Clique sur l'épingle pour le recevoir. #somatisation #stress #douleurs #bienetre #systemenerveux"},
-              {"titre": "Ton corps te parle avant ton mental : les signaux à repérer",
-               "texte_image": "Ton corps te parle avant ton mental",
-               "description": "Le corps envoie souvent des signaux de surcharge bien avant que le mental ne les reconnaisse consciemment. Le guide gratuit explique comment repérer ces signaux tôt, avant l'épuisement. Clique sur cette épingle pour le découvrir. #somatisation #stress #fatiguementale #bienetre #systemenerveux"},
-
-              {"titre": "La routine anti-fatigue en 5 étapes (peu de gens la connaissent)",
-               "texte_image": "La routine anti-fatigue en 5 étapes",
-               "description": "Une routine courte et précise peut aider à reconstruire l'énergie au fil des jours, quand la fatigue devient chronique. Le guide gratuit détaille ces 5 étapes, dans l'ordre où les appliquer. Clique sur cette épingle pour la découvrir. #energie #fatiguementale #routine #bienetre #stress"},
-              {"titre": "3 fuites d'énergie invisibles à repérer dans ta journée",
-               "texte_image": "3 fuites d'énergie invisibles",
-               "description": "Certaines fuites d'énergie passent totalement inaperçues dans une journée normale, alors qu'elles expliquent une grande partie de la fatigue ressentie le soir. Le guide gratuit aide à les repérer et à les limiter. Clique sur l'épingle pour le recevoir. #energie #fatiguementale #stress #bienetre #productivite"},
-              {"titre": "Comment recharger ton énergie mentale sans dormir plus",
-               "texte_image": "Recharger ton énergie mentale sans dormir plus",
-               "description": "Il n'est pas toujours possible de dormir plus pour récupérer de l'énergie mentale, mais d'autres leviers existent et sont bien moins connus. Le guide gratuit les détaille un par un. Clique sur cette épingle pour y accéder. #energie #fatiguementale #sommeil #bienetre #stress"},
-
-              {"titre": "Le blocage mental n°1 qui t'empêche d'avancer (et comment le lever)",
-               "texte_image": "Le blocage mental n°1 qui freine tout",
-               "description": "Un blocage mental précis revient très souvent chez les personnes en fatigue mentale, et il passe presque toujours inaperçu. Le guide gratuit l'identifie et propose une façon concrète de le lever. Clique sur cette épingle pour le découvrir. #blocagemental #fatiguementale #clarte #bienetre #stress"},
-              {"titre": "5 raisons pour lesquelles tes objectifs manquent de clarté",
-               "texte_image": "5 raisons pour lesquelles tes objectifs manquent de clarté",
-               "description": "Un manque de clarté sur ses objectifs a souvent des causes précises, plus profondes qu'un simple manque d'organisation. Le guide gratuit détaille ces causes et une méthode pour y voir plus clair rapidement. Clique sur l'épingle pour le recevoir. #clarte #fatiguementale #objectifs #bienetre #productivite"},
-              {"titre": "Pourquoi ton esprit se sent brouillé (et comment y voir clair)",
-               "texte_image": "Pourquoi ton esprit se sent brouillé",
-               "description": "Cette sensation d'esprit brouillé, difficile à mettre en mots, a souvent une origine précise liée à la surcharge mentale. Le guide gratuit explique cette origine et la première étape pour retrouver de la clarté. Clique sur cette épingle pour la découvrir. #clarte #fatiguementale #stress #bienetre #systemenerveux"},
-          ]
 
           HIST = "historique.json"
           historique = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
@@ -231,25 +59,6 @@ jobs:
               return ImageFont.load_default(size=taille)
 
 
-          def choisir_texte():
-              recents = {h["titre"] for h in historique[-len(BANQUE) + 5:]}
-              candidats = [p for p in BANQUE if p["titre"] not in recents]
-              if not candidats:
-                  candidats = BANQUE
-              return dict(random.choice(candidats))
-
-
-          def choisir_fond():
-              fonds = sorted(glob.glob("fonds/*.png") + glob.glob("fonds/*.jpg") + glob.glob("fonds/*.jpeg"))
-              if not fonds:
-                  return None
-              recents = {h.get("fond") for h in historique[-3:]}
-              candidats = [f for f in fonds if f not in recents]
-              if not candidats:
-                  candidats = fonds
-              return random.choice(candidats)
-
-
           def couper_lignes(dessin, texte, police, largeur_max):
               lignes, ligne = [], ""
               for mot in texte.split():
@@ -265,10 +74,10 @@ jobs:
               return lignes
 
 
-          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond):
+          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale):
               L, H = 1000, 1500
-              if fond:
-                  img = Image.open(fond).convert("RGB").resize((L, H))
+              if os.path.exists("fond.png"):
+                  img = Image.open("fond.png").convert("RGB").resize((L, H))
                   voile = Image.new("RGBA", (L, H), (15, 20, 40, 110))
                   img = Image.alpha_composite(img.convert("RGBA"), voile).convert("RGB")
               else:
@@ -325,11 +134,13 @@ jobs:
               "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 
-          if TEST:
-              pin = {"titre": "Test", "description": "Test",
-                     "texte_image": os.environ.get("TEXTE", "Ton cerveau ne s'arrête pas la nuit ?")}
-          else:
-              pin = choisir_texte()
+          banque = json.load(open("pins.json", encoding="utf-8"))
+          faits = {h["titre"] for h in historique}
+          restants = [p for p in banque if p["titre"] not in faits]
+          if not restants:
+              sys.exit("Banque de pins vide : ajoute de nouveaux pins dans pins.json.")
+          pin = restants[0]
+          print("Pins restants dans la banque :", len(restants))
 
           pin["titre"] = pin["titre"][:100]
           pin["description"] = pin["description"][:800]
@@ -337,15 +148,14 @@ jobs:
           os.makedirs("images", exist_ok=True)
           nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".png"
           chemin = os.path.join("images", nom)
-          fond = choisir_fond()
-          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
-          print("Image créée :", chemin, "(fond :", fond, ")")
+          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale)
+          print("Image créée :", chemin)
 
           if TEST:
               sys.exit(0)
 
           historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
-                             "titre": pin["titre"], "image": chemin, "fond": fond})
+                             "titre": pin["titre"], "image": chemin})
           json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
           git("add", chemin, HIST)
@@ -372,10 +182,3 @@ jobs:
               sys.exit("Make a refusé l'envoi.")
           print("Pin envoyé :", pin["titre"])
           EOF
-
-      - name: Aperçu de l'image de test
-        if: ${{ github.event.inputs.test_seulement == 'true' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: apercu-pin-test
-          path: images/*.png
