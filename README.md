@@ -4,7 +4,7 @@ Publication automatique de pins Pinterest pour "Clarté Mentale | Stress & Éner
 
 ## Fonctionnement
 
-Le workflow `.github/workflows/pins.yml` tourne automatiquement 5 fois par jour (6h, 9h, 12h, 15h, 18h UTC) :
+Le workflow `.github/workflows/pins.yml` tourne automatiquement 7 fois par jour (6h07, 8h07, 10h07, 12h07, 14h07, 16h07, 18h07 UTC — décalé de l'heure pile pour éviter les ralentissements de GitHub aux heures de forte charge) :
 
 1. Il choisit un pin (titre + description + phrase d'accroche) dans une banque de textes déjà écrits, en évitant les répétitions récentes (voir `historique.json`).
 2. Il devine le thème du pin (sommeil, système nerveux, fatigue mentale, alimentation, procrastination, somatisation, énergie, blocage mental, postures anti-stress) à partir du premier hashtag de la description, puis choisit une photo de fond du même thème dans `fonds/` (voir `fonds_themes.json`) — pour que l'image corresponde toujours au texte, par exemple pas de photo de petit-déjeuner sur un pin qui parle de réveil nocturne.

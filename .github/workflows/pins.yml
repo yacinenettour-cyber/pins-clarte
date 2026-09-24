@@ -2,7 +2,7 @@ name: Pins Pinterest
 
 on:
   schedule:
-    - cron: "0 6,8,10,12,14,16,18 * * *"
+    - cron: "7 6,8,10,12,14,16,18 * * *"
   workflow_dispatch:
 
 permissions:
