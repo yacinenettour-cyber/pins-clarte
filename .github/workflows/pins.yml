@@ -224,7 +224,7 @@ jobs:
           git("commit", "-m", "Nouveau pin : " + pin["titre"][:60])
           git("push")
           sha = git("rev-parse", "HEAD")
-          url = f"https://raw.githubusercontent.com/{os.environ['GITHUB_REPOSITORY']}/{sha}/{chemin}"
+          url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin}"
 
           for _ in range(18):
               try:
