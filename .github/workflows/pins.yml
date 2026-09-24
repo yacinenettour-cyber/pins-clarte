@@ -74,12 +74,30 @@ jobs:
               return lignes
 
 
-          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale):
+          def recadrer(img, L, H):
+              r = max(L / img.width, H / img.height)
+              img = img.resize((round(img.width * r), round(img.height * r)), Image.LANCZOS)
+              x, y = (img.width - L) // 2, (img.height - H) // 2
+              return img.crop((x, y, x + L, y + H))
+
+
+          def choisir_fond(numero):
+              if not os.path.isdir("fonds"):
+                  return None
+              fichiers = sorted(f for f in os.listdir("fonds")
+                                if f.lower().endswith((".png", ".jpg", ".jpeg", ".webp")))
+              return os.path.join("fonds", fichiers[numero % len(fichiers)]) if fichiers else None
+
+
+          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond):
               L, H = 1000, 1500
-              if os.path.exists("fond.png"):
-                  img = Image.open("fond.png").convert("RGB").resize((L, H))
-                  voile = Image.new("RGBA", (L, H), (15, 20, 40, 110))
-                  img = Image.alpha_composite(img.convert("RGBA"), voile).convert("RGB")
+              if fond:
+                  img = recadrer(Image.open(fond).convert("RGB"), L, H)
+                  masque = Image.new("L", (1, H))
+                  for y in range(H):
+                      t = max(0.0, (y - 430) / (H - 430))
+                      masque.putpixel((0, y), int(40 + 200 * (t ** 1.3)))
+                  img = Image.composite(Image.new("RGB", (L, H), (12, 18, 36)), img, masque.resize((L, H)))
               else:
                   img = Image.new("RGB", (L, H))
                   d = ImageDraw.Draw(img)
@@ -87,40 +105,35 @@ jobs:
                   for y in range(H):
                       t = y / H
                       d.line([(0, y), (L, y)], fill=tuple(int(haut[i] + (bas[i] - haut[i]) * t) for i in range(3)))
-                  d.ellipse([690, 120, 870, 300], fill=(236, 230, 205))
-                  t = 185 / H
-                  d.ellipse([740, 95, 920, 275], fill=tuple(int(haut[i] + (bas[i] - haut[i]) * t) for i in range(3)))
-                  for _ in range(40):
-                      x, y = random.randint(40, 960), random.randint(40, 520)
-                      r = random.choice([2, 2, 3])
-                      d.ellipse([x, y, x + r, y + r], fill=(220, 225, 245))
 
               d = ImageDraw.Draw(img)
-              marge = 90
+              marge = 85
               largeur = L - 2 * marge
-              taille = 110
-              while taille > 50:
+              taille = 104
+              while taille > 52:
                   police = charger_police(police_grasse, taille)
                   lignes = couper_lignes(d, texte_image, police, largeur)
-                  hauteur_ligne = int(taille * 1.25)
-                  if len(lignes) <= 5 and hauteur_ligne * len(lignes) <= 700:
+                  hauteur_ligne = int(taille * 1.22)
+                  if len(lignes) <= 5 and hauteur_ligne * len(lignes) <= 620:
                       break
                   taille -= 6
 
               bloc = hauteur_ligne * len(lignes)
-              y = 560 + (560 - bloc) // 2
+              y = 1285 - bloc
               for ligne in lignes:
                   w = d.textlength(ligne, font=police)
-                  d.text(((L - w) / 2, y), ligne, font=police, fill=(255, 255, 255))
+                  x = (L - w) / 2
+                  d.text((x + 3, y + 3), ligne, font=police, fill=(8, 12, 26))
+                  d.text((x, y), ligne, font=police, fill=(255, 255, 255))
                   y += hauteur_ligne
 
-              d.line([(L / 2 - 60, y + 55), (L / 2 + 60, y + 55)], fill=(236, 230, 205), width=4)
+              d.line([(L / 2 - 70, y + 34), (L / 2 + 70, y + 34)], fill=(236, 230, 205), width=5)
 
               police_pied = charger_police(police_normale, 34)
               w = d.textlength(MARQUE, font=police_pied)
-              d.text(((L - w) / 2, H - 110), MARQUE, font=police_pied, fill=(225, 228, 240))
+              d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
 
-              img.save(chemin_sortie, "PNG", optimize=True)
+              img.save(chemin_sortie, "JPEG", quality=88, optimize=True, progressive=True)
 
 
           def git(*args):
@@ -146,9 +159,11 @@ jobs:
           pin["description"] = pin["description"][:800]
 
           os.makedirs("images", exist_ok=True)
-          nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".png"
+          nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".jpg"
           chemin = os.path.join("images", nom)
-          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale)
+          fond = choisir_fond(len(historique))
+          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
+          print("Fond utilisé :", fond)
           print("Image créée :", chemin)
 
           if TEST:
@@ -158,7 +173,16 @@ jobs:
                              "titre": pin["titre"], "image": chemin})
           json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-          git("add", chemin, HIST)
+          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
+          for ancien in os.listdir("images"):
+              try:
+                  date_fichier = datetime.datetime.strptime(ancien[4:12], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
+              except ValueError:
+                  continue
+              if date_fichier < limite:
+                  os.remove(os.path.join("images", ancien))
+
+          git("add", "-A", "images", HIST)
           git("commit", "-m", "Nouveau pin : " + pin["titre"][:60])
           git("push")
           sha = git("rev-parse", "HEAD")
