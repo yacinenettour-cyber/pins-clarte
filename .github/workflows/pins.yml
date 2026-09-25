@@ -176,6 +176,28 @@ jobs:
               return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
 
 
+          def creer_video(chemin_image, chemin_video, duree=6):
+              cmd = [
+                  "ffmpeg", "-y", "-loop", "1", "-i", chemin_image,
+                  "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+                  "-vf", f"scale=1000:1500,zoompan=z='min(zoom+0.0015,1.15)':d={duree * 25}:s=1000x1500:fps=25",
+                  "-t", str(duree), "-c:v", "libx264", "-pix_fmt", "yuv420p",
+                  "-c:a", "aac", "-shortest", chemin_video,
+              ]
+              subprocess.run(cmd, check=True, capture_output=True, text=True)
+
+
+          def attendre_en_ligne(url, essais=18, pause=5):
+              for _ in range(essais):
+                  try:
+                      if requests.get(url, timeout=15).status_code == 200:
+                          return True
+                  except Exception:
+                      pass
+                  time.sleep(pause)
+              return False
+
+
           police_grasse = telecharger_police("Poppins-Bold.ttf",
               "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
@@ -220,13 +242,23 @@ jobs:
           pin["description"] = corps_court + ((" " + queue) if queue else "")
 
           os.makedirs("images", exist_ok=True)
-          nom = "pin-" + datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S") + ".jpg"
+          os.makedirs("videos", exist_ok=True)
+          horodatage = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
+          nom = "pin-" + horodatage + ".jpg"
           chemin = os.path.join("images", nom)
           fond = choisir_fond(theme, historique)
           dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
           print("Thème détecté :", theme)
           print("Fond utilisé :", fond)
           print("Image créée :", chemin)
+
+          chemin_video = os.path.join("videos", "pin-" + horodatage + ".mp4")
+          try:
+              creer_video(chemin, chemin_video)
+              print("Vidéo créée :", chemin_video)
+          except Exception as e:
+              print("Échec génération vidéo (on continue avec l'image seule) :", e)
+              chemin_video = None
 
           if TEST:
               sys.exit(0)
@@ -236,29 +268,30 @@ jobs:
           json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
           limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
-          for ancien in os.listdir("images"):
-              try:
-                  date_fichier = datetime.datetime.strptime(ancien[4:12], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
-              except ValueError:
-                  continue
-              if date_fichier < limite:
-                  os.remove(os.path.join("images", ancien))
+          for dossier in ("images", "videos"):
+              for ancien in os.listdir(dossier):
+                  try:
+                      date_fichier = datetime.datetime.strptime(ancien[4:12], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
+                  except ValueError:
+                      continue
+                  if date_fichier < limite:
+                      os.remove(os.path.join(dossier, ancien))
 
-          git("add", "-A", "images", HIST)
+          git("add", "-A", "images", "videos", HIST)
           git("commit", "-m", "Nouveau pin : " + pin["titre"][:60])
           git("push")
           sha = git("rev-parse", "HEAD")
           url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin}"
 
-          for _ in range(18):
-              try:
-                  if requests.get(url, timeout=15).status_code == 200:
-                      break
-              except Exception:
-                  pass
-              time.sleep(5)
-          else:
+          if not attendre_en_ligne(url):
               sys.exit("L'image n'est pas accessible en ligne : " + url)
+
+          video_url = None
+          if chemin_video and os.path.exists(chemin_video):
+              video_url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin_video}"
+              if not attendre_en_ligne(video_url):
+                  print("Vidéo pas accessible en ligne, on envoie le pin en image seule :", video_url)
+                  video_url = None
 
           TABLEAUX = {
               "sommeil": "600175156531998232",
@@ -273,7 +306,7 @@ jobs:
           }
 
           envoi = {"titre": pin["titre"], "description": pin["description"],
-                   "image_url": url, "lien": os.environ["LIEN_PAGE"],
+                   "image_url": url, "video_url": video_url or "", "lien": os.environ["LIEN_PAGE"],
                    "theme": theme, "tableau": TABLEAUX.get(theme, "600175156531995384")}
           r = requests.post(os.environ["MAKE_WEBHOOK_URL"], json=envoi, timeout=60)
           print("Réponse de Make :", r.status_code, r.text[:200])
