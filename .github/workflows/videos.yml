@@ -27,7 +27,7 @@ jobs:
 
       - name: Créer et envoyer un Video Pin
         env:
-          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          MAKE_WEBHOOK_URL_VIDEO: ${{ secrets.MAKE_WEBHOOK_URL_VIDEO }}
           LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
         run: |
           git config user.name "robot-pins"
@@ -222,7 +222,7 @@ jobs:
           envoi = {"titre": video["titre"], "description": video["description"],
                    "image_url": url_cover, "video_url": url_video, "lien": os.environ["LIEN_PAGE"],
                    "theme": video["theme"], "tableau": TABLEAUX.get(video["theme"], "600175156531995384")}
-          r = requests.post(os.environ["MAKE_WEBHOOK_URL"], json=envoi, timeout=60)
+          r = requests.post(os.environ["MAKE_WEBHOOK_URL_VIDEO"], json=envoi, timeout=60)
           print("Reponse de Make :", r.status_code, r.text[:200])
           if r.status_code >= 300:
               sys.exit("Make a refuse l'envoi.")

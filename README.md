@@ -41,7 +41,8 @@ Le token ne doit jamais être collé ailleurs que dans le champ "headers" de cro
 
 Dans **Settings → Secrets and variables → Actions** de ce dépôt :
 
-- `MAKE_WEBHOOK_URL` : l'URL du webhook du scénario Make.com
+- `MAKE_WEBHOOK_URL` : l'URL du webhook du scénario Make.com (pins classiques, image)
+- `MAKE_WEBHOOK_URL_VIDEO` : l'URL du webhook d'un **second** scénario Make.com, dédié aux Video Pins — voir section **Video Pins** ci-dessous
 - `LIEN_PAGE` : le lien vers lequel chaque pin doit renvoyer
 - `OPENAI_API_KEY` *(optionnel)* : voir section **Génération de fonds par IA** ci-dessous
 
@@ -65,11 +66,13 @@ Si le secret `OPENAI_API_KEY` est renseigné, chaque pin génère automatiquemen
 
 Un second workflow, séparé du premier, génère des **Video Pins** (format 9:16, 1080×1920) à partir de scripts en plusieurs scènes définis dans `videos.json` — chaque script décrit une suite de beats (image + texte + durée) qui racontent une info concrète (ex. une technique de respiration avec un chiffre précis), pas juste une ambiance. Les images de fond viennent soit de `fonds/`, soit de `videos_fonds/` (assets dédiés aux vidéos, plus grand format).
 
-À chaque exécution : choisit le prochain script non encore publié dans `videos.json` (suivi dans `historique_videos.json`, même logique que `pins.json`/`historique.json`), assemble les scènes avec zoom lent + fondus doux (ffmpeg), incruste le texte, commit la vidéo + une image de couverture dans `videopins/`, puis envoie le tout à Make.com (mêmes secrets `MAKE_WEBHOOK_URL` et `LIEN_PAGE` que le pin classique, plus les champs `video_url` et `image_url` de couverture).
+À chaque exécution : choisit le prochain script non encore publié dans `videos.json` (suivi dans `historique_videos.json`, même logique que `pins.json`/`historique.json`), assemble les scènes avec zoom lent + fondus doux (ffmpeg), incruste le texte, commit la vidéo + une image de couverture dans `videopins/`, puis envoie le tout au webhook `MAKE_WEBHOOK_URL_VIDEO` (secret séparé, plus `LIEN_PAGE`).
+
+**Important : ce workflow utilise un webhook Make.com différent de celui des pins classiques**, exprès — pour que le scénario Make existant (pins quotidiens, mode image) reste inchangé, et que seul le nouveau scénario dédié aux vidéos soit réglé en mode vidéo. Pas besoin de jongler entre les deux réglages.
 
 **Deux étapes manuelles restent nécessaires avant que ça publie vraiment sur Pinterest :**
 
-1. **Dans Make.com**, ouvrir le module Pinterest et changer le champ **"Type de source"** de "URL de l'image" à **"Vidéo"**, mapper `video_url` sur le nouveau champ vidéo, et garder `image_url` comme image de couverture. Tant que ce n'est pas fait, Make recevra bien les données mais ne saura pas les publier en vidéo.
+1. **Dans Make.com**, dupliquer ton scénario Pinterest existant (clic droit dessus → Dupliquer, ou "Créer une copie"), puis sur cette copie : ouvrir son module **Webhook** et créer un **nouveau** webhook dédié (ne pas réutiliser celui des pins classiques) — copie son URL, elle servira pour le secret `MAKE_WEBHOOK_URL_VIDEO`. Ensuite, sur le module **Pinterest** de cette copie, changer le champ **"Type de source"** de "URL de l'image" à **"Vidéo"**, mapper `video_url` sur le nouveau champ vidéo, et garder `image_url` comme image de couverture. Active ce nouveau scénario. Le scénario d'origine (pins classiques) reste tel quel, en mode image, avec son webhook d'origine.
 2. **Sur cron-job.org**, ajouter un deuxième cronjob (même méthode que celui de `pins.yml`, voir plus haut) pointant vers `https://api.github.com/repos/yacinenettour-cyber/pins-clarte/actions/workflows/videos.yml/dispatches`, réglé pour se déclencher **4 fois par semaine** (par exemple lundi/mercredi/vendredi/dimanche à une heure fixe).
 
 **Ajouter de nouveaux scripts vidéo** : compléter `videos.json` avec un nouvel objet `{id, theme, titre, description, beats}` — `id` doit être unique (sert au suivi anti-répétition), et chaque beat a `image` (chemin dans le dépôt), `texte` (max 2 lignes courtes) et `duree` (secondes). Sans nouveaux scripts, la banque s'épuise — prévoir d'en ajouter régulièrement, comme pour `pins.json`.
