@@ -29,11 +29,12 @@ jobs:
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           git config user.name "robot-pins"
           git config user.email "robot-pins@users.noreply.github.com"
           python - <<'EOF'
-          import os, json, random, re, time, datetime, subprocess, sys
+          import os, json, random, re, time, datetime, subprocess, sys, base64, io
           import requests
           from PIL import Image, ImageDraw, ImageFont
 
@@ -126,6 +127,39 @@ jobs:
               compte = sum(1 for h in historique
                            if themes.get(os.path.basename(h.get("fond") or ""), None) == theme)
               return os.path.join("fonds", sous_ensemble[compte % len(sous_ensemble)])
+
+
+          PROMPTS_THEME_IA = {
+              "sommeil": "Photographie lifestyle editoriale realiste : une femme adulte detendue en tenue confortable dans une chambre cosy le soir, lumiere chaude tamisee (lampe de chevet, bougie), teintes bleu nuit profond en arriere-plan, ambiance calme et apaisante. Composition verticale 2:3, bas de l'image sombre et sobre (peu de details) pour laisser la place a du texte en surimpression, haut de l'image plus riche visuellement. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "systemenerveux": "Photographie lifestyle editoriale realiste : une personne adulte en respiration profonde ou moment de calme, main posee sur la poitrine, lumiere douce naturelle doree, interieur chaleureux ou terrasse avec vue degagee, ambiance sereine. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "fatiguementale": "Photographie lifestyle editoriale realiste : une personne adulte visiblement epuisee mentalement, tete posee sur la main, regard vague, cadre domestique ou bureau, lumiere naturelle douce en fin de journee, teintes chaudes. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "alimentation": "Photographie culinaire lifestyle editoriale realiste : un bol de nourriture saine et coloree (legumes, fruits, super-aliments) prepare ou tenu par une personne adulte, cuisine lumineuse en bois clair, lumiere naturelle douce, ambiance chaleureuse. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "procrastination": "Photographie lifestyle editoriale realiste : une personne adulte distraite par son telephone en soiree, bureau encombre de notes et papiers, lumiere chaude tamisee, ambiance legerement desordonnee mais cosy. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "somatisation": "Photographie lifestyle editoriale realiste : une personne adulte ressentant une tension physique (nuque, epaules ou ventre), main posee sur la zone concernee, expression legerement crispee, interieur lumineux et epure, lumiere naturelle douce. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "blocagemental": "Photographie lifestyle editoriale realiste : une personne adulte debordee devant un ordinateur portable, papiers froisses autour, tete dans les mains, lumiere chaude en soiree, ambiance de surcharge mentale mais esthetique. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "posturesantistress": "Photographie lifestyle editoriale realiste : une personne adulte en pause active au bureau, etirement doux du cou ou des epaules, bureau lumineux avec plantes vertes, lumiere naturelle du jour, ambiance professionnelle detendue. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "energie": "Photographie lifestyle editoriale realiste : une personne adulte pleine d'energie et souriante, en exterieur au lever ou coucher du soleil, marche ou etirement joyeux, lumiere doree chaleureuse, paysage nature ou vue degagee. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+          }
+
+
+          def generer_fond_ia(theme, cle_api):
+              prompt = PROMPTS_THEME_IA.get(theme, PROMPTS_THEME_IA["systemenerveux"])
+              qualite = os.environ.get("OPENAI_IMAGE_QUALITY", "medium")
+              r = requests.post(
+                  "https://api.openai.com/v1/images/generations",
+                  headers={"Authorization": f"Bearer {cle_api}"},
+                  json={"model": "gpt-image-1.5", "prompt": prompt, "size": "1024x1536", "quality": qualite},
+                  timeout=120,
+              )
+              r.raise_for_status()
+              donnee = r.json()["data"][0]
+              if donnee.get("b64_json"):
+                  image_brute = base64.b64decode(donnee["b64_json"])
+              else:
+                  image_brute = requests.get(donnee["url"], timeout=60).content
+              chemin = "/tmp/fond_ia_" + theme + ".jpg"
+              Image.open(io.BytesIO(image_brute)).convert("RGB").save(chemin, "JPEG", quality=92)
+              return chemin
 
 
           def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond):
@@ -249,10 +283,24 @@ jobs:
           horodatage = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
           nom = "pin-" + horodatage + ".jpg"
           chemin = os.path.join("images", nom)
-          fond = choisir_fond(theme, historique)
+
+          cle_openai = os.environ.get("OPENAI_API_KEY")
+          fond = None
+          fond_etiquette = None
+          if cle_openai:
+              try:
+                  fond = generer_fond_ia(theme, cle_openai)
+                  fond_etiquette = "ia:" + theme
+                  print("Fond généré par IA (OpenAI) pour le thème :", theme)
+              except Exception as e:
+                  print("Échec de la génération IA, on retombe sur la banque de fonds :", e)
+          if not fond:
+              fond = choisir_fond(theme, historique)
+              fond_etiquette = fond
+
           dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
           print("Thème détecté :", theme)
-          print("Fond utilisé :", fond)
+          print("Fond utilisé :", fond_etiquette)
           print("Image créée :", chemin)
 
           chemin_video = os.path.join("videos", "pin-" + horodatage + ".mp4")
@@ -267,7 +315,7 @@ jobs:
               sys.exit(0)
 
           historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
-                             "titre": pin["titre"], "image": chemin, "fond": fond, "theme": theme})
+                             "titre": pin["titre"], "image": chemin, "fond": fond_etiquette, "theme": theme})
           json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
           limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)

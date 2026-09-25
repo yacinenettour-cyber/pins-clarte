@@ -43,12 +43,23 @@ Dans **Settings → Secrets and variables → Actions** de ce dépôt :
 
 - `MAKE_WEBHOOK_URL` : l'URL du webhook du scénario Make.com
 - `LIEN_PAGE` : le lien vers lequel chaque pin doit renvoyer
+- `OPENAI_API_KEY` *(optionnel)* : voir section **Génération de fonds par IA** ci-dessous
 
 ## Ajouter des images de fond
 
 Dépose n'importe quelle image `.png` / `.jpg` / `.jpeg` dans le dossier `fonds/`. Sans image dans ce dossier, un fond dégradé nuit étoilée est généré automatiquement.
 
 Pour que l'image reste cohérente avec le texte du pin, ajoute aussi une ligne dans `fonds_themes.json` du type `"fond-101.jpg": "sommeil"` (thèmes possibles : `sommeil`, `systemenerveux`, `fatiguementale`, `alimentation`, `procrastination`, `somatisation`, `energie`, `blocagemental`, `posturesantistress`). Une image non répertoriée dans ce fichier reste utilisable, mais seulement en dernier recours si aucune image du bon thème n'est disponible.
+
+Comme les fonds sont réutilisés par thème (pas globalement), un thème très publié avec peu de photos repasse vite sur les mêmes images. Pour viser un nombre de jours minimum sans répétition sur un thème donné, vise environ `(pins de ce thème par jour) × (jours voulus)` photos dans ce thème.
+
+## Génération de fonds par IA (optionnel)
+
+Si le secret `OPENAI_API_KEY` est renseigné, chaque pin génère automatiquement une photo de fond inédite via l'API OpenAI (`gpt-image-1.5`), adaptée au thème détecté — **plus aucune répétition possible**, la banque `fonds/` devient un simple filet de sécurité (utilisée seulement si la clé est absente ou si l'appel échoue).
+
+- **Coût estimé** : ~0,05 $/image en qualité `medium` (réglable via le secret optionnel `OPENAI_IMAGE_QUALITY` : `low`, `medium` ou `high`), soit environ 0,50 $/jour pour 10 pins → ~15 $/mois. En `low`, environ 4 $/mois.
+- **Avant d'activer** : les modèles `gpt-image-*` demandent parfois une vérification d'identité de l'organisation OpenAI (dans les paramètres de ton compte platform.openai.com) avant de fonctionner — si le premier appel échoue, vérifie ça en premier.
+- Sans ce secret, rien ne change : le système continue d'utiliser `fonds/` comme aujourd'hui.
 
 ## Lancer un test manuel
 
