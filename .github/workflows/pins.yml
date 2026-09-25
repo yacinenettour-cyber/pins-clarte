@@ -22,6 +22,9 @@ jobs:
 
       - run: pip install pillow requests
 
+      - name: Installer ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Créer et envoyer un pin
         env:
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
