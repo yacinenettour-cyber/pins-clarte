@@ -61,6 +61,20 @@ Si le secret `OPENAI_API_KEY` est renseigné, chaque pin génère automatiquemen
 - **Avant d'activer** : les modèles `gpt-image-*` demandent parfois une vérification d'identité de l'organisation OpenAI (dans les paramètres de ton compte platform.openai.com) avant de fonctionner — si le premier appel échoue, vérifie ça en premier.
 - Sans ce secret, rien ne change : le système continue d'utiliser `fonds/` comme aujourd'hui.
 
+## Video Pins (`.github/workflows/videos.yml`)
+
+Un second workflow, séparé du premier, génère des **Video Pins** (format 9:16, 1080×1920) à partir de scripts en plusieurs scènes définis dans `videos.json` — chaque script décrit une suite de beats (image + texte + durée) qui racontent une info concrète (ex. une technique de respiration avec un chiffre précis), pas juste une ambiance. Les images de fond viennent soit de `fonds/`, soit de `videos_fonds/` (assets dédiés aux vidéos, plus grand format).
+
+À chaque exécution : choisit le prochain script non encore publié dans `videos.json` (suivi dans `historique_videos.json`, même logique que `pins.json`/`historique.json`), assemble les scènes avec zoom lent + fondus doux (ffmpeg), incruste le texte, commit la vidéo + une image de couverture dans `videopins/`, puis envoie le tout à Make.com (mêmes secrets `MAKE_WEBHOOK_URL` et `LIEN_PAGE` que le pin classique, plus les champs `video_url` et `image_url` de couverture).
+
+**Deux étapes manuelles restent nécessaires avant que ça publie vraiment sur Pinterest :**
+
+1. **Dans Make.com**, ouvrir le module Pinterest et changer le champ **"Type de source"** de "URL de l'image" à **"Vidéo"**, mapper `video_url` sur le nouveau champ vidéo, et garder `image_url` comme image de couverture. Tant que ce n'est pas fait, Make recevra bien les données mais ne saura pas les publier en vidéo.
+2. **Sur cron-job.org**, ajouter un deuxième cronjob (même méthode que celui de `pins.yml`, voir plus haut) pointant vers `https://api.github.com/repos/yacinenettour-cyber/pins-clarte/actions/workflows/videos.yml/dispatches`, réglé pour se déclencher **4 fois par semaine** (par exemple lundi/mercredi/vendredi/dimanche à une heure fixe).
+
+**Ajouter de nouveaux scripts vidéo** : compléter `videos.json` avec un nouvel objet `{id, theme, titre, description, beats}` — `id` doit être unique (sert au suivi anti-répétition), et chaque beat a `image` (chemin dans le dépôt), `texte` (max 2 lignes courtes) et `duree` (secondes). Sans nouveaux scripts, la banque s'épuise — prévoir d'en ajouter régulièrement, comme pour `pins.json`.
+
 ## Lancer un test manuel
 
-Onglet **Actions** → workflow **Pins Pinterest** → bouton **Run workflow**.
+- Pins classiques : onglet **Actions** → workflow **Pins Pinterest** → bouton **Run workflow**.
+- Video Pins : onglet **Actions** → workflow **Pins Pinterest - Videos** → bouton **Run workflow**.

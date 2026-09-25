@@ -1,0 +1,227 @@
+name: Pins Pinterest - Videos
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: videos
+  cancel-in-progress: false
+
+jobs:
+  publier_video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pillow requests
+
+      - name: Créer et envoyer un Video Pin
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
+        run: |
+          git config user.name "robot-pins"
+          git config user.email "robot-pins@users.noreply.github.com"
+          python - <<'EOF'
+          import os, json, subprocess, sys, datetime, time
+          import requests
+          from PIL import Image
+
+          MARQUE = "Clarté Mentale | Stress & Énergie"
+          TEST = os.environ.get("TEST") == "1"
+          FPS = 25
+          X = 0.3  # duree des fondus entre scenes (secondes)
+          OUT_W, OUT_H = 1080, 1920
+
+          HIST = "historique_videos.json"
+          historique = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
+
+          def telecharger_police(nom, url, secours):
+              try:
+                  r = requests.get(url, timeout=30)
+                  r.raise_for_status()
+                  open(nom, "wb").write(r.content)
+                  return nom
+              except Exception:
+                  return secours if os.path.exists(secours) else None
+
+          police = telecharger_police("Poppins-Bold.ttf",
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+          if not police:
+              police = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+          def git(*args):
+              return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
+
+          def run(cmd):
+              r = subprocess.run(cmd, capture_output=True, text=True)
+              if r.returncode != 0:
+                  print(" ".join(cmd))
+                  print(r.stderr[-3000:])
+                  raise RuntimeError("Commande ffmpeg echouee")
+
+          def preparer_image(chemin_source, chemin_sortie):
+              img = Image.open(chemin_source).convert("RGB")
+              r = max(OUT_W / img.width, OUT_H / img.height)
+              img2 = img.resize((round(img.width * r), round(img.height * r)), Image.LANCZOS)
+              x = (img2.width - OUT_W) // 2
+              y = (img2.height - OUT_H) // 2
+              img2.crop((x, y, x + OUT_W, y + OUT_H)).save(chemin_sortie, "JPEG", quality=93)
+
+          def rendre_scene(image_prete, duree, index, tmp):
+              clip = os.path.join(tmp, f"scene{index}.mp4")
+              d_frames = round(duree * FPS)
+              run(["ffmpeg", "-y", "-loop", "1", "-t", str(duree), "-i", image_prete,
+                   "-vf", f"zoompan=z='min(zoom+0.0010,1.07)':d={d_frames}:s={OUT_W}x{OUT_H}:fps={FPS},setsar=1",
+                   "-t", str(duree), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS), clip])
+              return clip
+
+          def calc_offsets(durees):
+              offsets, cum = [], 0.0
+              for i, d in enumerate(durees[:-1]):
+                  cum += d
+                  offsets.append(round(cum - X * (i + 1), 3))
+              total = round(sum(durees) - X * (len(durees) - 1), 3)
+              return offsets, total
+
+          def calc_fenetres_texte(durees, offsets, total):
+              fenetres, debut = [], 0.0
+              for off in offsets:
+                  fenetres.append((debut, off))
+                  debut = off + X
+              fenetres.append((debut, total))
+              return fenetres
+
+          def assembler(clips, offsets, tmp):
+              n = len(clips)
+              inputs = []
+              for c in clips:
+                  inputs += ["-i", c]
+              parts, prev = [], "0:v"
+              for i in range(1, n):
+                  out = f"v{i}" if i < n - 1 else "vout"
+                  parts.append(f"[{prev}][{i}:v]xfade=transition=fade:duration={X}:offset={offsets[i-1]}[{out}]")
+                  prev = out
+              sortie = os.path.join(tmp, "composite.mp4")
+              run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(parts),
+                   "-map", f"[{prev}]", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS), sortie])
+              return sortie
+
+          def ajouter_textes(composite, beats, fenetres, tmp):
+              dt = (f"fontfile={police}:fontcolor=white:fontsize=58:line_spacing=14:text_align=C:"
+                    f"borderw=4:bordercolor=black@0.9:shadowcolor=black@0.6:shadowx=0:shadowy=4:"
+                    f"x=(w-text_w)/2:y=1740")
+              filtres = []
+              for i, (beat, (debut, fin)) in enumerate(zip(beats, fenetres)):
+                  txt_path = os.path.join(tmp, f"texte{i}.txt")
+                  open(txt_path, "w", encoding="utf-8").write(beat["texte"])
+                  filtres.append(f"drawtext=textfile={txt_path}:{dt}:enable='between(t,{debut},{fin})'")
+              sortie = os.path.join(tmp, "with_text.mp4")
+              run(["ffmpeg", "-y", "-i", composite, "-vf", ",".join(filtres),
+                   "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS), sortie])
+              return sortie
+
+          def attendre_en_ligne(url, essais=18, pause=5):
+              for _ in range(essais):
+                  try:
+                      if requests.get(url, timeout=15).status_code == 200:
+                          return True
+                  except Exception:
+                      pass
+                  time.sleep(pause)
+              return False
+
+          banque = json.load(open("videos.json", encoding="utf-8"))
+          faits = {h["id"] for h in historique}
+          restants = [v for v in banque if v["id"] not in faits]
+          if not restants:
+              sys.exit("Banque de videos vide : ajoute de nouveaux scripts dans videos.json.")
+          video = restants[0]
+          print("Videos restantes dans la banque :", len(restants))
+          print("Video choisie :", video["id"])
+
+          tmp = "tmp_video"
+          os.makedirs(tmp, exist_ok=True)
+          os.makedirs("videopins", exist_ok=True)
+
+          durees = [b["duree"] for b in video["beats"]]
+          offsets, total = calc_offsets(durees)
+          fenetres = calc_fenetres_texte(durees, offsets, total)
+          print("Duree finale estimee :", total, "s")
+
+          clips = []
+          for i, beat in enumerate(video["beats"]):
+              prete = os.path.join(tmp, f"img{i}.jpg")
+              preparer_image(beat["image"], prete)
+              clips.append(rendre_scene(prete, beat["duree"], i, tmp))
+
+          composite = assembler(clips, offsets, tmp)
+          with_text = ajouter_textes(composite, video["beats"], fenetres, tmp)
+
+          horodatage = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
+          nom_video = f"videopins/videopin-{horodatage}.mp4"
+          nom_cover = f"videopins/videopin-{horodatage}.jpg"
+
+          run(["ffmpeg", "-y", "-i", with_text, "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+               "-c:v", "copy", "-c:a", "aac", "-shortest", nom_video])
+          run(["ffmpeg", "-y", "-i", with_text, "-vframes", "1", "-update", "1", nom_cover])
+
+          print("Video creee :", nom_video)
+
+          if TEST:
+              sys.exit(0)
+
+          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
+          for ancien in os.listdir("videopins"):
+              try:
+                  date_fichier = datetime.datetime.strptime(ancien[9:17], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
+              except ValueError:
+                  continue
+              if date_fichier < limite and os.path.join("videopins", ancien) not in (nom_video, nom_cover):
+                  os.remove(os.path.join("videopins", ancien))
+
+          git("add", "-A", "videopins", HIST)
+          historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+                              "id": video["id"], "titre": video["titre"], "video": nom_video,
+                              "cover": nom_cover, "theme": video["theme"]})
+          json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          git("add", HIST)
+          git("commit", "-m", "Nouvelle video : " + video["titre"][:60])
+          git("push")
+          sha = git("rev-parse", "HEAD")
+
+          url_video = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{nom_video}"
+          url_cover = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{nom_cover}"
+
+          if not attendre_en_ligne(url_cover) or not attendre_en_ligne(url_video):
+              sys.exit("Fichiers pas accessibles en ligne.")
+
+          TABLEAUX = {
+              "sommeil": "600175156531998232",
+              "systemenerveux": "600175156531995384",
+              "fatiguementale": "600175156531997290",
+              "alimentation": "600175156532001498",
+              "procrastination": "600175156532025119",
+              "somatisation": "600175156532027560",
+              "blocagemental": "600175156532029245",
+              "posturesantistress": "600175156532003400",
+              "energie": "600175156532025122",
+          }
+
+          envoi = {"titre": video["titre"], "description": video["description"],
+                   "image_url": url_cover, "video_url": url_video, "lien": os.environ["LIEN_PAGE"],
+                   "theme": video["theme"], "tableau": TABLEAUX.get(video["theme"], "600175156531995384")}
+          r = requests.post(os.environ["MAKE_WEBHOOK_URL"], json=envoi, timeout=60)
+          print("Reponse de Make :", r.status_code, r.text[:200])
+          if r.status_code >= 300:
+              sys.exit("Make a refuse l'envoi.")
+          print("Video pin envoyee :", video["titre"])
+          EOF

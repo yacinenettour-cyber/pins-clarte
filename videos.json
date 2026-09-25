@@ -1,0 +1,30 @@
+[
+  {
+    "id": "systemenerveux-notifications-respiration",
+    "theme": "systemenerveux",
+    "titre": "Pourquoi ton corps réagit à chaque notification (et comment le calmer)",
+    "description": "Chaque bip, chaque vibration, ton système nerveux y répond comme à une alerte réelle. Résultat : cœur qui s'accélère, ventre noué, mâchoire serrée, même sans danger. Une respiration plus longue à l'expiration qu'à l'inspiration (4 secondes puis 6) active le nerf vague et ralentit ton rythme cardiaque presque immédiatement. #systemenerveux #respiration #stress #anxiete #coherencecardiaque",
+    "beats": [
+      {"image": "videos_fonds/video-nerveux-01.jpg", "texte": "Chaque notification\nréveille ton stress", "duree": 2.0},
+      {"image": "videos_fonds/video-nerveux-02.jpg", "texte": "Il se loge dans ton cœur,\nton ventre, ta mâchoire", "duree": 2.2},
+      {"image": "videos_fonds/video-nerveux-03.jpg", "texte": "Un seul geste peut\ntout changer", "duree": 1.8},
+      {"image": "videos_fonds/video-nerveux-04.jpg", "texte": "Inspire 4 secondes,\nexpire 6 secondes", "duree": 2.8},
+      {"image": "videos_fonds/video-nerveux-05.jpg", "texte": "Ton rythme cardiaque\nralentit aussitôt", "duree": 2.2},
+      {"image": "videos_fonds/video-nerveux-06.jpg", "texte": "Sauvegarde ce Pin\npour ce soir", "duree": 2.2}
+    ]
+  },
+  {
+    "id": "sommeil-liste-du-lendemain",
+    "theme": "sommeil",
+    "titre": "Ruminations le soir : le geste en 2 étapes pour lâcher prise",
+    "description": "Si ton cerveau ressasse la nuit, c'est souvent qu'il a peur d'oublier quelque chose d'important pour demain. Le soir, note tout ce qui doit être fait, même les petites choses, et ajoute à côté de chaque ligne la première action concrète. Ce transfert sur le papier envoie un signal clair à ton cerveau : c'est noté, tu peux lâcher. #ruminations #sommeil #chargementale #organisation #lacherprise",
+    "beats": [
+      {"image": "fonds/fond-101.jpg", "texte": "Le mental qui redémarre\nquand tu te couches ?", "duree": 2.0},
+      {"image": "fonds/fond-96.jpg", "texte": "Il a peur d'oublier\nquelque chose", "duree": 2.2},
+      {"image": "fonds/fond-125.jpg", "texte": "Note tout ce qui doit\nêtre fait demain", "duree": 2.2},
+      {"image": "fonds/fond-92.jpg", "texte": "Ajoute l'action concrète\nà côté de chaque ligne", "duree": 2.8},
+      {"image": "fonds/fond-18.jpg", "texte": "C'est noté. Tu peux\nlâcher, maintenant", "duree": 2.2},
+      {"image": "fonds/fond-108.jpg", "texte": "Sauvegarde ce Pin\npour ce soir", "duree": 2.2}
+    ]
+  }
+]
