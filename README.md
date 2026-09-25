@@ -79,5 +79,7 @@ Un second workflow, séparé du premier, génère des **Video Pins** (format 9:1
 
 ## Lancer un test manuel
 
-- Pins classiques : onglet **Actions** → workflow **Pins Pinterest** → bouton **Run workflow**.
-- Video Pins : onglet **Actions** → workflow **Pins Pinterest - Videos** → bouton **Run workflow**.
+- Pins classiques : onglet **Actions** → workflow **Pins Pinterest** → bouton **Run workflow** → choisir **test** dans le menu **Mode**.
+- Video Pins : onglet **Actions** → workflow **Pins Pinterest - Videos** → bouton **Run workflow** → choisir **test** dans le menu **Mode**.
+
+En mode **test**, le script s'arrête juste après avoir généré l'image/la vidéo (visible dans les logs), sans rien publier sur Pinterest ni consommer de pin/script dans la banque — utile pour vérifier qu'une modification du code fonctionne sans gâcher un vrai pin. Le mode **publier** (par défaut) fait une vraie publication, exactement comme le déclenchement automatique de cron-job.org, qui n'envoie pas d'inputs et reste donc toujours en mode publier.

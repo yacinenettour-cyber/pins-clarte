@@ -2,6 +2,12 @@ name: Pins Pinterest
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Mode (cron-job.org utilise toujours 'publier' : le declenchement automatique n'envoie pas d'inputs, donc ne passe jamais en mode test)"
+        type: choice
+        options: [publier, test]
+        default: publier
 
 permissions:
   contents: write
@@ -27,6 +33,7 @@ jobs:
 
       - name: Créer et envoyer un pin
         env:
+          TEST: ${{ github.event.inputs.mode == 'test' && '1' || '' }}
           MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
           LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
