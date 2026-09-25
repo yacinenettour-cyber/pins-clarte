@@ -1,30 +1,1142 @@
 [
-  {
-    "id": "systemenerveux-notifications-respiration",
-    "theme": "systemenerveux",
-    "titre": "Pourquoi ton corps réagit à chaque notification (et comment le calmer)",
-    "description": "Chaque bip, chaque vibration, ton système nerveux y répond comme à une alerte réelle. Résultat : cœur qui s'accélère, ventre noué, mâchoire serrée, même sans danger. Une respiration plus longue à l'expiration qu'à l'inspiration (4 secondes puis 6) active le nerf vague et ralentit ton rythme cardiaque presque immédiatement. #systemenerveux #respiration #stress #anxiete #coherencecardiaque",
-    "beats": [
-      {"image": "videos_fonds/video-nerveux-01.jpg", "texte": "Chaque notification\nréveille ton stress", "duree": 2.0},
-      {"image": "videos_fonds/video-nerveux-02.jpg", "texte": "Il se loge dans ton cœur,\nton ventre, ta mâchoire", "duree": 2.2},
-      {"image": "videos_fonds/video-nerveux-03.jpg", "texte": "Un seul geste peut\ntout changer", "duree": 1.8},
-      {"image": "videos_fonds/video-nerveux-04.jpg", "texte": "Inspire 4 secondes,\nexpire 6 secondes", "duree": 2.8},
-      {"image": "videos_fonds/video-nerveux-05.jpg", "texte": "Ton rythme cardiaque\nralentit aussitôt", "duree": 2.2},
-      {"image": "videos_fonds/video-nerveux-06.jpg", "texte": "Sauvegarde ce Pin\npour ce soir", "duree": 2.2}
-    ]
-  },
-  {
-    "id": "sommeil-liste-du-lendemain",
-    "theme": "sommeil",
-    "titre": "Ruminations le soir : le geste en 2 étapes pour lâcher prise",
-    "description": "Si ton cerveau ressasse la nuit, c'est souvent qu'il a peur d'oublier quelque chose d'important pour demain. Le soir, note tout ce qui doit être fait, même les petites choses, et ajoute à côté de chaque ligne la première action concrète. Ce transfert sur le papier envoie un signal clair à ton cerveau : c'est noté, tu peux lâcher. #ruminations #sommeil #chargementale #organisation #lacherprise",
-    "beats": [
-      {"image": "fonds/fond-101.jpg", "texte": "Le mental qui redémarre\nquand tu te couches ?", "duree": 2.0},
-      {"image": "fonds/fond-96.jpg", "texte": "Il a peur d'oublier\nquelque chose", "duree": 2.2},
-      {"image": "fonds/fond-125.jpg", "texte": "Note tout ce qui doit\nêtre fait demain", "duree": 2.2},
-      {"image": "fonds/fond-92.jpg", "texte": "Ajoute l'action concrète\nà côté de chaque ligne", "duree": 2.8},
-      {"image": "fonds/fond-18.jpg", "texte": "C'est noté. Tu peux\nlâcher, maintenant", "duree": 2.2},
-      {"image": "fonds/fond-108.jpg", "texte": "Sauvegarde ce Pin\npour ce soir", "duree": 2.2}
-    ]
-  }
+ {
+  "id": "systemenerveux-notifications-respiration",
+  "theme": "systemenerveux",
+  "titre": "Pourquoi ton corps réagit à chaque notification (et comment le calmer)",
+  "description": "Chaque bip, chaque vibration, ton système nerveux y répond comme à une alerte réelle. Résultat : cœur qui s'accélère, ventre noué, mâchoire serrée, même sans danger. Une respiration plus longue à l'expiration qu'à l'inspiration (4 secondes puis 6) active le nerf vague et ralentit ton rythme cardiaque presque immédiatement. #systemenerveux #respiration #stress #anxiete #coherencecardiaque",
+  "beats": [
+   {
+    "image": "videos_fonds/video-nerveux-01.jpg",
+    "texte": "Chaque notification\nréveille ton stress",
+    "duree": 2.0
+   },
+   {
+    "image": "videos_fonds/video-nerveux-02.jpg",
+    "texte": "Il se loge dans ton cœur,\nton ventre, ta mâchoire",
+    "duree": 2.2
+   },
+   {
+    "image": "videos_fonds/video-nerveux-03.jpg",
+    "texte": "Un seul geste peut\ntout changer",
+    "duree": 1.8
+   },
+   {
+    "image": "videos_fonds/video-nerveux-04.jpg",
+    "texte": "Inspire 4 secondes,\nexpire 6 secondes",
+    "duree": 2.8
+   },
+   {
+    "image": "videos_fonds/video-nerveux-05.jpg",
+    "texte": "Ton rythme cardiaque\nralentit aussitôt",
+    "duree": 2.2
+   },
+   {
+    "image": "videos_fonds/video-nerveux-06.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-liste-du-lendemain",
+  "theme": "sommeil",
+  "titre": "Ruminations le soir : le geste en 2 étapes pour lâcher prise",
+  "description": "Si ton cerveau ressasse la nuit, c'est souvent qu'il a peur d'oublier quelque chose d'important pour demain. Le soir, note tout ce qui doit être fait, même les petites choses, et ajoute à côté de chaque ligne la première action concrète. Ce transfert sur le papier envoie un signal clair à ton cerveau : c'est noté, tu peux lâcher. #ruminations #sommeil #chargementale #organisation #lacherprise",
+  "beats": [
+   {
+    "image": "fonds/fond-101.jpg",
+    "texte": "Le mental qui redémarre\nquand tu te couches ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-96.jpg",
+    "texte": "Il a peur d'oublier\nquelque chose",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-125.jpg",
+    "texte": "Note tout ce qui doit\nêtre fait demain",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-92.jpg",
+    "texte": "Ajoute l'action concrète\nà côté de chaque ligne",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-18.jpg",
+    "texte": "C'est noté. Tu peux\nlâcher, maintenant",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-108.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-regle-des-20-minutes",
+  "theme": "sommeil",
+  "titre": "Pourquoi rester au lit éveillé entretient l'insomnie",
+  "description": "Plus tu restes au lit à attendre le sommeil, plus ton cerveau associe le lit à l'éveil et à la frustration. La règle des 20 minutes casse ce cercle : si tu ne dors pas, lève-toi, lumière faible, activité calme et ennuyeuse, puis reviens seulement quand les paupières tombent. #sommeil #insomnie #endormissement #routinedusoir #stress",
+  "beats": [
+   {
+    "image": "fonds/fond-04.jpg",
+    "texte": "Tu fixes le plafond\ndepuis une heure ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-06.jpg",
+    "texte": "Ton cerveau associe\nle lit à la lutte",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-08.jpg",
+    "texte": "Au bout de 20 minutes,\nlève-toi",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-101.jpg",
+    "texte": "Lumière faible,\nactivité ennuyeuse",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-108.jpg",
+    "texte": "Reviens quand tes\npaupières tombent",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-11.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-lumiere-du-soir",
+  "theme": "sommeil",
+  "titre": "La lumière du soir qui retarde ton endormissement sans que tu le saches",
+  "description": "Les plafonniers puissants et les écrans le soir envoient à ton cerveau un signal de plein jour. La mélatonine, l'hormone qui prépare au sommeil, arrive alors plus tard. Une heure avant de dormir, passe en lumière basse et chaude (lampe d'appoint, pas de plafonnier) et baisse la luminosité de ton téléphone. #sommeil #lumiere #ecrans #rythmecircadien #routinedusoir",
+  "beats": [
+   {
+    "image": "fonds/fond-111.jpg",
+    "texte": "Tu n'as jamais sommeil\navant minuit ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-121.jpg",
+    "texte": "Ta lumière dit à ton\ncerveau : il fait jour",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-123.jpg",
+    "texte": "La mélatonine\narrive plus tard",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-125.jpg",
+    "texte": "1h avant : lampe basse\net lumière chaude",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-126.jpg",
+    "texte": "Le sommeil revient\nà l'heure",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-127.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-reveil-3h",
+  "theme": "sommeil",
+  "titre": "Réveillé à 3h du matin : ce que ton corps essaie de te dire",
+  "description": "Se réveiller vers 3h avec le mental qui s'emballe est fréquent en période de stress : le cortisol remonte naturellement en fin de nuit, et un système nerveux déjà sous tension réagit plus fort. Ne regarde pas l'heure, garde la lumière éteinte et allonge ton expiration : inspire 4 secondes, expire 8. #reveilnocturne #sommeil #cortisol #stress #insomnie",
+  "beats": [
+   {
+    "image": "fonds/fond-129.jpg",
+    "texte": "Réveillé à 3h,\nla tête pleine ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-131.jpg",
+    "texte": "Le cortisol remonte\nen fin de nuit",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-134.jpg",
+    "texte": "Le stress amplifie\nce réveil",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-135.jpg",
+    "texte": "Ne regarde pas\nl'heure",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-136.jpg",
+    "texte": "Inspire 4 secondes,\nexpire 8 secondes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-138.jpg",
+    "texte": "Sauvegarde ce Pin\npour cette nuit",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-temperature-chambre",
+  "theme": "sommeil",
+  "titre": "La température de ta chambre joue plus que tu ne le crois sur ton sommeil",
+  "description": "Pour s'endormir, le corps doit faire baisser sa température interne d'environ un degré. Une chambre trop chaude freine ce mécanisme et rend le sommeil plus léger. Vise environ 18 °C, aère 10 minutes avant de te coucher, et une douche tiède (pas froide) une heure avant aide aussi le corps à se refroidir. #sommeil #endormissement #routinedusoir #insomnie #recuperation",
+  "beats": [
+   {
+    "image": "fonds/fond-140.jpg",
+    "texte": "Tu te tournes\net retournes ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-143.jpg",
+    "texte": "Ton corps doit baisser\nd'1 °C pour dormir",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-147.jpg",
+    "texte": "Une chambre chaude\nbloque ce signal",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-150.jpg",
+    "texte": "Vise environ 18 °C\net aère 10 minutes",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-18.jpg",
+    "texte": "Douche tiède\n1h avant le coucher",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-20.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-cafe-apres-14h",
+  "theme": "sommeil",
+  "titre": "Ton café de l'après-midi est encore dans ton sang au moment de dormir",
+  "description": "La caféine a une demi-vie d'environ 5 à 6 heures : la moitié d'un café bu à 16h est encore active vers 22h. Même si tu t'endors, ton sommeil profond peut être plus court. Essaie une semaine sans caféine après 14h (café, thé noir, sodas, chocolat noir) et observe ta qualité de sommeil. #sommeil #cafeine #insomnie #alimentation #energie",
+  "beats": [
+   {
+    "image": "fonds/fond-26.jpg",
+    "texte": "Café à 16h ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-27.jpg",
+    "texte": "La moitié agit\nencore à 22h",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-35.jpg",
+    "texte": "Ton sommeil profond\nraccourcit",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-38.jpg",
+    "texte": "Stop caféine\naprès 14h",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-40.jpg",
+    "texte": "Teste une semaine\net compare",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-41.jpg",
+    "texte": "Sauvegarde ce Pin\npour t'en souvenir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-dimanche-soir",
+  "theme": "sommeil",
+  "titre": "Le blues du dimanche soir qui t'empêche de dormir (et comment l'alléger)",
+  "description": "Le dimanche soir, le cerveau anticipe toute la semaine d'un coup, et l'anxiété d'anticipation retarde l'endormissement. Prends 10 minutes en fin d'après-midi : écris les 3 priorités de lundi, rien de plus. Le cerveau lâche plus facilement ce qui est posé sur papier. #dimanchesoir #sommeil #anxiete #chargementale #routinedusoir",
+  "beats": [
+   {
+    "image": "fonds/fond-47.jpg",
+    "texte": "Le dimanche soir,\nça tourne en boucle ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-51.jpg",
+    "texte": "Ton cerveau anticipe\ntoute la semaine",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-54.jpg",
+    "texte": "Prends 10 minutes\nen fin d'après-midi",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-63.jpg",
+    "texte": "Écris les 3 priorités\nde lundi, pas plus",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-64.jpg",
+    "texte": "Ton mental peut\nenfin décrocher",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-71.jpg",
+    "texte": "Sauvegarde ce Pin\npour dimanche",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-sieste-20-minutes",
+  "theme": "sommeil",
+  "titre": "La sieste idéale dure 20 minutes : au-delà, tu te réveilles plus fatigué",
+  "description": "Au-delà de 20 à 30 minutes, tu entres en sommeil profond et le réveil devient pâteux. Une sieste courte, avant 15h, recharge l'attention sans voler le sommeil de la nuit. Mets un minuteur sur 20 minutes, même si tu ne t'endors pas : simplement fermer les yeux repose déjà. #sieste #sommeil #energie #fatigue #recuperation",
+  "beats": [
+   {
+    "image": "fonds/fond-79.jpg",
+    "texte": "Tu te réveilles de la\nsieste encore plus K.O. ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-81.jpg",
+    "texte": "Après 30 minutes,\nc'est le sommeil profond",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-85.jpg",
+    "texte": "La sieste idéale :\n20 minutes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-92.jpg",
+    "texte": "Avant 15h,\nminuteur réglé",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-96.jpg",
+    "texte": "Même les yeux fermés,\nça recharge",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-04.jpg",
+    "texte": "Sauvegarde ce Pin\npour demain",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "systemenerveux-soupir-physiologique",
+  "theme": "systemenerveux",
+  "titre": "Le soupir physiologique : la respiration la plus rapide pour redescendre",
+  "description": "Deux inspirations par le nez (une longue, puis une petite pour remplir à fond), puis une longue expiration par la bouche. C'est le soupir physiologique, le réflexe naturel du corps pour évacuer la tension. 2 ou 3 cycles suffisent souvent à faire baisser la pression en moins d'une minute. #respiration #systemenerveux #stress #anxiete #calme",
+  "beats": [
+   {
+    "image": "fonds/fond-02.jpg",
+    "texte": "Besoin de redescendre\nen moins d'une minute ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-03.jpg",
+    "texte": "Inspire par le nez...",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-10.jpg",
+    "texte": "...puis une 2e petite\ninspiration",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-107.jpg",
+    "texte": "Expire très longtemps\npar la bouche",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-115.jpg",
+    "texte": "2 ou 3 cycles\nsuffisent souvent",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-12.jpg",
+    "texte": "Sauvegarde ce Pin\npour ta prochaine crise",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "systemenerveux-coherence-365",
+  "theme": "systemenerveux",
+  "titre": "Cohérence cardiaque 365 : la méthode simple pour réguler ton stress",
+  "description": "3 fois par jour, 6 respirations par minute, pendant 5 minutes : c'est la règle 365. Inspire 5 secondes, expire 5 secondes. Pratiquée régulièrement, elle aide ton système nerveux à retrouver de la souplesse face au stress. Le matin, avant le déjeuner et en fin d'après-midi. #coherencecardiaque #respiration #systemenerveux #stress #anxiete",
+  "beats": [
+   {
+    "image": "fonds/fond-124.jpg",
+    "texte": "Ton stress monte\nsans prévenir ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-128.jpg",
+    "texte": "La règle 365",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-13.jpg",
+    "texte": "3 fois par jour,\n6 respirations/minute",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-130.jpg",
+    "texte": "Pendant 5 minutes :\ninspire 5 s, expire 5 s",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-132.jpg",
+    "texte": "Ton système nerveux\ngagne en souplesse",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-133.jpg",
+    "texte": "Sauvegarde ce Pin\npour t'y mettre",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "systemenerveux-machoire-serree",
+  "theme": "systemenerveux",
+  "titre": "Ta mâchoire serrée en dit long sur ton niveau de stress",
+  "description": "Beaucoup de gens serrent les dents sans s'en rendre compte, surtout devant un écran. Cette tension entretient le signal d'alerte dans le corps. Plusieurs fois par jour, vérifie : lèvres fermées, dents écartées, langue posée derrière les dents du haut. Relâche en expirant lentement. #systemenerveux #stress #detente #tensions #anxiete",
+  "beats": [
+   {
+    "image": "fonds/fond-139.jpg",
+    "texte": "Tu serres les dents\nsans t'en rendre compte ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-141.jpg",
+    "texte": "Ta mâchoire garde\nle stress actif",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-142.jpg",
+    "texte": "Lèvres fermées,\ndents écartées",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-145.jpg",
+    "texte": "Langue derrière\nles dents du haut",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-146.jpg",
+    "texte": "Expire lentement,\nrelâche",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-148.jpg",
+    "texte": "Sauvegarde ce Pin\ncomme rappel",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "systemenerveux-eau-froide-visage",
+  "theme": "systemenerveux",
+  "titre": "L'astuce de l'eau froide sur le visage pour calmer une montée d'angoisse",
+  "description": "Asperger ton visage d'eau froide (ou poser une poche fraîche sur les yeux et les joues) en retenant brièvement ton souffle déclenche le réflexe de plongée : le rythme cardiaque ralentit. Un geste simple quand l'émotion déborde, à utiliser en complément, pas à la place d'un accompagnement si l'anxiété est forte. #anxiete #systemenerveux #stress #calme #detente",
+  "beats": [
+   {
+    "image": "fonds/fond-149.jpg",
+    "texte": "Une vague d'angoisse\nqui monte ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-23.jpg",
+    "texte": "Eau froide\nsur le visage",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-28.jpg",
+    "texte": "Retiens ton souffle\nquelques secondes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-42.jpg",
+    "texte": "Le cœur ralentit\nnaturellement",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-48.jpg",
+    "texte": "Un réflexe inscrit\ndans ton corps",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-60.jpg",
+    "texte": "Sauvegarde ce Pin\npour les jours durs",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "systemenerveux-expiration-longue",
+  "theme": "systemenerveux",
+  "titre": "Pourquoi expirer plus longtemps qu'inspirer calme ton corps",
+  "description": "À l'inspiration, le cœur accélère légèrement. À l'expiration, il ralentit. En allongeant volontairement l'expiration (le double de l'inspiration), tu fais pencher la balance vers le calme. Essaie : inspire 3 secondes, expire 6 secondes, pendant 2 minutes. #respiration #systemenerveux #stress #coherencecardiaque #calme",
+  "beats": [
+   {
+    "image": "fonds/fond-66.jpg",
+    "texte": "À l'inspiration,\nle cœur accélère",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-72.jpg",
+    "texte": "À l'expiration,\nil ralentit",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-87.jpg",
+    "texte": "Allonge donc\nl'expiration",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-93.jpg",
+    "texte": "Inspire 3 secondes,\nexpire 6 secondes",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-02.jpg",
+    "texte": "2 minutes suffisent\npour le sentir",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-03.jpg",
+    "texte": "Sauvegarde ce Pin\npour t'entraîner",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "systemenerveux-marche-apres-reunion",
+  "theme": "systemenerveux",
+  "titre": "5 minutes de marche après une réunion tendue changent tout",
+  "description": "Après une situation stressante, le corps a préparé de l'énergie pour agir, et elle reste coincée si tu enchaînes assis. 5 minutes de marche, même dans un couloir ou autour du bâtiment, aident à évacuer ce trop-plein et à retrouver les idées claires. #stress #systemenerveux #travail #anxiete #energie",
+  "beats": [
+   {
+    "image": "fonds/fond-10.jpg",
+    "texte": "Réunion tendue,\ncorps sous pression ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-107.jpg",
+    "texte": "Ton corps s'est\npréparé à agir",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-115.jpg",
+    "texte": "Cette énergie reste\ncoincée si tu restes assis",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-12.jpg",
+    "texte": "5 minutes de marche,\nmême dans un couloir",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-124.jpg",
+    "texte": "Le trop-plein\nretombe",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-128.jpg",
+    "texte": "Sauvegarde ce Pin\npour demain",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "fatiguementale-regle-des-2-minutes",
+  "theme": "fatiguementale",
+  "titre": "La charge mentale des petites tâches qui t'épuise sans que tu le voies",
+  "description": "Chaque petite tâche en attente occupe un coin de ta tête. Règle des 2 minutes : si ça prend moins de 2 minutes, fais-le tout de suite. Sinon, note-le immédiatement quelque part de fiable. Ton cerveau arrête alors de s'en souvenir en boucle. #chargementale #fatiguementale #organisation #stress #clarte",
+  "beats": [
+   {
+    "image": "fonds/fond-100.jpg",
+    "texte": "Épuisé sans avoir\n« rien fait » ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-110.jpg",
+    "texte": "Chaque tâche en attente\noccupe ta tête",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-116.jpg",
+    "texte": "Moins de 2 minutes ?\nFais-le maintenant",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-67.jpg",
+    "texte": "Sinon, note-le\ntout de suite",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-73.jpg",
+    "texte": "Ta tête se libère\npetit à petit",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-74.jpg",
+    "texte": "Sauvegarde ce Pin\npour t'organiser",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "fatiguementale-pauses-90-minutes",
+  "theme": "fatiguementale",
+  "titre": "Ton cerveau fonctionne par cycles de 90 minutes : voici comment en profiter",
+  "description": "La concentration suit des cycles d'environ 90 minutes, suivis d'un creux naturel. Forcer pendant ce creux épuise plus vite. Toutes les 90 minutes, fais une vraie pause de 10 minutes : sans écran, debout, en regardant au loin. #fatiguementale #concentration #energie #travail #recuperation",
+  "beats": [
+   {
+    "image": "fonds/fond-77.jpg",
+    "texte": "Tu décroches\nen plein après-midi ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-84.jpg",
+    "texte": "Ton cerveau travaille\npar cycles de 90 min",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-86.jpg",
+    "texte": "Forcer pendant le creux\nt'épuise",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-89.jpg",
+    "texte": "Toutes les 90 min :\n10 min de pause",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-99.jpg",
+    "texte": "Sans écran,\nregard au loin",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-100.jpg",
+    "texte": "Sauvegarde ce Pin\npour ta journée",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "fatiguementale-trop-de-decisions",
+  "theme": "fatiguementale",
+  "titre": "La fatigue décisionnelle : pourquoi tu es vidé le soir",
+  "description": "Chaque décision, même minuscule, consomme de l'énergie mentale. Le soir, le réservoir est vide et tout paraît lourd. Automatise les petits choix : même petit-déjeuner la semaine, tenue préparée la veille, menus planifiés. Garde ton énergie pour ce qui compte. #fatiguementale #chargementale #fatigue #organisation #stress",
+  "beats": [
+   {
+    "image": "fonds/fond-110.jpg",
+    "texte": "Vidé le soir,\nincapable de choisir ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-116.jpg",
+    "texte": "Chaque décision\nconsomme de l'énergie",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-67.jpg",
+    "texte": "Le réservoir\nse vide",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-73.jpg",
+    "texte": "Automatise\nles petits choix",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-74.jpg",
+    "texte": "Garde ton énergie\npour l'essentiel",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-77.jpg",
+    "texte": "Sauvegarde ce Pin\npour t'alléger",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "alimentation-sucre-et-stress",
+  "theme": "alimentation",
+  "titre": "Le coup de barre de 16h vient souvent de ton déjeuner",
+  "description": "Un repas très sucré ou riche en féculents raffinés fait monter la glycémie vite, puis redescendre brutalement : fatigue, irritabilité, envie de sucre. Ajoute des protéines et des légumes à chaque repas, et un en-cas type fruit + poignée d'amandes l'après-midi. #alimentation #energie #fatigue #stress #glycemie",
+  "beats": [
+   {
+    "image": "fonds/fond-05.jpg",
+    "texte": "Le coup de barre\nde 16h ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-07.jpg",
+    "texte": "Ta glycémie a monté\npuis chuté",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-106.jpg",
+    "texte": "Fatigue, irritabilité,\nenvie de sucre",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-118.jpg",
+    "texte": "Protéines + légumes\nà chaque repas",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-15.jpg",
+    "texte": "En-cas : fruit\n+ poignée d'amandes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-17.jpg",
+    "texte": "Sauvegarde ce Pin\npour tes repas",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "alimentation-magnesium",
+  "theme": "alimentation",
+  "titre": "Stress et magnésium : les aliments à mettre dans ton assiette",
+  "description": "Le stress augmente l'élimination du magnésium, et un manque peut renforcer la sensation de tension et de fatigue. Mise sur les aliments riches : chocolat noir, amandes, légumineuses, épinards, banane, céréales complètes. En cas de doute, parles-en à ton médecin avant toute supplémentation. #alimentation #magnesium #stress #fatigue #energie",
+  "beats": [
+   {
+    "image": "fonds/fond-22.jpg",
+    "texte": "Stressé et à plat ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-29.jpg",
+    "texte": "Le stress fait fuir\nle magnésium",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-31.jpg",
+    "texte": "Chocolat noir,\namandes, épinards",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-34.jpg",
+    "texte": "Légumineuses, banane,\ncéréales complètes",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-43.jpg",
+    "texte": "Un peu chaque jour,\nsans excès",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-49.jpg",
+    "texte": "Sauvegarde ce Pin\npour tes courses",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "alimentation-hydratation-fatigue",
+  "theme": "alimentation",
+  "titre": "Une légère déshydratation suffit à te rendre fatigué et irritable",
+  "description": "Même une petite perte d'eau peut diminuer la concentration et l'humeur. Souvent, on confond soif et fatigue. Garde une bouteille visible sur ton bureau, bois un grand verre au réveil et un avant chaque repas : ça fait déjà une vraie différence. #alimentation #hydratation #fatigue #energie #concentration",
+  "beats": [
+   {
+    "image": "fonds/fond-52.jpg",
+    "texte": "Fatigué, tête lourde\nen milieu de journée ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-57.jpg",
+    "texte": "Tu as peut-être\njuste soif",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-59.jpg",
+    "texte": "Un grand verre\nau réveil",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-62.jpg",
+    "texte": "Un verre avant\nchaque repas",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-76.jpg",
+    "texte": "Bouteille visible\nsur ton bureau",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-82.jpg",
+    "texte": "Sauvegarde ce Pin\ncomme rappel",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "energie-lumiere-du-matin",
+  "theme": "energie",
+  "titre": "10 minutes de lumière le matin pour avoir plus d'énergie toute la journée",
+  "description": "La lumière naturelle du matin cale ton horloge interne : plus d'énergie en journée, sommeil plus facile le soir. Sors 10 minutes dans la première heure après le réveil, même par temps gris, sans lunettes de soleil. Une fenêtre ne suffit pas : l'extérieur est bien plus lumineux. #energie #lumiere #rythmecircadien #sommeil #matin",
+  "beats": [
+   {
+    "image": "fonds/fond-01.jpg",
+    "texte": "Du mal à démarrer\nle matin ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-102.jpg",
+    "texte": "Ton horloge interne\na besoin de lumière",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-109.jpg",
+    "texte": "10 minutes dehors\ndans l'heure du réveil",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-114.jpg",
+    "texte": "Même par temps gris,\nsans lunettes de soleil",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-120.jpg",
+    "texte": "Plus d'énergie le jour,\nmeilleur sommeil le soir",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-122.jpg",
+    "texte": "Sauvegarde ce Pin\npour demain matin",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "energie-mouvement-5-minutes",
+  "theme": "energie",
+  "titre": "5 minutes de mouvement donnent plus d'énergie qu'un deuxième café",
+  "description": "Quand l'énergie baisse, le réflexe est le café. Pourtant bouger 5 minutes (monter des escaliers, marcher vite, quelques squats) relance la circulation et l'éveil, sans perturber le sommeil du soir. Teste-le au prochain coup de mou. #energie #fatigue #mouvement #travail #recuperation",
+  "beats": [
+   {
+    "image": "fonds/fond-16.jpg",
+    "texte": "Coup de mou ?\nPas de 2e café",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-19.jpg",
+    "texte": "Bouge 5 minutes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-24.jpg",
+    "texte": "Escaliers, marche\nrapide, squats",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-30.jpg",
+    "texte": "La circulation\nse relance",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-36.jpg",
+    "texte": "Énergie sans\nsommeil gâché",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-44.jpg",
+    "texte": "Sauvegarde ce Pin\npour le prochain coup de mou",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "energie-recuperation-active",
+  "theme": "energie",
+  "titre": "Pourquoi le canapé ne te repose pas vraiment",
+  "description": "Scroller sur le canapé occupe ton cerveau sans le reposer. La récupération active (marcher dehors, cuisiner, jardiner, t'étirer) recharge mieux car elle change vraiment d'activité. Ce soir, remplace 20 minutes d'écran par 20 minutes de quelque chose avec tes mains. #recuperation #energie #fatiguementale #ecrans #detente",
+  "beats": [
+   {
+    "image": "fonds/fond-46.jpg",
+    "texte": "Des heures de canapé\net toujours fatigué ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-53.jpg",
+    "texte": "Scroller occupe\nsans reposer",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-58.jpg",
+    "texte": "Change vraiment\nd'activité",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-61.jpg",
+    "texte": "Marche, cuisine,\njardinage, étirements",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-80.jpg",
+    "texte": "20 minutes suffisent\npour sentir la différence",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-88.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "procrastination-5-minutes",
+  "theme": "procrastination",
+  "titre": "La règle des 5 minutes pour arrêter de repousser",
+  "description": "Le plus dur n'est pas la tâche, c'est de commencer. Engage-toi à y travailler seulement 5 minutes, avec un minuteur. Une fois lancé, continuer devient beaucoup plus facile, et si tu t'arrêtes, tu as quand même avancé. #procrastination #motivation #organisation #stress #clarte",
+  "beats": [
+   {
+    "image": "fonds/fond-104.jpg",
+    "texte": "Tu repousses\ndepuis des jours ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-119.jpg",
+    "texte": "Le plus dur,\nc'est de commencer",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-14.jpg",
+    "texte": "Minuteur :\n5 minutes seulement",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-32.jpg",
+    "texte": "Une fois lancé,\ntu continues souvent",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-37.jpg",
+    "texte": "Et sinon, tu as\nquand même avancé",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-45.jpg",
+    "texte": "Sauvegarde ce Pin\npour ta prochaine tâche",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "procrastination-emotion",
+  "theme": "procrastination",
+  "titre": "La procrastination n'est pas de la paresse : c'est une émotion à éviter",
+  "description": "On repousse rarement une tâche parce qu'on est paresseux, mais parce qu'elle provoque une émotion désagréable : peur de mal faire, ennui, doute. Nomme l'émotion à voix haute, puis découpe la tâche jusqu'à ce que la première étape paraisse ridicule. #procrastination #anxiete #stress #motivation #blocagemental",
+  "beats": [
+   {
+    "image": "fonds/fond-69.jpg",
+    "texte": "Tu n'es pas\nparesseux",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-83.jpg",
+    "texte": "Tu évites\nune émotion",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-97.jpg",
+    "texte": "Peur, ennui, doute :\nnomme-la",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-104.jpg",
+    "texte": "Découpe la tâche\nen tout petit",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-119.jpg",
+    "texte": "La 1re étape doit\nparaître ridicule",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-14.jpg",
+    "texte": "Sauvegarde ce Pin\npour te lancer",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "blocagemental-vider-sa-tete",
+  "theme": "blocagemental",
+  "titre": "Écrire pendant 10 minutes pour débloquer un mental saturé",
+  "description": "Quand tout tourne en boucle, écrire sans filtre pendant 10 minutes, à la main, tout ce qui te passe par la tête, fait sortir les pensées de la mémoire de travail. Ne relis pas tout de suite. Souvent, la solution ou la prochaine étape apparaît d'elle-même. #blocagemental #ecriture #clarte #chargementale #stress",
+  "beats": [
+   {
+    "image": "fonds/fond-09.jpg",
+    "texte": "Ta tête tourne\nen boucle ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-105.jpg",
+    "texte": "Prends un papier\net un stylo",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-113.jpg",
+    "texte": "Écris 10 minutes,\nsans filtre",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-25.jpg",
+    "texte": "Ne relis pas\ntout de suite",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-39.jpg",
+    "texte": "La prochaine étape\napparaît souvent",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-55.jpg",
+    "texte": "Sauvegarde ce Pin\npour y revenir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "blocagemental-une-seule-tache",
+  "theme": "blocagemental",
+  "titre": "Pourquoi le multitâche te bloque au lieu de t'avancer",
+  "description": "Passer d'une tâche à l'autre coûte à chaque fois du temps et de l'énergie de remise en route. Résultat : tout avance un peu, rien n'aboutit, et le mental sature. Choisis une seule tâche, ferme les autres onglets, coupe les notifications 25 minutes. #blocagemental #concentration #clarte #procrastination #travail",
+  "beats": [
+   {
+    "image": "fonds/fond-65.jpg",
+    "texte": "Tout avance un peu,\nrien n'aboutit ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-70.jpg",
+    "texte": "Chaque changement de tâche\ncoûte de l'énergie",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-91.jpg",
+    "texte": "Une seule tâche\nà la fois",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-09.jpg",
+    "texte": "Onglets fermés,\nnotifications coupées",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-105.jpg",
+    "texte": "25 minutes\nde concentration",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-113.jpg",
+    "texte": "Sauvegarde ce Pin\npour ta journée",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "somatisation-ventre-noue",
+  "theme": "somatisation",
+  "titre": "Ventre noué quand tu stresses : ce qui se passe vraiment",
+  "description": "Ton intestin et ton cerveau communiquent en permanence. Sous stress, la digestion ralentit ou s'emballe : ventre noué, ballonnements, crampes. Main posée sur le ventre, respire lentement en le gonflant à l'inspiration, 3 minutes. Si les symptômes persistent, consulte un médecin. #somatisation #digestion #stress #anxiete #systemenerveux",
+  "beats": [
+   {
+    "image": "fonds/fond-103.jpg",
+    "texte": "Ventre noué\ndès que tu stresses ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-112.jpg",
+    "texte": "Intestin et cerveau\ncommuniquent sans cesse",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-137.jpg",
+    "texte": "Sous stress,\nla digestion se dérègle",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-144.jpg",
+    "texte": "Main sur le ventre,\ngonfle-le en inspirant",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-75.jpg",
+    "texte": "3 minutes de\nrespiration lente",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-90.jpg",
+    "texte": "Sauvegarde ce Pin\npour ces moments-là",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "posturesantistress-nuque-ecran",
+  "theme": "posturesantistress",
+  "titre": "Nuque et épaules tendues devant l'écran : l'étirement de 30 secondes",
+  "description": "Devant un écran, la tête avance et les épaules remontent sans qu'on s'en rende compte. Toutes les heures : rentre le menton comme pour faire un double menton, tiens 5 secondes, 5 fois. Puis hausse les épaules vers les oreilles et relâche-les d'un coup en expirant. #stress #travail #postures #detente #tensions",
+  "beats": [
+   {
+    "image": "fonds/fond-117.jpg",
+    "texte": "Nuque raide\ndevant l'écran ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-21.jpg",
+    "texte": "Ta tête avance,\ntes épaules montent",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-33.jpg",
+    "texte": "Rentre le menton,\ntiens 5 secondes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-50.jpg",
+    "texte": "Hausse les épaules...\npuis relâche d'un coup",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-56.jpg",
+    "texte": "30 secondes,\ntoutes les heures",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-68.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton bureau",
+    "duree": 2.2
+   }
+  ]
+ }
 ]

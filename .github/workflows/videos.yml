@@ -121,7 +121,7 @@ jobs:
           def ajouter_textes(composite, beats, fenetres, tmp):
               dt = (f"fontfile={police}:fontcolor=white:fontsize=58:line_spacing=14:text_align=C:"
                     f"borderw=4:bordercolor=black@0.9:shadowcolor=black@0.6:shadowx=0:shadowy=4:"
-                    f"x=(w-text_w)/2:y=1740")
+                    f"x=(w-text_w)/2:y=1380")
               filtres = []
               for i, (beat, (debut, fin)) in enumerate(zip(beats, fenetres)):
                   txt_path = os.path.join(tmp, f"texte{i}.txt")
@@ -191,7 +191,7 @@ jobs:
               if date_fichier < limite and os.path.join("videopins", ancien) not in (nom_video, nom_cover):
                   os.remove(os.path.join("videopins", ancien))
 
-          git("add", "-A", "videopins", HIST)
+          git("add", "-A", "videopins")
           historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
                               "id": video["id"], "titre": video["titre"], "video": nom_video,
                               "cover": nom_cover, "theme": video["theme"]})
