@@ -90,6 +90,15 @@ jobs:
               return img.crop((x, y, x + L, y + H))
 
 
+          def ajuster_sans_rogner(img, L, H, fond=(10, 10, 14)):
+              r = min(L / img.width, H / img.height)
+              img = img.resize((round(img.width * r), round(img.height * r)), Image.LANCZOS)
+              toile = Image.new("RGB", (L, H), fond)
+              x, y = (L - img.width) // 2, (H - img.height) // 2
+              toile.paste(img, (x, y))
+              return toile
+
+
           THEME_ALIASES = {
               "sommeil": "sommeil", "insomnie": "sommeil", "reveilnocturne": "sommeil",
               "reveil": "sommeil", "sieste": "sommeil", "routinedusoir": "sommeil",
@@ -291,23 +300,29 @@ jobs:
           nom = "pin-" + horodatage + ".jpg"
           chemin = os.path.join("images", nom)
 
-          cle_openai = os.environ.get("OPENAI_API_KEY")
-          fond = None
-          fond_etiquette = None
-          if cle_openai:
-              try:
-                  fond = generer_fond_ia(theme, cle_openai)
-                  fond_etiquette = "ia:" + theme
-                  print("Fond généré par IA (OpenAI) pour le thème :", theme)
-              except Exception as e:
-                  print("Échec de la génération IA, on retombe sur la banque de fonds :", e)
-          if not fond:
-              fond = choisir_fond(theme, historique)
-              fond_etiquette = fond
+          if pin.get("image_prete"):
+              ajuster_sans_rogner(Image.open(pin["image_prete"]).convert("RGB"), 1000, 1500).save(chemin, "JPEG", quality=93)
+              fond_etiquette = "prete:" + pin["image_prete"]
+              print("Thème détecté :", theme)
+              print("Image prête utilisée telle quelle (pas de texte ajouté) :", pin["image_prete"])
+          else:
+              cle_openai = os.environ.get("OPENAI_API_KEY")
+              fond = None
+              fond_etiquette = None
+              if cle_openai:
+                  try:
+                      fond = generer_fond_ia(theme, cle_openai)
+                      fond_etiquette = "ia:" + theme
+                      print("Fond généré par IA (OpenAI) pour le thème :", theme)
+                  except Exception as e:
+                      print("Échec de la génération IA, on retombe sur la banque de fonds :", e)
+              if not fond:
+                  fond = choisir_fond(theme, historique)
+                  fond_etiquette = fond
 
-          dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
-          print("Thème détecté :", theme)
-          print("Fond utilisé :", fond_etiquette)
+              dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
+              print("Thème détecté :", theme)
+              print("Fond utilisé :", fond_etiquette)
           print("Image créée :", chemin)
 
           chemin_video = os.path.join("videos", "pin-" + horodatage + ".mp4")
