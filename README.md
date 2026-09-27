@@ -14,6 +14,18 @@ Le workflow `.github/workflows/pins.yml` est déclenché 7 fois par jour (6h07, 
 4. Il commit l'image dans le dépôt et récupère son URL publique.
 5. Il envoie titre / description / URL de l'image / lien vers un webhook Make.com, qui publie le pin sur Pinterest.
 
+## Cohérence du contenu (vérification obligatoire avant d'ajouter un pin)
+
+Le compte est centré sur **le stress, la procrastination et le sommeil**, avec ses thèmes établis (`sommeil`, `systemenerveux`, `fatiguementale`, `alimentation`, `procrastination`, `somatisation`, `blocagemental`, `posturesantistress`, `energie` — voir `TABLEAUX` dans `.github/workflows/pins.yml`, chaque thème a son propre board Pinterest). Le script de publication ne fait **aucun contrôle de pertinence** : il publie tel quel le premier pin non encore publié de `pins.json`, dans l'ordre. Toute la responsabilité de cohérence repose donc sur ce qui est ajouté à la banque.
+
+**Avant d'ajouter un nouveau pin à `pins.json` (texte + `image_prete` le cas échéant), vérifier systématiquement :**
+
+1. **Le texte** (titre, texte_image, description) doit se rattacher clairement à un des thèmes ci-dessus, toujours à travers l'angle stress/mental — pas de contenu générique (recette, déco, organisation domestique...) sans lien explicite avec le sommeil, le stress ou le système nerveux. Exemple déjà rencontré à éviter : un pin "rangez votre frigo" sans lien avec le stress ne convient pas ; "ce que le désordre du frigo dit de ta charge mentale" convient.
+2. **L'image** (`fonds/`, fond généré par IA, ou `image_prete`) doit correspondre au sujet réel du texte, pas seulement au thème détecté automatiquement par mot-clé.
+3. En cas de lot d'images/textes reçu en bloc (infographies fournies par l'utilisateur, etc.), trier avant l'ajout : écarter ce qui ne rentre pas dans le périmètre plutôt que tout ajouter par défaut.
+
+Un audit a retiré en septembre 2026 onze pins "recette/organisation cuisine" sans lien avec le stress qui avaient été ajoutés par erreur (dont certains déjà publiés) — voir l'historique Git pour référence.
+
 ## Stratégie des titres
 
 - **Jamais le même titre sur plusieurs pins/images.** Pinterest recommande du contenu original et pénalise les doublons répétés — chaque titre ajouté à `pins.json` doit être unique (vérifié régulièrement : aucun doublon à ce jour).
