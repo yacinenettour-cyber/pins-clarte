@@ -1287,5 +1287,65 @@
   "texte_image": "Mieux dormir aujourd'hui, c'est investir dans une vie plus sereine demain",
   "description": "Chaque petit ajustement apporté à ton sommeil ce soir — une heure de coucher plus stable, moins d'écrans, une chambre plus fraîche — ne se limite pas à une meilleure nuit isolée. C'est un effet cumulatif qui, jour après jour, façonne un mental plus stable, une énergie plus régulière et une capacité à encaisser le stress du quotidien nettement plus solide. #sommeil #bienetre #energie #recuperation #sante",
   "image_prete": "images_manuelles/mieux-dormir-vie-plus-sereine.jpg"
+ },
+ {
+  "titre": "Trop de pensées, stress, anxiété : et si ça ne se calmait jamais tout seul ?",
+  "texte_image": "Trop de pensées, stress, anxiété : et si ça ne se calmait jamais tout seul ?",
+  "description": "Tête dans les mains, tu regardes une pensée en entraîner une autre, puis une troisième, sans jamais réussir à faire retomber le calme. Ce n'est pas un excès de réflexion : c'est un système nerveux en surrégime qui continue de tourner même quand la situation ne l'exige plus. Attendre que ça passe tout seul fonctionne rarement ; agir sur le corps en premier, par la respiration, aide souvent plus vite que de penser à autre chose. #systemenerveux #stress #anxiete #ruminations #calme",
+  "image_prete": "images_manuelles/pensees-en-boucle-stress-anxiete.jpg"
+ },
+ {
+  "titre": "Le stress n'est pas une fatalité : il existe de vraies clés pour souffler",
+  "texte_image": "Le stress n'est pas une fatalité : il existe de vraies clés pour souffler",
+  "description": "Tu as fini par penser que vivre stressé(e) fait juste partie du jeu, que c'est comme ça et pas autrement. Pourtant le stress chronique n'est pas une fatalité : c'est un état que le corps apprend, et qu'il peut aussi désapprendre avec les bons leviers, répétés régulièrement plutôt qu'une seule fois. Retrouver plus de sérénité ne demande pas de tout changer d'un coup, juste de commencer quelque part. #stress #systemenerveux #bienetre #calme #sante",
+  "image_prete": "images_manuelles/stress-pas-fatalite-cles-serenite.jpg"
+ },
+ {
+  "titre": "Les signes d'anxiété que tu mets peut-être sur le compte d'autre chose",
+  "texte_image": "Les signes d'anxiété que tu mets peut-être sur le compte d'autre chose",
+  "description": "Pensées envahissantes, tension dans le corps, difficultés à dormir, irritabilité, cœur qui s'emballe, pertes de concentration : ces signes, pris un par un, semblent avoir chacun leur propre explication. Ensemble, ils dessinent souvent un fond d'anxiété qui ne dit pas son nom. Les reconnaître comme un tout, plutôt que comme des symptômes isolés et sans lien, est souvent la première étape pour vraiment s'en occuper. #anxiete #systemenerveux #stress #bienetre #calmemental",
+  "image_prete": "images_manuelles/signes-anxiete-liste-a-reconnaitre.jpg"
+ },
+ {
+  "titre": "Respire plus lentement : le geste le plus simple pour calmer ton mental",
+  "texte_image": "Respire plus lentement : le geste le plus simple pour calmer ton mental",
+  "description": "Quand le stress monte, la respiration devient courte et haute presque sans que tu le remarques, et cette respiration courte entretient elle-même la tension plutôt que de l'apaiser. Ralentir volontairement le rythme, avec une expiration plus longue que l'inspiration, envoie directement un signal de sécurité au système nerveux. Pas besoin d'un cadre particulier : quelques respirations conscientes suffisent à relâcher la pression. #respiration #systemenerveux #stress #calme #detente",
+  "image_prete": "images_manuelles/respirer-plus-lentement-calmer-mental.jpg"
+ },
+ {
+  "titre": "Et si cette anxiété venait aussi de la qualité de ton sommeil ?",
+  "texte_image": "Et si cette anxiété venait aussi de la qualité de ton sommeil ?",
+  "description": "Tu cherches des causes à ton anxiété du jour sans penser à regarder du côté de tes nuits. Un sommeil de mauvaise qualité amplifie pourtant le stress ressenti le lendemain et rend les pensées plus envahissantes, plus difficiles à mettre à distance. Ce n'est pas toujours le stress qui abîme le sommeil : parfois c'est l'inverse qui se joue, en silence, nuit après nuit. Regarder tes nuits peut changer la donne autant que gérer tes journées. #sommeil #anxiete #stress #systemenerveux #bienetre",
+  "image_prete": "images_manuelles/anxiete-vient-peut-etre-du-sommeil.jpg"
+ },
+ {
+  "titre": "Bien manger pour apaiser l'esprit : ce que ton assiette change vraiment",
+  "texte_image": "Bien manger pour apaiser l'esprit : ce que ton assiette change vraiment",
+  "description": "Certains aliments nourrissent directement le cerveau et l'aident à mieux gérer le stress au quotidien, pas seulement le corps. Ce n'est pas une question de régime strict, juste de composition : davantage de nutriments qui soutiennent le système nerveux plutôt que des repas rapides qui le laissent livré à lui-même. Un ajustement progressif suffit déjà à ressentir une différence sur ta tension quotidienne. #alimentation #stress #systemenerveux #bienetre #energie",
+  "image_prete": "images_manuelles/bien-manger-apaiser-esprit-stress.jpg"
+ },
+ {
+  "titre": "Moins d'écrans, plus de calme : l'impact réel sur tes soirées",
+  "texte_image": "Moins d'écrans, plus de calme : l'impact réel sur tes soirées",
+  "description": "Réduire le temps d'écran, surtout en fin de soirée, aide concrètement à apaiser un mental encore en activité et améliore la qualité du sommeil qui suit. Ce n'est pas tant la lumière bleue en elle-même que le flux constant de sollicitations qui maintient le cerveau en alerte bien après que le corps voudrait déjà ralentir. Une coupure nette, même courte, change la façon dont la soirée se termine. #sommeil #ecrans #stress #routinedusoir #bienetre",
+  "image_prete": "images_manuelles/moins-ecrans-plus-calme-sommeil.jpg"
+ },
+ {
+  "titre": "Sortir, se reconnecter à l'essentiel : un des leviers anti-stress les plus sous-utilisés",
+  "texte_image": "Sortir, se reconnecter à l'essentiel : un des leviers anti-stress les plus sous-utilisés",
+  "description": "La nature, le mouvement et la lumière du jour aident à réduire le stress et à retrouver de l'énergie, souvent plus efficacement qu'une pause passée à scroller. Pas besoin d'une randonnée entière : une marche courte dehors, en pleine lumière, suffit déjà à faire redescendre la tension accumulée en intérieur. Le corps a besoin de ces signaux extérieurs pour comprendre qu'il peut relâcher un peu la garde. #stress #systemenerveux #energie #bienetre #nature",
+  "image_prete": "images_manuelles/sortir-nature-reduire-stress-energie.jpg"
+ },
+ {
+  "titre": "Écrire pour se libérer : ce que poser ses pensées sur papier change vraiment",
+  "texte_image": "Écrire pour se libérer : ce que poser ses pensées sur papier change vraiment",
+  "description": "Mettre ses pensées sur papier, même en vrac et sans chercher à bien formuler, aide à prendre du recul et à alléger un mental encombré. Ce que tu gardes uniquement en tête tourne en boucle ; ce que tu écris, tu peux enfin le regarder de l'extérieur, et souvent le relativiser. Quelques minutes suffisent, pas besoin d'un vrai journal tenu tous les jours pour en ressentir l'effet. #ecriture #blocagemental #stress #clarte #bienetre",
+  "image_prete": "images_manuelles/ecrire-liberer-pensees-mental.jpg"
+ },
+ {
+  "titre": "Prendre soin de soi, c'est aussi une façon concrète de te protéger",
+  "texte_image": "Prendre soin de soi, c'est aussi une façon concrète de te protéger",
+  "description": "On range souvent prendre soin de soi dans la case du luxe ou du superflu, alors que c'est une des façons les plus directes de te protéger d'un épuisement plus profond. Un esprit plus apaisé se traduit très concrètement par une meilleure énergie au quotidien, moins de réactivité face aux imprévus et une capacité à tenir la distance sans t'effondrer à la première difficulté. Ce n'est pas égoïste, c'est un entretien nécessaire. #energie #bienetre #stress #systemenerveux #equilibre",
+  "image_prete": "images_manuelles/prendre-soin-de-soi-meilleure-energie.jpg"
  }
 ]
