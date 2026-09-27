@@ -21,10 +21,12 @@ Le compte est centré sur **le stress, la procrastination et le sommeil**, avec 
 **Avant d'ajouter un nouveau pin à `pins.json` (texte + `image_prete` le cas échéant), vérifier systématiquement :**
 
 1. **Le texte** (titre, texte_image, description) doit se rattacher clairement à un des thèmes ci-dessus, toujours à travers l'angle stress/mental — pas de contenu générique (recette, déco, organisation domestique...) sans lien explicite avec le sommeil, le stress ou le système nerveux. Exemple déjà rencontré à éviter : un pin "rangez votre frigo" sans lien avec le stress ne convient pas ; "ce que le désordre du frigo dit de ta charge mentale" convient.
+   - **Cas particulier du thème `alimentation` (board "Alimentation et stress")** : ce board sert uniquement à montrer comment l'alimentation **diminue le stress**, pas le sommeil ni l'énergie en général (ces angles-là existent déjà via les thèmes `sommeil` et `energie`). Un pin alimentation dont le bénéfice mis en avant est l'endormissement ou l'énergie, sans mention explicite du stress/tension/nervosité, ne va pas sur ce board.
 2. **L'image** (`fonds/`, fond généré par IA, ou `image_prete`) doit correspondre au sujet réel du texte, pas seulement au thème détecté automatiquement par mot-clé.
-3. En cas de lot d'images/textes reçu en bloc (infographies fournies par l'utilisateur, etc.), trier avant l'ajout : écarter ce qui ne rentre pas dans le périmètre plutôt que tout ajouter par défaut.
+3. **Le thème détecté dépend du premier hashtag de la description** (voir `deviner_theme()` dans `.github/workflows/pins.yml`) — pas seulement de la présence du mot-clé du thème quelque part dans le texte. Toujours placer en premier hashtag celui qui correspond au vrai board visé, même si d'autres hashtags thématiques apparaissent aussi dans la description.
+4. En cas de lot d'images/textes reçu en bloc (infographies fournies par l'utilisateur, etc.), trier avant l'ajout : écarter ce qui ne rentre pas dans le périmètre plutôt que tout ajouter par défaut.
 
-Un audit a retiré en septembre 2026 onze pins "recette/organisation cuisine" sans lien avec le stress qui avaient été ajoutés par erreur (dont certains déjà publiés) — voir l'historique Git pour référence.
+Un audit a retiré en septembre 2026 onze pins "recette/organisation cuisine" sans lien avec le stress qui avaient été ajoutés par erreur (dont certains déjà publiés), et recentré le board `alimentation` en réordonnant les hashtags de 5 pins dont le vrai sujet était le sommeil ou l'énergie, pas le stress — voir l'historique Git pour référence.
 
 ## Stratégie des titres
 
