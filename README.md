@@ -14,6 +14,12 @@ Le workflow `.github/workflows/pins.yml` est déclenché 7 fois par jour (6h07, 
 4. Il commit l'image dans le dépôt et récupère son URL publique.
 5. Il envoie titre / description / URL de l'image / lien vers un webhook Make.com, qui publie le pin sur Pinterest.
 
+## Prompt système SEO pour un futur scénario Make (image → métadonnées via IA)
+
+`prompts/system-prompt-pin-seo.md` contient un prompt système fourni par l'utilisateur, à utiliser dans un module IA d'un scénario Make.com : Make envoie une image + l'URL de destination + la liste des tableaux Pinterest, l'IA analyse l'image et renvoie un JSON (titre, description, mots-clés, hashtags, nom de fichier, texte alt, tableau...) exploitable automatiquement par Make.
+
+**Ce flux est distinct du fonctionnement actuel décrit ci-dessus** : aujourd'hui, `pins.yml` part d'un texte déjà écrit dans `pins.json` et choisit/génère une image en conséquence (texte → image). Le prompt image→métadonnées part au contraire d'une image déjà reçue et fait générer le texte à partir d'elle (image → texte). Les deux logiques ne sont pas encore reliées dans ce dépôt — avant de les connecter (ou de basculer l'un vers l'autre), clarifier avec l'utilisateur si ce nouveau flux doit remplacer `pins.json`, s'y ajouter, ou rester un scénario Make séparé.
+
 ## Cohérence du contenu (vérification obligatoire avant d'ajouter un pin)
 
 Le compte est centré sur **le stress, la procrastination et le sommeil**, avec ses thèmes établis (`sommeil`, `systemenerveux`, `fatiguementale`, `alimentation`, `procrastination`, `somatisation`, `blocagemental`, `posturesantistress`, `energie` — voir `TABLEAUX` dans `.github/workflows/pins.yml`, chaque thème a son propre board Pinterest). Le script de publication ne fait **aucun contrôle de pertinence** : il publie tel quel le premier pin non encore publié de `pins.json`, dans l'ordre. Toute la responsabilité de cohérence repose donc sur ce qui est ajouté à la banque.
