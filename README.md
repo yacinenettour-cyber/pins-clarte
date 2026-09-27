@@ -49,6 +49,18 @@ Si le périmètre de la formation change (nouveau module couvrant l'alimentation
 
 Ne jamais réutiliser systématiquement la même formule de fin d'un pin à l'autre. Viser une grande diversité de CTA (au minimum une quinzaine de formulations distinctes dans la banque, largement dépassé à ce jour) et ne pas mettre de CTA explicite sur tous les pins — environ un quart des pins doivent se terminer sur une phrase informative plutôt que sur une invitation à l'action, pour que ça reste naturel et ne sonne pas comme un script répété.
 
+## Images fournies en planche (plusieurs visuels dans une seule image)
+
+L'utilisateur envoie parfois une planche composite (grille de 5×2 ou similaire) regroupant plusieurs visuels d'infographie à intégrer comme pins `image_prete`. Avant d'ajouter ce type de contenu à la banque :
+
+1. **Découper chaque visuel individuellement** (crop précis par cellule de la grille).
+2. **Retirer une marge intérieure** (10-20 px selon la résolution) sur les bords communs avec la cellule voisine : les planches contiennent souvent un fin liseré/gouttière entre les visuels qui, sans ce retrait, laisse une bordure parasite visible sur le pin final.
+3. **Remplir tout le cadre de l'épingle sans aucune bordure noire ou padding** : mettre à l'échelle puis recadrer (jamais scale-to-fit-and-pad) pour obtenir exactement le format cible (1000×1500 comme le reste du compte), quitte à perdre une partie du contenu vertical si le visuel source a un ratio très différent (ces planches produisent souvent des visuels très hauts et étroits, ratio ~1:3.8, bien au-delà du 2:3 visé).
+4. **Ancrer le recadrage sur le titre + le début du contenu par défaut**, sauf si le titre/l'information essentielle est visible ailleurs (ex. liste à cocher placée en bas de l'image plutôt qu'en haut, transition avant/après répartie sur toute la hauteur) — dans ce cas, vérifier visuellement où se trouve le texte réellement utile avant de choisir le point d'ancrage, plutôt que d'appliquer un recadrage identique partout.
+5. **Vérifier visuellement au moins un échantillon par lot** après recadrage (pas seulement les dimensions en pixels) : un recadrage géométriquement correct peut quand même couper un titre ou une liste au mauvais endroit.
+
+Limite à connaître : certains visuels ont leur texte tronqué **dans le fichier fourni par l'utilisateur lui-même**, avant tout traitement (texte qui déborde du cadre de sa propre cellule dans la planche source) — ce n'est pas corrigible par recadrage, à signaler plutôt qu'à essayer de réparer.
+
 ## Stratégie des titres
 
 - **Jamais le même titre sur plusieurs pins/images.** Pinterest recommande du contenu original et pénalise les doublons répétés — chaque titre ajouté à `pins.json` doit être unique (vérifié régulièrement : aucun doublon à ce jour).
