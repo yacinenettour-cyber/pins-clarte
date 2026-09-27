@@ -34,6 +34,21 @@ Le compte est centré sur **le stress, la procrastination et le sommeil**, avec 
 
 Un audit a retiré en septembre 2026 onze pins "recette/organisation cuisine" sans lien avec le stress qui avaient été ajoutés par erreur (dont certains déjà publiés), et recentré le board `alimentation` en réordonnant les hashtags de 5 pins dont le vrai sujet était le sommeil ou l'énergie, pas le stress — voir l'historique Git pour référence.
 
+## Lien de destination (uniquement sur les thèmes liés à la formation)
+
+`LIEN_PAGE` pointe vers la page de capture d'une formation systeme.io dont le contenu ne couvre **pas tous les thèmes du compte**. Pour éviter d'envoyer des clics non qualifiés (visiteurs intéressés par un sujet que la formation ne traite pas), le champ `lien` envoyé à Make est vide (`""`) pour les thèmes hors périmètre — voir `THEMES_SANS_LIEN` dans `.github/workflows/pins.yml` et `videos.yml`.
+
+- **Thèmes avec lien** (couverts par la formation) : `sommeil`, `systemenerveux`, `fatiguementale`, `posturesantistress`, `blocagemental`, `somatisation`, `energie`.
+- **Thèmes sans lien** (hors périmètre de la formation, à ce jour) : `alimentation`, `procrastination`.
+
+**Conséquence pour la rédaction** : un pin sur un thème sans lien ne doit jamais promettre un contenu à découvrir "dans le guide gratuit" ou inviter à "cliquer sur cette épingle" pour en savoir plus — il n'y a rien derrière. Adapter le CTA de ces pins (ou ne pas en mettre du tout) : fin informative, ou invitation à enregistrer l'épingle sur Pinterest (ça reste possible sans lien de destination), jamais une promesse de contenu accessible par clic.
+
+Si le périmètre de la formation change (nouveau module couvrant l'alimentation ou la procrastination, par exemple), mettre à jour `THEMES_SANS_LIEN` dans les deux workflows en conséquence.
+
+## Varier les CTA de fin de description
+
+Ne jamais réutiliser systématiquement la même formule de fin d'un pin à l'autre. Viser une grande diversité de CTA (au minimum une quinzaine de formulations distinctes dans la banque, largement dépassé à ce jour) et ne pas mettre de CTA explicite sur tous les pins — environ un quart des pins doivent se terminer sur une phrase informative plutôt que sur une invitation à l'action, pour que ça reste naturel et ne sonne pas comme un script répété.
+
 ## Stratégie des titres
 
 - **Jamais le même titre sur plusieurs pins/images.** Pinterest recommande du contenu original et pénalise les doublons répétés — chaque titre ajouté à `pins.json` doit être unique (vérifié régulièrement : aucun doublon à ce jour).
