@@ -14,6 +14,21 @@ Le workflow `.github/workflows/pins.yml` est déclenché 7 fois par jour (6h07, 
 4. Il commit l'image dans le dépôt et récupère son URL publique.
 5. Il envoie titre / description / URL de l'image / lien vers un webhook Make.com, qui publie le pin sur Pinterest.
 
+## Génération d'images via les connecteurs Claude (Claude_image / Hugging Face / Canva)
+
+Cette session dispose de plusieurs connecteurs de génération/édition d'images, indépendants du système `OPENAI_API_KEY` décrit plus bas (qui reste le seul utilisé par le pipeline automatique en production) :
+
+- **Claude_image** (payant, crédits limités) — vérifier le solde avec `get_credits` avant toute génération ; `quote_generation` donne le coût exact par modèle avant de lancer. Un appel qui time out peut quand même consommer le crédit.
+- **Hugging Face** (`gr1_z_image_turbo_generate`, gratuit) — supporte nativement la résolution `1024x1536 (2:3)`, exactement le format des pins du compte.
+- **Canva** (`generate-image`) — non testé à ce jour dans ce dépôt.
+
+**Règles à appliquer** :
+
+1. **Ne jamais faire générer le texte par l'IA à l'intérieur de l'image.** Un premier essai avec la consigne explicite "no text" a quand même produit du texte incohérent ("Row Slow Deepestharg"). Générer uniquement le visuel (photo + illustration/schéma), sans aucun texte, et laisser le pipeline existant (`dessiner_image()` dans `pins.yml`) poser le texte — rendu fiable et déjà éprouvé, zéro risque de coupure.
+2. **Supprimer immédiatement tout ce qui n'est pas exploitable** (texte halluciné, résultat hors-sujet, mauvaise qualité) — ne jamais committer un essai raté dans le dépôt, même temporairement.
+3. **Rester cohérent avec l'identité visuelle du compte** : photographie éditoriale réaliste, palette bleu nuit/doré chaude, ambiance calme, un éventuel schéma illustratif discret en surimpression (voir `PROMPTS_THEME_IA` dans `pins.yml` pour le ton déjà établi par thème).
+4. **Format cible** : `1024x1536` ou équivalent 2:3, sauvegardé en `.jpg` dans `fonds/` avec le prochain numéro disponible, puis répertorié dans `fonds_themes.json` avec le thème correspondant.
+
 ## Prompt système SEO pour un futur scénario Make (image → métadonnées via IA)
 
 `prompts/system-prompt-pin-seo.md` contient un prompt système fourni par l'utilisateur, à utiliser dans un module IA d'un scénario Make.com : Make envoie une image + l'URL de destination + la liste des tableaux Pinterest, l'IA analyse l'image et renvoie un JSON (titre, description, mots-clés, hashtags, nom de fichier, texte alt, tableau...) exploitable automatiquement par Make.
