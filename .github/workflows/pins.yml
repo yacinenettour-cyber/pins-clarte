@@ -378,8 +378,13 @@ jobs:
               "energie": "600175156532025122",
           }
 
+          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE :
+          # ces pins ne doivent pas rediriger vers la page de capture (pas de lien hors-sujet).
+          THEMES_SANS_LIEN = {"alimentation", "procrastination"}
+          lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
+
           envoi = {"titre": pin["titre"], "description": pin["description"],
-                   "image_url": url, "video_url": video_url or "", "lien": os.environ["LIEN_PAGE"],
+                   "image_url": url, "video_url": video_url or "", "lien": lien,
                    "theme": theme, "tableau": TABLEAUX.get(theme, "600175156531995384")}
           r = requests.post(os.environ["MAKE_WEBHOOK_URL"], json=envoi, timeout=60)
           print("Réponse de Make :", r.status_code, r.text[:200])
