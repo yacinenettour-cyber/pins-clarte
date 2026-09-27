@@ -1175,12 +1175,6 @@
   "image_prete": "images_manuelles/lien-stress-sommeil-cortisol.jpg"
  },
  {
-  "titre": "5 rituels simples pour un endormissement nettement plus facile",
-  "texte_image": "5 rituels simples pour un endormissement nettement plus facile",
-  "description": "Éloigner les écrans une heure avant le coucher, opter pour une infusion plutôt qu'un dernier café, détendre le corps par la respiration ou des étirements doux, créer une ambiance calme avec une lumière tamisée, et garder une heure de coucher régulière même le week-end : cinq gestes simples, pas cinq contraintes lourdes. Leur effet se renforce à mesure qu'ils deviennent une habitude plutôt qu'un effort. #sommeil #routinedusoir #endormissement #bienetre #habitudes",
-  "image_prete": "images_manuelles/5-rituels-endormissement-facile.jpg"
- },
- {
   "titre": "Ces aliments qui aident concrètement à faire retomber ton stress",
   "texte_image": "Ces aliments qui aident concrètement à faire retomber ton stress",
   "description": "Magnésium, oméga-3, tryptophane, vitamine B6 : certains nutriments jouent un rôle direct dans la régulation du cortisol et de la tension nerveuse accumulée pendant la journée. Amandes et épinards pour le magnésium, poissons gras et graines de lin pour les oméga-3, dinde et bananes pour le tryptophane, une tisane de camomille ou de verveine en fin de journée. Rien de spectaculaire, juste des choix simples à intégrer à tes repas. #alimentation #stress #cortisol #systemenerveux #bienetre",
@@ -1211,76 +1205,16 @@
   "image_prete": "images_manuelles/7-signes-stress-trop-eleve.jpg"
  },
  {
-  "titre": "La routine du soir en 5 étapes pour des nuits vraiment plus profondes",
-  "texte_image": "La routine du soir en 5 étapes pour des nuits vraiment plus profondes",
-  "description": "Une heure avant le coucher, éteins les écrans et baisse la luminosité ambiante. Prends une douche tiède : la baisse de température corporelle qui suit favorise l'endormissement. Lis quelques pages ou écoute une musique douce plutôt que de vérifier ton téléphone. Pratique une respiration lente ou une courte méditation. Installe-toi enfin dans une pièce fraîche et calme. Cinq étapes simples, dans cet ordre, à répéter chaque soir. #sommeil #routinedusoir #endormissement #bienetre #habitudes",
-  "image_prete": "images_manuelles/routine-du-soir-5-etapes-sommeil.jpg"
- },
- {
-  "titre": "5 habitudes qui font vraiment baisser ton niveau de stress au quotidien",
-  "texte_image": "5 habitudes qui font vraiment baisser ton niveau de stress au quotidien",
-  "description": "Respirer consciemment plusieurs fois par jour, bouger ton corps même dix minutes, prendre du temps rien que pour toi sans culpabiliser, limiter la caféine et l'alcool qui entretiennent la tension nerveuse, et t'entourer de personnes qui apaisent plutôt qu'épuisent : cinq habitudes simples, pas cinq bouleversements de vie. Intégrées une par une, elles pèsent nettement plus que n'importe quelle astuce ponctuelle. #stress #systemenerveux #habitudes #bienetre #energie",
-  "image_prete": "images_manuelles/5-habitudes-moins-de-stress.jpg"
- },
- {
   "titre": "Pourquoi le sommeil reste ton meilleur allié santé, bien avant les astuces",
   "texte_image": "Pourquoi le sommeil reste ton meilleur allié santé, bien avant les astuces",
   "description": "Un sommeil de qualité améliore la mémoire et la concentration, renforce le système immunitaire, aide à réguler les émotions plutôt qu'à les subir, recharge l'énergie et la motivation du lendemain, et joue même un rôle dans le ralentissement du vieillissement cellulaire. Avant de chercher la prochaine astuce bien-être, la question la plus rentable reste souvent la plus simple : est-ce que je dors vraiment assez ? #sommeil #bienetre #sante #energie #recuperation",
   "image_prete": "images_manuelles/sommeil-meilleur-allie-bienetre.jpg"
  },
  {
-  "titre": "Bien dormir, c'est aussi une des façons les plus sous-estimées de moins stresser",
-  "texte_image": "Bien dormir, c'est aussi une des façons les plus sous-estimées de moins stresser",
-  "description": "On cherche souvent à calmer le stress par des techniques dans la journée, en oubliant qu'un sommeil de qualité régule directement les émotions et renforce la résistance au stress dès le réveil. Une nuit vraiment réparatrice change la façon dont une contrariété du matin est vécue, bien avant midi. Investir dans ton sommeil n'est pas un luxe à part, mais l'un des leviers les plus directs pour un mental plus stable. #sommeil #stress #bienetre #systemenerveux #energie",
-  "image_prete": "images_manuelles/bien-dormir-c-est-moins-stresser.jpg"
- },
- {
-  "titre": "Comment le stress empêche concrètement un bon sommeil de s'installer",
-  "texte_image": "Comment le stress empêche concrètement un bon sommeil de s'installer",
-  "description": "Le stress active le cortisol, l'hormone censée te maintenir en alerte, et ce cortisol dérègle directement le cycle naturel du sommeil : endormissement plus difficile, réveils nocturnes plus fréquents, sommeil globalement moins réparateur, fatigue persistante dès le réveil. Ce n'est pas dans ta tête, c'est un mécanisme hormonal mesurable, et le comprendre aide à s'attaquer à la source, le stress, plutôt qu'au symptôme. #sommeil #stress #cortisol #systemenerveux #bienetre",
-  "image_prete": "images_manuelles/stress-empeche-bon-sommeil-cortisol.jpg"
- },
- {
-  "titre": "Le soir, on déconnecte vraiment : pas juste on éteint l'écran",
-  "texte_image": "Le soir, on déconnecte vraiment : pas juste on éteint l'écran",
-  "description": "Poser son téléphone ne suffit pas toujours si la tête continue de tourner sur les mêmes sollicitations. Évite les écrans au moins une heure avant de dormir, privilégie une lumière douce et chaude plutôt que l'éclairage principal, lis quelques pages ou écoute une musique calme, et laisse vraiment ce moment être une coupure, pas juste une pause entre deux notifications. La vraie déconnexion se prépare, elle ne s'improvise pas. #sommeil #ecrans #routinedusoir #deconnexion #bienetre",
-  "image_prete": "images_manuelles/le-soir-on-deconnecte-ecrans.jpg"
- },
- {
-  "titre": "Ces aliments qui favorisent vraiment un sommeil plus profond",
-  "texte_image": "Ces aliments qui favorisent vraiment un sommeil plus profond",
-  "description": "Certains nutriments aident le cerveau à se détendre et à produire la mélatonine nécessaire à l'endormissement. Le magnésium des amandes et épinards, le tryptophane de la dinde, des œufs ou du tofu, les oméga-3 des poissons gras et graines, la vitamine B6 des bananes et pois chiches : les intégrer au dîner plutôt qu'au petit-déjeuner en renforce l'effet sur la nuit qui suit. Un petit ajustement d'assiette, un vrai effet sur le sommeil. #sommeil #alimentation #endormissement #bienetre #energie",
-  "image_prete": "images_manuelles/aliments-qui-favorisent-le-sommeil.jpg"
- },
- {
   "titre": "4-4-6 : la respiration à faire quand la pression monte d'un coup",
   "texte_image": "4-4-6 : la respiration à faire quand la pression monte d'un coup",
   "description": "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre secondes, puis expire doucement par la bouche pendant six secondes : ce rythme simple, répété deux à cinq minutes, envoie un signal de calme direct à ton système nerveux, particulièrement utile juste après un moment tendu. Pas besoin de fermer les yeux ni de t'isoler, quelques cycles discrets suffisent souvent à faire retomber la pression. #respiration #stress #systemenerveux #calme #anxiete",
   "image_prete": "images_manuelles/respiration-4-4-6-relacher-pression.jpg"
- },
- {
-  "titre": "Une routine anti-stress pensée pour toute la journée, pas juste le soir",
-  "texte_image": "Une routine anti-stress pensée pour toute la journée, pas juste le soir",
-  "description": "Le matin, expose-toi à la lumière naturelle dès que possible. En journée, bouge ton corps, même une simple marche compte. Après 16h, évite la caféine et les excitants qui prolongent l'état d'alerte jusqu'au coucher. Le soir, privilégie un dîner léger et régulier. Avant de dormir, installe un rituel calme, lecture ou respiration. Répartir les gestes sur la journée entière pèse plus lourd que de tout miser sur la seule soirée. #stress #systemenerveux #routine #energie #bienetre",
-  "image_prete": "images_manuelles/routine-anti-stress-toute-la-journee.jpg"
- },
- {
-  "titre": "5 signes que c'est ton stress, et pas autre chose, qui abîme ton sommeil",
-  "texte_image": "5 signes que c'est ton stress, et pas autre chose, qui abîme ton sommeil",
-  "description": "Du mal à t'endormir alors que tu es épuisé(e), des réveils en pleine nuit sans raison apparente, des rêves agités ou des cauchemars plus fréquents, un réveil fatigué même après une nuit complète, et une irritabilité qui s'installe dans la journée : ces cinq signes, ensemble, pointent souvent vers un stress non traité plutôt qu'un simple problème de sommeil isolé. #sommeil #stress #insomnie #systemenerveux #anxiete",
-  "image_prete": "images_manuelles/5-signes-stress-abime-ton-sommeil.jpg"
- },
- {
-  "titre": "Ce que ton sommeil répare vraiment chaque nuit, corps et esprit compris",
-  "texte_image": "Ce que ton sommeil répare vraiment chaque nuit, corps et esprit compris",
-  "description": "Pendant que tu dors, ton cerveau consolide la mémoire et la concentration du lendemain, ton système immunitaire se renforce activement, tes émotions se régulent pour repartir sur une base plus stable, ton énergie et ta motivation se rechargent réellement. Ce n'est pas juste un temps d'arrêt : c'est une réparation active, mesurable, qui conditionne la qualité de la journée suivante. #sommeil #sante #bienetre #recuperation #energie",
-  "image_prete": "images_manuelles/ce-que-le-sommeil-repare-chaque-nuit.jpg"
- },
- {
-  "titre": "7 habitudes du soir qui font vraiment retomber le stress accumulé",
-  "texte_image": "7 habitudes du soir qui font vraiment retomber le stress accumulé",
-  "description": "Respirer profondément pendant cinq minutes, écrire ce qui te préoccupe dans un carnet plutôt que de le garder en tête, t'accorder une vraie pause digitale, boire une tisane relaxante, écouter une musique douce, visualiser une chose positive pour le lendemain, et te coucher à heure fixe autant que possible : sept habitudes courtes, à choisir selon la soirée plutôt qu'à toutes appliquer d'un coup. #stress #systemenerveux #routinedusoir #calme #bienetre",
-  "image_prete": "images_manuelles/7-habitudes-anti-stress-soir.jpg"
  },
  {
   "titre": "Mieux dormir aujourd'hui, c'est investir dans une vie plus sereine demain",
@@ -1293,12 +1227,6 @@
   "texte_image": "Trop de pensées, stress, anxiété : et si ça ne se calmait jamais tout seul ?",
   "description": "Tête dans les mains, tu regardes une pensée en entraîner une autre, puis une troisième, sans jamais réussir à faire retomber le calme. Ce n'est pas un excès de réflexion : c'est un système nerveux en surrégime qui continue de tourner même quand la situation ne l'exige plus. Attendre que ça passe tout seul fonctionne rarement ; agir sur le corps en premier, par la respiration, aide souvent plus vite que de penser à autre chose. #systemenerveux #stress #anxiete #ruminations #calme",
   "image_prete": "images_manuelles/pensees-en-boucle-stress-anxiete.jpg"
- },
- {
-  "titre": "Le stress n'est pas une fatalité : il existe de vraies clés pour souffler",
-  "texte_image": "Le stress n'est pas une fatalité : il existe de vraies clés pour souffler",
-  "description": "Tu as fini par penser que vivre stressé(e) fait juste partie du jeu, que c'est comme ça et pas autrement. Pourtant le stress chronique n'est pas une fatalité : c'est un état que le corps apprend, et qu'il peut aussi désapprendre avec les bons leviers, répétés régulièrement plutôt qu'une seule fois. Retrouver plus de sérénité ne demande pas de tout changer d'un coup, juste de commencer quelque part. #stress #systemenerveux #bienetre #calme #sante",
-  "image_prete": "images_manuelles/stress-pas-fatalite-cles-serenite.jpg"
  },
  {
   "titre": "Les signes d'anxiété que tu mets peut-être sur le compte d'autre chose",
