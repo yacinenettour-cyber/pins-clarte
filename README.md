@@ -14,11 +14,82 @@ Le workflow `.github/workflows/pins.yml` est déclenché 7 fois par jour (6h07, 
 4. Il commit l'image dans le dépôt et récupère son URL publique.
 5. Il envoie titre / description / URL de l'image / lien vers un webhook Make.com, qui publie le pin sur Pinterest.
 
+## Génération d'images via les connecteurs Claude (Claude_image / Hugging Face / Canva)
+
+Cette session dispose de plusieurs connecteurs de génération/édition d'images, indépendants du système `OPENAI_API_KEY` décrit plus bas (qui reste le seul utilisé par le pipeline automatique en production) :
+
+- **Claude_image** (payant, crédits limités) — vérifier le solde avec `get_credits` avant toute génération ; `quote_generation` donne le coût exact par modèle avant de lancer. Un appel qui time out peut quand même consommer le crédit.
+- **Hugging Face** (`gr1_z_image_turbo_generate`, gratuit) — supporte nativement la résolution `1024x1536 (2:3)`, exactement le format des pins du compte.
+- **Canva** (`generate-image`) — non testé à ce jour dans ce dépôt.
+
+**Règles à appliquer** :
+
+1. **Ne jamais faire générer le texte par l'IA à l'intérieur de l'image.** Un premier essai avec la consigne explicite "no text" a quand même produit du texte incohérent ("Row Slow Deepestharg"). Générer uniquement le visuel (photo + illustration/schéma), sans aucun texte, et laisser le pipeline existant (`dessiner_image()` dans `pins.yml`) poser le texte — rendu fiable et déjà éprouvé, zéro risque de coupure.
+2. **Supprimer immédiatement tout ce qui n'est pas exploitable** (texte halluciné, résultat hors-sujet, mauvaise qualité) — ne jamais committer un essai raté dans le dépôt, même temporairement.
+3. **Rester cohérent avec l'identité visuelle du compte** : photographie éditoriale réaliste, palette bleu nuit/doré chaude, ambiance calme, un éventuel schéma illustratif discret en surimpression (voir `PROMPTS_THEME_IA` dans `pins.yml` pour le ton déjà établi par thème).
+4. **Format cible** : `1024x1536` ou équivalent 2:3, sauvegardé en `.jpg` dans `fonds/` avec le prochain numéro disponible, puis répertorié dans `fonds_themes.json` avec le thème correspondant.
+
+## Prompt système SEO pour un futur scénario Make (image → métadonnées via IA)
+
+`prompts/system-prompt-pin-seo.md` contient un prompt système fourni par l'utilisateur, à utiliser dans un module IA d'un scénario Make.com : Make envoie une image + l'URL de destination + la liste des tableaux Pinterest, l'IA analyse l'image et renvoie un JSON (titre, description, mots-clés, hashtags, nom de fichier, texte alt, tableau...) exploitable automatiquement par Make.
+
+**Ce flux est distinct du fonctionnement actuel décrit ci-dessus** : aujourd'hui, `pins.yml` part d'un texte déjà écrit dans `pins.json` et choisit/génère une image en conséquence (texte → image). Le prompt image→métadonnées part au contraire d'une image déjà reçue et fait générer le texte à partir d'elle (image → texte). Les deux logiques ne sont pas encore reliées dans ce dépôt — avant de les connecter (ou de basculer l'un vers l'autre), clarifier avec l'utilisateur si ce nouveau flux doit remplacer `pins.json`, s'y ajouter, ou rester un scénario Make séparé.
+
+## Cohérence du contenu (vérification obligatoire avant d'ajouter un pin)
+
+Le compte est centré sur **le stress, la procrastination et le sommeil**, avec ses thèmes établis (`sommeil`, `systemenerveux`, `fatiguementale`, `alimentation`, `procrastination`, `somatisation`, `blocagemental`, `posturesantistress`, `energie` — voir `TABLEAUX` dans `.github/workflows/pins.yml`, chaque thème a son propre board Pinterest). Le script de publication ne fait **aucun contrôle de pertinence** : il publie tel quel le premier pin non encore publié de `pins.json`, dans l'ordre. Toute la responsabilité de cohérence repose donc sur ce qui est ajouté à la banque.
+
+**Avant d'ajouter un nouveau pin à `pins.json` (texte + `image_prete` le cas échéant), vérifier systématiquement :**
+
+1. **Le texte** (titre, texte_image, description) doit se rattacher clairement à un des thèmes ci-dessus, toujours à travers l'angle stress/mental — pas de contenu générique (recette, déco, organisation domestique...) sans lien explicite avec le sommeil, le stress ou le système nerveux. Exemple déjà rencontré à éviter : un pin "rangez votre frigo" sans lien avec le stress ne convient pas ; "ce que le désordre du frigo dit de ta charge mentale" convient.
+   - **Cas particulier du thème `alimentation` (board "Alimentation et stress")** : ce board sert uniquement à montrer comment l'alimentation **diminue le stress**, pas le sommeil ni l'énergie en général (ces angles-là existent déjà via les thèmes `sommeil` et `energie`). Un pin alimentation dont le bénéfice mis en avant est l'endormissement ou l'énergie, sans mention explicite du stress/tension/nervosité, ne va pas sur ce board.
+2. **L'image** (`fonds/`, fond généré par IA, ou `image_prete`) doit correspondre au sujet réel du texte, pas seulement au thème détecté automatiquement par mot-clé.
+3. **Le thème détecté dépend du premier hashtag de la description** (voir `deviner_theme()` dans `.github/workflows/pins.yml`) — pas seulement de la présence du mot-clé du thème quelque part dans le texte. Toujours placer en premier hashtag celui qui correspond au vrai board visé, même si d'autres hashtags thématiques apparaissent aussi dans la description.
+4. En cas de lot d'images/textes reçu en bloc (infographies fournies par l'utilisateur, etc.), trier avant l'ajout : écarter ce qui ne rentre pas dans le périmètre plutôt que tout ajouter par défaut.
+
+Un audit a retiré en septembre 2026 onze pins "recette/organisation cuisine" sans lien avec le stress qui avaient été ajoutés par erreur (dont certains déjà publiés), et recentré le board `alimentation` en réordonnant les hashtags de 5 pins dont le vrai sujet était le sommeil ou l'énergie, pas le stress — voir l'historique Git pour référence.
+
+## Lien de destination (uniquement sur les thèmes liés à la formation)
+
+`LIEN_PAGE` pointe vers la page de capture d'une formation systeme.io dont le contenu ne couvre **pas tous les thèmes du compte**. Pour éviter d'envoyer des clics non qualifiés (visiteurs intéressés par un sujet que la formation ne traite pas), le champ `lien` envoyé à Make est vide (`""`) pour les thèmes hors périmètre — voir `THEMES_SANS_LIEN` dans `.github/workflows/pins.yml` et `videos.yml`.
+
+- **Thèmes avec lien** (couverts par la formation) : `sommeil`, `systemenerveux`, `fatiguementale`, `posturesantistress`, `blocagemental`, `somatisation`, `energie`.
+- **Thèmes sans lien** (hors périmètre de la formation, à ce jour) : `alimentation`, `procrastination`.
+
+**Conséquence pour la rédaction** : un pin sur un thème sans lien ne doit jamais promettre un contenu à découvrir "dans le guide gratuit" ou inviter à "cliquer sur cette épingle" pour en savoir plus — il n'y a rien derrière. Adapter le CTA de ces pins (ou ne pas en mettre du tout) : fin informative, ou invitation à enregistrer l'épingle sur Pinterest (ça reste possible sans lien de destination), jamais une promesse de contenu accessible par clic.
+
+Si le périmètre de la formation change (nouveau module couvrant l'alimentation ou la procrastination, par exemple), mettre à jour `THEMES_SANS_LIEN` dans les deux workflows en conséquence.
+
+## Varier les CTA de fin de description
+
+Ne jamais réutiliser systématiquement la même formule de fin d'un pin à l'autre. Viser une grande diversité de CTA (au minimum une quinzaine de formulations distinctes dans la banque, largement dépassé à ce jour) et ne pas mettre de CTA explicite sur tous les pins — environ un quart des pins doivent se terminer sur une phrase informative plutôt que sur une invitation à l'action, pour que ça reste naturel et ne sonne pas comme un script répété.
+
+## Images fournies en planche (plusieurs visuels dans une seule image)
+
+L'utilisateur envoie parfois une planche composite (grille de 5×2 ou similaire) regroupant plusieurs visuels d'infographie à intégrer comme pins `image_prete`. Avant d'ajouter ce type de contenu à la banque :
+
+1. **Découper chaque visuel individuellement** (crop précis par cellule de la grille).
+2. **Retirer une marge intérieure** (10-20 px selon la résolution) sur les bords communs avec la cellule voisine : les planches contiennent souvent un fin liseré/gouttière entre les visuels qui, sans ce retrait, laisse une bordure parasite visible sur le pin final.
+3. **Remplir tout le cadre de l'épingle sans aucune bordure noire ou padding** : mettre à l'échelle puis recadrer (jamais scale-to-fit-and-pad) pour obtenir exactement le format cible (1000×1500 comme le reste du compte), quitte à perdre une partie du contenu vertical si le visuel source a un ratio très différent (ces planches produisent souvent des visuels très hauts et étroits, ratio ~1:3.8, bien au-delà du 2:3 visé).
+4. **Ancrer le recadrage sur le titre + le début du contenu par défaut**, sauf si le titre/l'information essentielle est visible ailleurs (ex. liste à cocher placée en bas de l'image plutôt qu'en haut, transition avant/après répartie sur toute la hauteur) — dans ce cas, vérifier visuellement où se trouve le texte réellement utile avant de choisir le point d'ancrage, plutôt que d'appliquer un recadrage identique partout.
+5. **Vérifier visuellement au moins un échantillon par lot** après recadrage (pas seulement les dimensions en pixels) : un recadrage géométriquement correct peut quand même couper un titre ou une liste au mauvais endroit.
+
+Limite à connaître : certains visuels ont leur texte tronqué **dans le fichier fourni par l'utilisateur lui-même**, avant tout traitement (texte qui déborde du cadre de sa propre cellule dans la planche source) — ce n'est pas corrigible par recadrage, à signaler plutôt qu'à essayer de réparer.
+
 ## Stratégie des titres
 
 - **Jamais le même titre sur plusieurs pins/images.** Pinterest recommande du contenu original et pénalise les doublons répétés — chaque titre ajouté à `pins.json` doit être unique (vérifié régulièrement : aucun doublon à ce jour).
 - **Composition des titres : ~70 % problème/curiosité, 30 % solution.** C'est la version à privilégier en premier pour maximiser les impressions (ex. *"Pourquoi tu te réveilles à 3h du matin (et ce que ça dit de ton système nerveux)"* plutôt que *"3 astuces pour arrêter de te réveiller la nuit"*).
 - **Ensuite, se fier à Pinterest Analytics.** Une fois assez de données accumulées, repérer les formulations qui génèrent le plus d'enregistrements (saves) et de clics, et orienter les prochains titres vers ces formulations gagnantes plutôt que de continuer à tester à l'aveugle.
+- **Varier les structures d'ouverture.** Éviter qu'un même gabarit ("X : ce que tu...", "la question à te poser...") revienne trop souvent d'un titre à l'autre — alterner questions, chiffres, heures précises, affirmations directes, tournures négatives.
+
+## Descriptions
+
+- **Corps du texte (hors hashtags) visé entre 380 et 450 caractères.** Nettement plus riche qu'une description minimaliste, avec des détails concrets et actionnables plutôt que du remplissage. Toujours vérifier avec `len()` en Python, pas à l'œil.
+- **Description totale (corps + hashtags) toujours ≤ 495-500 caractères** (limite Pinterest ; le script de publication tronque automatiquement au-delà, ce qui peut couper une phrase au milieu — mieux vaut écrire directement dans la limite).
+- **Mots-clés SEO intégrés naturellement**, jamais en bourrage : 2-3 expressions qu'une personne concernée chercherait réellement sur Pinterest, insérées dans des phrases utiles à lire pour un humain.
+- **Varier les CTA de fin de description.** Ne pas répéter systématiquement "Clique sur cette épingle pour le découvrir" ou la même formule d'un pin à l'autre — alterner impératifs ("Enregistre cette épingle...", "Garde-la sous la main..."), questions, affirmations, et parfois aucun CTA explicite (le texte se termine sur le conseil lui-même).
+- **Les 5 hashtags restent le seul mécanisme de routage vers un board Pinterest** (voir `deviner_theme()` dans `.github/workflows/pins.yml`) — ne jamais les modifier en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
 
 ## Déclenchement (cron-job.org)
 
