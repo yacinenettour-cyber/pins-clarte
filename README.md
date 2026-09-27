@@ -39,6 +39,15 @@ Un audit a retiré en septembre 2026 onze pins "recette/organisation cuisine" sa
 - **Jamais le même titre sur plusieurs pins/images.** Pinterest recommande du contenu original et pénalise les doublons répétés — chaque titre ajouté à `pins.json` doit être unique (vérifié régulièrement : aucun doublon à ce jour).
 - **Composition des titres : ~70 % problème/curiosité, 30 % solution.** C'est la version à privilégier en premier pour maximiser les impressions (ex. *"Pourquoi tu te réveilles à 3h du matin (et ce que ça dit de ton système nerveux)"* plutôt que *"3 astuces pour arrêter de te réveiller la nuit"*).
 - **Ensuite, se fier à Pinterest Analytics.** Une fois assez de données accumulées, repérer les formulations qui génèrent le plus d'enregistrements (saves) et de clics, et orienter les prochains titres vers ces formulations gagnantes plutôt que de continuer à tester à l'aveugle.
+- **Varier les structures d'ouverture.** Éviter qu'un même gabarit ("X : ce que tu...", "la question à te poser...") revienne trop souvent d'un titre à l'autre — alterner questions, chiffres, heures précises, affirmations directes, tournures négatives.
+
+## Descriptions
+
+- **Corps du texte (hors hashtags) visé entre 380 et 450 caractères.** Nettement plus riche qu'une description minimaliste, avec des détails concrets et actionnables plutôt que du remplissage. Toujours vérifier avec `len()` en Python, pas à l'œil.
+- **Description totale (corps + hashtags) toujours ≤ 495-500 caractères** (limite Pinterest ; le script de publication tronque automatiquement au-delà, ce qui peut couper une phrase au milieu — mieux vaut écrire directement dans la limite).
+- **Mots-clés SEO intégrés naturellement**, jamais en bourrage : 2-3 expressions qu'une personne concernée chercherait réellement sur Pinterest, insérées dans des phrases utiles à lire pour un humain.
+- **Varier les CTA de fin de description.** Ne pas répéter systématiquement "Clique sur cette épingle pour le découvrir" ou la même formule d'un pin à l'autre — alterner impératifs ("Enregistre cette épingle...", "Garde-la sous la main..."), questions, affirmations, et parfois aucun CTA explicite (le texte se termine sur le conseil lui-même).
+- **Les 5 hashtags restent le seul mécanisme de routage vers un board Pinterest** (voir `deviner_theme()` dans `.github/workflows/pins.yml`) — ne jamais les modifier en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
 
 ## Déclenchement (cron-job.org)
 
