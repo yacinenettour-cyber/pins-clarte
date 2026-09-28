@@ -258,12 +258,30 @@ jobs:
               "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 
+          def choisir_pin_equilibre(restants, historique):
+              # Repartit les publications entre themes au lieu de vider la banque
+              # dans l'ordre du tableau (qui peut faire enchainer des dizaines de
+              # pins du meme theme si la banque a ete remplie par lots thematiques).
+              # Choisit le theme dont la derniere publication est la plus ancienne
+              # (ou jamais publie), puis le premier pin de ce theme dans la banque.
+              par_theme = {}
+              for p in restants:
+                  t = deviner_theme(p["description"])
+                  par_theme.setdefault(t, []).append(p)
+              dernier_par_theme = {}
+              for h in historique:
+                  t = h.get("theme")
+                  if t:
+                      dernier_par_theme[t] = h["date"]
+              theme_choisi = min(par_theme, key=lambda t: dernier_par_theme.get(t, ""))
+              return par_theme[theme_choisi][0]
+
           banque = json.load(open("pins.json", encoding="utf-8"))
           faits = {h["titre"] for h in historique}
           restants = [p for p in banque if p["titre"] not in faits]
           if not restants:
               sys.exit("Banque de pins vide : ajoute de nouveaux pins dans pins.json.")
-          pin = restants[0]
+          pin = choisir_pin_equilibre(restants, historique)
           print("Pins restants dans la banque :", len(restants))
 
           PHRASES_ENREGISTRER = [

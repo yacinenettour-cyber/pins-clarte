@@ -6,7 +6,17 @@ Ce fichier est chargé automatiquement au démarrage de chaque session Claude Co
 
 "Clarté Mentale | Stress & Énergie" — compte Pinterest francophone centré sur **le stress, la procrastination et le sommeil**, et leurs thèmes associés : `sommeil`, `systemenerveux`, `fatiguementale`, `alimentation`, `procrastination`, `somatisation`, `blocagemental`, `posturesantistress`, `energie` (chacun a son propre board Pinterest — voir `TABLEAUX` dans `.github/workflows/pins.yml`).
 
-Le pipeline (`pins.yml` + `videos.yml`, déclenchés par cron-job.org) publie automatiquement, **sans aucun contrôle de pertinence** : il envoie tel quel le prochain pin non publié de `pins.json` / script de `videos.json`. Toute la responsabilité de cohérence repose sur ce qui est ajouté à ces fichiers — voir la section "Cohérence du contenu" du README avant d'ajouter quoi que ce soit.
+Le pipeline (`pins.yml` + `videos.yml`, déclenchés par cron-job.org) publie automatiquement, **sans aucun contrôle de pertinence** : il envoie le prochain pin non publié, choisi par rotation entre thèmes (pas dans l'ordre du tableau — voir `choisir_pin_equilibre()`). Toute la responsabilité de cohérence repose sur ce qui est ajouté à ces fichiers — voir la section "Cohérence du contenu" du README avant d'ajouter quoi que ce soit.
+
+## ⚠️ Règle critique : le pipeline publie depuis `main`, pas depuis une branche de session
+
+**Incident du 27/09/2026** : une session entière de corrections faite sur une branche jamais fusionnée dans `main` a laissé le compte publier l'ancienne banque non corrigée pendant toute une journée (8 pins hors-sujet publiés avant détection). Le pipeline automatique (cron-job.org toutes les 2h) committe en continu sur `main`, 24h/24, indépendamment de toute session Claude Code.
+
+**En début de session** : `git fetch origin main` pour voir où en est la production réelle.
+**Avant de considérer un travail terminé** : la correction doit être visible sur `origin/main`, pas seulement commitée sur une branche locale ou de travail. Fusionner immédiatement, ne jamais reporter "à la prochaine session".
+**Avant de pousser vers `main`** : fusionner d'abord les commits automatiques récents (`git merge origin/main`) pour éviter un rejet.
+
+Détail complet : `docs/pinterest-projet/05-process-operationnel.md`.
 
 ## Règles impératives (déjà appliquées, à ne pas régresser)
 
@@ -24,6 +34,7 @@ Le pipeline (`pins.yml` + `videos.yml`, déclenchés par cron-job.org) publie au
 - `videos.json` / `historique_videos.json` : équivalent pour les Video Pins.
 - `fonds/` + `fonds_themes.json` : photos de fond par thème.
 - `prompts/system-prompt-pin-seo.md` : prompt système pour un futur module IA Make.com (image → métadonnées), flux distinct et pas encore connecté au pipeline actuel (texte → image).
+- `docs/pinterest-projet/` : documentation complète et autoportante (vue d'ensemble, architecture, tableaux, règles éditoriales, journal des décisions, process opérationnel) — voir son README pour l'index.
 
 ## Avant de considérer une tâche terminée
 

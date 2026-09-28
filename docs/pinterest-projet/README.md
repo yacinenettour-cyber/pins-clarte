@@ -9,6 +9,7 @@ Ensemble de fichiers autoportants, pensés pour être chargés comme connaissanc
 3. **[02-tableaux-pinterest.md](02-tableaux-pinterest.md)** — Détail des 9 tableaux Pinterest (ID, sujet, volume, exemples de titres, lien formation oui/non).
 4. **[03-regles-editoriales.md](03-regles-editoriales.md)** — Toutes les règles à appliquer avant d'ajouter du contenu, avec checklist de vérification.
 5. **[04-journal-decisions.md](04-journal-decisions.md)** — Historique et raisonnement des décisions prises, pour comprendre le "pourquoi" de chaque règle sans avoir à tout redemander.
+6. **[05-process-operationnel.md](05-process-operationnel.md)** — Le mode opératoire complet : cycle de publication, rotation par thème, règle critique de synchronisation avec `main`, seuils d'alerte, qui fait quoi (automatique / Claude / utilisateur).
 
 ## À lire en premier
 

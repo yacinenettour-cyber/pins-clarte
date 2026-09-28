@@ -149,12 +149,27 @@ jobs:
                   time.sleep(pause)
               return False
 
+          def choisir_video_equilibree(restants, historique):
+              # Meme logique de rotation par theme que pins.yml : evite qu'un
+              # theme surrepresente dans videos.json monopolise plusieurs jours
+              # d'affilee.
+              par_theme = {}
+              for v in restants:
+                  par_theme.setdefault(v["theme"], []).append(v)
+              dernier_par_theme = {}
+              for h in historique:
+                  t = h.get("theme")
+                  if t:
+                      dernier_par_theme[t] = h["date"]
+              theme_choisi = min(par_theme, key=lambda t: dernier_par_theme.get(t, ""))
+              return par_theme[theme_choisi][0]
+
           banque = json.load(open("videos.json", encoding="utf-8"))
           faits = {h["id"] for h in historique}
           restants = [v for v in banque if v["id"] not in faits]
           if not restants:
               sys.exit("Banque de videos vide : ajoute de nouveaux scripts dans videos.json.")
-          video = restants[0]
+          video = choisir_video_equilibree(restants, historique)
           print("Videos restantes dans la banque :", len(restants))
           print("Video choisie :", video["id"])
 
