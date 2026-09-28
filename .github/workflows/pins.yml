@@ -225,6 +225,85 @@ jobs:
               img.save(chemin_sortie, "JPEG", quality=88, optimize=True, progressive=True)
 
 
+          def dessiner_infographie(titre_image, points, chemin_sortie, police_grasse, police_normale, fond):
+              # Variante "infographie" : titre + liste numerotee de 3-4 points courts,
+              # au lieu d'une seule phrase-accroche. Format des pins historiques les
+              # plus performants du compte (voir docs/pinterest-projet/04-journal-decisions.md
+              # section 9). Meme rendu texte fiable (PIL + Poppins), jamais de texte
+              # genere par IA.
+              L, H = 1000, 1500
+              img = recadrer(Image.open(fond).convert("RGB"), L, H) if fond else Image.new("RGB", (L, H), (30, 40, 70))
+              debut_masque = 250
+              masque = Image.new("L", (1, H))
+              for y in range(H):
+                  t = max(0.0, (y - debut_masque) / (H - debut_masque))
+                  masque.putpixel((0, y), int(55 + 195 * (t ** 1.2)))
+              img = Image.composite(Image.new("RGB", (L, H), (10, 15, 30)), img, masque.resize((L, H)))
+
+              d = ImageDraw.Draw(img)
+              marge = 90
+              largeur = L - 2 * marge
+
+              taille_titre = 78
+              while taille_titre > 48:
+                  police_titre = charger_police(police_grasse, taille_titre)
+                  lignes_titre = couper_lignes(d, titre_image, police_titre, largeur)
+                  if len(lignes_titre) <= 3:
+                      break
+                  taille_titre -= 4
+              hauteur_ligne_titre = int(taille_titre * 1.2)
+
+              taille_point = 42
+              police_point = charger_police(police_normale, taille_point)
+              police_num = charger_police(police_grasse, taille_point)
+              largeur_point = largeur - 70
+              lignes_par_point = [couper_lignes(d, p, police_point, largeur_point) for p in points]
+              hauteur_ligne_point = int(taille_point * 1.32)
+              espace_entre_points = 22
+
+              hauteur_points = sum(len(lp) * hauteur_ligne_point for lp in lignes_par_point) \
+                  + espace_entre_points * (len(points) - 1)
+              espace_titre_points = 46
+              hauteur_totale = hauteur_ligne_titre * len(lignes_titre) + espace_titre_points + hauteur_points
+
+              y = max(1295 - hauteur_totale, debut_masque + 40)
+
+              for ligne in lignes_titre:
+                  w = d.textlength(ligne, font=police_titre)
+                  x = (L - w) / 2
+                  d.text((x + 3, y + 3), ligne, font=police_titre, fill=(8, 12, 26))
+                  d.text((x, y), ligne, font=police_titre, fill=(255, 255, 255))
+                  y += hauteur_ligne_titre
+              y += espace_titre_points
+
+              rayon = 26
+              x_num_centre = marge + rayon
+              x_texte = marge + 2 * rayon + 22
+              couleur_accent = (236, 196, 120)
+
+              for i, lp in enumerate(lignes_par_point, start=1):
+                  y_centre_cercle = y + hauteur_ligne_point / 2 - 6
+                  d.ellipse(
+                      [x_num_centre - rayon, y_centre_cercle - rayon, x_num_centre + rayon, y_centre_cercle + rayon],
+                      fill=couleur_accent,
+                  )
+                  num_txt = str(i)
+                  nw = d.textlength(num_txt, font=police_num)
+                  d.text((x_num_centre - nw / 2, y_centre_cercle - taille_point / 2 - 2), num_txt, font=police_num, fill=(20, 20, 30))
+                  for ligne in lp:
+                      d.text((x_texte + 2, y + 2), ligne, font=police_point, fill=(8, 12, 26))
+                      d.text((x_texte, y), ligne, font=police_point, fill=(255, 255, 255))
+                      y += hauteur_ligne_point
+                  y += espace_entre_points
+
+              d.line([(L / 2 - 70, y + 10), (L / 2 + 70, y + 10)], fill=(236, 230, 205), width=5)
+              police_pied = charger_police(police_normale, 34)
+              w = d.textlength(MARQUE, font=police_pied)
+              d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
+
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+
+
           def git(*args):
               return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
 
@@ -338,7 +417,10 @@ jobs:
                   fond = choisir_fond(theme, historique)
                   fond_etiquette = fond
 
-              dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
+              if pin.get("points_image"):
+                  dessiner_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond)
+              else:
+                  dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
               print("Thème détecté :", theme)
               print("Fond utilisé :", fond_etiquette)
           print("Image créée :", chemin)

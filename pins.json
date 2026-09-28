@@ -216,22 +216,42 @@
  {
   "titre": "3 signaux calmes à envoyer à ton corps avant de dormir",
   "texte_image": "3 signaux calmes avant de dormir",
-  "description": "Tu peux être épuisé toute la journée et pourtant incapable de fermer l'œil : ton système nerveux ne se sent pas encore assez en sécurité pour lâcher prise. 3 signaux aident à basculer en mode repos 👉 une main sur le sternum, massée doucement 👉 une expiration deux fois plus longue que l'inspiration 👉 l'autre main sur le ventre. Le corps comprend ces gestes mieux que les pensées. #sommeil #stress #systemenerveux #bienetre #calme #routinedusoir #anxiete #relaxation"
+  "description": "Tu peux être épuisé toute la journée et pourtant incapable de fermer l'œil : ton système nerveux ne se sent pas encore assez en sécurité pour lâcher prise. 3 signaux aident à basculer en mode repos 👉 une main sur le sternum, massée doucement 👉 une expiration deux fois plus longue que l'inspiration 👉 l'autre main sur le ventre. Le corps comprend ces gestes mieux que les pensées. #sommeil #stress #systemenerveux #bienetre #calme #routinedusoir #anxiete #relaxation",
+  "points_image": [
+   "Une main sur le sternum, massée doucement",
+   "Une expiration deux fois plus longue que l'inspiration",
+   "L'autre main sur le ventre"
+  ]
  },
  {
   "titre": "5 minutes avant de dormir : 3 gestes pour une nuit profonde",
   "texte_image": "5 minutes, 3 gestes avant de dormir",
-  "description": "Tu enchaînes la douche et le lit en espérant que le sommeil arrive tout seul, et certains soirs ça traîne quand même. Un rituel de 5 minutes suffit à préparer ton corps 👉 étire doucement la nuque et les épaules 👉 tamise la lumière de la pièce 👉 respire lentement en allongeant l'expiration. À glisser dans ta routine dès ce soir, sans rien ajouter d'autre. #sommeil #stress #routinedusoir #bienetre #calme #endormissement #relaxation #santementale"
+  "description": "Tu enchaînes la douche et le lit en espérant que le sommeil arrive tout seul, et certains soirs ça traîne quand même. Un rituel de 5 minutes suffit à préparer ton corps 👉 étire doucement la nuque et les épaules 👉 tamise la lumière de la pièce 👉 respire lentement en allongeant l'expiration. À glisser dans ta routine dès ce soir, sans rien ajouter d'autre. #sommeil #stress #routinedusoir #bienetre #calme #endormissement #relaxation #santementale",
+  "points_image": [
+   "Étire doucement la nuque et les épaules",
+   "Tamise la lumière de la pièce",
+   "Respire lentement en allongeant l'expiration"
+  ]
  },
  {
   "titre": "3 étapes à suivre quand tu tournes dans ton lit depuis une heure",
   "texte_image": "Tu tournes dans ton lit depuis 1h ? 3 étapes",
-  "description": "Ça fait une heure que tu changes de position toutes les cinq minutes en espérant que la suivante sera la bonne. Rester au lit à lutter contre l'insomnie entretient justement la tension 👉 lève-toi et va dans une pièce faiblement éclairée 👉 lis quelques pages ou respire lentement 👉 retourne au lit seulement quand la somnolence revient. Une technique simple à tester dès ce soir. #sommeil #stress #insomnie #bienetre #routinedusoir #calme #endormissement #santementale #relaxation"
+  "description": "Ça fait une heure que tu changes de position toutes les cinq minutes en espérant que la suivante sera la bonne. Rester au lit à lutter contre l'insomnie entretient justement la tension 👉 lève-toi et va dans une pièce faiblement éclairée 👉 lis quelques pages ou respire lentement 👉 retourne au lit seulement quand la somnolence revient. Une technique simple à tester dès ce soir. #sommeil #stress #insomnie #bienetre #routinedusoir #calme #endormissement #santementale #relaxation",
+  "points_image": [
+   "Lève-toi et va dans une pièce faiblement éclairée",
+   "Lis quelques pages ou respire lentement",
+   "Retourne au lit seulement quand la somnolence revient"
+  ]
  },
  {
   "titre": "30 secondes, 3 respirations : le minimum anti-stress avant de dormir",
   "texte_image": "Le minimum anti-stress en 30 secondes",
-  "description": "Certains soirs, tu n'as clairement plus l'énergie pour ta routine complète, et c'est justement là que ton corps en a le plus besoin. Garde une version minimale de 30 secondes 👉 trois respirations profondes 👉 les épaules qui redescendent 👉 la lumière du plafonnier éteinte. Un geste minimal, adaptable même les pires jours, à garder sous la main. #sommeil #stress #routinedusoir #bienetre #calme #energie #relaxation #fatiguementale #detente"
+  "description": "Certains soirs, tu n'as clairement plus l'énergie pour ta routine complète, et c'est justement là que ton corps en a le plus besoin. Garde une version minimale de 30 secondes 👉 trois respirations profondes 👉 les épaules qui redescendent 👉 la lumière du plafonnier éteinte. Un geste minimal, adaptable même les pires jours, à garder sous la main. #sommeil #stress #routinedusoir #bienetre #calme #energie #relaxation #fatiguementale #detente",
+  "points_image": [
+   "Trois respirations profondes",
+   "Les épaules qui redescendent",
+   "La lumière du plafonnier éteinte"
+  ]
  },
  {
   "titre": "Le micro-geste de 3 secondes à glisser avant d'éteindre la lumière",
@@ -241,7 +261,12 @@
  {
   "titre": "3 objets à poser près du lit pour remplacer le scroll du soir",
   "texte_image": "3 objets pour remplacer le scroll du soir",
-  "description": "Tu te dis que tu vas juste jeter un œil à ton téléphone cinq minutes, et une demi-heure plus tard tu scrolles encore, bien réveillé. Remplace ce geste automatique par quelque chose de concret, posé à portée de main avant d'aller au lit 👉 un livre papier 👉 un carnet à feuilleter 👉 une playlist calme. De quoi lâcher l'écran dès ce soir, sans frustration. #sommeil #stress #ecrans #bienetre #routinedusoir #calme #endormissement #santementale"
+  "description": "Tu te dis que tu vas juste jeter un œil à ton téléphone cinq minutes, et une demi-heure plus tard tu scrolles encore, bien réveillé. Remplace ce geste automatique par quelque chose de concret, posé à portée de main avant d'aller au lit 👉 un livre papier 👉 un carnet à feuilleter 👉 une playlist calme. De quoi lâcher l'écran dès ce soir, sans frustration. #sommeil #stress #ecrans #bienetre #routinedusoir #calme #endormissement #santementale",
+  "points_image": [
+   "Un livre papier",
+   "Un carnet à feuilleter",
+   "Une playlist calme"
+  ]
  },
  {
   "titre": "3h du matin, tu regardes l'heure en boucle ? Le geste qui casse ce réflexe",
@@ -281,7 +306,11 @@
  {
   "titre": "2 techniques à essayer plutôt que de forcer ton mental à se taire",
   "texte_image": "2 techniques plutôt que forcer le silence mental",
-  "description": "Tu fermes les yeux en te disant stop, je ne pense plus à rien, et les pensées reviennent en boucle deux secondes plus tard. Plus tu luttes contre elles, plus elles s'accrochent 👉 accueille-les sans jugement, comme des nuages qui passent 👉 reformule-les en une phrase neutre avant de revenir à ta respiration. Une méthode douce à essayer la prochaine fois que ça recommence. #sommeil #stress #ruminations #bienetre #calmemental #anxiete #santementale"
+  "description": "Tu fermes les yeux en te disant stop, je ne pense plus à rien, et les pensées reviennent en boucle deux secondes plus tard. Plus tu luttes contre elles, plus elles s'accrochent 👉 accueille-les sans jugement, comme des nuages qui passent 👉 reformule-les en une phrase neutre avant de revenir à ta respiration. Une méthode douce à essayer la prochaine fois que ça recommence. #sommeil #stress #ruminations #bienetre #calmemental #anxiete #santementale",
+  "points_image": [
+   "Accueille-les sans jugement, comme des nuages qui passent",
+   "Reformule-les en une phrase neutre avant de revenir à ta respiration"
+  ]
  },
  {
   "titre": "8 heures : la durée réelle d'action de ta dernière tasse de café",
@@ -321,12 +350,22 @@
  {
   "titre": "Le réflexe de 10 secondes pour couper le moteur au moment de dormir",
   "texte_image": "Le réflexe de 10 secondes pour calmer le mental",
-  "description": "Tu remarques ce moment précis où, à peine allongé, ton mental repart comme un moteur qu'on vient de lancer. Ton cerveau n'a eu aucun sas entre l'agitation du jour et le silence du lit. Avant que la spirale démarre 👉 nomme mentalement 3 sons que tu entends 👉 puis 2 sensations dans ton corps 👉 termine par une longue expiration. Ce sas de 10 secondes calme le mental sans lutter contre tes pensées. #sommeil #stress #calmemental #anxiete #bienetre #relaxation #santementale"
+  "description": "Tu remarques ce moment précis où, à peine allongé, ton mental repart comme un moteur qu'on vient de lancer. Ton cerveau n'a eu aucun sas entre l'agitation du jour et le silence du lit. Avant que la spirale démarre 👉 nomme mentalement 3 sons que tu entends 👉 puis 2 sensations dans ton corps 👉 termine par une longue expiration. Ce sas de 10 secondes calme le mental sans lutter contre tes pensées. #sommeil #stress #calmemental #anxiete #bienetre #relaxation #santementale",
+  "points_image": [
+   "Nomme mentalement 3 sons que tu entends",
+   "Puis 2 sensations dans ton corps",
+   "Termine par une longue expiration"
+  ]
  },
  {
   "titre": "Le brain dump en 3 lignes pour vider ta to-do list avant de dormir",
   "texte_image": "Le brain dump en 3 lignes avant de dormir",
-  "description": "À peine couché, ta tête enchaîne déjà la liste de ce que tu dois faire demain. Ce réflexe nocturne entretient les ruminations et retarde l'endormissement. Avant de te coucher 👉 note sur un carnet les 3 tâches vraiment prioritaires de demain 👉 ferme le carnet, geste symbolique de clôture 👉 pose-le hors de vue. La liste reste sur le papier, pas dans ta tête. #sommeil #stress #ruminations #organisation #bienetre #calmemental #routinedusoir"
+  "description": "À peine couché, ta tête enchaîne déjà la liste de ce que tu dois faire demain. Ce réflexe nocturne entretient les ruminations et retarde l'endormissement. Avant de te coucher 👉 note sur un carnet les 3 tâches vraiment prioritaires de demain 👉 ferme le carnet, geste symbolique de clôture 👉 pose-le hors de vue. La liste reste sur le papier, pas dans ta tête. #sommeil #stress #ruminations #organisation #bienetre #calmemental #routinedusoir",
+  "points_image": [
+   "Note sur un carnet les 3 tâches vraiment prioritaires de demain",
+   "Ferme le carnet, geste symbolique de clôture",
+   "Pose-le hors de vue"
+  ]
  },
  {
   "titre": "3h du matin : la question qui désamorce une fausse urgence",
@@ -351,42 +390,84 @@
  {
   "titre": "La technique du nommage pour calmer un cerveau qui parle tout seul",
   "texte_image": "La technique du nommage pour calmer le mental",
-  "description": "Tu es allongé, les lumières éteintes, et pourtant ton cerveau continue de commenter, analyser, refaire le monde, comme s'il n'avait pas reçu le mémo du coucher. Nomme simplement ce qu'il fait, à voix basse ou dans ta tête 👉 je planifie 👉 je m'inquiète 👉 je commente. Ce simple étiquetage prend de la distance et ramène le calme en quelques secondes. #sommeil #stress #calmemental #anxiete #bienetre #ruminations #santementale"
+  "description": "Tu es allongé, les lumières éteintes, et pourtant ton cerveau continue de commenter, analyser, refaire le monde, comme s'il n'avait pas reçu le mémo du coucher. Nomme simplement ce qu'il fait, à voix basse ou dans ta tête 👉 je planifie 👉 je m'inquiète 👉 je commente. Ce simple étiquetage prend de la distance et ramène le calme en quelques secondes. #sommeil #stress #calmemental #anxiete #bienetre #ruminations #santementale",
+  "points_image": [
+   "Je planifie",
+   "Je m'inquiète",
+   "Je commente"
+  ]
  },
  {
   "titre": "3 gestes minute pour les soirs où tu n'as plus aucune énergie",
   "texte_image": "3 gestes minute pour les soirs épuisés",
-  "description": "Certains soirs, tu rentres, tu t'écroules sur le canapé, et même l'idée de te brosser les dents te semble une montagne tant la fatigue mentale a tout pris. Ces soirs-là n'ont pas besoin d'une routine complète 👉 un verre d'eau posé sur la table de chevet 👉 la lumière du plafond éteinte, une veilleuse suffit 👉 trois respirations lentes allongé. De quoi t'endormir sans culpabiliser. #sommeil #stress #routinedusoir #fatiguementale #bienetre #calme #santementale"
+  "description": "Certains soirs, tu rentres, tu t'écroules sur le canapé, et même l'idée de te brosser les dents te semble une montagne tant la fatigue mentale a tout pris. Ces soirs-là n'ont pas besoin d'une routine complète 👉 un verre d'eau posé sur la table de chevet 👉 la lumière du plafond éteinte, une veilleuse suffit 👉 trois respirations lentes allongé. De quoi t'endormir sans culpabiliser. #sommeil #stress #routinedusoir #fatiguementale #bienetre #calme #santementale",
+  "points_image": [
+   "Un verre d'eau posé sur la table de chevet",
+   "La lumière du plafond éteinte, une veilleuse suffit",
+   "Trois respirations lentes allongé"
+  ]
  },
  {
   "titre": "4 étapes, zéro accessoire : la vraie routine du soir",
   "texte_image": "4 étapes, zéro accessoire",
-  "description": "Tu n'as ni huiles essentielles, ni bougies, ni application spéciale pour t'endormir, et franchement, ce n'est pas grave. Une bonne routine du soir ne dépend d'aucun accessoire, juste de l'ordre des gestes 👉 baisse la lumière une heure avant 👉 pose l'écran hors de la chambre 👉 étire doucement la nuque et les épaules 👉 respire lentement, allongé, dans le noir. Réalisable n'importe où, sans rien acheter. #sommeil #stress #routinedusoir #bienetre #calme #endormissement #detente"
+  "description": "Tu n'as ni huiles essentielles, ni bougies, ni application spéciale pour t'endormir, et franchement, ce n'est pas grave. Une bonne routine du soir ne dépend d'aucun accessoire, juste de l'ordre des gestes 👉 baisse la lumière une heure avant 👉 pose l'écran hors de la chambre 👉 étire doucement la nuque et les épaules 👉 respire lentement, allongé, dans le noir. Réalisable n'importe où, sans rien acheter. #sommeil #stress #routinedusoir #bienetre #calme #endormissement #detente",
+  "points_image": [
+   "Baisse la lumière une heure avant",
+   "Pose l'écran hors de la chambre",
+   "Étire doucement la nuque et les épaules",
+   "Respire lentement, allongé, dans le noir"
+  ]
  },
  {
   "titre": "Après 21h, la routine du soir tient en 3 gestes et 5 minutes",
   "texte_image": "La routine du soir en 3 gestes après 21h",
-  "description": "Tu poses tes clés, il est déjà tard, et l'idée même de dérouler ta routine du soir habituelle te paraît complètement irréaliste ce soir-là. Pourtant, sauter cette transition abîme souvent la qualité du sommeil qui suit. Garde l'essentiel 👉 lumière tamisée dès l'entrée 👉 douche tiède plutôt que chaude 👉 deux minutes allongé à respirer avant de fermer les yeux. Trois gestes, cinq minutes, et l'essentiel est là. #sommeil #stress #routinedusoir #bienetre #energie #calme #endormissement"
+  "description": "Tu poses tes clés, il est déjà tard, et l'idée même de dérouler ta routine du soir habituelle te paraît complètement irréaliste ce soir-là. Pourtant, sauter cette transition abîme souvent la qualité du sommeil qui suit. Garde l'essentiel 👉 lumière tamisée dès l'entrée 👉 douche tiède plutôt que chaude 👉 deux minutes allongé à respirer avant de fermer les yeux. Trois gestes, cinq minutes, et l'essentiel est là. #sommeil #stress #routinedusoir #bienetre #energie #calme #endormissement",
+  "points_image": [
+   "Lumière tamisée dès l'entrée",
+   "Douche tiède plutôt que chaude",
+   "Deux minutes allongé à respirer avant de fermer les yeux"
+  ]
  },
  {
   "titre": "3 gestes pour couper avec ta journée avant de dormir",
   "texte_image": "3 gestes pour couper avec ta journée",
-  "description": "Tu te couches et ta journée continue de tourner en boucle, comme si ton cerveau avait besoin de tout rejouer une dernière fois. 3 gestes suffisent à créer une vraie coupure 👉 note en une phrase ce qui t'a marqué aujourd'hui 👉 écris la seule chose à ne pas oublier demain 👉 respire lentement en sentant le matelas porter ton corps. La boucle se desserre en quelques minutes. #sommeil #stress #routinedusoir #ruminations #bienetre #calme #santementale #anxiete"
+  "description": "Tu te couches et ta journée continue de tourner en boucle, comme si ton cerveau avait besoin de tout rejouer une dernière fois. 3 gestes suffisent à créer une vraie coupure 👉 note en une phrase ce qui t'a marqué aujourd'hui 👉 écris la seule chose à ne pas oublier demain 👉 respire lentement en sentant le matelas porter ton corps. La boucle se desserre en quelques minutes. #sommeil #stress #routinedusoir #ruminations #bienetre #calme #santementale #anxiete",
+  "points_image": [
+   "Note en une phrase ce qui t'a marqué aujourd'hui",
+   "Écris la seule chose à ne pas oublier demain",
+   "Respire lentement en sentant le matelas porter ton corps"
+  ]
  },
  {
   "titre": "4 étapes pour calmer un mental qui s'emballe vite le soir",
   "texte_image": "4 étapes pour un mental qui s'emballe vite",
-  "description": "Un message mal interprété, un petit contretemps, et ta tête part en vrille jusque tard dans la nuit. Si ton mental s'emballe vite, une routine générique ne suffit pas toujours. 4 étapes plus ciblées aident à redescendre 👉 nomme la contrariété sans la commenter 👉 bouge 2 minutes pour évacuer la tension 👉 écris-la sur un carnet 👉 respire en allongeant l'expiration. #sommeil #stress #routinedusoir #calmemental #bienetre #anxiete #systemenerveux #detente"
+  "description": "Un message mal interprété, un petit contretemps, et ta tête part en vrille jusque tard dans la nuit. Si ton mental s'emballe vite, une routine générique ne suffit pas toujours. 4 étapes plus ciblées aident à redescendre 👉 nomme la contrariété sans la commenter 👉 bouge 2 minutes pour évacuer la tension 👉 écris-la sur un carnet 👉 respire en allongeant l'expiration. #sommeil #stress #routinedusoir #calmemental #bienetre #anxiete #systemenerveux #detente",
+  "points_image": [
+   "Nomme la contrariété sans la commenter",
+   "Bouge 2 minutes pour évacuer la tension",
+   "Écris-la sur un carnet",
+   "Respire en allongeant l'expiration"
+  ]
  },
  {
   "titre": "3 temps pour vraiment décrocher du travail le soir",
   "texte_image": "3 temps pour décrocher du travail le soir",
-  "description": "Tu fermes l'ordinateur à l'heure prévue, mais ta tête continue de tourner sur ce dossier ou cette phrase mal formulée dans un mail. Sans sas de décompression, le travail s'invite jusque dans ton lit. 3 temps créent une vraie coupure 👉 écris la seule tâche à reprendre demain 👉 change de pièce ou de vêtement 👉 fais une activité manuelle 10 minutes avant le lit. #sommeil #stress #routinedusoir #travail #bienetre #calme #santementale #relaxation"
+  "description": "Tu fermes l'ordinateur à l'heure prévue, mais ta tête continue de tourner sur ce dossier ou cette phrase mal formulée dans un mail. Sans sas de décompression, le travail s'invite jusque dans ton lit. 3 temps créent une vraie coupure 👉 écris la seule tâche à reprendre demain 👉 change de pièce ou de vêtement 👉 fais une activité manuelle 10 minutes avant le lit. #sommeil #stress #routinedusoir #travail #bienetre #calme #santementale #relaxation",
+  "points_image": [
+   "Écris la seule tâche à reprendre demain",
+   "Change de pièce ou de vêtement",
+   "Fais une activité manuelle 10 minutes avant le lit"
+  ]
  },
  {
   "titre": "3 signes que ton coucher sabote la qualité de ton sommeil",
   "texte_image": "3 signes qui sabotent la qualité du sommeil",
-  "description": "Tu dors tes heures, parfois même plus que d'habitude, et tu te réveilles quand même sans impression d'avoir récupéré. Ce décalage vient souvent de ce qui se passe juste avant de fermer les yeux 👉 un écran regardé jusqu'à la dernière minute 👉 un endormissement sur une pensée encore tendue 👉 aucun sas entre l'activité et le lit. Corriger un seul de ces points change déjà le réveil. #sommeil #stress #routinedusoir #energie #bienetre #santementale #relaxation #calme"
+  "description": "Tu dors tes heures, parfois même plus que d'habitude, et tu te réveilles quand même sans impression d'avoir récupéré. Ce décalage vient souvent de ce qui se passe juste avant de fermer les yeux 👉 un écran regardé jusqu'à la dernière minute 👉 un endormissement sur une pensée encore tendue 👉 aucun sas entre l'activité et le lit. Corriger un seul de ces points change déjà le réveil. #sommeil #stress #routinedusoir #energie #bienetre #santementale #relaxation #calme",
+  "points_image": [
+   "Un écran regardé jusqu'à la dernière minute",
+   "Un endormissement sur une pensée encore tendue",
+   "Aucun sas entre l'activité et le lit"
+  ]
  },
  {
   "titre": "22h pile : pourquoi cette vague de fatigue est ton meilleur signal",
@@ -396,7 +477,12 @@
  {
   "titre": "3 gestes corporels pour calmer les pensées avant de dormir",
   "texte_image": "3 gestes corporels pour calmer les pensées",
-  "description": "Tu essaies de calmer tes pensées en te concentrant dessus, mais tant que le corps reste crispé, rien ne se relâche vraiment. Le système nerveux fonctionne dans l'autre sens 👉 desserre la mâchoire et laisse tomber les épaules 👉 pose une main sur le ventre et ralentis l'expiration 👉 relâche les mains ouvertes sur le matelas. Le calme mental suit presque naturellement. #sommeil #stress #routinedusoir #systemenerveux #bienetre #calme #relaxation #anxiete"
+  "description": "Tu essaies de calmer tes pensées en te concentrant dessus, mais tant que le corps reste crispé, rien ne se relâche vraiment. Le système nerveux fonctionne dans l'autre sens 👉 desserre la mâchoire et laisse tomber les épaules 👉 pose une main sur le ventre et ralentis l'expiration 👉 relâche les mains ouvertes sur le matelas. Le calme mental suit presque naturellement. #sommeil #stress #routinedusoir #systemenerveux #bienetre #calme #relaxation #anxiete",
+  "points_image": [
+   "Desserre la mâchoire et laisse tomber les épaules",
+   "Pose une main sur le ventre et ralentis l'expiration",
+   "Relâche les mains ouvertes sur le matelas"
+  ]
  },
  {
   "titre": "La phrase pour faire la paix avec ce que tu aurais dû dire autrement",
@@ -456,7 +542,12 @@
  {
   "titre": "L'exercice de respiration à faire sans sortir un bras des draps",
   "texte_image": "L'exercice de respiration à faire allongé",
-  "description": "Tu es enfin bien installé sous la couette et la dernière chose que tu as envie de faire, c'est de te relever pour suivre un exercice. Reste immobile 👉 inspire par le nez en gonflant le ventre, 4 secondes 👉 bloque 2 secondes 👉 expire lentement par la bouche entrouverte, 6 secondes. Répète six fois sans bouger un bras. Le système nerveux ralentit et l'endormissement s'installe en douceur. #sommeil #stress #respiration #bienetre #calme #relaxation #systemenerveux #endormissement"
+  "description": "Tu es enfin bien installé sous la couette et la dernière chose que tu as envie de faire, c'est de te relever pour suivre un exercice. Reste immobile 👉 inspire par le nez en gonflant le ventre, 4 secondes 👉 bloque 2 secondes 👉 expire lentement par la bouche entrouverte, 6 secondes. Répète six fois sans bouger un bras. Le système nerveux ralentit et l'endormissement s'installe en douceur. #sommeil #stress #respiration #bienetre #calme #relaxation #systemenerveux #endormissement",
+  "points_image": [
+   "Inspire par le nez en gonflant le ventre, 4 secondes",
+   "Bloque 2 secondes",
+   "Expire lentement par la bouche entrouverte, 6 secondes"
+  ]
  },
  {
   "titre": "L'exercice qui ralentit un cœur encore rapide au coucher",
@@ -471,7 +562,13 @@
  {
   "titre": "4-4-6-2 : le protocole de respiration contre un corps en alerte",
   "texte_image": "L'exercice en 4 temps qui calme le système nerveux",
-  "description": "Ton corps reste sur le qui-vive même allongé dans le noir, comme si le danger n'était jamais passé : le système nerveux n'a pas reçu le signal de sécurité. Un protocole en 4 temps aide à basculer vers un vrai repos 👉 inspire 4 secondes 👉 retiens 4 secondes 👉 expire 6 secondes 👉 retiens 2 secondes. Répète cinq fois : le rythme cardiaque ralentit, la mâchoire se desserre. #sommeil #stress #respiration #systemenerveux #bienetre #calme #relaxation #detente"
+  "description": "Ton corps reste sur le qui-vive même allongé dans le noir, comme si le danger n'était jamais passé : le système nerveux n'a pas reçu le signal de sécurité. Un protocole en 4 temps aide à basculer vers un vrai repos 👉 inspire 4 secondes 👉 retiens 4 secondes 👉 expire 6 secondes 👉 retiens 2 secondes. Répète cinq fois : le rythme cardiaque ralentit, la mâchoire se desserre. #sommeil #stress #respiration #systemenerveux #bienetre #calme #relaxation #detente",
+  "points_image": [
+   "Inspire 4 secondes",
+   "Retiens 4 secondes",
+   "Expire 6 secondes",
+   "Retiens 2 secondes"
+  ]
  },
  {
   "titre": "Trop lessivé pour respirer en comptant ? Cette version ne demande rien",
@@ -516,12 +613,22 @@
  {
   "titre": "Le réflexe du soir qui empêche ton cerveau de décrocher",
   "texte_image": "Le réflexe du soir qui empêche ton cerveau de décrocher",
-  "description": "Allongé(e), tu listes déjà les tâches et rendez-vous de demain, et ton cerveau reste en mode action au pire moment pour s'endormir. Le vrai réflexe 👉 note tout une heure avant le coucher, sur papier, dans un carnet dédié 👉 referme-le et pose-le hors de vue 👉 dis-toi que rien ne peut s'échapper puisque c'est déjà écrit. Ton cerveau relâche le contrôle bien plus vite. #sommeil #stress #organisation #routinedusoir #bienetre #calme #systemenerveux #nuit #endormissement #detente"
+  "description": "Allongé(e), tu listes déjà les tâches et rendez-vous de demain, et ton cerveau reste en mode action au pire moment pour s'endormir. Le vrai réflexe 👉 note tout une heure avant le coucher, sur papier, dans un carnet dédié 👉 referme-le et pose-le hors de vue 👉 dis-toi que rien ne peut s'échapper puisque c'est déjà écrit. Ton cerveau relâche le contrôle bien plus vite. #sommeil #stress #organisation #routinedusoir #bienetre #calme #systemenerveux #nuit #endormissement #detente",
+  "points_image": [
+   "Note tout une heure avant le coucher, sur papier, dans un carnet dédié",
+   "Referme-le et pose-le hors de vue",
+   "Dis-toi que rien ne peut s'échapper puisque c'est déjà écrit"
+  ]
  },
  {
   "titre": "3 réflexes de réveil nocturne à éviter absolument",
   "texte_image": "3 réflexes de réveil nocturne à éviter absolument",
-  "description": "Réveillé(e) en pleine nuit, tu regardes l'heure, tu attrapes ton téléphone ou tu forces le sommeil à revenir, trois réflexes qui compliquent en réalité ton retour au calme 👉 regarder l'heure crée de l'anxiété 👉 l'écran coupe la production de mélatonine 👉 forcer le sommeil augmente la tension. Reste plutôt allongé(e), yeux fermés, et respire lentement. #sommeil #stress #reveilnocturne #bienetre #calme #systemenerveux #anxiete #nuit #endormissement #routinedusoir"
+  "description": "Réveillé(e) en pleine nuit, tu regardes l'heure, tu attrapes ton téléphone ou tu forces le sommeil à revenir, trois réflexes qui compliquent en réalité ton retour au calme 👉 regarder l'heure crée de l'anxiété 👉 l'écran coupe la production de mélatonine 👉 forcer le sommeil augmente la tension. Reste plutôt allongé(e), yeux fermés, et respire lentement. #sommeil #stress #reveilnocturne #bienetre #calme #systemenerveux #anxiete #nuit #endormissement #routinedusoir",
+  "points_image": [
+   "Regarder l'heure crée de l'anxiété",
+   "L'écran coupe la production de mélatonine",
+   "Forcer le sommeil augmente la tension"
+  ]
  },
  {
   "titre": "Sport après 20h : pourquoi ta nuit en paie le prix",
@@ -541,7 +648,11 @@
  {
   "titre": "Cœur qui cogne la nuit : le geste en 2 temps pour redescendre",
   "texte_image": "Cœur qui cogne la nuit : le geste en 2 temps pour redescendre",
-  "description": "Réveil brutal, le cœur qui bat vite, comme si quelque chose t'avait secoué en plein sommeil alors que rien ne s'est vraiment passé. C'est souvent une décharge d'adrénaline liée à une phase de sommeil léger 👉 pose une main sur la poitrine, une sur le ventre 👉 allonge doucement l'expiration jusqu'à sentir ton cœur redescendre. Reviens-y la prochaine fois. #sommeil #stress #reveilnocturne #anxiete #bienetre #systemenerveux #nuit #endormissement #routinedusoir #detente"
+  "description": "Réveil brutal, le cœur qui bat vite, comme si quelque chose t'avait secoué en plein sommeil alors que rien ne s'est vraiment passé. C'est souvent une décharge d'adrénaline liée à une phase de sommeil léger 👉 pose une main sur la poitrine, une sur le ventre 👉 allonge doucement l'expiration jusqu'à sentir ton cœur redescendre. Reviens-y la prochaine fois. #sommeil #stress #reveilnocturne #anxiete #bienetre #systemenerveux #nuit #endormissement #routinedusoir #detente",
+  "points_image": [
+   "Pose une main sur la poitrine, une sur le ventre",
+   "Allonge doucement l'expiration jusqu'à sentir ton cœur redescendre"
+  ]
  },
  {
   "titre": "3 mots sur un carnet pour chasser les pensées de travail la nuit",
@@ -551,12 +662,21 @@
  {
   "titre": "20 minutes à fixer le plafond : le signal pour changer de stratégie",
   "texte_image": "20 minutes à fixer le plafond : le signal pour changer de stratégie",
-  "description": "Vingt minutes déjà que tu fixes le plafond, et le sommeil ne revient toujours pas malgré tes efforts pour te rendormir sur place. Passé ce délai, rester au lit entretient la frustration et renforce l'association entre le lit et l'éveil 👉 lève-toi 👉 va dans une autre pièce faiblement éclairée 👉 lis quelques pages jusqu'à sentir la fatigue revenir. #sommeil #stress #reveilnocturne #ruminations #bienetre #calme #nuit #endormissement #routinedusoir #detente"
+  "description": "Vingt minutes déjà que tu fixes le plafond, et le sommeil ne revient toujours pas malgré tes efforts pour te rendormir sur place. Passé ce délai, rester au lit entretient la frustration et renforce l'association entre le lit et l'éveil 👉 lève-toi 👉 va dans une autre pièce faiblement éclairée 👉 lis quelques pages jusqu'à sentir la fatigue revenir. #sommeil #stress #reveilnocturne #ruminations #bienetre #calme #nuit #endormissement #routinedusoir #detente",
+  "points_image": [
+   "Lève-toi",
+   "Va dans une autre pièce faiblement éclairée",
+   "Lis quelques pages jusqu'à sentir la fatigue revenir"
+  ]
  },
  {
   "titre": "Boule au ventre en pleine nuit : le geste en 2 temps pour la dénouer",
   "texte_image": "Boule au ventre en pleine nuit : le geste en 2 temps pour la dénouer",
-  "description": "Tu te réveilles avec une boule au ventre, une sensation d'oppression, sans crise apparente ni raison précise, et ça suffit à te tenir éveillé(e) un moment. Ce serrement est souvent une réponse du système nerveux encore en alerte, même pendant le sommeil 👉 pose une main sur le ventre, gonfle-le à l'inspiration 👉 laisse l'expiration durer deux fois plus longtemps. #sommeil #stress #reveilnocturne #systemenerveux #anxiete #bienetre #nuit #endormissement #routinedusoir #detente"
+  "description": "Tu te réveilles avec une boule au ventre, une sensation d'oppression, sans crise apparente ni raison précise, et ça suffit à te tenir éveillé(e) un moment. Ce serrement est souvent une réponse du système nerveux encore en alerte, même pendant le sommeil 👉 pose une main sur le ventre, gonfle-le à l'inspiration 👉 laisse l'expiration durer deux fois plus longtemps. #sommeil #stress #reveilnocturne #systemenerveux #anxiete #bienetre #nuit #endormissement #routinedusoir #detente",
+  "points_image": [
+   "Pose une main sur le ventre, gonfle-le à l'inspiration",
+   "Laisse l'expiration durer deux fois plus longtemps"
+  ]
  },
  {
   "titre": "Réveil nocturne : le geste des 10 premières secondes qui change tout",
@@ -566,7 +686,12 @@
  {
   "titre": "8h de sommeil et pourtant lessivé : 3 causes qui expliquent tout",
   "texte_image": "8h de sommeil et pourtant lessivé : 3 causes qui expliquent tout",
-  "description": "Huit heures sans interruption consciente, et pourtant le matin arrive avec la même fatigue que la veille. Ce sommeil non réparateur vient souvent d'un manque de sommeil profond, la phase où le corps répare vraiment son énergie 👉 écrans tard le soir 👉 heure de coucher irrégulière 👉 alcool en soirée. Corriger ces trois points relance une vraie récupération. #sommeil #stress #fatiguementale #energie #bienetre #recuperation #nuit #endormissement #routinedusoir #detente"
+  "description": "Huit heures sans interruption consciente, et pourtant le matin arrive avec la même fatigue que la veille. Ce sommeil non réparateur vient souvent d'un manque de sommeil profond, la phase où le corps répare vraiment son énergie 👉 écrans tard le soir 👉 heure de coucher irrégulière 👉 alcool en soirée. Corriger ces trois points relance une vraie récupération. #sommeil #stress #fatiguementale #energie #bienetre #recuperation #nuit #endormissement #routinedusoir #detente",
+  "points_image": [
+   "Écrans tard le soir",
+   "Heure de coucher irrégulière",
+   "Alcool en soirée"
+  ]
  },
  {
   "titre": "Tu penses avoir bien dormi ? Les micro-réveils qui disent le contraire",
@@ -586,17 +711,31 @@
  {
   "titre": "4 signes que ton cortisol reste trop élevé le soir",
   "texte_image": "4 signes d'un cortisol trop élevé le soir",
-  "description": "Le corps reste sur les nerfs alors que la journée est finie, comme si le signal d'arrêt n'arrivait jamais. 4 signes d'un cortisol resté trop élevé le soir 👉 un coup de fatigue vers 17h suivi d'un regain d'énergie au coucher 👉 le cœur qui s'accélère allongée 👉 des pensées qui s'emballent alors que tout est fini 👉 une légère chaleur ou des sueurs sans effort. Les repérer aide à préparer la transition vers le repos. #cortisol #systemenerveux #stress #sommeil #bienetre #calme #detente #santementale"
+  "description": "Le corps reste sur les nerfs alors que la journée est finie, comme si le signal d'arrêt n'arrivait jamais. 4 signes d'un cortisol resté trop élevé le soir 👉 un coup de fatigue vers 17h suivi d'un regain d'énergie au coucher 👉 le cœur qui s'accélère allongée 👉 des pensées qui s'emballent alors que tout est fini 👉 une légère chaleur ou des sueurs sans effort. Les repérer aide à préparer la transition vers le repos. #cortisol #systemenerveux #stress #sommeil #bienetre #calme #detente #santementale",
+  "points_image": [
+   "Un coup de fatigue vers 17h suivi d'un regain d'énergie au coucher",
+   "Le cœur qui s'accélère allongée",
+   "Des pensées qui s'emballent alors que tout est fini",
+   "Une légère chaleur ou des sueurs sans effort"
+  ]
  },
  {
   "titre": "Le vrai frein derrière ta fatigue, même après un week-end de repos",
   "texte_image": "Pourquoi le repos seul ne suffit pas",
-  "description": "Un week-end entier sans rien faire, et la fatigue reste identique au lundi : ce n'est pas un manque de volonté. Le vrai frein est souvent un système nerveux resté en tension, qui ne bascule pas vers la récupération avec du repos passif 👉 il a besoin d'un signal actif de sécurité, pas juste d'immobilité 👉 une respiration lente aide à l'enclencher. Sans ce signal, le cortisol reste élevé même sur le canapé. #cortisol #systemenerveux #stress #fatiguementale #bienetre #calme"
+  "description": "Un week-end entier sans rien faire, et la fatigue reste identique au lundi : ce n'est pas un manque de volonté. Le vrai frein est souvent un système nerveux resté en tension, qui ne bascule pas vers la récupération avec du repos passif 👉 il a besoin d'un signal actif de sécurité, pas juste d'immobilité 👉 une respiration lente aide à l'enclencher. Sans ce signal, le cortisol reste élevé même sur le canapé. #cortisol #systemenerveux #stress #fatiguementale #bienetre #calme",
+  "points_image": [
+   "Il a besoin d'un signal actif de sécurité, pas juste d'immobilité",
+   "Une respiration lente aide à l'enclencher"
+  ]
  },
  {
   "titre": "L'heure précise où ton cortisol grimpe le plus dans la journée",
   "texte_image": "Le pic naturel du cortisol dans la journée",
-  "description": "La journée bascule presque toujours au même moment : le corps se crispe, l'énergie retombe, les pensées s'accélèrent sans raison apparente. Ce n'est pas un hasard 👉 le cortisol suit un rythme naturel avec un pic 30 à 45 minutes après le réveil 👉 un second point sensible revient souvent vers 15h-16h. Connaître ces fenêtres aide à mieux répartir les tâches exigeantes et les vraies pauses. #cortisol #systemenerveux #stress #energie #bienetre #routine #calme"
+  "description": "La journée bascule presque toujours au même moment : le corps se crispe, l'énergie retombe, les pensées s'accélèrent sans raison apparente. Ce n'est pas un hasard 👉 le cortisol suit un rythme naturel avec un pic 30 à 45 minutes après le réveil 👉 un second point sensible revient souvent vers 15h-16h. Connaître ces fenêtres aide à mieux répartir les tâches exigeantes et les vraies pauses. #cortisol #systemenerveux #stress #energie #bienetre #routine #calme",
+  "points_image": [
+   "Le cortisol suit un rythme naturel avec un pic 30 à 45 minutes après le réveil",
+   "Un second point sensible revient souvent vers 15h-16h"
+  ]
  },
  {
   "titre": "5 boissons qui font grimper ton cortisol sans que tu le voies",
@@ -606,32 +745,63 @@
  {
   "titre": "Fatigue, tensions, nuits agitées : 4 signes d'un cortisol resté trop haut",
   "texte_image": "4 signes d'un cortisol chroniquement élevé",
-  "description": "Une fatigue qui ne part jamais, des tensions dans les épaules, des nuits agitées, une irritabilité qui traîne : ces signes semblent isolés, mais dessinent souvent le même tableau. 4 indices d'un cortisol resté élevé 👉 une fatigue qui résiste au repos 👉 des tensions sans effort physique récent 👉 un sommeil léger, entrecoupé 👉 une irritabilité pour peu de chose. Les relier aide à apaiser son système nerveux. #cortisol #systemenerveux #stress #fatiguechronique #bienetre #sommeil"
+  "description": "Une fatigue qui ne part jamais, des tensions dans les épaules, des nuits agitées, une irritabilité qui traîne : ces signes semblent isolés, mais dessinent souvent le même tableau. 4 indices d'un cortisol resté élevé 👉 une fatigue qui résiste au repos 👉 des tensions sans effort physique récent 👉 un sommeil léger, entrecoupé 👉 une irritabilité pour peu de chose. Les relier aide à apaiser son système nerveux. #cortisol #systemenerveux #stress #fatiguechronique #bienetre #sommeil",
+  "points_image": [
+   "Une fatigue qui résiste au repos",
+   "Des tensions sans effort physique récent",
+   "Un sommeil léger, entrecoupé",
+   "Une irritabilité pour peu de chose"
+  ]
  },
  {
   "titre": "Le geste des 5 premières minutes qui régule ton cortisol du matin",
   "texte_image": "Le geste du matin qui régule le cortisol",
-  "description": "Le réveil sonne, le téléphone est attrapé avant même d'avoir ouvert les yeux, et le ton de la journée est déjà donné. Ce qui se passe dans les 5 premières minutes influence le cortisol du matin 👉 rester allongée 2 minutes en respirant lentement 👉 laisser entrer la lumière naturelle dès le réveil 👉 repousser les notifications de 10 minutes. Un geste simple à intégrer sans bouleverser sa routine. #cortisol #systemenerveux #stress #energie #bienetre #routine"
+  "description": "Le réveil sonne, le téléphone est attrapé avant même d'avoir ouvert les yeux, et le ton de la journée est déjà donné. Ce qui se passe dans les 5 premières minutes influence le cortisol du matin 👉 rester allongée 2 minutes en respirant lentement 👉 laisser entrer la lumière naturelle dès le réveil 👉 repousser les notifications de 10 minutes. Un geste simple à intégrer sans bouleverser sa routine. #cortisol #systemenerveux #stress #energie #bienetre #routine",
+  "points_image": [
+   "Rester allongée 2 minutes en respirant lentement",
+   "Laisser entrer la lumière naturelle dès le réveil",
+   "Repousser les notifications de 10 minutes"
+  ]
  },
  {
   "titre": "3 signaux discrets qui annoncent un cortisol trop élevé",
   "texte_image": "3 signes physiques discrets du cortisol élevé",
-  "description": "Une tension dans la mâchoire, un mal de tête qui revient, une boule au ventre avant certaines tâches : ces maux sont souvent attribués à autre chose, alors qu'ils peuvent signaler un cortisol trop élevé 👉 la mâchoire serrée sans s'en rendre compte, surtout la nuit 👉 des maux de tête récurrents en fin de journée 👉 une boule au ventre avant des tâches pourtant simples. Le corps communique avant que la fatigue ne s'installe. #cortisol #systemenerveux #stress #bienetre #fatiguementale #calme"
+  "description": "Une tension dans la mâchoire, un mal de tête qui revient, une boule au ventre avant certaines tâches : ces maux sont souvent attribués à autre chose, alors qu'ils peuvent signaler un cortisol trop élevé 👉 la mâchoire serrée sans s'en rendre compte, surtout la nuit 👉 des maux de tête récurrents en fin de journée 👉 une boule au ventre avant des tâches pourtant simples. Le corps communique avant que la fatigue ne s'installe. #cortisol #systemenerveux #stress #bienetre #fatiguementale #calme",
+  "points_image": [
+   "La mâchoire serrée sans s'en rendre compte, surtout la nuit",
+   "Des maux de tête récurrents en fin de journée",
+   "Une boule au ventre avant des tâches pourtant simples"
+  ]
  },
  {
   "titre": "Le vrai lien entre une journée dure et un sommeil agité",
   "texte_image": "Le lien méconnu entre cortisol et sommeil",
-  "description": "Le corps est épuisé après une journée éprouvante, l'endormissement semble garanti, et pourtant le sommeil reste agité, comme s'il n'arrivait pas à lâcher prise. Le lien méconnu entre cortisol et sommeil 👉 plus la journée a été intense, plus il reste élevé au coucher 👉 il retarde le basculement vers le repos profond 👉 les réveils nocturnes sont plus fréquents ces soirs-là. Un rituel de transition avant le lit aide à le faire redescendre. #cortisol #sommeil #systemenerveux #stress #bienetre #calme"
+  "description": "Le corps est épuisé après une journée éprouvante, l'endormissement semble garanti, et pourtant le sommeil reste agité, comme s'il n'arrivait pas à lâcher prise. Le lien méconnu entre cortisol et sommeil 👉 plus la journée a été intense, plus il reste élevé au coucher 👉 il retarde le basculement vers le repos profond 👉 les réveils nocturnes sont plus fréquents ces soirs-là. Un rituel de transition avant le lit aide à le faire redescendre. #cortisol #sommeil #systemenerveux #stress #bienetre #calme",
+  "points_image": [
+   "Plus la journée a été intense, plus il reste élevé au coucher",
+   "Il retarde le basculement vers le repos profond",
+   "Les réveils nocturnes sont plus fréquents ces soirs-là"
+  ]
  },
  {
   "titre": "Cette tension permanente n'est peut-être pas ton caractère",
   "texte_image": "Le piège du cortisol élevé méconnu",
-  "description": "Cette tension de fond, ce stress qui ne quitte jamais vraiment, est parfois vécu depuis si longtemps qu'il finit par passer pour un trait de caractère. Un cortisol resté élevé peut pourtant recréer cette sensation 👉 une impression d'être sur le qui-vive sans raison précise 👉 une difficulté à savourer un moment calme 👉 une fatigue qui coexiste avec l'agitation. Une question de système nerveux à réguler, pas de personnalité. #cortisol #systemenerveux #stress #fatiguechronique #bienetre"
+  "description": "Cette tension de fond, ce stress qui ne quitte jamais vraiment, est parfois vécu depuis si longtemps qu'il finit par passer pour un trait de caractère. Un cortisol resté élevé peut pourtant recréer cette sensation 👉 une impression d'être sur le qui-vive sans raison précise 👉 une difficulté à savourer un moment calme 👉 une fatigue qui coexiste avec l'agitation. Une question de système nerveux à réguler, pas de personnalité. #cortisol #systemenerveux #stress #fatiguechronique #bienetre",
+  "points_image": [
+   "Une impression d'être sur le qui-vive sans raison précise",
+   "Une difficulté à savourer un moment calme",
+   "Une fatigue qui coexiste avec l'agitation"
+  ]
  },
  {
   "titre": "3 signes qui trahissent la fatigue mentale (et pas la flemme)",
   "texte_image": "3 signes de fatigue mentale, pas de la paresse",
-  "description": "Tu annules tes projets et tu te dis que tu manques de volonté ? Ce n'est pas toujours vrai. Voici 3 signes qui indiquent une vraie fatigue mentale plutôt qu'un manque de motivation :\n👉 tu dois te forcer même pour des tâches simples\n👉 l'irritabilité arrive sans raison précise\n👉 rien ne te donne envie, même ce que tu aimes d'habitude\nLes repérer tôt permet d'agir avant l'épuisement total. #fatiguementale #stress #energie #bienetre #clarte #systemenerveux #chargementale #motivation"
+  "description": "Tu annules tes projets et tu te dis que tu manques de volonté ? Ce n'est pas toujours vrai. Voici 3 signes qui indiquent une vraie fatigue mentale plutôt qu'un manque de motivation :\n👉 tu dois te forcer même pour des tâches simples\n👉 l'irritabilité arrive sans raison précise\n👉 rien ne te donne envie, même ce que tu aimes d'habitude\nLes repérer tôt permet d'agir avant l'épuisement total. #fatiguementale #stress #energie #bienetre #clarte #systemenerveux #chargementale #motivation",
+  "points_image": [
+   "Tu dois te forcer même pour des tâches simples",
+   "L'irritabilité arrive sans raison précise",
+   "Rien ne te donne envie, même ce que tu aimes d'habitude"
+  ]
  },
  {
   "titre": "Tu relis 3 fois la même ligne sans comprendre : le signe caché de la fatigue mentale",
@@ -641,7 +811,13 @@
  {
   "titre": "4 différences entre fatigue physique et mentale (même avec 8h de sommeil)",
   "texte_image": "4 différences entre fatigue physique et mentale",
-  "description": "Tu dors tes huit heures, parfois plus, et tu te lèves aussi vidé·e mentalement que la veille :\n👉 le sommeil réduit la fatigue physique, pas la mentale\n👉 elle réclame de vraies coupures dans la journée\n👉 elle touche la concentration avant le corps\n👉 elle peut persister même après un repos complet\nAdapter ta récupération au bon type de fatigue change tout. #fatiguementale #stress #energie #bienetre #systemenerveux #clarte #recuperation #chargementale"
+  "description": "Tu dors tes huit heures, parfois plus, et tu te lèves aussi vidé·e mentalement que la veille :\n👉 le sommeil réduit la fatigue physique, pas la mentale\n👉 elle réclame de vraies coupures dans la journée\n👉 elle touche la concentration avant le corps\n👉 elle peut persister même après un repos complet\nAdapter ta récupération au bon type de fatigue change tout. #fatiguementale #stress #energie #bienetre #systemenerveux #clarte #recuperation #chargementale",
+  "points_image": [
+   "Le sommeil réduit la fatigue physique, pas la mentale",
+   "Elle réclame de vraies coupures dans la journée",
+   "Elle touche la concentration avant le corps",
+   "Elle peut persister même après un repos complet"
+  ]
  },
  {
   "titre": "Aucun effort physique et pourtant épuisé·e le soir : ce que ta fatigue mentale révèle",
@@ -651,7 +827,12 @@
  {
   "titre": "Incapable de choisir quoi manger ce soir ? Ton cerveau est peut-être à plat",
   "texte_image": "Fatigue mentale et décisions : le lien",
-  "description": "Tu restes planté·e devant le frigo, incapable de trancher, alors qu'il s'agit juste de choisir un repas. Ce blocage n'a rien à voir avec l'indécision :\n👉 chaque petit choix de la journée use ta réserve mentale\n👉 le soir, cette réserve est souvent déjà vide\n👉 fixer 3 options de repas à l'avance redonne de la clarté\nUn repère simple à tester dès ce soir. #fatiguementale #stress #energie #bienetre #clarte #systemenerveux #chargementale #decisions"
+  "description": "Tu restes planté·e devant le frigo, incapable de trancher, alors qu'il s'agit juste de choisir un repas. Ce blocage n'a rien à voir avec l'indécision :\n👉 chaque petit choix de la journée use ta réserve mentale\n👉 le soir, cette réserve est souvent déjà vide\n👉 fixer 3 options de repas à l'avance redonne de la clarté\nUn repère simple à tester dès ce soir. #fatiguementale #stress #energie #bienetre #clarte #systemenerveux #chargementale #decisions",
+  "points_image": [
+   "Chaque petit choix de la journée use ta réserve mentale",
+   "Le soir, cette réserve est souvent déjà vide",
+   "Fixer 3 options de repas à l'avance redonne de la clarté"
+  ]
  },
  {
   "titre": "Le week-end entier au lit et toujours fatigué·e le lundi : 3 raisons possibles",
@@ -661,47 +842,92 @@
  {
   "titre": "Ces trous de mémoire du quotidien qui ne sont pas vraiment des trous de mémoire",
   "texte_image": "Ce que la fatigue mentale fait à la mémoire",
-  "description": "Tu entres dans une pièce et tu as oublié pourquoi, plusieurs fois par jour. Avant de t'inquiéter pour ta mémoire :\n👉 ces oublis sont souvent liés à la fatigue mentale, pas à un trouble cognitif\n👉 un cerveau saturé n'arrive plus à fixer les informations courtes\n👉 la concentration revient dès que la charge mentale redescend\nComprendre ce lien aide à relativiser plutôt qu'à s'inquiéter. #fatiguementale #stress #memoire #bienetre #clarte #systemenerveux #chargementale #concentration"
+  "description": "Tu entres dans une pièce et tu as oublié pourquoi, plusieurs fois par jour. Avant de t'inquiéter pour ta mémoire :\n👉 ces oublis sont souvent liés à la fatigue mentale, pas à un trouble cognitif\n👉 un cerveau saturé n'arrive plus à fixer les informations courtes\n👉 la concentration revient dès que la charge mentale redescend\nComprendre ce lien aide à relativiser plutôt qu'à s'inquiéter. #fatiguementale #stress #memoire #bienetre #clarte #systemenerveux #chargementale #concentration",
+  "points_image": [
+   "Ces oublis sont souvent liés à la fatigue mentale, pas à un trouble cognitif",
+   "Un cerveau saturé n'arrive plus à fixer les informations courtes",
+   "La concentration revient dès que la charge mentale redescend"
+  ]
  },
  {
   "titre": "Le signal du corps qui annonce l'épuisement nerveux avant la surcharge",
   "texte_image": "Le signal n°1 avant l'épuisement nerveux",
-  "description": "Les tâches s'enchaînent, le corps tient encore debout, mais une part de soi sait déjà que quelque chose va lâcher avant même que la tête ne l'admette. Ce signal arrive bien avant le vrai craquage 👉 une fatigue qui persiste même après une nuit correcte 👉 une irritabilité qui monte pour des détails anodins 👉 une difficulté à se concentrer sur une seule tâche. Le repérer permet d'agir avant la surcharge plutôt qu'après coup. #systemenerveux #stress #fatiguechronique #bienetre #anxiete"
+  "description": "Les tâches s'enchaînent, le corps tient encore debout, mais une part de soi sait déjà que quelque chose va lâcher avant même que la tête ne l'admette. Ce signal arrive bien avant le vrai craquage 👉 une fatigue qui persiste même après une nuit correcte 👉 une irritabilité qui monte pour des détails anodins 👉 une difficulté à se concentrer sur une seule tâche. Le repérer permet d'agir avant la surcharge plutôt qu'après coup. #systemenerveux #stress #fatiguechronique #bienetre #anxiete",
+  "points_image": [
+   "Une fatigue qui persiste même après une nuit correcte",
+   "Une irritabilité qui monte pour des détails anodins",
+   "Une difficulté à se concentrer sur une seule tâche"
+  ]
  },
  {
   "titre": "3 signes que ton système nerveux reste bloqué en alerte",
   "texte_image": "3 signes d'un système nerveux en alerte",
-  "description": "Rester en mode combat-fuite en continu, même sans danger réel, épuise le système nerveux et alimente une fatigue difficile à nommer. 3 signes qui trompent souvent 👉 tu sursautes facilement pour un bruit anodin 👉 tu n'arrives pas à relâcher même allongé(e) 👉 tu te sens fatigué(e) sans jamais te sentir reposé(e). Les repérer est la première étape pour en sortir. #systemenerveux #stress #anxiete #bienetre #fatiguementale #calme #santementale #clartementale"
+  "description": "Rester en mode combat-fuite en continu, même sans danger réel, épuise le système nerveux et alimente une fatigue difficile à nommer. 3 signes qui trompent souvent 👉 tu sursautes facilement pour un bruit anodin 👉 tu n'arrives pas à relâcher même allongé(e) 👉 tu te sens fatigué(e) sans jamais te sentir reposé(e). Les repérer est la première étape pour en sortir. #systemenerveux #stress #anxiete #bienetre #fatiguementale #calme #santementale #clartementale",
+  "points_image": [
+   "Tu sursautes facilement pour un bruit anodin",
+   "Tu n'arrives pas à relâcher même allongé(e)",
+   "Tu te sens fatigué(e) sans jamais te sentir reposé(e)"
+  ]
  },
  {
   "titre": "Le cœur qui s'accélère en réunion : le geste en 3 temps qui rassure",
   "texte_image": "Le geste en 3 temps qui calme le cœur",
-  "description": "En pleine réunion, dans les transports ou juste avant de dormir, ton cœur s'accélère d'un coup sans raison. En 30 secondes, un geste discret peut envoyer un message de sécurité au système nerveux 👉 inspire 4 secondes par le nez 👉 bloque 2 secondes 👉 expire lentement 6 secondes par la bouche. Répète 3 fois, les battements redescendent d'eux-mêmes. #systemenerveux #stress #calme #bienetre #anxiete #respiration #travail #santementale"
+  "description": "En pleine réunion, dans les transports ou juste avant de dormir, ton cœur s'accélère d'un coup sans raison. En 30 secondes, un geste discret peut envoyer un message de sécurité au système nerveux 👉 inspire 4 secondes par le nez 👉 bloque 2 secondes 👉 expire lentement 6 secondes par la bouche. Répète 3 fois, les battements redescendent d'eux-mêmes. #systemenerveux #stress #calme #bienetre #anxiete #respiration #travail #santementale",
+  "points_image": [
+   "Inspire 4 secondes par le nez",
+   "Bloque 2 secondes",
+   "Expire lentement 6 secondes par la bouche"
+  ]
  },
  {
   "titre": "Épaules dures comme la pierre malgré le canapé : pourquoi ce décalage",
   "texte_image": "Pourquoi le corps reste tendu malgré tout",
-  "description": "Le mental se répète que tout va bien, posé dans le canapé, et pourtant les épaules restent dures comme de la pierre, la mâchoire serrée sans même s'en rendre compte. Ce décalage est fréquent chez un système nerveux resté trop longtemps en tension 👉 le corps garde la mémoire du stress une fois la situation passée 👉 relâcher demande un signal actif, pas juste l'intention. Quelques respirations profondes aident à l'initier. #systemenerveux #stress #detente #bienetre #calme"
+  "description": "Le mental se répète que tout va bien, posé dans le canapé, et pourtant les épaules restent dures comme de la pierre, la mâchoire serrée sans même s'en rendre compte. Ce décalage est fréquent chez un système nerveux resté trop longtemps en tension 👉 le corps garde la mémoire du stress une fois la situation passée 👉 relâcher demande un signal actif, pas juste l'intention. Quelques respirations profondes aident à l'initier. #systemenerveux #stress #detente #bienetre #calme",
+  "points_image": [
+   "Le corps garde la mémoire du stress une fois la situation passée",
+   "Relâcher demande un signal actif, pas juste l'intention"
+  ]
  },
  {
   "titre": "4 exercices simples contre l'hypervigilance au quotidien",
   "texte_image": "4 exercices contre l'hypervigilance",
-  "description": "Un bruit soudain, une notification, un pas dans le couloir : le sursaut est systématique, chaque signal est scruté comme si le danger pouvait surgir. C'est le tableau classique de l'hypervigilance. 4 exercices pour apaiser ce système nerveux en alerte 👉 nommer 3 choses vues, 2 entendues, 1 ressentie 👉 poser une main sur le sternum et respirer lentement 👉 marcher quelques minutes en sentant chaque pas 👉 limiter les notifications sonores le soir. #systemenerveux #stress #anxiete #bienetre #calme"
+  "description": "Un bruit soudain, une notification, un pas dans le couloir : le sursaut est systématique, chaque signal est scruté comme si le danger pouvait surgir. C'est le tableau classique de l'hypervigilance. 4 exercices pour apaiser ce système nerveux en alerte 👉 nommer 3 choses vues, 2 entendues, 1 ressentie 👉 poser une main sur le sternum et respirer lentement 👉 marcher quelques minutes en sentant chaque pas 👉 limiter les notifications sonores le soir. #systemenerveux #stress #anxiete #bienetre #calme",
+  "points_image": [
+   "Nommer 3 choses vues, 2 entendues, 1 ressentie",
+   "Poser une main sur le sternum et respirer lentement",
+   "Marcher quelques minutes en sentant chaque pas",
+   "Limiter les notifications sonores le soir"
+  ]
  },
  {
   "titre": "Ce ventre noué depuis des mois n'a peut-être rien à voir avec l'alimentation",
   "texte_image": "Système nerveux et digestion : le lien méconnu",
-  "description": "Ventre noué, ballonnements, digestion en vrac depuis des semaines, sans qu'aucun aliment précis ne semble en cause. Le lien entre système nerveux et digestion est bien documenté 👉 le stress chronique ralentit ou accélère le transit selon les personnes 👉 il modifie l'acidité gastrique et la sensibilité intestinale 👉 il agit indépendamment de ce qui est mangé. Apaiser le système nerveux agit souvent plus que changer son assiette. #systemenerveux #stress #digestion #bienetre #somatisation"
+  "description": "Ventre noué, ballonnements, digestion en vrac depuis des semaines, sans qu'aucun aliment précis ne semble en cause. Le lien entre système nerveux et digestion est bien documenté 👉 le stress chronique ralentit ou accélère le transit selon les personnes 👉 il modifie l'acidité gastrique et la sensibilité intestinale 👉 il agit indépendamment de ce qui est mangé. Apaiser le système nerveux agit souvent plus que changer son assiette. #systemenerveux #stress #digestion #bienetre #somatisation",
+  "points_image": [
+   "Le stress chronique ralentit ou accélère le transit selon les personnes",
+   "Il modifie l'acidité gastrique et la sensibilité intestinale",
+   "Il agit indépendamment de ce qui est mangé"
+  ]
  },
  {
   "titre": "Te sentir bloquée sans raison : et si ton système nerveux figeait",
   "texte_image": "Reconnaître un système nerveux figé",
-  "description": "Une paralysie face à une tâche pourtant simple, sans comprendre ce qui se joue, n'a rien à voir avec de la flemme ou un manque de volonté. Au-delà du combat et de la fuite, le système nerveux peut réagir par le figement 👉 un corps qui semble lourd, presque engourdi 👉 une tête vide, incapable de prioriser 👉 une envie de rester immobile plutôt que d'agir. Bouger doucement, même un simple étirement, aide à sortir de cet état. #systemenerveux #stress #anxiete #bienetre #fatiguementale #calme"
+  "description": "Une paralysie face à une tâche pourtant simple, sans comprendre ce qui se joue, n'a rien à voir avec de la flemme ou un manque de volonté. Au-delà du combat et de la fuite, le système nerveux peut réagir par le figement 👉 un corps qui semble lourd, presque engourdi 👉 une tête vide, incapable de prioriser 👉 une envie de rester immobile plutôt que d'agir. Bouger doucement, même un simple étirement, aide à sortir de cet état. #systemenerveux #stress #anxiete #bienetre #fatiguementale #calme",
+  "points_image": [
+   "Un corps qui semble lourd, presque engourdi",
+   "Une tête vide, incapable de prioriser",
+   "Une envie de rester immobile plutôt que d'agir"
+  ]
  },
  {
   "titre": "3 techniques pour vraiment basculer vers le calme (pas juste s'asseoir)",
   "texte_image": "3 techniques pour basculer vers le calme",
-  "description": "Respirer, s'asseoir, se répéter de se détendre : le corps reste parfois tendu comme s'il n'avait pas reçu le message. La volonté seule ne suffit pas, il existe des gestes basés sur la physiologie réelle 👉 allonger l'expiration deux fois plus que l'inspiration 👉 presser fermement les mains l'une contre l'autre puis relâcher 👉 fredonner quelques secondes pour activer le nerf vague. Trois leviers à tester dès aujourd'hui. #systemenerveux #stress #calme #bienetre #respiration"
+  "description": "Respirer, s'asseoir, se répéter de se détendre : le corps reste parfois tendu comme s'il n'avait pas reçu le message. La volonté seule ne suffit pas, il existe des gestes basés sur la physiologie réelle 👉 allonger l'expiration deux fois plus que l'inspiration 👉 presser fermement les mains l'une contre l'autre puis relâcher 👉 fredonner quelques secondes pour activer le nerf vague. Trois leviers à tester dès aujourd'hui. #systemenerveux #stress #calme #bienetre #respiration",
+  "points_image": [
+   "Allonger l'expiration deux fois plus que l'inspiration",
+   "Presser fermement les mains l'une contre l'autre puis relâcher",
+   "Fredonner quelques secondes pour activer le nerf vague"
+  ]
  },
  {
   "titre": "Pourquoi un jet d'eau froide calme ton système nerveux en secondes",
@@ -711,12 +937,22 @@
  {
   "titre": "Une soirée entière d'écran sans vrai repos : le signe à ne pas ignorer",
   "texte_image": "Le signe qu'il te faut de vraies pauses",
-  "description": "Une soirée entière devant un écran, les heures de sommeil habituelles respectées, et pourtant le réveil est aussi fatigué que la veille. Un signe précis indique que le système nerveux a besoin de vraies pauses 👉 l'esprit reste actif même les yeux fixés sur l'écran 👉 la fatigue persiste malgré des heures de sommeil correctes 👉 l'irritabilité augmente en soirée. Ce n'est pas une question de moins travailler, mais de vraies coupures. #systemenerveux #stress #fatiguementale #bienetre #energie"
+  "description": "Une soirée entière devant un écran, les heures de sommeil habituelles respectées, et pourtant le réveil est aussi fatigué que la veille. Un signe précis indique que le système nerveux a besoin de vraies pauses 👉 l'esprit reste actif même les yeux fixés sur l'écran 👉 la fatigue persiste malgré des heures de sommeil correctes 👉 l'irritabilité augmente en soirée. Ce n'est pas une question de moins travailler, mais de vraies coupures. #systemenerveux #stress #fatiguementale #bienetre #energie",
+  "points_image": [
+   "L'esprit reste actif même les yeux fixés sur l'écran",
+   "La fatigue persiste malgré des heures de sommeil correctes",
+   "L'irritabilité augmente en soirée"
+  ]
  },
  {
   "titre": "Ce que change vraiment un système nerveux moins sur les nerfs",
   "texte_image": "Ce que change un système nerveux apaisé",
-  "description": "La dernière fois où une vraie détente a été ressentie, sans cette tension de fond qui ne lâche jamais, même en vacances, ça remonte parfois à loin. Un système nerveux plus régulé change plus que le niveau de stress apparent 👉 l'énergie devient plus stable, sans gros coups de fatigue 👉 le sommeil s'approfondit, avec moins de réveils 👉 la capacité à profiter du moment présent revient. Un changement progressif, pas un interrupteur. #systemenerveux #stress #bienetre #energie #calme"
+  "description": "La dernière fois où une vraie détente a été ressentie, sans cette tension de fond qui ne lâche jamais, même en vacances, ça remonte parfois à loin. Un système nerveux plus régulé change plus que le niveau de stress apparent 👉 l'énergie devient plus stable, sans gros coups de fatigue 👉 le sommeil s'approfondit, avec moins de réveils 👉 la capacité à profiter du moment présent revient. Un changement progressif, pas un interrupteur. #systemenerveux #stress #bienetre #energie #calme",
+  "points_image": [
+   "L'énergie devient plus stable, sans gros coups de fatigue",
+   "Le sommeil s'approfondit, avec moins de réveils",
+   "La capacité à profiter du moment présent revient"
+  ]
  },
  {
   "titre": "Le trou d'énergie de 11h se joue souvent dans ton assiette du matin",
@@ -726,7 +962,12 @@
  {
   "titre": "3 signes que ton alimentation entretient ton stress en fin de journée",
   "texte_image": "3 signes que l'alimentation entretient le stress",
-  "description": "Tu te sens irritable ou à plat en fin d'après-midi, sans faire le lien avec ce que tu as mangé. Trois signes à repérer :\n👉 un repas trop sucré ou trop léger fait grimper le cortisol\n👉 la tension nerveuse suit de près les variations de glycémie\n👉 plus de protéines et de fibres au repas stabilise l'humeur qui suit\nObserver ce lien sur quelques jours suffit souvent à s'en rendre compte. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie"
+  "description": "Tu te sens irritable ou à plat en fin d'après-midi, sans faire le lien avec ce que tu as mangé. Trois signes à repérer :\n👉 un repas trop sucré ou trop léger fait grimper le cortisol\n👉 la tension nerveuse suit de près les variations de glycémie\n👉 plus de protéines et de fibres au repas stabilise l'humeur qui suit\nObserver ce lien sur quelques jours suffit souvent à s'en rendre compte. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie",
+  "points_image": [
+   "Un repas trop sucré ou trop léger fait grimper le cortisol",
+   "La tension nerveuse suit de près les variations de glycémie",
+   "Plus de protéines et de fibres au repas stabilise l'humeur qui suit"
+  ]
  },
  {
   "titre": "Repousser le déjeuner pour tenir la réunion fait grimper ton stress en silence",
@@ -736,7 +977,12 @@
  {
   "titre": "Ce mal de tête de 17h n'est peut-être pas seulement une question de stress",
   "texte_image": "Hydratation et stress : le lien",
-  "description": "Tu enchaînes les rendez-vous, ton verre d'eau reste plein sur le bureau, et en fin d'après-midi ce mal de tête familier s'installe, attribué au stress ambiant :\n👉 une hydratation insuffisante accentue la tension nerveuse\n👉 elle amplifie la sensation d'être à cran\n👉 boire régulièrement, plutôt qu'en une fois le soir, change beaucoup\nRemplir sa bouteille dès le matin suffit souvent à l'éviter. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #hydratation"
+  "description": "Tu enchaînes les rendez-vous, ton verre d'eau reste plein sur le bureau, et en fin d'après-midi ce mal de tête familier s'installe, attribué au stress ambiant :\n👉 une hydratation insuffisante accentue la tension nerveuse\n👉 elle amplifie la sensation d'être à cran\n👉 boire régulièrement, plutôt qu'en une fois le soir, change beaucoup\nRemplir sa bouteille dès le matin suffit souvent à l'éviter. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #hydratation",
+  "points_image": [
+   "Une hydratation insuffisante accentue la tension nerveuse",
+   "Elle amplifie la sensation d'être à cran",
+   "Boire régulièrement, plutôt qu'en une fois le soir, change beaucoup"
+  ]
  },
  {
   "titre": "Manger en 5 minutes entre deux emails entretient plus de tension que tu ne crois",
@@ -746,7 +992,12 @@
  {
   "titre": "17h, la tension monte : 3 collations qui calment vraiment le système nerveux",
   "texte_image": "3 collations qui calment le système nerveux",
-  "description": "Il est 17h, la fatigue et la tension montent ensemble, et tu ouvres le placard en quête de quelque chose pour tenir jusqu'au soir. Trois choix qui apaisent réellement :\n👉 amandes ou noix, riches en magnésium\n👉 un carré de chocolat noir plutôt que sucré\n👉 une poignée de graines de courge\nNote lesquelles t'apaisent vraiment, ça vaut le coup de le savoir à l'avance. #alimentation #stress #systemenerveux #bienetre #digestion #cortisol #santementale #magnesium"
+  "description": "Il est 17h, la fatigue et la tension montent ensemble, et tu ouvres le placard en quête de quelque chose pour tenir jusqu'au soir. Trois choix qui apaisent réellement :\n👉 amandes ou noix, riches en magnésium\n👉 un carré de chocolat noir plutôt que sucré\n👉 une poignée de graines de courge\nNote lesquelles t'apaisent vraiment, ça vaut le coup de le savoir à l'avance. #alimentation #stress #systemenerveux #bienetre #digestion #cortisol #santementale #magnesium",
+  "points_image": [
+   "Amandes ou noix, riches en magnésium",
+   "Un carré de chocolat noir plutôt que sucré",
+   "Une poignée de graines de courge"
+  ]
  },
  {
   "titre": "Ouvrir le placard sans avoir faim : ce que ton stress cherche vraiment",
@@ -761,7 +1012,12 @@
  {
   "titre": "3 carences qui expliquent que tu sois à plat malgré une alimentation normale",
   "texte_image": "3 carences liées au stress à connaître",
-  "description": "Tu manges à peu près correctement, sans excès ni repas sautés, et pourtant tu te sens régulièrement à plat et sur les nerfs. Des carences discrètes peuvent l'expliquer :\n👉 magnésium bas : tension nerveuse et crampes\n👉 vitamines B basses : fatigue et irritabilité\n👉 fer bas : essoufflement et nervosité\nElles passent inaperçues quand l'alimentation semble équilibrée en surface. #alimentation #stress #carences #bienetre #systemenerveux #digestion #santementale #magnesium"
+  "description": "Tu manges à peu près correctement, sans excès ni repas sautés, et pourtant tu te sens régulièrement à plat et sur les nerfs. Des carences discrètes peuvent l'expliquer :\n👉 magnésium bas : tension nerveuse et crampes\n👉 vitamines B basses : fatigue et irritabilité\n👉 fer bas : essoufflement et nervosité\nElles passent inaperçues quand l'alimentation semble équilibrée en surface. #alimentation #stress #carences #bienetre #systemenerveux #digestion #santementale #magnesium",
+  "points_image": [
+   "Magnésium bas : tension nerveuse et crampes",
+   "Vitamines B basses : fatigue et irritabilité",
+   "Fer bas : essoufflement et nervosité"
+  ]
  },
  {
   "titre": "Ton café du matin peut expliquer cette nervosité qui arrive en fin de matinée",
@@ -776,47 +1032,90 @@
  {
   "titre": "3 pensées automatiques qui déclenchent la procrastination",
   "texte_image": "3 pensées qui précèdent la procrastination",
-  "description": "Avant même de commencer, une petite voix murmure une excuse toute faite. Voici les 3 pensées automatiques les plus fréquentes juste avant de procrastiner 👉 « pas maintenant, je suis trop fatigué(e) » 👉 « je ferai mieux ça demain » 👉 « cinq minutes de pause d'abord, ça ne changera rien ». Enregistre cette épingle pour la retrouver la prochaine fois que cette voix revient. #procrastination #productivite #organisation #bienetre #motivation #clarte #energie #developpementpersonnel"
+  "description": "Avant même de commencer, une petite voix murmure une excuse toute faite. Voici les 3 pensées automatiques les plus fréquentes juste avant de procrastiner 👉 « pas maintenant, je suis trop fatigué(e) » 👉 « je ferai mieux ça demain » 👉 « cinq minutes de pause d'abord, ça ne changera rien ». Enregistre cette épingle pour la retrouver la prochaine fois que cette voix revient. #procrastination #productivite #organisation #bienetre #motivation #clarte #energie #developpementpersonnel",
+  "points_image": [
+   "« pas maintenant, je suis trop fatigué(e) »",
+   "« je ferai mieux ça demain »",
+   "« cinq minutes de pause d'abord, ça ne changera rien »"
+  ]
  },
  {
   "titre": "Peur de l'échec : 3 signes qu'elle se cache derrière ta procrastination",
   "texte_image": "Procrastination et peur de l'échec : le lien",
-  "description": "Tu repousses ce projet depuis des jours, et ce n'est sûrement pas une question d'organisation. Voici 3 signes que la peur du résultat se cache derrière ce report 👉 tu peaufines les détails sans lancer le principal 👉 tu attends d'avoir « plus de temps » 👉 la tâche semble plus urgente le soir que le matin. Nommer cette peur suffit parfois à la rendre moins paralysante. #procrastination #motivation #clarte #organisation #productivite #bienetre #energie #developpementpersonnel"
+  "description": "Tu repousses ce projet depuis des jours, et ce n'est sûrement pas une question d'organisation. Voici 3 signes que la peur du résultat se cache derrière ce report 👉 tu peaufines les détails sans lancer le principal 👉 tu attends d'avoir « plus de temps » 👉 la tâche semble plus urgente le soir que le matin. Nommer cette peur suffit parfois à la rendre moins paralysante. #procrastination #motivation #clarte #organisation #productivite #bienetre #energie #developpementpersonnel",
+  "points_image": [
+   "Tu peaufines les détails sans lancer le principal",
+   "Tu attends d'avoir « plus de temps »",
+   "La tâche semble plus urgente le soir que le matin"
+  ]
  },
  {
   "titre": "Pourquoi une liste de 20 tâches te fige au lieu de te motiver",
   "texte_image": "Pourquoi les longues listes aggravent la procrastination",
-  "description": "Vingt lignes sur ta liste, et au lieu de te donner de l'élan, ça te fige devant l'écran. Une to-do list trop longue sature le cerveau avant même de commencer 👉 il ne voit plus qu'une masse à affronter 👉 il choisit l'évitement plutôt que le tri. Enregistre cette épingle avant ta prochaine liste interminable, et ne note qu'une seule action pour demain matin. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel"
+  "description": "Vingt lignes sur ta liste, et au lieu de te donner de l'élan, ça te fige devant l'écran. Une to-do list trop longue sature le cerveau avant même de commencer 👉 il ne voit plus qu'une masse à affronter 👉 il choisit l'évitement plutôt que le tri. Enregistre cette épingle avant ta prochaine liste interminable, et ne note qu'une seule action pour demain matin. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel",
+  "points_image": [
+   "Il ne voit plus qu'une masse à affronter",
+   "Il choisit l'évitement plutôt que le tri"
+  ]
  },
  {
   "titre": "La règle des 2 minutes qui débloque n'importe quelle procrastination",
   "texte_image": "La technique des 2 minutes contre la procrastination",
-  "description": "Cette tâche traîne depuis des semaines et, aujourd'hui encore, tu n'as pas la moindre envie de t'y mettre. La règle est simple 👉 engage-toi seulement 2 minutes, chrono en main 👉 aucun objectif de finir, juste de commencer 👉 continue seulement si ça te semble naturel une fois les 2 minutes passées. À tester dès ta prochaine tâche repoussée. #procrastination #clarte #productivite #motivation #organisation #energie #bienetre #developpementpersonnel"
+  "description": "Cette tâche traîne depuis des semaines et, aujourd'hui encore, tu n'as pas la moindre envie de t'y mettre. La règle est simple 👉 engage-toi seulement 2 minutes, chrono en main 👉 aucun objectif de finir, juste de commencer 👉 continue seulement si ça te semble naturel une fois les 2 minutes passées. À tester dès ta prochaine tâche repoussée. #procrastination #clarte #productivite #motivation #organisation #energie #bienetre #developpementpersonnel",
+  "points_image": [
+   "Engage-toi seulement 2 minutes, chrono en main",
+   "Aucun objectif de finir, juste de commencer",
+   "Continue seulement si ça te semble naturel une fois les 2 minutes passées"
+  ]
  },
  {
   "titre": "Pourquoi la fatigue mentale te fait tout reporter le soir",
   "texte_image": "Pourquoi la fatigue mentale augmente la procrastination",
-  "description": "Il y a ces soirs où tu rentres vidé(e), où même ouvrir ton ordinateur pour une tâche simple semble insurmontable. Plus la fatigue mentale s'accumule dans la journée, plus le cerveau économise ses ressources 👉 il priorise le repos passif 👉 il perçoit la moindre tâche comme une menace. Un cercle à repérer avant qu'il ne s'installe pour toute la soirée. #procrastination #bienetre #motivation #productivite #clarte #organisation #energie #developpementpersonnel"
+  "description": "Il y a ces soirs où tu rentres vidé(e), où même ouvrir ton ordinateur pour une tâche simple semble insurmontable. Plus la fatigue mentale s'accumule dans la journée, plus le cerveau économise ses ressources 👉 il priorise le repos passif 👉 il perçoit la moindre tâche comme une menace. Un cercle à repérer avant qu'il ne s'installe pour toute la soirée. #procrastination #bienetre #motivation #productivite #clarte #organisation #energie #developpementpersonnel",
+  "points_image": [
+   "Il priorise le repos passif",
+   "Il perçoit la moindre tâche comme une menace"
+  ]
  },
  {
   "titre": "Le signal précis qui te fait fermer l'onglet sans t'en rendre compte",
   "texte_image": "Le déclencheur émotionnel de la procrastination",
-  "description": "Tu es sur le point de commencer, et sans vraiment comprendre pourquoi, tu fermes l'onglet pour aller faire autre chose. Ce geste répond presque toujours à un inconfort précis 👉 la peur de mal faire 👉 l'ennui face à une tâche trop répétitive 👉 la confusion sur la première étape à suivre. Un repère simple à garder en tête la prochaine fois que l'envie de fuir arrive. #procrastination #productivite #organisation #bienetre #motivation #clarte #energie #developpementpersonnel"
+  "description": "Tu es sur le point de commencer, et sans vraiment comprendre pourquoi, tu fermes l'onglet pour aller faire autre chose. Ce geste répond presque toujours à un inconfort précis 👉 la peur de mal faire 👉 l'ennui face à une tâche trop répétitive 👉 la confusion sur la première étape à suivre. Un repère simple à garder en tête la prochaine fois que l'envie de fuir arrive. #procrastination #productivite #organisation #bienetre #motivation #clarte #energie #developpementpersonnel",
+  "points_image": [
+   "La peur de mal faire",
+   "L'ennui face à une tâche trop répétitive",
+   "La confusion sur la première étape à suivre"
+  ]
  },
  {
   "titre": "3 signes que ta procrastination cache un épuisement, pas de la flemme",
   "texte_image": "3 signes d'épuisement derrière la procrastination",
-  "description": "Tu remets tout à plus tard alors que d'habitude ce n'est pas ton genre ? Voici 3 signes qui distinguent l'épuisement de la simple baisse de motivation 👉 même les tâches faciles semblent lourdes 👉 le sommeil ne suffit plus à te recharger 👉 l'irritabilité s'installe sans raison claire. Confondre les deux retarde le vrai repos dont ton corps a besoin, pas juste une pause de cinq minutes. #procrastination #motivation #clarte #organisation #productivite #bienetre #energie #developpementpersonnel"
+  "description": "Tu remets tout à plus tard alors que d'habitude ce n'est pas ton genre ? Voici 3 signes qui distinguent l'épuisement de la simple baisse de motivation 👉 même les tâches faciles semblent lourdes 👉 le sommeil ne suffit plus à te recharger 👉 l'irritabilité s'installe sans raison claire. Confondre les deux retarde le vrai repos dont ton corps a besoin, pas juste une pause de cinq minutes. #procrastination #motivation #clarte #organisation #productivite #bienetre #energie #developpementpersonnel",
+  "points_image": [
+   "Même les tâches faciles semblent lourdes",
+   "Le sommeil ne suffit plus à te recharger",
+   "L'irritabilité s'installe sans raison claire"
+  ]
  },
  {
   "titre": "Pourquoi ta discipline tient 3 jours, puis s'effondre d'un coup",
   "texte_image": "Pourquoi la discipline seule ne suffit pas",
-  "description": "Tu te promets d'être plus discipliné(e), tu tiens quelques jours, puis tout retombe exactement comme avant. La volonté seule s'épuise vite parce qu'elle ne traite jamais la cause de fond 👉 le manque de repos réel 👉 des objectifs trop flous 👉 l'absence de suivi visible des progrès. Un rappel à garder pour la prochaine fois que la motivation seule ne suffit plus. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel"
+  "description": "Tu te promets d'être plus discipliné(e), tu tiens quelques jours, puis tout retombe exactement comme avant. La volonté seule s'épuise vite parce qu'elle ne traite jamais la cause de fond 👉 le manque de repos réel 👉 des objectifs trop flous 👉 l'absence de suivi visible des progrès. Un rappel à garder pour la prochaine fois que la motivation seule ne suffit plus. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel",
+  "points_image": [
+   "Le manque de repos réel",
+   "Des objectifs trop flous",
+   "L'absence de suivi visible des progrès"
+  ]
  },
  {
   "titre": "10 secondes : le rituel qui débloque un corps figé devant une tâche",
   "texte_image": "Le rituel de 10 secondes anti-procrastination",
-  "description": "Tu es assis(e) devant la tâche, prêt(e) en théorie, et pourtant impossible de faire le premier geste. Voici le rituel de 10 secondes à tester avant de démarrer 👉 pose les deux mains sur la table 👉 dis à voix haute la toute première micro-action, pas le projet entier 👉 fais-la immédiatement, sans réfléchir à la suite. Un tout petit geste à tester avant ta prochaine tâche qui bloque. #procrastination #clarte #productivite #motivation #organisation #energie #bienetre #developpementpersonnel"
+  "description": "Tu es assis(e) devant la tâche, prêt(e) en théorie, et pourtant impossible de faire le premier geste. Voici le rituel de 10 secondes à tester avant de démarrer 👉 pose les deux mains sur la table 👉 dis à voix haute la toute première micro-action, pas le projet entier 👉 fais-la immédiatement, sans réfléchir à la suite. Un tout petit geste à tester avant ta prochaine tâche qui bloque. #procrastination #clarte #productivite #motivation #organisation #energie #bienetre #developpementpersonnel",
+  "points_image": [
+   "Pose les deux mains sur la table",
+   "Dis à voix haute la toute première micro-action, pas le projet entier",
+   "Fais-la immédiatement, sans réfléchir à la suite"
+  ]
  },
  {
   "titre": "Mal de dos du soir : 3 signes que c'est ton stress, pas ta posture",
@@ -826,87 +1125,174 @@
  {
   "titre": "Bruxisme : 3 signes que c'est ton stress qui serre ta mâchoire",
   "texte_image": "3 signes de bruxisme lié au stress",
-  "description": "Tu te réveilles parfois la mâchoire endolorie, comme si tu l'avais serrée toute la nuit sans t'en rendre compte. Ce réflexe, le bruxisme, est souvent une forme de somatisation 👉 la douleur touche surtout les jours de forte charge mentale 👉 elle s'accompagne de maux de tête au réveil 👉 elle s'atténue en période plus calme. Le corps continue d'encaisser la tension nerveuse même pendant le sommeil. #somatisation #stress #systemenerveux #bienetre #anxiete #bruxisme #santementale #sommeil"
+  "description": "Tu te réveilles parfois la mâchoire endolorie, comme si tu l'avais serrée toute la nuit sans t'en rendre compte. Ce réflexe, le bruxisme, est souvent une forme de somatisation 👉 la douleur touche surtout les jours de forte charge mentale 👉 elle s'accompagne de maux de tête au réveil 👉 elle s'atténue en période plus calme. Le corps continue d'encaisser la tension nerveuse même pendant le sommeil. #somatisation #stress #systemenerveux #bienetre #anxiete #bruxisme #santementale #sommeil",
+  "points_image": [
+   "La douleur touche surtout les jours de forte charge mentale",
+   "Elle s'accompagne de maux de tête au réveil",
+   "Elle s'atténue en période plus calme"
+  ]
  },
  {
   "titre": "Mal de tête en fin de journée : 3 signes que c'est ton stress qui parle",
   "texte_image": "Mal de tête récurrent : le signal du corps",
-  "description": "Tu as encore mal à la tête chaque fin de journée, et les médicaments ne calment la douleur que quelques heures. Voici 3 signes que ce mal de tête est lié au stress non évacué 👉 il apparaît après les journées les plus chargées 👉 il s'accompagne d'une mâchoire ou d'une nuque tendue 👉 il s'atténue dès que la charge mentale baisse. Enregistre cette épingle pour repérer ce signal à temps. #somatisation #stress #systemenerveux #bienetre #douleurs #anxiete #santementale #tensions"
+  "description": "Tu as encore mal à la tête chaque fin de journée, et les médicaments ne calment la douleur que quelques heures. Voici 3 signes que ce mal de tête est lié au stress non évacué 👉 il apparaît après les journées les plus chargées 👉 il s'accompagne d'une mâchoire ou d'une nuque tendue 👉 il s'atténue dès que la charge mentale baisse. Enregistre cette épingle pour repérer ce signal à temps. #somatisation #stress #systemenerveux #bienetre #douleurs #anxiete #santementale #tensions",
+  "points_image": [
+   "Il apparaît après les journées les plus chargées",
+   "Il s'accompagne d'une mâchoire ou d'une nuque tendue",
+   "Il s'atténue dès que la charge mentale baisse"
+  ]
  },
  {
   "titre": "Ventre noué avant un rendez-vous : pourquoi ton intestin réagit autant",
   "texte_image": "Pourquoi le ventre réagit tant au stress",
-  "description": "Tu sens ton ventre se nouer avant un rendez-vous stressant, sans lien avec ce que tu as mangé. Ce n'est pas une coïncidence 👉 intestin et cerveau communiquent en permanence par le nerf vague 👉 le stress ralentit ou accélère la digestion selon les personnes 👉 les symptômes reculent presque toujours avec la tension. L'une des formes les plus fréquentes de somatisation du stress. #somatisation #stress #douleurs #tensions #bienetre #systemenerveux #anxiete #santementale"
+  "description": "Tu sens ton ventre se nouer avant un rendez-vous stressant, sans lien avec ce que tu as mangé. Ce n'est pas une coïncidence 👉 intestin et cerveau communiquent en permanence par le nerf vague 👉 le stress ralentit ou accélère la digestion selon les personnes 👉 les symptômes reculent presque toujours avec la tension. L'une des formes les plus fréquentes de somatisation du stress. #somatisation #stress #douleurs #tensions #bienetre #systemenerveux #anxiete #santementale",
+  "points_image": [
+   "Intestin et cerveau communiquent en permanence par le nerf vague",
+   "Le stress ralentit ou accélère la digestion selon les personnes",
+   "Les symptômes reculent presque toujours avec la tension"
+  ]
  },
  {
   "titre": "4 zones du corps où ton stress s'installe sans prévenir",
   "texte_image": "4 zones où le stress se loge le plus",
-  "description": "Tu remarques que la tension s'installe toujours aux mêmes endroits chez toi, sans jamais vraiment savoir quoi en faire une fois là. Voici les 4 zones les plus fréquentes 👉 la nuque, raide dès le matin 👉 la mâchoire, serrée sans y penser 👉 les épaules, remontées vers les oreilles 👉 le ventre, noué avant un imprévu. Enregistre cette épingle pour identifier ta zone en un coup d'œil. #somatisation #stress #bienetre #systemenerveux #tensions #douleurs #anxiete #santementale"
+  "description": "Tu remarques que la tension s'installe toujours aux mêmes endroits chez toi, sans jamais vraiment savoir quoi en faire une fois là. Voici les 4 zones les plus fréquentes 👉 la nuque, raide dès le matin 👉 la mâchoire, serrée sans y penser 👉 les épaules, remontées vers les oreilles 👉 le ventre, noué avant un imprévu. Enregistre cette épingle pour identifier ta zone en un coup d'œil. #somatisation #stress #bienetre #systemenerveux #tensions #douleurs #anxiete #santementale",
+  "points_image": [
+   "La nuque, raide dès le matin",
+   "La mâchoire, serrée sans y penser",
+   "Les épaules, remontées vers les oreilles",
+   "Le ventre, noué avant un imprévu"
+  ]
  },
  {
   "titre": "Mains qui fourmillent en réunion : voici pourquoi ça arrive",
   "texte_image": "Fourmillement dans les mains et stress",
-  "description": "Tu sens tes mains fourmiller en pleine journée chargée, sans t'être cogné(e) ni être resté(e) dans une mauvaise position. Cette sensation est souvent liée à un système nerveux en alerte prolongée 👉 la respiration devient plus courte sans qu'on le remarque 👉 la circulation change légèrement sous tension 👉 tout rentre dans l'ordre une fois le corps détendu. Le guide gratuit explique comment calmer ce signal. #somatisation #stress #systemenerveux #bienetre #douleurs #anxiete #santementale #tensions"
+  "description": "Tu sens tes mains fourmiller en pleine journée chargée, sans t'être cogné(e) ni être resté(e) dans une mauvaise position. Cette sensation est souvent liée à un système nerveux en alerte prolongée 👉 la respiration devient plus courte sans qu'on le remarque 👉 la circulation change légèrement sous tension 👉 tout rentre dans l'ordre une fois le corps détendu. Le guide gratuit explique comment calmer ce signal. #somatisation #stress #systemenerveux #bienetre #douleurs #anxiete #santementale #tensions",
+  "points_image": [
+   "La respiration devient plus courte sans qu'on le remarque",
+   "La circulation change légèrement sous tension",
+   "Tout rentre dans l'ordre une fois le corps détendu"
+  ]
  },
  {
   "titre": "Épaules remontées jusqu'aux oreilles : pourquoi ça arrive sans y penser",
   "texte_image": "Pourquoi les épaules remontent sans le savoir",
-  "description": "Tu réalises en fin de journée que tes épaules sont remontées depuis des heures, sans même en avoir eu conscience. Ce réflexe musculaire est une réaction de protection automatique face au stress 👉 il s'active sans que tu le décides 👉 il se répète chaque jour de tension 👉 il crée à la longue des douleurs profondes dans la nuque et les trapèzes. Un signal à repérer avant qu'il ne s'installe pour la soirée. #somatisation #stress #douleurs #tensions #bienetre #systemenerveux #anxiete #santementale"
+  "description": "Tu réalises en fin de journée que tes épaules sont remontées depuis des heures, sans même en avoir eu conscience. Ce réflexe musculaire est une réaction de protection automatique face au stress 👉 il s'active sans que tu le décides 👉 il se répète chaque jour de tension 👉 il crée à la longue des douleurs profondes dans la nuque et les trapèzes. Un signal à repérer avant qu'il ne s'installe pour la soirée. #somatisation #stress #douleurs #tensions #bienetre #systemenerveux #anxiete #santementale",
+  "points_image": [
+   "Il s'active sans que tu le décides",
+   "Il se répète chaque jour de tension",
+   "Il crée à la longue des douleurs profondes dans la nuque et les trapèzes"
+  ]
  },
  {
   "titre": "Vertige léger sans cause médicale : et si c'était ton système nerveux",
   "texte_image": "Vertige léger récurrent et stress",
-  "description": "Tu te sens parfois légèrement pris de vertige, debout dans la cuisine ou devant ton écran, sans qu'aucun examen médical n'explique cette sensation. Souvent lié à un système nerveux maintenu en alerte trop longtemps 👉 la tension du cou perturbe l'équilibre 👉 la respiration superficielle joue aussi un rôle 👉 il s'espace dès que le corps retrouve du calme. Une forme méconnue de somatisation, rarement grave. #somatisation #stress #bienetre #systemenerveux #tensions #douleurs #anxiete #santementale"
+  "description": "Tu te sens parfois légèrement pris de vertige, debout dans la cuisine ou devant ton écran, sans qu'aucun examen médical n'explique cette sensation. Souvent lié à un système nerveux maintenu en alerte trop longtemps 👉 la tension du cou perturbe l'équilibre 👉 la respiration superficielle joue aussi un rôle 👉 il s'espace dès que le corps retrouve du calme. Une forme méconnue de somatisation, rarement grave. #somatisation #stress #bienetre #systemenerveux #tensions #douleurs #anxiete #santementale",
+  "points_image": [
+   "La tension du cou perturbe l'équilibre",
+   "La respiration superficielle joue aussi un rôle",
+   "Il s'espace dès que le corps retrouve du calme"
+  ]
  },
  {
   "titre": "Ta peau réagit pendant tes périodes les plus tendues : voici le lien",
   "texte_image": "La peau et le stress : le lien",
-  "description": "Tu remarques que ta peau réagit justement pendant tes périodes les plus tendues, avec des rougeurs, des démangeaisons ou des poussées qui semblent sortir de nulle part. Ce n'est pas une coïncidence 👉 la peau est sensible aux hormones du stress 👉 elle réagit avant même que tu ne ressentes la tension 👉 les poussées s'espacent avec un système nerveux plus apaisé. Garde cette épingle pour la prochaine poussée. #somatisation #stress #systemenerveux #bienetre #douleurs #anxiete #santementale #tensions"
+  "description": "Tu remarques que ta peau réagit justement pendant tes périodes les plus tendues, avec des rougeurs, des démangeaisons ou des poussées qui semblent sortir de nulle part. Ce n'est pas une coïncidence 👉 la peau est sensible aux hormones du stress 👉 elle réagit avant même que tu ne ressentes la tension 👉 les poussées s'espacent avec un système nerveux plus apaisé. Garde cette épingle pour la prochaine poussée. #somatisation #stress #systemenerveux #bienetre #douleurs #anxiete #santementale #tensions",
+  "points_image": [
+   "La peau est sensible aux hormones du stress",
+   "Elle réagit avant même que tu ne ressentes la tension",
+   "Les poussées s'espacent avec un système nerveux plus apaisé"
+  ]
  },
  {
   "titre": "Ce signal physique que tu ignores en pensant que ça va passer seul",
   "texte_image": "Le signal du corps à ne jamais ignorer",
-  "description": "Tu ressens un signal physique précis, une douleur ou une gêne récurrente, que tu préfères ignorer en te disant que ça va passer. Pourquoi il mérite d'être écouté 👉 ces signes sont minimisés pendant des mois, parfois des années 👉 les ignorer ne les fait pas disparaître, juste changer de forme 👉 les écouter tôt évite souvent l'aggravation. Le guide gratuit détaille les signaux les plus fréquents. #somatisation #stress #douleurs #tensions #bienetre #systemenerveux #anxiete #santementale"
+  "description": "Tu ressens un signal physique précis, une douleur ou une gêne récurrente, que tu préfères ignorer en te disant que ça va passer. Pourquoi il mérite d'être écouté 👉 ces signes sont minimisés pendant des mois, parfois des années 👉 les ignorer ne les fait pas disparaître, juste changer de forme 👉 les écouter tôt évite souvent l'aggravation. Le guide gratuit détaille les signaux les plus fréquents. #somatisation #stress #douleurs #tensions #bienetre #systemenerveux #anxiete #santementale",
+  "points_image": [
+   "Ces signes sont minimisés pendant des mois, parfois des années",
+   "Les ignorer ne les fait pas disparaître, juste changer de forme",
+   "Les écouter tôt évite souvent l'aggravation"
+  ]
  },
  {
   "titre": "3 raisons qui expliquent pourquoi ton coup de barre revient à la même heure",
   "texte_image": "3 raisons qui expliquent pourquoi ton coup de barre revient à la même heure",
-  "description": "Ce creux d'énergie qui revient presque à la même heure suit un vrai rythme biologique 👉 baisse naturelle de vigilance après le repas 👉 chute de glycémie après un déjeuner trop sucré 👉 stress du matin pas encore retombé. Ajuster le déjeuner ou bouger 5 minutes avant l'heure suffit souvent à lisser la courbe. #energie #fatiguementale #stress #bienetre #productivite #cortisol #recuperation #systemenerveux"
+  "description": "Ce creux d'énergie qui revient presque à la même heure suit un vrai rythme biologique 👉 baisse naturelle de vigilance après le repas 👉 chute de glycémie après un déjeuner trop sucré 👉 stress du matin pas encore retombé. Ajuster le déjeuner ou bouger 5 minutes avant l'heure suffit souvent à lisser la courbe. #energie #fatiguementale #stress #bienetre #productivite #cortisol #recuperation #systemenerveux",
+  "points_image": [
+   "Baisse naturelle de vigilance après le repas",
+   "Chute de glycémie après un déjeuner trop sucré",
+   "Stress du matin pas encore retombé"
+  ]
  },
  {
   "titre": "3 fausses pauses qui épuisent ton énergie au lieu de la recharger",
   "texte_image": "3 fausses pauses qui épuisent ton énergie au lieu de la recharger",
-  "description": "Café avalé en vitesse, téléphone consulté pour souffler : ces pauses censées recharger ton énergie sollicitent ton attention presque comme une tâche de travail 👉 le scroll maintient le cerveau en alerte 👉 le café stimule sans reposer le système nerveux 👉 discuter d'un sujet chargé draine plus qu'il ne repose. Une vraie pause coupe les stimulations quelques minutes. #energie #fatiguementale #stress #bienetre #routine #recuperation #systemenerveux #calme"
+  "description": "Café avalé en vitesse, téléphone consulté pour souffler : ces pauses censées recharger ton énergie sollicitent ton attention presque comme une tâche de travail 👉 le scroll maintient le cerveau en alerte 👉 le café stimule sans reposer le système nerveux 👉 discuter d'un sujet chargé draine plus qu'il ne repose. Une vraie pause coupe les stimulations quelques minutes. #energie #fatiguementale #stress #bienetre #routine #recuperation #systemenerveux #calme",
+  "points_image": [
+   "Le scroll maintient le cerveau en alerte",
+   "Le café stimule sans reposer le système nerveux",
+   "Discuter d'un sujet chargé draine plus qu'il ne repose"
+  ]
  },
  {
   "titre": "3 gestes pour que ton café de l'après-midi fasse à nouveau effet",
   "texte_image": "3 gestes pour que ton café de l'après-midi fasse à nouveau effet",
-  "description": "Le café de 16h qui n'aide plus, voire qui agite sans rendre plus alerte, n'a rien d'un hasard : avec une consommation régulière, le corps s'habitue et la caféine perd son effet. En reprendre davantage n'arrange rien et abîme le sommeil qui suit 👉 espace les prises de deux heures 👉 réduis la dose une semaine 👉 remplace une tasse sur deux par de l'eau. #energie #stress #fatiguementale #bienetre #cortisol #recuperation #systemenerveux #sommeil"
+  "description": "Le café de 16h qui n'aide plus, voire qui agite sans rendre plus alerte, n'a rien d'un hasard : avec une consommation régulière, le corps s'habitue et la caféine perd son effet. En reprendre davantage n'arrange rien et abîme le sommeil qui suit 👉 espace les prises de deux heures 👉 réduis la dose une semaine 👉 remplace une tasse sur deux par de l'eau. #energie #stress #fatiguementale #bienetre #cortisol #recuperation #systemenerveux #sommeil",
+  "points_image": [
+   "Espace les prises de deux heures",
+   "Réduis la dose une semaine",
+   "Remplace une tasse sur deux par de l'eau"
+  ]
  },
  {
   "titre": "4 signaux que ton corps envoie bien avant l'épuisement total",
   "texte_image": "4 signaux que ton corps envoie bien avant l'épuisement total",
-  "description": "Tension dans la mâchoire, sommeil plus léger, irritation pour un détail anodin : le corps envoie des signaux discrets bien avant l'épuisement total 👉 concentration qui flanche en fin d'après-midi 👉 mâchoire ou épaules crispées sans raison claire 👉 énervement pour un imprévu minime 👉 sommeil qui ne recharge plus. Les repérer tôt permet d'ajuster le rythme avant la panne. #energie #fatiguementale #stress #bienetre #systemenerveux #recuperation #santementale #cortisol"
+  "description": "Tension dans la mâchoire, sommeil plus léger, irritation pour un détail anodin : le corps envoie des signaux discrets bien avant l'épuisement total 👉 concentration qui flanche en fin d'après-midi 👉 mâchoire ou épaules crispées sans raison claire 👉 énervement pour un imprévu minime 👉 sommeil qui ne recharge plus. Les repérer tôt permet d'ajuster le rythme avant la panne. #energie #fatiguementale #stress #bienetre #systemenerveux #recuperation #santementale #cortisol",
+  "points_image": [
+   "Concentration qui flanche en fin d'après-midi",
+   "Mâchoire ou épaules crispées sans raison claire",
+   "Énervement pour un imprévu minime",
+   "Sommeil qui ne recharge plus"
+  ]
  },
  {
   "titre": "Avant de te resservir un café à 15h, essaie ce geste de 5 minutes",
   "texte_image": "Le geste de 5 minutes qui relance l'énergie",
-  "description": "Avant un café de plus à 15h, un geste de 5 minutes relance ta vigilance presque aussi vite, sans rien avaler 👉 marche d'un bon pas pendant 3 minutes 👉 termine par 10 respirations profondes, expiration plus longue que l'inspiration 👉 ouvre une fenêtre ou sors changer d'air. Ce réflexe réveille le système nerveux et évite bien des coups de mou. #energie #fatiguementale #stress #bienetre #productivite #recuperation #systemenerveux #respiration"
+  "description": "Avant un café de plus à 15h, un geste de 5 minutes relance ta vigilance presque aussi vite, sans rien avaler 👉 marche d'un bon pas pendant 3 minutes 👉 termine par 10 respirations profondes, expiration plus longue que l'inspiration 👉 ouvre une fenêtre ou sors changer d'air. Ce réflexe réveille le système nerveux et évite bien des coups de mou. #energie #fatiguementale #stress #bienetre #productivite #recuperation #systemenerveux #respiration",
+  "points_image": [
+   "Marche d'un bon pas pendant 3 minutes",
+   "Termine par 10 respirations profondes, expiration plus longue que l'inspiration",
+   "Ouvre une fenêtre ou sors changer d'air"
+  ]
  },
  {
   "titre": "Les 10 minutes après ton réveil décident déjà d'une partie de ta journée",
   "texte_image": "La routine du matin qui conditionne l'énergie",
-  "description": "Attraper le téléphone à peine les yeux ouverts influence directement ton énergie du reste de la journée. Les 10 premières minutes après le réveil comptent plus qu'on ne le pense 👉 laisser le téléphone hors de portée du lit 👉 boire un verre d'eau avant toute chose 👉 s'étirer ou respirer deux minutes avant de se lever. Un démarrage plus stable change la suite. #energie #fatiguementale #stress #bienetre #routine #recuperation #productivite #systemenerveux"
+  "description": "Attraper le téléphone à peine les yeux ouverts influence directement ton énergie du reste de la journée. Les 10 premières minutes après le réveil comptent plus qu'on ne le pense 👉 laisser le téléphone hors de portée du lit 👉 boire un verre d'eau avant toute chose 👉 s'étirer ou respirer deux minutes avant de se lever. Un démarrage plus stable change la suite. #energie #fatiguementale #stress #bienetre #routine #recuperation #productivite #systemenerveux",
+  "points_image": [
+   "Laisser le téléphone hors de portée du lit",
+   "Boire un verre d'eau avant toute chose",
+   "S'étirer ou respirer deux minutes avant de se lever"
+  ]
  },
  {
   "titre": "3 signes qu'une discussion sociale draine ton énergie au lieu de te ressourcer",
   "texte_image": "3 signes qu'une discussion sociale draine ton énergie au lieu de te ressourcer",
-  "description": "Sortir d'un café entre amis étrangement épuisé, alors que rien de grave ne s'est passé : certaines interactions demandent une vigilance émotionnelle constante qui draine l'énergie sans bruit 👉 surveiller ses mots en continu 👉 écouter une plainte sans pouvoir répondre 👉 sourire plus que ressenti. Repérer ces échanges aide à mieux doser tes journées sociales. #energie #fatiguementale #stress #bienetre #systemenerveux #recuperation #santementale #calme"
+  "description": "Sortir d'un café entre amis étrangement épuisé, alors que rien de grave ne s'est passé : certaines interactions demandent une vigilance émotionnelle constante qui draine l'énergie sans bruit 👉 surveiller ses mots en continu 👉 écouter une plainte sans pouvoir répondre 👉 sourire plus que ressenti. Repérer ces échanges aide à mieux doser tes journées sociales. #energie #fatiguementale #stress #bienetre #systemenerveux #recuperation #santementale #calme",
+  "points_image": [
+   "Surveiller ses mots en continu",
+   "Écouter une plainte sans pouvoir répondre",
+   "Sourire plus que ressenti"
+  ]
  },
  {
   "titre": "Un jour en pleine forme, le lendemain à plat : ce n'est pas du hasard",
   "texte_image": "Pourquoi l'énergie fluctue autant",
-  "description": "Plein d'énergie un jour, vidé le lendemain sans rien changer à l'emploi du temps ni au sommeil : ces montagnes russes ont une explication précise, le système nerveux garde en mémoire les tensions non relâchées des jours précédents 👉 une journée chargée en émotions épuise même sans effort physique 👉 le stress non déchargé se paie le lendemain 👉 une vraie pause la veille limite l'effet rebond. #energie #fatiguementale #stress #bienetre #cortisol #recuperation #systemenerveux #santementale"
+  "description": "Plein d'énergie un jour, vidé le lendemain sans rien changer à l'emploi du temps ni au sommeil : ces montagnes russes ont une explication précise, le système nerveux garde en mémoire les tensions non relâchées des jours précédents 👉 une journée chargée en émotions épuise même sans effort physique 👉 le stress non déchargé se paie le lendemain 👉 une vraie pause la veille limite l'effet rebond. #energie #fatiguementale #stress #bienetre #cortisol #recuperation #systemenerveux #santementale",
+  "points_image": [
+   "Une journée chargée en émotions épuise même sans effort physique",
+   "Le stress non déchargé se paie le lendemain",
+   "Une vraie pause la veille limite l'effet rebond"
+  ]
  },
  {
   "titre": "Cette fatigue du dimanche soir qui refuse de s'en aller, même reposé",
@@ -916,52 +1302,103 @@
  {
   "titre": "Tenir jusqu'aux vacances pour enfin souffler : et si ça n'attendait pas ?",
   "texte_image": "Retrouver de l'énergie sans attendre les vacances",
-  "description": "Cocher les jours en se disant que tout ira mieux en vacances, alors qu'on avance sur les rotules d'ici là : attendre une coupure lointaine laisse le stress s'accumuler et rend la fatigue plus dure à rattraper 👉 une vraie pause de 10 minutes sans écran chaque jour 👉 une heure de fin de travail fixe 👉 un moment de mouvement entre deux tâches. Pas besoin d'attendre des semaines. #energie #fatiguementale #stress #bienetre #routine #recuperation #systemenerveux #equilibre"
+  "description": "Cocher les jours en se disant que tout ira mieux en vacances, alors qu'on avance sur les rotules d'ici là : attendre une coupure lointaine laisse le stress s'accumuler et rend la fatigue plus dure à rattraper 👉 une vraie pause de 10 minutes sans écran chaque jour 👉 une heure de fin de travail fixe 👉 un moment de mouvement entre deux tâches. Pas besoin d'attendre des semaines. #energie #fatiguementale #stress #bienetre #routine #recuperation #systemenerveux #equilibre",
+  "points_image": [
+   "Une vraie pause de 10 minutes sans écran chaque jour",
+   "Une heure de fin de travail fixe",
+   "Un moment de mouvement entre deux tâches"
+  ]
  },
  {
   "titre": "Ton écran est ouvert depuis ce matin, pourtant rien n'a bougé : ce blocage a un nom",
   "texte_image": "Le blocage mental qui revient sans cesse",
-  "description": "Devant l'écran depuis un moment, sachant exactement quoi faire, et pourtant rien ne bouge : ce blocage a un nom, la paralysie de la tâche floue. Le cerveau se fige quand une action reste trop grande ou mal définie 👉 découpe-la en une mini-étape de 2 minutes 👉 écris cette étape en une phrase concrète 👉 commence-la sans te soucier du reste. Le guide gratuit approfondit ce mécanisme. #blocagemental #fatiguementale #clarte #bienetre #stress #organisation #procrastination #systemenerveux"
+  "description": "Devant l'écran depuis un moment, sachant exactement quoi faire, et pourtant rien ne bouge : ce blocage a un nom, la paralysie de la tâche floue. Le cerveau se fige quand une action reste trop grande ou mal définie 👉 découpe-la en une mini-étape de 2 minutes 👉 écris cette étape en une phrase concrète 👉 commence-la sans te soucier du reste. Le guide gratuit approfondit ce mécanisme. #blocagemental #fatiguementale #clarte #bienetre #stress #organisation #procrastination #systemenerveux",
+  "points_image": [
+   "Découpe-la en une mini-étape de 2 minutes",
+   "Écris cette étape en une phrase concrète",
+   "Commence-la sans te soucier du reste"
+  ]
  },
  {
   "titre": "3 signes que ton mental tourne trop vite pour se poser",
   "texte_image": "3 signes d'un mental en surrégime",
-  "description": "Tu essaies de te concentrer, et ton esprit part déjà ailleurs, puis encore ailleurs, sans jamais se poser. Cette agitation n'est pas un manque de discipline 👉 tu commences plusieurs tâches sans en finir aucune 👉 même au calme, une pensée en amène une autre 👉 tu te sens fatigué(e) sans avoir vraiment avancé. C'est souvent un système nerveux en surrégime qui n'arrive plus à ralentir seul. #blocagemental #fatiguementale #clarte #bienetre #stress #systemenerveux #concentration"
+  "description": "Tu essaies de te concentrer, et ton esprit part déjà ailleurs, puis encore ailleurs, sans jamais se poser. Cette agitation n'est pas un manque de discipline 👉 tu commences plusieurs tâches sans en finir aucune 👉 même au calme, une pensée en amène une autre 👉 tu te sens fatigué(e) sans avoir vraiment avancé. C'est souvent un système nerveux en surrégime qui n'arrive plus à ralentir seul. #blocagemental #fatiguementale #clarte #bienetre #stress #systemenerveux #concentration",
+  "points_image": [
+   "Tu commences plusieurs tâches sans en finir aucune",
+   "Même au calme, une pensée en amène une autre",
+   "Tu te sens fatigué(e) sans avoir vraiment avancé"
+  ]
  },
  {
   "titre": "3 questions à te poser quand tu ne sais plus par où commencer",
   "texte_image": "3 questions pour débloquer ta journée",
-  "description": "Tu regardes ta liste sans savoir par quoi commencer : tout semble aussi urgent, aussi flou, aussi lourd. 3 questions retrouvent plus vite un point de départ que de fixer la liste 👉 qu'est-ce qui empire si je ne fais rien aujourd'hui ? 👉 quelle est la plus petite première étape possible ? 👉 de quoi ai-je besoin pour la commencer maintenant ? #blocagemental #clarte #fatiguementale #bienetre #organisation #productivite #procrastination"
+  "description": "Tu regardes ta liste sans savoir par quoi commencer : tout semble aussi urgent, aussi flou, aussi lourd. 3 questions retrouvent plus vite un point de départ que de fixer la liste 👉 qu'est-ce qui empire si je ne fais rien aujourd'hui ? 👉 quelle est la plus petite première étape possible ? 👉 de quoi ai-je besoin pour la commencer maintenant ? #blocagemental #clarte #fatiguementale #bienetre #organisation #productivite #procrastination",
+  "points_image": [
+   "Qu'est-ce qui empire si je ne fais rien aujourd'hui ?",
+   "Quelle est la plus petite première étape possible ?",
+   "De quoi ai-je besoin pour la commencer maintenant"
+  ]
  },
  {
   "titre": "Tu dis \"je ne sais plus ce que je veux\" ? Ce n'est presque jamais un problème de désir",
   "texte_image": "\"Je ne sais plus ce que je veux\" : le vrai obstacle",
-  "description": "\"Je ne sais plus ce que je veux\" revient de plus en plus souvent, même sur des sujets simples. Derrière cette phrase se cache rarement un vrai manque de désir 👉 c'est souvent la peur de se tromper qui bloque le choix 👉 ou une fatigue mentale qui empêche de trancher 👉 ou trop d'options qui brouillent la décision. Se demander \"qu'est-ce que je ne veux plus\" débloque souvent la réponse. #blocagemental #clarte #fatiguementale #bienetre #stress #organisation #systemenerveux #calmemental"
+  "description": "\"Je ne sais plus ce que je veux\" revient de plus en plus souvent, même sur des sujets simples. Derrière cette phrase se cache rarement un vrai manque de désir 👉 c'est souvent la peur de se tromper qui bloque le choix 👉 ou une fatigue mentale qui empêche de trancher 👉 ou trop d'options qui brouillent la décision. Se demander \"qu'est-ce que je ne veux plus\" débloque souvent la réponse. #blocagemental #clarte #fatiguementale #bienetre #stress #organisation #systemenerveux #calmemental",
+  "points_image": [
+   "C'est souvent la peur de se tromper qui bloque le choix",
+   "Ou une fatigue mentale qui empêche de trancher",
+   "Ou trop d'options qui brouillent la décision"
+  ]
  },
  {
   "titre": "Plus tu retournes cette décision dans ta tête, moins elle devient claire",
   "texte_image": "Pourquoi réfléchir plus ne ramène pas la clarté",
-  "description": "Tourner une décision dans tous les sens depuis des jours, et plus on y réfléchit, moins ça s'éclaircit : ressasser mentalement aggrave souvent la confusion 👉 écris la décision et les options sur une feuille, à la main 👉 fixe un horaire précis pour trancher, pas un délai flou 👉 marche quelques minutes avant de relire. Le geste physique désengage le ressassement. #blocagemental #clarte #fatiguementale #bienetre #calmemental #systemenerveux #organisation #stress"
+  "description": "Tourner une décision dans tous les sens depuis des jours, et plus on y réfléchit, moins ça s'éclaircit : ressasser mentalement aggrave souvent la confusion 👉 écris la décision et les options sur une feuille, à la main 👉 fixe un horaire précis pour trancher, pas un délai flou 👉 marche quelques minutes avant de relire. Le geste physique désengage le ressassement. #blocagemental #clarte #fatiguementale #bienetre #calmemental #systemenerveux #organisation #stress",
+  "points_image": [
+   "Écris la décision et les options sur une feuille, à la main",
+   "Fixe un horaire précis pour trancher, pas un délai flou",
+   "Marche quelques minutes avant de relire"
+  ]
  },
  {
   "titre": "4 signaux discrets que ton cerveau envoie avant de saturer pour de bon",
   "texte_image": "4 signes de surcharge d'informations",
-  "description": "Le cerveau n'arrive plus à traiter une information de plus, et pourtant tout continue d'arriver. Avant de saturer, il envoie des signaux précis, souvent ignorés 👉 relire trois fois la même phrase sans comprendre 👉 oublier des détails simples du quotidien 👉 irritation pour un bruit minime 👉 envie soudaine de tout laisser tomber. Les repérer à temps évite de subir la surcharge jusqu'au bout. #blocagemental #fatiguementale #clarte #bienetre #systemenerveux #stress #santementale #organisation"
+  "description": "Le cerveau n'arrive plus à traiter une information de plus, et pourtant tout continue d'arriver. Avant de saturer, il envoie des signaux précis, souvent ignorés 👉 relire trois fois la même phrase sans comprendre 👉 oublier des détails simples du quotidien 👉 irritation pour un bruit minime 👉 envie soudaine de tout laisser tomber. Les repérer à temps évite de subir la surcharge jusqu'au bout. #blocagemental #fatiguementale #clarte #bienetre #systemenerveux #stress #santementale #organisation",
+  "points_image": [
+   "Relire trois fois la même phrase sans comprendre",
+   "Oublier des détails simples du quotidien",
+   "Irritation pour un bruit minime",
+   "Envie soudaine de tout laisser tomber"
+  ]
  },
  {
   "titre": "Ta tête déborde là, maintenant ? Un exercice de 5 minutes pour redescendre",
   "texte_image": "L'exercice de 5 minutes pour retrouver la clarté",
-  "description": "La tête pleine, incapable de réfléchir posément, avec seulement quelques minutes devant toi : un exercice simple fait retomber la pression sur le moment 👉 note en vrac sur papier tout ce qui tourne, sans trier 👉 relis et entoure une seule chose urgente aujourd'hui 👉 respire lentement dix fois en fixant ce point. Cinq minutes suffisent à redescendre. #blocagemental #clarte #fatiguementale #bienetre #organisation #systemenerveux #stress #calmemental"
+  "description": "La tête pleine, incapable de réfléchir posément, avec seulement quelques minutes devant toi : un exercice simple fait retomber la pression sur le moment 👉 note en vrac sur papier tout ce qui tourne, sans trier 👉 relis et entoure une seule chose urgente aujourd'hui 👉 respire lentement dix fois en fixant ce point. Cinq minutes suffisent à redescendre. #blocagemental #clarte #fatiguementale #bienetre #organisation #systemenerveux #stress #calmemental",
+  "points_image": [
+   "Note en vrac sur papier tout ce qui tourne, sans trier",
+   "Relis et entoure une seule chose urgente aujourd'hui",
+   "Respire lentement dix fois en fixant ce point"
+  ]
  },
  {
   "titre": "Ce coup de fil que tu repousses depuis des jours n'a rien à voir avec le temps",
   "texte_image": "Pourquoi repousser les décisions importantes",
-  "description": "Ce coup de fil repoussé depuis des jours, alors que la tâche prendrait à peine quelques minutes : ce n'est pas de la procrastination ordinaire, c'est la charge mentale autour de cette action qui bloque tout 👉 anticiper le pire scénario amplifie le blocage 👉 remettre entretient l'appréhension 👉 se donner 5 minutes chrono désamorce l'attente. Agir débloque plus vite que d'y repenser. #blocagemental #procrastination #clarte #bienetre #stress #organisation #systemenerveux #fatiguementale"
+  "description": "Ce coup de fil repoussé depuis des jours, alors que la tâche prendrait à peine quelques minutes : ce n'est pas de la procrastination ordinaire, c'est la charge mentale autour de cette action qui bloque tout 👉 anticiper le pire scénario amplifie le blocage 👉 remettre entretient l'appréhension 👉 se donner 5 minutes chrono désamorce l'attente. Agir débloque plus vite que d'y repenser. #blocagemental #procrastination #clarte #bienetre #stress #organisation #systemenerveux #fatiguementale",
+  "points_image": [
+   "Anticiper le pire scénario amplifie le blocage",
+   "Remettre entretient l'appréhension",
+   "Se donner 5 minutes chrono désamorce l'attente"
+  ]
  },
  {
   "titre": "Tu ne réfléchis plus clairement, même sur des choses simples : voici pourquoi",
   "texte_image": "Manque de clarté et fatigue mentale : le lien",
-  "description": "Ne plus réfléchir clairement, même sur des décisions simples, sans comprendre pourquoi ça arrive maintenant : ce manque de clarté est souvent le symptôme d'une fatigue mentale installée 👉 les petites décisions épuisent une réserve d'énergie mentale limitée 👉 le cerveau fatigué traite l'information plus lentement 👉 réduire les décisions inutiles libère de la clarté pour celles qui comptent. #blocagemental #fatiguementale #clarte #bienetre #stress #systemenerveux #organisation #santementale"
+  "description": "Ne plus réfléchir clairement, même sur des décisions simples, sans comprendre pourquoi ça arrive maintenant : ce manque de clarté est souvent le symptôme d'une fatigue mentale installée 👉 les petites décisions épuisent une réserve d'énergie mentale limitée 👉 le cerveau fatigué traite l'information plus lentement 👉 réduire les décisions inutiles libère de la clarté pour celles qui comptent. #blocagemental #fatiguementale #clarte #bienetre #stress #systemenerveux #organisation #santementale",
+  "points_image": [
+   "Les petites décisions épuisent une réserve d'énergie mentale limitée",
+   "Le cerveau fatigué traite l'information plus lentement",
+   "Réduire les décisions inutiles libère de la clarté pour celles qui comptent"
+  ]
  },
  {
   "titre": "Hésitation passagère ou vrai blocage : le test pour faire la différence",
@@ -971,72 +1408,143 @@
  {
   "titre": "Boule au ventre au bureau : le geste de 30 secondes qui la fait retomber",
   "texte_image": "Boule au ventre au bureau : le geste de 30 secondes qui la fait retomber",
-  "description": "Les mails s'accumulent, ta chaise se crispe et cette boule familière monte sans prévenir. Un geste simple, réalisable assis(e) en 30 secondes 👉 inspire en gonflant le ventre sur 4 temps 👉 bloque 2 secondes 👉 souffle longuement en relâchant les épaules. Répété trois fois, il agit directement sur ton système nerveux et fait retomber la pression avant qu'elle prenne toute la place. #stress #travail #bienetre #systemenerveux #calme #detente #confiance #posture #relaxation #bureau"
+  "description": "Les mails s'accumulent, ta chaise se crispe et cette boule familière monte sans prévenir. Un geste simple, réalisable assis(e) en 30 secondes 👉 inspire en gonflant le ventre sur 4 temps 👉 bloque 2 secondes 👉 souffle longuement en relâchant les épaules. Répété trois fois, il agit directement sur ton système nerveux et fait retomber la pression avant qu'elle prenne toute la place. #stress #travail #bienetre #systemenerveux #calme #detente #confiance #posture #relaxation #bureau",
+  "points_image": [
+   "Inspire en gonflant le ventre sur 4 temps",
+   "Bloque 2 secondes",
+   "Souffle longuement en relâchant les épaules"
+  ]
  },
  {
   "titre": "3 gestes assis pour relâcher la pression avant qu'elle déborde",
   "texte_image": "3 gestes anti-stress sans quitter le bureau",
-  "description": "Il y a ces journées où tu passes d'un dossier à l'autre sans lever la tête. Sans quitter ta chaise, 3 gestes évacuent la tension accumulée 👉 roule les épaules vers l'arrière 5 fois, lentement 👉 presse les mains l'une contre l'autre 10 secondes puis relâche 👉 souffle longuement en laissant tomber les épaules. Réalisables entre deux tâches, ils cassent la spirale avant l'épuisement. #posturesantistress #stress #bienetre #travail #detente #systemenerveux #bureau #anxiete"
+  "description": "Il y a ces journées où tu passes d'un dossier à l'autre sans lever la tête. Sans quitter ta chaise, 3 gestes évacuent la tension accumulée 👉 roule les épaules vers l'arrière 5 fois, lentement 👉 presse les mains l'une contre l'autre 10 secondes puis relâche 👉 souffle longuement en laissant tomber les épaules. Réalisables entre deux tâches, ils cassent la spirale avant l'épuisement. #posturesantistress #stress #bienetre #travail #detente #systemenerveux #bureau #anxiete",
+  "points_image": [
+   "Roule les épaules vers l'arrière 5 fois, lentement",
+   "Presse les mains l'une contre l'autre 10 secondes puis relâche",
+   "Souffle longuement en laissant tomber les épaules"
+  ]
  },
  {
   "titre": "Épaules remontées après écran : le geste en 3 temps qui les débloque",
   "texte_image": "Le geste en 3 temps pour les épaules",
-  "description": "Tu te lèves de ton poste et tes épaules sont remontées jusqu'aux oreilles sans que tu t'en sois rendu compte. Ce réflexe, courant après des heures sur écran, finit par créer de vraies douleurs de nuque. En une minute 👉 hausse les épaules fort vers les oreilles, tiens 5 secondes 👉 relâche d'un coup en soufflant 👉 fais rouler les épaules vers l'arrière 3 fois. La tension redescend d'elle-même. #posturesantistress #stress #bienetre #travail #douleurs #detente #bureau #systemenerveux"
+  "description": "Tu te lèves de ton poste et tes épaules sont remontées jusqu'aux oreilles sans que tu t'en sois rendu compte. Ce réflexe, courant après des heures sur écran, finit par créer de vraies douleurs de nuque. En une minute 👉 hausse les épaules fort vers les oreilles, tiens 5 secondes 👉 relâche d'un coup en soufflant 👉 fais rouler les épaules vers l'arrière 3 fois. La tension redescend d'elle-même. #posturesantistress #stress #bienetre #travail #douleurs #detente #bureau #systemenerveux",
+  "points_image": [
+   "Hausse les épaules fort vers les oreilles, tiens 5 secondes",
+   "Relâche d'un coup en soufflant",
+   "Fais rouler les épaules vers l'arrière 3 fois"
+  ]
  },
  {
   "titre": "Cœur qui s'accélère au bureau : la posture d'1 minute pour reprendre le dessus",
   "texte_image": "Cœur qui s'accélère au bureau : la posture d'1 minute pour reprendre le dessus",
-  "description": "Debout, ton cœur s'accélère d'un coup et tu as besoin de reprendre le contrôle tout de suite, sans pouvoir t'éloigner du bureau 👉 ancre fermement tes deux pieds au sol 👉 allonge l'expiration deux fois plus longtemps que l'inspiration 👉 tiens cette posture une minute pleine. Cet ancrage simple suffit souvent à faire redescendre une montée d'angoisse au travail. #stress #travail #bienetre #calme #systemenerveux #detente #confiance #posture #relaxation #bureau"
+  "description": "Debout, ton cœur s'accélère d'un coup et tu as besoin de reprendre le contrôle tout de suite, sans pouvoir t'éloigner du bureau 👉 ancre fermement tes deux pieds au sol 👉 allonge l'expiration deux fois plus longtemps que l'inspiration 👉 tiens cette posture une minute pleine. Cet ancrage simple suffit souvent à faire redescendre une montée d'angoisse au travail. #stress #travail #bienetre #calme #systemenerveux #detente #confiance #posture #relaxation #bureau",
+  "points_image": [
+   "Ancre fermement tes deux pieds au sol",
+   "Allonge l'expiration deux fois plus longtemps que l'inspiration",
+   "Tiens cette posture une minute pleine"
+  ]
  },
  {
   "titre": "Avant la réunion : le geste des 2 dernières minutes qui change tout",
   "texte_image": "Avant la réunion : le geste des 2 dernières minutes qui change tout",
-  "description": "Planté(e) devant la porte de la salle, le ventre noué, à repasser en boucle tout ce qui pourrait mal tourner. Ce que tu fais avec ton corps juste avant d'entrer influence le stress ressenti pendant la réunion 👉 épaules basses, mâchoire relâchée 👉 trois respirations lentes, expiration prolongée 👉 une phrase courte pour te rassurer avant d'ouvrir la porte. #stress #travail #bienetre #confiance #calme #detente #posture #relaxation #bureau #productivite"
+  "description": "Planté(e) devant la porte de la salle, le ventre noué, à repasser en boucle tout ce qui pourrait mal tourner. Ce que tu fais avec ton corps juste avant d'entrer influence le stress ressenti pendant la réunion 👉 épaules basses, mâchoire relâchée 👉 trois respirations lentes, expiration prolongée 👉 une phrase courte pour te rassurer avant d'ouvrir la porte. #stress #travail #bienetre #confiance #calme #detente #posture #relaxation #bureau #productivite",
+  "points_image": [
+   "Épaules basses, mâchoire relâchée",
+   "Trois respirations lentes, expiration prolongée",
+   "Une phrase courte pour te rassurer avant d'ouvrir la porte"
+  ]
  },
  {
   "titre": "4 micro-pauses de 10 secondes pour ne pas exploser entre deux dossiers",
   "texte_image": "4 micro-pauses de 10 secondes pour ne pas exploser entre deux dossiers",
-  "description": "Tu enchaînes les tâches sans respirer, et en fin de matinée tu réalises que tu n'as pas pris une seule vraie pause. Quatre gestes de 10 secondes à glisser entre deux dossiers 👉 hausse les épaules puis relâche d'un coup 👉 desserre la mâchoire en bâillant volontairement 👉 souffle longuement, épaules basses 👉 étire poignets et doigts. De quoi repartir plus calme, sans quitter ton poste. #stress #travail #bienetre #productivite #calme #detente #confiance #posture #relaxation #bureau"
+  "description": "Tu enchaînes les tâches sans respirer, et en fin de matinée tu réalises que tu n'as pas pris une seule vraie pause. Quatre gestes de 10 secondes à glisser entre deux dossiers 👉 hausse les épaules puis relâche d'un coup 👉 desserre la mâchoire en bâillant volontairement 👉 souffle longuement, épaules basses 👉 étire poignets et doigts. De quoi repartir plus calme, sans quitter ton poste. #stress #travail #bienetre #productivite #calme #detente #confiance #posture #relaxation #bureau",
+  "points_image": [
+   "Hausse les épaules puis relâche d'un coup",
+   "Desserre la mâchoire en bâillant volontairement",
+   "Souffle longuement, épaules basses",
+   "Étire poignets et doigts"
+  ]
  },
  {
   "titre": "Après un appel tendu : le geste en 3 temps pour relâcher le corps",
   "texte_image": "Après un appel tendu : le geste en 3 temps pour relâcher le corps",
-  "description": "Tu reposes le combiné après un échange tendu, et ton corps reste crispé bien après la fin de la conversation, comme si elle continuait en toi. C'est normal, la tension accumulée ne s'évacue pas seule 👉 secoue doucement les mains et les épaules 👉 souffle longuement en laissant tomber les épaules 👉 desserre la mâchoire. Trois gestes assis(e), avant d'enchaîner sur autre chose. #stress #travail #bienetre #systemenerveux #calme #detente #confiance #posture #relaxation #bureau"
+  "description": "Tu reposes le combiné après un échange tendu, et ton corps reste crispé bien après la fin de la conversation, comme si elle continuait en toi. C'est normal, la tension accumulée ne s'évacue pas seule 👉 secoue doucement les mains et les épaules 👉 souffle longuement en laissant tomber les épaules 👉 desserre la mâchoire. Trois gestes assis(e), avant d'enchaîner sur autre chose. #stress #travail #bienetre #systemenerveux #calme #detente #confiance #posture #relaxation #bureau",
+  "points_image": [
+   "Secoue doucement les mains et les épaules",
+   "Souffle longuement en laissant tomber les épaules",
+   "Desserre la mâchoire"
+  ]
  },
  {
   "titre": "La posture au sol en 3 minutes pour vider la tête après le travail",
   "texte_image": "La posture au sol en 3 minutes pour vider la tête après le travail",
-  "description": "Tu rentres chez toi le soir avec encore toute la journée logée dans les épaules et le ventre, incapable de vraiment décrocher. Sur un tapis, jambes surélevées contre un mur ou un canapé 👉 pose les mains sur le ventre 👉 laisse l'expiration s'allonger progressivement 👉 reste ainsi trois minutes sans rien faire d'autre. Cette posture agit sur le système nerveux en profondeur et marque une vraie coupure avec le travail. #stress #travail #bienetre #detente #systemenerveux #confiance #posture #bureau"
+  "description": "Tu rentres chez toi le soir avec encore toute la journée logée dans les épaules et le ventre, incapable de vraiment décrocher. Sur un tapis, jambes surélevées contre un mur ou un canapé 👉 pose les mains sur le ventre 👉 laisse l'expiration s'allonger progressivement 👉 reste ainsi trois minutes sans rien faire d'autre. Cette posture agit sur le système nerveux en profondeur et marque une vraie coupure avec le travail. #stress #travail #bienetre #detente #systemenerveux #confiance #posture #bureau",
+  "points_image": [
+   "Pose les mains sur le ventre",
+   "Laisse l'expiration s'allonger progressivement",
+   "Reste ainsi trois minutes sans rien faire d'autre"
+  ]
  },
  {
   "titre": "Le geste discret sous la table qui calme en pleine réunion",
   "texte_image": "Le geste discret sous la table qui calme en pleine réunion",
-  "description": "En pleine réunion, tu sens le stress monter d'un coup et il est hors de question de te lever pour aller respirer devant tout le monde. Sous la table 👉 presse le pouce contre l'index quelques secondes 👉 relâche 👉 répète sur chaque doigt en respirant lentement. Ce point de pression discret envoie un signal d'apaisement à ton système nerveux, sans que personne ne le remarque. #stress #travail #bienetre #calme #anxiete #detente #confiance #posture #relaxation #bureau"
+  "description": "En pleine réunion, tu sens le stress monter d'un coup et il est hors de question de te lever pour aller respirer devant tout le monde. Sous la table 👉 presse le pouce contre l'index quelques secondes 👉 relâche 👉 répète sur chaque doigt en respirant lentement. Ce point de pression discret envoie un signal d'apaisement à ton système nerveux, sans que personne ne le remarque. #stress #travail #bienetre #calme #anxiete #detente #confiance #posture #relaxation #bureau",
+  "points_image": [
+   "Presse le pouce contre l'index quelques secondes",
+   "Relâche",
+   "Répète sur chaque doigt en respirant lentement"
+  ]
  },
  {
   "titre": "3 signes que ta chaise de bureau entretient ton stress",
   "texte_image": "3 signes que ta chaise de bureau entretient ton stress",
-  "description": "Tendu(e) en fin de journée sans jamais vraiment comprendre pourquoi, alors que rien de précis n'a mal tourné aujourd'hui. Ta posture au bureau a un effet direct et sous-estimé sur ton niveau de stress 👉 épaules relevées vers les oreilles toute la journée 👉 dos voûté qui comprime la respiration 👉 jambes croisées qui coupent la circulation. Redresser ces trois points suffit souvent à changer la donne en fin de journée. #stress #travail #bienetre #systemenerveux #posture #detente #confiance #bureau"
+  "description": "Tendu(e) en fin de journée sans jamais vraiment comprendre pourquoi, alors que rien de précis n'a mal tourné aujourd'hui. Ta posture au bureau a un effet direct et sous-estimé sur ton niveau de stress 👉 épaules relevées vers les oreilles toute la journée 👉 dos voûté qui comprime la respiration 👉 jambes croisées qui coupent la circulation. Redresser ces trois points suffit souvent à changer la donne en fin de journée. #stress #travail #bienetre #systemenerveux #posture #detente #confiance #bureau",
+  "points_image": [
+   "Épaules relevées vers les oreilles toute la journée",
+   "Dos voûté qui comprime la respiration",
+   "Jambes croisées qui coupent la circulation"
+  ]
  },
  {
   "titre": "« Cortisol face » sur TikTok : le vrai du faux",
   "texte_image": "« Cortisol face » : le vrai du faux",
-  "description": "Une vidéo TikTok explique un visage gonflé ou une fatigue du moment par le fameux « cortisol face », entre tendance virale et explication sérieuse. Ce que la science confirme réellement 👉 un cortisol chroniquement élevé peut favoriser une rétention d'eau 👉 il n'explique pas à lui seul chaque variation du visage 👉 le sommeil et l'alimentation jouent un rôle au moins aussi important. Un tri utile entre tendance et réalité. #cortisol #systemenerveux #stress #bienetre #sante"
+  "description": "Une vidéo TikTok explique un visage gonflé ou une fatigue du moment par le fameux « cortisol face », entre tendance virale et explication sérieuse. Ce que la science confirme réellement 👉 un cortisol chroniquement élevé peut favoriser une rétention d'eau 👉 il n'explique pas à lui seul chaque variation du visage 👉 le sommeil et l'alimentation jouent un rôle au moins aussi important. Un tri utile entre tendance et réalité. #cortisol #systemenerveux #stress #bienetre #sante",
+  "points_image": [
+   "Un cortisol chroniquement élevé peut favoriser une rétention d'eau",
+   "Il n'explique pas à lui seul chaque variation du visage",
+   "Le sommeil et l'alimentation jouent un rôle au moins aussi important"
+  ]
  },
  {
   "titre": "À cran ou épuisée sans raison claire : et si c'était ton cortisol",
   "texte_image": "Ces signes que tu attribues à autre chose",
-  "description": "Se sentir à cran pour un rien ou épuisée sans raison précise pousse souvent à chercher une explication du côté du sommeil ou de l'alimentation, sans penser au cortisol. Des signes plus spécifiques d'un stress physiologique 👉 une irritabilité qui surgit avant même de comprendre pourquoi 👉 une fatigue qui ne correspond pas aux heures dormies 👉 des tensions physiques sans effort récent. Les reconnaître aide à orienter la bonne réponse. #cortisol #systemenerveux #stress #bienetre #santementale"
+  "description": "Se sentir à cran pour un rien ou épuisée sans raison précise pousse souvent à chercher une explication du côté du sommeil ou de l'alimentation, sans penser au cortisol. Des signes plus spécifiques d'un stress physiologique 👉 une irritabilité qui surgit avant même de comprendre pourquoi 👉 une fatigue qui ne correspond pas aux heures dormies 👉 des tensions physiques sans effort récent. Les reconnaître aide à orienter la bonne réponse. #cortisol #systemenerveux #stress #bienetre #santementale",
+  "points_image": [
+   "Une irritabilité qui surgit avant même de comprendre pourquoi",
+   "Une fatigue qui ne correspond pas aux heures dormies",
+   "Des tensions physiques sans effort récent"
+  ]
  },
  {
   "titre": "Le cortisol n'explique pas tout : ce que dit vraiment la science",
   "texte_image": "Le cortisol, bouc émissaire de 2026 ?",
-  "description": "Le mot cortisol apparaît partout depuis quelques mois, sur les réseaux et dans les articles bien-être, presque comme l'explication universelle de tout ce qui est difficile à vivre. Ce que la recherche indique réellement 👉 le cortisol est un marqueur parmi d'autres du stress, pas sa seule cause 👉 son taux varie naturellement dans la journée 👉 le sommeil et l'activité physique pèsent tout autant sur le ressenti. Un point nuancé, sans exagération. #cortisol #systemenerveux #stress #bienetre #sante"
+  "description": "Le mot cortisol apparaît partout depuis quelques mois, sur les réseaux et dans les articles bien-être, presque comme l'explication universelle de tout ce qui est difficile à vivre. Ce que la recherche indique réellement 👉 le cortisol est un marqueur parmi d'autres du stress, pas sa seule cause 👉 son taux varie naturellement dans la journée 👉 le sommeil et l'activité physique pèsent tout autant sur le ressenti. Un point nuancé, sans exagération. #cortisol #systemenerveux #stress #bienetre #sante",
+  "points_image": [
+   "Le cortisol est un marqueur parmi d'autres du stress, pas sa seule cause",
+   "Son taux varie naturellement dans la journée",
+   "Le sommeil et l'activité physique pèsent tout autant sur le ressenti"
+  ]
  },
  {
   "titre": "Plus fatigué que d'habitude ? 3 signes à repérer avant l'épuisement",
   "texte_image": "Plus fatigué que d'habitude ? 3 signes à repérer avant l'épuisement",
-  "description": "Un peu plus fatigué(e) que d'habitude ces derniers temps, sans vraiment savoir pourquoi, et tu n'es sûrement pas seul(e) : le manque de sommeil touche une part grandissante de la population 👉 irritabilité inhabituelle 👉 difficulté à te concentrer 👉 petites baisses d'énergie en journée. Ces signes précoces méritent d'être pris au sérieux avant de s'installer durablement. #sommeil #stress #fatiguechronique #bienetre #santementale #nuit #endormissement #routinedusoir #detente #calme"
+  "description": "Un peu plus fatigué(e) que d'habitude ces derniers temps, sans vraiment savoir pourquoi, et tu n'es sûrement pas seul(e) : le manque de sommeil touche une part grandissante de la population 👉 irritabilité inhabituelle 👉 difficulté à te concentrer 👉 petites baisses d'énergie en journée. Ces signes précoces méritent d'être pris au sérieux avant de s'installer durablement. #sommeil #stress #fatiguechronique #bienetre #santementale #nuit #endormissement #routinedusoir #detente #calme",
+  "points_image": [
+   "Irritabilité inhabituelle",
+   "Difficulté à te concentrer",
+   "Petites baisses d'énergie en journée"
+  ]
  },
  {
   "titre": "2026 : pourquoi ton sommeil reste la première variable sacrifiée",
@@ -1056,7 +1564,12 @@
  {
   "titre": "Deux minutes devant le frigo sans savoir quoi manger : le vrai coût de tes décisions",
   "texte_image": "Trop de décisions, un vrai coût mental",
-  "description": "Tu fixes le frigo ouvert, incapable de décider, alors que tu as déjà tranché des dizaines de petites choses sans t'en rendre compte. C'est la fatigue décisionnelle :\n👉 chaque décision, même minime, use ta réserve mentale\n👉 les choix simples deviennent lourds en fin de journée\n👉 préparer 2-3 repas à l'avance réduit ces décisions\nGarde cette épingle pour ta prochaine soirée sans idée de repas. #chargementale #fatiguementale #stress #productivite #bienetre #clarte #energie #systemenerveux"
+  "description": "Tu fixes le frigo ouvert, incapable de décider, alors que tu as déjà tranché des dizaines de petites choses sans t'en rendre compte. C'est la fatigue décisionnelle :\n👉 chaque décision, même minime, use ta réserve mentale\n👉 les choix simples deviennent lourds en fin de journée\n👉 préparer 2-3 repas à l'avance réduit ces décisions\nGarde cette épingle pour ta prochaine soirée sans idée de repas. #chargementale #fatiguementale #stress #productivite #bienetre #clarte #energie #systemenerveux",
+  "points_image": [
+   "Chaque décision, même minime, use ta réserve mentale",
+   "Les choix simples deviennent lourds en fin de journée",
+   "Préparer 2-3 repas à l'avance réduit ces décisions"
+  ]
  },
  {
   "titre": "Ce n'est pas un coup de fatigue : 3 signes qui trahissent une vraie surcharge mentale",
@@ -1066,27 +1579,52 @@
  {
   "titre": "8 heures de sommeil et pourtant aucune sensation de repos au réveil",
   "texte_image": "Récupération et sommeil : pas pareil",
-  "description": "Dormir ses huit heures, réveil compris dans les temps, et pourtant se sentir presque aussi fatigué qu'en se couchant : le nombre d'heures ne garantit pas une vraie récupération 👉 la qualité des cycles profonds compte autant que la durée 👉 un système nerveux encore activé au coucher réduit ces phases réparatrices 👉 un repas trop lourd ou un écran tardif fragmente le sommeil. #recuperation #sommeil #energie #bienetre #systemenerveux #fatiguementale #stress #cortisol"
+  "description": "Dormir ses huit heures, réveil compris dans les temps, et pourtant se sentir presque aussi fatigué qu'en se couchant : le nombre d'heures ne garantit pas une vraie récupération 👉 la qualité des cycles profonds compte autant que la durée 👉 un système nerveux encore activé au coucher réduit ces phases réparatrices 👉 un repas trop lourd ou un écran tardif fragmente le sommeil. #recuperation #sommeil #energie #bienetre #systemenerveux #fatiguementale #stress #cortisol",
+  "points_image": [
+   "La qualité des cycles profonds compte autant que la durée",
+   "Un système nerveux encore activé au coucher réduit ces phases réparatrices",
+   "Un repas trop lourd ou un écran tardif fragmente le sommeil"
+  ]
  },
  {
   "titre": "Un week-end entier au lit et pourtant aussi épuisé lundi matin",
   "texte_image": "Fatigué(e) même après le week-end ?",
-  "description": "Passer le week-end à ne presque rien faire, persuadé que ça suffira à recharger les batteries, et pourtant se sentir aussi vidé le lundi : rester allongé ne restaure pas toujours une vraie récupération nerveuse 👉 un rythme trop passif entretient parfois la fatigue 👉 une marche tranquille relance mieux le système nerveux qu'une immobilité totale 👉 alterner repos et mouvement fait la différence. #recuperation #fatiguementale #stress #systemenerveux #bienetre #energie #sommeil #equilibre"
+  "description": "Passer le week-end à ne presque rien faire, persuadé que ça suffira à recharger les batteries, et pourtant se sentir aussi vidé le lundi : rester allongé ne restaure pas toujours une vraie récupération nerveuse 👉 un rythme trop passif entretient parfois la fatigue 👉 une marche tranquille relance mieux le système nerveux qu'une immobilité totale 👉 alterner repos et mouvement fait la différence. #recuperation #fatiguementale #stress #systemenerveux #bienetre #energie #sommeil #equilibre",
+  "points_image": [
+   "Un rythme trop passif entretient parfois la fatigue",
+   "Une marche tranquille relance mieux le système nerveux qu'une immobilité totale",
+   "Alterner repos et mouvement fait la différence"
+  ]
  },
  {
   "titre": "Toute une soirée avachi devant l'écran, sans que l'énergie ne remonte",
   "texte_image": "La récupération active, plus efficace",
-  "description": "Passer la soirée affalé devant une série, persuadé de se reposer pleinement, et pourtant l'énergie du lendemain ne remonte pas plus que d'habitude : rester immobile n'est pas toujours le plus efficace pour récupérer 👉 une marche tranquille recharge souvent mieux le système nerveux qu'un écran 👉 la lumière bleue en soirée retarde l'endormissement 👉 dix minutes dehors changent déjà la donne. #recuperation #energie #stress #bienetre #systemenerveux #sommeil #fatiguementale #calme"
+  "description": "Passer la soirée affalé devant une série, persuadé de se reposer pleinement, et pourtant l'énergie du lendemain ne remonte pas plus que d'habitude : rester immobile n'est pas toujours le plus efficace pour récupérer 👉 une marche tranquille recharge souvent mieux le système nerveux qu'un écran 👉 la lumière bleue en soirée retarde l'endormissement 👉 dix minutes dehors changent déjà la donne. #recuperation #energie #stress #bienetre #systemenerveux #sommeil #fatiguementale #calme",
+  "points_image": [
+   "Une marche tranquille recharge souvent mieux le système nerveux qu'un écran",
+   "La lumière bleue en soirée retarde l'endormissement",
+   "Dix minutes dehors changent déjà la donne"
+  ]
  },
  {
   "titre": "22h, lumière éteinte... et ton pouce qui scrolle encore",
   "texte_image": "22h, lumière éteinte... et ton pouce qui scrolle encore",
-  "description": "22h, tu éteins enfin la lumière avec la ferme intention de dormir tôt ce soir, et pourtant ton pouce continue de faire défiler ton téléphone sous la couette une heure plus tard. Ce n'est pas un manque de volonté, c'est un réflexe automatique renforcé chaque soir 👉 téléphone dans une autre pièce 👉 dix minutes de lecture papier à la place 👉 un délai qui augmente chaque semaine. #ecrans #sommeil #deconnexion #stress #bienetre #nuit #detente #calme #systemenerveux #anxiete"
+  "description": "22h, tu éteins enfin la lumière avec la ferme intention de dormir tôt ce soir, et pourtant ton pouce continue de faire défiler ton téléphone sous la couette une heure plus tard. Ce n'est pas un manque de volonté, c'est un réflexe automatique renforcé chaque soir 👉 téléphone dans une autre pièce 👉 dix minutes de lecture papier à la place 👉 un délai qui augmente chaque semaine. #ecrans #sommeil #deconnexion #stress #bienetre #nuit #detente #calme #systemenerveux #anxiete",
+  "points_image": [
+   "Téléphone dans une autre pièce",
+   "Dix minutes de lecture papier à la place",
+   "Un délai qui augmente chaque semaine"
+  ]
  },
  {
   "titre": "La lueur bleue qui reste allumée jusqu'à la dernière seconde",
   "texte_image": "La lueur bleue qui reste allumée jusqu'à la dernière seconde",
-  "description": "La lueur bleue de ton téléphone reste allumée sur la table de nuit jusqu'à la toute dernière seconde avant que tu éteignes, souvent la dernière image que ton cerveau enregistre avant de dormir. Cette exposition tardive retarde la mélatonine et maintient ton attention en éveil 👉 mode avion une heure avant le coucher 👉 chargeur hors de la chambre 👉 réveil classique à la place. #ecrans #sommeil #routinedusoir #stress #bienetre #nuit #detente #calme #systemenerveux #anxiete"
+  "description": "La lueur bleue de ton téléphone reste allumée sur la table de nuit jusqu'à la toute dernière seconde avant que tu éteignes, souvent la dernière image que ton cerveau enregistre avant de dormir. Cette exposition tardive retarde la mélatonine et maintient ton attention en éveil 👉 mode avion une heure avant le coucher 👉 chargeur hors de la chambre 👉 réveil classique à la place. #ecrans #sommeil #routinedusoir #stress #bienetre #nuit #detente #calme #systemenerveux #anxiete",
+  "points_image": [
+   "Mode avion une heure avant le coucher",
+   "Chargeur hors de la chambre",
+   "Réveil classique à la place"
+  ]
  },
  {
   "titre": "23h30, « juste 5 minutes » : le piège du scroll infini",
@@ -1096,89 +1634,158 @@
  {
   "titre": "10 minutes de marche glissées dans une journée de dingue, ça change quoi ?",
   "texte_image": "10 minutes de marche contre le stress",
-  "description": "Glisser dix minutes de marche semble impossible au milieu d'une journée chargée, et pourtant l'effet est mesurable et rapide 👉 le rythme cardiaque redescend en quelques minutes 👉 le cortisol commence à baisser dès la marche entamée 👉 la clarté mentale revient souvent juste après. Même glissées entre deux réunions, dix minutes suffisent à faire la différence. #energie #stress #systemenerveux #bienetre #marche #recuperation #cortisol #productivite"
+  "description": "Glisser dix minutes de marche semble impossible au milieu d'une journée chargée, et pourtant l'effet est mesurable et rapide 👉 le rythme cardiaque redescend en quelques minutes 👉 le cortisol commence à baisser dès la marche entamée 👉 la clarté mentale revient souvent juste après. Même glissées entre deux réunions, dix minutes suffisent à faire la différence. #energie #stress #systemenerveux #bienetre #marche #recuperation #cortisol #productivite",
+  "points_image": [
+   "Le rythme cardiaque redescend en quelques minutes",
+   "Le cortisol commence à baisser dès la marche entamée",
+   "La clarté mentale revient souvent juste après"
+  ]
  },
  {
   "titre": "La méthode des 3 priorités contre une liste de tâches sans fin",
   "texte_image": "La méthode des 3 priorités contre une liste de tâches sans fin",
-  "description": "Commencer la journée avec une liste interminable, en rayer quelques lignes, en ajouter trois de plus, et la terminer sans avoir l'impression d'avoir avancé, stress compris 👉 noter seulement 3 priorités le matin, pas une liste sans fin 👉 traiter la plus difficile en premier, avant que l'énergie ne baisse 👉 laisser le reste pour demain sans culpabiliser. #energie #stress #organisation #bienetre #productivite #systemenerveux #fatiguementale #recuperation"
+  "description": "Commencer la journée avec une liste interminable, en rayer quelques lignes, en ajouter trois de plus, et la terminer sans avoir l'impression d'avoir avancé, stress compris 👉 noter seulement 3 priorités le matin, pas une liste sans fin 👉 traiter la plus difficile en premier, avant que l'énergie ne baisse 👉 laisser le reste pour demain sans culpabiliser. #energie #stress #organisation #bienetre #productivite #systemenerveux #fatiguementale #recuperation",
+  "points_image": [
+   "Noter seulement 3 priorités le matin, pas une liste sans fin",
+   "Traiter la plus difficile en premier, avant que l'énergie ne baisse",
+   "Laisser le reste pour demain sans culpabiliser"
+  ]
  },
  {
   "titre": "La respiration en 4 temps qui calme le stress mieux que les méthodes compliquées",
   "texte_image": "La respiration en 4 temps qui calme le stress mieux que les méthodes compliquées",
-  "description": "Après avoir testé applications et rituels compliqués à tenir, c'est souvent le geste le plus basique qui fonctionne le mieux 👉 inspire 4 secondes par le nez 👉 retiens 2 secondes 👉 expire 6 secondes par la bouche, plus lentement que l'inspiration 👉 répète dix fois. Ce rythme calme le système nerveux en quelques minutes, sans matériel ni application. #energie #stress #systemenerveux #bienetre #calme #recuperation #respiration #santementale"
+  "description": "Après avoir testé applications et rituels compliqués à tenir, c'est souvent le geste le plus basique qui fonctionne le mieux 👉 inspire 4 secondes par le nez 👉 retiens 2 secondes 👉 expire 6 secondes par la bouche, plus lentement que l'inspiration 👉 répète dix fois. Ce rythme calme le système nerveux en quelques minutes, sans matériel ni application. #energie #stress #systemenerveux #bienetre #calme #recuperation #respiration #santementale",
+  "points_image": [
+   "Inspire 4 secondes par le nez",
+   "Retiens 2 secondes",
+   "Expire 6 secondes par la bouche, plus lentement que l'inspiration",
+   "Répète dix fois"
+  ]
  },
  {
   "titre": "La vraie raison qui te fait attraper ton téléphone plutôt que travailler",
   "texte_image": "Pourquoi le téléphone remplace le travail",
   "description": "Tu t'installes pour avancer sur quelque chose d'important, et en quelques secondes ton attention part vers ton téléphone ou l'envie de grignoter. Ce n'est pas un manque de discipline 👉 le cerveau cherche une gratification immédiate 👉 il préfère la récompense certaine à la récompense incertaine. Enregistre cette épingle pour repérer ce réflexe à temps. #procrastination #bienetre #motivation #productivite #clarte #organisation #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/distraction-procrastination-pensees-parasites.jpg"
+  "image_prete": "images_manuelles/distraction-procrastination-pensees-parasites.jpg",
+  "points_image": [
+   "Le cerveau cherche une gratification immédiate",
+   "Il préfère la récompense certaine à la récompense incertaine"
+  ]
  },
  {
   "titre": "Pourquoi une liste qui déborde te paralyse plus qu'elle ne t'aide",
   "texte_image": "Pourquoi les listes trop longues paralysent",
   "description": "Sport, lecture, projet pro, ménage, formation : ta liste s'allonge et, au lieu de te donner de l'élan, elle te fige devant la première tâche. Plus une liste est longue et floue, plus le cerveau la perçoit comme une menace à éviter 👉 il ne sait plus par où commencer 👉 il choisit de ne rien faire plutôt que de mal choisir. Enregistre cette épingle pour ta prochaine liste qui déborde. #procrastination #productivite #organisation #bienetre #motivation #clarte #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/liste-taches-qui-paralyse-procrastination.jpg"
+  "image_prete": "images_manuelles/liste-taches-qui-paralyse-procrastination.jpg",
+  "points_image": [
+   "Il ne sait plus par où commencer",
+   "Il choisit de ne rien faire plutôt que de mal choisir"
+  ]
  },
  {
   "titre": "Démarrer, plus tard, encore demain, peut-être : la spirale qui s'installe",
   "texte_image": "La spirale du 'plus tard' qui s'installe",
   "description": "Ça commence toujours pareil : tu te dis que tu vas démarrer, puis plus tard, puis encore demain, et à un moment le peut-être remplace carrément la tâche. Chaque report renforce le suivant 👉 le cerveau apprend que remettre n'a jamais de vraie conséquence immédiate 👉 la tâche grossit dans ta tête à chaque report. À observer dès le tout premier report, pas au dixième. #procrastination #motivation #clarte #organisation #productivite #bienetre #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/spirale-demarrer-plus-tard-procrastination.jpg"
+  "image_prete": "images_manuelles/spirale-demarrer-plus-tard-procrastination.jpg",
+  "points_image": [
+   "Le cerveau apprend que remettre n'a jamais de vraie conséquence immédiate",
+   "La tâche grossit dans ta tête à chaque report"
+  ]
  },
  {
   "titre": "Pourquoi ton cerveau choisit le confort plutôt que le progrès",
   "texte_image": "Le cerveau préfère le confort au progrès",
   "description": "Un plaid, une série, un bol de popcorn : tout te pousse vers ce qui est immédiatement agréable plutôt que vers un effort aux bénéfices lointains. C'est un mécanisme de survie ancien 👉 il économise l'énergie par défaut 👉 il ne calcule pas le bénéfice à long terme. La question n'est pas de le supprimer, mais de rendre le premier pas presque aussi confortable que le canapé. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/cerveau-confort-vs-progres-procrastination.jpg"
+  "image_prete": "images_manuelles/cerveau-confort-vs-progres-procrastination.jpg",
+  "points_image": [
+   "Il économise l'énergie par défaut",
+   "Il ne calcule pas le bénéfice à long terme"
+  ]
  },
  {
   "titre": "Ton projet qui te tient à cœur n'attend pas que tu sois prêt(e)",
   "texte_image": "Tes rêves n'attendent pas, tu peux arrêter de les repousser",
   "description": "Un projet qui te tient à cœur reste en pause, pas parce qu'il compte peu, mais parce qu'il fait peur ou semble trop grand pour être commencé maintenant. Le temps continue d'avancer, que tu agisses ou non 👉 chaque report éloigne le moment où tu te sentiras prêt(e) 👉 ce moment parfait n'arrive presque jamais tout seul. Le premier pas peut être minuscule, il compte dès aujourd'hui. #procrastination #clarte #productivite #motivation #organisation #energie #bienetre #developpementpersonnel",
-  "image_prete": "images_manuelles/reves-n-attendent-pas-motivation.jpg"
+  "image_prete": "images_manuelles/reves-n-attendent-pas-motivation.jpg",
+  "points_image": [
+   "Chaque report éloigne le moment où tu te sentiras prêt(e)",
+   "Ce moment parfait n'arrive presque jamais tout seul"
+  ]
  },
  {
   "titre": "Une minute de scroll, une heure de perdue : ce qui se joue vraiment",
   "texte_image": "Une minute de scroll, une heure de perdue",
   "description": "Tu ouvres une application juste pour vérifier une notification, et une heure plus tard tu te demandes où le temps est passé. Les réseaux sociaux sont conçus pour effacer la notion de durée 👉 chaque contenu enchaîne sur le suivant 👉 rien ne signale qu'il est temps de s'arrêter. Une limite à fixer avant même d'ouvrir l'application, pas une fois dedans. #procrastination #bienetre #motivation #productivite #clarte #organisation #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/scroll-reseaux-sociaux-temps-perdu.jpg"
+  "image_prete": "images_manuelles/scroll-reseaux-sociaux-temps-perdu.jpg",
+  "points_image": [
+   "Chaque contenu enchaîne sur le suivant",
+   "Rien ne signale qu'il est temps de s'arrêter"
+  ]
  },
  {
   "titre": "Ce que ton bureau encombré fait vraiment à ta concentration",
   "texte_image": "Ce que ton bureau dit de ta tête",
   "description": "Un bureau couvert de papiers froissés n'est pas juste un problème de rangement. Chaque élément visible demande un peu d'attention, même sans que tu t'en rendes compte 👉 cette attention grignotée devient fatigue mentale diffuse 👉 elle rend le premier geste plus dur à lancer. Désencombrer ne prend pas des heures, et l'effet sur ta capacité à démarrer est souvent immédiat. #procrastination #productivite #organisation #bienetre #motivation #clarte #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/avant-apres-desencombrement-clarte-mentale.jpg"
+  "image_prete": "images_manuelles/avant-apres-desencombrement-clarte-mentale.jpg",
+  "points_image": [
+   "Cette attention grignotée devient fatigue mentale diffuse",
+   "Elle rend le premier geste plus dur à lancer"
+  ]
  },
  {
   "titre": "5 minutes, une tâche, chaque jour : la méthode des petits pas qui marche",
   "texte_image": "5 minutes par jour pour débloquer un projet",
   "description": "Pas besoin de bloquer une matinée entière pour avancer. Voici la méthode des petits pas, à répéter chaque jour à ton rythme 👉 choisis une seule tâche, jamais deux 👉 limite-toi à 5 minutes, chrono si besoin 👉 arrête-toi même si l'élan est là, pour garder l'envie le lendemain. Une méthode à garder sous la main pour ton prochain projet en pause. #procrastination #motivation #clarte #organisation #productivite #bienetre #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/methode-petits-pas-anti-procrastination.jpg"
+  "image_prete": "images_manuelles/methode-petits-pas-anti-procrastination.jpg",
+  "points_image": [
+   "Choisis une seule tâche, jamais deux",
+   "Limite-toi à 5 minutes, chrono si besoin",
+   "Arrête-toi même si l'élan est là, pour garder l'envie le lendemain"
+  ]
  },
  {
   "titre": "Moins de procrastination, c'est concrètement plus de liberté",
   "texte_image": "Moins de procrastination, plus de liberté",
   "description": "On imagine la procrastination comme un simple manque de rigueur, alors qu'elle prend surtout de la place 👉 de l'énergie dépensée à culpabiliser 👉 du temps de loisir rongé par les tâches remises à plus tard 👉 une déconnexion impossible tant qu'un dossier traîne en arrière-plan. Chaque tâche terminée à temps libère un espace mental qui t'appartient vraiment. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel",
-  "image_prete": "images_manuelles/moins-procrastination-plus-liberte.jpg"
+  "image_prete": "images_manuelles/moins-procrastination-plus-liberte.jpg",
+  "points_image": [
+   "De l'énergie dépensée à culpabiliser",
+   "Du temps de loisir rongé par les tâches remises à plus tard",
+   "Une déconnexion impossible tant qu'un dossier traîne en arrière-plan"
+  ]
  },
  {
   "titre": "Tu attends le bon moment pour agir ? Il n'arrivera pas tout seul",
   "texte_image": "Le bon moment n'arrive jamais tout seul",
   "description": "Le sablier continue de s'écouler pendant que tu attends plus de temps, d'énergie ou de certitude avant de commencer. Ces conditions idéales n'arrivent presque jamais toutes en même temps 👉 ceux qui avancent ne sont pas ceux qui se sentent parfaitement prêts 👉 ce sont ceux qui démarrent avec ce qu'ils ont sous la main. Repousser encore ne rend pas la tâche plus facile demain. #procrastination #clarte #productivite #motivation #organisation #energie #bienetre #developpementpersonnel",
-  "image_prete": "images_manuelles/bon-moment-pour-agir-maintenant.jpg"
+  "image_prete": "images_manuelles/bon-moment-pour-agir-maintenant.jpg",
+  "points_image": [
+   "Ceux qui avancent ne sont pas ceux qui se sentent parfaitement prêts",
+   "Ce sont ceux qui démarrent avec ce qu'ils ont sous la main"
+  ]
  },
  {
   "titre": "3 étapes du cercle stress-sommeil, nuit après nuit",
   "texte_image": "3 étapes du cercle stress-sommeil, nuit après nuit",
   "description": "Le stress fait grimper le cortisol, et ce cortisol élevé perturbe l'endormissement, multiplie les réveils nocturnes et rend le sommeil moins réparateur 👉 stress du jour, cortisol élevé le soir 👉 endormissement retardé, nuit fragmentée 👉 fatigue accumulée qui abaisse ta tolérance au stress du lendemain. Comprendre ce cycle aide à cibler le bon levier : le stress du soir. #sommeil #stress #cortisol #systemenerveux #bienetre #nuit #endormissement #routinedusoir #detente #calme",
-  "image_prete": "images_manuelles/lien-stress-sommeil-cortisol.jpg"
+  "image_prete": "images_manuelles/lien-stress-sommeil-cortisol.jpg",
+  "points_image": [
+   "Stress du jour, cortisol élevé le soir",
+   "Endormissement retardé, nuit fragmentée",
+   "Fatigue accumulée qui abaisse ta tolérance au stress du lendemain"
+  ]
  },
  {
   "titre": "4 familles d'aliments qui aident concrètement à faire retomber ton stress",
   "texte_image": "4 aliments qui font retomber le stress",
   "description": "Magnésium, oméga-3, tryptophane, vitamine B6 : certains nutriments régulent directement le cortisol et la tension accumulée dans la journée.\n👉 amandes et épinards pour le magnésium\n👉 poissons gras et graines de lin pour les oméga-3\n👉 dinde et bananes pour le tryptophane\n👉 œufs et légumineuses pour la vitamine B6\nUne tisane de camomille ou de verveine en fin de journée complète bien l'ensemble. #alimentation #stress #cortisol #systemenerveux #bienetre #digestion #santementale #magnesium",
-  "image_prete": "images_manuelles/aliments-qui-calment-stress-cortisol.jpg"
+  "image_prete": "images_manuelles/aliments-qui-calment-stress-cortisol.jpg",
+  "points_image": [
+   "Amandes et épinards pour le magnésium",
+   "Poissons gras et graines de lin pour les oméga-3",
+   "Dinde et bananes pour le tryptophane",
+   "Œufs et légumineuses pour la vitamine B6"
+  ]
  },
  {
   "titre": "La respiration 4-7-8 : la technique express pour calmer ton mental",
@@ -1190,7 +1797,12 @@
   "titre": "3 réflexes du soir pour vraiment moins d'écrans",
   "texte_image": "3 réflexes du soir pour vraiment moins d'écrans",
   "description": "La lumière des écrans bloque la production naturelle de mélatonine et retarde l'endormissement, même quand tu ne te sens pas particulièrement agité(e) 👉 coupe les écrans au moins une heure avant le coucher 👉 privilégie une lumière douce et chaude en fin de soirée 👉 lis ou écoute une musique relaxante. Des réglages simples, pas une interdiction totale et difficile à tenir. #sommeil #ecrans #routinedusoir #endormissement #bienetre #nuit #detente #calme #anxiete #cortisol",
-  "image_prete": "images_manuelles/moins-ecrans-soir-plus-calme.jpg"
+  "image_prete": "images_manuelles/moins-ecrans-soir-plus-calme.jpg",
+  "points_image": [
+   "Coupe les écrans au moins une heure avant le coucher",
+   "Privilégie une lumière douce et chaude en fin de soirée",
+   "Lis ou écoute une musique relaxante"
+  ]
  },
  {
   "titre": "Une journée anti-stress, gestes par gestes, du réveil au coucher",
@@ -1274,6 +1886,11 @@
   "titre": "Prendre soin de soi, c'est aussi une façon concrète de te protéger",
   "texte_image": "Prendre soin de soi, c'est aussi une façon concrète de te protéger",
   "description": "On range souvent prendre soin de soi dans la case du luxe, alors que c'est une des façons les plus directes de se protéger d'un épuisement plus profond 👉 un esprit plus apaisé se traduit par une meilleure énergie au quotidien 👉 moins de réactivité face aux imprévus 👉 une capacité à tenir la distance sans s'effondrer à la première difficulté. Ce n'est pas égoïste, c'est un entretien nécessaire. #energie #bienetre #stress #systemenerveux #equilibre #recuperation #fatiguementale #santementale",
-  "image_prete": "images_manuelles/prendre-soin-de-soi-meilleure-energie.jpg"
+  "image_prete": "images_manuelles/prendre-soin-de-soi-meilleure-energie.jpg",
+  "points_image": [
+   "Un esprit plus apaisé se traduit par une meilleure énergie au quotidien",
+   "Moins de réactivité face aux imprévus",
+   "Une capacité à tenir la distance sans s'effondrer à la première difficulté"
+  ]
  }
 ]

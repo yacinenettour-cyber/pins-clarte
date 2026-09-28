@@ -10,7 +10,7 @@ Le workflow `.github/workflows/pins.yml` est déclenché 7 fois par jour (6h07, 
 
 1. Il choisit un pin (titre + description + phrase d'accroche) dans une banque de textes déjà écrits, en évitant les répétitions récentes (voir `historique.json`).
 2. Il devine le thème du pin (sommeil, système nerveux, fatigue mentale, alimentation, procrastination, somatisation, énergie, blocage mental, postures anti-stress) à partir du premier hashtag de la description, puis choisit une photo de fond du même thème dans `fonds/` (voir `fonds_themes.json`) — pour que l'image corresponde toujours au texte, par exemple pas de photo de petit-déjeuner sur un pin qui parle de réveil nocturne.
-3. Il génère une image verticale (1000x1500) avec la phrase d'accroche posée sur ce fond (si `fonds/` est vide, un fond dégradé par défaut est utilisé).
+3. Il génère une image verticale (1000x1500) posée sur ce fond (si `fonds/` est vide, un fond dégradé par défaut est utilisé) — soit une simple phrase d'accroche (`texte_image`), soit, si le pin a un champ `points_image` (liste de 2-4 points courts), une **infographie** : titre + liste numérotée directement dans l'image (`dessiner_infographie()`, ajouté le 28/09/2026 — voir section dédiée plus bas). Format identifié comme le plus performant historiquement sur ce compte via Pinterest Analytics.
 4. Il commit l'image dans le dépôt et récupère son URL publique.
 5. Il envoie titre / description / URL de l'image / lien vers un webhook Make.com, qui publie le pin sur Pinterest.
 
@@ -100,6 +100,16 @@ Limite à connaître : certains visuels ont leur texte tronqué **dans le fichie
 - **Structurer avec des puces emoji quand le contenu s'y prête** (📌 👉 •), comme les meilleurs pins historiques du compte — reste optionnel, à juger au cas par cas.
 - **Varier les CTA de fin de description.** Ne pas répéter systématiquement "Clique sur cette épingle pour le découvrir" ou la même formule d'un pin à l'autre — alterner impératifs ("Enregistre cette épingle...", "Garde-la sous la main..."), questions, affirmations, et parfois aucun CTA explicite (le texte se termine sur le conseil lui-même).
 - **8 à 10 hashtags par pin** (mise à jour du 28/09/2026 — auparavant 5), **dans la limite du plafond de 495-500 caractères ci-dessus**. Les meilleurs pins historiques du compte en utilisent jusqu'à 14 mais dépassent largement ce plafond (642 caractères mesurés sur un exemple) — voir la note dans `docs/pinterest-projet/03-regles-editoriales.md` section 7 avant d'envisager de lever cette limite. **Le premier hashtag reste le seul mécanisme de routage vers un board Pinterest** (voir `deviner_theme()` dans `.github/workflows/pins.yml`), inchangé — les hashtags ajoutés viennent après, plus génériques (`#bienetre`, `#developpementpersonnel`, `#selfcare`...). Ne jamais modifier le premier hashtag en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
+
+## Format infographie (`points_image`, ajouté le 28/09/2026)
+
+Les pins historiques du compte les plus performants (jusqu'à 286 enregistrements, voir `docs/pinterest-projet/04-journal-decisions.md` section 9) ne sont pas de simples photos avec une phrase, mais de vraies **infographies** : titre + liste numérotée de 2-4 points directement visibles sur l'image. Le pipeline le reproduit maintenant nativement.
+
+- **Champ optionnel `points_image`** dans `pins.json` : liste de 2 à 4 phrases courtes (viser 40-80 caractères chacune pour un rendu propre). Quand ce champ est présent sur un pin, `pins.yml` appelle `dessiner_infographie()` au lieu de `dessiner_image()` : le `texte_image` sert de titre, chaque élément de `points_image` est affiché en dessous avec un numéro dans un cercle doré, sur le même fond thématique que d'habitude.
+- **Toujours du texte dessiné par PIL/Poppins, jamais généré par une IA d'image** — même garantie de fiabilité que le rendu simple.
+- **L'assombrissement du fond démarre plus haut** (y≈250 au lieu de y≈430) pour laisser la place à la liste tout en gardant le haut de la photo (le sujet) visible et net.
+- **Pins sans `points_image`** : rendu inchangé, une seule phrase d'accroche comme avant — ce champ est strictement optionnel, pas une migration obligatoire de toute la banque.
+- **Remplir ce champ** : reprendre les points déjà listés dans la description (souvent introduits par 👉 depuis la réécriture du 28/09/2026) — pas besoin de les réécrire, seulement de les recopier en liste courte et propre. Toujours vérifier ensuite avec un rendu réel (`dessiner_infographie()` en local) avant de considérer un lot terminé : les lignes ne doivent jamais déborder du cadre ni recouvrir la marque en bas.
 
 ## Pinterest Analytics (accès en lecture depuis le 28/09/2026)
 

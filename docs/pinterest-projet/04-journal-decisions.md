@@ -88,6 +88,16 @@ Ce fichier retrace le contexte et le raisonnement derrière chaque règle établ
 
 **Leçon retenue** : ne jamais affirmer l'absence d'un accès/outil sans l'avoir activement recherché — Claude a d'abord dit ne pas pouvoir se connecter à Pinterest sans avoir vérifié le connecteur Composio déjà actif dans la session, alors que celui-ci proposait bien un toolkit Pinterest fonctionnel.
 
+## 10. Ajout du format infographie (`points_image`, 28/09/2026)
+
+**Déclencheur** : "N'oublie pas de faire des infographies ça marche bien" — suite au diagnostic Analytics (section 9), qui avait identifié que les 8 pins historiques les plus performants du compte sont des infographies (titre + liste numérotée visible sur l'image), pas de simples photos avec une phrase. Le pipeline ne savait dessiner qu'une seule ligne de texte (`dessiner_image()`).
+
+**Action** : ajout de `dessiner_infographie()` dans `pins.yml`, appelée automatiquement quand un pin a un champ `points_image` (liste de 2-4 points courts) — sinon le rendu simple habituel reste utilisé, aucune régression sur les pins existants. Toujours un rendu texte PIL/Poppins fiable, jamais de texte généré par une IA d'image (règle déjà établie, voir README section "Génération d'images"). L'assombrissement du fond démarre plus haut (y≈250 au lieu de y≈430) pour laisser la place à la liste.
+
+**Peuplement** : `points_image` extrait automatiquement des puces 👉 déjà présentes dans les descriptions réécrites le 28/09/2026 (section 9) — 124 pins concernés sur les 205 déjà au nouveau format texte. Choix délibéré de ne pas forcer ce champ sur tous les pins : uniquement là où un vrai contenu de liste (2-4 éléments courts, 5-85 caractères chacun) existait déjà, pour éviter une infographie avec des points trop longs ou mal coupés.
+
+**Vérification avant déploiement** : rendu réel testé (pas juste le prototype) à partir du code exact de `pins.yml`, sur plusieurs fonds (sombre et clair) et plusieurs thèmes (posturesantistress, systemenerveux, procrastination, alimentation) — lisible et cohérent avec la charte dans tous les cas testés.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
