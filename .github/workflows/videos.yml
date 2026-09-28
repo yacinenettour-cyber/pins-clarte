@@ -241,9 +241,10 @@ jobs:
               "energie": "600175156532025122",
           }
 
-          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE :
+          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE
+          # (qui ne couvre que le sommeil et les mecanismes du stress au sens large) :
           # ces videos ne doivent pas rediriger vers la page de capture (pas de lien hors-sujet).
-          THEMES_SANS_LIEN = {"alimentation", "procrastination"}
+          THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
           lien = "" if video["theme"] in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
 
           envoi = {"titre": video["titre"], "description": video["description"],

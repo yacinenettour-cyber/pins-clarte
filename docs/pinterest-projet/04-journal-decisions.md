@@ -56,6 +56,21 @@ Ce fichier retrace le contexte et le raisonnement derrière chaque règle établ
 - `CLAUDE.md` (racine du dépôt) : résumé opérationnel des règles, chargé automatiquement par Claude Code au démarrage de toute session future **sur ce dépôt**.
 - `docs/pinterest-projet/` (ce dossier) : documentation complète et autoportante (vue d'ensemble, architecture, tableaux, règles éditoriales, ce journal), pensée pour être chargée comme connaissance de projet indépendamment du dépôt Git ou d'une conversation Claude Code spécifique — utilisable dans un Claude Project ou toute autre conversation qui a besoin du contexte complet.
 
+## 8. Correction du périmètre du lien : `energie` et `fatiguementale` exclus (28/09/2026)
+
+**Déclencheur** : l'utilisateur a partagé une capture d'écran d'un pin publié sur le compte réel, "Le trou d'énergie de 11h se joue souvent dans ton assiette du matin", avec un bouton "Visiter" actif vers la page de capture, et a signalé : "le guide ne parle que de stress et de sommeil, pourquoi tu as mis un lien sur cette épingle ?"
+
+**Root cause identifiée** : ce pin a pour premier hashtag `#energie` (theme = `energie`, pas encore dans `THEMES_SANS_LIEN` à ce moment-là), mais son contenu réel est 100 % alimentation/petit-déjeuner (composition du repas du matin pour stabiliser l'attention) — exactement le type de contenu que la règle du board `alimentation` interdit d'habitude, sauf qu'ici il avait été tagué `#energie` en premier au lieu de `#alimentation`, ce qui lui a fait éviter cette restriction tout en récupérant un lien vers un guide qui ne traite pas ce sujet. Deux angles morts cumulés : (a) le premier hashtag ne garantit pas la cohérence du contenu réel avec le thème déclaré, (b) le périmètre `THEMES_SANS_LIEN` présumé (`alimentation`, `procrastination` seuls hors périmètre) était trop étroit.
+
+**Clarification obtenue** : la formation ne couvre en réalité que **le sommeil et les mécanismes du stress au sens large** (nervosité, tensions physiques, blocages mentaux, postures) — pas l'énergie/fatigue en général, même si ces thèmes sont adjacents au stress dans l'esprit du compte. Option retenue parmi 3 proposées : "Sommeil + stress au sens large" — `sommeil`, `systemenerveux`, `somatisation`, `blocagemental`, `posturesantistress` gardent le lien ; `energie` et `fatiguementale` rejoignent `alimentation`/`procrastination` dans les thèmes sans lien.
+
+**Action** :
+- `THEMES_SANS_LIEN` mis à jour dans `pins.yml` et `videos.yml` : `{"alimentation", "procrastination", "energie", "fatiguementale"}`.
+- Audit de `pins.json` (regex sur "guide gratuit", "à un clic", "dans le guide"...) : 11 pins thème `energie`/`fatiguementale` trouvés avec un CTA promettant un accès au guide — tous réécrits avec une fin informative ou un rappel actionnable, sans promesse de clic. `videos.json` audité, aucun cas trouvé.
+- Le pin déjà publié ("Le trou d'énergie de 11h...") a aussi été corrigé dans `pins.json` par cohérence de la banque, mais **sans effet sur la publication Pinterest déjà en ligne** (texte jamais relu une fois publié, règle 7 de `03-regles-editoriales.md`) — sa suppression/correction sur Pinterest reste une action manuelle pour l'utilisateur s'il le souhaite.
+
+**Leçon retenue pour la suite** : avant d'accepter un CTA "guide gratuit" sur un nouveau pin, vérifier que son **contenu réel** correspond à ce que la formation couvre vraiment, pas seulement son thème/premier hashtag — un pin peut être maquillé (hashtag de tête changé) pour échapper à une règle de board tout en gardant un problème de fond.
+
 ## Point ouvert à ce jour
 
 **Pas de données Pinterest Analytics réelles disponibles.** Toutes les décisions de contenu de cette session reposent sur les bonnes pratiques Pinterest génériques et la logique déjà en place, pas sur des chiffres réels de performance (enregistrements, clics, impressions par pin/board). Dès que l'utilisateur peut fournir un export ou une liste des pins/thèmes qui performent le mieux, une vraie passe d'optimisation basée sur des données réelles reste à faire.

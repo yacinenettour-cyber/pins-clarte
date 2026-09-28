@@ -56,14 +56,16 @@ Un audit a retiré en septembre 2026 onze pins "recette/organisation cuisine" sa
 
 ## Lien de destination (uniquement sur les thèmes liés à la formation)
 
-`LIEN_PAGE` pointe vers la page de capture d'une formation systeme.io dont le contenu ne couvre **pas tous les thèmes du compte**. Pour éviter d'envoyer des clics non qualifiés (visiteurs intéressés par un sujet que la formation ne traite pas), le champ `lien` envoyé à Make est vide (`""`) pour les thèmes hors périmètre — voir `THEMES_SANS_LIEN` dans `.github/workflows/pins.yml` et `videos.yml`.
+`LIEN_PAGE` pointe vers la page de capture d'une formation systeme.io dont le contenu ne couvre que **le sommeil et les mécanismes du stress au sens large** (nervosité, tensions physiques, blocages, postures) — pas tous les thèmes du compte. Pour éviter d'envoyer des clics non qualifiés (visiteurs intéressés par un sujet que la formation ne traite pas), le champ `lien` envoyé à Make est vide (`""`) pour les thèmes hors périmètre — voir `THEMES_SANS_LIEN` dans `.github/workflows/pins.yml` et `videos.yml`.
 
-- **Thèmes avec lien** (couverts par la formation) : `sommeil`, `systemenerveux`, `fatiguementale`, `posturesantistress`, `blocagemental`, `somatisation`, `energie`.
-- **Thèmes sans lien** (hors périmètre de la formation, à ce jour) : `alimentation`, `procrastination`.
+- **Thèmes avec lien** (couverts par la formation) : `sommeil`, `systemenerveux`, `posturesantistress`, `blocagemental`, `somatisation`.
+- **Thèmes sans lien** (hors périmètre de la formation, à ce jour) : `alimentation`, `procrastination`, `energie`, `fatiguementale`.
 
-**Conséquence pour la rédaction** : un pin sur un thème sans lien ne doit jamais promettre un contenu à découvrir "dans le guide gratuit" ou inviter à "cliquer sur cette épingle" pour en savoir plus — il n'y a rien derrière. Adapter le CTA de ces pins (ou ne pas en mettre du tout) : fin informative, ou invitation à enregistrer l'épingle sur Pinterest (ça reste possible sans lien de destination), jamais une promesse de contenu accessible par clic.
+**Incident du 28/09/2026** : le pin "Le trou d'énergie de 11h..." (premier hashtag `#energie`, contenu 100 % petit-déjeuner/alimentation) a été publié avec un lien vers le guide, qui ne traite pourtant pas ce sujet — `energie` n'était pas encore dans `THEMES_SANS_LIEN`. Root cause : le **thème/premier hashtag** ne garantit pas que le **contenu réel** du pin correspond à ce que couvre la formation — un pin peut légitimement parler d'alimentation tout en étant tagué `#energie` en tête pour éviter la restriction du board `alimentation` (règle "Cohérence du contenu" ci-dessus), sans que personne ne revérifie ensuite si ce thème a un lien. `energie` et `fatiguementale` ont été ajoutés à `THEMES_SANS_LIEN` en conséquence, et les CTA "guide gratuit" des pins concernés réécrits (11 pins corrigés le 28/09/2026).
 
-Si le périmètre de la formation change (nouveau module couvrant l'alimentation ou la procrastination, par exemple), mettre à jour `THEMES_SANS_LIEN` dans les deux workflows en conséquence.
+**Conséquence pour la rédaction** : un pin sur un thème sans lien ne doit jamais promettre un contenu à découvrir "dans le guide gratuit" ou inviter à "cliquer sur cette épingle" pour en savoir plus — il n'y a rien derrière. Adapter le CTA de ces pins (ou ne pas en mettre du tout) : fin informative, ou invitation à enregistrer l'épingle sur Pinterest (ça reste possible sans lien de destination), jamais une promesse de contenu accessible par clic. **Avant d'ajouter un pin avec un CTA "guide gratuit", vérifier que son contenu réel (pas seulement son premier hashtag) correspond à ce que la formation couvre vraiment.**
+
+Si le périmètre de la formation change (nouveau module couvrant l'alimentation, la procrastination, l'énergie ou la fatigue mentale, par exemple), mettre à jour `THEMES_SANS_LIEN` dans les deux workflows en conséquence.
 
 ## Varier les CTA de fin de description
 

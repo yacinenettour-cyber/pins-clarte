@@ -30,7 +30,7 @@ Chaque thème du compte a son propre tableau Pinterest, identifié par un ID fix
 
 ## Fatigue mentale — ID `600175156531997290`
 
-- **Lien formation** : ✅
+- **Lien formation** : ❌ *(changé le 28/09/2026 — voir `04-journal-decisions.md` section 8 ; la formation ne couvre pas l'énergie/fatigue en général)*
 - **Sujet** : charge mentale, fatigue chronique, épuisement cognitif.
 - **Volume** : 14 pins (4 publiés, 10 en attente). 3 Video Pins (0 publiée). 15 photos de fond.
 - **Premiers hashtags** : `#fatiguementale`, `#chargementale`, `#fatigue`, `#fatiguechronique`.
@@ -73,7 +73,7 @@ Chaque thème du compte a son propre tableau Pinterest, identifié par un ID fix
 
 ## Énergie — ID `600175156532025122`
 
-- **Lien formation** : ✅
+- **Lien formation** : ❌ *(changé le 28/09/2026 — voir `04-journal-decisions.md` section 8 ; la formation ne couvre pas l'énergie/fatigue en général)*
 - **Sujet** : fatigue énergétique (distincte de la fatigue mentale), récupération, coups de barre, vraie/fausse récupération.
 - **Volume** : 17 pins (0 publié, 17 en attente). 3 Video Pins (0 publiée). 19 photos de fond.
 - **Premiers hashtags** : `#energie`, `#recuperation`.
@@ -113,8 +113,8 @@ Chaque thème du compte a son propre tableau Pinterest, identifié par un ID fix
 |---|---|---|---|---|---|
 | Sommeil | 600175156531998232 | ✅ | 112 / 22 / 90 | 8 / 3 | 58 |
 | Système nerveux | 600175156531995384 | ✅ | 27 / 4 / 23 | 7 / 1 | 28 |
-| Énergie | 600175156532025122 | ✅ | 17 / 0 / 17 | 3 / 0 | 19 |
-| Fatigue mentale | 600175156531997290 | ✅ | 14 / 4 / 10 | 3 / 0 | 15 |
+| Énergie | 600175156532025122 | ❌ *(depuis le 28/09)* | 17 / 0 / 17 | 3 / 0 | 19 |
+| Fatigue mentale | 600175156531997290 | ❌ *(depuis le 28/09)* | 14 / 4 / 10 | 3 / 0 | 15 |
 | Postures anti-stress | 600175156532003400 | ✅ | 11 / 1 / 10 | 1 / 0 | 9 |
 | Blocage mental | 600175156532029245 | ✅ | 11 / 1 / 10 | 2 / 0 | 9 |
 | Somatisation | 600175156532027560 | ✅ | 10 / 0 / 10 | 1 / 0 | 8 |
@@ -122,6 +122,6 @@ Chaque thème du compte a son propre tableau Pinterest, identifié par un ID fix
 | Alimentation et stress | 600175156532001498 | ❌ | 8 / 0 / 8 | 3 / 0 | 37 |
 | **Total** | | | **220 / 32 / 179*** | **30 / 4*** | **192** |
 
-*Nombres de pins/vidéos publiés en légère évolution continue, le pipeline publie automatiquement 7×/jour ; chiffres à jour au 27/09/2026 en fin de session d'audit (voir aussi `00-vue-ensemble.md` pour un état légèrement antérieur, 41 pins publiés).
+*Nombres de pins/vidéos publiés en légère évolution continue, le pipeline publie automatiquement 7×/jour ; chiffres à jour au 27/09/2026 en fin de session d'audit (voir aussi `00-vue-ensemble.md` pour un état légèrement antérieur, 41 pins publiés). Colonne "Lien formation" mise à jour le 28/09/2026 pour `energie`/`fatiguementale` (voir `04-journal-decisions.md` section 8) ; le reste du tableau (volumes) n'a pas été recalculé depuis et est donné à titre indicatif — se fier à `pins.json`/`fonds_themes.json` pour les chiffres exacts.
 
 **Déséquilibre à surveiller** : le board Sommeil concentre à lui seul ~51 % de la banque de pins. Ce n'est pas une erreur (c'est le cœur du compte), mais ça mérite un regard si l'objectif devient de développer davantage les autres boards.
