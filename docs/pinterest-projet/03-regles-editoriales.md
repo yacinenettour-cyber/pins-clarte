@@ -49,18 +49,26 @@ Un pin alimentation dont le bénéfice mis en avant est l'endormissement ou l'é
 
 ## 6. Stratégie des titres
 
+**Mise à jour du 28/09/2026, basée sur les vraies données Pinterest Analytics** (connexion établie ce jour-là, voir `04-journal-decisions.md` section 9) — remplace la précédente recommandation "70% problème/curiosité" qui n'était qu'une hypothèse de bonnes pratiques génériques, jamais vérifiée sur ce compte.
+
+**Constat** : les 8 pins avec le plus d'enregistrements du compte (jusqu'à 286 saves, 22 386 impressions sur un seul pin) sont tous antérieurs à cette session (créés entre décembre 2025 et juin 2026) et partagent un même gabarit :
+- **Titre à chiffre / listicle** : *"5 Clés pour Vaincre la Procrastination"*, *"Les 9 signes d'un cortisol élevé"*, *"6 étapes pour débloquer ton mental"*, *"Cortisol élevé : 7 aliments à privilégier"*, *"5 façons naturelles de calmer ton système nerveux"*.
+- **Format infographie/liste numérotée**, pas une phrase-accroche narrative unique.
+
+**Règle actuelle** :
+- **Privilégier un titre à chiffre quand le contenu s'y prête** (nombre d'étapes, de signes, de gestes, d'aliments...) — c'est le format qui a le mieux performé sur ce compte précis, pas une préférence générique.
+- Garder de la variété : tous les titres n'ont pas à être des listicles (un pin peut légitimement rester narratif/question quand ça correspond mieux au contenu), mais le chiffre doit redevenir un réflexe par défaut plutôt qu'une exception.
 - **Jamais le même titre sur plusieurs pins.**
-- **Composition ~70 % problème/curiosité, 30 % solution** pour maximiser les impressions (ex. *"Pourquoi tu te réveilles à 3h du matin (et ce que ça dit de ton système nerveux)"* plutôt que *"3 astuces pour arrêter de te réveiller la nuit"*).
-- **Varier les structures d'ouverture** : questions, chiffres, heures précises, affirmations directes, tournures négatives — éviter qu'un même gabarit ("X : ce que tu...", "la question à te poser...") revienne trop souvent.
 - **Maximum 100 caractères** (le script tronque strictement au-delà).
-- **À terme, se fier à Pinterest Analytics** une fois assez de données accumulées : repérer les formulations qui génèrent le plus d'enregistrements et de clics, orienter les prochains titres en conséquence plutôt que de tester à l'aveugle indéfiniment.
+- **Continuer à surveiller Pinterest Analytics** (accès disponible depuis le 28/09/2026 via le connecteur Composio, voir `01-architecture-technique.md`) pour affiner cette règle avec plus de données au fil du temps plutôt que de se fier à un échantillon de 8 pins indéfiniment.
 
 ## 7. Standards de description (longueur, SEO, structure)
 
 - **Corps du texte (hors hashtags) visé entre 380 et 450 caractères.** Nettement plus riche qu'une description minimaliste, avec des détails concrets et actionnables plutôt que du remplissage. Toujours vérifier avec `len()` en Python.
-- **Description totale (corps + hashtags) toujours ≤ 495-500 caractères** — limite Pinterest ; au-delà, le script tronque automatiquement (parfois au milieu d'une phrase), donc mieux vaut écrire directement dans la limite.
+- **Description totale (corps + hashtags) toujours ≤ 495-500 caractères** — limite Pinterest ; au-delà, le script tronque automatiquement (parfois au milieu d'une phrase), donc mieux vaut écrire directement dans la limite. *(Note : les meilleurs pins historiques du compte dépassent largement cette limite avec des descriptions très structurées — mais on ne peut pas savoir si c'est malgré ou grâce à leur longueur ; on garde la limite actuelle par prudence plutôt que de la lever sur une hypothèse non testée.)*
 - **Mots-clés SEO intégrés naturellement**, jamais en bourrage : 2-3 expressions qu'une personne concernée chercherait réellement sur Pinterest, insérées dans des phrases utiles à lire pour un humain d'abord, pour l'algorithme ensuite.
-- **5 hashtags par pin**, le premier déterminant le board (règle n°3). Ne jamais modifier les hashtags en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
+- **Structure avec des puces emoji quand le contenu s'y prête** (📌 👉 •), à la manière des pins historiques les plus performants, plutôt qu'un bloc de prose uniforme — reste optionnel, à juger au cas par cas, ne pas systématiser au point de perdre en lisibilité.
+- **8 à 12 hashtags par pin** (mise à jour du 28/09/2026 — auparavant 5). Les meilleurs pins historiques du compte en utilisent 8 à 14. **Le premier hashtag reste strictement le déterminant du board (règle n°3, inchangé)** ; les hashtags ajoutés viennent après, plus génériques/découvrabilité (`#bienetre`, `#developpementpersonnel`, `#selfcare`...). Ne jamais modifier le premier hashtag en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
 
 ## 8. Variété des CTA (appels à l'action)
 

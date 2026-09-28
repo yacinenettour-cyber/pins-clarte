@@ -18,13 +18,13 @@ Un prompt système a été rédigé pour un futur module IA dans un scénario Ma
 
 ## Étapes du pipeline pins (`pins.yml`)
 
-1. Charge `pins.json` et `historique.json` ; sélectionne le premier pin de `pins.json` dont le titre n'est pas dans `historique.json` (`restants = [p for p in banque if p["titre"] not in faits]`, prend `restants[0]`).
+1. Charge `pins.json` et `historique.json` ; filtre les pins non encore publiés (`restants`), puis choisit le **thème dont la dernière publication est la plus ancienne** (`choisir_pin_equilibre()`, ajouté le 28/09/2026 — remplace l'ancienne sélection naïve `restants[0]` qui pouvait enchaîner des dizaines de pins du même thème quand la banque était remplie par lots thématiques) et prend le premier pin disponible de ce thème.
 2. **Devine le thème** à partir du **premier hashtag** de la description (fonction `deviner_theme()`), via une table d'alias `THEME_ALIASES` qui fait correspondre des dizaines de hashtags spécifiques aux 9 thèmes officiels. Cas particulier : si le premier hashtag est `#stress` ET que `#travail` figure dans les 3 premiers hashtags → thème `posturesantistress` (sinon `#stress` seul retombe sur `systemenerveux`).
 3. Si le pin a un champ `image_prete`, utilise cette image telle quelle (recadrée, sans texte ajouté). Sinon : génère un fond par IA (si `OPENAI_API_KEY` est configuré, modèle `gpt-image-1.5`) ou choisit un fond dans `fonds/` filtré par thème via `fonds_themes.json` (rotation basée sur le nombre de fois où ce thème a déjà utilisé un fond, pour ne pas répéter trop vite), puis incruste la phrase d'accroche (`texte_image`) sur l'image (1000×1500, police Poppins).
 4. Génère aussi une courte vidéo (zoom lent + fondu, ffmpeg) à partir de l'image fixe, en plus de l'image — envoyée à Make comme `video_url` si elle est bien accessible en ligne.
 5. Tronque la description au besoin (troncature intelligente à une fin de phrase quand possible) pour respecter la limite Pinterest de ~495-500 caractères, en réservant de la place pour les hashtags et, une fois sur deux, une phrase d'enregistrement aléatoire tirée de `PHRASES_ENREGISTRER`.
 6. Commit l'image (et la vidéo) dans le dépôt, récupère son URL publique via jsDelivr (CDN qui sert le contenu GitHub), attend qu'elle soit effectivement accessible en ligne avant de continuer.
-7. **Détermine le lien de destination** : vide (`""`) si le thème est dans `THEMES_SANS_LIEN` (`alimentation`, `procrastination`), sinon `LIEN_PAGE`.
+7. **Détermine le lien de destination** : vide (`""`) si le thème est dans `THEMES_SANS_LIEN` (`alimentation`, `procrastination`, `energie`, `fatiguementale` — mis à jour le 28/09/2026, voir `03-regles-editoriales.md` section 5), sinon `LIEN_PAGE`.
 8. Envoie titre / description / URL image / URL vidéo / lien / thème / ID du tableau Pinterest à `MAKE_WEBHOOK_URL` (webhook Make.com), qui publie réellement sur Pinterest.
 9. Ajoute l'entrée à `historique.json` (anti-répétition) et purge les images/vidéos de plus de 30 jours du dépôt.
 
@@ -64,3 +64,18 @@ Le pipeline vidéo (`videos.yml`) suit la même logique avec ses propres fichier
 - **Video Pins** : format 9:16, 1080×1920
 - **Descriptions** : corps de texte visé 380-450 caractères, total (corps + hashtags, + éventuelle phrase d'enregistrement) toujours ≤ ~495-500 caractères (limite Pinterest ; troncature automatique intelligente au-delà)
 - **Titres** : maximum 100 caractères (troncature stricte dans le script si dépassement)
+
+## Pinterest Analytics — accès en lecture (depuis le 28/09/2026)
+
+Distinct du pipeline de publication ci-dessus (`MAKE_WEBHOOK_URL`, écriture seule, aucune lecture possible). Un connecteur **Composio** (toolkit `pinterest`) permet, une fois une connexion OAuth établie en session, d'interroger en lecture le vrai compte Pinterest :
+
+- `PINTEREST_GET_PROFILE` — profil et compteurs globaux (abonnés, nombre de pins, nombre de tableaux, vues mensuelles).
+- `PINTEREST_GET_ACCOUNT_ANALYTICS` — analytics agrégées du compte sur une plage de dates (max 90 jours), avec détail quotidien (`daily_metrics`) : impressions, enregistrements, clics, engagement.
+- `PINTEREST_GET_TOP_PINS` — classement des pins par métrique (saves, impressions, clics...).
+- `PINTEREST_GET_PIN_ANALYTICS` — analytics détaillées d'un pin précis par son ID.
+- `PINTEREST_LIST_BOARDS` — liste réelle des tableaux du compte (ID, nom, nombre de pins, description) — **12 tableaux existent réellement, alors que le pipeline n'en gère que 9** (`TABLEAUX` dans `pins.yml`/`videos.yml`) ; 3 tableaux (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) existent hors du système actuel — voir `04-journal-decisions.md` section 9.
+- `PINTEREST_GET_PIN` — détail complet d'un pin par son ID (titre, description, image, tableau, lien).
+
+**Aucun accès en écriture** (créer, modifier, supprimer un pin) n'a été trouvé/testé à ce jour — la suppression d'un pin déjà publié reste une action manuelle de l'utilisateur dans l'app Pinterest.
+
+**Mécanique de connexion** : `COMPOSIO_SEARCH_TOOLS` (découvre les tools et leur statut de connexion) → `COMPOSIO_MANAGE_CONNECTIONS` (action `add`, génère un lien d'authentification OAuth à transmettre à l'utilisateur, puis action `list` pour vérifier que la connexion est passée à `active` avant d'exécuter quoi que ce soit) → `COMPOSIO_MULTI_EXECUTE_TOOL` (exécute les tools Pinterest par leur slug, ex. `PINTEREST_GET_ACCOUNT_ANALYTICS`) ; les réponses volumineuses sont sauvegardées dans un fichier distant à traiter avec `COMPOSIO_REMOTE_BASH_TOOL`. La connexion est probablement propre à la session — à revérifier (`action: "list"`) en début de session future avant de supposer qu'elle est toujours active.

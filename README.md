@@ -85,18 +85,25 @@ Limite à connaître : certains visuels ont leur texte tronqué **dans le fichie
 
 ## Stratégie des titres
 
+**Mise à jour du 28/09/2026 basée sur les vraies données Pinterest Analytics** (voir la section "Pinterest Analytics" plus bas et `docs/pinterest-projet/04-journal-decisions.md` section 9) — remplace la recommandation précédente "70% problème/curiosité", qui n'était qu'une hypothèse de bonnes pratiques génériques jamais vérifiée sur ce compte.
+
 - **Jamais le même titre sur plusieurs pins/images.** Pinterest recommande du contenu original et pénalise les doublons répétés — chaque titre ajouté à `pins.json` doit être unique (vérifié régulièrement : aucun doublon à ce jour).
-- **Composition des titres : ~70 % problème/curiosité, 30 % solution.** C'est la version à privilégier en premier pour maximiser les impressions (ex. *"Pourquoi tu te réveilles à 3h du matin (et ce que ça dit de ton système nerveux)"* plutôt que *"3 astuces pour arrêter de te réveiller la nuit"*).
-- **Ensuite, se fier à Pinterest Analytics.** Une fois assez de données accumulées, repérer les formulations qui génèrent le plus d'enregistrements (saves) et de clics, et orienter les prochains titres vers ces formulations gagnantes plutôt que de continuer à tester à l'aveugle.
-- **Varier les structures d'ouverture.** Éviter qu'un même gabarit ("X : ce que tu...", "la question à te poser...") revienne trop souvent d'un titre à l'autre — alterner questions, chiffres, heures précises, affirmations directes, tournures négatives.
+- **Privilégier un titre à chiffre / listicle quand le contenu s'y prête** (ex. *"5 Clés pour Vaincre la Procrastination"*, *"Les 9 signes d'un cortisol élevé"*, *"6 étapes pour débloquer ton mental"*) : c'est le format des 8 pins les plus performants du compte (jusqu'à 286 saves, 22k+ impressions), tous antérieurs à cette session. Le style narratif/question reste valable quand il correspond mieux au contenu, mais le chiffre doit redevenir un réflexe par défaut.
+- **Continuer à surveiller Pinterest Analytics** au fil du temps pour affiner cette règle avec plus de données qu'un échantillon de 8 pins.
+- **Varier les structures d'ouverture.** Éviter qu'un même gabarit revienne trop souvent d'un titre à l'autre — alterner listicles, questions, heures précises, affirmations directes.
 
 ## Descriptions
 
 - **Corps du texte (hors hashtags) visé entre 380 et 450 caractères.** Nettement plus riche qu'une description minimaliste, avec des détails concrets et actionnables plutôt que du remplissage. Toujours vérifier avec `len()` en Python, pas à l'œil.
 - **Description totale (corps + hashtags) toujours ≤ 495-500 caractères** (limite Pinterest ; le script de publication tronque automatiquement au-delà, ce qui peut couper une phrase au milieu — mieux vaut écrire directement dans la limite).
 - **Mots-clés SEO intégrés naturellement**, jamais en bourrage : 2-3 expressions qu'une personne concernée chercherait réellement sur Pinterest, insérées dans des phrases utiles à lire pour un humain.
+- **Structurer avec des puces emoji quand le contenu s'y prête** (📌 👉 •), comme les meilleurs pins historiques du compte — reste optionnel, à juger au cas par cas.
 - **Varier les CTA de fin de description.** Ne pas répéter systématiquement "Clique sur cette épingle pour le découvrir" ou la même formule d'un pin à l'autre — alterner impératifs ("Enregistre cette épingle...", "Garde-la sous la main..."), questions, affirmations, et parfois aucun CTA explicite (le texte se termine sur le conseil lui-même).
-- **Les 5 hashtags restent le seul mécanisme de routage vers un board Pinterest** (voir `deviner_theme()` dans `.github/workflows/pins.yml`) — ne jamais les modifier en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
+- **8 à 12 hashtags par pin** (mise à jour du 28/09/2026 — auparavant 5 ; les meilleurs pins historiques du compte en utilisent 8 à 14). **Le premier hashtag reste le seul mécanisme de routage vers un board Pinterest** (voir `deviner_theme()` dans `.github/workflows/pins.yml`), inchangé — les hashtags ajoutés viennent après, plus génériques (`#bienetre`, `#developpementpersonnel`, `#selfcare`...). Ne jamais modifier le premier hashtag en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
+
+## Pinterest Analytics (accès en lecture depuis le 28/09/2026)
+
+Un connecteur Composio (toolkit `pinterest`) donne un accès en lecture aux vraies statistiques du compte (analytics, top pins, boards, profil) — connexion OAuth établie le 28/09/2026, à ne pas confondre avec le webhook Make.com (publication uniquement, aucune lecture). Voir `docs/pinterest-projet/01-architecture-technique.md` pour le détail des outils disponibles (`PINTEREST_GET_ACCOUNT_ANALYTICS`, `PINTEREST_GET_TOP_PINS`, `PINTEREST_LIST_BOARDS`, `PINTEREST_GET_PIN`...) et `04-journal-decisions.md` section 9 pour le diagnostic complet réalisé ce jour-là. Cet accès n'a **aucun droit d'écriture** — impossible de supprimer/modifier un pin déjà publié depuis cet environnement, ça reste une action manuelle utilisateur dans l'app Pinterest.
 
 ## Déclenchement (cron-job.org)
 
