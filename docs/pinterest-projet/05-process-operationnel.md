@@ -55,7 +55,7 @@ Déclenché par l'utilisateur (nouvelle idée, lot d'images, retour d'expérienc
 
 1. **L'utilisateur fournit une image prête** → vérifier la cohérence texte/image, l'ajouter en `image_prete`.
 2. **L'utilisateur fournit une planche composite** → découper, recadrer plein cadre (voir README), trier, écarter ce qui a du texte tronqué à la source ou qui est inexploitable.
-3. **Besoin d'un fond réutilisable classique** (`fonds/`) → génération IA via un connecteur disponible en session (Hugging Face en priorité, gratuit ; Claude_image si crédits disponibles ; Canva non testé à ce jour) — jamais de texte incrusté par l'IA, laisser `dessiner_image()` gérer le texte.
+3. **Besoin d'un fond réutilisable classique** (`fonds/`) → génération IA, ordre de priorité : **Hugging Face** (gratuit, en priorité) → **Claude_image** (si `get_credits` > 0) → **Canva** (repli systématique dès que les deux premiers sont indisponibles — quota épuisé ou 0 crédit — testé et validé le 28/09/2026, consigne permanente de l'utilisateur). Jamais de texte incrusté par l'IA, laisser `dessiner_image()` gérer le texte. Voir le README, section "Génération d'images via les connecteurs Claude", pour le contournement technique de l'export Canva (bloqué en pleine résolution par le proxy réseau du sandbox — solution : upscale du meilleur aperçu disponible).
 4. **Rien de tout ça disponible** → le pipeline retombe sur un fond dégradé par défaut (comportement existant, pas idéal mais fonctionnel).
 
 ## 6. Seuils d'alerte — quand intervenir

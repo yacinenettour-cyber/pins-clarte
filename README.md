@@ -19,14 +19,18 @@ Le workflow `.github/workflows/pins.yml` est déclenché 7 fois par jour (6h07, 
 Cette session dispose de plusieurs connecteurs de génération/édition d'images, indépendants du système `OPENAI_API_KEY` décrit plus bas (qui reste le seul utilisé par le pipeline automatique en production) :
 
 - **Claude_image** (payant, crédits limités) — vérifier le solde avec `get_credits` avant toute génération ; `quote_generation` donne le coût exact par modèle avant de lancer. Un appel qui time out peut quand même consommer le crédit.
-- **Hugging Face** (`gr1_z_image_turbo_generate`, gratuit) — supporte nativement la résolution `1024x1536 (2:3)`, exactement le format des pins du compte.
-- **Canva** (`generate-image`) — non testé à ce jour dans ce dépôt.
+- **Hugging Face** (`gr1_z_image_turbo_generate`, gratuit) — supporte nativement la résolution `1024x1536 (2:3)`, exactement le format des pins du compte. Quota gratuit journalier limité (ZeroGPU) : peut s'épuiser en cours de session, message d'erreur explicite ("ZeroGPU quota exceeded").
+- **Canva** (`generate-image`) — testé et validé le 28/09/2026. **Consigne permanente de l'utilisateur : toujours basculer sur Canva quand Claude_image n'a plus de crédit** (et plus généralement, c'est la solution de repli à essayer si Hugging Face est aussi à quota épuisé).
 
-**Règles à appliquer** :
+**Ordre de priorité** : Hugging Face (gratuit) → Claude_image (si `get_credits` > 0) → Canva (repli systématique, sans redemander confirmation à l'utilisateur).
+
+**Limite technique connue de Canva** : l'export en pleine résolution (`export-design`) télécharge depuis `export-download.canva.com`, qui n'est pas sur la liste des hôtes autorisés par le proxy réseau du sandbox (`curl` échoue avec une erreur 403 de la passerelle). Contournement qui fonctionne : récupérer le meilleur aperçu inline disponible via `read-design` (filter `thumbnails`) ou le thumbnail retourné par `edit-design` (~335-340px de large), recadrer au ratio 2:3 si besoin, puis agrandir en `1024x1536` avec `PIL` (`Image.LANCZOS` + `ImageFilter.UnsharpMask(radius=2, percent=120, threshold=2)` pour compenser le flou de l'agrandissement). Qualité un cran en dessous d'une génération native HF/Claude_image mais utilisable — toujours vérifier par un zoom sur un détail (visage, texte) avant d'intégrer. Si cette limitation réseau est un jour levée, préférer un export direct en pleine résolution.
+
+**Règles à appliquer, quel que soit le connecteur** :
 
 1. **Ne jamais faire générer le texte par l'IA à l'intérieur de l'image.** Un premier essai avec la consigne explicite "no text" a quand même produit du texte incohérent ("Row Slow Deepestharg"). Générer uniquement le visuel (photo + illustration/schéma), sans aucun texte, et laisser le pipeline existant (`dessiner_image()` dans `pins.yml`) poser le texte — rendu fiable et déjà éprouvé, zéro risque de coupure.
-2. **Supprimer immédiatement tout ce qui n'est pas exploitable** (texte halluciné, résultat hors-sujet, mauvaise qualité) — ne jamais committer un essai raté dans le dépôt, même temporairement.
-3. **Rester cohérent avec l'identité visuelle du compte** : photographie éditoriale réaliste, palette bleu nuit/doré chaude, ambiance calme, un éventuel schéma illustratif discret en surimpression (voir `PROMPTS_THEME_IA` dans `pins.yml` pour le ton déjà établi par thème).
+2. **Supprimer immédiatement tout ce qui n'est pas exploitable** (texte halluciné, résultat hors-sujet, mauvaise qualité, artefact visible) — ne jamais committer un essai raté dans le dépôt, même temporairement. Un artefact localisé (ex. bloc de pixels aberrant dans un coin) peut parfois être recadré/corrigé plutôt que jeter toute l'image — vérifier au cas par cas.
+3. **Rester cohérent avec l'identité visuelle du compte** : photographie éditoriale réaliste, palette bleu nuit/doré chaude, ambiance calme, personnage toujours habillé/cadrage pudique, un éventuel schéma illustratif discret en surimpression (voir `PROMPTS_THEME_IA` dans `pins.yml` pour le ton déjà établi par thème).
 4. **Format cible** : `1024x1536` ou équivalent 2:3, sauvegardé en `.jpg` dans `fonds/` avec le prochain numéro disponible, puis répertorié dans `fonds_themes.json` avec le thème correspondant.
 
 ## Prompt système SEO pour un futur scénario Make (image → métadonnées via IA)
