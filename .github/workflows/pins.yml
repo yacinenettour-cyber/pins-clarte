@@ -225,12 +225,49 @@ jobs:
               img.save(chemin_sortie, "JPEG", quality=88, optimize=True, progressive=True)
 
 
-          def dessiner_infographie(titre_image, points, chemin_sortie, police_grasse, police_normale, fond):
-              # Variante "infographie" : titre + liste numerotee de 3-4 points courts,
-              # au lieu d'une seule phrase-accroche. Format des pins historiques les
-              # plus performants du compte (voir docs/pinterest-projet/04-journal-decisions.md
+          STYLES_MARQUEUR = ["numero", "coche", "fleche", "puce"]
+
+
+          def dessiner_marqueur(d, style, x_centre, y_centre, rayon, num, couleur_accent, police_num):
+              # 4 styles de puce, tous dessines en formes PIL (jamais un glyphe de
+              # police pour la coche/fleche : couverture Unicode non garantie selon
+              # la police chargee, notamment le repli DejaVu).
+              if style == "coche":
+                  d.ellipse([x_centre - rayon, y_centre - rayon, x_centre + rayon, y_centre + rayon], fill=couleur_accent)
+                  d.line([(x_centre - rayon * 0.45, y_centre + rayon * 0.05),
+                          (x_centre - rayon * 0.1, y_centre + rayon * 0.4),
+                          (x_centre + rayon * 0.5, y_centre - rayon * 0.35)],
+                         fill=(20, 20, 30), width=6, joint="curve")
+              elif style == "fleche":
+                  largeur_corps, hauteur_corps, pointe = rayon * 0.9, rayon * 0.5, rayon * 0.7
+                  pts = [
+                      (x_centre - largeur_corps, y_centre - hauteur_corps / 2),
+                      (x_centre, y_centre - hauteur_corps / 2),
+                      (x_centre, y_centre - rayon * 0.55),
+                      (x_centre + pointe, y_centre),
+                      (x_centre, y_centre + rayon * 0.55),
+                      (x_centre, y_centre + hauteur_corps / 2),
+                      (x_centre - largeur_corps, y_centre + hauteur_corps / 2),
+                  ]
+                  d.polygon(pts, fill=couleur_accent)
+              elif style == "puce":
+                  r2 = rayon * 0.55
+                  d.ellipse([x_centre - r2, y_centre - r2, x_centre + r2, y_centre + r2], fill=couleur_accent)
+              else:  # "numero"
+                  d.ellipse([x_centre - rayon, y_centre - rayon, x_centre + rayon, y_centre + rayon], fill=couleur_accent)
+                  t = str(num)
+                  w = d.textlength(t, font=police_num)
+                  d.text((x_centre - w / 2, y_centre - rayon + 4), t, font=police_num, fill=(20, 20, 30))
+
+
+          def dessiner_infographie(titre_image, points, chemin_sortie, police_grasse, police_normale, fond, style=None):
+              # Variante "infographie" : titre + liste de 3-4 points courts, au lieu
+              # d'une seule phrase-accroche. Format des pins historiques les plus
+              # performants du compte (voir docs/pinterest-projet/04-journal-decisions.md
               # section 9). Meme rendu texte fiable (PIL + Poppins), jamais de texte
-              # genere par IA.
+              # genere par IA. Le style de puce varie (numero/coche/fleche/puce) pour
+              # eviter que toutes les infographies se ressemblent.
+              style = style or random.choice(STYLES_MARQUEUR)
               L, H = 1000, 1500
               img = recadrer(Image.open(fond).convert("RGB"), L, H) if fond else Image.new("RGB", (L, H), (30, 40, 70))
               debut_masque = 250
@@ -283,13 +320,7 @@ jobs:
 
               for i, lp in enumerate(lignes_par_point, start=1):
                   y_centre_cercle = y + hauteur_ligne_point / 2 - 6
-                  d.ellipse(
-                      [x_num_centre - rayon, y_centre_cercle - rayon, x_num_centre + rayon, y_centre_cercle + rayon],
-                      fill=couleur_accent,
-                  )
-                  num_txt = str(i)
-                  nw = d.textlength(num_txt, font=police_num)
-                  d.text((x_num_centre - nw / 2, y_centre_cercle - taille_point / 2 - 2), num_txt, font=police_num, fill=(20, 20, 30))
+                  dessiner_marqueur(d, style, x_num_centre, y_centre_cercle, rayon, i, couleur_accent, police_num)
                   for ligne in lp:
                       d.text((x_texte + 2, y + 2), ligne, font=police_point, fill=(8, 12, 26))
                       d.text((x_texte, y), ligne, font=police_point, fill=(255, 255, 255))
