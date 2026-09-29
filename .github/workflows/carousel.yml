@@ -1,0 +1,411 @@
+name: Pins Pinterest - Carousel (Idea Pin)
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Mode (cron-job.org utilise toujours 'publier' : le declenchement automatique n'envoie pas d'inputs, donc ne passe jamais en mode test)"
+        type: choice
+        options: [publier, test]
+        default: publier
+
+permissions:
+  contents: write
+
+concurrency:
+  group: carousel
+  cancel-in-progress: false
+
+jobs:
+  publier_carousel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pillow requests
+
+      - name: Créer et publier un carousel (substitut Idea Pin)
+        env:
+          TEST: ${{ github.event.inputs.mode == 'test' && '1' || '' }}
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+          LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
+        run: |
+          git config user.name "robot-pins"
+          git config user.email "robot-pins@users.noreply.github.com"
+          python - <<'EOF'
+          import os, json, random, re, time, datetime, subprocess, sys
+          import requests
+          from PIL import Image, ImageDraw, ImageFont
+
+          MARQUE = "Clarté Mentale | Stress & Énergie"
+          TEST = os.environ.get("TEST") == "1"
+
+          HIST = "historique.json"
+          historique = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
+
+
+          def git(*args):
+              return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
+
+
+          def telecharger_police(nom, url, secours):
+              try:
+                  r = requests.get(url, timeout=30)
+                  r.raise_for_status()
+                  open(nom, "wb").write(r.content)
+                  return nom
+              except Exception:
+                  return secours if os.path.exists(secours) else None
+
+
+          def charger_police(chemin, taille):
+              if chemin:
+                  return ImageFont.truetype(chemin, taille)
+              return ImageFont.load_default(size=taille)
+
+
+          def couper_lignes(d, texte, police, largeur_max):
+              lignes, ligne = [], ""
+              for mot in texte.split():
+                  essai = (ligne + " " + mot).strip()
+                  if d.textlength(essai, font=police) <= largeur_max:
+                      ligne = essai
+                  else:
+                      if ligne:
+                          lignes.append(ligne)
+                      ligne = mot
+              if ligne:
+                  lignes.append(ligne)
+              return lignes
+
+
+          def recadrer(img, L, H):
+              r = max(L / img.width, H / img.height)
+              img = img.resize((round(img.width * r), round(img.height * r)), Image.LANCZOS)
+              x, y = (img.width - L) // 2, (img.height - H) // 2
+              return img.crop((x, y, x + L, y + H))
+
+
+          THEME_ALIASES = {
+              "sommeil": "sommeil", "insomnie": "sommeil", "reveilnocturne": "sommeil",
+              "reveil": "sommeil", "sieste": "sommeil", "routinedusoir": "sommeil",
+              "dimanchesoir": "sommeil", "rythmecircadien": "sommeil", "lumiere": "sommeil",
+              "ecrans": "sommeil", "ruminations": "sommeil",
+              "cortisol": "systemenerveux", "systemenerveux": "systemenerveux",
+              "respiration": "systemenerveux", "coherencecardiaque": "systemenerveux",
+              "anxiete": "systemenerveux", "detente": "systemenerveux",
+              "fatiguementale": "fatiguementale", "chargementale": "fatiguementale",
+              "fatigue": "fatiguementale", "fatiguechronique": "fatiguementale",
+              "alimentation": "alimentation", "cafeine": "alimentation",
+              "alcool": "alimentation", "digestion": "alimentation",
+              "procrastination": "procrastination",
+              "somatisation": "somatisation", "douleurs": "somatisation",
+              "energie": "energie", "recuperation": "energie",
+              "blocagemental": "blocagemental", "clarte": "blocagemental",
+              "ecriture": "blocagemental",
+          }
+
+
+          def deviner_theme(description):
+              tags = re.findall(r"#(\w+)", description)
+              if not tags:
+                  return "systemenerveux"
+              premier = tags[0].lower()
+              if premier == "stress" and "travail" in [t.lower() for t in tags[:3]]:
+                  return "posturesantistress"
+              return THEME_ALIASES.get(premier, "systemenerveux")
+
+
+          def choisir_pin_equilibre(restants, historique):
+              par_theme = {}
+              for p in restants:
+                  t = deviner_theme(p["description"])
+                  par_theme.setdefault(t, []).append(p)
+              dernier_par_theme = {}
+              for h in historique:
+                  t = h.get("theme")
+                  if t:
+                      dernier_par_theme[t] = h["date"]
+              theme_choisi = min(par_theme, key=lambda t: dernier_par_theme.get(t, ""))
+              return par_theme[theme_choisi][0]
+
+
+          TABLEAUX = {
+              "sommeil": "600175156531998232",
+              "systemenerveux": "600175156531995384",
+              "fatiguementale": "600175156531997290",
+              "alimentation": "600175156532001498",
+              "procrastination": "600175156532025119",
+              "somatisation": "600175156532027560",
+              "blocagemental": "600175156532029245",
+              "posturesantistress": "600175156532003400",
+              "energie": "600175156532025122",
+          }
+          THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
+
+          STYLES_MARQUEUR = ["numero", "coche", "fleche", "puce"]
+
+
+          def dessiner_marqueur(d, style, x_centre, y_centre, rayon, num, couleur_accent, police_num):
+              if style == "coche":
+                  d.ellipse([x_centre - rayon, y_centre - rayon, x_centre + rayon, y_centre + rayon], fill=couleur_accent)
+                  d.line([(x_centre - rayon * 0.45, y_centre + rayon * 0.05),
+                          (x_centre - rayon * 0.1, y_centre + rayon * 0.4),
+                          (x_centre + rayon * 0.5, y_centre - rayon * 0.35)],
+                         fill=(20, 20, 30), width=6, joint="curve")
+              elif style == "fleche":
+                  largeur_corps, hauteur_corps, pointe = rayon * 0.9, rayon * 0.5, rayon * 0.7
+                  pts = [
+                      (x_centre - largeur_corps, y_centre - hauteur_corps / 2),
+                      (x_centre, y_centre - hauteur_corps / 2),
+                      (x_centre, y_centre - rayon * 0.55),
+                      (x_centre + pointe, y_centre),
+                      (x_centre, y_centre + rayon * 0.55),
+                      (x_centre, y_centre + hauteur_corps / 2),
+                      (x_centre - largeur_corps, y_centre + hauteur_corps / 2),
+                  ]
+                  d.polygon(pts, fill=couleur_accent)
+              elif style == "puce":
+                  r2 = rayon * 0.55
+                  d.ellipse([x_centre - r2, y_centre - r2, x_centre + r2, y_centre + r2], fill=couleur_accent)
+              else:  # "numero"
+                  d.ellipse([x_centre - rayon, y_centre - rayon, x_centre + rayon, y_centre + rayon], fill=couleur_accent)
+                  t = str(num)
+                  w = d.textlength(t, font=police_num)
+                  d.text((x_centre - w / 2, y_centre - rayon + 4), t, font=police_num, fill=(20, 20, 30))
+
+
+          def dessiner_slide(titre, points, actif, chemin_sortie, police_grasse, police_normale, fond, style):
+              # actif = -1 : slide de couverture, tous les points au meme poids (comme
+              # dessiner_infographie du pipeline pins.yml).
+              # actif = i (>=0) : slide de detail, le point i est mis en avant (plus
+              # grand, marqueur dore) et les autres restent visibles mais attenues, pour
+              # que chaque slide porte plus d'information qu'une seule courte phrase
+              # (retour utilisateur du 29/09/2026 : slides jugees trop identiques/pauvres).
+              L, H = 1000, 1500
+              img = recadrer(Image.open(fond).convert("RGB"), L, H)
+              debut_masque = 250 if actif == -1 else 380
+              masque = Image.new("L", (1, H))
+              for y in range(H):
+                  t = max(0.0, (y - debut_masque) / (H - debut_masque))
+                  masque.putpixel((0, y), int(50 + 195 * (t ** 1.2)))
+              img = Image.composite(Image.new("RGB", (L, H), (10, 15, 30)), img, masque.resize((L, H)))
+
+              d = ImageDraw.Draw(img)
+              marge = 85
+              largeur = L - 2 * marge
+
+              taille_titre = 78 if actif == -1 else 54
+              while taille_titre > 40:
+                  police_titre = charger_police(police_grasse, taille_titre)
+                  lignes_titre = couper_lignes(d, titre, police_titre, largeur)
+                  if len(lignes_titre) <= (3 if actif == -1 else 2):
+                      break
+                  taille_titre -= 4
+              hauteur_ligne_titre = int(taille_titre * 1.2)
+
+              taille_actif, taille_rappel = 46, 30
+              police_actif = charger_police(police_normale, taille_actif)
+              police_rappel = charger_police(police_normale, taille_rappel)
+              largeur_point = largeur - 70
+
+              blocs = []
+              for i, p in enumerate(points):
+                  est_actif = (actif == -1 or i == actif)
+                  police_p = police_actif if est_actif else police_rappel
+                  lignes = couper_lignes(d, p, police_p, largeur_point)
+                  blocs.append((i, lignes, police_p, est_actif))
+
+              hauteur_ligne_actif = int(taille_actif * 1.3)
+              hauteur_ligne_rappel = int(taille_rappel * 1.3)
+              espace = 20
+              hauteur_points = sum(
+                  len(l) * (hauteur_ligne_actif if est_actif else hauteur_ligne_rappel)
+                  for _, l, _, est_actif in blocs
+              ) + espace * (len(blocs) - 1)
+
+              espace_titre_points = 40
+              hauteur_totale = hauteur_ligne_titre * len(lignes_titre) + espace_titre_points + hauteur_points
+              y = 1295 - hauteur_totale
+              y_min = debut_masque + 40
+              if y < y_min:
+                  y = y_min
+
+              for ligne in lignes_titre:
+                  w = d.textlength(ligne, font=police_titre)
+                  x = (L - w) / 2
+                  d.text((x + 3, y + 3), ligne, font=police_titre, fill=(8, 12, 26))
+                  d.text((x, y), ligne, font=police_titre, fill=(255, 255, 255))
+                  y += hauteur_ligne_titre
+              y += espace_titre_points
+
+              rayon_actif, rayon_rappel = 26, 16
+              x_centre_col = marge + rayon_actif
+              x_texte = marge + 2 * rayon_actif + 22
+              couleur_or = (236, 196, 120)
+              couleur_att = (170, 175, 190)
+
+              for i, lignes, police_p, est_actif in blocs:
+                  rayon = rayon_actif if est_actif else rayon_rappel
+                  hauteur_ligne = hauteur_ligne_actif if est_actif else hauteur_ligne_rappel
+                  y_centre_cercle = y + hauteur_ligne / 2 - 4
+                  dessiner_marqueur(
+                      d, style, x_centre_col, y_centre_cercle, rayon, i + 1,
+                      couleur_or if est_actif else couleur_att,
+                      charger_police(police_grasse, int(rayon * 1.1)),
+                  )
+                  for ligne in lignes:
+                      if est_actif:
+                          d.text((x_texte + 2, y + 2), ligne, font=police_p, fill=(8, 12, 26))
+                          d.text((x_texte, y), ligne, font=police_p, fill=(255, 255, 255))
+                      else:
+                          d.text((x_texte, y), ligne, font=police_p, fill=(205, 208, 220))
+                      y += hauteur_ligne
+                  y += espace
+
+              d.line([(L / 2 - 70, y + 10), (L / 2 + 70, y + 10)], fill=(236, 230, 205), width=5)
+              police_pied = charger_police(police_normale, 34)
+              w = d.textlength(MARQUE, font=police_pied)
+              d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
+
+              if actif >= 0:
+                  badge = f"{actif + 1}/{len(points)}"
+                  police_badge = charger_police(police_grasse, 36)
+                  bw = d.textlength(badge, font=police_badge)
+                  pad = 16
+                  d.rounded_rectangle([50, 50, 50 + bw + 2 * pad, 50 + 50], radius=14, fill=couleur_or)
+                  d.text((50 + pad, 50 + 8), badge, font=police_badge, fill=(20, 20, 30))
+
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+
+
+          police_grasse = telecharger_police("Poppins-Bold.ttf",
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+          police_normale = telecharger_police("Poppins-Regular.ttf",
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
+
+          banque = json.load(open("pins.json", encoding="utf-8"))
+          faits = {h["titre"] for h in historique}
+          candidats = [p for p in banque if p["titre"] not in faits and p.get("points_image")]
+          if not candidats:
+              sys.exit("Aucun pin avec points_image disponible pour un carousel.")
+          pin = choisir_pin_equilibre(candidats, historique)
+          print("Candidats carousel disponibles :", len(candidats))
+
+          theme = deviner_theme(pin["description"])
+          titre_pin = pin["titre"][:100]
+          points = pin["points_image"]
+          if not (2 <= len(points) <= 5):
+              sys.exit(f"points_image hors bornes carousel (2-5) : {len(points)} pour {titre_pin!r}")
+          print("Thème détecté :", theme, "| titre :", titre_pin)
+
+          themes_fonds = {}
+          if os.path.exists("fonds_themes.json"):
+              themes_fonds = json.load(open("fonds_themes.json", encoding="utf-8"))
+          fichiers = sorted(f for f in os.listdir("fonds") if f.lower().endswith((".png", ".jpg", ".jpeg", ".webp")))
+          sous_ensemble = [f for f in fichiers if themes_fonds.get(f) in (theme, None)] or fichiers
+          random.shuffle(sous_ensemble)
+          nb_slides = len(points) + 1
+          if len(sous_ensemble) < nb_slides:
+              sous_ensemble = (sous_ensemble * (nb_slides // max(len(sous_ensemble), 1) + 1))
+          fonds_choisis = [os.path.join("fonds", f) for f in sous_ensemble[:nb_slides]]
+
+          os.makedirs("images", exist_ok=True)
+          horodatage = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
+          style = random.choice(STYLES_MARQUEUR)
+
+          chemins = []
+          chemin_couverture = os.path.join("images", f"carousel-{horodatage}-0.jpg")
+          dessiner_slide(pin["texte_image"], points, -1, chemin_couverture, police_grasse, police_normale, fonds_choisis[0], style)
+          chemins.append(chemin_couverture)
+          for i, p in enumerate(points):
+              chemin_i = os.path.join("images", f"carousel-{horodatage}-{i + 1}.jpg")
+              dessiner_slide(pin["texte_image"], points, i, chemin_i, police_grasse, police_normale, fonds_choisis[i + 1], style)
+              chemins.append(chemin_i)
+          print("Slides générées :", chemins)
+
+          if TEST:
+              sys.exit(0)
+
+          git("add", "-A", *chemins)
+          git("commit", "-m", "Nouveau carousel : " + titre_pin[:55])
+          git("push")
+          sha = git("rev-parse", "HEAD")
+
+          def attendre_en_ligne(url, essais=18, pause=5):
+              for _ in range(essais):
+                  try:
+                      if requests.get(url, timeout=15).status_code == 200:
+                          return True
+                  except Exception:
+                      pass
+                  time.sleep(pause)
+              return False
+
+          urls = []
+          for chemin in chemins:
+              url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin}"
+              if not attendre_en_ligne(url):
+                  sys.exit("Image du carousel pas accessible en ligne : " + url)
+              urls.append(url)
+
+          lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
+          board_id = TABLEAUX.get(theme, "600175156531995384")
+
+          payload = {
+              "arguments": {
+                  "board_id": board_id,
+                  "title": titre_pin,
+                  "description": pin["description"][:800],
+                  "link": lien,
+                  "media_source": {
+                      "source_type": "multiple_image_urls",
+                      "items": [{"url": u} for u in urls],
+                  },
+              }
+          }
+          r = requests.post(
+              "https://backend.composio.dev/api/v3.1/tools/execute/PINTEREST_CREATE_PIN",
+              headers={"x-api-key": os.environ["COMPOSIO_API_KEY"], "Content-Type": "application/json"},
+              json=payload, timeout=60,
+          )
+          print("Réponse Composio :", r.status_code, r.text[:800])
+          if r.status_code >= 300:
+              sys.exit("Composio a refusé la création du pin carousel.")
+
+          pin_id = "inconnu"
+          try:
+              donnee = r.json()
+              pin_id = (donnee.get("data") or {}).get("id") or donnee.get("id") or "inconnu"
+          except Exception as e:
+              print("Impossible d'extraire le pin_id de la réponse :", e)
+
+          historique.append({
+              "date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+              "titre": titre_pin, "image": chemins[0], "fond": fonds_choisis[0],
+              "theme": theme, "format": "carousel", "pin_id": pin_id,
+          })
+          json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print("Carousel envoyé :", titre_pin, "| pin_id :", pin_id)
+
+          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
+          for ancien in os.listdir("images"):
+              if not ancien.startswith("carousel-"):
+                  continue
+              try:
+                  date_fichier = datetime.datetime.strptime(ancien[9:17], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
+              except ValueError:
+                  continue
+              if date_fichier < limite:
+                  os.remove(os.path.join("images", ancien))
+
+          git("add", "-A", "images", HIST)
+          git("commit", "-m", "Historique carousel : " + titre_pin[:55])
+          git("push")
+          EOF
