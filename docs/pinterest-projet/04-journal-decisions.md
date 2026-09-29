@@ -136,6 +136,8 @@ Ce fichier retrace le contexte et le raisonnement derrière chaque règle établ
 
 ## 14. Tentative d'automatisation autonome : deux murs identifiés (29/09/2026)
 
+> **Dépassé le jour même** : l'automatisation a finalement été résolue par l'utilisateur (clé API Composio + workflow ajoutés par lui), voir section 15.
+
 **Déclencheur** : "Je te laisse tout régler... règle tout toi-même" — l'utilisateur délègue entièrement la résolution de l'automatisation du carousel/Idea Pin, plutôt que d'attendre qu'il vérifie lui-même la clé API Composio et le support carousel de Make.com (demandés section 13).
 
 **Résultat de l'investigation, deux blocages réels, pas de contournement possible depuis cette session** :
@@ -145,6 +147,21 @@ Ce fichier retrace le contexte et le raisonnement derrière chaque règle établ
 **Conclusion pour la suite** : la voie la plus réaliste pour une vraie automatisation reste une app Pinterest Developer créée et autorisée par l'utilisateur lui-même (OAuth, hors de portée de Claude Code), avec le jeton d'accès résultant stocké comme secret GitHub — Claude Code peut écrire tout le code d'intégration une fois ce jeton fourni, mais ne peut pas générer ce jeton lui-même. Alternative : l'utilisateur vérifie et active lui-même le support carousel dans Make.com. **Aucune des deux n'a avancé** — reste une action humaine, pas un manque d'effort côté session.
 
 **Nouvelle règle qualité slides (retour utilisateur sur le premier carousel)** : le carousel publié en section 13 utilisait le même fond photo pour les 4 slides (texte différent, fond identique) — perçu comme "la même image" par l'utilisateur. Règle ajoutée à `CLAUDE.md` (règle 9) : fond différent par slide, contenu par slide plus riche qu'une reprise minimaliste du texte de `points_image`. Pas encore appliquée rétroactivement (aucun outil ne permet de remplacer les images d'un pin déjà publié).
+
+## 15. Automatisation du carousel résolue (29/09/2026, suite de la section 14)
+
+**Solution retenue** : l'utilisateur a lui-même créé une clé API Composio (secret GitHub `COMPOSIO_API_KEY`) et ajouté le workflow `.github/workflows/carousel.yml` via l'éditeur GitHub. Le workflow appelle directement `PINTEREST_CREATE_PIN` (API REST Composio v3.1) depuis GitHub Actions, sans session Claude Code.
+
+**Cause des 9 premiers échecs** (runs 1 à 9) : la clé API ne voyait **aucun** compte Pinterest connecté (`connected_accounts` vide) — la connexion utilisée en session passe par le canal MCP de Composio, un espace distinct et invisible pour la clé API. Plusieurs `entity_id` ont été devinés sans succès avant qu'un diagnostic ne le montre. **Correctif** : connexion Pinterest refaite par l'utilisateur dans l'**Aire de jeux** du projet Composio `yacinenettour_workspace_first_project`, ce qui crée un compte rattaché à la clé API (`user_id` généré automatiquement). **Run 10 : succès**, carousel publié (pin `600175087889887532`, tableau énergie, sans lien car thème hors formation).
+
+**Durcissement du workflow (même jour, revue après coup)** — trois failles corrigées :
+1. **Faux succès possible** : Composio peut répondre HTTP 200 alors que l'action Pinterest a échoué ; l'ancien script ne vérifiait que le code HTTP et inscrivait alors le pin à l'historique avec `pin_id: "inconnu"` (pin perdu sans jamais être publié). Désormais : échec si `successful` est faux ou si aucun id de pin n'est renvoyé.
+2. **Doublon possible** : `pins.yml` pousse sur `main` toutes les 2 h. Si le push final de l'historique était refusé (main avancée entre-temps), le carousel était publié mais pas inscrit → republication par `pins.yml` plus tard. Désormais : push avec rebase + nouvelle tentative, et réécriture de l'entrée d'historique sur `main` à jour (jusqu'à 6 essais) ; revérification juste avant publication que le pin n'a pas été publié entre-temps par un autre workflow.
+3. **Connexion fragile** : l'identifiant du compte connecté était codé en dur ; il est désormais relu à chaque run (compte Pinterest `ACTIVE` de la clé), avec l'ancien en secours — une reconnexion Composio ne casse plus la publication. Le bloc de diagnostic verbeux (qui affichait toute la réponse `connected_accounts` dans les logs publics) est retiré.
+
+Validé par simulation locale complète (dépôt distant factice, clone superficiel comme GitHub Actions, commits concurrents sur `historique.json` avant et pendant la publication, réponse Composio 200 en échec) avant d'être fourni à l'utilisateur.
+
+**Leçon de process** : les fichiers `.github/workflows/*` ne peuvent pas être poussés sur `main` depuis la session (refus du contrôle de permission). Les éditions partielles « insère ces lignes après la ligne 359 » dans l'éditeur GitHub ont produit 3 erreurs de syntaxe d'affilée ; seule la méthode « fichier complet validé, Ctrl+A / coller » a fonctionné du premier coup.
 
 ## Point ouvert à ce jour
 

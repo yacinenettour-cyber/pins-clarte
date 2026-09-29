@@ -28,6 +28,8 @@ Un prompt système a été rédigé pour un futur module IA dans un scénario Ma
 8. Envoie titre / description / URL image / URL vidéo / lien / thème / ID du tableau Pinterest à `MAKE_WEBHOOK_URL` (webhook Make.com), qui publie réellement sur Pinterest.
 9. Ajoute l'entrée à `historique.json` (anti-répétition) et purge les images/vidéos de plus de 30 jours du dépôt.
 
+Le pipeline carousel (`carousel.yml`, depuis le 29/09/2026, substitut Idea Pin 1×/jour) ne passe **pas** par Make : il publie directement via l'API REST Composio (`PINTEREST_CREATE_PIN`, secret `COMPOSIO_API_KEY`), choisit un pin non publié ayant `points_image`, génère une couverture + une slide par point (fond différent par slide), vérifie que Composio renvoie bien un id de pin, puis inscrit l'entrée dans `historique.json` avec rebase/nouvelle tentative (évite la republication par `pins.yml`). Détail : `04-journal-decisions.md` section 15.
+
 Le pipeline vidéo (`videos.yml`) suit la même logique avec ses propres fichiers (`videos.json`, `historique_videos.json`, `videos_fonds/`), son propre webhook (`MAKE_WEBHOOK_URL_VIDEO`, scénario Make séparé pour ne pas perturber le scénario image existant), et la même règle `THEMES_SANS_LIEN`.
 
 ## Fichiers du dépôt
@@ -47,6 +49,7 @@ Le pipeline vidéo (`videos.yml`) suit la même logique avec ses propres fichier
 | `videopins/` | Video Pins déjà générées (image de couverture + .mp4) |
 | `.github/workflows/pins.yml` | Workflow de publication des pins classiques |
 | `.github/workflows/videos.yml` | Workflow de publication des Video Pins |
+| `.github/workflows/carousel.yml` | Workflow de publication du carousel quotidien (substitut Idea Pin, via Composio) |
 | `prompts/system-prompt-pin-seo.md` | Prompt système pour un futur module IA Make (flux image→texte, non connecté) |
 | `CLAUDE.md` | Résumé opérationnel des règles, chargé automatiquement par Claude Code sur ce dépôt |
 | `README.md` | Documentation complète et détaillée du fonctionnement et des règles |
@@ -56,6 +59,7 @@ Le pipeline vidéo (`videos.yml`) suit la même logique avec ses propres fichier
 - `MAKE_WEBHOOK_URL` — webhook Make.com pour les pins classiques (mode image)
 - `MAKE_WEBHOOK_URL_VIDEO` — webhook Make.com séparé pour les Video Pins (mode vidéo)
 - `LIEN_PAGE` — URL de la page de capture de la formation
+- `COMPOSIO_API_KEY` — clé API Composio pour `carousel.yml` (projet `yacinenettour_workspace_first_project`, où la connexion Pinterest doit exister)
 - `OPENAI_API_KEY` *(optionnel)* — génération de fonds inédits par IA, ~0,05 $/image en qualité `medium`
 
 ## Formats
