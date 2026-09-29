@@ -233,6 +233,19 @@ Titres vérifiés distincts de la banque, de l'historique et des pins en ligne (
 
 **Proposé, non appliqué (décision utilisateur)** : renommer certains tableaux avec le mot-clé recherché en tête ; ajuster la bio et le nom du profil (non modifiables par l'API).
 
+## 22. Augmenter les clics vers la page de capture (29/09/2026)
+
+**Demande** : « je veux que tu augmentes les clics sortants » (pins avec lien vers la page de capture de la formation).
+
+**Constats** : 42 clics sortants en 90 jours ; seulement 22 des 192 pins avec lien restants invitaient à cliquer (11 %) ; la phrase d'enregistrement ajoutée une fois sur deux par `pins.yml` pouvait tronquer la description et faire disparaître l'appel au guide ; aucune indication sur l'image. Page de capture vérifiée (capture mobile) : guide « Quand le cerveau refuse de dormir » (routine anti-rumination au lit, exercices pour calmer le mental, calendrier 30 jours, PDF + bonus), bouton « Je veux dormir en 10 min ce soir » ; la page n'a ni titre (`<title>` vide) ni description ni image de partage (og:image) ; la balise de vérification de domaine Pinterest est présente.
+
+**Actions** :
+1. Appel au guide ajouté sur 122 pins avec lien → 144/192 (75 %), un quart laissé sans appel ; formulations composées pour que chaque fin reste unique (0 doublon sur la banque).
+2. **16 promesses inexactes corrigées** (écrites avant la vérification de la page, dont 2 le jour même par Claude) : « le guide explique ce lien ventre-stress », « d'autres pistes pour les matins difficiles »… remplacées par des ponts honnêtes vers le contenu réel du guide ; même correction sur le kit Idea Pin n°1.
+3. `pins.yml` : bandeau « GUIDE GRATUIT · lien dans l'épingle » sur l'image des pins avec lien (deux visuels, contrôle texte/photo/bandeau sur 508 rendus : 0 chevauchement) ; rotation pondérée (thèmes avec lien ×2 : 7-8 pins avec lien sur 10 au début, ~68 % sur l'ensemble du stock actuel — la part de long terme dépend du stock, donc **les prochaines recharges viseront ~75 % de contenus sommeil/stress**) ; phrase d'enregistrement supprimée quand elle écraserait l'appel au guide.
+
+**Proposé, en attente de décision utilisateur** : ajouter le lien à d'anciens pins performants dont le sujet correspond au guide (l'utilisateur avait demandé de ne pas toucher aux anciens pins) ; améliorer la page de capture (titre, description, image de partage, bénéfices en texte) ; paramètres de suivi (UTM) pour voir dans systeme.io quels pins convertissent.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.

@@ -178,6 +178,17 @@ jobs:
 
 
           NUIT = (12, 18, 36)
+          TEXTE_BANDEAU = "GUIDE GRATUIT · lien dans l'épingle"
+
+
+          def dessiner_bandeau_guide(d, L, y, fond_couleur, texte_couleur, police_grasse):
+              # Appel visible sur l'image des pins qui mènent à la page de capture (29/09/2026).
+              police = charger_police(police_grasse, 30)
+              w = d.textlength(TEXTE_BANDEAU, font=police)
+              x0 = (L - w) / 2 - 30
+              d.rounded_rectangle([x0, y, x0 + w + 60, y + 54], radius=27, fill=fond_couleur)
+              d.text((x0 + 30, y + 10), TEXTE_BANDEAU, font=police, fill=texte_couleur)
+              return y + 54
 
 
           def _photo_haut_sombre(img, fond, h_photo, fondu=180):
@@ -192,7 +203,7 @@ jobs:
               img.paste(photo, (0, 0))
 
 
-          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond):
+          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond, avec_lien=False):
               L, H = 1000, 1500
               img = Image.new("RGB", (L, H), NUIT)
               d = ImageDraw.Draw(img)
@@ -207,7 +218,7 @@ jobs:
                       break
                   taille -= 6
               bloc = hauteur_ligne * len(lignes)
-              haut_texte = 1285 - bloc
+              haut_texte = (1215 if avec_lien else 1285) - bloc
               h_photo = haut_texte - 60 if fond else 0
               if h_photo >= 300:
                   _photo_haut_sombre(img, fond, h_photo)
@@ -226,11 +237,15 @@ jobs:
                   d.text((x, y), ligne, font=police, fill=(255, 255, 255))
                   y += hauteur_ligne
               d.line([(L / 2 - 70, y + 34), (L / 2 + 70, y + 34)], fill=(236, 230, 205), width=5)
+              bandeau_haut = H - 165 if avec_lien else None
+              if avec_lien:
+                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse)
               police_pied = charger_police(police_normale, 34)
               w = d.textlength(MARQUE, font=police_pied)
               d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
               img.save(chemin_sortie, "JPEG", quality=88, optimize=True, progressive=True)
-              return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 39, "pied_haut": H - 92}
+              return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 39,
+                      "pied_haut": bandeau_haut or H - 92}
 
 
           STYLES_MARQUEUR = ["numero", "coche", "fleche", "puce"]
@@ -268,7 +283,7 @@ jobs:
                   d.text((x_centre - w / 2, y_centre - rayon + 4), t, font=police_num, fill=(20, 20, 30))
 
 
-          def dessiner_infographie(titre_image, points, chemin_sortie, police_grasse, police_normale, fond, style=None):
+          def dessiner_infographie(titre_image, points, chemin_sortie, police_grasse, police_normale, fond, style=None, avec_lien=False):
               # Variante "infographie" sombre : titre + liste de 2-4 points dans un bandeau
               # sombre sous la photo (jamais de texte sur la photo). Le style de puce varie.
               style = style or random.choice(STYLES_MARQUEUR)
@@ -281,7 +296,7 @@ jobs:
               x_num_centre = marge + rayon
               x_texte = marge + 2 * rayon + 22
               espace_entre_points, espace_titre_points = 22, 46
-              bas_contenu, haut_min = 1295, 290
+              bas_contenu, haut_min = (1225 if avec_lien else 1295), 290
 
               # Réduit titre puis points jusqu'à ce que tout tienne au-dessus du pied de page.
               for taille_titre, taille_point in [(78, 42), (70, 40), (64, 38), (58, 36), (54, 34), (50, 32), (48, 30)]:
@@ -325,11 +340,15 @@ jobs:
                   y += espace_entre_points
 
               d.line([(L / 2 - 70, y + 10), (L / 2 + 70, y + 10)], fill=(236, 230, 205), width=5)
+              bandeau_haut = H - 165 if avec_lien else None
+              if avec_lien:
+                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse)
               police_pied = charger_police(police_normale, 34)
               w = d.textlength(MARQUE, font=police_pied)
               d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
-              return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 15, "pied_haut": H - 92}
+              return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 15,
+                      "pied_haut": bandeau_haut or H - 92}
 
 
           def git(*args):
@@ -414,7 +433,7 @@ jobs:
                          fill=(255, 255, 255), width=7, joint="curve")
 
 
-          def dessiner_clair_infographie(titre, points, chemin_sortie, police_grasse, police_normale, fond, theme):
+          def dessiner_clair_infographie(titre, points, chemin_sortie, police_grasse, police_normale, fond, theme, avec_lien=False):
               L, H, marge = 1000, 1500, 70
               img = Image.new("RGB", (L, H), CREME)
               d = ImageDraw.Draw(img)
@@ -422,7 +441,7 @@ jobs:
               y += 44
               style = "numero" if re.search(r"\d", titre) else "coche"
               police_num = charger_police(police_grasse, 34)
-              r, pad, espace, bas = 30, 26, 20, H - 120
+              r, pad, espace, bas = 30, 26, 20, H - (200 if avec_lien else 120)
               x_txt = marge + pad + 2 * r + 24
               larg_txt = L - marge - pad - x_txt
               # Réduit le texte des cartes si besoin : rien ne doit déborder sur le pied de page.
@@ -455,26 +474,30 @@ jobs:
                   y += h + espace
               if h_photo:
                   _photo_arrondie(img, fond, marge, bas - h_photo, L - marge, bas)
+              if avec_lien:
+                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse)
               _pied(d, L, H, police_normale)
               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
               return {"texte_haut": 70, "texte_bas": y - espace + 6, "cartes_haut": haut_cartes,
                       "photo_haut": bas - h_photo if h_photo else None, "photo_bas": bas if h_photo else None,
-                      "pied_haut": H - 78}
+                      "pied_haut": H - 160 if avec_lien else H - 78}
 
 
-          def dessiner_clair_phrase(texte, chemin_sortie, police_grasse, police_normale, fond, theme):
+          def dessiner_clair_phrase(texte, chemin_sortie, police_grasse, police_normale, fond, theme, avec_lien=False):
               L, H, marge = 1000, 1500, 70
               img = Image.new("RGB", (L, H), CREME)
               d = ImageDraw.Draw(img)
-              y, _ = _etiquette_et_titre(d, theme, texte, police_grasse, marge, L - 2 * marge, (92, 56), 5)
-              bas = H - 120
+              y, accent = _etiquette_et_titre(d, theme, texte, police_grasse, marge, L - 2 * marge, (92, 56), 5)
+              bas = H - (200 if avec_lien else 120)
               photo = bool(fond) and bas - (y + 50) >= 300
               if photo:
                   _photo_arrondie(img, fond, marge, y + 50, L - marge, bas)
+              if avec_lien:
+                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse)
               _pied(d, L, H, police_normale)
               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
               return {"texte_haut": 70, "texte_bas": y, "photo_haut": y + 50 if photo else None,
-                      "photo_bas": bas if photo else None, "pied_haut": H - 78}
+                      "photo_bas": bas if photo else None, "pied_haut": H - 160 if avec_lien else H - 78}
 
 
           # Expressions réellement recherchées sur Pinterest France (Pinterest Trends, 29/09/2026).
@@ -519,12 +542,18 @@ jobs:
               "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
 
+          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE
+          # (qui ne couvre que le sommeil et les mecanismes du stress au sens large) :
+          # ces pins ne doivent pas rediriger vers la page de capture (pas de lien hors-sujet).
+          # energie et fatiguementale ajoutes le 28/09/2026 suite a un pin publie ("Le trou
+          # d'energie de 11h...") qui promettait a tort un contenu absent du guide.
+          THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
+
+
           def choisir_pin_equilibre(restants, historique):
-              # Repartit les publications entre themes au lieu de vider la banque
-              # dans l'ordre du tableau (qui peut faire enchainer des dizaines de
-              # pins du meme theme si la banque a ete remplie par lots thematiques).
-              # Choisit le theme dont la derniere publication est la plus ancienne
-              # (ou jamais publie), puis le premier pin de ce theme dans la banque.
+              # Rotation entre themes (evite d'enchainer un meme theme), ponderee depuis le
+              # 29/09/2026 : un theme qui mene a la page de capture passe deux fois plus
+              # souvent qu'un theme sans lien, pour augmenter les clics sortants.
               par_theme = {}
               for p in restants:
                   t = deviner_theme(p["description"])
@@ -534,7 +563,13 @@ jobs:
                   t = h.get("theme")
                   if t:
                       dernier_par_theme[t] = h["date"]
-              theme_choisi = min(par_theme, key=lambda t: dernier_par_theme.get(t, ""))
+              debut = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=14)).isoformat(timespec="minutes")
+              recents = {}
+              for h in historique:
+                  if h.get("theme") and h.get("date", "") >= debut:
+                      recents[h["theme"]] = recents.get(h["theme"], 0) + 1
+              poids = lambda t: 0.5 if t in THEMES_SANS_LIEN else 1.0
+              theme_choisi = min(par_theme, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
               return par_theme[theme_choisi][0]
 
           banque = json.load(open("pins.json", encoding="utf-8"))
@@ -562,6 +597,10 @@ jobs:
           corps = pin["description"][:hashtags_m.start()] if hashtags_m else pin["description"]
 
           phrase = random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
+          # Ne jamais laisser la phrase d'enregistrement pousser dehors l'appel au guide
+          # (troncature du corps) ni s'ajouter après lui.
+          if phrase and (re.search(r"(?i)guide", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
+              phrase = ""
           queue = " ".join(p for p in [phrase, hashtags] if p)
           budget_corps = 495 - (len(queue) + 1 if queue else 0)
           corps_court = corps[:budget_corps]
@@ -605,14 +644,15 @@ jobs:
                   fond = choisir_fond(theme, historique, min_largeur=800 if design == "clair" else 0)
                   fond_etiquette = fond
 
+              avec_lien = theme not in THEMES_SANS_LIEN
               if design == "clair" and pin.get("points_image"):
-                  dessiner_clair_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, theme)
+                  dessiner_clair_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
               elif design == "clair":
-                  dessiner_clair_phrase(pin["texte_image"], chemin, police_grasse, police_normale, fond, theme)
+                  dessiner_clair_phrase(pin["texte_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
               elif pin.get("points_image"):
-                  dessiner_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond)
+                  dessiner_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, avec_lien=avec_lien)
               else:
-                  dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
+                  dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond, avec_lien)
               print("Thème détecté :", theme, "| visuel :", design)
               print("Fond utilisé :", fond_etiquette)
           print("Image créée :", chemin)
@@ -656,12 +696,6 @@ jobs:
               "energie": "600175156532025122",
           }
 
-          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE
-          # (qui ne couvre que le sommeil et les mecanismes du stress au sens large) :
-          # ces pins ne doivent pas rediriger vers la page de capture (pas de lien hors-sujet).
-          # energie et fatiguementale ajoutes le 28/09/2026 suite a un pin publie ("Le trou
-          # d'energie de 11h...") qui promettait a tort un contenu absent du guide.
-          THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
           lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
 
           # Publication directe via l'API Composio (comme videos.yml) : permet le texte
