@@ -9,11 +9,13 @@ Rédigé le 29/09/2026. **Modèle à compléter, pas un avis juridique** : rempl
 - Hébergeur (vérifié sur systeme.io/privacy-policy) : **ITACWT Limited, 2 Cruise Park Rise, Tyrrelstown, Dublin 15, Irlande**.
 - Vente de contenu numérique à des particuliers : il faut des CGV accessibles avant l'achat, une politique de confidentialité (les e-mails sont collectés), un médiateur de la consommation, et une case à cocher de renonciation au droit de rétractation pour un accès immédiat.
 
-## Où les mettre dans systeme.io
+## Où les mettre dans systeme.io (forfait gratuit : pas de nouvelle page)
 
-1. Créer deux pages (par exemple un tunnel « Pages légales » avec deux pages simples) : **CGV** et **Politique de confidentialité**.
-2. Mettre à jour la page **Mentions légales** avec le texte ci-dessous.
-3. Dans le pied de la page de paiement (et de la page de capture), transformer « Conditions générales de vente » et « Politique de confidentialité » en liens vers ces pages, et « Contact » en lien `mailto:`.
+Le forfait gratuit ne permet pas d'ajouter de page. On **regroupe tout dans la page « Mentions légales » existante** (`/mentions-lgales`), déjà reliée au pied de la page de paiement :
+
+1. Ouvrir la page Mentions légales dans l'éditeur. Titre de la page : « Mentions légales, CGV et confidentialité ».
+2. Remplacer son texte par les sections 1, 2 et 3 ci-dessous, à la suite, chacune avec son titre.
+3. Dans le pied de la page de paiement (et de la page de capture), faire pointer « Conditions générales de vente » et « Politique de confidentialité » vers cette même page `https://lp.contactapaisement-mental.fr/mentions-lgales`, et « Contact » vers `mailto:yavo88@hotmail.com`.
 4. Sur le formulaire de commande : activer la case à cocher d'acceptation des CGV, avec le texte de la section 4.
 
 ---
