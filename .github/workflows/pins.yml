@@ -477,8 +477,22 @@ jobs:
                       "photo_bas": bas if photo else None, "pied_haut": H - 78}
 
 
+          # Expressions réellement recherchées sur Pinterest France (Pinterest Trends, 29/09/2026).
+          SUJETS_ALT = {
+              "sommeil": "sommeil et routine du soir pour mieux dormir",
+              "systemenerveux": "gestion du stress et système nerveux",
+              "fatiguementale": "fatigue mentale et charge mentale",
+              "alimentation": "alimentation anti-stress",
+              "procrastination": "procrastination et motivation",
+              "somatisation": "stress et tensions du corps",
+              "blocagemental": "clarté mentale et surcharge mentale",
+              "posturesantistress": "stress au travail",
+              "energie": "énergie et fatigue",
+          }
+
+
           def texte_alternatif(pin, theme):
-              sujet = LIBELLES.get(theme, "bien-être").lower()
+              sujet = SUJETS_ALT.get(theme, "bien-être mental")
               accroche = pin.get("texte_image") or pin["titre"]
               if pin.get("points_image"):
                   texte = f"Infographie {sujet} « {accroche} » : " + " ; ".join(pin["points_image"]) + "."

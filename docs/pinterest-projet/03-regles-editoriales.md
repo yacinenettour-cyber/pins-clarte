@@ -70,6 +70,20 @@ Un pin alimentation dont le bénéfice mis en avant est l'endormissement ou l'é
 - **Structure avec des puces emoji quand le contenu s'y prête** (📌 👉 •), à la manière des pins historiques les plus performants, plutôt qu'un bloc de prose uniforme — reste optionnel, à juger au cas par cas, ne pas systématiser au point de perdre en lisibilité.
 - **8 à 10 hashtags par pin** (mise à jour du 28/09/2026 — auparavant 5), **dans la limite du plafond de 495-500 caractères ci-dessus, qui reste la contrainte prioritaire.** Les meilleurs pins historiques du compte en utilisent jusqu'à 14, mais leur description totale dépasse largement notre plafond (642 caractères mesurés sur un exemple) — on ne sait pas si ce plafond de 500 est une vraie limite Pinterest ou une prudence excessive de ce pipeline (ces pins historiques ont peut-être été créés par un autre moyen que le webhook Make actuel, jamais vérifié). **Ne pas lever le plafond sans avoir testé qu'un envoi > 500 caractères passe bien par `MAKE_WEBHOOK_URL` sans erreur ni troncature côté Pinterest** — en attendant, rester à 8-10 hashtags courts plutôt que d'aller jusqu'à 14 et dépasser 500. **Le premier hashtag reste strictement le déterminant du board (règle n°3, inchangé)** ; les hashtags ajoutés viennent après, plus génériques/découvrabilité (`#bienetre`, `#developpementpersonnel`, `#selfcare`...). Ne jamais modifier le premier hashtag en même temps qu'on retravaille le corps du texte, sauf intention explicite de changer le board cible.
 
+## 7 bis. Mots-clés : ce que les gens cherchent vraiment (Pinterest Trends France, 29/09/2026)
+
+Source : `PINTEREST_GET_KEYWORD_TRENDS` (région FR, via Composio) — données de recherche Pinterest, pas des suppositions. Évolution sur 1 an entre parenthèses.
+
+- **En hausse, à privilégier** : « système nerveux » (+60 %), « cortisol » (+50 %), « bien-être mental » (+70 %), « routine du soir » (+30 %), « night routine » (+20 %), « sommeil » (+8 %), « journal intime » (+60 %), « cerveau » (+20 %), « discipline aesthetic » (+40 %). « Bien-être hivernal » : nouveau, pic en novembre ; « résolutions bien-être » : pic en janvier.
+- **Gros volumes stables** : « calme », « fatigue », « burn out », « dormir », « motivation », « discipline », « organisation », « routine du matin », « charge mentale ».
+- **En baisse** : « méditation », « relaxation », « respiration » (−30 %), « fatigue mentale » (−50 %), « productivité » (−40 %) → garder comme mots secondaires, pas en tête de titre.
+- « Procrastination » existe mais pèse moins que « motivation » / « discipline » : les associer (« Procrastination : … », hashtags `#discipline #motivation`).
+- « Anxiété », « insomnie » n'apparaissent pas dans les tendances : volume plus faible, utiles en mots secondaires.
+
+**Formule de titre des pins populaires de la niche** (observée sur les pins indexés : « Mieux dormir : 17 choses à essayer dès ce soir », « 8 habitudes pour calmer son système nerveux », « Cohérence cardiaque : … ») : **mot-clé recherché en tête**, deux-points, puis promesse concrète (chiffre, durée courte, moment : « dès ce soir », « en 2 minutes »). Le 29/09/2026, 122 titres non publiés sans mot-clé ont été réécrits selon cette formule (le texte sur l'image n'a pas changé), et 324 hashtags à forte demande ajoutés (premier hashtag jamais modifié).
+
+**Descriptions de tableaux** : réécrites le 29/09/2026 avec ces mots-clés (anciennes versions : `archives/descriptions-tableaux-avant-2026-09-29.json`). Le texte alternatif des pins reprend aussi ces expressions (`SUJETS_ALT` dans `pins.yml`).
+
 ## 8. Variété des CTA (appels à l'action)
 
 - **Ne jamais répéter systématiquement la même formule de fin** d'un pin à l'autre ("Clique sur cette épingle pour le découvrir" etc.).

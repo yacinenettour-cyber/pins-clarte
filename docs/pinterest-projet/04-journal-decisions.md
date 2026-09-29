@@ -223,6 +223,16 @@ Titres vérifiés distincts de la banque, de l'historique et des pins en ligne (
 
 **Correctif typographique (pipeline + kits)** : `couper_lignes()` ne coupe plus avant « ? ! : ; » ni après « (« Tête pleine le soir / ? » évité) ; contrôle refait sur toute la banque restante (254 pins × 2 visuels = 508 rendus, 0 chevauchement).
 
+## 21. Audit SEO de la niche et adaptation des contenus (29/09/2026)
+
+**Demande** : « fais un audit complet de ce qui marche dans cette thématique sur Pinterest et adapte les titres, les descriptions, les méta-descriptions ».
+
+**Sources** : Pinterest Trends France (volumes et évolutions réels, voir `03-regles-editoriales.md` section 7 bis) ; pins populaires de la niche indexés par les moteurs (Firecrawl ne peut pas lire Pinterest directement) ; statistiques du compte (section 18).
+
+**Actions** : 122 titres non publiés réécrits (mot-clé en tête) — contrôle : uniquement non publiés, 0 doublon, 0 quasi-doublon avec banque/historique/en ligne/kits ; 324 hashtags à forte demande ajoutés sur 233 pins (premier hashtag et corps inchangés, aucun total allongé au-delà de 495) ; texte alternatif enrichi ; descriptions des 9 tableaux du pipeline mises à jour sur Pinterest (tableaux orphelins non touchés ; la description « Alimentation & stress » mentionnait le sommeil, contraire à la règle 3, corrigé).
+
+**Proposé, non appliqué (décision utilisateur)** : renommer certains tableaux avec le mot-clé recherché en tête ; ajuster la bio et le nom du profil (non modifiables par l'API).
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
