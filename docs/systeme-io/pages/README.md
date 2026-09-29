@@ -15,6 +15,17 @@ Pièges constatés :
 |---|---|---|---|
 | Mentions légales, CGV et confidentialité | https://lp.contactapaisement-mental.fr/0f1d6dac | 25634497 / 45140167 | `page-legale.json` (reste : médiateur) |
 | Page de vente sans témoignages | https://lp.contactapaisement-mental.fr/0e9ef918 | 25634641 / 45140579 | `page-vente-v2.json` |
+| Paiement 37 € (tu, garantie, CGV) — offre 5383492 | https://lp.contactapaisement-mental.fr/689e4290 | 25635389 / 45142825 | `page-paiement-v2.json` |
+| Merci pour ton achat (suit la page ci-dessus) | https://lp.contactapaisement-mental.fr/0401c87c | 25635439 / 45143273 | `page-merci-achat-v2.json` |
+
+## Pages de paiement (29/09/2026)
+
+- Type `offer-form` : même principe (`page-schema` puis `save`), avec un bloc `Checkout` natif. Les sections du corps (feature, plain…) doivent précéder le groupe de fin (faq, pricing, order, guarantee), sinon erreur 422.
+- Une nouvelle étape `offer-form` crée automatiquement une offre **sans produit** : la rattacher avec `PATCH /api/payment/offers/{id}` `{"digitalProductId": 3196087}`. Vérification : dans le HTML de la page, `"offer":"{\"id\":…,\"pricePlans\":[…3700…]` et `checkedPlanId` non vide.
+- **L'ancienne page `/paiement-anti-stress` (offre 4583959) n'avait aucun tarif rattaché** (`pricePlans: []`, `checkedPlanId` vide) : produit 3196087 rattaché le 29/09, tarif 37 € vérifié dans le HTML. Retour arrière : `{"digitalProductId": null}`.
+- Le bloc `Checkout` généré impose un formulaire de facturation complet (prénom, nom, e-mail, téléphone, pays, adresse, code postal, textes indicatifs en anglais) : non réglable par l'API, à alléger dans l'éditeur.
+- Après l'achat, systeme.io renvoie vers l'étape suivante par position (`nextStepUrl` dans le HTML) : l'étape de remerciement doit être créée juste après la page de paiement.
+- Le texte de CGV par défaut du compte (champ `agreement` de la page de paiement) est encore le modèle « Conditions générales de vente (NOMSOCIETE) » : à remplacer par le texte de `../pages-legales.md` avant d'activer la case à cocher des CGV.
 
 ## Leçons ajoutées à la formation (29/09/2026)
 

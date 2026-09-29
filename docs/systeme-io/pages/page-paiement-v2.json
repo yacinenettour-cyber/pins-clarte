@@ -1,0 +1,204 @@
+{
+  "palette": {
+    "palettePreset": "deep-ocean",
+    "cornerStyle": "soft",
+    "fontPair": "editorial",
+    "cardLayout": null,
+    "heroLayout": null,
+    "heroBackground": null,
+    "headingFontFamily": null,
+    "bodyFontFamily": null
+  },
+  "sections": [
+    {
+      "tone": "hero",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 7,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Quand le cerveau refuse de dormir",
+                  "level": "h1"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Le programme pour calmer ton mental le soir et laisser le sommeil revenir, à ton rythme.</p><p><strong>37 € TTC</strong> · paiement unique, sans abonnement · accès immédiat et à vie.</p>"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "Garantie satisfait ou remboursé 7 jours, sans justification",
+                    "Paiement sécurisé par carte ou Apple Pay",
+                    "Tes accès arrivent par e-mail juste après le paiement"
+                  ],
+                  "icon": "circle-check"
+                }
+              ]
+            },
+            {
+              "size": 5,
+              "blocks": [
+                {
+                  "type": "Image",
+                  "imageDescription": "calm bedroom night soft lamp"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tone": "feature",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Ce que tu reçois",
+                  "level": "h2"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "Apaiser le système nerveux : respirations de 2 minutes et relâchement du corps",
+                    "Sortir des ruminations sans lutter contre tes pensées",
+                    "Un rituel du soir de 5 à 10 minutes, adaptable aux soirs difficiles",
+                    "Consolider le sommeil dans le temps, sans forcer",
+                    "Bonus : un audio express de 3 minutes pour les soirs de forte pression"
+                  ],
+                  "icon": "moon"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Des exercices courts, sans jargon, à suivre depuis ton téléphone, même au lit.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tone": "order",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Finalise ton accès",
+                  "level": "h2"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": "center",
+                  "html": "<p>Indique où envoyer tes accès, puis règle en toute sécurité. Tu peux commencer dès ce soir.</p>"
+                },
+                {
+                  "type": "Checkout",
+                  "buttonText": "Accéder au programme",
+                  "buttonSubText": "Paiement sécurisé · accès immédiat",
+                  "physicalProduct": false
+                },
+                {
+                  "type": "Text",
+                  "textAlign": "center",
+                  "html": "<p>En validant ta commande, tu acceptes les conditions générales de vente et tu demandes l'accès immédiat au programme : ton droit de rétractation prend fin dès le début de l'accès (art. L221-28 13° du Code de la consommation). La garantie « satisfait ou remboursé » de 7 jours reste valable.</p>"
+                },
+                {
+                  "type": "Button",
+                  "text": "Lire les conditions de vente",
+                  "subText": "CGV, mentions légales et confidentialité",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/0f1d6dac"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tone": "faq",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Avant de valider",
+                  "level": "h2"
+                },
+                {
+                  "type": "Faq",
+                  "items": [
+                    {
+                      "question": "Quand est-ce que j'ai accès au programme ?",
+                      "answer": "<p>Tout de suite après le paiement. Tes identifiants arrivent par e-mail et tu accèdes à ton espace depuis ton téléphone, ta tablette ou ton ordinateur.</p>"
+                    },
+                    {
+                      "question": "Est-ce un abonnement ?",
+                      "answer": "<p>Non. Tu paies 37 € une seule fois et l'accès est à vie, sans aucun prélèvement ensuite.</p>"
+                    },
+                    {
+                      "question": "Et si ça ne marche pas pour moi ?",
+                      "answer": "<p>Tu as 7 jours pour tester. Si tu ne ressens aucune amélioration, un simple e-mail à yavo88@hotmail.com suffit : tu es remboursé intégralement, sans justification.</p>"
+                    },
+                    {
+                      "question": "Est-ce que ça remplace un avis médical ?",
+                      "answer": "<p>Non. Ce programme propose des outils de bien-être, pas un traitement. Si tes troubles du sommeil durent, parles-en à un professionnel de santé.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tone": "footer",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Button",
+                  "text": "Conditions générales de vente",
+                  "subText": "Mentions légales et politique de confidentialité",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/0f1d6dac"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": "center",
+                  "html": "<p>Contact : yavo88@hotmail.com</p><p>Clarté Mentale · Yacine Nettour EI · SIRET 822 033 577 00021</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
