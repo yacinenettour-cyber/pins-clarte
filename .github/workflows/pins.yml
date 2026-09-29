@@ -420,7 +420,7 @@ jobs:
               d = ImageDraw.Draw(img)
               y, accent = _etiquette_et_titre(d, theme, titre, police_grasse, marge, L - 2 * marge, (78, 52), 3)
               y += 44
-              style = "numero" if re.match(r"\s*\d", titre) else "coche"
+              style = "numero" if re.search(r"\d", titre) else "coche"
               police_num = charger_police(police_grasse, 34)
               r, pad, espace, bas = 30, 26, 20, H - 120
               x_txt = marge + pad + 2 * r + 24

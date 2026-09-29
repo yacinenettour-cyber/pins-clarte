@@ -198,6 +198,18 @@ Validé par simulation locale complète (dépôt distant factice, clone superfic
 
 **À faire vers le 15-20/10/2026** : comparer impressions/enregistrements par `design` (pins publiés depuis le 29/09) et garder le meilleur.
 
+## 19. Recharge de la banque : 84 pins, déclinaisons des gagnants + saison (29/09/2026)
+
+**Contexte** : stock de 198 pins (≈19 jours à 10/jour), dont 43 % sur le sommeil ; axes 2 (recharge saisonnière) et 3 (décliner les meilleurs pins) validés par l'utilisateur (« Ok, vas-y, fais »).
+
+**Contenu ajouté (en tête de `pins.json`, donc publié avant l'ancien stock de chaque thème)** : sommeil 10 (dont passage à l'heure d'hiver — **dimanche 25 octobre 2026**, date volontairement absente des textes — et déclinaisons de « Si ton cerveau ne s'arrête jamais la nuit ») ; système nerveux 16 (déclinaisons de « 5 gestes doux pour apaiser le corps dès le matin », 22 445 impressions/90 j) ; procrastination 16 (déclinaisons de « 5 Clés pour Vaincre la Procrastination », 16 578) ; clarté mentale 12 (déclinaisons de « 6 étapes pour débloquer ton mental », 11 596) ; fatigue mentale 10 et énergie 6 (automne/hiver, manque de lumière) ; alimentation 6 (angle stress uniquement) ; somatisation 5 ; postures au travail 3. Tous avec `points_image` (format infographie).
+
+**Contrôles par script** (`verifier_nouveaux.py`, gardé hors dépôt) : corps 380-450 car., total ≤ 495, 8-10 hashtags, premier hashtag → bon tableau, aucun CTA clic/guide sur les thèmes sans lien, aucune formulation interdite, titres comparés (similarité > 0,72) à la banque, à l'historique **et aux 212 titres réellement en ligne sur Pinterest** (2 quasi-doublons détectés et reformulés), fins de description toutes différentes (28 sans CTA). Rendu des 84 pins dans les deux visuels : 0 chevauchement texte/photo. Anciens pins strictement inchangés.
+
+**Petit correctif visuel** : dans le visuel clair, les étapes sont numérotées dès que le titre contient un chiffre (avant : seulement s'il commençait par un chiffre).
+
+**À prévoir mi-novembre** : nouvelle recharge avec les contenus de fin d'année (stress des fêtes, publiés ~45 jours avant) et de janvier (reprise, résolutions, procrastination).
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
