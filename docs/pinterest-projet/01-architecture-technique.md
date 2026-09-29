@@ -16,17 +16,16 @@ Un prompt système a été rédigé pour un futur module IA dans un scénario Ma
 - **Vidéos** : `.github/workflows/videos.yml`, 1×/jour à 18h30 heure de Paris — tâche cron-job.org « Vidéo Pinterest 18h30 » (id 8537376, fuseau Europe/Paris, créée le 29/09/2026 ; avant cette date aucune tâche vidéo n'existait). Le workflow ne publie jamais 2 vidéos le même jour. cron-job.org gère le fuseau `Europe/Paris` directement sur la tâche si l'option est disponible (bascule CEST/CET automatique) ; sinon, régler manuellement 16h30 UTC en été (CEST) et 17h30 UTC en hiver (CET).
 - **Mode test** disponible sur les deux workflows (input `mode: test` au lancement manuel) : génère l'image/vidéo sans publier ni consommer d'élément de la banque.
 
-## Étapes du pipeline pins (`pins.yml`)
+## Étapes du pipeline pins (`pins.yml`) — version du 29/09/2026
 
-1. Charge `pins.json` et `historique.json` ; filtre les pins non encore publiés (`restants`), puis choisit le **thème dont la dernière publication est la plus ancienne** (`choisir_pin_equilibre()`, ajouté le 28/09/2026 — remplace l'ancienne sélection naïve `restants[0]` qui pouvait enchaîner des dizaines de pins du même thème quand la banque était remplie par lots thématiques) et prend le premier pin disponible de ce thème.
-2. **Devine le thème** à partir du **premier hashtag** de la description (fonction `deviner_theme()`), via une table d'alias `THEME_ALIASES` qui fait correspondre des dizaines de hashtags spécifiques aux 9 thèmes officiels. Cas particulier : si le premier hashtag est `#stress` ET que `#travail` figure dans les 3 premiers hashtags → thème `posturesantistress` (sinon `#stress` seul retombe sur `systemenerveux`).
-3. Si le pin a un champ `image_prete`, utilise cette image telle quelle (recadrée, sans texte ajouté). Sinon : génère un fond par IA (si `OPENAI_API_KEY` est configuré, modèle `gpt-image-1.5`) ou choisit un fond dans `fonds/` filtré par thème via `fonds_themes.json` (rotation basée sur le nombre de fois où ce thème a déjà utilisé un fond, pour ne pas répéter trop vite), puis incruste la phrase d'accroche (`texte_image`) sur l'image (1000×1500, police Poppins).
-4. Génère aussi une courte vidéo (zoom lent + fondu, ffmpeg) à partir de l'image fixe, en plus de l'image — envoyée à Make comme `video_url` si elle est bien accessible en ligne.
-5. Tronque la description au besoin (troncature intelligente à une fin de phrase quand possible) pour respecter la limite Pinterest de ~495-500 caractères, en réservant de la place pour les hashtags et, une fois sur deux, une phrase d'enregistrement aléatoire tirée de `PHRASES_ENREGISTRER`.
-6. Commit l'image (et la vidéo) dans le dépôt, récupère son URL publique via jsDelivr (CDN qui sert le contenu GitHub), attend qu'elle soit effectivement accessible en ligne avant de continuer.
-7. **Détermine le lien de destination** : vide (`""`) si le thème est dans `THEMES_SANS_LIEN` (`alimentation`, `procrastination`, `energie`, `fatiguementale` — mis à jour le 28/09/2026, voir `03-regles-editoriales.md` section 5), sinon `LIEN_PAGE`.
-8. Envoie titre / description / URL image / URL vidéo / lien / thème / ID du tableau Pinterest à `MAKE_WEBHOOK_URL` (webhook Make.com), qui publie réellement sur Pinterest.
-9. Ajoute l'entrée à `historique.json` (anti-répétition) et purge les images/vidéos de plus de 30 jours du dépôt.
+1. Charge `pins.json` et `historique.json` ; choisit le **thème dont la dernière publication est la plus ancienne** (`choisir_pin_equilibre()`) et prend le premier pin disponible de ce thème.
+2. **Devine le thème** à partir du **premier hashtag** de la description (`deviner_theme()`, table `THEME_ALIASES` ; `#stress` + `#travail` dans les 3 premiers → `posturesantistress`).
+3. Image : `image_prete` utilisée telle quelle ; sinon fond IA (si `OPENAI_API_KEY`) ou fond de `fonds/` filtré par thème, puis **test A/B** : alternance stricte visuel **clair** (`dessiner_clair_infographie()` / `dessiner_clair_phrase()`, fonds d'au moins 800 px de large, recadrage sur la zone la plus nette) / visuel **sombre** historique (`dessiner_infographie()` / `dessiner_image()`). Texte toujours dessiné par PIL (Poppins).
+4. Tronque la description (limite ~495-500 caractères, phrase d'enregistrement aléatoire une fois sur deux).
+5. Commit + push de l'image (rebase et nouvelle tentative si `main` a avancé), revérifie que le pin n'a pas été publié entre-temps, attend que l'image soit servie par jsDelivr.
+6. Lien : vide si le thème est dans `THEMES_SANS_LIEN` (`alimentation`, `procrastination`, `energie`, `fatiguementale`), sinon `LIEN_PAGE`.
+7. **Publie via l'API Composio** (`PINTEREST_CREATE_PIN`, `source_type: image_url`) avec titre, description, lien éventuel et **texte alternatif** (`texte_alternatif()`). Plus de passage par Make depuis le 29/09/2026 (le scénario Make images, qui fonctionnait, ne reçoit plus rien).
+8. Seulement si Pinterest renvoie un id de pin : inscrit l'entrée dans `historique.json` (`design`, `pin_id`) avec nouvelle tentative sur `main` à jour, et purge les images de plus de 30 jours. La petite vidéo générée auparavant pour chaque pin est supprimée : Make ne l'a jamais utilisée.
 
 Le pipeline carousel (`carousel.yml`, créé le 29/09/2026 comme substitut Idea Pin ; **plus de déclenchement quotidien depuis la décision du même jour : 10 pins + 1 vidéo/jour uniquement**, lancement manuel seulement) ne passe **pas** par Make : il publie directement via l'API REST Composio (`PINTEREST_CREATE_PIN`, secret `COMPOSIO_API_KEY`), choisit un pin non publié ayant `points_image`, génère une couverture + une slide par point (fond différent par slide), vérifie que Composio renvoie bien un id de pin, puis inscrit l'entrée dans `historique.json` avec rebase/nouvelle tentative (évite la republication par `pins.yml`). Détail : `04-journal-decisions.md` section 15.
 
@@ -56,10 +55,10 @@ Le pipeline vidéo (`videos.yml`) utilise ses propres fichiers (`videos.json`, `
 
 ## Secrets GitHub requis
 
-- `MAKE_WEBHOOK_URL` — webhook Make.com pour les pins classiques (mode image)
+- `MAKE_WEBHOOK_URL` — ancien webhook Make.com des pins classiques, **plus utilisé depuis le 29/09/2026**
 - `MAKE_WEBHOOK_URL_VIDEO` — ancien webhook Make.com des Video Pins, **plus utilisé depuis le 29/09/2026** (remplacé par `COMPOSIO_API_KEY`)
 - `LIEN_PAGE` — URL de la page de capture de la formation
-- `COMPOSIO_API_KEY` — clé API Composio pour `carousel.yml` et `videos.yml` (projet `yacinenettour_workspace_first_project`, où la connexion Pinterest doit exister)
+- `COMPOSIO_API_KEY` — clé API Composio pour `pins.yml`, `videos.yml` et `carousel.yml` (projet `yacinenettour_workspace_first_project`, où la connexion Pinterest doit exister)
 - `OPENAI_API_KEY` *(optionnel)* — génération de fonds inédits par IA, ~0,05 $/image en qualité `medium`
 
 ## Formats

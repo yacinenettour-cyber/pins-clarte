@@ -28,13 +28,10 @@ jobs:
 
       - run: pip install pillow requests
 
-      - name: Installer ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
-
-      - name: Créer et envoyer un pin
+      - name: Créer et publier un pin
         env:
           TEST: ${{ github.event.inputs.mode == 'test' && '1' || '' }}
-          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
           LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
@@ -43,7 +40,7 @@ jobs:
           python - <<'EOF'
           import os, json, random, re, time, datetime, subprocess, sys, base64, io
           import requests
-          from PIL import Image, ImageDraw, ImageFont
+          from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageStat
 
           MARQUE = "Clarté Mentale | Stress & Énergie"
           TEST = os.environ.get("TEST") == "1"
@@ -129,11 +126,13 @@ jobs:
               return THEME_ALIASES.get(premier, "systemenerveux")
 
 
-          def choisir_fond(theme, historique):
+          def choisir_fond(theme, historique, min_largeur=0):
               if not os.path.isdir("fonds"):
                   return None
               fichiers = sorted(f for f in os.listdir("fonds")
                                 if f.lower().endswith((".png", ".jpg", ".jpeg", ".webp")))
+              if min_largeur:
+                  fichiers = [f for f in fichiers if Image.open(os.path.join("fonds", f)).width >= min_largeur]
               if not fichiers:
                   return None
               themes = {}
@@ -339,15 +338,144 @@ jobs:
               return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
 
 
-          def creer_video(chemin_image, chemin_video, duree=6):
-              cmd = [
-                  "ffmpeg", "-y", "-loop", "1", "-i", chemin_image,
-                  "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-                  "-vf", f"scale=1000:1500,zoompan=z='min(zoom+0.0015,1.15)':d={duree * 25}:s=1000x1500:fps=25",
-                  "-t", str(duree), "-c:v", "libx264", "-pix_fmt", "yuv420p",
-                  "-c:a", "aac", "-shortest", chemin_video,
-              ]
-              subprocess.run(cmd, check=True, capture_output=True, text=True)
+          CREME, ENCRE, CARTE, OMBRE = (247, 243, 236), (31, 41, 64), (255, 255, 255), (228, 221, 209)
+          ACCENTS = {
+              "sommeil": (72, 88, 158), "systemenerveux": (74, 132, 112), "fatiguementale": (190, 106, 78),
+              "alimentation": (112, 140, 62), "procrastination": (214, 106, 84), "somatisation": (48, 128, 140),
+              "blocagemental": (122, 84, 148), "posturesantistress": (62, 118, 170), "energie": (200, 138, 40),
+          }
+          LIBELLES = {
+              "sommeil": "Sommeil", "systemenerveux": "Système nerveux", "fatiguementale": "Fatigue mentale",
+              "alimentation": "Alimentation & stress", "procrastination": "Procrastination",
+              "somatisation": "Signaux du corps", "blocagemental": "Clarté mentale",
+              "posturesantistress": "Anti-stress au travail", "energie": "Énergie",
+          }
+
+
+          def _etiquette_et_titre(d, theme, titre, police_grasse, marge, largeur, tailles, max_lignes):
+              accent = ACCENTS.get(theme, ACCENTS["systemenerveux"])
+              police_etq = charger_police(police_grasse, 26)
+              etq = LIBELLES.get(theme, "Bien-être").upper()
+              w = d.textlength(etq, font=police_etq)
+              clair = tuple(int(c + (255 - c) * 0.82) for c in accent)
+              d.rounded_rectangle([marge, 70, marge + w + 44, 70 + 50], radius=25, fill=clair)
+              d.text((marge + 22, 70 + 9), etq, font=police_etq, fill=accent)
+              y = 70 + 50 + 38
+              taille = tailles[0]
+              while taille > tailles[1]:
+                  police = charger_police(police_grasse, taille)
+                  lignes = couper_lignes(d, titre, police, largeur)
+                  if len(lignes) <= max_lignes:
+                      break
+                  taille -= 4
+              hl = int(taille * 1.16)
+              for ligne in lignes:
+                  d.text((marge, y), ligne, font=police, fill=ENCRE)
+                  y += hl
+              y += 22
+              d.rounded_rectangle([marge, y, marge + 120, y + 9], radius=5, fill=accent)
+              return y + 9, accent
+
+
+          def _recadrer_net(source, L, H):
+              # Garde la bande la plus nette (le sujet) plutôt que le centre, souvent flou
+              # sur les photos lifestyle à faible profondeur de champ.
+              r = max(L / source.width, H / source.height)
+              img = source.resize((round(source.width * r), round(source.height * r)), Image.LANCZOS)
+              x = (img.width - L) // 2
+              if img.height == H:
+                  return img.crop((x, 0, x + L, H))
+              bords = img.convert("L").filter(ImageFilter.FIND_EDGES)
+              pas = max(1, (img.height - H) // 12)
+              meilleur_y = max(range(0, img.height - H + 1, pas),
+                               key=lambda y: ImageStat.Stat(bords.crop((x, y, x + L, y + H))).mean[0])
+              return img.crop((x, meilleur_y, x + L, meilleur_y + H))
+
+
+          def _photo_arrondie(img, fond, x0, y0, x1, y1, rayon=34):
+              photo = _recadrer_net(Image.open(fond).convert("RGB"), x1 - x0, y1 - y0)
+              masque = Image.new("L", (x1 - x0, y1 - y0), 0)
+              ImageDraw.Draw(masque).rounded_rectangle([0, 0, x1 - x0 - 1, y1 - y0 - 1], radius=rayon, fill=255)
+              img.paste(photo, (x0, y0), masque)
+
+
+          def _pied(d, L, H, police_normale):
+              police = charger_police(police_normale, 30)
+              w = d.textlength(MARQUE, font=police)
+              d.text(((L - w) / 2, H - 78), MARQUE, font=police, fill=(110, 116, 132))
+
+
+          def _marqueur(d, style, xc, yc, r, num, accent, police_num):
+              d.ellipse([xc - r, yc - r, xc + r, yc + r], fill=accent)
+              if style == "numero":
+                  t = str(num)
+                  w = d.textlength(t, font=police_num)
+                  d.text((xc - w / 2, yc - r * 0.78), t, font=police_num, fill=(255, 255, 255))
+              else:
+                  d.line([(xc - r * 0.42, yc + r * 0.02), (xc - r * 0.1, yc + r * 0.36), (xc + r * 0.45, yc - r * 0.32)],
+                         fill=(255, 255, 255), width=7, joint="curve")
+
+
+          def dessiner_clair_infographie(titre, points, chemin_sortie, police_grasse, police_normale, fond, theme):
+              L, H, marge = 1000, 1500, 70
+              img = Image.new("RGB", (L, H), CREME)
+              d = ImageDraw.Draw(img)
+              y, accent = _etiquette_et_titre(d, theme, titre, police_grasse, marge, L - 2 * marge, (78, 52), 3)
+              y += 44
+              style = "numero" if re.match(r"\s*\d", titre) else "coche"
+              police_pt = charger_police(police_normale, 38)
+              police_num = charger_police(police_grasse, 34)
+              r, pad, hl = 30, 26, int(38 * 1.3)
+              x_txt = marge + pad + 2 * r + 24
+              larg_txt = L - marge - pad - x_txt
+              cartes = []
+              for p in points:
+                  lignes = couper_lignes(d, p, police_pt, larg_txt)
+                  cartes.append((lignes, max(2 * r, len(lignes) * hl) + 2 * pad))
+              espace = 20
+              h_cartes = sum(h for _, h in cartes) + espace * (len(cartes) - 1)
+              bas = H - 120
+              reste = bas - y - h_cartes
+              h_photo = min(reste - 40, 430) if fond else 0
+              if h_photo < 220:
+                  h_photo = 0
+              y += max(0, (reste - (h_photo + 40 if h_photo else 0)) // 2) if not h_photo else 0
+              for i, (lignes, h) in enumerate(cartes, start=1):
+                  d.rounded_rectangle([marge + 3, y + 6, L - marge + 3, y + h + 6], radius=26, fill=OMBRE)
+                  d.rounded_rectangle([marge, y, L - marge, y + h], radius=26, fill=CARTE)
+                  _marqueur(d, style, marge + pad + r, y + h / 2, r, i, accent, police_num)
+                  yt = y + (h - len(lignes) * hl) / 2 - 4
+                  for ligne in lignes:
+                      d.text((x_txt, yt), ligne, font=police_pt, fill=ENCRE)
+                      yt += hl
+                  y += h + espace
+              if h_photo:
+                  y0 = bas - h_photo
+                  _photo_arrondie(img, fond, marge, y0, L - marge, bas)
+              _pied(d, L, H, police_normale)
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+
+
+          def dessiner_clair_phrase(texte, chemin_sortie, police_grasse, police_normale, fond, theme):
+              L, H, marge = 1000, 1500, 70
+              img = Image.new("RGB", (L, H), CREME)
+              d = ImageDraw.Draw(img)
+              y, _ = _etiquette_et_titre(d, theme, texte, police_grasse, marge, L - 2 * marge, (92, 56), 5)
+              bas = H - 120
+              if fond and bas - (y + 50) >= 300:
+                  _photo_arrondie(img, fond, marge, y + 50, L - marge, bas)
+              _pied(d, L, H, police_normale)
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+
+
+          def texte_alternatif(pin, theme):
+              sujet = LIBELLES.get(theme, "bien-être").lower()
+              accroche = pin.get("texte_image") or pin["titre"]
+              if pin.get("points_image"):
+                  texte = f"Infographie {sujet} « {accroche} » : " + " ; ".join(pin["points_image"]) + "."
+              else:
+                  texte = f"Visuel {sujet} avec le message « {accroche} »."
+              return texte[:500]
 
 
           def attendre_en_ligne(url, essais=18, pause=5):
@@ -423,7 +551,6 @@ jobs:
           pin["description"] = corps_court + ((" " + queue) if queue else "")
 
           os.makedirs("images", exist_ok=True)
-          os.makedirs("videos", exist_ok=True)
           horodatage = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
           nom = "pin-" + horodatage + ".jpg"
           chemin = os.path.join("images", nom)
@@ -431,6 +558,7 @@ jobs:
           if pin.get("image_prete"):
               ajuster_sans_rogner(Image.open(pin["image_prete"]).convert("RGB"), 1000, 1500).save(chemin, "JPEG", quality=93)
               fond_etiquette = "prete:" + pin["image_prete"]
+              design = "prete"
               print("Thème détecté :", theme)
               print("Image prête utilisée telle quelle (pas de texte ajouté) :", pin["image_prete"])
           else:
@@ -444,58 +572,54 @@ jobs:
                       print("Fond généré par IA (OpenAI) pour le thème :", theme)
                   except Exception as e:
                       print("Échec de la génération IA, on retombe sur la banque de fonds :", e)
+              # Test A/B (29/09/2026) : alternance stricte entre le visuel clair (inspiré des
+              # meilleurs Idea Pins du compte) et l'ancien visuel sombre, notée dans
+              # historique.json ("design") pour comparer les statistiques après 2-3 semaines.
+              n_clair = sum(1 for h in historique if h.get("design") == "clair")
+              n_sombre = sum(1 for h in historique if h.get("design") == "sombre")
+              design = "clair" if n_clair <= n_sombre else "sombre"
               if not fond:
-                  fond = choisir_fond(theme, historique)
+                  fond = choisir_fond(theme, historique, min_largeur=800 if design == "clair" else 0)
                   fond_etiquette = fond
 
-              if pin.get("points_image"):
+              if design == "clair" and pin.get("points_image"):
+                  dessiner_clair_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, theme)
+              elif design == "clair":
+                  dessiner_clair_phrase(pin["texte_image"], chemin, police_grasse, police_normale, fond, theme)
+              elif pin.get("points_image"):
                   dessiner_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond)
               else:
                   dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond)
-              print("Thème détecté :", theme)
+              print("Thème détecté :", theme, "| visuel :", design)
               print("Fond utilisé :", fond_etiquette)
           print("Image créée :", chemin)
-
-          chemin_video = os.path.join("videos", "pin-" + horodatage + ".mp4")
-          try:
-              creer_video(chemin, chemin_video)
-              print("Vidéo créée :", chemin_video)
-          except Exception as e:
-              print("Échec génération vidéo (on continue avec l'image seule) :", e)
-              chemin_video = None
 
           if TEST:
               sys.exit(0)
 
-          historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
-                             "titre": pin["titre"], "image": chemin, "fond": fond_etiquette, "theme": theme})
-          json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-
-          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
-          for dossier in ("images", "videos"):
-              for ancien in os.listdir(dossier):
+          # pins.yml, videos.yml (et carousel.yml en manuel) poussent tous sur main.
+          def pousser_avec_rebase(essais=5):
+              for n in range(essais):
                   try:
-                      date_fichier = datetime.datetime.strptime(ancien[4:12], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
-                  except ValueError:
-                      continue
-                  if date_fichier < limite:
-                      os.remove(os.path.join(dossier, ancien))
+                      git("pull", "--rebase", "origin", "main")
+                      git("push", "origin", "HEAD:main")
+                      return
+                  except subprocess.CalledProcessError as e:
+                      print(f"Push refusé (essai {n + 1}/{essais}) :", (e.stderr or "")[:300])
+                      subprocess.run(["git", "rebase", "--abort"], capture_output=True)
+                      time.sleep(5 + 5 * n)
+              sys.exit("Impossible de pousser sur main après plusieurs essais.")
 
-          git("add", "-A", "images", "videos", HIST)
-          git("commit", "-m", "Nouveau pin : " + pin["titre"][:60])
-          git("push")
+          git("add", chemin)
+          git("commit", "-m", "Image du pin : " + pin["titre"][:60])
+          pousser_avec_rebase()
           sha = git("rev-parse", "HEAD")
+          if pin["titre"] in {h["titre"] for h in json.load(open(HIST, encoding="utf-8"))}:
+              sys.exit("Ce pin vient d'être publié par un autre run, publication annulée : " + pin["titre"])
           url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin}"
 
           if not attendre_en_ligne(url):
               sys.exit("L'image n'est pas accessible en ligne : " + url)
-
-          video_url = None
-          if chemin_video and os.path.exists(chemin_video):
-              video_url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin_video}"
-              if not attendre_en_ligne(video_url):
-                  print("Vidéo pas accessible en ligne, on envoie le pin en image seule :", video_url)
-                  video_url = None
 
           TABLEAUX = {
               "sommeil": "600175156531998232",
@@ -517,12 +641,79 @@ jobs:
           THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
           lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
 
-          envoi = {"titre": pin["titre"], "description": pin["description"],
-                   "image_url": url, "video_url": video_url or "", "lien": lien,
-                   "theme": theme, "tableau": TABLEAUX.get(theme, "600175156531995384")}
-          r = requests.post(os.environ["MAKE_WEBHOOK_URL"], json=envoi, timeout=60)
-          print("Réponse de Make :", r.status_code, r.text[:200])
-          if r.status_code >= 300:
-              sys.exit("Make a refusé l'envoi.")
-          print("Pin envoyé :", pin["titre"])
+          # Publication directe via l'API Composio (comme videos.yml) : permet le texte
+          # alternatif et la confirmation réelle du pin avant l'inscription à l'historique.
+          CLE = os.environ["COMPOSIO_API_KEY"]
+          entite = "pg-test-a2a2217a-e3a1-439a-aabd-cc16b6182094"
+          try:
+              comptes = requests.get(
+                  "https://backend.composio.dev/api/v3/connected_accounts",
+                  headers={"x-api-key": CLE}, params={"toolkit_slugs": "pinterest"}, timeout=30,
+              ).json().get("items", [])
+              actifs = [c for c in comptes if c.get("status") == "ACTIVE" and c.get("user_id")]
+              if actifs:
+                  entite = actifs[0]["user_id"]
+          except Exception as e:
+              print("Lecture des comptes connectés impossible, id par défaut utilisé :", e)
+
+          arguments = {
+              "board_id": TABLEAUX.get(theme, "600175156531995384"),
+              "title": pin["titre"],
+              "description": pin["description"][:800],
+              "alt_text": texte_alternatif(pin, theme),
+              "media_source": {"source_type": "image_url", "url": url},
+          }
+          if lien:
+              arguments["link"] = lien
+          r = requests.post(
+              "https://backend.composio.dev/api/v3.1/tools/execute/PINTEREST_CREATE_PIN",
+              headers={"x-api-key": CLE, "Content-Type": "application/json"},
+              json={"arguments": arguments, "entity_id": entite}, timeout=60,
+          )
+          print("Réponse Composio :", r.status_code, r.text[:300])
+          try:
+              donnee = r.json()
+          except Exception:
+              sys.exit("Réponse Composio illisible, pin non confirmé.")
+          pin_id = (donnee.get("data") or {}).get("id")
+          if r.status_code >= 300 or donnee.get("successful") is False or not pin_id:
+              sys.exit("Pinterest n'a pas confirmé la création du pin : " + str(donnee.get("error"))[:500])
+          print("Pin publié :", pin["titre"], "| pin_id :", pin_id)
+
+          # Le pin est en ligne : l'inscription à l'historique ne doit jamais être perdue.
+          entree = {"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+                    "titre": pin["titre"], "image": chemin, "fond": fond_etiquette, "theme": theme,
+                    "design": design, "pin_id": pin_id}
+          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
+          for n in range(6):
+              git("fetch", "origin", "main")
+              git("reset", "--hard", "origin/main")
+              hist = json.load(open(HIST, encoding="utf-8"))
+              if pin["titre"] not in {h["titre"] for h in hist}:
+                  hist.append(entree)
+              json.dump(hist, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+              for dossier in ("images", "videos"):
+                  if not os.path.isdir(dossier):
+                      continue
+                  for ancien in os.listdir(dossier):
+                      try:
+                          date_fichier = datetime.datetime.strptime(ancien[4:12], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
+                      except ValueError:
+                          continue
+                      if date_fichier < limite:
+                          os.remove(os.path.join(dossier, ancien))
+              git("add", "-A", "images", HIST)
+              if os.path.isdir("videos"):
+                  git("add", "-A", "videos")
+              if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
+                  break
+              git("commit", "-m", "Nouveau pin : " + pin["titre"][:60])
+              try:
+                  git("push", "origin", "HEAD:main")
+                  break
+              except subprocess.CalledProcessError as e:
+                  print(f"Push historique refusé (essai {n + 1}/6) :", (e.stderr or "")[:300])
+                  time.sleep(5 + 5 * n)
+          else:
+              sys.exit(f"PIN PUBLIÉ ({pin_id}) MAIS HISTORIQUE NON ENREGISTRÉ : ajouter « {pin['titre']} » dans {HIST}")
           EOF

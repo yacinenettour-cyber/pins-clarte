@@ -186,6 +186,16 @@ Validé par simulation locale complète (dépôt distant factice, clone superfic
 
 **Déclenchement vidéo réparé (29/09/2026)** : via l'API cron-job.org (clé fournie par l'utilisateur), constat qu'il n'existait **qu'une seule tâche**, « Pins Clarté Mentale » (id 8503205, `pins.yml`, 7h07, 8h07, 9h07, 10h07, 12h07, 14h07, 16h07, 18h07, 20h07, 22h07 Europe/Paris) — aucune tâche vidéo. Tâche créée par Claude avec l'autorisation de l'utilisateur : « Vidéo Pinterest 18h30 » (id 8537376, `videos.yml`, tous les jours 18h30 Europe/Paris, mêmes en-têtes/corps que la tâche pins), relue et vérifiée active. `videos.yml` refuse en plus de publier une 2e vidéo le même jour (heure de Paris).
 
+## 18. Nouveau visuel en test A/B + pins publiés via Composio avec texte alternatif (29/09/2026)
+
+**Constat (analyse des 217 pins, 90 jours)** : les Idea Pins manuels (janvier–mai, 158 pins) ont une médiane de 232 impressions contre 26 pour les pins simples ; les 46 pins automatiques publiés depuis le 25/09 cumulaient 764 impressions et 0 enregistrement (recul de 4 jours seulement) ; aucun n'avait de texte alternatif (64 % des anciens pins en avaient) ; le visuel automatique (photo sombre, texte au milieu) s'éloignait des infographies claires qui ont fait le compte ; 69 % des impressions viennent du mobile.
+
+**Décision utilisateur** : « Commence par le 2 et le 3, je t'autorise » (nouveau visuel + texte alternatif).
+
+**Mise en œuvre** : visuel clair (voir `CLAUDE.md` règle 8) en **alternance stricte** avec l'ancien, champ `design` dans `historique.json` — choix d'un test plutôt qu'un basculement complet, l'utilisateur ayant demandé plus tôt de tester avant de généraliser un format. Publication via Composio (texte alternatif + confirmation réelle du pin, comme les vidéos). Validé par rendu d'exemples (6 thèmes), simulation de 2 runs consécutifs (alternance clair→sombre, commits concurrents préservés) et d'un échec (rien inscrit).
+
+**À faire vers le 15-20/10/2026** : comparer impressions/enregistrements par `design` (pins publiés depuis le 29/09) et garder le meilleur.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
