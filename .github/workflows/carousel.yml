@@ -368,7 +368,9 @@ jobs:
                       "source_type": "multiple_image_urls",
                       "items": [{"url": u} for u in urls],
                   },
-              }
+              },
+              "connected_account_id": "pinterest_caroba-pectic",
+              "entity_id": "default",
           }
           r = requests.post(
               "https://backend.composio.dev/api/v3.1/tools/execute/PINTEREST_CREATE_PIN",
