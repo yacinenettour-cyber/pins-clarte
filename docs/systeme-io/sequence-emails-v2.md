@@ -1,6 +1,8 @@
 # Séquence e-mails v2 — « Quand le cerveau refuse de dormir »
 
-Rédigée le 29/09/2026 à partir de la lecture (API systeme.io, lecture seule) de la campagne actuelle « Séquence Lead Magnet » (13 e-mails). À copier-coller dans systeme.io : Emails → Campagnes → Séquence Lead Magnet.
+Rédigée le 29/09/2026 à partir de la lecture (API systeme.io) de la campagne « Séquence Lead Magnet » (13 e-mails).
+
+**État : appliquée le 29/09/2026 via l'API systeme.io, avec l'accord de l'utilisateur.** Les 10 e-mails remplacent les positions 1 à 10 (mêmes identifiants d'étapes), éditeur classique, envoi à 19h (sauf le 1er : immédiat), expéditeur « Yacine – Clarté Mentale ». Les anciens 11 (Sophie), 12 et 13 sont désactivés. Sauvegarde intégrale de la v1 : `archives/sequence-v1-2026-09-29.json`. Relu depuis l'API après écriture : jours J0-1-2-3-4-5-6-8-10-12, aucune mention « minuit », « Sophie », « vidéo ». **Automatisation « Nouvelle vente » impossible** : le forfait gratuit est limité à 1 règle et 1 tag, déjà utilisés par l'inscription au guide. Elle est remplacée par un P.S. « si tu as déjà rejoint le programme, ignore ce message » dans les e-mails 6 à 10. À créer dès le passage à un forfait payant. **Reste à faire par l'utilisateur** (impossible sans risque via l'API) : retirer l'image de témoignages de la page de vente, et compresser le PDF du guide.
 
 ## 1. Ce qui ne va pas dans la séquence actuelle (vérifié)
 
