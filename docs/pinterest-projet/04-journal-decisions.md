@@ -98,6 +98,14 @@ Ce fichier retrace le contexte et le raisonnement derrière chaque règle établ
 
 **Vérification avant déploiement** : rendu réel testé (pas juste le prototype) à partir du code exact de `pins.yml`, sur plusieurs fonds (sombre et clair) et plusieurs thèmes (posturesantistress, systemenerveux, procrastination, alimentation) — lisible et cohérent avec la charte dans tous les cas testés.
 
+## 11. Clarification du rythme des vidéos : 1×/jour (7×/semaine) à 18h30 heure de Paris (29/09/2026)
+
+**Déclencheur** : demande de préciser l'horaire de publication des Video Pins. Confirmation obtenue : 1 vidéo par jour, tous les jours (7×/semaine), à 18h30 heure de Paris — pas un rythme hebdomadaire réduit.
+
+**Action** : `01-architecture-technique.md` mis à jour (l'ancien horaire indicatif `~19h37 UTC` remplacé par `18h30 heure de Paris`, avec la conversion UTC pour l'été/hiver si le fuseau `Europe/Paris` n'est pas réglable directement dans cron-job.org).
+
+**Point important** : `videos.yml` n'a pas de déclencheur `schedule` natif GitHub Actions — seulement `workflow_dispatch` (voir §"Déclenchement" de `01-architecture-technique.md`). L'horaire réel dépend entièrement de la tâche configurée côté cron-job.org (service externe), que Claude Code n'a pas les moyens d'atteindre ou de modifier depuis cette session (aucun connecteur cron-job.org disponible). **Reste une action manuelle pour l'utilisateur** : créer/ajuster dans son tableau de bord cron-job.org une tâche qui appelle l'endpoint `workflow_dispatch` de `videos.yml` une fois par jour à 18h30 (Europe/Paris si l'option de fuseau existe, sinon 16h30 UTC en été / 17h30 UTC en hiver).
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
