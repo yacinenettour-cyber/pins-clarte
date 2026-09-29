@@ -18,7 +18,7 @@ GitHub Actions (pins.yml / videos.yml) sur la branche "main"
         └─ envoie à Make.com → publication sur Pinterest
 ```
 
-Rien de tout cela ne dépend d'une session Claude Code active. Le compte publie 7×/jour pour les pins et vise 1×/jour pour les vidéos, **du moment que `main` contient une banque propre**.
+Rien de tout cela ne dépend d'une session Claude Code active. Le compte publie 10×/jour pour les pins et vise 1×/jour pour les vidéos, **du moment que `main` contient une banque propre**.
 
 ## 2. Ce qui est désormais 100 % automatique
 

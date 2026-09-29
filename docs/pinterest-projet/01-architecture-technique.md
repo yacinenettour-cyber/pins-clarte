@@ -12,7 +12,7 @@ Un prompt système a été rédigé pour un futur module IA dans un scénario Ma
 
 ## Déclenchement
 
-- **Pins** : `.github/workflows/pins.yml`, déclenché 7×/jour (6h07, 8h07, 10h07, 12h07, 14h07, 16h07, 18h07 UTC) par un appel API externe (cron-job.org, gratuit) vers l'endpoint `workflow_dispatch` de GitHub Actions. Le déclencheur natif `schedule` de GitHub Actions n'est **pas** utilisé (retards/oublis possibles sous charge).
+- **Pins** : `.github/workflows/pins.yml`, déclenché 10×/jour (constaté dans les exécutions Make du 26 au 29/09/2026 : 5h07, 6h07, 7h07, 8h07, 10h07, 12h07, 14h07, 16h07, 18h07, 20h07 UTC) par un appel API externe (cron-job.org, gratuit) vers l'endpoint `workflow_dispatch` de GitHub Actions. Le déclencheur natif `schedule` de GitHub Actions n'est **pas** utilisé (retards/oublis possibles sous charge).
 - **Vidéos** : `.github/workflows/videos.yml`, 1×/jour (7×/semaine) à 18h30 heure de Paris, même mécanisme cron-job.org, endpoint différent. cron-job.org gère le fuseau `Europe/Paris` directement sur la tâche si l'option est disponible (bascule CEST/CET automatique) ; sinon, régler manuellement 16h30 UTC en été (CEST) et 17h30 UTC en hiver (CET).
 - **Mode test** disponible sur les deux workflows (input `mode: test` au lancement manuel) : génère l'image/vidéo sans publier ni consommer d'élément de la banque.
 
@@ -28,7 +28,7 @@ Un prompt système a été rédigé pour un futur module IA dans un scénario Ma
 8. Envoie titre / description / URL image / URL vidéo / lien / thème / ID du tableau Pinterest à `MAKE_WEBHOOK_URL` (webhook Make.com), qui publie réellement sur Pinterest.
 9. Ajoute l'entrée à `historique.json` (anti-répétition) et purge les images/vidéos de plus de 30 jours du dépôt.
 
-Le pipeline carousel (`carousel.yml`, depuis le 29/09/2026, substitut Idea Pin 1×/jour) ne passe **pas** par Make : il publie directement via l'API REST Composio (`PINTEREST_CREATE_PIN`, secret `COMPOSIO_API_KEY`), choisit un pin non publié ayant `points_image`, génère une couverture + une slide par point (fond différent par slide), vérifie que Composio renvoie bien un id de pin, puis inscrit l'entrée dans `historique.json` avec rebase/nouvelle tentative (évite la republication par `pins.yml`). Détail : `04-journal-decisions.md` section 15.
+Le pipeline carousel (`carousel.yml`, créé le 29/09/2026 comme substitut Idea Pin ; **plus de déclenchement quotidien depuis la décision du même jour : 10 pins + 1 vidéo/jour uniquement**, lancement manuel seulement) ne passe **pas** par Make : il publie directement via l'API REST Composio (`PINTEREST_CREATE_PIN`, secret `COMPOSIO_API_KEY`), choisit un pin non publié ayant `points_image`, génère une couverture + une slide par point (fond différent par slide), vérifie que Composio renvoie bien un id de pin, puis inscrit l'entrée dans `historique.json` avec rebase/nouvelle tentative (évite la republication par `pins.yml`). Détail : `04-journal-decisions.md` section 15.
 
 Le pipeline vidéo (`videos.yml`) utilise ses propres fichiers (`videos.json`, `historique_videos.json`, `videos_fonds/`) et la même règle `THEMES_SANS_LIEN`. **Depuis le 29/09/2026, il ne passe plus par Make** (le scénario Make « Pinterest Video Pins » n'a jamais publié une seule vidéo : formules invalides, désactivé par Make le 26/09 — voir `04-journal-decisions.md` section 16) : il publie via l'API REST Composio comme `carousel.yml` — `PINTEREST_REGISTER_MEDIA` → envoi du .mp4 en multipart vers `upload_url` avec `upload_parameters` → `PINTEREST_GET_MEDIA` jusqu'au statut `succeeded` → `PINTEREST_CREATE_PIN` (`source_type: video_id`, couverture envoyée en base64). L'entrée n'est inscrite dans `historique_videos.json` qu'une fois l'id du pin reçu.
 
@@ -49,7 +49,7 @@ Le pipeline vidéo (`videos.yml`) utilise ses propres fichiers (`videos.json`, `
 | `videopins/` | Video Pins déjà générées (image de couverture + .mp4) |
 | `.github/workflows/pins.yml` | Workflow de publication des pins classiques |
 | `.github/workflows/videos.yml` | Workflow de publication des Video Pins |
-| `.github/workflows/carousel.yml` | Workflow de publication du carousel quotidien (substitut Idea Pin, via Composio) |
+| `.github/workflows/carousel.yml` | Workflow carousel (substitut Idea Pin, via Composio) — lancement manuel uniquement, pas de cron |
 | `prompts/system-prompt-pin-seo.md` | Prompt système pour un futur module IA Make (flux image→texte, non connecté) |
 | `CLAUDE.md` | Résumé opérationnel des règles, chargé automatiquement par Claude Code sur ce dépôt |
 | `README.md` | Documentation complète et détaillée du fonctionnement et des règles |

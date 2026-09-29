@@ -42,7 +42,7 @@ Voir `02-tableaux-pinterest.md` pour le détail board par board, et `03-regles-e
 
 ## Fonctionnement en une phrase
 
-Un workflow GitHub Actions (déclenché 7×/jour pour les pins, 1×/jour pour les vidéos par un service cron externe) prend le prochain pin non publié dans `pins.json`, génère ou choisit son image, l'envoie à un webhook Make.com qui publie sur Pinterest — sans aucune vérification de pertinence automatique, d'où l'importance des règles éditoriales appliquées **avant** l'ajout de tout contenu à la banque. Détail complet dans `01-architecture-technique.md`.
+Un workflow GitHub Actions (déclenché 10×/jour pour les pins, 1×/jour pour les vidéos par un service cron externe) prend le prochain pin non publié dans `pins.json`, génère ou choisit son image, l'envoie à un webhook Make.com qui publie sur Pinterest — sans aucune vérification de pertinence automatique, d'où l'importance des règles éditoriales appliquées **avant** l'ajout de tout contenu à la banque. Détail complet dans `01-architecture-technique.md`.
 
 ## Historique de ce projet
 

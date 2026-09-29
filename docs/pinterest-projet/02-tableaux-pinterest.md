@@ -122,6 +122,6 @@ Chaque thème du compte a son propre tableau Pinterest, identifié par un ID fix
 | Alimentation et stress | 600175156532001498 | ❌ | 8 / 0 / 8 | 3 / 0 | 37 |
 | **Total** | | | **220 / 32 / 179*** | **30 / 4*** | **192** |
 
-*Nombres de pins/vidéos publiés en légère évolution continue, le pipeline publie automatiquement 7×/jour ; chiffres à jour au 27/09/2026 en fin de session d'audit (voir aussi `00-vue-ensemble.md` pour un état légèrement antérieur, 41 pins publiés). Colonne "Lien formation" mise à jour le 28/09/2026 pour `energie`/`fatiguementale` (voir `04-journal-decisions.md` section 8) ; le reste du tableau (volumes) n'a pas été recalculé depuis et est donné à titre indicatif — se fier à `pins.json`/`fonds_themes.json` pour les chiffres exacts.
+*Nombres de pins/vidéos publiés en légère évolution continue, le pipeline publie automatiquement 10 pins/jour + 1 vidéo/jour ; chiffres à jour au 27/09/2026 en fin de session d'audit (voir aussi `00-vue-ensemble.md` pour un état légèrement antérieur, 41 pins publiés). Colonne "Lien formation" mise à jour le 28/09/2026 pour `energie`/`fatiguementale` (voir `04-journal-decisions.md` section 8) ; le reste du tableau (volumes) n'a pas été recalculé depuis et est donné à titre indicatif — se fier à `pins.json`/`fonds_themes.json` pour les chiffres exacts.
 
 **Déséquilibre à surveiller** : le board Sommeil concentre à lui seul ~51 % de la banque de pins. Ce n'est pas une erreur (c'est le cœur du compte), mais ça mérite un regard si l'objectif devient de développer davantage les autres boards.
