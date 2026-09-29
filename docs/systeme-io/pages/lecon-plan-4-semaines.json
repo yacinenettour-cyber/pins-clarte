@@ -1,0 +1,95 @@
+{
+ "palette": {
+  "requestedColor": "#3D4F8F",
+  "cornerStyle": "soft",
+  "fontPair": "editorial",
+  "cardLayout": null
+ },
+ "sections": [
+  {
+   "tone": "hero",
+   "backgroundImageDescription": null,
+   "rows": [
+    {
+     "columns": [
+      {
+       "size": 12,
+       "blocks": [
+        {
+         "type": "Headline",
+         "text": "Ton plan des 4 prochaines semaines",
+         "level": "h1"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Le calme devient stable avec la répétition, pas avec l'intensité. Voici une façon simple d'enchaîner les modules sur un mois.</p>"
+        },
+        {
+         "type": "Headline",
+         "text": "Semaine 1 : apaiser",
+         "level": "h2"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Chaque soir, un exercice du module <strong>Apaiser le système nerveux</strong> : respiration lente ou relâchement du corps, 2 à 5 minutes.</p>"
+        },
+        {
+         "type": "Headline",
+         "text": "Semaine 2 : laisser passer les pensées",
+         "level": "h2"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Garde ton exercice de la semaine 1 et ajoute la technique du module <strong>Sortir des ruminations</strong> les soirs où les pensées tournent.</p>"
+        },
+        {
+         "type": "Headline",
+         "text": "Semaine 3 : installer ton rituel",
+         "level": "h2"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Construis ton rituel avec le module <strong>Rituel du soir</strong> : même moment, même ordre, 5 à 10 minutes.</p>"
+        },
+        {
+         "type": "Headline",
+         "text": "Semaine 4 : consolider",
+         "level": "h2"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Garde ton rituel, même les soirs où tout va bien, et appuie-toi sur le module <strong>Consolider le sommeil dans le temps</strong> pour les réveils nocturnes.</p>"
+        },
+        {
+         "type": "Headline",
+         "text": "Pour t'aider à tenir",
+         "level": "h2"
+        },
+        {
+         "type": "BulletList",
+         "items": [
+          "Chaque matin, note en une ligne comment s'est passée ta soirée",
+          "Regarde la tendance sur la semaine, pas une seule nuit",
+          "Soir très difficile : lance l'audio express et ne fais rien d'autre",
+          "Un soir sauté ? Reprends simplement le lendemain"
+         ],
+         "icon": "circle-check"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Au bout de ces 4 semaines, écris-moi à yavo88@hotmail.com pour me dire ce qui a changé : ton retour m'aide à améliorer le programme.</p>"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

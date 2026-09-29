@@ -1,0 +1,76 @@
+{
+ "palette": {
+  "requestedColor": "#3D4F8F",
+  "cornerStyle": "soft",
+  "fontPair": "editorial",
+  "cardLayout": null
+ },
+ "sections": [
+  {
+   "tone": "hero",
+   "backgroundImageDescription": null,
+   "rows": [
+    {
+     "columns": [
+      {
+       "size": 12,
+       "blocks": [
+        {
+         "type": "Headline",
+         "text": "Commence ici : comment suivre le programme",
+         "level": "h1"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Bienvenue. Ce programme a été conçu pour les soirs où le mental refuse de s'arrêter. Il ne demande ni effort ni matériel : quelques minutes par soir suffisent.</p>"
+        },
+        {
+         "type": "Image",
+         "imageDescription": "calm bedroom soft lamp night",
+         "altText": "Chambre calme le soir, lumière douce"
+        },
+        {
+         "type": "Headline",
+         "text": "Dans quel ordre suivre les modules",
+         "level": "h2"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<ol><li><strong>Apaiser le système nerveux</strong> : faire redescendre la pression le soir même.</li><li><strong>Sortir des ruminations</strong> : ne plus lutter contre les pensées en boucle.</li><li><strong>Rituel du soir</strong> : installer 5 à 10 minutes de calme chaque soir.</li><li><strong>Consolider le sommeil dans le temps</strong> : pour que le calme tienne.</li></ol><p>Même si la liste des modules s'affiche dans un autre ordre, suis celui-ci. Le bonus <strong>Audio express</strong> est à garder pour les soirs de forte pression.</p>"
+        },
+        {
+         "type": "Headline",
+         "text": "Comment l'utiliser au quotidien",
+         "level": "h2"
+        },
+        {
+         "type": "BulletList",
+         "items": [
+          "Un seul exercice par soir suffit",
+          "5 à 10 minutes, au lit ou juste avant",
+          "Ne cherche pas à dormir à tout prix : cherche le calme",
+          "Un soir moins bon ne remet rien en cause",
+          "Reviens aux modules quand tu veux : l'accès est à vie"
+         ],
+         "icon": "moon"
+        },
+        {
+         "type": "Headline",
+         "text": "Si tu as une question",
+         "level": "h2"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<p>Écris-moi à yavo88@hotmail.com, je lis tous les messages. Et si le programme ne t'apporte aucune amélioration, même légère, tu as 7 jours après l'achat pour demander un remboursement, sans justification.</p><p>Ce programme ne remplace pas un avis médical. Si tes troubles du sommeil persistent, parles-en à un professionnel de santé.</p>"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
