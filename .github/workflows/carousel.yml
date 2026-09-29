@@ -370,7 +370,7 @@ jobs:
                   },
               },
             
-              "entity_id": "default",
+              "entity_id": "yacinenettour@gmail.com",
           }
           r = requests.post(
               "https://backend.composio.dev/api/v3.1/tools/execute/PINTEREST_CREATE_PIN",
