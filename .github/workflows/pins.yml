@@ -67,7 +67,7 @@ jobs:
 
           def couper_lignes(dessin, texte, police, largeur_max):
               lignes, ligne = [], ""
-              for mot in texte.split():
+              for mot in re.split(r"(?<!«)\s+(?![?!:;»])", texte.strip()):
                   essai = (ligne + " " + mot).strip()
                   if dessin.textlength(essai, font=police) <= largeur_max:
                       ligne = essai

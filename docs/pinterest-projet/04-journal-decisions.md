@@ -210,6 +210,19 @@ Validé par simulation locale complète (dépôt distant factice, clone superfic
 
 **À prévoir mi-novembre** : nouvelle recharge avec les contenus de fin d'année (stress des fêtes, publiés ~45 jours avant) et de janvier (reprise, résolutions, procrastination).
 
+## 20. Premiers kits Idea Pins à publier à la main (29/09/2026)
+
+**Pourquoi** : les Idea Pins manuels portent le compte (médiane 232 impressions contre 26), et l'API ne permet pas d'en créer. L'utilisateur les publie depuis l'appli, à partir de kits prêts à l'emploi.
+
+**Contenu** : `kits_idea_pins/` — 3 kits de 7 slides 1080×1920 (couverture, 5 étapes, récapitulatif), visuel clair du compte, **une photo différente par slide, choisie à la main pour correspondre à chaque étape** (18 photos distinctes), texte jamais sur la photo (contrôlé). Chaque kit a un `texte.txt` : titre, description (≤ 500 car.), texte alternatif, tableau et règle de lien (procrastination : pas de lien).
+1. « Décompresser après le travail : 5 étapes pour laisser la journée à la porte » (Vivre sans stress, lien oui)
+2. « Du « demain » au « maintenant » : 5 étapes pour sortir de la procrastination » (Procrastination, **pas de lien**)
+3. « Tête pleine le soir : 5 étapes pour faire de la place avant de dormir » (Calmer l'esprit le soir, lien oui)
+
+Titres vérifiés distincts de la banque, de l'historique et des pins en ligne (similarité max. 0,57). **Les futures recharges de `pins.json` doivent aussi être comparées à ces titres de kits** (publiés hors pipeline, donc absents de `historique.json`).
+
+**Correctif typographique (pipeline + kits)** : `couper_lignes()` ne coupe plus avant « ? ! : ; » ni après « (« Tête pleine le soir / ? » évité) ; contrôle refait sur toute la banque restante (254 pins × 2 visuels = 508 rendus, 0 chevauchement).
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
