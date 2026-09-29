@@ -13,7 +13,7 @@ Un prompt système a été rédigé pour un futur module IA dans un scénario Ma
 ## Déclenchement
 
 - **Pins** : `.github/workflows/pins.yml`, déclenché 7×/jour (6h07, 8h07, 10h07, 12h07, 14h07, 16h07, 18h07 UTC) par un appel API externe (cron-job.org, gratuit) vers l'endpoint `workflow_dispatch` de GitHub Actions. Le déclencheur natif `schedule` de GitHub Actions n'est **pas** utilisé (retards/oublis possibles sous charge).
-- **Vidéos** : `.github/workflows/videos.yml`, prévu pour 1×/jour (~19h37 UTC), même mécanisme cron-job.org, endpoint différent.
+- **Vidéos** : `.github/workflows/videos.yml`, 1×/jour (7×/semaine) à 18h30 heure de Paris, même mécanisme cron-job.org, endpoint différent. cron-job.org gère le fuseau `Europe/Paris` directement sur la tâche si l'option est disponible (bascule CEST/CET automatique) ; sinon, régler manuellement 16h30 UTC en été (CEST) et 17h30 UTC en hiver (CET).
 - **Mode test** disponible sur les deux workflows (input `mode: test` au lancement manuel) : génère l'image/vidéo sans publier ni consommer d'élément de la banque.
 
 ## Étapes du pipeline pins (`pins.yml`)
