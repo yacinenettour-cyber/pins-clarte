@@ -57,7 +57,7 @@ Autres problèmes :
 
 À **désactiver/supprimer** : actuels 2, 5, 6 (fausse urgence), 7 (doublon + lien cassé), 11 (Sophie, témoignage inventé).
 
-Lien de tous les boutons : `https://lp.contactapaisement-mental.fr/accesformation`
+Lien de tous les boutons (e-mails 5 à 10 et newsletter 5366813) : `https://lp.contactapaisement-mental.fr/0e9ef918`, la nouvelle page de vente sans témoignages (depuis le 29/09/2026 ; avant : `/accesformation`, puis directement la page de paiement `/paiement-anti-stress?productQuantity=1`).
 
 ---
 
