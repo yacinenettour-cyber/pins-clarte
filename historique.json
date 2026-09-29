@@ -455,5 +455,12 @@
   "theme": "energie",
   "format": "carousel",
   "pin_id": "600175087889887532"
+ },
+ {
+  "date": "2026-09-29T12:08+00:00",
+  "titre": "3 pensées automatiques qui déclenchent la procrastination",
+  "image": "images/pin-20260929-120821.jpg",
+  "fond": "fonds/fond-119.jpg",
+  "theme": "procrastination"
  }
 ]
