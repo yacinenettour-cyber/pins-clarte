@@ -9,6 +9,10 @@ Rédigé le 29/09/2026. **Modèle à compléter, pas un avis juridique** : rempl
 - Hébergeur (vérifié sur systeme.io/privacy-policy) : **ITACWT Limited, 2 Cruise Park Rise, Tyrrelstown, Dublin 15, Irlande**.
 - Vente de contenu numérique à des particuliers : il faut des CGV accessibles avant l'achat, une politique de confidentialité (les e-mails sont collectés), un médiateur de la consommation, et une case à cocher de renonciation au droit de rétractation pour un accès immédiat.
 
+## État (29/09/2026, soir)
+
+**Page créée et remplie via l'API** (l'API accepte l'ajout d'une page d'information malgré la limite de l'interface du forfait gratuit) : https://lp.contactapaisement-mental.fr/0f1d6dac — étape « Mentions légales, CGV et confidentialité » (id 25634497, pageId 45140167) du tunnel « Page de vente ». Contenu = sections 1 à 3 ci-dessous, vérifié en ligne. Reste : remplacer les `[À COMPLÉTER]` (SIRET, adresse, médiateur, TVA) — renvoyer le contenu complet via `PUT /api/page-editor/pages/45140167/save` — puis relier la page depuis le pied de la page de paiement (éditeur uniquement) et activer la case à cocher.
+
 ## Où les mettre dans systeme.io (forfait gratuit : pas de nouvelle page)
 
 Le forfait gratuit ne permet pas d'ajouter de page. On **regroupe tout dans la page « Mentions légales » existante** (`/mentions-lgales`), déjà reliée au pied de la page de paiement :
