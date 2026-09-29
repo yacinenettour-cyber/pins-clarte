@@ -175,7 +175,7 @@ Validé par simulation locale complète (dépôt distant factice, clone superfic
 **Correctifs** :
 1. Première vidéo réellement publiée, en session : « La charge mentale des petites tâches… » (pin `600175087889888616`, tableau fatigue mentale, sans lien) — chaîne REGISTER_MEDIA → envoi S3 (204) → GET_MEDIA (`processing` puis `succeeded`) → CREATE_PIN validée en réel.
 2. `historique_videos.json` : les 4 vidéos jamais publiées retirées (elles repasseront dans la rotation), `pin_id` ajouté à la vidéo publiée.
-3. Nouvelle version de `videos.yml` (publication Composio, inscription à l'historique seulement après id de pin reçu, push avec nouvelle tentative) — validée par simulation locale (succès, échec de traitement Pinterest, échec de création), **à coller par l'utilisateur** (fichiers workflow non poussables depuis la session).
+3. Nouvelle version de `videos.yml` (publication Composio, inscription à l'historique seulement après id de pin reçu, push avec nouvelle tentative) — validée par simulation locale (succès, échec de traitement Pinterest, échec de création), **poussée sur `main` par Claude avec l'autorisation explicite de l'utilisateur** (commit `91e2042`), puis run en mode `test` réussi (vidéo générée, rien publié). Première publication automatique réelle attendue au prochain déclenchement de 18h30.
 4. Scénario Make vidéo laissé désactivé, non modifié : plus rien ne lui envoie de données une fois `videos.yml` remplacé. Ne pas le réactiver (il republierait les 5 envois en file, dont une vidéo désormais publiée).
 
 ## 17. Rythme fixé : 10 pins + 1 vidéo par jour, carousel quotidien arrêté (29/09/2026)
