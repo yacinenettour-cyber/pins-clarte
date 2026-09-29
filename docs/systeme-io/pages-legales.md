@@ -28,7 +28,7 @@ Le forfait gratuit ne permet pas d'ajouter de page. On **regroupe tout dans la p
 
 **Éditeur du site**
 Yacine Nettour, entrepreneur individuel (EI), sous le nom commercial « Clarté Mentale »
-Adresse : [À COMPLÉTER : adresse postale complète ou adresse de domiciliation]
+Adresse : 1 avenue Antoine Véran, 06100 Nice, France
 SIREN : 822 033 577 — SIRET : 822 033 577 00021
 N° de TVA intracommunautaire : FR00 822 033 577
 E-mail : yavo88@hotmail.com
@@ -51,7 +51,7 @@ Les textes, visuels, audios et vidéos de ce site et de la formation sont proté
 ## 2. Conditions générales de vente (CGV)
 
 **Article 1 — Vendeur**
-Yacine Nettour, entrepreneur individuel (EI), nom commercial « Clarté Mentale », [adresse : À COMPLÉTER], SIRET 822 033 577 00021, e-mail : yavo88@hotmail.com.
+Yacine Nettour, entrepreneur individuel (EI), nom commercial « Clarté Mentale », 1 avenue Antoine Véran, 06100 Nice, France, SIRET 822 033 577 00021, e-mail : yavo88@hotmail.com.
 
 **Article 2 — Objet**
 Les présentes CGV s'appliquent à la vente en ligne du programme numérique « Quand le cerveau refuse de dormir » à des particuliers. Toute commande implique leur acceptation.
@@ -94,7 +94,7 @@ Les présentes CGV sont soumises au droit français.
 ## 3. Politique de confidentialité
 
 **Responsable du traitement**
-Yacine Nettour, entrepreneur individuel (EI), « Clarté Mentale », [adresse : À COMPLÉTER], e-mail : yavo88@hotmail.com.
+Yacine Nettour, entrepreneur individuel (EI), « Clarté Mentale », 1 avenue Antoine Véran, 06100 Nice, France, e-mail : yavo88@hotmail.com.
 
 **Données collectées**
 - Inscription au guide gratuit : adresse e-mail, prénom, pays.
