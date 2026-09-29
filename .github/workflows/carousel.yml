@@ -359,7 +359,7 @@ jobs:
           board_id = TABLEAUX.get(theme, "600175156531995384")
 
           payload = {
-                    diag = requests.get(
+                        diag = requests.get(
               "https://backend.composio.dev/api/v3/connected_accounts",
               headers={"x-api-key": os.environ["COMPOSIO_API_KEY"]},
               params={"toolkit_slugs": "pinterest"},
@@ -367,7 +367,6 @@ jobs:
           )
           print("DIAGNOSTIC connected_accounts :", diag.status_code, diag.text[:2000])
 
-              "arguments": {
                   "board_id": board_id,
                   "title": titre_pin,
                   "description": pin["description"][:800],
