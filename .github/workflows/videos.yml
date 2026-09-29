@@ -34,13 +34,13 @@ jobs:
       - name: Créer et envoyer un Video Pin
         env:
           TEST: ${{ github.event.inputs.mode == 'test' && '1' || '' }}
-          MAKE_WEBHOOK_URL_VIDEO: ${{ secrets.MAKE_WEBHOOK_URL_VIDEO }}
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
           LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
         run: |
           git config user.name "robot-pins"
           git config user.email "robot-pins@users.noreply.github.com"
           python - <<'EOF'
-          import os, json, subprocess, sys, datetime, time
+          import os, json, subprocess, sys, datetime, time, base64
           import requests
           from PIL import Image
 
@@ -139,16 +139,6 @@ jobs:
                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(FPS), sortie])
               return sortie
 
-          def attendre_en_ligne(url, essais=18, pause=5):
-              for _ in range(essais):
-                  try:
-                      if requests.get(url, timeout=15).status_code == 200:
-                          return True
-                  except Exception:
-                      pass
-                  time.sleep(pause)
-              return False
-
           def choisir_video_equilibree(restants, historique):
               # Meme logique de rotation par theme que pins.yml : evite qu'un
               # theme surrepresente dans videos.json monopolise plusieurs jours
@@ -204,31 +194,6 @@ jobs:
           if TEST:
               sys.exit(0)
 
-          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
-          for ancien in os.listdir("videopins"):
-              try:
-                  date_fichier = datetime.datetime.strptime(ancien[9:17], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
-              except ValueError:
-                  continue
-              if date_fichier < limite and os.path.join("videopins", ancien) not in (nom_video, nom_cover):
-                  os.remove(os.path.join("videopins", ancien))
-
-          git("add", "-A", "videopins")
-          historique.append({"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
-                              "id": video["id"], "titre": video["titre"], "video": nom_video,
-                              "cover": nom_cover, "theme": video["theme"]})
-          json.dump(historique, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-          git("add", HIST)
-          git("commit", "-m", "Nouvelle video : " + video["titre"][:60])
-          git("push")
-          sha = git("rev-parse", "HEAD")
-
-          url_video = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{nom_video}"
-          url_cover = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{nom_cover}"
-
-          if not attendre_en_ligne(url_cover) or not attendre_en_ligne(url_video):
-              sys.exit("Fichiers pas accessibles en ligne.")
-
           TABLEAUX = {
               "sommeil": "600175156531998232",
               "systemenerveux": "600175156531995384",
@@ -247,12 +212,108 @@ jobs:
           THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
           lien = "" if video["theme"] in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
 
-          envoi = {"titre": video["titre"], "description": video["description"],
-                   "image_url": url_cover, "video_url": url_video, "lien": lien,
-                   "theme": video["theme"], "tableau": TABLEAUX.get(video["theme"], "600175156531995384")}
-          r = requests.post(os.environ["MAKE_WEBHOOK_URL_VIDEO"], json=envoi, timeout=60)
-          print("Reponse de Make :", r.status_code, r.text[:200])
-          if r.status_code >= 300:
-              sys.exit("Make a refuse l'envoi.")
-          print("Video pin envoyee :", video["titre"])
+          # Publication directe via l'API Composio (même mécanisme que carousel.yml) :
+          # l'ancien scénario Make vidéo n'a jamais publié une seule vidéo (formules cassées).
+          CLE = os.environ["COMPOSIO_API_KEY"]
+          entite = "pg-test-a2a2217a-e3a1-439a-aabd-cc16b6182094"
+          try:
+              comptes = requests.get(
+                  "https://backend.composio.dev/api/v3/connected_accounts",
+                  headers={"x-api-key": CLE}, params={"toolkit_slugs": "pinterest"}, timeout=30,
+              ).json().get("items", [])
+              actifs = [c for c in comptes if c.get("status") == "ACTIVE" and c.get("user_id")]
+              if actifs:
+                  entite = actifs[0]["user_id"]
+              print(f"Comptes Pinterest connectés : {len(comptes)} (actifs : {len(actifs)})")
+          except Exception as e:
+              print("Lecture des comptes connectés impossible, id par défaut utilisé :", e)
+
+          def composio(outil, arguments):
+              r = requests.post(
+                  f"https://backend.composio.dev/api/v3.1/tools/execute/{outil}",
+                  headers={"x-api-key": CLE, "Content-Type": "application/json"},
+                  json={"arguments": arguments, "entity_id": entite}, timeout=60,
+              )
+              try:
+                  donnee = r.json()
+              except Exception:
+                  sys.exit(f"{outil} : réponse illisible ({r.status_code}) {r.text[:300]}")
+              if r.status_code >= 300 or donnee.get("successful") is False:
+                  sys.exit(f"{outil} refusé ({r.status_code}) : {str(donnee.get('error') or r.text)[:500]}")
+              return donnee.get("data") or {}
+
+          media = composio("PINTEREST_REGISTER_MEDIA", {"media_type": "video"})
+          media_id = media.get("media_id")
+          if not media_id or not media.get("upload_url"):
+              sys.exit("Enregistrement vidéo Pinterest incomplet : " + json.dumps(media)[:300])
+          with open(nom_video, "rb") as f:
+              up = requests.post(media["upload_url"], data=media.get("upload_parameters") or {},
+                                 files={"file": (os.path.basename(nom_video), f, "video/mp4")}, timeout=300)
+          if up.status_code >= 300:
+              sys.exit(f"Envoi du fichier vidéo refusé ({up.status_code}) : {up.text[:300]}")
+          print("Vidéo envoyée à Pinterest, media_id :", media_id)
+
+          statut = ""
+          for _ in range(60):
+              statut = composio("PINTEREST_GET_MEDIA", {"media_id": media_id}).get("status", "")
+              if statut in ("succeeded", "failed"):
+                  break
+              time.sleep(10)
+          print("Traitement Pinterest :", statut)
+          if statut != "succeeded":
+              sys.exit(f"Vidéo non traitée par Pinterest (statut : {statut or 'inconnu'}).")
+
+          arguments = {
+              "board_id": TABLEAUX.get(video["theme"], "600175156531995384"),
+              "title": video["titre"][:100],
+              "description": video["description"][:800],
+              "media_source": {
+                  "source_type": "video_id", "media_id": media_id,
+                  "cover_image_data": base64.b64encode(open(nom_cover, "rb").read()).decode(),
+                  "cover_image_content_type": "image/jpeg",
+              },
+          }
+          if lien:
+              arguments["link"] = lien
+          pin_id = composio("PINTEREST_CREATE_PIN", arguments).get("id")
+          if not pin_id:
+              sys.exit("Pinterest n'a pas confirmé la création du Video Pin.")
+          print("Video pin publiée :", video["titre"], "| pin_id :", pin_id)
+
+          # La vidéo est en ligne : l'inscription à l'historique ne doit jamais être perdue
+          # (pins.yml et carousel.yml poussent aussi sur main).
+          entree = {"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+                    "id": video["id"], "titre": video["titre"], "video": nom_video,
+                    "cover": nom_cover, "theme": video["theme"], "pin_id": pin_id}
+          sauvegarde = {n: open(n, "rb").read() for n in (nom_video, nom_cover)}
+          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
+          for n in range(6):
+              git("fetch", "origin", "main")
+              git("reset", "--hard", "origin/main")
+              os.makedirs("videopins", exist_ok=True)
+              for chemin, contenu in sauvegarde.items():
+                  open(chemin, "wb").write(contenu)
+              hist = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
+              if video["id"] not in {h["id"] for h in hist}:
+                  hist.append(entree)
+              json.dump(hist, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+              for ancien in os.listdir("videopins"):
+                  try:
+                      date_fichier = datetime.datetime.strptime(ancien[9:17], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
+                  except ValueError:
+                      continue
+                  if date_fichier < limite:
+                      os.remove(os.path.join("videopins", ancien))
+              git("add", "-A", "videopins", HIST)
+              if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
+                  break
+              git("commit", "-m", "Nouvelle video : " + video["titre"][:60])
+              try:
+                  git("push", "origin", "HEAD:main")
+                  break
+              except subprocess.CalledProcessError as e:
+                  print(f"Push historique refusé (essai {n + 1}/6) :", (e.stderr or "")[:300])
+                  time.sleep(5 + 5 * n)
+          else:
+              sys.exit(f"VIDÉO PUBLIÉE ({pin_id}) MAIS HISTORIQUE NON ENREGISTRÉ : ajouter l'id « {video['id']} » dans {HIST}")
           EOF
