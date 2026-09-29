@@ -53,6 +53,18 @@ jobs:
           HIST = "historique_videos.json"
           historique = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
 
+          # Consigne : 1 vidéo par jour maximum (heure de Paris), même si le workflow est
+          # déclenché plusieurs fois (relance manuelle, doublon cron-job.org...).
+          from zoneinfo import ZoneInfo
+          PARIS = ZoneInfo("Europe/Paris")
+          aujourdhui = datetime.datetime.now(PARIS).date()
+          if not TEST and any(
+              datetime.datetime.fromisoformat(h["date"]).astimezone(PARIS).date() == aujourdhui
+              for h in historique if h.get("date")
+          ):
+              print("Une vidéo a déjà été publiée aujourd'hui (heure de Paris) : rien à faire.")
+              sys.exit(0)
+
           def telecharger_police(nom, url, secours):
               try:
                   r = requests.get(url, timeout=30)
