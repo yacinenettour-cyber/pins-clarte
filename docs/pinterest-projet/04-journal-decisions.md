@@ -254,6 +254,7 @@ Décisions et actions (accord explicite de l'utilisateur) :
 - Séquence v2 appliquée via l'API : 10 e-mails, 1 par jour maximum, 19h, sans fausse urgence ni faux témoignage. Détail : `docs/systeme-io/sequence-emails-v2.md`, sauvegarde v1 dans `docs/systeme-io/archives/`.
 - `pins.yml` / `videos.yml` : paramètres `utm_source=pinterest&utm_medium=organic|video&utm_campaign=<thème>` ajoutés au lien (seulement si `LIEN_PAGE` n'en contient pas déjà). L'URL source de chaque contact systeme.io dira quel thème l'a amené.
 - Limite du forfait gratuit systeme.io : 1 règle d'automatisation et 1 tag, déjà utilisés. L'automatisation « Nouvelle vente » est donc impossible pour l'instant.
+- Images : une par e-mail (photos, schémas, visuels de la page de vente) + pack bannières/schémas pour les modules de la formation dans `medias/` (voir `medias/README.md`). L'API systeme.io ne permet ni de lire/modifier le contenu des leçons, ni de réordonner les modules (seulement les renommer) : le **Module 2 est rangé en dernier** (après le 4), à remonter à la main. Faute corrigée dans le titre d'une leçon du module 4 (« DANS LA DURÉE »).
 - À faire par l'utilisateur : retirer l'image de témoignages de la page de vente (l'API de page ne permet que de reconstruire toute la page), compresser le PDF du guide (28 Mo).
 
 ## Point ouvert à ce jour
