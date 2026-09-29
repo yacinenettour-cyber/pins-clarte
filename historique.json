@@ -423,5 +423,12 @@
   "image": "images/pin-20260929-070803.jpg",
   "fond": "fonds/fond-12.jpg",
   "theme": "systemenerveux"
+ },
+ {
+  "date": "2026-09-29T08:08+00:00",
+  "titre": "Ton écran est ouvert depuis ce matin, pourtant rien n'a bougé : ce blocage a un nom",
+  "image": "images/pin-20260929-080818.jpg",
+  "fond": "fonds/fond-105.jpg",
+  "theme": "blocagemental"
  }
 ]
