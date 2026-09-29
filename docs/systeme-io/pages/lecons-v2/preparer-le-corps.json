@@ -1,0 +1,95 @@
+{
+ "slug": "preparer-le-corps",
+ "module": "rituel",
+ "nom": "PRÉPARER LE CORPS : LUMIÈRE, CHALEUR, ÉCRANS, CAFÉINE",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Préparer le corps : lumière, chaleur, écrans, caféine",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Le sommeil ne commence pas au moment où tu te couches : il se prépare dans les heures qui précèdent. Quelques réglages simples aident ton corps à comprendre que la nuit arrive. Pas besoin de tout appliquer : choisis ce qui est facile pour toi.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "1. La lumière : baisser pour préparer",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>La lumière est le signal le plus puissant pour ton horloge interne. Une lumière forte le soir retarde la mélatonine, l'hormone qui prépare au sommeil. <strong>Une heure avant le coucher</strong>, passe en lumières douces et basses : lampe d'appoint plutôt que plafonnier, lumière chaude plutôt que blanche.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "2. La chaleur : une douche chaude, une chambre fraîche",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Pour s'endormir, la température interne du corps doit baisser un peu. Paradoxalement, une <strong>douche ou un bain chaud 1 à 2 heures avant le coucher</strong> aide : le sang afflue vers la peau, puis le corps se refroidit plus vite ensuite. Côté chambre, vise une pièce <strong>fraîche, autour de 18 °C</strong>, avec une couette adaptée.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "cozy dim bedroom warm lamp evening",
+          "altText": "Chambre tamisée avec une lampe chaude le soir"
+         },
+         {
+          "type": "Headline",
+          "text": "3. Les écrans : moins pour la lumière que pour le mental",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Le problème des écrans le soir n'est pas seulement leur lumière : c'est surtout ce qu'ils contiennent. Messages, actualités et réseaux sociaux relancent le mental au moment où il devrait ralentir. Si tu ne peux pas t'en passer, choisis un contenu calme et connu, et fixe une <strong>heure de fin</strong>, par exemple 30 minutes avant de te coucher. Le téléphone dort mieux <strong>hors de la chambre</strong>, ou au moins hors de portée de main.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "4. Caféine, alcool, repas, sport",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Caféine (café, thé, cola, boissons énergisantes) : plutôt avant 14 h, ses effets durent plusieurs heures",
+           "Alcool : il aide parfois à s'endormir, mais rend la seconde partie de la nuit plus agitée",
+           "Dîner : ni trop copieux ni trop tard, idéalement 2 à 3 heures avant le coucher",
+           "Sport : excellent pour le sommeil, mais plutôt pas dans l'heure qui précède le coucher"
+          ],
+          "icon": "mug-hot"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p><strong>Cette semaine :</strong> choisis <strong>un seul</strong> de ces réglages et tiens-le 7 jours. Les petits changements tenus dans le temps valent mieux qu'une révolution abandonnée au bout de trois jours.</p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

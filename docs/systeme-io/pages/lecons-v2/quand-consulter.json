@@ -1,0 +1,86 @@
+{
+ "slug": "quand-consulter",
+ "module": "consolider",
+ "nom": "QUAND EN PARLER À UN PROFESSIONNEL DE SANTÉ",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Quand en parler à un professionnel de santé",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Ce programme propose des outils de bien-être pour apaiser le stress et le mental du soir. Il ne remplace pas un avis médical. Certaines situations méritent d'en parler à ton médecin traitant, et ce n'est ni un échec ni une exagération : c'est prendre soin de toi.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Les signaux qui justifient une consultation",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Des nuits difficiles au moins 3 fois par semaine depuis plus de 3 mois, avec de la fatigue ou de l'irritabilité dans la journée",
+           "Un ronflement fort avec des pauses de respiration remarquées par quelqu'un, ou des réveils en manquant d'air",
+           "Une somnolence importante dans la journée, surtout au volant",
+           "Des sensations désagréables dans les jambes le soir, qui obligent à bouger",
+           "Un moral durablement bas, une perte d'envie, ou une anxiété qui envahit tes journées"
+          ],
+          "icon": "user-doctor"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Parles-en aussi si ton sommeil a changé depuis la prise d'un traitement, ou si ton score d'auto-évaluation ne baisse pas après 4 semaines de pratique.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "calm conversation doctor patient office",
+          "altText": "Échange calme avec un professionnel de santé"
+         },
+         {
+          "type": "Headline",
+          "text": "Ce qui existe",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Pour l'insomnie qui dure, les recommandations médicales placent en première intention la <strong>thérapie cognitive et comportementale de l'insomnie (TCC-I)</strong>, pratiquée par des professionnels formés. Plusieurs techniques de ce programme s'en inspirent : se lever quand on n'arrive pas à dormir, une heure de lever régulière, le travail sur les pensées du soir. Ton médecin peut t'orienter vers un professionnel ou un centre du sommeil.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Si tu vas vraiment mal",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Si tu as des idées noires ou des pensées de mort, n'attends pas : en France, le <strong>3114</strong>, numéro national de prévention du suicide, est joignable gratuitement, 24 h sur 24 et 7 jours sur 7. En cas d'urgence, appelle le <strong>15</strong> ou le <strong>112</strong>.</p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

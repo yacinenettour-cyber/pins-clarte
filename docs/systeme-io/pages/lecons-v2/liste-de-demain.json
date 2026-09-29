@@ -1,0 +1,97 @@
+{
+ "slug": "liste-de-demain",
+ "module": "ruminations",
+ "nom": "LA LISTE DE DEMAIN : 5 MINUTES D'ÉCRITURE AVANT DE DORMIR",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "La liste de demain : 5 minutes d'écriture avant de dormir",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Tu connais ce moment : lumière éteinte, et soudain, « il ne faut pas que j'oublie d'appeler… », « demain je dois… ». Les tâches à venir font partie des pensées qui tiennent le plus éveillé, parce que le cerveau essaie de les garder en mémoire pour ne pas les perdre.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Ce qu'a montré une étude",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>En 2018, des chercheurs de l'université Baylor, aux États-Unis, ont demandé à des volontaires d'écrire pendant 5 minutes avant de dormir. Un groupe notait ce qu'il avait accompli dans la journée, l'autre ce qu'il devait faire les jours suivants. Résultat : ceux qui écrivaient leur liste de choses à faire <strong>s'endormaient plus vite</strong>, et d'autant plus vite que leur liste était précise.</p><p>L'explication la plus probable : une fois écrite, la tâche n'a plus besoin d'être « maintenue » dans ta tête.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "handwritten to do list notebook bedside lamp",
+          "altText": "Liste écrite à la main sur une table de nuit"
+         },
+         {
+          "type": "Headline",
+          "text": "L'exercice, juste avant de dormir",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li>Prends la fiche « La liste de demain » ou une feuille, et un stylo (pas ton téléphone).</li><li>Écris <strong>tout ce que tu dois faire demain</strong>, puis les jours suivants.</li><li>Sois <strong>précis(e)</strong> : « appeler le garagiste à 9 h pour le rendez-vous » plutôt que « voiture ».</li><li>Pas besoin de trier ni de trouver de solutions : tu poses, c'est tout.</li><li>Laisse la feuille et le stylo sur ta table de nuit. Si une idée revient dans la nuit, note-la en deux mots.</li></ol>"
+         },
+         {
+          "type": "Headline",
+          "text": "La différence avec le rendez-vous des soucis",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Le rendez-vous des soucis se fait plus tôt et s'occupe des <strong>préoccupations</strong> (ce qui t'inquiète). La liste de demain se fait au coucher et vide les <strong>tâches</strong> (ce que tu dois faire). Les deux se complètent très bien.</p>"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Stylo et papier, pas d'écran",
+           "5 minutes, pas plus",
+           "Plus la liste est précise, mieux c'est"
+          ],
+          "icon": "pen"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : la liste de demain (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/04-liste-de-demain.pdf"
+           },
+           {
+            "title": "Le kit complet à imprimer, 6 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

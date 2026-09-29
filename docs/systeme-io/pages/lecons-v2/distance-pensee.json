@@ -1,0 +1,85 @@
+{
+ "slug": "distance-pensee",
+ "module": "ruminations",
+ "nom": "PRENDRE DE LA DISTANCE AVEC UNE PENSÉE",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Prendre de la distance avec une pensée",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>« Je n'arriverai jamais à dormir. » « Demain sera une catastrophe. » La nuit, certaines pensées paraissent absolument vraies. Le problème n'est pas d'avoir ces pensées : tout le monde en a. Le problème, c'est de <strong>se coller à elles</strong>, comme si elles étaient des faits.</p><p>Cette leçon t'apprend à les regarder passer plutôt qu'à les suivre. C'est une approche issue de la thérapie d'acceptation et d'engagement, très utile contre les ruminations.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi lutter ne marche pas",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Essaie de ne pas penser à un éléphant rose… Plus on repousse une pensée, plus elle revient. La nuit, c'est pareil : « arrête de penser ! » garde le mental en alerte. L'idée n'est pas de chasser la pensée, mais de <strong>changer ta relation avec elle</strong>.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "autumn leaves floating on calm stream",
+          "altText": "Feuilles qui flottent sur un ruisseau calme"
+         },
+         {
+          "type": "Headline",
+          "text": "3 façons de prendre de la distance",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p><strong>1. Ajouter « j'ai la pensée que… »</strong><br>Au lieu de « je vais être épuisé demain », dis-toi : « <strong>je remarque que j'ai la pensée</strong> que je vais être épuisé demain ». La phrase n'a pas changé, mais tu n'es plus dedans : tu la regardes.</p><p><strong>2. Nommer ce qui se passe</strong><br>Donne un nom simple à ce qui tourne : « tiens, le scénario catastrophe », « ah, la liste des choses à faire ». Nommer, c'est déjà reprendre un peu de recul.</p><p><strong>3. Les feuilles sur le ruisseau</strong><br>Les yeux fermés, imagine un petit ruisseau où flottent des feuilles. Chaque fois qu'une pensée arrive, pose-la sur une feuille et regarde-la s'éloigner au fil de l'eau. Tu n'as ni à la pousser, ni à la retenir.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Ce qui compte vraiment",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Le but n'est pas de faire disparaître la pensée, mais de ne plus la suivre",
+           "Sois doux(ce) avec toi : se faire happer est normal, revenir est l'exercice",
+           "Quelques minutes suffisent, au lit ou dans la journée",
+           "Plus tu t'entraînes le jour, plus c'est facile la nuit"
+          ],
+          "icon": "feather"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Si une pensée revient sans cesse sur un vrai problème à régler, note-la pour ton prochain <strong>rendez-vous des soucis</strong> : elle y sera mieux traitée qu'à 2 h du matin.</p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

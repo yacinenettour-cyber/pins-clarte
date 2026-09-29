@@ -1,0 +1,80 @@
+{
+ "slug": "melange-cognitif",
+ "module": "ruminations",
+ "nom": "LE MÉLANGE COGNITIF : QUAND LES PENSÉES TOURNENT AU LIT",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Le mélange cognitif : quand les pensées tournent au lit",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Parfois, les pensées tournent si vite qu'aucune respiration ne suffit. Il existe alors une astuce étonnante, imaginée par le chercheur canadien Luc Beaudoin : occuper ton esprit avec des images <strong>sans lien entre elles</strong>, un peu comme le cerveau le fait naturellement juste avant de s'endormir.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi ça marche",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Au moment de l'endormissement, les pensées deviennent décousues : des images sans logique se succèdent. Les ruminations, elles, sont l'inverse : logiques, enchaînées, tournées vers un problème. Le mélange cognitif imite l'état d'endormissement et prend la place des ruminations, sans effort ni émotion.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "soft abstract floating objects dreamlike night",
+          "altText": "Images douces et flottantes, comme dans un demi-sommeil"
+         },
+         {
+          "type": "Headline",
+          "text": "L'exercice",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li>Choisis un mot neutre d'au moins 5 lettres, sans charge émotionnelle, par exemple <strong>JARDIN</strong>.</li><li>Prends la première lettre, J. Pense à un mot qui commence par J (jonquille) et <strong>imagine-le quelques secondes</strong> : sa couleur, sa forme.</li><li>Passe à un autre mot en J, sans lien avec le précédent (jouet, jumelles, jus d'orange…), et imagine-le aussi.</li><li>Quand tu n'as plus d'idées, passe à la lettre suivante, A (ananas, avion, arrosoir…).</li><li>Continue tranquillement. Si tu perds le fil, reprends où tu veux : il n'y a aucun score.</li></ol>"
+         },
+         {
+          "type": "Headline",
+          "text": "Les règles d'or",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Choisis des objets neutres ou agréables, jamais liés à tes soucis",
+           "Prends le temps d'imaginer chaque image, ne récite pas une liste",
+           "Si une rumination revient, retourne simplement à ta lettre",
+           "Change de mot chaque soir pour ne pas t'ennuyer"
+          ],
+          "icon": "shuffle"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

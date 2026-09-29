@@ -1,0 +1,108 @@
+{
+ "slug": "le-matin",
+ "module": "consolider",
+ "nom": "LE MATIN COMPTE AUTANT QUE LE SOIR",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Le matin compte autant que le soir",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>On pense souvent que le sommeil se joue le soir. En réalité, <strong>ta nuit commence le matin</strong> : c'est au réveil que ton horloge interne se règle pour la journée, et donc pour l'heure à laquelle tu auras sommeil le soir.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "1. Une heure de lever régulière",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>C'est le réglage le plus efficace, et le plus sous-estimé. Te lever à peu près <strong>à la même heure chaque jour, week-end compris</strong> (à une heure près), stabilise ton horloge interne. Après une mauvaise nuit, la tentation est de rester au lit : résiste, c'est justement ce qui prépare une meilleure nuit suivante.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "2. La lumière du jour, le plus tôt possible",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>La lumière naturelle du matin est le signal qui dit à ton corps « la journée commence ». Elle lance aussi le compte à rebours vers le sommeil du soir. Vise <strong>10 à 30 minutes dehors</strong>, ou près d'une fenêtre, dans l'heure qui suit ton lever, même par temps gris : la lumière extérieure reste bien plus forte que celle d'une pièce.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "morning sunlight window calm person coffee",
+          "altText": "Lumière du matin près d'une fenêtre"
+         },
+         {
+          "type": "Headline",
+          "text": "3. Bouger dans la journée",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Une activité physique régulière aide à s'endormir plus facilement et à mieux dormir. Pas besoin de sport intensif : une marche de 20 à 30 minutes compte. Idéalement en journée, et plutôt pas dans l'heure qui précède le coucher.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "4. Les siestes, avec modération",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Une courte sieste peut aider, mais une sieste longue ou tardive « consomme » la pression de sommeil dont tu as besoin le soir. Si tu fais la sieste : <strong>20 minutes maximum, avant 15 h</strong>.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Ton journal du sommeil",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Pour voir ce qui marche pour toi, remplis le journal du sommeil du kit <strong>chaque matin, en une minute</strong>, pendant 14 jours. Au bout d'une semaine, regarde les soirs où tu étais le plus calme : qu'avais-tu fait ? C'est souvent là que se trouve ta meilleure piste.</p>"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : journal du sommeil, 14 jours (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/02-journal-sommeil-14-jours.pdf"
+           },
+           {
+            "title": "Le kit complet à imprimer, 6 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

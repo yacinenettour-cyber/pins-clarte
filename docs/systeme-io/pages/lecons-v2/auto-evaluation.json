@@ -1,0 +1,92 @@
+{
+ "slug": "auto-evaluation",
+ "module": "demarrer",
+ "nom": "📊 OÙ EN ES-TU ? TON AUTO-ÉVALUATION",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Où en es-tu ? Ton auto-évaluation",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Avant de commencer, ou maintenant si tu as déjà commencé, prends 2 minutes pour faire une photo de tes soirées. Dans quelques semaines, tu pourras comparer et voir le chemin parcouru, même quand ton impression du moment est floue.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Les 6 questions",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Pense aux <strong>7 derniers jours</strong> et note chaque phrase de 0 à 4 : <strong>0</strong> jamais, <strong>1</strong> rarement, <strong>2</strong> parfois, <strong>3</strong> souvent, <strong>4</strong> presque toujours.</p><ol><li>Le temps pour m'endormir me paraît long.</li><li>Je me réveille la nuit et j'ai du mal à me rendormir.</li><li>Les pensées tournent en boucle quand je me couche.</li><li>Je sens mon corps tendu le soir (mâchoire, épaules, ventre).</li><li>J'appréhende le moment d'aller me coucher.</li><li>Je me sens fatigué(e) ou irritable dans la journée.</li></ol><p>Additionne tes points : tu obtiens un score sur 24. Note-le avec la date.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "notebook checklist pencil calm morning",
+          "altText": "Carnet, check-list et crayon"
+         },
+         {
+          "type": "Headline",
+          "text": "Quand la refaire",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Aujourd'hui : c'est ton point de départ",
+           "Au jour 14 : à mi-parcours du plan des 4 semaines",
+           "Au jour 28 : pour mesurer le chemin parcouru"
+          ],
+          "icon": "calendar"
+         },
+         {
+          "type": "Headline",
+          "text": "Comment lire ton score",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Ce score est un <strong>repère personnel</strong>, pas un diagnostic. Ce qui compte, c'est son évolution : s'il baisse, tes soirées s'apaisent, même si certaines nuits restent difficiles. Le sommeil progresse rarement en ligne droite.</p><p>Si ton score reste élevé après 4 semaines, ou si tes nuits sont difficiles au moins 3 fois par semaine depuis plus de 3 mois, lis la leçon « Quand en parler à un professionnel de santé », dans le module « Consolider le sommeil dans le temps ».</p>"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : l'auto-évaluation, jours 1, 14 et 28 (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/01-auto-evaluation.pdf"
+           },
+           {
+            "title": "Le kit complet à imprimer, 6 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

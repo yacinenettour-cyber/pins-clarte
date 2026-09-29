@@ -1,0 +1,97 @@
+{
+ "slug": "rendez-vous-soucis",
+ "module": "ruminations",
+ "nom": "LE RENDEZ-VOUS DES SOUCIS",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Le rendez-vous des soucis",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Pourquoi les soucis attendent-ils toujours le moment où tu poses la tête sur l'oreiller ? Parce que c'est souvent le <strong>premier moment de la journée</strong> où rien d'autre ne les occupe. Ton cerveau profite du calme pour « faire le point », au pire moment.</p><p>Le rendez-vous des soucis consiste à lui offrir ce moment plus tôt, à une heure choisie, pour qu'il n'ait plus besoin de le réclamer la nuit.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi ça marche",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Une préoccupation revient tant que le cerveau a l'impression qu'elle n'est « pas traitée ». L'écrire, et surtout noter <strong>une prochaine petite étape</strong>, lui envoie le signal inverse : c'est pris en charge. Des chercheurs en psychologie du sommeil ont observé que cet exercice, fait en début de soirée, réduisait l'agitation mentale au moment du coucher chez des personnes qui avaient du mal à s'endormir.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "notebook pen table late afternoon light",
+          "altText": "Carnet et stylo sur une table en fin d'après-midi"
+         },
+         {
+          "type": "Headline",
+          "text": "L'exercice : 15 minutes, en fin d'après-midi",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Choisis ton heure</strong>, idéalement entre 17 h et 20 h, et jamais au lit. Assieds-toi avec la fiche « Le rendez-vous des soucis » du kit, ou une simple feuille.</li><li><strong>Écris tout ce qui te préoccupe</strong>, en vrac : gros et petits soucis.</li><li>Pour chacun, demande-toi : <strong>puis-je agir ?</strong> Oui, non, ou en partie.</li><li>Si oui, note <strong>la prochaine petite étape</strong> (pas la solution complète) et quand tu la feras.</li><li>Si non, écris « je laisse ça de côté pour l'instant », et ce qui pourrait t'aider à le porter (en parler à quelqu'un, attendre une information…).</li><li><strong>Ferme la feuille</strong> et range-la. Le rendez-vous est terminé.</li></ol>"
+         },
+         {
+          "type": "Headline",
+          "text": "Et si ça revient au lit ?",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Ça arrivera, surtout au début. Ne discute pas avec la pensée. Dis-toi simplement : <strong>« C'est noté. J'y reviendrai demain, à mon rendez-vous. »</strong> Puis ramène ton attention sur ta respiration ou ton corps. Avec les jours, ton cerveau apprend que les soucis ont leur place, et que ce n'est pas la nuit.</p>"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Fais-le au moins 5 jours d'affilée avant de juger",
+           "15 minutes maximum : c'est un rendez-vous, pas une réunion de crise",
+           "Les jours calmes, une liste de 3 lignes suffit"
+          ],
+          "icon": "calendar-check"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : le rendez-vous des soucis (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/03-rendez-vous-des-soucis.pdf"
+           },
+           {
+            "title": "Le kit complet à imprimer, 6 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "slug": "relachement-musculaire",
+ "module": "systeme-nerveux",
+ "nom": "LE RELÂCHEMENT MUSCULAIRE PROGRESSIF (VERSION DU SOIR)",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Le relâchement musculaire progressif, version du soir",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Le stress ne reste pas dans la tête : il s'installe dans les muscles. Mâchoire serrée, épaules remontées, ventre noué… Souvent, on ne sent même plus ces tensions, parce qu'elles sont devenues notre « normal ».</p><p>Le relâchement musculaire progressif, mis au point par le médecin américain Edmund Jacobson dans la première moitié du XXe siècle, est l'une des techniques de relaxation les plus étudiées pour l'endormissement. Son principe surprend : pour mieux relâcher un muscle, on commence par le contracter.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi contracter pour relâcher ?",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Après une contraction volontaire, le muscle se relâche plus profondément qu'avant. Surtout, le contraste t'apprend à <strong>sentir la différence</strong> entre tension et détente. Avec l'habitude, tu repères plus vite les tensions dans la journée, et tu sais les lâcher.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "person lying in bed relaxing soft evening light",
+          "altText": "Personne allongée qui relâche son corps"
+         },
+         {
+          "type": "Headline",
+          "text": "La version du soir : 7 zones, 5 minutes",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Allongé(e) sur le dos. Pour chaque zone, <strong>contracte environ 5 secondes</strong> (fermement, sans douleur), puis <strong>relâche d'un coup</strong> et reste 15 à 20 secondes à sentir la détente.</p><ol><li><strong>Mains et avant-bras</strong> : serre les poings.</li><li><strong>Bras</strong> : plie les coudes et contracte les biceps.</li><li><strong>Visage</strong> : plisse le front et ferme fort les yeux.</li><li><strong>Mâchoire</strong> : serre les dents, puis laisse la bouche s'entrouvrir.</li><li><strong>Épaules</strong> : monte-les vers les oreilles, puis laisse-les tomber.</li><li><strong>Ventre</strong> : rentre et durcis le ventre, puis laisse-le s'arrondir.</li><li><strong>Jambes et pieds</strong> : tends les jambes et tire les orteils vers toi.</li></ol><p>Termine par trois respirations lentes en sentant ton corps entier, plus lourd, plus posé.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pour que ça marche",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Contracte à environ la moitié de ta force, jamais jusqu'à la douleur",
+           "Zone douloureuse, blessée ou sujette aux crampes : relâche-la seulement, sans la contracter",
+           "Le relâchement compte plus que la contraction : prends ton temps",
+           "Les premiers soirs, ça peut sembler mécanique : l'effet vient avec la répétition"
+          ],
+          "icon": "circle-check"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>C'est l'étape « relâchement musculaire court » de la version 10 minutes du rituel du soir.</p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

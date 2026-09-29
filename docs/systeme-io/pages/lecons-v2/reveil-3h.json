@@ -1,0 +1,98 @@
+{
+ "slug": "reveil-3h",
+ "module": "consolider",
+ "nom": "RÉVEILLÉ À 3 H DU MATIN : QUE FAIRE ?",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Réveillé à 3 h du matin : que faire ?",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Tu ouvres les yeux, il fait nuit, et tu sais déjà que tu ne vas pas te rendormir facilement. Le mental s'allume, les calculs commencent : « s'il est 3 h et que je me lève à 7 h… ». C'est l'un des moments les plus difficiles, et l'un de ceux où quelques bons réflexes changent le plus les choses.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "D'abord : se réveiller la nuit est normal",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Une nuit est faite de plusieurs cycles de sommeil d'environ 90 minutes. Entre deux cycles, il est normal de se réveiller brièvement, souvent sans s'en souvenir. Ce qui transforme ce micro-réveil en longue insomnie, c'est surtout <strong>l'inquiétude</strong> qui s'y accroche : regarder l'heure, calculer, se dire que la journée est fichue.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "bedside table alarm clock turned away night",
+          "altText": "Table de nuit la nuit, réveil tourné vers le mur"
+         },
+         {
+          "type": "Headline",
+          "text": "Le protocole, dans l'ordre",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Ne regarde pas l'heure.</strong> Tourne ton réveil vers le mur, laisse ton téléphone loin du lit.</li><li><strong>Dédramatise :</strong> « Je me suis réveillé(e), ça arrive. Je peux me reposer, même sans dormir tout de suite. »</li><li><strong>5 soupirs physiologiques</strong>, puis relâche la mâchoire, les épaules, le ventre et les mains.</li><li><strong>Si les pensées tournent :</strong> le mélange cognitif, ou « c'est noté, j'y penserai demain ». Si c'est une tâche, note-la en deux mots sur ta liste.</li><li><strong>Si tu es bien réveillé(e) et agacé(e) depuis un long moment :</strong> lève-toi. Va dans une autre pièce, lumière douce, activité calme (lecture papier, respiration). <strong>Reviens te coucher quand tes paupières sont lourdes.</strong></li></ol>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi se lever ?",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Rester des heures au lit à lutter apprend à ton cerveau que le lit est un lieu d'éveil et d'agacement. Te lever quand tu n'y arrives plus, puis revenir quand la somnolence est là, lui réapprend peu à peu que le lit, c'est pour dormir. C'est l'un des piliers des approches recommandées contre l'insomnie. Au début, tu te lèveras peut-être souvent : c'est normal, et ça diminue avec les semaines.</p>"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Pas d'écran pendant ce temps : la lumière et le contenu réveillent",
+           "Le lendemain, pas de longue sieste pour « rattraper » (20 minutes maximum, avant 15 h)",
+           "Lève-toi à ton heure habituelle, même après une mauvaise nuit",
+           "Garde la fiche SOS du kit sur ta table de nuit"
+          ],
+          "icon": "moon"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche SOS à garder sur la table de nuit (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/05-sos-reveil-nocturne.pdf"
+           },
+           {
+            "title": "Le kit complet à imprimer, 6 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "slug": "rituel-3-versions",
+ "module": "rituel",
+ "nom": "TON RITUEL EN 3 VERSIONS : 3, 10 OU 20 MINUTES",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Ton rituel en 3 versions : 3, 10 ou 20 minutes",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Un rituel du soir fonctionne par la <strong>répétition</strong> : à force, ton cerveau associe ces gestes à l'arrivée du sommeil, et commence à ralentir dès les premières étapes. Le piège, c'est de construire un rituel parfait… que tu abandonnes les soirs de fatigue, justement ceux où tu en aurais le plus besoin.</p><p>La solution : <strong>trois versions du même rituel</strong>, pour que tu aies toujours une option possible.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Version 3 minutes : les soirs d'épuisement",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ul><li>Lumières baissées, téléphone hors de la chambre</li><li>5 soupirs physiologiques, allongé(e)</li><li>Une phrase, à voix basse ou dans ta tête : « Je n'ai rien à réussir cette nuit. »</li></ul>"
+         },
+         {
+          "type": "Headline",
+          "text": "Version 10 minutes : les soirs ordinaires",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ul><li>1 heure avant : lumières douces, écrans en pause</li><li>La liste de demain (3 minutes)</li><li>Relâchement musculaire progressif, version courte (4 minutes)</li><li>Au lit : respiration lente, 4 temps d'inspiration et 6 d'expiration (3 minutes)</li></ul>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "calm evening ritual herbal tea book soft light",
+          "altText": "Rituel du soir calme avec une tisane et un livre"
+         },
+         {
+          "type": "Headline",
+          "text": "Version 20 minutes : les soirs agités",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ul><li>Une douche chaude, 1 à 2 heures avant le coucher</li><li>Le rendez-vous des soucis, si tu ne l'as pas fait dans la journée</li><li>5 minutes d'étirements doux (nuque, épaules, dos)</li><li>Au lit : le scan corporel (10 minutes)</li></ul>"
+         },
+         {
+          "type": "Headline",
+          "text": "Comment t'y tenir",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Décide le matin quelle version tu vises, ajuste le soir selon ton énergie",
+           "Garde toujours le même début (par exemple baisser les lumières) : c'est le signal",
+           "Coche chaque soir sur la fiche du kit, quelle que soit la version",
+           "Crée ta propre version : c'est la tienne qui marchera le mieux"
+          ],
+          "icon": "list-check"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : ton rituel en 3 versions + suivi 4 semaines (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/06-rituel-du-soir-3-versions.pdf"
+           },
+           {
+            "title": "Le kit complet à imprimer, 6 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

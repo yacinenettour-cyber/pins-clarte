@@ -1,0 +1,85 @@
+{
+ "slug": "soupir-physiologique",
+ "module": "systeme-nerveux",
+ "nom": "LE SOUPIR PHYSIOLOGIQUE : CALMER LE CORPS EN UNE MINUTE",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Le soupir physiologique : calmer le corps en une minute",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Quand le stress monte, ta respiration devient courte et haute, dans le haut de la poitrine. Ton corps comprend : « danger ». Le soupir physiologique fait l'inverse : c'est l'un des moyens les plus rapides de dire à ton système nerveux qu'il peut relâcher.</p><p>Tu le fais déjà sans le savoir : c'est le grand soupir qui t'échappe après avoir pleuré, ou juste avant de t'endormir. Ici, tu vas simplement apprendre à le déclencher volontairement.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi ça marche",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>À l'inspiration, le cœur accélère légèrement. À l'expiration, il ralentit : c'est le nerf vague, le « frein » naturel de ton corps, qui entre en jeu. En rendant l'expiration plus longue que l'inspiration, tu appuies doucement sur ce frein.</p><p>La double inspiration a un rôle précis : la deuxième petite bouffée d'air rouvre les minuscules alvéoles des poumons qui se sont affaissées quand tu respirais court. L'expiration qui suit vide mieux l'air, et le calme arrive plus vite.</p><p>En 2023, une étude de l'université Stanford a comparé plusieurs exercices de respiration pratiqués 5 minutes par jour pendant un mois : c'est ce « soupir cyclique » qui a le plus amélioré l'humeur des participants.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "person breathing calmly eyes closed evening",
+          "altText": "Respiration calme, les yeux fermés, le soir"
+         },
+         {
+          "type": "Headline",
+          "text": "L'exercice pas à pas",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Inspire par le nez</strong>, lentement, jusqu'à ce que tes poumons soient bien remplis.</li><li><strong>Sans expirer, ajoute une deuxième petite inspiration</strong> par le nez, comme pour finir de remplir le haut des poumons.</li><li><strong>Expire longuement par la bouche</strong>, lèvres entrouvertes, comme un long soupir, jusqu'à ce que l'air soit sorti sans forcer.</li><li>Recommence <strong>3 à 5 fois</strong>. Pour un effet plus profond, continue jusqu'à 5 minutes.</li></ol><p>L'expiration dure environ deux fois plus longtemps que l'inspiration. Ne force pas : si la tête te tourne, reprends une respiration normale quelques instants.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Quand l'utiliser",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Au lit, quand tu sens le corps encore « en alerte »",
+           "Lors d'un réveil nocturne (c'est l'étape 3 de la fiche SOS du kit)",
+           "Juste avant un moment qui te stresse dans la journée",
+           "Dès que tu remarques que tu retiens ta respiration"
+          ],
+          "icon": "wind"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p><strong>Ce soir :</strong> fais 5 soupirs physiologiques allongé(e), avant d'éteindre la lumière. Remarque simplement ce qui change dans tes épaules et ta mâchoire.</p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

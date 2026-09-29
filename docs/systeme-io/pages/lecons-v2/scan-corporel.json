@@ -1,0 +1,84 @@
+{
+ "slug": "scan-corporel",
+ "module": "systeme-nerveux",
+ "nom": "LE SCAN CORPOREL POUR GLISSER VERS LE SOMMEIL",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Le scan corporel pour glisser vers le sommeil",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Quand le mental tourne, il a besoin d'un endroit où se poser. Le scan corporel lui en donne un : ton propre corps, parcouru lentement, des pieds jusqu'à la tête. Ce n'est pas une technique pour « réussir » à dormir : c'est une façon de rester au lit sans lutter, et c'est souvent dans cet état que le sommeil arrive.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Le principe",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Tu promènes ton attention, comme le faisceau d'une lampe douce, sur chaque partie du corps. Tu n'as rien à changer : tu remarques simplement ce qui est là (chaleur, contact du drap, poids, picotements, tension). Si une tension est présente, imagine que ton expiration la traverse et l'adoucit.</p><p>Quand ton esprit part ailleurs, et il partira, c'est normal : ramène-le gentiment là où tu t'étais arrêté(e). Chaque retour fait partie de l'exercice.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "calm person lying in bed eyes closed dim bedroom",
+          "altText": "Personne allongée les yeux fermés dans une chambre calme"
+         },
+         {
+          "type": "Headline",
+          "text": "Le parcours, 10 minutes environ",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li>Installe-toi sur le dos ou dans ta position d'endormissement. Trois respirations lentes.</li><li><strong>Les pieds</strong> : les orteils, la plante, les talons posés sur le matelas.</li><li><strong>Les jambes</strong> : les mollets, les genoux, les cuisses qui s'alourdissent.</li><li><strong>Le bassin et le bas du dos</strong> : le poids qui s'enfonce dans le lit.</li><li><strong>Le ventre</strong> : il se soulève et redescend, tout seul.</li><li><strong>La poitrine et le dos</strong> : les côtes qui s'ouvrent et se referment.</li><li><strong>Les mains, les bras, les épaules</strong> : laisse les épaules s'éloigner des oreilles.</li><li><strong>La nuque, la mâchoire, le visage</strong> : la langue se détend, le front s'élargit.</li><li>Pour finir, sens <strong>le corps entier</strong>, d'un seul bloc, qui respire.</li></ol>"
+         },
+         {
+          "type": "Headline",
+          "text": "Si tu t'endors avant la fin",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>C'est parfait. Le scan n'a pas besoin d'être terminé pour avoir fait son travail. Si tu arrives au bout encore éveillé(e), recommence depuis les pieds, plus lentement, ou pose simplement ton attention sur ta respiration.</p>"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "À faire au lit, lumière éteinte",
+           "Idéal les soirs d'agitation (version 20 minutes du rituel)",
+           "Utile aussi lors d'un réveil nocturne"
+          ],
+          "icon": "moon"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
