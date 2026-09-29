@@ -358,6 +358,14 @@ jobs:
           lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
           board_id = TABLEAUX.get(theme, "600175156531995384")
 
+          diag = requests.get(
+              "https://backend.composio.dev/api/v3/connected_accounts",
+              headers={"x-api-key": os.environ["COMPOSIO_API_KEY"]},
+              params={"toolkit_slugs": "pinterest"},
+              timeout=30,
+          )
+          print("DIAGNOSTIC connected_accounts :", diag.status_code, diag.text[:2000])
+
           payload = {
               "arguments": {
                   "board_id": board_id,
@@ -368,7 +376,8 @@ jobs:
                       "source_type": "multiple_image_urls",
                       "items": [{"url": u} for u in urls],
                   },
-              }
+              },
+                            "entity_id": "pg-test-a2a2217a-e3a1-439a-aabd-cc16b6182094",
           }
           r = requests.post(
               "https://backend.composio.dev/api/v3.1/tools/execute/PINTEREST_CREATE_PIN",
