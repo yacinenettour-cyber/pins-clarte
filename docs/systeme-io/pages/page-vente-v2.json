@@ -32,7 +32,7 @@
         {
          "type": "Button",
          "text": "Accéder au programme",
-         "subText": "27 € · accès immédiat · garantie 7 jours",
+         "subText": "37 € · accès immédiat · garantie 7 jours",
          "action": "openUrl",
          "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
         }
@@ -329,7 +329,7 @@
         {
          "type": "Text",
          "textAlign": "center",
-         "html": "<p><strong>27 € TTC</strong>, paiement unique, sans abonnement.</p>"
+         "html": "<p><strong>37 € TTC</strong>, paiement unique, sans abonnement.</p>"
         },
         {
          "type": "BulletList",
@@ -344,7 +344,7 @@
         {
          "type": "Button",
          "text": "Accéder au programme",
-         "subText": "27 € · accès immédiat · garantie 7 jours",
+         "subText": "37 € · accès immédiat · garantie 7 jours",
          "action": "openUrl",
          "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
         }
@@ -446,7 +446,7 @@
         {
          "type": "Button",
          "text": "Commencer ce soir",
-         "subText": "27 € · accès immédiat · garantie 7 jours",
+         "subText": "37 € · accès immédiat · garantie 7 jours",
          "action": "openUrl",
          "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
         }

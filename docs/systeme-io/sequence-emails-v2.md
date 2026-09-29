@@ -37,7 +37,7 @@ Autres problèmes :
 - **Valeur d'abord** (J0 → J3), présentation du programme ensuite (J4 → J6), puis relances espacées (J8, J10, J12).
 - **Zéro fausse urgence, zéro faux témoignage.** Quand on débute, l'honnêteté est un argument : « programme récent, pas encore d'avis, donc garantie 7 jours ».
 - **Inviter à répondre** aux e-mails : les réponses améliorent la délivrabilité (moins de spam) et te donnent tes premiers vrais retours.
-- Une seule promesse, alignée sur la page de vente : 4 modules courts + bonus audio express, 27 € en paiement unique, accès à vie, garantie 7 jours.
+- Une seule promesse, alignée sur la page de vente : 4 modules courts + bonus audio express, 37 € en paiement unique, accès à vie, garantie 7 jours.
 - Signature unique : **Yacine — Clarté Mentale** (même nom que le compte Pinterest et la page de vente). Expéditeur : « Yacine – Clarté Mentale ».
 
 ## 3. Calendrier v2 (10 e-mails sur 12 jours)
@@ -158,7 +158,7 @@ Yacine — Clarté Mentale
 ### E-mail 5 — J4
 
 **Objet :** Ce qu'il y a exactement dans le programme
-**Aperçu :** 4 modules courts, 27 €, et ce que ça change le soir.
+**Aperçu :** 4 modules courts, 37 €, et ce que ça change le soir.
 
 Bonjour,
 
@@ -170,7 +170,7 @@ Comme promis, voici ce que contient le programme « Quand le cerveau refuse de d
 - **Module 4 — Consolider le sommeil dans le temps** : moins de réveils nocturnes, un sommeil qui se stabilise progressivement.
 - **Bonus — Audio express** : pour les soirs de forte pression, quand tu n'as l'énergie pour rien d'autre.
 
-**27 €**, paiement unique. Accès immédiat depuis ton téléphone, accès à vie. Et une **garantie de 7 jours** : si tu ne ressens aucune amélioration, tu es remboursé sans justification.
+**37 €**, paiement unique. Accès immédiat depuis ton téléphone, accès à vie. Et une **garantie de 7 jours** : si tu ne ressens aucune amélioration, tu es remboursé sans justification.
 
 👉 **[Découvrir le programme]**
 
@@ -198,7 +198,7 @@ Tant qu'on ne s'adresse pas directement à lui, les techniques de surface aident
 
 C'est ce que le programme fait différemment : il commence par le corps et le système nerveux (module 1), puis seulement les ruminations (module 2), puis il installe un rituel qui tient dans le temps (modules 3 et 4).
 
-👉 **[Voir le programme — 27 €, garantie 7 jours]**
+👉 **[Voir le programme — 37 €, garantie 7 jours]**
 
 À demain,
 Yacine — Clarté Mentale
@@ -220,7 +220,7 @@ Le risque est de mon côté, pas du tien.
 
 Et si tu le suis, ton retour m'intéresse vraiment : ce qui t'a aidé, ce qui t'a manqué. C'est comme ça que le programme va s'améliorer.
 
-👉 **[Accéder au programme — 27 €]**
+👉 **[Accéder au programme — 37 €]**
 
 À bientôt,
 Yacine — Clarté Mentale
@@ -246,7 +246,7 @@ Et un système nerveux bloqué, ça se débloque. Pas avec de la volonté, pas e
 
 C'est ce que le programme t'apporte, soir après soir.
 
-👉 **[Je veux retrouver ce calme — 27 €]**
+👉 **[Je veux retrouver ce calme — 37 €]**
 
 Tu mérites de dormir sans te battre.
 Yacine — Clarté Mentale
@@ -266,7 +266,7 @@ Ce qui fait la différence sur la durée, ce n'est pas une technique isolée. C'
 
 Si tu sens que le guide seul commence à montrer ses limites, le programme est là, sans pression.
 
-👉 **[Je veux aller plus loin — 27 €, garantie 7 jours]**
+👉 **[Je veux aller plus loin — 37 €, garantie 7 jours]**
 
 Quoi que tu décides, retiens ceci : ton corps sait déjà comment se calmer. Il a juste besoin d'un peu de régularité.
 
@@ -286,7 +286,7 @@ C'est le dernier e-mail où je te parle du programme « Quand le cerveau refuse 
 
 Pour résumer, si tu hésites encore :
 - 4 modules courts, 5 à 10 minutes par soir, même quand tu es épuisé ;
-- 27 €, paiement unique, accès à vie ;
+- 37 €, paiement unique, accès à vie ;
 - garantie 7 jours, remboursement sans justification.
 
 👉 **[Rejoindre le programme]**
@@ -303,7 +303,7 @@ Yacine — Clarté Mentale
 1. **Campagne « Séquence Lead Magnet »** : pour chaque e-mail, régler le délai selon le tableau de la section 3 (aucun délai à 0 sauf l'e-mail 1). Personne n'est en cours de séquence (dernier inscrit le 14/07, séquence finie depuis fin juillet) : modifier sur place est sans risque.
 2. Remplacer objet, **texte d'aperçu** et contenu de chaque e-mail ; désactiver ou supprimer les actuels 2, 5, 6, 7 et 11.
 3. Expéditeur : « Yacine – Clarté Mentale » sur tous les e-mails.
-4. **Automatisation « Nouvelle vente »** (à créer) : déclencheur « Nouvelle vente » sur l'offre à 27 € → action « Ajouter le tag Client » + « Désinscrire de la campagne Séquence Lead Magnet ». Sans ça, un acheteur continue de recevoir les e-mails de vente.
+4. **Automatisation « Nouvelle vente »** (à créer) : déclencheur « Nouvelle vente » sur l'offre à 37 € → action « Ajouter le tag Client » + « Désinscrire de la campagne Séquence Lead Magnet ». Sans ça, un acheteur continue de recevoir les e-mails de vente.
 5. **Page de vente** : retirer l'image « Ce qu'ils ressentent » (témoignages) ; renommer le bonus pareil partout ; ajouter un bouton d'achat en haut et en bas de page.
 6. Compresser le PDF du guide (< 5 Mo) et remplacer le lien dans l'e-mail 1.
 7. S'envoyer un e-mail de test (« Envoyer un test ») pour chacun et cliquer tous les liens.
