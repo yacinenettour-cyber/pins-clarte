@@ -697,6 +697,9 @@ jobs:
           }
 
           lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
+          # Suivi des inscrits venus de Pinterest dans systeme.io (URL source du contact), par thème.
+          if lien and "utm_source=" not in lien:
+              lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=organic&utm_campaign={theme}"
 
           # Publication directe via l'API Composio (comme videos.yml) : permet le texte
           # alternatif et la confirmation réelle du pin avant l'inscription à l'historique.

@@ -1,0 +1,433 @@
+[
+ {
+  "id": 6101669,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Ton guide « Quand le cerveau refuse de dormir » est prêt 🌙",
+   "previewText": null,
+   "editorType": "visual",
+   "bodyHtml": null,
+   "bodyJson": {
+    "backgroundColor": "rgba(238, 238, 238, 1)",
+    "sections": [
+     {
+      "backgroundColor": "rgba(238, 238, 238, 1)",
+      "columns": [
+       {
+        "items": [
+         {
+          "type": "Text",
+          "html": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Bonjour,</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\">Merci pour ton inscription.</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\">Ton guide <strong>« Quand le cerveau refuse de dormir »</strong> est prêt.</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\">À l’intérieur, tu vas découvrir une routine simple pour calmer les ruminations du soir, relâcher progressivement la tension et préparer ton esprit au sommeil.</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\">Je te conseille de ne pas essayer de tout appliquer d’un coup. Commence simplement par le premier exercice ce soir, puis avance à ton rythme.</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\"><a href=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/6ab51421ecfe18.21678028_Tonguide-3.pdf\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" color=\"rgba(0, 150, 255, 1)\" style=\"color: rgb(0, 150, 255); text-decoration-line: underline;\"><strong>👉 Télécharger le guide</strong></a></p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\">Garde ce guide à portée de main pendant les prochains jours : l’objectif est surtout de créer un rituel du soir simple et régulier.</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\">Tu recevras aussi prochainement quelques conseils complémentaires autour du sommeil, du stress et de la fatigue mentale.</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\">Bonne lecture et bonne soirée,</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\"><strong>Yacine</strong></p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\"><em>Si tu ne souhaites plus recevoir mes e-mails, tu peux te désinscrire à tout moment via le lien prévu en bas de chaque message.</em></p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 1
+  },
+  "activation": {
+   "afterStepId": null,
+   "delay": {
+    "value": 0,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5833669,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "J'ajoute quelque chose au programme cette semaine",
+   "previewText": "Une séance audio supplémentaire, offerte",
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Cette semaine, j'ai décidé d'ajouter un bonus au programme.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Il s'appelle <strong>\"Le protocole des 10 minutes\"</strong> — une séance audio guidée de 10 minutes, conçue spécifiquement pour les soirs où le mental ne lâche absolument pas.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Pas de musique. Pas de voix douce qui murmure des affirmations. Juste une guidance simple, étape par étape, pour sortir du mode alerte en moins de 10 minutes.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><strong>Ce bonus est offert gratuitement avec le programme jusqu'à dimanche soir à minuit.</strong></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Après cette date, il sera vendu séparément.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉</span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\"> Accéder au programme + bonus — 27 €</span></a><span style=\"font-size: 15px;\"> <em>(Offre valable jusqu'à minuit)</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Si tu hésite encore, c'est le bon moment.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">À bientôt, Yacine / Vivre sans stress</span></p>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 2
+  },
+  "activation": {
+   "afterStepId": 6101669,
+   "delay": {
+    "value": 2,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5833721,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Ce que ce programme fait différemment",
+   "previewText": "Si rien n'a marché jusqu'ici, ce n'est pas ton échec.",
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Je veux répondre à quelque chose que j'entends souvent.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><em>\"J'ai déjà essayé beaucoup de choses. Les tisanes, les applis, la cohérence cardiaque, le sport le soir. Rien ne tient.\"</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Je comprends cette fatigue. Vraiment.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Mais voilà ce que j'observe : la plupart des solutions ciblént les symptômes — le mental agité, les pensées en boucle — sans s'occuper de la cause.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><strong>La cause, c'est un système nerveux bloqué en mode alerte.</strong></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Tant qu'on ne s'adresse pas directement à lui, les techniques de surface peuvent aider temporairement, mais elles ne stabilisent pas le calme.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est ce que ce programme fait différemment.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce n'est pas une promesse. C'est une mécanique.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉</span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\"> Voir le programme — 27 € </span></a><span style=\"font-size: 15px;\"><em>(+ Bonus offert )</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Si ça n'a pas marché pour toi après 7 jours, je te rembourse sans question.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Yacine / Vivre sans stress</span></p>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 3
+  },
+  "activation": {
+   "afterStepId": 5833669,
+   "delay": {
+    "value": 1,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5833729,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "La dernière fois que tu as vraiment bien dormi…",
+   "previewText": "Ce moment existe encore. Il attend juste la bonne clé.",
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Je veux te poser une question simple.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">La dernière fois que tu as vraiment bien dormi — que tu t'es réveillé reposé, sans cette lourdeur dans la tête — c'était quand ?</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Il y a longtemps ?</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce souvenir est important. Parce qu'il prouve une chose : ton corps sait le faire.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Il ne l'a pas oublié. Il est juste bloqué.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Et un système nerveux bloqué, ça se débloque. Pas avec de la volonté. Pas en forçant. Avec la bonne approche, répétée régulièrement.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est exactement ce que le programme t'offre.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉</span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\"> </span></a><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\">Je veux retrouver ce calme — 27 €</span></a></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Tu mérites de dormir sans te battre.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Yacine / Vivre sans stress</span></p>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 4
+  },
+  "activation": {
+   "afterStepId": 5833721,
+   "delay": {
+    "value": 1,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5833732,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Le bonus disparaît demain à minuit",
+   "previewText": "Après demain, il sera vendu séparément.",
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Demain soir à minuit, le bonus <strong>\"Le protocole des 10 minutes\"</strong> est retiré du programme.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Je ne veux pas que tu le rates par oubli — c'est pourquoi je t'envoie ce rappel aujourd'hui.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce que tu perds après demain minuit :</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Une séance audio guidée de 10 minutes, conçue pour les soirs où le mental refuse absolument de lâcher. Pas de musique d'ambiance, pas d'affirmations. Une guidance claire, étape par étape, pour sortir du mode alerte rapidement — et laisser le sommeil revenir naturellement.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Elle est offerte gratuitement avec le programme jusqu'à demain soir.</span><br><span style=\"font-size: 15px;\">Après, elle sera vendue séparément.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉 </span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\">Accéder au programme + bonus avant minuit — 27 €</span></a></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Accès immédiat. Garanti satisfait ou remboursé 7 jours, sans justification.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">À demain,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br><span style=\"font-size: 15px;\">Yacine / Vivre sans stress</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><em>PS : Le programme reste disponible après la deadline — mais sans le bonus. Si tu rejoins après, tu devras l'acheter séparément.</em></span></p>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 5
+  },
+  "activation": {
+   "afterStepId": 5833729,
+   "delay": {
+    "value": 0,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5833735,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Ce soir à minuit, c'est terminé",
+   "previewText": "Après minuit, il ne sera plus inclus dans le programme.",
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est mon dernier email sur le sujet.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce soir à minuit, le bonus <strong>\"Le protocole des 10 minutes\"</strong> est définitivement retiré du programme.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Je ne reviendrai pas dessus après ça.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Si tu lis encore ces emails depuis quelques jours, c'est probablement parce qu'une partie de toi cherche encore une solution.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Pas une promesse de plus.</span><br><span style=\"font-size: 15px;\">Pas une technique miracle.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Juste quelque chose de simple, de concret, qui fonctionne vraiment le soir quand le mental ne lâche pas.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est exactement ce que ce programme propose.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">27 €. Accès immédiat. 7 jours pour tester sans risque.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Et ce soir seulement, le bonus audio est inclus gratuitement.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉 </span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\">Rejoindre le programme avant minuit — 27 €</span></a></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Si ce soir n'est pas le bon moment, c'est ok.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Le programme reste disponible après minuit — sans le bonus, mais avec la même garantie.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Prends soin de toi, quelle que soit ta décision.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Yacine / Vivre sans stress</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><em>PS : Cet email est le dernier de cette séquence. Si tu ne souhaites plus recevoir mes emails, tu peux te désinscrire ci-dessous. Sinon, je continuerai à t'envoyer du contenu gratuit sur le stress et le sommeil de temps en temps.</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 6
+  },
+  "activation": {
+   "afterStepId": 5833732,
+   "delay": {
+    "value": 2,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5151611,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Ton guide + Une chose importante",
+   "previewText": null,
+   "editorType": "visual",
+   "bodyHtml": null,
+   "bodyJson": {
+    "backgroundColor": "rgba(238, 238, 238, 1)",
+    "sections": [
+     {
+      "backgroundColor": "rgba(255, 255, 255, 1)",
+      "columns": [
+       {
+        "items": [
+         {
+          "type": "Text",
+          "html": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><span style=\"font-size: 17px;\">Prends une respiration. Ce guide est là pour t'aider ce soir </span><span style=\"font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 17px;\">🌙</span></p>"
+         },
+         {
+          "type": "Text",
+          "html": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; line-height: 1.3; margin-left: 0px;\"><span style=\"font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 20px;\">Ton guide pour ce soir 🌙</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\">Bonjour,</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Ton guide « Quand le cerveau refuse de dormir » est prêt.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">👉 <a href=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/6a41707879d236.93377739_Tonguide.pdf\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" color=\"rgba(0, 150, 255, 1)\" style=\"color: rgb(0, 150, 255); text-decoration-line: underline;\">Télécharge-le ici</a></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Mais avant de le lire, j'aimerais te dire une chose.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Si ton mental s'agite le soir, ce n'est pas parce que tu fais mal les choses.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">C'est simplement un système nerveux qui n'a pas encore reçu le signal qu'il peut se relâcher en sécurité.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Dans ce guide, tu ne trouveras ni méthode compliquée, ni injonction à \"vider la tête\", ni promesse irréaliste.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">👉 Juste quelques étapes simples, à faire sans effort, même quand tu es épuisé.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><strong>Comment l'utiliser ce soir :</strong></p><ul depth=\"0\" style=\"margin-top: 1rem; margin-bottom: 1rem; padding-left: 40px; list-style-type: disc;\"><li><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Lis-le tranquillement, sans pression</p></li><li><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Ou applique une seule étape — c'est suffisant</p></li><li><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Ne cherche pas à dormir à tout prix</p></li></ul><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Même une légère baisse de la pression mentale est déjà un très bon signal.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Si tu ressens ça, même brièvement, c'est que ton corps sait déjà comment se calmer.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Je t'écrirai demain pour aller plus loin.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Prends soin de toi, Yacine / Vivre sans stress</p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><span style=\"font-size: 17px;\"><br></span></p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><span style=\"font-size: 17px;\"><br></span></p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Yacine - Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 7
+  },
+  "activation": {
+   "afterStepId": 5833735,
+   "delay": {
+    "value": 0,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5152214,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Si le mental s'est agité encore hier soir…",
+   "previewText": null,
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><figure style=\"display: table; clear: both; text-align: center; min-width: 50px; max-width: 100%; margin: 0.9em auto; width: 21.8787%;\"><img src=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/694b9c51e6e6b_image_detente.png\" width=\"1000\" style=\"display: block; margin: 0px auto; min-width: 100%; max-width: 100%; width: 21.8787%;\"></figure><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Peut-être que cette nuit a été plus calme. Ou peut-être que le mental s'est agité à nouveau.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Dans les deux cas, c'est normal.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Voici quelque chose d'important à comprendre :</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Quand le stress est installé depuis longtemps, le système nerveux peut se relâcher un soir… puis redevenir agité le lendemain.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉 Ce n'est pas un échec. 👉 Ce n'est pas toi qui \"fais mal\".</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est simplement que le calme, au début, est souvent instable.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Comme un feu qu'on vient d'allumer — il vacille avant de tenir.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><strong>L'erreur que font la plupart des gens :</strong></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ils essaient de contrôler le sommeil. Ils se disent \"il faut que je dorme\" — et cette pensée seule suffit à maintenir le corps en alerte.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Le sommeil ne se force pas. Il revient quand le corps se sent suffisamment en sécurité.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Pour ce soir : choisis une seule étape du guide, et laisse-la agir sans attente.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est tout.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">À demain, Yacine / Vivre sans stress</span><span style=\"font-size: 17px;\"><br></span></p><p dir=\"auto\" extra-spacing=\"true\" style=\"margin-top: 1rem; margin-bottom: 1rem; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><figure style=\"display: table; clear: both; text-align: center; min-width: 50px; max-width: 100%; margin: 0.9em auto; width: 14.8633%;\"><img src=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/694ba0e060522_Capturedécran2025-12-23082507.png\" width=\"418\" style=\"display: block; margin: 0px auto; min-width: 100%; max-width: 100%; width: 14.8633%;\"></figure>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Yacine - Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 8
+  },
+  "activation": {
+   "afterStepId": 5151611,
+   "delay": {
+    "value": 2,
+    "unit": "day"
+   },
+   "sendAtLocalTime": "19:00",
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5152227,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Pourquoi le calme repart parfois",
+   "previewText": null,
+   "editorType": "visual",
+   "bodyHtml": null,
+   "bodyJson": {
+    "backgroundColor": "rgba(238, 238, 238, 1)",
+    "sections": [
+     {
+      "backgroundColor": "rgba(255, 255, 255, 1)",
+      "columns": [
+       {
+        "items": [
+         {
+          "type": "Text",
+          "html": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\">Bonjour,</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Le guide que tu as reçu est volontairement simple.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Il est conçu pour ralentir le mental le soir, relâcher un peu la </p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">pression, envoyer au corps un premier signal de sécurité.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Et pour beaucoup de personnes, ça apporte déjà un vrai soulagement.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Mais il y a une chose importante à comprendre.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">👉 Ce guide ne peut pas stabiliser le calme à lui seul.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Pas parce qu'il est mal fait. Pas parce que tu fais mal les choses.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Mais parce que le système nerveux a besoin de <strong>répétition, </strong></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><strong>de structure, et de continuité</strong> pour que le calme devienne vraiment stable.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Un apaisement ponctuel aide ce soir. Mais sans cadre, le </p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">mental reprend souvent le dessus les soirs plus chargés.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">C'est exactement pour ça que j'ai créé un programme </p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">complet — une structure simple, douce, qui s'applique soir </p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">après soir, sans effort.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Demain, je t'explique pourquoi forcer le sommeil aggrave </p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">tout, et ce qu'il vaut mieux faire à la place.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">À très bientôt, Yacine / Vivre sans stress<span style=\"font-size: 13px;\"><br></span><span style=\"font-size: 17px;\"><br></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; line-height: 1.3; margin-left: 0px;\"><span style=\"font-size: 17px;\"><br class=\"Apple-interchange-newline\"></span></p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Yacine - Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 9
+  },
+  "activation": {
+   "afterStepId": 5152214,
+   "delay": {
+    "value": 2,
+    "unit": "day"
+   },
+   "sendAtLocalTime": "19:00",
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5152236,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Pourquoi forcer le sommeil aggrave tout",
+   "previewText": null,
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-size: 17px;\">&nbsp;</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><figure style=\"display: table; clear: both; text-align: center; min-width: 50px; max-width: 100%; margin: 0.9em auto; width: 21.8787%;\"><img src=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/694b9c51e6e6b_image_detente.png\" width=\"1000\" style=\"display: block; margin: 0px auto; min-width: 100%; max-width: 100%; width: 21.8787%;\"></figure><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Quand le sommeil ne vient pas, le réflexe est presque toujours le même.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">On essaie plus fort.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">\"Il faut que je dorme.\" \"Demain je vais être épuisé.\" \"Pourquoi mon cerveau ne s'arrête pas ?\"</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Mais ce mécanisme a un effet inverse.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉 Forcer le sommeil envoie au corps un message de danger.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Le système nerveux comprend : <em>\"Il y a un problème. Reste en alerte.\"</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Et plus le corps reste en alerte, plus le mental s'active.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est un cercle très fréquent : la fatigue augmente, la pression monte, le sommeil recule.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce n'est pas un manque de volonté. C'est une réaction biologique normale.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><strong>La seule sortie : calmer le système nerveux, pas forcer le sommeil.</strong></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est exactement ce que j'ai construit dans le programme « Quand le cerveau refuse de dormir ».</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Un programme en vidéos, guides écrits et méditations audio — tout ce qu'il faut pour calmer le système nerveux soir après soir, sans médicaments et sans lutte.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Quand ce calme devient stable, le sommeil revient de lui-même.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Si tu veux découvrir cette approche :</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉</span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\"> </span></a><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\">Découvrir le programme — 27 €</span></a><span style=\"font-size: 15px;\"> <em>(Accès immédiat · Garantie satisfait ou remboursé 7 jours)</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Quoi que tu décides, n'essaie pas de te battre contre ton corps ce soir.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">À demain, Yacine / Vivre sans stress</span><span style=\"font-size: 17px;\"><strong><br></strong></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 17px;\"><br></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 17px;\"><br></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><figure style=\"display: table; clear: both; text-align: center; min-width: 50px; max-width: 100%; margin: 0.9em auto; width: 14.1498%;\"><img src=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/694ba0e060522_Capturedécran2025-12-23082507.png\" width=\"418\" style=\"display: block; margin: 0px auto; min-width: 100%; max-width: 100%; width: 14.1498%;\"></figure><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 17px;\"><br class=\"Apple-interchange-newline\"></span></p>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Yacine - Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 10
+  },
+  "activation": {
+   "afterStepId": 5152227,
+   "delay": {
+    "value": 1,
+    "unit": "day"
+   },
+   "sendAtLocalTime": "19:00",
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5152249,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Sophie dormait avec la lumière allumée depuis 3 ans",
+   "previewText": null,
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><figure style=\"display: table; clear: both; text-align: center; min-width: 50px; max-width: 100%; margin: 0.9em auto; width: 22.2354%;\"><img src=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/694b9c51e6e6b_image_detente.png\" width=\"1000\" style=\"display: block; margin: 0px auto; min-width: 100%; max-width: 100%; width: 22.2354%;\"></figure><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Je vais te parler de Sophie.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Sophie est assistante de direction. Elle travaille beaucoup, pense encore plus, et depuis 3 ans, elle s'endormait avec la lumière allumée — parce que le noir amplifiait les pensées.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Elle avait tout essayé : tisanes, applis de méditation, podcasts relaxants, mélatonine.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Rien ne tenait sur la durée.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Quand elle a commencé le programme, sa première réaction a été : <em>\"C'est trop simple pour marcher.\"</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Elle a quand même appliqué une technique le premier soir. Juste une.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Elle a remarqué quelque chose d'inhabituel : elle n'a pas cherché à dormir. Elle a juste… lâché.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce n'est pas magique. Ce n'est pas instantané. Mais la direction a changé.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce que Sophie a compris — et que beaucoup de personnes découvrent trop tard — c'est que le problème n'était pas le sommeil.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'était son système nerveux bloqué en mode alerte.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉</span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\"> </span></a><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\">Voir le programme complet</span></a><span style=\"font-size: 15px;\"> <em>(27 € · Accès immédiat · Garantie 7 jours)</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">À bientôt, Yacine / Vivre sans stress</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\"><em>PS : Sophie n'est pas un cas isolé. Ce profil — épuisé mais incapable de se poser — est exactement le public pour lequel ce programme a été conçu.</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><figure style=\"display: table; clear: both; text-align: center; min-width: 50px; max-width: 100%; margin: 0.9em auto; width: 18.4304%;\"><img src=\"https://d1yei2z3i6k35z.cloudfront.net/1352794/694ba0e060522_Capturedécran2025-12-23082507.png\" width=\"418\" style=\"display: block; margin: 0px auto; min-width: 100%; max-width: 100%; width: 18.4304%;\"></figure>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Yacine - Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 11
+  },
+  "activation": {
+   "afterStepId": 5152236,
+   "delay": {
+    "value": 2,
+    "unit": "day"
+   },
+   "sendAtLocalTime": "19:00",
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5833628,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Ce qu'il y a exactement dans le programme",
+   "previewText": null,
+   "editorType": "visual",
+   "bodyHtml": null,
+   "bodyJson": {
+    "backgroundColor": "rgba(238, 238, 238, 1)",
+    "sections": [
+     {
+      "backgroundColor": "rgba(238, 238, 238, 1)",
+      "columns": [
+       {
+        "items": []
+       }
+      ]
+     },
+     {
+      "backgroundColor": "rgba(255, 255, 255, 1)",
+      "columns": [
+       {
+        "items": [
+         {
+          "type": "Text",
+          "html": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Bonjour,</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Je réalise que je t'ai parlé du programme sans vraiment te dire ce qu'il contient.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Voici ce que tu reçois concrètement :</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><strong>📄 Des guides écrits</strong> avec des protocoles pas-à-pas pour chaque type de soirée : mental agité, corps tendu, pensées en boucle, réveil nocturne.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><strong>🎧 Des méditations audio guidées</strong> à écouter directement au lit — pas pour \"méditer\", juste pour laisser le corps se relâcher sans effort.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">Le tout est conçu pour être utilisé en moins de 15 minutes par soir.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><strong>🕉️Un accompagnement personalisé</strong>: je reste desponible à tout moment.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><strong>Les questions que j'entends souvent :</strong></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><em>\"J'ai déjà essayé la méditation, ça n'a pas marché.\"</em> → Ce programme n'est pas de la méditation classique. C'est du travail sur le système nerveux. Ce n'est pas la même chose.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><em>\"Et si ça ne fonctionne pas pour moi ?\"</em> → Garantie satisfait ou remboursé 7 jours. Sans justification.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><em>\"27 €, c'est vraiment suffisant pour changer quelque chose ?\"</em></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">→ C'est moins qu'une consultation chez un médecin. Et tu peux l'appliquer ce soir, chez toi, à ton rythme.</p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">👉 <a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"underline underline underline-offset-2 decoration-1 decoration-current/40 hover:decoration-current focus:decoration-current\" color=\"rgba(0, 150, 255, 1)\" style=\"color: rgb(0, 150, 255); text-decoration-line: underline;\">Accéder au programme — 27 €</a></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\">À bientôt, Yacine / Vivre sans stress</p>"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 12
+  },
+  "activation": {
+   "afterStepId": 5152249,
+   "delay": {
+    "value": 1,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ },
+ {
+  "id": 5833654,
+  "campaignId": 1039339,
+  "comment": null,
+  "content": {
+   "subject": "Tu n'as rien à forcer",
+   "previewText": "Si tu sens que le guide montre ses limites, voilà ce que je te propose.",
+   "editorType": "classic",
+   "bodyHtml": "<p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Bonjour,</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Depuis quelques jours, tu as découvert une autre manière d'aborder tes soirées.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Moins de lutte. Moins de pression. Un peu plus de calme — parfois fragile, mais réel.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Ce qui fait vraiment la différence sur la durée, ce n'est pas une technique isolée.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">C'est un cadre simple et rassurant, qui revient chaque soir.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Si tu sens que rester seul avec le guide commence à montrer ses limites, le programme est là — sans pression, sans urgence.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">👉 </span><a href=\"https://lp.contactapaisement-mental.fr/accesformation\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" color=\"rgb(17 85 204)\" style=\"color: rgb(17, 85, 204); text-decoration-line: underline;\"><span style=\"font-size: 15px;\">Je veux aller plus loin </span></a><span style=\"font-size: 15px;\"><em>(27 € · Accès immédiat · Garanti 7 jours)</em></span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Quoi que tu décides, le plus important reste le même : ton corps sait déjà comment se calmer. Il a juste besoin d'un peu plus de régularité.</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><span style=\"font-size: 15px;\">Prends soin de toi, Yacine / Vivre sans stress</span></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p><p dir=\"auto\" extra-spacing=\"false\" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px;\"><br data-systemeio-trailing-break=\"true\"></p>",
+   "bodyJson": null,
+   "senderEmail": "contact@contactapaisement-mental.fr",
+   "senderName": "Contact Apaisement Mental"
+  },
+  "state": {
+   "isActive": true,
+   "position": 13
+  },
+  "activation": {
+   "afterStepId": 5833628,
+   "delay": {
+    "value": 2,
+    "unit": "day"
+   },
+   "sendAtLocalTime": null,
+   "skipWeekdays": []
+  }
+ }
+]
