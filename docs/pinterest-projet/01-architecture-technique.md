@@ -30,7 +30,7 @@ Un prompt système a été rédigé pour un futur module IA dans un scénario Ma
 
 Le pipeline carousel (`carousel.yml`, depuis le 29/09/2026, substitut Idea Pin 1×/jour) ne passe **pas** par Make : il publie directement via l'API REST Composio (`PINTEREST_CREATE_PIN`, secret `COMPOSIO_API_KEY`), choisit un pin non publié ayant `points_image`, génère une couverture + une slide par point (fond différent par slide), vérifie que Composio renvoie bien un id de pin, puis inscrit l'entrée dans `historique.json` avec rebase/nouvelle tentative (évite la republication par `pins.yml`). Détail : `04-journal-decisions.md` section 15.
 
-Le pipeline vidéo (`videos.yml`) suit la même logique avec ses propres fichiers (`videos.json`, `historique_videos.json`, `videos_fonds/`), son propre webhook (`MAKE_WEBHOOK_URL_VIDEO`, scénario Make séparé pour ne pas perturber le scénario image existant), et la même règle `THEMES_SANS_LIEN`.
+Le pipeline vidéo (`videos.yml`) utilise ses propres fichiers (`videos.json`, `historique_videos.json`, `videos_fonds/`) et la même règle `THEMES_SANS_LIEN`. **Depuis le 29/09/2026, il ne passe plus par Make** (le scénario Make « Pinterest Video Pins » n'a jamais publié une seule vidéo : formules invalides, désactivé par Make le 26/09 — voir `04-journal-decisions.md` section 16) : il publie via l'API REST Composio comme `carousel.yml` — `PINTEREST_REGISTER_MEDIA` → envoi du .mp4 en multipart vers `upload_url` avec `upload_parameters` → `PINTEREST_GET_MEDIA` jusqu'au statut `succeeded` → `PINTEREST_CREATE_PIN` (`source_type: video_id`, couverture envoyée en base64). L'entrée n'est inscrite dans `historique_videos.json` qu'une fois l'id du pin reçu.
 
 ## Fichiers du dépôt
 
@@ -57,9 +57,9 @@ Le pipeline vidéo (`videos.yml`) suit la même logique avec ses propres fichier
 ## Secrets GitHub requis
 
 - `MAKE_WEBHOOK_URL` — webhook Make.com pour les pins classiques (mode image)
-- `MAKE_WEBHOOK_URL_VIDEO` — webhook Make.com séparé pour les Video Pins (mode vidéo)
+- `MAKE_WEBHOOK_URL_VIDEO` — ancien webhook Make.com des Video Pins, **plus utilisé depuis le 29/09/2026** (remplacé par `COMPOSIO_API_KEY`)
 - `LIEN_PAGE` — URL de la page de capture de la formation
-- `COMPOSIO_API_KEY` — clé API Composio pour `carousel.yml` (projet `yacinenettour_workspace_first_project`, où la connexion Pinterest doit exister)
+- `COMPOSIO_API_KEY` — clé API Composio pour `carousel.yml` et `videos.yml` (projet `yacinenettour_workspace_first_project`, où la connexion Pinterest doit exister)
 - `OPENAI_API_KEY` *(optionnel)* — génération de fonds inédits par IA, ~0,05 $/image en qualité `medium`
 
 ## Formats

@@ -40,4 +40,6 @@ Détail complet : `docs/pinterest-projet/05-process-operationnel.md`.
 
 ## Avant de considérer une tâche terminée
 
+**Publication : vérifier sur Pinterest lui-même**, jamais se fier à un run GitHub « success » ni à un HTTP 200 de Make/Composio (incident du 29/09/2026 : 5 vidéos inscrites « publiées » depuis le 25/09, aucune en ligne). Connecteurs : Pinterest via Composio (`PINTEREST_LIST_PINS`, `PINTEREST_GET_PIN`) ; Make via son API sur **`eu2.make.com`** (le connecteur Composio `make` vise `us2` et échoue en 401). Détail : `04-journal-decisions.md` section 16.
+
 Toujours revérifier avec un script Python (pas à l'œil) : 0 doublon exact, 0 quasi-doublon, longueurs de titre/description dans les limites, routage de thème/board préservé (premier hashtag inchangé sauf intention explicite), pins déjà publiés intacts. Committer et pousser sur la branche en cours seulement après ces vérifications.

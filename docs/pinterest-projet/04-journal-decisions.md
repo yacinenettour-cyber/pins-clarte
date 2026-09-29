@@ -163,6 +163,21 @@ Validé par simulation locale complète (dépôt distant factice, clone superfic
 
 **Leçon de process** : les fichiers `.github/workflows/*` ne peuvent pas être poussés sur `main` depuis la session (refus du contrôle de permission). Les éditions partielles « insère ces lignes après la ligne 359 » dans l'éditeur GitHub ont produit 3 erreurs de syntaxe d'affilée ; seule la méthode « fichier complet validé, Ctrl+A / coller » a fonctionné du premier coup.
 
+## 16. Vidéos : aucune n'avait jamais été publiée, passage de Make à Composio (29/09/2026)
+
+**Constat vérifié via les connecteurs** (Pinterest via Composio, Make via son API — le connecteur Composio `make` pointe par erreur sur la zone `us2` et renvoie 401 ; l'API Make `eu2.make.com` a été interrogée directement avec une clé fournie par l'utilisateur) :
+- **Zéro Video Pin sur le compte** (`PINTEREST_LIST_PINS` filtré VIDEO/IDEA : vide), alors que `historique_videos.json` en comptait 5 comme publiées.
+- Le scénario Make « Pinterest Video Pins » (id 9866388) a échoué 4 fois le 26/09 (`BundleValidationError`) puis a été **désactivé automatiquement par Make**. Ses formules étaient invalides (texte mal assemblé du type `{{{{get("11.Body.upload_parameters"; ...)}}}}`, URL `/v5/media/get(parseJSON(...))` hors accolades). Les 5 envois sont restés dans la file du webhook (`pin-clarte-video`).
+- `videos.yml` inscrivait la vidéo à l'historique **avant** l'envoi à Make et ne vérifiait qu'un HTTP 200 du webhook (Make répond 200 même quand il met en file ou échoue plus tard) → faux « publié » systématique.
+- **Aucun run à 18h30** : les 5 runs de `videos.yml` ont tous été lancés à la main (25/09 soir, 26/09 et 29/09 matin). La tâche cron-job.org vidéo ne se déclenche pas.
+- Le scénario Make images (id 9850862) fonctionne : toutes ses exécutions réussies.
+
+**Correctifs** :
+1. Première vidéo réellement publiée, en session : « La charge mentale des petites tâches… » (pin `600175087889888616`, tableau fatigue mentale, sans lien) — chaîne REGISTER_MEDIA → envoi S3 (204) → GET_MEDIA (`processing` puis `succeeded`) → CREATE_PIN validée en réel.
+2. `historique_videos.json` : les 4 vidéos jamais publiées retirées (elles repasseront dans la rotation), `pin_id` ajouté à la vidéo publiée.
+3. Nouvelle version de `videos.yml` (publication Composio, inscription à l'historique seulement après id de pin reçu, push avec nouvelle tentative) — validée par simulation locale (succès, échec de traitement Pinterest, échec de création), **à coller par l'utilisateur** (fichiers workflow non poussables depuis la session).
+4. Scénario Make vidéo laissé désactivé, non modifié : plus rien ne lui envoie de données une fois `videos.yml` remplacé. Ne pas le réactiver (il republierait les 5 envois en file, dont une vidéo désormais publiée).
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les 3 tableaux orphelins (`Routine anti-âge quotidienne`, `🧠 Fatigue & Causes Biologiques`, `Enregistrements rapides`) n'ont pas encore été traités (priorité non choisie par l'utilisateur) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
