@@ -369,7 +369,7 @@ jobs:
                       "items": [{"url": u} for u in urls],
                   },
               },
-              "connected_account_id": "pinterest_caroba-pectic",
+            
               "entity_id": "default",
           }
           r = requests.post(
