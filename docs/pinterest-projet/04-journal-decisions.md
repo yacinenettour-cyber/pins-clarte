@@ -194,6 +194,8 @@ Validé par simulation locale complète (dépôt distant factice, clone superfic
 
 **Mise en œuvre** : visuel clair (voir `CLAUDE.md` règle 8) en **alternance stricte** avec l'ancien, champ `design` dans `historique.json` — choix d'un test plutôt qu'un basculement complet, l'utilisateur ayant demandé plus tôt de tester avant de généraliser un format. Publication via Composio (texte alternatif + confirmation réelle du pin, comme les vidéos). Validé par rendu d'exemples (6 thèmes), simulation de 2 runs consécutifs (alternance clair→sombre, commits concurrents préservés) et d'un échec (rien inscrit).
 
+**Consigne ajoutée le même jour : « veille à ce que le texte ne coupe pas les images »** — l'ancien visuel sombre posait le texte sur la photo (sur le pin « 3 pensées qui précèdent la procrastination » du 29/09, le titre passait sur la tête de la personne). Les deux visuels séparent désormais strictement photo et texte ; contrôle automatique sur les 170 pins restants × 2 visuels : 0 chevauchement, 0 débordement, 1 rendu sans photo (place insuffisante, cartes centrées).
+
 **À faire vers le 15-20/10/2026** : comparer impressions/enregistrements par `design` (pins publiés depuis le 29/09) et garder le meilleur.
 
 ## Point ouvert à ce jour
