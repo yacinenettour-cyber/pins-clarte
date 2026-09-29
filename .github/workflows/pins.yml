@@ -441,24 +441,31 @@ jobs:
               y += 44
               style = "numero" if re.search(r"\d", titre) else "coche"
               police_num = charger_police(police_grasse, 34)
-              r, pad, espace, bas = 30, 26, 20, H - (200 if avec_lien else 120)
-              x_txt = marge + pad + 2 * r + 24
-              larg_txt = L - marge - pad - x_txt
-              # Réduit le texte des cartes si besoin : rien ne doit déborder sur le pied de page.
-              for taille_pt in (38, 36, 34, 32, 30):
+              r, bas, min_photo = 30, H - (200 if avec_lien else 120), 220
+
+              def mise_en_page(taille_pt, pad, espace):
+                  x_txt = marge + pad + 2 * r + 24
                   police_pt = charger_police(police_normale, taille_pt)
                   hl = int(taille_pt * 1.3)
                   cartes = []
                   for p in points:
-                      lignes = couper_lignes(d, p, police_pt, larg_txt)
+                      lignes = couper_lignes(d, p, police_pt, L - marge - pad - x_txt)
                       cartes.append((lignes, max(2 * r, len(lignes) * hl) + 2 * pad))
                   h_cartes = sum(h for _, h in cartes) + espace * (len(cartes) - 1)
-                  reste = bas - y - h_cartes
-                  if reste >= 0:
-                      break
-              haut_cartes = y
+                  return pad, espace, x_txt, police_pt, hl, cartes, bas - y - h_cartes
+
+              # La photo passe avant la taille du texte : on réduit texte, marges internes et
+              # espacements tant qu'elle ne tient pas ; sans place même au plus petit, pas de
+              # photo (plus grand texte qui tient). Rien ne doit déborder sur le pied de page.
+              essais = [(t, pad, esp) for t in (38, 36, 34, 32, 30, 28) for pad, esp in ((26, 20), (20, 14))]
+              choix = None
+              if fond:
+                  choix = next((m for m in (mise_en_page(*e) for e in essais) if m[-1] - 40 >= min_photo), None)
+              if choix is None:
+                  choix = next((m for m in (mise_en_page(*e) for e in essais) if m[-1] >= 0), mise_en_page(*essais[-1]))
+              pad, espace, x_txt, police_pt, hl, cartes, reste = choix
               h_photo = min(reste - 40, 430) if fond else 0
-              if h_photo < 220:
+              if h_photo < min_photo:
                   h_photo = 0
               if not h_photo:
                   y += max(0, reste // 2)
