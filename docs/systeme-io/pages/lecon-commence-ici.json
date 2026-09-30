@@ -32,13 +32,23 @@
         },
         {
          "type": "Headline",
+         "text": "Avant ta première soirée",
+         "level": "h2"
+        },
+        {
+         "type": "Text",
+         "textAlign": null,
+         "html": "<ol><li>Fais ton <strong>auto-évaluation</strong> (leçon « Où en es-tu ? », juste en dessous) : 2 minutes, pour mesurer tes progrès plus tard.</li><li>Imprime ton <strong>kit</strong> (leçon « Ton kit à imprimer ») et pose la fiche SOS sur ta table de nuit.</li><li>Ce soir, commence par <strong>une seule</strong> leçon du module « Apaiser le système nerveux ».</li></ol>"
+        },
+        {
+         "type": "Headline",
          "text": "Dans quel ordre suivre les modules",
          "level": "h2"
         },
         {
          "type": "Text",
          "textAlign": null,
-         "html": "<ol><li><strong>Apaiser le système nerveux</strong> : faire redescendre la pression le soir même.</li><li><strong>Sortir des ruminations</strong> : ne plus lutter contre les pensées en boucle.</li><li><strong>Rituel du soir</strong> : installer 5 à 10 minutes de calme chaque soir.</li><li><strong>Consolider le sommeil dans le temps</strong> : pour que le calme tienne.</li></ol><p>Même si la liste des modules s'affiche dans un autre ordre, suis celui-ci. Le bonus <strong>Audio express</strong> est à garder pour les soirs de forte pression.</p>"
+         "html": "<ol><li><strong>Apaiser le système nerveux</strong> : faire redescendre la pression le soir même (soupir physiologique, relâchement musculaire, scan corporel).</li><li><strong>Sortir des ruminations</strong> : ne plus lutter contre les pensées en boucle (rendez-vous des soucis, liste de demain, mélange cognitif, prendre de la distance).</li><li><strong>Rituel du soir</strong> : installer quelques minutes de calme chaque soir, en 3, 10 ou 20 minutes selon ton énergie.</li><li><strong>Consolider le sommeil dans le temps</strong> : réveils nocturnes, le matin, et quand en parler à un professionnel.</li></ol><p>Même si la liste des modules s'affiche dans un autre ordre, suis celui-ci. Garde l'<strong>audio express</strong> de ce premier module pour les soirs de forte pression.</p>"
         },
         {
          "type": "Headline",

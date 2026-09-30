@@ -23,7 +23,7 @@
         {
          "type": "Text",
          "textAlign": null,
-         "html": "<p>Le calme devient stable avec la répétition, pas avec l'intensité. Voici une façon simple d'enchaîner les modules sur un mois.</p>"
+         "html": "<p>Le calme devient stable avec la répétition, pas avec l'intensité. Voici une façon simple d'enchaîner les modules sur un mois. Avant de commencer, fais ton auto-évaluation (premier module) : tu la referas aux jours 14 et 28.</p>"
         },
         {
          "type": "Headline",
@@ -33,7 +33,7 @@
         {
          "type": "Text",
          "textAlign": null,
-         "html": "<p>Chaque soir, un exercice du module <strong>Apaiser le système nerveux</strong> : respiration lente ou relâchement du corps, 2 à 5 minutes.</p>"
+         "html": "<p>Chaque soir, un exercice du module <strong>Apaiser le système nerveux</strong> : le soupir physiologique, le relâchement musculaire ou le scan corporel, 2 à 10 minutes. Chaque matin, remplis ton journal du sommeil (1 minute).</p>"
         },
         {
          "type": "Headline",
@@ -43,7 +43,7 @@
         {
          "type": "Text",
          "textAlign": null,
-         "html": "<p>Garde ton exercice de la semaine 1 et ajoute la technique du module <strong>Sortir des ruminations</strong> les soirs où les pensées tournent.</p>"
+         "html": "<p>Garde ton exercice de la semaine 1 et ajoute le module <strong>Sortir des ruminations</strong> : la liste de demain avant de dormir, le rendez-vous des soucis en fin d'après-midi, et le mélange cognitif les soirs où les pensées tournent. <strong>Jour 14</strong> : refais ton auto-évaluation.</p>"
         },
         {
          "type": "Headline",
@@ -53,7 +53,7 @@
         {
          "type": "Text",
          "textAlign": null,
-         "html": "<p>Construis ton rituel avec le module <strong>Rituel du soir</strong> : même moment, même ordre, 5 à 10 minutes.</p>"
+         "html": "<p>Construis ton rituel avec le module <strong>Rituel du soir</strong> : choisis chaque soir ta version (3, 10 ou 20 minutes) et teste un seul réglage de la leçon « Préparer le corps ». Même début chaque soir, c'est le signal.</p>"
         },
         {
          "type": "Headline",
@@ -63,7 +63,7 @@
         {
          "type": "Text",
          "textAlign": null,
-         "html": "<p>Garde ton rituel, même les soirs où tout va bien, et appuie-toi sur le module <strong>Consolider le sommeil dans le temps</strong> pour les réveils nocturnes.</p>"
+         "html": "<p>Garde ton rituel, même les soirs où tout va bien, et appuie-toi sur le module <strong>Consolider le sommeil dans le temps</strong> : la fiche SOS pour les réveils nocturnes, une heure de lever régulière et la lumière du matin. <strong>Jour 28</strong> : refais ton auto-évaluation et compare avec ton point de départ.</p>"
         },
         {
          "type": "Headline",
@@ -73,7 +73,7 @@
         {
          "type": "BulletList",
          "items": [
-          "Chaque matin, note en une ligne comment s'est passée ta soirée",
+          "Chaque matin, remplis le journal du sommeil du kit (1 minute)",
           "Regarde la tendance sur la semaine, pas une seule nuit",
           "Soir très difficile : lance l'audio express et ne fais rien d'autre",
           "Un soir sauté ? Reprends simplement le lendemain"
@@ -83,7 +83,7 @@
         {
          "type": "Text",
          "textAlign": null,
-         "html": "<p>Au bout de ces 4 semaines, écris-moi à yavo88@hotmail.com pour me dire ce qui a changé : ton retour m'aide à améliorer le programme.</p>"
+         "html": "<p>Au bout de ces 4 semaines, écris-moi à yavo88@hotmail.com pour me dire ce qui a changé, avec tes scores de départ et d'arrivée si tu veux bien : ton retour m'aide à améliorer le programme.</p>"
         }
        ]
       }
