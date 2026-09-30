@@ -27,12 +27,12 @@ Le forfait gratuit ne permet pas d'ajouter de page. On **regroupe tout dans la p
 ## 1. Mentions légales (texte complet à remplacer)
 
 **Éditeur du site**
-Yacine Nettour, entrepreneur individuel (EI), sous le nom commercial « Clarté Mentale »
+Yacine NETTOUR, entrepreneur individuel (EI), sous le nom commercial « Clarté Mentale »
 Adresse : 1 avenue Antoine Véran, 06100 Nice, France
 SIREN : 822 033 577 — SIRET : 822 033 577 00021
 N° de TVA intracommunautaire : FR00 822 033 577
 E-mail : yavo88@hotmail.com
-Directeur de la publication : Yacine Nettour
+Directeur de la publication : Yacine NETTOUR
 
 **Hébergement**
 ITACWT Limited (systeme.io), 2 Cruise Park Rise, Tyrrelstown, Dublin 15, Irlande.
@@ -51,7 +51,7 @@ Les textes, visuels, audios et vidéos de ce site et de la formation sont proté
 ## 2. Conditions générales de vente (CGV)
 
 **Article 1 — Vendeur**
-Yacine Nettour, entrepreneur individuel (EI), nom commercial « Clarté Mentale », 1 avenue Antoine Véran, 06100 Nice, France, SIRET 822 033 577 00021, e-mail : yavo88@hotmail.com.
+Yacine NETTOUR, entrepreneur individuel (EI), nom commercial « Clarté Mentale », 1 avenue Antoine Véran, 06100 Nice, France, SIRET 822 033 577 00021, e-mail : yavo88@hotmail.com.
 
 **Article 2 — Objet**
 Les présentes CGV s'appliquent à la vente en ligne du programme numérique « Quand le cerveau refuse de dormir » à des particuliers. Toute commande implique leur acceptation.
@@ -81,7 +81,9 @@ Le client bénéficie de la garantie légale de conformité des contenus numéri
 Pour toute question ou réclamation : yavo88@hotmail.com.
 
 **Article 11 — Médiation de la consommation**
-En cas de litige non résolu avec le vendeur, le client peut recourir gratuitement au médiateur de la consommation : [À COMPLÉTER : nom, site web et adresse du médiateur auquel tu adhères, adhésion obligatoire pour vendre à des particuliers]. Le client peut aussi utiliser la plateforme européenne de règlement en ligne des litiges.
+Le client adresse d'abord sa réclamation par écrit au vendeur (yavo88@hotmail.com). Conformément à l'article L612-1 du Code de la consommation, il peut ensuite recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable du litige.
+
+> Note (30/09/2026) : la plateforme européenne de règlement en ligne des litiges a fermé le 20 juillet 2025 (règlement UE 2024/3228), sa mention a été retirée. **Médiateur toujours à ajouter** (adhésion obligatoire pour vendre à des particuliers) : compléter cet article avec son nom, son site et son adresse dès l'adhésion.
 
 **Article 12 — Données personnelles**
 Les données collectées lors de la commande sont traitées conformément à la Politique de confidentialité.
@@ -94,7 +96,7 @@ Les présentes CGV sont soumises au droit français.
 ## 3. Politique de confidentialité
 
 **Responsable du traitement**
-Yacine Nettour, entrepreneur individuel (EI), « Clarté Mentale », 1 avenue Antoine Véran, 06100 Nice, France, e-mail : yavo88@hotmail.com.
+Yacine NETTOUR, entrepreneur individuel (EI), « Clarté Mentale », 1 avenue Antoine Véran, 06100 Nice, France, e-mail : yavo88@hotmail.com.
 
 **Données collectées**
 - Inscription au guide gratuit : adresse e-mail, prénom, pays.
