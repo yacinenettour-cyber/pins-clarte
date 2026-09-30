@@ -57,7 +57,7 @@ Yacine NETTOUR, entrepreneur individuel (EI), nom commercial « Clarté Mentale 
 Les présentes CGV s'appliquent à la vente en ligne du programme numérique « Quand le cerveau refuse de dormir » à des particuliers. Toute commande implique leur acceptation.
 
 **Article 3 — Produit**
-Programme en ligne composé de 4 modules et d'un bonus audio, accessible depuis un ordinateur, une tablette ou un téléphone. Ce programme propose des outils de bien-être. Il ne constitue ni un traitement médical ni une thérapie, et ne remplace pas l'avis d'un professionnel de santé.
+Programme en ligne composé de 6 modules de leçons courtes, d'audios guidés et d'un kit de fiches à imprimer (PDF), accessible depuis un ordinateur, une tablette ou un téléphone. Ce programme propose des outils de bien-être. Il ne constitue ni un traitement médical ni une thérapie, et ne remplace pas l'avis d'un professionnel de santé.
 
 **Article 4 — Prix**
 37 € TTC (TVA incluse au taux applicable), paiement unique, sans abonnement. Le prix applicable est celui affiché au moment de la commande.
