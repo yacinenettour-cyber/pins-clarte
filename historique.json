@@ -561,5 +561,14 @@
   "theme": "blocagemental",
   "design": "clair",
   "pin_id": "600175087889910283"
+ },
+ {
+  "date": "2026-09-30T18:07+00:00",
+  "titre": "Le scan corporel de 3 minutes pour repérer où tu stockes le stress",
+  "image": "images/pin-20260930-180732.jpg",
+  "fond": "fonds/fond-156.jpg",
+  "theme": "somatisation",
+  "design": "sombre",
+  "pin_id": "600175087889911919"
  }
 ]
