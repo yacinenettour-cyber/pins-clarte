@@ -36,4 +36,18 @@ Pièges constatés :
 | 👋 COMMENCE ICI — COMMENT SUIVRE LE PROGRAMME | Bonus (1er module), position 2 | 11128710 / 45141870 | `lecon-commence-ici.json` : ordre conseillé des modules (compense le module « Sortir des ruminations » rangé en dernier), mode d'emploi, garantie, contact |
 | 🗓️ TON PLAN DES 4 PROCHAINES SEMAINES | Consolider le sommeil, position 3 | 11128711 / 45141871 | `lecon-plan-4-semaines.json` : un module par semaine, conseils pour tenir |
 
-Les deux ont été activées le 29/09 (0 élève à cette date). Le contenu des leçons existantes n'est pas lisible par l'API : les nouvelles leçons ne décrivent les modules qu'à partir de la page de vente.
+Les deux ont été activées le 29/09 (0 élève à cette date).
+
+## 14 leçons ajoutées le 30/09/2026 (formation passée de 9 à 23 leçons)
+
+Contenu : `lecons-v2/*.json`, généré par `lecons-v2/gen_lecons.py`. Publiées via `POST /api/school/modules/{id}/classic-lectures` (**`delayBeforePreviousLecture: 0` obligatoire**, sinon 422), `save`, puis `activate`. Vérifié : 23 leçons actives, aucun doublon (`modules-with-lectures?limit=100` : sans `limit`, la réponse s'arrête à 10 leçons). Le serveur valide réellement le contenu (une version invalide est refusée en 422, sans rien modifier). Premier module renommé « 🌙 BIEN DÉMARRER + AUDIO EXPRESS (SOIR TRÈS DIFFICILE) ». « Commence ici » et « Plan des 4 semaines » renvoient vers les nouvelles leçons et le kit.
+
+| Module | Leçons ajoutées (id) |
+|---|---|
+| Bien démarrer (2160235) | Où en es-tu ? auto-évaluation (11132883), Ton kit à imprimer (11132884) |
+| Apaiser le système nerveux (2160281) | Soupir physiologique (11129719), Relâchement musculaire (11132872), Scan corporel (11132873) |
+| Rituel du soir (2169485) | Préparer le corps (11132878), Rituel en 3 versions (11132879) |
+| Consolider (2177956) | Réveillé à 3 h (11132880), Le matin compte (11132881), Quand consulter (11132882) |
+| Sortir des ruminations (2161517) | Rendez-vous des soucis (11132874), Liste de demain (11132875), Mélange cognitif (11132876), Prendre de la distance (11132877) |
+
+Les fiches PDF du kit (`medias/formation/kit/`) sont liées par des blocs `References` (jsDelivr épinglé sur `22e9e84`). Le contenu des leçons existantes n'est pas lisible par l'API : les nouvelles leçons ne décrivent les modules qu'à partir de la page de vente.
