@@ -1,0 +1,103 @@
+{
+ "slug": "cas-periode-difficile",
+ "module": "cas",
+ "nom": "UNE PÉRIODE DE GROS STRESS : EXAMENS, DEUIL, SÉPARATION…",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Quand une période difficile bouscule tes nuits",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Des examens, un deuil, une séparation, un déménagement, une perte d'emploi, un proche malade… Quand la vie secoue fort, le sommeil est souvent le premier à en payer le prix. Si c'est ton cas en ce moment, commence par ceci : <strong>c'est une réaction normale</strong>.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Ce qui est normal, et ce qu'il faut éviter",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Quelques nuits ou quelques semaines agitées après un choc, c'est ton système d'alarme qui fait son travail. Le plus souvent, le sommeil revient quand la situation s'apaise.</p><p>Le vrai risque, ce sont les habitudes prises pour compenser : rester longtemps au lit, faire de longues siestes, décaler ses réveils, boire un verre pour dormir, rester sur les écrans tard. Elles peuvent <strong>installer l'insomnie après la tempête</strong>, quand la cause a disparu. L'objectif n'est donc pas de bien dormir coûte que coûte, mais de garder quelques repères.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "person sitting by window rain calm reflection",
+          "altText": "Personne assise près d'une fenêtre un jour de pluie"
+         },
+         {
+          "type": "Headline",
+          "text": "Tes 4 ancres pendant la tempête",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Une heure de lever fixe</strong> : c'est le repère qui protège le plus ton horloge interne.</li><li><strong>La version 3 minutes du rituel</strong>, chaque soir, même quand tout le reste lâche.</li><li><strong>Un rendez-vous des soucis quotidien</strong>, 15 minutes. Pour un deuil ou une séparation, ce moment peut aussi servir à écrire ce que tu ressens, sans chercher de solution.</li><li><strong>Sortir et bouger chaque jour</strong>, même 15 minutes à la lumière du jour.</li></ol>"
+         },
+         {
+          "type": "Headline",
+          "text": "Selon ta situation",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p><strong>Examens</strong> : garde tes heures de sommeil. C'est pendant la nuit que le cerveau consolide ce que tu as appris : une nuit blanche de révisions fait souvent perdre plus qu'elle ne fait gagner. Arrête de réviser au moins une heure avant de te coucher.</p><p><strong>Deuil</strong> : les soirées et les nuits sont souvent les moments les plus lourds. Le sommeil peut rester perturbé pendant des semaines, et ce n'est pas anormal. Ne reste pas seul(e) avec ta peine : parles-en à un proche ou à une association d'accompagnement du deuil.</p><p><strong>Séparation</strong> : le lit et la chambre rappellent l'absence. Change un détail (la place du lit, le linge, la lumière) et crée un rituel qui n'appartient qu'à toi.</p><p><strong>Déménagement</strong> : les premières nuits dans un lieu inconnu sont souvent plus légères, le cerveau reste un peu en veille. Apporte un objet familier (ton oreiller, un plaid) et garde tes gestes du soir.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Ne reste pas seul(e)",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Parler à quelqu'un de confiance allège souvent plus qu'on ne l'imagine",
+           "Si tes nuits restent difficiles plusieurs fois par semaine au-delà de 3 mois, parles-en à ton médecin",
+           "Si ton moral s'effondre ou si tu n'arrives plus à faire face au quotidien, consulte sans attendre",
+           "Si tu as des idées noires, appelle le 3114, gratuit, 24 h sur 24 et 7 jours sur 7"
+          ],
+          "icon": "heart"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : le rendez-vous des soucis (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/03-rendez-vous-des-soucis.pdf"
+           },
+           {
+            "title": "Fiche à imprimer : ton rituel en 3 versions (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/06-rituel-du-soir-3-versions.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

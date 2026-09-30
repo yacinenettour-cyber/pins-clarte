@@ -1,0 +1,113 @@
+{
+ "slug": "cas-parent",
+ "module": "cas",
+ "nom": "PARENT ÉPUISÉ : DORMIR QUAND LES NUITS SONT HACHÉES",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Parent épuisé : dormir quand les nuits sont hachées",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Un bébé qui se réveille, un enfant malade, un cauchemar à 2 h du matin… Quand tu es parent, les réveils ne dépendent pas de toi. Et le plus dur, c'est souvent ensuite : recouché(e), épuisé(e), tu n'arrives plus à te rendormir.</p><p>Le but de cette leçon n'est pas la nuit parfaite. C'est de protéger ce qui peut l'être : <strong>te rendormir plus vite, récupérer quand c'est possible, et ne pas porter ça seul(e)</strong>.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Ton problème n'est peut-être pas l'insomnie",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Les autres leçons s'adressent surtout aux personnes qui ont le temps de dormir mais n'y arrivent pas. Toi, tu manques peut-être surtout d'<strong>occasions</strong> de dormir. La nuance change certains conseils : par exemple, la sieste courte et limitée recommandée contre l'insomnie ne s'applique pas forcément à toi. Quand ton enfant dort l'après-midi, une vraie sieste peut t'aider, tant qu'elle ne se prolonge pas en fin de journée.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "tired parent resting soft light nursery night",
+          "altText": "Parent qui se repose dans une chambre d'enfant tamisée"
+         },
+         {
+          "type": "Headline",
+          "text": "Après un réveil : te rendormir plus vite",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Lumière minimale</strong> : une veilleuse faible et chaude pour le biberon ou le change, jamais le plafonnier.</li><li><strong>Évite de faire défiler ton téléphone</strong> pendant la tétée ou le biberon : c'est là que le mental se rallume. Préfère une respiration lente, 4 temps d'inspiration, 6 d'expiration.</li><li><strong>En te recouchant</strong> : 5 soupirs physiologiques, puis relâche la mâchoire, les épaules, le ventre.</li><li><strong>Ne compte pas les heures</strong> qu'il te reste. « Je me repose, même sans dormir tout de suite » suffit.</li></ol><p>Si tu nourris ton bébé la nuit et que tu sens le sommeil te gagner, évite le canapé ou le fauteuil : ce sont les endroits les plus risqués pour s'endormir avec un bébé dans les bras.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Partager les nuits",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Si vous êtes deux, <strong>coupez la nuit en deux</strong> plutôt que de vous réveiller tous les deux à chaque fois : l'un est « de garde » jusqu'à 2 h, l'autre ensuite. Chacun obtient ainsi un bloc de 4 à 5 heures de sommeil continu, bien plus réparateur que des miettes. Celui qui n'est pas de garde peut dormir avec des bouchons d'oreilles, voire dans une autre pièce.</p><p>En cas d'allaitement, ton ou ta partenaire peut prendre le change, le rot et le recoucher. Et si tu es seul(e), accepte l'aide proposée (famille, amis, voisins) et baisse sans culpabilité tes exigences sur tout le reste.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Ton rituel, version parent",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "La version 3 minutes du rituel devient ta version par défaut, sans culpabilité",
+           "Certains soirs, couche-toi en même temps que ton enfant : le début de nuit est la partie la plus profonde du sommeil",
+           "Le matin, quelques minutes de lumière du jour et de marche soutiennent ton moral",
+           "Garde la fiche SOS sur ta table de nuit pour les réveils difficiles"
+          ],
+          "icon": "baby"
+         },
+         {
+          "type": "Headline",
+          "text": "Prends soin de toi aussi",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Après une naissance, une période de larmes et d'émotions dans les premiers jours est fréquente, et passe en général en deux semaines. Si ton moral reste bas plus longtemps, si l'anxiété t'envahit ou si tu as le sentiment de ne plus y arriver, parles-en à ton médecin, à ta sage-femme ou à la PMI. Ça arrive à beaucoup de parents, et ça se soigne.</p>"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche SOS à garder sur la table de nuit (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/05-sos-reveil-nocturne.pdf"
+           },
+           {
+            "title": "Fiche à imprimer : ton rituel en 3 versions (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/06-rituel-du-soir-3-versions.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

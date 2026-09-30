@@ -1,0 +1,108 @@
+{
+ "slug": "cas-travail",
+ "module": "cas",
+ "nom": "SI C'EST LE TRAVAIL QUI TE SUIT JUSQU'AU LIT",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Si c'est le travail qui te suit jusqu'au lit",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Le mail auquel tu n'as pas répondu. La réunion de demain. La phrase de ton ou ta responsable que tu rejoues en boucle. Tu as quitté ton poste depuis des heures, mais ta tête, elle, est restée au bureau.</p><p>Ce n'est pas un manque de volonté : ton cerveau n'a simplement pas reçu le signal que la journée de travail était <strong>terminée</strong>. Cette leçon t'aide à le lui donner.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi le travail colle à la tête",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Une tâche inachevée continue d'occuper l'esprit : le cerveau la garde « ouverte » pour ne pas l'oublier. En 2011, deux psychologues américains ont montré qu'il suffisait souvent de faire un <strong>plan précis</strong> (quoi, quand) pour qu'elle cesse de revenir, même sans l'avoir terminée.</p><p>La chercheuse allemande Sabine Sonnentag étudie depuis une vingtaine d'années ce qu'elle appelle le <strong>détachement psychologique</strong> : ne plus penser au travail en dehors du travail. Ses études l'associent à moins d'épuisement, une meilleure humeur et un meilleur sommeil. Bonne nouvelle : ce détachement s'apprend.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "closing laptop end of workday calm evening",
+          "altText": "Ordinateur portable qu'on referme en fin de journée"
+         },
+         {
+          "type": "Headline",
+          "text": "Le rituel de fin de journée : 5 minutes",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Fais le point</strong> en trois lignes : ce qui est fait, ce qui reste en cours.</li><li>Pour chaque tâche en suspens, note <strong>la prochaine étape et quand</strong> tu la feras : « relancer le fournisseur, demain 9 h ».</li><li>Écris <strong>tes 3 priorités de demain</strong>. Le reste attendra.</li><li><strong>Ferme vraiment</strong> : onglets, messagerie, ordinateur. Puis une phrase, à voix basse : « Ma journée de travail est finie. »</li><li><strong>Crée un sas</strong> avant ta soirée : 10 minutes de marche, changer de vêtements, une douche, une musique dans le trajet.</li></ol><p>Les premiers jours, ça peut sembler artificiel. C'est la répétition qui transforme ce geste en signal.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "En télétravail",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Range l'ordinateur hors de vue le soir : ce qu'on voit, on y pense",
+           "Si possible, travaille ailleurs que dans ta chambre, jamais depuis ton lit",
+           "Remplace le trajet par un « faux trajet » : un tour du pâté de maisons",
+           "Coupe les notifications de la messagerie pro à une heure fixe"
+          ],
+          "icon": "briefcase"
+         },
+         {
+          "type": "Headline",
+          "text": "Si ça revient au lit",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Ne te relève pas pour vérifier tes mails. Dis-toi : <strong>« C'est noté, je m'en occupe demain à 9 h. »</strong> Si c'est une tâche, écris-la en deux mots sur ta liste de demain. Si c'est une inquiétude, garde-la pour ton prochain rendez-vous des soucis.</p><p>En France, le droit à la déconnexion est inscrit dans le Code du travail depuis 2017. Si l'on attend de toi des réponses le soir, c'est un sujet légitime à aborder.</p><p>Et si tu te sens épuisé(e) en permanence, que même le week-end ne suffit plus à récupérer, parles-en à ton médecin traitant ou au médecin du travail. Ce n'est pas une faiblesse : c'est un signal à prendre au sérieux.</p>"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p><strong>Demain :</strong> fais le rituel de fin de journée avant de quitter ton travail, même en version 2 minutes. Le soir, remarque si les pensées du bureau reviennent moins souvent.</p>"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : la liste de demain (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/04-liste-de-demain.pdf"
+           },
+           {
+            "title": "Fiche à imprimer : le rendez-vous des soucis (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/03-rendez-vous-des-soucis.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

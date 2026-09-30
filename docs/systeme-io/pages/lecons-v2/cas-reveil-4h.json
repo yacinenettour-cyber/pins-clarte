@@ -1,0 +1,104 @@
+{
+ "slug": "cas-reveil-4h",
+ "module": "cas",
+ "nom": "LE RÉVEIL À 4 H QUI REVIENT CHAQUE NUIT",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Le réveil à 4 h qui revient chaque nuit",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Pas un réveil de temps en temps : le même, presque chaque nuit, vers 4 ou 5 h du matin. Les yeux s'ouvrent, le mental démarre, et impossible de se rendormir avant le réveil.</p><p>La leçon « Réveillé à 3 h du matin : que faire ? » te dit quoi faire <strong>sur le moment</strong>. Celle-ci t'aide à comprendre pourquoi ce réveil s'installe, et comment le faire reculer <strong>sur deux semaines</strong>.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Pourquoi le petit matin est fragile",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>La seconde moitié de la nuit contient moins de sommeil profond : on se réveille plus facilement. En fin de nuit, le cortisol, l'hormone qui prépare l'éveil, commence aussi naturellement à remonter. Chez une personne stressée, ce mélange suffit parfois à rallumer le mental.</p><p>Puis l'habitude s'en mêle : après quelques semaines, ton cerveau <strong>s'attend</strong> à ce réveil, et l'appréhension du soir (« et si je me réveille encore à 4 h ? ») l'entretient.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "early morning dawn bedroom window calm",
+          "altText": "Chambre à l'aube, lumière bleutée derrière la fenêtre"
+         },
+         {
+          "type": "Headline",
+          "text": "Les causes fréquentes à vérifier",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Un coucher trop tôt pour « compenser » : couché(e) à 21 h 30 avec 7 heures de besoin, un réveil vers 4 h 30 est logique",
+           "L'alcool le soir : il aide à s'endormir, puis rend la fin de nuit plus agitée",
+           "Une chambre qui s'éclaire tôt, surtout l'été, ou les bruits du petit matin",
+           "Trop boire dans les 2 heures avant le coucher",
+           "Les soucis de la journée qui arrive, qui se réveillent avec toi"
+          ],
+          "icon": "sun"
+         },
+         {
+          "type": "Headline",
+          "text": "Le plan sur deux semaines",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Une heure de lever fixe</strong>, même après une mauvaise nuit, week-end compris.</li><li><strong>Ne te couche pas avant d'avoir sommeil.</strong> Si tu te couches tôt pour compenser, recule ton coucher de 15 à 30 minutes : un sommeil un peu plus court devient souvent plus continu. Ne va pas plus loin sans l'avis d'un professionnel.</li><li><strong>Garde la chambre dans le noir</strong> jusqu'à ton heure de lever : rideaux occultants ou masque, bouchons d'oreilles.</li><li><strong>Au réveil de 4 h</strong>, applique la fiche SOS : pas d'heure, soupirs, relâchement. Si tu te lèves, reste en lumière douce jusqu'à ton heure de lever habituelle.</li><li><strong>L'après-midi</strong>, fais ton rendez-vous des soucis pour que les préoccupations du lendemain ne t'attendent pas à l'aube.</li></ol><p>Note chaque matin l'heure approximative de ton réveil dans le journal du sommeil : les progrès se voient souvent avant de se sentir.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Quand en parler",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Un réveil très matinal qui s'installe, accompagné d'un moral bas, d'une perte d'envie ou de plaisir, peut être un signe de dépression. Ça se soigne : parles-en à ton médecin. Consulte aussi si tu te réveilles en sursaut, en manquant d'air, ou si quelqu'un remarque que tu ronfles fort avec des pauses de respiration.</p>"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche SOS à garder sur la table de nuit (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/05-sos-reveil-nocturne.pdf"
+           },
+           {
+            "title": "Fiche à imprimer : journal du sommeil, 14 jours (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/02-journal-sommeil-14-jours.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

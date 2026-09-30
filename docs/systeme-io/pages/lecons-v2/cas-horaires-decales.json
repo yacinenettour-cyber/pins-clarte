@@ -1,0 +1,113 @@
+{
+ "slug": "cas-horaires-decales",
+ "module": "cas",
+ "nom": "HORAIRES DÉCALÉS OU TRAVAIL DE NUIT",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Horaires décalés ou travail de nuit : protéger ton sommeil",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Soignant, agent de sécurité, conducteur, ouvrier en 3×8, restauration… Quand tu travailles la nuit ou en horaires tournants, les conseils classiques (se lever à heure fixe, prendre la lumière du matin) ne s'appliquent pas tels quels.</p><p>Ton horloge interne est réglée pour dormir la nuit. Dormir le jour, c'est dormir <strong>contre elle</strong> : le sommeil est souvent plus court et plus fragile. Tu ne peux pas changer ton planning, mais tu peux protéger ton sommeil.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Après une nuit de travail",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ol><li><strong>Protège-toi de la lumière du matin</strong> sur le trajet du retour, avec des lunettes de soleil : pour ton corps, la lumière vive veut dire « la journée commence ».</li><li><strong>Couche-toi assez vite</strong> en rentrant, après un mini-rituel : la version 3 minutes suffit.</li><li><strong>Fais de ta chambre une nuit artificielle</strong> : rideaux occultants ou masque, bouchons d'oreilles, téléphone en silencieux, et préviens ton entourage de tes heures de sommeil.</li><li>Si tu te réveilles trop tôt, prévois <strong>une seconde période de sommeil</strong> plus tard, avant de repartir travailler.</li></ol>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "blackout curtains dark bedroom daytime sleep",
+          "altText": "Chambre plongée dans le noir en journée grâce à des rideaux occultants"
+         },
+         {
+          "type": "Headline",
+          "text": "Pendant ton poste",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Café et autres boissons caféinées : utiles en début de poste, à arrêter au moins 6 heures avant ton coucher",
+           "Une lumière vive en début de poste soutient la vigilance, une lumière plus douce en fin de poste prépare le retour",
+           "Un vrai repas avant de partir, puis des collations légères la nuit plutôt qu'un gros repas vers 3 h",
+           "Une sieste l'après-midi avant une nuit de travail aide à tenir"
+          ],
+          "icon": "clock"
+         },
+         {
+          "type": "Headline",
+          "text": "Les jours de repos",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Évite de basculer brutalement d'un rythme à l'autre. Si tu le peux, garde <strong>une partie de ton sommeil sur le même créneau</strong> que les jours travaillés (par exemple les dernières heures de la nuit et le début de matinée) : ton horloge interne est moins bousculée. Et garde ton rituel du soir, même s'il a lieu le matin : ce sont les gestes, pas l'heure, qui font le signal.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Au volant",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Après une nuit de travail, la somnolence au volant est un vrai danger. Si tes paupières deviennent lourdes, arrête-toi dans un endroit sûr pour une sieste de 15 à 20 minutes. Quand c'est possible, préfère les transports en commun ou le covoiturage pour rentrer.</p>"
+         },
+         {
+          "type": "Headline",
+          "text": "Quand en parler",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>En France, tout travailleur de nuit bénéficie d'un suivi régulier par la médecine du travail. C'est le bon interlocuteur si ton sommeil, ta vigilance ou ton moral se dégradent. Parles-en aussi à ton médecin traitant si tu somnoles souvent pendant ton poste ou au volant.</p>"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche à imprimer : journal du sommeil, 14 jours (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/02-journal-sommeil-14-jours.pdf"
+           },
+           {
+            "title": "Fiche à imprimer : ton rituel en 3 versions (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/06-rituel-du-soir-3-versions.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

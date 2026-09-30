@@ -401,6 +401,142 @@ add("parcours-28-soirs", "demarrer", "🗓️ TON PARCOURS 28 SOIRS, SOIR PAR SO
     REF(("Fiche 7 : mes 28 soirs, à cocher (PDF)", "07-parcours-28-soirs.pdf"), KIT_COMPLET_7, base=KIT2),
 ])
 
+# ---------------- Et si c'est ton cas ? (situations particulières, module ajouté le 30/09) ----------------
+
+add("cas-travail", "cas", "SI C'EST LE TRAVAIL QUI TE SUIT JUSQU'AU LIT", [
+    H1("Si c'est le travail qui te suit jusqu'au lit"),
+    T("<p>Le mail auquel tu n'as pas répondu. La réunion de demain. La phrase de ton ou ta responsable que tu rejoues en boucle. Tu as quitté ton poste depuis des heures, mais ta tête, elle, est restée au bureau.</p>"
+      "<p>Ce n'est pas un manque de volonté : ton cerveau n'a simplement pas reçu le signal que la journée de travail était <strong>terminée</strong>. Cette leçon t'aide à le lui donner.</p>"),
+    H2("Pourquoi le travail colle à la tête"),
+    T("<p>Une tâche inachevée continue d'occuper l'esprit : le cerveau la garde « ouverte » pour ne pas l'oublier. En 2011, deux psychologues américains ont montré qu'il suffisait souvent de faire un <strong>plan précis</strong> (quoi, quand) pour qu'elle cesse de revenir, même sans l'avoir terminée.</p>"
+      "<p>La chercheuse allemande Sabine Sonnentag étudie depuis une vingtaine d'années ce qu'elle appelle le <strong>détachement psychologique</strong> : ne plus penser au travail en dehors du travail. Ses études l'associent à moins d'épuisement, une meilleure humeur et un meilleur sommeil. Bonne nouvelle : ce détachement s'apprend.</p>"),
+    IMG("closing laptop end of workday calm evening", "Ordinateur portable qu'on referme en fin de journée"),
+    H2("Le rituel de fin de journée : 5 minutes"),
+    T("<ol><li><strong>Fais le point</strong> en trois lignes : ce qui est fait, ce qui reste en cours.</li>"
+      "<li>Pour chaque tâche en suspens, note <strong>la prochaine étape et quand</strong> tu la feras : « relancer le fournisseur, demain 9 h ».</li>"
+      "<li>Écris <strong>tes 3 priorités de demain</strong>. Le reste attendra.</li>"
+      "<li><strong>Ferme vraiment</strong> : onglets, messagerie, ordinateur. Puis une phrase, à voix basse : « Ma journée de travail est finie. »</li>"
+      "<li><strong>Crée un sas</strong> avant ta soirée : 10 minutes de marche, changer de vêtements, une douche, une musique dans le trajet.</li></ol>"
+      "<p>Les premiers jours, ça peut sembler artificiel. C'est la répétition qui transforme ce geste en signal.</p>"),
+    H2("En télétravail"),
+    BL(["Range l'ordinateur hors de vue le soir : ce qu'on voit, on y pense",
+        "Si possible, travaille ailleurs que dans ta chambre, jamais depuis ton lit",
+        "Remplace le trajet par un « faux trajet » : un tour du pâté de maisons",
+        "Coupe les notifications de la messagerie pro à une heure fixe"], "briefcase"),
+    H2("Si ça revient au lit"),
+    T("<p>Ne te relève pas pour vérifier tes mails. Dis-toi : <strong>« C'est noté, je m'en occupe demain à 9 h. »</strong> Si c'est une tâche, écris-la en deux mots sur ta liste de demain. Si c'est une inquiétude, garde-la pour ton prochain rendez-vous des soucis.</p>"
+      "<p>En France, le droit à la déconnexion est inscrit dans le Code du travail depuis 2017. Si l'on attend de toi des réponses le soir, c'est un sujet légitime à aborder.</p>"
+      "<p>Et si tu te sens épuisé(e) en permanence, que même le week-end ne suffit plus à récupérer, parles-en à ton médecin traitant ou au médecin du travail. Ce n'est pas une faiblesse : c'est un signal à prendre au sérieux.</p>"),
+    T("<p><strong>Demain :</strong> fais le rituel de fin de journée avant de quitter ton travail, même en version 2 minutes. Le soir, remarque si les pensées du bureau reviennent moins souvent.</p>"),
+    REF(("Fiche à imprimer : la liste de demain (PDF)", "04-liste-de-demain.pdf"),
+        ("Fiche à imprimer : le rendez-vous des soucis (PDF)", "03-rendez-vous-des-soucis.pdf")),
+])
+
+add("cas-parent", "cas", "PARENT ÉPUISÉ : DORMIR QUAND LES NUITS SONT HACHÉES", [
+    H1("Parent épuisé : dormir quand les nuits sont hachées"),
+    T("<p>Un bébé qui se réveille, un enfant malade, un cauchemar à 2 h du matin… Quand tu es parent, les réveils ne dépendent pas de toi. Et le plus dur, c'est souvent ensuite : recouché(e), épuisé(e), tu n'arrives plus à te rendormir.</p>"
+      "<p>Le but de cette leçon n'est pas la nuit parfaite. C'est de protéger ce qui peut l'être : <strong>te rendormir plus vite, récupérer quand c'est possible, et ne pas porter ça seul(e)</strong>.</p>"),
+    H2("Ton problème n'est peut-être pas l'insomnie"),
+    T("<p>Les autres leçons s'adressent surtout aux personnes qui ont le temps de dormir mais n'y arrivent pas. Toi, tu manques peut-être surtout d'<strong>occasions</strong> de dormir. La nuance change certains conseils : par exemple, la sieste courte et limitée recommandée contre l'insomnie ne s'applique pas forcément à toi. Quand ton enfant dort l'après-midi, une vraie sieste peut t'aider, tant qu'elle ne se prolonge pas en fin de journée.</p>"),
+    IMG("tired parent resting soft light nursery night", "Parent qui se repose dans une chambre d'enfant tamisée"),
+    H2("Après un réveil : te rendormir plus vite"),
+    T("<ol><li><strong>Lumière minimale</strong> : une veilleuse faible et chaude pour le biberon ou le change, jamais le plafonnier.</li>"
+      "<li><strong>Évite de faire défiler ton téléphone</strong> pendant la tétée ou le biberon : c'est là que le mental se rallume. Préfère une respiration lente, 4 temps d'inspiration, 6 d'expiration.</li>"
+      "<li><strong>En te recouchant</strong> : 5 soupirs physiologiques, puis relâche la mâchoire, les épaules, le ventre.</li>"
+      "<li><strong>Ne compte pas les heures</strong> qu'il te reste. « Je me repose, même sans dormir tout de suite » suffit.</li></ol>"
+      "<p>Si tu nourris ton bébé la nuit et que tu sens le sommeil te gagner, évite le canapé ou le fauteuil : ce sont les endroits les plus risqués pour s'endormir avec un bébé dans les bras.</p>"),
+    H2("Partager les nuits"),
+    T("<p>Si vous êtes deux, <strong>coupez la nuit en deux</strong> plutôt que de vous réveiller tous les deux à chaque fois : l'un est « de garde » jusqu'à 2 h, l'autre ensuite. Chacun obtient ainsi un bloc de 4 à 5 heures de sommeil continu, bien plus réparateur que des miettes. Celui qui n'est pas de garde peut dormir avec des bouchons d'oreilles, voire dans une autre pièce.</p>"
+      "<p>En cas d'allaitement, ton ou ta partenaire peut prendre le change, le rot et le recoucher. Et si tu es seul(e), accepte l'aide proposée (famille, amis, voisins) et baisse sans culpabilité tes exigences sur tout le reste.</p>"),
+    H2("Ton rituel, version parent"),
+    BL(["La version 3 minutes du rituel devient ta version par défaut, sans culpabilité",
+        "Certains soirs, couche-toi en même temps que ton enfant : le début de nuit est la partie la plus profonde du sommeil",
+        "Le matin, quelques minutes de lumière du jour et de marche soutiennent ton moral",
+        "Garde la fiche SOS sur ta table de nuit pour les réveils difficiles"], "baby"),
+    H2("Prends soin de toi aussi"),
+    T("<p>Après une naissance, une période de larmes et d'émotions dans les premiers jours est fréquente, et passe en général en deux semaines. Si ton moral reste bas plus longtemps, si l'anxiété t'envahit ou si tu as le sentiment de ne plus y arriver, parles-en à ton médecin, à ta sage-femme ou à la PMI. Ça arrive à beaucoup de parents, et ça se soigne.</p>"),
+    REF(("Fiche SOS à garder sur la table de nuit (PDF)", "05-sos-reveil-nocturne.pdf"),
+        ("Fiche à imprimer : ton rituel en 3 versions (PDF)", "06-rituel-du-soir-3-versions.pdf")),
+])
+
+add("cas-horaires-decales", "cas", "HORAIRES DÉCALÉS OU TRAVAIL DE NUIT", [
+    H1("Horaires décalés ou travail de nuit : protéger ton sommeil"),
+    T("<p>Soignant, agent de sécurité, conducteur, ouvrier en 3×8, restauration… Quand tu travailles la nuit ou en horaires tournants, les conseils classiques (se lever à heure fixe, prendre la lumière du matin) ne s'appliquent pas tels quels.</p>"
+      "<p>Ton horloge interne est réglée pour dormir la nuit. Dormir le jour, c'est dormir <strong>contre elle</strong> : le sommeil est souvent plus court et plus fragile. Tu ne peux pas changer ton planning, mais tu peux protéger ton sommeil.</p>"),
+    H2("Après une nuit de travail"),
+    T("<ol><li><strong>Protège-toi de la lumière du matin</strong> sur le trajet du retour, avec des lunettes de soleil : pour ton corps, la lumière vive veut dire « la journée commence ».</li>"
+      "<li><strong>Couche-toi assez vite</strong> en rentrant, après un mini-rituel : la version 3 minutes suffit.</li>"
+      "<li><strong>Fais de ta chambre une nuit artificielle</strong> : rideaux occultants ou masque, bouchons d'oreilles, téléphone en silencieux, et préviens ton entourage de tes heures de sommeil.</li>"
+      "<li>Si tu te réveilles trop tôt, prévois <strong>une seconde période de sommeil</strong> plus tard, avant de repartir travailler.</li></ol>"),
+    IMG("blackout curtains dark bedroom daytime sleep", "Chambre plongée dans le noir en journée grâce à des rideaux occultants"),
+    H2("Pendant ton poste"),
+    BL(["Café et autres boissons caféinées : utiles en début de poste, à arrêter au moins 6 heures avant ton coucher",
+        "Une lumière vive en début de poste soutient la vigilance, une lumière plus douce en fin de poste prépare le retour",
+        "Un vrai repas avant de partir, puis des collations légères la nuit plutôt qu'un gros repas vers 3 h",
+        "Une sieste l'après-midi avant une nuit de travail aide à tenir"], "clock"),
+    H2("Les jours de repos"),
+    T("<p>Évite de basculer brutalement d'un rythme à l'autre. Si tu le peux, garde <strong>une partie de ton sommeil sur le même créneau</strong> que les jours travaillés (par exemple les dernières heures de la nuit et le début de matinée) : ton horloge interne est moins bousculée. Et garde ton rituel du soir, même s'il a lieu le matin : ce sont les gestes, pas l'heure, qui font le signal.</p>"),
+    H2("Au volant"),
+    T("<p>Après une nuit de travail, la somnolence au volant est un vrai danger. Si tes paupières deviennent lourdes, arrête-toi dans un endroit sûr pour une sieste de 15 à 20 minutes. Quand c'est possible, préfère les transports en commun ou le covoiturage pour rentrer.</p>"),
+    H2("Quand en parler"),
+    T("<p>En France, tout travailleur de nuit bénéficie d'un suivi régulier par la médecine du travail. C'est le bon interlocuteur si ton sommeil, ta vigilance ou ton moral se dégradent. Parles-en aussi à ton médecin traitant si tu somnoles souvent pendant ton poste ou au volant.</p>"),
+    REF(("Fiche à imprimer : journal du sommeil, 14 jours (PDF)", "02-journal-sommeil-14-jours.pdf"),
+        ("Fiche à imprimer : ton rituel en 3 versions (PDF)", "06-rituel-du-soir-3-versions.pdf")),
+])
+
+add("cas-reveil-4h", "cas", "LE RÉVEIL À 4 H QUI REVIENT CHAQUE NUIT", [
+    H1("Le réveil à 4 h qui revient chaque nuit"),
+    T("<p>Pas un réveil de temps en temps : le même, presque chaque nuit, vers 4 ou 5 h du matin. Les yeux s'ouvrent, le mental démarre, et impossible de se rendormir avant le réveil.</p>"
+      "<p>La leçon « Réveillé à 3 h du matin : que faire ? » te dit quoi faire <strong>sur le moment</strong>. Celle-ci t'aide à comprendre pourquoi ce réveil s'installe, et comment le faire reculer <strong>sur deux semaines</strong>.</p>"),
+    H2("Pourquoi le petit matin est fragile"),
+    T("<p>La seconde moitié de la nuit contient moins de sommeil profond : on se réveille plus facilement. En fin de nuit, le cortisol, l'hormone qui prépare l'éveil, commence aussi naturellement à remonter. Chez une personne stressée, ce mélange suffit parfois à rallumer le mental.</p>"
+      "<p>Puis l'habitude s'en mêle : après quelques semaines, ton cerveau <strong>s'attend</strong> à ce réveil, et l'appréhension du soir (« et si je me réveille encore à 4 h ? ») l'entretient.</p>"),
+    IMG("early morning dawn bedroom window calm", "Chambre à l'aube, lumière bleutée derrière la fenêtre"),
+    H2("Les causes fréquentes à vérifier"),
+    BL(["Un coucher trop tôt pour « compenser » : couché(e) à 21 h 30 avec 7 heures de besoin, un réveil vers 4 h 30 est logique",
+        "L'alcool le soir : il aide à s'endormir, puis rend la fin de nuit plus agitée",
+        "Une chambre qui s'éclaire tôt, surtout l'été, ou les bruits du petit matin",
+        "Trop boire dans les 2 heures avant le coucher",
+        "Les soucis de la journée qui arrive, qui se réveillent avec toi"], "sun"),
+    H2("Le plan sur deux semaines"),
+    T("<ol><li><strong>Une heure de lever fixe</strong>, même après une mauvaise nuit, week-end compris.</li>"
+      "<li><strong>Ne te couche pas avant d'avoir sommeil.</strong> Si tu te couches tôt pour compenser, recule ton coucher de 15 à 30 minutes : un sommeil un peu plus court devient souvent plus continu. Ne va pas plus loin sans l'avis d'un professionnel.</li>"
+      "<li><strong>Garde la chambre dans le noir</strong> jusqu'à ton heure de lever : rideaux occultants ou masque, bouchons d'oreilles.</li>"
+      "<li><strong>Au réveil de 4 h</strong>, applique la fiche SOS : pas d'heure, soupirs, relâchement. Si tu te lèves, reste en lumière douce jusqu'à ton heure de lever habituelle.</li>"
+      "<li><strong>L'après-midi</strong>, fais ton rendez-vous des soucis pour que les préoccupations du lendemain ne t'attendent pas à l'aube.</li></ol>"
+      "<p>Note chaque matin l'heure approximative de ton réveil dans le journal du sommeil : les progrès se voient souvent avant de se sentir.</p>"),
+    H2("Quand en parler"),
+    T("<p>Un réveil très matinal qui s'installe, accompagné d'un moral bas, d'une perte d'envie ou de plaisir, peut être un signe de dépression. Ça se soigne : parles-en à ton médecin. Consulte aussi si tu te réveilles en sursaut, en manquant d'air, ou si quelqu'un remarque que tu ronfles fort avec des pauses de respiration.</p>"),
+    REF(("Fiche SOS à garder sur la table de nuit (PDF)", "05-sos-reveil-nocturne.pdf"),
+        ("Fiche à imprimer : journal du sommeil, 14 jours (PDF)", "02-journal-sommeil-14-jours.pdf")),
+])
+
+add("cas-periode-difficile", "cas", "UNE PÉRIODE DE GROS STRESS : EXAMENS, DEUIL, SÉPARATION…", [
+    H1("Quand une période difficile bouscule tes nuits"),
+    T("<p>Des examens, un deuil, une séparation, un déménagement, une perte d'emploi, un proche malade… Quand la vie secoue fort, le sommeil est souvent le premier à en payer le prix. Si c'est ton cas en ce moment, commence par ceci : <strong>c'est une réaction normale</strong>.</p>"),
+    H2("Ce qui est normal, et ce qu'il faut éviter"),
+    T("<p>Quelques nuits ou quelques semaines agitées après un choc, c'est ton système d'alarme qui fait son travail. Le plus souvent, le sommeil revient quand la situation s'apaise.</p>"
+      "<p>Le vrai risque, ce sont les habitudes prises pour compenser : rester longtemps au lit, faire de longues siestes, décaler ses réveils, boire un verre pour dormir, rester sur les écrans tard. Elles peuvent <strong>installer l'insomnie après la tempête</strong>, quand la cause a disparu. L'objectif n'est donc pas de bien dormir coûte que coûte, mais de garder quelques repères.</p>"),
+    IMG("person sitting by window rain calm reflection", "Personne assise près d'une fenêtre un jour de pluie"),
+    H2("Tes 4 ancres pendant la tempête"),
+    T("<ol><li><strong>Une heure de lever fixe</strong> : c'est le repère qui protège le plus ton horloge interne.</li>"
+      "<li><strong>La version 3 minutes du rituel</strong>, chaque soir, même quand tout le reste lâche.</li>"
+      "<li><strong>Un rendez-vous des soucis quotidien</strong>, 15 minutes. Pour un deuil ou une séparation, ce moment peut aussi servir à écrire ce que tu ressens, sans chercher de solution.</li>"
+      "<li><strong>Sortir et bouger chaque jour</strong>, même 15 minutes à la lumière du jour.</li></ol>"),
+    H2("Selon ta situation"),
+    T("<p><strong>Examens</strong> : garde tes heures de sommeil. C'est pendant la nuit que le cerveau consolide ce que tu as appris : une nuit blanche de révisions fait souvent perdre plus qu'elle ne fait gagner. Arrête de réviser au moins une heure avant de te coucher.</p>"
+      "<p><strong>Deuil</strong> : les soirées et les nuits sont souvent les moments les plus lourds. Le sommeil peut rester perturbé pendant des semaines, et ce n'est pas anormal. Ne reste pas seul(e) avec ta peine : parles-en à un proche ou à une association d'accompagnement du deuil.</p>"
+      "<p><strong>Séparation</strong> : le lit et la chambre rappellent l'absence. Change un détail (la place du lit, le linge, la lumière) et crée un rituel qui n'appartient qu'à toi.</p>"
+      "<p><strong>Déménagement</strong> : les premières nuits dans un lieu inconnu sont souvent plus légères, le cerveau reste un peu en veille. Apporte un objet familier (ton oreiller, un plaid) et garde tes gestes du soir.</p>"),
+    H2("Ne reste pas seul(e)"),
+    BL(["Parler à quelqu'un de confiance allège souvent plus qu'on ne l'imagine",
+        "Si tes nuits restent difficiles plusieurs fois par semaine au-delà de 3 mois, parles-en à ton médecin",
+        "Si ton moral s'effondre ou si tu n'arrives plus à faire face au quotidien, consulte sans attendre",
+        "Si tu as des idées noires, appelle le 3114, gratuit, 24 h sur 24 et 7 jours sur 7"], "heart"),
+    REF(("Fiche à imprimer : le rendez-vous des soucis (PDF)", "03-rendez-vous-des-soucis.pdf"),
+        ("Fiche à imprimer : ton rituel en 3 versions (PDF)", "06-rituel-du-soir-3-versions.pdf")),
+])
+
 if __name__ == "__main__":
     for l in LECONS:
         json.dump(l, open(os.path.join(OUT, l["slug"] + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
