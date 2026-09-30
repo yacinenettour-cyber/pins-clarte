@@ -30,7 +30,7 @@ Le forfait gratuit ne permet pas d'ajouter de page. On **regroupe tout dans la p
 Yacine NETTOUR, entrepreneur individuel (EI), sous le nom commercial « Clarté Mentale »
 Adresse : 1 avenue Antoine Véran, 06100 Nice, France
 SIREN : 822 033 577 — SIRET : 822 033 577 00021
-N° de TVA intracommunautaire : FR00 822 033 577
+TVA non applicable, article 293 B du CGI (micro-entrepreneur en franchise de TVA)
 E-mail : yavo88@hotmail.com
 Directeur de la publication : Yacine NETTOUR
 
@@ -60,7 +60,7 @@ Les présentes CGV s'appliquent à la vente en ligne du programme numérique « 
 Programme en ligne composé de 6 modules de leçons courtes, d'audios guidés et d'un kit de fiches à imprimer (PDF), accessible depuis un ordinateur, une tablette ou un téléphone. Ce programme propose des outils de bien-être. Il ne constitue ni un traitement médical ni une thérapie, et ne remplace pas l'avis d'un professionnel de santé.
 
 **Article 4 — Prix**
-37 € TTC (TVA incluse au taux applicable), paiement unique, sans abonnement. Le prix applicable est celui affiché au moment de la commande.
+37 €, paiement unique, sans abonnement. TVA non applicable, article 293 B du CGI. Le prix applicable est celui affiché au moment de la commande.
 
 **Article 5 — Commande et paiement**
 La commande se fait sur la page de paiement. Le paiement est effectué par carte bancaire ou Apple Pay via Stripe. Aucune donnée bancaire n'est conservée par le vendeur. La commande est confirmée par e-mail.
