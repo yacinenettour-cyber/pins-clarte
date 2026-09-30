@@ -1,0 +1,69 @@
+{
+  "palette": {
+    "palettePreset": "deep-ocean",
+    "cornerStyle": "soft",
+    "fontPair": "editorial",
+    "cardLayout": null,
+    "heroLayout": null,
+    "heroBackground": null,
+    "headingFontFamily": null,
+    "bodyFontFamily": null
+  },
+  "sections": [
+    {
+      "tone": "hero",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {"type": "Headline", "text": "Merci pour ton inscription", "level": "h1"},
+                {"type": "Text", "textAlign": "center", "html": "<p>✅ C'est fait : ton guide « Quand le cerveau refuse de dormir » vient de t'être envoyé par e-mail.</p><p>Pense à vérifier tes spams ou l'onglet Promotions si tu ne le vois pas. Prends un moment calme pour le lire ce soir, ou simplement pour appliquer une première étape.</p>"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tone": "plain",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {"type": "Headline", "text": "Une chose importante avant de continuer", "level": "h2"},
+                {"type": "Text", "textAlign": null, "html": "<p>Ce que tu vas ressentir avec ce guide est souvent réel : une respiration plus calme, un mental un peu moins bruyant, une pression qui descend légèrement. Même si c'est subtil, c'est déjà un bon signal.</p><p>Mais quand le stress est installé depuis longtemps, ce calme peut être fragile au début : le système nerveux se calme un soir, puis redevient agité le lendemain. Ce n'est pas un échec, et ce n'est pas « toi ». Un apaisement ponctuel a simplement besoin de continuité et de structure pour devenir plus stable.</p>"},
+                {"type": "Headline", "text": "Si tu veux aller plus loin, sans forcer", "level": "h2"},
+                {"type": "BulletList", "items": ["Ton mental a besoin de plus de repères le soir", "Tu veux stabiliser ce calme dans le temps", "Tu ne veux pas rester seul(e) avec ces outils"], "icon": "moon"},
+                {"type": "Text", "textAlign": null, "html": "<p>J'ai créé un programme simple, doux et progressif pour accompagner les soirs plus difficiles : calmer ton système nerveux le soir, sans médicaments, sans lutter, même quand tu es épuisé(e). 23 leçons courtes, des audios et un kit de fiches à imprimer.</p>"},
+                {"type": "Button", "text": "Découvrir le programme complet", "subText": "37 € · accès immédiat · garantie 7 jours", "action": "openUrl", "linkUrl": "https://lp.contactapaisement-mental.fr/accesformation"},
+                {"type": "Text", "textAlign": "center", "html": "<p>Tu n'as pas besoin d'aller mieux pour commencer. Tu as juste besoin de continuer doucement. Quand le corps se sent en sécurité, le sommeil revient.</p>"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tone": "footer",
+      "backgroundImageDescription": null,
+      "rows": [
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {"type": "Button", "text": "Conditions générales de vente", "subText": "Mentions légales et politique de confidentialité", "action": "openUrl", "linkUrl": "https://lp.contactapaisement-mental.fr/0f1d6dac"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
