@@ -60,6 +60,10 @@ Module 2779629 créé par `POST /api/school/courses/542776/modules` (rangé en 6
 
 Mis à jour le même jour : « Commence ici » (5e point de l'ordre des modules), page de vente (« 6 modules, près de 30 leçons », carte « Et si c'est ton cas ? », « un audio guidé dans chaque module » remplacé par « des audios guidés » puisque le nouveau module n'a pas d'audio), e-mails 5 et 10 et newsletter 5366813 (brouillon).
 
+## Guide gratuit compressé (30/09/2026)
+
+Le PDF du guide envoyé par l'e-mail 1 (`6ab51421ecfe18.21678028_Tonguide-3.pdf`, 28 pages) pesait **28 Mo**, dont 22,4 Mo pour 10 illustrations pleine page en PNG 1055×1491. Version allégée produite dans le bac à sable Composio (PyMuPDF : PNG → JPEG qualité 82 à résolution identique, polices réduites aux caractères utilisés, nettoyage) : **1,07 Mo**, 28 pages, texte identique, pages sans illustration identiques au pixel près, pages illustrées à 52-58 dB de PSNR (différence invisible). L'API `files` étant en lecture seule, le fichier doit être déposé par l'utilisateur dans la médiathèque ; il faudra ensuite remplacer le lien dans l'e-mail 1 (étape 6101669) et, par précaution, dans l'ancien e-mail d'automatisation 12943008 (non utilisé par la règle 2045419). Aucune autre page ni aucun autre e-mail ne pointe vers le PDF (vérifié le 30/09).
+
 ## Achat test (30/09/2026, terminé)
 
 Code promo **100 %** (id 335496, 3 utilisations, expire le 03/10/2026 à 23 h 59, heure de Paris) rattaché à l'offre 5383492 de la nouvelle page de paiement `/689e4290`, où un bloc `Coupon` a été ajouté (réenregistrement de `page-paiement-v2.json` avec un bloc `Coupon` avant `Checkout`). Aucun paramètre d'adresse ne permet d'appliquer un code (aide systeme.io : il faut l'élément Coupon sur la page). La page vend le même produit (3196087) que l'ancienne page de paiement. **Après le test** : supprimer le code (`DELETE /api/payment/coupons/335496`), le retirer de l'offre (`coupons: []`) et réenregistrer `page-paiement-v2.json` tel quel (sans bloc `Coupon`).
@@ -74,7 +78,7 @@ Code promo **100 %** (id 335496, 3 utilisations, expire le 03/10/2026 à 23 h 59
 |---|---|---|
 | `/accesformation` (vente) | 11, puis 153 le 30/09 après l'ajout du module 6 | 30/09 : #1C314A #345E91 #3F72AF · #DBE2EF #E8E0E0 #F9F7F7 (même palette que `/merci` et `/0f1d6dac`) ; avant : #35456E #363062 #42568A · crème #F5E8C7 #FBF6EA |
 | `/merci` (après achat) | 6 | #1C314A #345E91 #3F72AF · #E8E0E0 #F9F7F7 |
-| `/pagederemerciement` (après inscription au guide) | 20 | #3F56BB #424874 #5B6FC8 · #F4EEFF (bleu pervenche, le plus éloigné du bleu nuit) |
+| `/pagederemerciement` (après inscription au guide) | 20, puis 39 le 30/09 (texte « près de 30 leçons ») | 30/09 : #1C314A #345E91 #3F72AF · #F9F7F7 (même palette que `/merci`, la page de vente et la page légale ; aucune image sur la page, donc aucune image IA créée) ; avant : #3F56BB #424874 #5B6FC8 · #F4EEFF (bleu pervenche) |
 | `/0f1d6dac` (légal) | 2 | #1C314A #3F72AF · #F9F7F7 |
 
 Environ 44 enregistrements au total (dont 5 essais sur le doublon `/0e9ef918`), **20 images IA** créées dans la médiathèque (le constructeur réutilise ses images quand le contenu ne change pas). Non recolorées (pages d'origine de l'utilisateur, non reconstruites pour ne pas casser le formulaire en 2 étapes ni l'automatisation d'inscription) : `/paiement-anti-stress` et `/tonguide`.
