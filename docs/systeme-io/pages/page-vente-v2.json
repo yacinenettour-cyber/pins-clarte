@@ -1,487 +1,522 @@
 {
- "palette": {
-  "palettePreset": "deep-ocean",
-  "cornerStyle": "soft",
-  "fontPair": "editorial",
-  "cardLayout": null,
-  "heroLayout": null,
-  "heroBackground": null,
-  "headingFontFamily": null,
-  "bodyFontFamily": null
- },
- "sections": [
-  {
-   "tone": "hero",
-   "backgroundImageDescription": null,
-   "rows": [
-    {
-     "columns": [
-      {
-       "size": 7,
-       "blocks": [
-        {
-         "type": "Headline",
-         "text": "Quand le cerveau refuse de dormir",
-         "level": "h1"
-        },
-        {
-         "type": "Text",
-         "textAlign": null,
-         "html": "<p>Calmer ton mental le soir et laisser le sommeil revenir naturellement, même quand tu es épuisé et très stressé.</p>"
-        },
-        {
-         "type": "Button",
-         "text": "Accéder au programme",
-         "subText": "37 € · accès immédiat · garantie 7 jours",
-         "action": "openUrl",
-         "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
-        }
-       ]
-      },
-      {
-       "size": 5,
-       "blocks": [
-        {
-         "type": "Image",
-         "imageDescription": "calm woman bed evening lamp"
-        }
-       ]
-      }
-     ]
-    }
-   ]
+  "palette": {
+    "palettePreset": "deep-ocean",
+    "cornerStyle": "soft",
+    "fontPair": "editorial",
+    "cardLayout": null,
+    "heroLayout": null,
+    "heroBackground": null,
+    "headingFontFamily": null,
+    "bodyFontFamily": null
   },
-  {
-   "tone": "pain",
-   "backgroundImageDescription": null,
-   "rows": [
+  "sections": [
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "hero",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "Tu te reconnais dans ces soirées ?",
-         "level": "h2"
-        },
-        {
-         "type": "BulletList",
-         "items": [
-          "Ton corps est épuisé, mais ton cerveau repart en boucle dès que tu fermes les yeux",
-          "Les pensées tournent, la respiration reste haute, le corps n'arrive pas à lâcher",
-          "Plus tu essaies de dormir, plus le mental résiste",
-          "L'angoisse du lendemain s'installe avant même de t'endormir"
-         ],
-         "icon": "moon"
-        },
-        {
-         "type": "Text",
-         "textAlign": null,
-         "html": "<p>Ce n'est pas un manque de volonté. Et ce n'est pas vraiment un problème de sommeil.</p>"
+          "columns": [
+            {
+              "size": 7,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Quand le cerveau refuse de dormir",
+                  "level": "h1"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Calmer ton mental le soir et laisser le sommeil revenir naturellement, même quand tu es épuisé et très stressé.</p>"
+                },
+                {
+                  "type": "Button",
+                  "text": "Accéder au programme",
+                  "subText": "37 € · accès immédiat · garantie 7 jours",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
+                }
+              ]
+            },
+            {
+              "size": 5,
+              "blocks": [
+                {
+                  "type": "Image",
+                  "imageDescription": "calm woman bed evening lamp"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "feature",
-   "backgroundImageDescription": null,
-   "rows": [
-    {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
-        {
-         "type": "Headline",
-         "text": "Ton système nerveux est resté en mode alerte",
-         "level": "h2"
-        },
-        {
-         "type": "Text",
-         "textAlign": null,
-         "html": "<p>Tant qu'il ne se sent pas en sécurité, le sommeil ne peut pas venir. Forcer le sommeil envoie au contraire un signal de danger : le corps reste en alerte, le mental s'active encore plus.</p><p>Le sommeil ne se force pas. Il revient quand le corps se calme et se sent en sécurité. C'est exactement ce que travaille ce programme : des outils simples pour les soirs où tu es épuisé et à bout, sans médicaments, sans forcer.</p>"
-        }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "feature",
-   "backgroundImageDescription": null,
-   "rows": [
-    {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
-        {
-         "type": "Headline",
-         "text": "Ce que contient le programme",
-         "level": "h2"
-        }
-       ]
-      }
-     ]
+      ]
     },
     {
-     "columns": [
-      {
-       "size": 6,
-       "blocks": [
+      "tone": "pain",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Card",
-         "text": "Module 1 — Apaiser le système nerveux",
-         "html": "<p>Respirations anti-stress de 2 minutes et relâchement corporel simple, pour faire redescendre la pression le soir même.</p>",
-         "imageDescription": null,
-         "subText": null
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Tu te reconnais dans ces soirées ?",
+                  "level": "h2"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "Ton corps est épuisé, mais ton cerveau repart en boucle dès que tu fermes les yeux",
+                    "Les pensées tournent, la respiration reste haute, le corps n'arrive pas à lâcher",
+                    "Plus tu essaies de dormir, plus le mental résiste",
+                    "L'angoisse du lendemain s'installe avant même de t'endormir"
+                  ],
+                  "icon": "moon"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Ce n'est pas un manque de volonté. Et ce n'est pas vraiment un problème de sommeil.</p>"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      },
-      {
-       "size": 6,
-       "blocks": [
-        {
-         "type": "Card",
-         "text": "Module 2 — Sortir des ruminations sans lutter",
-         "html": "<p>Une technique douce contre les pensées en boucle, pour arrêter de « contrôler » le sommeil et laisser le mental se calmer.</p>",
-         "imageDescription": null,
-         "subText": null
-        }
-       ]
-      }
-     ]
+      ]
     },
     {
-     "columns": [
-      {
-       "size": 6,
-       "blocks": [
+      "tone": "feature",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Card",
-         "text": "Module 3 — Rituel du soir stabilisant",
-         "html": "<p>Une structure de 5 à 10 minutes à suivre chaque soir, adaptable aux soirs difficiles, pour installer une continuité rassurante.</p>",
-         "imageDescription": null,
-         "subText": null
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Ton système nerveux est resté en mode alerte",
+                  "level": "h2"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Tant qu'il ne se sent pas en sécurité, le sommeil ne peut pas venir. Forcer le sommeil envoie au contraire un signal de danger : le corps reste en alerte, le mental s'active encore plus.</p><p>Le sommeil ne se force pas. Il revient quand le corps se calme et se sent en sécurité. C'est exactement ce que travaille ce programme : des outils simples pour les soirs où tu es épuisé et à bout, sans médicaments, sans forcer.</p>"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      },
-      {
-       "size": 6,
-       "blocks": [
-        {
-         "type": "Card",
-         "text": "Module 4 — Consolider le sommeil dans le temps",
-         "html": "<p>Réduire les réveils nocturnes et stabiliser le sommeil progressivement, sans forcer ni médicaments.</p>",
-         "imageDescription": null,
-         "subText": null
-        }
-       ]
-      }
-     ]
+      ]
     },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "feature",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Card",
-         "text": "Bonus — Audio express",
-         "html": "<p>Un audio de 3 minutes pour les soirs de forte pression, quand tu n'as l'énergie pour rien d'autre.</p>",
-         "imageDescription": null,
-         "subText": null
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Ce que contient le programme",
+                  "level": "h2"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": "center",
+                  "html": "<p><strong>5 modules, plus de 20 leçons courtes</strong>, un audio guidé dans chaque module et un kit de fiches à imprimer.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "columns": [
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Card",
+                  "text": "Apaiser le système nerveux",
+                  "html": "<p>Respirations anti-stress, soupir physiologique, relâchement musculaire et scan corporel : de quoi faire redescendre la pression le soir même.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                }
+              ]
+            },
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Card",
+                  "text": "Sortir des ruminations sans lutter",
+                  "html": "<p>Rendez-vous des soucis, liste de demain, mélange cognitif, prendre de la distance avec une pensée : des outils concrets contre les pensées en boucle.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "columns": [
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Card",
+                  "text": "Rituel du soir stabilisant",
+                  "html": "<p>Préparer le corps (lumière, chaleur, écrans, caféine) et ton rituel en 3 versions, 3, 10 ou 20 minutes, adaptées à ton énergie du soir.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                }
+              ]
+            },
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Card",
+                  "text": "Consolider le sommeil dans le temps",
+                  "html": "<p>Que faire quand tu te réveilles à 3 h, le matin qui prépare la nuit, ton plan des 4 semaines, et quand en parler à un professionnel.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "columns": [
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Card",
+                  "text": "Bien démarrer : le parcours 28 soirs",
+                  "html": "<p>Une seule action par soir, déjà choisie pour toi, pendant 4 semaines. Plus ton auto-évaluation aux jours 1, 14 et 28 pour voir le chemin parcouru.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                }
+              ]
+            },
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Card",
+                  "text": "Kit de 7 fiches à imprimer",
+                  "html": "<p>Journal du sommeil, fiche SOS pour les réveils nocturnes, rendez-vous des soucis, liste de demain, rituel en 3 versions et calendrier des 28 soirs.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Card",
+                  "text": "Bonus : l'audio express",
+                  "html": "<p>Un audio de 3 minutes pour les soirs de forte pression, quand tu n'as l'énergie pour rien d'autre.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "feature",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "feature",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "Pensé pour les soirs où tu es à bout",
-         "level": "h2"
-        },
-        {
-         "type": "BulletList",
-         "items": [
-          "Des exercices courts : 5 à 10 minutes par soir",
-          "Sans jargon, sans effort, à ton rythme",
-          "Accessible depuis ton téléphone, même au lit",
-          "Accès à vie : tu y reviens quand tu en as besoin"
-         ],
-         "icon": "circle-check"
-        },
-        {
-         "type": "Text",
-         "textAlign": null,
-         "html": "<p>Ce n'est pas une solution miracle. C'est une méthode douce, à répéter soir après soir, pour que le calme devienne plus stable.</p>"
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Pensé pour les soirs où tu es à bout",
+                  "level": "h2"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "Des exercices courts : 5 à 10 minutes par soir",
+                    "Un chemin tout tracé : une action par soir pendant 28 soirs",
+                    "Un audio guidé dans chaque module, à écouter au lit",
+                    "Sans jargon, sans effort, à ton rythme",
+                    "Accès à vie : tu y reviens quand tu en as besoin"
+                  ],
+                  "icon": "circle-check"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Ce n'est pas une solution miracle. C'est une méthode douce, à répéter soir après soir, pour que le calme devienne plus stable.</p>"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "plain",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 6,
-       "blocks": [
+      "tone": "plain",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "C'est pour toi si…",
-         "level": "h3"
-        },
-        {
-         "type": "BulletList",
-         "items": [
-          "Tu es stressé(e) ou mentalement chargé(e)",
-          "Tu rumines le soir et la nuit",
-          "Tu as du mal à t'endormir",
-          "Tu veux une solution naturelle, à ton rythme"
-         ],
-         "icon": "check"
+          "columns": [
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "C'est pour toi si…",
+                  "level": "h3"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "Tu es stressé(e) ou mentalement chargé(e)",
+                    "Tu rumines le soir et la nuit",
+                    "Tu as du mal à t'endormir",
+                    "Tu veux une solution naturelle, à ton rythme"
+                  ],
+                  "icon": "check"
+                }
+              ]
+            },
+            {
+              "size": 6,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Ce n'est pas pour toi si…",
+                  "level": "h3"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "Tu cherches une solution médicale",
+                    "Tu veux une promesse de guérison",
+                    "Tu cherches une méthode intensive"
+                  ],
+                  "icon": "xmark"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      },
-      {
-       "size": 6,
-       "blocks": [
-        {
-         "type": "Headline",
-         "text": "Ce n'est pas pour toi si…",
-         "level": "h3"
-        },
-        {
-         "type": "BulletList",
-         "items": [
-          "Tu cherches une solution médicale",
-          "Tu veux une promesse de guérison",
-          "Tu cherches une méthode intensive"
-         ],
-         "icon": "xmark"
-        }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "plain",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "plain",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "Pas de faux avis ici",
-         "level": "h2"
-        },
-        {
-         "type": "Text",
-         "textAlign": null,
-         "html": "<p>Ce programme est récent : je n'ai pas encore de témoignages à te montrer, et je préfère te le dire plutôt que d'en inventer. C'est justement pour ça que la garantie de 7 jours existe : tu testes chez toi, le soir, sans risque.</p><p>— Yacine, Clarté Mentale</p>"
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Pas de faux avis ici",
+                  "level": "h2"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Ce programme est récent : je n'ai pas encore de témoignages à te montrer, et je préfère te le dire plutôt que d'en inventer. C'est justement pour ça que la garantie de 7 jours existe : tu testes chez toi, le soir, sans risque.</p><p>— Yacine, Clarté Mentale</p>"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "pricing",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "pricing",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "Accès complet au programme",
-         "level": "h2"
-        },
-        {
-         "type": "Text",
-         "textAlign": "center",
-         "html": "<p><strong>37 € TTC</strong>, paiement unique, sans abonnement.</p>"
-        },
-        {
-         "type": "BulletList",
-         "items": [
-          "4 modules complets, courts et sans jargon",
-          "Bonus : audio express de 3 minutes",
-          "Accès immédiat depuis téléphone, tablette ou ordinateur",
-          "Accès à vie"
-         ],
-         "icon": "circle-check"
-        },
-        {
-         "type": "Button",
-         "text": "Accéder au programme",
-         "subText": "37 € · accès immédiat · garantie 7 jours",
-         "action": "openUrl",
-         "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Accès complet au programme",
+                  "level": "h2"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": "center",
+                  "html": "<p><strong>37 € TTC</strong>, paiement unique, sans abonnement.</p>"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "5 modules, plus de 20 leçons courtes et sans jargon",
+                    "Un audio guidé dans chaque module",
+                    "Le parcours « 28 soirs » et un kit de 7 fiches à imprimer",
+                    "Accès immédiat depuis téléphone, tablette ou ordinateur",
+                    "Accès à vie"
+                  ],
+                  "icon": "circle-check"
+                },
+                {
+                  "type": "Button",
+                  "text": "Accéder au programme",
+                  "subText": "37 € · accès immédiat · garantie 7 jours",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "guarantee",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "guarantee",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "Garantie satisfait ou remboursé 7 jours",
-         "level": "h2"
-        },
-        {
-         "type": "Text",
-         "textAlign": null,
-         "html": "<p>Si tu ne ressens aucune amélioration, même légère, tu es remboursé intégralement dans les 7 jours suivant l'achat, sans justification. Un simple e-mail suffit.</p>"
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Garantie satisfait ou remboursé 7 jours",
+                  "level": "h2"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Si tu ne ressens aucune amélioration, même légère, tu es remboursé intégralement dans les 7 jours suivant l'achat, sans justification. Un simple e-mail suffit.</p>"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "faq",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "faq",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "Questions fréquentes",
-         "level": "h2"
-        },
-        {
-         "type": "Faq",
-         "items": [
-          {
-           "question": "Est-ce que ce programme remplace un traitement médical ?",
-           "answer": "<p>Non. Ce programme n'est ni un traitement médical ni une thérapie. Il propose des outils naturels pour apaiser le stress et calmer le système nerveux. Il peut être utilisé en complément, mais ne remplace jamais l'avis d'un professionnel de santé.</p>"
-          },
-          {
-           "question": "Est-ce que ça peut marcher si je suis très stressé(e) depuis longtemps ?",
-           "answer": "<p>C'est justement pour ce type de situation qu'il a été conçu. Les exercices sont très simples et adaptés aux soirs où l'énergie est au plus bas.</p>"
-          },
-          {
-           "question": "En combien de temps vais-je ressentir un apaisement ?",
-           "answer": "<p>Certaines personnes ressentent un soulagement dès les premiers soirs, pour d'autres c'est plus progressif. L'objectif est un mental plus calme et moins de pression au coucher.</p>"
-          },
-          {
-           "question": "Est-ce que je dois me forcer ou me motiver ?",
-           "answer": "<p>Non. Tout repose sur un principe simple : le calme ne se force pas. Tu avances à ton rythme, avec des exercices de 2 à 10 minutes.</p>"
-          },
-          {
-           "question": "Et si ça ne fonctionne pas pour moi ?",
-           "answer": "<p>Tu as 7 jours pour demander un remboursement intégral, sans justification.</p>"
-          }
-         ]
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Questions fréquentes",
+                  "level": "h2"
+                },
+                {
+                  "type": "Faq",
+                  "items": [
+                    {
+                      "question": "Est-ce que ce programme remplace un traitement médical ?",
+                      "answer": "<p>Non. Ce programme n'est ni un traitement médical ni une thérapie. Il propose des outils naturels pour apaiser le stress et calmer le système nerveux. Il peut être utilisé en complément, mais ne remplace jamais l'avis d'un professionnel de santé.</p>"
+                    },
+                    {
+                      "question": "Est-ce que ça peut marcher si je suis très stressé(e) depuis longtemps ?",
+                      "answer": "<p>C'est justement pour ce type de situation qu'il a été conçu. Les exercices sont très simples et adaptés aux soirs où l'énergie est au plus bas.</p>"
+                    },
+                    {
+                      "question": "En combien de temps vais-je ressentir un apaisement ?",
+                      "answer": "<p>Certaines personnes ressentent un soulagement dès les premiers soirs, pour d'autres c'est plus progressif. L'objectif est un mental plus calme et moins de pression au coucher.</p>"
+                    },
+                    {
+                      "question": "Est-ce que je dois me forcer ou me motiver ?",
+                      "answer": "<p>Non. Tout repose sur un principe simple : le calme ne se force pas. Tu avances à ton rythme, avec des exercices de 2 à 10 minutes.</p>"
+                    },
+                    {
+                      "question": "Et si ça ne fonctionne pas pour moi ?",
+                      "answer": "<p>Tu as 7 jours pour demander un remboursement intégral, sans justification.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "cta-final",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "cta-final",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Headline",
-         "text": "Tu n'as pas besoin d'aller mieux pour commencer",
-         "level": "h2"
-        },
-        {
-         "type": "Text",
-         "textAlign": "center",
-         "html": "<p>Tu as juste besoin de commencer doucement. Quand le corps se calme, le sommeil revient.</p>"
-        },
-        {
-         "type": "Button",
-         "text": "Commencer ce soir",
-         "subText": "37 € · accès immédiat · garantie 7 jours",
-         "action": "openUrl",
-         "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Headline",
+                  "text": "Tu n'as pas besoin d'aller mieux pour commencer",
+                  "level": "h2"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": "center",
+                  "html": "<p>Tu as juste besoin de commencer doucement. Quand le corps se calme, le sommeil revient.</p>"
+                },
+                {
+                  "type": "Button",
+                  "text": "Commencer ce soir",
+                  "subText": "37 € · accès immédiat · garantie 7 jours",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "tone": "footer",
-   "backgroundImageDescription": null,
-   "rows": [
+      ]
+    },
     {
-     "columns": [
-      {
-       "size": 12,
-       "blocks": [
+      "tone": "footer",
+      "backgroundImageDescription": null,
+      "rows": [
         {
-         "type": "Button",
-         "text": "Lire les CGV",
-         "subText": "Mentions légales, CGV et confidentialité",
-         "action": "openUrl",
-         "linkUrl": "https://lp.contactapaisement-mental.fr/0f1d6dac"
-        },
-        {
-         "type": "Text",
-         "textAlign": "center",
-         "html": "<p>Contact : yavo88@hotmail.com</p><p>Ce programme ne remplace pas un avis médical.</p>"
+          "columns": [
+            {
+              "size": 12,
+              "blocks": [
+                {
+                  "type": "Button",
+                  "text": "Lire les CGV",
+                  "subText": "Mentions légales, CGV et confidentialité",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/0f1d6dac"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": "center",
+                  "html": "<p>Contact : yavo88@hotmail.com</p><p>Ce programme ne remplace pas un avis médical.</p>"
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
+      ]
     }
-   ]
-  }
- ]
+  ]
 }
