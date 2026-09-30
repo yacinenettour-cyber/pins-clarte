@@ -37,7 +37,7 @@ Autres problèmes :
 - **Valeur d'abord** (J0 → J3), présentation du programme ensuite (J4 → J6), puis relances espacées (J8, J10, J12).
 - **Zéro fausse urgence, zéro faux témoignage.** Quand on débute, l'honnêteté est un argument : « programme récent, pas encore d'avis, donc garantie 7 jours ».
 - **Inviter à répondre** aux e-mails : les réponses améliorent la délivrabilité (moins de spam) et te donnent tes premiers vrais retours.
-- Une seule promesse, alignée sur la page de vente : 4 modules courts + bonus audio express, 37 € en paiement unique, accès à vie, garantie 7 jours.
+- Une seule promesse, alignée sur la page de vente : 5 modules, plus de 20 leçons courtes, un parcours guidé de 28 soirs, un kit de 7 fiches et un audio dans chaque module ; 37 € en paiement unique, accès à vie, garantie 7 jours (mis à jour le 30/09/2026).
 - Signature unique : **Yacine — Clarté Mentale** (même nom que le compte Pinterest et la page de vente). Expéditeur : « Yacine – Clarté Mentale ».
 
 ## 3. Calendrier v2 (10 e-mails sur 12 jours)
@@ -158,17 +158,18 @@ Yacine — Clarté Mentale
 ### E-mail 5 — J4
 
 **Objet :** Ce qu'il y a exactement dans le programme
-**Aperçu :** 4 modules courts, 37 €, et ce que ça change le soir.
+**Aperçu :** Plus de 20 leçons courtes, 37 €, et ce que ça change le soir.
 
 Bonjour,
 
 Comme promis, voici ce que contient le programme « Quand le cerveau refuse de dormir » :
 
-- **Module 1 — Apaiser le système nerveux** : respirations anti-stress de 2 minutes et relâchement corporel, pour faire redescendre la pression le soir même.
-- **Module 2 — Sortir des ruminations sans lutter** : une technique douce contre les pensées en boucle, et arrêter de « contrôler » le sommeil.
-- **Module 3 — Rituel du soir stabilisant** : une structure de 5 à 10 minutes à suivre chaque soir, adaptable aux soirs difficiles.
-- **Module 4 — Consolider le sommeil dans le temps** : moins de réveils nocturnes, un sommeil qui se stabilise progressivement.
-- **Bonus — Audio express** : pour les soirs de forte pression, quand tu n'as l'énergie pour rien d'autre.
+- **Apaiser le système nerveux** : respirations anti-stress, soupir physiologique, relâchement musculaire et scan corporel, pour faire redescendre la pression le soir même.
+- **Sortir des ruminations sans lutter** : rendez-vous des soucis, liste de demain, mélange cognitif, prendre de la distance avec une pensée.
+- **Rituel du soir stabilisant** : préparer le corps (lumière, chaleur, écrans) et ton rituel en 3 versions, 3, 10 ou 20 minutes selon ton énergie.
+- **Consolider le sommeil dans le temps** : que faire quand tu te réveilles à 3 h, le matin qui prépare la nuit, et quand en parler à un professionnel.
+- **Bien démarrer** : un parcours guidé de 28 soirs (une action par soir, déjà choisie pour toi), ton auto-évaluation et un kit de 7 fiches à imprimer.
+- **Un audio guidé dans chaque module**, dont l'audio express de 3 minutes pour les soirs de forte pression.
 
 **37 €**, paiement unique. Accès immédiat depuis ton téléphone, accès à vie. Et une **garantie de 7 jours** : si tu ne ressens aucune amélioration, tu es remboursé sans justification.
 
@@ -285,7 +286,7 @@ Bonjour,
 C'est le dernier e-mail où je te parle du programme « Quand le cerveau refuse de dormir ». Ensuite, tu recevras seulement des conseils gratuits sur le sommeil et le stress, de temps en temps.
 
 Pour résumer, si tu hésites encore :
-- 4 modules courts, 5 à 10 minutes par soir, même quand tu es épuisé ;
+- plus de 20 leçons courtes et un parcours guidé de 28 soirs, 5 à 10 minutes par soir, même quand tu es épuisé ;
 - 37 €, paiement unique, accès à vie ;
 - garantie 7 jours, remboursement sans justification.
 
