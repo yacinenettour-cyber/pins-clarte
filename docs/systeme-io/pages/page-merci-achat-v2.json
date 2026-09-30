@@ -19,10 +19,26 @@
             {
               "size": 12,
               "blocks": [
-                {"type": "Headline", "text": "Merci, ton accès est prêt", "level": "h1"},
-                {"type": "Text", "textAlign": "center", "html": "<p>Ton paiement a bien été validé. Tu peux commencer le programme « Quand le cerveau refuse de dormir » dès ce soir.</p><p>Tes identifiants arrivent aussi par e-mail (pense à regarder dans tes spams).</p>"},
-                {"type": "Button", "text": "Accéder au programme", "subText": "Depuis ton téléphone, ta tablette ou ton ordinateur", "action": "openUrl", "linkUrl": "https://lp.contactapaisement-mental.fr/school/course/quand-le-cerveau-refuse-de-dormir"},
-                {"type": "OrderSummary"}
+                {
+                  "type": "Headline",
+                  "text": "Merci, ton accès est prêt",
+                  "level": "h1"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Ton paiement a bien été validé. Pour entrer dans le programme « Quand le cerveau refuse de dormir », il reste 2 petites étapes :</p><ol><li>Ouvre l'e-mail « <strong>Important : Votre accès à la formation</strong> » que tu viens de recevoir (regarde aussi dans les spams ou l'onglet Promotions).</li><li>Clique sur le lien de cet e-mail pour <strong>créer ton mot de passe</strong> : tu arrives directement dans la formation.</li></ol><p>Ton identifiant est l'adresse e-mail utilisée pour la commande.</p>"
+                },
+                {
+                  "type": "Button",
+                  "text": "Accéder au programme",
+                  "subText": "Mot de passe déjà créé ? Connecte-toi ici",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/school/course/quand-le-cerveau-refuse-de-dormir"
+                },
+                {
+                  "type": "OrderSummary"
+                }
               ]
             }
           ]
@@ -38,9 +54,26 @@
             {
               "size": 12,
               "blocks": [
-                {"type": "Headline", "text": "Comment commencer", "level": "h2"},
-                {"type": "BulletList", "items": ["Ouvre d'abord la leçon « Commence ici » dans le module Bonus", "Suis ensuite cet ordre : Apaiser le système nerveux, Sortir des ruminations, Rituel du soir, Consolider le sommeil", "Un seul exercice par soir suffit, 5 à 10 minutes", "Garde l'audio express pour les soirs de forte pression"], "icon": "moon"},
-                {"type": "Text", "textAlign": null, "html": "<p>Tu n'as rien à réussir ici. Le calme ne se force pas : il se laisse revenir, soir après soir.</p><p>Une question ou un souci d'accès ? Écris-moi à yavo88@hotmail.com, je te réponds rapidement. Et souviens-toi : tu as 7 jours pour tester, satisfait ou remboursé.</p>"}
+                {
+                  "type": "Headline",
+                  "text": "Comment commencer",
+                  "level": "h2"
+                },
+                {
+                  "type": "BulletList",
+                  "items": [
+                    "Ouvre d'abord le premier module, « Bien démarrer » : la leçon « Commence ici », puis ton auto-évaluation",
+                    "Suis ensuite cet ordre : Apaiser le système nerveux, Sortir des ruminations, Rituel du soir, Consolider le sommeil",
+                    "Un seul exercice par soir suffit, 5 à 10 minutes",
+                    "Garde l'audio express pour les soirs de forte pression, et imprime le kit de fiches"
+                  ],
+                  "icon": "moon"
+                },
+                {
+                  "type": "Text",
+                  "textAlign": null,
+                  "html": "<p>Tu n'as rien à réussir ici. Le calme ne se force pas : il se laisse revenir, soir après soir.</p><p>Une question ou un souci d'accès ? Écris-moi à yavo88@hotmail.com, je te réponds rapidement. Et souviens-toi : tu as 7 jours pour tester, satisfait ou remboursé.</p>"
+                }
               ]
             }
           ]
@@ -56,7 +89,13 @@
             {
               "size": 12,
               "blocks": [
-                {"type": "Button", "text": "Conditions générales de vente", "subText": "Mentions légales et politique de confidentialité", "action": "openUrl", "linkUrl": "https://lp.contactapaisement-mental.fr/0f1d6dac"}
+                {
+                  "type": "Button",
+                  "text": "Conditions générales de vente",
+                  "subText": "Mentions légales et politique de confidentialité",
+                  "action": "openUrl",
+                  "linkUrl": "https://lp.contactapaisement-mental.fr/0f1d6dac"
+                }
               ]
             }
           ]
