@@ -54,6 +54,12 @@ Contenu : `lecons-v2/*.json`, généré par `lecons-v2/gen_lecons.py`. Publiées
 
 Les fiches PDF du kit (`medias/formation/kit/`) sont liées par des blocs `References` (jsDelivr épinglé sur `22e9e84`). Le contenu des leçons existantes n'est pas lisible par l'API : les nouvelles leçons ne décrivent les modules qu'à partir de la page de vente.
 
+## Module « 🧭 ET SI C'EST TON CAS ? SITUATIONS PARTICULIÈRES » (30/09/2026, formation passée à 29 leçons)
+
+Module 2779629 créé par `POST /api/school/courses/542776/modules` (rangé en 6e et dernière position, ce qui convient : leçons à lire selon sa situation, sans audio). 5 leçons générées par `lecons-v2/gen_lecons.py` (préfixe `cas-`), publiées comme les précédentes (`classic-lectures` avec `delayBeforePreviousLecture: 0`, `save`, `activate`) : travail qui suit jusqu'au lit (11133518), parent épuisé (11133520), horaires décalés ou travail de nuit (11133521), réveil à 4 h qui revient (11133522), période de gros stress (11133523). Vérifié par `modules-with-lectures?limit=100` : 6 modules, 29 leçons actives, 0 doublon. L'inscription existante est en accès complet (`full_access`) : le nouveau module est visible sans rien changer.
+
+Mis à jour le même jour : « Commence ici » (5e point de l'ordre des modules), page de vente (« 6 modules, près de 30 leçons », carte « Et si c'est ton cas ? », « un audio guidé dans chaque module » remplacé par « des audios guidés » puisque le nouveau module n'a pas d'audio), e-mails 5 et 10 et newsletter 5366813 (brouillon).
+
 ## Achat test (30/09/2026, terminé)
 
 Code promo **100 %** (id 335496, 3 utilisations, expire le 03/10/2026 à 23 h 59, heure de Paris) rattaché à l'offre 5383492 de la nouvelle page de paiement `/689e4290`, où un bloc `Coupon` a été ajouté (réenregistrement de `page-paiement-v2.json` avec un bloc `Coupon` avant `Checkout`). Aucun paramètre d'adresse ne permet d'appliquer un code (aide systeme.io : il faut l'élément Coupon sur la page). La page vend le même produit (3196087) que l'ancienne page de paiement. **Après le test** : supprimer le code (`DELETE /api/payment/coupons/335496`), le retirer de l'offre (`coupons: []`) et réenregistrer `page-paiement-v2.json` tel quel (sans bloc `Coupon`).
@@ -66,11 +72,13 @@ Code promo **100 %** (id 335496, 3 utilisations, expire le 03/10/2026 à 23 h 59
 
 | Page | Essais | Palette obtenue |
 |---|---|---|
-| `/accesformation` (vente) | 11 | #35456E #363062 #42568A · crème #F5E8C7 #FBF6EA |
+| `/accesformation` (vente) | 11, puis 153 le 30/09 après l'ajout du module 6 | 30/09 : #1C314A #345E91 #3F72AF · #DBE2EF #E8E0E0 #F9F7F7 (même palette que `/merci` et `/0f1d6dac`) ; avant : #35456E #363062 #42568A · crème #F5E8C7 #FBF6EA |
 | `/merci` (après achat) | 6 | #1C314A #345E91 #3F72AF · #E8E0E0 #F9F7F7 |
 | `/pagederemerciement` (après inscription au guide) | 20 | #3F56BB #424874 #5B6FC8 · #F4EEFF (bleu pervenche, le plus éloigné du bleu nuit) |
 | `/0f1d6dac` (légal) | 2 | #1C314A #3F72AF · #F9F7F7 |
 
 Environ 44 enregistrements au total (dont 5 essais sur le doublon `/0e9ef918`), **20 images IA** créées dans la médiathèque (le constructeur réutilise ses images quand le contenu ne change pas). Non recolorées (pages d'origine de l'utilisateur, non reconstruites pour ne pas casser le formulaire en 2 étapes ni l'automatisation d'inscription) : `/paiement-anti-stress` et `/tonguide`.
+
+**Réenregistrement du 30/09 (module 6 ajouté à la page de vente)** : le 1er tirage « strict » était bleu pétrole (#276486) avec des cartes pêche, jugé trop loin du bleu nuit. Critère resserré (bleu nuit de teinte 212-245°, fonds crème de teinte 32-60°) : la palette bleu nuit + crème d'origine n'est jamais revenue en 100 essais (environ 45 palettes différentes observées, l'ensemble paraît fini). Retenu au 19e essai suivant la palette #1C314A des pages `/merci` et légale, pour un tunnel homogène. **Coût constaté** : les images ne sont pas toujours réutilisées ; ces 153 enregistrements ont laissé environ 65 images « ai-… » orphelines dans la médiathèque (134 au total le 30/09 à 05:33 UTC, API `files` en lecture seule). Pour la suite : limiter les relances, et accepter directement la palette #1C314A quand elle sort.
 
 **Doublons à supprimer par l'utilisateur dans l'éditeur** (l'API ne supprime pas les étapes de tunnel ; aucun lien n'y mène, vérifié le 30/09) : `/0e9ef918` (étape 25634641), `/689e4290` (25635389, offre 5383492), `/0401c87c` (25635439).
