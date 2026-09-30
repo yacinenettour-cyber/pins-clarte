@@ -37,7 +37,7 @@ Autres problèmes :
 - **Valeur d'abord** (J0 → J3), présentation du programme ensuite (J4 → J6), puis relances espacées (J8, J10, J12).
 - **Zéro fausse urgence, zéro faux témoignage.** Quand on débute, l'honnêteté est un argument : « programme récent, pas encore d'avis, donc garantie 7 jours ».
 - **Inviter à répondre** aux e-mails : les réponses améliorent la délivrabilité (moins de spam) et te donnent tes premiers vrais retours.
-- Une seule promesse, alignée sur la page de vente : 5 modules, plus de 20 leçons courtes, un parcours guidé de 28 soirs, un kit de 7 fiches et un audio dans chaque module ; 37 € en paiement unique, accès à vie, garantie 7 jours (mis à jour le 30/09/2026).
+- Une seule promesse, alignée sur la page de vente : 6 modules, près de 30 leçons courtes, un parcours guidé de 28 soirs, un kit de 7 fiches et des audios guidés ; 37 € en paiement unique, accès à vie, garantie 7 jours (mis à jour le 30/09/2026).
 - Signature unique : **Yacine — Clarté Mentale** (même nom que le compte Pinterest et la page de vente). Expéditeur : « Yacine – Clarté Mentale ».
 
 ## 3. Calendrier v2 (10 e-mails sur 12 jours)
@@ -158,7 +158,7 @@ Yacine — Clarté Mentale
 ### E-mail 5 — J4
 
 **Objet :** Ce qu'il y a exactement dans le programme
-**Aperçu :** Plus de 20 leçons courtes, 37 €, et ce que ça change le soir.
+**Aperçu :** Près de 30 leçons courtes, 37 €, et ce que ça change le soir.
 
 Bonjour,
 
@@ -169,7 +169,8 @@ Comme promis, voici ce que contient le programme « Quand le cerveau refuse de d
 - **Rituel du soir stabilisant** : préparer le corps (lumière, chaleur, écrans) et ton rituel en 3 versions, 3, 10 ou 20 minutes selon ton énergie.
 - **Consolider le sommeil dans le temps** : que faire quand tu te réveilles à 3 h, le matin qui prépare la nuit, et quand en parler à un professionnel.
 - **Bien démarrer** : un parcours guidé de 28 soirs (une action par soir, déjà choisie pour toi), ton auto-évaluation et un kit de 7 fiches à imprimer.
-- **Un audio guidé dans chaque module**, dont l'audio express de 3 minutes pour les soirs de forte pression.
+- **Et si c'est ton cas ?** : des conseils adaptés si le travail te suit jusqu'au lit, si tu es parent avec des nuits hachées, en horaires décalés, réveillé(e) à 4 h chaque nuit ou dans une période de gros stress.
+- **Des audios guidés**, dont l'audio express de 3 minutes pour les soirs de forte pression.
 
 **37 €**, paiement unique. Accès immédiat depuis ton téléphone, accès à vie. Et une **garantie de 7 jours** : si tu ne ressens aucune amélioration, tu es remboursé sans justification.
 
@@ -286,7 +287,7 @@ Bonjour,
 C'est le dernier e-mail où je te parle du programme « Quand le cerveau refuse de dormir ». Ensuite, tu recevras seulement des conseils gratuits sur le sommeil et le stress, de temps en temps.
 
 Pour résumer, si tu hésites encore :
-- plus de 20 leçons courtes et un parcours guidé de 28 soirs, 5 à 10 minutes par soir, même quand tu es épuisé ;
+- près de 30 leçons courtes et un parcours guidé de 28 soirs, 5 à 10 minutes par soir, même quand tu es épuisé ;
 - 37 €, paiement unique, accès à vie ;
 - garantie 7 jours, remboursement sans justification.
 

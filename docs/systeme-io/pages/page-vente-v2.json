@@ -128,7 +128,7 @@
                 {
                   "type": "Text",
                   "textAlign": "center",
-                  "html": "<p><strong>5 modules, plus de 20 leçons courtes</strong>, un audio guidé dans chaque module et un kit de fiches à imprimer.</p>"
+                  "html": "<p><strong>6 modules, près de 30 leçons courtes</strong>, des audios guidés et un kit de fiches à imprimer.</p>"
                 }
               ]
             }
@@ -209,6 +209,13 @@
               "blocks": [
                 {
                   "type": "Card",
+                  "text": "Et si c'est ton cas ?",
+                  "html": "<p>Le travail qui te suit jusqu'au lit, parent aux nuits hachées, horaires décalés, réveil à 4 h qui revient, période de gros stress : des conseils adaptés à ta situation.</p>",
+                  "imageDescription": null,
+                  "subText": null
+                },
+                {
+                  "type": "Card",
                   "text": "Kit de 7 fiches à imprimer",
                   "html": "<p>Journal du sommeil, fiche SOS pour les réveils nocturnes, rendez-vous des soucis, liste de demain, rituel en 3 versions et calendrier des 28 soirs.</p>",
                   "imageDescription": null,
@@ -255,7 +262,7 @@
                   "items": [
                     "Des exercices courts : 5 à 10 minutes par soir",
                     "Un chemin tout tracé : une action par soir pendant 28 soirs",
-                    "Un audio guidé dans chaque module, à écouter au lit",
+                    "Des audios guidés, à écouter au lit",
                     "Sans jargon, sans effort, à ton rythme",
                     "Accès à vie : tu y reviens quand tu en as besoin"
                   ],
@@ -368,8 +375,8 @@
                 {
                   "type": "BulletList",
                   "items": [
-                    "5 modules, plus de 20 leçons courtes et sans jargon",
-                    "Un audio guidé dans chaque module",
+                    "6 modules, près de 30 leçons courtes et sans jargon",
+                    "Des audios guidés, à écouter au lit",
                     "Le parcours « 28 soirs » et un kit de 7 fiches à imprimer",
                     "Accès immédiat depuis téléphone, tablette ou ordinateur",
                     "Accès à vie"
