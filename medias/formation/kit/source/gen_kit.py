@@ -60,6 +60,7 @@ td.c { text-align: center; }
 .cover h1 { color: #fff; font-size: 34pt; }
 .cover .lead { color: #C9D3EE; font-size: 13pt; }
 .cover ol { font-size: 12pt; line-height: 2; color: #E9EDF7; }
+.compact td { padding: 2px 6px; font-size: 9.5pt; }
 .quote { font-family: 'Lora', serif; font-style: italic; font-size: 12.5pt; color: #3D4F8F; margin: 10px 0; }
 """
 
@@ -208,12 +209,66 @@ def rituel():
 """)
 
 
+SOIRS = [
+    ("Semaine 1 · Apaiser le corps", [
+        "Auto-évaluation (jour 1) + 5 soupirs lents au lit",
+        "Soupir physiologique : 3 fois 1 minute",
+        "Relâchement musculaire, version du soir (5 min)",
+        "Scan corporel au lit (10 min)",
+        "Ton exercice préféré + journal du sommeil le matin",
+        "Lumières douces 1 h avant le coucher",
+        "Bilan : qu'est-ce qui t'a le plus apaisé ?"]),
+    ("Semaine 2 · Laisser passer les pensées", [
+        "La liste de demain (5 min) + ton exercice du corps",
+        "Premier rendez-vous des soucis (15 min, en fin d'après-midi)",
+        "Le mélange cognitif au lit (mot : JARDIN)",
+        "« J'ai la pensée que… » : prendre de la distance",
+        "Rendez-vous des soucis + liste de demain",
+        "Les feuilles sur le ruisseau (5 min)",
+        "Auto-évaluation (jour 14) + bilan"]),
+    ("Semaine 3 · Installer ton rituel", [
+        "Choisis ta version du rituel : 3, 10 ou 20 min",
+        "Rituel, version 10 minutes",
+        "Douche chaude 1 à 2 h avant + chambre fraîche",
+        "Écrans : heure de fin 30 min avant le coucher",
+        "Rituel, version 3 minutes (le réflexe du soir)",
+        "Rituel, version 20 minutes",
+        "Écris ta version à toi + bilan de la semaine"]),
+    ("Semaine 4 · Consolider", [
+        "Fiche SOS posée sur la table de nuit",
+        "Heure de lever fixe + lumière du jour le matin",
+        "Ton rituel + un exercice contre les pensées",
+        "Soir sans effort : version 3 minutes seulement",
+        "Relis ton journal : tes 3 meilleurs soirs",
+        "Choisis ton rituel « de base » pour la suite",
+        "Auto-évaluation (jour 28) : compare avec le jour 1"]),
+]
+
+
+def parcours():
+    rows, n = "", 0
+    for semaine, soirs in SOIRS:
+        rows += f"<tr><td colspan='4' style='background:#EEF2FA;font-weight:600;color:#1F2A44;padding:4px 6px'>{e(semaine)}</td></tr>"
+        for action in soirs:
+            n += 1
+            rows += f"<tr style='height:5.7mm'><td class='c'><b>{n}</b></td><td>{e(action)}</td><td class='c'>☐</td><td class='c'>…/10</td></tr>"
+    return page(f"""
+<span class="tag">Fiche 7 · Une ligne par soir</span>
+<h1>Mes 28 soirs</h1>
+<p class="lead" style="margin-bottom:4px">Chaque soir, une seule action de 5 à 10 minutes, dans l'ordre. Coche quand c'est fait et note ton calme au coucher. Un soir raté ? Reprends simplement le lendemain.</p>
+<table class="compact" style="margin-top:4px">
+<tr><th style="width:8%">Soir</th><th>Ce soir</th><th style="width:9%">Fait</th><th style="width:13%">Calme</th></tr>
+{rows}
+</table>
+""")
+
+
 def cover():
     return page("""
 <div style="padding:0 6mm">
 <span class="tag" style="background:#3D4F8F;color:#fff">Kit à imprimer</span>
 <h1>Quand le cerveau refuse de dormir</h1>
-<p class="lead">Les 6 fiches qui accompagnent le programme. Imprime-les, garde-les près de toi, et remplis-les au crayon : elles sont faites pour être utilisées, pas pour être parfaites.</p>
+<p class="lead">Les 7 fiches qui accompagnent le programme. Imprime-les, garde-les près de toi, et remplis-les au crayon : elles sont faites pour être utilisées, pas pour être parfaites.</p>
 <ol>
 <li>Où en es-tu ? · l'auto-évaluation (jour 1, 14 et 28)</li>
 <li>Journal du sommeil · 14 jours</li>
@@ -221,6 +276,7 @@ def cover():
 <li>La liste de demain</li>
 <li>Réveillé(e) en pleine nuit ? · la fiche SOS</li>
 <li>Ton rituel du soir, en 3 versions + suivi</li>
+<li>Mes 28 soirs · le parcours soir par soir</li>
 </ol>
 <p class="lead" style="margin-top:18mm">Clarté Mentale · Yacine</p>
 <p class="small" style="color:#9FAACB">Outils de bien-être : ils ne remplacent pas un avis médical. Si tes troubles du sommeil durent, parles-en à un professionnel de santé.</p>
@@ -235,6 +291,7 @@ FICHES = [
     ("04-liste-de-demain", liste_demain),
     ("05-sos-reveil-nocturne", sos),
     ("06-rituel-du-soir-3-versions", rituel),
+    ("07-parcours-28-soirs", parcours),
 ]
 
 
