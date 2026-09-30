@@ -3,6 +3,7 @@
 import json, os
 
 KIT = "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/"
+KIT2 = "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@9d8d4f2/medias/formation/kit/"  # fiche 7 + kit complet à 7 fiches (30/09)
 OUT = os.path.dirname(os.path.abspath(__file__))
 PALETTE = {"requestedColor": "#3D4F8F", "cornerStyle": "soft", "fontPair": "editorial", "cardLayout": None}
 
@@ -12,10 +13,11 @@ def H2(t): return {"type": "Headline", "text": t, "level": "h2"}
 def T(h): return {"type": "Text", "textAlign": None, "html": h}
 def BL(items, icon): return {"type": "BulletList", "items": items, "icon": icon}
 def IMG(desc, alt): return {"type": "Image", "imageDescription": desc, "altText": alt}
-def REF(*items): return {"type": "References", "items": [{"title": t, "url": KIT + f} for t, f in items]}
+def REF(*items, base=KIT): return {"type": "References", "items": [{"title": t, "url": base + f} for t, f in items]}
 
 
 KIT_COMPLET = ("Le kit complet à imprimer, 6 fiches (PDF)", "kit-complet-clarte-mentale.pdf")
+KIT_COMPLET_7 = ("Le kit complet à imprimer, 7 fiches (PDF)", "kit-complet-clarte-mentale.pdf")
 
 
 def lecon(blocks):
@@ -316,28 +318,87 @@ add("auto-evaluation", "demarrer", "📊 OÙ EN ES-TU ? TON AUTO-ÉVALUATION", [
     REF(("Fiche à imprimer : l'auto-évaluation, jours 1, 14 et 28 (PDF)", "01-auto-evaluation.pdf"), KIT_COMPLET),
 ])
 
-add("kit-a-imprimer", "demarrer", "🖨️ TON KIT À IMPRIMER (6 FICHES)", [
-    H1("Ton kit à imprimer : 6 fiches"),
-    T("<p>Pour t'accompagner au quotidien, voici 6 fiches à imprimer. Elles sont faites pour être remplies au crayon, posées sur ta table de nuit ou collées sur le frigo, pas pour être parfaites.</p>"),
+add("kit-a-imprimer", "demarrer", "🖨️ TON KIT À IMPRIMER (7 FICHES)", [
+    H1("Ton kit à imprimer : 7 fiches"),
+    T("<p>Pour t'accompagner au quotidien, voici 7 fiches à imprimer. Elles sont faites pour être remplies au crayon, posées sur ta table de nuit ou collées sur le frigo, pas pour être parfaites.</p>"),
     H2("Ce que contient le kit"),
     T("<ol><li><strong>Où en es-tu ?</strong> L'auto-évaluation, à refaire aux jours 1, 14 et 28.</li>"
       "<li><strong>Journal du sommeil, 14 jours</strong> : une minute chaque matin pour repérer ce qui t'aide.</li>"
       "<li><strong>Le rendez-vous des soucis</strong> : le tableau pour poser tes préoccupations en fin d'après-midi.</li>"
       "<li><strong>La liste de demain</strong> : 5 minutes d'écriture avant de dormir.</li>"
       "<li><strong>Réveillé(e) en pleine nuit ?</strong> La fiche SOS à garder sur ta table de nuit.</li>"
-      "<li><strong>Ton rituel du soir en 3 versions</strong>, avec un suivi sur 4 semaines.</li></ol>"),
+      "<li><strong>Ton rituel du soir en 3 versions</strong>, avec un suivi sur 4 semaines.</li>"
+      "<li><strong>Mes 28 soirs</strong> : le parcours soir par soir, une ligne à cocher chaque soir.</li></ol>"),
     IMG("printed worksheets pencil desk calm", "Fiches imprimées et crayon sur un bureau"),
     H2("Comment t'en servir"),
     BL(["Imprime le kit complet une fois, puis réimprime le journal et la liste quand ils sont remplis",
         "Pas d'imprimante ? Recopie-les dans un carnet : ça marche aussi bien",
-        "Commence par l'auto-évaluation et la fiche SOS, le reste vient avec les leçons",
+        "Commence par l'auto-évaluation, la fiche SOS et « Mes 28 soirs »",
         "Tu peux aussi les remplir sur une tablette avec une application d'annotation PDF"], "print"),
     T("<p>Chaque fiche est aussi proposée seule, à la fin de la leçon qui l'explique.</p>"),
-    REF(KIT_COMPLET,
-        ("Fiche 1 : où en es-tu ? (PDF)", "01-auto-evaluation.pdf"),
-        ("Fiche 2 : journal du sommeil (PDF)", "02-journal-sommeil-14-jours.pdf"),
-        ("Fiche 5 : réveillé en pleine nuit, SOS (PDF)", "05-sos-reveil-nocturne.pdf"),
-        ("Fiche 6 : ton rituel en 3 versions (PDF)", "06-rituel-du-soir-3-versions.pdf")),
+    REF(KIT_COMPLET_7, ("Fiche 7 : mes 28 soirs (PDF)", "07-parcours-28-soirs.pdf"), base=KIT2),
+])
+
+SOIRS_LECON = [
+    ("Semaine 1 : apaiser le corps", [
+        "fais ton auto-évaluation (leçon « Où en es-tu ? »), puis 5 soupirs lents au lit.",
+        "le soupir physiologique, 3 fois une minute.",
+        "le relâchement musculaire progressif, version du soir (5 minutes).",
+        "le scan corporel au lit (10 minutes).",
+        "refais l'exercice qui t'a le plus apaisé. Dès demain matin, remplis ton journal du sommeil (1 minute).",
+        "une heure avant le coucher, passe en lumières douces (leçon « Préparer le corps »).",
+        "petit bilan : qu'est-ce qui t'a le plus apaisé cette semaine ? Garde cet exercice comme base."]),
+    ("Semaine 2 : laisser passer les pensées", [
+        "la liste de demain (5 minutes), puis ton exercice du corps.",
+        "ton premier rendez-vous des soucis, en fin d'après-midi (15 minutes).",
+        "le mélange cognitif au lit, avec le mot JARDIN.",
+        "prendre de la distance : « je remarque que j'ai la pensée que… ».",
+        "rendez-vous des soucis dans l'après-midi, liste de demain au coucher.",
+        "les feuilles sur le ruisseau (5 minutes).",
+        "refais ton auto-évaluation (jour 14) et garde la technique contre les pensées qui te convient le mieux."]),
+    ("Semaine 3 : installer ton rituel", [
+        "lis « Ton rituel en 3 versions » et choisis la version du soir selon ton énergie.",
+        "la version 10 minutes.",
+        "une douche chaude 1 à 2 heures avant le coucher et une chambre fraîche.",
+        "fixe une heure de fin pour les écrans, 30 minutes avant de te coucher.",
+        "la version 3 minutes, même si tu as de l'énergie : c'est le réflexe des soirs difficiles.",
+        "la version 20 minutes, idéalement un soir agité ou le week-end.",
+        "écris ta version à toi sur la fiche du rituel, et fais le bilan de la semaine."]),
+    ("Semaine 4 : consolider", [
+        "lis « Réveillé à 3 h du matin » et pose la fiche SOS sur ta table de nuit.",
+        "décide ton heure de lever fixe, et prends la lumière du jour demain matin.",
+        "ton rituel, plus un exercice contre les pensées si elles tournent.",
+        "soir sans effort : la version 3 minutes seulement, et observe ce qui se passe.",
+        "relis ton journal : qu'avaient en commun tes 3 meilleurs soirs ?",
+        "choisis ton rituel « de base » pour les semaines à venir.",
+        "refais ton auto-évaluation (jour 28) et compare avec le jour 1."]),
+]
+
+
+def blocs_soirs():
+    blocs, n = [], 0
+    for semaine, soirs in SOIRS_LECON:
+        items = []
+        for action in soirs:
+            n += 1
+            items.append(f"<li><strong>Soir {n}</strong> : {action}</li>")
+        blocs += [H2(semaine), T("<ul>" + "".join(items) + "</ul>")]
+    return blocs
+
+
+add("parcours-28-soirs", "demarrer", "🗓️ TON PARCOURS 28 SOIRS, SOIR PAR SOIR", [
+    H1("Ton parcours 28 soirs, soir par soir"),
+    T("<p>Tu as maintenant beaucoup d'outils. Pour ne plus te demander chaque soir « qu'est-ce que je fais ce soir ? », voici un chemin tout tracé : <strong>une seule action par soir, 5 à 10 minutes</strong>, dans l'ordre. Chaque semaine s'appuie sur la précédente.</p>"
+      "<p>Imprime la fiche « Mes 28 soirs » pour cocher au fur et à mesure et noter ton calme au coucher.</p>"),
+    IMG("calendar notebook bedside evening calm", "Carnet et calendrier sur une table de nuit, le soir"),
+    *blocs_soirs(),
+    H2("Si tu rates un soir"),
+    BL(["Reprends simplement le lendemain, sans chercher à rattraper",
+        "Soir très difficile : lance l'audio express, et c'est tout pour ce soir",
+        "Semaine chargée ? Étale-la sur 10 jours : l'ordre compte plus que la vitesse",
+        "Au soir 28, compare ton auto-évaluation avec celle du soir 1"], "calendar-check"),
+    T("<p>À la fin du parcours, écris-moi à yavo88@hotmail.com pour me dire ce qui a changé : ton retour m'aide à améliorer le programme.</p>"),
+    REF(("Fiche 7 : mes 28 soirs, à cocher (PDF)", "07-parcours-28-soirs.pdf"), KIT_COMPLET_7, base=KIT2),
 ])
 
 if __name__ == "__main__":

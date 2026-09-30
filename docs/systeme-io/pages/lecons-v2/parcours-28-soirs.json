@@ -1,0 +1,118 @@
+{
+ "slug": "parcours-28-soirs",
+ "module": "demarrer",
+ "nom": "🗓️ TON PARCOURS 28 SOIRS, SOIR PAR SOIR",
+ "contenu": {
+  "palette": {
+   "requestedColor": "#3D4F8F",
+   "cornerStyle": "soft",
+   "fontPair": "editorial",
+   "cardLayout": null
+  },
+  "sections": [
+   {
+    "tone": "hero",
+    "backgroundImageDescription": null,
+    "rows": [
+     {
+      "columns": [
+       {
+        "size": 12,
+        "blocks": [
+         {
+          "type": "Headline",
+          "text": "Ton parcours 28 soirs, soir par soir",
+          "level": "h1"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>Tu as maintenant beaucoup d'outils. Pour ne plus te demander chaque soir « qu'est-ce que je fais ce soir ? », voici un chemin tout tracé : <strong>une seule action par soir, 5 à 10 minutes</strong>, dans l'ordre. Chaque semaine s'appuie sur la précédente.</p><p>Imprime la fiche « Mes 28 soirs » pour cocher au fur et à mesure et noter ton calme au coucher.</p>"
+         },
+         {
+          "type": "Image",
+          "imageDescription": "calendar notebook bedside evening calm",
+          "altText": "Carnet et calendrier sur une table de nuit, le soir"
+         },
+         {
+          "type": "Headline",
+          "text": "Semaine 1 : apaiser le corps",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ul><li><strong>Soir 1</strong> : fais ton auto-évaluation (leçon « Où en es-tu ? »), puis 5 soupirs lents au lit.</li><li><strong>Soir 2</strong> : le soupir physiologique, 3 fois une minute.</li><li><strong>Soir 3</strong> : le relâchement musculaire progressif, version du soir (5 minutes).</li><li><strong>Soir 4</strong> : le scan corporel au lit (10 minutes).</li><li><strong>Soir 5</strong> : refais l'exercice qui t'a le plus apaisé. Dès demain matin, remplis ton journal du sommeil (1 minute).</li><li><strong>Soir 6</strong> : une heure avant le coucher, passe en lumières douces (leçon « Préparer le corps »).</li><li><strong>Soir 7</strong> : petit bilan : qu'est-ce qui t'a le plus apaisé cette semaine ? Garde cet exercice comme base.</li></ul>"
+         },
+         {
+          "type": "Headline",
+          "text": "Semaine 2 : laisser passer les pensées",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ul><li><strong>Soir 8</strong> : la liste de demain (5 minutes), puis ton exercice du corps.</li><li><strong>Soir 9</strong> : ton premier rendez-vous des soucis, en fin d'après-midi (15 minutes).</li><li><strong>Soir 10</strong> : le mélange cognitif au lit, avec le mot JARDIN.</li><li><strong>Soir 11</strong> : prendre de la distance : « je remarque que j'ai la pensée que… ».</li><li><strong>Soir 12</strong> : rendez-vous des soucis dans l'après-midi, liste de demain au coucher.</li><li><strong>Soir 13</strong> : les feuilles sur le ruisseau (5 minutes).</li><li><strong>Soir 14</strong> : refais ton auto-évaluation (jour 14) et garde la technique contre les pensées qui te convient le mieux.</li></ul>"
+         },
+         {
+          "type": "Headline",
+          "text": "Semaine 3 : installer ton rituel",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ul><li><strong>Soir 15</strong> : lis « Ton rituel en 3 versions » et choisis la version du soir selon ton énergie.</li><li><strong>Soir 16</strong> : la version 10 minutes.</li><li><strong>Soir 17</strong> : une douche chaude 1 à 2 heures avant le coucher et une chambre fraîche.</li><li><strong>Soir 18</strong> : fixe une heure de fin pour les écrans, 30 minutes avant de te coucher.</li><li><strong>Soir 19</strong> : la version 3 minutes, même si tu as de l'énergie : c'est le réflexe des soirs difficiles.</li><li><strong>Soir 20</strong> : la version 20 minutes, idéalement un soir agité ou le week-end.</li><li><strong>Soir 21</strong> : écris ta version à toi sur la fiche du rituel, et fais le bilan de la semaine.</li></ul>"
+         },
+         {
+          "type": "Headline",
+          "text": "Semaine 4 : consolider",
+          "level": "h2"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<ul><li><strong>Soir 22</strong> : lis « Réveillé à 3 h du matin » et pose la fiche SOS sur ta table de nuit.</li><li><strong>Soir 23</strong> : décide ton heure de lever fixe, et prends la lumière du jour demain matin.</li><li><strong>Soir 24</strong> : ton rituel, plus un exercice contre les pensées si elles tournent.</li><li><strong>Soir 25</strong> : soir sans effort : la version 3 minutes seulement, et observe ce qui se passe.</li><li><strong>Soir 26</strong> : relis ton journal : qu'avaient en commun tes 3 meilleurs soirs ?</li><li><strong>Soir 27</strong> : choisis ton rituel « de base » pour les semaines à venir.</li><li><strong>Soir 28</strong> : refais ton auto-évaluation (jour 28) et compare avec le jour 1.</li></ul>"
+         },
+         {
+          "type": "Headline",
+          "text": "Si tu rates un soir",
+          "level": "h2"
+         },
+         {
+          "type": "BulletList",
+          "items": [
+           "Reprends simplement le lendemain, sans chercher à rattraper",
+           "Soir très difficile : lance l'audio express, et c'est tout pour ce soir",
+           "Semaine chargée ? Étale-la sur 10 jours : l'ordre compte plus que la vitesse",
+           "Au soir 28, compare ton auto-évaluation avec celle du soir 1"
+          ],
+          "icon": "calendar-check"
+         },
+         {
+          "type": "Text",
+          "textAlign": null,
+          "html": "<p>À la fin du parcours, écris-moi à yavo88@hotmail.com pour me dire ce qui a changé : ton retour m'aide à améliorer le programme.</p>"
+         },
+         {
+          "type": "References",
+          "items": [
+           {
+            "title": "Fiche 7 : mes 28 soirs, à cocher (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@9d8d4f2/medias/formation/kit/07-parcours-28-soirs.pdf"
+           },
+           {
+            "title": "Le kit complet à imprimer, 7 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@9d8d4f2/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

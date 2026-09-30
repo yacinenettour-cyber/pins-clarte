@@ -1,7 +1,7 @@
 {
  "slug": "kit-a-imprimer",
  "module": "demarrer",
- "nom": "🖨️ TON KIT À IMPRIMER (6 FICHES)",
+ "nom": "🖨️ TON KIT À IMPRIMER (7 FICHES)",
  "contenu": {
   "palette": {
    "requestedColor": "#3D4F8F",
@@ -21,13 +21,13 @@
         "blocks": [
          {
           "type": "Headline",
-          "text": "Ton kit à imprimer : 6 fiches",
+          "text": "Ton kit à imprimer : 7 fiches",
           "level": "h1"
          },
          {
           "type": "Text",
           "textAlign": null,
-          "html": "<p>Pour t'accompagner au quotidien, voici 6 fiches à imprimer. Elles sont faites pour être remplies au crayon, posées sur ta table de nuit ou collées sur le frigo, pas pour être parfaites.</p>"
+          "html": "<p>Pour t'accompagner au quotidien, voici 7 fiches à imprimer. Elles sont faites pour être remplies au crayon, posées sur ta table de nuit ou collées sur le frigo, pas pour être parfaites.</p>"
          },
          {
           "type": "Headline",
@@ -37,7 +37,7 @@
          {
           "type": "Text",
           "textAlign": null,
-          "html": "<ol><li><strong>Où en es-tu ?</strong> L'auto-évaluation, à refaire aux jours 1, 14 et 28.</li><li><strong>Journal du sommeil, 14 jours</strong> : une minute chaque matin pour repérer ce qui t'aide.</li><li><strong>Le rendez-vous des soucis</strong> : le tableau pour poser tes préoccupations en fin d'après-midi.</li><li><strong>La liste de demain</strong> : 5 minutes d'écriture avant de dormir.</li><li><strong>Réveillé(e) en pleine nuit ?</strong> La fiche SOS à garder sur ta table de nuit.</li><li><strong>Ton rituel du soir en 3 versions</strong>, avec un suivi sur 4 semaines.</li></ol>"
+          "html": "<ol><li><strong>Où en es-tu ?</strong> L'auto-évaluation, à refaire aux jours 1, 14 et 28.</li><li><strong>Journal du sommeil, 14 jours</strong> : une minute chaque matin pour repérer ce qui t'aide.</li><li><strong>Le rendez-vous des soucis</strong> : le tableau pour poser tes préoccupations en fin d'après-midi.</li><li><strong>La liste de demain</strong> : 5 minutes d'écriture avant de dormir.</li><li><strong>Réveillé(e) en pleine nuit ?</strong> La fiche SOS à garder sur ta table de nuit.</li><li><strong>Ton rituel du soir en 3 versions</strong>, avec un suivi sur 4 semaines.</li><li><strong>Mes 28 soirs</strong> : le parcours soir par soir, une ligne à cocher chaque soir.</li></ol>"
          },
          {
           "type": "Image",
@@ -54,7 +54,7 @@
           "items": [
            "Imprime le kit complet une fois, puis réimprime le journal et la liste quand ils sont remplis",
            "Pas d'imprimante ? Recopie-les dans un carnet : ça marche aussi bien",
-           "Commence par l'auto-évaluation et la fiche SOS, le reste vient avec les leçons",
+           "Commence par l'auto-évaluation, la fiche SOS et « Mes 28 soirs »",
            "Tu peux aussi les remplir sur une tablette avec une application d'annotation PDF"
           ],
           "icon": "print"
@@ -68,24 +68,12 @@
           "type": "References",
           "items": [
            {
-            "title": "Le kit complet à imprimer, 6 fiches (PDF)",
-            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/kit-complet-clarte-mentale.pdf"
+            "title": "Le kit complet à imprimer, 7 fiches (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@9d8d4f2/medias/formation/kit/kit-complet-clarte-mentale.pdf"
            },
            {
-            "title": "Fiche 1 : où en es-tu ? (PDF)",
-            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/01-auto-evaluation.pdf"
-           },
-           {
-            "title": "Fiche 2 : journal du sommeil (PDF)",
-            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/02-journal-sommeil-14-jours.pdf"
-           },
-           {
-            "title": "Fiche 5 : réveillé en pleine nuit, SOS (PDF)",
-            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/05-sos-reveil-nocturne.pdf"
-           },
-           {
-            "title": "Fiche 6 : ton rituel en 3 versions (PDF)",
-            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@22e9e84/medias/formation/kit/06-rituel-du-soir-3-versions.pdf"
+            "title": "Fiche 7 : mes 28 soirs (PDF)",
+            "url": "https://cdn.jsdelivr.net/gh/yacinenettour-cyber/pins-clarte@9d8d4f2/medias/formation/kit/07-parcours-28-soirs.pdf"
            }
           ]
          }
