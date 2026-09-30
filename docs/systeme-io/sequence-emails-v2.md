@@ -40,6 +40,13 @@ Autres problèmes :
 - Une seule promesse, alignée sur la page de vente : 6 modules, près de 30 leçons courtes, un parcours guidé de 28 soirs, un kit de 7 fiches et des audios guidés ; 37 € en paiement unique, accès à vie, garantie 7 jours (mis à jour le 30/09/2026).
 - Signature unique : **Yacine — Clarté Mentale** (même nom que le compte Pinterest et la page de vente). Expéditeur : « Yacine – Clarté Mentale ».
 
+## Mise à jour du 30/09/2026 : 13 e-mails
+
+- **E-mail 10** : objet « Si tu hésites encore », aperçu « L'essentiel sur le programme, en 3 lignes. » ; la phrase « C'est le dernier e-mail où je te parle du programme… » est remplacée par « Voici l'essentiel sur le programme « Quand le cerveau refuse de dormir », en quelques lignes. »
+- **E-mails 11 à 13 (relance)**, actifs depuis le 30/09, à 19 h 30 : 11 « 3 gestes pour ce soir 🌙 » 14 jours après l'e-mail 10 (J26), 12 « Réveillé(e) vers 4 h, presque chaque nuit ? » 3 jours après (J29), 13 « Ce qu'il y a dans le programme (dernier e-mail sur le sujet) » 3 jours après (J32). Textes : `relance/gen_relance.py` et `relance-anciens-inscrits.md`. Ajoutés en fin de campagne, ils partent aussi aux anciens inscrits encore abonnés (aide systeme.io). Newsletter 5366813 supprimée (jamais envoyée).
+- Boutons de paiement : `https://lp.contactapaisement-mental.fr/689e4290`.
+- Reste à créer par l'utilisateur : le workflow « Nouvelle vente » → « Désinscrire de la campagne », pour que les acheteurs ne reçoivent plus les e-mails de vente.
+
 ## 3. Calendrier v2 (10 e-mails sur 12 jours)
 
 | # | Jour | Délai à régler | Rôle | Reprend l'actuel |
