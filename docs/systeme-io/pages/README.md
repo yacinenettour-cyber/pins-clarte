@@ -59,3 +59,18 @@ Les fiches PDF du kit (`medias/formation/kit/`) sont liées par des blocs `Refer
 Code promo **100 %** (id 335496, 3 utilisations, expire le 03/10/2026 à 23 h 59, heure de Paris) rattaché à l'offre 5383492 de la nouvelle page de paiement `/689e4290`, où un bloc `Coupon` a été ajouté (réenregistrement de `page-paiement-v2.json` avec un bloc `Coupon` avant `Checkout`). Aucun paramètre d'adresse ne permet d'appliquer un code (aide systeme.io : il faut l'élément Coupon sur la page). La page vend le même produit (3196087) que l'ancienne page de paiement. **Après le test** : supprimer le code (`DELETE /api/payment/coupons/335496`), le retirer de l'offre (`coupons: []`) et réenregistrer `page-paiement-v2.json` tel quel (sans bloc `Coupon`).
 
 **Résultat** : achat réel de l'utilisateur sur `/paiement-anti-stress` (le code n'y était pas utilisable, faute de champ), inscription créée, e-mail d'accès reçu, formation affichée correctement (« tout s'affiche correctement »). Nettoyage fait le 30/09 : code 335496 supprimé (plus aucun code sur le compte), retiré de l'offre 5383492, page `/689e4290` réenregistrée sans bloc `Coupon` (couleurs de nouveau bleues, vérifié).
+
+## Couleurs des pages (30/09/2026)
+
+**Le constructeur ignore `palettePreset` et tire la palette au hasard à chaque enregistrement** (même réglage « deep-ocean » : bleu, orange/jaune/vert, marron, turquoise ; « navy-flare » : bleu roi puis violet/menthe). Les couleurs appliquées se lisent dans le HTML (`__PRELOADED_STATE__`). Méthode retenue avec l'accord de l'utilisateur (« bleu nuit et crème ») : réenregistrer et vérifier la palette jusqu'à obtenir du bleu nuit + fonds crème/neutres, sans couleur vive hors bleu/doré — `outils/couleurs_systemeio.py`. Tout réenregistrement ultérieur (même pour changer un mot) retire au sort les couleurs : relancer l'outil.
+
+| Page | Essais | Palette obtenue |
+|---|---|---|
+| `/accesformation` (vente) | 11 | #35456E #363062 #42568A · crème #F5E8C7 #FBF6EA |
+| `/merci` (après achat) | 6 | #1C314A #345E91 #3F72AF · #E8E0E0 #F9F7F7 |
+| `/pagederemerciement` (après inscription au guide) | 20 | #3F56BB #424874 #5B6FC8 · #F4EEFF (bleu pervenche, le plus éloigné du bleu nuit) |
+| `/0f1d6dac` (légal) | 2 | #1C314A #3F72AF · #F9F7F7 |
+
+Environ 44 enregistrements au total (dont 5 essais sur le doublon `/0e9ef918`), **20 images IA** créées dans la médiathèque (le constructeur réutilise ses images quand le contenu ne change pas). Non recolorées (pages d'origine de l'utilisateur, non reconstruites pour ne pas casser le formulaire en 2 étapes ni l'automatisation d'inscription) : `/paiement-anti-stress` et `/tonguide`.
+
+**Doublons à supprimer par l'utilisateur dans l'éditeur** (l'API ne supprime pas les étapes de tunnel ; aucun lien n'y mène, vérifié le 30/09) : `/0e9ef918` (étape 25634641), `/689e4290` (25635389, offre 5383492), `/0401c87c` (25635439).
