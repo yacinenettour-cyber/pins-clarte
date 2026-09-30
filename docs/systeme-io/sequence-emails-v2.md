@@ -57,7 +57,7 @@ Autres problèmes :
 
 À **désactiver/supprimer** : actuels 2, 5, 6 (fausse urgence), 7 (doublon + lien cassé), 11 (Sophie, témoignage inventé).
 
-Lien de tous les boutons (e-mails 5 à 10 et newsletter 5366813) : **directement la page de paiement** `https://lp.contactapaisement-mental.fr/paiement-anti-stress?productQuantity=1`, choix de l'utilisateur du 29/09/2026 pour limiter les frictions d'achat (les e-mails présentent déjà le programme, le prix et la garantie). Historique : `/accesformation` à l'origine, puis la nouvelle page de vente `/0e9ef918` quelques minutes le 29/09, remis sur le paiement le jour même.
+Lien de tous les boutons (e-mails 5 à 10 et newsletter 5366813) : **directement la page de paiement**, depuis le 30/09/2026 la nouvelle page `https://lp.contactapaisement-mental.fr/689e4290` (liens des CGV, mention sur la rétractation, garantie), après un achat test validé par l'utilisateur. Historique : `/accesformation` à l'origine, puis `/0e9ef918` quelques minutes le 29/09, puis l'ancienne page de paiement `/paiement-anti-stress?productQuantity=1` (choix de l'utilisateur du 29/09 pour limiter les frictions d'achat) jusqu'au 30/09.
 
 ---
 
