@@ -1,0 +1,890 @@
+{
+ "fond-01.jpg": {
+  "tete": [
+   0.336,
+   0.402
+  ],
+  "x": 0.324,
+  "source": "posture"
+ },
+ "fond-02.jpg": {
+  "tete": [
+   0.236,
+   0.459
+  ],
+  "x": 0.256,
+  "source": "visage"
+ },
+ "fond-03.jpg": {
+  "tete": [
+   0.408,
+   0.48
+  ],
+  "x": 0.425,
+  "source": "posture"
+ },
+ "fond-04.jpg": {
+  "tete": [
+   0.442,
+   0.64
+  ],
+  "x": 0.235,
+  "source": "visage"
+ },
+ "fond-100.jpg": {
+  "tete": [
+   0.336,
+   0.566
+  ],
+  "x": 0.484,
+  "source": "visage"
+ },
+ "fond-101.jpg": {
+  "tete": [
+   0.457,
+   0.675
+  ],
+  "x": 0.342,
+  "source": "visage"
+ },
+ "fond-102.jpg": {
+  "tete": [
+   0.315,
+   0.524
+  ],
+  "x": 0.738,
+  "source": "visage"
+ },
+ "fond-103.jpg": {
+  "tete": [
+   0.368,
+   0.567
+  ],
+  "x": 0.496,
+  "source": "visage"
+ },
+ "fond-104.jpg": {
+  "tete": [
+   0.356,
+   0.582
+  ],
+  "x": 0.675,
+  "source": "visage"
+ },
+ "fond-105.jpg": {
+  "tete": [
+   0.349,
+   0.562
+  ],
+  "x": 0.644,
+  "source": "visage"
+ },
+ "fond-107.jpg": {
+  "tete": [
+   0.166,
+   0.393
+  ],
+  "x": 0.726,
+  "source": "visage"
+ },
+ "fond-110.jpg": {
+  "tete": [
+   0.302,
+   0.533
+  ],
+  "x": 0.73,
+  "source": "visage"
+ },
+ "fond-111.jpg": {
+  "tete": [
+   0.4,
+   0.521
+  ],
+  "x": 0.375,
+  "source": "posture"
+ },
+ "fond-112.jpg": {
+  "tete": [
+   0.325,
+   0.511
+  ],
+  "x": 0.42,
+  "source": "visage"
+ },
+ "fond-113.jpg": {
+  "tete": [
+   0.429,
+   0.608
+  ],
+  "x": 0.524,
+  "source": "visage"
+ },
+ "fond-114.jpg": {
+  "tete": [
+   0.366,
+   0.576
+  ],
+  "x": 0.606,
+  "source": "visage"
+ },
+ "fond-115.jpg": {
+  "tete": [
+   0.309,
+   0.468
+  ],
+  "x": 0.344,
+  "source": "visage"
+ },
+ "fond-116.jpg": {
+  "tete": [
+   0.437,
+   0.633
+  ],
+  "x": 0.61,
+  "source": "visage"
+ },
+ "fond-117.jpg": {
+  "tete": [
+   0.329,
+   0.529
+  ],
+  "x": 0.576,
+  "source": "visage"
+ },
+ "fond-118.jpg": {
+  "tete": [
+   0.217,
+   0.426
+  ],
+  "x": 0.295,
+  "source": "visage"
+ },
+ "fond-119.jpg": {
+  "tete": [
+   0.42,
+   0.569
+  ],
+  "x": 0.744,
+  "source": "posture"
+ },
+ "fond-12.jpg": {
+  "tete": [
+   0.308,
+   0.829
+  ],
+  "x": 0.543,
+  "source": "visage"
+ },
+ "fond-120.jpg": {
+  "tete": [
+   0.442,
+   0.512
+  ],
+  "x": 0.34,
+  "source": "posture"
+ },
+ "fond-121.jpg": {
+  "tete": [
+   0.46,
+   0.698
+  ],
+  "x": 0.564,
+  "source": "visage"
+ },
+ "fond-122.jpg": {
+  "tete": [
+   0.49,
+   0.559
+  ],
+  "x": 0.365,
+  "source": "posture"
+ },
+ "fond-123.jpg": {
+  "tete": [
+   0.383,
+   0.454
+  ],
+  "x": 0.65,
+  "source": "posture"
+ },
+ "fond-124.jpg": {
+  "tete": [
+   0.433,
+   0.563
+  ],
+  "x": 0.32,
+  "source": "posture"
+ },
+ "fond-125.jpg": {
+  "tete": [
+   0.4,
+   0.513
+  ],
+  "x": 0.458,
+  "source": "posture"
+ },
+ "fond-127.jpg": {
+  "tete": [
+   0.417,
+   0.501
+  ],
+  "x": 0.351,
+  "source": "posture"
+ },
+ "fond-128.jpg": {
+  "tete": [
+   0.384,
+   0.598
+  ],
+  "x": 0.752,
+  "source": "visage"
+ },
+ "fond-129.jpg": {
+  "tete": [
+   0.416,
+   0.494
+  ],
+  "x": 0.615,
+  "source": "posture"
+ },
+ "fond-130.jpg": {
+  "tete": [
+   0.32,
+   0.451
+  ],
+  "x": 0.512,
+  "source": "posture"
+ },
+ "fond-131.jpg": {
+  "tete": [
+   0.332,
+   0.548
+  ],
+  "x": 0.315,
+  "source": "visage"
+ },
+ "fond-132.jpg": {
+  "tete": [
+   0.37,
+   0.581
+  ],
+  "x": 0.736,
+  "source": "visage"
+ },
+ "fond-133.jpg": {
+  "tete": [
+   0.218,
+   0.284
+  ],
+  "x": 0.285,
+  "source": "posture"
+ },
+ "fond-134.jpg": {
+  "tete": [
+   0.443,
+   0.509
+  ],
+  "x": 0.47,
+  "source": "posture"
+ },
+ "fond-135.jpg": {
+  "tete": [
+   0.359,
+   0.605
+  ],
+  "x": 0.35,
+  "source": "visage"
+ },
+ "fond-136.jpg": {
+  "tete": [
+   0.357,
+   0.482
+  ],
+  "x": 0.414,
+  "source": "posture"
+ },
+ "fond-137.jpg": {
+  "tete": [
+   0.185,
+   0.418
+  ],
+  "x": 0.647,
+  "source": "visage"
+ },
+ "fond-139.jpg": {
+  "tete": [
+   0.31,
+   0.511
+  ],
+  "x": 0.499,
+  "source": "visage"
+ },
+ "fond-140.jpg": {
+  "tete": [
+   0.193,
+   0.42
+  ],
+  "x": 0.787,
+  "source": "visage"
+ },
+ "fond-141.jpg": {
+  "tete": [
+   0.073,
+   0.601
+  ],
+  "x": 0.477,
+  "source": "visage"
+ },
+ "fond-142.jpg": {
+  "tete": [
+   0.167,
+   0.642
+  ],
+  "x": 0.756,
+  "source": "visage"
+ },
+ "fond-143.jpg": {
+  "tete": [
+   0.227,
+   0.827
+  ],
+  "x": 0.395,
+  "source": "posture"
+ },
+ "fond-144.jpg": {
+  "tete": [
+   0.169,
+   0.596
+  ],
+  "x": 0.407,
+  "source": "posture"
+ },
+ "fond-145.jpg": {
+  "tete": [
+   0.04,
+   0.5
+  ],
+  "x": 0.4,
+  "source": "manuel"
+ },
+ "fond-146.jpg": {
+  "tete": [
+   0.035,
+   0.356
+  ],
+  "x": 0.466,
+  "source": "visage"
+ },
+ "fond-148.jpg": {
+  "tete": [
+   0.049,
+   0.266
+  ],
+  "x": 0.505,
+  "source": "posture"
+ },
+ "fond-149.jpg": {
+  "tete": [
+   0.011,
+   0.398
+  ],
+  "x": 0.455,
+  "source": "visage"
+ },
+ "fond-150.jpg": {
+  "tete": [
+   0.232,
+   0.706
+  ],
+  "x": 0.301,
+  "source": "visage"
+ },
+ "fond-151.jpg": {
+  "tete": [
+   0.232,
+   0.439
+  ],
+  "x": 0.499,
+  "source": "visage"
+ },
+ "fond-152.jpg": {
+  "tete": [
+   0.278,
+   0.546
+  ],
+  "x": 0.509,
+  "source": "visage"
+ },
+ "fond-153.jpg": {
+  "tete": [
+   0.198,
+   0.374
+  ],
+  "x": 0.365,
+  "source": "posture"
+ },
+ "fond-154.jpg": {
+  "tete": [
+   0.11,
+   0.323
+  ],
+  "x": 0.556,
+  "source": "visage"
+ },
+ "fond-155.jpg": {
+  "tete": [
+   0.192,
+   0.389
+  ],
+  "x": 0.484,
+  "source": "visage"
+ },
+ "fond-156.jpg": {
+  "tete": [
+   0.189,
+   0.526
+  ],
+  "x": 0.515,
+  "source": "visage"
+ },
+ "fond-157.jpg": {
+  "tete": [
+   0.247,
+   0.345
+  ],
+  "x": 0.51,
+  "source": "posture"
+ },
+ "fond-158.jpg": {
+  "tete": [
+   0.126,
+   0.513
+  ],
+  "x": 0.456,
+  "source": "visage"
+ },
+ "fond-16.jpg": {
+  "tete": [
+   0.714,
+   0.825
+  ],
+  "x": 0.465,
+  "source": "posture"
+ },
+ "fond-162.jpg": {
+  "tete": [
+   0.599,
+   0.665
+  ],
+  "x": 0.406,
+  "source": "posture"
+ },
+ "fond-18.jpg": {
+  "tete": [
+   0.296,
+   0.876
+  ],
+  "x": 0.521,
+  "source": "visage"
+ },
+ "fond-193.jpg": {
+  "tete": [
+   0.285,
+   0.381
+  ],
+  "x": 0.515,
+  "source": "posture"
+ },
+ "fond-194.jpg": {
+  "tete": [
+   0,
+   0.133
+  ],
+  "x": 0.407,
+  "source": "posture"
+ },
+ "fond-195.jpg": {
+  "tete": [
+   0.42,
+   0.62
+  ],
+  "x": 0.5,
+  "source": "manuel"
+ },
+ "fond-197.jpg": {
+  "tete": [
+   0.37,
+   0.496
+  ],
+  "x": 0.663,
+  "source": "posture"
+ },
+ "fond-198.jpg": {
+  "tete": [
+   0.34,
+   0.431
+  ],
+  "x": 0.301,
+  "source": "posture"
+ },
+ "fond-199.jpg": {
+  "tete": [
+   0.009,
+   0.316
+  ],
+  "x": 0.558,
+  "source": "visage"
+ },
+ "fond-200.jpg": {
+  "tete": [
+   0.259,
+   0.485
+  ],
+  "x": 0.535,
+  "source": "visage"
+ },
+ "fond-201.jpg": {
+  "tete": [
+   0.195,
+   0.412
+  ],
+  "x": 0.598,
+  "source": "visage"
+ },
+ "fond-202.jpg": {
+  "tete": [
+   0.437,
+   0.604
+  ],
+  "x": 0.448,
+  "source": "posture"
+ },
+ "fond-203.jpg": {
+  "tete": [
+   0.091,
+   0.298
+  ],
+  "x": 0.544,
+  "source": "visage"
+ },
+ "fond-204.jpg": {
+  "tete": [
+   0.204,
+   0.442
+  ],
+  "x": 0.508,
+  "source": "visage"
+ },
+ "fond-21.jpg": {
+  "tete": [
+   0.605,
+   0.724
+  ],
+  "x": 0.415,
+  "source": "posture"
+ },
+ "fond-27.jpg": {
+  "tete": [
+   0.619,
+   1
+  ],
+  "x": 0.554,
+  "source": "visage"
+ },
+ "fond-30.jpg": {
+  "tete": [
+   0.762,
+   0.864
+  ],
+  "x": 0.594,
+  "source": "posture"
+ },
+ "fond-33.jpg": {
+  "tete": [
+   0.319,
+   0.608
+  ],
+  "x": 0.393,
+  "source": "visage"
+ },
+ "fond-36.jpg": {
+  "tete": [
+   0.725,
+   0.791
+  ],
+  "x": 0.419,
+  "source": "posture"
+ },
+ "fond-40.jpg": {
+  "tete": [
+   0.65,
+   0.989
+  ],
+  "x": 0.74,
+  "source": "visage"
+ },
+ "fond-41.jpg": {
+  "tete": [
+   0.413,
+   0.807
+  ],
+  "x": 0.546,
+  "source": "visage"
+ },
+ "fond-44.jpg": {
+  "tete": [
+   0.555,
+   0.621
+  ],
+  "x": 0.496,
+  "source": "posture"
+ },
+ "fond-48.jpg": {
+  "tete": [
+   0.53,
+   0.78
+  ],
+  "x": 0.45,
+  "source": "manuel"
+ },
+ "fond-50.jpg": {
+  "tete": [
+   0.491,
+   0.64
+  ],
+  "x": 0.522,
+  "source": "posture"
+ },
+ "fond-53.jpg": {
+  "tete": [
+   0.358,
+   0.431
+  ],
+  "x": 0.388,
+  "source": "posture"
+ },
+ "fond-56.jpg": {
+  "tete": [
+   0.337,
+   0.468
+  ],
+  "x": 0.673,
+  "source": "posture"
+ },
+ "fond-60.jpg": {
+  "tete": [
+   0.608,
+   0.687
+  ],
+  "x": 0.493,
+  "source": "posture"
+ },
+ "fond-61.jpg": {
+  "tete": [
+   0.338,
+   0.404
+  ],
+  "x": 0.317,
+  "source": "posture"
+ },
+ "fond-64.jpg": {
+  "tete": [
+   0.443,
+   0.645
+  ],
+  "x": 0.219,
+  "source": "visage"
+ },
+ "fond-66.jpg": {
+  "tete": [
+   0.165,
+   0.285
+  ],
+  "x": 0.329,
+  "source": "posture"
+ },
+ "fond-67.jpg": {
+  "tete": [
+   0.407,
+   0.631
+  ],
+  "x": 0.601,
+  "source": "visage"
+ },
+ "fond-68.jpg": {
+  "tete": [
+   0.333,
+   0.526
+  ],
+  "x": 0.399,
+  "source": "visage"
+ },
+ "fond-70.jpg": {
+  "tete": [
+   0.232,
+   0.441
+  ],
+  "x": 0.599,
+  "source": "visage"
+ },
+ "fond-72.jpg": {
+  "tete": [
+   0.137,
+   0.337
+  ],
+  "x": 0.331,
+  "source": "visage"
+ },
+ "fond-73.jpg": {
+  "tete": [
+   0.282,
+   0.492
+  ],
+  "x": 0.423,
+  "source": "visage"
+ },
+ "fond-74.jpg": {
+  "tete": [
+   0.319,
+   0.556
+  ],
+  "x": 0.385,
+  "source": "visage"
+ },
+ "fond-75.jpg": {
+  "tete": [
+   0.331,
+   0.529
+  ],
+  "x": 0.419,
+  "source": "visage"
+ },
+ "fond-77.jpg": {
+  "tete": [
+   0.287,
+   0.488
+  ],
+  "x": 0.432,
+  "source": "visage"
+ },
+ "fond-78.jpg": {
+  "tete": [
+   0.358,
+   0.447
+  ],
+  "x": 0.517,
+  "source": "posture"
+ },
+ "fond-80.jpg": {
+  "tete": [
+   0.334,
+   0.4
+  ],
+  "x": 0.351,
+  "source": "posture"
+ },
+ "fond-81.jpg": {
+  "tete": [
+   0.17,
+   0.381
+  ],
+  "x": 0.313,
+  "source": "visage"
+ },
+ "fond-84.jpg": {
+  "tete": [
+   0.186,
+   0.426
+  ],
+  "x": 0.511,
+  "source": "visage"
+ },
+ "fond-85.jpg": {
+  "tete": [
+   0.121,
+   0.341
+  ],
+  "x": 0.474,
+  "source": "visage"
+ },
+ "fond-86.jpg": {
+  "tete": [
+   0.206,
+   0.408
+  ],
+  "x": 0.508,
+  "source": "visage"
+ },
+ "fond-87.jpg": {
+  "tete": [
+   0.143,
+   0.271
+  ],
+  "x": 0.502,
+  "source": "posture"
+ },
+ "fond-88.jpg": {
+  "tete": [
+   0.181,
+   0.251
+  ],
+  "x": 0.38,
+  "source": "posture"
+ },
+ "fond-89.jpg": {
+  "tete": [
+   0.12,
+   0.3
+  ],
+  "x": 0.627,
+  "source": "visage"
+ },
+ "fond-90.jpg": {
+  "tete": [
+   0.132,
+   0.353
+  ],
+  "x": 0.669,
+  "source": "visage"
+ },
+ "fond-93.jpg": {
+  "tete": [
+   0.12,
+   0.229
+  ],
+  "x": 0.353,
+  "source": "posture"
+ },
+ "fond-95.jpg": {
+  "tete": [
+   0.22,
+   0.411
+  ],
+  "x": 0.423,
+  "source": "visage"
+ },
+ "fond-96.jpg": {
+  "tete": [
+   0.308,
+   0.423
+  ],
+  "x": 0.32,
+  "source": "posture"
+ },
+ "fond-98.jpg": {
+  "tete": [
+   0.277,
+   0.359
+  ],
+  "x": 0.349,
+  "source": "posture"
+ },
+ "fond-99.jpg": {
+  "tete": [
+   0.257,
+   0.395
+  ],
+  "x": 0.343,
+  "source": "posture"
+ }
+}
