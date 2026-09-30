@@ -1,5 +1,9 @@
 # Relance des anciens inscrits : 3 e-mails sur une semaine
 
+**Mise en place retenue (30/09/2026, validée par l'utilisateur, délai de 14 jours)** : pas de nouvelle règle possible (forfait gratuit : 1 règle, 1 tag, 1 campagne, 1 workflow, les trois premiers déjà utilisés). Les 3 e-mails deviennent les **e-mails 11, 12 et 13 de la « Séquence Lead Magnet »** (campagne 1039339 ; étapes 6121024, 6121025, 6121026), créés **désactivés**, puis activés après relecture des tests : 14 jours après l'e-mail 10, puis 3 jours, puis 3 jours, à 19 h 30. D'après l'aide de systeme.io, une étape ajoutée à la fin d'une campagne part aussi aux contacts qui l'avaient déjà terminée et y sont restés inscrits : les anciens inscrits les reçoivent donc sans newsletter (le brouillon 5366813 sera supprimé à l'activation). Textes générés par `relance/gen_relance.py` (dates remplacées par « dans quelques jours », P.S. « si tu as déjà rejoint le programme » ajouté aux e-mails 12 et 13). L'e-mail 10 ne dit plus « c'est le dernier e-mail où je te parle du programme » (objet « Si tu hésites encore »). **Acheteurs** : à exclure par un workflow à créer dans l'éditeur (déclencheur « Nouvelle vente » → action « Désinscrire de la campagne Séquence Lead Magnet »), qui empêche aussi un acheteur de recevoir les e-mails de vente 5 à 10.
+
+Texte validé par l'utilisateur, tel que rédigé au départ (envoi en newsletters, abandonné) :
+
 Destinataires : contacts avec le tag « LM_Sommeil_Inscrit » (9 joignables le 30/09/2026, dont l'utilisateur lui-même). Envoi en newsletters programmées, vers 19 h 30 heure de Paris. Expéditeur : « Yacine – Clarté Mentale ». Bouton des e-mails 2 et 3 : la page de paiement `https://lp.contactapaisement-mental.fr/689e4290` (choix de l'utilisateur : boutons des e-mails directement vers le paiement).
 
 Remplace le brouillon unique 5366813 (« 3 gestes pour ce soir 🌙 »), dont l'e-mail 1 reprend le contenu en retirant la présentation du programme.
