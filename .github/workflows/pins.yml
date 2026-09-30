@@ -195,7 +195,7 @@ jobs:
               # Photo en haut, recadrée sur sa zone la plus nette, avec un fondu vers le
               # bandeau sombre : le texte est toujours posé sous la photo, jamais dessus.
               L = img.width
-              photo = _recadrer_net(Image.open(fond).convert("RGB"), L, h_photo)
+              photo = _recadrer_net(Image.open(fond).convert("RGB"), L, h_photo, os.path.basename(fond))
               masque = Image.new("L", (1, h_photo), 0)
               for y in range(max(0, h_photo - fondu), h_photo):
                   masque.putpixel((0, y), int(255 * (y - (h_photo - fondu)) / fondu))
@@ -394,14 +394,31 @@ jobs:
               return y + 9, accent
 
 
-          def _recadrer_net(source, L, H):
-              # Garde la bande la plus nette (le sujet) plutôt que le centre, souvent flou
-              # sur les photos lifestyle à faible profondeur de champ.
+          # Position de la tête du sujet sur chaque photo de fonds/ (fonds_cadrage.json, écrit par
+          # outils/cadrage_fonds.py et vérifié à l'œil) : sans elle, la bande « la plus nette »
+          # tombait souvent sur un pull, des mains ou un bureau et coupait la tête (30/09/2026).
+          CADRAGE = json.load(open("fonds_cadrage.json", encoding="utf-8")) if os.path.exists("fonds_cadrage.json") else {}
+
+
+          def _recadrer_net(source, L, H, nom=None):
+              # Cadre sur la tête du sujet si elle est connue ; sinon garde la bande la plus nette
+              # (le sujet) plutôt que le centre, souvent flou sur les photos lifestyle.
               r = max(L / source.width, H / source.height)
               img = source.resize((round(source.width * r), round(source.height * r)), Image.LANCZOS)
               x = (img.width - L) // 2
+              cadre = CADRAGE.get(nom) if nom else None
+              if cadre:
+                  x = int(min(max(0, cadre.get("x", 0.5) * img.width - L / 2), img.width - L))
               if img.height == H:
                   return img.crop((x, 0, x + L, H))
+              if cadre:
+                  t, b = cadre["tete"][0] * img.height, cadre["tete"][1] * img.height
+                  if b - t <= 0.8 * H:
+                      y = t - max(0.1 * H, 0.15 * (b - t))  # tête entière, un peu d'air au-dessus
+                  else:
+                      y = t + 0.53 * (b - t) - 0.4 * H  # gros plan : les yeux dans le haut du cadre
+                  y = int(min(max(0, y), img.height - H))
+                  return img.crop((x, y, x + L, y + H))
               bords = img.convert("L").filter(ImageFilter.FIND_EDGES)
               pas = max(1, (img.height - H) // 12)
               meilleur_y = max(range(0, img.height - H + 1, pas),
@@ -410,7 +427,7 @@ jobs:
 
 
           def _photo_arrondie(img, fond, x0, y0, x1, y1, rayon=34):
-              photo = _recadrer_net(Image.open(fond).convert("RGB"), x1 - x0, y1 - y0)
+              photo = _recadrer_net(Image.open(fond).convert("RGB"), x1 - x0, y1 - y0, os.path.basename(fond))
               masque = Image.new("L", (x1 - x0, y1 - y0), 0)
               ImageDraw.Draw(masque).rounded_rectangle([0, 0, x1 - x0 - 1, y1 - y0 - 1], radius=rayon, fill=255)
               img.paste(photo, (x0, y0), masque)
@@ -437,13 +454,18 @@ jobs:
               L, H, marge = 1000, 1500, 70
               img = Image.new("RGB", (L, H), CREME)
               d = ImageDraw.Draw(img)
-              y, accent = _etiquette_et_titre(d, theme, titre, police_grasse, marge, L - 2 * marge, (78, 52), 3)
-              y += 44
               style = "numero" if re.search(r"\d", titre) else "coche"
               police_num = charger_police(police_grasse, 34)
-              r, bas, min_photo = 30, H - (200 if avec_lien else 120), 220
+              # Photo d'au moins 300 px de haut (220 avant le 30/09/2026 : bande trop fine, visage coupé)
+              r, bas, min_photo = 30, H - (200 if avec_lien else 120), 300
 
-              def mise_en_page(taille_pt, pad, espace):
+              def haut_titre(taille_titre):
+                  # Hauteur occupée par l'étiquette et le titre, mesurée sur une image de brouillon.
+                  brouillon = ImageDraw.Draw(Image.new("RGB", (L, H)))
+                  return _etiquette_et_titre(brouillon, theme, titre, police_grasse, marge, L - 2 * marge, (taille_titre, 52), 3)[0] + 44
+
+              def mise_en_page(taille_titre, taille_pt, pad, espace):
+                  y_haut = haut_titre(taille_titre)
                   x_txt = marge + pad + 2 * r + 24
                   police_pt = charger_police(police_normale, taille_pt)
                   hl = int(taille_pt * 1.3)
@@ -452,18 +474,22 @@ jobs:
                       lignes = couper_lignes(d, p, police_pt, L - marge - pad - x_txt)
                       cartes.append((lignes, max(2 * r, len(lignes) * hl) + 2 * pad))
                   h_cartes = sum(h for _, h in cartes) + espace * (len(cartes) - 1)
-                  return pad, espace, x_txt, police_pt, hl, cartes, bas - y - h_cartes
+                  return taille_titre, taille_pt, pad, espace, x_txt, police_pt, hl, cartes, bas - y_haut - h_cartes
 
-              # La photo passe avant la taille du texte : on réduit texte, marges internes et
-              # espacements tant qu'elle ne tient pas ; sans place même au plus petit, pas de
-              # photo (plus grand texte qui tient). Rien ne doit déborder sur le pied de page.
-              essais = [(t, pad, esp) for t in (38, 36, 34, 32, 30, 28) for pad, esp in ((26, 20), (20, 14))]
+              # La photo passe avant la taille du texte : on réduit d'abord le titre, puis le texte
+              # des étapes, les marges internes et les espacements tant qu'elle ne tient pas ; sans
+              # place même au plus petit, pas de photo (plus grand texte qui tient). Rien ne doit
+              # déborder sur le pied de page.
+              essais = [(tt, t, pad, esp) for t in (38, 36, 34, 32, 30, 28) for tt in (78, 70, 64)
+                        for pad, esp in ((26, 20), (20, 14))]
               choix = None
               if fond:
                   choix = next((m for m in (mise_en_page(*e) for e in essais) if m[-1] - 40 >= min_photo), None)
               if choix is None:
                   choix = next((m for m in (mise_en_page(*e) for e in essais) if m[-1] >= 0), mise_en_page(*essais[-1]))
-              pad, espace, x_txt, police_pt, hl, cartes, reste = choix
+              taille_titre, taille_pt, pad, espace, x_txt, police_pt, hl, cartes, reste = choix
+              y, accent = _etiquette_et_titre(d, theme, titre, police_grasse, marge, L - 2 * marge, (taille_titre, 52), 3)
+              y += 44
               h_photo = min(reste - 40, 430) if fond else 0
               if h_photo < min_photo:
                   h_photo = 0
@@ -487,7 +513,8 @@ jobs:
               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
               return {"texte_haut": 70, "texte_bas": y - espace + 6, "cartes_haut": haut_cartes,
                       "photo_haut": bas - h_photo if h_photo else None, "photo_bas": bas if h_photo else None,
-                      "pied_haut": H - 160 if avec_lien else H - 78}
+                      "pied_haut": H - 160 if avec_lien else H - 78,
+                      "taille_titre": taille_titre, "taille_texte": taille_pt}
 
 
           def dessiner_clair_phrase(texte, chemin_sortie, police_grasse, police_normale, fond, theme, avec_lien=False):
