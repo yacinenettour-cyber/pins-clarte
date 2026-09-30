@@ -10,6 +10,7 @@ Ensemble de fichiers autoportants, pensés pour être chargés comme connaissanc
 4. **[03-regles-editoriales.md](03-regles-editoriales.md)** — Toutes les règles à appliquer avant d'ajouter du contenu, avec checklist de vérification.
 5. **[04-journal-decisions.md](04-journal-decisions.md)** — Historique et raisonnement des décisions prises, pour comprendre le "pourquoi" de chaque règle sans avoir à tout redemander.
 6. **[05-process-operationnel.md](05-process-operationnel.md)** — Le mode opératoire complet : cycle de publication, rotation par thème, règle critique de synchronisation avec `main`, seuils d'alerte, qui fait quoi (automatique / Claude / utilisateur).
+7. **[liens-anciens-pins.md](liens-anciens-pins.md)** — Les 31 anciens pins sans lien à relier au guide à la main (l'API ne peut pas modifier un pin), avec le lien exact et une consigne pour l'extension Claude.
 
 ## À lire en premier
 
