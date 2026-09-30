@@ -54,6 +54,8 @@ Contenu : `lecons-v2/*.json`, généré par `lecons-v2/gen_lecons.py`. Publiées
 
 Les fiches PDF du kit (`medias/formation/kit/`) sont liées par des blocs `References` (jsDelivr épinglé sur `22e9e84`). Le contenu des leçons existantes n'est pas lisible par l'API : les nouvelles leçons ne décrivent les modules qu'à partir de la page de vente.
 
-## Achat test (30/09/2026, temporaire)
+## Achat test (30/09/2026, terminé)
 
 Code promo **100 %** (id 335496, 3 utilisations, expire le 03/10/2026 à 23 h 59, heure de Paris) rattaché à l'offre 5383492 de la nouvelle page de paiement `/689e4290`, où un bloc `Coupon` a été ajouté (réenregistrement de `page-paiement-v2.json` avec un bloc `Coupon` avant `Checkout`). Aucun paramètre d'adresse ne permet d'appliquer un code (aide systeme.io : il faut l'élément Coupon sur la page). La page vend le même produit (3196087) que l'ancienne page de paiement. **Après le test** : supprimer le code (`DELETE /api/payment/coupons/335496`), le retirer de l'offre (`coupons: []`) et réenregistrer `page-paiement-v2.json` tel quel (sans bloc `Coupon`).
+
+**Résultat** : achat réel de l'utilisateur sur `/paiement-anti-stress` (le code n'y était pas utilisable, faute de champ), inscription créée, e-mail d'accès reçu, formation affichée correctement (« tout s'affiche correctement »). Nettoyage fait le 30/09 : code 335496 supprimé (plus aucun code sur le compte), retiré de l'offre 5383492, page `/689e4290` réenregistrée sans bloc `Coupon` (couleurs de nouveau bleues, vérifié).
