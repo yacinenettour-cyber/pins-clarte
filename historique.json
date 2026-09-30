@@ -498,5 +498,32 @@
   "theme": "somatisation",
   "design": "sombre",
   "pin_id": "600175087889903253"
+ },
+ {
+  "date": "2026-09-30T06:07+00:00",
+  "titre": "Réunion stressante : 3 gestes discrets pour rester calme",
+  "image": "images/pin-20260930-060725.jpg",
+  "fond": "fonds/fond-197.jpg",
+  "theme": "posturesantistress",
+  "design": "clair",
+  "pin_id": "600175087889903873"
+ },
+ {
+  "date": "2026-09-30T07:07+00:00",
+  "titre": "Pourquoi ton cerveau se fige quand tu as trop de choix",
+  "image": "images/pin-20260930-070728.jpg",
+  "fond": "fonds/fond-195.jpg",
+  "theme": "blocagemental",
+  "design": "sombre",
+  "pin_id": "600175087889904433"
+ },
+ {
+  "date": "2026-09-30T08:07+00:00",
+  "titre": "Tête serrée comme dans un étau le soir : 3 indices d'une tension nerveuse",
+  "image": "images/pin-20260930-080730.jpg",
+  "fond": "fonds/fond-156.jpg",
+  "theme": "somatisation",
+  "design": "clair",
+  "pin_id": "600175087889904833"
  }
 ]
