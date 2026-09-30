@@ -15,6 +15,7 @@ Pièges constatés :
 |---|---|---|---|
 | Mentions légales, CGV et confidentialité | https://lp.contactapaisement-mental.fr/0f1d6dac | 25634497 / 45140167 | `page-legale.json` (reste : médiateur) |
 | Page de vente sans témoignages | https://lp.contactapaisement-mental.fr/0e9ef918 | 25634641 / 45140579 | `page-vente-v2.json` |
+| Ancienne page de vente, remplacée le 30/09 (37 €, sans faux avis) | https://lp.contactapaisement-mental.fr/accesformation | 22061104 / 36308944 | `page-vente-v2.json` (ancienne version : `../archives/page-vente-v1-accesformation/`) |
 | Paiement 37 € (tu, garantie, CGV) — offre 5383492 | https://lp.contactapaisement-mental.fr/689e4290 | 25635389 / 45142825 | `page-paiement-v2.json` |
 | Merci pour ton achat (suit la page ci-dessus) | https://lp.contactapaisement-mental.fr/0401c87c | 25635439 / 45143273 | `page-merci-achat-v2.json` |
 
