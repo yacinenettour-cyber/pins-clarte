@@ -660,5 +660,14 @@
   "theme": "systemenerveux",
   "design": "sombre",
   "pin_id": "600175087889929794"
+ },
+ {
+  "date": "2026-10-01T20:07+00:00",
+  "titre": "Stress au travail : 4 micro-pauses de 10 secondes entre deux dossiers",
+  "image": "images/pin-20261001-200742.jpg",
+  "fond": "fonds/fond-56.jpg",
+  "theme": "posturesantistress",
+  "design": "clair",
+  "pin_id": "600175087889931701"
  }
 ]
