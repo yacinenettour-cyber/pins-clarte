@@ -696,5 +696,14 @@
   "theme": "energie",
   "design": "sombre",
   "pin_id": "600175087889939572"
+ },
+ {
+  "date": "2026-10-02T08:07+00:00",
+  "titre": "La règle des 5 minutes : pourquoi elle marche contre la procrastination",
+  "image": "images/pin-20261002-080734.jpg",
+  "fond": "fonds/fond-200.jpg",
+  "theme": "procrastination",
+  "design": "clair",
+  "pin_id": "600175087889940051"
  }
 ]
