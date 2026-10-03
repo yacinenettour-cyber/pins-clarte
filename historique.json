@@ -777,5 +777,14 @@
   "theme": "somatisation",
   "design": "clair",
   "pin_id": "600175087889956135"
+ },
+ {
+  "date": "2026-10-03T07:07+00:00",
+  "titre": "Pourquoi la fatigue mentale augmente quand les jours raccourcissent",
+  "image": "images/pin-20261003-070727.jpg",
+  "fond": "fonds/fond-155.jpg",
+  "theme": "fatiguementale",
+  "design": "sombre",
+  "pin_id": "600175087889956623"
  }
 ]
