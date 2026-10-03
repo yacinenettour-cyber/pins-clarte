@@ -93,18 +93,6 @@
     "theme": "systemenerveux"
   },
   {
-    "titre": "5 gestes du matin qui calment le système nerveux avant le travail",
-    "texte_image": "5 gestes du matin qui calment le système nerveux",
-    "points_image": [
-      "Petit-déjeuner assis, sans écran",
-      "5 respirations longues avant de partir",
-      "Quelques pas dehors, même courts",
-      "Ne pas lire ses mails dans le lit"
-    ],
-    "description": "La façon dont démarre la matinée donne souvent le ton au reste de la journée. Manger assis et sans écran, prendre cinq respirations longues avant de partir, marcher quelques minutes dehors, laisser les mails attendre d'être sorti du lit : ces petits gestes évitent au système nerveux de passer en mode alerte avant même d'arriver au travail. Dans le guide gratuit : routine pour relâcher la journée, lien dans l'épingle. #systemenerveux #matin #stress #routine #travail #anxiete #antistress",
-    "theme": "systemenerveux"
-  },
-  {
     "titre": "Stress qui monte d'un coup : 4 réflexes pour redescendre en 2 minutes",
     "texte_image": "4 réflexes pour redescendre en 2 minutes",
     "points_image": [
@@ -414,17 +402,6 @@
     "theme": "procrastination"
   },
   {
-    "titre": "3 émotions cachées derrière la procrastination",
-    "texte_image": "3 émotions cachées derrière la procrastination",
-    "points_image": [
-      "L'ennui face à une tâche répétitive",
-      "L'anxiété face à une tâche floue",
-      "La peur du jugement face au résultat"
-    ],
-    "description": "La procrastination est souvent moins une question d'organisation que d'émotions. Trois reviennent souvent : l'ennui devant une tâche répétitive, l'anxiété devant une tâche floue dont on ne voit pas le bout, et la peur du jugement quand le résultat sera vu par d'autres. Identifier l'émotion en jeu aide à choisir la bonne stratégie : rendre la tâche plus claire, plus courte ou moins exposée. #procrastination #emotions #anxiete #stress #mental #motivation #confiance #bienetre #discipline",
-    "theme": "procrastination"
-  },
-  {
     "titre": "Travailler par blocs de 25 minutes : la méthode anti-procrastination",
     "texte_image": "25 minutes de focus, 5 minutes de pause",
     "points_image": [
@@ -502,18 +479,6 @@
       "Une action possible, même minuscule"
     ],
     "description": "Quand une situation tourne en boucle, les faits, les peurs et les solutions finissent par se mélanger. Trois colonnes sur une feuille aident à les séparer : d'abord les faits, sans interprétation, puis ce que tu en penses ou crains, enfin une action possible, même minuscule. Pour aller plus loin, le guide gratuit propose une routine pour calmer le mental avant la nuit, accessible depuis l'épingle. #blocagemental #clarte #ecriture #ruminations #stress #anxiete #clartementale #santementale",
-    "theme": "blocagemental"
-  },
-  {
-    "titre": "5 habitudes qui encombrent ton mental sans que tu le remarques",
-    "texte_image": "5 habitudes qui encombrent ton mental",
-    "points_image": [
-      "Garder 30 onglets ouverts",
-      "Tout retenir de tête au lieu de noter",
-      "Répondre à tout immédiatement",
-      "Laisser des décisions en suspens"
-    ],
-    "description": "Certaines habitudes remplissent l'espace mental sans bruit 👉 garder trente onglets ouverts 👉 tout retenir de tête au lieu de noter 👉 répondre à chaque message immédiatement 👉 laisser des petites décisions en suspens 👉 démarrer la journée par les réseaux. Si le système nerveux tarde à redescendre, le guide gratuit propose une routine pour calmer le mental avant la nuit (lien de l'épingle). #blocagemental #chargementale #clarte #habitudes #stress #focus #clartementale",
     "theme": "blocagemental"
   },
   {
@@ -1480,16 +1445,6 @@
     "theme": "cortisol"
   },
   {
-    "titre": "5 boissons qui font grimper ton cortisol sans que tu le voies",
-    "texte_image": "5 boissons qui font grimper le cortisol",
-    "description": "Le café du matin, la boisson énergisante de l'après-midi ou même certains thés : on les boit sans y penser, et pourtant ils entretiennent le stress ressenti. Si le mental reste en alerte le soir, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination, lien dans l'épingle. #cortisol #alimentation #stress #systemenerveux #bienetre #energie",
-    "theme": "cortisol",
-    "points_image": [
-      "Le café du matin, la boisson énergisante de l'après-midi ou même certains thé",
-      "Si le mental reste en alerte le soir, le guide gratuit « Quand le cerveau ref"
-    ]
-  },
-  {
     "titre": "Fatigue, tensions, nuits agitées : 4 signes d'un cortisol resté trop haut",
     "texte_image": "4 signes d'un cortisol chroniquement élevé",
     "description": "Une fatigue qui ne part jamais, des tensions dans les épaules, des nuits agitées, une irritabilité qui traîne : ces signes semblent isolés, mais dessinent souvent le même tableau. Pour aller plus loin, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination, lien dans l'épingle. #cortisol #systemenerveux #stress #fatiguechronique #bienetre #sommeil",
@@ -2177,17 +2132,6 @@
       "Tu commences plusieurs tâches sans en finir aucune",
       "Même au calme, une pensée en amène une autre",
       "Tu te sens fatigué(e) sans avoir vraiment avancé"
-    ],
-    "theme": "blocagemental"
-  },
-  {
-    "titre": "Mental saturé : 3 questions quand tu ne sais plus par où commencer",
-    "texte_image": "3 questions pour débloquer ta journée",
-    "description": "Tu regardes ta liste sans savoir par quoi commencer : tout semble aussi urgent, aussi flou, aussi lourd. 3 questions retrouvent plus vite un point de départ que de fixer la liste 👉 qu'est-ce qui empire si je ne fais rien aujourd'hui ? 👉 quelle est la plus petite première étape possible ? 👉 de quoi ai-je besoin pour la commencer maintenant ? #blocagemental #clarte #fatiguementale #bienetre #organisation #productivite #procrastination #clartementale #santementale",
-    "points_image": [
-      "Qu'est-ce qui empire si je ne fais rien aujourd'hui ?",
-      "Quelle est la plus petite première étape possible ?",
-      "De quoi ai-je besoin pour la commencer maintenant"
     ],
     "theme": "blocagemental"
   },
@@ -3119,17 +3063,6 @@
     "theme": "energie"
   },
   {
-    "titre": "Fatigue mentale : 3 micro-pauses de 2 minutes qui rechargent vraiment",
-    "texte_image": "3 micro-pauses de 2 minutes anti-fatigue mentale",
-    "points_image": [
-      "Regarder par la fenêtre 2 minutes sans bouger",
-      "Fermer les yeux et écouter les sons autour",
-      "Se lever, s'étirer, boire un verre d'eau"
-    ],
-    "description": "La fatigue mentale s'accumule au fil des heures, mais quelques micro-pauses ciblées suffisent à redonner de l'air au cerveau 👉 deux minutes à regarder par la fenêtre sans fixer d'écran 👉 les yeux fermés à écouter les sons autour de soi 👉 se lever, s'étirer et boire un verre d'eau. Ces pauses sont plus efficaces que scroller pendant cinq minutes. #fatiguementale #pause #travail #concentration #stress #surcharge #mental #repos #bienetre",
-    "theme": "fatiguementale"
-  },
-  {
     "titre": "Alimentation anti-inflammatoire : 4 aliments qui calment le système nerveux",
     "texte_image": "4 aliments anti-inflammatoires pour le système nerveux",
     "points_image": [
@@ -3491,17 +3424,6 @@
     "theme": "systemenerveux"
   },
   {
-    "titre": "3 signes que ta respiration entretient ton stress sans que tu le saches",
-    "texte_image": "3 signes d'une respiration qui entretient le stress",
-    "points_image": [
-      "Inspiration plus longue que l'expiration",
-      "Respiration haute dans la poitrine",
-      "Pauses respiratoires entre les mots en parlant"
-    ],
-    "description": "Une respiration mal équilibrée entretient le stress. Trois signes à repérer : inspiration plus longue que l'expiration, respiration haute dans la poitrine sans mouvement du ventre, et micro-pauses en parlant qui trahissent une tension de la gorge. Corriger l'un d'eux suffit à sentir un changement rapide. Guide gratuit pour le soir. #systemenerveux #respiration #stress #calme #cortisol #detente #anxiete #nerfvague #bienetre #antistress",
-    "theme": "systemenerveux"
-  },
-  {
     "titre": "4 façons d'activer le nerf vague sans matériel",
     "texte_image": "4 façons d'activer le nerf vague",
     "points_image": [
@@ -3604,17 +3526,6 @@
       "Dîner léger avec légumineuses"
     ],
     "description": "Cinq repas à ne pas zapper quand le stress est là : un petit-déjeuner protéiné pour éviter le coup de barre, un déjeuner avec légumes verts et féculents complets, une collation protéines-fibres à seize heures, un dîner léger avec légumineuses et une hydratation régulière. Chacun stabilise l'énergie et limite la nervosité. #alimentation #stress #glycemie #cortisol #nutrition #bienetre #energie #repas #nervosite #antistress",
-    "theme": "alimentation"
-  },
-  {
-    "titre": "3 erreurs alimentaires qui entretiennent la nervosité",
-    "texte_image": "3 erreurs alimentaires qui entretiennent la nervosité",
-    "points_image": [
-      "Café à jeun le matin",
-      "Sauter le déjeuner et grignoter l'après-midi",
-      "Dîner trop sucré ou trop tardif"
-    ],
-    "description": "Trois habitudes alimentaires qui entretiennent la nervosité : le café à jeun qui fait grimper le cortisol, le déjeuner sauté qui pousse aux grignotages sucrés l'après-midi, et le dîner trop sucré ou trop tardif qui déstabilise la nuit. Corriger une seule de ces erreurs sur la semaine suffit à ressentir une différence notable. #alimentation #stress #nervosite #cafeine #glycemie #cortisol #nutrition #bienetre #habitudes #antistress",
     "theme": "alimentation"
   },
   {
@@ -4158,17 +4069,6 @@
     "theme": "sommeil"
   },
   {
-    "titre": "3 signaux que ta fatigue du soir est mentale et pas physique",
-    "texte_image": "3 signaux d'une fatigue mentale le soir",
-    "points_image": [
-      "Tu es épuisé mais pas somnolent",
-      "Tu bâilles sans avoir envie de fermer les yeux",
-      "Un verre d'eau ou une douche te réveille d'un coup"
-    ],
-    "description": "La fatigue mentale et la fatigue physique n'ont pas les mêmes signaux. Le corps n'a pas reçu le signal pour se mettre en mode repos. La solution passe par des gestes qui apaisent le système nerveux, pas par l'immobilité. Le guide gratuit propose une routine conçue pour cette fatigue mentale du soir, accessible depuis l'épingle. #sommeil #fatiguementale #soir #stress #systemenerveux #detente #endormissement #mieuxdormir #routinedusoir",
-    "theme": "sommeil"
-  },
-  {
     "titre": "Le litre d'eau avant le coucher : pourquoi c'est une mauvaise idée",
     "texte_image": "Boire trop avant le coucher : l'erreur qui coupe le sommeil",
     "points_image": [
@@ -4523,17 +4423,6 @@
       "Fredonner ou chantonner"
     ],
     "description": "Le nerf vague est un levier puissant pour calmer le système nerveux, et il peut être stimulé sans aucun matériel, où que l'on soit. Chacune prend moins d'une minute et peut être répétée plusieurs fois par jour. Le guide gratuit propose un programme quotidien d'activation vagale. #systemenerveux #nerfvague #stress #calme #gestes #respiration #detente #anxiete Le guide gratuit propose une routine pour calmer le systeme nerveux #antistress",
-    "theme": "systemenerveux"
-  },
-  {
-    "titre": "3 signes que ta respiration alimente ton stress sans que tu t'en aperçoives",
-    "texte_image": "3 signes que la respiration entretient le stress",
-    "points_image": [
-      "Respiration thoracique haute et rapide",
-      "Pas de pause entre inspiration et expiration",
-      "Respiration par la bouche au repos"
-    ],
-    "description": "Le stress modifie la respiration, et une respiration modifiée entretient le stress : c'est un cercle vicieux souvent invisible. Corriger ces trois points suffit souvent à baisser le niveau de stress général. Le guide gratuit propose des exercices de respiration réparatrice. #systemenerveux #respiration #stress #anxiete #bouche #thorax #calme #detente Le guide gratuit propose une routine pour calmer le systeme nerveux avant la #antistress",
     "theme": "systemenerveux"
   },
   {
