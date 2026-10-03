@@ -896,152 +896,292 @@
     "titre": "La liste du lendemain : le geste qui coupe les ruminations du soir",
     "texte_image": "Vide ta tête avant de te coucher",
     "description": "Si ton cerveau ressasse la nuit, c'est souvent qu'il a peur d'oublier. Il répète pour ne pas perdre l'information. Le soir, prends cinq minutes et note tout ce qui doit être fait demain, même les petites choses. Ajoute à côté de chaque ligne la première action concrète. Ce simple transfert sur le papier envoie un signal clair : c'est noté, tu peux lâcher. Beaucoup de gens constatent un endormissement plus rapide dès les premiers soirs. #chargementale #ruminations #sommeil #organisation #lacherprise",
-    "theme": "chargementale"
+    "theme": "chargementale",
+    "points_image": [
+      "Si ton cerveau ressasse la nuit, c'est souvent qu'il a peur d'oublier",
+      "Il répète pour ne pas perdre l'information",
+      "Le soir, prends cinq minutes et note tout ce qui doit être fait demain, même ",
+      "Ajoute à côté de chaque ligne la première action concrète"
+    ]
   },
   {
     "titre": "Respiration lente au lit : l'exercice quand le mental s'emballe",
     "texte_image": "Respire plus lentement que ton mental",
     "description": "Quand le stress monte, la respiration devient courte et haute. Le corps reste en alerte, donc le sommeil ne vient pas. Allongé, pose une main sur le ventre. Inspire par le nez en comptant jusqu'à quatre, puis expire doucement en comptant jusqu'à six. L'expiration plus longue que l'inspiration est la clé. Continue cinq minutes sans forcer. Tu n'essaies pas de t'endormir, tu ralentis simplement la machine. #respiration #coherencecardiaque #stress #sommeil #detente",
-    "theme": "respiration"
+    "theme": "respiration",
+    "points_image": [
+      "Quand le stress monte, la respiration devient courte et haute",
+      "Le corps reste en alerte, donc le sommeil ne vient pas",
+      "Allongé, pose une main sur le ventre",
+      "Inspire par le nez en comptant jusqu'à quatre, puis expire doucement en compt"
+    ]
   },
   {
     "titre": "Épuisé la journée mais bien réveillé le soir : pourquoi ce décalage",
     "texte_image": "Fatigué le jour, réveillé la nuit",
     "description": "Tu traînes toute la journée, et à 23h ton cerveau se réveille enfin. C'est souvent le signe que le soir est ton seul moment de calme : plus de sollicitations, donc les pensées reportées remontent toutes d'un coup. La piste n'est pas de te coucher plus tôt de force, mais de créer une vraie pause dans la journée, même quinze minutes sans écran. Le mental a besoin d'un rendez-vous pour se vider avant la nuit. #fatigue #sommeil #stress #chargementale #bienetre",
-    "theme": "fatigue"
+    "theme": "fatigue",
+    "points_image": [
+      "Tu traînes toute la journée, et à 23h ton cerveau se réveille enfin",
+      "C'est souvent le signe que le soir est ton seul moment de calme : plus de sol",
+      "La piste n'est pas de te coucher plus tôt de force, mais de créer une vraie p",
+      "Le mental a besoin d'un rendez-vous pour se vider avant la nuit"
+    ]
   },
   {
     "titre": "Écrans le soir : ce qui compte vraiment pour ton endormissement",
     "texte_image": "Ce n'est pas que la lumière bleue",
     "description": "On parle beaucoup de lumière bleue, mais le vrai problème est souvent le contenu. Une série tendue, des mails de travail ou un fil d'actualité relancent le mental juste avant le coucher. Fixe-toi une heure de fin des écrans stimulants plutôt qu'une interdiction totale, difficile à tenir. Remplace la dernière demi-heure par quelque chose de lent : lecture, musique calme, douche tiède. C'est le rythme du soir qui change, pas ton matériel. #ecrans #sommeil #routinedusoir #deconnexion #bienetre",
-    "theme": "ecrans"
+    "theme": "ecrans",
+    "points_image": [
+      "On parle beaucoup de lumière bleue, mais le vrai problème est souvent le cont",
+      "Une série tendue, des mails de travail ou un fil d'actualité relancent le men",
+      "Fixe-toi une heure de fin des écrans stimulants plutôt qu'une interdiction to",
+      "Remplace la dernière demi-heure par quelque chose de lent : lecture, musique "
+    ]
   },
   {
     "titre": "Se coucher fatigué et se réveiller épuisé : 4 causes fréquentes",
     "texte_image": "Dormir sans récupérer",
     "description": "Dormir sept heures ne garantit pas de récupérer. Quatre causes reviennent souvent : un coucher à des heures très variables, des réveils nocturnes courts mais répétés, une chambre trop chaude, et un mental encore en activité au moment de l'endormissement. Commence par un seul point, le plus facile pour toi, et tiens-le deux semaines. Si la fatigue persiste malgré des nuits correctes, parles-en à un médecin, certaines causes se vérifient simplement. #fatigue #sommeil #recuperation #hygienedevie #bienetre",
-    "theme": "fatigue"
+    "theme": "fatigue",
+    "points_image": [
+      "Dormir sept heures ne garantit pas de récupérer",
+      "Quatre causes reviennent souvent : un coucher à des heures très variables, de",
+      "Commence par un seul point, le plus facile pour toi, et tiens-le deux semaine",
+      "Si la fatigue persiste malgré des nuits correctes, parles-en à un médecin, ce"
+    ]
   },
   {
     "titre": "Routine du soir en 20 minutes, même quand tu rentres tard",
     "texte_image": "20 minutes suffisent",
     "description": "Pas besoin d'un rituel d'une heure. Vingt minutes suffisent si elles sont toujours dans le même ordre. Cinq minutes pour ranger la journée et noter demain. Cinq minutes pour une douche ou un passage à la salle de bain sans téléphone. Cinq minutes de lumière basse, sans écran. Cinq minutes au lit à respirer lentement. La régularité compte plus que la durée : le cerveau adore les repères et anticipe le sommeil. #routinedusoir #sommeil #habitudes #detente #bienetre",
-    "theme": "routinedusoir"
+    "theme": "routinedusoir",
+    "points_image": [
+      "Pas besoin d'un rituel d'une heure",
+      "Vingt minutes suffisent si elles sont toujours dans le même ordre",
+      "Cinq minutes pour ranger la journée et noter demain",
+      "Cinq minutes pour une douche ou un passage à la salle de bain sans téléphone"
+    ]
   },
   {
     "titre": "Ruminations : la technique du carnet posé près du lit",
     "texte_image": "Écris-le, ne le ressasse pas",
     "description": "Quand une pensée revient en boucle la nuit, la combattre la renforce. Garde un carnet et un stylo à portée de main. Dès qu'une idée insiste, note-la en une phrase, dans le noir si besoin, puis repose la tête. Tu ne cherches pas à résoudre, seulement à déposer. Le lendemain, relis : la plupart des urgences nocturnes sont bien moins graves à la lumière du jour. #ruminations #insomnie #sommeil #ecriture #lacherprise",
-    "theme": "ruminations"
+    "theme": "ruminations",
+    "points_image": [
+      "Quand une pensée revient en boucle la nuit, la combattre la renforce",
+      "Garde un carnet et un stylo à portée de main",
+      "Dès qu'une idée insiste, note-la en une phrase, dans le noir si besoin, puis ",
+      "Tu ne cherches pas à résoudre, seulement à déposer"
+    ]
   },
   {
     "titre": "Pourquoi vouloir dormir à tout prix t'empêche de dormir",
     "texte_image": "Arrête d'essayer de dormir",
     "description": "Le sommeil ne se commande pas. Plus tu te répètes qu'il faut dormir, plus tu crées une pression qui maintient l'éveil. Change d'objectif : vise le repos, pas le sommeil. Reste allongé, yeux fermés, en te contentant de respirer lentement et de te reposer. Beaucoup s'endorment justement à ce moment-là, une fois l'enjeu retiré. Et si le sommeil ne vient pas, tu auras quand même récupéré un peu. #insomnie #sommeil #lacherprise #stress #calme",
-    "theme": "insomnie"
+    "theme": "insomnie",
+    "points_image": [
+      "Le sommeil ne se commande pas",
+      "Plus tu te répètes qu'il faut dormir, plus tu crées une pression qui maintien",
+      "Change d'objectif : vise le repos, pas le sommeil",
+      "Reste allongé, yeux fermés, en te contentant de respirer lentement et de te r"
+    ]
   },
   {
     "titre": "Regarder l'heure la nuit : pourquoi ça aggrave l'insomnie",
     "texte_image": "Ne regarde pas l'heure",
     "description": "Il est 4h12. En une seconde, ton cerveau calcule combien d'heures il reste, et le stress monte. Chaque coup d'œil au réveil relance ce calcul et renforce l'éveil. Tourne le réveil, éteins l'écran du téléphone, ou range-le hors de portée. Tu n'as pas besoin de connaître l'heure pour te rendormir, seulement de retirer la pression du décompte. #insomnie #reveilnocturne #sommeil #stress #astucesommeil",
-    "theme": "insomnie"
+    "theme": "insomnie",
+    "points_image": [
+      "En une seconde, ton cerveau calcule combien d'heures il reste, et le stress m",
+      "Chaque coup d'œil au réveil relance ce calcul et renforce l'éveil",
+      "Tourne le réveil, éteins l'écran du téléphone, ou range-le hors de portée",
+      "Tu n'as pas besoin de connaître l'heure pour te rendormir, seulement de retir"
+    ]
   },
   {
     "titre": "Charge mentale du soir : 3 questions pour la déposer avant la nuit",
     "texte_image": "Trois questions avant de dormir",
     "description": "Quand la tête est pleine, pose-toi trois questions sur le papier. Qu'est-ce qui est réglé aujourd'hui ? Qu'est-ce qui reste, et quand vais-je m'en occuper ? Qu'est-ce qui ne dépend pas de moi ? La dernière est la plus libératrice : ce qui n'est pas de ton ressort n'a pas besoin de ton attention cette nuit. Cinq minutes suffisent, toujours au même moment, idéalement avant la dernière heure de la soirée. #chargementale #stress #sommeil #organisation #lacherprise",
-    "theme": "chargementale"
+    "theme": "chargementale",
+    "points_image": [
+      "Quand la tête est pleine, pose-toi trois questions sur le papier",
+      "Qu'est-ce qui est réglé aujourd'hui",
+      "Qu'est-ce qui reste, et quand vais-je m'en occuper",
+      "Qu'est-ce qui ne dépend pas de moi"
+    ]
   },
   {
     "titre": "Cohérence cardiaque le soir : mode d'emploi simple pour débuter",
     "texte_image": "Cinq minutes pour ralentir",
     "description": "Le principe est simple : respirer au même rythme pendant cinq minutes pour aider le corps à sortir du mode alerte. Inspire quatre secondes, expire six secondes, sans bloquer, en respirant par le nez. Assis ou allongé, dans une pièce calme. Fais-le à heure fixe, par exemple juste après le dîner ou en te mettant au lit. L'effet se construit avec la régularité, pas avec l'intensité. #coherencecardiaque #respiration #stress #sommeil #relaxation",
-    "theme": "coherencecardiaque"
+    "theme": "coherencecardiaque",
+    "points_image": [
+      "Le principe est simple : respirer au même rythme pendant cinq minutes pour ai",
+      "Inspire quatre secondes, expire six secondes, sans bloquer, en respirant par ",
+      "Assis ou allongé, dans une pièce calme",
+      "Fais-le à heure fixe, par exemple juste après le dîner ou en te mettant au li"
+    ]
   },
   {
     "titre": "Ne pas dormir depuis 20 minutes : pourquoi se lever aide vraiment",
     "texte_image": "Sors du lit, ça ira mieux",
     "description": "Rester une heure à tourner dans le lit apprend à ton cerveau que le lit est un lieu d'agitation. Au bout d'une vingtaine de minutes sans sommeil, lève-toi. Lumière faible, pas d'écran, une activité calme et peu intéressante. Retourne te coucher uniquement quand tu sens la fatigue revenir. Les premières nuits paraissent contraignantes, puis l'association lit-sommeil se reconstruit. #insomnie #sommeil #reveilnocturne #habitudes #calme",
-    "theme": "insomnie"
+    "theme": "insomnie",
+    "points_image": [
+      "Rester une heure à tourner dans le lit apprend à ton cerveau que le lit est u",
+      "Au bout d'une vingtaine de minutes sans sommeil, lève-toi",
+      "Lumière faible, pas d'écran, une activité calme et peu intéressante",
+      "Retourne te coucher uniquement quand tu sens la fatigue revenir"
+    ]
   },
   {
     "titre": "Le sas de décompression : couper avec le travail avant de rentrer",
     "texte_image": "Laisse la journée dehors",
     "description": "Si tu ramènes la journée à la maison, elle finit dans ton lit. Installe un sas : dix minutes entre le travail et le reste de la soirée. Une marche courte, quelques minutes dans la voiture sans démarrer, une douche en rentrant. Pendant ce temps, pas de messages professionnels. Ce n'est pas du temps perdu, c'est ce qui empêche la journée de déborder sur la nuit. #stress #travail #sommeil #deconnexion #equilibre",
-    "theme": "stress"
+    "theme": "stress",
+    "points_image": [
+      "Si tu ramènes la journée à la maison, elle finit dans ton lit",
+      "Installe un sas : dix minutes entre le travail et le reste de la soirée",
+      "Une marche courte, quelques minutes dans la voiture sans démarrer, une douche",
+      "Pendant ce temps, pas de messages professionnels"
+    ]
   },
   {
     "titre": "Sieste : combien de temps sans abîmer ta nuit",
     "texte_image": "La sieste qui ne ruine pas ta nuit",
     "description": "Une sieste courte peut sauver une journée après une mauvaise nuit, à condition de rester brève et pas trop tardive. Vingt minutes maximum, avant 15h, dans un endroit calme. Au-delà, tu risques de te réveiller vaseux et de décaler ton endormissement le soir. Si tu dors très mal en ce moment, mets la sieste de côté quelque temps : la pression de sommeil accumulée aide à retrouver des nuits plus solides. #sieste #sommeil #fatigue #recuperation #energie",
-    "theme": "sieste"
+    "theme": "sieste",
+    "points_image": [
+      "Une sieste courte peut sauver une journée après une mauvaise nuit, à conditio",
+      "Vingt minutes maximum, avant 15h, dans un endroit calme",
+      "Au-delà, tu risques de te réveiller vaseux et de décaler ton endormissement l",
+      "Si tu dors très mal en ce moment, mets la sieste de côté quelque temps : la p"
+    ]
   },
   {
     "titre": "Pensées catastrophes du soir : comment les désamorcer",
     "texte_image": "Le soir, tout paraît pire",
     "description": "La nuit, le cerveau fatigué exagère tout : un mail devient un conflit, une dépense devient une catastrophe. Plutôt que de discuter avec ces pensées, nomme-les. Dis-toi simplement : c'est la version 2h du matin, pas la réalité. Note la préoccupation en une ligne et fixe un rendez-vous avec elle pour le lendemain. Presque toujours, elle rétrécit à la lumière du jour. #anxiete #ruminations #sommeil #stress #penseesnegatives",
-    "theme": "anxiete"
+    "theme": "anxiete",
+    "points_image": [
+      "La nuit, le cerveau fatigué exagère tout : un mail devient un conflit, une dé",
+      "Plutôt que de discuter avec ces pensées, nomme-les",
+      "Dis-toi simplement : c'est la version 2h du matin, pas la réalité",
+      "Note la préoccupation en une ligne et fixe un rendez-vous avec elle pour le l"
+    ]
   },
   {
     "titre": "Se réveiller juste avant le réveil : bon ou mauvais signe",
     "texte_image": "Réveillé 10 minutes avant le réveil",
     "description": "Se réveiller un peu avant la sonnerie est fréquent : le corps anticipe une heure de lever régulière. Ce n'est pas inquiétant en soi. Cela le devient si tu te réveilles une ou deux heures trop tôt, sans pouvoir te rendormir, avec un mental qui démarre immédiatement. Dans ce cas, regarde du côté du stress et de la régularité de tes heures de coucher, et parles-en à un médecin si cela dure. #reveil #sommeil #stress #rythmecircadien #bienetre",
-    "theme": "reveil"
+    "theme": "reveil",
+    "points_image": [
+      "Se réveiller un peu avant la sonnerie est fréquent : le corps anticipe une he",
+      "Ce n'est pas inquiétant en soi",
+      "Cela le devient si tu te réveilles une ou deux heures trop tôt, sans pouvoir ",
+      "Dans ce cas, regarde du côté du stress et de la régularité de tes heures de c"
+    ]
   },
   {
     "titre": "Écrire ses inquiétudes : l'exercice des 10 minutes en début de soirée",
     "texte_image": "Un rendez-vous avec tes soucis",
     "description": "Plutôt que de laisser les inquiétudes surgir au coucher, donne-leur un créneau. Chaque soir, dix minutes, toujours à la même heure, en début de soirée. Écris tout ce qui t'inquiète, sans filtre et sans chercher de solution. Puis ferme le carnet. Si une pensée revient plus tard, tu peux lui répondre qu'elle a déjà eu son rendez-vous. Cet exercice demande quelques jours avant de porter ses fruits. #ecriture #anxiete #ruminations #sommeil #routinedusoir",
-    "theme": "ecriture"
+    "theme": "ecriture",
+    "points_image": [
+      "Plutôt que de laisser les inquiétudes surgir au coucher, donne-leur un crénea",
+      "Chaque soir, dix minutes, toujours à la même heure, en début de soirée",
+      "Écris tout ce qui t'inquiète, sans filtre et sans chercher de solution",
+      "Si une pensée revient plus tard, tu peux lui répondre qu'elle a déjà eu son r"
+    ]
   },
   {
     "titre": "Étirements du soir : 5 mouvements avant d'aller au lit pour dormir mieux",
     "texte_image": "Étirements du soir : 5 mouvements avant d'aller au lit pour dormir mieux",
     "description": "Tu te couches parfois avec les épaules encore nouées de la journée, sans même t'en rendre compte ? Quelques étirements doux juste avant d'aller au lit aident le corps à relâcher cette tension accumulée, souvent plus efficacement qu'en restant simplement allongé. Enregistre cette épingle pour la retrouver ce soir. #sommeil #stress #detente #bienetre #routinedusoir",
     "image_prete": "images_manuelles/etirements-avant-aller-au-lit.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Tu te couches parfois avec les épaules encore nouées de la journée, sans même",
+      "Quelques étirements doux juste avant d'aller au lit aident le corps à relâche",
+      "Enregistre cette épingle pour la retrouver ce soir"
+    ]
   },
   {
     "titre": "Mémoire de forme ou plumes : ton oreiller freine-t-il tes nuits sans que tu le saches ?",
     "texte_image": "Oreiller mémoire de forme ou plumes : lequel choisir pour bien dormir",
     "description": "Changer d'oreiller mémoire de forme ne suffit pas si tu ignores encore ce qui compte vraiment pour bien dormir : le matériau influence directement ta posture de sommeil. La mousse à mémoire de forme épouse la nuque toute la nuit mais retient la chaleur, tandis que les plumes respirent davantage mais s'affaissent plus vite. Enregistre cette épingle pour comparer les deux avant ton prochain achat. #sommeil #posturesantistress #bienetre #stress #detente",
     "image_prete": "images_manuelles/materiau-oreiller-memoire-plumes.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Changer d'oreiller mémoire de forme ne suffit pas si tu ignores encore ce qui",
+      "La mousse à mémoire de forme épouse la nuque toute la nuit mais retient la ch",
+      "Enregistre cette épingle pour comparer les deux avant ton prochain achat"
+    ]
   },
   {
     "titre": "Et si ton assiette du soir sabotait ton sommeil sans que tu le saches ?",
     "texte_image": "Alimentation sommeil : ces aliments du soir qui aident à mieux dormir",
     "description": "Ce que tu manges au dîner influence bien plus ton sommeil que tu ne le penses. Certains aliments riches en magnésium ou en tryptophane, comme les amandes, la banane ou les légumineuses, favorisent la production naturelle de mélatonine et facilitent l'endormissement, à condition de les intégrer deux heures avant le coucher. Note ces trois aliments quelque part, tu en auras besoin ce soir. #sommeil #alimentation #bienetre #energie #stress",
     "image_prete": "images_manuelles/aliments-sommeil-reparateur.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Ce que tu manges au dîner influence bien plus ton sommeil que tu ne le penses",
+      "Certains aliments riches en magnésium ou en tryptophane, comme les amandes, l",
+      "Note ces trois aliments quelque part, tu en auras besoin ce soir"
+    ]
   },
   {
     "titre": "Vide ta tête en 5 lignes avant d'éteindre la lumière ce soir",
     "texte_image": "Écriture du soir : le geste qui vide la tête avant de dormir",
     "description": "Allongé dans le noir, ta tête continue de dérouler la liste de tout ce qu'il reste à faire demain ? Prendre cinq minutes pour écrire ce qui t'encombre avant de dormir aide ton cerveau à classer ces pensées au lieu de les ressasser toute la nuit. Note trois soucis et une chose positive de ta journée sur un carnet posé loin du lit. Ce petit rituel d'écriture t'attend, à essayer avant d'éteindre la lumière. #sommeil #ruminations #stress #bienetre #routinedusoir",
     "image_prete": "images_manuelles/ecrire-avant-coucher.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Allongé dans le noir, ta tête continue de dérouler la liste de tout ce qu'il ",
+      "Prendre cinq minutes pour écrire ce qui t'encombre avant de dormir aide ton c",
+      "Note trois soucis et une chose positive de ta journée sur un carnet posé loin",
+      "Ce petit rituel d'écriture t'attend, à essayer avant d'éteindre la lumière"
+    ]
   },
   {
     "titre": "3 réglages de chambre qui pèsent plus lourd que toute ta routine du soir",
     "texte_image": "Chambre idéale pour dormir : les 3 réglages qui font vraiment la différence",
     "description": "Tu as testé toutes les routines possibles sans penser que le problème venait de la pièce elle-même ? Température, obscurité et silence pèsent souvent plus lourd sur la qualité du sommeil que n'importe quel rituel du soir, et ce sont des réglages à ajuster une bonne fois pour toutes. Vise 18 degrés, un rideau occultant et des bouchons d'oreille si besoin. Vérifie ces trois réglages dans ta chambre avant de te coucher. #sommeil #environnement #bienetre #stress #routinedusoir",
     "image_prete": "images_manuelles/optimiser-chambre-dormir.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Tu as testé toutes les routines possibles sans penser que le problème venait ",
+      "Température, obscurité et silence pèsent souvent plus lourd sur la qualité du",
+      "Vise 18 degrés, un rideau occultant et des bouchons d'oreille si besoin",
+      "Vérifie ces trois réglages dans ta chambre avant de te coucher"
+    ]
   },
   {
     "titre": "Nuque raide au réveil ? Ton oreiller n'est peut-être pas fait pour ta posture",
     "texte_image": "Oreiller et sommeil : pourquoi le mauvais modèle abîme tes nuits",
     "description": "Tu te réveilles avec la nuque raide alors que tu as pourtant dormi ton compte d'heures ? Un oreiller mal adapté à ta position de sommeil, sur le dos, le côté ou le ventre, crée des tensions qui s'accumulent nuit après nuit sans que tu fasses le lien. La hauteur et la fermeté doivent correspondre à ta posture habituelle. Un simple ajustement peut suffire : à vérifier ce soir sur le tien. #sommeil #posturesantistress #bienetre #stress #detente",
     "image_prete": "images_manuelles/oreiller-ideal-posture.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Tu te réveilles avec la nuque raide alors que tu as pourtant dormi ton compte",
+      "Un oreiller mal adapté à ta position de sommeil, sur le dos, le côté ou le ve",
+      "La hauteur et la fermeté doivent correspondre à ta posture habituelle",
+      "Un simple ajustement peut suffire : à vérifier ce soir sur le tien"
+    ]
   },
   {
     "titre": "Lavande, camomille : quelles huiles essentielles t'aident vraiment à t'endormir",
     "texte_image": "Huiles essentielles sommeil : celles qui aident vraiment à s'endormir",
     "description": "Ta bougie ou ton diffuseur prend la poussière et tu n'es même pas sûr que ça serve à quelque chose pour dormir ? Certaines huiles essentielles comme la lavande vraie, la camomille romaine ou le petit grain bigarade ont un effet apaisant reconnu sur l'endormissement, à condition de respecter le bon dosage en diffusion, environ trente minutes avant le coucher. Enregistre cette épingle pour la retrouver au bon moment. #sommeil #relaxation #bienetre #stress #calme",
     "image_prete": "images_manuelles/huiles-essentielles-sommeil.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Ta bougie ou ton diffuseur prend la poussière et tu n'es même pas sûr que ça ",
+      "Certaines huiles essentielles comme la lavande vraie, la camomille romaine ou",
+      "Enregistre cette épingle pour la retrouver au bon moment"
+    ]
   },
   {
     "titre": "3 signaux calmes à envoyer à ton corps avant de dormir",
@@ -1343,7 +1483,11 @@
     "titre": "5 boissons qui font grimper ton cortisol sans que tu le voies",
     "texte_image": "5 boissons qui font grimper le cortisol",
     "description": "Le café du matin, la boisson énergisante de l'après-midi ou même certains thés : on les boit sans y penser, et pourtant ils entretiennent le stress ressenti. Si le mental reste en alerte le soir, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination, lien dans l'épingle. #cortisol #alimentation #stress #systemenerveux #bienetre #energie",
-    "theme": "cortisol"
+    "theme": "cortisol",
+    "points_image": [
+      "Le café du matin, la boisson énergisante de l'après-midi ou même certains thé",
+      "Si le mental reste en alerte le soir, le guide gratuit « Quand le cerveau ref"
+    ]
   },
   {
     "titre": "Fatigue, tensions, nuits agitées : 4 signes d'un cortisol resté trop haut",
@@ -1416,7 +1560,13 @@
     "titre": "Tu relis 3 fois la même ligne sans comprendre : le signe caché de la fatigue mentale",
     "texte_image": "Le signe de fatigue mentale que tu ignores",
     "description": "Tu fixes l'écran, les yeux ouverts, mais rien ne rentre : la même phrase relue plusieurs fois sans que le sens s'installe. Ce n'est ni un problème de concentration ni de motivation.\n📌 le cerveau sature avant que tu le remarques\n📌 c'est la lecture qui bloque, pas les autres tâches\n📌 une vraie pause, pas un scroll, relance la lecture\nRepérer ce signal tôt évite l'épuisement qui suit. #fatiguementale #stress #energie #bienetre #systemenerveux #clarte #concentration #chargementale #santementale",
-    "theme": "fatiguementale"
+    "theme": "fatiguementale",
+    "points_image": [
+      "Tu fixes l'écran, les yeux ouverts, mais rien ne rentre : la même phrase relu",
+      "Ce n'est ni un problème de concentration ni de motivation",
+      "📌 le cerveau sature avant que tu le remarques",
+      "📌 c'est la lecture qui bloque, pas les autres tâches"
+    ]
   },
   {
     "titre": "4 différences entre fatigue physique et mentale (même avec 8h de sommeil)",
@@ -1434,7 +1584,13 @@
     "titre": "Aucun effort physique et pourtant épuisé·e le soir : ce que ta fatigue mentale révèle",
     "texte_image": "Épuisé·e sans effort physique : pourquoi",
     "description": "Tu rentres vidé·e comme si tu avais couru, alors que tu es resté·e assis·e derrière un écran toute la journée. Cette fatigue sans effort physique vient d'une charge mentale invisible :\n📌 chaque décision, même minime, consomme de l'énergie mentale\n📌 les sollicitations et interruptions pèsent autant qu'un effort physique\n📌 le corps encaisse sans bouger, le cerveau encaisse en continu #fatiguementale #stress #energie #bienetre #systemenerveux #clarte #concentration #chargementale #santementale",
-    "theme": "fatiguementale"
+    "theme": "fatiguementale",
+    "points_image": [
+      "Tu rentres vidé·e comme si tu avais couru, alors que tu es resté·e assis·e de",
+      "Cette fatigue sans effort physique vient d'une charge mentale invisible :",
+      "📌 chaque décision, même minime, consomme de l'énergie mentale",
+      "📌 les sollicitations et interruptions pèsent autant qu'un effort physique"
+    ]
   },
   {
     "titre": "Fatigue décisionnelle : incapable de choisir quoi manger ce soir ?",
@@ -1451,7 +1607,13 @@
     "titre": "Fatigue mentale du lundi : 3 raisons d'être épuisé·e après un week-end au lit",
     "texte_image": "Pourquoi le week-end ne repose plus",
     "description": "Tu as passé le week-end à dormir et à te reposer, et le lundi la fatigue est toujours intacte. Ce n'est pas un manque de repos ponctuel :\n📌 la fatigue mentale s'accumule sur plusieurs semaines, pas un week-end\n📌 le système nerveux a besoin de récupération régulière, pas concentrée\n📌 dormir plus ne comble pas un épuisement cognitif\nEnregistre cette épingle pour ton prochain lundi difficile. #fatiguementale #stress #energie #systemenerveux #clarte #recuperation #chargementale #santementale",
-    "theme": "fatiguementale"
+    "theme": "fatiguementale",
+    "points_image": [
+      "Tu as passé le week-end à dormir et à te reposer, et le lundi la fatigue est ",
+      "Ce n'est pas un manque de repos ponctuel :",
+      "📌 la fatigue mentale s'accumule sur plusieurs semaines, pas un week-end",
+      "📌 le système nerveux a besoin de récupération régulière, pas concentrée"
+    ]
   },
   {
     "titre": "Charge mentale : ces trous de mémoire du quotidien qui n'en sont pas vraiment",
@@ -1556,7 +1718,11 @@
     "titre": "Pourquoi un jet d'eau froide calme ton système nerveux en secondes",
     "texte_image": "Pourquoi le froid calme le système nerveux",
     "description": "De l'eau froide sur le visage ou une douche fraîche calment presque instantanément, sans toujours savoir pourquoi ça marche aussi vite. Pour relâcher le soir ce que la journée a accumulé, le guide gratuit inclut un calendrier de 30 jours pour installer une routine du soir apaisante, lien dans l'épingle. #systemenerveux #stress #calme #bienetre #anxiete",
-    "theme": "systemenerveux"
+    "theme": "systemenerveux",
+    "points_image": [
+      "De l'eau froide sur le visage ou une douche fraîche calment presque instantan",
+      "Pour relâcher le soir ce que la journée a accumulé, le guide gratuit inclut u"
+    ]
   },
   {
     "titre": "Stress et écrans : le signe qu'une soirée d'écran ne te repose pas",
@@ -1584,7 +1750,13 @@
     "titre": "Le trou d'énergie de 11h se joue souvent dans ton assiette du matin",
     "texte_image": "Le petit-déjeuner qui stabilise l'énergie",
     "description": "Tu enchaînes un café et une tartine en vitesse, et vers 11h ton attention s'effondre, remplacée par une envie de sucre. Ce n'est pas un hasard : la composition de ton petit-déjeuner influence la stabilité de ton énergie jusqu'au déjeuner. Miser sur des protéines et des fibres dès le matin aide à lisser cette courbe. Ajouter des protéines et des fibres au petit-déjeuner suffit souvent à lisser cette courbe. #energie #alimentation #stress #bienetre #cortisol",
-    "theme": "energie"
+    "theme": "energie",
+    "points_image": [
+      "Tu enchaînes un café et une tartine en vitesse, et vers 11h ton attention s'e",
+      "Ce n'est pas un hasard : la composition de ton petit-déjeuner influence la st",
+      "Miser sur des protéines et des fibres dès le matin aide à lisser cette courbe",
+      "Ajouter des protéines et des fibres au petit-déjeuner suffit souvent à lisser"
+    ]
   },
   {
     "titre": "3 signes que ton alimentation entretient ton stress en fin de journée",
@@ -1601,7 +1773,13 @@
     "titre": "Repousser le déjeuner pour tenir la réunion fait grimper ton stress en silence",
     "texte_image": "Pourquoi sauter des repas augmente le stress",
     "description": "La réunion s'éternise, tu repousses le déjeuner et tu tiens sur un café jusqu'à 15h, sans réaliser que ton cortisol grimpe pendant ce temps :\n📌 sauter un repas met le corps en état d'alerte\n📌 cette alerte entretient une tension nerveuse difficile à calmer ensuite\n📌 manger à heures régulières, même rapidement, limite ces pics\nCaler une alarme pour manger un encas avant la réunion évite ce pic de cortisol. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie",
-    "theme": "alimentation"
+    "theme": "alimentation",
+    "points_image": [
+      "La réunion s'éternise, tu repousses le déjeuner et tu tiens sur un café jusqu",
+      "📌 sauter un repas met le corps en état d'alerte",
+      "📌 cette alerte entretient une tension nerveuse difficile à calmer ensuite",
+      "📌 manger à heures régulières, même rapidement, limite ces pics"
+    ]
   },
   {
     "titre": "Ce mal de tête de 17h n'est peut-être pas seulement une question de stress",
@@ -1618,7 +1796,13 @@
     "titre": "Alimentation et stress : manger en 5 minutes entre deux emails entretient la tension",
     "texte_image": "Pourquoi manger vite entretient le stress",
     "description": "Tu manges devant l'écran, en vitesse, entre deux tâches, et tu te demandes pourquoi tu te sens agité·e juste après :\n📌 manger vite empêche le corps de basculer vers une digestion calme\n📌 cet état entretient un stress diffus l'après-midi\n📌 ralentir quelques minutes suffit souvent à apaiser la tension\nTrois respirations avant de commencer à manger changent déjà la donne. #alimentation #stress #systemenerveux #bienetre #digestion #cortisol #santementale #glycemie #antistress",
-    "theme": "alimentation"
+    "theme": "alimentation",
+    "points_image": [
+      "Tu manges devant l'écran, en vitesse, entre deux tâches, et tu te demandes po",
+      "📌 manger vite empêche le corps de basculer vers une digestion calme",
+      "📌 cet état entretient un stress diffus l'après-midi",
+      "📌 ralentir quelques minutes suffit souvent à apaiser la tension"
+    ]
   },
   {
     "titre": "Collation anti-stress : 3 idées pour 17h quand la tension monte",
@@ -1635,7 +1819,13 @@
     "titre": "Ouvrir le placard sans avoir faim : ce que ton stress cherche vraiment",
     "texte_image": "Ce que le corps demande vraiment en grignotant",
     "description": "Tu ouvres le placard sans avoir vraiment faim, juste après une journée tendue, sans savoir ce que tu cherches à apaiser :\n📌 cette envie cache souvent une hausse de cortisol liée au stress\n📌 le corps confond parfois tension nerveuse et faim\n📌 il pousse alors vers le sucre pour calmer l'agitation\nUne pause de trente secondes avant d'ouvrir le placard peut suffire. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie #antistress",
-    "theme": "alimentation"
+    "theme": "alimentation",
+    "points_image": [
+      "Tu ouvres le placard sans avoir vraiment faim, juste après une journée tendue",
+      "📌 cette envie cache souvent une hausse de cortisol liée au stress",
+      "📌 le corps confond parfois tension nerveuse et faim",
+      "📌 il pousse alors vers le sucre pour calmer l'agitation"
+    ]
   },
   {
     "titre": "Stress et carences : 3 manques qui expliquent que tu sois à plat",
@@ -1652,13 +1842,25 @@
     "titre": "Ton café du matin peut expliquer cette nervosité qui arrive en fin de matinée",
     "texte_image": "Pourquoi le café aggrave l'anxiété de la journée",
     "description": "Tu bois ton café pour démarrer du bon pied, et pourtant en fin de matinée tu te sens tendu·e, presque sur les nerfs, sans lien apparent :\n📌 la caféine du matin amplifie l'anxiété chez certaines personnes\n📌 l'effet est plus marqué à jeun\n📌 réduire la dose ou la prendre après un repas atténue cet effet\nTeste une réduction progressive sur une semaine pour voir la différence. #alimentation #stress #anxiete #bienetre #systemenerveux #digestion #cortisol #santementale #antistress",
-    "theme": "alimentation"
+    "theme": "alimentation",
+    "points_image": [
+      "Tu bois ton café pour démarrer du bon pied, et pourtant en fin de matinée tu ",
+      "📌 la caféine du matin amplifie l'anxiété chez certaines personnes",
+      "📌 l'effet est plus marqué à jeun",
+      "📌 réduire la dose ou la prendre après un repas atténue cet effet"
+    ]
   },
   {
     "titre": "Il y a une heure précise, chaque jour, où ta motivation s'effondre : laquelle ?",
     "texte_image": "Le moment où tu procrastines le plus",
     "description": "Tu tiens bon un moment, et puis d'un coup, plus rien n'avance : téléphone, café de trop, changement de pièce. Ce basculement revient presque à la même heure chaque jour, ce n'est pas un hasard. Repérer ce moment précis est la première étape pour comprendre ta procrastination et la désamorcer avant qu'elle ne s'installe. Repère cette heure dans ton propre emploi du temps cette semaine. #procrastination #fatiguementale #productivite #bienetre #stress",
-    "theme": "procrastination"
+    "theme": "procrastination",
+    "points_image": [
+      "Tu tiens bon un moment, et puis d'un coup, plus rien n'avance : téléphone, ca",
+      "Ce basculement revient presque à la même heure chaque jour, ce n'est pas un h",
+      "Repérer ce moment précis est la première étape pour comprendre ta procrastina",
+      "Repère cette heure dans ton propre emploi du temps cette semaine"
+    ]
   },
   {
     "titre": "3 pensées automatiques qui déclenchent la procrastination",
@@ -1939,7 +2141,11 @@
     "titre": "Cette fatigue du dimanche soir qui refuse de s'en aller, même reposé",
     "texte_image": "Manque d'énergie : normal ou pas ?",
     "description": "Se dire simplement fatigué, mais même après une bonne nuit ou une semaine calme, l'énergie ne remonte jamais vraiment : il existe une vraie différence 👉 la fatigue passagère se résorbe avec du repos, quelques jours suffisent 👉 l'épuisement plus profond persiste malgré le repos, avec irritabilité et sommeil moins réparateur. Si le repos seul ne suffit plus, c'est ce second cas. #energie #fatiguementale #stress #santementale #recuperation #systemenerveux #sommeil #routinedumatin #fatigue",
-    "theme": "energie"
+    "theme": "energie",
+    "points_image": [
+      "Se dire simplement fatigué, mais même après une bonne nuit ou une semaine cal",
+      "Si le repos seul ne suffit plus, c'est ce second cas"
+    ]
   },
   {
     "titre": "Fatigue avant les vacances : et si souffler n'attendait pas ?",
@@ -2056,7 +2262,11 @@
     "titre": "Blocage mental ou simple hésitation : le test pour faire la différence",
     "texte_image": "Vrai blocage ou simple hésitation ?",
     "description": "Ne pas avancer sur une décision, sans savoir si c'est un vrai blocage mental ou une hésitation normale qui va passer : un test simple aide à trancher 👉 si une nuit de sommeil suffit à voir plus clair, c'est une hésitation passagère 👉 si la confusion reste identique après plusieurs jours malgré le repos, c'est un vrai blocage. L'un demande de la patience, l'autre une méthode précise. #blocagemental #clarte #fatiguementale #bienetre #organisation #systemenerveux #santementale #clartementale",
-    "theme": "blocagemental"
+    "theme": "blocagemental",
+    "points_image": [
+      "Ne pas avancer sur une décision, sans savoir si c'est un vrai blocage mental ",
+      "L'un demande de la patience, l'autre une méthode précise"
+    ]
   },
   {
     "titre": "Boule au ventre au bureau : le geste de 30 secondes qui la fait retomber",
@@ -2194,7 +2404,13 @@
     "titre": "Ton cerveau refuse la moindre info en fin de journée : le signal avant le burn-out",
     "texte_image": "Le signal avant le burn-out",
     "description": "Tu t'assois enfin le soir et ton cerveau refuse tout, même choisir quoi manger devient trop demander. Ce n'est pas de la fainéantise :\n📌 c'est un signal de surcharge cognitive\n📌 il précède souvent l'épuisement professionnel\n📌 le repérer tôt permet d'agir avant que la charge ne déborde\nObserve ces signaux cette semaine : refus de décider, irritabilité, besoin de silence. #chargementale #fatiguementale #stress #bienetre #burnout #systemenerveux #energie #clarte #santementale",
-    "theme": "chargementale"
+    "theme": "chargementale",
+    "points_image": [
+      "Tu t'assois enfin le soir et ton cerveau refuse tout, même choisir quoi mange",
+      "Ce n'est pas de la fainéantise :",
+      "📌 c'est un signal de surcharge cognitive",
+      "📌 il précède souvent l'épuisement professionnel"
+    ]
   },
   {
     "titre": "Charge mentale : le vrai coût de tes décisions, jusque devant le frigo",
@@ -2211,7 +2427,13 @@
     "titre": "Ce n'est pas un coup de fatigue : 3 signes qui trahissent une vraie surcharge mentale",
     "texte_image": "3 signes de surcharge mentale méconnus",
     "description": "Tu penses traverser une période fatigante qui va passer seule ? Certains signes de surcharge mentale ressemblent à une baisse de forme mais indiquent bien plus :\n📌 irritabilité qui arrive sans déclencheur clair\n📌 oublis fréquents sur des tâches simples\n📌 difficulté à décider même pour de petites choses\nPris au sérieux tôt, ces signaux évitent l'installation d'une vraie surcharge. #chargementale #fatiguementale #stress #bienetre #santementale #clarte #systemenerveux #energie",
-    "theme": "chargementale"
+    "theme": "chargementale",
+    "points_image": [
+      "Tu penses traverser une période fatigante qui va passer seule",
+      "Certains signes de surcharge mentale ressemblent à une baisse de forme mais i",
+      "📌 irritabilité qui arrive sans déclencheur clair",
+      "📌 oublis fréquents sur des tâches simples"
+    ]
   },
   {
     "titre": "Fatigue au réveil : 8 heures de sommeil et aucune sensation de repos",
@@ -2272,7 +2494,12 @@
     "titre": "Scroll du soir : le piège du « juste 5 minutes » à 23h30 avant de dormir",
     "texte_image": "23h30, « juste 5 minutes » : le piège du scroll infini",
     "description": "Il devait être 23h30 quand tu as ouvert l'application en te disant que ce serait juste cinq minutes, et te voilà une heure plus tard, le pouce toujours en mouvement alors que le réveil sonne tôt demain. Ce mécanisme s'appelle le scroll infini, conçu pour effacer ta notion du temps. Pour t'en libérer, fixe une alarme de fin de session avant d'ouvrir l'application, et pose le téléphone hors de portée dès qu'elle sonne. #ecrans #sommeil #routinedusoir #stress #bienetre #nuit #detente #calme",
-    "theme": "ecrans"
+    "theme": "ecrans",
+    "points_image": [
+      "Il devait être 23h30 quand tu as ouvert l'application en te disant que ce ser",
+      "Ce mécanisme s'appelle le scroll infini, conçu pour effacer ta notion du temp",
+      "Pour t'en libérer, fixe une alarme de fin de session avant d'ouvrir l'applica"
+    ]
   },
   {
     "titre": "Énergie : ce que 10 minutes de marche changent dans une journée chargée",
@@ -2450,98 +2677,166 @@
     "texte_image": "La respiration 4-7-8 : la technique express pour calmer ton mental",
     "description": "Inspire par le nez pendant quatre secondes, retiens ton souffle pendant sept secondes, puis expire lentement par la bouche pendant huit secondes : cette technique simple, répétée quatre fois, envoie à ton système nerveux un signal clair de sécurité et fait redescendre la tension en quelques minutes. Pas besoin de matériel ni d'endroit particulier, elle fonctionne assise à ton bureau comme allongée avant de dormir. #respiration #stress #systemenerveux #calme #detente #anxiete",
     "image_prete": "images_manuelles/respiration-4-7-8-anti-stress.jpg",
-    "theme": "respiration"
+    "theme": "respiration",
+    "points_image": [
+      "Inspire par le nez pendant quatre secondes, retiens ton souffle pendant sept ",
+      "Pas besoin de matériel ni d'endroit particulier, elle fonctionne assise à ton"
+    ]
   },
   {
     "titre": "Une journée anti-stress, gestes par gestes, du réveil au coucher",
     "texte_image": "Une journée anti-stress, gestes par gestes, du réveil au coucher",
     "description": "Le stress ne se règle pas seulement le soir. Au réveil 👉 respirer profondément et boire un verre d'eau avant de se précipiter. Au petit-déjeuner 👉 choisir des aliments qui stabilisent l'énergie. En journée 👉 bouger même un peu. En pause 👉 s'accorder cinq minutes pour soi. Le soir 👉 déconnecter et préparer un vrai espace de sommeil. Des petits gestes répartis sur la journée, pas un seul grand effort ponctuel. #stress #systemenerveux #bienetre #routine #energie",
     "image_prete": "images_manuelles/journee-anti-stress-gestes-simples.jpg",
-    "theme": "stress"
+    "theme": "stress",
+    "points_image": [
+      "Le stress ne se règle pas seulement le soir",
+      "Au réveil 👉 respirer profondément et boire un verre d'eau avant de se précipi",
+      "Au petit-déjeuner 👉 choisir des aliments qui stabilisent l'énergie",
+      "En journée 👉 bouger même un peu"
+    ]
   },
   {
     "titre": "7 signes que ton niveau de stress est en réalité trop élevé",
     "texte_image": "7 signes que ton niveau de stress est en réalité trop élevé",
     "description": "Une fatigue qui persiste même après du repos, des difficultés à t'endormir ou des réveils fréquents, une irritabilité inhabituelle, des tensions musculaires dans le cou ou le dos, des troubles de concentration, un appétit perturbé et des sautes d'humeur : ces sept signaux, pris isolément, semblent anodins, mais ensemble ils dessinent souvent un stress installé depuis plus longtemps qu'on ne le pense. #stress #systemenerveux #fatiguementale #anxiete #bienetre #calme",
     "image_prete": "images_manuelles/7-signes-stress-trop-eleve.jpg",
-    "theme": "stress"
+    "theme": "stress",
+    "points_image": [
+      "Une fatigue qui persiste même après du repos",
+      "Des difficultés à s'endormir ou réveils fréquents",
+      "Irritabilité inhabituelle et tensions musculaires",
+      "Troubles de concentration ou mémoire qui faiblit"
+    ]
   },
   {
     "titre": "5 bénéfices du sommeil, bien avant les astuces bien-être",
     "texte_image": "5 bénéfices du sommeil, bien avant les astuces bien-être",
     "description": "Un sommeil de qualité 👉 améliore la mémoire et la concentration 👉 renforce le système immunitaire 👉 aide à réguler les émotions plutôt qu'à les subir 👉 recharge l'énergie et la motivation du lendemain 👉 ralentit même le vieillissement cellulaire. Avant de chercher la prochaine astuce bien-être, la question la plus rentable reste souvent la plus simple : est-ce que je dors vraiment assez ? #sommeil #sante #energie #recuperation #nuit #endormissement #routinedusoir #detente #mieuxdormir",
     "image_prete": "images_manuelles/sommeil-meilleur-allie-bienetre.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Un sommeil de qualité 👉 améliore la mémoire et la concentration 👉 renforce le",
+      "Avant de chercher la prochaine astuce bien-être, la question la plus rentable"
+    ]
   },
   {
     "titre": "4-4-6 : la respiration à faire quand la pression monte d'un coup",
     "texte_image": "4-4-6 : la respiration à faire quand la pression monte d'un coup",
     "description": "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre secondes, puis expire doucement par la bouche pendant six secondes : ce rythme simple, répété deux à cinq minutes, envoie un signal de calme direct à ton système nerveux, particulièrement utile juste après un moment tendu. Pas besoin de fermer les yeux ni de t'isoler, quelques cycles discrets suffisent à faire retomber la pression. #respiration #stress #systemenerveux #calme #anxiete #detente",
     "image_prete": "images_manuelles/respiration-4-4-6-relacher-pression.jpg",
-    "theme": "respiration"
+    "theme": "respiration",
+    "points_image": [
+      "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre seco",
+      "Pas besoin de fermer les yeux ni de t'isoler, quelques cycles discrets suffis"
+    ]
   },
   {
     "titre": "Mieux dormir ce soir : l'investissement le plus rentable pour demain",
     "texte_image": "Mieux dormir ce soir : l'investissement le plus rentable pour demain",
     "description": "Chaque petit ajustement apporté à ton sommeil ce soir — une heure de coucher plus stable, moins d'écrans, une chambre plus fraîche — ne se limite pas à une meilleure nuit isolée. C'est un effet cumulatif qui, jour après jour, façonne un mental plus stable, une énergie plus régulière et une capacité à encaisser le stress du quotidien nettement plus solide. #sommeil #bienetre #energie #recuperation #sante #nuit #endormissement #routinedusoir #detente #mieuxdormir",
     "image_prete": "images_manuelles/mieux-dormir-vie-plus-sereine.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Chaque petit ajustement apporté à ton sommeil ce soir — une heure de coucher ",
+      "C'est un effet cumulatif qui, jour après jour, façonne un mental plus stable,"
+    ]
   },
   {
     "titre": "Trop de pensées, stress, anxiété : et si ça ne se calmait jamais tout seul ?",
     "texte_image": "Trop de pensées, stress, anxiété : et si ça ne se calmait jamais tout seul ?",
     "description": "Tête dans les mains, une pensée en entraîne une autre, puis une troisième, sans réussir à faire retomber le calme. Ce n'est pas un excès de réflexion : c'est un système nerveux en surrégime qui continue de tourner même quand la situation ne l'exige plus. Attendre que ça passe seul fonctionne rarement ; agir sur le corps en premier, par la respiration, calme souvent plus vite que de penser à autre chose. #systemenerveux #stress #anxiete #ruminations #calme #respiration",
     "image_prete": "images_manuelles/pensees-en-boucle-stress-anxiete.jpg",
-    "theme": "systemenerveux"
+    "theme": "systemenerveux",
+    "points_image": [
+      "Tête dans les mains, une pensée en entraîne une autre, puis une troisième, sa",
+      "Ce n'est pas un excès de réflexion : c'est un système nerveux en surrégime qu",
+      "Attendre que ça passe seul fonctionne rarement ; agir sur le corps en premier"
+    ]
   },
   {
     "titre": "Les signes d'anxiété que tu mets peut-être sur le compte d'autre chose",
     "texte_image": "Les signes d'anxiété que tu mets peut-être sur le compte d'autre chose",
     "description": "Pensées envahissantes, tension dans le corps, difficultés à dormir, irritabilité, cœur qui s'emballe, pertes de concentration : ces signes semblent chacun avoir leur propre explication. Ensemble, ils dessinent souvent un fond d'anxiété qui ne dit pas son nom. Les reconnaître comme un tout, plutôt que comme des symptômes isolés, est souvent la première étape pour s'en occuper. #anxiete #systemenerveux #stress #bienetre #calmemental #calme",
     "image_prete": "images_manuelles/signes-anxiete-liste-a-reconnaitre.jpg",
-    "theme": "anxiete"
+    "theme": "anxiete",
+    "points_image": [
+      "Pensées envahissantes, tension dans le corps, difficultés à dormir, irritabil",
+      "Ensemble, ils dessinent souvent un fond d'anxiété qui ne dit pas son nom",
+      "Les reconnaître comme un tout, plutôt que comme des symptômes isolés, est sou"
+    ]
   },
   {
     "titre": "Respire plus lentement : le geste le plus simple pour calmer ton mental",
     "texte_image": "Respire plus lentement : le geste le plus simple pour calmer ton mental",
     "description": "Quand le stress monte, la respiration devient courte et haute sans qu'on le remarque, et elle entretient elle-même la tension plutôt que de l'apaiser. Ralentir volontairement le rythme, avec une expiration plus longue que l'inspiration, envoie un signal de sécurité au système nerveux. Pas besoin d'un cadre particulier : quelques respirations conscientes suffisent à relâcher la pression. #respiration #systemenerveux #stress #calme #detente #anxiete",
     "image_prete": "images_manuelles/respirer-plus-lentement-calmer-mental.jpg",
-    "theme": "respiration"
+    "theme": "respiration",
+    "points_image": [
+      "Quand le stress monte, la respiration devient courte et haute sans qu'on le r",
+      "Ralentir volontairement le rythme, avec une expiration plus longue que l'insp",
+      "Pas besoin d'un cadre particulier : quelques respirations conscientes suffise"
+    ]
   },
   {
     "titre": "Et si ton anxiété venait aussi de tes nuits ?",
     "texte_image": "Et si ton anxiété venait aussi de tes nuits ?",
     "description": "Tu cherches des causes à ton anxiété du jour sans penser à regarder du côté de tes nuits. Un sommeil de mauvaise qualité amplifie pourtant le stress ressenti le lendemain et rend les pensées plus envahissantes, plus difficiles à mettre à distance. Ce n'est pas toujours le stress qui abîme le sommeil : parfois c'est l'inverse qui se joue, en silence, nuit après nuit. #sommeil #anxiete #stress #systemenerveux #bienetre #nuit #endormissement #routinedusoir #detente #mieuxdormir",
     "image_prete": "images_manuelles/anxiete-vient-peut-etre-du-sommeil.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Tu cherches des causes à ton anxiété du jour sans penser à regarder du côté d",
+      "Un sommeil de mauvaise qualité amplifie pourtant le stress ressenti le lendem",
+      "Ce n'est pas toujours le stress qui abîme le sommeil : parfois c'est l'invers"
+    ]
   },
   {
     "titre": "Alimentation anti-stress : ce que ton assiette change vraiment pour l'esprit",
     "texte_image": "Ce que ton assiette change sur ton stress",
     "description": "Certains aliments nourrissent directement le cerveau et l'aident à mieux gérer le stress au quotidien, pas seulement le corps :\n📌 plus de nutriments qui soutiennent le système nerveux\n📌 moins de repas rapides qui le laissent livré à lui-même\n📌 un ajustement progressif suffit à ressentir une différence\nRien de spectaculaire, juste une composition d'assiette pensée pour ton stress. #alimentation #stress #systemenerveux #bienetre #digestion #cortisol #santementale #magnesium #antistress",
     "image_prete": "images_manuelles/bien-manger-apaiser-esprit-stress.jpg",
-    "theme": "alimentation"
+    "theme": "alimentation",
+    "points_image": [
+      "Certains aliments nourrissent directement le cerveau et l'aident à mieux gére",
+      "📌 plus de nutriments qui soutiennent le système nerveux",
+      "📌 moins de repas rapides qui le laissent livré à lui-même",
+      "📌 un ajustement progressif suffit à ressentir une différence"
+    ]
   },
   {
     "titre": "Sommeil et écrans : l'impact réel de moins d'écrans le soir sur ton calme",
     "texte_image": "Moins d'écrans le soir : l'impact réel sur ton calme",
     "description": "Réduire le temps d'écran, surtout en fin de soirée, aide concrètement à apaiser un mental encore en activité et améliore la qualité du sommeil qui suit. Ce n'est pas tant la lumière bleue en elle-même que le flux constant de sollicitations qui maintient le cerveau en alerte bien après que le corps voudrait déjà ralentir. Une coupure nette, même courte, change la façon dont la soirée se termine. #sommeil #ecrans #stress #routinedusoir #nuit #endormissement #detente #anxiete #mieuxdormir",
     "image_prete": "images_manuelles/moins-ecrans-plus-calme-sommeil.jpg",
-    "theme": "sommeil"
+    "theme": "sommeil",
+    "points_image": [
+      "Réduire le temps d'écran, surtout en fin de soirée, aide concrètement à apais",
+      "Ce n'est pas tant la lumière bleue en elle-même que le flux constant de solli",
+      "Une coupure nette, même courte, change la façon dont la soirée se termine"
+    ]
   },
   {
     "titre": "Sortir, se reconnecter à l'essentiel : un des leviers anti-stress les plus sous-utilisés",
     "texte_image": "Sortir, se reconnecter à l'essentiel : un des leviers anti-stress les plus sous-utilisés",
     "description": "La nature, le mouvement et la lumière du jour aident à réduire le stress et à retrouver de l'énergie, souvent plus efficacement qu'une pause passée à scroller. Pas besoin d'une randonnée entière : une marche courte dehors, en pleine lumière, suffit déjà à faire redescendre la tension accumulée en intérieur. Le corps a besoin de ces signaux extérieurs pour comprendre qu'il peut relâcher un peu la garde. #stress #systemenerveux #energie #bienetre #nature #calme",
     "image_prete": "images_manuelles/sortir-nature-reduire-stress-energie.jpg",
-    "theme": "stress"
+    "theme": "stress",
+    "points_image": [
+      "La nature, le mouvement et la lumière du jour aident à réduire le stress et à",
+      "Pas besoin d'une randonnée entière : une marche courte dehors, en pleine lumi",
+      "Le corps a besoin de ces signaux extérieurs pour comprendre qu'il peut relâch"
+    ]
   },
   {
     "titre": "Écrire pour se libérer : ce que poser ses pensées sur papier change vraiment",
     "texte_image": "Écrire pour se libérer : ce que poser ses pensées sur papier change vraiment",
     "description": "Mettre ses pensées sur papier, même en vrac, aide à prendre du recul sur un mental encombré 👉 ce qui reste en tête tourne en boucle, ce qui est écrit peut être regardé de l'extérieur 👉 nommer une émotion par écrit réduit souvent son intensité 👉 relire une pensée écrite la veille la rend plus relative. Quelques minutes suffisent, pas besoin d'un journal quotidien. #ecriture #blocagemental #stress #clarte #bienetre #systemenerveux #fatiguementale #organisation #clartementale #santementale",
     "image_prete": "images_manuelles/ecrire-liberer-pensees-mental.jpg",
-    "theme": "ecriture"
+    "theme": "ecriture",
+    "points_image": [
+      "Mettre ses pensées sur papier, même en vrac, aide à prendre du recul sur un m",
+      "Quelques minutes suffisent, pas besoin d'un journal quotidien"
+    ]
   },
   {
     "titre": "Énergie et self-care : prendre soin de soi, une façon concrète de se protéger",
