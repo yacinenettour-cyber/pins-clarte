@@ -34,5 +34,14 @@
   "cover": "videopins/videopin-20261002-163203.jpg",
   "theme": "alimentation",
   "pin_id": "600175087889945814"
+ },
+ {
+  "date": "2026-10-03T16:32+00:00",
+  "id": "energie-lumiere-du-matin",
+  "titre": "10 minutes de lumière le matin pour avoir plus d'énergie toute la journée",
+  "video": "videopins/videopin-20261003-163151.mp4",
+  "cover": "videopins/videopin-20261003-163151.jpg",
+  "theme": "energie",
+  "pin_id": "600175087889962389"
  }
 ]
