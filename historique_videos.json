@@ -43,5 +43,14 @@
   "cover": "videopins/videopin-20261003-163151.jpg",
   "theme": "energie",
   "pin_id": "600175087889962389"
+ },
+ {
+  "date": "2026-10-04T16:33+00:00",
+  "id": "procrastination-5-minutes",
+  "titre": "La règle des 5 minutes pour arrêter de repousser",
+  "video": "videopins/videopin-20261004-163202.mp4",
+  "cover": "videopins/videopin-20261004-163202.jpg",
+  "theme": "procrastination",
+  "pin_id": "600175087889978689"
  }
 ]
