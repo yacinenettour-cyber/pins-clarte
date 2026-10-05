@@ -52,5 +52,14 @@
   "cover": "videopins/videopin-20261004-163202.jpg",
   "theme": "procrastination",
   "pin_id": "600175087889978689"
+ },
+ {
+  "date": "2026-10-05T16:33+00:00",
+  "id": "blocagemental-vider-sa-tete",
+  "titre": "Écrire pendant 10 minutes pour débloquer un mental saturé",
+  "video": "videopins/videopin-20261005-163207.mp4",
+  "cover": "videopins/videopin-20261005-163207.jpg",
+  "theme": "blocagemental",
+  "pin_id": "600175087889995902"
  }
 ]
