@@ -62,6 +62,33 @@ Si le champ Lien n'apparaît pas sur un pin : le noter et passer au suivant.
 - **Retirés après lecture complète** : « 4 solutions pout apaiser ton système nerveux. » (600175087886513407 : contenu procrastination / fatigue mentale) et « 5 alternatives simples pour calmer le stress » (600175087885497866 : surtout des remplacements alimentaires).
 - Déjà faits le 29/09 : « Si ton cerveau ne s'arrête jamais la nuit » et « 6 étapes pour débloquer ton mental ».
 
+## Vérification du 05/10/2026 (contenu réel relu en entier, `PINTEREST_GET_PIN` / `PINTEREST_LIST_PINS`)
+
+Référence : le guide « Quand le cerveau refuse de dormir » (routine anti-rumination au lit, exercices pour calmer le mental, calendrier de 30 jours) et la règle 4 (sommeil + mécanismes du stress au sens large ; jamais énergie, fatigue, alimentation, hormones).
+
+**Les 31 pins de la liste ci-dessus : aucun n'a encore de lien** (champ `link` vide sur les 31). Contenu conforme pour 29 d'entre eux. **À ne pas relier finalement** :
+- n°18 « 6 actions simples contre le cortisol » : angle hormones / alimentation / fringales / énergie (« équilibrer tes hormones »), exclu par la section « Exclus volontairement ».
+- n°10 « 3 gestes simples pour baisser le cortisol » : routine du matin pour « soutenir ton énergie », sans lien avec le soir ni les ruminations.
+
+**28 autres anciens pins portent déjà le lien** (sans UTM, posé avant le 29/09 sauf 2). Hors périmètre du guide, **lien à retirer à la main** (Modifier l'épingle → vider le champ Lien) :
+
+| Pin | Pourquoi | Adresse |
+|---|---|---|
+| 6 secrets pour booster ton énergie naturellement chaque jour ⚡ | énergie ; sa description promet un « guide offert — routine 30 jours » sur l'énergie | https://www.pinterest.com/pin/600175087887139477/ |
+| Routine simple pour avoir plus d'énergie au quotidien | énergie | https://www.pinterest.com/pin/600175087886995055/ |
+| 9 habitudes qui sabotent ton énergie | énergie | https://www.pinterest.com/pin/600175087886665798/ |
+| 5 clés pour élever ton énergie | énergie, glycémie, nutriments | https://www.pinterest.com/pin/600175087886153962/ |
+| 7 causes cachées de la fatigue que personne ne regarde | fatigue, carences, hormones | https://www.pinterest.com/pin/600175087886332485/ |
+| 6 causes biologiques de la fatigue mentale | fatigue, thyroïde, fer, magnésium | https://www.pinterest.com/pin/600175087886471553/ |
+| 6 habitudes simples pour réduire inflammation et fatigue | alimentation anti-inflammatoire | https://www.pinterest.com/pin/600175087886684979/ |
+| 1 seul verre d'alcool = 7 impacts cachés | alimentation (tableau Alimentation & stress) | https://www.pinterest.com/pin/600175087887159543/ |
+
+**À décider par l'utilisateur** (hors règle, mais avec des résultats) :
+- « La formule anti-fatigue mentale pour retrouver ton énergie » (https://www.pinterest.com/pin/600175087886392646/) : thème fatigue mentale (`THEMES_SANS_LIEN`), mais 3 859 vues et **4 clics sortants** sur 90 jours, le meilleur ancien pin en clics. Contenu « vider ses pensées, réduire la surcharge » : proche du mental qui tourne, sans parler du soir.
+- « 6 étapes pour débloquer ton mental » (https://www.pinterest.com/pin/600175087885878234/), relié le 29/09 : contenu en réalité orienté objectifs / motivation / productivité, ni sommeil ni stress ; 10 749 vues, 0 clic sortant.
+
+**Conformes, à garder** : « Si ton cerveau ne s'arrête jamais la nuit », « Comment éteindre le stress en 10 minutes… », « 3 gouttes d'huile essentielle pour s'endormir vite », « 5 erreurs qui détruisent ton sommeil », « 5 erreurs qui ruinent ton sommeil », « 6 étapes pour mieux dormir naturellement », « Les Bienfaits du Sommeil pour un Cerveau en Bonne Santé », « Comment le sommeil transforme ta vie », « Stress qui monte ? 5 gestes rapides… », « 5 douleurs du corps causées par le stress », « 5 techniques pour reset ton système nerveux », « 5 exercices simples et rapides… », « 5 exercices simples pour déstresser… », « 5 signes de stress + solutions simples », « Le cercle vicieux du cortisol » (stress chronique, limite), « Pourquoi ton cerveau est épuisé après trop d'écrans » (parle du rituel avant de dormir), « 7 signes que ton cerveau est saturé par les écrans » (limite). Description à corriger si possible : « 5 clés puissantes pour reprendre le contrôle sur ton stress » (https://www.pinterest.com/pin/600175087887102118/) annonce un guide avec « une routine sur 7 jours » : le vrai guide propose un calendrier de 30 jours, centré sur le sommeil.
+
 ## Consigne pour l'extension Claude (Chrome), si l'utilisateur préfère la déléguer
 
 ```
