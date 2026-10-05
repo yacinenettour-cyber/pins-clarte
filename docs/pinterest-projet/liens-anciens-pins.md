@@ -137,3 +137,26 @@ https://lp.contactapaisement-mental.fr/tonguide?utm_source=pinterest&utm_medium=
 ## Vérification
 
 Après modification : `PINTEREST_GET_PIN` sur chaque identifiant (champ `link`), puis suivi des clics sortants de ces pins (`PINTEREST_GET_PIN_ANALYTICS`, métrique `OUTBOUND_CLICK`) vers le 14/10/2026.
+
+## Consigne pour l'extension Claude (Chrome) : retirer le lien de 8 pins hors périmètre (05/10/2026)
+
+```
+Sur Pinterest (compte clartementale, déjà connecté), pour chacun des pins ci-dessous, dans l'ordre :
+1. Ouvre l'adresse du pin.
+2. Clique sur l'icône crayon (ou « … » puis « Modifier l'épingle »).
+3. Vide complètement le champ « Lien ».
+4. Clique sur « Enregistrer ». Ne modifie rien d'autre.
+5. En cas d'échec, note l'adresse et passe au suivant.
+À la fin, donne-moi la liste des pins réussis et en échec.
+
+https://www.pinterest.com/pin/600175087887139477/
+https://www.pinterest.com/pin/600175087886995055/
+https://www.pinterest.com/pin/600175087886665798/
+https://www.pinterest.com/pin/600175087886153962/
+https://www.pinterest.com/pin/600175087886332485/
+https://www.pinterest.com/pin/600175087886471553/
+https://www.pinterest.com/pin/600175087886684979/
+https://www.pinterest.com/pin/600175087887159543/
+```
+
+Essai d'automatisation du 05/10 : `PINTEREST_UPDATE_PIN` déjà refusé (401 `pin_edit`, 29 et 30/09, non retenté) ; passage par la connexion `pinterest_ads` refusé aussi (proxy désactivé pour ce connecteur, 403). Pas d'autre voie depuis une session Claude Code.
