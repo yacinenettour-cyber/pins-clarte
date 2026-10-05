@@ -939,5 +939,14 @@
   "theme": "systemenerveux",
   "design": "prete",
   "pin_id": "600175087889982269"
+ },
+ {
+  "date": "2026-10-05T05:07+00:00",
+  "titre": "Charge mentale du dimanche : 10 minutes pour démarrer la semaine l'esprit clair",
+  "image": "images/pin-20261005-050726.jpg",
+  "fond": "fonds/gradient_blocagemental_0.jpg",
+  "theme": "blocagemental",
+  "design": "clair",
+  "pin_id": "600175087889988067"
  }
 ]
