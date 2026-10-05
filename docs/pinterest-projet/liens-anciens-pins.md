@@ -33,7 +33,7 @@ Si le champ Lien n'apparaît pas sur un pin : le noter et passer au suivant.
 | 7 | 5 étapes pour calmer un mental le soir | 740 | https://www.pinterest.com/pin/600175087886071865/ |
 | 8 | 5 postures de yoga pour réduire le stress | 675 | https://www.pinterest.com/pin/600175087886867911/ |
 | 9 | Sommeil difficile ? 6 infusions qui aident vraiment | 564 | https://www.pinterest.com/pin/600175087885585019/ |
-| 10 | 3 gestes simples pour baisser le cortisol | 397 | https://www.pinterest.com/pin/600175087885922045/ |
+| 10 | ~~3 gestes simples pour baisser le cortisol~~ (retiré le 05/10, voir plus bas) | 397 | https://www.pinterest.com/pin/600175087885922045/ |
 | 11 | Boule dans la gorge : ce que ton système nerveux signale | 359 | https://www.pinterest.com/pin/600175087886257448/ |
 | 12 | 5 effets du stress sur l’estomac le soir | 329 | https://www.pinterest.com/pin/600175087884937437/ |
 | 13 | Comment diminuer le stress au travail naturellement ? | 318 | https://www.pinterest.com/pin/600175087884496637/ |
@@ -41,7 +41,7 @@ Si le champ Lien n'apparaît pas sur un pin : le noter et passer au suivant.
 | 15 | Si tu rumines la nuit  ton cerveau cherche à se protéger | 276 | https://www.pinterest.com/pin/600175087886257379/ |
 | 16 | Système nerveux saturé ? Fais ça | 267 | https://www.pinterest.com/pin/600175087886575183/ |
 | 17 | 5 signes que ton stress t’épuise | 260 | https://www.pinterest.com/pin/600175087886552068/ |
-| 18 | 6 actions simples contre le cortisol | 227 | https://www.pinterest.com/pin/600175087886050525/ |
+| 18 | ~~6 actions simples contre le cortisol~~ (retiré le 05/10, voir plus bas) | 227 | https://www.pinterest.com/pin/600175087886050525/ |
 | 19 | 6 zones du corps où la pression s’accumule | 195 | https://www.pinterest.com/pin/600175087885585653/ |
 | 20 | 5 erreurs qui sabotent ton sommeil | 173 | https://www.pinterest.com/pin/600175087884980450/ |
 | 21 | 6 leviers pour calmer le système nerveux | 170 | https://www.pinterest.com/pin/600175087885606881/ |
@@ -110,7 +110,7 @@ https://lp.contactapaisement-mental.fr/tonguide?utm_source=pinterest&utm_medium=
 7. https://www.pinterest.com/pin/600175087886071865/
 8. https://www.pinterest.com/pin/600175087886867911/
 9. https://www.pinterest.com/pin/600175087885585019/
-10. https://www.pinterest.com/pin/600175087885922045/
+10. (retiré le 05/10 : ne pas modifier ce pin)
 11. https://www.pinterest.com/pin/600175087886257448/
 12. https://www.pinterest.com/pin/600175087884937437/
 13. https://www.pinterest.com/pin/600175087884496637/
@@ -118,7 +118,7 @@ https://lp.contactapaisement-mental.fr/tonguide?utm_source=pinterest&utm_medium=
 15. https://www.pinterest.com/pin/600175087886257379/
 16. https://www.pinterest.com/pin/600175087886575183/
 17. https://www.pinterest.com/pin/600175087886552068/
-18. https://www.pinterest.com/pin/600175087886050525/
+18. (retiré le 05/10 : ne pas modifier ce pin)
 19. https://www.pinterest.com/pin/600175087885585653/
 20. https://www.pinterest.com/pin/600175087884980450/
 21. https://www.pinterest.com/pin/600175087885606881/
