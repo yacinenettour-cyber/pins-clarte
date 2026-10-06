@@ -1074,5 +1074,14 @@
   "theme": "systemenerveux",
   "design": "prete",
   "pin_id": "600175087890009701"
+ },
+ {
+  "date": "2026-10-06T14:07+00:00",
+  "titre": "Plus tu retournes cette décision dans ta tête, moins elle devient claire",
+  "image": "images/pin-20261006-140731.jpg",
+  "fond": "fonds/gradient_blocagemental_3.jpg",
+  "theme": "blocagemental",
+  "design": "clair",
+  "pin_id": "600175087890011047"
  }
 ]
