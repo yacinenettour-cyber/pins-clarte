@@ -383,6 +383,19 @@ Demandé par l'utilisateur (« tout ce que tu peux faire ») après `analyse-seo
 - **Site** : code de vérification Pinterest récupéré (balise meta `p:domain_verify`) et transmis à l'utilisateur, qui doit l'ajouter dans l'en-tête de sa page systeme.io (impossible depuis la session).
 - Non fait : réduction du nombre de hashtags (gain incertain, règle n°5 inchangée).
 
+## 36. Plan clics sortants et enregistrements (07/10/2026)
+
+Objectif de l'utilisateur : **au moins 20 clics sortants par jour** et plus d'enregistrements. Point de départ (90 jours) : 49 clics sortants (~0,5/jour, ~2/jour depuis la reprise du pipeline).
+- **Constat** : les pins automatiques avec lien convertissent (0,58 % des impressions en clics sortants, jusqu'à 2-6 % sur certains) ; les anciens Idea Pins, même avec lien, presque pas (13 650 impressions → 1 clic). Le frein est le nombre d'impressions des pins avec lien. À 0,6 %, 20 clics/jour demandent ~3 400 impressions/jour sur ces pins (aujourd'hui ~200) ; à 1,5 %, ~1 300.
+- **Sources consultées** (bonnes pratiques Pinterest et créateurs) : maquette du « freebie » visible sur l'image, appel court et explicite, ne pas tout donner sur l'épingle, ne pas publier plusieurs fois par jour la même adresse, titres ≤ 50 caractères. Pinterest et Firecrawl ne permettent pas de lire les comptes concurrents directement (scraping refusé) ; recherche faite via les pages d'idées Pinterest France indexées.
+- **`pins.yml` (autorisé par l'utilisateur le 07/10)** :
+  1. pins avec lien : la pastille « GUIDE GRATUIT » devient une **carte guide** (couverture dessinée du guide, son vrai titre « Quand le cerveau refuse de dormir », « routine anti-rumination + 30 jours d'exercices », « lien dans l'épingle ») ;
+  2. pins sans lien : pastille **« À GARDER · enregistre l'épingle »** (les enregistrements font circuler les pins) ;
+  3. **`utm_content` propre à chaque pin** (titre en minuscules sans accents) : plus jamais ~7 épingles par jour vers exactement la même adresse.
+  Rendu des 286 pins à venir × 2 visuels (572) : 0 sans photo, 0 chevauchement, rien sous la carte ; un pin (« Stress des parents ») a eu ses étapes raccourcies pour garder sa photo.
+- **Site** : la balise `p:domain_verify` est déjà sur la page ; l'API répond que la vérification est en cours (code 75).
+- **2e guide gratuit** (choix de l'utilisateur : cortisol & stress) pour donner un lien aux thèmes énergie / alimentation / stress : contenu rédigé par Claude, page systeme.io à créer par l'utilisateur ; une fois l'adresse connue, l'ajouter au pipeline (thèmes concernés retirés de `THEMES_SANS_LIEN` avec leur propre lien).
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.

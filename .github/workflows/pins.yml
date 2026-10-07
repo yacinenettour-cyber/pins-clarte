@@ -38,7 +38,7 @@ jobs:
           git config user.name "robot-pins"
           git config user.email "robot-pins@users.noreply.github.com"
           python - <<'EOF'
-          import os, json, random, re, time, datetime, subprocess, sys, base64, io
+          import os, json, random, re, time, datetime, subprocess, sys, base64, io, unicodedata
           import requests
           from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageStat
 
@@ -179,16 +179,59 @@ jobs:
 
           NUIT = (12, 18, 36)
           TEXTE_BANDEAU = "GUIDE GRATUIT · lien dans l'épingle"
+          # Pins sans lien (07/10/2026) : invitation à enregistrer, l'enregistrement étant ce
+          # qui fait circuler un pin sur Pinterest.
+          TEXTE_GARDER = "À GARDER · enregistre l'épingle"
+          # Carte « guide » des pins avec lien (07/10/2026) : maquette du guide + son vrai titre et
+          # son vrai contenu, pour montrer qu'il y a quelque chose à recevoir derrière le lien.
+          GUIDE_LIGNES = ("GUIDE GRATUIT · lien dans l'épingle", "« Quand le cerveau refuse de dormir » :",
+                          "routine anti-rumination + 30 jours d'exercices")
+          HAUT_CARTE_GUIDE = 112
 
 
-          def dessiner_bandeau_guide(d, L, y, fond_couleur, texte_couleur, police_grasse):
-              # Appel visible sur l'image des pins qui mènent à la page de capture (29/09/2026).
+          def dessiner_bandeau_guide(d, L, y, fond_couleur, texte_couleur, police_grasse, texte=TEXTE_BANDEAU):
+              # Pastille d'appel sur l'image (29/09/2026) ; depuis le 07/10, sert aux pins sans lien
+              # (TEXTE_GARDER), les pins avec lien ayant la carte guide.
               police = charger_police(police_grasse, 30)
-              w = d.textlength(TEXTE_BANDEAU, font=police)
+              w = d.textlength(texte, font=police)
               x0 = (L - w) / 2 - 30
               d.rounded_rectangle([x0, y, x0 + w + 60, y + 54], radius=27, fill=fond_couleur)
-              d.text((x0 + 30, y + 10), TEXTE_BANDEAU, font=police, fill=texte_couleur)
+              d.text((x0 + 30, y + 10), texte, font=police, fill=texte_couleur)
               return y + 54
+
+
+          def dessiner_carte_guide(img, y, fond_carte, texte_couleur, police_grasse, police_normale, marge=70):
+              # Carte en bas de l'image : couverture du guide dessinée (nuit, lune, lignes de texte),
+              # légèrement inclinée avec ombre, et trois lignes qui disent ce qu'on reçoit.
+              L, h = img.width, HAUT_CARTE_GUIDE
+              d = ImageDraw.Draw(img)
+              d.rounded_rectangle([marge, y, L - marge, y + h], radius=28, fill=fond_carte)
+              cw, ch = 72, 96
+              couv = Image.new("RGBA", (cw + 16, ch + 16), (0, 0, 0, 0))
+              dc = ImageDraw.Draw(couv)
+              dc.rounded_rectangle([10, 12, cw + 10, ch + 12], radius=6, fill=(0, 0, 0, 90))
+              dc.rounded_rectangle([4, 4, cw + 4, ch + 4], radius=6, fill=(18, 26, 52, 255), outline=(236, 196, 120, 255), width=3)
+              dc.ellipse([cw - 30, 12, cw - 8, 34], fill=(236, 196, 120, 255))
+              dc.ellipse([cw - 25, 8, cw - 3, 30], fill=(18, 26, 52, 255))
+              for i, lg in enumerate((0.72, 0.55, 0.64)):
+                  yy = 50 + i * 13
+                  dc.rounded_rectangle([14, yy, 14 + int((cw - 20) * lg), yy + 6], radius=3, fill=(232, 235, 245, 255))
+              couv = couv.rotate(6, resample=Image.BICUBIC, expand=True)
+              img.paste(couv, (marge + 20, int(y + (h - couv.height) / 2)), couv)
+              x = marge + 20 + couv.width + 18
+              largeur = L - marge - 22 - x
+              tailles = [28, 24, 24]
+              while True:
+                  polices = [charger_police(police_grasse, tailles[0])] + [charger_police(police_normale, t) for t in tailles[1:]]
+                  if all(d.textlength(t, font=p) <= largeur for t, p in zip(GUIDE_LIGNES, polices)) or tailles[0] <= 20:
+                      break
+                  tailles = [t - 1 for t in tailles]
+              hauteurs = [int(t * 1.25) for t in tailles]
+              yt = y + (h - sum(hauteurs)) / 2 - 2
+              for t, p, hl in zip(GUIDE_LIGNES, polices, hauteurs):
+                  d.text((x, yt), t, font=p, fill=texte_couleur)
+                  yt += hl
+              return y + h
 
 
           def _photo_haut_sombre(img, fond, h_photo, fondu=180):
@@ -218,7 +261,7 @@ jobs:
                       break
                   taille -= 6
               bloc = hauteur_ligne * len(lignes)
-              haut_texte = (1215 if avec_lien else 1285) - bloc
+              haut_texte = (1153 if avec_lien else 1215) - bloc
               h_photo = haut_texte - 60 if fond else 0
               if h_photo >= 300:
                   _photo_haut_sombre(img, fond, h_photo)
@@ -237,15 +280,17 @@ jobs:
                   d.text((x, y), ligne, font=police, fill=(255, 255, 255))
                   y += hauteur_ligne
               d.line([(L / 2 - 70, y + 34), (L / 2 + 70, y + 34)], fill=(236, 230, 205), width=5)
-              bandeau_haut = H - 165 if avec_lien else None
+              bandeau_haut = H - 222 if avec_lien else H - 165
               if avec_lien:
-                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse)
+                  dessiner_carte_guide(img, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, police_normale)
+              else:
+                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, TEXTE_GARDER)
               police_pied = charger_police(police_normale, 34)
               w = d.textlength(MARQUE, font=police_pied)
               d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
               img.save(chemin_sortie, "JPEG", quality=88, optimize=True, progressive=True)
               return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 39,
-                      "pied_haut": bandeau_haut or H - 92}
+                      "pied_haut": bandeau_haut}
 
 
           STYLES_MARQUEUR = ["numero", "coche", "fleche", "puce"]
@@ -296,7 +341,7 @@ jobs:
               x_num_centre = marge + rayon
               x_texte = marge + 2 * rayon + 22
               espace_entre_points, espace_titre_points = 22, 46
-              bas_contenu, haut_min = (1225 if avec_lien else 1295), 290
+              bas_contenu, haut_min = (1163 if avec_lien else 1225), 290
 
               # Réduit titre puis points jusqu'à ce que tout tienne au-dessus du pied de page.
               for taille_titre, taille_point in [(78, 42), (70, 40), (64, 38), (58, 36), (54, 34), (50, 32), (48, 30)]:
@@ -340,15 +385,17 @@ jobs:
                   y += espace_entre_points
 
               d.line([(L / 2 - 70, y + 10), (L / 2 + 70, y + 10)], fill=(236, 230, 205), width=5)
-              bandeau_haut = H - 165 if avec_lien else None
+              bandeau_haut = H - 222 if avec_lien else H - 165
               if avec_lien:
-                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse)
+                  dessiner_carte_guide(img, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, police_normale)
+              else:
+                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, TEXTE_GARDER)
               police_pied = charger_police(police_normale, 34)
               w = d.textlength(MARQUE, font=police_pied)
               d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
               return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 15,
-                      "pied_haut": bandeau_haut or H - 92}
+                      "pied_haut": bandeau_haut}
 
 
           def git(*args):
@@ -457,7 +504,7 @@ jobs:
               style = "numero" if re.search(r"\d", titre) else "coche"
               police_num = charger_police(police_grasse, 34)
               # Photo d'au moins 300 px de haut (220 avant le 30/09/2026 : bande trop fine, visage coupé)
-              r, bas, min_photo = 30, H - (200 if avec_lien else 120), 300
+              r, bas, min_photo = 30, H - (228 if avec_lien else 200), 300
 
               def haut_titre(taille_titre):
                   # Hauteur occupée par l'étiquette et le titre, mesurée sur une image de brouillon.
@@ -508,12 +555,14 @@ jobs:
               if h_photo:
                   _photo_arrondie(img, fond, marge, bas - h_photo, L - marge, bas)
               if avec_lien:
-                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse)
+                  dessiner_carte_guide(img, H - 210, accent, (255, 255, 255), police_grasse, police_normale)
+              else:
+                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse, TEXTE_GARDER)
               _pied(d, L, H, police_normale)
               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
               return {"texte_haut": 70, "texte_bas": y - espace + 6, "cartes_haut": haut_cartes,
                       "photo_haut": bas - h_photo if h_photo else None, "photo_bas": bas if h_photo else None,
-                      "pied_haut": H - 160 if avec_lien else H - 78,
+                      "pied_haut": H - 210 if avec_lien else H - 160,
                       "taille_titre": taille_titre, "taille_texte": taille_pt}
 
 
@@ -522,16 +571,18 @@ jobs:
               img = Image.new("RGB", (L, H), CREME)
               d = ImageDraw.Draw(img)
               y, accent = _etiquette_et_titre(d, theme, texte, police_grasse, marge, L - 2 * marge, (92, 56), 5)
-              bas = H - (200 if avec_lien else 120)
+              bas = H - (228 if avec_lien else 200)
               photo = bool(fond) and bas - (y + 50) >= 300
               if photo:
                   _photo_arrondie(img, fond, marge, y + 50, L - marge, bas)
               if avec_lien:
-                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse)
+                  dessiner_carte_guide(img, H - 210, accent, (255, 255, 255), police_grasse, police_normale)
+              else:
+                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse, TEXTE_GARDER)
               _pied(d, L, H, police_normale)
               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
               return {"texte_haut": 70, "texte_bas": y, "photo_haut": y + 50 if photo else None,
-                      "photo_bas": bas if photo else None, "pied_haut": H - 160 if avec_lien else H - 78}
+                      "photo_bas": bas if photo else None, "pied_haut": H - 210 if avec_lien else H - 160}
 
 
           # Expressions réellement recherchées sur Pinterest France (Pinterest Trends, 29/09/2026).
@@ -756,7 +807,10 @@ jobs:
           lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
           # Suivi des inscrits venus de Pinterest dans systeme.io (URL source du contact), par thème.
           if lien and "utm_source=" not in lien:
-              lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=organic&utm_campaign={theme}"
+              # utm_content propre à chaque pin (07/10/2026) : chaque épingle pointe vers une adresse
+              # distincte au lieu de ~7 épingles par jour vers exactement la même.
+              slug = "-".join(re.findall(r"[a-z0-9]+", unicodedata.normalize("NFD", pin["titre"].lower()).encode("ascii", "ignore").decode()))[:60]
+              lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=organic&utm_campaign={theme}&utm_content={slug}"
 
           # Publication directe via l'API Composio (comme videos.yml) : permet le texte
           # alternatif et la confirmation réelle du pin avant l'inscription à l'historique.
