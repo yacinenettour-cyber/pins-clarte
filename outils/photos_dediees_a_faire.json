@@ -4,132 +4,132 @@
  "prefixe_prompt": "Realistic editorial lifestyle photo, vertical 2:3, soft natural light, calm warm atmosphere, shallow depth of field, professional quality, no text, no logo, no watermark. ",
  "photos": [
   {
-   "titre": "Chocolat noir et stress : ce qu'un carré peut (et ne peut pas) faire",
+   "titre": "Chocolat noir et stress : ce qu'en attendre vraiment",
    "fichier": "dedie-chocolat-noir.jpg",
    "prompt": "A few squares of dark chocolate on a small ceramic plate on a wooden table, a cozy knitted sleeve in the background."
   },
   {
-   "titre": "Thé vert et L-théanine : le calme sans somnolence pour les journées tendues",
+   "titre": "Thé vert et stress : le calme sans somnolence",
    "fichier": "dedie-the-vert.jpg",
    "prompt": "A glass cup of green tea with loose tea leaves beside it on a desk near a window, morning light."
   },
   {
-   "titre": "Vitamine C et stress : 4 aliments à mettre dans l'assiette les semaines tendues",
+   "titre": "Stress : 4 aliments riches en vitamine C",
    "fichier": "dedie-vitamine-c.jpg",
    "prompt": "Sliced kiwis, clementines, red pepper sticks and fresh parsley arranged on a light kitchen counter."
   },
   {
-   "titre": "Safran, curcuma, cannelle : 3 épices souvent citées contre le stress",
+   "titre": "Épices et stress : safran, curcuma et cannelle",
    "fichier": "dedie-epices.jpg",
    "prompt": "Small bowls of saffron threads, turmeric powder and cinnamon sticks on a rustic wooden board."
   },
   {
-   "titre": "Saumon, châtaignes, clémentines : 3 aliments des fêtes qui soutiennent ton système nerveux",
+   "titre": "Saumon, châtaignes, clémentines : 3 alliés des fêtes",
    "fichier": "dedie-aliments-fetes.jpg",
    "prompt": "A festive winter table with a plate of salmon, roasted chestnuts and clementines, warm fairy lights blurred behind."
   },
   {
-   "titre": "Après les repas de fêtes : 3 repas simples pour apaiser le corps et le mental",
+   "titre": "Après les repas de fêtes : 3 repas simples et apaisants",
    "fichier": "dedie-soupe-legumes.jpg",
    "prompt": "A steaming bowl of homemade vegetable soup on a wooden table, winter afternoon light, a spoon and a linen napkin."
   },
   {
-   "titre": "Bouchons d'oreilles : 3 repères pour bien les choisir et dormir sans les sentir",
+   "titre": "Bouchons d'oreilles : 3 repères pour bien les choisir",
    "fichier": "dedie-bouchons-oreilles.jpg",
    "prompt": "A pair of soft foam earplugs on a bedside table next to a dim warm lamp, cozy bed blurred behind, evening."
   },
   {
-   "titre": "Pieds glacés au lit : pourquoi des chaussettes aident à t'endormir plus vite",
+   "titre": "Pieds froids au lit : pourquoi les chaussettes aident",
    "fichier": "dedie-chaussettes-lit.jpg",
    "prompt": "Feet in thick wool socks resting on a cozy duvet in a bedroom at night, warm bedside lamp."
   },
   {
-   "titre": "Ronflements du partenaire : 4 solutions pour arrêter de guetter chaque bruit la nuit",
+   "titre": "Ronflements du partenaire : 4 solutions pour dormir",
    "fichier": "dedie-ronflements.jpg",
    "prompt": "A tired woman lying awake in bed at night next to a sleeping partner, dim blue night light, she stares at the ceiling."
   },
   {
-   "titre": "Réveillé par bébé : 3 gestes pour te rendormir vite après la tétée ou le biberon",
+   "titre": "Réveils de bébé : 3 gestes pour retrouver le sommeil",
    "fichier": "dedie-bebe-nuit.jpg",
    "prompt": "A parent gently holding a baby in a dark nursery lit only by a soft warm night light, peaceful."
   },
   {
-   "titre": "Somnoler devant la télé puis ne plus dormir au lit : comment casser ce schéma",
+   "titre": "Endormi sur le canapé, éveillé au lit : casser le cycle",
    "fichier": "dedie-canape-tele.jpg",
    "prompt": "An adult dozing on a sofa under a blanket in a dark living room, lit by the glow of a television."
   },
   {
-   "titre": "Pluie, vent, orage la nuit : 3 façons de ne plus guetter chaque bruit",
+   "titre": "Nuits de tempête : 3 façons de dormir malgré le bruit",
    "fichier": "dedie-pluie-nuit.jpg",
    "prompt": "A bedroom window at night with rain drops streaming down the glass, a cozy bed and dim lamp in the foreground."
   },
   {
-   "titre": "Caresser un chat ou un chien : ce que 10 minutes font à ton système nerveux",
+   "titre": "Caresser ton chat ou ton chien : 10 minutes apaisantes",
    "fichier": "dedie-caresser-chat.jpg",
    "prompt": "A hand gently stroking a relaxed sleeping cat on a soft blanket on a sofa, warm light."
   },
   {
-   "titre": "Tricot, puzzle, coloriage : 3 raisons pour lesquelles les gestes répétitifs calment",
+   "titre": "Stress : 3 raisons pour lesquelles le tricot apaise",
    "fichier": "dedie-tricot.jpg",
    "prompt": "Close-up of hands knitting with soft wool yarn, a cup of tea nearby, cozy evening light."
   },
   {
-   "titre": "Jardiner 20 minutes : ce que les mains dans la terre changent à ton stress",
+   "titre": "Stress : pourquoi jardiner 20 minutes te fait du bien",
    "fichier": "dedie-jardiner.jpg",
    "prompt": "Hands repotting a small green plant with soil on a sunny balcony table, terracotta pots."
   },
   {
-   "titre": "Bain de forêt : 3 effets de 20 minutes sous les arbres sur ton stress",
+   "titre": "Bain de forêt : 3 effets de 20 minutes sur ton stress",
    "fichier": "dedie-bain-foret.jpg",
    "prompt": "A woman walking slowly alone on a path through a tall autumn forest, golden leaves, soft sunlight through trees."
   },
   {
-   "titre": "Vaisselle en pleine conscience : transformer une corvée du soir en pause anti-stress",
+   "titre": "Vaisselle en pleine conscience : ta pause du soir",
    "fichier": "dedie-vaisselle.jpg",
    "prompt": "Close-up of hands washing a ceramic bowl in warm soapy water in a kitchen sink, evening warm light."
   },
   {
-   "titre": "Jambes au mur : 5 minutes pour faire redescendre la journée en rentrant",
+   "titre": "Système nerveux : 5 minutes jambes au mur en rentrant",
    "fichier": "dedie-jambes-au-mur.jpg",
    "prompt": "A woman in comfortable clothes lying on a rug with her legs resting straight up against a wall, arms open, eyes closed, calm living room."
   },
   {
-   "titre": "Somnolence au volant : 3 signes qu'il faut t'arrêter tout de suite",
+   "titre": "Fatigue au volant : 3 signes qu'il faut t'arrêter",
    "fichier": "dedie-volant-fatigue.jpg",
    "prompt": "A tired driver rubbing their eyes behind the wheel of a car on a highway at dusk."
   },
   {
-   "titre": "Courses de Noël : 3 façons d'acheter les cadeaux sans y laisser tes nerfs",
+   "titre": "Courses de Noël : 3 façons de préserver tes nerfs",
    "fichier": "dedie-courses-noel.jpg",
    "prompt": "A city shopping street at dusk with Christmas lights, a woman holding shopping bags taking a calm breath."
   },
   {
-   "titre": "Enfants surexcités avant Noël : 3 rituels pour un coucher plus calme pour toute la famille",
+   "titre": "Avant Noël : 3 rituels du coucher pour tes enfants",
    "fichier": "dedie-coucher-enfant-noel.jpg",
    "prompt": "A parent reading a storybook to a child in bed, soft fairy lights and a small Christmas decoration in the bedroom."
   },
   {
-   "titre": "Long trajet pour les fêtes : 3 astuces pour dormir un peu en train ou en covoiturage",
+   "titre": "Trajet des fêtes : 3 astuces pour dormir en route",
    "fichier": "dedie-sieste-train.jpg",
    "prompt": "A person sleeping peacefully in a train seat with a neck pillow and a scarf, winter landscape through the window."
   },
   {
-   "titre": "Épaules en feu après des heures en cuisine pour le repas de fête : 3 étirements",
+   "titre": "Cuisine des fêtes : 3 étirements pour tes épaules",
    "fichier": "dedie-cuisine-fetes.jpg",
    "prompt": "A woman in a festive kitchen pausing to stretch her shoulders, pots and holiday dishes around her."
   },
   {
-   "titre": "Repas de famille tendu : 3 gestes discrets pour garder ton calme à table",
+   "titre": "Repas de famille tendu : 3 gestes pour garder ton calme",
    "fichier": "dedie-repas-famille.jpg",
    "prompt": "A festive family dinner table seen from one guest's seat, candles and plates, a woman discreetly taking a deep breath."
   },
   {
-   "titre": "Charge mentale de Noël : 4 tâches à partager avant le 15 décembre",
+   "titre": "Charge mentale de Noël : 4 tâches à partager tôt",
    "fichier": "dedie-charge-noel.jpg",
    "prompt": "A woman at a table covered with gift lists, wrapping paper and a laptop, looking overwhelmed, Christmas tree blurred behind."
   },
   {
-   "titre": "Body doubling : travailler à côté de quelqu'un pour enfin t'y mettre",
+   "titre": "Body doubling : l'astuce pour enfin t'y mettre",
    "fichier": "dedie-body-doubling.jpg",
    "prompt": "Two friends working side by side on laptops at a cafe table, focused, coffee cups, daylight."
   }

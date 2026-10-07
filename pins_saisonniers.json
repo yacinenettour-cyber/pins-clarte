@@ -3,7 +3,7 @@
  "consigne": "Insérer ces pins en tête de pins.json début décembre (sujets de janvier : trop tôt avant). Lancer ensuite outils/verifier_banque.py.",
  "pins": [
   {
-   "titre": "1er janvier : 3 gestes pour récupérer après le réveillon sans décaler toute ta semaine",
+   "titre": "Sommeil après le réveillon : 3 gestes pour récupérer",
    "texte_image": "Après le réveillon : 3 gestes pour récupérer",
    "points_image": [
     "Te lever avant midi",
@@ -14,7 +14,7 @@
    "theme": "sommeil"
   },
   {
-   "titre": "Rentrée de janvier : 3 gestes la semaine d'avant pour recaler ton sommeil",
+   "titre": "Rentrée de janvier : recale ton sommeil en 3 gestes",
    "texte_image": "Rentrée de janvier : recaler ton sommeil",
    "points_image": [
     "Avancer le lever de 15 min par jour",
@@ -25,7 +25,7 @@
    "theme": "sommeil"
   },
   {
-   "titre": "Blues de janvier après les fêtes : 3 signes et 3 gestes pour la première semaine",
+   "titre": "Blues de janvier : 3 signes et 3 gestes après les fêtes",
    "texte_image": "Blues d'après-fêtes : 3 gestes",
    "points_image": [
     "Prévoir un petit plaisir chaque jour",
@@ -36,7 +36,7 @@
    "theme": "systemenerveux"
   },
   {
-   "titre": "Résolutions du Nouvel An : pourquoi un seul mot pour l'année marche mieux qu'une liste",
+   "titre": "Résolutions du Nouvel An : un seul mot pour l'année",
    "texte_image": "Un mot pour l'année plutôt que 10 résolutions",
    "points_image": [
     "Une liste longue bloque dès février",
@@ -47,7 +47,7 @@
    "theme": "blocagemental"
   },
   {
-   "titre": "Régime en janvier : pourquoi la restriction après les fêtes augmente le stress",
+   "titre": "Stress et régime de janvier : le piège des privations",
    "texte_image": "Restriction en janvier : 3 raisons d'éviter",
    "points_image": [
     "Se priver entretient le stress",
