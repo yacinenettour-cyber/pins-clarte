@@ -325,7 +325,7 @@ Bilan vérifié via Composio (30 jours au 04/10) : 37 583 impressions, 298 enreg
 
 **Images** : 4 photos Pexels présentes deux fois dans `fonds/` sous deux noms (fichier identique) → une copie retirée (`archives/fonds-doublons/`) ; les 24 photos des kits Idea Pins déplacées dans `kits_idea_pins/photos/` pour que le pipeline ne les réutilise jamais ; contrôle par empreinte visuelle : 0 photo en double. **Stock** : ~15 jours de pins (10/jour) et 12 jours de vidéos → recharge à prévoir avant le 20/10, avec ce même contrôle (titres en ligne + revue par sujet).
 
-**En ligne (déjà publiés)** : 4 vrais doublons (même titre, souvent même image) — voir réponse à l'utilisateur ; suppression uniquement avec son accord.
+**En ligne (déjà publiés)** : 5 copies supprimées le 07/10 avec l'accord de l'utilisateur (`PINTEREST_DELETE_PIN`, puis `PINTEREST_GET_PIN` → « Pin not found » sur chacune ; les 5 originaux vérifiés toujours en ligne) : « 10 habitudes anti-âge… » (`600175087886842652`, 0 vue), « 3 pensées automatiques… » (`600175087889979444`, republié le 04/10 hors pipeline : une seule entrée dans `historique.json`), « Pourquoi le stress chronique vous épuise… » (`600175087888258695`, 178 vues), « 7 aliments… cortisol en 7 jours » (`600175087884850801`, 512 vues), « Arrêter de fumer grâce à ces 2 plantes ! » (`600175087889852536`, même image que « Conseils arrêt tabac »). Gardé à chaque fois : la version la plus vue. Les anciens pins aux titres proches mais aux images différentes (ex. « 5 erreurs qui ruinent / détruisent / sabotent ton sommeil ») restent en ligne : ils rapportent des vues.
 
 ## Point ouvert à ce jour
 
