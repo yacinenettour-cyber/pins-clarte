@@ -42,7 +42,7 @@ KITS = [
     },
     {
         "dossier": "5-tensions-de-stress-5-minutes", "theme": "somatisation", "lien": True,
-        "tableau": "Somatisation & signaux du corps",
+        "tableau": "Stress et corps : tensions, douleurs & signaux",
         "titre": "Mâchoire, épaules, ventre : 5 tensions de stress à relâcher en 5 minutes",
         "couverture": ("5 tensions de stress à relâcher en 5 minutes", "Mâchoire, épaules, nuque, ventre, mains", "fond-194.jpg"),
         "etapes": [

@@ -1,5 +1,13 @@
 # Les 9 tableaux (boards) Pinterest
 
+> **Noms publics depuis le 07/10/2026** (renommage SEO, voir `analyse-seo-2026-10-07.md` ; le pipeline utilise les ID, rien n'a changé côté code) :
+> - `600175156532027560` (somatisation) → « Stress et corps : tensions, douleurs & signaux »
+> - `600175156532029245` (blocage mental) → « Gestion des émotions & blocages mentaux »
+> - `600175156532003400` (postures) → « Stress au travail : postures & pauses »
+> - `600175156531997290` (fatigue mentale) → « Charge mentale & burn-out : fatigue mentale »
+> - `600175156532025293` (hors pipeline) → « Cortisol & fatigue : causes biologiques »
+> - Descriptions réécrites (mot-clé recherché en tête) : ces 5 tableaux + Sommeil, Système nerveux, Procrastination.
+
 Chaque thème du compte a son propre tableau Pinterest, identifié par un ID fixe utilisé par le pipeline (`TABLEAUX` dans `.github/workflows/pins.yml` et `videos.yml`). Le tableau cible est déterminé automatiquement par le **thème détecté à partir du premier hashtag** de la description (voir `01-architecture-technique.md`).
 
 **Légende "Lien formation"** : ✅ = le pin redirige vers la page de capture de la formation (thème couvert par son contenu). ❌ = pas de lien de destination (thème hors périmètre de la formation, voir `03-regles-editoriales.md`).

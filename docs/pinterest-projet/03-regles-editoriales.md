@@ -62,6 +62,8 @@ Un pin alimentation dont le bénéfice mis en avant est l'endormissement ou l'é
 - **Maximum 100 caractères** (le script tronque strictement au-delà).
 - **Continuer à surveiller Pinterest Analytics** (accès disponible depuis le 28/09/2026 via le connecteur Composio, voir `01-architecture-technique.md`) pour affiner cette règle avec plus de données au fil du temps plutôt que de se fier à un échantillon de 8 pins indéfiniment.
 
+**Mise à jour du 07/10/2026 (analyse SEO, `analyse-seo-2026-10-07.md`)** : les meilleurs pins du compte ont des titres d'environ **44 caractères** (médiane), les pins automatiques en avaient ~66-73, alors que Pinterest n'affiche qu'environ 40 caractères dans le fil. **Nouveaux titres : 35 à 55 caractères, mot-clé recherché dans les ~25 premiers caractères**, chiffre conservé quand le contenu est une liste. Les 292 titres non publiés ont été raccourcis selon cette règle le 07/10 (texte de l'image et description inchangés).
+
 ## 7. Standards de description (longueur, SEO, structure)
 
 - **Corps du texte (hors hashtags) visé entre 380 et 450 caractères.** Nettement plus riche qu'une description minimaliste, avec des détails concrets et actionnables plutôt que du remplissage. Toujours vérifier avec `len()` en Python.
@@ -83,6 +85,8 @@ Source : `PINTEREST_GET_KEYWORD_TRENDS` (région FR, via Composio) — données 
 **Formule de titre des pins populaires de la niche** (observée sur les pins indexés : « Mieux dormir : 17 choses à essayer dès ce soir », « 8 habitudes pour calmer son système nerveux », « Cohérence cardiaque : … ») : **mot-clé recherché en tête**, deux-points, puis promesse concrète (chiffre, durée courte, moment : « dès ce soir », « en 2 minutes »). Le 29/09/2026, 122 titres non publiés sans mot-clé ont été réécrits selon cette formule (le texte sur l'image n'a pas changé), et 324 hashtags à forte demande ajoutés (premier hashtag jamais modifié).
 
 **Descriptions de tableaux** : réécrites le 29/09/2026 avec ces mots-clés (anciennes versions : `archives/descriptions-tableaux-avant-2026-09-29.json`). Le texte alternatif des pins reprend aussi ces expressions (`SUJETS_ALT` dans `pins.yml`).
+
+**Mise à jour du 07/10/2026** (mêmes données, sur un an / sur un mois) : cortisol **+300 %** / +4 % (« high cortisol » et « low cortisol » sont aussi recherchés en anglais en France), système nerveux +30 % / **+100 %**, gestion des émotions −50 % / **+90 %**, nerf vague −40 % / +80 %, burn out −4 % / +50 %, charge mentale +20 % / +40 %, énergie +10 % / +50 %, routine du soir +30 %, fatigue mentale **−40 %**, motivation −20 %. Absents des classements : somatisation, insomnie, cohérence cardiaque, magnésium, anxiété, angoisse, mieux dormir → jamais comme mot-clé principal d'un titre ou d'un nom de tableau. **Priorités des prochaines recharges** : cortisol, système nerveux / nerf vague, gestion des émotions, charge mentale / burn-out, routine du soir.
 
 ## 8. Variété des CTA (appels à l'action)
 
