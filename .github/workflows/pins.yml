@@ -637,11 +637,12 @@ jobs:
           THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
 
           # 2e guide gratuit « Le plan anti-cortisol en 7 jours » (préparé le 07/10/2026, voir
-          # guides/page-systeme-io-cortisol.md). INACTIF tant que LIEN_GUIDE_CORTISOL est vide :
-          # rien ne change alors. Une fois l'adresse de la page renseignée, les thèmes ci-dessous
-          # et les pins marqués "guide": "cortisol" y mènent (carte et description dédiées), et
-          # les pins marqués "guide": "aucun" restent sans lien.
-          LIEN_GUIDE_CORTISOL = ""
+          # guides/page-systeme-io-cortisol.md). Page de capture créée le 07/10/2026 (tunnel
+          # systeme.io 7680510, PDF téléchargé sur la page de remerciement) et activée avec
+          # l'accord de l'utilisateur. Les thèmes ci-dessous et les pins marqués "guide": "cortisol"
+          # y mènent (carte et description dédiées) ; les pins marqués "guide": "aucun" restent
+          # sans lien. Vider l'adresse pour désactiver. Ne pas changer l'adresse de la page.
+          LIEN_GUIDE_CORTISOL = "https://lp.contactapaisement-mental.fr/63d489c7"
           THEMES_GUIDE_CORTISOL = {"energie", "alimentation"}
           LIGNES_CARTE_CORTISOL = ("PLAN GRATUIT · lien dans l'épingle", "« Le plan anti-cortisol en 7 jours » :",
                                    "7 gestes simples + tableau de suivi")

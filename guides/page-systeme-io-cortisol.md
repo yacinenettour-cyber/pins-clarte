@@ -59,9 +59,9 @@ Coche ta journée dans le tableau de la page 10, et garde les 3 gestes qui te fo
 À très vite,
 Clarté Mentale
 
-## Pour le pipeline (préparé le 07/10/2026)
+## Pour le pipeline (actif depuis le 07/10/2026)
 
-- `pins.yml` : remplir `LIEN_GUIDE_CORTISOL = "https://lp.contactapaisement-mental.fr/63d489c7"`, puis pousser sur `main` (fichier de workflow : seulement avec l'accord explicite de l'utilisateur). Simulation du 07/10 avec cette adresse : 34 pins à venir vers le plan, 68 visuels avec la carte cortisol, 0 sans photo, 0 chevauchement, descriptions ≤ 495 caractères ; poids de rotation energie/alimentation passés à 1,0.
+- `pins.yml` : `LIEN_GUIDE_CORTISOL = "https://lp.contactapaisement-mental.fr/63d489c7"` (activé avec l'accord de l'utilisateur ; vider l'adresse pour désactiver). Simulation du 07/10 avec cette adresse : 34 pins à venir vers le plan, 68 visuels avec la carte cortisol, 0 sans photo, 0 chevauchement, descriptions ≤ 495 caractères ; poids de rotation energie/alimentation passés à 1,0.
 - Thèmes reliés : `energie` et `alimentation`, plus 4 pins cortisol d'autres thèmes ; 24 pins ont déjà leur fin de description « plan » (`description_guide_cortisol`), 5 pins hors sujet restent sans lien (`"guide": "aucun"`).
 - Carte sur l'image : « PLAN GRATUIT · lien dans l'épingle / « Le plan anti-cortisol en 7 jours » : / 7 gestes simples + tableau de suivi ». Si le titre de la page change, adapter `LIGNES_CARTE_CORTISOL`.
 - Les vidéos (`videos.yml`) ne sont pas encore reliées au plan.
