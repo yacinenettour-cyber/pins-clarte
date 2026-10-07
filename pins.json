@@ -1,5 +1,606 @@
 [
  {
+  "titre": "Heure d'hiver : 4 réglages pour que ton sommeil ne se dérègle pas",
+  "texte_image": "Heure d'hiver : 4 réglages pour bien dormir",
+  "points_image": [
+   "Décaler le coucher de 15 min les jours d'avant",
+   "Sortir à la lumière dès le matin",
+   "Garder l'heure du lever fixe",
+   "Dîner un peu plus tôt"
+  ],
+  "description": "Dans la nuit du 25 octobre, on gagne une heure, mais le corps met souvent quelques jours à suivre. Quatre réglages simples aident 👉 décaler le coucher de quinze minutes les soirs précédents 👉 chercher la lumière du jour dès le matin 👉 garder la même heure de lever, même le dimanche 👉 dîner un peu plus tôt. Si la tête tourne pendant ces nuits décalées, le guide gratuit propose une routine anti-rumination au lit. #sommeil #heuredhiver #lit #mieuxdormir #nuit #fatigue #automne #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Changement d'heure : 3 signes que ton corps n'a pas encore suivi",
+  "texte_image": "3 signes que ton corps vit encore à l'ancienne heure",
+  "points_image": [
+   "Tu te réveilles avant le réveil",
+   "Le sommeil arrive trop tôt le soir",
+   "Coup de mou en fin d'après-midi"
+  ],
+  "description": "Une heure de décalage paraît peu, pourtant l'horloge interne a besoin de plusieurs jours pour s'ajuster. Trois signes courants après le passage à l'heure d'hiver 👉 tu te réveilles avant ton réveil 👉 le sommeil tombe plus tôt que d'habitude le soir 👉 un coup de mou surprend en fin d'après-midi. C'est passager : de la lumière le matin et des horaires réguliers aident l'horloge à se recaler. #sommeil #changementdheure #heuredhiver #rythme #fatigue #mieuxdormir #automne #reveil",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Nuits plus longues en novembre : 4 habitudes pour mieux dormir quand il fait nuit tôt",
+  "texte_image": "4 habitudes pour bien dormir en novembre",
+  "points_image": [
+   "Prendre l'air en pleine journée",
+   "Allumer franchement le matin",
+   "Tamiser les lumières après le dîner",
+   "Garder un coucher régulier"
+  ],
+  "description": "En novembre, la nuit tombe tôt et l'envie d'aller au lit arrive parfois à 21h, ou au contraire le sommeil se décale. Quatre habitudes stabilisent les nuits 👉 sortir prendre l'air en pleine journée 👉 allumer franchement en te levant 👉 tamiser les lumières après le dîner 👉 garder une heure de coucher régulière. Pour les soirs où le mental tourne malgré la fatigue, le guide gratuit propose des exercices à faire au lit. #sommeil #novembre #hiver #mieuxdormir #lumiere #lit #fatigue #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Coucher repoussé pour profiter de ta soirée : 3 signes de la « revanche du soir »",
+  "texte_image": "La revanche du soir : 3 signes",
+  "points_image": [
+   "Tu veilles pour avoir enfin du temps à toi",
+   "Tu scrolles en sachant que tu le paieras",
+   "Tu es épuisé mais tu ne veux pas dormir"
+  ],
+  "description": "Après une journée sans une minute pour soi, on rallonge la soirée pour récupérer un peu de liberté, même épuisé. Trois signes de cette « revanche du soir » 👉 tu veilles pour avoir enfin du temps à toi 👉 tu continues à scroller en sachant que tu le paieras demain 👉 ton corps réclame le lit mais tu repousses. La solution passe souvent par un moment à soi plus tôt dans la journée, pas par plus de volonté. #sommeil #lit #coucher #fatigue #ecrans #mieuxdormir #routinedusoir #chargementale",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Réveillé par un cauchemar : 3 étapes pour retrouver ton calme et te rendormir",
+  "texte_image": "Après un cauchemar : 3 étapes pour te rendormir",
+  "points_image": [
+   "Nommer : « c'était un rêve, je suis dans mon lit »",
+   "Poser les pieds au sol, sentir le matelas",
+   "Expirer lentement, puis changer d'image"
+  ],
+  "description": "Un cauchemar laisse le cœur battant et le corps en alerte, comme si le danger était réel. Trois étapes aident à redescendre 👉 nommer à voix basse « c'était un rêve, je suis dans mon lit » 👉 sentir tes appuis : les pieds au sol, le poids du matelas 👉 expirer lentement, puis penser à une image apaisante avant de te recoucher. Si les mauvais rêves reviennent souvent, le guide gratuit propose une routine anti-rumination au lit. #sommeil #cauchemar #lit #anxiete #calme #mieuxdormir #stress #nuit",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Rêves stressants : 3 raisons pour lesquelles ils reviennent après une journée tendue",
+  "texte_image": "Rêves stressants : pourquoi ils reviennent",
+  "points_image": [
+   "Le cerveau trie les émotions de la journée",
+   "Le stress non déposé ressort la nuit",
+   "Un réveil en plein rêve les rend plus marquants"
+  ],
+  "description": "Tu rêves de retard, d'examen raté ou de dossier oublié dès que la semaine est chargée ? Trois raisons connues 👉 pendant le sommeil, le cerveau trie les émotions de la journée 👉 le stress qui n'a pas été déposé le soir ressort plus facilement 👉 les réveils au milieu d'un rêve le rendent plus marquant. Écrire ce qui t'a tendu avant de dormir aide. Le guide gratuit propose aussi une routine pour apaiser le mental du soir. #sommeil #reves #stress #nuit #mental #lit #ruminations #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Lire au lit : papier ou liseuse ? 3 repères pour t'endormir plus facilement",
+  "texte_image": "Lire au lit : 3 repères pour mieux t'endormir",
+  "points_image": [
+   "Préférer le papier ou une liseuse sans lumière bleue",
+   "Choisir une lecture calme, pas un thriller",
+   "Fermer le livre dès que les yeux piquent"
+  ],
+  "description": "Lire avant de dormir aide beaucoup de gens à décrocher, à condition de quelques repères 👉 le papier ou une liseuse à éclairage chaud fatiguent moins les yeux qu'un téléphone 👉 une lecture calme vaut mieux qu'un thriller qui maintient en alerte 👉 dès que les paupières piquent, on referme le livre, même au milieu d'une page. Vingt minutes suffisent souvent. Le guide gratuit propose des exercices pour lâcher prise au lit. #sommeil #lecture #nuit #mieuxdormir #ecrans #calme #lit #detente",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Couverture lestée : ce qu'elle peut (et ne peut pas) faire pour tes nuits",
+  "texte_image": "Couverture lestée : ce qu'elle peut faire",
+  "points_image": [
+   "Une pression douce qui rassure le corps",
+   "Utile si tu aimes être bien enveloppé",
+   "Pas une solution miracle à l'insomnie"
+  ],
+  "description": "La couverture lestée est partout, avec des promesses parfois exagérées. Ce qu'on peut en dire 👉 sa pression douce et répartie donne à beaucoup une sensation d'enveloppement rassurante 👉 elle convient surtout à ceux qui aiment dormir bien couverts 👉 elle ne remplace ni une routine du soir ni un suivi médical en cas d'insomnie durable. Choisis un poids raisonnable, environ un dixième du poids du corps, et teste avant d'acheter. #sommeil #lit #anxiete #soir #calme #nuit #detente #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Sommeil et chagrin : 4 gestes doux pour les nuits après une mauvaise nouvelle",
+  "texte_image": "Nuits difficiles après un choc : 4 gestes doux",
+  "points_image": [
+   "Ne pas rester seul avec ses pensées le soir",
+   "Une routine minimale, sans exigence",
+   "Une main sur le cœur, respirer lentement",
+   "Accepter des nuits imparfaites pour un temps"
+  ],
+  "description": "Après une mauvaise nouvelle, le sommeil se fragilise : la tête rejoue, le corps reste tendu. Quatre gestes doux pour ces nuits 👉 parler à quelqu'un dans la soirée plutôt que rester seul avec tes pensées 👉 garder une routine minimale, sans exigence 👉 poser une main sur le cœur et respirer lentement au lit 👉 accepter des nuits imparfaites pour un temps. Si les nuits restent difficiles des semaines, en parler à un médecin aide. #sommeil #chagrin #emotions #nuit #mieuxdormir #calme #lit #stress",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Partenaire couche-tard : 3 compromis pour que chacun dorme bien",
+  "texte_image": "Horaires décalés en couple : 3 compromis",
+  "points_image": [
+   "Une lumière douce et un masque pour celui qui dort",
+   "Préparer ses affaires hors de la chambre",
+   "Un moment calme ensemble avant le premier coucher"
+  ],
+  "description": "Quand l'un se couche à 22h et l'autre à minuit, les nuits peuvent vite devenir une source de tension. Trois compromis simples 👉 une petite lumière douce pour celui qui arrive et un masque pour celui qui dort 👉 préparer ses affaires hors de la chambre pour un coucher discret 👉 garder un moment calme ensemble avant le premier coucher. Si ta tête tourne en attendant le sommeil, le guide gratuit propose une routine anti-rumination. #sommeil #couple #coucher #soir #lit #nuit #calme #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Douche du soir : le bon moment pour qu'elle t'aide à t'endormir",
+  "texte_image": "Douche du soir : le bon timing",
+  "points_image": [
+   "Une à deux heures avant le coucher",
+   "Tiède à chaude, pas brûlante",
+   "La baisse de température qui suit aide le sommeil"
+  ],
+  "description": "Une douche peut aider à s'endormir, surtout si elle est bien placée dans la soirée 👉 une à deux heures avant le coucher plutôt que juste avant 👉 tiède à chaude, sans être brûlante 👉 c'est la baisse de température du corps qui suit qui envoie le signal du sommeil. Ajoute quelques respirations lentes sous l'eau pour en faire un vrai sas. Si les pensées reviennent une fois au lit, le guide gratuit propose des exercices pour les apaiser. #sommeil #nuit #douche #lit #detente #soir #calme #repos",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Gratitude : 3 lignes à écrire au lit pour finir la journée en douceur",
+  "texte_image": "3 lignes de gratitude avant de dormir",
+  "points_image": [
+   "Un moment agréable de la journée",
+   "Une personne qui t'a aidé",
+   "Une petite chose que tu as réussie"
+  ],
+  "description": "Le soir, le cerveau a tendance à rejouer ce qui n'a pas marché. Trois lignes suffisent pour rééquilibrer la balance 👉 un moment agréable de la journée, même minuscule 👉 une personne qui t'a aidé ou fait sourire 👉 une petite chose que tu as réussie. Écrites dans un carnet près du lit, elles orientent l'attention vers le calme plutôt que vers les soucis. Le guide gratuit propose d'autres exercices pour apaiser le mental au coucher. #sommeil #soir #journal #lit #mental #calme #nuit #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Chat ou chien sur le lit : 3 questions pour savoir s'il perturbe tes nuits",
+  "texte_image": "Animal sur le lit : 3 questions à te poser",
+  "points_image": [
+   "Te réveilles-tu quand il bouge ?",
+   "Te sens-tu reposé au réveil ?",
+   "Sa présence t'apaise-t-elle ?"
+  ],
+  "description": "Dormir avec son animal apaise certaines personnes et fragmente les nuits d'autres. Trois questions pour faire le point 👉 te réveilles-tu chaque fois qu'il bouge ou change de place 👉 te sens-tu reposé au réveil les nuits où il est là 👉 sa présence t'apaise-t-elle au moment de t'endormir. Si la réponse penche vers les réveils, un panier au pied du lit est un bon compromis. Le guide offert aide aussi pour les nuits agitées. #sommeil #animaux #chat #chien #nuit #mieuxdormir #lit #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Sport le soir : 3 règles pour qu'il ne t'empêche pas de dormir",
+  "texte_image": "Sport le soir : 3 règles pour bien dormir",
+  "points_image": [
+   "Finir au moins une heure avant le coucher",
+   "Garder l'intense pour plus tôt dans la journée",
+   "Terminer par 5 minutes d'étirements"
+  ],
+  "description": "Bouger aide à mieux dormir, mais une séance tardive peut garder le corps en éveil. Trois règles simples 👉 finir l'effort au moins une heure avant le coucher 👉 réserver les séances très intenses à plus tôt dans la journée 👉 terminer par cinq minutes d'étirements et de respiration lente. Une marche ou du yoga doux restent possibles plus tard. Si la tête reste active malgré un corps fatigué, le guide gratuit propose une routine au lit. #sommeil #sport #soir #calme #lit #nuit #detente #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Dormir chez quelqu'un d'autre : 3 astuces pour bien dormir hors de chez toi",
+  "texte_image": "Dormir ailleurs : 3 astuces pour bien dormir",
+  "points_image": [
+   "Emporter un objet familier (oreiller, tisane)",
+   "Garder ton rituel du soir, même raccourci",
+   "Des bouchons et un masque dans le sac"
+  ],
+  "description": "La première nuit dans un lieu inconnu, une partie du cerveau reste plus vigilante : on dort souvent moins bien. Trois astuces aident 👉 emporter un repère familier, ton oreiller ou ta tisane habituelle 👉 garder ton rituel du soir, même raccourci 👉 glisser des bouchons d'oreilles et un masque dans le sac. Le corps se sent plus vite en sécurité. Si les pensées tournent, le guide gratuit propose des exercices au lit. #sommeil #voyage #nuit #mieuxdormir #routinedusoir #calme #lit #bienetre",
+  "theme": "sommeil"
+ },
+ {
+  "titre": "Tremblements après un pic de stress : pourquoi ton corps se secoue (et pourquoi c'est normal)",
+  "texte_image": "Trembler après un stress : un réflexe normal",
+  "points_image": [
+   "L'adrénaline retombe d'un coup",
+   "Les muscles relâchent la tension accumulée",
+   "Laisser trembler, respirer, s'asseoir"
+  ],
+  "description": "Après une frayeur, une dispute ou une prise de parole, les mains ou les jambes se mettent parfois à trembler. Ce n'est pas un signe de faiblesse 👉 l'adrénaline retombe et le corps évacue l'énergie mobilisée 👉 les muscles relâchent la tension accumulée 👉 le mieux est de s'asseoir, de laisser passer et de respirer lentement. En quelques minutes, ça se calme. Le guide gratuit propose une routine pour le soir venu. #systemenerveux #stress #adrenaline #corps #calme #anxiete #zen #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Respirer trop vite sans t'en rendre compte : 3 signes de sur-respiration au quotidien",
+  "texte_image": "Sur-respiration : 3 signes discrets",
+  "points_image": [
+   "Soupirs et bâillements à répétition",
+   "Respiration haute, par la bouche",
+   "Vertiges légers ou fourmillements"
+  ],
+  "description": "Sous stress, beaucoup de gens respirent trop vite et trop haut, sans le remarquer. Trois signes discrets 👉 des soupirs et des bâillements à répétition 👉 une respiration haute, par la bouche, qui soulève surtout les épaules 👉 des vertiges légers ou des fourmillements. Le réflexe utile : ralentir et allonger l'expiration par le nez. Si les symptômes sont forts ou fréquents, parles-en à un médecin. #systemenerveux #respiration #stress #anxiete #calme #corps #souffle #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Bâiller exprès : le réflexe anti-stress que personne n'utilise",
+  "texte_image": "Bâiller exprès : un geste anti-stress",
+  "points_image": [
+   "Le bâillement étire la mâchoire et le visage",
+   "Il ralentit la respiration",
+   "Le provoquer 3 fois suffit"
+  ],
+  "description": "Le bâillement n'est pas seulement un signe de fatigue : provoqué volontairement, il détend 👉 il étire la mâchoire, le visage et la gorge, des zones qui se crispent sous stress 👉 il ralentit et approfondit la respiration 👉 trois bâillements provoqués d'affilée suffisent souvent à faire redescendre la tension. Discret, il se fait partout. Le guide gratuit propose d'autres exercices pour le coucher. #systemenerveux #baillement #stress #calme #detente #antistress #corps #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Stress au volant : 4 gestes pour arriver calme après un trajet tendu",
+  "texte_image": "Arriver calme après un trajet tendu",
+  "points_image": [
+   "Relâcher les mains sur le volant au feu rouge",
+   "Expirer longuement à chaque arrêt",
+   "Baisser les épaules et desserrer la mâchoire",
+   "Rester 1 minute dans la voiture avant de sortir"
+  ],
+  "description": "Embouteillages, retard, conducteurs pressés : on arrive souvent au travail ou à la maison déjà tendu. Quatre gestes simples 👉 relâcher les mains sur le volant à chaque feu rouge 👉 expirer longuement pendant les arrêts 👉 baisser les épaules et desserrer la mâchoire 👉 rester une minute dans la voiture garée avant de sortir. La tension ne passe pas d'un lieu à l'autre. Le guide gratuit aide à la déposer avant la nuit. #systemenerveux #stress #voiture #trajet #calme #zen #antistress #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Ancrage 5-4-3-2-1 : la technique des sens pour redescendre en une minute",
+  "texte_image": "Ancrage 5-4-3-2-1 : redescendre en 1 minute",
+  "points_image": [
+   "5 choses que tu vois",
+   "4 choses que tu touches",
+   "3 sons que tu entends",
+   "2 odeurs et 1 goût"
+  ],
+  "description": "Quand l'angoisse monte et que les pensées s'emballent, ramener l'attention dans les sens aide à redescendre 👉 nomme cinq choses que tu vois autour de toi 👉 quatre choses que tu peux toucher 👉 trois sons que tu entends 👉 deux odeurs puis un goût. Le cerveau occupé à observer quitte la boucle des pensées. La technique marche partout, même en public. Le guide gratuit en propose d'autres pour le lit. #systemenerveux #ancrage #anxiete #stress #calme #pleineconscience #sens #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Se sentir en sécurité : 3 signaux que ton corps attend pour se détendre",
+  "texte_image": "3 signaux de sécurité pour ton corps",
+  "points_image": [
+   "Un dos protégé : un mur, un dossier",
+   "Une lumière douce, pas agressive",
+   "Des sons calmes et réguliers"
+  ],
+  "description": "Le système nerveux scanne en permanence l'environnement pour savoir s'il peut se relâcher. Trois signaux l'aident 👉 un dos protégé : s'asseoir dos à un mur ou contre un dossier 👉 une lumière douce plutôt qu'un plafonnier agressif 👉 des sons calmes et réguliers, ou le silence. Aménager un coin de détente avec ces repères aide à se poser plus vite. Le guide gratuit propose une routine pour le coucher. #systemenerveux #securite #calme #stress #detente #maison #antistress #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Bouillotte, bain chaud : pourquoi la chaleur apaise le stress",
+  "texte_image": "Pourquoi la chaleur apaise le stress",
+  "points_image": [
+   "Elle détend les muscles crispés",
+   "Elle invite à respirer plus lentement",
+   "Elle rappelle une sensation de cocon"
+  ],
+  "description": "Une bouillotte sur le ventre ou un bain chaud, et les épaules descendent toutes seules. Ce n'est pas un hasard 👉 la chaleur détend les muscles crispés par le stress 👉 elle invite à respirer plus lentement 👉 elle rappelle une sensation de cocon, de confort et de sécurité. Le soir, dix minutes de chaleur douce préparent le corps au repos. Évite seulement l'eau trop chaude juste avant le lit. #systemenerveux #chaleur #stress #detente #bain #calme #routinedusoir #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Pleurer pour relâcher le stress : ce que les larmes font au système nerveux",
+  "texte_image": "Pleurer : une soupape pour le stress",
+  "points_image": [
+   "Les larmes accompagnent la fin d'une tension",
+   "La respiration ralentit ensuite",
+   "Beaucoup se sentent plus légers après"
+  ],
+  "description": "Pleurer est souvent vécu comme une faiblesse, alors que c'est aussi une façon de relâcher la pression 👉 les larmes arrivent souvent quand une tension retombe 👉 après une crise de larmes, la respiration ralentit et le corps se pose 👉 beaucoup de personnes se sentent plus légères ensuite. S'autoriser à pleurer dans un endroit sûr peut faire du bien. Si la tristesse dure, en parler à quelqu'un aide. #systemenerveux #emotions #pleurer #stress #liberation #calme #santementale #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Salle d'attente, file, retard : pourquoi attendre met ton corps en alerte",
+  "texte_image": "Attendre stresse ton corps : 3 gestes",
+  "points_image": [
+   "L'incertitude active l'alerte",
+   "Relâcher les épaules et les mains",
+   "Occuper l'attention : respirer en comptant"
+  ],
+  "description": "Médecin en retard, file qui n'avance pas, train bloqué : attendre sans savoir combien de temps est un vrai stress pour le corps 👉 l'incertitude garde le système nerveux en alerte 👉 relâcher volontairement les épaules et ouvrir les mains aide à redescendre 👉 occuper l'attention en respirant sur un compte lent évite de ruminer. L'attente devient une pause. Le soir, le guide gratuit aide à calmer le mental. #systemenerveux #attente #stress #patience #calme #respiration #anxiete #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Métro bondé, bruit, bousculade : le geste à faire quand tout te submerge",
+  "texte_image": "Transports bondés : le geste anti-surcharge",
+  "points_image": [
+   "Fixer un point stable",
+   "Poser les pieds bien à plat",
+   "Expirer longuement 3 fois"
+  ],
+  "description": "Bruit, chaleur, contact avec des inconnus : les transports bondés saturent vite le système nerveux. Un geste en trois temps aide à tenir 👉 fixer un point stable, une barre, une affiche, pour calmer le regard 👉 sentir les pieds bien à plat au sol 👉 expirer longuement trois fois par le nez. Un casque avec un son calme peut aussi réduire la surcharge. Le guide gratuit propose une routine pour décrocher le soir. #systemenerveux #transports #metro #stress #surcharge #calme #anxiete #bienetre",
+  "theme": "systemenerveux"
+ },
+ {
+  "titre": "Paupière qui tremble : quand le stress se voit au coin de l'œil",
+  "texte_image": "Paupière qui tremble : le signal du stress",
+  "points_image": [
+   "Fatigue et stress en sont les causes fréquentes",
+   "Les écrans et le café l'entretiennent",
+   "Repos et pauses visuelles la calment"
+  ],
+  "description": "Ce petit tic de la paupière qui revient les semaines chargées est très courant et le plus souvent sans gravité. Ce qu'il signale 👉 la fatigue et le stress en sont des causes fréquentes 👉 les écrans prolongés et le café l'entretiennent 👉 des nuits plus reposantes et des pauses pour les yeux le calment en quelques jours. S'il dure des semaines, consulte. Le guide gratuit aide à apaiser les soirs tendus. #somatisation #stress #paupiere #fatigue #corps #ecrans #signaux #bienetre",
+  "theme": "somatisation"
+ },
+ {
+  "titre": "Ongles rongés, peaux arrachées : ce que le stress fait faire à tes mains",
+  "texte_image": "Ce que le stress fait faire à tes mains",
+  "points_image": [
+   "Ronger, gratter, tripoter : des gestes de décharge",
+   "Ils surviennent souvent sans y penser",
+   "Occuper les mains autrement aide"
+  ],
+  "description": "Ronger ses ongles, arracher les petites peaux, tortiller ses cheveux : ces gestes ne sont pas un manque de volonté 👉 ce sont des façons pour le corps de décharger une tension 👉 ils arrivent surtout dans les moments d'attente, d'ennui ou de concentration 👉 donner autre chose aux mains aide : une balle, une bague à tourner, une crème. Repérer les moments déclencheurs est le premier pas. #somatisation #stress #ongles #mains #anxiete #habitudes #corps #bienetre",
+  "theme": "somatisation"
+ },
+ {
+  "titre": "Soupirs à répétition : ce que ton corps essaie de relâcher",
+  "texte_image": "Tu soupires sans arrêt ? Voici pourquoi",
+  "points_image": [
+   "Le soupir relâche une tension accumulée",
+   "Il augmente quand on retient son souffle",
+   "En faire un vrai : expirer lentement"
+  ],
+  "description": "Tu remarques que tu soupires sans cesse quand la journée est chargée ? Le soupir est un mécanisme de relâchement naturel 👉 il aide à décharger une tension accumulée 👉 il devient plus fréquent quand on retient son souffle sans s'en rendre compte, concentré ou inquiet 👉 transformer ce soupir en une vraie expiration lente apaise davantage. C'est le signe que le corps cherche à se poser. #somatisation #soupir #respiration #stress #corps #tension #calme #bienetre",
+  "theme": "somatisation"
+ },
+ {
+  "titre": "Jambes qui s'agitent sous la table : l'énergie du stress qui cherche à sortir",
+  "texte_image": "Jambes agitées : le stress qui cherche une sortie",
+  "points_image": [
+   "Le corps prépare l'action sans pouvoir agir",
+   "Le mouvement décharge la tension",
+   "Se lever 2 minutes aide vraiment"
+  ],
+  "description": "Talons qui tapent, genou qui sautille, pieds qui ne tiennent pas en place pendant une réunion ou un repas tendu ? 👉 sous stress, le corps se prépare à agir alors qu'on reste assis 👉 ce mouvement est une façon de décharger cette énergie 👉 se lever deux minutes, marcher ou s'étirer aide plus que se forcer à rester immobile. C'est un signal, pas de l'impolitesse. Pour le soir, le guide gratuit propose une routine au lit. #somatisation #stress #jambes #zen #corps #tension #anxiete #bienetre",
+  "theme": "somatisation"
+ },
+ {
+  "titre": "Bouffées de chaleur sous stress : pourquoi ton visage chauffe d'un coup",
+  "texte_image": "Bouffées de chaleur sous stress",
+  "points_image": [
+   "Le cœur accélère et le sang afflue",
+   "Le visage et le cou rougissent",
+   "Respirer lentement et se rafraîchir aide"
+  ],
+  "description": "Joues qui chauffent, nuque brûlante, envie d'ouvrir la fenêtre dès que la pression monte ? 👉 sous stress, le cœur accélère et le sang afflue vers la peau 👉 le visage et le cou rougissent, la chaleur monte d'un coup 👉 respirer lentement, boire un peu d'eau fraîche et se rafraîchir les poignets aident à redescendre. Si elles surviennent souvent ou sans raison, parles-en à un médecin. #somatisation #stress #chaleur #corps #anxiete #signaux #calme #bienetre",
+  "theme": "somatisation"
+ },
+ {
+  "titre": "Poitrine serrée quand tu stresses : 3 gestes pour desserrer (et quand consulter)",
+  "texte_image": "Poitrine serrée : 3 gestes pour desserrer",
+  "points_image": [
+   "Ouvrir les épaules, mains derrière la tête",
+   "Respirer dans le ventre, pas la poitrine",
+   "Douleur forte ou inhabituelle : appeler le 15"
+  ],
+  "description": "Sous stress, beaucoup ressentent une poitrine serrée, comme si l'air ne passait plus. Trois gestes aident souvent 👉 ouvrir les épaules, mains derrière la tête, coudes écartés 👉 respirer dans le ventre plutôt que dans le haut de la poitrine 👉 allonger l'expiration. Important : une douleur forte, inhabituelle ou qui irradie doit faire appeler le 15 sans attendre. Le guide gratuit propose une routine du soir, sans matériel. #somatisation #poitrine #stress #anxiete #zen #corps #tension #calme",
+  "theme": "somatisation"
+ },
+ {
+  "titre": "Mains moites avant un rendez-vous : pourquoi et 3 gestes pour te sentir mieux",
+  "texte_image": "Mains moites : 3 gestes avant un rendez-vous",
+  "points_image": [
+   "La transpiration fait partie de l'alerte",
+   "Rincer les poignets à l'eau fraîche",
+   "Expirer lentement en serrant puis relâchant les poings"
+  ],
+  "description": "Mains moites juste avant un entretien, une réunion ou un premier rendez-vous ? 👉 la transpiration fait partie de la réaction d'alerte du corps, elle n'a rien d'anormal 👉 passer les poignets sous l'eau fraîche aide à se sentir mieux 👉 serrer puis relâcher les poings en expirant lentement fait baisser la tension. Garder un mouchoir en tissu dans la poche rassure aussi. Guide gratuit dans l'épingle : des exercices pour le soir. #somatisation #stress #zen #mains #anxiete #corps #tension #calme",
+  "theme": "somatisation"
+ },
+ {
+  "titre": "Open space bruyant : 3 façons de protéger ton calme sans casque",
+  "texte_image": "Open space bruyant : 3 façons de rester calme",
+  "points_image": [
+   "Tourner ton écran dos au passage",
+   "Bloquer des créneaux de concentration",
+   "Faire des pauses dans une pièce calme"
+  ],
+  "description": "Conversations, téléphones, passages incessants : l'open space fatigue le système nerveux même quand on ne s'en rend pas compte. Trois façons de te protéger 👉 orienter ton poste pour ne pas voir tout le passage 👉 bloquer des créneaux de concentration dans l'agenda 👉 prendre de vraies pauses dans un lieu calme, une salle vide ou dehors. Le bruit compte moins quand tu choisis tes moments. #stress #travail #openspace #bureau #bruit #concentration #calme #antistress",
+  "theme": "posturesantistress"
+ },
+ {
+  "titre": "Fatigue des visios : pourquoi voir ton visage à l'écran toute la journée t'épuise",
+  "texte_image": "Fatigue des visios : pourquoi elle épuise",
+  "points_image": [
+   "Se voir en continu crée une auto-surveillance",
+   "Le regard fixe fatigue les yeux et la nuque",
+   "Masquer ta vignette et bouger entre deux appels"
+  ],
+  "description": "Après une journée de visioconférences, on se sent souvent plus vidé qu'après des réunions en vrai. Plusieurs raisons 👉 voir son propre visage en continu crée une forme d'auto-surveillance fatigante 👉 le regard fixé sur l'écran crispe les yeux, la nuque et les épaules 👉 masquer sa vignette et bouger deux minutes entre deux appels change beaucoup. Si cette fatigue te suit jusqu'au coucher, le guide gratuit propose une routine du soir. #stress #travail #visio #zen #corps #ecrans #nuque #calme",
+  "theme": "posturesantistress"
+ },
+ {
+  "titre": "Mails du soir : 3 règles pour couper le travail sans culpabiliser",
+  "texte_image": "Mails du soir : 3 règles pour décrocher",
+  "points_image": [
+   "Une heure de fin fixe, même approximative",
+   "Notifications pro coupées le soir",
+   "Noter la tâche du lendemain avant de fermer"
+  ],
+  "description": "Un coup d'œil aux mails à 22h, et la tête repart au bureau pour la soirée. Trois règles aident à couper 👉 fixer une heure de fin, même approximative, et t'y tenir la plupart des jours 👉 couper les notifications professionnelles le soir 👉 noter la première tâche du lendemain avant de fermer, pour que le cerveau ne la garde pas en tête. Si le travail se rejoue malgré tout au lit, le guide gratuit propose une routine anti-rumination. #stress #travail #mails #calme #soir #zen #equilibre #corps",
+  "theme": "posturesantistress"
+ },
+ {
+  "titre": "Télétravail : 4 limites pour que la maison ne devienne pas le bureau",
+  "texte_image": "Télétravail : 4 limites pour respirer",
+  "points_image": [
+   "Un coin dédié, rangé le soir",
+   "Une tenue de travail, même simple",
+   "Un trajet fictif : marcher 10 min",
+   "Fermer l'ordinateur, pas seulement l'écran"
+  ],
+  "description": "En télétravail, la frontière entre vie pro et perso s'efface vite, et le stress s'installe partout dans la maison. Quatre limites aident 👉 un coin dédié, rangé chaque soir 👉 une tenue de travail, même simple, que tu quittes en fin de journée 👉 un trajet fictif : dix minutes de marche avant et après 👉 fermer vraiment l'ordinateur. Si la journée te suit jusqu'au lit, le guide gratuit propose une routine anti-rumination. #stress #travail #zen #maison #equilibre #limites #bureau #antistress",
+  "theme": "posturesantistress"
+ },
+ {
+  "titre": "Métiers debout : 3 gestes anti-tension pour le comptoir, la caisse ou l'atelier",
+  "texte_image": "Métiers debout : 3 gestes anti-tension",
+  "points_image": [
+   "Changer d'appui d'un pied sur l'autre",
+   "Rouler les épaules toutes les heures",
+   "Relâcher les genoux, ne pas les verrouiller"
+  ],
+  "description": "Vendeurs, caissiers, soignants, artisans : rester debout des heures crispe le corps autant que le stress du métier. Trois gestes discrets 👉 changer régulièrement d'appui d'un pied sur l'autre 👉 rouler doucement les épaules vers l'arrière toutes les heures 👉 relâcher les genoux plutôt que de les verrouiller. De bonnes chaussures et une vraie pause assise changent aussi beaucoup. #stress #travail #debout #tension #corps #dos #pause #antistress",
+  "theme": "posturesantistress"
+ },
+ {
+  "titre": "Lundi matin au travail : 3 gestes pour démarrer la semaine sans pression",
+  "texte_image": "Lundi matin : démarrer sans pression",
+  "points_image": [
+   "Arriver 5 minutes plus tôt, sans courir",
+   "Choisir 3 priorités, pas 15",
+   "Commencer par une tâche facile"
+  ],
+  "description": "Le lundi matin, la liste de la semaine tombe d'un coup et la pression monte avant même le premier café. Trois gestes pour démarrer autrement 👉 arriver cinq minutes plus tôt, sans courir, pour poser le corps 👉 choisir trois priorités pour la semaine plutôt que quinze 👉 commencer par une tâche facile pour lancer l'élan. Le reste trouve sa place ensuite. Le guide gratuit aide pour les dimanches soir tendus. #stress #travail #lundi #organisation #priorites #bureau #calme #antistress",
+  "theme": "posturesantistress"
+ },
+ {
+  "titre": "Comparaison sur les réseaux : pourquoi elle fige ton envie d'avancer",
+  "texte_image": "Se comparer en ligne fige l'envie d'avancer",
+  "points_image": [
+   "On compare ses coulisses à leur vitrine",
+   "L'écart paraît impossible à combler",
+   "Limiter les comptes qui te découragent"
+  ],
+  "description": "Tu avais un projet, puis tu as vu quelqu'un le faire mieux en ligne, et l'envie s'est éteinte ? 👉 on compare ses coulisses à la vitrine des autres 👉 l'écart semble alors impossible à combler, et le cerveau préfère ne rien commencer 👉 masquer les comptes qui te découragent et comparer ton toi d'aujourd'hui à celui d'il y a trois mois aide à repartir. Le guide gratuit aide quand ces pensées reviennent le soir. #blocagemental #comparaison #zen #confiance #mental #motivation #clarte #bienetre",
+  "theme": "blocagemental"
+ },
+ {
+  "titre": "Syndrome de l'imposteur : 3 signes qu'il bloque tes projets",
+  "texte_image": "Syndrome de l'imposteur : 3 signes",
+  "points_image": [
+   "Tu attribues tes réussites à la chance",
+   "Tu repousses ce qui pourrait te mettre en avant",
+   "Tu prépares trop pour ne pas être démasqué"
+  ],
+  "description": "Tu as les compétences, mais une petite voix répète que tu ne mérites pas ta place ? Trois signes que l'imposteur te freine 👉 tu attribues tes réussites à la chance ou aux autres 👉 tu repousses tout ce qui pourrait te mettre en avant 👉 tu prépares à l'excès par peur d'être démasqué. Noter chaque semaine une réussite factuelle aide à rééquilibrer. Si ces doutes tournent la nuit, le guide gratuit peut aider. #blocagemental #imposteur #confiance #doute #mental #travail #clarte #bienetre",
+  "theme": "blocagemental"
+ },
+ {
+  "titre": "Ruminer une erreur du passé : 3 étapes pour tourner la page",
+  "texte_image": "Ruminer une erreur : 3 étapes pour avancer",
+  "points_image": [
+   "Écrire ce qui s'est passé, en faits",
+   "Noter ce que tu en retiens",
+   "Décider d'un geste concret, puis lâcher"
+  ],
+  "description": "Une phrase maladroite, une décision ratée, et le cerveau la rejoue en boucle des jours après. Trois étapes pour avancer 👉 écrire les faits, sans jugement 👉 noter ce que tu en retiens pour la prochaine fois 👉 décider d'un geste concret, s'excuser, réparer ou simplement accepter, puis passer à autre chose. Le cerveau lâche mieux ce qui a reçu une réponse. Le guide gratuit propose une routine anti-rumination au lit. #blocagemental #rumination #erreur #mental #zen #clarte #pensees #bienetre",
+  "theme": "blocagemental"
+ },
+ {
+  "titre": "« Je verrai plus tard » : le petit réflexe qui entretient le flou mental",
+  "texte_image": "« Je verrai » : le réflexe qui encombre",
+  "points_image": [
+   "Chaque « je verrai » reste ouvert dans ta tête",
+   "Les décisions en attente s'accumulent",
+   "Trancher vite les petites, dater les grandes"
+  ],
+  "description": "« Je verrai », « on en reparle », « plus tard » : ces petites phrases semblent alléger, mais elles encombrent 👉 chaque décision repoussée reste ouverte dans un coin de la tête 👉 elles s'accumulent et créent un brouillard de choses en attente 👉 trancher tout de suite les petites décisions et donner une date aux grandes libère beaucoup d'espace. Si elles tournent le soir, le guide gratuit propose une routine. #blocagemental #clarte #decision #zen #organisation #mental #focus #bienetre",
+  "theme": "blocagemental"
+ },
+ {
+  "titre": "Tout faire seul : 3 signes qu'il est temps de demander de l'aide",
+  "texte_image": "Tout porter seul : 3 signes d'alerte",
+  "points_image": [
+   "Tu dis « je vais me débrouiller » par réflexe",
+   "Tu bloques sur une tâche depuis des jours",
+   "Demander te semble plus lourd que faire"
+  ],
+  "description": "Demander de l'aide coûte, surtout quand on a l'habitude de tout gérer. Trois signes qu'il est temps 👉 tu réponds « je vais me débrouiller » par réflexe, même débordé 👉 une tâche te bloque depuis des jours sans avancer 👉 demander te paraît plus lourd que de continuer seul. Une question précise à la bonne personne débloque souvent en dix minutes ce qui coince depuis des jours. Le guide gratuit aide pour les soirs chargés. #blocagemental #aide #entraide #mental #zen #clarte #focus #bienetre",
+  "theme": "blocagemental"
+ },
+ {
+  "titre": "« Je m'y mets lundi » : pourquoi repousser au début de semaine ne marche pas",
+  "texte_image": "« Je m'y mets lundi » : le piège",
+  "points_image": [
+   "Le lundi idéal n'arrive jamais",
+   "La pression s'accumule d'ici là",
+   "Commencer petit aujourd'hui marche mieux"
+  ],
+  "description": "Régime, sport, projet, rangement : « je m'y mets lundi » donne l'impression d'un nouveau départ. En pratique 👉 le lundi idéal, reposé et motivé, arrive rarement 👉 en attendant, la pression et la culpabilité s'accumulent 👉 commencer en tout petit aujourd'hui, cinq minutes, une seule action, marche bien mieux qu'un grand lancement repoussé. Le meilleur moment pour démarrer est souvent celui où l'on y pense. #procrastination #motivation #discipline #habitudes #lundi #focus #objectifs #bienetre",
+  "theme": "procrastination"
+ },
+ {
+  "titre": "Procrastination du sport : 3 astuces pour bouger même sans motivation",
+  "texte_image": "Bouger sans motivation : 3 astuces",
+  "points_image": [
+   "Préparer ta tenue la veille",
+   "Viser 10 minutes, pas une heure",
+   "Lier le sport à une habitude existante"
+  ],
+  "description": "La séance de sport repoussée pèse sur le moral. Trois astuces pour bouger même sans motivation 👉 préparer ta tenue la veille, bien en vue 👉 viser dix minutes plutôt qu'une heure, quitte à continuer si l'envie vient 👉 accrocher le mouvement à une habitude existante, après le café ou avant la douche. La motivation suit souvent l'action. Garde l'épingle pour la prochaine séance repoussée. #procrastination #sport #motivation #discipline #habitudes #energie #routine #bienetre",
+  "theme": "procrastination"
+ },
+ {
+  "titre": "Désordre qui pèse sur le mental : la règle des 10 minutes pour ne plus le subir",
+  "texte_image": "Désordre et charge mentale : la règle des 10 min",
+  "points_image": [
+   "10 minutes chrono, une seule pièce",
+   "Commencer par ce qui se voit le plus",
+   "S'arrêter quand ça sonne"
+  ],
+  "description": "Un salon encombré ou une pile de linge visible rappellent sans cesse ce qui reste à faire et alourdissent la tête. Plutôt que d'attendre un grand week-end de rangement 👉 dix minutes chrono, dans une seule pièce 👉 commencer par ce qui se voit le plus en entrant 👉 s'arrêter quand le minuteur sonne, même si tout n'est pas fini. Répété chaque jour, ce petit rituel allège autant l'espace que l'esprit. #procrastination #rangement #chargementale #maison #organisation #habitudes #discipline #calme",
+  "theme": "procrastination"
+ },
+ {
+  "titre": "Messages en attente : pourquoi « répondre plus tard » devient une montagne",
+  "texte_image": "Messages en attente : la montagne qui grandit",
+  "points_image": [
+   "Chaque message ouvert pèse un peu",
+   "Plus on attend, plus la réponse semble devoir être parfaite",
+   "Répondre court tout de suite"
+  ],
+  "description": "Tu lis un message, tu te dis « je réponds ce soir », et une semaine plus tard il est toujours là, avec la culpabilité en prime 👉 chaque message en attente pèse un peu sur l'esprit 👉 plus on attend, plus on a l'impression que la réponse doit être longue et parfaite 👉 répondre court tout de suite, quitte à préciser plus tard, évite l'effet montagne. Dix minutes de réponses par jour aident aussi. #procrastination #messages #organisation #focus #communication #discipline #productivite #bienetre",
+  "theme": "procrastination"
+ },
+ {
+  "titre": "Projet perso repoussé depuis des mois : le rendez-vous de 20 minutes par semaine",
+  "texte_image": "Projet perso : 20 minutes par semaine",
+  "points_image": [
+   "Un créneau fixe dans l'agenda",
+   "Une seule petite étape par séance",
+   "Noter où tu t'es arrêté"
+  ],
+  "description": "Écrire, créer, apprendre : le projet qui te tient à cœur passe toujours après le reste. Un rendez-vous simple peut le relancer 👉 un créneau fixe de vingt minutes par semaine, noté comme un vrai rendez-vous 👉 une seule petite étape par séance 👉 noter où tu t'es arrêté pour reprendre sans effort. Vingt minutes paraissent peu, mais sur trois mois, c'est un projet qui avance enfin au lieu de rester une envie. #procrastination #projet #routine #objectifs #focus #discipline #creativite #bienetre",
+  "theme": "procrastination"
+ },
+ {
+  "titre": "Fatigue émotionnelle après une journée à écouter les autres : 3 façons de recharger",
+  "texte_image": "Métiers d'écoute : 3 façons de recharger",
+  "points_image": [
+   "Un sas de silence après le travail",
+   "Une activité physique, même courte",
+   "Un moment où personne n'a besoin de toi"
+  ],
+  "description": "Soignants, enseignants, conseillers, parents : écouter et accueillir les émotions des autres toute la journée épuise d'une façon particulière. Trois façons de recharger 👉 un sas de silence après le travail, sans musique ni appel 👉 une activité physique, même dix minutes, pour évacuer ce qu'on a absorbé 👉 un moment où personne n'a besoin de toi. Ce n'est pas de l'égoïsme : c'est ce qui permet de rester présent. #fatiguementale #calme #soignants #recuperation #pause #repos #mental #bienetre",
+  "theme": "fatiguementale"
+ },
+ {
+  "titre": "Trop d'actualités : 3 limites pour ne plus saturer en lisant les infos",
+  "texte_image": "Trop d'infos : 3 limites pour ne pas saturer",
+  "points_image": [
+   "Deux créneaux par jour, pas en continu",
+   "Pas d'infos au lit ni au réveil",
+   "Une source fiable plutôt que dix"
+  ],
+  "description": "Lire les infos par petites doses toute la journée donne l'impression d'être informé, mais laisse souvent le cerveau saturé et inquiet. Trois limites simples 👉 deux créneaux par jour plutôt qu'un flux continu 👉 pas d'actualités au lit ni dans la première demi-heure du réveil 👉 une ou deux sources fiables plutôt que dix fils d'alerte. Rester informé n'oblige pas à tout absorber en temps réel. #fatiguementale #actualites #infos #ecrans #surcharge #mental #anxiete #limites",
+  "theme": "fatiguementale"
+ },
+ {
+  "titre": "Groupes de messages famille, école, travail : 3 réglages pour alléger ta charge mentale",
+  "texte_image": "Groupes de messages : 3 réglages",
+  "points_image": [
+   "Mettre les groupes en sourdine",
+   "Consulter à heures fixes",
+   "Quitter ceux qui ne te servent plus"
+  ],
+  "description": "Le groupe de l'école, celui de la famille, celui du travail : des dizaines de messages par jour qui réclament une réaction. Trois réglages allègent la charge 👉 mettre les groupes en sourdine et ne garder que les messages directs en notification 👉 les consulter à deux ou trois moments fixes 👉 quitter sans culpabilité ceux qui ne te servent plus. Protéger ton attention n'est pas de l'indifférence. #fatiguementale #chargementale #notifications #telephone #famille #organisation #mental #limites",
+  "theme": "fatiguementale"
+ },
+ {
+  "titre": "Lampe de luminothérapie : 3 repères pour l'utiliser le matin en hiver",
+  "texte_image": "Luminothérapie : 3 repères pour bien l'utiliser",
+  "points_image": [
+   "Le matin, pas le soir",
+   "Environ 20 à 30 minutes",
+   "Demander conseil en cas de souci de santé"
+  ],
+  "description": "Quand les matins d'hiver restent sombres, certaines personnes utilisent une lampe de luminothérapie pour garder de l'énergie. Trois repères 👉 l'utiliser le matin, pas le soir, pour ne pas décaler le sommeil 👉 environ vingt à trente minutes, au petit-déjeuner par exemple 👉 demander conseil à un médecin en cas de problème aux yeux ou de traitement en cours. Elle complète la lumière du dehors, sans la remplacer. #energie #luminotherapie #hiver #lumiere #fatigue #matin #routine #bienetre",
+  "theme": "energie"
+ },
+ {
+  "titre": "Réveil difficile quand il fait encore nuit : 3 réglages pour l'hiver",
+  "texte_image": "Se lever dans le noir : 3 réglages",
+  "points_image": [
+   "Allumer progressivement dès le réveil",
+   "Un verre d'eau et des étirements au lit",
+   "Sortir quelques minutes dans la matinée"
+  ],
+  "description": "En hiver, se lever quand il fait encore nuit demande un vrai effort au corps, qui attend la lumière pour démarrer. Trois réglages aident 👉 allumer progressivement dès le réveil, ou avec un réveil lumineux 👉 boire un verre d'eau et s'étirer une minute avant de se lever 👉 sortir quelques minutes dans la matinée pour recevoir la lumière du jour. Le corps s'habitue, et les réveils deviennent moins rudes au fil des semaines. #energie #hiver #reveil #matin #lumiere #fatigue #routine #motivation",
+  "theme": "energie"
+ },
+ {
+  "titre": "Automne : 4 plats réconfortants qui aident à faire baisser la tension",
+  "texte_image": "4 plats d'automne qui apaisent",
+  "points_image": [
+   "Une soupe chaude de légumes de saison",
+   "Des lentilles ou pois chiches mijotés",
+   "Une compote de pommes à la cannelle",
+   "Un porridge d'avoine le matin"
+  ],
+  "description": "Quand il fait froid et que la journée a été tendue, un plat chaud et simple aide le corps à se poser. Quatre idées de saison 👉 une soupe de légumes, potiron ou poireaux 👉 des lentilles ou des pois chiches mijotés, riches en fibres et en magnésium 👉 une compote de pommes à la cannelle 👉 un porridge d'avoine le matin pour une énergie stable. Manger chaud, assis et sans écran fait aussi partie de la pause anti-stress. #alimentation #stress #automne #reconfort #magnesium #soupe #calme #bienetre",
+  "theme": "alimentation"
+ },
+ {
   "titre": "4 signes que ton sommeil est léger à cause du stress, pas de ta literie",
   "texte_image": "Sommeil léger : 4 signes que c'est le stress",
   "points_image": [
