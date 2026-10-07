@@ -178,12 +178,12 @@
     "duree": 2.8
    },
    {
-    "image": "fonds/fond-48.jpg",
+    "image": "fonds/fond-146.jpg",
     "texte": "Un réflexe inscrit\ndans ton corps",
     "duree": 2.2
    },
    {
-    "image": "fonds/fond-60.jpg",
+    "image": "fonds/fond-148.jpg",
     "texte": "Sauvegarde ce Pin\npour les jours durs",
     "duree": 2.2
    }
@@ -196,7 +196,7 @@
   "description": "À l'inspiration, le cœur accélère légèrement. À l'expiration, il ralentit. En allongeant volontairement l'expiration (le double de l'inspiration), tu fais pencher la balance vers le calme. Essaie : inspire 3 secondes, expire 6 secondes, pendant 2 minutes. #respiration #systemenerveux #stress #coherencecardiaque #calme",
   "beats": [
    {
-    "image": "fonds/fond-66.jpg",
+    "image": "fonds/fond-145.jpg",
     "texte": "À l'inspiration,\nle cœur accélère",
     "duree": 2.0
    },
@@ -576,17 +576,17 @@
   "description": "On repousse rarement une tâche parce qu'on est paresseux, mais parce qu'elle provoque une émotion désagréable : peur de mal faire, ennui, doute. Nomme l'émotion à voix haute, puis découpe la tâche jusqu'à ce que la première étape paraisse ridicule. #procrastination #anxiete #stress #motivation #blocagemental",
   "beats": [
    {
-    "image": "fonds/fond-69.jpg",
+    "image": "fonds/fond-ia-procrastination-1.jpg",
     "texte": "Tu n'es pas\nparesseux",
     "duree": 2.0
    },
    {
-    "image": "fonds/fond-83.jpg",
+    "image": "fonds/fond-ia-procrastination-3.jpg",
     "texte": "Tu évites\nune émotion",
     "duree": 2.2
    },
    {
-    "image": "fonds/fond-97.jpg",
+    "image": "fonds/fond-ia-procrastination-5.jpg",
     "texte": "Peur, ennui, doute :\nnomme-la",
     "duree": 2.2
    },
