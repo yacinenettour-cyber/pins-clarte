@@ -611,6 +611,19 @@ jobs:
           restants = [p for p in banque if p["titre"] not in faits]
           if not restants:
               sys.exit("Banque de pins vide : ajoute de nouveaux pins dans pins.json.")
+          # Anti-doublons (07/10/2026) : avant de choisir, on écarte tout pin dont le titre ou le
+          # sujet double un pin déjà publié (historique, pins réellement en ligne lus via Composio,
+          # instantané titres_en_ligne.json, vidéos, kits Idea Pins) ou dont l'image prête a déjà servi.
+          sys.path.insert(0, "outils")
+          import anti_doublons
+          cle_composio = os.environ.get("COMPOSIO_API_KEY")
+          references = anti_doublons.charger_references(
+              cle_composio, anti_doublons.entite_composio(cle_composio) if cle_composio else None)
+          prets_utilises = {str(h.get("fond", ""))[len("prete:"):] for h in historique
+                            if str(h.get("fond", "")).startswith("prete:")}
+          restants = anti_doublons.filtrer(restants, references, deja_utilisees=prets_utilises)
+          if not restants:
+              sys.exit("Tous les pins restants doublent un pin existant : recharge pins.json avec des sujets nouveaux.")
           pin = choisir_pin_equilibre(restants, historique)
           print("Pins restants dans la banque :", len(restants))
 
@@ -690,6 +703,9 @@ jobs:
               print("Thème détecté :", theme, "| visuel :", design)
               print("Fond utilisé :", fond_etiquette)
           print("Image créée :", chemin)
+
+          if anti_doublons.image_deja_publiee(chemin, historique):
+              sys.exit("Image identique à une image déjà publiée, publication annulée : " + chemin)
 
           if TEST:
               sys.exit(0)
@@ -777,7 +793,7 @@ jobs:
           # Le pin est en ligne : l'inscription à l'historique ne doit jamais être perdue.
           entree = {"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
                     "titre": pin["titre"], "image": chemin, "fond": fond_etiquette, "theme": theme,
-                    "design": design, "pin_id": pin_id}
+                    "design": design, "pin_id": pin_id, "md5": anti_doublons.empreinte(chemin)}
           limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
           for n in range(6):
               git("fetch", "origin", "main")

@@ -168,9 +168,19 @@ jobs:
 
           banque = json.load(open("videos.json", encoding="utf-8"))
           faits = {h["id"] for h in historique}
-          restants = [v for v in banque if v["id"] not in faits]
+          titres_faits = {h.get("titre") for h in historique}
+          restants = [v for v in banque if v["id"] not in faits and v["titre"] not in titres_faits]
           if not restants:
               sys.exit("Banque de videos vide : ajoute de nouveaux scripts dans videos.json.")
+          # Anti-doublons (07/10/2026) : même contrôle que pins.yml (titre ou sujet déjà publié).
+          sys.path.insert(0, "outils")
+          import anti_doublons
+          cle_composio = os.environ.get("COMPOSIO_API_KEY")
+          references = anti_doublons.charger_references(
+              cle_composio, anti_doublons.entite_composio(cle_composio) if cle_composio else None)
+          restants = anti_doublons.filtrer(restants, references)
+          if not restants:
+              sys.exit("Toutes les vidéos restantes doublent un contenu existant : recharge videos.json avec des sujets nouveaux.")
           video = choisir_video_equilibree(restants, historique)
           print("Videos restantes dans la banque :", len(restants))
           print("Video choisie :", video["id"])
