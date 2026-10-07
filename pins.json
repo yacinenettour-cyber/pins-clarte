@@ -8,12 +8,11 @@
    "Tu te lèves avec la mâchoire serrée",
    "Tu dors mieux en vacances qu'en semaine"
   ],
-  "description": "On accuse souvent le matelas, alors que le vrai frein est parfois un système nerveux qui reste en veille la nuit. Quatre signes pointent vers le stress : des réveils au moindre bruit, des rêves agités, une mâchoire serrée au lever, et des nuits bien meilleures en vacances. Pour les nuits où ça ne suffit pas, le guide gratuit rassemble des exercices simples pour apaiser les pensées du soir (lien de l'épingle). #sommeil #stress #bruxisme #anxiete #insomnie #fatigue #mieuxdormir #routinedusoir",
-  "theme": "sommeil",
-  "image_prete": "images_manuelles/manu_4-signes-que-ton-sommeil-est-l-ger-cause-du-stre.jpg"
+  "description": "On accuse souvent le matelas, alors que le vrai frein est parfois un système nerveux qui reste en veille la nuit. Quatre signes pointent vers le stress : des réveils au moindre bruit, des rêves agités, une mâchoire serrée au lever, et des nuits bien meilleures en vacances. Si l'endormissement reste difficile, le guide gratuit rassemble des exercices pour calmer le mental du soir, sans matériel. #sommeil #stress #bruxisme #anxiete #insomnie #fatigue #mieuxdormir #routinedusoir",
+  "theme": "sommeil"
  },
  {
-  "titre": "5 habitudes de l'après-midi qui décident de la qualité de ta nuit",
+  "titre": "4 habitudes de l'après-midi qui décident de la qualité de ta nuit",
   "texte_image": "L'après-midi décide de ta nuit",
   "points_image": [
    "Le dernier café avant 14 h",
@@ -21,9 +20,8 @@
    "Un peu de mouvement en fin de journée",
    "Une sieste de 20 minutes maximum"
   ],
-  "description": "Le sommeil ne se prépare pas seulement le soir : une partie se joue dès l'après-midi 👉 arrêter le café avant 14 h 👉 prendre une vraie pause loin des écrans 👉 bouger un peu en fin de journée pour évacuer la tension 👉 limiter la sieste à 20 minutes. Des choix discrets qui laissent le cortisol redescendre à temps. Si le soir reste difficile, le guide gratuit propose une routine complète. #sommeil #cafeine #sieste #cortisol #stress #routine #insomnie #bienetre #mieuxdormir #routinedusoir",
-  "theme": "sommeil",
-  "image_prete": "images_manuelles/manu_5-habitudes-de-l-apr-s-midi-qui-d-cident-de-la-q.jpg"
+  "description": "Le sommeil ne se prépare pas seulement le soir : une partie se joue dès l'après-midi 👉 arrêter le café avant 14 h 👉 prendre une vraie pause loin des écrans 👉 bouger un peu en fin de journée pour évacuer la tension 👉 limiter la sieste à 20 minutes. Des choix discrets qui laissent le cortisol redescendre à temps. #sommeil #cafeine #sieste #cortisol #stress #routine #insomnie #bienetre #mieuxdormir #routinedusoir",
+  "theme": "sommeil"
  },
  {
   "titre": "Réveil fatigué en hiver : ce que ton corps essaie de te dire",
@@ -33,9 +31,8 @@
    "Le lever brutal active un pic de stress",
    "La lumière est le signal qui manque"
   ],
-  "description": "En hiver, le réveil sonne souvent alors qu'il fait encore nuit. Le corps produit encore de la mélatonine, l'hormone du sommeil, et le lever brutal déclenche un petit pic de stress pour compenser. D'où ce brouillard qui dure toute la matinée. Envie d'une méthode complète ? Le guide gratuit rassemble des exercices simples pour apaiser les pensées du soir (lien de l'épingle). #sommeil #hiver #reveil #melatonine #fatigue #lumiere #stress #mieuxdormir #routinedusoir",
-  "theme": "sommeil",
-  "image_prete": "images_manuelles/manu_r-veil-fatigu-en-hiver-ce-que-ton-corps-essaie-d.jpg"
+  "description": "En hiver, le réveil sonne souvent alors qu'il fait encore nuit. Le corps produit encore de la mélatonine, l'hormone du sommeil, et le lever brutal déclenche un petit pic de stress pour compenser. D'où ce brouillard qui dure toute la matinée. Envie d'une méthode complète ? Si ton cerveau refuse de lâcher prise le soir, le guide offert dans l'épingle propose une routine pour apaiser les pensées au coucher. #sommeil #hiver #reveil #melatonine #fatigue #lumiere #stress #mieuxdormir",
+  "theme": "sommeil"
  },
  {
   "titre": "Nuit agitée ? 4 choses à ne surtout pas faire le lendemain",
@@ -46,9 +43,8 @@
    "Faire une longue sieste",
    "Se coucher très tôt en espérant compenser"
   ],
-  "description": "Après une mauvaise nuit, le réflexe est de vouloir rattraper, et c'est souvent ce qui entretient le problème 👉 éviter la grasse matinée qui décale l'horloge 👉 limiter le café à la matinée 👉 préférer une sieste courte à une longue 👉 garder l'heure de coucher habituelle au lieu de se forcer à dormir tôt. Guide offert : exercices pour calmer le mental du soir, lien dans l'épingle. #sommeil #insomnie #fatigue #sieste #rythme #stress #cafeine #mieuxdormir #routinedusoir",
-  "theme": "sommeil",
-  "image_prete": "images_manuelles/manu_nuit-agit-e-4-choses-ne-surtout-pas-faire-le-len.jpg"
+  "description": "Après une mauvaise nuit, le réflexe est de vouloir rattraper, et c'est souvent ce qui entretient le problème 👉 éviter la grasse matinée qui décale l'horloge 👉 limiter le café à la matinée 👉 préférer une sieste courte à une longue 👉 garder l'heure de coucher habituelle au lieu de se forcer à dormir tôt. #sommeil #insomnie #fatigue #sieste #rythme #stress #cafeine #mieuxdormir #routinedusoir",
+  "theme": "sommeil"
  },
  {
   "titre": "Réveil tendu : 4 gestes doux pour démarrer la journée sans stress",
@@ -191,7 +187,7 @@
    "Avant le repas du midi",
    "En fin d'après-midi, avant de rentrer"
   ],
-  "description": "La cohérence cardiaque consiste à respirer six fois par minute pendant cinq minutes : cinq secondes d'inspiration, cinq secondes d'expiration. Quand la tension de la journée empêche de dormir, le guide gratuit détaille des exercices simples pour apaiser le mental en fin de journée, lien dans l'épingle. #coherencecardiaque #respiration #systemenerveux #stress #anxiete #calme #antistress",
+  "description": "La cohérence cardiaque consiste à respirer six fois par minute pendant cinq minutes : cinq secondes d'inspiration, cinq secondes d'expiration. Si ce stress te tient éveillé, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination. #coherencecardiaque #respiration #systemenerveux #stress #anxiete #calme #antistress #bienetre",
   "theme": "coherencecardiaque",
   "image_prete": "images_manuelles/fr_coh-rence-cardiaque-3-moments-de-la-journ.jpg"
  },
@@ -203,7 +199,7 @@
    "Serrer puis relâcher les poings",
    "Boire un verre d'eau lentement"
   ],
-  "description": "L'agacement qui monte est une réaction du système nerveux avant d'être une décision 👉 laisser passer 90 secondes avant de répondre, le temps que la vague retombe 👉 serrer fort les poings puis les relâcher pour évacuer la tension 👉 boire un verre d'eau lentement. Ces gestes créent un espace entre la réaction et la réponse. Le guide gratuit propose aussi des exercices pour calmer le mental le soir venu. #systemenerveux #stress #colere #emotions #calme #tension #anxiete #bienetre #antistress",
+  "description": "L'agacement qui monte est une réaction du système nerveux avant d'être une décision 👉 laisser passer 90 secondes avant de répondre, le temps que la vague retombe 👉 serrer fort les poings puis les relâcher pour évacuer la tension 👉 boire un verre d'eau lentement. Ces gestes créent un espace entre la réaction et la réponse. #systemenerveux #stress #colere #emotions #calme #tension #anxiete #bienetre #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -215,7 +211,7 @@
    "Du mouvement doux chaque jour",
    "Moins d'infos en continu"
   ],
-  "description": "Face au stress chronique, on cherche souvent une solution unique, alors que quelques piliers font l'essentiel 👉 des heures de coucher régulières 👉 une vraie pause par demi-journée 👉 un peu de mouvement doux chaque jour 👉 moins d'informations en continu. Rien de spectaculaire, mais c'est la régularité qui fait redescendre le système nerveux. Le guide gratuit prolonge ce travail avec une routine du soir anti-rumination. #systemenerveux #stresschronique #stress #sommeil #anxiete #antistress",
+  "description": "Face au stress chronique, on cherche souvent une solution unique, alors que quelques piliers font l'essentiel 👉 des heures de coucher régulières 👉 une vraie pause par demi-journée 👉 un peu de mouvement doux chaque jour 👉 moins d'informations en continu. Rien de spectaculaire, mais c'est la régularité qui fait redescendre le système nerveux. #systemenerveux #stresschronique #stress #sommeil #anxiete #antistress #calme #bienetre",
   "theme": "systemenerveux"
  },
  {
@@ -333,15 +329,15 @@
   "theme": "procrastination"
  },
  {
-  "titre": "Motivation en berne : 5 petites victoires pour relancer une journée bloquée",
-  "texte_image": "5 petites victoires pour relancer ta journée",
+  "titre": "Motivation en berne : 4 petites victoires pour relancer une journée bloquée",
+  "texte_image": "4 petites victoires pour relancer ta journée",
   "points_image": [
    "Répondre à un seul message en attente",
    "Ranger ton bureau 3 minutes",
    "Boire un verre d'eau et marcher un peu",
    "Finir une micro-tâche de ta liste"
   ],
-  "description": "Quand la journée semble perdue, une petite victoire suffit parfois à relancer la machine 👉 répondre à un seul message en attente 👉 ranger ton bureau pendant trois minutes 👉 boire un verre d'eau et marcher un peu 👉 finir une micro-tâche de ta liste 👉 noter ce qui a été fait. Chaque case cochée redonne un peu d'élan pour la suivante. Garde-la pour les après-midis où rien n'avance. #procrastination #motivation #petitesvictoires #productivite #organisation #mental #stress #bienetre #discipline",
+  "description": "Quand la journée semble perdue, une petite victoire suffit parfois à relancer la machine 👉 répondre à un seul message en attente 👉 ranger ton bureau pendant trois minutes 👉 boire un verre d'eau et marcher un peu 👉 finir une micro-tâche de ta liste, puis la cocher. Chaque case cochée redonne un peu d'élan pour la suivante. Garde-la pour les après-midis où rien n'avance. #procrastination #motivation #petitesvictoires #productivite #organisation #mental #stress #bienetre #discipline",
   "theme": "procrastination"
  },
  {
@@ -572,7 +568,7 @@
   "theme": "fatiguementale"
  },
  {
-  "titre": "Charge mentale : 5 façons de dire non sans culpabiliser",
+  "titre": "Charge mentale : 4 façons de dire non sans culpabiliser",
   "texte_image": "Dire non sans culpabiliser",
   "points_image": [
    "« Pas cette semaine. »",
@@ -1047,7 +1043,7 @@
  {
   "titre": "Routine du soir sans écran : 3 objets à poser près du lit",
   "texte_image": "3 objets pour remplacer le scroll du soir",
-  "description": "Tu te dis que tu vas juste jeter un œil à ton téléphone cinq minutes, et une demi-heure plus tard tu scrolles encore, bien réveillé. Remplace ce geste automatique par quelque chose de concret, posé à portée de main avant d'aller au lit 👉 un livre papier 👉 un carnet à feuilleter 👉 une playlist calme. Pour aller plus loin, le guide gratuit détaille une routine du soir pour calmer le mental (lien de l'épingle). #sommeil #stress #ecrans #routinedusoir #endormissement #santementale #mieuxdormir",
+  "description": "Tu te dis que tu vas juste jeter un œil à ton téléphone cinq minutes, et une demi-heure plus tard tu scrolles encore, bien réveillé. Remplace ce geste automatique par quelque chose de concret, posé à portée de main avant d'aller au lit 👉 un livre papier 👉 un carnet à feuilleter 👉 une playlist calme. #sommeil #stress #ecrans #routinedusoir #endormissement #santementale #mieuxdormir #insomnie",
   "points_image": [
    "Un livre papier",
    "Un carnet à feuilleter",
@@ -1058,7 +1054,7 @@
  {
   "titre": "Le réflexe de 10 secondes pour couper le moteur au moment de dormir",
   "texte_image": "Le réflexe de 10 secondes pour calmer le mental",
-  "description": "Tu remarques ce moment précis où, à peine allongé, ton mental repart comme un moteur qu'on vient de lancer. Ton cerveau n'a eu aucun sas entre l'agitation du jour et le silence du lit. Envie d'une méthode complète ? Le guide gratuit rassemble des exercices simples pour apaiser les pensées du soir, lien dans l'épingle. #sommeil #stress #calmemental #anxiete #santementale #sommeilreparateur #mieuxdormir",
+  "description": "Tu remarques ce moment précis où, à peine allongé, ton mental repart comme un moteur qu'on vient de lancer. Ton cerveau n'a eu aucun sas entre l'agitation du jour et le silence du lit. Envie d'une méthode complète ? Quand le mental tourne encore au lit, le guide gratuit « Quand le cerveau refuse de dormir » propose un calendrier de 30 jours. #sommeil #stress #calmemental #anxiete #santementale #sommeilreparateur #mieuxdormir #routinedusoir",
   "points_image": [
    "Nomme mentalement 3 sons que tu entends",
    "Puis 2 sensations dans ton corps",
@@ -1069,7 +1065,7 @@
  {
   "titre": "Mieux dormir : la technique du nommage pour un cerveau qui parle tout seul",
   "texte_image": "La technique du nommage pour calmer le mental",
-  "description": "Tu es allongé, les lumières éteintes, et pourtant ton cerveau continue de commenter, analyser, refaire le monde, comme s'il n'avait pas reçu le mémo du coucher. Pour les nuits où ça ne suffit pas, le guide gratuit « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire au lit : clique sur l'épingle pour le recevoir. #sommeil #stress #calmemental #anxiete #ruminations #santementale #melatonine #mieuxdormir #routinedusoir",
+  "description": "Tu es allongé, les lumières éteintes, et pourtant ton cerveau continue de commenter, analyser, refaire le monde, comme s'il n'avait pas reçu le mémo du coucher. Quand le mental tourne encore au lit, le guide offert dans l'épingle propose une routine pour apaiser les pensées au coucher. #sommeil #stress #calmemental #anxiete #ruminations #santementale #melatonine #mieuxdormir #routinedusoir",
   "points_image": [
    "Je planifie",
    "Je m'inquiète",
@@ -1080,7 +1076,7 @@
  {
   "titre": "Cœur qui cogne la nuit : le geste en 2 temps pour redescendre",
   "texte_image": "Cœur qui cogne la nuit : le geste en 2 temps pour redescendre",
-  "description": "Réveil brutal, le cœur qui bat vite, comme si quelque chose t'avait secoué en plein sommeil alors que rien ne s'est vraiment passé. C'est souvent une décharge d'adrénaline liée à une phase de sommeil léger 👉 pose une main sur la poitrine, une sur le ventre 👉 allonge doucement l'expiration jusqu'à sentir ton cœur redescendre. Guide offert : routine du soir sans matériel dans l'épingle. #sommeil #stress #reveilnocturne #anxiete #systemenerveux #nuit #endormissement #routinedusoir #mieuxdormir",
+  "description": "Réveil brutal, le cœur qui bat vite, comme si quelque chose t'avait secoué en plein sommeil alors que rien ne s'est vraiment passé. C'est souvent une décharge d'adrénaline liée à une phase de sommeil léger 👉 pose une main sur la poitrine, une sur le ventre 👉 allonge doucement l'expiration jusqu'à sentir ton cœur redescendre. #sommeil #stress #reveilnocturne #anxiete #systemenerveux #nuit #endormissement #routinedusoir #mieuxdormir",
   "points_image": [
    "Pose une main sur la poitrine, une sur le ventre",
    "Allonge doucement l'expiration jusqu'à sentir ton cœur redescendre"
@@ -1090,7 +1086,7 @@
  {
   "titre": "Boule au ventre en pleine nuit : le geste en 2 temps pour la dénouer",
   "texte_image": "Boule au ventre en pleine nuit : le geste en 2 temps pour la dénouer",
-  "description": "Tu te réveilles avec une boule au ventre, une sensation d'oppression, sans crise apparente ni raison précise, et ça suffit à te tenir éveillé(e) un moment. Si tes soirées ressemblent à ça, le guide gratuit inclut un calendrier de 30 jours pour installer une routine apaisante, accessible depuis l'épingle. #sommeil #stress #reveilnocturne #systemenerveux #anxiete #nuit #endormissement #routinedusoir #mieuxdormir",
+  "description": "Tu te réveilles avec une boule au ventre, une sensation d'oppression, sans crise apparente ni raison précise, et ça suffit à te tenir éveillé(e) un moment. Si les pensées reprennent au coucher, le guide gratuit « Quand le cerveau refuse de dormir » propose un calendrier de 30 jours. #sommeil #stress #reveilnocturne #systemenerveux #anxiete #nuit #endormissement #routinedusoir #mieuxdormir",
   "points_image": [
    "Pose une main sur le ventre, gonfle-le à l'inspiration",
    "Laisse l'expiration durer deux fois plus longtemps"
@@ -1134,7 +1130,7 @@
  {
   "titre": "Système nerveux : 4 exercices simples contre l'hypervigilance",
   "texte_image": "4 exercices contre l'hypervigilance",
-  "description": "Un bruit soudain, une notification, un pas dans le couloir : le sursaut est systématique, chaque signal est scruté comme si le danger pouvait surgir. C'est le tableau classique de l'hypervigilance. Quand la tension de la journée empêche de dormir, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination (lien de l'épingle). #systemenerveux #stress #anxiete #bienetre #calme",
+  "description": "Un bruit soudain, une notification, un pas dans le couloir : le sursaut est systématique, chaque signal est scruté comme si le danger pouvait surgir. C'est le tableau classique de l'hypervigilance. Si cette tension te suit jusqu'au lit, le guide gratuit propose une routine anti-rumination à faire au lit. #systemenerveux #stress #anxiete #bienetre #calme #antistress #gestiondustress #detente",
   "points_image": [
    "Nommer 3 choses vues, 2 entendues, 1 ressentie",
    "Poser une main sur le sternum et respirer lentement",
@@ -1146,7 +1142,7 @@
  {
   "titre": "Te sentir bloquée sans raison : et si ton système nerveux figeait",
   "texte_image": "Reconnaître un système nerveux figé",
-  "description": "Une paralysie face à une tâche pourtant simple, sans comprendre ce qui se joue, n'a rien à voir avec de la flemme ou un manque de volonté. Pour relâcher le soir ce que la journée a accumulé, le guide gratuit détaille des exercices simples pour apaiser le mental en fin de journée, lien dans l'épingle. #systemenerveux #stress #anxiete #bienetre #fatiguementale #calme",
+  "description": "Une paralysie face à une tâche pourtant simple, sans comprendre ce qui se joue, n'a rien à voir avec de la flemme ou un manque de volonté. Quand la tension monte encore le soir, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination. #systemenerveux #stress #anxiete #bienetre #fatiguementale #calme #antistress #gestiondustress",
   "points_image": [
    "Un corps qui semble lourd, presque engourdi",
    "Une tête vide, incapable de prioriser",
@@ -1157,7 +1153,7 @@
  {
   "titre": "3 techniques pour vraiment basculer vers le calme (pas juste s'asseoir)",
   "texte_image": "3 techniques pour basculer vers le calme",
-  "description": "Respirer, s'asseoir, se répéter de se détendre : le corps reste parfois tendu comme s'il n'avait pas reçu le message. La volonté seule ne suffit pas, il existe des gestes basés sur la physiologie réelle 👉 allonger l'expiration deux fois plus que l'inspiration 👉 presser fermement les mains l'une contre l'autre puis relâcher 👉 fredonner quelques secondes pour activer le nerf vague. Trois leviers à tester dès aujourd'hui. #systemenerveux #stress #calme #bienetre #respiration",
+  "description": "Respirer, s'asseoir, se répéter de se détendre : le corps reste parfois tendu comme s'il n'avait pas reçu le message. La volonté seule ne suffit pas, il existe des gestes basés sur la physiologie réelle 👉 allonger l'expiration deux fois plus que l'inspiration 👉 presser fermement les mains l'une contre l'autre puis relâcher 👉 fredonner quelques secondes pour activer le nerf vague. Trois leviers à tester dès aujourd'hui. #systemenerveux #stress #calme #bienetre #respiration #antistress",
   "points_image": [
    "Allonger l'expiration deux fois plus que l'inspiration",
    "Presser fermement les mains l'une contre l'autre puis relâcher",
@@ -1191,7 +1187,7 @@
  {
   "titre": "Repousser le déjeuner pour tenir la réunion fait grimper ton stress en silence",
   "texte_image": "Pourquoi sauter des repas augmente le stress",
-  "description": "La réunion s'éternise, tu repousses le déjeuner et tu tiens sur un café jusqu'à 15h, sans réaliser que ton cortisol grimpe pendant ce temps :\n📌 sauter un repas met le corps en état d'alerte\n📌 cette alerte entretient une tension nerveuse difficile à calmer ensuite\n📌 manger à heures régulières, même rapidement, limite ces pics\nCaler une alarme pour manger un encas avant la réunion évite ce pic de cortisol. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie",
+  "description": "La réunion s'éternise, tu repousses le déjeuner et tu tiens au café jusqu'à 15h, sans voir que la tension monte :\n📌 sauter un repas met le corps en état d'alerte\n📌 cette alerte entretient une nervosité difficile à calmer\n📌 manger à heures régulières, même vite, limite ces pics\nUne alarme pour prendre un encas avant la réunion évite ce pic. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie",
   "theme": "alimentation",
   "points_image": [
    "La réunion s'éternise, tu repousses le déjeuner et tu tiens sur un café jusqu",
@@ -1614,7 +1610,7 @@
  {
   "titre": "« Cortisol face » sur TikTok : le vrai du faux",
   "texte_image": "« Cortisol face » : le vrai du faux",
-  "description": "Une vidéo TikTok explique un visage gonflé ou une fatigue du moment par le fameux « cortisol face », entre tendance virale et explication sérieuse. Ce que la science confirme réellement 👉 un cortisol chroniquement élevé peut favoriser une rétention d'eau 👉 il n'explique pas à lui seul chaque variation du visage 👉 le sommeil et l'alimentation jouent un rôle au moins aussi important. Un tri utile entre tendance et réalité. #cortisol #systemenerveux #stress #bienetre #sante",
+  "description": "Une vidéo TikTok explique un visage gonflé ou une fatigue du moment par le fameux « cortisol face », entre tendance virale et explication sérieuse. Ce que la science confirme réellement 👉 un cortisol chroniquement élevé peut favoriser une rétention d'eau 👉 il n'explique pas à lui seul chaque variation du visage 👉 le sommeil et l'alimentation jouent un rôle au moins aussi important. Un tri utile entre tendance et réalité. #cortisol #systemenerveux #stress #bienetre #sante #calme #antistress",
   "points_image": [
    "Un cortisol chroniquement élevé peut favoriser une rétention d'eau",
    "Il n'explique pas à lui seul chaque variation du visage",
@@ -1625,7 +1621,7 @@
  {
   "titre": "Le cortisol n'explique pas tout : ce que dit vraiment la science",
   "texte_image": "Le cortisol, bouc émissaire de 2026 ?",
-  "description": "Le mot cortisol apparaît partout depuis quelques mois, sur les réseaux et dans les articles bien-être, presque comme l'explication universelle de tout ce qui est difficile à vivre. Ce que la recherche indique réellement 👉 le cortisol est un marqueur parmi d'autres du stress, pas sa seule cause 👉 son taux varie naturellement dans la journée 👉 le sommeil et l'activité physique pèsent tout autant sur le ressenti. Un point nuancé, sans exagération. #cortisol #systemenerveux #stress #bienetre #sante",
+  "description": "Le mot cortisol apparaît partout, presque comme l'explication universelle de tout ce qui est difficile à vivre. Ce que la recherche indique réellement 👉 le cortisol est un marqueur du stress parmi d'autres, pas sa seule cause 👉 son taux varie naturellement au fil de la journée 👉 le sommeil et l'activité physique pèsent autant sur le ressenti. Un point nuancé, sans exagération. #cortisol #systemenerveux #stress #bienetre #sante #calme #antistress #gestiondustress",
   "points_image": [
    "Le cortisol est un marqueur parmi d'autres du stress, pas sa seule cause",
    "Son taux varie naturellement dans la journée",
@@ -1659,7 +1655,6 @@
   "titre": "Procrastination : la spirale du « plus tard, demain, peut-être »",
   "texte_image": "La spirale du 'plus tard' qui s'installe",
   "description": "Ça commence toujours pareil : tu te dis que tu vas démarrer, puis plus tard, puis encore demain, et à un moment le peut-être remplace carrément la tâche. Chaque report renforce le suivant 👉 le cerveau apprend que remettre n'a jamais de vraie conséquence immédiate 👉 la tâche grossit dans ta tête à chaque report. À observer dès le tout premier report, pas au dixième. #procrastination #motivation #clarte #organisation #productivite #bienetre #energie #developpementpersonnel #discipline",
-  "image_prete": "images_manuelles/spirale-demarrer-plus-tard-procrastination.jpg",
   "points_image": [
    "Le cerveau apprend que remettre n'a jamais de vraie conséquence immédiate",
    "La tâche grossit dans ta tête à chaque report"
@@ -1670,7 +1665,6 @@
   "titre": "Procrastination : pourquoi ton cerveau choisit le confort plutôt que le progrès",
   "texte_image": "Le cerveau préfère le confort au progrès",
   "description": "Un plaid, une série, un bol de popcorn : tout te pousse vers ce qui est immédiatement agréable plutôt que vers un effort aux bénéfices lointains. C'est un mécanisme de survie ancien 👉 il économise l'énergie par défaut 👉 il ne calcule pas le bénéfice à long terme. La question n'est pas de le supprimer, mais de rendre le premier pas presque aussi confortable que le canapé. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel #discipline",
-  "image_prete": "images_manuelles/cerveau-confort-vs-progres-procrastination.jpg",
   "points_image": [
    "Il économise l'énergie par défaut",
    "Il ne calcule pas le bénéfice à long terme"
@@ -1681,7 +1675,6 @@
   "titre": "Procrastination et concentration : l'effet de ton bureau encombré",
   "texte_image": "Ce que ton bureau dit de ta tête",
   "description": "Un bureau couvert de papiers froissés n'est pas juste un problème de rangement. Chaque élément visible demande un peu d'attention, même sans que tu t'en rendes compte 👉 cette attention grignotée devient fatigue mentale diffuse 👉 elle rend le premier geste plus dur à lancer. Désencombrer ne prend pas des heures, et l'effet sur ta capacité à démarrer est souvent immédiat. #procrastination #productivite #organisation #bienetre #motivation #clarte #energie #developpementpersonnel #discipline",
-  "image_prete": "images_manuelles/avant-apres-desencombrement-clarte-mentale.jpg",
   "points_image": [
    "Cette attention grignotée devient fatigue mentale diffuse",
    "Elle rend le premier geste plus dur à lancer"
@@ -1692,7 +1685,6 @@
   "titre": "Moins de procrastination, c'est concrètement plus de liberté",
   "texte_image": "Moins de procrastination, plus de liberté",
   "description": "On imagine la procrastination comme un simple manque de rigueur, alors qu'elle prend surtout de la place 👉 de l'énergie dépensée à culpabiliser 👉 du temps de loisir rongé par les tâches remises à plus tard 👉 une déconnexion impossible tant qu'un dossier traîne en arrière-plan. Chaque tâche terminée à temps libère un espace mental qui t'appartient vraiment. #procrastination #organisation #bienetre #clarte #motivation #productivite #energie #developpementpersonnel #discipline",
-  "image_prete": "images_manuelles/moins-procrastination-plus-liberte.jpg",
   "points_image": [
    "De l'énergie dépensée à culpabiliser",
    "Du temps de loisir rongé par les tâches remises à plus tard",
@@ -1703,8 +1695,7 @@
  {
   "titre": "4-4-6 : la respiration à faire quand la pression monte d'un coup",
   "texte_image": "4-4-6 : la respiration à faire quand la pression monte d'un coup",
-  "description": "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre secondes, puis expire doucement par la bouche pendant six secondes : ce rythme simple, répété deux à cinq minutes, envoie un signal de calme direct à ton système nerveux, particulièrement utile juste après un moment tendu. Pas besoin de fermer les yeux ni de t'isoler, quelques cycles discrets suffisent à faire retomber la pression. #respiration #stress #systemenerveux #calme #anxiete #detente",
-  "image_prete": "images_manuelles/respiration-4-4-6-relacher-pression.jpg",
+  "description": "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre secondes, puis expire doucement par la bouche pendant six secondes : ce rythme simple, répété deux à cinq minutes, envoie un signal de calme direct à ton système nerveux, particulièrement utile juste après un moment tendu. Pas besoin de fermer les yeux ni de t'isoler, quelques cycles discrets suffisent à faire retomber la pression. #respiration #stress #systemenerveux #calme #anxiete #detente #bienetre #antistress",
   "theme": "respiration",
   "points_image": [
    "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre seco",
@@ -1715,7 +1706,6 @@
   "titre": "Énergie et self-care : prendre soin de soi, une façon concrète de se protéger",
   "texte_image": "Prendre soin de soi, c'est aussi une façon concrète de te protéger",
   "description": "On range souvent prendre soin de soi dans la case du luxe, alors que c'est une des façons les plus directes de se protéger d'un épuisement plus profond 👉 un esprit plus apaisé se traduit par une meilleure énergie au quotidien 👉 moins de réactivité face aux imprévus 👉 une capacité à tenir la distance sans s'effondrer à la première difficulté. Ce n'est pas égoïste, c'est un entretien nécessaire. #energie #bienetre #systemenerveux #equilibre #recuperation #fatiguementale #santementale #fatigue",
-  "image_prete": "images_manuelles/prendre-soin-de-soi-meilleure-energie.jpg",
   "points_image": [
    "Un esprit plus apaisé se traduit par une meilleure énergie au quotidien",
    "Moins de réactivité face aux imprévus",
@@ -1735,16 +1725,15 @@
   "theme": "sommeil"
  },
  {
-  "titre": "Nerf vague : 5 façons simples de l'activer pour calmer le stress en 2 minutes",
-  "texte_image": "5 façons d'activer le nerf vague contre le stress",
+  "titre": "Nerf vague : 4 façons simples de l'activer pour calmer le stress en 2 minutes",
+  "texte_image": "4 façons d'activer le nerf vague contre le stress",
   "points_image": [
    "Expirer longuement par la bouche (6 secondes)",
-   "Mettre les mains dans l'eau froide 30 secondes",
-   "Fredonner ou chanter doucement 1 minute",
-   "Regarder en haut et à droite pour détendre l'œil",
-   "Expirer en faisant le son « VV » comme un frottement"
+   "Passer les mains sous l'eau froide 30 secondes",
+   "Fredonner doucement pendant 1 minute",
+   "Masser doucement la nuque"
   ],
-  "description": "Le nerf vague est le frein naturel du stress : quand il s'active, le cœur ralentit, la respiration s'allonge, le corps repasse en mode repos. Cinq façons de le stimuler sans matériel, en moins de deux minutes 👉 expirer longuement par la bouche six secondes 👉 passer les mains sous l'eau froide 30 secondes 👉 fredonner ou chanter une minute 👉 regarder en haut à droite pour détendre l'œil 👉 expirer en faisant le son « VV ». Pour les soirs où le mental reste en alerte. 🎯 Le guide gratuit « Quand le cerveau refuse de dormir » t'attend dans l'épingle — 30 jours d'exercices anti-rumination. #nerfvague #systemenerveux #stress #respiration #anxiete #calme #antistress #sante #bienetre #coherencecardiaque",
+  "description": "Le nerf vague est le frein naturel du stress : quand il s'active, le cœur ralentit et le corps repasse en mode repos. Quatre façons de le stimuler sans matériel 👉 expirer longuement, six secondes 👉 passer les mains sous l'eau froide 👉 fredonner une minute 👉 masser doucement la nuque. Pour les soirées où le stress reste en alerte, le guide gratuit propose une routine anti-rumination au lit. #nerfvague #systemenerveux #stress #respiration #anxiete #calme #antistress #sante",
   "theme": "nerfvague"
  },
  {
@@ -1767,7 +1756,7 @@
    "Tu enchaînes les activités sans vrai temps mort",
    "Le premier jour de congé, tu tombes malade"
   ],
-  "description": "Le système nerveux a besoin de temps de récupération, pas seulement de sommeil. Trois signes qu'il ne récupère pas assez 👉 le week-end, l'épuisement rattrape alors qu'il ne s'est rien passé de physique 👉 les journées s'enchaînent sans vrai temps mort, même le soir 👉 le premier jour de congé, le corps tombe malade, signe que le système lâche la garde. La récupération passe par des moments où le cerveau n'a pas d'objectif : regarder par la fenêtre, marcher sans écouter de podcast, s'asseoir sans rien faire.mentale. 📥 La récupération nerveuse est au cœur du guide gratuit — reçois le calendrier 30 jours dans l'épingle. #recuperation #systemenerveux #stress #fatigue #epuisement #sante #bienetre #calme #anxiete #fatiguementale",
+  "description": "Le système nerveux a besoin de récupération, pas seulement de sommeil. Trois signes qu'il ne se repose pas assez 👉 l'épuisement te rattrape le week-end sans effort physique 👉 les journées s'enchaînent sans vrai temps mort, même le soir 👉 tu tombes malade au premier jour de congé. #recuperation #systemenerveux #stress #fatigue #epuisement #sante #bienetre #calme",
   "theme": "recuperation"
  },
  {
@@ -1787,9 +1776,10 @@
   "points_image": [
    "Le cerveau en saturation ne trouve pas la sortie tout seul",
    "L'inertie s'installe et renforce le blocage",
-   "Changer de contexte physique débloque le mental"
+   "Changer de contexte physique débloque le mental",
+   "Attendre augmente la pression intérieure"
   ],
-  "description": "Quand l'esprit est bloqué, le réflexe est souvent de rester là à attendre que ça passe. Quatre raisons expliquent pourquoi cette stratégie échoue 👉 le cerveau saturé ne trouve pas de solution par lui-même 👉 l'inertie s'installe et aggrave l'impression d'être coincé 👉 changer de contexte physique relance la circulation neuronale 👉 attendre renforce la pression intérieure. Bouger, même quelques minutes, est souvent plus efficace que de forcer. #blocagemental #mental #stress #surcharge #clarte #concentration #bienetre #productivite",
+  "description": "Quand l'esprit est bloqué, le réflexe est de rester là à attendre que ça passe. Quatre raisons pour lesquelles ça échoue 👉 le cerveau saturé ne trouve pas la sortie tout seul 👉 l'inertie s'installe et renforce l'impression d'être coincé 👉 changer de contexte physique relance la réflexion 👉 attendre augmente la pression intérieure. Bouger quelques minutes aide plus que forcer. #blocagemental #mental #stress #surcharge #clarte #concentration #bienetre #productivite",
   "theme": "blocagemental"
  },
  {
@@ -1811,7 +1801,7 @@
    "Une stimulation douce avant le lit améliore l'endormissement",
    "L'expiration lente est le moyen le plus simple de l'activer"
   ],
-  "description": "Le nerf vague relie le cerveau au ventre et au cœur : c'est lui qui commande le passage en mode repos. Quand il est peu actif, le corps reste en alerte même le soir. Le stimuler est simple 👉 des expirations longues et lentes 👉 des gargarismes ou du chant doux 👉 un contact avec l'eau froide. Le guide gratuit détaille comment l'activer au coucher pour des nuits plus profondes. #systemenerveux #nerfvague #sommeil #respiration #stress #parasympathique #mieuxdormir #calme",
+  "description": "Le nerf vague relie le cerveau au ventre et au cœur : c'est lui qui commande le passage en mode repos. Quand il est peu actif, le corps reste en alerte même le soir. Le stimuler est simple 👉 des expirations longues et lentes 👉 des gargarismes ou du chant doux 👉 un contact avec l'eau froide. #systemenerveux #nerfvague #sommeil #respiration #stress #parasympathique #mieuxdormir #calme",
   "theme": "systemenerveux"
  },
  {
@@ -1822,18 +1812,19 @@
    "10 minutes de respiration lente, expiration longue",
    "Marcher pieds nus sur une surface naturelle"
   ],
-  "description": "Après une journée tendue, le système nerveux reste en alerte. Trois gestes simples aident à lui envoyer le signal que la menace est passée 👉 une douche chaude suivie d'un filet d'eau fraîche sur le visage 👉 dix minutes de respiration avec une expiration deux fois plus longue que l'inspiration 👉 marcher pieds nus sur l'herbe, le carrelage ou la terre pour un ancrage naturel. Le guide gratuit détaille ces rituels de fin de journée (lien dans l'épingle). #systemenerveux #stress #detente #respiration #ancrage #soiree #calme #antistress #bienetre",
+  "description": "Après une journée tendue, le système nerveux reste en alerte. Trois gestes aident à lui signaler que la menace est passée 👉 une douche chaude finie par un filet d'eau fraîche sur le visage 👉 dix minutes de respiration avec une expiration deux fois plus longue 👉 marcher pieds nus quelques minutes. #systemenerveux #stress #detente #respiration #ancrage #soiree #calme #antistress",
   "theme": "systemenerveux"
  },
  {
-  "titre": "6 signes que ton sommeil profond est insuffisant (même si tu passes 8h au lit)",
-  "texte_image": "6 signes d'un sommeil profond insuffisant",
+  "titre": "4 signes que ton sommeil profond est insuffisant (même si tu passes 8h au lit)",
+  "texte_image": "4 signes d'un sommeil profond insuffisant",
   "points_image": [
-   "Tu te réveilles plusieurs fois sans t'en souvenir",
-   "Tu as besoin d'une sieste pour tenir la journée",
-   "Tu ne rêves jamais ou très rarement"
+   "Des réveils fréquents dont tu ne te souviens pas",
+   "Besoin d'une sieste pour tenir la journée",
+   "Fatigué au réveil malgré une nuit longue",
+   "Brouillard mental en pleine journée"
   ],
-  "description": "Passer huit heures au lit ne garantit pas un sommeil réparateur. Six signes indiquent que le sommeil profond n'est pas au rendez-vous 👉 réveils fréquents sans souvenir 👉 besoin d'une sieste pour tenir 👉 absence de rêves mémorables 👉 fatigue au réveil malgré une nuit longue 👉 brouillard mental en journée 👉 irritabilité. Le guide gratuit propose des solutions pour retrouver des nuits vraiment réparatrices (lien dans l'épingle). #sommeil #sommeilprofond #fatigue #reveil #stress #insomnie #mieuxdormir #repos #bienetre",
+  "description": "Passer huit heures au lit ne garantit pas un sommeil réparateur. Quatre signes que le sommeil profond manque 👉 des réveils fréquents dont tu ne gardes aucun souvenir 👉 le besoin d'une sieste pour tenir 👉 la fatigue au réveil malgré une nuit longue 👉 le brouillard mental en journée. Si les ruminations t'empêchent de dormir, le guide gratuit « Quand le cerveau refuse de dormir » propose un calendrier de 30 jours. #sommeil #sommeilprofond #fatigue #reveil #stress #insomnie #mieuxdormir #repos",
   "theme": "sommeil"
  },
  {
@@ -1842,9 +1833,10 @@
   "points_image": [
    "« Qu'est-ce qui est vraiment urgent aujourd'hui ? »",
    "« Puis-je déléguer ou reporter ça ? »",
-   "« Est-ce que c'est vraiment mon problème ? »"
+   "« Est-ce que c'est vraiment mon problème ? »",
+   "« Quelle est la seule chose à faire avant ce soir ? »"
   ],
-  "description": "La charge mentale pèse lourd quand tout semble prioritaire. Quatre questions simples aident à remettre de l'ordre dans le cerveau 👉 qu'est-ce qui est vraiment urgent aujourd'hui — pas juste important 👉 puis-je déléguer ou reporter cette tâche 👉 est-ce vraiment mon problème à résoudre 👉 quelle est la seule chose que je dois faire avant ce soir. Ces phrases coupent le bruit mental et recentrent sur l'essentiel. #fatiguementale #chargementale #mental #organisation #stress #priorites #bienetre #productivite #simplicite",
+  "description": "La charge mentale pèse lourd quand tout semble prioritaire. Quatre questions remettent de l'ordre dans la tête 👉 qu'est-ce qui est vraiment urgent aujourd'hui, pas juste important 👉 puis-je déléguer ou reporter cette tâche 👉 est-ce vraiment à moi de le résoudre 👉 quelle est la seule chose à faire avant ce soir. Ces phrases coupent le bruit mental et recentrent sur l'essentiel. #fatiguementale #chargementale #mental #organisation #stress #priorites #bienetre #productivite",
   "theme": "fatiguementale"
  },
  {
@@ -1853,9 +1845,10 @@
   "points_image": [
    "Tu fais les tâches faciles avant les importantes",
    "Les notifications sont irrésistibles même en plein travail",
-   "Tu repousses ce qui ne donne pas une récompense immédiate"
+   "Tu repousses ce qui ne donne pas une récompense immédiate",
+   "Tu commences plusieurs choses sans en finir aucune"
   ],
-  "description": "La dopamine est le neurotransmetteur de la motivation et de la récompense. Quand son circuit est déséquilibré par le stress ou la fatigue, le cerveau évite naturellement les tâches sans gratification immédiate 👉 préférer le facile au nécessaire 👉 être happé par les notifications 👉 repousser tout ce qui ne promet pas de récompense rapide. Ce n'est pas un manque de volonté, c'est un signal biologique. La solution passe par des micro-récompenses et des pauses réelles. #procrastination #dopamine #motivation #stress #cerveau #mental #fatiguementale #concentration #productivite",
+  "description": "La dopamine joue sur la motivation et la récompense. Sous stress ou fatigue, le cerveau évite les tâches sans gratification immédiate 👉 tu fais le facile avant le nécessaire 👉 les notifications te happent 👉 tu repousses ce qui ne récompense pas vite 👉 tu commences plusieurs choses sans en finir aucune. Ce n'est pas un manque de volonté. Des micro-récompenses et de vraies pauses aident. #procrastination #dopamine #motivation #stress #cerveau #mental #fatiguementale #concentration",
   "theme": "procrastination"
  },
  {
@@ -1870,14 +1863,14 @@
   "theme": "somatisation"
  },
  {
-  "titre": "Énergie : 4 moments précis de la journée où tu perds le plus de vitalité",
-  "texte_image": "4 moments où tu perds le plus d'énergie",
+  "titre": "Énergie : 3 moments précis de la journée où tu perds le plus de vitalité",
+  "texte_image": "3 moments où tu perds le plus d'énergie",
   "points_image": [
    "11h : le creux avant le déjeuner",
    "15h : le coup de barre post-digestion",
    "18h : le moment où la fatigue de la journée rattrape"
   ],
-  "description": "L'énergie suit une courbe prévisible dans la journée, mais certains moments sont plus critiques que d'autres. Quatre créneaux sont particulièrement coûteux 👉 11h, le creux avant le déjeuner souvent lié à un petit-déjeuner trop sucré 👉 15h, le coup de barre post-digestion amplifié par le déjeuner 👉 18h, la fatigue accumulée qui pousse vers le canapé et l'écran. Anticiper ces moments avec une vraie pause ou une collation adaptée change tout. #energie #fatigue #rythmecircadien #alimentation #sommeil #bienetre #productivite #vitalite",
+  "description": "L'énergie suit une courbe assez prévisible dans la journée. Trois créneaux coûtent particulièrement cher 👉 11h, le creux avant le déjeuner, souvent après un petit-déjeuner trop sucré 👉 15h, le coup de barre de la digestion 👉 18h, la fatigue accumulée qui pousse vers le canapé et l'écran. Anticiper ces moments avec une vraie pause ou une collation adaptée change beaucoup. #energie #fatigue #rythmecircadien #alimentation #sommeil #bienetre #productivite #vitalite",
   "theme": "energie"
  },
  {
@@ -1886,9 +1879,10 @@
   "points_image": [
    "Épaules remontées vers les oreilles toute la journée",
    "Tête penchée vers l'avant en regardant l'écran",
-   "Mâchoire serrée en lisant tes emails"
+   "Mâchoire serrée en lisant tes emails",
+   "Pieds qui ne touchent pas le sol"
   ],
-  "description": "Certaines postures au bureau sont des signaux d'alerte permanents pour le système nerveux. Quatre d'entre elles passent inaperçues mais entretiennent la tension 👉 les épaules remontées vers les oreilles 👉 la tête projetée vers l'avant sur l'écran 👉 la mâchoire serrée en lisant ses emails 👉 les pieds qui ne touchent pas le sol. Les corriger envoie instantanément un message de sécurité au cerveau. Le guide gratuit détaille les ajustements simples à faire (lien dans l'épingle). #posturesantistress #bureau #stress #tension #ergonomie #systemenerveux #travail #antistress #corps",
+  "description": "Certaines postures au bureau envoient un signal d'alerte permanent au système nerveux. Quatre passent inaperçues 👉 les épaules remontées vers les oreilles 👉 la tête projetée vers l'écran 👉 la mâchoire serrée en lisant tes emails 👉 les pieds qui ne touchent pas le sol. Les corriger aide le corps à se détendre. #stress #travail #bureau #tension #ergonomie #systemenerveux #antistress #bienetre",
   "theme": "posturesantistress"
  },
  {
@@ -1899,7 +1893,7 @@
    "Parler du problème à voix haute à quelqu'un",
    "Commencer par la partie la plus petite et facile"
   ],
-  "description": "Rester bloqué devant une tâche pendant des heures est épuisant. Trois tactiques simples aident à retrouver l'élan perdu 👉 changer physiquement de pièce ou marcher cinq minutes pour relancer la circulation cérébrale 👉 formuler le problème à voix haute devant quelqu'un (ou même seul) 👉 commencer par le tout petit bout le plus facile, même s'il semble insignifiant. L'élan revient souvent dès le premier geste. #blocagemental #clarte #mental #concentration #stress #surcharge #productivite #bienetre #travail",
+  "description": "Rester bloqué devant une tâche pendant des heures épuise. Trois tactiques aident à retrouver l'élan 👉 changer de pièce ou marcher cinq minutes pour relancer la réflexion 👉 formuler le problème à voix haute, devant quelqu'un ou seul 👉 commencer par le plus petit bout, même s'il semble insignifiant. L'élan revient souvent dès le premier geste concret. #blocagemental #clarte #mental #concentration #stress #surcharge #productivite #bienetre",
   "theme": "blocagemental"
  },
  {
@@ -1908,9 +1902,10 @@
   "points_image": [
    "Accepter l'éveil au lieu de lutter contre",
    "Instaurer une routine de transition d'au moins 30 minutes",
-   "Réserver 10 minutes à l'écriture des soucis"
+   "Réserver 10 minutes à l'écriture des soucis",
+   "Respirer lentement au moment du coucher"
   ],
-  "description": "L'anxiété empêche de dormir, et le manque de sommeil aggrave l'anxiété : c'est le cercle vicieux par excellence. Quatre étapes aident à en sortir 👉 accepter l'éveil au lieu de lutter, ce qui relâche la pression 👉 instaurer une routine de transition de trente minutes entre la journée et le lit 👉 écrire ses soucis dix minutes avant de se coucher 👉 pratiquer une respiration lente au moment du coucher. Le guide gratuit accompagne cette transition pas à pas (lien dans l'épingle). #sommeil #anxiete #stress #insomnie #ruminations #mieuxdormir #routinedusoir #calme #mental",
+  "description": "L'anxiété empêche de dormir et le manque de sommeil nourrit l'anxiété. Quatre étapes pour sortir du cercle 👉 accepter l'éveil au lieu de lutter 👉 une transition de trente minutes entre la journée et le lit 👉 écrire ses soucis dix minutes avant de se coucher 👉 respirer lentement au coucher. #sommeil #anxiete #stress #insomnie #ruminations #mieuxdormir #routinedusoir #calme",
   "theme": "sommeil"
  },
  {
@@ -1921,7 +1916,7 @@
    "Remplacer par des activités à récompense lente",
    "Boire de l'eau et supprimer la caféine"
   ],
-  "description": "Les sollicitations constantes (réseaux, notifications, vidéos courtes) surstimulent le circuit de la dopamine et réduisent la sensibilité à la récompense. Une détox de trois jours peut suffire à le rééquilibrer 👉 arrêter les écrans de divertissement (réseaux, vidéos, jeux) 👉 remplacer par des activités à gratification lente (marche, lecture, cuisine) 👉 boire de l'eau et réduire la caféine. Au bout de trois jours, les petites choses retrouvent leur saveur et la concentration s'améliore. #energie #dopamine #ecrans #concentration #fatiguementale #motivation #cerveau #detox #bienetre",
+  "description": "Réseaux, notifications et vidéos courtes sollicitent sans arrêt le circuit de la récompense, et le reste paraît vite fade. Trois jours plus sobres aident à retrouver de l'intérêt pour le quotidien 👉 couper les écrans de divertissement 👉 les remplacer par des activités lentes : marche, lecture, cuisine 👉 réduire un peu la caféine. Beaucoup y gagnent en concentration. #energie #dopamine #ecrans #concentration #fatiguementale #motivation #cerveau #detox",
   "theme": "energie"
  },
  {
@@ -1932,19 +1927,19 @@
    "Au bout de 2 minutes, libre à toi d'arrêter ou continuer",
    "Dans 80% des cas, l'élan suffit à poursuivre"
   ],
-  "description": "Quand une tâche semble insurmontable, le cerveau fige. La technique des deux minutes contourne ce blocage en fixant une limite si courte qu'elle ne déclenche pas de résistance 👉 s'engager à faire la tâche pendant deux minutes seulement 👉 au bout de deux minutes, choisir librement de continuer ou d'arrêter 👉 dans la grande majorité des cas, l'élan initial suffit à poursuivre. Le plus dur est de commencer, et deux minutes suffisent. #procrastination #motivation #productivite #mental #blocage #concentration #organisation #bienetre #travail",
+  "description": "Quand une tâche semble insurmontable, le cerveau se fige. La technique des deux minutes contourne ce blocage avec une limite si courte qu'elle ne déclenche pas de résistance 👉 t'engager à faire la tâche deux minutes seulement 👉 au bout de deux minutes, choisir de continuer ou d'arrêter 👉 souvent, l'élan suffit à poursuivre. Le plus dur, c'est de commencer. #procrastination #motivation #productivite #mental #blocage #concentration #organisation #bienetre",
   "theme": "procrastination"
  },
  {
-  "titre": "5 signes que tu t'endors trop tard pour bien récupérer",
-  "texte_image": "5 signes d'un coucher trop tardif",
+  "titre": "4 signes que tu t'endors trop tard pour bien récupérer",
+  "texte_image": "4 signes d'un coucher trop tardif",
   "points_image": [
    "Tu te réveilles souvent entre 3h et 4h du matin",
    "Tu es fatigué au réveil même après 7 heures",
    "Tu as faim pour du sucre dès le réveil",
    "Tu bâilles toute la matinée"
   ],
-  "description": "Dormir sept heures ne suffit pas si le coucher est trop tardif. Cinq signes indiquent un décalage : réveils vers trois ou quatre heures, fatigue persistante malgré des heures correctes, envies de sucre au réveil, bâillements le matin et sommeil facile le week-end. Le guide gratuit aide à comprendre le rythme circadien. #sommeil #rythmecircadien #recuperation #cortisol #melatonine #mieuxdormir #routinedusoir #fatigue #insomnie #detente",
+  "description": "Dormir sept heures ne suffit pas toujours quand le coucher arrive trop tard. Quatre signes possibles 👉 des réveils vers trois ou quatre heures du matin 👉 une fatigue qui persiste malgré assez d'heures de sommeil 👉 une envie de sucré dès le réveil 👉 des bâillements toute la matinée. #sommeil #rythmecircadien #recuperation #cortisol #melatonine #mieuxdormir #routinedusoir #fatigue",
   "theme": "sommeil"
  },
  {
@@ -1955,7 +1950,7 @@
    "Massage lent des deux côtés du cou",
    "Poser les mains sur le ventre et allonger l'expiration"
   ],
-  "description": "Le nerf vague est le frein naturel du stress. Trois gestes au lit aident à le stimuler : fredonner en expiration pour faire vibrer les cordes vocales, masser les côtés du cou où il passe, et allonger l'expiration une main sur le ventre. Le guide gratuit détaille cette routine anti-rumination à faire au lit. #sommeil #nerfvague #stress #respiration #systemenerveux #vagusnerve #detente #mieuxdormir #calme #routinedusoir",
+  "description": "Le nerf vague est le frein naturel du stress. Trois gestes au lit aident à le stimuler : fredonner en expiration pour faire vibrer les cordes vocales, masser les côtés du cou où il passe, et allonger l'expiration une main sur le ventre. Si les pensées reprennent au coucher, le guide offert dans l'épingle propose une routine pour apaiser les pensées au coucher. #sommeil #nerfvague #stress #respiration #systemenerveux #vagusnerve #detente #mieuxdormir #calme #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -1966,7 +1961,7 @@
    "Elle augmente la mélatonine du soir",
    "Elle réduit le temps d'endormissement"
   ],
-  "description": "Le sommeil ne se prépare pas seulement le soir : la première exposition à la lumière le matin décide la qualité de ta prochaine nuit. Elle recale l'horloge interne, programme la mélatonine du soir et réduit le temps d'endormissement. Le guide gratuit propose un calendrier de 30 jours pour mieux dormir. #sommeil #lumiere #rythmecircadien #melatonine #mieuxdormir #routinedusoir #bienetre #recuperation #energie #detente",
+  "description": "Le sommeil ne se prépare pas seulement le soir : la première exposition à la lumière le matin décide la qualité de ta prochaine nuit. Elle recale l'horloge interne, programme la mélatonine du soir et réduit le temps d'endormissement. Pour aller plus loin, le guide gratuit propose une routine anti-rumination à faire au lit. #sommeil #lumiere #rythmecircadien #melatonine #mieuxdormir #routinedusoir #bienetre #recuperation #energie #detente",
   "theme": "sommeil"
  },
  {
@@ -1978,7 +1973,7 @@
    "Est-ce que cette situation est un danger réel ?",
    "De quoi j'ai besoin maintenant ?"
   ],
-  "description": "Avant que le stress prenne toute la place, quatre questions ramènent au corps : où est logée la tension, est-ce que je respire court ou profond, cette situation est-elle un danger réel, de quoi ai-je besoin maintenant. Elles créent un espace entre la réaction et la réponse. Le guide gratuit offre des exercices pour le soir. #systemenerveux #stress #anxiete #respiration #calme #detente #cortisol #clarte #bienetre #antistress",
+  "description": "Avant que le stress prenne toute la place, quatre questions ramènent au corps : où est logée la tension, est-ce que je respire court ou profond, cette situation est-elle un danger réel, de quoi ai-je besoin maintenant. Elles créent un espace entre la réaction et la réponse. Quand ce stress empêche de dormir, le guide gratuit propose un calendrier de 30 jours pour apaiser le mental au coucher. #systemenerveux #stress #anxiete #respiration #calme #detente #cortisol #clarte #bienetre",
   "theme": "systemenerveux"
  },
  {
@@ -1989,7 +1984,7 @@
    "Inspire 4 secondes, expire 6 secondes",
    "Répète pendant 5 minutes, sans forcer"
   ],
-  "description": "Pas besoin d'une heure de méditation pour réguler le système nerveux.. Cinq minutes par jour, assis confortablement, à respirer sur un rythme où l'expiration dure deux secondes de plus que l'inspiration, suffisent à créer un ancrage.. La régularité compte plus que la durée. Le guide gratuit propose des exercices complémentaires. #systemenerveux #stress #respiration #calme #detente #coherencecardiaque #cortisol #anxiete #nerfvague #antistress",
+  "description": "Pas besoin d'une heure de méditation pour réguler le système nerveux.. Cinq minutes par jour, assis confortablement, à respirer sur un rythme où l'expiration dure deux secondes de plus que l'inspiration, suffisent à créer un ancrage.. La régularité compte plus que la durée. #systemenerveux #stress #respiration #calme #detente #coherencecardiaque #cortisol #anxiete #nerfvague #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2004,15 +1999,15 @@
   "theme": "fatiguementale"
  },
  {
-  "titre": "5 idées reçues sur la fatigue mentale qui t'empêchent de récupérer",
-  "texte_image": "5 idées reçues sur la fatigue mentale",
+  "titre": "4 idées reçues sur la fatigue mentale qui t'empêchent de récupérer",
+  "texte_image": "4 idées reçues sur la fatigue mentale",
   "points_image": [
    "« Dormir plus la répare »",
    "« C'est juste dans la tête »",
    "« Les vacances suffisent »",
    "« C'est un manque de volonté »"
   ],
-  "description": "Dormir plus ne suffit pas. Non ce n'est pas juste dans la tête : la fatigue mentale a des bases physiologiques. Les vacances ne l'effacent pas si elle s'est accumulée sur des mois. Ce n'est pas un manque de volonté. Et le sport intense peut l'aggraver quand le système nerveux est déjà épuisé. Cinq idées reçues qui empêchent de récupérer. #fatiguementale #stress #epuisement #recuperation #chargementale #santementale #bienetre #repos #mental #fatigue",
+  "description": "Dormir plus ne suffit pas toujours à effacer la fatigue mentale. Non, ce n'est pas juste dans la tête : elle a des bases physiologiques. Les vacances ne l'effacent pas si elle s'est accumulée pendant des mois. Et ce n'est pas un manque de volonté. Quatre idées reçues qui retardent la récupération : les repérer aide à choisir un repos vraiment réparateur. #fatiguementale #stress #epuisement #recuperation #chargementale #santementale #bienetre #repos",
   "theme": "fatiguementale"
  },
  {
@@ -2027,15 +2022,15 @@
   "theme": "fatiguementale"
  },
  {
-  "titre": "5 aliments à ne surtout pas sauter quand tu es stressé",
-  "texte_image": "5 aliments à garder quand tu stresses",
+  "titre": "4 repas à ne surtout pas sauter quand tu es stressé",
+  "texte_image": "4 repas à garder quand tu stresses",
   "points_image": [
    "Petit-déjeuner protéiné pour stabiliser la glycémie",
    "Déjeuner avec légumes verts et féculents complets",
    "Collation protéines + fibres à 16h",
    "Dîner léger avec légumineuses"
   ],
-  "description": "Cinq repas à ne pas zapper quand le stress est là : un petit-déjeuner protéiné pour éviter le coup de barre, un déjeuner avec légumes verts et féculents complets, une collation protéines-fibres à seize heures, un dîner léger avec légumineuses et une hydratation régulière. Chacun stabilise l'énergie et limite la nervosité. #alimentation #stress #glycemie #cortisol #nutrition #bienetre #energie #repas #nervosite #antistress",
+  "description": "Quatre repas à ne pas zapper quand le stress est là : un petit-déjeuner protéiné pour éviter le coup de barre, un déjeuner avec légumes verts et féculents complets, une collation protéines et fibres vers seize heures, puis un dîner léger avec des légumineuses. Bien boire aide aussi. Des repas réguliers stabilisent la glycémie et limitent la nervosité. #alimentation #stress #glycemie #cortisol #nutrition #bienetre #energie #repas",
   "theme": "alimentation"
  },
  {
@@ -2059,19 +2054,19 @@
    "Quelle partie puis-je déléguer ou simplifier ?",
    "Qu'est-ce qui change si je ne fais rien aujourd'hui ?"
   ],
-  "description": "Quatre questions posées rapidement désamorcent un blocage : quelle est la plus petite action possible maintenant, que ferais-je si je n'avais pas peur, quelle partie puis-je déléguer, et qu'est-ce qui change si je ne fais rien aujourd'hui. Une seule réponse suffit parfois à retrouver la clarté. Le guide gratuit rassemble d'autres outils. #blocagemental #clarte #decision #stress #mental #organisation #anxiete #systemenerveux #bienetre #santementale",
+  "description": "Quatre questions posées rapidement désamorcent un blocage : quelle est la plus petite action possible maintenant, que ferais-je si je n'avais pas peur, quelle partie puis-je déléguer, et qu'est-ce qui change si je ne fais rien aujourd'hui. Une seule réponse suffit parfois à retrouver la clarté. #blocagemental #clarte #decision #stress #mental #organisation #anxiete #systemenerveux #bienetre #santementale",
   "theme": "blocagemental"
  },
  {
-  "titre": "5 aliments qui stabilisent l'énergie sans caféine",
-  "texte_image": "5 aliments qui stabilisent l'énergie",
+  "titre": "4 aliments qui stabilisent l'énergie sans caféine",
+  "texte_image": "4 aliments qui stabilisent l'énergie",
   "points_image": [
    "Avoine complète au petit-déjeuner",
    "Œufs source de protéines durables",
    "Légumineuses pour l'énergie lente",
    "Banane avant l'effort mental"
   ],
-  "description": "Cinq alliés pour stabiliser l'énergie sans caféine : l'avoine complète le matin libère son énergie lentement, les œufs fournissent des protéines durables, les légumineuses évitent les pics glycémiques, la banane apporte du potassium avant un effort mental, et l'eau bue régulièrement car la fatigue cache souvent la soif. #energie #alimentation #cafeine #fatigue #glycemie #nutrition #proteines #concentration #bienetre #routine",
+  "description": "Quatre alliés pour une énergie stable sans caféine : l'avoine complète du matin libère son énergie lentement, les œufs apportent des protéines durables, les légumineuses évitent les pics de glycémie et la banane fournit du potassium avant un effort mental. Pense aussi à boire régulièrement : la fatigue cache souvent une simple soif. #energie #alimentation #cafeine #fatigue #glycemie #nutrition #proteines #concentration",
   "theme": "energie"
  },
  {
@@ -2083,7 +2078,7 @@
    "Pas de caféine dans les 6h avant le coucher",
    "Sieste de 20 min avant la reprise"
   ],
-  "description": "Les horaires décalés dérèglent naturellement le sommeil, mais quelques ajustements peuvent limiter la casse. Ces astuces permettent au corps de récupérer même quand l'heure du coucher varie d'un jour à l'autre. Le guide gratuit peut compléter par une routine adaptable à tous les rythmes. #sommeil #travail #horairesdecalés #sieste #cafeine #recuperation #mieuxdormir #routinedusoir",
+  "description": "Les horaires décalés dérèglent naturellement le sommeil, mais quelques ajustements peuvent limiter la casse. Ces astuces permettent au corps de récupérer même quand l'heure du coucher varie d'un jour à l'autre. Les nuits où la tête refuse de s'arrêter, le guide gratuit propose une routine anti-rumination à faire au lit. #sommeil #travail #horairesdecalés #sieste #cafeine #recuperation #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2095,7 +2090,7 @@
    "Céréales complètes à index glycémique bas",
    "Produit laitier riche en tryptophane"
   ],
-  "description": "Ce que tu manges le soir influence directement la qualité de ton sommeil. L'idéal est de dîner deux heures avant le coucher, léger, assis sans écran. Pour une approche complète, le guide gratuit propose une routine du soir apaisante. #sommeil #alimentation #diner #melatonine #magnesium #tryptophane #endormissement #mieuxdormir Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, accessible #routinedusoir",
+  "description": "Ce que tu manges le soir influence directement la qualité de ton sommeil. L'idéal est de dîner deux heures avant le coucher, léger, assis sans écran. Si les ruminations t'empêchent de dormir, le guide gratuit rassemble des exercices pour calmer le mental du soir, sans matériel. #sommeil #alimentation #diner #melatonine #magnesium #tryptophane #endormissement #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2106,7 +2101,7 @@
    "Le cortisol monte plus tôt le matin",
    "Les réveils nocturnes deviennent plus fréquents"
   ],
-  "description": "Après 40 ans, le sommeil change naturellement : la part de sommeil profond diminue, le cortisol commence à monter plus tôt le matin, et les réveils nocturnes deviennent plus fréquents. Ce n'est pas une maladie, c'est une évolution physiologique. Le guide gratuit s'adapte à tous les âges. #sommeil #age #sommeilprofond #cortisol #melatonine #reveilnocturne #mieuxdormir #routinedusoir",
+  "description": "Après 40 ans, le sommeil change naturellement : la part de sommeil profond diminue, le cortisol commence à monter plus tôt le matin, et les réveils nocturnes deviennent plus fréquents. Ce n'est pas une maladie, c'est une évolution physiologique. Pour les soirs agités, le guide gratuit rassemble des exercices pour calmer le mental du soir, sans matériel. #sommeil #age #sommeilprofond #cortisol #melatonine #reveilnocturne #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2118,7 +2113,7 @@
    "Une sieste courte en journée pour compenser",
    "Baisser ses exigences de sommeil en bas âge"
   ],
-  "description": "Avoir des enfants perturbe naturellement le sommeil des parents. Le manque de sommeil parental n'est pas une anomalie, c'est une phase. Pour retrouver de la qualité dans les heures disponibles, le guide gratuit propose une routine adaptée. #sommeil #parentalite #enfant #reveil #sieste #fatigue #organisation #mieuxdormir Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, accessible depuis l'epingle. #routinedusoir",
+  "description": "Avec des enfants, les nuits des parents sont souvent hachées, et ce n'est pas un échec : c'est une période. Quatre repères aident à tenir 👉 coucher l'enfant tôt pour garder une soirée à soi 👉 alterner les réveils de nuit avec le partenaire 👉 une sieste courte si possible 👉 baisser ses exigences pendant les premières années. Si ta tête tourne encore après le coucher, le guide gratuit propose une routine anti-rumination au lit. #sommeil #enfant #reveil #sieste #soir #calme #repos #corps",
   "theme": "sommeil"
  },
  {
@@ -2130,7 +2125,7 @@
    "Se dire que le repos compte même sans sommeil",
    "Pratiquer une activité calme sans objectif de rendormissement"
   ],
-  "description": "L'insomnie par anticipation est la peur de ne pas dormir, qui elle-même empêche de dormir. Retirer la pression du résultat est souvent ce qui permet au sommeil de revenir. Le guide gratuit développe cette approche pas à pas. #sommeil #insomnie #anxiete #stress #calme #detente #endormissement #anticipation Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, accessible depuis l'epingle. #mieuxdormir",
+  "description": "L'insomnie par anticipation est la peur de ne pas dormir, qui elle-même empêche de dormir. Retirer la pression du résultat est souvent ce qui permet au sommeil de revenir. Les nuits où la tête refuse de s'arrêter, le guide gratuit « Quand le cerveau refuse de dormir » propose un calendrier de 30 jours. #sommeil #insomnie #anxiete #stress #calme #detente #endormissement #anticipation #mieuxdormir",
   "theme": "sommeil"
  },
  {
@@ -2141,7 +2136,7 @@
    "Plus de lumière naturelle en journée",
    "Moins de sollicitations en soirée"
   ],
-  "description": "Si tu dors mieux en vacances, ce n'est pas seulement parce que tu es détendu. Reproduire ces conditions à la maison est possible : lever sans réveil le week-end, sortir en journée, et créer un vrai sas sans écran en soirée. Le guide gratuit complète par une routine adaptable au quotidien. #sommeil #vacances #rythmecircadien #lumiere #stress #cortisol #mieuxdormir #routinedusoir",
+  "description": "Si tu dors mieux en vacances, ce n'est pas seulement parce que tu es détendu. Reproduire ces conditions à la maison est possible : lever sans réveil le week-end, sortir en journée, et créer un vrai sas sans écran en soirée. Si les pensées reprennent au coucher, le guide gratuit propose une routine anti-rumination à faire au lit. #sommeil #vacances #rythmecircadien #lumiere #stress #cortisol #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2152,7 +2147,7 @@
    "Sur le dos : idéal pour l'alignement mais ronflements possibles",
    "Sur le ventre : déconseillé pour la nuque et la respiration"
   ],
-  "description": "La position dans laquelle tu dors influence directement la qualité de ta respiration nocturne. Sur le dos, l'alignement du corps est bon mais les ronflements sont plus fréquents. Un simple oreiller sous les genoux sur le dos ou entre les jambes sur le côté améliore l'alignement. #sommeil #position #respiration #nerfvague #nuque #detente #mieuxdormir Le guide gratuit propose une routine pour calmer le systeme nerveux #posturesantistress",
+  "description": "La position dans laquelle tu dors influence directement la qualité de ta respiration nocturne. Sur le dos, l'alignement du corps est bon mais les ronflements sont plus fréquents. Un simple oreiller sous les genoux sur le dos ou entre les jambes sur le côté améliore l'alignement. Le guide gratuit propose une routine anti-rumination à faire au lit. #sommeil #position #respiration #nerfvague #nuque #detente #mieuxdormir #posturesantistress",
   "theme": "sommeil"
  },
  {
@@ -2163,7 +2158,7 @@
    "La mémoire et la concentration baissent après 48h",
    "Le cortisol monte en flèche avec la privation"
   ],
-  "description": "À l'approche d'un examen ou d'un gros projet, l'idée de dormir par petits segments pour gagner du temps peut sembler tentante. Dormir normalement, même si ça réduit le temps de révision, est plus efficace pour la performance. Le guide gratuit aide à mieux dormir même en période de stress. #sommeil #examen #polyphasique #cortisol #sommeilprofond #memoire #concentration #stress #mieuxdormir",
+  "description": "À l'approche d'un examen ou d'un gros projet, l'idée de dormir par petits segments pour gagner du temps peut sembler tentante. Dormir normalement, même si ça réduit le temps de révision, est plus efficace pour la performance. Si les ruminations t'empêchent de dormir, le guide offert dans l'épingle propose une routine pour apaiser les pensées au coucher. #sommeil #examen #polyphasique #cortisol #sommeilprofond #memoire #concentration #stress #mieuxdormir",
   "theme": "sommeil"
  },
  {
@@ -2174,7 +2169,7 @@
    "Une dose trop élevée qui perturbe le cycle",
    "L'utiliser tous les soirs sans pause"
   ],
-  "description": "La mélatonine est utile en décalage horaire ou pour recaler un rythme, mais son utilisation comporte des pièges. Les doses trop élevées peuvent perturber le cycle naturel au lieu de l'aider. Avant de prendre un complément, explorer les causes du manque de sommeil est plus durable. Le guide gratuit propose des alternatives naturelles. #sommeil #melatonine #insomnie #complement #sommeilprofond #endormissement #mieuxdormir #routinedusoir",
+  "description": "La mélatonine est utile en décalage horaire ou pour recaler un rythme, mais son utilisation comporte des pièges. Les doses trop élevées peuvent perturber le cycle naturel au lieu de l'aider. Avant de prendre un complément, explorer les causes du manque de sommeil est plus durable. Pour aller plus loin, le guide offert dans l'épingle propose une routine pour apaiser les pensées au coucher. #sommeil #melatonine #insomnie #complement #sommeilprofond #endormissement #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2185,7 +2180,7 @@
    "L'eau froide relance le métabolisme",
    "Boire un petit verre suffit avant la nuit"
   ],
-  "description": "S'hydrater est essentiel, mais boire un grand verre ou une bouteille d'eau juste avant le coucher est contre-productif pour le sommeil. La vessie pleine provoque des réveils nocturnes qui fragmentent le sommeil profond. Le guide gratuit propose d'autres conseils pour des nuits continues. #sommeil #hydratation #reveilnocturne #insomnie #eau #nuit #sommeilprofond #mieuxdormir #routinedusoir",
+  "description": "S'hydrater est essentiel, mais boire un grand verre ou une bouteille d'eau juste avant le coucher est contre-productif pour le sommeil. La vessie pleine provoque des réveils nocturnes qui fragmentent le sommeil profond. Quand le mental tourne encore au lit, le guide gratuit propose une routine anti-rumination à faire au lit. #sommeil #hydratation #reveilnocturne #insomnie #eau #nuit #sommeilprofond #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2197,7 +2192,7 @@
    "La plage : visualiser le bruit des vagues en détail",
    "Le compte à rebours sensoriel : 5 choses qu'on voit, 4 qu'on touche..."
   ],
-  "description": "Les techniques de visualisation sont des alternatives efficaces aux somnifères pour les nuits où le mental s'emballe. Ces techniques occupent le cerveau de façon non stressante et facilitent la transition vers le sommeil. Aucune ne demande de matériel ou de préparation. Le guide gratuit développe la méthode pas à pas. #sommeil #visualisation #insomnie #relaxation #mental #calme #endormissement #detente #mieuxdormir",
+  "description": "Les techniques de visualisation sont des alternatives efficaces aux somnifères pour les nuits où le mental s'emballe. Ces techniques occupent le cerveau de façon non stressante et facilitent la transition vers le sommeil. Aucune ne demande de matériel ou de préparation. Pour les soirs agités, le guide gratuit propose une routine anti-rumination à faire au lit. #sommeil #visualisation #insomnie #relaxation #mental #calme #endormissement #detente #mieuxdormir",
   "theme": "sommeil"
  },
  {
@@ -2208,7 +2203,7 @@
    "La tentation du scroll retarde l'endormissement",
    "Le champ magnétique peut altérer la production de mélatonine"
   ],
-  "description": "Garder son téléphone dans la chambre a trois effets mesurés sur le sommeil. Même en mode silencieux, les flashs lumineux des notifications traversent les paupières. La tentation du « juste un regard » retarde l'endormissement de quinze à trente minutes. Le guide gratuit propose d'autres ajustements concrets pour la chambre. #sommeil #telephone #ecrans #melatonine #insomnie #chambre #detente #mieuxdormir #routinedusoir",
+  "description": "Garder son téléphone dans la chambre a trois effets mesurés sur le sommeil. Même en mode silencieux, les flashs lumineux des notifications traversent les paupières. La tentation du « juste un regard » retarde l'endormissement de quinze à trente minutes. Si l'endormissement reste difficile, le guide gratuit « Quand le cerveau refuse de dormir » propose un calendrier de 30 jours. #sommeil #telephone #ecrans #melatonine #insomnie #chambre #detente #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2220,7 +2215,7 @@
    "Phase lutéale : sommeil plus léger, réveils fréquents",
    "Règles : fatigue accrue, température plus basse"
   ],
-  "description": "Le cycle menstruel influence la qualité du sommeil à chaque phase. En phase folliculaire, le sommeil est généralement de bonne qualité. À l'ovulation, l'endormissement est facilité. Pendant les règles, la fatigue est souvent plus marquée. Le guide gratuit propose des ajustements selon les besoins de chaque période. #sommeil #cyclemenstruel #hormones #progesterone #melatonine #fatigue #nuit #mieuxdormir #routinedusoir",
+  "description": "Le cycle menstruel influence la qualité du sommeil à chaque phase. En phase folliculaire, le sommeil est généralement de bonne qualité. À l'ovulation, l'endormissement est facilité. Pendant les règles, la fatigue est souvent plus marquée. Les nuits où la tête refuse de s'arrêter, le guide offert dans l'épingle propose une routine pour apaiser les pensées au coucher. #sommeil #cyclemenstruel #hormones #progesterone #melatonine #fatigue #nuit #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2231,7 +2226,7 @@
    "Le problème c'est de ne pas se rendormir",
    "Se réveiller toujours à la même heure est un signal"
   ],
-  "description": "Se réveiller plusieurs fois par nuit n'est pas anormal en soi : le sommeil est composé de cycles de 90 minutes, et on s'approche du réveil à chaque fin de cycle. Jusqu'à trois micro-réveils par nuit sont physiologiques si on se rendort rapidement. Le guide gratuit aide à identifier et corriger ces réveils récurrents. #sommeil #reveilnocturne #cycles #cortisol #insomnie #sommeilprofond #nuit #mieuxdormir #systemenerveux",
+  "description": "Se réveiller plusieurs fois par nuit n'est pas anormal en soi : le sommeil est composé de cycles de 90 minutes, et on s'approche du réveil à chaque fin de cycle. Jusqu'à trois micro-réveils par nuit sont physiologiques si on se rendort rapidement. Quand le sommeil tarde à venir, le guide offert dans l'épingle propose une routine pour apaiser les pensées au coucher. #sommeil #reveilnocturne #cycles #cortisol #insomnie #sommeilprofond #nuit #mieuxdormir #systemenerveux",
   "theme": "sommeil"
  },
  {
@@ -2242,7 +2237,7 @@
    "Un suspense ou un apprentissage maintient le cerveau actif",
    "La voix et le débit comptent plus que le volume"
   ],
-  "description": "Écouter un livre audio au lit peut aider à s'endormir, à condition de choisir le bon contenu. Un récit calme et déjà connu berce le cerveau sans le stimuler. Régler une minuterie d'arrêt automatique évite que la lecture ne coupe le sommeil profond. Le guide gratuit propose d'autres alternatives aux écrans du soir. #sommeil #livreaudio #endormissement #ecrans #detente #calme #routinedusoir #mieuxdormir",
+  "description": "Écouter un livre audio au lit peut aider à s'endormir, à condition de choisir le bon contenu. Un récit calme et déjà connu berce le cerveau sans le stimuler. Régler une minuterie d'arrêt automatique évite que la lecture ne coupe le sommeil profond. Pour aller plus loin, le guide gratuit « Quand le cerveau refuse de dormir » propose un calendrier de 30 jours. #sommeil #livreaudio #endormissement #ecrans #detente #calme #routinedusoir #mieuxdormir",
   "theme": "sommeil"
  },
  {
@@ -2254,7 +2249,7 @@
    "Pigeon allongé (hanches et fessiers)",
    "Étirement des cervicales en roulant doucement la tête"
   ],
-  "description": "Le corps a besoin de relâcher les tensions accumulées dans la journée avant de pouvoir s'endormir profondément. Ces mouvements ne demandent aucun matériel et prennent cinq minutes. Le guide gratuit complète par une routine complète. #sommeil #etirements #detente #nuque #dos #hanches #relaxation #mieuxdormir Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, accessible depuis l'epingle. #routinedusoir",
+  "description": "Le corps a besoin de relâcher les tensions accumulées dans la journée avant de pouvoir s'endormir profondément. Ces mouvements ne demandent aucun matériel et prennent cinq minutes. Le guide gratuit rassemble des exercices pour calmer le mental du soir, sans matériel. #sommeil #etirements #detente #nuque #dos #hanches #relaxation #mieuxdormir #routinedusoir",
   "theme": "sommeil"
  },
  {
@@ -2265,7 +2260,7 @@
    "Le sommeil profond pourrait être réduit de 30 %",
    "La sensibilité à la lumière lunaire varie selon les personnes"
   ],
-  "description": "L'idée que la pleine lune perturbe le sommeil n'est pas qu'une croyance populaire. Si les effets sont modestes, quelques personnes y sont plus sensibles. Un rideau occultant peut suffire à neutraliser l'effet. Le guide gratuit propose des solutions pour toutes les nuits. #sommeil #lune #pleinelune #science #sommeilprofond #endormissement #insomnie #detente Le guide gratuit propose une routine pour calmer le systeme nerveux #mieuxdormir",
+  "description": "L'idée que la pleine lune perturbe le sommeil n'est pas qu'une croyance populaire. Si les effets sont modestes, quelques personnes y sont plus sensibles. Un rideau occultant peut suffire à neutraliser l'effet. Si ton cerveau refuse de lâcher prise le soir, le guide gratuit rassemble des exercices pour calmer le mental du soir, sans matériel. #sommeil #lune #pleinelune #science #sommeilprofond #endormissement #insomnie #detente #mieuxdormir",
   "theme": "sommeil"
  },
  {
@@ -2277,7 +2272,7 @@
    "Ralentit naturellement le rythme cardiaque",
    "Augmente l'oxygénation de 20%"
   ],
-  "description": "Respirer par le nez plutôt que par la bouche a des effets immédiats sur le système nerveux, pourtant souvent sous-estimés. Pratiquée régulièrement, elle devient un réflexe anti-stress précieux. Le guide gratuit propose des exercices progressifs pour l'adopter au quotidien. #systemenerveux #respiration #nerfvague #stress #calme #oxygene #anseiete #bienetre Le guide gratuit propose une routine pour calmer le systeme nerveux avant #antistress",
+  "description": "Respirer par le nez plutôt que par la bouche a des effets immédiats sur le système nerveux, pourtant souvent sous-estimés. Pratiquée régulièrement, elle devient un réflexe anti-stress précieux. Si tout remonte une fois la lumière éteinte, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination. #systemenerveux #respiration #nerfvague #stress #calme #oxygene #anseiete #bienetre #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2289,7 +2284,7 @@
    "Respiration irrégulière entre inspiration et expiration",
    "La faire devant un écran ou en multitâche"
   ],
-  "description": "La cohérence cardiaque est efficace, mais quatre erreurs fréquentes en réduisent les bienfaits. S'arrêter avant cinq minutes empêche la régulation cardiaque de s'installer. Des cycles irréguliers annulent l'effet de synchronisation. Le guide gratuit détaille la technique pas à pas. #systemenerveux #coherencecardiaque #respiration #stress #erreurs #calme #anxiete #rythmecardiaque #antistress",
+  "description": "La cohérence cardiaque est efficace, mais quatre erreurs fréquentes en réduisent les bienfaits. S'arrêter avant cinq minutes empêche la régulation cardiaque de s'installer. Des cycles irréguliers annulent l'effet de synchronisation. Quand les pensées s'accélèrent au coucher, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination. #systemenerveux #coherencecardiaque #respiration #stress #erreurs #calme #anxiete #rythmecardiaque #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2300,7 +2295,7 @@
    "Traitement plus profond des informations sensorielles",
    "Temps de récupération plus long après un stress"
   ],
-  "description": "Le système nerveux des personnes hypersensibles a trois particularités qui expliquent pourquoi elles sont plus facilement submergées par le stress. Enfin, le temps de récupération après un stress est plus long. Le guide gratuit propose une approche spécifique pour les hypersensibles. #systemenerveux #hypersensibilite #stress #saturation #calme #repos #anxiete #bienetre #antistress",
+  "description": "Le système nerveux des personnes hypersensibles a trois particularités qui expliquent pourquoi elles sont plus facilement submergées par le stress. Enfin, le temps de récupération après un stress est plus long. Quand la tension monte encore le soir, le guide gratuit propose une routine anti-rumination à faire au lit. #systemenerveux #hypersensibilite #stress #saturation #calme #repos #anxiete #bienetre #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2311,7 +2306,7 @@
    "Il réduit le cortisol de 20 % en moyenne",
    "Il augmente la tolérance à la douleur"
   ],
-  "description": "Le rire n'est pas qu'un plaisir social, c'est un véritable régulateur du système nerveux. Intégrer un peu d'humour dans les moments tendus est une stratégie nerveuse, pas une fuite. Le guide gratuit propose d'autres activateurs naturels du système nerveux. #systemenerveux #rire #nerfvague #cortisol #stress #ocytocine #detente #calme Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, accessible #antistress",
+  "description": "Le rire n'est pas qu'un plaisir social, c'est un véritable régulateur du système nerveux. Intégrer un peu d'humour dans les moments tendus est une stratégie nerveuse, pas une fuite. Quand les pensées s'accélèrent au coucher, le guide offert dans l'épingle propose une routine du soir, sans matériel. #systemenerveux #rire #nerfvague #cortisol #stress #ocytocine #detente #calme #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2322,7 +2317,7 @@
    "Le cerveau passe en mode repos par défaut",
    "La récupération nerveuse commence en 3 minutes"
   ],
-  "description": "S'asseoir trois minutes dans le noir complet est un reset puissant pour le système nerveux surstimulé. Le rythme cardiaque ralentit, la respiration s'allonge, les muscles commencent à relâcher. Le guide gratuit développe cette technique de pause sensorielle. #systemenerveux #resetsensoriel #stress #noir #calme #pause #repos #recuperation Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, #antistress",
+  "description": "S'asseoir trois minutes dans le noir complet est un reset puissant pour le système nerveux surstimulé. Le rythme cardiaque ralentit, la respiration s'allonge, les muscles commencent à relâcher. Pour le moment du coucher, le guide offert dans l'épingle propose une routine du soir, sans matériel. #systemenerveux #resetsensoriel #stress #noir #calme #pause #repos #recuperation #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2333,7 +2328,7 @@
    "L'expiration longue du chant prolonge le calme",
    "Même chantonner seul fait effet"
   ],
-  "description": "Chanter est l'un des activateurs les plus accessibles du nerf vague. La vibration des cordes vocales stimule directement les fibres du nerf vague au niveau du larynx. Chanter régulièrement peut augmenter la variabilité cardiaque, signe d'un système nerveux équilibré. Le guide gratuit propose d'autres activateurs vagaux simples. #systemenerveux #nerfvague #chant #respiration #stress #calme #voix #detente #antistress",
+  "description": "Chanter est l'un des activateurs les plus accessibles du nerf vague. La vibration des cordes vocales stimule directement les fibres du nerf vague au niveau du larynx. Chanter régulièrement peut augmenter la variabilité cardiaque, signe d'un système nerveux équilibré. Quand ce stress empêche de dormir, le guide gratuit propose des exercices sans matériel pour apaiser le mental avant de dormir. #systemenerveux #nerfvague #chant #respiration #stress #calme #voix #detente #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2344,7 +2339,7 @@
    "Le système nerveux passe de l'action au repos",
    "C'est un signe de récupération, pas d'aggravation"
   ],
-  "description": "Tu as passé une journée tranquille, et pourtant en rentrant le soir, la fatigue et l'irritabilité te tombent dessus. Le cerveau se permet de lâcher prise parce qu'il se sent en sécurité. Accueillir ce rebond plutôt que le combattre permet de le traverser plus vite. Le guide gratuit explique comment gérer ces moments de relâchement nerveux. #systemenerveux #stress #soir #fatigue #emotions #calme #repos #anxiete #antistress",
+  "description": "Tu as passé une journée tranquille, et pourtant en rentrant le soir, la fatigue et l'irritabilité te tombent dessus. Le cerveau se permet de lâcher prise parce qu'il se sent en sécurité. Accueillir ce rebond plutôt que le combattre permet de le traverser plus vite. Si tu ressasses tout en te couchant, le guide gratuit propose un calendrier de 30 jours pour apaiser le mental au coucher. #systemenerveux #stress #soir #fatigue #emotions #calme #repos #anxiete #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2355,7 +2350,7 @@
    "Il réduit le cortisol et augmente l'ocytocine",
    "L'auto-toucher (main sur le cœur) fonctionne aussi"
   ],
-  "description": "Le toucher a un effet direct et mesurable sur le système nerveux. En situation de stress, ce geste simple et immédiat est l'un des plus efficaces. Le guide gratuit propose d'autres gestes d'auto-apaisement pour réguler le système nerveux. #systemenerveux #toucher #calme #stress #cortisol #ocytocine #autoapaisement #anxiete Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, accessible depuis l'epingle. #antistress",
+  "description": "Le toucher a un effet direct sur le système nerveux : une pression douce et lente envoie au cerveau un signal de sécurité. En période de stress, c'est un geste très simple 👉 poser une main sur le cœur et l'autre sur le ventre 👉 respirer lentement sous ses mains 👉 masser doucement la nuque ou les avant-bras. Ce geste fonctionne aussi seul. Le soir au lit, le guide gratuit propose d'autres exercices pour calmer le mental. #systemenerveux #toucher #calme #stress #soir #repos #corps #mental",
   "theme": "systemenerveux"
  },
  {
@@ -2366,7 +2361,7 @@
    "Balayage lent gauche-droite 10 fois",
    "Fixer un point immobile 2 minutes"
   ],
-  "description": "Les yeux sont connectés au système nerveux via plusieurs nerfs crâniens. Ces techniques sont particulièrement utiles après des heures d'écran, quand la fatigue oculaire entretient la tension nerveuse. Le guide gratuit propose d'autres exercices sensoriels pour réguler le système nerveux. #systemenerveux #regard #stress #yeux #calme #ecrans #detente #nerfvague Le guide gratuit propose une routine pour calmer le systeme nerveux #antistress",
+  "description": "Les yeux sont connectés au système nerveux via plusieurs nerfs crâniens. Ces techniques sont particulièrement utiles après des heures d'écran, quand la fatigue oculaire entretient la tension nerveuse. Quand ce stress empêche de dormir, le guide offert dans l'épingle propose une routine du soir, sans matériel. #systemenerveux #regard #stress #yeux #calme #ecrans #detente #nerfvague #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2377,7 +2372,7 @@
    "Le silence laisse l'amygdale se reposer",
    "10 minutes de silence par jour réduisent le stress"
   ],
-  "description": "Le système nerveux réagit au bruit de façon continue, même lorsqu'on n'y prête pas attention. Chaque son active la réponse d'orientation du cerveau, une micro-réaction de stress. Le silence, au contraire, laisse l'amygdale cérébrale se reposer et le cortisol baisser. Le guide gratuit propose des moyens d'intégrer ces pauses silencieuses dans la vie quotidienne. #systemenerveux #silence #stress #cerveau #calme #pause #bruit #cortisol #antistress",
+  "description": "Le système nerveux réagit au bruit de façon continue, même lorsqu'on n'y prête pas attention. Chaque son active la réponse d'orientation du cerveau, une micro-réaction de stress. Le silence, au contraire, laisse l'amygdale cérébrale se reposer et le cortisol baisser. Si le corps se détend mais pas la tête, le guide gratuit propose une routine anti-rumination à faire au lit. #systemenerveux #silence #stress #cerveau #calme #pause #bruit #cortisol #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2389,7 +2384,7 @@
    "Alterner la charge mentale parentale avec son partenaire",
    "Définir un sas de 5 min entre le coucher des enfants et sa soirée"
   ],
-  "description": "La parentalité est un défi permanent pour le système nerveux, avec des sollicitations et des imprévus constants. Ces ajustements protègent le système nerveux parental sans rien retirer à la qualité du soin apporté aux enfants. Le guide gratuit propose une approche spécifique. #systemenerveux #parentalite #stress #charge #pause #calme #fatigue #bienetre Le guide gratuit propose une routine pour calmer le systeme nerveux avant la #antistress",
+  "description": "La parentalité est un défi permanent pour le système nerveux, avec des sollicitations et des imprévus constants. Ces ajustements protègent le système nerveux parental sans rien retirer à la qualité du soin apporté aux enfants. Si tu ressasses tout en te couchant, le guide gratuit rassemble des exercices simples pour calmer le mental du soir. #systemenerveux #parentalite #stress #charge #pause #calme #fatigue #bienetre #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2400,7 +2395,7 @@
    "Le balayage visuel naturel calme le cerveau",
    "La marche bilatérale équilibre les hémisphères"
   ],
-  "description": "La marche lente, sans objectif ni performance, est l'un des régulateurs les plus efficaces du système nerveux. La marche fait travailler les deux hémisphères en alternance, ce qui favorise l'équilibre nerveux. Le guide gratuit propose des parcours de marche régulatrice adaptés à chacun. #systemenerveux #marche #stress #calme #respiration #mouvement #detente #anxiete #antistress #bienetre",
+  "description": "La marche lente, sans objectif ni performance, est l'un des régulateurs les plus efficaces du système nerveux. La marche fait travailler les deux hémisphères en alternance, ce qui favorise l'équilibre nerveux. Pour le moment du coucher, le guide gratuit propose des exercices sans matériel pour apaiser le mental avant de dormir. #systemenerveux #marche #stress #calme #respiration #mouvement #detente #anxiete #antistress #bienetre",
   "theme": "systemenerveux"
  },
  {
@@ -2411,7 +2406,7 @@
    "Le cerveau anticipe et se prépare au repos",
    "La régularité renforce les cycles circadiens"
   ],
-  "description": "La routine n'est pas ennuyeuse, c'est un pilier pour le système nerveux. Une routine même courte, si elle est régulière, ancre le système nerveux et le rend plus résilient face aux imprévus. Le guide gratuit propose une routine flexible mais structurée adaptée à tous. #systemenerveux #routine #stress #calme #rythme #sommeil #cortisol #stabilite Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, #antistress",
+  "description": "La routine n'est pas ennuyeuse, c'est un pilier pour le système nerveux. Une routine même courte, si elle est régulière, ancre le système nerveux et le rend plus résilient face aux imprévus. Pour finir la journée plus calme, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination. #systemenerveux #routine #stress #calme #rythme #sommeil #cortisol #stabilite #antistress",
   "theme": "systemenerveux"
  },
  {
@@ -2422,7 +2417,7 @@
    "La matrice urgent/important en moins de 5 minutes",
    "La technique du vide mental : tout noter sans trier"
   ],
-  "description": "Quand trop de tâches tournent en même temps dans la tête, l'ordre semble impossible à retrouver. En moins de dix minutes, le brouillard mental se dissipe et une direction claire apparaît. Le guide gratuit propose d'autres outils d'organisation mentale. #blocagemental #taches #organisation #priorites #clarte #mental #stress #productivite Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, #santementale",
+  "description": "Quand trop de tâches tournent en même temps dans la tête, l'ordre semble impossible à retrouver. En moins de dix minutes, le brouillard mental se dissipe et une direction claire apparaît. Quand la tension monte encore le soir, le guide offert dans l'épingle propose une routine du soir, sans matériel. #blocagemental #taches #organisation #priorites #clarte #mental #stress #productivite #santementale",
   "theme": "blocagemental"
  },
  {
@@ -2434,7 +2429,7 @@
    "S'imposer un temps ultra-court (5 minutes max)",
    "Aller marcher sans téléphone 10 minutes"
   ],
-  "description": "Le blocage créatif ne vient pas d'un manque d'idées mais d'une pression à trouver la bonne idée. L'inspiration revient souvent dès qu'on arrête de la chercher activement. Le guide gratuit propose d'autres exercices pour libérer le potentiel créatif. #blocagemental #creativite #inspiration #blocage #exercices #mental #idees #motivation Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, #santementale",
+  "description": "Le blocage créatif ne vient pas d'un manque d'idées mais d'une pression à trouver la bonne idée. L'inspiration revient souvent dès qu'on arrête de la chercher activement. Quand la tension monte encore le soir, le guide gratuit rassemble des exercices simples pour calmer le mental du soir. #blocagemental #creativite #inspiration #blocage #exercices #mental #idees #motivation #santementale",
   "theme": "blocagemental"
  },
  {
@@ -2445,7 +2440,7 @@
    "Noter tout ce qui te pèse dans chaque cercle",
    "Mettre ton énergie uniquement sur les 2 premiers"
   ],
-  "description": "Une grande partie de l'épuisement mental vient de l'énergie dépensée sur des choses qu'on ne peut pas changer. Noter tout ce qui pèse dans chaque cercle révèle ce qui mérite vraiment de l'énergie. En trois étapes, la charge mentale s'allège considérablement. Le guide gratuit propose d'autres outils pour recentrer son énergie. #blocagemental #controle #energie #stress #priorites #cercleducontrole #mental #charge #santementale",
+  "description": "Une grande partie de l'épuisement mental vient de l'énergie dépensée sur des choses qu'on ne peut pas changer. Noter tout ce qui pèse dans chaque cercle révèle ce qui mérite vraiment de l'énergie. En trois étapes, la charge mentale s'allège considérablement. Si tout remonte une fois la lumière éteinte, le guide offert dans l'épingle propose une routine du soir, sans matériel. #blocagemental #controle #energie #stress #priorites #cercleducontrole #mental #charge #santementale",
   "theme": "blocagemental"
  },
  {
@@ -2456,7 +2451,7 @@
    "Le besoin de repos disparaît après une pause",
    "Le blocage s'accompagne de tension et d'anxiété"
   ],
-  "description": "Faire la différence entre un vrai blocage mental et un simple besoin de repos permet de choisir la bonne réponse. Face à un vrai blocage, ce n'est pas de repos dont on a besoin, mais de stratégies pour contourner la résistance interne. Le guide gratuit aide à identifier la nature du frein et à choisir la solution adaptée. #blocagemental #repos #fatigue #mental #blocage #stress #anxiete #sommeil #santementale",
+  "description": "Faire la différence entre un vrai blocage mental et un simple besoin de repos permet de choisir la bonne réponse. Face à un vrai blocage, ce n'est pas de repos dont on a besoin, mais de stratégies pour contourner la résistance interne. Pour le moment du coucher, le guide gratuit rassemble des exercices simples pour calmer le mental du soir. #blocagemental #repos #fatigue #mental #blocage #stress #anxiete #sommeil #santementale",
   "theme": "blocagemental"
  },
  {
@@ -2467,7 +2462,7 @@
    "Ouvrir et fermer lentement en position neutre",
    "Massage circulaire des masséters avec les doigts"
   ],
-  "description": "La mâchoire serrée, surtout la nuit ou en période de stress, peut causer des douleurs et de l'usure dentaire. Pratiqués le soir avant le coucher, ils réduisent significativement le bruxisme nocturne. Le guide gratuit propose d'autres exercices pour les tensions somatiques du stress. #somatisation #machoire #stress #bruxisme #tension #detente #exercices #masseter Le guide gratuit propose une routine pour calmer le systeme nerveux #bienetre",
+  "description": "La mâchoire serrée, surtout la nuit ou en période de stress, peut causer des douleurs et de l'usure dentaire. Pratiqués le soir avant le coucher, ils réduisent significativement le bruxisme nocturne. Quand la journée se rejoue au lit, le guide gratuit propose des exercices sans matériel pour apaiser le mental avant de dormir. #somatisation #machoire #stress #bruxisme #tension #detente #exercices #masseter #bienetre",
   "theme": "somatisation"
  },
  {
@@ -2478,7 +2473,7 @@
    "Papillon allongé : genoux ouverts, plante contre plante",
    "Rotation douce des genoux sur le dos"
   ],
-  "description": "Les hanches et le bassin sont des zones souvent négligées dans la somatisation du stress, pourtant la réponse de figement face au stress se loge fréquemment dans cette région. Ces mouvements sont particulièrement bénéfiques après de longues heures assises et avant le coucher. Le guide gratuit propose une séquence somatique complète pour le corps entier. #somatisation #hanches #bassin #stress #psoas #exercices #tension #detente #bienetre",
+  "description": "Les hanches et le bassin sont des zones souvent négligées dans la somatisation du stress, pourtant la réponse de figement face au stress se loge fréquemment dans cette région. Ces mouvements sont particulièrement bénéfiques après de longues heures assises et avant le coucher. Pour le moment du coucher, le guide gratuit propose une routine anti-rumination à faire au lit. #somatisation #hanches #bassin #stress #psoas #exercices #tension #detente #bienetre",
   "theme": "somatisation"
  },
  {
@@ -2489,7 +2484,7 @@
    "Appuyer les pieds au sol en sentant les appuis",
    "Étirer lentement les zones tendues en respirant"
   ],
-  "description": "Quand le corps somatise, c'est que le système nerveux est resté en alerte sans pouvoir redescendre. Trois techniques aident à lui renvoyer un signal de sécurité. Ces gestes prennent moins de deux minutes et peuvent être faits n'importe où, même en public. Le guide gratuit propose un protocole complet pour calmer les réactions somatiques. #somatisation #corps #stress #securite #ancrage #respiration #etirements #systemenerveux #bienetre",
+  "description": "Quand le corps somatise, c'est que le système nerveux est resté en alerte sans pouvoir redescendre. Trois techniques aident à lui renvoyer un signal de sécurité. Ces gestes prennent moins de deux minutes et peuvent être faits n'importe où, même en public. Si le corps se détend mais pas la tête, le guide gratuit rassemble des exercices simples pour calmer le mental du soir. #somatisation #corps #stress #securite #ancrage #respiration #etirements #systemenerveux #bienetre",
   "theme": "somatisation"
  },
  {
@@ -2500,7 +2495,7 @@
    "Chaise réglée pour que les pieds touchent le sol",
    "Clavier assez bas pour que les coudes soient à 90°"
   ],
-  "description": "L'ergonomie du poste de travail influence directement le niveau de stress corporel. Ces réglages, qui prennent moins de cinq minutes, réduisent la tension musculaire et libèrent la respiration, envoyant un signal de calme au système nerveux. Le guide gratuit propose un check-up ergonomique complet. #posturesantistress #ergonomie #bureau #travail #tension #ecran #chaise #dos #bienetre",
+  "description": "L'ergonomie du poste de travail influence directement le niveau de stress corporel. Ces réglages, qui prennent moins de cinq minutes, réduisent la tension musculaire et libèrent la respiration, envoyant un signal de calme au système nerveux. Si ce stress te tient éveillé, le guide gratuit rassemble des exercices simples pour calmer le mental du soir. #stress #travail #ergonomie #bureau #tension #ecran #chaise #dos #bienetre",
   "theme": "posturesantistress"
  },
  {
@@ -2511,7 +2506,7 @@
    "Les orteils recroquevillés dans les chaussures",
    "Le front plissé même sur une tâche simple"
   ],
-  "description": "La crispation au travail s'installe souvent par des micro-signaux qu'on ne remarque pas. Ces crispations invisibles maintiennent le corps en état d'alerte sans qu'on le choisisse. Le guide gratuit propose un scan corporel adapté au contexte professionnel. #posturesantistress #tension #crispation #travail #bureau #stress #corps #conscience Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, #bienetre",
+  "description": "La crispation au travail s'installe souvent par des micro-signaux qu'on ne remarque pas. Ces crispations invisibles maintiennent le corps en état d'alerte sans qu'on le choisisse. Pour le moment du coucher, le guide gratuit propose un calendrier de 30 jours pour apaiser le mental au coucher. #stress #travail #tension #crispation #bureau #corps #conscience #bienetre",
   "theme": "posturesantistress"
  },
  {
@@ -2522,7 +2517,7 @@
    "L'idéal : alterner toutes les 30 à 45 minutes",
    "Une chaise réglable + un support pour surélever l'écran"
   ],
-  "description": "Le débat entre travailler debout ou assis n'a pas de réponse unique. L'idéal validé par les études est l'alternance : changer de position toutes les trente à quarante-cinq minutes. La position idéale n'est pas unique, c'est le mouvement régulier qui compte. Le guide gratuit propose des rappels et des transitions pour varier les positions au travail. #posturesantistress #posture #debout #assis #travail #dos #ergonomie #sante #bienetre",
+  "description": "Le débat entre travailler debout ou assis n'a pas de réponse unique. L'idéal validé par les études est l'alternance : changer de position toutes les trente à quarante-cinq minutes. La position idéale n'est pas unique, c'est le mouvement régulier qui compte. Si le soir ta tête refuse de s'arrêter, le guide offert dans l'épingle propose une routine du soir, sans matériel. #stress #travail #posture #debout #assis #dos #ergonomie #sante #bienetre",
   "theme": "posturesantistress"
  },
  {
@@ -2533,7 +2528,7 @@
    "Maintenir la tension 5 secondes",
    "Relâcher d'un coup en expirant bruyamment"
   ],
-  "description": "Quand la tension monte, les épaules remontent vers les oreilles sans qu'on s'en rende compte. Ce geste réflexe, répété plusieurs fois par jour, empêche l'accumulation de tension dans le haut du corps. Le guide gratuit propose d'autres gestes de relâchement immédiat à utiliser sans modération. #posturesantistress #epaules #tension #stress #gestes #relaxation #respiration #detente #bienetre",
+  "description": "Quand la tension monte, les épaules remontent vers les oreilles sans qu'on s'en rende compte. Ce geste réflexe, répété plusieurs fois par jour, empêche l'accumulation de tension dans le haut du corps. Si cette tension te suit jusqu'au lit, le guide gratuit propose un calendrier de 30 jours pour apaiser le mental au coucher. #stress #travail #epaules #tension #gestes #relaxation #respiration #detente #bienetre",
   "theme": "posturesantistress"
  },
  {
@@ -2544,7 +2539,7 @@
    "Allonger la nuque comme si un fil tirait le sommet du crâne",
    "Poser les deux pieds à plat en écartant les orteils"
   ],
-  "description": "La posture influence directement la capacité à respirer profondément et donc à activer le nerf vague. Ces corrections peuvent être pratiquées debout ou assis, en quelques secondes. Le guide gratuit propose un programme postural quotidien. #posturesantistress #posture #nerfvague #respiration #poitrine #nuque #ancrage #corps Le guide gratuit propose une routine pour calmer le systeme nerveux avant la nuit, accessible depuis l'epingle. #bienetre",
+  "description": "La posture influence directement la capacité à respirer profondément et donc à activer le nerf vague. Ces corrections peuvent être pratiquées debout ou assis, en quelques secondes. Pour le moment du coucher, le guide gratuit « Quand le cerveau refuse de dormir » rassemble des exercices anti-rumination. #stress #travail #posture #nerfvague #respiration #poitrine #nuque #ancrage #corps #bienetre",
   "theme": "posturesantistress"
  },
  {
@@ -2555,7 +2550,7 @@
    "Jambes actives sans verrouiller les genoux",
    "Bras le long du corps, mains ouvertes, regard à l'horizon"
   ],
-  "description": "La posture de la montagne, issue du yoga adapté, est un reset complet pour le corps et l'esprit en trois minutes chrono. Elle peut être pratiquée debout n'importe où, dans son salon ou aux toilettes du bureau. Le guide gratuit propose d'autres postures inspirées du yoga pour le quotidien. #posturesantistress #posture #montagne #ancrage #calme #stress #respiration #corps #bienetre #yoga",
+  "description": "La posture de la montagne, issue du yoga adapté, est un reset complet pour le corps et l'esprit en trois minutes chrono. Elle peut être pratiquée debout n'importe où, dans son salon ou aux toilettes du bureau. Si ce stress te tient éveillé, le guide gratuit propose un calendrier de 30 jours pour apaiser le mental au coucher. #stress #travail #posture #montagne #ancrage #calme #respiration #corps #bienetre #yoga",
   "theme": "posturesantistress"
  },
  {
@@ -2597,23 +2592,23 @@
   "titre": "Cortisol du matin : pourquoi tu te réveilles déjà fatigué",
   "texte_image": "Réveil fatigué ? C'est ton cortisol",
   "points_image": [
-   "Le pic de cortisol matinal est décalé chez toi",
-   "Le sucre du petit-déjeuner aggrave le décalage",
-   "La lumière naturelle au réveil recalibre tout",
-   "Boire de l'eau avant le café régule la réponse"
+   "Un rythme du cortisol décalé peut compliquer le réveil",
+   "Un petit-déjeuner très sucré accentue le coup de barre",
+   "La lumière du jour au réveil aide l'horloge interne",
+   "Un verre d'eau avant le café, pour démarrer en douceur"
   ],
-  "description": "Un réveil difficile n'est pas un manque de motivation, c'est un cycle hormonal déréglé. #cortisol #energie #reveil"
+  "description": "Un réveil difficile n'est pas forcément un manque de motivation : le cortisol suit un rythme qui doit monter le matin pour t'aider à démarrer. Quelques habitudes jouent 👉 un petit-déjeuner très sucré crée vite un coup de barre 👉 la lumière naturelle dès le réveil aide l'horloge interne 👉 boire un verre d'eau avant le café. Si des nuits agitées expliquent ces réveils, le guide gratuit propose une routine anti-rumination. #cortisol #reveil #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "La respiration 4-7-8 pour endormir le système nerveux en 2 minutes",
   "texte_image": "4-7-8 : la respiration qui endort le stress",
   "points_image": [
-   "Inspire par le nez pendant 4 secondes",
-   "Bloque la respiration 7 secondes",
-   "Expire lentement par la bouche 8 secondes",
-   "Répète 4 cycles pour un effet immédiat"
+   "Inspire par le nez sur 4 temps",
+   "Retiens ton souffle sur 7 temps",
+   "Expire lentement par la bouche sur 8 temps",
+   "Répète 4 cycles, sans forcer"
   ],
-  "description": "La respiration 4-7-8 du Dr Weil active rapidement le parasympathique. #respiration #systemenerveux #sommeil"
+  "description": "La respiration 4-7-8 ralentit le souffle et aide le corps à passer en mode repos, ce qui en fait un bon rituel au moment de se coucher 👉 inspire par le nez sur 4 temps 👉 retiens ton souffle sur 7 temps 👉 expire lentement par la bouche sur 8 temps 👉 répète quatre cycles, sans forcer. Si la tête rouspète, reviens simplement au compte. Le guide gratuit « Quand le cerveau refuse de dormir » propose d'autres exercices pour le lit. #respiration #sommeil #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Respiration en carré : la méthode des forces spéciales",
@@ -2624,28 +2619,28 @@
    "Expire 4 secondes",
    "Retiens 4 secondes"
   ],
-  "description": "Utilisée par les forces spéciales pour garder leur calme en stress intense. Simple, efficace. #respiration #systemenerveux"
+  "description": "La respiration en carré est utilisée par des militaires pour garder la tête froide sous pression. Son atout : un rythme régulier qui occupe l'attention et ralentit le souffle 👉 inspire sur 4 temps 👉 retiens sur 4 temps 👉 expire sur 4 temps 👉 retiens encore 4 temps, puis recommence. Trois ou quatre tours suffisent avant une réunion tendue. Le soir venu, le guide gratuit propose des exercices pour apaiser le mental au lit. #respiration #stress #calme #anxiete #soir #repos #corps #mental"
  },
  {
   "titre": "Pourquoi tu dors mieux après une journée dehors",
   "texte_image": "L'air du jour = meilleur sommeil",
   "points_image": [
-   "La lumière naturelle cale l'horloge circadienne",
-   "L'air frais abaisse la température corporelle",
-   "L'exposition au jour augmente la mélatonine le soir"
+   "La lumière du jour cale l'horloge interne",
+   "L'activité douce augmente le besoin de sommeil",
+   "L'air frais aide le corps à se mettre au repos"
   ],
-  "description": "La lumière naturelle et l'air frais sont les meilleurs régulateurs du sommeil. #sommeil #rythmecircadien"
+  "description": "Une journée passée dehors aide souvent à mieux dormir le soir 👉 la lumière naturelle cale l'horloge interne et prépare la mélatonine du soir 👉 l'activité physique douce augmente le besoin de sommeil 👉 l'air plus frais aide le corps à se mettre au repos. Même trente minutes dehors comptent. Si c'est ta tête qui t'empêche de dormir, le guide gratuit propose une routine anti-rumination à faire au lit. #sommeil #calme #stress #soir #repos #corps #mental #detente"
  },
  {
   "titre": "Cortisol et mélatonine : pourquoi l'un empêche l'autre de fonctionner",
   "texte_image": "Cortisol vs mélatonine : le duel hormonal",
   "points_image": [
-   "Le cortisol bloque la production de mélatonine",
-   "Un cortisol élevé le soir = endormissement difficile",
-   "La lumière bleue aggrave le déséquilibre",
-   "Le jeûne晚饭 soir peut aider à rééquilibrer"
+   "Un cortisol haut le soir freine la mélatonine",
+   "Résultat : l'endormissement devient difficile",
+   "La lumière forte et les écrans accentuent le décalage",
+   "Une soirée plus calme et plus sombre aide à rééquilibrer"
   ],
-  "description": "Cortisol et mélatonine sont en balance permanente. Quand l'un monte, l'autre descend. #cortisol #sommeil #melatonine"
+  "description": "Le cortisol et la mélatonine fonctionnent en balance : l'un aide à démarrer la journée, l'autre prépare la nuit. Quand le stress garde le cortisol haut le soir, la mélatonine a plus de mal à prendre le relais 👉 l'endormissement devient difficile 👉 la lumière forte et les écrans accentuent ce décalage 👉 une soirée plus calme et plus sombre aide à rééquilibrer. Le guide gratuit propose une routine anti-rumination au coucher. #cortisol #sommeil #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Le cortisol n'est pas l'ennemi : c'est son rythme qui compte",
@@ -2656,7 +2651,7 @@
    "Le problème c'est quand il reste haut le soir",
    "Resynchroniser le rythme = meilleure énergie"
   ],
-  "description": "Le cortisol n'est pas mauvais. C'est son rythme circadien déréglé qui pose problème. #cortisol #rythmecircadien #energie"
+  "description": "Le cortisol n'est pas mauvais en soi : il t'aide à te lever, à te concentrer et à réagir. Ce qui fatigue, c'est quand son rythme se dérègle 👉 un pic le matin est normal et utile 👉 il doit redescendre doucement au fil de la journée 👉 le problème commence quand il reste haut le soir. Des horaires réguliers et des soirées calmes aident. Pour le soir, le guide gratuit propose une routine anti-rumination au lit. #cortisol #energie #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Respiration alternée : la technique d'une narine à l'autre pour se poser",
@@ -2667,70 +2662,71 @@
    "Inverse : inspire droite, expire gauche",
    "Répète 5 minutes pour un effet calmant"
   ],
-  "description": "La respiration alternée (Nadi Shodhana) équilibre les deux hémisphères et calme immédiatement le système nerveux. #respiration #yoga #detente"
+  "description": "La respiration alternée vient du yoga : on respire par une narine puis par l'autre. Le rythme lent et le geste régulier aident à se poser en quelques minutes 👉 bouche la narine droite et inspire par la gauche 👉 bouche la gauche et expire par la droite 👉 inspire à droite, expire à gauche 👉 continue cinq minutes, sans forcer le souffle. Idéal en fin de journée. Au lit, le guide gratuit propose des exercices pour calmer le mental. #respiration #yoga #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Respiration profonde : pourquoi ça ne suffit pas à tout le monde",
   "texte_image": "La respiration profonde ne suffit pas ?",
   "points_image": [
-   "Si le stress est chronique, la respiration superficielle est devenue une habitude",
-   "Le diaphragme est verrouillé par la tension nerveuse",
-   "Redevenir conscient de la respiration demande de la pratique"
+   "Avec un stress qui dure, la respiration haute devient une habitude",
+   "Le ventre reste crispé et bloque le souffle",
+   "Commencer par expirer longuement aide davantage",
+   "Quelques minutes par jour, pas seulement en pleine crise"
   ],
-  "description": "Respirer profondément semble simple, mais avec un stress chronique le diaphragme est bloqué. #respiration #stress #systemenerveux"
+  "description": "« Respire profondément » : simple en apparence, mais moins efficace quand le stress dure. La respiration haute et rapide est devenue une habitude, et le ventre reste crispé 👉 commence par expirer longuement plutôt que d'inspirer fort 👉 pose une main sur le ventre pour sentir le mouvement 👉 quelques minutes par jour, pas seulement en pleine crise. Pour le soir, le guide gratuit propose une routine anti-rumination au lit. #respiration #stress #calme #anxiete #soir #repos #corps #mental"
  },
  {
   "titre": "Respiration : la règle des 5 secondes pour calmer une crise d'angoisse",
   "texte_image": "5 secondes pour calmer l'angoisse",
   "points_image": [
-   "Inspire 5 secondes",
-   "Expire 5 secondes",
-   "Répète 6 fois",
-   "Le rythme cardiaque ralentit en 30 secondes"
+   "Inspire sur 5 secondes",
+   "Expire sur 5 secondes",
+   "Répète 6 fois, environ une minute",
+   "Compter occupe l'esprit et ralentit le cœur"
   ],
-  "description": "Face à une montée d'angoisse, 30 secondes de respiration rythmée suffisent à envoyer un signal de sécurité au cerveau. #respiration #anxiete #detente"
+  "description": "Quand l'angoisse monte, le souffle s'accélère et entretient la panique. Un rythme simple aide à reprendre la main 👉 inspire sur 5 secondes 👉 expire sur 5 secondes 👉 répète six fois, environ une minute. Compter occupe l'esprit et le souffle ralenti aide le cœur à se calmer. Si les crises sont fréquentes, en parler à un professionnel reste important. Pour les soirées agitées, le guide gratuit propose une routine anti-rumination. #respiration #anxiete #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Ton système nerveux n'est pas fait pour rester toute la journée assis",
   "texte_image": "Assis toute la journée ? Ton système nerveux en souffre",
   "points_image": [
-   "La position assise comprime le diaphragme",
-   "La respiration devient superficielle",
-   "Le nerf vague est comprimé",
-   "Le corps reste en alerte sans pouvoir bouger"
+   "Penché vers l'écran, on respire plus haut et plus vite",
+   "Le corps reste tendu sans pouvoir bouger",
+   "Se lever toutes les heures, même 2 minutes",
+   "Marcher pendant un appel quand c'est possible"
   ],
-  "description": "La sédentarité n'est pas qu'un problème musculaire. C'est un stress direct pour le système nerveux. #systemenerveux #posturesantistress #travail"
+  "description": "Rester assis toute la journée ne fatigue pas que le dos. Penché vers l'écran, on respire plus haut et plus vite, et le corps reste tendu sans pouvoir bouger 👉 se lever toutes les heures, même deux minutes 👉 dérouler les épaules et allonger l'expiration 👉 marcher pendant un appel quand c'est possible. Ces pauses aident à relâcher la pression. Si la tension te suit jusqu'au lit, le guide gratuit propose une routine du soir. #systemenerveux #travail #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Sommeil : la règle des 3-2-1 pour mieux dormir",
   "texte_image": "Règle 3-2-1 pour le sommeil",
   "points_image": [
-   "3h avant le coucher : plus de nourriture",
-   "2h avant : plus de travail",
-   "1h avant : plus d'écrans"
+   "3 h avant le coucher : plus de repas copieux",
+   "2 h avant : plus de travail",
+   "1 h avant : plus d'écrans"
   ],
-  "description": "La règle des 3-2-1 est la plus simple pour améliorer son sommeil sans application. #sommeil #routinedusoir #ecrans"
+  "description": "La règle des 3-2-1 est l'une des plus simples pour préparer la nuit, sans application ni matériel 👉 trois heures avant le coucher, fini les repas copieux 👉 deux heures avant, tu fermes l'ordinateur du travail 👉 une heure avant, tu poses les écrans. Le cerveau a ainsi le temps de ralentir avant le lit. Commence par une seule règle si c'est trop d'un coup. Le guide gratuit complète avec une routine anti-rumination au lit. #sommeil #ecrans #calme #stress #soir #repos #corps #mental"
  },
  {
   "titre": "Stress et nuits froides : pourquoi ton corps se refroidit au lit",
   "texte_image": "Tu as froid la nuit quand tu es stressé ?",
   "points_image": [
-   "Le stress chronique abaisse la température corporelle",
-   "Le cortisol détourne l'énergie des fonctions non essentielles",
-   "Une température trop froide fragment le sommeil",
-   "Solution : couche supplémentaire + bouillotte"
+   "Le stress resserre les vaisseaux des mains et des pieds",
+   "Des pieds froids retardent l'endormissement",
+   "Un bain de pieds tiède ou des chaussettes aident",
+   "Chambre fraîche, lit bien chaud : le bon duo"
   ],
-  "description": "Avoir froid la nuit est un signe de stress chronique. Le corps coupe le chauffage pour économiser l'énergie. #sommeil #cortisol #stress"
+  "description": "Mains et pieds glacés au moment de dormir ? Le stress resserre les petits vaisseaux des extrémités, et des pieds froids retardent souvent l'endormissement 👉 un bain de pieds tiède ou des chaussettes au lit aident 👉 une chambre fraîche mais un lit bien chaud, c'est le bon duo 👉 quelques respirations lentes détendent le corps. Si c'est la tête qui reste en alerte, le guide gratuit propose une routine anti-rumination au lit. #sommeil #stress #calme #soir #repos #corps #mental #detente"
  },
  {
   "titre": "Les 3 types d'insomnie et comment les reconnaître",
   "texte_image": "3 types d'insomnie : lequel est le tien ?",
   "points_image": [
-   "Difficulté à s'endormir : cortisol trop haut",
-   "Réveils nocturnes : anxiété ou sucre",
-   "Réveil trop tôt : cortisol en avance"
+   "Difficulté à t'endormir : le mental reste en alerte",
+   "Réveils en pleine nuit : un sommeil fragmenté",
+   "Réveil trop tôt sans pouvoir te rendormir"
   ],
-  "description": "Toutes les insomnies ne se ressemblent pas. Chacune indique un déséquilibre différent du système nerveux. #sommeil #insomnie #cortisol"
+  "description": "Toutes les nuits difficiles ne se ressemblent pas: les reconnaître aide à réagir 👉 la difficulté à t'endormir, souvent quand le mental reste en alerte le soir 👉 les réveils en pleine nuit, quand le sommeil est fragmenté par le stress 👉 le réveil trop tôt, sans pouvoir te rendormir. Si l'insomnie dure plusieurs semaines, en parler à un médecin aide. Pour le mental du soir, le guide gratuit propose une routine anti-rumination. #sommeil #calme #stress #soir #repos #corps #mental #detente"
  },
  {
   "titre": "L'énergie ne se gère pas : elle se régénère",
@@ -2741,7 +2737,7 @@
    "Les micro-pauses en journée recomplètent les réserves",
    "Le stress chronique pompe l'énergie en continu"
   ],
-  "description": "L'énergie n'est pas un budget à gérer. C'est une ressource qui se régénère avec le repos, le sommeil et la déconnexion. #energie #recuperation #fatigue"
+  "description": "On parle souvent de « gérer son énergie », comme un budget à rationner. Elle fonctionne plutôt comme une batterie qui se recharge 👉 le sommeil reste le premier moment de récupération 👉 les micro-pauses en journée remettent un peu de réserve 👉 le stress qui dure vide la batterie en continu, même au repos. Plutôt que de tout contrôler, protège tes moments de recharge : un vrai repas, une marche, une soirée sans écran. #energie #recuperation #fatigue #vitalite #bienetre #routine #motivation"
  },
  {
   "titre": "Fatigue mentale : pourquoi tu prends de mauvaises décisions en fin de journée",
@@ -2752,7 +2748,7 @@
    "Les décisions importantes le matin = plus réfléchies",
    "Planifier ses choix à l'avance contourne le problème"
   ],
-  "description": "La fatigue mentale ne se ressent pas toujours, mais elle pousse à prendre des décisions moins bonnes. #fatiguementale #decision #cerveau"
+  "description": "Le soir, tu commandes un repas que tu ne voulais pas ou tu réponds sèchement à un message ? La fatigue mentale pousse à choisir l'option la plus facile 👉 le cerveau fatigué privilégie le rapide au réfléchi 👉 l'impulsivité augmente en fin de journée 👉 les décisions importantes sont souvent meilleures le matin. Préparer ses choix à l'avance (repas, tenue, priorités) évite de décider quand la réserve est vide. #fatiguementale #decision #cerveau #chargementale #mental #stress #bienetre #repos"
  },
  {
   "titre": "Anxiété : la différence entre une inquiétude normale et un système nerveux bloqué",
@@ -2763,6 +2759,6 @@
    "Le cerveau reste en alerte par habitude",
    "Le système nerveux a perdu sa flexibilité"
   ],
-  "description": "Tout le monde s'inquiète. Mais quand l'inquiétude ne passe pas, c'est le système nerveux qui est coincé. #anxiete #systemenerveux #stress"
+  "description": "Tout le monde s'inquiète. Une inquiétude normale retombe quand le problème est réglé. Quand elle persiste même sans menace, c'est souvent le système nerveux qui reste en alerte par habitude 👉 la tension ne redescend pas le soir 👉 le moindre imprévu déclenche une alarme 👉 le corps a du mal à se reposer. Ce n'est pas une faiblesse. Si cette alerte te suit jusqu'au lit, le guide gratuit propose une routine anti-rumination. #anxiete #stress #calme #detente #soir #repos #corps #mental"
  }
 ]

@@ -886,5 +886,69 @@
   ],
   "x": 0.343,
   "source": "posture"
+ },
+ "fond-ia-procrastination-1.jpg": {
+  "tete": [
+   0.17,
+   0.4
+  ],
+  "x": 0.66,
+  "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "fond-ia-procrastination-2.jpg": {
+  "tete": [
+   0.24,
+   0.45
+  ],
+  "x": 0.58,
+  "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "fond-ia-procrastination-3.jpg": {
+  "tete": [
+   0.15,
+   0.38
+  ],
+  "x": 0.57,
+  "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "fond-ia-procrastination-4.jpg": {
+  "tete": [
+   0.45,
+   0.72
+  ],
+  "x": 0.5,
+  "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "fond-ia-procrastination-5.jpg": {
+  "tete": [
+   0.1,
+   0.4
+  ],
+  "x": 0.48,
+  "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "fond-ia-somatisation-1.jpg": {
+  "tete": [
+   0.12,
+   0.33
+  ],
+  "x": 0.45,
+  "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "fond-ia-somatisation-2.jpg": {
+  "tete": [
+   0.13,
+   0.4
+  ],
+  "x": 0.62,
+  "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "fond-ia-somatisation-3.jpg": {
+  "tete": [
+   0.1,
+   0.62
+  ],
+  "x": 0.5,
+  "source": "manuel (vérifié à l'œil, 07/10)"
  }
 }
