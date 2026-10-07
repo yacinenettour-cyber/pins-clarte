@@ -758,5 +758,309 @@
     "duree": 2.2
    }
   ]
+ },
+ {
+  "id": "systemenerveux-paumes-sur-les-yeux",
+  "theme": "systemenerveux",
+  "titre": "Paumes chaudes sur les yeux : 30 secondes pour faire baisser la pression",
+  "description": "Frotte tes mains l'une contre l'autre pour les réchauffer, puis pose les paumes en creux sur tes yeux fermés, sans appuyer. Respire lentement dans le noir pendant trente secondes. La chaleur et l'obscurité détendent les yeux, le front et la mâchoire, souvent crispés après des heures d'écran. #systemenerveux #stress #ecrans #detente #calme #antistress",
+  "beats": [
+   {
+    "image": "fonds/fond-139.jpg",
+    "texte": "Trop d'écran,\ntrop de pression ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-141.jpg",
+    "texte": "Frotte tes mains\npour les réchauffer",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-142.jpg",
+    "texte": "Paumes en creux\nsur les yeux fermés",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-87.jpg",
+    "texte": "Respire lentement\ndans le noir",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-93.jpg",
+    "texte": "30 secondes\nsuffisent",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-72.jpg",
+    "texte": "Sauvegarde ce Pin\npour tes pauses",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "systemenerveux-odeur-repere",
+  "theme": "systemenerveux",
+  "titre": "Une odeur repère pour calmer le stress en 10 secondes",
+  "description": "Choisis une odeur que tu aimes, un baume, une huile douce, un sachet de lavande, et respire-la uniquement dans des moments calmes pendant quelques jours. Ton cerveau l'associe peu à peu au repos. Ensuite, quand la tension monte, quelques inspirations lentes près de cette odeur aident à retrouver ce calme plus vite. #systemenerveux #stress #odeur #calme #ancrage #antistress",
+  "beats": [
+   {
+    "image": "fonds/fond-146.jpg",
+    "texte": "Le stress monte\nd'un coup ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-148.jpg",
+    "texte": "Choisis une odeur\nque tu aimes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-23.jpg",
+    "texte": "Respire-la quand\ntu es calme",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-28.jpg",
+    "texte": "Ton cerveau l'associe\nau repos",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-42.jpg",
+    "texte": "En plein stress,\nrespire-la lentement",
+    "duree": 2.6
+   },
+   {
+    "image": "fonds/fond-149.jpg",
+    "texte": "Sauvegarde ce Pin\npour t'en souvenir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-aerer-chambre",
+  "theme": "sommeil",
+  "titre": "Aérer ta chambre 5 minutes avant de dormir : un rituel simple pour mieux t'endormir",
+  "description": "Ouvrir la fenêtre cinq minutes avant d'aller au lit rafraîchit l'air et fait un peu baisser la température de la pièce, ce qui aide le corps à glisser vers le sommeil. C'est aussi un petit rituel qui marque la fin de la journée. Referme, tamise la lumière, et la chambre est prête pour la nuit. #sommeil #routinedusoir #chambre #mieuxdormir #endormissement #calme",
+  "beats": [
+   {
+    "image": "fonds/fond-121.jpg",
+    "texte": "Du mal à\nt'endormir ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-123.jpg",
+    "texte": "Ouvre la fenêtre\n5 minutes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-125.jpg",
+    "texte": "L'air frais rafraîchit\nla chambre",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-126.jpg",
+    "texte": "Le corps glisse\nvers le sommeil",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-127.jpg",
+    "texte": "Referme, tamise\nla lumière",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-129.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "sommeil-masque-nuit",
+  "theme": "sommeil",
+  "titre": "Masque de nuit : pourquoi le noir complet aide à dormir plus profondément",
+  "description": "Lampadaire, veille d'appareil, aube précoce : même une faible lumière peut rendre le sommeil plus léger. Un masque de nuit confortable recrée le noir complet sans toucher aux volets. Choisis-le souple et bien ajusté, sans pression sur les yeux. Beaucoup de personnes se réveillent moins tôt avec. #sommeil #masquedenuit #lumiere #mieuxdormir #nuit #reveil",
+  "beats": [
+   {
+    "image": "fonds/fond-131.jpg",
+    "texte": "Une petite lumière\nla nuit ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-134.jpg",
+    "texte": "Même faible,\nelle allège le sommeil",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-135.jpg",
+    "texte": "Un masque recrée\nle noir complet",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-04.jpg",
+    "texte": "Souple et bien\najusté",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-06.jpg",
+    "texte": "Moins de réveils\ntrop tôt",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-08.jpg",
+    "texte": "Sauvegarde ce Pin\npour ta chambre",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "blocagemental-une-seule-tache-visible",
+  "theme": "blocagemental",
+  "titre": "Une seule tâche visible sur ton bureau : l'astuce contre la dispersion",
+  "description": "Quand tout est sous tes yeux, dossiers, post-it, onglets ouverts, le cerveau saute d'une chose à l'autre sans avancer. Range tout sauf la tâche du moment : un seul dossier sur le bureau, une seule fenêtre à l'écran. Le regard n'est plus happé ailleurs, et la concentration revient plus facilement. #blocagemental #concentration #clarte #organisation #focus #mental",
+  "beats": [
+   {
+    "image": "fonds/fond-195.jpg",
+    "texte": "Tu passes d'une tâche\nà l'autre ?",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-25.jpg",
+    "texte": "Tout ce que tu vois\nt'appelle",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-39.jpg",
+    "texte": "Range tout\nsauf une tâche",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-55.jpg",
+    "texte": "Une seule fenêtre\nà l'écran",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/photo_blocagemental_3766213.jpg",
+    "texte": "La concentration\nrevient",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/photo_blocagemental_3771105.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton bureau",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "posturesantistress-pieds-au-sol",
+  "theme": "posturesantistress",
+  "titre": "Les deux pieds à plat au sol : le réglage de 2 secondes qui pose le corps",
+  "description": "Jambes croisées, pieds sous la chaise, sur la pointe : au bureau, on oublie souvent ses appuis. Poser les deux pieds bien à plat au sol, sentir leur poids, et laisser les épaules descendre aide le corps à se stabiliser en quelques secondes. Un réflexe simple à reprendre à chaque appel ou chaque mail tendu. #stress #travail #posture #bureau #ancrage #calme #antistress",
+  "beats": [
+   {
+    "image": "fonds/fond-151.jpg",
+    "texte": "Tension au bureau ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-157.jpg",
+    "texte": "Regarde tes pieds",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-197.jpg",
+    "texte": "Pose-les bien\nà plat au sol",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-78.jpg",
+    "texte": "Sens leur poids,\nlaisse les épaules descendre",
+    "duree": 2.8
+   },
+   {
+    "image": "fonds/fond-workplace.jpg",
+    "texte": "2 secondes\nà chaque mail tendu",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-117.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton bureau",
+    "duree": 2.2
+   }
+  ]
+ },
+ {
+  "id": "procrastination-commencer-par-la-fin",
+  "theme": "procrastination",
+  "titre": "Écrire la dernière phrase en premier : l'astuce pour démarrer un texte bloqué",
+  "description": "Rapport, mail difficile, dossier : la page blanche bloque souvent parce qu'on veut commencer par la meilleure introduction. Écris d'abord la conclusion, ce que tu veux que la personne retienne. Une fois la fin posée, le reste se construit plus facilement autour. Commencer par la fin enlève la pression du premier mot. #procrastination #ecriture #motivation #productivite #organisation #focus",
+  "beats": [
+   {
+    "image": "fonds/fond-196.jpg",
+    "texte": "Bloqué devant\nla page blanche ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-200.jpg",
+    "texte": "Ne commence pas\npar le début",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-201.jpg",
+    "texte": "Écris d'abord\nla conclusion",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-203.jpg",
+    "texte": "Le reste se construit\nautour",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/fond-ia-procrastination-2.jpg",
+    "texte": "Fini la pression\ndu premier mot",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-ia-procrastination-4.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton prochain texte",
+    "duree": 2.4
+   }
+  ]
+ },
+ {
+  "id": "alimentation-verre-eau-lent",
+  "theme": "alimentation",
+  "titre": "Boire un verre d'eau très lentement : le mini-rituel anti-stress de 1 minute",
+  "description": "Quand la tension monte, prends un verre d'eau et bois-le très lentement, gorgée par gorgée, en sentant la fraîcheur. Ce geste simple oblige à ralentir, à respirer entre deux gorgées et à faire une vraie pause. Une minute suffit pour repartir plus posé, sans café ni sucre. #alimentation #stress #hydratation #pause #calme #antistress",
+  "beats": [
+   {
+    "image": "fonds/fond-05.jpg",
+    "texte": "La tension\nmonte ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-07.jpg",
+    "texte": "Prends un verre\nd'eau",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/fond-106.jpg",
+    "texte": "Bois-le très\nlentement",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-118.jpg",
+    "texte": "Respire entre\ndeux gorgées",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-15.jpg",
+    "texte": "1 minute pour\nrepartir posé",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-17.jpg",
+    "texte": "Sauvegarde ce Pin\npour tes pauses",
+    "duree": 2.2
+   }
+  ]
  }
 ]
