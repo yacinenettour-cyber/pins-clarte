@@ -1,0 +1,61 @@
+{
+ "a_inserer_le": "2026-12-01",
+ "consigne": "Insérer ces pins en tête de pins.json début décembre (sujets de janvier : trop tôt avant). Lancer ensuite outils/verifier_banque.py.",
+ "pins": [
+  {
+   "titre": "1er janvier : 3 gestes pour récupérer après le réveillon sans décaler toute ta semaine",
+   "texte_image": "Après le réveillon : 3 gestes pour récupérer",
+   "points_image": [
+    "Te lever avant midi",
+    "Sortir à la lumière du jour",
+    "Te coucher tôt le 1er au soir"
+   ],
+   "description": "Coucher à 4h, réveil à midi : le réveillon décale l'horloge interne pour plusieurs jours. Trois gestes pour récupérer sans y laisser la semaine 👉 te lever avant midi, même fatigué(e) 👉 sortir prendre la lumière du jour dans l'après-midi 👉 te coucher tôt le soir du 1er, sans sieste longue. Le 2 janvier, le rythme est presque revenu. Si le sommeil tarde ce soir-là, le guide gratuit propose des exercices à faire au lit. #sommeil #nouvelan #reveillon #lit #mieuxdormir #fetes #rythme #janvier",
+   "theme": "sommeil"
+  },
+  {
+   "titre": "Rentrée de janvier : 3 gestes la semaine d'avant pour recaler ton sommeil",
+   "texte_image": "Rentrée de janvier : recaler ton sommeil",
+   "points_image": [
+    "Avancer le lever de 15 min par jour",
+    "Reprendre l'heure de coucher habituelle",
+    "Préparer le lundi dès le samedi"
+   ],
+   "description": "Après deux semaines de vacances à se coucher tard, le réveil du premier lundi de janvier fait mal. Trois gestes la semaine d'avant 👉 avancer l'heure du lever de quinze minutes chaque jour 👉 reprendre ton heure de coucher habituelle trois soirs avant la reprise 👉 préparer affaires et planning dès le samedi pour que le dimanche reste calme. Le guide gratuit propose un calendrier de 30 jours, utile pour bien démarrer l'année. #sommeil #rentree #janvier #reprise #lit #rythme #vacances #reveil",
+   "theme": "sommeil"
+  },
+  {
+   "titre": "Blues de janvier après les fêtes : 3 signes et 3 gestes pour la première semaine",
+   "texte_image": "Blues d'après-fêtes : 3 gestes",
+   "points_image": [
+    "Prévoir un petit plaisir chaque jour",
+    "Sortir à la lumière du midi",
+    "Garder un lien avec tes proches"
+   ],
+   "description": "Après l'agitation des fêtes, le retour au quotidien peut laisser un vide : moral en baisse, fatigue, envie de rien. Ce creux est fréquent et passe souvent en quelques jours. Trois gestes 👉 prévoir un petit plaisir chaque jour de la première semaine 👉 sortir prendre la lumière du midi 👉 garder un lien avec tes proches au-delà des fêtes. Si la tristesse dure plus de deux semaines, parles-en à un proche ou à un médecin. #systemenerveux #blues #janvier #zen #moral #hiver #calme #bienetre",
+   "theme": "systemenerveux"
+  },
+  {
+   "titre": "Résolutions du Nouvel An : pourquoi un seul mot pour l'année marche mieux qu'une liste",
+   "texte_image": "Un mot pour l'année plutôt que 10 résolutions",
+   "points_image": [
+    "Une liste longue bloque dès février",
+    "Un mot guide les choix du quotidien",
+    "Exemples : calme, oser, simplifier"
+   ],
+   "description": "Chaque janvier, la liste de résolutions est longue, et en février elle est abandonnée. Un seul mot pour l'année fonctionne souvent mieux 👉 une longue liste devient vite une source de culpabilité qui bloque 👉 un mot guide les petits choix du quotidien sans pression 👉 « calme », « oser », « simplifier » : choisis celui qui te parle. Écris-le en vue. Si l'année qui commence te tient éveillé(e), le guide gratuit aide. #blocagemental #resolutions #nouvelan #zen #janvier #objectifs #clarte #focus",
+   "theme": "blocagemental"
+  },
+  {
+   "titre": "Régime en janvier : pourquoi la restriction après les fêtes augmente le stress",
+   "texte_image": "Restriction en janvier : 3 raisons d'éviter",
+   "points_image": [
+    "Se priver entretient le stress",
+    "La frustration pousse aux craquages",
+    "Mieux vaut des repas réguliers"
+   ],
+   "description": "Après les fêtes, beaucoup se lancent dans un régime strict dès le 2 janvier. Trois raisons d'y réfléchir 👉 se priver brutalement est une source de stress en plus pour le corps 👉 la frustration accumulée pousse souvent aux craquages, puis à la culpabilité 👉 des repas réguliers, variés et rassasiants apaisent davantage. Revenir à un rythme simple vaut mieux que compenser. Le corps retrouve son équilibre en quelques jours. #alimentation #stress #janvier #regime #zen #calme #repas #nutrition",
+   "theme": "alimentation"
+  }
+ ]
+}

@@ -36,6 +36,7 @@ Détail complet : `docs/pinterest-projet/05-process-operationnel.md`.
 - `videos.json` / `historique_videos.json` : équivalent pour les Video Pins.
 - `fonds/` + `fonds_themes.json` : photos de fond par thème.
 - `prompts/system-prompt-pin-seo.md` : prompt système pour un futur module IA Make.com (image → métadonnées), flux distinct et pas encore connecté au pipeline actuel (texte → image).
+- `pins_saisonniers.json` : pins de janvier mis de côté (trop tôt pour les publier) — **à insérer en tête de `pins.json` début décembre 2026** puis `verifier_banque.py` (qui les compte déjà dans son contrôle).
 - `kits_idea_pins/` : kits Idea Pins à publier à la main par l'utilisateur (slides + `texte.txt`) — leurs titres sont hors `historique.json` : les inclure dans le contrôle anti-doublon de toute recharge de `pins.json`.
 - `docs/pinterest-projet/` : documentation complète et autoportante (vue d'ensemble, architecture, tableaux, règles éditoriales, journal des décisions, process opérationnel) — voir son README pour l'index.
 
