@@ -1110,5 +1110,15 @@
   "theme": "blocagemental",
   "design": "clair",
   "pin_id": "600175087890016414"
+ },
+ {
+  "date": "2026-10-07T05:07+00:00",
+  "titre": "Stress en open space : 3 façons de te protéger",
+  "image": "images/pin-20261007-050745.jpg",
+  "fond": "fonds/fond-151.jpg",
+  "theme": "posturesantistress",
+  "design": "sombre",
+  "pin_id": "600175087890022984",
+  "md5": "c2fc987172d18eef59f06c853119ebf5"
  }
 ]
