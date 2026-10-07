@@ -2,6 +2,8 @@
 
 Même visuel que les kits du 29/09 : fond crème, étiquette, titre, photo arrondie sous le texte
 (jamais de texte sur la photo), une photo différente par slide, slide récap sans photo.
+Les photos des kits sont rangées dans kits_idea_pins/photos/ (hors de fonds/) pour que le pipeline
+ne les réutilise jamais dans un pin automatique.
 Usage : python3 outils/generer_kits_idea_pins.py  (régénère les kits définis dans KITS)
 """
 import json, os, re
@@ -56,21 +58,21 @@ KITS = [
         "alt": "Infographie en 7 slides : 5 tensions de stress à relâcher en 5 minutes — mâchoire, épaules, nuque, ventre et mains, avec un geste simple pour chacune.",
     },
     {
-        "dossier": "6-reveil-en-pleine-nuit", "theme": "sommeil", "lien": True,
+        "dossier": "6-dormir-apres-une-dispute", "theme": "sommeil", "lien": True,
         "tableau": "Sommeil : mieux dormir & routine du soir",
-        "titre": "Réveillé(e) en pleine nuit : 5 réflexes pour te rendormir sans lutter",
-        "couverture": ("Réveillé(e) en pleine nuit ?", "5 réflexes pour te rendormir sans lutter", "fond-96.jpg"),
+        "titre": "Dormir après une dispute : 5 gestes quand ta tête rejoue la scène",
+        "couverture": ("Dormir après une dispute", "5 gestes quand ta tête rejoue la scène", "fond-81.jpg"),
         "etapes": [
-            ("Ne pas regarder l'heure", "Calculer le temps qui reste réveille le mental. Laisse le téléphone et le réveil hors de vue.", "fond-51.jpg"),
-            ("Rester dans la pénombre", "Pas d'écran ni de lumière forte : la lumière dit au cerveau que la nuit est terminée.", "fond-165.jpg"),
-            ("Allonger l'expiration", "Quelques respirations avec une expiration plus longue que l'inspiration font redescendre l'alerte.", "fond-40.jpg"),
-            ("Noter la pensée qui tourne", "Un carnet près du lit : écris-la en une ligne. Elle peut attendre demain matin.", "fond-47.jpg"),
-            ("Se lever après 20 minutes", "Si le sommeil ne revient pas, lis au calme sous une lumière douce, puis retourne au lit quand les paupières pèsent.", "fond-173.jpg"),
+            ("Écrire ce que tu ressens", "Trois phrases sur papier, sans te relire. Ce qui est écrit n'a plus besoin de tourner en boucle.", "fond-79.jpg"),
+            ("Fixer un moment pour en reparler", "Décide quand tu reprendras la discussion demain. Le cerveau lâche plus facilement ce qui a une suite prévue.", "fond-108.jpg"),
+            ("Relâcher la mâchoire et les poings", "La colère se loge dans le corps : desserre les dents, ouvre les mains, laisse tomber les épaules.", "fond-174.jpg"),
+            ("Expirer plus longtemps", "Inspire sur 4 temps, expire sur 6 à 8. Quelques cycles suffisent pour que le cœur ralentisse.", "fond-41.jpg"),
+            ("Nommer la boucle", "Quand la scène revient, dis-toi simplement « je rejoue la dispute », puis reviens à ta respiration. Sans te juger.", "fond-26.jpg"),
         ],
-        "recap": ("Se rendormir sans lutter", "Enregistre-la maintenant : tu la retrouveras la prochaine nuit agitée."),
-        "description": "Réveillé(e) en pleine nuit, impossible de te rendormir ? Plus tu luttes, plus le cerveau reste en alerte. 5 réflexes pour laisser le sommeil revenir : ne pas regarder l'heure, rester dans la pénombre, allonger l'expiration, noter la pensée qui tourne, te lever après 20 minutes sans sommeil. Le guide gratuit propose une routine anti-rumination à faire au lit, avec un calendrier sur 30 jours.",
-        "hashtags": "#sommeil #reveilnocturne #insomnie #ruminations #routinedusoir #stress #systemenerveux #bienetre",
-        "alt": "Infographie en 7 slides : 5 réflexes pour se rendormir après un réveil nocturne — ne pas regarder l'heure, rester dans la pénombre, allonger l'expiration, noter la pensée, se lever après 20 minutes.",
+        "recap": ("Dormir malgré une dispute", "Enregistre-la : elle servira le prochain soir où la tête refuse de lâcher."),
+        "description": "Après une dispute, le corps se couche mais la tête rejoue la scène en boucle, cherche la bonne réplique et repousse le sommeil. Ces 5 gestes aident à poser la journée : écrire ce que tu ressens, fixer un moment pour en reparler, relâcher la mâchoire et les poings, allonger l'expiration et nommer la boucle quand elle revient. Le guide gratuit propose une routine anti-rumination à faire au lit.",
+        "hashtags": "#sommeil #ruminations #insomnie #emotions #stress #routinedusoir #systemenerveux #bienetre",
+        "alt": "Infographie en 7 slides : 5 gestes pour dormir après une dispute — écrire ce que l'on ressent, fixer un moment pour en reparler, relâcher mâchoire et poings, allonger l'expiration, nommer la boucle.",
     },
     {
         "dossier": "7-micro-pas-procrastination", "theme": "procrastination", "lien": False,
@@ -117,7 +119,7 @@ CADRAGE = json.load(open("fonds_cadrage.json", encoding="utf-8")) if os.path.exi
 def recadrer(nom, w, h):
     # « fond-32.jpg:0.75 » : centre vertical choisi à la main (0 = haut, 1 = bas).
     nom, _, cy_force = nom.partition(":")
-    img = Image.open(os.path.join("fonds", nom)).convert("RGB")
+    img = Image.open(os.path.join("kits_idea_pins", "photos", nom)).convert("RGB")
     r = max(w / img.width, h / img.height)
     img = img.resize((round(img.width * r), round(img.height * r)), Image.LANCZOS)
     cx, cy = 0.5, 0.45

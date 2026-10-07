@@ -312,10 +312,20 @@ Bilan vérifié via Composio (30 jours au 04/10) : 37 583 impressions, 298 enreg
 **Contenu** : `kits_idea_pins/4-` à `7-`, 7 slides 1080×1920 chacun, générés par `outils/generer_kits_idea_pins.py` (contenu des kits dans `KITS`, même visuel que les kits du 29/09) :
 4. « Corps tendu au coucher : 5 gestes doux pour t'endormir plus détendu(e) » (Sommeil, lien oui)
 5. « Mâchoire, épaules, ventre : 5 tensions de stress à relâcher en 5 minutes » (Somatisation, lien oui, pont vers le sommeil)
-6. « Réveillé(e) en pleine nuit : 5 réflexes pour te rendormir sans lutter » (Sommeil, lien oui)
+6. « Dormir après une dispute : 5 gestes quand ta tête rejoue la scène » (Sommeil, lien oui) — remplace le 07/10 « Réveillé(e) en pleine nuit… », même conseil que le pin publié « Réveil à 3h du matin la tête pleine »
 7. « 5 micro-pas pour lancer enfin la tâche que tu repousses » (Procrastination, **pas de lien**, aucune mention du guide)
 
 **Contrôles** : 24 photos distinctes choisies à l'œil pour chaque étape, jamais utilisées par le pipeline (`historique.json`), texte jamais sur la photo (zones vérifiées par le script) ; corps de description 387-393 car., total 487-494, 8 hashtags, premier hashtag = tableau ; titres comparés à `pins.json`, `historique.json`, aux kits 1-3 et aux 439 titres en ligne : similarité max. 0,60. Lien avec `utm_campaign=idea-pins`. Kits 1-3 : tableaux corrigés (« Vivre sans stress » et « Calmer l'esprit le soir » n'existent pas sur le compte) et lien complet ajouté. À noter : les photos `photo_*` (Pexels, ajoutées le 04/10) des thèmes somatisation, postures et procrastination sont souvent hors sujet (buffet, homme à lunettes de soleil, roues de train, éclair).
+
+## 28. Zéro doublon : nettoyage de la banque, des vidéos et des fonds (07/10/2026)
+
+**Demande de l'utilisateur** : « aucun doublon ». Comparaison des titres à venir (`pins.json` non publiés, `videos.json`, kits) avec tout ce qui existe : `historique.json`, `historique_videos.json` et les **441 pins réellement en ligne** (`PINTEREST_LIST_PINS` compte + chaque tableau). Au-delà du seuil `SequenceMatcher` 0,72, revue **par sujet** (respiration 4-7-8, nerf vague, cohérence cardiaque, réveil à 3 h, cortisol du matin, micro-pauses, écrans, café, sieste, posture…) : beaucoup de doublons de fond échappaient au seuil (ex. 6 variantes « activer le nerf vague sans matériel », 10 pins cohérence cardiaque).
+
+**Retirés** (archivés dans `archives/doublons-retires-2026-10-07.json`, restaurables) : **232 pins** de la banque (382 → 150 à publier, entrées gardées inchangées au caractère près) et **10 vidéos** (22 → 12 à publier) qui reprenaient un sujet déjà publié ou présent ailleurs ; une seule version gardée par sujet. 3 titres non publiés reformulés (structures trop proches d'autres titres). Kit n°6 remplacé. Contrôle final par script : 0 titre identique, 0 quasi-doublon ≥ 0,72 entre tout ce qui est à venir et tout ce qui existe.
+
+**Images** : 4 photos Pexels présentes deux fois dans `fonds/` sous deux noms (fichier identique) → une copie retirée (`archives/fonds-doublons/`) ; les 24 photos des kits Idea Pins déplacées dans `kits_idea_pins/photos/` pour que le pipeline ne les réutilise jamais ; contrôle par empreinte visuelle : 0 photo en double. **Stock** : ~15 jours de pins (10/jour) et 12 jours de vidéos → recharge à prévoir avant le 20/10, avec ce même contrôle (titres en ligne + revue par sujet).
+
+**En ligne (déjà publiés)** : 4 vrais doublons (même titre, souvent même image) — voir réponse à l'utilisateur ; suppression uniquement avec son accord.
 
 ## Point ouvert à ce jour
 
