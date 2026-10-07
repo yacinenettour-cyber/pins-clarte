@@ -70,5 +70,14 @@
   "cover": "videopins/videopin-20261006-163213.jpg",
   "theme": "somatisation",
   "pin_id": "600175087890012816"
+ },
+ {
+  "date": "2026-10-07T16:33+00:00",
+  "id": "posturesantistress-nuque-ecran",
+  "titre": "Nuque et épaules tendues devant l'écran : l'étirement de 30 secondes",
+  "video": "videopins/videopin-20261007-163230.mp4",
+  "cover": "videopins/videopin-20261007-163230.jpg",
+  "theme": "posturesantistress",
+  "pin_id": "600175087890031261"
  }
 ]
