@@ -1190,5 +1190,15 @@
   "design": "clair",
   "pin_id": "600175087890030844",
   "md5": "dff4f50c267bb64adafffe0051f9c98f"
+ },
+ {
+  "date": "2026-10-07T18:07+00:00",
+  "titre": "Luminothérapie en hiver : 3 repères pour le matin",
+  "image": "images/pin-20261007-180749.jpg",
+  "fond": "fonds/fond-44.jpg",
+  "theme": "energie",
+  "design": "sombre",
+  "pin_id": "600175087890032717",
+  "md5": "7ba3250a8f61e59153bbc0a0544f173e"
  }
 ]
