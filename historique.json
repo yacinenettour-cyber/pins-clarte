@@ -1150,5 +1150,15 @@
   "design": "clair",
   "pin_id": "600175087890024560",
   "md5": "73fb6212aa3bb89c985c60b2af2474b7"
+ },
+ {
+  "date": "2026-10-07T10:07+00:00",
+  "titre": "Métiers debout : 3 gestes contre les tensions",
+  "image": "images/pin-20261007-100748.jpg",
+  "fond": "fonds/fond-33.jpg",
+  "theme": "posturesantistress",
+  "design": "sombre",
+  "pin_id": "600175087890025634",
+  "md5": "0571b65a1c50afe1b3de36c381921e44"
  }
 ]
