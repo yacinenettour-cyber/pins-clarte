@@ -1,19 +1,16 @@
-# Page de capture « Plan anti-cortisol en 7 jours » — à créer dans systeme.io
+# Page de capture « Plan anti-cortisol en 7 jours » — systeme.io
 
-Fichiers à importer dans systeme.io :
-- `guide-cortisol-7-jours.pdf` : le guide envoyé par e-mail (10 pages).
-- `couverture-guide-cortisol.png` : l'image de la page.
+## État au 07/10/2026 : page créée et en ligne (par Claude, via l'API publique systeme.io)
 
-## Création (5 à 10 minutes, depuis un ordinateur de préférence)
-
-1. Dans systeme.io, ouvre le tunnel de ton guide actuel (« Quand le cerveau refuse de dormir ») et **duplique-le**.
-2. Dans la copie, remplace l'image par `couverture-guide-cortisol.png` et les textes par ceux ci-dessous.
-3. Dans l'étape de remerciement et l'e-mail automatique, remplace le PDF par `guide-cortisol-7-jours.pdf`.
-4. Donne à la page une adresse courte, par exemple `lp.contactapaisement-mental.fr/cortisol`.
-5. Dans les réglages SEO de la page : titre, description et image de partage (textes ci-dessous). Ta page actuelle n'a ni titre ni image de partage : à remplir aussi, c'est ce que Pinterest affiche quand on ouvre le lien.
-6. **Envoie l'adresse de la page à Claude** : il branche les pins concernés dessus.
+- **Page de capture** : https://lp.contactapaisement-mental.fr/63d489c7 (tunnel « optin » 7680510, étape 25727831, page 45404514).
+- **Page de remerciement** : https://lp.contactapaisement-mental.fr/e7346dbb (étape 25727832, page 45404515) : bouton « Télécharger mon plan » vers le PDF (`guides/guide-cortisol-7-jours.pdf` servi par jsDelivr, sha complet `452f338f6c75461db20b2e8367fd534cfbc24c4d` — jamais un sha court : erreur 403 « Package size exceeded ») + bouton secondaire vers le guide sommeil (`/tonguide?utm_source=plan-cortisol&utm_medium=merci`).
+- **Livraison par téléchargement immédiat, pas par e-mail** : le plan gratuit systeme.io bloque la création de tags (422), de campagnes (403) et de nouvelles règles d'automatisation (« Automation rules limit reached »). Les textes de la page promettent donc un téléchargement immédiat, jamais un e-mail. L'e-mail de livraison est prêt dans systeme.io (e-mail d'automatisation 13068257, texte ci-dessous) mais n'est relié à rien. La règle existante 2045419 (guide sommeil) n'a pas été modifiée pour ne pas mélanger les deux listes d'inscrits.
+- **Limites de l'API publique** : le bloc Image n'accepte qu'une description en anglais (image générée par systeme.io), pas d'image envoyée par nos soins ; la couleur de la page est tirée au hasard à chaque enregistrement ; pas de réglage de l'adresse (slug), du texte du champ e-mail ni du SEO de la page. Les blocs « IconFeature » n'affichaient pas leur texte : remplacés par des blocs « Card » (`cardLayout: icon-top`). L'image du haut (photo lumière du matin + tisane, sans texte) n'apparaît que sur ordinateur ; sur mobile le formulaire arrive directement après la liste.
+- **Retouches possibles à la main dans l'éditeur systeme.io** (facultatives) : texte du champ e-mail « Your email address » → « Ton adresse e-mail » ; image du haut → `couverture-guide-cortisol.png` ; réglages SEO (titre, description, image de partage, voir plus bas). **Ne pas changer l'adresse de la page une fois les pins branchés** : les épingles déjà publiées garderaient l'ancienne adresse (modification des épingles impossible par l'API).
 
 ## Textes de la page
+
+Proposition d'origine ; la page en ligne reprend ces textes, enrichis (section douleur, 7 cartes « Jour 1 » à « Jour 7 », FAQ, appel final), avec une livraison par téléchargement.
 
 **Titre principal**
 Le plan anti-cortisol en 7 jours
@@ -28,7 +25,7 @@ Le plan anti-cortisol en 7 jours
 - Sans matériel, sans régime
 
 **Champ e-mail — texte au-dessus**
-Entre ton e-mail : le plan arrive dans ta boîte mail en 2 minutes.
+Téléchargement immédiat après ton inscription. Aucun spam. (Ne pas promettre d'e-mail tant que la livraison par e-mail n'est pas reliée.)
 
 **Bouton**
 Recevoir mon plan gratuit
@@ -47,6 +44,8 @@ Repères de bien-être, pas un avis médical.
 
 ## E-mail de livraison
 
+Prêt dans systeme.io (e-mail d'automatisation 13068257), non relié : à brancher sur l'inscription au formulaire du tunnel 7680510 si le compte passe à un plan payant (ou si la règle existante est modifiée), puis remettre la promesse « dans ta boîte mail » sur la page.
+
 **Objet** : Ton plan anti-cortisol en 7 jours est là
 
 Bonjour,
@@ -60,9 +59,9 @@ Coche ta journée dans le tableau de la page 10, et garde les 3 gestes qui te fo
 À très vite,
 Clarté Mentale
 
-## Pour le pipeline (déjà préparé le 07/10/2026, inactif)
+## Pour le pipeline (préparé le 07/10/2026)
 
-- `pins.yml` : il suffit de remplir `LIEN_GUIDE_CORTISOL = "https://…"` avec l'adresse de la page, puis de pousser sur `main`.
+- `pins.yml` : remplir `LIEN_GUIDE_CORTISOL = "https://lp.contactapaisement-mental.fr/63d489c7"`, puis pousser sur `main` (fichier de workflow : seulement avec l'accord explicite de l'utilisateur). Simulation du 07/10 avec cette adresse : 34 pins à venir vers le plan, 68 visuels avec la carte cortisol, 0 sans photo, 0 chevauchement, descriptions ≤ 495 caractères ; poids de rotation energie/alimentation passés à 1,0.
 - Thèmes reliés : `energie` et `alimentation`, plus 4 pins cortisol d'autres thèmes ; 24 pins ont déjà leur fin de description « plan » (`description_guide_cortisol`), 5 pins hors sujet restent sans lien (`"guide": "aucun"`).
 - Carte sur l'image : « PLAN GRATUIT · lien dans l'épingle / « Le plan anti-cortisol en 7 jours » : / 7 gestes simples + tableau de suivi ». Si le titre de la page change, adapter `LIGNES_CARTE_CORTISOL`.
 - Les vidéos (`videos.yml`) ne sont pas encore reliées au plan.
