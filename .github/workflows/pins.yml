@@ -687,6 +687,13 @@ jobs:
               n_clair = sum(1 for h in historique if h.get("design") == "clair")
               n_sombre = sum(1 for h in historique if h.get("design") == "sombre")
               design = "clair" if n_clair <= n_sombre else "sombre"
+              # Photo dédiée (07/10/2026) : champ "photo" du pin (fichier de fonds/, classé
+              # "dedie" dans fonds_themes.json, donc hors rotation) ; sinon choix par thème.
+              photo_dediee = os.path.join("fonds", pin.get("photo") or "")
+              if not fond and pin.get("photo") and os.path.exists(photo_dediee) and (
+                      design != "clair" or Image.open(photo_dediee).width >= 800):
+                  fond = photo_dediee
+                  fond_etiquette = fond
               if not fond:
                   fond = choisir_fond(theme, historique, min_largeur=800 if design == "clair" else 0)
                   fond_etiquette = fond

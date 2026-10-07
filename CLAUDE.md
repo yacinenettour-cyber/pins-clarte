@@ -34,7 +34,7 @@ Détail complet : `docs/pinterest-projet/05-process-operationnel.md`.
 
 - `pins.json` : banque de pins (texte). `historique.json` : suivi anti-répétition (titres déjà publiés).
 - `videos.json` / `historique_videos.json` : équivalent pour les Video Pins.
-- `fonds/` + `fonds_themes.json` : photos de fond par thème.
+- `fonds/` + `fonds_themes.json` : photos de fond par thème. **Photo dédiée (07/10/2026)** : champ optionnel `"photo"` d'un pin (nom de fichier dans `fonds/`) → `pins.yml` l'utilise à la place de la rotation par thème (si elle fait ≥ 800 px de large pour le visuel clair) ; ces photos sont classées `"dedie"` dans `fonds_themes.json` pour rester hors rotation. Liste à générer : `outils/photos_dediees_a_faire.json`.
 - `prompts/system-prompt-pin-seo.md` : prompt système pour un futur module IA Make.com (image → métadonnées), flux distinct et pas encore connecté au pipeline actuel (texte → image).
 - `pins_saisonniers.json` : pins de janvier mis de côté (trop tôt pour les publier) — **à insérer en tête de `pins.json` début décembre 2026** puis `verifier_banque.py` (qui les compte déjà dans son contrôle).
 - `kits_idea_pins/` : kits Idea Pins à publier à la main par l'utilisateur (slides + `texte.txt`) — leurs titres sont hors `historique.json` : les inclure dans le contrôle anti-doublon de toute recharge de `pins.json`.

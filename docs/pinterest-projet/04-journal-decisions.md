@@ -368,6 +368,13 @@ Sujets de saison écrits environ 45 à 70 jours avant les fêtes (délai conseil
 - **5 pins de janvier** (lendemain de réveillon, rentrée de janvier, blues d'après-fêtes, mot de l'année, pas de régime en janvier) mis de côté dans **`pins_saisonniers.json`** : publiés en octobre, ils seraient trop en avance. **À insérer en tête de `pins.json` début décembre.** `verifier_banque.py` les inclut désormais dans son contrôle.
 - **Contrôles** : 0 doublon (312 titres à venir), corps 380-450, total ≤ 495, appel au guide sur 16 des 21 pins avec lien (76 %), aucune fin répétée ; rendu des 28 × 2 visuels : 0 sans photo, 0 chevauchement.
 
+## 34. Photos dédiées par pin (07/10/2026)
+
+Constat : la photo est choisie par thème, à tour de rôle, sans lien avec le sujet du pin (un pin « chocolat noir » pouvait tomber sur une tasse de thé).
+- **`pins.yml` (autorisation explicite de l'utilisateur le 07/10)** : un pin peut porter un champ `"photo"` (fichier de `fonds/`). S'il existe et fait au moins 800 px de large pour le visuel clair, il est utilisé ; sinon la rotation par thème continue comme avant. Testé sur 5 cas (photo valide en visuel clair et sombre, photo absente, pas de champ, photo trop étroite) ; YAML et Python du workflow validés.
+- Les photos dédiées sont classées `"dedie"` dans `fonds_themes.json` : elles sortent de la rotation par thème (et du carousel).
+- **26 photos à créer** listées dans `outils/photos_dediees_a_faire.json` (titre du pin, nom de fichier, prompt). Génération impossible le 07/10 (quota Hugging Face gratuit épuisé, 0 crédit Claude Imagine, Pexels bloqué par le réseau de la session) : prévue le 08/10.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
