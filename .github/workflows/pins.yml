@@ -187,6 +187,8 @@ jobs:
           GUIDE_LIGNES = ("GUIDE GRATUIT · lien dans l'épingle", "« Quand le cerveau refuse de dormir » :",
                           "routine anti-rumination + 30 jours d'exercices")
           HAUT_CARTE_GUIDE = 112
+          # Lignes de la carte du pin en cours (changées plus bas quand le pin mène au plan cortisol).
+          LIGNES_CARTE = GUIDE_LIGNES
 
 
           def dessiner_bandeau_guide(d, L, y, fond_couleur, texte_couleur, police_grasse, texte=TEXTE_BANDEAU):
@@ -223,12 +225,12 @@ jobs:
               tailles = [28, 24, 24]
               while True:
                   polices = [charger_police(police_grasse, tailles[0])] + [charger_police(police_normale, t) for t in tailles[1:]]
-                  if all(d.textlength(t, font=p) <= largeur for t, p in zip(GUIDE_LIGNES, polices)) or tailles[0] <= 20:
+                  if all(d.textlength(t, font=p) <= largeur for t, p in zip(LIGNES_CARTE, polices)) or tailles[0] <= 20:
                       break
                   tailles = [t - 1 for t in tailles]
               hauteurs = [int(t * 1.25) for t in tailles]
               yt = y + (h - sum(hauteurs)) / 2 - 2
-              for t, p, hl in zip(GUIDE_LIGNES, polices, hauteurs):
+              for t, p, hl in zip(LIGNES_CARTE, polices, hauteurs):
                   d.text((x, yt), t, font=p, fill=texte_couleur)
                   yt += hl
               return y + h
@@ -634,6 +636,30 @@ jobs:
           # d'energie de 11h...") qui promettait a tort un contenu absent du guide.
           THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
 
+          # 2e guide gratuit « Le plan anti-cortisol en 7 jours » (préparé le 07/10/2026, voir
+          # guides/page-systeme-io-cortisol.md). INACTIF tant que LIEN_GUIDE_CORTISOL est vide :
+          # rien ne change alors. Une fois l'adresse de la page renseignée, les thèmes ci-dessous
+          # et les pins marqués "guide": "cortisol" y mènent (carte et description dédiées), et
+          # les pins marqués "guide": "aucun" restent sans lien.
+          LIEN_GUIDE_CORTISOL = ""
+          THEMES_GUIDE_CORTISOL = {"energie", "alimentation"}
+          LIGNES_CARTE_CORTISOL = ("PLAN GRATUIT · lien dans l'épingle", "« Le plan anti-cortisol en 7 jours » :",
+                                   "7 gestes simples + tableau de suivi")
+
+
+          def guide_du_pin(pin, theme):
+              # "sommeil" (LIEN_PAGE), "cortisol" (LIEN_GUIDE_CORTISOL) ou None (pas de lien).
+              choix = pin.get("guide")
+              if choix == "aucun":
+                  return None
+              if LIEN_GUIDE_CORTISOL and (choix == "cortisol" or theme in THEMES_GUIDE_CORTISOL):
+                  return "cortisol"
+              return None if theme in THEMES_SANS_LIEN else "sommeil"
+
+
+          def theme_avec_lien(theme):
+              return theme not in THEMES_SANS_LIEN or bool(LIEN_GUIDE_CORTISOL and theme in THEMES_GUIDE_CORTISOL)
+
 
           def choisir_pin_equilibre(restants, historique):
               # Rotation entre themes (evite d'enchainer un meme theme), ponderee depuis le
@@ -653,7 +679,7 @@ jobs:
               for h in historique:
                   if h.get("theme") and h.get("date", "") >= debut:
                       recents[h["theme"]] = recents.get(h["theme"], 0) + 1
-              poids = lambda t: 0.5 if t in THEMES_SANS_LIEN else 1.0
+              poids = lambda t: 1.0 if theme_avec_lien(t) else 0.5
               theme_choisi = min(par_theme, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
               return par_theme[theme_choisi][0]
 
@@ -689,6 +715,10 @@ jobs:
 
           pin["titre"] = pin["titre"][:100]
           theme = deviner_theme(pin["description"])
+          guide = guide_du_pin(pin, theme)
+          if guide == "cortisol" and pin.get("description_guide_cortisol"):
+              pin["description"] = pin["description_guide_cortisol"]
+          LIGNES_CARTE = LIGNES_CARTE_CORTISOL if guide == "cortisol" else GUIDE_LIGNES
 
           hashtags_m = re.search(r"(\s#\w+(?:\s#\w+)*)\s*$", pin["description"])
           hashtags = hashtags_m.group(1).strip() if hashtags_m else ""
@@ -697,7 +727,7 @@ jobs:
           phrase = random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
           # Ne jamais laisser la phrase d'enregistrement pousser dehors l'appel au guide
           # (troncature du corps) ni s'ajouter après lui.
-          if phrase and (re.search(r"(?i)guide", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
+          if phrase and (re.search(r"(?i)guide|plan (anti-cortisol|gratuit)", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
               phrase = ""
           queue = " ".join(p for p in [phrase, hashtags] if p)
           budget_corps = 495 - (len(queue) + 1 if queue else 0)
@@ -749,7 +779,7 @@ jobs:
                   fond = choisir_fond(theme, historique, min_largeur=800 if design == "clair" else 0)
                   fond_etiquette = fond
 
-              avec_lien = theme not in THEMES_SANS_LIEN
+              avec_lien = guide is not None
               if design == "clair" and pin.get("points_image"):
                   dessiner_clair_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
               elif design == "clair":
@@ -804,7 +834,7 @@ jobs:
               "energie": "600175156532025122",
           }
 
-          lien = "" if theme in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
+          lien = {"sommeil": os.environ["LIEN_PAGE"], "cortisol": LIEN_GUIDE_CORTISOL}.get(guide, "")
           # Suivi des inscrits venus de Pinterest dans systeme.io (URL source du contact), par thème.
           if lien and "utm_source=" not in lien:
               # utm_content propre à chaque pin (07/10/2026) : chaque épingle pointe vers une adresse

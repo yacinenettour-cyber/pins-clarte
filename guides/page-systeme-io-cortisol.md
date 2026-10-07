@@ -60,8 +60,9 @@ Coche ta journée dans le tableau de la page 10, et garde les 3 gestes qui te fo
 À très vite,
 Clarté Mentale
 
-## Pour le pipeline (fait par Claude quand l'adresse sera connue)
+## Pour le pipeline (déjà préparé le 07/10/2026, inactif)
 
-- Thèmes à relier à cette page : `energie` et `alimentation` (aujourd'hui sans lien), éventuellement les pins cortisol de `systemenerveux`.
-- Appels possibles en fin de description (toujours variés, jamais répétés) : « Le plan anti-cortisol en 7 jours est offert : lien dans l'épingle. » ; « Pour aller plus loin, le plan gratuit propose un geste par jour pendant 7 jours. » ; « Un tableau de suivi sur 7 jours t'attend dans le plan gratuit. »
-- Carte sur l'image : « PLAN GRATUIT · lien dans l'épingle / Le plan anti-cortisol en 7 jours : / 7 gestes simples + tableau de suivi ».
+- `pins.yml` : il suffit de remplir `LIEN_GUIDE_CORTISOL = "https://…"` avec l'adresse de la page, puis de pousser sur `main`.
+- Thèmes reliés : `energie` et `alimentation`, plus 4 pins cortisol d'autres thèmes ; 24 pins ont déjà leur fin de description « plan » (`description_guide_cortisol`), 5 pins hors sujet restent sans lien (`"guide": "aucun"`).
+- Carte sur l'image : « PLAN GRATUIT · lien dans l'épingle / « Le plan anti-cortisol en 7 jours » : / 7 gestes simples + tableau de suivi ». Si le titre de la page change, adapter `LIGNES_CARTE_CORTISOL`.
+- Les vidéos (`videos.yml`) ne sont pas encore reliées au plan.

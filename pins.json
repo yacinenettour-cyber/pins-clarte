@@ -575,7 +575,9 @@
    "Demander conseil en cas de souci de santé"
   ],
   "description": "Quand les matins d'hiver restent sombres, certaines personnes utilisent une lampe de luminothérapie pour garder de l'énergie. Trois repères 👉 l'utiliser le matin, pas le soir, pour ne pas décaler le sommeil 👉 environ vingt à trente minutes, au petit-déjeuner par exemple 👉 demander conseil à un médecin en cas de problème aux yeux ou de traitement en cours. Elle complète la lumière du dehors, sans la remplacer. #energie #luminotherapie #hiver #lumiere #fatigue #matin #routine #bienetre",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Quand les matins d'hiver restent sombres, certaines personnes utilisent une lampe de luminothérapie pour garder de l'énergie. Trois repères 👉 l'utiliser le matin, pas le soir, pour ne pas décaler le sommeil 👉 environ vingt à trente minutes, au petit-déjeuner par exemple 👉 demander conseil à un médecin en cas de problème aux yeux ou de traitement en cours. C'est le jour 1 du plan anti-cortisol gratuit : lien dans l'épingle. #energie #luminotherapie #hiver #lumiere #fatigue #matin #routine"
  },
  {
   "titre": "Réveil difficile en hiver : 3 réglages pour l'énergie",
@@ -586,7 +588,9 @@
    "Sortir quelques minutes dans la matinée"
   ],
   "description": "En hiver, se lever quand il fait encore nuit demande un vrai effort au corps, qui attend la lumière pour démarrer. Trois réglages aident 👉 allumer progressivement dès le réveil, ou avec un réveil lumineux 👉 boire un verre d'eau et s'étirer une minute avant de se lever 👉 sortir quelques minutes dans la matinée pour recevoir la lumière du jour. Le corps s'habitue, et les réveils deviennent moins rudes au fil des semaines. #energie #hiver #reveil #matin #lumiere #fatigue #routine #motivation",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "En hiver, se lever quand il fait encore nuit demande un vrai effort au corps, qui attend la lumière pour démarrer. Trois réglages aident 👉 allumer progressivement dès le réveil, ou avec un réveil lumineux 👉 boire un verre d'eau et s'étirer une minute avant de se lever 👉 sortir quelques minutes dans la matinée pour recevoir la lumière du jour. Le plan anti-cortisol gratuit aide à recaler ce rythme. #energie #hiver #reveil #matin #lumiere #fatigue #routine #motivation"
  },
  {
   "titre": "Stress et alimentation : 4 plats d'automne apaisants",
@@ -598,7 +602,9 @@
    "Un porridge d'avoine le matin"
   ],
   "description": "Quand il fait froid et que la journée a été tendue, un plat chaud et simple aide le corps à se poser. Quatre idées de saison 👉 une soupe de légumes, potiron ou poireaux 👉 des lentilles ou des pois chiches mijotés, riches en fibres et en magnésium 👉 une compote de pommes à la cannelle 👉 un porridge d'avoine le matin pour une énergie stable. Manger chaud, assis et sans écran fait aussi partie de la pause anti-stress. #alimentation #stress #automne #reconfort #magnesium #soupe #calme #bienetre",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Quand il fait froid et que la journée a été tendue, un plat chaud et simple aide le corps à se poser. Quatre idées de saison 👉 une soupe de légumes, potiron ou poireaux 👉 des lentilles ou des pois chiches mijotés, riches en fibres et en magnésium 👉 une compote de pommes à la cannelle 👉 un porridge d'avoine le matin pour une énergie stable. L'assiette régulière est le jour 3 du plan anti-cortisol gratuit. #alimentation #stress #automne #reconfort #magnesium #soupe #calme #bienetre"
  },
  {
   "titre": "Secousses à l'endormissement : pourquoi tu sursautes",
@@ -1239,7 +1245,8 @@
    "Bouger sur une chanson à 16 h"
   ],
   "description": "La musique agit vite sur le niveau d'énergie, à condition de la choisir selon le moment 👉 un morceau entraînant au réveil aide à sortir de la torpeur 👉 trois titres de suite pour boucler une tâche qui traîne, comme un mini-chrono 👉 une chanson pour bouger quelques minutes vers 16h. Garde des musiques calmes pour le soir : le corps a aussi besoin de ralentir. Prépare ta playlist énergie dès aujourd'hui. #energie #musique #motivation #fatigue #matin #playlist #bienetre #routine",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "aucun"
  },
  {
   "titre": "Coup de mou de l'après-midi : déjeune 20 min dehors",
@@ -1250,7 +1257,9 @@
    "Une vraie coupure avec l'écran"
   ],
   "description": "Manger devant l'ordinateur fait gagner dix minutes, puis on les perd en coup de mou. Prendre vingt minutes dehors, même en hiver 👉 apporte de la lumière du jour au moment où elle est la plus forte 👉 remet le corps en mouvement après une matinée assise 👉 coupe vraiment avec l'écran et les messages. L'après-midi démarre souvent avec plus d'énergie. Même un banc au soleil, sandwich en main, fait la différence. #energie #pausedejeuner #lumiere #travail #fatigue #dehors #bienetre #hiver",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Manger devant l'ordinateur fait gagner dix minutes, puis on les perd en coup de mou. Prendre vingt minutes dehors, même en hiver 👉 apporte de la lumière du jour au moment où elle est la plus forte 👉 remet le corps en mouvement après une matinée assise 👉 coupe vraiment avec l'écran et les messages. L'après-midi démarre souvent avec plus d'énergie. La lumière du midi est l'un des gestes du plan anti-cortisol offert. #energie #pausedejeuner #lumiere #travail #fatigue #dehors #bienetre #hiver"
  },
  {
   "titre": "Chronotype : 3 signes, es-tu du matin ou du soir ?",
@@ -1261,7 +1270,9 @@
    "Ton creux d'énergie habituel"
   ],
   "description": "Certains sont vifs à 7h, d'autres ne s'éveillent vraiment qu'en fin de matinée. Pour connaître ton profil 👉 repère l'heure où tu réfléchis le plus facilement 👉 observe à quelle heure tu te réveilles sans alarme en vacances 👉 note ton creux d'énergie habituel. Placer les tâches exigeantes sur ton pic, et la routine sur ton creux, rend la journée moins épuisante. Une semaine d'observation suffit pour voir ton schéma. #energie #chronotype #rythme #hiver #matin #productivite #fatigue #routine",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Certains sont vifs à 7h, d'autres ne s'éveillent vraiment qu'en fin de matinée. Pour connaître ton profil 👉 repère l'heure où tu réfléchis le plus facilement 👉 observe à quelle heure tu te réveilles sans alarme en vacances 👉 note ton creux d'énergie habituel. Placer les tâches exigeantes sur ton pic, et la routine sur ton creux, rend la journée moins épuisante. Pour recaler ton rythme, vois le plan anti-cortisol en 7 jours. #energie #chronotype #rythme #hiver #matin #productivite #fatigue"
  },
  {
   "titre": "Fatigue au volant : 3 signes qu'il faut t'arrêter",
@@ -1272,7 +1283,8 @@
    "La voiture dévie de sa voie"
   ],
   "description": "La fatigue au volant prévient peu. Trois signes qui doivent faire s'arrêter sans attendre 👉 les paupières s'alourdissent et les bâillements s'enchaînent 👉 tu ne te souviens plus des derniers kilomètres 👉 la voiture dévie légèrement de sa voie. Ouvrir la fenêtre ou monter la musique ne suffit pas : une pause de vingt minutes, avec une courte sieste, est la vraie solution. Et une pause toutes les deux heures reste la règle. #energie #fatigue #volant #matin #hiver #sieste #route #vigilance",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "aucun"
  },
  {
   "titre": "Aidant d'un proche : 3 signes d'épuisement mental",
@@ -1349,7 +1361,9 @@
    "Pas après 16 h"
   ],
   "description": "Le thé vert contient de la L-théanine, un composant connu pour favoriser un état calme mais alerte. Pour les journées tendues 👉 une tasse en milieu de matinée aide à rester concentré sans nervosité 👉 il contient moins de caféine qu'un café, mais en contient quand même 👉 mieux vaut l'éviter après 16h si tu dors mal. Infuser deux à trois minutes dans une eau à 80 °C évite l'amertume. Une tasse, un moment, une vraie pause. #alimentation #stress #thevert #theanine #boisson #repas #zen #calme",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Le thé vert contient de la L-théanine, un composant connu pour favoriser un état calme mais alerte. Pour les journées tendues 👉 une tasse en milieu de matinée aide à rester concentré sans nervosité 👉 il contient moins de caféine qu'un café, mais en contient quand même 👉 mieux vaut l'éviter après 16h si tu dors mal. Infuser deux à trois minutes dans une eau à 80 °C évite l'amertume. Plus de repères dans le plan anti-cortisol. #alimentation #stress #thevert #theanine #boisson #repas #zen"
  },
  {
   "titre": "Stress : 4 aliments riches en vitamine C",
@@ -1361,7 +1375,9 @@
    "Le persil et les choux"
   ],
   "description": "Le corps utilise davantage certains nutriments quand le stress dure, dont la vitamine C. Quatre aliments simples pour en apporter 👉 le kiwi, un ou deux par jour au petit-déjeuner 👉 le poivron cru, en bâtonnets à l'apéritif 👉 les agrumes, orange ou clémentine en dessert 👉 le persil et les choux, à ajouter aux plats. Crus ou peu cuits, ils en gardent davantage. Une alimentation variée reste la base face au stress. #alimentation #stress #vitaminec #kiwi #agrumes #nutrition #zen #immunite",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Le corps utilise davantage certains nutriments quand le stress dure, dont la vitamine C. Quatre aliments simples pour en apporter 👉 le kiwi, un ou deux par jour au petit-déjeuner 👉 le poivron cru, en bâtonnets à l'apéritif 👉 les agrumes, orange ou clémentine en dessert 👉 le persil et les choux, à ajouter aux plats. Crus ou peu cuits, ils en gardent davantage. Le plan anti-cortisol gratuit propose 7 gestes, assiette comprise. #alimentation #stress #vitaminec #kiwi #agrumes #nutrition #zen"
  },
  {
   "titre": "Épices et stress : safran, curcuma et cannelle",
@@ -2032,7 +2048,9 @@
    "La chute qui suit relance la tension"
   ],
   "description": "Sous stress, le cortisol pousse le corps à chercher de l'énergie rapide, d'où ces envies de sucre en fin de journée. Le sucre apaise sur le moment, puis la chute de glycémie qui suit ravive la nervosité et la fatigue. Prévoir une collation qui associe protéines et fibres, comme un yaourt avec des noix, aide à stabiliser l'énergie et à mieux traverser ensuite les pics de tension. #alimentation #stress #sucre #cortisol #glycemie #nervosite #collation #bienetre #antistress",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Sous stress, le cortisol pousse le corps à chercher de l'énergie rapide, d'où ces envies de sucre en fin de journée. Le sucre apaise sur le moment, puis la chute de glycémie ravive la nervosité. Une collation qui associe protéines et fibres, comme un yaourt avec des noix, aide à stabiliser l'énergie. Le plan anti-cortisol en 7 jours, gratuit, en fait un geste du quotidien. #alimentation #stress #sucre #cortisol #glycemie #nervosite #collation #bienetre #antistress"
  },
  {
   "titre": "Ventre noué par le stress : 4 gestes pour le détendre",
@@ -2496,9 +2514,9 @@
   "texte_image": "Ce que la fatigue mentale fait à la mémoire",
   "description": "Tu entres dans une pièce et tu as oublié pourquoi, plusieurs fois par jour. Avant de t'inquiéter pour ta mémoire :\n👉 ces oublis sont souvent liés à la fatigue mentale, pas à un trouble cognitif\n👉 un cerveau saturé n'arrive plus à fixer les informations courtes\n👉 la concentration revient dès que la charge mentale redescend\nComprendre ce lien aide à relativiser plutôt qu'à s'inquiéter. #fatiguementale #stress #memoire #clarte #systemenerveux #chargementale #concentration #santementale",
   "points_image": [
-   "Ces oublis sont souvent liés à la fatigue mentale, pas à un trouble cognitif",
-   "Un cerveau saturé n'arrive plus à fixer les informations courtes",
-   "La concentration revient dès que la charge mentale redescend"
+   "Souvent la fatigue mentale, pas un trouble",
+   "Un cerveau saturé retient mal le court terme",
+   "La mémoire revient quand la charge baisse"
   ],
   "theme": "fatiguementale"
  },
@@ -2565,11 +2583,12 @@
   "description": "La réunion s'éternise, tu repousses le déjeuner et tu tiens au café jusqu'à 15h, sans voir que la tension monte :\n📌 sauter un repas met le corps en état d'alerte\n📌 cette alerte entretient une nervosité difficile à calmer\n📌 manger à heures régulières, même vite, limite ces pics\nUne alarme pour prendre un encas avant la réunion évite ce pic. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie",
   "theme": "alimentation",
   "points_image": [
-   "La réunion s'éternise, tu repousses le déjeuner et tu tiens sur un café jusqu",
-   "📌 sauter un repas met le corps en état d'alerte",
-   "📌 cette alerte entretient une tension nerveuse difficile à calmer ensuite",
-   "📌 manger à heures régulières, même rapidement, limite ces pics"
-  ]
+   "Sauter un repas met le corps en alerte",
+   "L'alerte entretient la nervosité",
+   "Manger à heures régulières limite les pics"
+  ],
+  "guide": "cortisol",
+  "description_guide_cortisol": "La réunion s'éternise, tu repousses le déjeuner et tu tiens au café jusqu'à 15h, sans voir que la tension monte :\n📌 sauter un repas met le corps en état d'alerte\n📌 cette alerte entretient une nervosité difficile à calmer\n📌 manger à heures régulières, même vite, limite ces pics\nLe plan anti-cortisol gratuit t'aide à installer ces repas réguliers, jour après jour. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie"
  },
  {
   "titre": "Stress : manger en 5 minutes entretient la tension",
@@ -2577,11 +2596,12 @@
   "description": "Tu manges devant l'écran, en vitesse, entre deux tâches, et tu te demandes pourquoi tu te sens agité·e juste après :\n📌 manger vite empêche le corps de basculer vers une digestion calme\n📌 cet état entretient un stress diffus l'après-midi\n📌 ralentir quelques minutes suffit souvent à apaiser la tension\nTrois respirations avant de commencer à manger changent déjà la donne. #alimentation #stress #systemenerveux #bienetre #digestion #cortisol #santementale #glycemie #antistress",
   "theme": "alimentation",
   "points_image": [
-   "Tu manges devant l'écran, en vitesse, entre deux tâches, et tu te demandes po",
-   "📌 manger vite empêche le corps de basculer vers une digestion calme",
-   "📌 cet état entretient un stress diffus l'après-midi",
-   "📌 ralentir quelques minutes suffit souvent à apaiser la tension"
-  ]
+   "Manger vite bloque la digestion calme",
+   "Un stress diffus s'installe l'après-midi",
+   "Ralentir quelques minutes apaise la tension"
+  ],
+  "guide": "cortisol",
+  "description_guide_cortisol": "Tu manges devant l'écran, en vitesse, entre deux tâches, et tu te demandes pourquoi tu te sens agité·e juste après :\n📌 manger vite empêche le corps de basculer vers une digestion calme\n📌 cet état entretient un stress diffus l'après-midi\n📌 ralentir quelques minutes suffit souvent à apaiser la tension\nRespirer trois fois avant de manger aide ; le plan gratuit va plus loin. #alimentation #stress #systemenerveux #bienetre #digestion #cortisol #santementale #glycemie #antistress"
  },
  {
   "titre": "Collation anti-stress : 3 idées pour le creux de 17h",
@@ -2592,7 +2612,9 @@
    "Un carré de chocolat noir plutôt que sucré",
    "Une poignée de graines de courge"
   ],
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Il est 17h, la fatigue et la tension montent ensemble, et tu ouvres le placard en quête de quelque chose pour tenir jusqu'au soir. Trois choix qui apaisent réellement :\n👉 amandes ou noix, riches en magnésium\n👉 un carré de chocolat noir plutôt que sucré\n👉 une poignée de graines de courge\nCette collation est un geste du plan anti-cortisol gratuit. #alimentation #stress #systemenerveux #bienetre #digestion #cortisol #santementale #magnesium #antistress"
  },
  {
   "titre": "Cortisol et grignotage : ce que ton stress cherche",
@@ -2600,11 +2622,12 @@
   "description": "Tu ouvres le placard sans avoir vraiment faim, juste après une journée tendue, sans savoir ce que tu cherches à apaiser :\n📌 cette envie cache souvent une hausse de cortisol liée au stress\n📌 le corps confond parfois tension nerveuse et faim\n📌 il pousse alors vers le sucre pour calmer l'agitation\nUne pause de trente secondes avant d'ouvrir le placard peut suffire. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie #antistress",
   "theme": "alimentation",
   "points_image": [
-   "Tu ouvres le placard sans avoir vraiment faim, juste après une journée tendue",
-   "📌 cette envie cache souvent une hausse de cortisol liée au stress",
-   "📌 le corps confond parfois tension nerveuse et faim",
-   "📌 il pousse alors vers le sucre pour calmer l'agitation"
-  ]
+   "L'envie cache souvent un pic de stress",
+   "Le corps confond tension et faim",
+   "Il pousse alors vers le sucre"
+  ],
+  "guide": "cortisol",
+  "description_guide_cortisol": "Tu ouvres le placard sans avoir vraiment faim, juste après une journée tendue, sans savoir ce que tu cherches à apaiser :\n📌 cette envie cache souvent une hausse de cortisol liée au stress\n📌 le corps confond parfois tension nerveuse et faim\n📌 il pousse alors vers le sucre pour calmer l'agitation\nUne pause de 30 secondes aide ; le plan en 7 jours va plus loin. #alimentation #stress #cortisol #bienetre #systemenerveux #digestion #santementale #glycemie #antistress"
  },
  {
   "titre": "Il y a une heure précise, chaque jour, où ta motivation s'effondre : laquelle ?",
@@ -2793,7 +2816,9 @@
    "Boire un verre d'eau avant toute chose",
    "S'étirer ou respirer deux minutes avant de se lever"
   ],
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Attraper le téléphone à peine les yeux ouverts influence directement ton énergie du reste de la journée. Les 10 premières minutes après le réveil comptent plus qu'on ne le pense 👉 laisser le téléphone hors de portée du lit 👉 boire un verre d'eau avant toute chose 👉 s'étirer ou respirer deux minutes avant de se lever. Le plan anti-cortisol gratuit détaille 7 gestes de ce type. #energie #fatiguementale #stress #bienetre #routine #recuperation #productivite #systemenerveux #routinedumatin"
  },
  {
   "titre": "Énergie sociale : 3 signes qu'une discussion te vide",
@@ -2804,7 +2829,8 @@
    "Écouter une plainte sans pouvoir répondre",
    "Sourire plus que ressenti"
   ],
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "aucun"
  },
  {
   "titre": "Fatigue en dents de scie : pourquoi tu es à plat",
@@ -2826,7 +2852,9 @@
    "Une heure de fin de travail fixe",
    "Un moment de mouvement entre deux tâches"
   ],
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Cocher les jours en se disant que tout ira mieux en vacances, alors qu'on avance sur les rotules d'ici là : attendre une coupure lointaine laisse le stress s'accumuler et rend la fatigue plus dure à rattraper 👉 une vraie pause de 10 minutes sans écran chaque jour 👉 une heure de fin de travail fixe 👉 un moment de mouvement entre deux tâches. Le plan anti-cortisol aide à souffler un peu chaque jour. #energie #fatiguementale #stress #bienetre #recuperation #systemenerveux #equilibre"
  },
  {
   "titre": "Ton écran est ouvert depuis ce matin, pourtant rien n'a bougé : ce blocage a un nom",
@@ -2912,8 +2940,8 @@
   "description": "Ne pas avancer sur une décision, sans savoir si c'est un vrai blocage mental ou une hésitation normale qui va passer : un test simple aide à trancher 👉 si une nuit de sommeil suffit à voir plus clair, c'est une hésitation passagère 👉 si la confusion reste identique après plusieurs jours malgré le repos, c'est un vrai blocage. L'un demande de la patience, l'autre une méthode précise. #blocagemental #clarte #fatiguementale #bienetre #organisation #systemenerveux #santementale #clartementale",
   "theme": "blocagemental",
   "points_image": [
-   "Ne pas avancer sur une décision, sans savoir si c'est un vrai blocage mental ",
-   "L'un demande de la patience, l'autre une méthode précise"
+   "Plus clair après une nuit : simple hésitation",
+   "Même confusion après des jours : vrai blocage"
   ]
  },
  {
@@ -2991,7 +3019,9 @@
    "Il n'explique pas à lui seul chaque variation du visage",
    "Le sommeil et l'alimentation jouent un rôle au moins aussi important"
   ],
-  "theme": "cortisol"
+  "theme": "cortisol",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Sur TikTok, le « cortisol face » expliquerait un visage gonflé ou une fatigue passagère. Ce que la science confirme réellement 👉 un cortisol chroniquement élevé peut favoriser une rétention d'eau 👉 il n'explique pas à lui seul chaque variation du visage 👉 le sommeil et l'alimentation jouent un rôle au moins aussi important. Pour agir sur son vrai rythme, vois le plan gratuit en 7 jours. #cortisol #systemenerveux #stress #bienetre #sante #calme #antistress"
  },
  {
   "titre": "Cortisol et stress : ce que dit vraiment la science",
@@ -3002,16 +3032,18 @@
    "Son taux varie naturellement dans la journée",
    "Le sommeil et l'activité physique pèsent tout autant sur le ressenti"
   ],
-  "theme": "cortisol"
+  "theme": "cortisol",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Le mot cortisol apparaît partout, presque comme l'explication universelle de tout ce qui est difficile à vivre. Ce que la recherche indique réellement 👉 le cortisol est un marqueur du stress parmi d'autres, pas sa seule cause 👉 son taux varie naturellement au fil de la journée 👉 le sommeil et l'activité physique pèsent autant sur le ressenti. Côté pratique, le plan anti-cortisol offert réunit les gestes utiles. #cortisol #systemenerveux #stress #bienetre #sante #calme #antistress"
  },
  {
   "titre": "Fatigue du lundi : le week-end au lit ne recharge pas",
   "texte_image": "Fatigué(e) même après le week-end ?",
   "description": "Passer le week-end à ne presque rien faire, persuadé que ça suffira à recharger les batteries, et pourtant se sentir aussi vidé le lundi : rester allongé ne restaure pas toujours une vraie récupération nerveuse 👉 un rythme trop passif entretient parfois la fatigue 👉 une marche tranquille relance mieux le système nerveux qu'une immobilité totale 👉 alterner repos et mouvement fait la différence. #recuperation #fatiguementale #stress #systemenerveux #energie #sommeil #equilibre #routinedumatin",
   "points_image": [
-   "Un rythme trop passif entretient parfois la fatigue",
-   "Une marche tranquille relance mieux le système nerveux qu'une immobilité totale",
-   "Alterner repos et mouvement fait la différence"
+   "Un rythme trop passif entretient la fatigue",
+   "Une marche douce relance le système nerveux",
+   "Alterner repos et mouvement"
   ],
   "theme": "recuperation"
  },
@@ -3024,7 +3056,8 @@
    "Traiter la plus difficile en premier, avant que l'énergie ne baisse",
    "Laisser le reste pour demain sans culpabiliser"
   ],
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "aucun"
  },
  {
   "titre": "Procrastination : la spirale du « plus tard, demain »",
@@ -3073,8 +3106,8 @@
   "description": "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre secondes, puis expire doucement par la bouche pendant six secondes : ce rythme simple, répété deux à cinq minutes, envoie un signal de calme direct à ton système nerveux, particulièrement utile juste après un moment tendu. Pas besoin de fermer les yeux ni de t'isoler, quelques cycles discrets suffisent à faire retomber la pression. #respiration #stress #systemenerveux #calme #anxiete #detente #bienetre #antistress",
   "theme": "respiration",
   "points_image": [
-   "Inspire lentement par le nez pendant quatre secondes, garde l'air quatre seco",
-   "Pas besoin de fermer les yeux ni de t'isoler, quelques cycles discrets suffis"
+   "Inspire 4 s, garde 4 s, expire 6 s",
+   "2 à 5 minutes, discrètement, partout"
   ]
  },
  {
@@ -3166,7 +3199,9 @@
    "Adapter ses tâches au cycle évite la fatigue inutile"
   ],
   "description": "Le niveau d'énergie fluctue naturellement dans la journée, et ce n'est pas un défaut. Le rythme circadien suit un cycle prévisible 👉 un pic le matin pour les tâches qui demandent de la concentration 👉 une baisse en début d'après-midi tout à fait normale 👉 une remontée en fin de journée. Adapter son planning à ces cycles évite de lutter contre son propre corps. #energie #rythmecircadien #fatigue #sommeil #organisation #productivite #bienetre #concentration",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Le niveau d'énergie fluctue naturellement dans la journée, et ce n'est pas un défaut. Le rythme circadien suit un cycle prévisible 👉 un pic le matin pour les tâches qui demandent de la concentration 👉 une baisse en début d'après-midi tout à fait normale 👉 une remontée en fin de journée. Le plan gratuit en 7 jours, lien dans l'épingle, aide à caler ta journée sur ce rythme. #energie #rythmecircadien #fatigue #sommeil #organisation #productivite #bienetre #concentration"
  },
  {
   "titre": "Nerf vague et sommeil : le lien qui change tes nuits",
@@ -3246,7 +3281,9 @@
    "18h : le moment où la fatigue de la journée rattrape"
   ],
   "description": "L'énergie suit une courbe assez prévisible dans la journée. Trois créneaux coûtent particulièrement cher 👉 11h, le creux avant le déjeuner, souvent après un petit-déjeuner trop sucré 👉 15h, le coup de barre de la digestion 👉 18h, la fatigue accumulée qui pousse vers le canapé et l'écran. Anticiper ces moments avec une vraie pause ou une collation adaptée change beaucoup. #energie #fatigue #rythmecircadien #alimentation #sommeil #bienetre #productivite #vitalite",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "L'énergie suit une courbe assez prévisible dans la journée. Trois créneaux coûtent particulièrement cher 👉 11h, le creux avant le déjeuner, souvent après un petit-déjeuner trop sucré 👉 15h, le coup de barre de la digestion 👉 18h, la fatigue accumulée qui pousse vers le canapé et l'écran. La pause et la collation qui aident sont dans le plan anti-cortisol gratuit, avec un tableau de suivi. #energie #fatigue #rythmecircadien #alimentation #sommeil #bienetre #productivite #vitalite"
  },
  {
   "titre": "Stress au travail : 4 postures à corriger sans tarder",
@@ -3292,7 +3329,8 @@
    "Boire de l'eau et supprimer la caféine"
   ],
   "description": "Réseaux, notifications et vidéos courtes sollicitent sans arrêt le circuit de la récompense, et le reste paraît vite fade. Trois jours plus sobres aident à retrouver de l'intérêt pour le quotidien 👉 couper les écrans de divertissement 👉 les remplacer par des activités lentes : marche, lecture, cuisine 👉 réduire un peu la caféine. Beaucoup y gagnent en concentration. #energie #dopamine #ecrans #concentration #fatiguementale #motivation #cerveau #detox",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "aucun"
  },
  {
   "titre": "Procrastination : la règle des 2 minutes pour démarrer",
@@ -3406,7 +3444,9 @@
    "Dîner léger avec légumineuses"
   ],
   "description": "Quatre repas à ne pas zapper quand le stress est là : un petit-déjeuner protéiné pour éviter le coup de barre, un déjeuner avec légumes verts et féculents complets, une collation protéines et fibres vers seize heures, puis un dîner léger avec des légumineuses. Bien boire aide aussi. Des repas réguliers stabilisent la glycémie et limitent la nervosité. #alimentation #stress #glycemie #cortisol #nutrition #bienetre #energie #repas",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Quatre repas à ne pas zapper quand le stress est là : un petit-déjeuner protéiné pour éviter le coup de barre, un déjeuner avec légumes verts et féculents complets, une collation protéines et fibres vers seize heures, puis un dîner léger avec des légumineuses. Bien boire aide aussi. Des repas réguliers limitent la nervosité : c'est tout le jour 3 du plan anti-cortisol gratuit. #alimentation #stress #glycemie #cortisol #nutrition #bienetre #energie #repas"
  },
  {
   "titre": "Sortir de la procrastination : 4 phrases à bannir",
@@ -3442,7 +3482,9 @@
    "Banane avant l'effort mental"
   ],
   "description": "Quatre alliés pour une énergie stable sans caféine : l'avoine complète du matin libère son énergie lentement, les œufs apportent des protéines durables, les légumineuses évitent les pics de glycémie et la banane fournit du potassium avant un effort mental. Pense aussi à boire régulièrement : la fatigue cache souvent une simple soif. #energie #alimentation #cafeine #fatigue #glycemie #nutrition #proteines #concentration",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Quatre alliés pour une énergie stable sans caféine : l'avoine complète du matin libère son énergie lentement, les œufs apportent des protéines durables, les légumineuses évitent les pics de glycémie et la banane fournit du potassium avant un effort mental. Pense aussi à boire régulièrement : Le jour 3 du plan anti-cortisol gratuit est consacré à ces repas qui stabilisent l'énergie. #energie #alimentation #cafeine #fatigue #glycemie #nutrition #proteines #concentration"
  },
  {
   "titre": "Sommeil et horaires décalés : 4 astuces pour récupérer",
@@ -3972,7 +4014,9 @@
    "La lumière du jour au réveil aide l'horloge interne",
    "Un verre d'eau avant le café, pour démarrer en douceur"
   ],
-  "description": "Un réveil difficile n'est pas forcément un manque de motivation : le cortisol suit un rythme qui doit monter le matin pour t'aider à démarrer. Quelques habitudes jouent 👉 un petit-déjeuner très sucré crée vite un coup de barre 👉 la lumière naturelle dès le réveil aide l'horloge interne 👉 boire un verre d'eau avant le café. Si des nuits agitées expliquent ces réveils, le guide gratuit propose une routine anti-rumination. #cortisol #reveil #stress #calme #soir #repos #corps #mental"
+  "description": "Un réveil difficile n'est pas forcément un manque de motivation : le cortisol suit un rythme qui doit monter le matin pour t'aider à démarrer. Quelques habitudes jouent 👉 un petit-déjeuner très sucré crée vite un coup de barre 👉 la lumière naturelle dès le réveil aide l'horloge interne 👉 boire un verre d'eau avant le café. Si des nuits agitées expliquent ces réveils, le guide gratuit propose une routine anti-rumination. #cortisol #reveil #stress #calme #soir #repos #corps #mental",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Un réveil difficile n'est pas forcément un manque de motivation : le cortisol suit un rythme qui doit monter le matin pour t'aider à démarrer. Quelques habitudes jouent 👉 un petit-déjeuner très sucré crée vite un coup de barre 👉 la lumière naturelle dès le réveil aide l'horloge interne 👉 boire un verre d'eau avant le café. Pour un réveil plus doux, le plan anti-cortisol gratuit commence par la lumière du matin. #cortisol #reveil #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Respiration 4-7-8 : 2 minutes pour s'apaiser au lit",
@@ -4026,7 +4070,9 @@
    "Le problème c'est quand il reste haut le soir",
    "Resynchroniser le rythme = meilleure énergie"
   ],
-  "description": "Le cortisol n'est pas mauvais en soi : il t'aide à te lever, à te concentrer et à réagir. Ce qui fatigue, c'est quand son rythme se dérègle 👉 un pic le matin est normal et utile 👉 il doit redescendre doucement au fil de la journée 👉 le problème commence quand il reste haut le soir. Des horaires réguliers et des soirées calmes aident. Pour le soir, le guide gratuit propose une routine anti-rumination au lit. #cortisol #energie #stress #calme #soir #repos #corps #mental"
+  "description": "Le cortisol n'est pas mauvais en soi : il t'aide à te lever, à te concentrer et à réagir. Ce qui fatigue, c'est quand son rythme se dérègle 👉 un pic le matin est normal et utile 👉 il doit redescendre doucement au fil de la journée 👉 le problème commence quand il reste haut le soir. Des horaires réguliers et des soirées calmes aident. Pour le soir, le guide gratuit propose une routine anti-rumination au lit. #cortisol #energie #stress #calme #soir #repos #corps #mental",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Le cortisol n'est pas mauvais en soi : il t'aide à te lever, à te concentrer et à réagir. Ce qui fatigue, c'est quand son rythme se dérègle 👉 un pic le matin est normal et utile 👉 il doit redescendre doucement au fil de la journée 👉 le problème commence quand il reste haut le soir. Des horaires réguliers et des soirées calmes aident. Ce rythme se soutient geste après geste : le plan gratuit en propose 7. #cortisol #energie #stress #calme #soir #repos #corps #mental"
  },
  {
   "titre": "Respiration alternée : d'une narine à l'autre",
@@ -4389,6 +4435,8 @@
    "De l'eau entre deux verres en soirée"
   ],
   "description": "Journées courtes, soirées qui s'enchaînent, rush avant les congés : décembre vide les réserves. Trois gestes pour tenir 👉 sortir à la lumière du jour chaque midi, même dix minutes 👉 garder au moins un soir par semaine sans sortie ni invités 👉 alterner les verres avec de l'eau pendant les soirées. Arriver aux vacances avec un peu d'énergie permet d'en profiter vraiment, au lieu de les passer à récupérer. #energie #decembre #hiver #fatigue #fetes #lumiere #vitalite #noel",
-  "theme": "energie"
+  "theme": "energie",
+  "guide": "cortisol",
+  "description_guide_cortisol": "Journées courtes, soirées qui s'enchaînent, rush avant les congés : décembre vide les réserves. Trois gestes pour tenir 👉 sortir à la lumière du jour chaque midi, même dix minutes 👉 garder au moins un soir par semaine sans sortie ni invités 👉 alterner les verres avec de l'eau pendant les soirées. Pour tenir le cap, le plan anti-cortisol en 7 jours propose un tableau de suivi à cocher. #energie #decembre #hiver #fatigue #fetes #lumiere #vitalite #noel"
  }
 ]
