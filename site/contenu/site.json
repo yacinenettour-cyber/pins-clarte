@@ -1,0 +1,201 @@
+{
+ "nom": "Clarté Mentale",
+ "url": "https://contactapaisement-mental.fr",
+ "domaine": "contactapaisement-mental.fr",
+ "langue": "fr-FR",
+ "slogan": "Comprendre et apaiser le stress, le sommeil et le système nerveux",
+ "description": "Articles sourcés et conseils concrets pour apaiser le stress, calmer le système nerveux, sortir des ruminations du soir et retrouver un sommeil plus serein.",
+ "auteur": {
+  "nom": "Yacine",
+  "role": "Fondateur de Clarté Mentale",
+  "page": "/a-propos/"
+ },
+ "pinterest": "https://www.pinterest.com/clartementale/",
+ "pinterest_verification": "87ca126286ea799c1471c06852fd9bff",
+ "indexnow": "42e029938427a56547a77a1aefb680a6",
+ "date_publication": "2026-10-08",
+ "guides": {
+  "sommeil": {
+   "titre": "Quand le cerveau refuse de dormir",
+   "type": "Guide gratuit",
+   "accroche": "Pour les soirs où le mental tourne en boucle au moment de dormir.",
+   "points": [
+    "Une routine anti-rumination à faire au lit",
+    "Des exercices pour calmer le mental le soir",
+    "Un calendrier de 30 jours, sans matériel"
+   ],
+   "bouton": "Recevoir le guide gratuit",
+   "url": "https://lp.contactapaisement-mental.fr/tonguide"
+  },
+  "cortisol": {
+   "titre": "Le plan anti-cortisol en 7 jours",
+   "type": "Plan gratuit",
+   "accroche": "Un geste simple par jour pour aider ton corps à sortir du mode alerte.",
+   "points": [
+    "7 gestes : lumière, respiration, assiette, mouvement, pauses, soirée, sommeil",
+    "10 à 15 minutes par jour, un tableau de suivi à cocher",
+    "Sans matériel, sans régime, téléchargement immédiat"
+   ],
+   "bouton": "Recevoir le plan gratuit",
+   "url": "https://lp.contactapaisement-mental.fr/63d489c7"
+  }
+ },
+ "categories": {
+  "sommeil": "Sommeil et soirées",
+  "stress": "Stress et système nerveux",
+  "mental": "Charge mentale et épuisement"
+ },
+ "articles": {
+  "ruminations-le-soir": {
+   "categorie": "sommeil",
+   "image": "pexels-6754011.jpg",
+   "alt": "Personne assise sur son lit, la nuit, face à la fenêtre",
+   "credit": "Photo : Pexels",
+   "formation": true
+  },
+  "reveil-4h-du-matin": {
+   "categorie": "sommeil",
+   "image": "pexels-6943437.jpg",
+   "alt": "Femme éveillée dans son lit en pleine nuit",
+   "credit": "Photo : Pexels",
+   "formation": true
+  },
+  "routine-du-soir-anti-stress": {
+   "categorie": "sommeil",
+   "image": "pexels-6661036.jpg",
+   "alt": "Femme qui lit, emmitouflée dans une couverture, avant de dormir",
+   "credit": "Photo : Pexels",
+   "formation": true
+  },
+  "procrastination-du-coucher": {
+   "categorie": "sommeil",
+   "image": "pexels-6598229.jpg",
+   "alt": "Femme dans son lit la nuit, le visage éclairé par son téléphone",
+   "credit": "Photo : Pexels",
+   "formation": true
+  },
+  "cortisol-hormone-du-stress": {
+   "categorie": "stress",
+   "image": "pexels-8927460.jpg",
+   "alt": "Femme stressée, les mains sur les tempes",
+   "credit": "Photo : Pexels"
+  },
+  "baisser-son-cortisol-naturellement": {
+   "categorie": "stress",
+   "image": "pexels-10390139.jpg",
+   "alt": "Femme qui marche sur un chemin en forêt",
+   "credit": "Photo : Pexels"
+  },
+  "nerf-vague": {
+   "categorie": "stress",
+   "image": "pexels-35317488.jpg",
+   "alt": "Femme assise en tailleur, les mains posées sur la poitrine, qui respire lentement",
+   "credit": "Photo : Pexels",
+   "formation": true
+  },
+  "calmer-son-systeme-nerveux": {
+   "categorie": "stress",
+   "image": "pexels-6173722.jpg",
+   "alt": "Femme assise dans un fauteuil, les yeux fermés, une main sur la poitrine",
+   "credit": "Photo : Pexels",
+   "formation": true
+  },
+  "charge-mentale": {
+   "categorie": "mental",
+   "image": "pexels-6173660.jpg",
+   "alt": "Femme épuisée assise par terre, la main sur le front, à côté de son ordinateur",
+   "credit": "Photo : Pexels"
+  },
+  "signes-du-burn-out": {
+   "categorie": "mental",
+   "image": "unsplash-BpTqCNotBLI.jpg",
+   "alt": "Homme épuisé à son bureau le soir, la tête dans les mains",
+   "credit": "Photo : LARAM / Unsplash"
+  }
+ },
+ "formation": {
+  "titre": "Quand le cerveau refuse de dormir",
+  "sous_titre": "Le programme pour calmer ton mental le soir et laisser le sommeil revenir naturellement, même quand tu es épuisé(e) et très stressé(e).",
+  "prix": "37 €",
+  "prix_valeur": "37.00",
+  "prix_detail": "paiement unique, sans abonnement, accès immédiat et à vie",
+  "garantie": "Garantie satisfait ou remboursé de 7 jours : si tu ne ressens aucune amélioration, même légère, tu es remboursé(e) intégralement, sans justification. Un simple e-mail suffit.",
+  "bouton": "Accéder au programme",
+  "url": "https://lp.contactapaisement-mental.fr/689e4290",
+  "url_cgv": "https://lp.contactapaisement-mental.fr/0f1d6dac",
+  "reconnais": [
+   "Ton corps est épuisé, mais ton cerveau repart en boucle dès que tu fermes les yeux",
+   "Les pensées tournent, la respiration reste haute, le corps n'arrive pas à lâcher",
+   "Plus tu essaies de dormir, plus le mental résiste",
+   "L'angoisse du lendemain s'installe avant même de t'endormir"
+  ],
+  "modules": [
+   [
+    "Apaiser le système nerveux",
+    "Respirations anti-stress, soupir physiologique, relâchement musculaire et scan corporel, pour faire redescendre la pression le soir même."
+   ],
+   [
+    "Sortir des ruminations sans lutter",
+    "Rendez-vous des soucis, liste de demain, mélange cognitif, prendre de la distance avec une pensée : des outils concrets contre les pensées en boucle."
+   ],
+   [
+    "Un rituel du soir stabilisant",
+    "Préparer le corps (lumière, chaleur, écrans, caféine) et ton rituel en 3 versions, de 3, 10 ou 20 minutes, selon ton énergie du soir."
+   ],
+   [
+    "Consolider le sommeil dans le temps",
+    "Que faire quand tu te réveilles à 3 h, le matin qui prépare la nuit, ton plan des 4 semaines, et quand en parler à un professionnel."
+   ],
+   [
+    "Le parcours des 28 soirs",
+    "Une seule action par soir, déjà choisie pour toi, pendant 4 semaines, avec une auto-évaluation aux jours 1, 14 et 28."
+   ],
+   [
+    "Et si c'est ton cas ?",
+    "Le travail qui te suit jusqu'au lit, les nuits hachées de parent, les horaires décalés, le réveil à 4 h qui revient, les périodes de gros stress."
+   ],
+   [
+    "Un kit de 7 fiches à imprimer",
+    "Journal du sommeil, fiche SOS pour les réveils nocturnes, rendez-vous des soucis, liste de demain, rituel en 3 versions et calendrier des 28 soirs."
+   ],
+   [
+    "Bonus : l'audio express",
+    "Un audio de 3 minutes pour les soirs de forte pression, quand tu n'as l'énergie pour rien d'autre."
+   ]
+  ],
+  "pour_toi": [
+   "Tu es stressé(e) ou mentalement chargé(e)",
+   "Tu rumines le soir et la nuit",
+   "Tu as du mal à t'endormir",
+   "Tu veux une méthode naturelle, à ton rythme, avec des exercices de 5 à 10 minutes"
+  ],
+  "pas_pour_toi": [
+   "Tu cherches une solution médicale",
+   "Tu veux une promesse de guérison",
+   "Tu cherches une méthode intensive"
+  ],
+  "faq": [
+   [
+    "Est-ce que ce programme remplace un traitement médical ?",
+    "Non. Ce programme n'est ni un traitement médical ni une thérapie. Il propose des outils de bien-être pour apaiser le stress et calmer le mental le soir. Il peut être utilisé en complément d'un suivi, mais ne remplace jamais l'avis d'un professionnel de santé."
+   ],
+   [
+    "Combien de temps faut-il y consacrer ?",
+    "Les exercices durent de 2 à 10 minutes, et le parcours propose une seule action par soir pendant 28 soirs. Tu avances à ton rythme, depuis ton téléphone, ta tablette ou ton ordinateur."
+   ],
+   [
+    "En combien de temps vais-je ressentir un apaisement ?",
+    "Cela dépend des personnes : pour certaines, le soulagement se fait sentir dès les premiers soirs, pour d'autres il est plus progressif. Le but est un mental plus calme et moins de pression au moment du coucher, pas un résultat garanti."
+   ],
+   [
+    "Y a-t-il des avis de clients ?",
+    "Pas encore : le programme est récent, et je préfère te le dire plutôt que d'inventer des témoignages. C'est pour ça qu'il y a une garantie de 7 jours : tu testes chez toi, le soir, sans risque."
+   ],
+   [
+    "Et si ça ne me convient pas ?",
+    "Tu as 7 jours après l'achat pour demander un remboursement intégral, sans justification, par simple e-mail."
+   ]
+  ]
+ },
+ "nav_formation": "/la-formation/"
+}

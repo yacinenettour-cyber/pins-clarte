@@ -1,9 +1,29 @@
 {
  "consigne": "Photos déjà publiées sur Pinterest dont l'historique ne garde pas la trace : jamais réutilisées (outils/photos_uniques.py). Ajouter ici toute photo publiée à la main ou par un autre moyen.",
  "photos": [
-  "fonds/fond-58.jpg"
+  "fonds/fond-58.jpg",
+  "fonds/pexels-6754011.jpg",
+  "fonds/pexels-6943437.jpg",
+  "fonds/pexels-6661036.jpg",
+  "fonds/pexels-6598229.jpg",
+  "fonds/pexels-8927460.jpg",
+  "fonds/pexels-10390139.jpg",
+  "fonds/pexels-35317488.jpg",
+  "fonds/pexels-6173722.jpg",
+  "fonds/pexels-6173660.jpg",
+  "fonds/unsplash-BpTqCNotBLI.jpg"
  ],
  "sources": {
-  "fonds/fond-58.jpg": "diapositive 3 du carrousel « 3 raisons qui expliquent pourquoi ton coup de barre revient à la même heure » (29/09/2026, pin 600175087889887532), identifiée par comparaison d'images"
+  "fonds/fond-58.jpg": "diapositive 3 du carrousel « 3 raisons qui expliquent pourquoi ton coup de barre revient à la même heure » (29/09/2026, pin 600175087889887532), identifiée par comparaison d'images",
+  "fonds/pexels-6754011.jpg": "photo de l'article « ruminations-le-soir » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-6943437.jpg": "photo de l'article « reveil-4h-du-matin » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-6661036.jpg": "photo de l'article « routine-du-soir-anti-stress » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-6598229.jpg": "photo de l'article « procrastination-du-coucher » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-8927460.jpg": "photo de l'article « cortisol-hormone-du-stress » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-10390139.jpg": "photo de l'article « baisser-son-cortisol-naturellement » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-35317488.jpg": "photo de l'article « nerf-vague » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-6173722.jpg": "photo de l'article « calmer-son-systeme-nerveux » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/pexels-6173660.jpg": "photo de l'article « charge-mentale » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest",
+  "fonds/unsplash-BpTqCNotBLI.jpg": "photo de l'article « signes-du-burn-out » du site contactapaisement-mental.fr (08/10/2026) : réservée au site, jamais réutilisée sur Pinterest"
  }
 }
