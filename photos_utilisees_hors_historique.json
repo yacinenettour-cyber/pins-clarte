@@ -1,0 +1,9 @@
+{
+ "consigne": "Photos déjà publiées sur Pinterest dont l'historique ne garde pas la trace : jamais réutilisées (outils/photos_uniques.py). Ajouter ici toute photo publiée à la main ou par un autre moyen.",
+ "photos": [
+  "fonds/fond-58.jpg"
+ ],
+ "sources": {
+  "fonds/fond-58.jpg": "diapositive 3 du carrousel « 3 raisons qui expliquent pourquoi ton coup de barre revient à la même heure » (29/09/2026, pin 600175087889887532), identifiée par comparaison d'images"
+ }
+}

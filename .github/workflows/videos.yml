@@ -181,9 +181,22 @@ jobs:
           restants = anti_doublons.filtrer(restants, references)
           if not restants:
               sys.exit("Toutes les vidéos restantes doublent un contenu existant : recharge videos.json avec des sujets nouveaux.")
+          # Aucune photo réutilisée (08/10/2026, consigne de l'utilisateur) : chaque scène prend une
+          # photo jamais publiée (pins, carrousels, vidéos), au plus 3 photos par vidéo, chacune sur
+          # un bloc de scènes consécutives (outils/photos_uniques.py). Sinon, pas de vidéo.
+          import photos_uniques
+          photos_exclues = photos_uniques.photos_utilisees()
+          restants = [v for v in restants if photos_uniques.photos_pour_video(v, photos_exclues)]
+          if not restants:
+              sys.exit("Plus assez de photos inédites pour une vidéo : publication suspendue pour ne pas "
+                       "réutiliser une photo. Ajoute des photos dans fonds/ (classées par thème dans fonds_themes.json).")
           video = choisir_video_equilibree(restants, historique)
+          photos_video = photos_uniques.photos_pour_video(video, photos_exclues)
+          for beat, photo in zip(video["beats"], photos_video):
+              beat["image"] = photo
           print("Videos restantes dans la banque :", len(restants))
           print("Video choisie :", video["id"])
+          print("Photos des scènes :", photos_video)
 
           # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE
           # (qui ne couvre que le sommeil et les mecanismes du stress au sens large) :
@@ -289,6 +302,12 @@ jobs:
                   sys.exit(f"{outil} refusé ({r.status_code}) : {str(donnee.get('error') or r.text)[:500]}")
               return donnee.get("data") or {}
 
+          # Dernier contrôle : une photo de la vidéo publiée entre-temps par pins.yml ?
+          git("fetch", "origin", "main")
+          prises = {photos_uniques.cle(h.get("fond")) for h in json.loads(git("show", "origin/main:historique.json"))
+                    if str(h.get("fond") or "").startswith("fonds/")}
+          if prises & set(photos_video):
+              sys.exit("Une photo de cette vidéo vient d'être publiée par un pin : vidéo annulée (" + ", ".join(sorted(prises & set(photos_video))) + ").")
           media = composio("PINTEREST_REGISTER_MEDIA", {"media_type": "video"})
           media_id = media.get("media_id")
           if not media_id or not media.get("upload_url"):
@@ -331,7 +350,7 @@ jobs:
           # (pins.yml et carousel.yml poussent aussi sur main).
           entree = {"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
                     "id": video["id"], "titre": video["titre"], "video": nom_video,
-                    "cover": nom_cover, "theme": video["theme"], "pin_id": pin_id}
+                    "cover": nom_cover, "theme": video["theme"], "pin_id": pin_id, "photos": photos_video}
           sauvegarde = {n: open(n, "rb").read() for n in (nom_video, nom_cover)}
           limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
           for n in range(6):

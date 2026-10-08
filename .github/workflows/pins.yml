@@ -126,24 +126,6 @@ jobs:
               return THEME_ALIASES.get(premier, "systemenerveux")
 
 
-          def choisir_fond(theme, historique, min_largeur=0):
-              if not os.path.isdir("fonds"):
-                  return None
-              fichiers = sorted(f for f in os.listdir("fonds")
-                                if f.lower().endswith((".png", ".jpg", ".jpeg", ".webp")))
-              if min_largeur:
-                  fichiers = [f for f in fichiers if Image.open(os.path.join("fonds", f)).width >= min_largeur]
-              if not fichiers:
-                  return None
-              themes = {}
-              if os.path.exists("fonds_themes.json"):
-                  themes = json.load(open("fonds_themes.json", encoding="utf-8"))
-              sous_ensemble = [f for f in fichiers if themes.get(f) in (theme, None)] or fichiers
-              compte = sum(1 for h in historique
-                           if themes.get(os.path.basename(h.get("fond") or ""), None) == theme)
-              return os.path.join("fonds", sous_ensemble[compte % len(sous_ensemble)])
-
-
           PROMPTS_THEME_IA = {
               "sommeil": "Photographie lifestyle editoriale realiste : une femme adulte detendue en tenue confortable dans une chambre cosy le soir, lumiere chaude tamisee (lampe de chevet, bougie), teintes bleu nuit profond en arriere-plan, ambiance calme et apaisante. Composition verticale 2:3, bas de l'image sombre et sobre (peu de details) pour laisser la place a du texte en surimpression, haut de l'image plus riche visuellement. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
               "systemenerveux": "Photographie lifestyle editoriale realiste : une personne adulte en respiration profonde ou moment de calme, main posee sur la poitrine, lumiere douce naturelle doree, interieur chaleureux ou terrasse avec vue degagee, ambiance sereine. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
@@ -711,6 +693,18 @@ jobs:
           restants = anti_doublons.filtrer(restants, references, deja_utilisees=prets_utilises)
           if not restants:
               sys.exit("Tous les pins restants doublent un pin existant : recharge pins.json avec des sujets nouveaux.")
+          # Aucune photo réutilisée (08/10/2026, consigne de l'utilisateur) : une photo déjà publiée
+          # dans un pin, un carrousel ou une vidéo n'est plus jamais reprise (outils/photos_uniques.py).
+          # Un pin dont le thème n'a plus de photo inédite attend : on publie moins plutôt que de
+          # réutiliser une photo.
+          import photos_uniques
+          photos_exclues = photos_uniques.photos_utilisees()
+          restants = [p for p in restants if p.get("image_prete")
+                      or photos_uniques.photo_dediee(p, photos_exclues)
+                      or photos_uniques.choisir_photo(deviner_theme(p["description"]), photos_exclues)]
+          if not restants:
+              sys.exit("Plus aucune photo inédite pour les pins restants : publication suspendue pour ne pas "
+                       "réutiliser une photo. Ajoute des photos dans fonds/ (classées par thème dans fonds_themes.json).")
           pin = choisir_pin_equilibre(restants, historique)
           print("Pins restants dans la banque :", len(restants))
 
@@ -779,14 +773,20 @@ jobs:
               n_sombre = sum(1 for h in historique if h.get("design") == "sombre")
               design = "clair" if n_clair <= n_sombre else "sombre"
               # Photo dédiée (07/10/2026) : champ "photo" du pin (fichier de fonds/, classé
-              # "dedie" dans fonds_themes.json, donc hors rotation) ; sinon choix par thème.
-              photo_dediee = os.path.join("fonds", pin.get("photo") or "")
-              if not fond and pin.get("photo") and os.path.exists(photo_dediee) and (
-                      design != "clair" or Image.open(photo_dediee).width >= 800):
-                  fond = photo_dediee
-                  fond_etiquette = fond
+              # "dedie" dans fonds_themes.json, donc hors rotation) ; sinon photo du thème. Depuis
+              # le 08/10/2026, uniquement des photos jamais publiées ; le visuel clair demande une
+              # photo d'au moins 800 px de large : à défaut, ce pin passe en visuel sombre.
               if not fond:
-                  fond = choisir_fond(theme, historique, min_largeur=800 if design == "clair" else 0)
+                  largeur_min = 800 if design == "clair" else 0
+                  fond = (photos_uniques.photo_dediee(pin, photos_exclues, largeur_min)
+                          or photos_uniques.choisir_photo(theme, photos_exclues, largeur_min))
+                  if not fond and design == "clair":
+                      design = "sombre"
+                      print("Pas de photo inédite d'au moins 800 px pour le visuel clair : visuel sombre.")
+                      fond = (photos_uniques.photo_dediee(pin, photos_exclues)
+                              or photos_uniques.choisir_photo(theme, photos_exclues))
+                  if not fond:
+                      sys.exit("Aucune photo inédite pour ce pin : publication annulée plutôt que de réutiliser une photo.")
                   fond_etiquette = fond
 
               avec_lien = guide is not None
@@ -827,6 +827,8 @@ jobs:
           sha = git("rev-parse", "HEAD")
           if pin["titre"] in {h["titre"] for h in json.load(open(HIST, encoding="utf-8"))}:
               sys.exit("Ce pin vient d'être publié par un autre run, publication annulée : " + pin["titre"])
+          if str(fond_etiquette or "").startswith("fonds/") and photos_uniques.cle(fond_etiquette) in photos_uniques.photos_utilisees():
+              sys.exit("Cette photo vient d'être publiée par un autre run, publication annulée : " + fond_etiquette)
           url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin}"
 
           if not attendre_en_ligne(url):
