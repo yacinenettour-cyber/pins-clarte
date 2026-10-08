@@ -42,7 +42,7 @@ def main():
         if img.width > LARGEUR_MAX:
             img = img.resize((LARGEUR_MAX, round(img.height * LARGEUR_MAX / img.width)), Image.LANCZOS)
         img.save(os.path.join(DOSSIER, nom), "JPEG", quality=88, optimize=True)
-        registre[nom] = {k: p[k] for k in ("theme", "description", "source", "page", "licence", "url") if k in p}
+        registre[nom] = {k: p[k] for k in ("theme", "description", "source", "page", "photographe", "licence", "url") if k in p}
         registre[nom].update({"largeur": img.width, "hauteur": img.height, "statut": "à trier"})
         ok += 1
         time.sleep(0.3)
