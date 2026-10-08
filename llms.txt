@@ -1,0 +1,27 @@
+# Clarté Mentale
+
+> Articles sourcés et conseils concrets pour apaiser le stress, calmer le système nerveux, sortir des ruminations du soir et retrouver un sommeil plus serein.
+
+Site francophone écrit par Yacine (fondateur de clarté mentale), qui n'est pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, Assurance maladie, études publiées) et indique quand consulter. Contenu libre d'accès, sans publicité.
+
+## Articles
+
+- [Procrastination du coucher : pourquoi on veille et comment arrêter](https://contactapaisement-mental.fr/procrastination-du-coucher/): Procrastination du coucher : pourquoi tu repousses l'heure d'aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.
+- [Calmer son système nerveux : 6 gestes pour se calmer rapidement](https://contactapaisement-mental.fr/calmer-son-systeme-nerveux/): Comment calmer son système nerveux en quelques minutes ? Soupir physiologique, respiration lente, ancrage 5-4-3-2-1 : 6 gestes simples et sourcés.
+- [Charge mentale : définition, signes et 6 façons de l'alléger](https://contactapaisement-mental.fr/charge-mentale/): La charge mentale : définition, origine du terme, signes qu'elle déborde et 6 méthodes concrètes pour l'alléger, à la maison comme au travail.
+- [Signes du burn-out : les repérer tôt et savoir qui consulter](https://contactapaisement-mental.fr/signes-du-burn-out/): Signes du burn-out : épuisement, cynisme, perte d'efficacité. Repère les premiers signaux, la différence avec la dépression et qui consulter.
+
+## Guides gratuits
+
+- [Quand le cerveau refuse de dormir](https://lp.contactapaisement-mental.fr/tonguide): Pour les soirs où le mental tourne en boucle au moment de dormir. Une routine anti-rumination à faire au lit ; Des exercices pour calmer le mental le soir ; Un calendrier de 30 jours, sans matériel.
+- [Le plan anti-cortisol en 7 jours](https://lp.contactapaisement-mental.fr/63d489c7): Un geste simple par jour pour aider ton corps à sortir du mode alerte. 7 gestes : lumière, respiration, assiette, mouvement, pauses, soirée, sommeil ; 10 à 15 minutes par jour, un tableau de suivi à cocher ; Sans matériel, sans régime, téléchargement immédiat.
+
+## Formation payante
+
+- [Quand le cerveau refuse de dormir](https://contactapaisement-mental.fr/la-formation/): programme en ligne pour calmer le mental le soir — Apaiser le système nerveux; Sortir des ruminations sans lutter; Un rituel du soir stabilisant; Consolider le sommeil dans le temps; Le parcours des 28 soirs; Et si c'est ton cas ?; Un kit de 7 fiches à imprimer; Bonus : l'audio express. 37 €, paiement unique, sans abonnement, accès immédiat et à vie, garantie 7 jours. Outils de bien-être, pas un traitement médical.
+
+## Optional
+
+- [Texte intégral de tous les articles](https://contactapaisement-mental.fr/llms-full.txt)
+- [À propos de l'auteur](https://contactapaisement-mental.fr/a-propos/)
+- [Mentions légales](https://contactapaisement-mental.fr/mentions-legales/)
