@@ -1,47 +1,55 @@
 {
- "statut": "à générer (quota Hugging Face épuisé le 07/10)",
+ "statut": "en cours : 8 faites le 08/10/2026 (quota gratuit Hugging Face épuisé ensuite), « Bain de forêt » couvert par une photo Unsplash, 17 restantes",
  "consigne": "Générer chaque photo (832x1248 ou plus), l'enregistrer dans fonds/ sous le nom indiqué, la classer \"dedie\" dans fonds_themes.json, ajouter son cadrage (outils/cadrage_fonds.py + vérification à l'œil), puis ajouter le champ \"photo\" au pin correspondant dans pins.json et relancer le test de rendu.",
  "prefixe_prompt": "Realistic editorial lifestyle photo, vertical 2:3, soft natural light, calm warm atmosphere, shallow depth of field, professional quality, no text, no logo, no watermark. ",
  "photos": [
   {
    "titre": "Chocolat noir et stress : ce qu'en attendre vraiment",
    "fichier": "dedie-chocolat-noir.jpg",
-   "prompt": "A few squares of dark chocolate on a small ceramic plate on a wooden table, a cozy knitted sleeve in the background."
+   "prompt": "A few squares of dark chocolate on a small ceramic plate on a wooden table, a cozy knitted sleeve in the background.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Thé vert et stress : le calme sans somnolence",
    "fichier": "dedie-the-vert.jpg",
-   "prompt": "A glass cup of green tea with loose tea leaves beside it on a desk near a window, morning light."
+   "prompt": "A glass cup of green tea with loose tea leaves beside it on a desk near a window, morning light.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Stress : 4 aliments riches en vitamine C",
    "fichier": "dedie-vitamine-c.jpg",
-   "prompt": "Sliced kiwis, clementines, red pepper sticks and fresh parsley arranged on a light kitchen counter."
+   "prompt": "Sliced kiwis, clementines, red pepper sticks and fresh parsley arranged on a light kitchen counter.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Épices et stress : safran, curcuma et cannelle",
    "fichier": "dedie-epices.jpg",
-   "prompt": "Small bowls of saffron threads, turmeric powder and cinnamon sticks on a rustic wooden board."
+   "prompt": "Small bowls of saffron threads, turmeric powder and cinnamon sticks on a rustic wooden board.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Saumon, châtaignes, clémentines : 3 alliés des fêtes",
    "fichier": "dedie-aliments-fetes.jpg",
-   "prompt": "A festive winter table with a plate of salmon, roasted chestnuts and clementines, warm fairy lights blurred behind."
+   "prompt": "A festive winter table with a plate of salmon, roasted chestnuts and clementines, warm fairy lights blurred behind.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Après les repas de fêtes : 3 repas simples et apaisants",
    "fichier": "dedie-soupe-legumes.jpg",
-   "prompt": "A steaming bowl of homemade vegetable soup on a wooden table, winter afternoon light, a spoon and a linen napkin."
+   "prompt": "A steaming bowl of homemade vegetable soup on a wooden table, winter afternoon light, a spoon and a linen napkin.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Bouchons d'oreilles : 3 repères pour bien les choisir",
    "fichier": "dedie-bouchons-oreilles.jpg",
-   "prompt": "A pair of soft foam earplugs on a bedside table next to a dim warm lamp, cozy bed blurred behind, evening."
+   "prompt": "A pair of soft foam earplugs on a bedside table next to a dim warm lamp, cozy bed blurred behind, evening.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Pieds froids au lit : pourquoi les chaussettes aident",
    "fichier": "dedie-chaussettes-lit.jpg",
-   "prompt": "Feet in thick wool socks resting on a cozy duvet in a bedroom at night, warm bedside lamp."
+   "prompt": "Feet in thick wool socks resting on a cozy duvet in a bedroom at night, warm bedside lamp.",
+   "statut": "faite le 08/10/2026"
   },
   {
    "titre": "Ronflements du partenaire : 4 solutions pour dormir",

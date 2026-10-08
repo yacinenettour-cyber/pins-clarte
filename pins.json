@@ -796,7 +796,8 @@
    "Les remplacer souvent"
   ],
   "description": "Les bouchons d'oreilles aident beaucoup de dormeurs sensibles au bruit, à condition de bien les utiliser 👉 mousse, cire ou silicone : la matière dépend de la forme de ton oreille et de ta position de sommeil 👉 on les roule finement avant de les insérer, puis on attend qu'ils gonflent 👉 on les remplace souvent, pour l'hygiène comme pour l'efficacité. Les premières nuits, la sensation surprend, puis le corps s'y fait. #sommeil #bouchonsdoreilles #bruit #lit #nuit #chambre #calme #astuce",
-  "theme": "sommeil"
+  "theme": "sommeil",
+  "photo": "dedie-bouchons-oreilles.jpg"
  },
  {
   "titre": "Montre connectée : quand tes nuits deviennent un score",
@@ -818,7 +819,8 @@
    "Le signal du sommeil arrive plus tôt"
   ],
   "description": "Difficile de lâcher prise quand les pieds sont gelés sous la couette. Les réchauffer aide le corps à s'endormir 👉 la chaleur dilate les petits vaisseaux des extrémités 👉 le corps évacue alors mieux sa chaleur interne 👉 cette légère baisse de température fait partie du signal de sommeil. Des chaussettes souples, sans élastique serré, ou une bouillotte glissée au fond du lit un quart d'heure avant suffisent. #sommeil #piedsfroids #endormissement #hiver #mieuxdormir #nuit #corps #astuce",
-  "theme": "sommeil"
+  "theme": "sommeil",
+  "photo": "dedie-chaussettes-lit.jpg"
  },
  {
   "titre": "Massage des pieds le soir : 3 gestes pour dormir",
@@ -1619,7 +1621,8 @@
    "1 ou 2 carrés, pas la tablette"
   ],
   "description": "Le chocolat noir a la réputation d'aider face au stress. Ce qu'on peut en dire 👉 il apporte du magnésium, un minéral utile au système nerveux 👉 le savourer lentement crée une vraie pause de plaisir, qui apaise 👉 au-delà d'un ou deux carrés, le sucre et les calories l'emportent sur l'effet. Choisis-le à au moins 70 % de cacao et évite-le tard le soir : il contient un peu de caféine. #alimentation #stress #chocolatnoir #magnesium #antistress #nutrition #plaisir #systemenerveux",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "photo": "dedie-chocolat-noir.jpg"
  },
  {
   "titre": "Thé vert et stress : le calme sans somnolence",
@@ -1632,7 +1635,8 @@
   "description": "Le thé vert contient de la L-théanine, un composant connu pour favoriser un état calme mais alerte. Pour les journées tendues 👉 une tasse en milieu de matinée aide à rester concentré sans nervosité 👉 il contient moins de caféine qu'un café, mais en contient quand même 👉 mieux vaut l'éviter après 16h si tu dors mal. Infuser deux à trois minutes dans une eau à 80 °C évite l'amertume. Une tasse, un moment, une vraie pause. #alimentation #stress #thevert #theanine #boisson #repas #zen #calme",
   "theme": "alimentation",
   "guide": "cortisol",
-  "description_guide_cortisol": "Le thé vert contient de la L-théanine, un composant connu pour favoriser un état calme mais alerte. Pour les journées tendues 👉 une tasse en milieu de matinée aide à rester concentré sans nervosité 👉 il contient moins de caféine qu'un café, mais en contient quand même 👉 mieux vaut l'éviter après 16h si tu dors mal. Infuser deux à trois minutes dans une eau à 80 °C évite l'amertume. Plus de repères dans le plan anti-cortisol. #alimentation #stress #thevert #theanine #boisson #repas #zen"
+  "description_guide_cortisol": "Le thé vert contient de la L-théanine, un composant connu pour favoriser un état calme mais alerte. Pour les journées tendues 👉 une tasse en milieu de matinée aide à rester concentré sans nervosité 👉 il contient moins de caféine qu'un café, mais en contient quand même 👉 mieux vaut l'éviter après 16h si tu dors mal. Infuser deux à trois minutes dans une eau à 80 °C évite l'amertume. Plus de repères dans le plan anti-cortisol. #alimentation #stress #thevert #theanine #boisson #repas #zen",
+  "photo": "dedie-the-vert.jpg"
  },
  {
   "titre": "Stress : 4 aliments riches en vitamine C",
@@ -1646,7 +1650,8 @@
   "description": "Le corps utilise davantage certains nutriments quand le stress dure, dont la vitamine C. Quatre aliments simples pour en apporter 👉 le kiwi, un ou deux par jour au petit-déjeuner 👉 le poivron cru, en bâtonnets à l'apéritif 👉 les agrumes, orange ou clémentine en dessert 👉 le persil et les choux, à ajouter aux plats. Crus ou peu cuits, ils en gardent davantage. Une alimentation variée reste la base face au stress. #alimentation #stress #vitaminec #kiwi #agrumes #nutrition #zen #immunite",
   "theme": "alimentation",
   "guide": "cortisol",
-  "description_guide_cortisol": "Le corps utilise davantage certains nutriments quand le stress dure, dont la vitamine C. Quatre aliments simples pour en apporter 👉 le kiwi, un ou deux par jour au petit-déjeuner 👉 le poivron cru, en bâtonnets à l'apéritif 👉 les agrumes, orange ou clémentine en dessert 👉 le persil et les choux, à ajouter aux plats. Crus ou peu cuits, ils en gardent davantage. Le plan anti-cortisol gratuit propose 7 gestes, assiette comprise. #alimentation #stress #vitaminec #kiwi #agrumes #nutrition #zen"
+  "description_guide_cortisol": "Le corps utilise davantage certains nutriments quand le stress dure, dont la vitamine C. Quatre aliments simples pour en apporter 👉 le kiwi, un ou deux par jour au petit-déjeuner 👉 le poivron cru, en bâtonnets à l'apéritif 👉 les agrumes, orange ou clémentine en dessert 👉 le persil et les choux, à ajouter aux plats. Crus ou peu cuits, ils en gardent davantage. Le plan anti-cortisol gratuit propose 7 gestes, assiette comprise. #alimentation #stress #vitaminec #kiwi #agrumes #nutrition #zen",
+  "photo": "dedie-vitamine-c.jpg"
  },
  {
   "titre": "Épices et stress : safran, curcuma et cannelle",
@@ -1657,7 +1662,8 @@
    "La cannelle, pour adoucir sans sucre"
   ],
   "description": "Les épices apportent du goût, et certaines sont souvent citées pour leur rapport avec l'humeur et le stress 👉 le safran est la plus étudiée sur ce point, en petite quantité dans un riz ou une soupe 👉 le curcuma s'associe au poivre noir pour être mieux absorbé 👉 la cannelle adoucit un yaourt ou un fruit cuit sans sucre ajouté. Ce ne sont pas des traitements, mais une façon de rendre les repas plus réconfortants. #alimentation #stress #epices #safran #curcuma #cannelle #antistress #nutrition",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "photo": "dedie-epices.jpg"
  },
  {
   "titre": "Sommeil léger : 4 signes que le stress est en cause",
@@ -4650,7 +4656,8 @@
    "Clémentines : de la vitamine C"
   ],
   "description": "Le menu des fêtes peut aussi soutenir ton système nerveux. Trois aliments de saison 👉 le saumon apporte des oméga-3, utiles au fonctionnement du cerveau 👉 les châtaignes contiennent du magnésium, un minéral qui s'épuise quand le stress dure 👉 les clémentines apportent de la vitamine C, très sollicitée en période de tension. Ce ne sont pas des remèdes, mais de bonnes raisons de les garder au menu. #alimentation #stress #fetes #noel #saumon #chataignes #clementines #nutrition",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "photo": "dedie-aliments-fetes.jpg"
  },
  {
   "titre": "Après les repas de fêtes : 3 repas simples et apaisants",
@@ -4661,7 +4668,8 @@
    "Un riz complet aux légumes"
   ],
   "description": "Après plusieurs repas copieux, le corps réclame de la simplicité, et le mental aussi. Trois repas faciles pour les jours suivants 👉 une soupe de légumes bien chaude, qui réconforte 👉 des œufs avec une grande salade verte 👉 un riz complet aux légumes et aux épices douces. Manger simple, assis et sans culpabiliser aide le corps à retrouver son rythme. Aucune « détox » n'est nécessaire, juste un retour au quotidien. #alimentation #stress #apreslesfetes #repas #soupe #janvier #equilibre #calme",
-  "theme": "alimentation"
+  "theme": "alimentation",
+  "photo": "dedie-soupe-legumes.jpg"
  },
  {
   "titre": "Charge mentale de Noël : 4 tâches à partager tôt",
