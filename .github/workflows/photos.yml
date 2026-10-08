@@ -1,0 +1,48 @@
+name: Photos - import dans la zone d'attente
+
+# Ajouté le 08/10/2026 avec l'accord de l'utilisateur : télécharge les photos libres de droits
+# listées dans photos_a_importer.json (Pexels, Unsplash, Pixabay…) vers photos_attente/, zone
+# d'attente où le pipeline ne pioche jamais. Rien n'est publié sur Pinterest. Le tri (photos hors
+# sujet ou déjà présentes supprimées, les autres déplacées dans fonds/) se fait ensuite à la main.
+on:
+  push:
+    branches: [main]
+    paths: [photos_a_importer.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: photos
+  cancel-in-progress: false
+
+jobs:
+  importer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow requests
+      - name: Télécharger les photos listées (zone d'attente, rien n'est publié)
+        run: |
+          git config user.name "robot-pins"
+          git config user.email "robot-pins@users.noreply.github.com"
+          python outils/importer_photos.py
+          git add photos_attente photos_sources.json
+          if git diff --cached --quiet; then
+            echo "Aucune nouvelle photo."
+            exit 0
+          fi
+          git commit -m "Photos à trier dans photos_attente/"
+          for n in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((5 * n))
+          done
+          echo "Impossible de pousser sur main après 5 essais."
+          exit 1
