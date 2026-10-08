@@ -79,5 +79,22 @@
   "cover": "videopins/videopin-20261007-163230.jpg",
   "theme": "posturesantistress",
   "pin_id": "600175087890031261"
+ },
+ {
+  "date": "2026-10-08T16:33+00:00",
+  "id": "fatiguementale-pauses-90-minutes",
+  "titre": "Ton cerveau fonctionne par cycles de 90 minutes : voici comment en profiter",
+  "video": "videopins/videopin-20261008-163221.mp4",
+  "cover": "videopins/videopin-20261008-163221.jpg",
+  "theme": "fatiguementale",
+  "pin_id": "600175087890047696",
+  "photos": [
+   "fonds/fond-84.jpg",
+   "fonds/fond-84.jpg",
+   "fonds/fond-86.jpg",
+   "fonds/fond-86.jpg",
+   "fonds/fond-89.jpg",
+   "fonds/fond-89.jpg"
+  ]
  }
 ]
