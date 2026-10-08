@@ -1270,5 +1270,15 @@
   "design": "clair",
   "pin_id": "600175087890044288",
   "md5": "4f6c6037576158c353f3a920736538f8"
+ },
+ {
+  "date": "2026-10-08T14:09+00:00",
+  "titre": "Réveillé par un cauchemar : 3 étapes pour te rendormir",
+  "image": "images/pin-20261008-140754.jpg",
+  "fond": "fonds/fond-150.jpg",
+  "theme": "sommeil",
+  "design": "sombre",
+  "pin_id": "600175087890045952",
+  "md5": "4c28c4ff8a114f4565f1a5dfbab663b8"
  }
 ]
