@@ -662,10 +662,19 @@ jobs:
               return theme not in THEMES_SANS_LIEN or bool(LIEN_GUIDE_CORTISOL and theme in THEMES_GUIDE_CORTISOL)
 
 
+          # Poids de rotation (08/10/2026, accord de l'utilisateur) : d'après les statistiques
+          # Pinterest réelles du 24/09 au 07/10, 14 des 15 clics sortants viennent d'épingles sur
+          # la nuit, le soir et les ruminations, dont 12 sur le sommeil (guide « Quand le cerveau
+          # refuse de dormir ») : le thème sommeil passe trois fois plus souvent qu'un autre thème
+          # avec lien.
+          POIDS_THEME = {"sommeil": 3.0}
+
+
           def choisir_pin_equilibre(restants, historique):
               # Rotation entre themes (evite d'enchainer un meme theme), ponderee depuis le
               # 29/09/2026 : un theme qui mene a la page de capture passe deux fois plus
-              # souvent qu'un theme sans lien, pour augmenter les clics sortants.
+              # souvent qu'un theme sans lien, pour augmenter les clics sortants (et le
+              # theme sommeil trois fois plus, voir POIDS_THEME).
               par_theme = {}
               for p in restants:
                   t = deviner_theme(p["description"])
@@ -680,7 +689,7 @@ jobs:
               for h in historique:
                   if h.get("theme") and h.get("date", "") >= debut:
                       recents[h["theme"]] = recents.get(h["theme"], 0) + 1
-              poids = lambda t: 1.0 if theme_avec_lien(t) else 0.5
+              poids = lambda t: POIDS_THEME.get(t, 1.0) if theme_avec_lien(t) else 0.5
               theme_choisi = min(par_theme, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
               return par_theme[theme_choisi][0]
 

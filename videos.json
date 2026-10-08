@@ -79,7 +79,7 @@
   "id": "systemenerveux-soupir-physiologique",
   "theme": "systemenerveux",
   "titre": "Le soupir physiologique : la respiration la plus rapide pour redescendre",
-  "description": "Deux inspirations par le nez (une longue, puis une petite pour remplir à fond), puis une longue expiration par la bouche. C'est le soupir physiologique, le réflexe naturel du corps pour évacuer la tension. 2 ou 3 cycles suffisent souvent à faire baisser la pression en moins d'une minute. #respiration #systemenerveux #stress #anxiete #calme",
+  "description": "Deux inspirations par le nez (une longue, puis une petite pour remplir à fond), puis une longue expiration par la bouche. C'est le soupir physiologique, le réflexe naturel du corps pour évacuer la tension. 2 ou 3 cycles suffisent souvent à faire baisser la pression en moins d'une minute. Si cette tension te suit jusqu'au lit, le guide gratuit en lien propose une routine pour calmer le mental du soir. #respiration #systemenerveux #stress #anxiete #calme",
   "beats": [
    {
     "image": "fonds/fond-02.jpg",
@@ -111,13 +111,14 @@
     "texte": "Sauvegarde ce Pin\npour ta prochaine crise",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "systemenerveux-coherence-365",
   "theme": "systemenerveux",
   "titre": "Cohérence cardiaque 365 : la méthode simple pour réguler ton stress",
-  "description": "3 fois par jour, 6 respirations par minute, pendant 5 minutes : c'est la règle 365. Inspire 5 secondes, expire 5 secondes. Pratiquée régulièrement, elle aide ton système nerveux à retrouver de la souplesse face au stress. Le matin, avant le déjeuner et en fin d'après-midi. #coherencecardiaque #respiration #systemenerveux #stress #anxiete",
+  "description": "3 fois par jour, 6 respirations par minute, pendant 5 minutes : c'est la règle 365. Inspire 5 secondes, expire 5 secondes. Pratiquée régulièrement, elle aide ton système nerveux à retrouver de la souplesse face au stress. Le matin, avant le déjeuner et en fin d'après-midi. Le soir, le guide gratuit relié prolonge ce calme avec une routine anti-rumination à faire au lit. #coherencecardiaque #respiration #systemenerveux #stress #anxiete",
   "beats": [
    {
     "image": "fonds/fond-124.jpg",
@@ -149,13 +150,14 @@
     "texte": "Sauvegarde ce Pin\npour t'y mettre",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "systemenerveux-eau-froide-visage",
   "theme": "systemenerveux",
   "titre": "L'astuce de l'eau froide sur le visage pour calmer une montée d'angoisse",
-  "description": "Asperger ton visage d'eau froide (ou poser une poche fraîche sur les yeux et les joues) en retenant brièvement ton souffle déclenche le réflexe de plongée : le rythme cardiaque ralentit. Un geste simple quand l'émotion déborde, à utiliser en complément, pas à la place d'un accompagnement si l'anxiété est forte. #anxiete #systemenerveux #stress #calme #detente",
+  "description": "Asperger ton visage d'eau froide (ou poser une poche fraîche sur les yeux et les joues) en retenant brièvement ton souffle déclenche le réflexe de plongée : le rythme cardiaque ralentit. Un geste simple quand l'émotion déborde, à utiliser en complément, pas à la place d'un accompagnement si l'anxiété est forte. Et quand l'angoisse revient au coucher, le guide gratuit en lien propose des exercices pour apaiser le mental. #anxiete #systemenerveux #stress #calme #detente",
   "beats": [
    {
     "image": "fonds/fond-149.jpg",
@@ -187,13 +189,14 @@
     "texte": "Sauvegarde ce Pin\npour les jours durs",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "systemenerveux-expiration-longue",
   "theme": "systemenerveux",
   "titre": "Pourquoi expirer plus longtemps qu'inspirer calme ton corps",
-  "description": "À l'inspiration, le cœur accélère légèrement. À l'expiration, il ralentit. En allongeant volontairement l'expiration (le double de l'inspiration), tu fais pencher la balance vers le calme. Essaie : inspire 3 secondes, expire 6 secondes, pendant 2 minutes. #respiration #systemenerveux #stress #coherencecardiaque #calme",
+  "description": "À l'inspiration, le cœur accélère légèrement. À l'expiration, il ralentit. En allongeant volontairement l'expiration (le double de l'inspiration), tu fais pencher la balance vers le calme. Essaie : inspire 3 secondes, expire 6 secondes, pendant 2 minutes. Pour l'appliquer au lit, les soirs où la tête tourne, vois le guide gratuit en lien. #respiration #systemenerveux #stress #coherencecardiaque #calme",
   "beats": [
    {
     "image": "fonds/fond-145.jpg",
@@ -225,13 +228,14 @@
     "texte": "Sauvegarde ce Pin\npour t'entraîner",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "systemenerveux-marche-apres-reunion",
   "theme": "systemenerveux",
   "titre": "5 minutes de marche après une réunion tendue changent tout",
-  "description": "Après une situation stressante, le corps a préparé de l'énergie pour agir, et elle reste coincée si tu enchaînes assis. 5 minutes de marche, même dans un couloir ou autour du bâtiment, aident à évacuer ce trop-plein et à retrouver les idées claires. #stress #systemenerveux #travail #anxiete #energie",
+  "description": "Après une situation stressante, le corps a préparé de l'énergie pour agir, et elle reste coincée si tu enchaînes assis. 5 minutes de marche, même dans un couloir ou autour du bâtiment, aident à évacuer ce trop-plein et à retrouver les idées claires. Si la réunion tourne encore dans ta tête le soir, le guide gratuit relié aide à décrocher avant de dormir. #stress #systemenerveux #travail #anxiete #energie",
   "beats": [
    {
     "image": "fonds/fond-10.jpg",
@@ -263,7 +267,8 @@
     "texte": "Sauvegarde ce Pin\npour demain",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "fatiguementale-regle-des-2-minutes",
@@ -339,7 +344,10 @@
     "texte": "Sauvegarde ce Pin\npour ta journée",
     "duree": 2.2
    }
-  ]
+  ],
+  "description_guide_cortisol": "La concentration suit des cycles d'environ 90 minutes, suivis d'un creux naturel. Forcer pendant ce creux épuise plus vite. Toutes les 90 minutes, fais une vraie pause de 10 minutes : sans écran, debout, en regardant au loin. Ce rythme de pauses fait partie du plan anti-cortisol gratuit en lien : 7 gestes, un par jour. #fatiguementale #concentration #energie #travail #recuperation",
+  "fin_avec_lien": "Plan anti-cortisol\ngratuit : en lien",
+  "guide": "cortisol"
  },
  {
   "id": "fatiguementale-trop-de-decisions",
@@ -453,7 +461,9 @@
     "texte": "Sauvegarde ce Pin\npour tes courses",
     "duree": 2.2
    }
-  ]
+  ],
+  "description_guide_cortisol": "Le stress augmente l'élimination du magnésium, et un manque peut renforcer la sensation de tension et de fatigue. Mise sur les aliments riches : chocolat noir, amandes, légumineuses, épinards, banane, céréales complètes. En cas de doute, parles-en à ton médecin avant toute supplémentation. Le plan anti-cortisol gratuit en lien détaille l'assiette anti-stress, parmi 7 gestes simples sur une semaine. #alimentation #magnesium #stress #fatigue #energie",
+  "fin_avec_lien": "Plan anti-cortisol\ngratuit : en lien"
  },
  {
   "id": "alimentation-hydratation-fatigue",
@@ -491,7 +501,9 @@
     "texte": "Sauvegarde ce Pin\ncomme rappel",
     "duree": 2.2
    }
-  ]
+  ],
+  "description_guide_cortisol": "Même une petite perte d'eau peut diminuer la concentration et l'humeur. Souvent, on confond soif et fatigue. Garde une bouteille visible sur ton bureau, bois un grand verre au réveil et un avant chaque repas : ça fait déjà une vraie différence. Pour stabiliser ton énergie toute la journée, le plan anti-cortisol gratuit en lien propose 7 gestes simples. #alimentation #hydratation #fatigue #energie #concentration",
+  "fin_avec_lien": "Plan anti-cortisol\ngratuit : en lien"
  },
  {
   "id": "energie-lumiere-du-matin",
@@ -649,7 +661,7 @@
   "id": "blocagemental-une-seule-tache",
   "theme": "blocagemental",
   "titre": "Pourquoi le multitâche te bloque au lieu de t'avancer",
-  "description": "Passer d'une tâche à l'autre coûte à chaque fois du temps et de l'énergie de remise en route. Résultat : tout avance un peu, rien n'aboutit, et le mental sature. Choisis une seule tâche, ferme les autres onglets, coupe les notifications 25 minutes. #blocagemental #concentration #clarte #procrastination #travail",
+  "description": "Passer d'une tâche à l'autre coûte à chaque fois du temps et de l'énergie de remise en route. Résultat : tout avance un peu, rien n'aboutit, et le mental sature. Choisis une seule tâche, ferme les autres onglets, coupe les notifications 25 minutes. Si ce trop-plein te suit jusqu'au lit, le guide gratuit en lien aide à vider la tête avant de dormir. #blocagemental #concentration #clarte #procrastination #travail",
   "beats": [
    {
     "image": "fonds/fond-65.jpg",
@@ -681,7 +693,8 @@
     "texte": "Sauvegarde ce Pin\npour ta journée",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "somatisation-ventre-noue",
@@ -763,7 +776,7 @@
   "id": "systemenerveux-paumes-sur-les-yeux",
   "theme": "systemenerveux",
   "titre": "Paumes chaudes sur les yeux : 30 secondes pour faire baisser la pression",
-  "description": "Frotte tes mains l'une contre l'autre pour les réchauffer, puis pose les paumes en creux sur tes yeux fermés, sans appuyer. Respire lentement dans le noir pendant trente secondes. La chaleur et l'obscurité détendent les yeux, le front et la mâchoire, souvent crispés après des heures d'écran. #systemenerveux #stress #ecrans #detente #calme #antistress",
+  "description": "Frotte tes mains l'une contre l'autre pour les réchauffer, puis pose les paumes en creux sur tes yeux fermés, sans appuyer. Respire lentement dans le noir pendant trente secondes. La chaleur et l'obscurité détendent les yeux, le front et la mâchoire, souvent crispés après des heures d'écran. Les soirs où le mental refuse de s'éteindre, le guide gratuit en lien prend le relais au lit. #systemenerveux #stress #ecrans #detente #calme #antistress",
   "beats": [
    {
     "image": "fonds/fond-139.jpg",
@@ -795,13 +808,14 @@
     "texte": "Sauvegarde ce Pin\npour tes pauses",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "systemenerveux-odeur-repere",
   "theme": "systemenerveux",
   "titre": "Une odeur repère pour calmer le stress en 10 secondes",
-  "description": "Choisis une odeur que tu aimes, un baume, une huile douce, un sachet de lavande, et respire-la uniquement dans des moments calmes pendant quelques jours. Ton cerveau l'associe peu à peu au repos. Ensuite, quand la tension monte, quelques inspirations lentes près de cette odeur aident à retrouver ce calme plus vite. #systemenerveux #stress #odeur #calme #ancrage #antistress",
+  "description": "Choisis une odeur que tu aimes, un baume, une huile douce, un sachet de lavande, et respire-la uniquement dans des moments calmes pendant quelques jours. Ton cerveau l'associe peu à peu au repos. Ensuite, quand la tension monte, quelques inspirations lentes près de cette odeur aident à retrouver ce calme plus vite. Pour les soirées où le stress s'invite jusqu'au coucher, le guide gratuit relié propose un calendrier de 30 jours. #systemenerveux #stress #odeur #calme #ancrage #antistress",
   "beats": [
    {
     "image": "fonds/fond-146.jpg",
@@ -833,13 +847,14 @@
     "texte": "Sauvegarde ce Pin\npour t'en souvenir",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "sommeil-aerer-chambre",
   "theme": "sommeil",
   "titre": "Aérer ta chambre 5 minutes avant de dormir : un rituel simple pour mieux t'endormir",
-  "description": "Ouvrir la fenêtre cinq minutes avant d'aller au lit rafraîchit l'air et fait un peu baisser la température de la pièce, ce qui aide le corps à glisser vers le sommeil. C'est aussi un petit rituel qui marque la fin de la journée. Referme, tamise la lumière, et la chambre est prête pour la nuit. #sommeil #routinedusoir #chambre #mieuxdormir #endormissement #calme",
+  "description": "Ouvrir la fenêtre cinq minutes avant d'aller au lit rafraîchit l'air et fait un peu baisser la température de la pièce, ce qui aide le corps à glisser vers le sommeil. C'est aussi un petit rituel qui marque la fin de la journée. Referme, tamise la lumière, et la chambre est prête pour la nuit. Une fois au lit, si les pensées tournent, le guide gratuit en lien propose une routine anti-rumination sans matériel. #sommeil #routinedusoir #chambre #mieuxdormir #endormissement #calme",
   "beats": [
    {
     "image": "fonds/fond-121.jpg",
@@ -871,13 +886,14 @@
     "texte": "Sauvegarde ce Pin\npour ce soir",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Guide gratuit\npour dormir : en lien"
  },
  {
   "id": "sommeil-masque-nuit",
   "theme": "sommeil",
   "titre": "Masque de nuit : pourquoi le noir complet aide à dormir plus profondément",
-  "description": "Lampadaire, veille d'appareil, aube précoce : même une faible lumière peut rendre le sommeil plus léger. Un masque de nuit confortable recrée le noir complet sans toucher aux volets. Choisis-le souple et bien ajusté, sans pression sur les yeux. Beaucoup de personnes se réveillent moins tôt avec. #sommeil #masquedenuit #lumiere #mieuxdormir #nuit #reveil",
+  "description": "Lampadaire, veille d'appareil, aube précoce : même une faible lumière peut rendre le sommeil plus léger. Un masque de nuit confortable recrée le noir complet sans toucher aux volets. Choisis-le souple et bien ajusté, sans pression sur les yeux. Beaucoup de personnes se réveillent moins tôt avec. Si ce sont plutôt tes pensées qui te réveillent, le guide gratuit relié aide à les apaiser. #sommeil #masquedenuit #lumiere #mieuxdormir #nuit #reveil",
   "beats": [
    {
     "image": "fonds/fond-131.jpg",
@@ -909,13 +925,14 @@
     "texte": "Sauvegarde ce Pin\npour ta chambre",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Guide gratuit\npour dormir : en lien"
  },
  {
   "id": "blocagemental-une-seule-tache-visible",
   "theme": "blocagemental",
   "titre": "Une seule tâche visible sur ton bureau : l'astuce contre la dispersion",
-  "description": "Quand tout est sous tes yeux, dossiers, post-it, onglets ouverts, le cerveau saute d'une chose à l'autre sans avancer. Range tout sauf la tâche du moment : un seul dossier sur le bureau, une seule fenêtre à l'écran. Le regard n'est plus happé ailleurs, et la concentration revient plus facilement. #blocagemental #concentration #clarte #organisation #focus #mental",
+  "description": "Quand tout est sous tes yeux, dossiers, post-it, onglets ouverts, le cerveau saute d'une chose à l'autre sans avancer. Range tout sauf la tâche du moment : un seul dossier sur le bureau, une seule fenêtre à l'écran. Le regard n'est plus happé ailleurs, et la concentration revient plus facilement. Et pour que la journée ne tourne pas en boucle au coucher, ouvre le guide gratuit relié. #blocagemental #concentration #clarte #organisation #focus #mental",
   "beats": [
    {
     "image": "fonds/fond-195.jpg",
@@ -947,13 +964,14 @@
     "texte": "Sauvegarde ce Pin\npour ton bureau",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "posturesantistress-pieds-au-sol",
   "theme": "posturesantistress",
   "titre": "Les deux pieds à plat au sol : le réglage de 2 secondes qui pose le corps",
-  "description": "Jambes croisées, pieds sous la chaise, sur la pointe : au bureau, on oublie souvent ses appuis. Poser les deux pieds bien à plat au sol, sentir leur poids, et laisser les épaules descendre aide le corps à se stabiliser en quelques secondes. Un réflexe simple à reprendre à chaque appel ou chaque mail tendu. #stress #travail #posture #bureau #ancrage #calme #antistress",
+  "description": "Jambes croisées, pieds sous la chaise, sur la pointe : au bureau, on oublie souvent ses appuis. Poser les deux pieds bien à plat au sol, sentir leur poids, et laisser les épaules descendre aide le corps à se stabiliser en quelques secondes. Un réflexe simple à reprendre à chaque appel ou chaque mail tendu. Si la tension reste jusqu'au soir, le guide gratuit en lien propose de quoi calmer le mental au coucher. #stress #travail #posture #bureau #ancrage #calme #antistress",
   "beats": [
    {
     "image": "fonds/fond-151.jpg",
@@ -985,7 +1003,8 @@
     "texte": "Sauvegarde ce Pin\npour ton bureau",
     "duree": 2.2
    }
-  ]
+  ],
+  "fin_avec_lien": "Ça te suit le soir ?\nGuide gratuit en lien"
  },
  {
   "id": "procrastination-commencer-par-la-fin",
@@ -1061,6 +1080,8 @@
     "texte": "Sauvegarde ce Pin\npour tes pauses",
     "duree": 2.2
    }
-  ]
+  ],
+  "description_guide_cortisol": "Quand la tension monte, prends un verre d'eau et bois-le très lentement, gorgée par gorgée, en sentant la fraîcheur. Ce geste simple oblige à ralentir, à respirer entre deux gorgées et à faire une vraie pause. Une minute suffit pour repartir plus posé, sans café ni sucre. Le plan anti-cortisol gratuit en lien propose d'autres micro-pauses qui calment, un geste par jour pendant 7 jours. #alimentation #stress #hydratation #pause #calme #antistress",
+  "fin_avec_lien": "Plan anti-cortisol\ngratuit : en lien"
  }
 ]

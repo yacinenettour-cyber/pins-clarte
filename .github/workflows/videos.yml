@@ -185,6 +185,31 @@ jobs:
           print("Videos restantes dans la banque :", len(restants))
           print("Video choisie :", video["id"])
 
+          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE
+          # (qui ne couvre que le sommeil et les mecanismes du stress au sens large) :
+          # ces videos ne doivent pas rediriger vers la page de capture (pas de lien hors-sujet).
+          THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
+          # 2e guide gratuit « Le plan anti-cortisol en 7 jours » (relié aux vidéos le 08/10/2026,
+          # avec l'accord de l'utilisateur ; même logique que pins.yml) : energie, alimentation et
+          # les vidéos marquées "guide": "cortisol" y mènent (description_guide_cortisol si
+          # présente) ; "guide": "aucun" = sans lien. Vider l'adresse pour désactiver.
+          LIEN_GUIDE_CORTISOL = "https://lp.contactapaisement-mental.fr/63d489c7"
+          THEMES_GUIDE_CORTISOL = {"energie", "alimentation"}
+          choix_guide = video.get("guide")
+          if choix_guide == "aucun":
+              guide = None
+          elif LIEN_GUIDE_CORTISOL and (choix_guide == "cortisol" or video["theme"] in THEMES_GUIDE_CORTISOL):
+              guide = "cortisol"
+          else:
+              guide = None if video["theme"] in THEMES_SANS_LIEN else "sommeil"
+          if guide == "cortisol" and video.get("description_guide_cortisol"):
+              video["description"] = video["description_guide_cortisol"]
+          # Dernière scène qui renvoie vers le guide (champ "fin_avec_lien"), seulement si la
+          # vidéo porte vraiment un lien ; sinon la scène d'origine reste.
+          if guide and video.get("fin_avec_lien"):
+              video["beats"][-1]["texte"] = video["fin_avec_lien"]
+          print("Guide relié :", guide or "aucun")
+
           tmp = "tmp_video"
           os.makedirs(tmp, exist_ok=True)
           os.makedirs("videopins", exist_ok=True)
@@ -228,14 +253,11 @@ jobs:
               "energie": "600175156532025122",
           }
 
-          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE
-          # (qui ne couvre que le sommeil et les mecanismes du stress au sens large) :
-          # ces videos ne doivent pas rediriger vers la page de capture (pas de lien hors-sujet).
-          THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
-          lien = "" if video["theme"] in THEMES_SANS_LIEN else os.environ["LIEN_PAGE"]
-          # Suivi des inscrits venus de Pinterest dans systeme.io (URL source du contact), par thème.
+          lien = {"sommeil": os.environ["LIEN_PAGE"], "cortisol": LIEN_GUIDE_CORTISOL}.get(guide, "")
+          # Suivi des inscrits venus de Pinterest dans systeme.io (URL source du contact), par thème,
+          # et utm_content propre à chaque vidéo (son identifiant).
           if lien and "utm_source=" not in lien:
-              lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=video&utm_campaign={video['theme']}"
+              lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=video&utm_campaign={video['theme']}&utm_content={video['id']}"
 
           # Publication directe via l'API Composio (même mécanisme que carousel.yml) :
           # l'ancien scénario Make vidéo n'a jamais publié une seule vidéo (formules cassées).

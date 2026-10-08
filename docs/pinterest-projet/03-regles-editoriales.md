@@ -46,6 +46,8 @@ Un pin alimentation dont le bénéfice mis en avant est l'endormissement ou l'é
 - **Conséquence pour la rédaction** : un pin sur un thème sans lien ne doit **jamais** promettre un contenu "dans le guide gratuit" ni inviter à "cliquer sur cette épingle pour le découvrir" — il n'y a rien derrière. Le CTA doit être adapté : fin informative, ou invitation à enregistrer l'épingle sur Pinterest (ça reste possible sans lien de destination), jamais une promesse de contenu accessible par clic.
 - **Piège identifié le 28/09/2026** : le thème/premier hashtag d'un pin ne garantit pas que son **contenu réel** correspond à ce que couvre la formation. Un pin peut être tagué `#energie` en tête (donc a priori "avec lien") tout en étant en fait un pin alimentation déguisé (contenu 100 % petit-déjeuner/nutrition) — vérifier le contenu, pas seulement le tag, avant d'accepter un CTA "guide gratuit".
 - Si le périmètre de la formation change un jour, mettre à jour `THEMES_SANS_LIEN` dans les deux workflows en conséquence.
+- **Depuis le 07/10/2026 (pins) et le 08/10/2026 (vidéos)** : `energie` et `alimentation` mènent au 2e guide gratuit « Le plan anti-cortisol en 7 jours » (`LIEN_GUIDE_CORTISOL`), avec un appel au plan dans `description_guide_cortisol`. Pour une vidéo avec lien, le champ `fin_avec_lien` remplace la dernière scène (« Sauvegarde ce Pin… ») par un renvoi au guide.
+- **Sujets prioritaires pour les clics sortants (08/10/2026)** : nuit, ruminations, routine du soir (14 des 15 clics sortants du 24/09 au 07/10). Le thème sommeil passe trois fois plus souvent dans la rotation : garder un stock de pins sommeil inédits (journal section 40).
 
 ## 6. Stratégie des titres
 
