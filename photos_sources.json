@@ -8,7 +8,8 @@
   "url": "https://images.pexels.com/photos/6863351/pexels-photo-6863351.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6863351.jpg"
  },
  "pexels-6941122.jpg": {
   "theme": "sommeil",
@@ -19,7 +20,7 @@
   "url": "https://images.pexels.com/photos/6941122/pexels-photo-6941122.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-7493258.jpg": {
   "theme": "sommeil",
@@ -30,7 +31,8 @@
   "url": "https://images.pexels.com/photos/7493258/pexels-photo-7493258.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7493258.jpg"
  },
  "pexels-17491560.jpg": {
   "theme": "sommeil",
@@ -41,7 +43,8 @@
   "url": "https://images.pexels.com/photos/17491560/pexels-photo-17491560.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 1971,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-17491560.jpg"
  },
  "pexels-6598236.jpg": {
   "theme": "sommeil",
@@ -52,7 +55,8 @@
   "url": "https://images.pexels.com/photos/6598236/pexels-photo-6598236.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6598236.jpg"
  },
  "pexels-6753832.jpg": {
   "theme": "sommeil",
@@ -63,7 +67,7 @@
   "url": "https://images.pexels.com/photos/6753832/pexels-photo-6753832.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-35257115.jpg": {
   "theme": "sommeil",
@@ -74,7 +78,7 @@
   "url": "https://images.pexels.com/photos/35257115/pexels-photo-35257115.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6598229.jpg": {
   "theme": "sommeil",
@@ -85,7 +89,8 @@
   "url": "https://images.pexels.com/photos/6598229/pexels-photo-6598229.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6598229.jpg"
  },
  "pexels-8036745.jpg": {
   "theme": "sommeil",
@@ -96,7 +101,8 @@
   "url": "https://images.pexels.com/photos/8036745/pexels-photo-8036745.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-8036745.jpg"
  },
  "pexels-8070511.jpg": {
   "theme": "sommeil",
@@ -107,7 +113,8 @@
   "url": "https://images.pexels.com/photos/8070511/pexels-photo-8070511.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2099,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-8070511.jpg"
  },
  "pexels-3465878.jpg": {
   "theme": "sommeil",
@@ -118,7 +125,8 @@
   "url": "https://images.pexels.com/photos/3465878/pexels-photo-3465878.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2002,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-3465878.jpg"
  },
  "pexels-7436480.jpg": {
   "theme": "sommeil",
@@ -129,7 +137,8 @@
   "url": "https://images.pexels.com/photos/7436480/pexels-photo-7436480.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2101,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7436480.jpg"
  },
  "pexels-6863358.jpg": {
   "theme": "sommeil",
@@ -140,7 +149,7 @@
   "url": "https://images.pexels.com/photos/6863358/pexels-photo-6863358.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-17569008.jpg": {
   "theme": "sommeil",
@@ -151,7 +160,7 @@
   "url": "https://images.pexels.com/photos/17569008/pexels-photo-17569008.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2098,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-8810538.jpg": {
   "theme": "sommeil",
@@ -162,7 +171,8 @@
   "url": "https://images.pexels.com/photos/8810538/pexels-photo-8810538.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-8810538.jpg"
  },
  "pexels-16740002.jpg": {
   "theme": "sommeil",
@@ -173,7 +183,8 @@
   "url": "https://images.pexels.com/photos/16740002/pexels-photo-16740002.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-16740002.jpg"
  },
  "pexels-6716219.jpg": {
   "theme": "sommeil",
@@ -184,7 +195,8 @@
   "url": "https://images.pexels.com/photos/6716219/pexels-photo-6716219.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6716219.jpg"
  },
  "pexels-9787922.jpg": {
   "theme": "sommeil",
@@ -195,7 +207,8 @@
   "url": "https://images.pexels.com/photos/9787922/pexels-photo-9787922.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-9787922.jpg"
  },
  "pexels-8410719.jpg": {
   "theme": "sommeil",
@@ -206,7 +219,7 @@
   "url": "https://images.pexels.com/photos/8410719/pexels-photo-8410719.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2104,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-8410725.jpg": {
   "theme": "sommeil",
@@ -217,7 +230,7 @@
   "url": "https://images.pexels.com/photos/8410725/pexels-photo-8410725.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2104,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-8410731.jpg": {
   "theme": "sommeil",
@@ -228,7 +241,7 @@
   "url": "https://images.pexels.com/photos/8410731/pexels-photo-8410731.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2104,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-8410740.jpg": {
   "theme": "sommeil",
@@ -239,7 +252,7 @@
   "url": "https://images.pexels.com/photos/8410740/pexels-photo-8410740.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2104,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6943425.jpg": {
   "theme": "sommeil",
@@ -250,7 +263,7 @@
   "url": "https://images.pexels.com/photos/6943425/pexels-photo-6943425.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6951511.jpg": {
   "theme": "sommeil",
@@ -261,7 +274,8 @@
   "url": "https://images.pexels.com/photos/6951511/pexels-photo-6951511.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6951511.jpg"
  },
  "pexels-6941123.jpg": {
   "theme": "sommeil",
@@ -272,7 +286,8 @@
   "url": "https://images.pexels.com/photos/6941123/pexels-photo-6941123.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6941123.jpg"
  },
  "pexels-8416214.jpg": {
   "theme": "sommeil",
@@ -283,7 +298,7 @@
   "url": "https://images.pexels.com/photos/8416214/pexels-photo-8416214.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6943999.jpg": {
   "theme": "sommeil",
@@ -294,7 +309,8 @@
   "url": "https://images.pexels.com/photos/6943999/pexels-photo-6943999.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6943999.jpg"
  },
  "pexels-6943437.jpg": {
   "theme": "sommeil",
@@ -305,7 +321,8 @@
   "url": "https://images.pexels.com/photos/6943437/pexels-photo-6943437.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6943437.jpg"
  },
  "pexels-6753359.jpg": {
   "theme": "sommeil",
@@ -316,7 +333,8 @@
   "url": "https://images.pexels.com/photos/6753359/pexels-photo-6753359.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6753359.jpg"
  },
  "pexels-8410720.jpg": {
   "theme": "sommeil",
@@ -327,7 +345,7 @@
   "url": "https://images.pexels.com/photos/8410720/pexels-photo-8410720.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2104,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6943443.jpg": {
   "theme": "sommeil",
@@ -338,7 +356,7 @@
   "url": "https://images.pexels.com/photos/6943443/pexels-photo-6943443.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-7623557.jpg": {
   "theme": "sommeil",
@@ -349,7 +367,8 @@
   "url": "https://images.pexels.com/photos/7623557/pexels-photo-7623557.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7623557.jpg"
  },
  "pexels-10912447.jpg": {
   "theme": "sommeil",
@@ -360,7 +379,8 @@
   "url": "https://images.pexels.com/photos/10912447/pexels-photo-10912447.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 1750,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-10912447.jpg"
  },
  "pexels-4473872.jpg": {
   "theme": "sommeil",
@@ -371,7 +391,8 @@
   "url": "https://images.pexels.com/photos/4473872/pexels-photo-4473872.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-4473872.jpg"
  },
  "pexels-6604844.jpg": {
   "theme": "sommeil",
@@ -382,7 +403,8 @@
   "url": "https://images.pexels.com/photos/6604844/pexels-photo-6604844.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6604844.jpg"
  },
  "pexels-4227148.jpg": {
   "theme": "sommeil",
@@ -393,10 +415,11 @@
   "url": "https://images.pexels.com/photos/4227148/pexels-photo-4227148.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-4227148.jpg"
  },
  "pexels-6555228.jpg": {
-  "theme": "sommeil",
+  "theme": "fatiguementale",
   "description": "woman-lying-on-the-bed",
   "source": "Pexels",
   "page": "https://www.pexels.com/photo/6555228/",
@@ -404,7 +427,8 @@
   "url": "https://images.pexels.com/photos/6555228/pexels-photo-6555228.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6555228.jpg"
  },
  "pexels-7269393.jpg": {
   "theme": "sommeil",
@@ -415,7 +439,8 @@
   "url": "https://images.pexels.com/photos/7269393/pexels-photo-7269393.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2097,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7269393.jpg"
  },
  "pexels-6541063.jpg": {
   "theme": "sommeil",
@@ -426,7 +451,8 @@
   "url": "https://images.pexels.com/photos/6541063/pexels-photo-6541063.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2098,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6541063.jpg"
  },
  "pexels-10061441.jpg": {
   "theme": "sommeil",
@@ -437,7 +463,8 @@
   "url": "https://images.pexels.com/photos/10061441/pexels-photo-10061441.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-10061441.jpg"
  },
  "pexels-7445268.jpg": {
   "theme": "sommeil",
@@ -448,7 +475,8 @@
   "url": "https://images.pexels.com/photos/7445268/pexels-photo-7445268.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7445268.jpg"
  },
  "pexels-7445251.jpg": {
   "theme": "sommeil",
@@ -459,7 +487,8 @@
   "url": "https://images.pexels.com/photos/7445251/pexels-photo-7445251.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7445251.jpg"
  },
  "pexels-6598243.jpg": {
   "theme": "sommeil",
@@ -470,7 +499,8 @@
   "url": "https://images.pexels.com/photos/6598243/pexels-photo-6598243.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6598243.jpg"
  },
  "pexels-6541072.jpg": {
   "theme": "sommeil",
@@ -481,7 +511,7 @@
   "url": "https://images.pexels.com/photos/6541072/pexels-photo-6541072.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2098,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-12117360.jpg": {
   "theme": "sommeil",
@@ -498,7 +528,8 @@
   "url": "https://images.pexels.com/photos/9787613/pexels-photo-9787613.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-9787613.jpg"
  },
  "pexels-8947433.jpg": {
   "theme": "sommeil",
@@ -509,7 +540,8 @@
   "url": "https://images.pexels.com/photos/8947433/pexels-photo-8947433.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2099,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-8947433.jpg"
  },
  "pexels-5357334.jpg": {
   "theme": "sommeil",
@@ -520,7 +552,8 @@
   "url": "https://images.pexels.com/photos/5357334/pexels-photo-5357334.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-5357334.jpg"
  },
  "pexels-6541075.jpg": {
   "theme": "sommeil",
@@ -531,7 +564,8 @@
   "url": "https://images.pexels.com/photos/6541075/pexels-photo-6541075.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2098,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6541075.jpg"
  },
  "pexels-6660780.jpg": {
   "theme": "sommeil",
@@ -542,7 +576,8 @@
   "url": "https://images.pexels.com/photos/6660780/pexels-photo-6660780.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6660780.jpg"
  },
  "pexels-4913538.jpg": {
   "theme": "sommeil",
@@ -553,7 +588,8 @@
   "url": "https://images.pexels.com/photos/4913538/pexels-photo-4913538.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-4913538.jpg"
  },
  "pexels-18280834.jpg": {
   "theme": "sommeil",
@@ -564,7 +600,8 @@
   "url": "https://images.pexels.com/photos/18280834/pexels-photo-18280834.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-18280834.jpg"
  },
  "pexels-17994860.jpg": {
   "theme": "sommeil",
@@ -575,7 +612,8 @@
   "url": "https://images.pexels.com/photos/17994860/pexels-photo-17994860.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-17994860.jpg"
  },
  "pexels-6940348.jpg": {
   "theme": "sommeil",
@@ -586,7 +624,8 @@
   "url": "https://images.pexels.com/photos/6940348/pexels-photo-6940348.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6940348.jpg"
  },
  "pexels-29100031.jpg": {
   "theme": "sommeil",
@@ -597,7 +636,8 @@
   "url": "https://images.pexels.com/photos/29100031/pexels-photo-29100031.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-29100031.jpg"
  },
  "pexels-34036477.jpg": {
   "theme": "sommeil",
@@ -608,7 +648,8 @@
   "url": "https://images.pexels.com/photos/34036477/pexels-photo-34036477.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2112,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-34036477.jpg"
  },
  "pexels-26546535.jpg": {
   "theme": "sommeil",
@@ -619,7 +660,8 @@
   "url": "https://images.pexels.com/photos/26546535/pexels-photo-26546535.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2488,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-26546535.jpg"
  },
  "pexels-5490735.jpg": {
   "theme": "sommeil",
@@ -630,7 +672,7 @@
   "url": "https://images.pexels.com/photos/5490735/pexels-photo-5490735.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-35816155.jpg": {
   "theme": "sommeil",
@@ -641,7 +683,8 @@
   "url": "https://images.pexels.com/photos/35816155/pexels-photo-35816155.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-35816155.jpg"
  },
  "pexels-7880317.jpg": {
   "theme": "sommeil",
@@ -652,7 +695,8 @@
   "url": "https://images.pexels.com/photos/7880317/pexels-photo-7880317.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2489,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7880317.jpg"
  },
  "pexels-18383926.jpg": {
   "theme": "sommeil",
@@ -663,7 +707,8 @@
   "url": "https://images.pexels.com/photos/18383926/pexels-photo-18383926.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-18383926.jpg"
  },
  "pexels-6641820.jpg": {
   "theme": "sommeil",
@@ -674,7 +719,8 @@
   "url": "https://images.pexels.com/photos/6641820/pexels-photo-6641820.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6641820.jpg"
  },
  "pexels-5490723.jpg": {
   "theme": "sommeil",
@@ -685,7 +731,8 @@
   "url": "https://images.pexels.com/photos/5490723/pexels-photo-5490723.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-5490723.jpg"
  },
  "pexels-6248512.jpg": {
   "theme": "sommeil",
@@ -696,7 +743,8 @@
   "url": "https://images.pexels.com/photos/6248512/pexels-photo-6248512.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6248512.jpg"
  },
  "pexels-4045618.jpg": {
   "theme": "sommeil",
@@ -707,7 +755,7 @@
   "url": "https://images.pexels.com/photos/4045618/pexels-photo-4045618.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-36230058.jpg": {
   "theme": "sommeil",
@@ -718,7 +766,7 @@
   "url": "https://images.pexels.com/photos/36230058/pexels-photo-36230058.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 1898,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-36536301.jpg": {
   "theme": "sommeil",
@@ -729,7 +777,7 @@
   "url": "https://images.pexels.com/photos/36536301/pexels-photo-36536301.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 1867,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-9642303.jpg": {
   "theme": "sommeil",
@@ -740,7 +788,8 @@
   "url": "https://images.pexels.com/photos/9642303/pexels-photo-9642303.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-9642303.jpg"
  },
  "pexels-34874401.jpg": {
   "theme": "sommeil",
@@ -751,7 +800,8 @@
   "url": "https://images.pexels.com/photos/34874401/pexels-photo-34874401.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-34874401.jpg"
  },
  "pexels-6661036.jpg": {
   "theme": "sommeil",
@@ -762,7 +812,8 @@
   "url": "https://images.pexels.com/photos/6661036/pexels-photo-6661036.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6661036.jpg"
  },
  "pexels-6660829.jpg": {
   "theme": "sommeil",
@@ -773,7 +824,8 @@
   "url": "https://images.pexels.com/photos/6660829/pexels-photo-6660829.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6660829.jpg"
  },
  "pexels-8472937.jpg": {
   "theme": "sommeil",
@@ -784,7 +836,8 @@
   "url": "https://images.pexels.com/photos/8472937/pexels-photo-8472937.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-8472937.jpg"
  },
  "pexels-18844425.jpg": {
   "theme": "sommeil",
@@ -795,7 +848,8 @@
   "url": "https://images.pexels.com/photos/18844425/pexels-photo-18844425.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-18844425.jpg"
  },
  "pexels-30309410.jpg": {
   "theme": "sommeil",
@@ -806,7 +860,8 @@
   "url": "https://images.pexels.com/photos/30309410/pexels-photo-30309410.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-30309410.jpg"
  },
  "pexels-10123481.jpg": {
   "theme": "sommeil",
@@ -817,7 +872,8 @@
   "url": "https://images.pexels.com/photos/10123481/pexels-photo-10123481.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-10123481.jpg"
  },
  "pexels-10647894.jpg": {
   "theme": "sommeil",
@@ -828,7 +884,8 @@
   "url": "https://images.pexels.com/photos/10647894/pexels-photo-10647894.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-10647894.jpg"
  },
  "pexels-9787103.jpg": {
   "theme": "sommeil",
@@ -839,7 +896,8 @@
   "url": "https://images.pexels.com/photos/9787103/pexels-photo-9787103.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 1867,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-9787103.jpg"
  },
  "pexels-10350712.jpg": {
   "theme": "sommeil",
@@ -850,7 +908,8 @@
   "url": "https://images.pexels.com/photos/10350712/pexels-photo-10350712.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-10350712.jpg"
  },
  "pexels-5258409.jpg": {
   "theme": "sommeil",
@@ -861,7 +920,8 @@
   "url": "https://images.pexels.com/photos/5258409/pexels-photo-5258409.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2097,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-5258409.jpg"
  },
  "pexels-6616031.jpg": {
   "theme": "sommeil",
@@ -872,7 +932,7 @@
   "url": "https://images.pexels.com/photos/6616031/pexels-photo-6616031.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-3771069.jpg": {
   "theme": "sommeil",
@@ -883,7 +943,7 @@
   "url": "https://images.pexels.com/photos/3771069/pexels-photo-3771069.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-7556587.jpg": {
   "theme": "sommeil",
@@ -894,7 +954,8 @@
   "url": "https://images.pexels.com/photos/7556587/pexels-photo-7556587.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 935,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7556587.jpg"
  },
  "pexels-7241264.jpg": {
   "theme": "sommeil",
@@ -905,7 +966,8 @@
   "url": "https://images.pexels.com/photos/7241264/pexels-photo-7241264.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-7241264.jpg"
  },
  "pexels-5990970.jpg": {
   "theme": "sommeil",
@@ -916,7 +978,8 @@
   "url": "https://images.pexels.com/photos/5990970/pexels-photo-5990970.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-5990970.jpg"
  },
  "pexels-18243488.jpg": {
   "theme": "sommeil",
@@ -927,7 +990,7 @@
   "url": "https://images.pexels.com/photos/18243488/pexels-photo-18243488.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 1867,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-34243695.jpg": {
   "theme": "sommeil",
@@ -938,7 +1001,8 @@
   "url": "https://images.pexels.com/photos/34243695/pexels-photo-34243695.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 1750,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-34243695.jpg"
  },
  "pexels-8416276.jpg": {
   "theme": "sommeil",
@@ -949,7 +1013,7 @@
   "url": "https://images.pexels.com/photos/8416276/pexels-photo-8416276.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-8416435.jpg": {
   "theme": "sommeil",
@@ -960,7 +1024,8 @@
   "url": "https://images.pexels.com/photos/8416435/pexels-photo-8416435.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-8416435.jpg"
  },
  "pexels-6943442.jpg": {
   "theme": "sommeil",
@@ -971,7 +1036,7 @@
   "url": "https://images.pexels.com/photos/6943442/pexels-photo-6943442.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6943998.jpg": {
   "theme": "sommeil",
@@ -982,7 +1047,8 @@
   "url": "https://images.pexels.com/photos/6943998/pexels-photo-6943998.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6943998.jpg"
  },
  "pexels-6951529.jpg": {
   "theme": "sommeil",
@@ -993,7 +1059,7 @@
   "url": "https://images.pexels.com/photos/6951529/pexels-photo-6951529.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6940879.jpg": {
   "theme": "sommeil",
@@ -1004,7 +1070,8 @@
   "url": "https://images.pexels.com/photos/6940879/pexels-photo-6940879.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6940879.jpg"
  },
  "pexels-6940374.jpg": {
   "theme": "sommeil",
@@ -1015,7 +1082,8 @@
   "url": "https://images.pexels.com/photos/6940374/pexels-photo-6940374.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6940374.jpg"
  },
  "pexels-6943440.jpg": {
   "theme": "sommeil",
@@ -1026,7 +1094,8 @@
   "url": "https://images.pexels.com/photos/6943440/pexels-photo-6943440.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6943440.jpg"
  },
  "pexels-6944009.jpg": {
   "theme": "sommeil",
@@ -1037,7 +1106,7 @@
   "url": "https://images.pexels.com/photos/6944009/pexels-photo-6944009.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6754015.jpg": {
   "theme": "sommeil",
@@ -1048,7 +1117,7 @@
   "url": "https://images.pexels.com/photos/6754015/pexels-photo-6754015.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6944004.jpg": {
   "theme": "sommeil",
@@ -1059,7 +1128,7 @@
   "url": "https://images.pexels.com/photos/6944004/pexels-photo-6944004.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "refusée"
  },
  "pexels-6754068.jpg": {
   "theme": "sommeil",
@@ -1070,7 +1139,8 @@
   "url": "https://images.pexels.com/photos/6754068/pexels-photo-6754068.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6754068.jpg"
  },
  "pexels-6754011.jpg": {
   "theme": "sommeil",
@@ -1081,6 +1151,7 @@
   "url": "https://images.pexels.com/photos/6754011/pexels-photo-6754011.jpeg?auto=compress&cs=tinysrgb&w=1400",
   "largeur": 1400,
   "hauteur": 2100,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/pexels-6754011.jpg"
  }
 }

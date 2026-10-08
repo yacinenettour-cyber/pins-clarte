@@ -950,5 +950,341 @@
   ],
   "x": 0.5,
   "source": "manuel (vérifié à l'œil, 07/10)"
+ },
+ "pexels-10061441.jpg": {
+  "tete": [
+   0.525,
+   0.761
+  ],
+  "x": 0.601,
+  "source": "visage"
+ },
+ "pexels-17491560.jpg": {
+  "tete": [
+   0.415,
+   0.653
+  ],
+  "x": 0.589,
+  "source": "posture"
+ },
+ "pexels-26546535.jpg": {
+  "tete": [
+   0.531,
+   0.597
+  ],
+  "x": 0.082,
+  "source": "posture"
+ },
+ "pexels-34243695.jpg": {
+  "tete": [
+   0.434,
+   0.677
+  ],
+  "x": 0.415,
+  "source": "visage"
+ },
+ "pexels-3465878.jpg": {
+  "tete": [
+   0.079,
+   0.291
+  ],
+  "x": 0.36,
+  "source": "visage"
+ },
+ "pexels-34874401.jpg": {
+  "tete": [
+   0.328,
+   0.534
+  ],
+  "x": 0.442,
+  "source": "visage"
+ },
+ "pexels-5490723.jpg": {
+  "tete": [
+   0.551,
+   0.617
+  ],
+  "x": 0.374,
+  "source": "posture"
+ },
+ "pexels-5990970.jpg": {
+  "tete": [
+   0.086,
+   0.67
+  ],
+  "x": 0.412,
+  "source": "visage"
+ },
+ "pexels-6248512.jpg": {
+  "tete": [
+   0.318,
+   0.507
+  ],
+  "x": 0.38,
+  "source": "visage"
+ },
+ "pexels-6541075.jpg": {
+  "tete": [
+   0.143,
+   0.531
+  ],
+  "x": 0.553,
+  "source": "visage"
+ },
+ "pexels-6555228.jpg": {
+  "tete": [
+   0.393,
+   0.463
+  ],
+  "x": 0.455,
+  "source": "posture"
+ },
+ "pexels-6598229.jpg": {
+  "tete": [
+   0.547,
+   0.749
+  ],
+  "x": 0.681,
+  "source": "visage"
+ },
+ "pexels-6598236.jpg": {
+  "tete": [
+   0.585,
+   0.675
+  ],
+  "x": 0.526,
+  "source": "posture"
+ },
+ "pexels-6598243.jpg": {
+  "tete": [
+   0.286,
+   0.551
+  ],
+  "x": 0.52,
+  "source": "visage"
+ },
+ "pexels-6641820.jpg": {
+  "tete": [
+   0.589,
+   0.655
+  ],
+  "x": 0.576,
+  "source": "posture"
+ },
+ "pexels-6660780.jpg": {
+  "tete": [
+   0.415,
+   0.685
+  ],
+  "x": 0.441,
+  "source": "visage"
+ },
+ "pexels-6660829.jpg": {
+  "tete": [
+   0.593,
+   0.804
+  ],
+  "x": 0.318,
+  "source": "visage"
+ },
+ "pexels-6661036.jpg": {
+  "tete": [
+   0.268,
+   0.397
+  ],
+  "x": 0.471,
+  "source": "posture"
+ },
+ "pexels-6716219.jpg": {
+  "tete": [
+   0.431,
+   0.513
+  ],
+  "x": 0.81,
+  "source": "posture"
+ },
+ "pexels-6753359.jpg": {
+  "tete": [
+   0.347,
+   0.461
+  ],
+  "x": 0.468,
+  "source": "posture"
+ },
+ "pexels-6754011.jpg": {
+  "tete": [
+   0.46,
+   0.533
+  ],
+  "x": 0.584,
+  "source": "posture"
+ },
+ "pexels-6754068.jpg": {
+  "tete": [
+   0.32,
+   0.618
+  ],
+  "x": 0.41,
+  "source": "visage"
+ },
+ "pexels-6863351.jpg": {
+  "tete": [
+   0.357,
+   0.497
+  ],
+  "x": 0.722,
+  "source": "posture"
+ },
+ "pexels-6940374.jpg": {
+  "tete": [
+   0.071,
+   0.286
+  ],
+  "x": 0.476,
+  "source": "visage"
+ },
+ "pexels-6940879.jpg": {
+  "tete": [
+   0.128,
+   0.346
+  ],
+  "x": 0.493,
+  "source": "visage"
+ },
+ "pexels-6941123.jpg": {
+  "tete": [
+   0.232,
+   0.475
+  ],
+  "x": 0.54,
+  "source": "visage"
+ },
+ "pexels-6943437.jpg": {
+  "tete": [
+   0.3,
+   0.554
+  ],
+  "x": 0.569,
+  "source": "visage"
+ },
+ "pexels-6943999.jpg": {
+  "tete": [
+   0.249,
+   0.348
+  ],
+  "x": 0.348,
+  "source": "posture"
+ },
+ "pexels-7241264.jpg": {
+  "tete": [
+   0.299,
+   0.503
+  ],
+  "x": 0.398,
+  "source": "visage"
+ },
+ "pexels-7269393.jpg": {
+  "tete": [
+   0.302,
+   0.597
+  ],
+  "x": 0.426,
+  "source": "visage"
+ },
+ "pexels-7436480.jpg": {
+  "tete": [
+   0.41,
+   0.576
+  ],
+  "x": 0.567,
+  "source": "posture"
+ },
+ "pexels-7445251.jpg": {
+  "tete": [
+   0.584,
+   0.765
+  ],
+  "x": 0.65,
+  "source": "visage"
+ },
+ "pexels-7445268.jpg": {
+  "tete": [
+   0.385,
+   0.655
+  ],
+  "x": 0.426,
+  "source": "visage"
+ },
+ "pexels-7556587.jpg": {
+  "tete": [
+   0.325,
+   0.647
+  ],
+  "x": 0.425,
+  "source": "visage"
+ },
+ "pexels-7623557.jpg": {
+  "tete": [
+   0.101,
+   0.329
+  ],
+  "x": 0.343,
+  "source": "visage"
+ },
+ "pexels-8070511.jpg": {
+  "tete": [
+   0.418,
+   0.61
+  ],
+  "x": 0.5,
+  "source": "visage"
+ },
+ "pexels-8416435.jpg": {
+  "tete": [
+   0.367,
+   0.627
+  ],
+  "x": 0.525,
+  "source": "posture"
+ },
+ "pexels-8472937.jpg": {
+  "tete": [
+   0.362,
+   0.454
+  ],
+  "x": 0.329,
+  "source": "posture"
+ },
+ "pexels-8810538.jpg": {
+  "tete": [
+   0.306,
+   0.547
+  ],
+  "x": 0.61,
+  "source": "visage"
+ },
+ "pexels-8947433.jpg": {
+  "tete": [
+   0.316,
+   0.636
+  ],
+  "x": 0.486,
+  "source": "visage"
+ },
+ "pexels-9642303.jpg": {
+  "tete": [
+   0.096,
+   0.357
+  ],
+  "x": 0.435,
+  "source": "visage"
+ },
+ "pexels-9787613.jpg": {
+  "tete": [
+   0.283,
+   0.356
+  ],
+  "x": 0.41,
+  "source": "posture"
  }
 }
