@@ -2383,14 +2383,6 @@
   "x": 0.551,
   "source": "visage"
  },
- "unsplash-30-d_4YXx1s.jpg": {
-  "tete": [
-   0.071,
-   0.639
-  ],
-  "x": 0.762,
-  "source": "visage"
- },
  "unsplash-3KRdy9mBu7o.jpg": {
   "tete": [
    0.219,
@@ -2407,46 +2399,6 @@
   "x": 0.44,
   "source": "visage"
  },
- "unsplash-5I263mnTkPc.jpg": {
-  "tete": [
-   0.278,
-   0.54
-  ],
-  "x": 0.47,
-  "source": "visage"
- },
- "unsplash-5cczlv2mbFY.jpg": {
-  "tete": [
-   0.25,
-   0.594
-  ],
-  "x": 0.476,
-  "source": "visage"
- },
- "unsplash-63qwHERpljs.jpg": {
-  "tete": [
-   0.171,
-   0.536
-  ],
-  "x": 0.511,
-  "source": "visage"
- },
- "unsplash-8EaoURl1i5I.jpg": {
-  "tete": [
-   0.179,
-   0.429
-  ],
-  "x": 0.487,
-  "source": "visage"
- },
- "unsplash-ACEM0LPI4as.jpg": {
-  "tete": [
-   0.197,
-   0.469
-  ],
-  "x": 0.4,
-  "source": "visage"
- },
  "unsplash-BpTqCNotBLI.jpg": {
   "tete": [
    0.393,
@@ -2454,22 +2406,6 @@
   ],
   "x": 0.586,
   "source": "posture"
- },
- "unsplash-C6X6MikcNi8.jpg": {
-  "tete": [
-   0.199,
-   0.417
-  ],
-  "x": 0.509,
-  "source": "visage"
- },
- "unsplash-CDvZUZbN-WQ.jpg": {
-  "tete": [
-   0.397,
-   0.659
-  ],
-  "x": 0.548,
-  "source": "visage"
  },
  "unsplash-EDjSIcF41_4.jpg": {
   "tete": [
@@ -2487,76 +2423,12 @@
   "x": 0.506,
   "source": "visage"
  },
- "unsplash-GKgZ2A56-xk.jpg": {
-  "tete": [
-   0.252,
-   0.533
-  ],
-  "x": 0.426,
-  "source": "visage"
- },
- "unsplash-MOBgCOgZu0Q.jpg": {
-  "tete": [
-   0.41,
-   0.611
-  ],
-  "x": 0.508,
-  "source": "visage"
- },
  "unsplash-N1b617BsQJs.jpg": {
   "tete": [
    0.196,
    0.519
   ],
   "x": 0.638,
-  "source": "visage"
- },
- "unsplash-N98ddJK37JE.jpg": {
-  "tete": [
-   0.369,
-   0.446
-  ],
-  "x": 0.251,
-  "source": "posture"
- },
- "unsplash-NMmQQE-N-_Y.jpg": {
-  "tete": [
-   0.196,
-   0.432
-  ],
-  "x": 0.376,
-  "source": "visage"
- },
- "unsplash-Nyg_gvnLr4s.jpg": {
-  "tete": [
-   0.096,
-   0.546
-  ],
-  "x": 0.583,
-  "source": "visage"
- },
- "unsplash-QT0UgsLnZfw.jpg": {
-  "tete": [
-   0,
-   0.36
-  ],
-  "x": 0.323,
-  "source": "visage"
- },
- "unsplash-R6dSBkz32B8.jpg": {
-  "tete": [
-   0.131,
-   0.437
-  ],
-  "x": 0.631,
-  "source": "visage"
- },
- "unsplash-TcuE8avK3gs.jpg": {
-  "tete": [
-   0.383,
-   0.592
-  ],
-  "x": 0.666,
   "source": "visage"
  },
  "unsplash-Vb6RNy1gkvk.jpg": {
@@ -2566,14 +2438,6 @@
   ],
   "x": 0.356,
   "source": "visage"
- },
- "unsplash-bKrmXTShj7k.jpg": {
-  "tete": [
-   0.319,
-   0.423
-  ],
-  "x": 0.601,
-  "source": "posture"
  },
  "unsplash-c4wfPC8gtIU.jpg": {
   "tete": [
@@ -2591,14 +2455,6 @@
   "x": 0.781,
   "source": "posture"
  },
- "unsplash-flhY199Z-Zo.jpg": {
-  "tete": [
-   0.419,
-   0.629
-  ],
-  "x": 0.549,
-  "source": "visage"
- },
  "unsplash-gKwGmpqqa6A.jpg": {
   "tete": [
    0.26,
@@ -2615,14 +2471,6 @@
   "x": 0.567,
   "source": "visage"
  },
- "unsplash-hYdikKrex4U.jpg": {
-  "tete": [
-   0.445,
-   0.572
-  ],
-  "x": 0.503,
-  "source": "posture"
- },
  "unsplash-jXHzr2qTvn4.jpg": {
   "tete": [
    0.269,
@@ -2631,60 +2479,12 @@
   "x": 0.534,
   "source": "posture"
  },
- "unsplash-kS0Ri23k43w.jpg": {
-  "tete": [
-   0.218,
-   0.447
-  ],
-  "x": 0.343,
-  "source": "visage"
- },
  "unsplash-mXq5jj6Ea90.jpg": {
   "tete": [
    0.101,
    0.197
   ],
   "x": 0.72,
-  "source": "posture"
- },
- "unsplash-mlwhyTY5Kv8.jpg": {
-  "tete": [
-   0.232,
-   0.461
-  ],
-  "x": 0.509,
-  "source": "visage"
- },
- "unsplash-r4azEw-h2Fk.jpg": {
-  "tete": [
-   0.095,
-   0.452
-  ],
-  "x": 0.526,
-  "source": "visage"
- },
- "unsplash-rFF5Du_a0xk.jpg": {
-  "tete": [
-   0.25,
-   0.569
-  ],
-  "x": 0.438,
-  "source": "visage"
- },
- "unsplash-slwju2a7MbU.jpg": {
-  "tete": [
-   0.598,
-   0.682
-  ],
-  "x": 0.69,
-  "source": "posture"
- },
- "unsplash-txZv4HQJRpE.jpg": {
-  "tete": [
-   0.326,
-   0.428
-  ],
-  "x": 0.602,
   "source": "posture"
  },
  "unsplash-txzpx9doVWs.jpg": {
@@ -2711,14 +2511,6 @@
   "x": 0.548,
   "source": "posture"
  },
- "unsplash-x0Bdo3Gr-aE.jpg": {
-  "tete": [
-   0.217,
-   0.402
-  ],
-  "x": 0.392,
-  "source": "visage"
- },
  "unsplash-x_WXCyKBbzo.jpg": {
   "tete": [
    0.42,
@@ -2727,12 +2519,12 @@
   "x": 0.443,
   "source": "posture"
  },
- "unsplash-zrrUywtbuVA.jpg": {
+ "unsplash-hkh7KQrdk9Y.jpg": {
   "tete": [
-   0.446,
-   0.718
+   0.34,
+   0.42
   ],
-  "x": 0.499,
-  "source": "visage"
+  "x": 0.53,
+  "source": "manuel"
  }
 }
