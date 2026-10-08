@@ -29,7 +29,8 @@ def main():
         if nom in registre or os.path.exists(os.path.join("fonds", nom)):
             continue
         try:
-            r = requests.get(p["url"], headers=ENTETES, timeout=60)
+            # Referer : certaines banques (Pixabay) refusent le téléchargement direct sans lui.
+            r = requests.get(p["url"], headers=dict(ENTETES, Referer=p["page"]) if p.get("page") else ENTETES, timeout=60)
             r.raise_for_status()
             img = Image.open(io.BytesIO(r.content)).convert("RGB")
         except Exception as e:
