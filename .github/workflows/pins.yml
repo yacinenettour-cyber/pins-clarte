@@ -630,6 +630,61 @@ jobs:
                                    "7 gestes simples + tableau de suivi")
 
 
+          # Articles du site www.contactapaisement-mental.fr (09/10/2026, accord de l'utilisateur : « des
+          # épingles doivent aussi amener vers des articles de mon site »). Un pin qui porte le champ "article"
+          # (adresse de l'article sans le domaine, associée à la main d'après le sujet du pin) mène à cet
+          # article : toujours s'il n'a pas de guide, sinon tant que les articles font moins de 40 % des pins
+          # avec lien des 14 derniers jours. Il prend alors "description_article" (son texte sans l'appel au
+          # guide, avec une fin propre à chaque pin) et une carte « ARTICLE COMPLET » sur l'image.
+          SITE_WEB = "https://www.contactapaisement-mental.fr"
+          ARTICLES_SITE = {
+              "ruminations-le-soir": "Ruminations le soir",
+              "reveil-4h-du-matin": "Réveil à 4 h du matin",
+              "routine-du-soir-anti-stress": "Routine du soir pour mieux dormir",
+              "procrastination-du-coucher": "Procrastination du coucher",
+              "cortisol-et-sommeil": "Cortisol et sommeil",
+              "cortisol-hormone-du-stress": "Cortisol, hormone du stress",
+              "baisser-son-cortisol-naturellement": "Baisser son cortisol naturellement",
+              "alimentation-anti-stress": "Alimentation anti-stress",
+              "nerf-vague": "Nerf vague",
+              "calmer-son-systeme-nerveux": "Calmer son système nerveux",
+              "charge-mentale": "Charge mentale",
+              "signes-du-burn-out": "Signes du burn-out",
+          }
+          PART_ARTICLES = 0.4
+
+
+          def article_du_pin(pin, guide, historique):
+              slug = pin.get("article")
+              if slug not in ARTICLES_SITE or not pin.get("description_article"):
+                  return None
+              if guide is None:
+                  return slug
+              debut = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=14)).isoformat(timespec="minutes")
+              liens = [h["lien"] for h in historique if h.get("lien") and h.get("date", "") >= debut]
+              vers_articles = sum(1 for l in liens if l.startswith("article:"))
+              return slug if vers_articles < PART_ARTICLES * (len(liens) + 1) else None
+
+
+          def lignes_carte_article(slug):
+              return ("ARTICLE COMPLET · lien dans l'épingle", f"« {ARTICLES_SITE[slug]} »",
+                      "gratuit, avec ses sources scientifiques")
+
+
+          def lien_du_pin(guide, article, theme, titre):
+              if article:
+                  lien = f"{SITE_WEB}/{article}/"
+              else:
+                  lien = {"sommeil": os.environ["LIEN_PAGE"], "cortisol": LIEN_GUIDE_CORTISOL}.get(guide, "") if guide else ""
+              # Suivi par thème et par pin (systeme.io pour les guides, statistiques du site pour les articles).
+              if lien and "utm_source=" not in lien:
+                  # utm_content propre à chaque pin (07/10/2026) : chaque épingle pointe vers une adresse
+                  # distincte au lieu de ~7 épingles par jour vers exactement la même.
+                  slug = "-".join(re.findall(r"[a-z0-9]+", unicodedata.normalize("NFD", titre.lower()).encode("ascii", "ignore").decode()))[:60]
+                  lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=organic&utm_campaign={theme}&utm_content={slug}"
+              return lien
+
+
           def guide_du_pin(pin, theme):
               # "sommeil" (LIEN_PAGE), "cortisol" (LIEN_GUIDE_CORTISOL) ou None (pas de lien).
               choix = pin.get("guide")
@@ -720,9 +775,15 @@ jobs:
           pin["titre"] = pin["titre"][:100]
           theme = deviner_theme(pin["description"])
           guide = guide_du_pin(pin, theme)
-          if guide == "cortisol" and pin.get("description_guide_cortisol"):
+          article = article_du_pin(pin, guide, historique)
+          if article:
+              guide = None
+              pin["description"] = pin["description_article"]
+          elif guide == "cortisol" and pin.get("description_guide_cortisol"):
               pin["description"] = pin["description_guide_cortisol"]
-          LIGNES_CARTE = LIGNES_CARTE_CORTISOL if guide == "cortisol" else GUIDE_LIGNES
+          LIGNES_CARTE = (lignes_carte_article(article) if article
+                          else LIGNES_CARTE_CORTISOL if guide == "cortisol" else GUIDE_LIGNES)
+          print("Cible du lien :", ("article " + article) if article else ("guide " + guide) if guide else "aucune")
 
           hashtags_m = re.search(r"(\s#\w+(?:\s#\w+)*)\s*$", pin["description"])
           hashtags = hashtags_m.group(1).strip() if hashtags_m else ""
@@ -731,7 +792,7 @@ jobs:
           phrase = random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
           # Ne jamais laisser la phrase d'enregistrement pousser dehors l'appel au guide
           # (troncature du corps) ni s'ajouter après lui.
-          if phrase and (re.search(r"(?i)guide|plan (anti-cortisol|gratuit)", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
+          if phrase and (article or re.search(r"(?i)guide|plan (anti-cortisol|gratuit)", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
               phrase = ""
           queue = " ".join(p for p in [phrase, hashtags] if p)
           budget_corps = 495 - (len(queue) + 1 if queue else 0)
@@ -789,7 +850,7 @@ jobs:
                       sys.exit("Aucune photo inédite pour ce pin : publication annulée plutôt que de réutiliser une photo.")
                   fond_etiquette = fond
 
-              avec_lien = guide is not None
+              avec_lien = guide is not None or bool(article)
               if design == "clair" and pin.get("points_image"):
                   dessiner_clair_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
               elif design == "clair":
@@ -846,13 +907,7 @@ jobs:
               "energie": "600175156532025122",
           }
 
-          lien = {"sommeil": os.environ["LIEN_PAGE"], "cortisol": LIEN_GUIDE_CORTISOL}.get(guide, "")
-          # Suivi des inscrits venus de Pinterest dans systeme.io (URL source du contact), par thème.
-          if lien and "utm_source=" not in lien:
-              # utm_content propre à chaque pin (07/10/2026) : chaque épingle pointe vers une adresse
-              # distincte au lieu de ~7 épingles par jour vers exactement la même.
-              slug = "-".join(re.findall(r"[a-z0-9]+", unicodedata.normalize("NFD", pin["titre"].lower()).encode("ascii", "ignore").decode()))[:60]
-              lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=organic&utm_campaign={theme}&utm_content={slug}"
+          lien = lien_du_pin(guide, article, theme, pin["titre"])
 
           # Publication directe via l'API Composio (comme videos.yml) : permet le texte
           # alternatif et la confirmation réelle du pin avant l'inscription à l'historique.
@@ -896,7 +951,8 @@ jobs:
           # Le pin est en ligne : l'inscription à l'historique ne doit jamais être perdue.
           entree = {"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
                     "titre": pin["titre"], "image": chemin, "fond": fond_etiquette, "theme": theme,
-                    "design": design, "pin_id": pin_id, "md5": anti_doublons.empreinte(chemin)}
+                    "design": design, "pin_id": pin_id, "md5": anti_doublons.empreinte(chemin),
+                    "lien": ("article:" + article) if article else ("guide:" + guide) if guide else ""}
           limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
           for n in range(6):
               git("fetch", "origin", "main")
