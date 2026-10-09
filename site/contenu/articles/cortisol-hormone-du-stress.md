@@ -99,7 +99,7 @@ Un stress chronique peut provoquer, en quelques semaines, des troubles du sommei
 
 Ces habitudes entretiennent souvent le cercle. Si la situation dure encore, le risque de problèmes plus installés augmente, comme l'hypertension, les troubles métaboliques, l'anxiété ou la dépression [2]. Pas de panique pour autant : l'INRS rappelle que l'état de stress n'est pas une maladie en soi, mais qu'intense et durable, il peut avoir des effets sérieux sur la santé physique et mentale [2].
 
-Les gestes qui aident à retrouver un rythme plus apaisé (sommeil, lumière du jour, mouvement, respiration, liens sociaux) font l'objet d'un article à part : [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/).
+Le lien entre le cortisol et les nuits agitées fait l'objet d'un article à part, [cortisol et sommeil](/cortisol-et-sommeil/). Les gestes qui aident à retrouver un rythme plus apaisé (sommeil, lumière du jour, mouvement, respiration, liens sociaux) font l'objet d'un article à part : [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/).
 
 ## « Cortisol face », « cortisol élevé » : que penser de la mode des réseaux ?
 

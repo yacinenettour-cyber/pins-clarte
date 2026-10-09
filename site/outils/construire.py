@@ -17,6 +17,7 @@ import html
 import json
 import os
 import re
+from urllib.parse import quote
 import shutil
 import sys
 from xml.sax.saxutils import escape as xml_escape
@@ -59,6 +60,8 @@ def etiqueter_cellules(table):
 def md(texte):
     rendu = markdown.markdown(texte, extensions=["extra", "sane_lists"], output_format="html")
     rendu = re.sub(r"<table>.*?</table>", lambda m: etiqueter_cellules(m.group(0)), rendu, flags=re.S)
+    # En-tête de première colonne vide (« | | A | B | ») : intitulé lu par les lecteurs d'écran seulement.
+    rendu = re.sub(r"<th([^>]*)>\s*</th>", r'<th\1><span class="lecteur-ecran">Critère</span></th>', rendu)
     return rendu.replace("<table>", '<div class="tableau"><table>').replace("</table>", "</table></div>")
 
 
@@ -159,7 +162,8 @@ def lire_article(chemin):
         elif cle == "pour aller plus loin":
             suite = texte
         elif cle == "sources":
-            for titre_s, url_s in re.findall(r"^\s*\d+\.\s*\[(.+?)\]\((https?://[^)\s]+)\)", texte, flags=re.M):
+            # L'adresse peut contenir des parenthèses équilibrées (DOI du type S0006-3223(03)00465-7).
+            for titre_s, url_s in re.findall(r"^\s*\d+\.\s*\[(.+?)\]\((https?://(?:[^()\s]|\([^()\s]*\))+)\)", texte, flags=re.M):
                 sources.append((titre_s.strip(), url_s.strip()))
         elif titre is None:
             intro = (intro + "\n\n" + texte).strip()
@@ -214,6 +218,67 @@ def preparer_image(nom):
     og.save(os.path.join(dossier, f"og-{base}.jpg"), "JPEG", quality=82, optimize=True)
     sorties["og"] = f"/img/og-{base}.jpg"
     return sorties
+
+
+def image_epingle(a):
+    """Image verticale 1000x1500 au format épingle : photo en haut, titre dans un bandeau sombre en dessous
+    (le texte ne recouvre jamais la photo). Sert au bouton « Enregistrer sur Pinterest » de l'article."""
+    from PIL import ImageDraw, ImageFont
+    if not a.get("image"):
+        return None
+    source = os.path.join(RACINE, "images", a["image"])
+    if not os.path.exists(source):
+        source = os.path.join(DEPOT, "fonds", a["image"])
+    W, H, H_PHOTO = 1000, 1500, 860
+    toile = Image.new("RGB", (W, H), "#080C10")
+    photo = ImageOps.fit(ImageOps.exif_transpose(Image.open(source)).convert("RGB"), (W, H_PHOTO), Image.LANCZOS, centering=(0.5, 0.35))
+    if not a["images"].get("sombre"):
+        # Même teinte douce que sur le site.
+        photo = Image.blend(photo, Image.new("RGB", photo.size, "#3A5F43"), 0.10)
+    toile.paste(photo, (0, 0))
+    d = ImageDraw.Draw(toile)
+    d.rectangle((0, H_PHOTO, W, H_PHOTO + 8), fill="#8FBF9A")
+    marge, haut, bas = 70, H_PHOTO + 70, H - 150
+    def couper(texte, police, largeur):
+        lignes, ligne = [], ""
+        for mot in texte.split():
+            essai = (ligne + " " + mot).strip()
+            if d.textlength(essai, font=police) <= largeur:
+                ligne = essai
+            else:
+                lignes.append(ligne); ligne = mot
+        return lignes + [ligne]
+    titre = a["titre_seo"]
+    for taille in range(72, 38, -2):
+        police = ImageFont.truetype(os.path.join(DEPOT, "Poppins-Bold.ttf"), taille)
+        lignes = couper(titre, police, W - 2 * marge)
+        hauteur_ligne = int(taille * 1.22)
+        if len(lignes) * hauteur_ligne <= bas - haut:
+            break
+    y = haut
+    for ligne in lignes:
+        d.text((marge, y), ligne, font=police, fill="#DFD5C6"); y += hauteur_ligne
+    petite = ImageFont.truetype(os.path.join(DEPOT, "Poppins-Regular.ttf"), 30)
+    d.text((marge, H - 100), "Clarté Mentale · contactapaisement-mental.fr", font=petite, fill="#8FBF9A")
+    chemin = os.path.join(SORTIE, "img", f"epingle-{a['slug']}.jpg")
+    toile.save(chemin, "JPEG", quality=86, optimize=True)
+    return f"/img/epingle-{a['slug']}.jpg"
+
+
+def bloc_epingle(a):
+    """Bouton « Enregistrer sur Pinterest » : simple lien vers Pinterest, sans script ni cookie sur le site."""
+    if not a.get("epingle"):
+        return ""
+    lien = ("https://www.pinterest.com/pin/create/button/?url=" + quote(f"{URL}/{a['slug']}/", safe="")
+            + "&media=" + quote(URL + a["epingle"], safe="") + "&description=" + quote(f"{a['titre']} — {a['description']}"[:480], safe=""))
+    return f"""<aside class="epingle" id="enregistrer" aria-label="Enregistrer sur Pinterest">
+<img src="{a['epingle']}" width="1000" height="1500" alt="{e(a['titre_seo'])} : fiche à enregistrer sur Pinterest" loading="lazy" decoding="async">
+<div>
+<p class="type">À garder pour plus tard</p>
+<p>Enregistre cet article sur Pinterest pour le retrouver le soir où tu en auras besoin.</p>
+<a class="bouton-pinterest" href="{lien}" target="_blank" rel="noopener">Enregistrer sur Pinterest</a>
+</div>
+</aside>"""
 
 
 # ---------------------------------------------------------------- gabarits
@@ -444,7 +509,7 @@ def construire_article(a, tous):
 <article>
 <h1>{e(a['titre'])}</h1>
 <p class="meta">Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{a["maj"]}">{date_fr(a['maj'])}</time> · {a['lecture']} min de lecture</p>
-<p class="bilan-sources"><a href="#sources">{e(bilan_sources(a['sources']))}</a><a href="/methode-editoriale/">Méthode éditoriale</a></p>
+<p class="bilan-sources"><a href="#sources">{e(bilan_sources(a['sources']))}</a><a href="/methode-editoriale/">Méthode éditoriale</a>{'<a href="#enregistrer">Enregistrer sur Pinterest</a>' if a.get('epingle') else ''}</p>
 {intro_html}
 {photo}
 {resume}
@@ -452,6 +517,7 @@ def construire_article(a, tous):
 {corps_html}
 {faq_html}
 {suite_html}
+{bloc_epingle(a)}
 {sources_html}
 <p class="avertissement">Cet article donne des repères de bien-être fondés sur les sources citées. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
 </article>
@@ -644,6 +710,15 @@ def construire_guides():
                                               "/guides-gratuits/", contenu, [schema_ariane], nav="/guides-gratuits/"))
 
 
+COMPARATIF_FORMATION = """| | Guide gratuit | Formation |
+|---|---|---|
+| Format | Un PDF à télécharger | 6 modules, près de 30 leçons courtes, des audios guidés et un kit de 7 fiches à imprimer |
+| Ce qu'on y travaille | Une routine anti-rumination à faire au lit et des exercices pour calmer le mental le soir | Apaiser le système nerveux, sortir des ruminations sans lutter, un rituel du soir en 3 versions, les réveils nocturnes et les situations particulières (travail qui suit jusqu'au lit, nuits hachées de parent, horaires décalés) |
+| Le rythme | Un calendrier de 30 jours | Le parcours des 28 soirs : une action par soir, avec une auto-évaluation aux jours 1, 14 et 28 |
+| Les audios | Aucun | Des audios guidés à écouter au lit, dont un audio express de 3 minutes |
+| Le prix | Gratuit | 37 €, paiement unique, garantie de 7 jours |"""
+
+
 def construire_formation():
     f = SITE["formation"]
     achat = f"{f['url']}?utm_source=site&utm_medium=page&utm_campaign=la-formation"
@@ -667,6 +742,9 @@ def construire_formation():
 <h2>Ce que contient le programme</h2>
 <p>6 modules, près de 30 leçons courtes et sans jargon, des audios guidés et un kit de fiches à imprimer. Accès depuis ton téléphone, ta tablette ou ton ordinateur.</p>
 <div class="modules">{modules}</div>
+<h2>Guide gratuit ou formation : quelle différence ?</h2>
+<p>Le guide gratuit est une première marche ; la formation reprend la même approche et va beaucoup plus loin. Voici ce qui change :</p>
+{md(COMPARATIF_FORMATION)}
 <div class="deux-listes">
 <div><h2>C'est pour toi si…</h2>{liste(f['pour_toi'], 'oui')}</div>
 <div><h2>Ce n'est pas pour toi si…</h2>{liste(f['pas_pour_toi'], 'non')}</div>
@@ -780,7 +858,7 @@ def construire_fichiers_techniques(articles):
         if a["faq"]:
             complet += ["## Questions fréquentes", ""] + [f"### {q}\n\n{r}\n" for q, r in a["faq"]]
         if a["sources"]:
-            complet += ["## Sources", ""] + [f"{i + 1}. [{t}]({u})" for i, (t, u) in enumerate(a["sources"])] + [""]
+            complet += ["## Sources", ""] + [f"{i + 1}. [{t}]({u.replace('(', '%28').replace(')', '%29')})" for i, (t, u) in enumerate(a["sources"])] + [""]
     ecrire("llms-full.txt", "\n".join(complet))
     # Flux RSS.
     items = "".join(
@@ -833,6 +911,7 @@ def main():
     articles.sort(key=lambda a: ordre.index(a["slug"]) if a["slug"] in ordre else len(ordre))
     for a in articles:
         a["images"] = preparer_image(a["image"])
+        a["epingle"] = image_epingle(a) if a["images"] else None
     for a in articles:
         construire_article(a, articles)
     construire_accueil(articles)

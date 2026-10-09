@@ -26,7 +26,7 @@ Si tu veux d'abord comprendre d'où vient cette hormone et à quoi elle sert, li
 
 ## Comment le sommeil aide-t-il à baisser son cortisol naturellement ?
 
-Le sommeil est le premier levier pour baisser son cortisol naturellement : dans l'étude de l'Université de Chicago, une seule nuit raccourcie suffisait à faire grimper le cortisol du soir suivant [2]. Protéger ton sommeil, c'est donc protéger ce moment où l'hormone doit redescendre.
+Le sommeil est le premier levier pour baisser son cortisol naturellement : dans l'étude de l'Université de Chicago, une seule nuit raccourcie suffisait à faire grimper le cortisol du soir suivant [2]. Protéger ton sommeil, c'est donc protéger ce moment où l'hormone doit redescendre (le détail des études est dans l'article [cortisol et sommeil](/cortisol-et-sommeil/)).
 
 La régularité compte autant que la durée. Selon l'Inserm, ton horloge biologique règle l'alternance veille-sommeil sur un rythme proche de 24 heures, et elle synchronise d'autres fonctions du corps, dont la production de cortisol [1]. D'où l'intérêt d'horaires réguliers : ils donnent à cette horloge des repères stables.
 

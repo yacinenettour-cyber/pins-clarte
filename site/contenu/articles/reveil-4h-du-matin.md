@@ -37,7 +37,7 @@ Le cortisol, l'[hormone du stress](/cortisol-hormone-du-stress/), remonte nature
 | Tôt le matin | À son maximum [4] |
 | Lors d'un réveil nocturne | Brève hausse [4] |
 
-Ce rythme est normal et concerne tout le monde. Chez les personnes qui dorment mal, l'Inserm décrit en revanche un « hyper-éveil » qui implique justement l'axe hormonal de la réponse au stress [2]. Garde quand même de la mesure : le cortisol n'est qu'un facteur parmi d'autres, à côté de la profondeur du sommeil, du stress, de l'alcool ou de la lumière.
+Ce rythme est normal et concerne tout le monde. Chez les personnes qui dorment mal, l'Inserm décrit en revanche un « hyper-éveil » qui implique justement l'axe hormonal de la réponse au stress [2]. Garde quand même de la mesure : le cortisol n'est qu'un facteur parmi d'autres, à côté de la profondeur du sommeil, du stress, de l'alcool ou de la lumière. Les études sur ce lien sont détaillées dans l'article [cortisol et sommeil](/cortisol-et-sommeil/).
 
 ### Parce que le stress fragilise la seconde moitié de la nuit
 
