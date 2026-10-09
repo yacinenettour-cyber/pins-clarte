@@ -41,4 +41,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://contactapaisement-mental.fr/sitemap.xml
+Sitemap: https://www.contactapaisement-mental.fr/sitemap.xml
