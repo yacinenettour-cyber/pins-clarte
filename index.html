@@ -683,20 +683,26 @@ section { position: relative; z-index: 1; }
     g.addColorStop(0, "rgba(58,95,67," + (0.22 + 0.18 * s).toFixed(3) + ")"); g.addColorStop(1, "rgba(58,95,67,0)");
     ctx.fillStyle = g; ctx.fillRect(0, 0, largeur, hauteur);
   }
+  /* 30 images par seconde suffisent pour un souffle à 6 cycles par minute : moitié moins de calcul, surtout sur téléphone. */
+  var dernier = 0;
   function animer(t) {
     if (!enCours) return;
+    requestAnimationFrame(animer);
+    if (t - dernier < 32) return;
+    dernier = t;
     for (var i = 0; i < noeuds.length; i++) {
-      var p = noeuds[i]; p.x += p.vx; p.y += p.vy;
+      var p = noeuds[i]; p.x += p.vx * 2; p.y += p.vy * 2;
       if (p.x < -10) p.x = largeur + 10; if (p.x > largeur + 10) p.x = -10;
       if (p.y < -10) p.y = hauteur + 10; if (p.y > hauteur + 10) p.y = -10;
     }
     dessiner(t);
-    requestAnimationFrame(animer);
   }
   dimensionner();
   window.addEventListener("resize", function () { clearTimeout(dimensionner.t); dimensionner.t = setTimeout(dimensionner, 150); });
   if (!reduit) {
-    requestAnimationFrame(animer);
+    /* L'animation démarre une fois la page chargée et le navigateur libre : la page s'affiche et répond d'abord. */
+    var lancer = function () { requestAnimationFrame(animer); };
+    if ("requestIdleCallback" in window) requestIdleCallback(lancer, { timeout: 2500 }); else setTimeout(lancer, 1200);
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(function (e) { var vu = e[0].isIntersecting; if (vu && !enCours) { enCours = true; requestAnimationFrame(animer); } else if (!vu) { enCours = false; } }).observe(canvas);
     }
