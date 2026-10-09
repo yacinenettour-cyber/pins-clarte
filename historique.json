@@ -1330,5 +1330,15 @@
   "design": "clair",
   "pin_id": "600175087890059150",
   "md5": "f2fb69d8b120efecd1dc86e1a63799a2"
+ },
+ {
+  "date": "2026-10-09T08:07+00:00",
+  "titre": "Stress et alimentation : 4 plats d'automne apaisants",
+  "image": "images/pin-20261009-080737.jpg",
+  "fond": "fonds/fond-175.jpg",
+  "theme": "alimentation",
+  "design": "sombre",
+  "pin_id": "600175087890059820",
+  "md5": "599d437486be0790631db75ac723a0d3"
  }
 ]
