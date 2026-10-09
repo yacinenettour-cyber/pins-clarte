@@ -114,6 +114,9 @@ TYPES_SOURCES = [
     ("who.int", "officiel", "Organisation mondiale de la santé"),
     ("service-public.gouv.fr", "officiel", "Service-Public.fr, site officiel de l'administration"),
     ("3114.fr", "officiel", "Numéro national de prévention du suicide"),
+    ("mangerbouger.fr", "officiel", "Manger Bouger, Programme national nutrition santé"),
+    ("efsa.europa.eu", "officiel", "Autorité européenne de sécurité des aliments"),
+    ("ods.od.nih.gov", "officiel", "Instituts nationaux de la santé des États-Unis (NIH)"),
     ("institut-sommeil-vigilance.org", "reference", "Institut national du sommeil et de la vigilance"),
     ("msdmanuals.com", "reference", "Manuel médical de référence"),
     ("clevelandclinic.org", "reference", "Cleveland Clinic, centre médical américain"),
@@ -306,10 +309,12 @@ def theme_de(a):
 
 
 def insecables(contenu):
-    """Typographie française : espace insécable avant « : ; ? ! » et à l'intérieur des guillemets, dans le texte
-    seulement (ni les balises, ni les scripts, ni les styles), pour éviter un « : » seul en début de ligne."""
+    """Typographie française : espace insécable avant « : ; ? ! % », entre un nombre et son unité et à l'intérieur
+    des guillemets, dans le texte seulement (ni les balises, ni les scripts, ni les styles), pour éviter un « : »
+    ou un « g » seul en début de ligne."""
     def texte(m):
-        t = re.sub(r" ([:;?!»])", "\u00a0\\1", m.group(1))
+        t = re.sub(r" ([:;?!»%])", "\u00a0\\1", m.group(1))
+        t = re.sub(r"(\d) (?=(?:g|mg|kg|ml|h|min)\b|€)", "\\1\u00a0", t)
         return ">" + t.replace("« ", "«\u00a0") + "<"
     morceaux = re.split(r"(<script.*?</script>|<style.*?</style>)", contenu, flags=re.S)
     return "".join(m if i % 2 else re.sub(r">([^<]+)<", texte, m) for i, m in enumerate(morceaux))

@@ -90,6 +90,13 @@
    "alt": "Femme qui marche sur un chemin en forêt",
    "credit": "Photo : Pexels"
   },
+  "alimentation-anti-stress": {
+   "categorie": "stress",
+   "image": "alimentation-anti-stress.jpg",
+   "alt": "Bol de saumon grillé, quinoa, avocat, brocoli et salade verte sur une table en bois",
+   "credit": "Image d'illustration",
+   "formation": false
+  },
   "nerf-vague": {
    "categorie": "stress",
    "image": "pexels-35317488.jpg",
@@ -279,6 +286,10 @@
     [
      "Tu as entendu parler du nerf vague et tu veux démêler le vrai du faux",
      "nerf-vague"
+    ],
+    [
+     "Tu te demandes quoi manger quand tu es stressé(e)",
+     "alimentation-anti-stress"
     ]
    ],
    "guide": "cortisol"
