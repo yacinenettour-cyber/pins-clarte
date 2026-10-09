@@ -1,5 +1,5 @@
 {
- "statut": "en cours : 8 faites le 08/10/2026 (quota gratuit Hugging Face épuisé ensuite), « Bain de forêt » couvert par une photo Unsplash, 17 restantes",
+ "statut": "en cours : 8 faites le 08/10/2026 et 6 le 09/10/2026 (quota gratuit Hugging Face épuisé ensuite), « Bain de forêt » couvert par une photo Unsplash, 11 restantes",
  "consigne": "Générer chaque photo (832x1248 ou plus), l'enregistrer dans fonds/ sous le nom indiqué, la classer \"dedie\" dans fonds_themes.json, ajouter son cadrage (outils/cadrage_fonds.py + vérification à l'œil), puis ajouter le champ \"photo\" au pin correspondant dans pins.json et relancer le test de rendu.",
  "prefixe_prompt": "Realistic editorial lifestyle photo, vertical 2:3, soft natural light, calm warm atmosphere, shallow depth of field, professional quality, no text, no logo, no watermark. ",
  "photos": [
@@ -54,32 +54,38 @@
   {
    "titre": "Ronflements du partenaire : 4 solutions pour dormir",
    "fichier": "dedie-ronflements.jpg",
-   "prompt": "A tired woman lying awake in bed at night next to a sleeping partner, dim blue night light, she stares at the ceiling."
+   "prompt": "A tired woman lying awake in bed at night next to a sleeping partner, dim blue night light, she stares at the ceiling.",
+   "statut": "faite le 09/10/2026"
   },
   {
    "titre": "Réveils de bébé : 3 gestes pour retrouver le sommeil",
    "fichier": "dedie-bebe-nuit.jpg",
-   "prompt": "A parent gently holding a baby in a dark nursery lit only by a soft warm night light, peaceful."
+   "prompt": "A parent gently holding a baby in a dark nursery lit only by a soft warm night light, peaceful.",
+   "statut": "faite le 09/10/2026"
   },
   {
    "titre": "Endormi sur le canapé, éveillé au lit : casser le cycle",
    "fichier": "dedie-canape-tele.jpg",
-   "prompt": "An adult dozing on a sofa under a blanket in a dark living room, lit by the glow of a television."
+   "prompt": "An adult dozing on a sofa under a blanket in a dark living room, lit by the glow of a television.",
+   "statut": "faite le 09/10/2026"
   },
   {
    "titre": "Nuits de tempête : 3 façons de dormir malgré le bruit",
    "fichier": "dedie-pluie-nuit.jpg",
-   "prompt": "A bedroom window at night with rain drops streaming down the glass, a cozy bed and dim lamp in the foreground."
+   "prompt": "A bedroom window at night with rain drops streaming down the glass, a cozy bed and dim lamp in the foreground.",
+   "statut": "faite le 09/10/2026"
   },
   {
    "titre": "Caresser ton chat ou ton chien : 10 minutes apaisantes",
    "fichier": "dedie-caresser-chat.jpg",
-   "prompt": "A hand gently stroking a relaxed sleeping cat on a soft blanket on a sofa, warm light."
+   "prompt": "A hand gently stroking a relaxed sleeping cat on a soft blanket on a sofa, warm light.",
+   "statut": "faite le 09/10/2026"
   },
   {
    "titre": "Stress : 3 raisons pour lesquelles le tricot apaise",
    "fichier": "dedie-tricot.jpg",
-   "prompt": "Close-up of hands knitting with soft wool yarn, a cup of tea nearby, cozy evening light."
+   "prompt": "Close-up of hands knitting with soft wool yarn, a cup of tea nearby, cozy evening light.",
+   "statut": "faite le 09/10/2026"
   },
   {
    "titre": "Stress : pourquoi jardiner 20 minutes te fait du bien",

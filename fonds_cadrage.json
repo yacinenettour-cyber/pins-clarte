@@ -2526,5 +2526,45 @@
   ],
   "x": 0.53,
   "source": "manuel"
+ },
+ "dedie-ronflements.jpg": {
+  "tete": [
+   0.46,
+   0.61
+  ],
+  "x": 0.45,
+  "source": "manuel"
+ },
+ "dedie-bebe-nuit.jpg": {
+  "tete": [
+   0.24,
+   0.58
+  ],
+  "x": 0.66,
+  "source": "manuel"
+ },
+ "dedie-canape-tele.jpg": {
+  "tete": [
+   0.5,
+   0.66
+  ],
+  "x": 0.62,
+  "source": "manuel"
+ },
+ "dedie-caresser-chat.jpg": {
+  "tete": [
+   0.42,
+   0.68
+  ],
+  "x": 0.45,
+  "source": "manuel"
+ },
+ "dedie-tricot.jpg": {
+  "tete": [
+   0.38,
+   0.62
+  ],
+  "x": 0.52,
+  "source": "manuel"
  }
 }
