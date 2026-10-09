@@ -1,7 +1,7 @@
 ---
 titre: Mentions légales et confidentialité
 titre_seo: Mentions légales et confidentialité | Clarté Mentale
-description: Éditeur, hébergeur, données personnelles, crédits photos et responsabilité du site Clarté Mentale (contactapaisement-mental.fr).
+description: Éditeur, hébergeur, données personnelles, crédits photos et responsabilité du site Clarté Mentale (www.contactapaisement-mental.fr).
 ---
 ## Éditeur du site
 
@@ -20,7 +20,7 @@ Les pages d'inscription aux guides gratuits et la page de paiement du programme 
 
 ## Données personnelles et cookies
 
-Ce site (contactapaisement-mental.fr) **ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience ni de publicité, et ne contient aucun formulaire**. L'éditeur ne collecte donc aucune donnée personnelle sur ce site. L'hébergeur GitHub peut enregistrer l'adresse IP des visiteurs dans ses journaux techniques, pour la sécurité du service (voir la [déclaration de confidentialité de GitHub](https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement)).
+Ce site (www.contactapaisement-mental.fr) **ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience ni de publicité, et ne contient aucun formulaire**. L'éditeur ne collecte donc aucune donnée personnelle sur ce site. L'hébergeur GitHub peut enregistrer l'adresse IP des visiteurs dans ses journaux techniques, pour la sécurité du service (voir la [déclaration de confidentialité de GitHub](https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement)).
 
 Si tu t'inscris à un guide gratuit, ton adresse e-mail est recueillie sur une page systeme.io, uniquement pour t'envoyer le guide et des conseils par e-mail. Tu peux te désinscrire en un clic depuis chaque e-mail, et demander l'accès, la rectification ou la suppression de tes données en écrivant à l'adresse ci-dessus. Tu peux aussi adresser une réclamation à la [CNIL](https://www.cnil.fr).
 

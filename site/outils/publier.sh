@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Construit le site et le met en ligne : remplace le contenu de la branche gh-pages
-# (servie par GitHub Pages sur contactapaisement-mental.fr) par site/_build/.
+# (servie par GitHub Pages sur www.contactapaisement-mental.fr) par site/_build/.
 set -euo pipefail
 DEPOT="$(cd "$(dirname "$0")/../.." && pwd)"
 python3 "$DEPOT/site/outils/construire.py"
