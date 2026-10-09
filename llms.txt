@@ -24,6 +24,10 @@ Site francophone écrit par Yacine Nettour (fondateur de clarté mentale), qui n
 - [Stress, cortisol et système nerveux : comprendre et apaiser](https://www.contactapaisement-mental.fr/stress-et-systeme-nerveux/): Stress et système nerveux : le rôle du cortisol, comment le faire redescendre naturellement, calmer le système nerveux et ce que l'on sait vraiment du nerf vague.
 - [Charge mentale et burn-out : alléger, repérer, se faire aider](https://www.contactapaisement-mental.fr/charge-mentale-et-burn-out/): Charge mentale et burn-out : définition de la charge mentale, méthodes pour l'alléger, signes du burn-out et à qui en parler. Articles sourcés (HAS, OMS, INRS).
 
+## Outils
+
+- [Test de stress et d'anxiété](https://www.contactapaisement-mental.fr/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.
+
 ## Guides gratuits
 
 - [Quand le cerveau refuse de dormir](https://lp.contactapaisement-mental.fr/tonguide): Pour les soirs où le mental tourne en boucle au moment de dormir. Une routine anti-rumination à faire au lit ; Des exercices pour calmer le mental le soir ; Un calendrier de 30 jours, sans matériel.

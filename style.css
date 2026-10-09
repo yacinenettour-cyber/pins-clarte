@@ -2,6 +2,31 @@
    Fond nuit organique, verre dépoli, vert émeraude brumeux pour le calme, or champagne pour le texte. */
 @font-face { font-family: "Syne"; src: url("/polices/syne.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
 @font-face { font-family: "Plus Jakarta Sans"; src: url("/polices/plus-jakarta-sans.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+/* Grand titre de l'accueil : même fichier que Syne, mais invisible le temps du chargement (font-display: block)
+   plutôt qu'affiché dans une police de secours très agrandie ; sa place est déjà réservée, rien ne bouge. */
+@font-face { font-family: "Syne bloc"; src: url("/polices/syne.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: block; }
+/* Polices de secours mises à l'échelle des polices du site (même largeur de texte) : pendant le chargement, le texte
+   occupe déjà sa place définitive, la page ne « saute » pas (CLS). A = Arial ou Helvetica, R = Roboto (Android). */
+@font-face { font-family: "Syne repli A"; src: local("Arial"), local("ArialMT"), local("Helvetica"), local("Liberation Sans"), local("LiberationSans"); font-weight: 100 449; size-adjust: 96.9%; }
+@font-face { font-family: "Syne repli A"; src: local("Arial"), local("ArialMT"), local("Helvetica"), local("Liberation Sans"), local("LiberationSans"); font-weight: 450 549; size-adjust: 104.6%; }
+@font-face { font-family: "Syne repli A"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"), local("Helvetica-Bold"), local("Liberation Sans Bold"), local("LiberationSans-Bold"); font-weight: 550 649; size-adjust: 104.2%; }
+@font-face { font-family: "Syne repli A"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"), local("Helvetica-Bold"), local("Liberation Sans Bold"), local("LiberationSans-Bold"); font-weight: 650 749; size-adjust: 112.0%; }
+@font-face { font-family: "Syne repli A"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"), local("Helvetica-Bold"), local("Liberation Sans Bold"), local("LiberationSans-Bold"); font-weight: 750 900; size-adjust: 161.2%; }
+@font-face { font-family: "Syne repli R"; src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"); font-weight: 100 449; size-adjust: 97.3%; }
+@font-face { font-family: "Syne repli R"; src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"); font-weight: 450 549; size-adjust: 105.1%; }
+@font-face { font-family: "Syne repli R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 550 649; size-adjust: 111.1%; }
+@font-face { font-family: "Syne repli R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 650 749; size-adjust: 119.4%; }
+@font-face { font-family: "Syne repli R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 750 900; size-adjust: 171.9%; }
+@font-face { font-family: "Jakarta repli A"; src: local("Arial"), local("ArialMT"), local("Helvetica"), local("Liberation Sans"), local("LiberationSans"); font-weight: 100 449; size-adjust: 103.9%; }
+@font-face { font-family: "Jakarta repli A"; src: local("Arial"), local("ArialMT"), local("Helvetica"), local("Liberation Sans"), local("LiberationSans"); font-weight: 450 549; size-adjust: 104.7%; }
+@font-face { font-family: "Jakarta repli A"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"), local("Helvetica-Bold"), local("Liberation Sans Bold"), local("LiberationSans-Bold"); font-weight: 550 649; size-adjust: 98.6%; }
+@font-face { font-family: "Jakarta repli A"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"), local("Helvetica-Bold"), local("Liberation Sans Bold"), local("LiberationSans-Bold"); font-weight: 650 749; size-adjust: 99.1%; }
+@font-face { font-family: "Jakarta repli A"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"), local("Helvetica-Bold"), local("Liberation Sans Bold"), local("LiberationSans-Bold"); font-weight: 750 900; size-adjust: 100.5%; }
+@font-face { font-family: "Jakarta repli R"; src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"); font-weight: 100 449; size-adjust: 104.4%; }
+@font-face { font-family: "Jakarta repli R"; src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"); font-weight: 450 549; size-adjust: 105.2%; }
+@font-face { font-family: "Jakarta repli R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 550 649; size-adjust: 105.2%; }
+@font-face { font-family: "Jakarta repli R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 650 749; size-adjust: 105.7%; }
+@font-face { font-family: "Jakarta repli R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 750 900; size-adjust: 107.1%; }
 :root {
   color-scheme: dark;
   --nuit: #080C10;
@@ -15,8 +40,8 @@
   --lisere: rgba(223, 213, 198, 0.10);
   --lisere-fort: rgba(223, 213, 198, 0.22);
   --ombre: rgba(0, 0, 0, 0.45);
-  --titre: "Syne", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  --texte: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --titre: "Syne", "Syne repli A", "Syne repli R", "Segoe UI", system-ui, sans-serif;
+  --texte: "Plus Jakarta Sans", "Jakarta repli A", "Jakarta repli R", "Segoe UI", system-ui, -apple-system, sans-serif;
   --rayon: 20px;
   --ombre-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.65);
   --ombre-lueur: 0 25px 50px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(143, 191, 154, 0.18), 0 18px 60px -20px rgba(58, 95, 67, 0.55);
@@ -212,3 +237,6 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }
+/* Photo de l'auteur (À propos) et petit portrait dans la ligne auteur. */
+.portrait { float: right; width: 112px; height: 112px; margin: 4px 0 12px 20px; border-radius: 50%; object-fit: cover; border: 2px solid var(--lisere-fort); box-shadow: 0 0 0 4px rgba(58, 95, 67, .25); }
+.avatar { display: inline-block; width: 28px; height: 28px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: 8px; border: 1px solid var(--lisere-fort); }

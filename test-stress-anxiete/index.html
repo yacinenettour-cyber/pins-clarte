@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test d&#x27;anxiété gratuit (GAD-7) et profil stress-sommeil</title>
+<meta name="description" content="Test gratuit en 2 minutes : le questionnaire d&#x27;anxiété GAD-7, validé scientifiquement, puis ton profil (nuits, travail ou corps) avec des priorités adaptées.">
+<link rel="canonical" href="https://www.contactapaisement-mental.fr/test-stress-anxiete/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Clarté Mentale">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Test d&#x27;anxiété gratuit (GAD-7) et profil stress-sommeil">
+<meta property="og:description" content="Test gratuit en 2 minutes : le questionnaire d&#x27;anxiété GAD-7, validé scientifiquement, puis ton profil (nuits, travail ou corps) avec des priorités adaptées.">
+<meta property="og:url" content="https://www.contactapaisement-mental.fr/test-stress-anxiete/">
+<meta property="og:image" content="https://www.contactapaisement-mental.fr/img/og-defaut.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Clarté Mentale" href="/feed.xml">
+<meta name="theme-color" content="#080C10">
+<link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<style>/* Test stress et anxiété (GAD-7 + profil) : styles communs à l'accueil et à /test-stress-anxiete/. */
+.instrument { --t-leger: #8FBF9A; --t-moyen: #DFD5C6; --t-modere: #D9A26B; --t-severe: #E58C7A; position: relative; border-radius: 28px; padding: clamp(20px, 3vw, 36px); background: var(--verre); border: 1px solid var(--lisere); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); min-height: 470px; overflow: hidden; text-align: left; scroll-margin-top: 96px; }
+.instrument::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: var(--degrade); background-size: 200% 100%; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: .55; pointer-events: none; }
+.instrument h3, .instrument h4 { margin: 0; font-family: var(--titre); color: var(--champagne); letter-spacing: -0.01em; }
+.instrument p { margin: 0; }
+.instrument a:not(.test-cta) { color: var(--brume); }
+@keyframes test-entree { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.progression { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; font-size: 13px; color: var(--champagne-doux); font-variant-numeric: tabular-nums; }
+.progression span { white-space: nowrap; }
+.barre { flex: 1; height: 4px; border-radius: 4px; background: var(--lisere); overflow: hidden; }
+.barre i { display: block; height: 100%; width: 8%; background: var(--degrade); background-size: 200% 100%; border-radius: 4px; transition: width .6s cubic-bezier(.2,.8,.2,1); }
+.etape { display: grid; gap: 16px; animation: test-entree .45s cubic-bezier(.2,.8,.2,1); }
+.test-partie { font: 600 12px/1.4 var(--texte); letter-spacing: .16em; text-transform: uppercase; color: var(--brume); }
+.test-consigne { font-size: 15px; line-height: 1.55; color: var(--champagne-doux); }
+.etape h3 { font-size: clamp(21px, 2.3vw, 27px); line-height: 1.3; outline: none; }
+.choix { display: grid; gap: 10px; }
+.option { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 14px 16px; border-radius: 16px; border: 1px solid var(--lisere); background: rgba(255,255,255,.02); color: var(--champagne); font: 500 16px/1.4 var(--texte); cursor: pointer; transition: var(--transition); }
+.option:hover { border-color: var(--lisere-fort); background: linear-gradient(90deg, rgba(58,95,67,.28), rgba(255,255,255,.04)); }
+.option:focus-visible { outline: 2px solid var(--brume); outline-offset: 2px; }
+.option .puce { flex: none; width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; font: 700 14px/1 var(--titre); color: var(--brume); border: 1px solid rgba(143,191,154,.35); background: rgba(58,95,67,.18); font-variant-numeric: tabular-nums; }
+.option[aria-pressed="true"] { border-color: var(--brume); background: rgba(58,95,67,.28); }
+.retour { justify-self: start; background: none; border: 0; color: var(--champagne-doux); font: 500 14px/1 var(--texte); cursor: pointer; padding: 6px 0; }
+.retour:hover { color: var(--champagne); }
+.test-prive { font-size: 13px; color: var(--champagne-doux); }
+.resultat { display: grid; gap: 22px; animation: test-entree .5s cubic-bezier(.2,.8,.2,1); }
+.jauge-ligne { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: center; }
+.jauge { position: relative; width: 140px; height: 140px; }
+.jauge svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.jauge .valeur { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
+.jauge .valeur b { font: 800 42px/1 var(--titre); color: var(--champagne); font-variant-numeric: tabular-nums; }
+.jauge .valeur small { display: block; font-size: 12px; color: var(--champagne-doux); margin-top: 4px; }
+.jauge-texte { display: grid; gap: 10px; min-width: 0; }
+.jauge-texte h3 { font-size: clamp(19px, 2vw, 23px); line-height: 1.3; }
+.niveau { justify-self: start; display: inline-block; padding: 6px 12px; border-radius: 999px; font: 600 13px/1.2 var(--texte); letter-spacing: .03em; border: 1px solid currentColor; }
+.test-bloc { display: grid; gap: 12px; padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,.025); border: 1px solid var(--lisere); font-size: 15.5px; line-height: 1.6; }
+.test-bloc h4 { font-size: 18px; line-height: 1.3; }
+.test-bloc ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.test-etiquette { font: 600 12px/1.4 var(--texte); letter-spacing: .16em; text-transform: uppercase; color: var(--brume); }
+.test-alerte { border-color: rgba(229,140,122,.55); background: rgba(229,140,122,.08); }
+.test-alerte strong { color: var(--champagne); }
+.test-profil { border-color: rgba(143,191,154,.35); background: linear-gradient(135deg, rgba(58,95,67,.30), rgba(255,255,255,.02)); }
+.priorites { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.priorites li { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 12px; padding: 14px 16px; border-radius: 14px; background: rgba(255,255,255,.025); border: 1px solid var(--lisere); font-size: 15px; line-height: 1.55; }
+.priorites li b { font: 700 14px/1.6 var(--titre); color: var(--brume); }
+.test-liens { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.test-liens a { display: inline-flex; gap: 8px; font-weight: 600; text-decoration: none; }
+.test-liens a::before { content: "→"; color: var(--brume); }
+.test-liens a:hover { text-decoration: underline; }
+.deblocage { display: grid; gap: 12px; padding: 20px; border-radius: 18px; background: linear-gradient(90deg, rgba(58,95,67,.55), rgba(58,95,67,.15), rgba(143,191,154,.22), rgba(58,95,67,.55)); border: 1px solid rgba(143,191,154,.3); }
+.deblocage p { font-size: 15px; line-height: 1.6; }
+.deblocage small { color: var(--champagne-doux); font-size: 13px; line-height: 1.5; }
+.test-cta { justify-self: start; display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; background: var(--degrade-or); background-size: 200% 100%; color: var(--nuit); font: 700 16px/1.2 var(--texte); text-decoration: none; box-shadow: 0 10px 28px -12px rgba(223,213,198,.5), var(--ombre-2xl); transition: var(--transition); }
+.test-cta:hover { color: var(--nuit); box-shadow: 0 16px 40px -12px rgba(223,213,198,.7), var(--ombre-2xl); }
+.test-pied { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
+.test-pied a { font-size: 14px; }
+@media (max-width: 560px) {
+  .instrument { padding: 20px 16px; border-radius: 22px; }
+  .jauge-ligne { grid-template-columns: 1fr; justify-items: start; }
+  .option { padding: 13px 14px; font-size: 15.5px; }
+  .test-cta { width: 100%; justify-content: center; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .etape, .resultat { animation: none; }
+  .barre i, .option, .test-cta { transition: none; }
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://www.contactapaisement-mental.fr/test-stress-anxiete/#page","url":"https://www.contactapaisement-mental.fr/test-stress-anxiete/","name":"Test de stress et d'anxiété : le GAD-7 et ton profil","description":"Test gratuit en 2 minutes : le questionnaire d'anxiété GAD-7, validé scientifiquement, puis ton profil (nuits, travail ou corps) avec des priorités adaptées.","inLanguage":"fr-FR","dateModified":"2026-10-09","author":{"@type":"Person","@id":"https://www.contactapaisement-mental.fr/a-propos/#auteur","name":"Yacine Nettour","jobTitle":"Fondateur de Clarté Mentale","url":"https://www.contactapaisement-mental.fr/a-propos/","worksFor":{"@id":"https://www.contactapaisement-mental.fr/#organisation"},"image":"https://www.contactapaisement-mental.fr/img/yacine-nettour.jpg"},"publisher":{"@type":"Organization","@id":"https://www.contactapaisement-mental.fr/#organisation","name":"Clarté Mentale","url":"https://www.contactapaisement-mental.fr/","logo":{"@type":"ImageObject","url":"https://www.contactapaisement-mental.fr/logo.png","width":512,"height":512},"sameAs":["https://www.pinterest.com/clartementale/"],"publishingPrinciples":"https://www.contactapaisement-mental.fr/methode-editoriale/"},"isAccessibleForFree":true,"citation":[{"@type":"ScholarlyArticle","name":"A brief measure for assessing generalized anxiety disorder: the GAD-7 — Archives of Internal Medicine (Spitzer et al., New York State Psychiatric Institute), 2006","url":"https://europepmc.org/article/MED/16717171"},{"@type":"CreativeWork","name":"GAD-7, version française — Département de médecine de famille et de médecine d'urgence, Université de Montréal","url":"https://medfam.umontreal.ca/wp-content/uploads/sites/16/GAD-7-fran%C3%A7ais.pdf"},{"@type":"CreativeWork","name":"Instruction Manual: Instructions for Patient Health Questionnaire (PHQ) and GAD-7 Measures — manuel officiel des questionnaires PHQ et GAD-7 (Pfizer)","url":"https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf"},{"@type":"CreativeWork","name":"Symptômes et diagnostic des troubles anxieux (anxiété grave) — Assurance maladie (ameli.fr), 2025","url":"https://www.ameli.fr/assure/sante/themes/troubles-anxieux-anxiete/symptomes-diagnostic"},{"@type":"CreativeWork","name":"Burn-out an \"occupational phenomenon\": International Classification of Diseases — Organisation mondiale de la santé (OMS), 2019","url":"https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases"},{"@type":"CreativeWork","name":"Epuisement professionnel ou burnout — INRS (Institut national de recherche et de sécurité)","url":"https://www.inrs.fr/risques/epuisement-burnout/ce-qu-il-faut-retenir.html"},{"@type":"CreativeWork","name":"Scales — Laboratory for the Study of Stress, Immunity, and Disease, Department of Psychology, Université Carnegie Mellon","url":"https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/index.html"},{"@type":"CreativeWork","name":"Quels sont les numéros en cas d'urgence (Samu, pompiers...) et les numéros d'écoute ? — Service-Public.fr, 2026","url":"https://www.service-public.gouv.fr/particuliers/vosdroits/F33954"},{"@type":"CreativeWork","name":"Numéro national de prévention du suicide - 3114 — Ministère chargé de la santé","url":"https://3114.fr/"},{"@type":"ScholarlyArticle","name":"The Effects of Bedtime Writing on Difficulty Falling Asleep: A Polysomnographic Study Comparing To-Do Lists and Completed Activity Lists — Journal of Experimental Psychology: General (Scullin et al., Université Baylor), 2018","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC5758411/"},{"@type":"ScholarlyArticle","name":"Sleeping with the enemy: clock monitoring in the maintenance of insomnia — Journal of Behavior Therapy and Experimental Psychiatry (Tang et al., King's College London), 2007","url":"https://europepmc.org/article/MED/16793001"},{"@type":"CreativeWork","name":"L'insomnie (dépliant patient) — Institut national du sommeil et de la vigilance (INSV)","url":"https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Insomnie-3-Volets.pdf"},{"@type":"ScholarlyArticle","name":"Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis — Neuroscience & Biobehavioral Reviews (Laborde et al., Université allemande du sport de Cologne), 2022","url":"https://doi.org/10.1016/j.neubiorev.2022.104711"},{"@type":"ScholarlyArticle","name":"Efficacy of Progressive Muscle Relaxation in Adults for Stress, Anxiety, and Depression: A Systematic Review — Psychology Research and Behavior Management (Muhammad Khir et al., Universiti Teknologi Malaysia), 2024","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10844009/"},{"@type":"ScholarlyArticle","name":"Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews — British Journal of Sports Medicine (Singh et al., Université d'Australie-Méridionale), 2023","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC10579187/"},{"@type":"CreativeWork","name":"Comment mieux dormir à l'âge adulte ? — Assurance Maladie (ameli.fr), 2026","url":"https://www.ameli.fr/assure/sante/themes/insomnie-adulte/vivre-insomnie"},{"@type":"ScholarlyArticle","name":"Sleep loss results in an elevation of cortisol levels the next evening — Sleep (Leproult et al., Université de Chicago), 1997","url":"https://doi.org/10.1093/sleep/20.10.865"},{"@type":"CreativeWork","name":"Présentation du système nerveux autonome — Manuels MSD pour le grand public, 2025","url":"https://www.msdmanuals.com/fr/accueil/troubles-du-cerveau-de-la-moelle-%C3%A9pini%C3%A8re-et-des-nerfs/troubles-du-syst%C3%A8me-nerveux-autonome/pr%C3%A9sentation-du-syst%C3%A8me-nerveux-autonome"}],"publishingPrinciples":"https://www.contactapaisement-mental.fr/methode-editoriale/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ce test peut-il diagnostiquer un trouble anxieux ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le GAD-7 a été conçu avant tout comme un outil de repérage et de mesure de l'intensité des symptômes [3] : un score élevé signale qu'une évaluation par un professionnel est utile, mais seul un professionnel peut poser un diagnostic."}},{"@type":"Question","name":"Mes réponses sont-elles enregistrées ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le calcul se fait dans ton navigateur : aucune réponse n'est envoyée, ni à Clarté Mentale ni à personne. Quand tu fermes la page, tout disparaît."}},{"@type":"Question","name":"Puis-je refaire le test ?","acceptedAnswer":{"@type":"Answer","text":"Oui, quand tu veux. Comme le GAD-7 porte sur les 14 derniers jours, laisser deux semaines entre deux passages permet de comparer tes résultats."}},{"@type":"Question","name":"Ce test mesure-t-il mon cortisol ?","acceptedAnswer":{"@type":"Answer","text":"Non. Aucun questionnaire ne mesure le cortisol : seuls des examens prescrits par un médecin le peuvent. Le test repère des symptômes d'anxiété et les domaines où ton stress se manifeste."}},{"@type":"Question","name":"Pourquoi la première partie me vouvoie-t-elle ?","acceptedAnswer":{"@type":"Answer","text":"Les 7 questions du GAD-7 sont reproduites mot pour mot dans la version française publiée par l'Université de Montréal [2]. Les réécrire, même légèrement, risquerait de changer ce qu'elles mesurent."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.contactapaisement-mental.fr/"},{"@type":"ListItem","position":2,"name":"Test stress et anxiété"}]}</script>
+</head>
+<body>
+<a class="saut" href="#contenu">Aller au contenu</a>
+<header class="entete"><div class="large">
+<a class="marque" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#080C10" stroke="#8FBF9A" stroke-width="1.5"/><path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#DFD5C6"/></svg>Clarté Mentale</a>
+<nav class="nav" aria-label="Menu principal"><a href="/articles/">Articles</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a></nav>
+</div></header>
+<main id="contenu">
+<div class="etroit"><nav class="ariane" aria-label="Fil d'Ariane"><ol><li><a href="/">Accueil</a></li><li aria-current="page">Test stress et anxiété</li></ol></nav>
+<h1>Test de stress et d&#x27;anxiété : le GAD-7 et ton profil</h1>
+<p class="meta"><img class="avatar" src="/img/yacine-nettour.jpg" width="28" height="28" alt="">Par <a href="/a-propos/" rel="author">Yacine Nettour</a> · Mis à jour le <time datetime="2026-10-09">9 octobre 2026</time> · 2 minutes</p>
+<p class="bilan-sources"><a href="#sources">18 sources : 6 sources officielles, 5 références médicales, 7 publications scientifiques</a><a href="/methode-editoriale/">Méthode éditoriale</a></p>
+<p class="chapo">Ce test de stress et d'anxiété réunit le GAD-7, un questionnaire de 7 questions validé scientifiquement pour repérer les symptômes d'anxiété, et 6 questions qui situent où ton stress se manifeste le plus : tes nuits, ton travail ou ton corps. Il prend environ 2 minutes, ne demande aucune adresse e-mail et ne remplace pas un avis médical.</p>
+<div class="instrument" id="test-stress" aria-live="polite">
+<div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><i id="test-barre"></i></div></div>
+<div id="test-ecran"><noscript><p>Ce test a besoin de JavaScript pour calculer ton score dans ton navigateur.</p></noscript></div>
+</div>
+<h2 id="comment-fonctionne-ce-test">Comment fonctionne ce test ?</h2>
+<p>Le test a deux parties : le GAD-7, qui donne un score d'anxiété de 0 à 21, puis 6 questions d'orientation écrites par Clarté Mentale, qui déterminent ton profil et les conseils proposés.</p>
+<div class="tableau"><table>
+<thead>
+<tr>
+<th><span class="lecteur-ecran">Critère</span></th>
+<th>Partie 1 : le GAD-7</th>
+<th>Partie 2 : ton profil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="">Ce que c'est</td>
+<td data-label="Partie 1 : le GAD-7">Un questionnaire validé scientifiquement, publié en 2006 <sup>[<a href="#source-1" aria-label="Source 1">1</a>]</sup></td>
+<td data-label="Partie 2 : ton profil">6 questions propres à Clarté Mentale, non validées scientifiquement</td>
+</tr>
+<tr>
+<td data-label="">Ce qu'il mesure</td>
+<td data-label="Partie 1 : le GAD-7">La fréquence de 7 symptômes d'anxiété sur les 14 derniers jours</td>
+<td data-label="Partie 2 : ton profil">Où ton stress se manifeste le plus : nuits, travail ou corps</td>
+</tr>
+<tr>
+<td data-label="">Ce que tu obtiens</td>
+<td data-label="Partie 1 : le GAD-7">Un score de 0 à 21 et un niveau de symptômes <sup>[<a href="#source-3" aria-label="Source 3">3</a>]</sup></td>
+<td data-label="Partie 2 : ton profil">Un profil, 3 priorités et des articles choisis pour toi</td>
+</tr>
+<tr>
+<td data-label="">Ce qu'il ne fait pas</td>
+<td data-label="Partie 1 : le GAD-7">Poser un diagnostic</td>
+<td data-label="Partie 2 : ton profil">Mesurer ton cortisol ou diagnostiquer un burn-out</td>
+</tr>
+</tbody>
+</table></div>
+<p>Le calcul se fait entièrement dans ton navigateur : tes réponses ne sont ni envoyées ni enregistrées.</p>
+<h2 id="quest-ce-que-le-gad-7">Qu'est-ce que le GAD-7 ?</h2>
+<p>Le GAD-7 (pour <em>Generalized Anxiety Disorder 7</em>, « trouble anxieux généralisé, 7 questions ») est un questionnaire qui évalue la fréquence des principaux symptômes d'anxiété au cours des 14 derniers jours. Il a été mis au point par les Drs Robert Spitzer, Janet Williams, Kurt Kroenke et leurs collègues, grâce à une bourse du laboratoire Pfizer <sup>[<a href="#source-2" aria-label="Source 2">2</a>]</sup>.</p>
+<p>Sa validation a été publiée en 2006 dans la revue <em>Archives of Internal Medicine</em> par une équipe du New York State Psychiatric Institute <sup>[<a href="#source-1" aria-label="Source 1">1</a>]</sup> :</p>
+<ul>
+<li>2 740 adultes, suivis dans 15 centres de soins primaires aux États-Unis, ont rempli le questionnaire <sup>[<a href="#source-1" aria-label="Source 1">1</a>]</sup> ;</li>
+<li>965 d'entre eux ont ensuite passé, dans la semaine, un entretien téléphonique avec un professionnel de santé mentale, pour comparer <sup>[<a href="#source-1" aria-label="Source 1">1</a>]</sup> ;</li>
+<li>le seuil retenu repérait 89 % des personnes atteintes de trouble anxieux généralisé (sensibilité) et écartait 82 % de celles qui ne l'étaient pas (spécificité) <sup>[<a href="#source-1" aria-label="Source 1">1</a>]</sup> ;</li>
+<li>plus le score était élevé, plus les difficultés dans la vie quotidienne étaient importantes <sup>[<a href="#source-1" aria-label="Source 1">1</a>]</sup>.</li>
+</ul>
+<p>Les 7 questions de la partie 1 sont celles de la version française publiée par le Département de médecine de famille et de médecine d'urgence de l'Université de Montréal, reproduites mot pour mot, d'où le vouvoiement <sup>[<a href="#source-2" aria-label="Source 2">2</a>]</sup>. Leur reproduction est libre : « Aucune permission requise pour reproduire, traduire, afficher ou distribuer » <sup>[<a href="#source-2" aria-label="Source 2">2</a>]</sup>.</p>
+<h2 id="comment-lire-ton-score-au-gad-7">Comment lire ton score au GAD-7 ?</h2>
+<p>Le score du GAD-7 va de 0 à 21 : chaque réponse compte de 0 (« Jamais ») à 3 (« Presque tous les jours »), et les seuils de 5, 10 et 15 correspondent à des symptômes d'anxiété légers, modérés et sévères, selon le manuel officiel du questionnaire <sup>[<a href="#source-3" aria-label="Source 3">3</a>]</sup>.</p>
+<div class="tableau"><table>
+<thead>
+<tr>
+<th>Score</th>
+<th>Niveau</th>
+<th>Ce que le résultat te conseille</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Score">0 à 4</td>
+<td data-label="Niveau">Sous le premier seuil</td>
+<td data-label="Ce que le résultat te conseille">Garder tes repères, et refaire le test en période chargée</td>
+</tr>
+<tr>
+<td data-label="Score">5 à 9</td>
+<td data-label="Niveau">Symptômes légers</td>
+<td data-label="Ce que le résultat te conseille">Les gestes de ton profil, et en parler à ton médecin si ça dure</td>
+</tr>
+<tr>
+<td data-label="Score">10 à 14</td>
+<td data-label="Niveau">Symptômes modérés</td>
+<td data-label="Ce que le résultat te conseille">Prendre rendez-vous avec ton médecin traitant : c'est le seuil recommandé pour une évaluation <sup>[<a href="#source-3" aria-label="Source 3">3</a>]</sup></td>
+</tr>
+<tr>
+<td data-label="Score">15 à 21</td>
+<td data-label="Niveau">Symptômes sévères</td>
+<td data-label="Ce que le résultat te conseille">Consulter rapidement : les auteurs y voient un signal d'alerte <sup>[<a href="#source-3" aria-label="Source 3">3</a>]</sup></td>
+</tr>
+</tbody>
+</table></div>
+<p>Un score élevé ne veut pas dire que tu as un trouble anxieux : le GAD-7 est un outil de repérage, et seul un professionnel peut poser un diagnostic. À l'inverse, un score bas n'empêche pas de consulter si tu te sens mal : l'Assurance maladie rappelle qu'il est difficile de juger seul de son état psychologique <sup>[<a href="#source-4" aria-label="Source 4">4</a>]</sup>.</p>
+<h2 id="comment-est-défini-ton-profil">Comment est défini ton profil ?</h2>
+<p>Ton profil dépend de la partie 2 : chaque domaine (nuits, travail, corps) a deux questions, notées de 0 à 3 comme le GAD-7, et le domaine qui obtient le score le plus élevé, à partir de 3 sur 6, devient ton profil.</p>
+<div class="tableau"><table>
+<thead>
+<tr>
+<th>Profil</th>
+<th>Ce qu'il repère</th>
+<th>Ce que le test te propose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Profil">Nuits et ruminations</td>
+<td data-label="Ce qu&#x27;il repère">Pensées qui tournent au coucher, réveils la nuit ou trop tôt le matin</td>
+<td data-label="Ce que le test te propose">Des gestes pour le soir et la nuit, des articles sur les ruminations et le réveil à 4 h, le guide sommeil gratuit</td>
+</tr>
+<tr>
+<td data-label="Profil">Épuisement lié au travail</td>
+<td data-label="Ce qu&#x27;il repère">Épuisement et prise de distance envers son travail, deux des trois dimensions du burn-out décrites par l'OMS <sup>[<a href="#source-5" aria-label="Source 5">5</a>]</sup></td>
+<td data-label="Ce que le test te propose">En parler à son médecin traitant ou au médecin du travail <sup>[<a href="#source-6" aria-label="Source 6">6</a>]</sup>, des articles sur le burn-out et la charge mentale</td>
+</tr>
+<tr>
+<td data-label="Profil">Corps en alerte</td>
+<td data-label="Ce qu&#x27;il repère">Tensions musculaires, ventre noué, cœur qui s'accélère</td>
+<td data-label="Ce que le test te propose">Respiration lente, relaxation musculaire, activité physique, le plan anti-cortisol gratuit</td>
+</tr>
+<tr>
+<td data-label="Profil">Pas d'axe dominant</td>
+<td data-label="Ce qu&#x27;il repère">Aucun domaine à 3 sur 6 ou plus</td>
+<td data-label="Ce que le test te propose">Garder tes repères, le plan anti-cortisol gratuit</td>
+</tr>
+</tbody>
+</table></div>
+<p>Quelques règles, pour que tu saches exactement ce que fait le test :</p>
+<ul>
+<li>si un deuxième domaine atteint aussi 3 sur 6, il s'affiche sous ton profil ;</li>
+<li>en cas d'égalité, l'ordre est : travail, puis nuits, puis corps, pour que des signes d'épuisement professionnel ne passent jamais au second plan ;</li>
+<li>à partir de 10 au GAD-7, le résultat met la consultation en avant et ne propose pas la formation payante ;</li>
+<li>à partir de 15, aucun guide ni produit n'est proposé : seulement des conseils pour consulter et des articles.</li>
+</ul>
+<p>Les priorités proposées reprennent des gestes étudiés : écrire sa liste du lendemain avant d'éteindre <sup>[<a href="#source-10" aria-label="Source 10">10</a>]</sup>, ne pas surveiller l'heure la nuit <sup>[<a href="#source-11" aria-label="Source 11">11</a>]</sup>, se lever après 20 minutes d'éveil <sup>[<a href="#source-12" aria-label="Source 12">12</a>]</sup>, la respiration lente <sup>[<a href="#source-13" aria-label="Source 13">13</a>]</sup>, la relaxation musculaire progressive <sup>[<a href="#source-14" aria-label="Source 14">14</a>]</sup>, l'activité physique <sup>[<a href="#source-15" aria-label="Source 15">15</a>]</sup> et des horaires de sommeil réguliers <sup>[<a href="#source-16" aria-label="Source 16">16</a>]</sup>. Le lien entre manque de sommeil et cortisol vient d'une étude de l'Université de Chicago <sup>[<a href="#source-17" aria-label="Source 17">17</a>]</sup>, et la réaction du corps au stress est décrite par les Manuels MSD <sup>[<a href="#source-18" aria-label="Source 18">18</a>]</sup>.</p>
+<h2 id="pourquoi-pas-léchelle-de-stress-perçu-pss">Pourquoi pas l'échelle de stress perçu (PSS) ?</h2>
+<p>L'échelle de stress perçu (<em>Perceived Stress Scale</em>, PSS) est un questionnaire de stress créé par l'équipe du psychologue Sheldon Cohen, à l'Université Carnegie Mellon. Elle n'est pas intégrée à ce test pour deux raisons <sup>[<a href="#source-7" aria-label="Source 7">7</a>]</sup> :</p>
+<ul>
+<li>son utilisation demande une autorisation préalable, à solliciter (gratuitement) auprès de la plateforme ePROVIDE de Mapi Research Trust <sup>[<a href="#source-7" aria-label="Source 7">7</a>]</sup> ;</li>
+<li>ses auteurs précisent que ce n'est pas un instrument de diagnostic et qu'elle n'a pas de seuils : un score ne se compare qu'à ceux d'autres personnes du même groupe <sup>[<a href="#source-7" aria-label="Source 7">7</a>]</sup>.</li>
+</ul>
+<p>Le GAD-7, lui, est libre de reproduction et dispose de seuils publiés <sup>[<a href="#source-2" aria-label="Source 2">2</a>, <a href="#source-3" aria-label="Source 3">3</a>]</sup>, ce qui permet de te donner un repère clair.</p>
+<h2 id="quand-consulter">Quand consulter ?</h2>
+<p>Consulte ton médecin traitant si ton score au GAD-7 atteint 10 ou plus <sup>[<a href="#source-3" aria-label="Source 3">3</a>]</sup>, ou si ton anxiété dure, revient sous forme de crises ou t'empêche de vivre normalement <sup>[<a href="#source-4" aria-label="Source 4">4</a>]</sup>. Parles-en aussi à ton médecin si :</p>
+<ul>
+<li>tes inquiétudes sont excessives, envahissantes et impossibles à contrôler <sup>[<a href="#source-4" aria-label="Source 4">4</a>]</sup> ;</li>
+<li>tu te sens épuisé(e) par ton travail : si tu es salarié(e), le médecin du travail peut aussi faire le point et envisager un aménagement de poste <sup>[<a href="#source-6" aria-label="Source 6">6</a>]</sup>.</li>
+</ul>
+<p>En cas d'urgence médicale (douleur dans la poitrine, essoufflement inhabituel, malaise), appelle le 15 (Samu) ou le 112 <sup>[<a href="#source-8" aria-label="Source 8">8</a>]</sup>. Si tu as des pensées suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 <sup>[<a href="#source-9" aria-label="Source 9">9</a>]</sup>.</p>
+<section class="faq"><h2 id="questions-frequentes">Questions fréquentes</h2><h3>Ce test peut-il diagnostiquer un trouble anxieux ?</h3><p>Non. Le GAD-7 a été conçu avant tout comme un outil de repérage et de mesure de l'intensité des symptômes <sup>[<a href="#source-3" aria-label="Source 3">3</a>]</sup> : un score élevé signale qu'une évaluation par un professionnel est utile, mais seul un professionnel peut poser un diagnostic.</p><h3>Mes réponses sont-elles enregistrées ?</h3><p>Non. Le calcul se fait dans ton navigateur : aucune réponse n'est envoyée, ni à Clarté Mentale ni à personne. Quand tu fermes la page, tout disparaît.</p><h3>Puis-je refaire le test ?</h3><p>Oui, quand tu veux. Comme le GAD-7 porte sur les 14 derniers jours, laisser deux semaines entre deux passages permet de comparer tes résultats.</p><h3>Ce test mesure-t-il mon cortisol ?</h3><p>Non. Aucun questionnaire ne mesure le cortisol : seuls des examens prescrits par un médecin le peuvent. Le test repère des symptômes d'anxiété et les domaines où ton stress se manifeste.</p><h3>Pourquoi la première partie me vouvoie-t-elle ?</h3><p>Les 7 questions du GAD-7 sont reproduites mot pour mot dans la version française publiée par l'Université de Montréal <sup>[<a href="#source-2" aria-label="Source 2">2</a>]</sup>. Les réécrire, même légèrement, risquerait de changer ce qu'elles mesurent.</p></section>
+<section class="sources"><h2 id="sources">Sources</h2><ol><li id="source-1"><a href="https://europepmc.org/article/MED/16717171" rel="noopener">A brief measure for assessing generalized anxiety disorder: the GAD-7 — Archives of Internal Medicine (Spitzer et al., New York State Psychiatric Institute), 2006</a> <span class="type-source type-etude">Publication scientifique</span></li><li id="source-2"><a href="https://medfam.umontreal.ca/wp-content/uploads/sites/16/GAD-7-fran%C3%A7ais.pdf" rel="noopener">GAD-7, version française — Département de médecine de famille et de médecine d&#x27;urgence, Université de Montréal</a> <span class="type-source type-reference">Université de Montréal</span></li><li id="source-3"><a href="https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf" rel="noopener">Instruction Manual: Instructions for Patient Health Questionnaire (PHQ) and GAD-7 Measures — manuel officiel des questionnaires PHQ et GAD-7 (Pfizer)</a> <span class="type-source type-reference">Manuel officiel du questionnaire</span></li><li id="source-4"><a href="https://www.ameli.fr/assure/sante/themes/troubles-anxieux-anxiete/symptomes-diagnostic" rel="noopener">Symptômes et diagnostic des troubles anxieux (anxiété grave) — Assurance maladie (ameli.fr), 2025</a> <span class="type-source type-officiel">Assurance maladie</span></li><li id="source-5"><a href="https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases" rel="noopener">Burn-out an &quot;occupational phenomenon&quot;: International Classification of Diseases — Organisation mondiale de la santé (OMS), 2019</a> <span class="type-source type-officiel">Organisation mondiale de la santé</span></li><li id="source-6"><a href="https://www.inrs.fr/risques/epuisement-burnout/ce-qu-il-faut-retenir.html" rel="noopener">Epuisement professionnel ou burnout — INRS (Institut national de recherche et de sécurité)</a> <span class="type-source type-officiel">INRS, prévention des risques professionnels</span></li><li id="source-7"><a href="https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/index.html" rel="noopener">Scales — Laboratory for the Study of Stress, Immunity, and Disease, Department of Psychology, Université Carnegie Mellon</a> <span class="type-source type-reference">Université Carnegie Mellon</span></li><li id="source-8"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F33954" rel="noopener">Quels sont les numéros en cas d&#x27;urgence (Samu, pompiers...) et les numéros d&#x27;écoute ? — Service-Public.fr, 2026</a> <span class="type-source type-officiel">Service-Public.fr, site officiel de l&#x27;administration</span></li><li id="source-9"><a href="https://3114.fr/" rel="noopener">Numéro national de prévention du suicide - 3114 — Ministère chargé de la santé</a> <span class="type-source type-officiel">Numéro national de prévention du suicide</span></li><li id="source-10"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5758411/" rel="noopener">The Effects of Bedtime Writing on Difficulty Falling Asleep: A Polysomnographic Study Comparing To-Do Lists and Completed Activity Lists — Journal of Experimental Psychology: General (Scullin et al., Université Baylor), 2018</a> <span class="type-source type-etude">Publication scientifique</span></li><li id="source-11"><a href="https://europepmc.org/article/MED/16793001" rel="noopener">Sleeping with the enemy: clock monitoring in the maintenance of insomnia — Journal of Behavior Therapy and Experimental Psychiatry (Tang et al., King&#x27;s College London), 2007</a> <span class="type-source type-etude">Publication scientifique</span></li><li id="source-12"><a href="https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Insomnie-3-Volets.pdf" rel="noopener">L&#x27;insomnie (dépliant patient) — Institut national du sommeil et de la vigilance (INSV)</a> <span class="type-source type-reference">Institut national du sommeil et de la vigilance</span></li><li id="source-13"><a href="https://doi.org/10.1016/j.neubiorev.2022.104711" rel="noopener">Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis — Neuroscience &amp; Biobehavioral Reviews (Laborde et al., Université allemande du sport de Cologne), 2022</a> <span class="type-source type-etude">Publication scientifique</span></li><li id="source-14"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10844009/" rel="noopener">Efficacy of Progressive Muscle Relaxation in Adults for Stress, Anxiety, and Depression: A Systematic Review — Psychology Research and Behavior Management (Muhammad Khir et al., Universiti Teknologi Malaysia), 2024</a> <span class="type-source type-etude">Publication scientifique</span></li><li id="source-15"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10579187/" rel="noopener">Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews — British Journal of Sports Medicine (Singh et al., Université d&#x27;Australie-Méridionale), 2023</a> <span class="type-source type-etude">Publication scientifique</span></li><li id="source-16"><a href="https://www.ameli.fr/assure/sante/themes/insomnie-adulte/vivre-insomnie" rel="noopener">Comment mieux dormir à l&#x27;âge adulte ? — Assurance Maladie (ameli.fr), 2026</a> <span class="type-source type-officiel">Assurance maladie</span></li><li id="source-17"><a href="https://doi.org/10.1093/sleep/20.10.865" rel="noopener">Sleep loss results in an elevation of cortisol levels the next evening — Sleep (Leproult et al., Université de Chicago), 1997</a> <span class="type-source type-etude">Publication scientifique</span></li><li id="source-18"><a href="https://www.msdmanuals.com/fr/accueil/troubles-du-cerveau-de-la-moelle-%C3%A9pini%C3%A8re-et-des-nerfs/troubles-du-syst%C3%A8me-nerveux-autonome/pr%C3%A9sentation-du-syst%C3%A8me-nerveux-autonome" rel="noopener">Présentation du système nerveux autonome — Manuels MSD pour le grand public, 2025</a> <span class="type-source type-reference">Manuel médical de référence</span></li></ol><p class="note-sources">Chaque source a été ouverte et relue pour vérifier qu'elle dit bien ce que la page lui attribue. <a href="/methode-editoriale/">Comment les contenus sont écrits et vérifiés</a></p></section>
+<p class="avertissement">Ce test donne un repère, pas un diagnostic. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+</div>
+<script>/* Test stress et anxiété : GAD-7 (Spitzer et al., 2006 ; version française du Département de médecine de famille
+   de l'Université de Montréal, reproduite mot pour mot) + 6 questions d'orientation propres à Clarté Mentale.
+   Tout se calcule dans le navigateur : aucune réponse n'est envoyée ni enregistrée. */
+(function () {
+  var racine = document.getElementById("test-stress");
+  if (!racine) return;
+  var B = "";
+  var ARTICLES = {"ruminations-le-soir": "Ruminations le soir : pourquoi ton cerveau s'emballe au coucher", "reveil-4h-du-matin": "Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment", "routine-du-soir-anti-stress": "Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes", "procrastination-du-coucher": "Procrastination du coucher : pourquoi on veille et comment arrêter", "cortisol-hormone-du-stress": "Cortisol, hormone du stress : son rôle, son rythme et les idées reçues", "baisser-son-cortisol-naturellement": "Baisser son cortisol naturellement : ce qui marche vraiment", "nerf-vague": "Nerf vague : comment l'activer naturellement, ce qui marche vraiment", "calmer-son-systeme-nerveux": "Calmer son système nerveux : 6 gestes pour se calmer rapidement", "charge-mentale": "Charge mentale : définition, signes et 6 façons de l'alléger", "signes-du-burn-out": "Signes du burn-out : les repérer tôt et savoir qui consulter", "cortisol-et-sommeil": "Cortisol et sommeil : comment le stress dérègle tes nuits, et comment les apaiser"};
+  var GUIDES = {"sommeil": {"titre": "Quand le cerveau refuse de dormir", "type": "Guide gratuit", "rappel": "Pour les soirs où le mental tourne en boucle : une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.", "bouton": "Recevoir le guide gratuit", "url": "https://lp.contactapaisement-mental.fr/tonguide"}, "cortisol": {"titre": "Le plan anti-cortisol en 7 jours", "type": "Plan gratuit", "rappel": "Un geste simple par jour pendant 7 jours (lumière, respiration, assiette, mouvement, pauses, soirée, sommeil), 10 à 15 minutes, avec un tableau de suivi à cocher.", "bouton": "Recevoir le plan gratuit", "url": "https://lp.contactapaisement-mental.fr/63d489c7"}};
+  var reduit = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var ecran = document.getElementById("test-ecran"), compteur = document.getElementById("test-compteur"), barre = document.getElementById("test-barre");
+  var ECHELLE = ["Jamais", "Plusieurs jours", "Plus de la moitié des jours", "Presque tous les jours"];
+  var CONSIGNE_GAD = "Au cours des 14 derniers jours, à quelle fréquence avez-vous été dérangé(e) par les problèmes suivants ?";
+  var CONSIGNE_PROFIL = "Ces 14 derniers jours, à quelle fréquence est-ce que c'était ton cas ?";
+  var QUESTIONS = [
+    { partie: 1, texte: "Sentiment de nervosité, d'anxiété ou de tension" },
+    { partie: 1, texte: "Incapable d'arrêter de vous inquiéter ou de contrôler vos inquiétudes" },
+    { partie: 1, texte: "Inquiétudes excessives à propos de tout et de rien" },
+    { partie: 1, texte: "Difficulté à se détendre" },
+    { partie: 1, texte: "Agitation telle qu'il est difficile de rester tranquille" },
+    { partie: 1, texte: "Devenir facilement contrarié(e) ou irritable" },
+    { partie: 1, texte: "Avoir peur que quelque chose d'épouvantable puisse arriver" },
+    { partie: 2, axe: "nuit", texte: "Au lit, tes pensées tournent en boucle et retardent ton endormissement" },
+    { partie: 2, axe: "nuit", texte: "Tu te réveilles la nuit ou très tôt le matin, sans arriver à te rendormir" },
+    { partie: 2, axe: "travail", texte: "Ton travail (ou tes études) te vide de ton énergie, même après un jour de repos" },
+    { partie: 2, axe: "travail", texte: "Tu prends de la distance avec ton travail : moins d'envie, plus de cynisme ou de négativité à son égard" },
+    { partie: 2, axe: "corps", texte: "Ton corps reste tendu : mâchoire serrée, épaules ou nuque nouées" },
+    { partie: 2, axe: "corps", texte: "Dans les moments de stress, ton ventre se noue ou ton cœur s'accélère" }
+  ];
+  var NB = QUESTIONS.length;
+
+  /* Seuils du manuel officiel PHQ/GAD-7 : 5, 10 et 15 = symptômes légers, modérés, sévères ;
+     10 ou plus = seuil recommandé pour une évaluation par un professionnel. */
+  function niveau(score) {
+    if (score >= 15) return { cle: "severe", nom: "Symptômes d'anxiété sévères", couleur: "var(--t-severe)",
+      texte: "Ton score atteint 15 ou plus : c'est le seuil des symptômes sévères, que les auteurs du questionnaire considèrent comme un signal d'alerte." };
+    if (score >= 10) return { cle: "modere", nom: "Symptômes d'anxiété modérés", couleur: "var(--t-modere)",
+      texte: "Ton score atteint 10 ou plus : c'est le seuil à partir duquel les auteurs du questionnaire recommandent d'en parler à un professionnel." };
+    if (score >= 5) return { cle: "leger", nom: "Symptômes d'anxiété légers", couleur: "var(--t-moyen)",
+      texte: "Ton score se situe entre 5 et 9 : des symptômes d'anxiété légers ces deux dernières semaines, fréquents en période chargée." };
+    return { cle: "faible", nom: "Peu de symptômes d'anxiété", couleur: "var(--t-leger)",
+      texte: "Ton score est sous le premier seuil du questionnaire (5) : tes réponses ne montrent pas de symptômes d'anxiété marqués ces deux dernières semaines." };
+  }
+
+  var PROFILS = {
+    nuit: {
+      nom: "Nuits et ruminations",
+      resume: "Ton stress se manifeste surtout la nuit : les pensées tournent au moment de dormir, ou te réveillent avant l'heure.",
+      explication: "Quand l'axe du stress reste actif le soir, le sommeil devient plus fragile. Et le manque de sommeil entretient le stress : une nuit écourtée fait monter le cortisol du lendemain soir de 37 % (Université de Chicago, 1997). L'objectif est de casser ce cercle, soir après soir.",
+      gestes: [
+        "Avant d'éteindre, prends 5 minutes pour écrire la liste précise de ce que tu dois faire demain : dans une étude de l'Université Baylor (2018), ceux qui écrivaient leurs tâches à venir s'endormaient plus vite que ceux qui notaient ce qu'ils avaient déjà fait.",
+        "Au lit, ne regarde pas l'heure : surveiller le réveil augmente l'inquiétude et retarde le sommeil (King's College de Londres, 2007).",
+        "Réveillé(e) depuis plus de 20 minutes ? L'Institut national du sommeil et de la vigilance conseille alors de te lever et de faire autre chose."
+      ],
+      articles: ["ruminations-le-soir", "reveil-4h-du-matin", "cortisol-et-sommeil"],
+      guide: "sommeil", formation: true
+    },
+    travail: {
+      nom: "Épuisement lié au travail",
+      resume: "Tes réponses évoquent une fatigue et une prise de distance liées à ton travail.",
+      explication: "L'Organisation mondiale de la santé décrit le burn-out comme un phénomène lié au travail, qui résulte d'un stress chronique au travail qui n'a pas été correctement géré. Il a trois dimensions : l'épuisement, la prise de distance ou le cynisme envers son travail, et une baisse de l'efficacité professionnelle. Ce test ne peut pas dire si c'est ton cas, mais ces signes méritent d'être pris au sérieux.",
+      gestes: [
+        "Parles-en à ton médecin traitant : il peut faire le point avec toi et, si besoin, t'orienter.",
+        "Si tu es salarié(e), tu peux aussi contacter le médecin du travail : selon l'INRS, il évalue le besoin d'une prise en charge et peut envisager un aménagement de poste.",
+        "Chaque soir, 5 minutes de respiration lente pour marquer la fin de la journée de travail : inspire 4 secondes, expire 6 secondes. Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente (synthèse de 223 études, 2022)."
+      ],
+      articles: ["signes-du-burn-out", "charge-mentale", "calmer-son-systeme-nerveux"],
+      guide: "cortisol", complement: true
+    },
+    corps: {
+      nom: "Corps en alerte",
+      resume: "Ton stress se loge dans le corps : tensions, ventre noué, cœur qui s'accélère.",
+      explication: "Face au stress, le système nerveux autonome prépare le corps à réagir : le cœur accélère, les muscles se tendent. Quand cette alerte dure, le corps a du mal à revenir au repos. Les gestes qui sollicitent le nerf vague, principal nerf de la branche qui ramène le corps au calme, l'aident à redescendre.",
+      gestes: [
+        "Deux fois par jour, 5 minutes de respiration lente : inspire 4 secondes, expire 6 secondes. Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente (synthèse de 223 études, Université allemande du sport de Cologne, 2022).",
+        "Le soir, essaie la relaxation musculaire progressive : contracter un groupe de muscles quelques secondes, puis le relâcher. Une revue de 46 publications (2024) conclut qu'elle aide à réduire le stress et l'anxiété.",
+        "Bouge chaque jour, même en marchant : une synthèse de 97 revues (Université d'Australie-Méridionale, 2023) montre que l'activité physique réduit l'anxiété et la détresse psychologique."
+      ],
+      articles: ["calmer-son-systeme-nerveux", "nerf-vague", "baisser-son-cortisol-naturellement"],
+      guide: "cortisol",
+      prudence: "Une douleur dans la poitrine, un essoufflement inhabituel ou un malaise ne doivent pas être mis d'office sur le compte du stress : appelle le 15 ou le 112."
+    },
+    equilibre: {
+      nom: "Pas d'axe dominant",
+      resume: "Tes réponses ne font pas ressortir de domaine plus touché que les autres ces deux dernières semaines.",
+      explication: "Ton sommeil, ton travail et ton corps ne montrent pas de signal marqué dans ce test. Le plus utile est de garder les repères qui aident le cortisol à suivre son rythme naturel : haut le matin, bas le soir.",
+      gestes: [
+        "Garde des horaires de coucher et de lever réguliers, même le week-end, comme le recommande l'Assurance maladie.",
+        "Quand la pression monte, 5 minutes de respiration lente (inspire 4 secondes, expire 6 secondes) aident le corps à redescendre (synthèse de 223 études, 2022).",
+        "Refais ce test dans un mois, ou après une période chargée, pour suivre ton évolution."
+      ],
+      articles: ["routine-du-soir-anti-stress", "cortisol-hormone-du-stress", "baisser-son-cortisol-naturellement"],
+      guide: "cortisol"
+    }
+  };
+  var ORDRE_AXES = ["travail", "nuit", "corps"];
+
+  var reponses = [], etape = 0, aRepondu = false;
+
+  /* Typographie française : espace insécable avant « : ; ? ! » et dans les guillemets. */
+  function typo(html) { return html.replace(/ ([:;?!»])/g, "\u00a0$1").replace(/« /g, "«\u00a0"); }
+
+  function lien(slug) {
+    var a = ARTICLES[slug];
+    return a ? '<li><a href="' + B + '/' + slug + '/">' + a + '</a></li>' : "";
+  }
+  function utm(url, contenu) {
+    return url + "?utm_source=site&utm_medium=test&utm_campaign=test-stress&utm_content=" + contenu;
+  }
+
+  function afficherQuestion() {
+    var q = QUESTIONS[etape];
+    compteur.textContent = "Question " + (etape + 1) + " sur " + NB;
+    barre.style.width = ((etape + 1) / NB * 100) + "%";
+    var html = '<div class="etape">' +
+      '<p class="test-partie">' + (q.partie === 1 ? "Partie 1 sur 2 · Questionnaire GAD-7" : "Partie 2 sur 2 · Ton profil") + '</p>' +
+      '<p class="test-consigne">' + (q.partie === 1 ? CONSIGNE_GAD : CONSIGNE_PROFIL) + '</p>' +
+      '<h3 tabindex="-1" id="test-question">' + q.texte + '</h3><div class="choix" role="group" aria-labelledby="test-question">';
+    ECHELLE.forEach(function (libelle, i) {
+      html += '<button class="option" type="button" data-i="' + i + '" aria-pressed="' + (reponses[etape] === i) + '"><span class="puce" aria-hidden="true">' + i + '</span><span>' + libelle + '</span></button>';
+    });
+    html += '</div>' + (etape > 0 ? '<button class="retour" type="button" id="test-retour">← Question précédente</button>' : '<p class="test-prive">Tes réponses restent sur ton appareil : rien n\'est envoyé ni enregistré.</p>') + '</div>';
+    ecran.innerHTML = typo(html);
+    if (aRepondu) document.getElementById("test-question").focus({ preventScroll: true });
+    ecran.querySelectorAll(".option").forEach(function (b) {
+      b.addEventListener("click", function () {
+        reponses[etape] = Number(b.dataset.i);
+        aRepondu = true;
+        b.setAttribute("aria-pressed", "true");
+        setTimeout(function () { if (etape < NB - 1) { etape++; afficherQuestion(); } else { afficherResultat(); } }, reduit ? 0 : 220);
+      });
+    });
+    var retour = document.getElementById("test-retour");
+    if (retour) retour.addEventListener("click", function () { etape--; afficherQuestion(); });
+  }
+
+  function blocOffre(cleProfil, p, n) {
+    if (n.cle === "severe") return "";
+    var g = GUIDES[p.guide];
+    if (!g) return "";
+    var contenu = "profil-" + cleProfil + "-" + n.cle;
+    var avant = p.complement || n.cle === "modere"
+      ? "<p><strong>En complément, jamais à la place d'un avis médical :</strong> " + g.titre + ", " + g.rappel.charAt(0).toLowerCase() + g.rappel.slice(1) + "</p>"
+      : "<p><strong>" + g.titre + "</strong> (" + g.type.toLowerCase() + ") : " + g.rappel.charAt(0).toLowerCase() + g.rappel.slice(1) + "</p>";
+    var html = '<div class="deblocage">' + avant +
+      '<a class="test-cta" href="' + utm(g.url, contenu) + '">' + g.bouton + ' <span aria-hidden="true">→</span></a>' +
+      '<small>Gratuit. Tu laisses ton e-mail sur une page sécurisée (systeme.io) et le guide se télécharge. Désinscription en un clic.</small>';
+    if (p.formation && n.cle !== "modere") {
+      html += '<small>Pour aller plus loin, le programme payant « Quand le cerveau refuse de dormir » t\'accompagne sur 28 soirs : <a href="' + B + '/la-formation/">voir ce qu\'il contient</a>.</small>';
+    }
+    return html + '</div>';
+  }
+
+  function afficherResultat() {
+    var gad = 0, axes = { nuit: 0, travail: 0, corps: 0 };
+    QUESTIONS.forEach(function (q, i) { if (q.partie === 1) gad += reponses[i]; else axes[q.axe] += reponses[i]; });
+    var n = niveau(gad);
+    var tries = ORDRE_AXES.slice().sort(function (a, b) { return axes[b] - axes[a]; });
+    var cle = axes[tries[0]] >= 3 ? tries[0] : "equilibre";
+    var second = cle !== "equilibre" && axes[tries[1]] >= 3 ? tries[1] : null;
+    var p = PROFILS[cle];
+    var date = new Date().toLocaleDateString("fr-FR");
+
+    var conseilMedical = n.cle === "severe"
+      ? "<p><strong>Prends rendez-vous rapidement avec ton médecin traitant, dans les prochains jours.</strong> Montre-lui ce score : ce questionnaire ne pose pas de diagnostic, mais il l'aidera à faire le point avec toi.</p>"
+      : n.cle === "modere"
+      ? "<p><strong>Prends rendez-vous avec ton médecin traitant pour en parler.</strong> Ce questionnaire ne pose pas de diagnostic : seul un professionnel peut le faire, et des solutions efficaces existent.</p>"
+      : "<p>Si tes symptômes durent, s'aggravent ou te gênent au quotidien, parles-en à ton médecin traitant : il est difficile de juger seul de son état.</p>";
+
+    compteur.textContent = "Ton résultat";
+    barre.style.width = "100%";
+    var circ = 2 * Math.PI * 60;
+    var html =
+      '<div class="resultat">' +
+        '<div class="jauge-ligne">' +
+          '<div class="jauge"><svg viewBox="0 0 140 140" aria-hidden="true"><circle cx="70" cy="70" r="60" fill="none" stroke="rgba(223,213,198,.1)" stroke-width="10"/><circle id="test-arc" cx="70" cy="70" r="60" fill="none" stroke="' + n.couleur + '" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + circ.toFixed(1) + '" stroke-dashoffset="' + circ.toFixed(1) + '" style="transition: stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)"/></svg>' +
+            '<div class="valeur"><div><b id="test-chiffre">' + (reduit ? gad : 0) + '</b><small>sur 21</small></div></div></div>' +
+          '<div class="jauge-texte"><span class="niveau" style="color:' + n.couleur + '">' + n.nom + '</span><h3>Ton score au GAD-7 : ' + gad + ' sur 21</h3><p>' + n.texte + '</p></div>' +
+        '</div>' +
+        '<div class="test-bloc' + (n.cle === "severe" || n.cle === "modere" ? " test-alerte" : "") + '">' + conseilMedical +
+          '<p>Note ton score pour en parler : <strong>GAD-7 = ' + gad + '/21, le ' + date + '</strong>.</p></div>' +
+        '<div class="test-bloc test-profil"><p class="test-etiquette">Ton profil</p><h4>' + p.nom + '</h4><p>' + p.resume + '</p><p>' + p.explication + '</p></div>' +
+        '<div><p class="test-etiquette" style="margin-bottom:12px">Tes 3 priorités</p><ol class="priorites">' +
+          p.gestes.map(function (g, i) { return '<li><b>' + (i + 1) + '</b><span>' + g + '</span></li>'; }).join("") +
+        '</ol></div>' +
+        (p.prudence ? '<p class="test-prive">' + p.prudence + '</p>' : '') +
+        '<div class="test-bloc"><p class="test-etiquette">À lire pour toi</p><ul class="test-liens">' + p.articles.map(lien).join("") + '</ul></div>' +
+        (second ? '<div class="test-bloc"><p class="test-etiquette">Ton deuxième axe</p><h4>' + PROFILS[second].nom + '</h4><p>' + PROFILS[second].resume + '</p><ul class="test-liens">' + PROFILS[second].articles.slice(0, 2).map(lien).join("") + '</ul></div>' : '') +
+        blocOffre(cle, p, n) +
+        '<div class="test-bloc"><p>Si tu as des pensées suicidaires, appelle le <strong>3114</strong> (gratuit, 24 h/24 et 7 j/7). En cas d\'urgence, appelle le <strong>15</strong> ou le <strong>112</strong>.</p></div>' +
+        '<div class="test-pied"><button class="retour" type="button" id="test-refaire">↺ Refaire le test</button><a href="' + B + '/test-stress-anxiete/#comment-fonctionne-ce-test">Comment fonctionne ce test</a></div>' +
+        '<p class="test-prive">Repère, pas un diagnostic. Tes réponses n\'ont été ni envoyées ni enregistrées.</p>' +
+      '</div>';
+    ecran.innerHTML = typo(html);
+    var haut = racine.getBoundingClientRect().top;
+    if (haut < 0) racine.scrollIntoView({ block: "start", behavior: reduit ? "auto" : "smooth" });
+    var arc = document.getElementById("test-arc"), chiffre = document.getElementById("test-chiffre");
+    requestAnimationFrame(function () { requestAnimationFrame(function () { arc.style.strokeDashoffset = (circ * (1 - gad / 21)).toFixed(1); }); });
+    if (!reduit) {
+      var debut = performance.now();
+      (function compter(t) { var k = Math.min(1, (t - debut) / 1200); chiffre.textContent = Math.round(gad * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(compter); })(debut);
+    }
+    document.getElementById("test-refaire").addEventListener("click", function () { reponses = []; etape = 0; afficherQuestion(); });
+  }
+
+  afficherQuestion();
+})();
+</script>
+</main>
+<footer class="pied"><div class="large">
+<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/mieux-dormir/">Mieux dormir</a><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a><a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></nav>
+<p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
+<p>© 2026 Clarté Mentale</p>
+</div></footer>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "fe038fee5d6847dfa5f836cbf5080717"}'></script>
+</body>
+</html>
