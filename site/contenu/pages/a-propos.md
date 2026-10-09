@@ -7,7 +7,7 @@ Clarté Mentale est un site d'information bien-être en français, créé fin 20
 
 ## Qui écrit Clarté Mentale ?
 
-Je m'appelle **Yacine Nettour**, et je suis le fondateur de Clarté Mentale. J'ai créé ce site pour rassembler, en français et sans jargon, ce que les sources sérieuses disent du stress, du système nerveux et du sommeil.
+Je m'appelle **Yacine Nettour**, et je suis le fondateur de Clarté Mentale. Dans la vie, je suis **électricien de métier**, et passionné par le stress, le système nerveux et le sommeil. J'ai créé ce site pour rassembler, en français et sans jargon, ce que les sources sérieuses disent du stress, du système nerveux et du sommeil.
 
 Tu me connais peut-être par [Pinterest](https://www.pinterest.com/clartementale/), où je publie chaque jour des fiches courtes sur ces sujets. Ce site va plus loin : chaque article prend le temps d'expliquer ce qui se passe dans le corps et cite ses sources.
 
@@ -25,7 +25,7 @@ Les articles sont organisés en trois thèmes :
 
 ## Pourquoi faire confiance à ces articles ?
 
-Je ne suis pas professionnel de santé : la fiabilité de ce site repose donc sur une méthode stricte et transparente, que tu peux vérifier à chaque article.
+Je ne suis pas professionnel de santé, mais un passionné : la fiabilité de ce site repose donc sur une méthode stricte et transparente, que tu peux vérifier à chaque article.
 
 | Engagement | Comment le vérifier |
 |---|---|
@@ -41,7 +41,7 @@ Le détail de ces règles, la hiérarchie des sources et la façon de signaler u
 
 ## Ce que je ne suis pas
 
-Je ne suis **ni médecin, ni psychologue, ni professionnel de santé**. Les articles de ce site sont des repères de bien-être : ils n'établissent aucun diagnostic et ne remplacent jamais une consultation. Quand un signe mérite l'avis d'un médecin, l'article le dit clairement, dans sa section « Quand consulter ? ».
+Je suis électricien de métier : je ne suis **ni médecin, ni psychologue, ni professionnel de santé**. Les articles de ce site sont des repères de bien-être : ils n'établissent aucun diagnostic et ne remplacent jamais une consultation. Quand un signe mérite l'avis d'un médecin, l'article le dit clairement, dans sa section « Quand consulter ? ».
 
 ## Que propose Clarté Mentale ?
 
