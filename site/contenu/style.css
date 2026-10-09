@@ -248,3 +248,4 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .audio audio { width: 100%; height: 44px; }
 .audio .phase { margin: 0; min-height: 1.6em; font: 600 15px/1.6 var(--texte); color: var(--brume); }
 .audio a { font-size: 14px; justify-self: start; }
+.credit-audio { margin: 2px 4px 0; font-size: 13.5px; line-height: 1.6; color: var(--champagne-doux); }

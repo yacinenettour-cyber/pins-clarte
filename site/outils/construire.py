@@ -928,15 +928,21 @@ def lecteurs_audio():
                      f'<audio controls preload="none" src="/audio/{nom}"></audio>'
                      f'<p class="phase">Appuie sur lecture, puis ferme les yeux si tu veux.</p>'
                      f'<a href="/audio/{nom}" download>Télécharger (MP3, {f"{taille:.1f}".replace(".", ",")} Mo)</a></figure>')
-    return '<div class="audios">' + "".join(blocs) + "</div>"
+    credit = ('<p class="credit-audio">Musique : « Deep Relaxation », Kevin MacLeod '
+              '(<a href="https://incompetech.com/">incompetech.com</a>), sous licence '
+              '<a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; '
+              'extrait mixé avec des repères de respiration par Clarté Mentale.</p>')
+    return '<div class="audios">' + "".join(blocs) + credit + "</div>"
 
 
 def construire_respiration():
     objets = [{"@context": "https://schema.org", "@type": "AudioObject", "name": f"Respiration guidée 4-6 — {m} minutes",
-               "description": f"Respiration lente guidée par des sons, sans voix : inspirer 4 secondes, expirer 6 secondes, {m * 6} respirations.",
+               "description": f"Respiration lente guidée sur une musique de détente, sans voix : inspirer 4 secondes, expirer 6 secondes, {m * 6} respirations.",
                "contentUrl": f"{URL}/audio/respiration-4-6-{m}-min.mp3", "encodingFormat": "audio/mpeg",
                "duration": f"PT{m}M", "inLanguage": SITE["langue"], "isAccessibleForFree": True,
-               "creator": {"@id": URL + "/#organisation"}} for m, _ in AUDIOS]
+               "creator": {"@id": URL + "/#organisation"},
+               "contributor": {"@type": "Person", "name": "Kevin MacLeod", "url": "https://incompetech.com/"},
+               "license": "https://creativecommons.org/licenses/by/4.0/"} for m, _ in AUDIOS]
     return construire_page_outil("respiration-guidee.md", "/respiration-guidee/", "Respiration guidée",
                                  {"{{AUDIOS}}": lecteurs_audio()}, "3 à 10 minutes", script=SCRIPT_AUDIO,
                                  schemas_en_plus=objets)
@@ -1007,7 +1013,8 @@ def construire_fichiers_techniques(articles):
                f"- [Test de stress et d'anxiété]({URL}/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, "
                "score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui "
                "donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.",
-               f"- [Respiration guidée 4-6]({URL}/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes) "
+               f"- [Respiration guidée 4-6]({URL}/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), "
+               "sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), "
                "pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme."]
     lignes += ["", "## Guides gratuits", ""]
     for g in SITE["guides"].values():

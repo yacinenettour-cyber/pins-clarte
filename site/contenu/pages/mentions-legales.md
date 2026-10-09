@@ -30,7 +30,11 @@ Les contenus de ce site sont des informations générales de bien-être, rédig�
 
 ## Crédits photos
 
-Photos issues de [Pexels](https://www.pexels.com/fr-fr/license/) et d'[Unsplash](https://unsplash.com/license), utilisées selon leurs licences (usage gratuit, attribution facultative). Le nom du photographe est indiqué sous la photo quand il est connu.
+Photos issues de [Pexels](https://www.pexels.com/fr-fr/license/) et d'[Unsplash](https://unsplash.com/license), utilisées selon leurs licences (usage gratuit, attribution facultative). Le nom du photographe est indiqué sous la photo quand il est connu. Les images signalées « Image d'illustration » viennent de la banque d'images de Clarté Mentale, dont une partie a été créée par ordinateur.
+
+## Crédits musique
+
+Les [audios de respiration guidée](/respiration-guidee/) utilisent un extrait de « Deep Relaxation », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)), sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr), mixé avec des repères de respiration par Clarté Mentale.
 
 ## Propriété intellectuelle
 
