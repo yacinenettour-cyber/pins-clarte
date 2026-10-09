@@ -1,7 +1,7 @@
 ---
 titre: Cortisol et sommeil : comment le stress dérègle tes nuits, et comment les apaiser
 titre_seo: Cortisol et sommeil : le lien, et comment mieux dormir
-description: Cortisol et sommeil : pourquoi une nuit courte fait monter le cortisol du soir, ce que montrent les études sur l'insomnie, et les gestes qui aident à retrouver des nuits calmes.
+description: Cortisol et sommeil : pourquoi une nuit courte fait monter le cortisol du soir, ce que montrent les études sur l'insomnie et les gestes qui apaisent tes nuits.
 slug: cortisol-et-sommeil
 mot_cle: cortisol et sommeil
 guide: cortisol

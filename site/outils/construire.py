@@ -35,6 +35,7 @@ MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août
         "octobre", "novembre", "décembre"]
 SECTIONS_SPECIALES = {"l'essentiel", "questions fréquentes", "pour aller plus loin", "sources"}
 
+ALT_OG_DEFAUT = "Clarté Mentale : un croissant de lune sur fond de nuit et la phrase « Ton système nerveux mérite une trêve. »"
 LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#080C10" stroke="#8FBF9A" stroke-width="1.5"/>'
         '<path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#DFD5C6"/></svg>')
 
@@ -194,14 +195,15 @@ def lire_article(chemin):
 
 # ---------------------------------------------------------------- images
 
-def preparer_image(nom):
-    """<nom> -> img/<base>-1200.webp, -640.webp et og-<base>.jpg (1200x630)."""
+def preparer_image(nom, base=None):
+    """<nom> -> img/<base>-1200.webp, -640.webp, og-<base>.jpg (1200x630) et <base>-1x1/4x3/16x9.jpg.
+    <base> : adresse de l'article, pour des noms de fichiers descriptifs (référencement des images)."""
     if not nom:
         return None
     source = os.path.join(RACINE, "images", nom)
     if not os.path.exists(source):
         source = os.path.join(DEPOT, "fonds", nom)
-    base = os.path.splitext(nom)[0]
+    base = base or os.path.splitext(nom)[0]
     dossier = os.path.join(SORTIE, "img")
     os.makedirs(dossier, exist_ok=True)
     img = ImageOps.exif_transpose(Image.open(source)).convert("RGB")
@@ -223,6 +225,12 @@ def preparer_image(nom):
     og = ImageOps.fit(img, (1200, 630), Image.LANCZOS, centering=(0.5, 0.3))
     og.save(os.path.join(dossier, f"og-{base}.jpg"), "JPEG", quality=82, optimize=True)
     sorties["og"] = f"/img/og-{base}.jpg"
+    # Formats recommandés par Google pour l'image d'un article (16:9, 4:3, 1:1), au moins 1200 px de large.
+    sorties["formats"] = []
+    for nom_format, taille in (("16x9", (1200, 675)), ("4x3", (1200, 900)), ("1x1", (1200, 1200))):
+        ImageOps.fit(img, taille, Image.LANCZOS, centering=(0.5, 0.3)).save(
+            os.path.join(dossier, f"{base}-{nom_format}.jpg"), "JPEG", quality=80, optimize=True, progressive=True)
+        sorties["formats"].append(f"/img/{base}-{nom_format}.jpg")
     return sorties
 
 
@@ -320,7 +328,8 @@ def insecables(contenu):
     return "".join(m if i % 2 else re.sub(r">([^<]+)<", texte, m) for i, m in enumerate(morceaux))
 
 
-def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og="website", nav="", meta_article=None, tete=""):
+def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og="website", nav="", meta_article=None, tete="",
+         image_alt=None):
     contenu = insecables(contenu)
     canon = URL + chemin
     image_og = URL + (image_og or "/img/og-defaut.jpg")
@@ -349,6 +358,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <meta property="og:image" content="{image_og}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(image_alt or ALT_OG_DEFAUT)}">
 <meta name="twitter:card" content="summary_large_image">
 {meta_article or ""}
 {f'<meta name="p:domain_verify" content="{verif}">' if verif and chemin == "/" else ""}
@@ -561,13 +571,14 @@ def construire_article(a, tous):
         "headline": a["titre"], "description": a["description"], "inLanguage": SITE["langue"],
         "datePublished": a["date"], "dateModified": a["maj"], "wordCount": a["mots"],
         "mainEntityOfPage": f"{URL}/{a['slug']}/", "author": auteur(), "publisher": editeur(),
-        "about": a["mot_cle"], "isAccessibleForFree": True,
+        "about": a["mot_cle"], "keywords": a["mot_cle"], "articleSection": SITE["categories"][a["categorie"]],
+        "isAccessibleForFree": True,
         "citation": [{"@type": "ScholarlyArticle" if type_source(u)[0] == "etude" else "CreativeWork", "name": t, "url": u}
                      for t, u in a["sources"]],
         "publishingPrinciples": URL + "/methode-editoriale/",
     }
     if a.get("images"):
-        schema_article["image"] = [URL + a["images"][1200][0], URL + a["images"]["og"]]
+        schema_article["image"] = [URL + u for u in a["images"]["formats"]]
     schemas = [schema_article, schema_ariane]
     if a["faq"]:
         schemas.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -580,7 +591,7 @@ def construire_article(a, tous):
                     f'<meta property="article:section" content="{e(SITE["categories"][a["categorie"]])}">')
     ecrire(f"{a['slug']}/index.html", page(a["titre_seo"], a["description"], f"/{a['slug']}/", contenu, schemas,
                                            a["images"]["og"] if a.get("images") else None, "article",
-                                           meta_article=meta_article))
+                                           meta_article=meta_article, image_alt=a["alt"] if a.get("images") else None))
 
 
 # Polices de l'accueil : les mêmes @font-face que style.css (polices du site et polices de secours mises à l'échelle).
@@ -652,6 +663,7 @@ def construire_accueil(articles):
 <meta property="og:image" content="{URL}/img/og-defaut.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(ALT_OG_DEFAUT)}">
 <meta name="twitter:card" content="summary_large_image">
 {f'<meta name="p:domain_verify" content="{verif}">' if verif else ""}
 {balise_google("/")}
@@ -729,7 +741,7 @@ def construire_theme(cle, articles):
               "mainEntity": {"@type": "ItemList", "itemListElement": [
                   {"@type": "ListItem", "position": i + 1, "url": f"{URL}/{a['slug']}/", "name": a["titre"]}
                   for i, a in enumerate(lot)]}}
-    ecrire(f"{th['slug']}/index.html", page(f"{th['titre_seo']} | {SITE['nom']}", th["description"], f"/{th['slug']}/",
+    ecrire(f"{th['slug']}/index.html", page(th["titre_seo"], th["description"], f"/{th['slug']}/",
                                             contenu, [schema, schema_ariane]))
 
 
@@ -806,7 +818,7 @@ def construire_formation():
     }
     schema_faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": r}} for q, r in f["faq"]]}
-    ecrire("la-formation/index.html", page(f"Formation sommeil : {f['titre']} | {SITE['nom']}",
+    ecrire("la-formation/index.html", page(f"Formation sommeil : {f['titre']}",
                                            "Programme en ligne pour calmer le mental le soir : 6 modules courts, audios guidés, parcours de 28 soirs, kit de fiches. 37 €, garantie 7 jours.",
                                            "/la-formation/", contenu, [schema_cours, schema_faq, schema_ariane],
                                            nav="/la-formation/"))
@@ -988,9 +1000,16 @@ def construire_fichiers_techniques(articles):
              ("/mentions-legales/", SITE["date_publication"])]
     pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
+    # Images de chaque article (photo principale et image à épingler), pour Google Images.
+    images_page = {f"/{a['slug']}/": [a["images"][1200][0]] + ([a["epingle"]] if a.get("epingle") else [])
+                   for a in articles if a.get("images")}
+    def entree(p, d):
+        imgs = "".join(f"<image:image><image:loc>{URL}{i}</image:loc></image:image>" for i in images_page.get(p, []))
+        return f"<url><loc>{URL}{p}</loc><lastmod>{d}</lastmod>{imgs}</url>\n"
     ecrire("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
-           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-           + "".join(f"<url><loc>{URL}{p}</loc><lastmod>{d}</lastmod></url>\n" for p, d in pages)
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+           'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+           + "".join(entree(p, d) for p, d in pages)
            + "</urlset>\n")
     robots_ia = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot",
                  "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot",
@@ -1095,7 +1114,7 @@ def main():
     ordre = list(SITE["articles"])
     articles.sort(key=lambda a: ordre.index(a["slug"]) if a["slug"] in ordre else len(ordre))
     for a in articles:
-        a["images"] = preparer_image(a["image"])
+        a["images"] = preparer_image(a["image"], a["slug"])
         a["epingle"] = image_epingle(a) if a["images"] else None
     for a in articles:
         construire_article(a, articles)

@@ -1,7 +1,7 @@
 ---
 titre: À propos de Clarté Mentale
 titre_seo: À propos : qui écrit Clarté Mentale et avec quelle méthode
-description: Clarté Mentale, créé par Yacine Nettour : pourquoi ce site parle de stress, de cortisol et de sommeil, comment les articles sont sourcés, et ce que ce site n'est pas.
+description: Clarté Mentale, créé par Yacine Nettour : pourquoi parler de stress, de cortisol et de sommeil, comment les articles sont sourcés, ce que ce site n'est pas.
 ---
 Clarté Mentale est un site d'information bien-être en français, créé fin 2025 par Yacine Nettour, qui explique ce que disent les organismes officiels de santé et les études scientifiques sur le stress, le cortisol, le système nerveux et le sommeil, avec des gestes simples à essayer dès le soir même.
 

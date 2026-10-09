@@ -1,7 +1,7 @@
 ---
 titre: Méthode éditoriale : comment les articles sont écrits et vérifiés
 titre_seo: Méthode éditoriale et choix des sources | Clarté Mentale
-description: Comment Clarté Mentale choisit ses sources (Inserm, HAS, Assurance maladie, études publiées), vérifie chaque affirmation, signale les limites des études et corrige ses erreurs.
+description: Comment Clarté Mentale choisit ses sources (Inserm, HAS, Assurance maladie, études), vérifie chaque affirmation, signale les limites et corrige ses erreurs.
 ---
 La méthode éditoriale de Clarté Mentale est l'ensemble des règles qui encadrent l'écriture de chaque article : partir de sources officielles et d'études publiées, vérifier chaque affirmation dans sa source, dire les limites des études, et indiquer quand consulter un médecin. Cette page les détaille, pour que tu puisses juger par toi-même de la fiabilité de ce que tu lis.
 
