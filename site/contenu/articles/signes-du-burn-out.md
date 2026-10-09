@@ -5,6 +5,7 @@ description: Signes du burn-out : épuisement, cynisme, perte d'efficacité. Rep
 slug: signes-du-burn-out
 mot_cle: signes du burn-out
 guide: aucun
+maj: 2026-10-09
 image: Une personne assise à son bureau en fin de journée, la tête appuyée sur une main, le regard las tourné vers la fenêtre, lumière douce de fin d'après-midi, aucun écran lisible ni texte
 ---
 ## L'essentiel
@@ -13,19 +14,25 @@ image: Une personne assise à son bureau en fin de journée, la tête appuyée s
 - Ses premiers signes sont physiques, émotionnels, cognitifs et comportementaux, et ils s'installent souvent sans bruit [2][3].
 - Le médecin traitant et le médecin du travail sont les deux interlocuteurs clés, et un arrêt de travail est souvent nécessaire [2].
 
-Les signes du burn-out associent un épuisement profond, une prise de distance avec ton travail (indifférence, cynisme) et l'impression de ne plus y arriver. Ils s'installent progressivement et touchent à la fois le corps, les émotions et le comportement. Si tu t'y reconnais, parles-en à ton médecin traitant ou au médecin du travail : c'est leur rôle.
+Le burn-out est un syndrome d'épuisement lié au travail [1]. Ses signes associent un épuisement profond, une prise de distance avec ton travail (indifférence, cynisme) et l'impression de ne plus y arriver. Ils s'installent progressivement et touchent à la fois le corps, les émotions et le comportement. Si tu t'y reconnais, parles-en à ton médecin traitant ou au médecin du travail : c'est leur rôle.
 
 ## Qu'est-ce que le burn-out, exactement ?
 
-Dans sa classification internationale (CIM-11), l'Organisation mondiale de la santé décrit le burn-out comme un syndrome dû à un **stress chronique au travail qui n'a pas pu être géré** [1]. Elle le range parmi les facteurs qui influencent l'état de santé, et non parmi les maladies, et réserve le terme au **contexte professionnel** [1].
+Le burn-out est un syndrome dû à un **stress chronique au travail qui n'a pas pu être géré**, selon la classification internationale des maladies de l'Organisation mondiale de la santé (CIM-11) [1]. Elle le range parmi les facteurs qui influencent l'état de santé, et non parmi les maladies, et réserve le terme au **contexte professionnel** [1].
 
 En France, la Haute Autorité de santé (HAS) a publié en 2017 des recommandations pour aider les médecins à le repérer [2]. Elle parle d'un épuisement physique, émotionnel et mental, provoqué par un investissement prolongé dans un travail exigeant sur le plan émotionnel. Ce n'est pas une maladie classée, mais cela demande une vraie démarche médicale [2].
 
 Pour l'INRS, l'organisme de référence sur la santé au travail, le risque augmente quand l'écart devient trop grand entre ce que tu attends de ton métier et la réalité de ton quotidien [3]. Soin, aide, enseignement sont souvent cités, mais tout métier qui demande un fort engagement personnel peut être concerné [3]. « Pas une maladie » ne veut donc pas dire « pas grave » : le burn-out peut évoluer vers de l'anxiété ou une dépression [3].
 
+| Organisme | Ce qu'il dit du burn-out |
+|---|---|
+| OMS (CIM-11) | Un syndrome dû à un stress chronique au travail non géré, classé parmi les facteurs qui influencent la santé et non parmi les maladies [1] |
+| HAS | Un épuisement physique, émotionnel et mental, lié à un investissement prolongé dans un travail exigeant sur le plan émotionnel [2] |
+| INRS | Un risque qui augmente quand l'écart devient trop grand entre ce qu'on attend de son métier et la réalité du quotidien [3] |
+
 ## Quelles sont les 3 dimensions du burn-out ?
 
-Les travaux de la psychologue Christina Maslach, repris par la HAS, décrivent le burn-out comme une dégradation progressive du rapport au travail, en trois volets [2] :
+Les trois dimensions du burn-out sont l'épuisement, la distance (ou cynisme) et le sentiment d'inefficacité [1][3]. Elles viennent des travaux de la psychologue Christina Maslach, de l'Université de Californie à Berkeley, repris par la HAS, qui décrivent le burn-out comme une dégradation progressive du rapport au travail [2] :
 
 1. **L'épuisement.** Tu as la sensation que tes réserves sont à sec, physiquement et émotionnellement [1][3].
 2. **La distance ou le cynisme.** Le travail, les collègues ou les personnes dont tu t'occupes finissent par te laisser froid. L'INRS parle de déshumanisation de la relation : patients, clients ou usagers deviennent presque des « dossiers », et le regard sur le travail se noircit [3].
@@ -35,7 +42,7 @@ Pas question pour autant de conclure par toi-même : c'est à un médecin de fai
 
 ## Quels sont les signes du burn-out à surveiller ?
 
-La HAS et l'INRS décrivent des manifestations très variées, plus ou moins marquées [2][3]. Aucune n'est spécifique : prise isolément, chacune peut avoir bien d'autres explications [3].
+Les signes du burn-out sont physiques, émotionnels, cognitifs, comportementaux et motivationnels, et ils s'installent progressivement [2][3]. La HAS et l'INRS décrivent des manifestations très variées, plus ou moins marquées [2][3]. Aucune n'est spécifique : prise isolément, chacune peut avoir bien d'autres explications [3].
 
 | Type de signe | Exemples |
 |---|---|
@@ -59,7 +66,7 @@ Ce n'est pas un test, mais plusieurs « oui » depuis un moment sont une bonne r
 
 ## Burn-out, fatigue passagère ou dépression : comment faire la différence ?
 
-Ce n'est pas à toi de trancher, mais quelques repères aident à y voir plus clair.
+La fatigue passagère disparaît avec le repos, la dépression est une maladie de l'humeur qui dure plus de deux semaines, et le burn-out est un épuisement lié au travail [1][4][5]. Ce n'est pas à toi de trancher, mais ces repères aident à y voir plus clair.
 
 **La fatigue passagère** suit un effort et disparaît avec le repos. Selon l'Assurance Maladie, elle devient anormale quand elle persiste malgré le repos ; le surmenage et le burn-out font partie de ses causes possibles [4].
 
@@ -77,7 +84,7 @@ Si tu hésites entre ces trois situations, c'est déjà une raison suffisante po
 
 ## Qui consulter si tu reconnais ces signes ?
 
-Selon la HAS, deux médecins sont en première ligne [2] :
+Si tu reconnais ces signes, consulte ton médecin traitant ou le médecin du travail : selon la HAS, ce sont les deux interlocuteurs en première ligne [2].
 
 1. **Ton médecin traitant.** Il coordonne la prise en charge, vérifie qu'aucune autre cause physique n'est en jeu et peut t'orienter vers un psychiatre si besoin [2]. La HAS mentionne aussi un accompagnement psychothérapeutique ou psychocorporel par un professionnel formé [2].
 2. **Le médecin du travail.** Tu peux demander à le voir à tout moment, y compris pendant un arrêt, sans prévenir ton employeur si la visite a lieu en dehors de tes heures de travail [2]. Il peut proposer un aménagement de poste ou une redéfinition de tes objectifs [3].
@@ -93,7 +100,7 @@ Un point qui soulage souvent : l'organisation du travail joue un rôle central [
 
 ## Quand consulter ?
 
-N'attends pas d'être au bout du rouleau. Prends rendez-vous avec ton médecin traitant ou le médecin du travail si :
+Consulte ton médecin traitant ou le médecin du travail dès que ta fatigue persiste malgré le repos ou que des signes durent depuis plus de deux semaines : n'attends pas d'être au bout du rouleau. Prends rendez-vous si :
 
 - ta fatigue persiste malgré les week-ends, les congés ou le repos [4] ;
 - tes signes durent depuis plus de deux semaines et pèsent sur ton sommeil, ton appétit, ta concentration ou ta vie sociale [5] ;

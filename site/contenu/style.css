@@ -85,13 +85,29 @@ strong { color: var(--champagne); }
 .sommaire ol { margin: 0; padding-left: 20px; }
 .avertissement { font-size: 15px; color: var(--champagne-doux); border-top: 1px solid var(--lisere); margin-top: 44px; padding-top: 16px; }
 .tableau { overflow-x: auto; margin: 20px 0; border-radius: 14px; border: 1px solid var(--lisere); }
+@media (max-width: 560px) {
+  .tableau table, .tableau tbody, .tableau tr, .tableau td { display: block; width: 100%; }
+  .tableau thead { display: none; }
+  .tableau tr { padding: 12px 14px; border-bottom: 1px solid var(--lisere); }
+  .tableau tr:last-child { border-bottom: 0; }
+  .tableau td { border: 0; padding: 3px 0; }
+  .tableau td:first-child { color: var(--champagne); font-weight: 600; }
+  .tableau td[data-label]:not([data-label=""])::before { content: attr(data-label); display: block; margin-top: 4px; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--brume); }
+}
 table { border-collapse: collapse; width: 100%; font-size: 16px; background: var(--verre); }
 th, td { text-align: left; padding: 11px 13px; border-bottom: 1px solid var(--lisere); vertical-align: top; color: #CFC6B8; }
 th { background: rgba(58, 95, 67, 0.35); color: var(--champagne); font-weight: 600; }
 blockquote { margin: 20px 0; padding: 12px 18px; background: var(--verre); border-left: 3px solid var(--emeraude); border-radius: 10px; }
 sup a { text-decoration: none; font-size: 13px; }
 .sources { font-size: 15px; }
-.sources li { margin-bottom: 6px; word-break: break-word; }
+.sources li { margin-bottom: 8px; word-break: break-word; }
+.type-source { display: inline-block; font-size: 12px; line-height: 1.45; padding: 1px 9px; margin: 2px 0 0 2px; border-radius: 999px; border: 1px solid var(--lisere-fort); color: var(--champagne-doux); background: var(--verre); }
+.type-officiel { border-color: rgba(143, 191, 154, 0.5); color: var(--brume); }
+.type-etude { border-color: rgba(223, 213, 198, 0.35); color: var(--champagne); }
+.note-sources { font-size: 14px; color: var(--champagne-doux); margin-top: 12px; }
+.bilan-sources { display: flex; flex-wrap: wrap; gap: 8px; margin: -6px 0 22px; font-size: 14px; line-height: 1.4; }
+.bilan-sources a { text-decoration: none; padding: 5px 12px; border-radius: 999px; border: 1px solid rgba(143, 191, 154, 0.35); background: rgba(58, 95, 67, 0.2); color: var(--brume); transition: var(--transition); }
+.bilan-sources a:hover { border-color: rgba(143, 191, 154, 0.7); box-shadow: var(--ombre-lueur); }
 .faq h3 { margin-top: 24px; }
 
 /* Carte guide */

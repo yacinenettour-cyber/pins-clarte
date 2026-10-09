@@ -47,8 +47,18 @@ def e(texte):
     return html.escape(texte or "", quote=True)
 
 
+def etiqueter_cellules(table):
+    """Ajoute à chaque cellule le titre de sa colonne (data-label) : sur mobile, le tableau s'affiche en fiches."""
+    entetes = [texte_brut(h) for h in re.findall(r"<th[^>]*>(.*?)</th>", table, flags=re.S)]
+    def ligne(m):
+        cellules = iter(entetes)
+        return re.sub(r"<td([^>]*)>", lambda c: f'<td{c.group(1)} data-label="{e(next(cellules, ""))}">', m.group(0))
+    return re.sub(r"<tr>.*?</tr>", ligne, table, flags=re.S)
+
+
 def md(texte):
     rendu = markdown.markdown(texte, extensions=["extra", "sane_lists"], output_format="html")
+    rendu = re.sub(r"<table>.*?</table>", lambda m: etiqueter_cellules(m.group(0)), rendu, flags=re.S)
     return rendu.replace("<table>", '<div class="tableau"><table>').replace("</table>", "</table></div>")
 
 
@@ -89,6 +99,46 @@ def appels_de_source(html_txt, nb_sources):
         liens = ", ".join(f'<a href="#source-{n}" aria-label="Source {n}">{n}</a>' for n in nums)
         return f"<sup>[{liens}]</sup>"
     return re.sub(r"\[(\d+(?:\s*[,;]\s*\d+)*)\](?!\()", remplacer, html_txt)
+
+
+# Type de chaque source, affiché sous l'article (E-E-A-T) : (fin du domaine, famille, libellé).
+TYPES_SOURCES = [
+    ("inserm.fr", "officiel", "Inserm, institut public de recherche médicale"),
+    ("has-sante.fr", "officiel", "Haute Autorité de santé"),
+    ("ameli.fr", "officiel", "Assurance maladie"),
+    ("sante.fr", "officiel", "Santé.fr, service public d'information en santé"),
+    ("inrs.fr", "officiel", "INRS, prévention des risques professionnels"),
+    ("who.int", "officiel", "Organisation mondiale de la santé"),
+    ("service-public.gouv.fr", "officiel", "Service-Public.fr, site officiel de l'administration"),
+    ("3114.fr", "officiel", "Numéro national de prévention du suicide"),
+    ("institut-sommeil-vigilance.org", "reference", "Institut national du sommeil et de la vigilance"),
+    ("msdmanuals.com", "reference", "Manuel médical de référence"),
+    ("clevelandclinic.org", "reference", "Cleveland Clinic, centre médical américain"),
+    ("urmc.rochester.edu", "reference", "Centre médical de l'Université de Rochester"),
+    ("sleepfoundation.org", "information", "Site d'information spécialisé"),
+]
+FAMILLES_SOURCES = {"officiel": ("source officielle", "sources officielles"),
+                    "reference": ("référence médicale", "références médicales"),
+                    "etude": ("publication scientifique", "publications scientifiques"),
+                    "information": ("site d'information", "sites d'information")}
+
+
+def type_source(url):
+    hote = re.sub(r"^https?://([^/]+).*$", r"\1", url).lower()
+    for domaine, famille, libelle in TYPES_SOURCES:
+        if hote == domaine or hote.endswith("." + domaine):
+            return famille, libelle
+    return "etude", "Publication scientifique"
+
+
+def bilan_sources(sources):
+    """« 8 sources : 3 organismes officiels de santé, 1 référence médicale, 4 études scientifiques »."""
+    comptes = {}
+    for _, u in sources:
+        famille = type_source(u)[0]
+        comptes[famille] = comptes.get(famille, 0) + 1
+    morceaux = [f"{n} {FAMILLES_SOURCES[f][0 if n == 1 else 1]}" for f in FAMILLES_SOURCES for n in [comptes.get(f, 0)] if n]
+    return f"{len(sources)} sources : " + ", ".join(morceaux)
 
 
 def lire_article(chemin):
@@ -215,7 +265,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
@@ -277,7 +327,7 @@ def ariane(elements):
 def editeur():
     return {"@type": "Organization", "@id": URL + "/#organisation", "name": SITE["nom"], "url": URL + "/",
             "logo": {"@type": "ImageObject", "url": URL + "/logo.png", "width": 512, "height": 512},
-            "sameAs": [SITE["pinterest"]]}
+            "sameAs": [SITE["pinterest"]], "publishingPrinciples": URL + "/methode-editoriale/"}
 
 
 def auteur():
@@ -324,8 +374,11 @@ def construire_article(a, tous):
     sources_html = ""
     if a["sources"]:
         sources_html = ('<section class="sources"><h2 id="sources">Sources</h2><ol>'
-                        + "".join(f'<li id="source-{i + 1}"><a href="{e(u)}" rel="noopener">{e(t)}</a></li>'
-                                  for i, (t, u) in enumerate(a["sources"])) + "</ol></section>")
+                        + "".join(f'<li id="source-{i + 1}"><a href="{e(u)}" rel="noopener">{e(t)}</a> '
+                                  f'<span class="type-source type-{type_source(u)[0]}">{e(type_source(u)[1])}</span></li>'
+                                  for i, (t, u) in enumerate(a["sources"]))
+                        + '</ol><p class="note-sources">Chaque source a été ouverte et relue pour vérifier qu\'elle dit bien '
+                        'ce que l\'article lui attribue. <a href="/methode-editoriale/">Comment les articles sont écrits et vérifiés</a></p></section>')
     photo = ""
     if a.get("images"):
         src, l, h = a["images"][1200]
@@ -344,6 +397,7 @@ def construire_article(a, tous):
 <article>
 <h1>{e(a['titre'])}</h1>
 <p class="meta">Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{a["maj"]}">{date_fr(a['maj'])}</time> · {a['lecture']} min de lecture</p>
+<p class="bilan-sources"><a href="#sources">{e(bilan_sources(a['sources']))}</a><a href="/methode-editoriale/">Méthode éditoriale</a></p>
 {intro_html}
 {photo}
 {resume}
@@ -362,7 +416,9 @@ def construire_article(a, tous):
         "datePublished": a["date"], "dateModified": a["maj"], "wordCount": a["mots"],
         "mainEntityOfPage": f"{URL}/{a['slug']}/", "author": auteur(), "publisher": editeur(),
         "about": a["mot_cle"], "isAccessibleForFree": True,
-        "citation": [{"@type": "CreativeWork", "name": t, "url": u} for t, u in a["sources"]],
+        "citation": [{"@type": "ScholarlyArticle" if type_source(u)[0] == "etude" else "CreativeWork", "name": t, "url": u}
+                     for t, u in a["sources"]],
+        "publishingPrinciples": URL + "/methode-editoriale/",
     }
     if a.get("images"):
         schema_article["image"] = [URL + a["images"][1200][0], URL + a["images"]["og"]]
@@ -567,7 +623,8 @@ def construire_page_fixe(nom_fichier, chemin, nav=""):
     schemas = [schema_ariane]
     if chemin == "/a-propos/":
         schemas.append({"@context": "https://schema.org", "@type": "AboutPage", "url": URL + chemin,
-                        "mainEntity": auteur()})
+                        "mainEntity": {**auteur(), "description": SITE["description"],
+                                       "knowsAbout": ["stress", "cortisol", "sommeil", "système nerveux", "charge mentale"]}})
     ecrire(chemin.strip("/") + "/index.html",
            page(entete.get("titre_seo") or entete["titre"], entete["description"], chemin, contenu, schemas, nav=nav))
 
@@ -592,7 +649,7 @@ def ecrire(rel, contenu, mode="w"):
 def construire_fichiers_techniques(articles):
     pages = [("/", SITE["date_publication"]), ("/articles/", max(a["maj"] for a in articles)),
              ("/la-formation/", SITE["date_publication"]),
-             ("/guides-gratuits/", SITE["date_publication"]), ("/a-propos/", SITE["date_publication"]),
+             ("/guides-gratuits/", SITE["date_publication"]), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
              ("/mentions-legales/", SITE["date_publication"])]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
     ecrire("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -625,7 +682,7 @@ def construire_fichiers_techniques(articles):
                    " Outils de bien-être, pas un traitement médical."]
     lignes += ["", "## Optional", "",
                f"- [Texte intégral de tous les articles]({URL}/llms-full.txt)",
-               f"- [À propos de l'auteur]({URL}/a-propos/)", f"- [Mentions légales]({URL}/mentions-legales/)", ""]
+               f"- [À propos de l'auteur]({URL}/a-propos/)", f"- [Méthode éditoriale et choix des sources]({URL}/methode-editoriale/)", f"- [Mentions légales]({URL}/mentions-legales/)", ""]
     ecrire("llms.txt", "\n".join(lignes))
     complet = [f"# {SITE['nom']} — texte intégral des articles", "",
                f"Source : {URL} — chaque article ci-dessous est aussi publié à l'adresse indiquée.", ""]
@@ -699,6 +756,7 @@ def main():
     if SITE.get("formation"):
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")
+    construire_page_fixe("methode-editoriale.md", "/methode-editoriale/")
     construire_page_fixe("mentions-legales.md", "/mentions-legales/")
     construire_404()
     construire_fichiers_techniques(articles)
