@@ -96,5 +96,22 @@
    "fonds/fond-89.jpg",
    "fonds/fond-89.jpg"
   ]
+ },
+ {
+  "date": "2026-10-09T16:33+00:00",
+  "id": "systemenerveux-soupir-physiologique",
+  "titre": "Le soupir physiologique : la respiration la plus rapide pour redescendre",
+  "video": "videopins/videopin-20261009-163210.mp4",
+  "cover": "videopins/videopin-20261009-163210.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890065899",
+  "photos": [
+   "fonds/fond-141.jpg",
+   "fonds/fond-141.jpg",
+   "fonds/fond-142.jpg",
+   "fonds/fond-142.jpg",
+   "fonds/fond-145.jpg",
+   "fonds/fond-145.jpg"
+  ]
  }
 ]
