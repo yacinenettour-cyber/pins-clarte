@@ -34,8 +34,8 @@ MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août
         "octobre", "novembre", "décembre"]
 SECTIONS_SPECIALES = {"l'essentiel", "questions fréquentes", "pour aller plus loin", "sources"}
 
-LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#d9a441"/>'
-        '<path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#1c2a44"/></svg>')
+LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#080C10" stroke="#8FBF9A" stroke-width="1.5"/>'
+        '<path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#DFD5C6"/></svg>')
 
 
 def date_fr(iso):
@@ -199,6 +199,9 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {f'<meta name="p:domain_verify" content="{verif}">' if verif and chemin == "/" else ""}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{e(SITE['nom'])}" href="/feed.xml">
+<meta name="theme-color" content="#080C10">
+<link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 {blocs_ld}
 </head>
@@ -378,40 +381,96 @@ def construire_article(a, tous):
                                            meta_article=meta_article))
 
 
+POLICES_CSS = """@font-face { font-family: "Syne"; src: url("/polices/syne.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("/polices/plus-jakarta-sans.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }"""
+TITRE_ACCUEIL = "Baisser le cortisol : test anti-stress pour mieux dormir"
+DESCRIPTION_ACCUEIL = ("Calcule en 30 secondes ton score de charge en cortisol, puis découvre les gestes anti-stress "
+                       "naturels validés par la science pour mieux dormir.")
+
+
+def cartes_lecture(articles, image_en_ligne=False):
+    """Cartes d'articles de l'accueil (verre sombre). image_en_ligne : image intégrée (artefact)."""
+    cartes = []
+    for a in articles[:6]:
+        img = ""
+        if a.get("images"):
+            src, l, h = a["images"][640]
+            if image_en_ligne:
+                import base64
+                donnees = base64.b64encode(open(os.path.join(SORTIE, src.lstrip("/")), "rb").read()).decode()
+                src = "data:image/webp;base64," + donnees
+            img = f'<img src="{src}" width="{l}" height="{h}" alt="" loading="lazy" decoding="async">'
+        lien = (URL if image_en_ligne else "") + f"/{a['slug']}/"
+        cartes.append(f'<a class="carte-lecture" href="{lien}">{img}<div class="corps">'
+                      f'<p class="etiquette">{e(SITE["categories"][a["categorie"]])}</p>'
+                      f'<h3>{e(a["titre"])}</h3><p>{e(a["description"])}</p></div></a>')
+    return "".join(cartes)
+
+
+def faq_accueil(source):
+    return [(texte_brut(q), texte_brut(r)) for q, r in
+            re.findall(r"<summary><h3>(.*?)</h3></summary>\s*<p>(.*?)</p>", source, re.S)]
+
+
 def construire_accueil(articles):
-    guides = "".join(carte_guide(c) for c in SITE["guides"])
-    derniers = "".join(carte_article(a) for a in articles[:6])
-    contenu = f"""<section class="hero"><div class="large">
-<h1>{e(SITE['slogan'])}</h1>
-<p>Des explications claires, des gestes simples et des sources sérieuses pour les soirs où le mental tourne en boucle, les journées où la pression ne redescend pas, et les nuits qui ne réparent plus.</p>
-<a class="bouton" href="/articles/">Lire les articles</a>
-</div></section>
-<div class="large">
-<h2>Les guides gratuits</h2>
-<div class="deux">{guides}</div>
-<section class="formation-accueil">
-<p class="type">La formation</p>
-<h2>{e(SITE['formation']['titre'])}</h2>
-<p>{e(SITE['formation']['sous_titre'])} 6 modules courts, des audios guidés, le parcours des 28 soirs et un kit de fiches. {e(SITE['formation']['prix'])}, garantie de 7 jours.</p>
-<a class="bouton" href="/la-formation/">Découvrir le programme</a>
-</section>
-<h2>Derniers articles</h2>
-<div class="grille">{derniers}</div>
-<p>Retrouve aussi chaque jour des fiches courtes sur <a href="{SITE['pinterest']}" rel="me">le compte Pinterest Clarté Mentale</a>.</p>
-<section class="methode">
-<h2 style="margin-top:0">Comment ces articles sont écrits</h2>
-<p>Chaque article s'appuie sur des sources vérifiables (Inserm, Haute Autorité de santé, Assurance maladie, études publiées), citées en bas de page. Le but : t'aider à comprendre ce qui se passe dans ton corps et à essayer des gestes simples, pas poser un diagnostic. Je ne suis pas professionnel de santé : quand un signe mérite une consultation, l'article le dit clairement. <a href="/a-propos/">En savoir plus</a></p>
-</section>
-</div>"""
+    """Accueil : page unique « biophilic dark » (contenu/accueil.html), reliée aux articles et à la formation."""
+    source = open(os.path.join(RACINE, "contenu", "accueil.html"), encoding="utf-8").read()
+    corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("{{B}}", "")
+             .replace("{{ARTICLES}}", cartes_lecture(articles)))
+    faq = faq_accueil(source)
     schemas = [
         {"@context": "https://schema.org", "@type": "WebSite", "@id": URL + "/#site", "name": SITE["nom"],
-         "url": URL + "/", "inLanguage": SITE["langue"], "description": SITE["description"],
+         "url": URL + "/", "inLanguage": SITE["langue"], "description": DESCRIPTION_ACCUEIL,
          "publisher": {"@id": URL + "/#organisation"}},
-        {"@context": "https://schema.org", **editeur(), "description": SITE["description"],
-         "founder": auteur()},
+        {"@context": "https://schema.org", **editeur(), "description": SITE["description"], "founder": auteur()},
+        {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": r}} for q, r in faq]},
     ]
-    ecrire("index.html", page(f"{SITE['nom']} : stress, sommeil et système nerveux", SITE["description"], "/",
-                              contenu, schemas))
+    blocs_ld = "\n".join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False, separators=(",", ":"))}</script>'
+                         for s in schemas)
+    verif = SITE.get("pinterest_verification")
+    html_page = f"""<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{e(TITRE_ACCUEIL)}</title>
+<meta name="description" content="{e(DESCRIPTION_ACCUEIL)}">
+<link rel="canonical" href="{URL}/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#080C10">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="{e(SITE['nom'])}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ton système nerveux mérite une trêve | {e(SITE['nom'])}">
+<meta property="og:description" content="{e(DESCRIPTION_ACCUEIL)}">
+<meta property="og:url" content="{URL}/">
+<meta property="og:image" content="{URL}/img/og-defaut.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+{f'<meta name="p:domain_verify" content="{verif}">' if verif else ""}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{e(SITE['nom'])}" href="/feed.xml">
+<link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+{blocs_ld}
+</head>
+<body>
+{corps}
+</body>
+</html>
+"""
+    ecrire("index.html", html_page)
+    if os.environ.get("ARTEFACT"):
+        # Version artefact (aperçu claude.ai) : liens absolus, images intégrées, polices Google (seul hôte admis).
+        polices = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700'
+                   '&family=Syne:wght@500;600;700;800&display=swap">')
+        artefact = (f"<title>{e(TITRE_ACCUEIL)}</title>\n"
+                    f'<meta name="description" content="{e(DESCRIPTION_ACCUEIL)}">\n{polices}\n'
+                    + source.replace("/*@POLICES*/", "").replace("{{B}}", URL)
+                    .replace("{{ARTICLES}}", cartes_lecture(articles, image_en_ligne=True)))
+        open(os.environ["ARTEFACT"], "w", encoding="utf-8").write(artefact)
 
 
 def construire_liste(articles):
@@ -595,24 +654,27 @@ def construire_fichiers_techniques(articles):
     if SITE.get("indexnow"):
         ecrire(f"{SITE['indexnow']}.txt", SITE["indexnow"])
     shutil.copy(os.path.join(RACINE, "contenu", "style.css"), os.path.join(SORTIE, "style.css"))
+    shutil.copytree(os.path.join(RACINE, "contenu", "polices"), os.path.join(SORTIE, "polices"))
     ecrire("favicon.svg", LOGO.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))
     # Logo PNG (données structurées) et image de partage par défaut.
-    logo = Image.new("RGB", (512, 512), "#1c2a44")
+    logo = Image.new("RGB", (512, 512), "#080C10")
     from PIL import ImageDraw
     d = ImageDraw.Draw(logo)
-    d.ellipse((56, 56, 456, 456), fill="#d9a441")
-    d.ellipse((150, 96, 470, 416), fill="#1c2a44")
+    d.ellipse((56, 56, 456, 456), fill="#DFD5C6")
+    d.ellipse((150, 96, 470, 416), fill="#080C10")
+    d.ellipse((40, 40, 472, 472), outline="#8FBF9A", width=10)
     logo.save(os.path.join(SORTIE, "logo.png"), optimize=True)
-    defaut = Image.new("RGB", (1200, 630), "#1c2a44")
+    defaut = Image.new("RGB", (1200, 630), "#080C10")
     d = ImageDraw.Draw(defaut)
-    d.ellipse((80, 165, 380, 465), fill="#d9a441")
-    d.ellipse((150, 140, 420, 410), fill="#1c2a44")
+    d.ellipse((80, 165, 380, 465), fill="#DFD5C6")
+    d.ellipse((150, 140, 420, 410), fill="#080C10")
+    d.ellipse((68, 153, 392, 477), outline="#3A5F43", width=8)
     try:
         from PIL import ImageFont
         police = ImageFont.truetype(os.path.join(DEPOT, "Poppins-Bold.ttf"), 72)
         police2 = ImageFont.truetype(os.path.join(DEPOT, "Poppins-Regular.ttf"), 34)
-        d.text((470, 220), SITE["nom"], font=police, fill="#f7f2ec")
-        d.text((472, 330), "Stress, sommeil et système nerveux", font=police2, fill="#d9a441")
+        d.text((470, 200), SITE["nom"], font=police, fill="#DFD5C6")
+        d.text((472, 310), "Ton système nerveux mérite une trêve.", font=police2, fill="#8FBF9A")
     except OSError:
         pass
     os.makedirs(os.path.join(SORTIE, "img"), exist_ok=True)
