@@ -307,9 +307,18 @@ def balise_mesure():
     jeton = SITE.get("mesure", {}).get("cloudflare_jeton")
     if not jeton:
         return ""
-    # Code fourni par Cloudflare (script de type module).
-    return ("<script type=\"module\" src=\"https://static.cloudflareinsights.com/beacon.min.js\" "
-            f"data-cf-beacon='{json.dumps({'token': jeton})}'></script>")
+    # Script de Cloudflare (type module, réglage dans data-cf-beacon, qu'il retrouve dans la page) chargé seulement
+    # si l'appareil n'a pas été marqué « ne pas compter » : l'éditeur ouvre une fois /?compter=non sur ses appareils
+    # pour que ses propres visites ne faussent pas les chiffres (/?compter=oui pour annuler). Cloudflare ne sait pas
+    # exclure le propriétaire du site lui-même.
+    script = """(function(){var cle="cm-ne-pas-compter",m=/[?&]compter=(oui|non)\\b/.exec(location.search),moi=false;
+try{if(m){if(m[1]==="non")localStorage.setItem(cle,"1");else localStorage.removeItem(cle);}moi=localStorage.getItem(cle)==="1";}catch(e){}
+if(m){var d=document.createElement("div");d.setAttribute("role","status");d.textContent=moi?"Tes visites ne sont plus comptées sur cet appareil.":"Tes visites sont de nouveau comptées sur cet appareil.";
+d.style.cssText="position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:99;max-width:90vw;padding:12px 18px;border-radius:12px;background:#DFD5C6;color:#080C10;font:600 15px/1.4 system-ui,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.4)";
+document.body.appendChild(d);setTimeout(function(){d.remove();},6000);}
+if(moi)return;var s=document.createElement("script");s.type="module";s.src="https://static.cloudflareinsights.com/beacon.min.js";
+s.setAttribute("data-cf-beacon",@CONFIG@);document.body.appendChild(s);})();"""
+    return "<script>" + script.replace("@CONFIG@", json.dumps(json.dumps({"token": jeton}))) + "</script>"
 
 
 def theme_de(a):
