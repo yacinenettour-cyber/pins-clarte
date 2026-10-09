@@ -19,6 +19,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="p:domain_verify" content="87ca126286ea799c1471c06852fd9bff">
+
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Clarté Mentale" href="/feed.xml">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
@@ -253,6 +254,8 @@ section { position: relative; z-index: 1; }
 .teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(8, 12, 16, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
 .teinte.sombre img { filter: saturate(.85) brightness(.92); }
 .teinte.sombre::after { display: none; }
+.themes-lien { margin: 0 0 22px; color: var(--champagne-doux); font-size: 15.5px; }
+.themes-lien a { color: var(--brume); }
 .carte-lecture .corps { display: grid; gap: 8px; padding: 18px 20px 22px; }
 .carte-lecture h3 { font-size: 19px; }
 .carte-lecture p { font-size: 14.5px; color: var(--champagne-doux); }
@@ -528,6 +531,7 @@ section { position: relative; z-index: 1; }
         <p>Des articles complets et sourcés pour mieux dormir, calmer ton système nerveux et sortir des ruminations du soir.</p>
       </div>
       <div class="lecture"><a class="carte-lecture" href="/ruminations-le-soir/"><span class="teinte"><img src="/img/pexels-6754011-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Ruminations le soir : pourquoi ton cerveau s&#x27;emballe au coucher</h3><p>Ruminations le soir, pensées qui tournent au coucher : comprends pourquoi ton cerveau ne s&#x27;arrête pas la nuit et essaie 6 techniques étudiées.</p></div></a><a class="carte-lecture" href="/reveil-4h-du-matin/"><span class="teinte sombre"><img src="/img/pexels-6943437-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment</h3><p>Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.</p></div></a><a class="carte-lecture" href="/routine-du-soir-anti-stress/"><span class="teinte"><img src="/img/pexels-6661036-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes</h3><p>Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.</p></div></a><a class="carte-lecture" href="/procrastination-du-coucher/"><span class="teinte"><img src="/img/pexels-6598229-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Procrastination du coucher : pourquoi on veille et comment arrêter</h3><p>Procrastination du coucher : pourquoi tu repousses l&#x27;heure d&#x27;aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.</p></div></a><a class="carte-lecture" href="/cortisol-hormone-du-stress/"><span class="teinte"><img src="/img/pexels-8927460-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Cortisol, hormone du stress : son rôle, son rythme et les idées reçues</h3><p>Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».</p></div></a><a class="carte-lecture" href="/baisser-son-cortisol-naturellement/"><span class="teinte"><img src="/img/pexels-10390139-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Baisser son cortisol naturellement : ce qui marche vraiment</h3><p>Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.</p></div></a></div>
+      <p class="themes-lien">Explorer par thème : <a href="/mieux-dormir/">Mieux dormir</a> · <a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a> · <a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a></p>
       <a class="btn btn-verre" href="/articles/">Tous les articles <span class="fleche" aria-hidden="true">→</span></a>
     </div>
   </section>
@@ -597,6 +601,9 @@ section { position: relative; z-index: 1; }
   <div class="wrap">
     <nav aria-label="Liens du pied de page">
       <a href="/articles/">Tous les articles</a>
+      <a href="/mieux-dormir/">Mieux dormir</a>
+      <a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a>
+      <a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a>
       <a href="/la-formation/">La formation</a>
       <a href="/guides-gratuits/">Guides gratuits</a>
       <a href="/a-propos/">À propos</a>
@@ -826,6 +833,7 @@ section { position: relative; z-index: 1; }
   try { document.getElementById("annee").textContent = new Date().getFullYear(); } catch (e) {}
 })();
 </script>
+
 
 </body>
 </html>

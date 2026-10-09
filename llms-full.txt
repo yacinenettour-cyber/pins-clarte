@@ -86,7 +86,7 @@ L'étude portait sur une scène choisie à l'avance ; la version « mélange » 
 
 ### 4. Ralentir ta respiration
 
-La respiration lente aide parce qu'elle occupe l'attention. Le Réseau Morphée, spécialisé dans les troubles du sommeil, explique sur Santé.fr que le travail sur la respiration empêche les pensées de divaguer et aide à se concentrer sur autre chose que les pensées négatives. Il crée aussi une transition entre l'agitation de la journée et la nuit [7].
+La [respiration lente](/calmer-son-systeme-nerveux/) aide parce qu'elle occupe l'attention. Le Réseau Morphée, spécialisé dans les troubles du sommeil, explique sur Santé.fr que le travail sur la respiration empêche les pensées de divaguer et aide à se concentrer sur autre chose que les pensées négatives. Il crée aussi une transition entre l'agitation de la journée et la nuit [7].
 
 Essaie : inspire par le nez en comptant jusqu'à 4, puis expire doucement en comptant jusqu'à 6, pendant cinq minutes. Si tu perds le compte, reprends à 1, sans te juger.
 
@@ -102,7 +102,7 @@ Réapprendre à ton corps que le lit sert à dormir, c'est le principe du contr�
 
 ### 6. Créer un sas entre la journée et la nuit
 
-Un sas entre la journée et la nuit est un rituel toujours identique qui annonce le coucher : l'Inserm recommande un « couvre-feu digital » le soir et un rituel constant et régulier autour du coucher [1]. Par exemple : écrans coupés, lumière tamisée, douche tiède, quelques pages d'un livre, puis ta liste de tâches. Toujours dans le même ordre, pour que ce rituel devienne un repère.
+Un sas entre la journée et la nuit est un rituel toujours identique qui annonce le coucher : l'Inserm recommande un « couvre-feu digital » le soir et un rituel constant et régulier autour du coucher [1], comme la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/). Par exemple : écrans coupés, lumière tamisée, douche tiède, quelques pages d'un livre, puis ta liste de tâches. Toujours dans le même ordre, pour que ce rituel devienne un repère.
 
 Pour une routine déjà construite, le guide gratuit présenté en fin d'article propose une routine anti-rumination à faire au lit.
 
@@ -189,7 +189,7 @@ Bonne nouvelle : après une mauvaise nuit, le sommeil lent de la nuit suivante e
 
 ### Parce que ton cortisol remonte avant l'aube
 
-Le cortisol, l'hormone du stress, remonte naturellement pendant la seconde moitié de la nuit. Selon une revue de l'Université de Chicago publiée en 2010 dans l'*International Journal of Endocrinology* (Balbo, Leproult et Van Cauter), son rythme sur une nuit ressemble à ceci [4] :
+Le cortisol, l'[hormone du stress](/cortisol-hormone-du-stress/), remonte naturellement pendant la seconde moitié de la nuit. Selon une revue de l'Université de Chicago publiée en 2010 dans l'*International Journal of Endocrinology* (Balbo, Leproult et Van Cauter), son rythme sur une nuit ressemble à ceci [4] :
 
 | Moment | Taux de cortisol |
 |---|---|
@@ -202,7 +202,7 @@ Ce rythme est normal et concerne tout le monde. Chez les personnes qui dorment m
 
 ### Parce que le stress fragilise la seconde moitié de la nuit
 
-Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress, les difficultés touchent surtout la seconde moitié de la nuit, avec l'impression de somnoler à partir de 4 ou 5 heures du matin [3]. Une fois réveillé, ton esprit attrape vite un souci de la veille, et l'éveil se prolonge.
+Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress, les difficultés touchent surtout la seconde moitié de la nuit, avec l'impression de somnoler à partir de 4 ou 5 heures du matin [3]. Une fois réveillé, ton esprit attrape vite un [souci de la veille](/ruminations-le-soir/), et l'éveil se prolonge.
 
 ### Parce que l'alcool du soir se paie en fin de nuit
 
@@ -335,7 +335,7 @@ Une routine du soir efficace suit sept étapes, des horaires réguliers jusqu'à
 4. **22 h : éteins les écrans.** L'INSV conseille de se déconnecter 1 à 2 heures avant le coucher, l'Assurance maladie idéalement une heure avant [1][4]. Range le téléphone dans une autre pièce et coupe les notifications [1]. Remplace-le par une activité calme : lecture, musique douce, relaxation ou activité manuelle [4].
 5. **22 h 30 : vide ta tête sur papier.** Prends 5 minutes pour écrire, de façon très précise, ce que tu dois faire dans les prochains jours. Selon une étude de l'Université Baylor (Texas) publiée en 2018, menée en laboratoire du sommeil auprès de 57 jeunes adultes en bonne santé, ceux qui écrivaient leurs tâches à venir s'endormaient plus vite que ceux qui décrivaient ce qu'ils avaient déjà fait, et d'autant plus vite que leur liste était détaillée [6].
 6. **22 h 45 : prépare ta chambre.** Obscurité, silence et une température entre 18 et 20 °C, en aérant chaque jour [1][4]. Pendant la nuit, la température de ton corps baisse naturellement [3] : une chambre fraîche va dans le même sens.
-7. **Au lit : respire lentement.** Inspire par le nez environ 4 secondes, puis expire doucement environ 6 secondes, pendant quelques minutes. Ce rythme d'environ 6 respirations par minute est celui qu'étudie une méta-analyse de 223 études menée par l'Université allemande du sport de Cologne (2022) : la respiration lente augmente la variabilité cardiaque liée au système nerveux parasympathique, celui du repos [7].
+7. **Au lit : respire lentement.** Inspire par le nez environ 4 secondes, puis expire doucement environ 6 secondes, pendant quelques minutes. Ce rythme d'environ 6 respirations par minute, qui sollicite le [nerf vague](/nerf-vague/), est celui qu'étudie une méta-analyse de 223 études menée par l'Université allemande du sport de Cologne (2022) : la respiration lente augmente la variabilité cardiaque liée au système nerveux parasympathique, celui du repos [7].
 
 Dernier point, souvent oublié : va te coucher quand les signes de sommeil arrivent (bâillements, paupières lourdes, yeux qui piquent), pas avant [1][4].
 
@@ -368,7 +368,7 @@ Le dernier repère surprend souvent : une bonne soirée se prépare dès le mati
 
 ## Que faire quand le mental s'emballe malgré la routine ?
 
-Quand le mental s'emballe malgré la routine, ne reste pas à lutter dans ton lit : si le sommeil ne vient pas, lève-toi, fais quelque chose de calme sous une lumière douce, puis recouche-toi quand l'envie de dormir revient [1][4]. Évite de regarder l'heure ou ton téléphone : l'Assurance maladie rappelle que l'usage des écrans la nuit aggrave les troubles du sommeil [1]. Pour ces soirs-là, une routine anti-rumination à faire au lit peut aussi t'aider : c'est l'objet du guide présenté en fin d'article.
+Quand le [mental s'emballe](/ruminations-le-soir/) malgré la routine, ne reste pas à lutter dans ton lit : si le sommeil ne vient pas, lève-toi, fais quelque chose de calme sous une lumière douce, puis recouche-toi quand l'envie de dormir revient [1][4]. Évite de regarder l'heure ou ton téléphone : l'Assurance maladie rappelle que l'usage des écrans la nuit aggrave les troubles du sommeil [1]. Pour ces soirs-là, une routine anti-rumination à faire au lit peut aussi t'aider : c'est l'objet du guide présenté en fin d'article.
 
 Dédramatise aussi une mauvaise nuit isolée : après une nuit difficile, le sommeil profond de la nuit suivante tend à augmenter pour compenser [1][3].
 
@@ -478,7 +478,7 @@ Le stress est associé à davantage de procrastination du coucher, en partie à 
 
 Les écrans posent un double problème. L'Inserm explique que l'usage tardif d'écrans ou de lumières LED, riches en lumière bleue, retarde l'endormissement [7]. Et la stimulation des activités sociales ou ludiques sur écran entretient un état d'« hyper-éveil » qui va à l'encontre du sommeil [8].
 
-Reste ce qui se passe une fois la lumière éteinte. L'Inserm décrit le stress comme un déclencheur fréquent des insomnies, et l'anxiété face à la nuit comme un facteur qui peut les faire durer [8]. Si tu repousses le coucher pour ne pas rester au lit sans dormir, avec les pensées qui tournent, tu te rapproches du « retard stratégique », qui peut signaler une insomnie [2]. Apaiser les ruminations du soir compte alors autant que l'heure du coucher : c'est l'objet du guide gratuit présenté en fin d'article.
+Reste ce qui se passe une fois la lumière éteinte. L'Inserm décrit le stress comme un déclencheur fréquent des insomnies, et l'anxiété face à la nuit comme un facteur qui peut les faire durer [8]. Si tu repousses le coucher pour ne pas rester au lit sans dormir, avec les pensées qui tournent, tu te rapproches du « retard stratégique », qui peut signaler une insomnie [2]. Apaiser les [ruminations du soir](/ruminations-le-soir/) compte alors autant que l'heure du coucher : c'est l'objet du guide gratuit présenté en fin d'article.
 
 ## Quelles conséquences sur ton sommeil ?
 
@@ -633,7 +633,7 @@ Le stress aigu est une réaction brève qui redescend une fois la situation pass
 | Régulation de l'axe du stress | Le frein fonctionne, le taux redescend [2] | Hyperactivité au début, puis hypoactivité, selon des études récentes [2] |
 | Conséquence | Aide à faire face [2] | Peut avoir des effets sérieux sur la santé physique et mentale [2] |
 
-Un stress chronique n'est donc pas toujours « trop de cortisol » : c'est plutôt une régulation qui perd sa souplesse. Bruce McEwen précise que ce ne sont pas seulement les événements dramatiques qui pèsent, mais aussi les nombreux tracas du quotidien qui maintiennent le corps en activation, font perdre du sommeil ou pousser à trop manger [3]. C'est justement sur ce quotidien que tu as le plus de prise.
+Un stress chronique n'est donc pas toujours « trop de cortisol » : c'est plutôt une régulation qui perd sa souplesse. Bruce McEwen précise que ce ne sont pas seulement les événements dramatiques qui pèsent, mais aussi les nombreux [tracas du quotidien](/charge-mentale/) qui maintiennent le corps en activation, font perdre du sommeil ou pousser à trop manger [3]. C'est justement sur ce quotidien que tu as le plus de prise.
 
 ## Quels effets un stress chronique peut-il avoir sur le sommeil et l'énergie ?
 
@@ -755,7 +755,7 @@ La régularité compte autant que la durée. Selon l'Inserm, ton horloge biologi
 Trois gestes pour commencer :
 
 1. **Fixe ton heure de lever**, y compris le week-end, à une heure près.
-2. **Baisse les lumières et range les écrans** dans l'heure qui précède le coucher : les écrans et les LED riches en lumière bleue, utilisés tard, retardent l'endormissement [1].
+2. **Baisse les lumières et range les écrans** dans l'heure qui précède le coucher, comme dans une [routine du soir](/routine-du-soir-anti-stress/) : les écrans et les LED riches en lumière bleue, utilisés tard, retardent l'endormissement [1].
 3. **Traite ta durée de sommeil comme un rendez-vous** : décide de ton heure de coucher à partir de ton heure de lever, pas l'inverse.
 
 ## Pourquoi la lumière du matin compte-t-elle ?
@@ -788,7 +788,7 @@ Ces hausses pendant l'effort viennent en partie d'une stimulation de l'axe du st
 
 Oui : la relaxation, la méditation et la pleine conscience font partie des méthodes qui font le mieux baisser le cortisol dans les essais cliniques [4]. Selon une méta-analyse de l'Université de Leeds (Royaume-Uni) publiée en 2024 dans *Psychoneuroendocrinology*, qui regroupe 58 essais randomisés et 3 508 participants qui n'étaient pas des patients, les programmes de gestion du stress y faisaient mieux que les groupes de comparaison sur le cortisol, avec un effet moyen [4]. La pleine conscience, la méditation et la relaxation donnaient les meilleurs résultats [4]. Et la durée du programme ne changeait pas son efficacité [4] : pas besoin d'une retraite de dix jours, la régularité suffit pour commencer.
 
-La respiration lente est une façon simple d'entrer dans la relaxation. Essaie celle-ci :
+La [respiration lente](/calmer-son-systeme-nerveux/) est une façon simple d'entrer dans la relaxation. Essaie celle-ci :
 
 1. Assieds-toi, les pieds bien posés au sol, une main sur le ventre.
 2. Inspire par le nez pendant 4 secondes en laissant le ventre se gonfler.
@@ -921,7 +921,7 @@ Le nerf vague est le principal nerf du système parasympathique, le « frein » 
 
 Le nerf vague, ou dixième nerf crânien, est le plus long des nerfs crâniens : il part du cerveau et descend jusqu'au gros intestin, en desservant notamment le cœur, les poumons et le tube digestif. En réalité, il y en a deux, un à gauche et un à droite [1].
 
-C'est le nerf principal du système nerveux parasympathique, celui des fonctions de « repos et digestion » [1]. Pour simplifier, ton système nerveux autonome a deux pédales :
+C'est le nerf principal du système nerveux parasympathique, celui des fonctions de « repos et digestion » [1]. Pour simplifier, ton [système nerveux autonome](/calmer-son-systeme-nerveux/) a deux pédales :
 - le **sympathique**, l'accélérateur, qui prépare ton corps à réagir face à un stress ;
 - le **parasympathique**, le frein, qui accompagne le repos, la digestion et la récupération.
 
@@ -1109,7 +1109,7 @@ Le soupir physiologique est une respiration en deux inspirations par le nez, sui
 L'étude reste modeste : petits groupes, pratique à distance, suivi d'un mois seulement [2]. C'est une piste sérieuse, pas une garantie.
 
 ### 2. La respiration lente (5 minutes)
-La respiration lente consiste à respirer à moins de 10 respirations par minute [3]. Selon une revue systématique de l'Université de Pise (Italie) publiée en 2018 dans *Frontiers in Human Neuroscience*, qui réunit 15 études, elle s'accompagne d'une hausse de la variabilité cardiaque et d'une prédominance du parasympathique, par l'intermédiaire du nerf vague, avec plus de détente et moins d'anxiété rapportées [3]. Les auteurs soulignent que les études sont peu nombreuses et très hétérogènes [3].
+La respiration lente consiste à respirer à moins de 10 respirations par minute [3]. Selon une revue systématique de l'Université de Pise (Italie) publiée en 2018 dans *Frontiers in Human Neuroscience*, qui réunit 15 études, elle s'accompagne d'une hausse de la variabilité cardiaque et d'une prédominance du parasympathique, par l'intermédiaire du [nerf vague](/nerf-vague/), avec plus de détente et moins d'anxiété rapportées [3]. Les auteurs soulignent que les études sont peu nombreuses et très hétérogènes [3].
 
 En pratique : inspire par le nez pendant 4 secondes, expire pendant 6 secondes. Tu tombes à 6 respirations par minute. Si la tête te tourne, reprends ton rythme naturel.
 
@@ -1135,7 +1135,7 @@ La marche d'un bon pas est la forme d'activité physique la plus facile à caser
 En pratique : sors 10 minutes, si possible dehors.
 
 ### 6. Parler à quelqu'un de confiance
-Le soutien d'une personne de confiance réduit la réponse de l'organisme au stress [7]. Selon une étude de l'Université de Zurich publiée en 2003 dans *Biological Psychiatry* (Heinrichs et al.), 37 hommes passaient un test de stress psychosocial en laboratoire. Ceux qui avaient été soutenus par leur meilleur ami pendant la préparation avaient un taux de cortisol, l'hormone du stress, plus bas [7]. Le soutien associé à de l'ocytocine en spray nasal donnait le cortisol le plus bas, plus de calme et moins d'anxiété [7]. Petit échantillon, uniquement masculin : à confirmer.
+Le soutien d'une personne de confiance réduit la réponse de l'organisme au stress [7]. Selon une étude de l'Université de Zurich publiée en 2003 dans *Biological Psychiatry* (Heinrichs et al.), 37 hommes passaient un test de stress psychosocial en laboratoire. Ceux qui avaient été soutenus par leur meilleur ami pendant la préparation avaient un taux de cortisol, l'[hormone du stress](/cortisol-hormone-du-stress/), plus bas [7]. Le soutien associé à de l'ocytocine en spray nasal donnait le cortisol le plus bas, plus de calme et moins d'anxiété [7]. Petit échantillon, uniquement masculin : à confirmer.
 
 Un appel de cinq minutes, un message vocal, un café avec un collègue : choisis quelqu'un avec qui tu te sens en sécurité.
 
@@ -1249,7 +1249,7 @@ Une charge mentale qui déborde se reconnaît à un esprit qui ne « débranche 
 - Tu deviens irritable, surtout quand on te demande : « Tu veux que je fasse quoi ? »
 - La fatigue est là dès le réveil.
 
-Ces signes ne sont pas un diagnostic. Mais certains recoupent ceux que la Haute Autorité de santé (HAS) décrit pour l'épuisement professionnel :
+Ces signes ne sont pas un diagnostic. Mais certains recoupent ceux que la Haute Autorité de santé (HAS) décrit pour l'[épuisement professionnel](/signes-du-burn-out/) :
 
 | Signe du quotidien | Ce que la HAS décrit pour l'épuisement professionnel |
 |---|---|
@@ -1259,7 +1259,7 @@ Ces signes ne sont pas un diagnostic. Mais certains recoupent ceux que la Haute 
 
 ## Pourquoi la charge mentale fatigue et empêche de dormir ?
 
-La charge mentale fatigue parce qu'une tâche non terminée continue d'occuper l'esprit, et elle empêche de dormir parce que l'inquiétude au coucher retarde l'endormissement [4, 5]. Selon une série d'expériences de l'Université d'État de Floride publiée en 2011 dans le *Journal of Personality and Social Psychology* (Masicampo et Baumeister), des objectifs inachevés provoquaient des pensées intrusives pendant une lecture sans rapport et faisaient baisser les performances sur une autre tâche [4]. Quand les participants pouvaient écrire un plan précis pour ces objectifs, ces effets disparaissaient [4]. Selon les auteurs, une fois le plan fixé, l'esprit met la tâche en pause jusqu'au moment prévu [4].
+La charge mentale fatigue parce qu'une tâche non terminée continue d'occuper l'esprit, et elle empêche de dormir parce que l'[inquiétude au coucher](/ruminations-le-soir/) retarde l'endormissement [4, 5]. Selon une série d'expériences de l'Université d'État de Floride publiée en 2011 dans le *Journal of Personality and Social Psychology* (Masicampo et Baumeister), des objectifs inachevés provoquaient des pensées intrusives pendant une lecture sans rapport et faisaient baisser les performances sur une autre tâche [4]. Quand les participants pouvaient écrire un plan précis pour ces objectifs, ces effets disparaissaient [4]. Selon les auteurs, une fois le plan fixé, l'esprit met la tâche en pause jusqu'au moment prévu [4].
 
 Le soir, cela pèse aussi sur le sommeil. L'inquiétude au coucher, notamment à propos des tâches à venir, contribue aux difficultés d'endormissement [5]. Selon une étude de l'Université Baylor (Texas) publiée en 2018 dans le *Journal of Experimental Psychology: General* (Scullin et al.), 57 adultes de 18 à 30 ans ont écrit pendant 5 minutes avant d'éteindre, en laboratoire du sommeil :
 
@@ -1454,7 +1454,7 @@ Oui. La HAS indique qu'un arrêt de travail est **le plus souvent nécessaire**,
 
 Le retour se prépare, notamment lors d'une visite de pré-reprise avec le médecin du travail pendant l'arrêt, pour envisager des adaptations du poste [2].
 
-Un point qui soulage souvent : l'organisation du travail joue un rôle central [2][3]. Surcharge, faible marge de manœuvre, manque de soutien ou de reconnaissance font partie des facteurs de risque [3]. Tes fragilités personnelles ne peuvent jamais effacer la responsabilité de ces facteurs [2].
+Un point qui soulage souvent : l'organisation du travail joue un rôle central [2][3]. Surcharge, faible marge de manœuvre, manque de soutien ou de reconnaissance font partie des facteurs de risque [3] (voir aussi notre article sur la [charge mentale](/charge-mentale/)). Tes fragilités personnelles ne peuvent jamais effacer la responsabilité de ces facteurs [2].
 
 ## Quand consulter ?
 
