@@ -112,26 +112,28 @@ section { position: relative; z-index: 1; }
 .btn { position: relative; display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; border-radius: 999px; font: 600 16px/1 var(--texte); text-decoration: none; cursor: pointer; border: 0; overflow: hidden; transition: var(--transition); will-change: transform; }
 .btn .fleche { display: inline-block; transition: transform .3s cubic-bezier(.2,.8,.2,1); }
 .btn:hover .fleche { transform: translateX(5px); }
-.btn-or { background: var(--degrade-or); background-size: 200% 100%; animation: glisse 6s linear infinite; color: var(--nuit); box-shadow: 0 10px 30px -10px rgba(223, 213, 198, 0.45), var(--ombre-2xl); }
+.btn-or { background: var(--degrade-or); background-size: 200% 100%; color: var(--nuit); box-shadow: 0 10px 30px -10px rgba(223, 213, 198, 0.45), var(--ombre-2xl); }
 .btn-or::after { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.55) 50%, transparent 70%); transform: translateX(-120%); transition: transform .7s ease; }
-.btn-or:hover { color: var(--nuit); box-shadow: 0 18px 44px -12px rgba(223, 213, 198, 0.7), var(--ombre-2xl); }
+/* Un seul bouton animé en continu (lentement) : le bouton principal ; les autres s'animent au survol. */
+.btn-principal { animation: glisse 12s linear infinite; }
+.btn-or:hover { animation: glisse 6s linear infinite; color: var(--nuit); box-shadow: 0 18px 44px -12px rgba(223, 213, 198, 0.7), var(--ombre-2xl); }
 .btn-or:hover::after { transform: translateX(120%); }
 .btn-verre { background: var(--verre); color: var(--champagne); border: 1px solid var(--lisere-fort); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); }
-.btn-verre::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #3A5F43, #4E7A59, #3A5F43); background-size: 200% 100%; animation: glisse 5s linear infinite; transform: scaleX(0); transform-origin: left; transition: transform .45s cubic-bezier(.2,.8,.2,1); z-index: -1; }
+.btn-verre::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #3A5F43, #4E7A59, #3A5F43); background-size: 200% 100%; transform: scaleX(0); transform-origin: left; transition: transform .45s cubic-bezier(.2,.8,.2,1); z-index: -1; }
 .btn-verre:hover { border-color: transparent; color: var(--champagne); box-shadow: var(--ombre-lueur); }
-.btn-verre:hover::before { transform: scaleX(1); }
+.btn-verre:hover::before { transform: scaleX(1); animation: glisse 5s linear infinite; }
 .btn-verre { isolation: isolate; }
 .btn-petit { padding: 11px 18px; font-size: 14px; }
 
 /* Héro */
 .hero { padding-block: clamp(48px, 7vw, 96px) clamp(56px, 8vw, 104px); position: relative; overflow: clip; }
-.hero::before { content: ""; position: absolute; inset: -20% -10% auto -10%; height: 120%; pointer-events: none; z-index: 0; background: radial-gradient(40% 50% at 20% 30%, rgba(58, 95, 67, 0.35), transparent 70%), radial-gradient(35% 45% at 80% 20%, rgba(143, 191, 154, 0.16), transparent 70%), radial-gradient(30% 40% at 60% 85%, rgba(223, 213, 198, 0.07), transparent 70%); filter: blur(20px); animation: aurore 18s ease-in-out infinite; }
+.hero::before { content: ""; position: absolute; inset: -20% -10% auto -10%; height: 120%; pointer-events: none; z-index: 0; background: radial-gradient(40% 50% at 20% 30%, rgba(58, 95, 67, 0.35), transparent 70%), radial-gradient(35% 45% at 80% 20%, rgba(143, 191, 154, 0.16), transparent 70%), radial-gradient(30% 40% at 60% 85%, rgba(223, 213, 198, 0.07), transparent 70%); filter: blur(20px); animation: aurore 30s ease-in-out infinite; }
 .hero .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
 .hero-texte { display: grid; gap: 26px; min-width: 0; }
 .hero h1 { display: grid; gap: 18px; }
 .hero h1 .kicker { font: 600 13px/1.3 var(--texte); letter-spacing: 0.2em; text-transform: uppercase; color: var(--brume); }
 .hero h1 .titre { font-size: clamp(42px, 6.6vw, 86px); line-height: 0.95; font-weight: 800; letter-spacing: -0.035em; }
-.hero h1 .titre em { font-style: normal; color: transparent; background: var(--degrade); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: glisse 8s linear infinite; }
+.hero h1 .titre em { font-style: normal; color: transparent; background: var(--degrade); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: glisse 14s linear infinite; }
 .sous-titre { font-size: clamp(18px, 1.6vw, 21px); color: var(--champagne-doux); max-width: 46ch; }
 .sous-titre strong { color: var(--champagne); font-weight: 600; }
 .cta-duo { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -150,10 +152,10 @@ section { position: relative; z-index: 1; }
 .calc-intro p { color: var(--champagne-doux); }
 .note { font-size: 14px; color: var(--champagne-doux); border-left: 2px solid var(--emeraude); padding-left: 14px; }
 .instrument { position: relative; border-radius: 28px; padding: clamp(22px, 3vw, 36px); background: var(--verre); border: 1px solid var(--lisere); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); min-height: 470px; overflow: hidden; }
-.instrument::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: var(--degrade); background-size: 200% 100%; animation: glisse 7s linear infinite; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: .55; pointer-events: none; }
+.instrument::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: var(--degrade); background-size: 200% 100%; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: .55; pointer-events: none; }
 .progression { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; font-size: 13px; color: var(--champagne-doux); font-variant-numeric: tabular-nums; }
 .barre { flex: 1; height: 4px; border-radius: 4px; background: var(--lisere); overflow: hidden; }
-.barre i { display: block; height: 100%; width: 33%; background: var(--degrade); background-size: 200% 100%; animation: glisse 4s linear infinite; border-radius: 4px; transition: width .6s cubic-bezier(.2,.8,.2,1); }
+.barre i { display: block; height: 100%; width: 33%; background: var(--degrade); background-size: 200% 100%; border-radius: 4px; transition: width .6s cubic-bezier(.2,.8,.2,1); }
 .etape { display: grid; gap: 18px; animation: entree .55s cubic-bezier(.2,.8,.2,1); }
 @keyframes glisse { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
 @keyframes aurore { 0% { transform: translate3d(-4%, -2%, 0) scale(1); } 50% { transform: translate3d(4%, 3%, 0) scale(1.08); } 100% { transform: translate3d(-4%, -2%, 0) scale(1); } }
@@ -177,7 +179,7 @@ section { position: relative; z-index: 1; }
 .priorites { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .priorites li { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 12px; padding: 14px 16px; border-radius: 14px; background: rgba(255,255,255,.025); border: 1px solid var(--lisere); font-size: 15px; }
 .priorites li b { font: 700 13px/1.6 var(--titre); color: var(--brume); }
-.deblocage { display: grid; gap: 12px; padding: 20px; border-radius: 18px; background: linear-gradient(90deg, rgba(58,95,67,.55), rgba(58,95,67,.15), rgba(143,191,154,.22), rgba(58,95,67,.55)); background-size: 200% 100%; animation: glisse 9s linear infinite; border: 1px solid rgba(143,191,154,.3); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); }
+.deblocage { display: grid; gap: 12px; padding: 20px; border-radius: 18px; background: linear-gradient(90deg, rgba(58,95,67,.55), rgba(58,95,67,.15), rgba(143,191,154,.22), rgba(58,95,67,.55)); background-size: 200% 100%; border: 1px solid rgba(143,191,154,.3); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); }
 .deblocage p { font-size: 15px; }
 .deblocage small { color: var(--champagne-doux); font-size: 13px; }
 
@@ -242,8 +244,15 @@ section { position: relative; z-index: 1; }
 .carte-lecture { position: relative; display: flex; flex-direction: column; border-radius: var(--rayon); overflow: hidden; background: var(--verre); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--lisere); text-decoration: none; color: var(--champagne); transition: var(--transition); min-width: 0; box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.55); will-change: transform; }
 .carte-lecture:hover { z-index: 2; border-color: var(--lisere-fort); background: var(--verre-fort); color: var(--champagne); box-shadow: var(--ombre-lueur); }
 .carte-lecture img { transition: var(--transition); }
-.carte-lecture:hover img { filter: saturate(1) brightness(1); }
-.carte-lecture img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; filter: saturate(.85) brightness(.9); }
+.carte-lecture:hover .teinte img { filter: saturate(.9) brightness(.96); }
+.carte-lecture:hover .teinte::after { opacity: 0; }
+.carte-lecture img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+/* Teinte commune des photos d'articles, accordée au vert et au lin du site (photos très sombres exclues) */
+.teinte { position: relative; display: block; overflow: hidden; }
+.teinte img { display: block; width: 100%; filter: saturate(.62) sepia(.14) brightness(.86) contrast(1.04); transition: var(--transition); }
+.teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(8, 12, 16, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
+.teinte.sombre img { filter: saturate(.85) brightness(.92); }
+.teinte.sombre::after { display: none; }
 .carte-lecture .corps { display: grid; gap: 8px; padding: 18px 20px 22px; }
 .carte-lecture h3 { font-size: 19px; }
 .carte-lecture p { font-size: 14.5px; color: var(--champagne-doux); }
@@ -357,7 +366,7 @@ section { position: relative; z-index: 1; }
         </h1>
         <p class="sous-titre">Le cortisol est l'hormone du stress : son taux devrait <strong>baisser le soir</strong>. Quand l'axe du stress reste allumé, il redescend mal et le sommeil en pâtit. Mesure ta charge en 30 secondes, puis applique les gestes que la science a réellement testés pour <strong>baisser le cortisol</strong> et <strong>mieux dormir</strong>.</p>
         <div class="cta-duo">
-          <a class="btn btn-or" href="#test">Calculer mon score <span class="fleche" aria-hidden="true">→</span></a>
+          <a class="btn btn-or btn-principal" href="#test">Calculer mon score <span class="fleche" aria-hidden="true">→</span></a>
           <a class="btn btn-verre" href="https://lp.contactapaisement-mental.fr/63d489c7?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=hero">Recevoir le plan 7 jours</a>
         </div>
         <div class="reassurance"><span>Test gratuit, 3 questions</span><span>Sources scientifiques citées</span><span>Sans régime ni matériel</span></div>
@@ -518,7 +527,7 @@ section { position: relative; z-index: 1; }
         <h2>Comprendre ce qui se passe dans ton corps</h2>
         <p>Des articles complets et sourcés pour mieux dormir, calmer ton système nerveux et sortir des ruminations du soir.</p>
       </div>
-      <div class="lecture"><a class="carte-lecture" href="/ruminations-le-soir/"><img src="/img/pexels-6754011-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Ruminations le soir : pourquoi ton cerveau s&#x27;emballe au coucher</h3><p>Ruminations le soir, pensées qui tournent au coucher : comprends pourquoi ton cerveau ne s&#x27;arrête pas la nuit et essaie 6 techniques étudiées.</p></div></a><a class="carte-lecture" href="/reveil-4h-du-matin/"><img src="/img/pexels-6943437-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment</h3><p>Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.</p></div></a><a class="carte-lecture" href="/routine-du-soir-anti-stress/"><img src="/img/pexels-6661036-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes</h3><p>Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.</p></div></a><a class="carte-lecture" href="/procrastination-du-coucher/"><img src="/img/pexels-6598229-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Procrastination du coucher : pourquoi on veille et comment arrêter</h3><p>Procrastination du coucher : pourquoi tu repousses l&#x27;heure d&#x27;aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.</p></div></a><a class="carte-lecture" href="/cortisol-hormone-du-stress/"><img src="/img/pexels-8927460-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Cortisol, hormone du stress : son rôle, son rythme et les idées reçues</h3><p>Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».</p></div></a><a class="carte-lecture" href="/baisser-son-cortisol-naturellement/"><img src="/img/pexels-10390139-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Baisser son cortisol naturellement : ce qui marche vraiment</h3><p>Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.</p></div></a></div>
+      <div class="lecture"><a class="carte-lecture" href="/ruminations-le-soir/"><span class="teinte"><img src="/img/pexels-6754011-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Ruminations le soir : pourquoi ton cerveau s&#x27;emballe au coucher</h3><p>Ruminations le soir, pensées qui tournent au coucher : comprends pourquoi ton cerveau ne s&#x27;arrête pas la nuit et essaie 6 techniques étudiées.</p></div></a><a class="carte-lecture" href="/reveil-4h-du-matin/"><span class="teinte sombre"><img src="/img/pexels-6943437-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment</h3><p>Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.</p></div></a><a class="carte-lecture" href="/routine-du-soir-anti-stress/"><span class="teinte"><img src="/img/pexels-6661036-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes</h3><p>Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.</p></div></a><a class="carte-lecture" href="/procrastination-du-coucher/"><span class="teinte"><img src="/img/pexels-6598229-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Procrastination du coucher : pourquoi on veille et comment arrêter</h3><p>Procrastination du coucher : pourquoi tu repousses l&#x27;heure d&#x27;aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.</p></div></a><a class="carte-lecture" href="/cortisol-hormone-du-stress/"><span class="teinte"><img src="/img/pexels-8927460-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Cortisol, hormone du stress : son rôle, son rythme et les idées reçues</h3><p>Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».</p></div></a><a class="carte-lecture" href="/baisser-son-cortisol-naturellement/"><span class="teinte"><img src="/img/pexels-10390139-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Baisser son cortisol naturellement : ce qui marche vraiment</h3><p>Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.</p></div></a></div>
       <a class="btn btn-verre" href="/articles/">Tous les articles <span class="fleche" aria-hidden="true">→</span></a>
     </div>
   </section>
@@ -757,7 +766,7 @@ section { position: relative; z-index: 1; }
           ordre.map(function (o, i) { return '<li><b>' + (i + 1) + ' · ' + noms[o.cle] + '</b><span>' + conseils[o.cle][o.pts] + '</span></li>'; }).join("") +
         '</ol></div>' +
         '<div class="deblocage"><p><strong>Débloque le plan complet en 7 jours</strong> : un geste par jour, 10 à 15 minutes, avec un tableau de suivi pour voir ce qui te réussit.</p>' +
-          '<a class="btn btn-or" href="' + lien + '">Recevoir mon plan par e-mail <span class="fleche" aria-hidden="true">→</span></a>' +
+          '<a class="btn btn-or btn-principal" href="' + lien + '">Recevoir mon plan par e-mail <span class="fleche" aria-hidden="true">→</span></a>' +
           '<small>Gratuit. Tu laisses ton e-mail sur notre page sécurisée et le plan se télécharge immédiatement. Désinscription en un clic.</small></div>' +
         '<button class="retour" type="button" id="refaire">↺ Refaire le test</button>' +
         '<p class="note">Indice de bien-être, pas un diagnostic. Si tes troubles durent plus de 3 semaines, parles-en à ton médecin.</p>' +
