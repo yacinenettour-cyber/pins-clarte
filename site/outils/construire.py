@@ -228,7 +228,8 @@ def balise_mesure():
     jeton = SITE.get("mesure", {}).get("cloudflare_jeton")
     if not jeton:
         return ""
-    return ("<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" "
+    # Code fourni par Cloudflare (script de type module).
+    return ("<script type=\"module\" src=\"https://static.cloudflareinsights.com/beacon.min.js\" "
             f"data-cf-beacon='{json.dumps({'token': jeton})}'></script>")
 
 

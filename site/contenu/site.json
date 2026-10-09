@@ -201,7 +201,7 @@
  },
  "nav_formation": "/la-formation/",
  "mesure": {
-  "cloudflare_jeton": "",
+  "cloudflare_jeton": "fe038fee5d6847dfa5f836cbf5080717",
   "google_verification": "",
   "_note": "cloudflare_jeton : jeton de Cloudflare Web Analytics (sans cookie). google_verification : code de la balise meta de Google Search Console, seulement si la vérification par DNS n'est pas utilisée. Laisser vide tant que l'utilisateur ne les a pas fournis."
  },
