@@ -28,7 +28,7 @@ Site francophone écrit par Yacine Nettour (fondateur de clarté mentale), qui n
 ## Outils
 
 - [Test de stress et d'anxiété](https://www.contactapaisement-mental.fr/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.
-- [Respiration guidée 4-6](https://www.contactapaisement-mental.fr/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes) pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme.
+- [Respiration guidée 4-6](https://www.contactapaisement-mental.fr/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme.
 
 ## Guides gratuits
 
