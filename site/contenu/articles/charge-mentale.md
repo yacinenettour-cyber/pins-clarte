@@ -49,7 +49,7 @@ Une charge mentale qui déborde se reconnaît à un esprit qui ne « débranche 
 - Tu deviens irritable, surtout quand on te demande : « Tu veux que je fasse quoi ? »
 - La fatigue est là dès le réveil.
 
-Ces signes ne sont pas un diagnostic. Mais certains recoupent ceux que la Haute Autorité de santé (HAS) décrit pour l'épuisement professionnel :
+Ces signes ne sont pas un diagnostic. Mais certains recoupent ceux que la Haute Autorité de santé (HAS) décrit pour l'[épuisement professionnel](/signes-du-burn-out/) :
 
 | Signe du quotidien | Ce que la HAS décrit pour l'épuisement professionnel |
 |---|---|
@@ -58,7 +58,7 @@ Ces signes ne sont pas un diagnostic. Mais certains recoupent ceux que la Haute 
 | Tu te couches avec une liste qui tourne | Troubles du sommeil [6] |
 
 ## Pourquoi la charge mentale fatigue et empêche de dormir ?
-La charge mentale fatigue parce qu'une tâche non terminée continue d'occuper l'esprit, et elle empêche de dormir parce que l'inquiétude au coucher retarde l'endormissement [4, 5]. Selon une série d'expériences de l'Université d'État de Floride publiée en 2011 dans le *Journal of Personality and Social Psychology* (Masicampo et Baumeister), des objectifs inachevés provoquaient des pensées intrusives pendant une lecture sans rapport et faisaient baisser les performances sur une autre tâche [4]. Quand les participants pouvaient écrire un plan précis pour ces objectifs, ces effets disparaissaient [4]. Selon les auteurs, une fois le plan fixé, l'esprit met la tâche en pause jusqu'au moment prévu [4].
+La charge mentale fatigue parce qu'une tâche non terminée continue d'occuper l'esprit, et elle empêche de dormir parce que l'[inquiétude au coucher](/ruminations-le-soir/) retarde l'endormissement [4, 5]. Selon une série d'expériences de l'Université d'État de Floride publiée en 2011 dans le *Journal of Personality and Social Psychology* (Masicampo et Baumeister), des objectifs inachevés provoquaient des pensées intrusives pendant une lecture sans rapport et faisaient baisser les performances sur une autre tâche [4]. Quand les participants pouvaient écrire un plan précis pour ces objectifs, ces effets disparaissaient [4]. Selon les auteurs, une fois le plan fixé, l'esprit met la tâche en pause jusqu'au moment prévu [4].
 
 Le soir, cela pèse aussi sur le sommeil. L'inquiétude au coucher, notamment à propos des tâches à venir, contribue aux difficultés d'endormissement [5]. Selon une étude de l'Université Baylor (Texas) publiée en 2018 dans le *Journal of Experimental Psychology: General* (Scullin et al.), 57 adultes de 18 à 30 ans ont écrit pendant 5 minutes avant d'éteindre, en laboratoire du sommeil :
 

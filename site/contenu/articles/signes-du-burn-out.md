@@ -96,7 +96,7 @@ Oui. La HAS indique qu'un arrêt de travail est **le plus souvent nécessaire**,
 
 Le retour se prépare, notamment lors d'une visite de pré-reprise avec le médecin du travail pendant l'arrêt, pour envisager des adaptations du poste [2].
 
-Un point qui soulage souvent : l'organisation du travail joue un rôle central [2][3]. Surcharge, faible marge de manœuvre, manque de soutien ou de reconnaissance font partie des facteurs de risque [3]. Tes fragilités personnelles ne peuvent jamais effacer la responsabilité de ces facteurs [2].
+Un point qui soulage souvent : l'organisation du travail joue un rôle central [2][3]. Surcharge, faible marge de manœuvre, manque de soutien ou de reconnaissance font partie des facteurs de risque [3] (voir aussi notre article sur la [charge mentale](/charge-mentale/)). Tes fragilités personnelles ne peuvent jamais effacer la responsabilité de ces facteurs [2].
 
 ## Quand consulter ?
 

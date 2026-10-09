@@ -56,7 +56,7 @@ Le stress est associé à davantage de procrastination du coucher, en partie à 
 
 Les écrans posent un double problème. L'Inserm explique que l'usage tardif d'écrans ou de lumières LED, riches en lumière bleue, retarde l'endormissement [7]. Et la stimulation des activités sociales ou ludiques sur écran entretient un état d'« hyper-éveil » qui va à l'encontre du sommeil [8].
 
-Reste ce qui se passe une fois la lumière éteinte. L'Inserm décrit le stress comme un déclencheur fréquent des insomnies, et l'anxiété face à la nuit comme un facteur qui peut les faire durer [8]. Si tu repousses le coucher pour ne pas rester au lit sans dormir, avec les pensées qui tournent, tu te rapproches du « retard stratégique », qui peut signaler une insomnie [2]. Apaiser les ruminations du soir compte alors autant que l'heure du coucher : c'est l'objet du guide gratuit présenté en fin d'article.
+Reste ce qui se passe une fois la lumière éteinte. L'Inserm décrit le stress comme un déclencheur fréquent des insomnies, et l'anxiété face à la nuit comme un facteur qui peut les faire durer [8]. Si tu repousses le coucher pour ne pas rester au lit sans dormir, avec les pensées qui tournent, tu te rapproches du « retard stratégique », qui peut signaler une insomnie [2]. Apaiser les [ruminations du soir](/ruminations-le-soir/) compte alors autant que l'heure du coucher : c'est l'objet du guide gratuit présenté en fin d'article.
 
 ## Quelles conséquences sur ton sommeil ?
 

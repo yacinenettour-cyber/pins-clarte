@@ -19,7 +19,7 @@ Le nerf vague est le principal nerf du système parasympathique, le « frein » 
 ## Qu'est-ce que le nerf vague et quel est son lien avec le stress ?
 Le nerf vague, ou dixième nerf crânien, est le plus long des nerfs crâniens : il part du cerveau et descend jusqu'au gros intestin, en desservant notamment le cœur, les poumons et le tube digestif. En réalité, il y en a deux, un à gauche et un à droite [1].
 
-C'est le nerf principal du système nerveux parasympathique, celui des fonctions de « repos et digestion » [1]. Pour simplifier, ton système nerveux autonome a deux pédales :
+C'est le nerf principal du système nerveux parasympathique, celui des fonctions de « repos et digestion » [1]. Pour simplifier, ton [système nerveux autonome](/calmer-son-systeme-nerveux/) a deux pédales :
 - le **sympathique**, l'accélérateur, qui prépare ton corps à réagir face à un stress ;
 - le **parasympathique**, le frein, qui accompagne le repos, la digestion et la récupération.
 

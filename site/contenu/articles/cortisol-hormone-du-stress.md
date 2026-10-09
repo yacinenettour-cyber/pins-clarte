@@ -84,7 +84,7 @@ Le stress aigu est une réaction brève qui redescend une fois la situation pass
 | Régulation de l'axe du stress | Le frein fonctionne, le taux redescend [2] | Hyperactivité au début, puis hypoactivité, selon des études récentes [2] |
 | Conséquence | Aide à faire face [2] | Peut avoir des effets sérieux sur la santé physique et mentale [2] |
 
-Un stress chronique n'est donc pas toujours « trop de cortisol » : c'est plutôt une régulation qui perd sa souplesse. Bruce McEwen précise que ce ne sont pas seulement les événements dramatiques qui pèsent, mais aussi les nombreux tracas du quotidien qui maintiennent le corps en activation, font perdre du sommeil ou pousser à trop manger [3]. C'est justement sur ce quotidien que tu as le plus de prise.
+Un stress chronique n'est donc pas toujours « trop de cortisol » : c'est plutôt une régulation qui perd sa souplesse. Bruce McEwen précise que ce ne sont pas seulement les événements dramatiques qui pèsent, mais aussi les nombreux [tracas du quotidien](/charge-mentale/) qui maintiennent le corps en activation, font perdre du sommeil ou pousser à trop manger [3]. C'est justement sur ce quotidien que tu as le plus de prise.
 
 ## Quels effets un stress chronique peut-il avoir sur le sommeil et l'énergie ?
 

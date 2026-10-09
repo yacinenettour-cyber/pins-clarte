@@ -33,7 +33,7 @@ La régularité compte autant que la durée. Selon l'Inserm, ton horloge biologi
 Trois gestes pour commencer :
 
 1. **Fixe ton heure de lever**, y compris le week-end, à une heure près.
-2. **Baisse les lumières et range les écrans** dans l'heure qui précède le coucher : les écrans et les LED riches en lumière bleue, utilisés tard, retardent l'endormissement [1].
+2. **Baisse les lumières et range les écrans** dans l'heure qui précède le coucher, comme dans une [routine du soir](/routine-du-soir-anti-stress/) : les écrans et les LED riches en lumière bleue, utilisés tard, retardent l'endormissement [1].
 3. **Traite ta durée de sommeil comme un rendez-vous** : décide de ton heure de coucher à partir de ton heure de lever, pas l'inverse.
 
 ## Pourquoi la lumière du matin compte-t-elle ?
@@ -66,7 +66,7 @@ Ces hausses pendant l'effort viennent en partie d'une stimulation de l'axe du st
 
 Oui : la relaxation, la méditation et la pleine conscience font partie des méthodes qui font le mieux baisser le cortisol dans les essais cliniques [4]. Selon une méta-analyse de l'Université de Leeds (Royaume-Uni) publiée en 2024 dans *Psychoneuroendocrinology*, qui regroupe 58 essais randomisés et 3 508 participants qui n'étaient pas des patients, les programmes de gestion du stress y faisaient mieux que les groupes de comparaison sur le cortisol, avec un effet moyen [4]. La pleine conscience, la méditation et la relaxation donnaient les meilleurs résultats [4]. Et la durée du programme ne changeait pas son efficacité [4] : pas besoin d'une retraite de dix jours, la régularité suffit pour commencer.
 
-La respiration lente est une façon simple d'entrer dans la relaxation. Essaie celle-ci :
+La [respiration lente](/calmer-son-systeme-nerveux/) est une façon simple d'entrer dans la relaxation. Essaie celle-ci :
 
 1. Assieds-toi, les pieds bien posés au sol, une main sur le ventre.
 2. Inspire par le nez pendant 4 secondes en laissant le ventre se gonfler.

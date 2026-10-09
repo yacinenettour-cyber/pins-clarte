@@ -84,7 +84,7 @@ L'étude portait sur une scène choisie à l'avance ; la version « mélange » 
 
 ### 4. Ralentir ta respiration
 
-La respiration lente aide parce qu'elle occupe l'attention. Le Réseau Morphée, spécialisé dans les troubles du sommeil, explique sur Santé.fr que le travail sur la respiration empêche les pensées de divaguer et aide à se concentrer sur autre chose que les pensées négatives. Il crée aussi une transition entre l'agitation de la journée et la nuit [7].
+La [respiration lente](/calmer-son-systeme-nerveux/) aide parce qu'elle occupe l'attention. Le Réseau Morphée, spécialisé dans les troubles du sommeil, explique sur Santé.fr que le travail sur la respiration empêche les pensées de divaguer et aide à se concentrer sur autre chose que les pensées négatives. Il crée aussi une transition entre l'agitation de la journée et la nuit [7].
 
 Essaie : inspire par le nez en comptant jusqu'à 4, puis expire doucement en comptant jusqu'à 6, pendant cinq minutes. Si tu perds le compte, reprends à 1, sans te juger.
 
@@ -100,7 +100,7 @@ Réapprendre à ton corps que le lit sert à dormir, c'est le principe du contr�
 
 ### 6. Créer un sas entre la journée et la nuit
 
-Un sas entre la journée et la nuit est un rituel toujours identique qui annonce le coucher : l'Inserm recommande un « couvre-feu digital » le soir et un rituel constant et régulier autour du coucher [1]. Par exemple : écrans coupés, lumière tamisée, douche tiède, quelques pages d'un livre, puis ta liste de tâches. Toujours dans le même ordre, pour que ce rituel devienne un repère.
+Un sas entre la journée et la nuit est un rituel toujours identique qui annonce le coucher : l'Inserm recommande un « couvre-feu digital » le soir et un rituel constant et régulier autour du coucher [1], comme la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/). Par exemple : écrans coupés, lumière tamisée, douche tiède, quelques pages d'un livre, puis ta liste de tâches. Toujours dans le même ordre, pour que ce rituel devienne un repère.
 
 Pour une routine déjà construite, le guide gratuit présenté en fin d'article propose une routine anti-rumination à faire au lit.
 

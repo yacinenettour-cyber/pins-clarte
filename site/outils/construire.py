@@ -218,6 +218,24 @@ def preparer_image(nom):
 
 # ---------------------------------------------------------------- gabarits
 
+def balise_google(chemin):
+    code = SITE.get("mesure", {}).get("google_verification")
+    return f'<meta name="google-site-verification" content="{e(code)}">' if code and chemin == "/" else ""
+
+
+def balise_mesure():
+    """Cloudflare Web Analytics : mesure d'audience sans cookie, active seulement si un jeton est renseigné."""
+    jeton = SITE.get("mesure", {}).get("cloudflare_jeton")
+    if not jeton:
+        return ""
+    return ("<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js\" "
+            f"data-cf-beacon='{json.dumps({'token': jeton})}'></script>")
+
+
+def theme_de(a):
+    return SITE.get("themes", {}).get(a["categorie"])
+
+
 def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og="website", nav="", meta_article=None):
     canon = URL + chemin
     image_og = URL + (image_og or "/img/og-defaut.jpg")
@@ -249,6 +267,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <meta name="twitter:card" content="summary_large_image">
 {meta_article or ""}
 {f'<meta name="p:domain_verify" content="{verif}">' if verif and chemin == "/" else ""}
+{balise_google(chemin)}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{e(SITE['nom'])}" href="/feed.xml">
 <meta name="theme-color" content="#080C10">
@@ -267,10 +286,11 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
+{balise_mesure()}
 </body>
 </html>
 """
@@ -279,6 +299,8 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 def carte_guide(cle, article=None, titre_niveau="h2"):
     g = SITE["guides"][cle]
     utm = f"utm_source=site&utm_medium={'article' if article else 'page'}&utm_campaign={article or 'site'}"
+    if article:
+        utm += "&utm_content=fin"
     points = "".join(f"<li>{e(p)}</li>" for p in g["points"])
     return f"""<aside class="guide" aria-label="{e(g['type'])}">
 <div class="livret" aria-hidden="true">{e(g['titre'])}<span>{e(SITE['nom'])}</span></div>
@@ -290,6 +312,16 @@ def carte_guide(cle, article=None, titre_niveau="h2"):
 <a class="bouton" href="{g['url']}?{utm}">{e(g['bouton'])}</a>
 <small>Gratuit, sans engagement. Repères de bien-être, pas un avis médical.</small>
 </div>
+</aside>"""
+
+
+def rappel_guide(cle, slug):
+    """Rappel discret du guide gratuit au milieu d'un article (beaucoup de lecteurs n'arrivent pas à la fin)."""
+    g = SITE["guides"][cle]
+    lien = f"{g['url']}?utm_source=site&utm_medium=article&utm_campaign={slug}&utm_content=milieu"
+    return f"""<aside class="rappel-guide" aria-label="{e(g['type'])}">
+<p><span class="type">{e(g['type'])}</span><strong>{e(g['titre'])}</strong> · {e(g['rappel'])}</p>
+<a href="{lien}">{e(g['bouton'])} <span aria-hidden="true">→</span></a>
 </aside>"""
 
 
@@ -357,6 +389,10 @@ def construire_article(a, tous):
         return f'<h2 id="{ident}">{m.group(1)}</h2>'
     corps_html = re.sub(r"<h2>(.*?)</h2>", ancre, corps_html)
     corps_html = appels_de_source(corps_html, len(a["sources"]))
+    if a["guide"] in SITE["guides"] and len(titres) >= 3:
+        # Après la 2e partie, avant le 3e intertitre.
+        repere = f'<h2 id="{titres[2][0]}">'
+        corps_html = corps_html.replace(repere, rappel_guide(a["guide"], a["slug"]) + "\n" + repere, 1)
     intro_html = appels_de_source(md(a["intro"]), len(a["sources"])).replace("<p>", '<p class="chapo">', 1)
     sommaire = ""
     if len(titres) >= 3:
@@ -399,7 +435,9 @@ def construire_article(a, tous):
                      key=lambda b: (b["categorie"] != a["categorie"], b["guide"] != a["guide"], b["titre"]))[:3]
     lies = ('<section><h2 id="a-lire-aussi">À lire aussi</h2><div class="grille">'
             + "".join(carte_article(b) for b in proches) + "</div></section>")
-    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Articles", "/articles/"), (a["titre"], None)])
+    th = theme_de(a)
+    nav_html, schema_ariane = ariane([("Accueil", "/")] + ([(th["nom"], f"/{th['slug']}/")] if th else [("Articles", "/articles/")])
+                                     + [(a["titre"], None)])
     contenu = f"""<div class="etroit">
 {nav_html}
 <article>
@@ -514,6 +552,7 @@ def construire_accueil(articles):
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 {f'<meta name="p:domain_verify" content="{verif}">' if verif else ""}
+{balise_google("/")}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{e(SITE['nom'])}" href="/feed.xml">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
@@ -522,6 +561,7 @@ def construire_accueil(articles):
 </head>
 <body>
 {corps}
+{balise_mesure()}
 </body>
 </html>
 """
@@ -542,7 +582,9 @@ def construire_liste(articles):
     for cle, nom in SITE["categories"].items():
         lot = [a for a in articles if a["categorie"] == cle]
         if lot:
-            blocs.append(f'<h2 id="{cle}">{e(nom)}</h2><div class="grille">'
+            th = SITE.get("themes", {}).get(cle)
+            lien = f' <a class="voir-theme" href="/{th["slug"]}/">Voir le thème</a>' if th else ""
+            blocs.append(f'<h2 id="{cle}">{e(nom)}{lien}</h2><div class="grille">'
                          + "".join(carte_article(a) for a in lot) + "</div>")
     nav_html, schema_ariane = ariane([("Accueil", "/"), ("Articles", None)])
     contenu = f"""<div class="large">{nav_html}
@@ -555,6 +597,37 @@ def construire_liste(articles):
     ecrire("articles/index.html", page(f"Articles sur le stress et le sommeil | {SITE['nom']}",
                                        "Tous les articles de Clarté Mentale : ruminations du soir, réveils nocturnes, cortisol, nerf vague, charge mentale, burn-out.",
                                        "/articles/", contenu, [schema, schema_ariane], nav="/articles/"))
+
+
+def construire_theme(cle, articles):
+    """Page thème : définition, « par où commencer ? », articles du thème et guide adapté."""
+    th = SITE["themes"][cle]
+    lot = [a for a in articles if a["categorie"] == cle]
+    par_slug = {a["slug"]: a for a in articles}
+    lignes = "".join(f'<tr><td data-label="Ta situation">{e(sit)}</td><td data-label="À lire"><a href="/{s}/">{e(par_slug[s]["titre"])}</a></td></tr>'
+                     for sit, s in th["par_ou_commencer"])
+    tableau = ('<div class="tableau"><table><thead><tr><th scope="col">Ta situation</th><th scope="col">À lire</th></tr></thead>'
+               f"<tbody>{lignes}</tbody></table></div>")
+    autres = [t for k, t in SITE["themes"].items() if k != cle]
+    nav_html, schema_ariane = ariane([("Accueil", "/"), (th["nom"], None)])
+    contenu = f"""<div class="large">{nav_html}
+<h1>{e(th['titre'])}</h1>
+{''.join(f'<p class="chapo">{e(p)}</p>' if i == 0 else f'<p>{e(p)}</p>' for i, p in enumerate(th['intro']))}
+<h2 id="par-ou-commencer">Par où commencer ?</h2>
+{tableau}
+<h2 id="articles">Les articles du thème</h2>
+<div class="grille">{''.join(carte_article(a) for a in lot)}</div>
+{carte_guide(th['guide'], None, "h2") if th.get('guide') in SITE['guides'] else ''}
+<p class="autres-themes">Autres thèmes : {' · '.join(f'<a href="/{t["slug"]}/">{e(t["nom"])}</a>' for t in autres)} · <a href="/articles/">tous les articles</a></p>
+</div>"""
+    schema = {"@context": "https://schema.org", "@type": "CollectionPage", "name": th["titre"],
+              "description": th["description"], "url": f"{URL}/{th['slug']}/", "inLanguage": SITE["langue"],
+              "isPartOf": {"@id": URL + "/#site"}, "publisher": {"@id": URL + "/#organisation"},
+              "mainEntity": {"@type": "ItemList", "itemListElement": [
+                  {"@type": "ListItem", "position": i + 1, "url": f"{URL}/{a['slug']}/", "name": a["titre"]}
+                  for i, a in enumerate(lot)]}}
+    ecrire(f"{th['slug']}/index.html", page(f"{th['titre_seo']} | {SITE['nom']}", th["description"], f"/{th['slug']}/",
+                                            contenu, [schema, schema_ariane]))
 
 
 def construire_guides():
@@ -659,6 +732,7 @@ def construire_fichiers_techniques(articles):
              ("/la-formation/", SITE["date_publication"]),
              ("/guides-gratuits/", SITE["date_publication"]), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
              ("/mentions-legales/", SITE["date_publication"])]
+    pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
     ecrire("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -679,6 +753,8 @@ def construire_fichiers_techniques(articles):
     for cle, nom in SITE["categories"].items():
         for a in [a for a in articles if a["categorie"] == cle]:
             lignes.append(f"- [{a['titre']}]({URL}/{a['slug']}/): {a['description']}")
+    lignes += ["", "## Thèmes", ""] + [f"- [{th['titre']}]({URL}/{th['slug']}/): {th['description']}"
+                                        for th in SITE.get("themes", {}).values()]
     lignes += ["", "## Guides gratuits", ""]
     for g in SITE["guides"].values():
         lignes.append(f"- [{g['titre']}]({g['url']}): {g['accroche']} " + " ; ".join(g["points"]) + ".")
@@ -760,11 +836,16 @@ def main():
         construire_article(a, articles)
     construire_accueil(articles)
     construire_liste(articles)
+    for cle in SITE.get("themes", {}):
+        construire_theme(cle, articles)
     construire_guides()
     if SITE.get("formation"):
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")
     construire_page_fixe("methode-editoriale.md", "/methode-editoriale/")
+    mentions = open(os.path.join(RACINE, "contenu", "pages", "mentions-legales.md"), encoding="utf-8").read()
+    if balise_mesure() and "n'utilise aucun outil de mesure d'audience" in mentions:
+        sys.exit("Mesure d'audience activée : mettre d'abord à jour les mentions légales (elles disent « aucun outil de mesure d'audience »).")
     construire_page_fixe("mentions-legales.md", "/mentions-legales/")
     construire_404()
     construire_fichiers_techniques(articles)

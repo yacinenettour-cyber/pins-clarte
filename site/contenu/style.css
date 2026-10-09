@@ -115,6 +115,17 @@ sup a { text-decoration: none; font-size: 13px; }
 .bilan-sources a:hover { border-color: rgba(143, 191, 154, 0.7); box-shadow: var(--ombre-lueur); }
 .faq h3 { margin-top: 24px; }
 
+/* Rappel du guide au milieu des articles */
+.rappel-guide { margin: 34px 0 6px; padding: 16px 20px; border-radius: 18px; background: linear-gradient(90deg, rgba(58, 95, 67, 0.32), rgba(255, 255, 255, 0.03)); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(143, 191, 154, 0.3); border-left: 3px solid var(--brume); box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.55); display: grid; gap: 10px; }
+.rappel-guide p { margin: 0; font-size: 16px; line-height: 1.6; }
+.rappel-guide .type { display: block; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--brume); margin-bottom: 2px; }
+.rappel-guide a { justify-self: start; font-weight: 700; text-decoration: none; color: var(--nuit); background: var(--degrade-or); background-size: 200% 100%; padding: 9px 16px; border-radius: 999px; transition: var(--transition); }
+.rappel-guide a:hover { animation: glisse 6s linear infinite; box-shadow: 0 14px 34px -14px rgba(223, 213, 198, .6); }
+
+/* Pages thème */
+.voir-theme { font: 600 14px/1 var(--texte); margin-left: 10px; letter-spacing: 0; vertical-align: middle; }
+.autres-themes { margin: 34px 0 10px; font-size: 15px; color: var(--champagne-doux); }
+
 /* Carte guide */
 .guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.6), rgba(58, 95, 67, 0.18), rgba(143, 191, 154, 0.22), rgba(58, 95, 67, 0.6)); background-size: 200% 100%; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(143, 191, 154, 0.3); border-radius: 22px; padding: 24px; margin: 30px 0; display: grid; gap: 18px; grid-template-columns: 96px minmax(0, 1fr); align-items: start; box-shadow: var(--ombre-2xl); transition: var(--transition); }
 .guide:hover { box-shadow: var(--ombre-lueur); animation: glisse 10s linear infinite; }

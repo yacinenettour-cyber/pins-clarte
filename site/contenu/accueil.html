@@ -222,6 +222,8 @@ section { position: relative; z-index: 1; }
 .teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(8, 12, 16, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
 .teinte.sombre img { filter: saturate(.85) brightness(.92); }
 .teinte.sombre::after { display: none; }
+.themes-lien { margin: 0 0 22px; color: var(--champagne-doux); font-size: 15.5px; }
+.themes-lien a { color: var(--brume); }
 .carte-lecture .corps { display: grid; gap: 8px; padding: 18px 20px 22px; }
 .carte-lecture h3 { font-size: 19px; }
 .carte-lecture p { font-size: 14.5px; color: var(--champagne-doux); }
@@ -497,6 +499,7 @@ section { position: relative; z-index: 1; }
         <p>Des articles complets et sourcés pour mieux dormir, calmer ton système nerveux et sortir des ruminations du soir.</p>
       </div>
       <div class="lecture">{{ARTICLES}}</div>
+      <p class="themes-lien">Explorer par thème : <a href="{{B}}/mieux-dormir/">Mieux dormir</a> · <a href="{{B}}/stress-et-systeme-nerveux/">Stress et système nerveux</a> · <a href="{{B}}/charge-mentale-et-burn-out/">Charge mentale et burn-out</a></p>
       <a class="btn btn-verre" href="{{B}}/articles/">Tous les articles <span class="fleche" aria-hidden="true">→</span></a>
     </div>
   </section>
@@ -566,6 +569,9 @@ section { position: relative; z-index: 1; }
   <div class="wrap">
     <nav aria-label="Liens du pied de page">
       <a href="{{B}}/articles/">Tous les articles</a>
+      <a href="{{B}}/mieux-dormir/">Mieux dormir</a>
+      <a href="{{B}}/stress-et-systeme-nerveux/">Stress et système nerveux</a>
+      <a href="{{B}}/charge-mentale-et-burn-out/">Charge mentale et burn-out</a>
       <a href="{{B}}/la-formation/">La formation</a>
       <a href="{{B}}/guides-gratuits/">Guides gratuits</a>
       <a href="{{B}}/a-propos/">À propos</a>

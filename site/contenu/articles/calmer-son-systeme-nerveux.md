@@ -69,7 +69,7 @@ Le soupir physiologique est une respiration en deux inspirations par le nez, sui
 L'étude reste modeste : petits groupes, pratique à distance, suivi d'un mois seulement [2]. C'est une piste sérieuse, pas une garantie.
 
 ### 2. La respiration lente (5 minutes)
-La respiration lente consiste à respirer à moins de 10 respirations par minute [3]. Selon une revue systématique de l'Université de Pise (Italie) publiée en 2018 dans *Frontiers in Human Neuroscience*, qui réunit 15 études, elle s'accompagne d'une hausse de la variabilité cardiaque et d'une prédominance du parasympathique, par l'intermédiaire du nerf vague, avec plus de détente et moins d'anxiété rapportées [3]. Les auteurs soulignent que les études sont peu nombreuses et très hétérogènes [3].
+La respiration lente consiste à respirer à moins de 10 respirations par minute [3]. Selon une revue systématique de l'Université de Pise (Italie) publiée en 2018 dans *Frontiers in Human Neuroscience*, qui réunit 15 études, elle s'accompagne d'une hausse de la variabilité cardiaque et d'une prédominance du parasympathique, par l'intermédiaire du [nerf vague](/nerf-vague/), avec plus de détente et moins d'anxiété rapportées [3]. Les auteurs soulignent que les études sont peu nombreuses et très hétérogènes [3].
 
 En pratique : inspire par le nez pendant 4 secondes, expire pendant 6 secondes. Tu tombes à 6 respirations par minute. Si la tête te tourne, reprends ton rythme naturel.
 
@@ -95,7 +95,7 @@ La marche d'un bon pas est la forme d'activité physique la plus facile à caser
 En pratique : sors 10 minutes, si possible dehors.
 
 ### 6. Parler à quelqu'un de confiance
-Le soutien d'une personne de confiance réduit la réponse de l'organisme au stress [7]. Selon une étude de l'Université de Zurich publiée en 2003 dans *Biological Psychiatry* (Heinrichs et al.), 37 hommes passaient un test de stress psychosocial en laboratoire. Ceux qui avaient été soutenus par leur meilleur ami pendant la préparation avaient un taux de cortisol, l'hormone du stress, plus bas [7]. Le soutien associé à de l'ocytocine en spray nasal donnait le cortisol le plus bas, plus de calme et moins d'anxiété [7]. Petit échantillon, uniquement masculin : à confirmer.
+Le soutien d'une personne de confiance réduit la réponse de l'organisme au stress [7]. Selon une étude de l'Université de Zurich publiée en 2003 dans *Biological Psychiatry* (Heinrichs et al.), 37 hommes passaient un test de stress psychosocial en laboratoire. Ceux qui avaient été soutenus par leur meilleur ami pendant la préparation avaient un taux de cortisol, l'[hormone du stress](/cortisol-hormone-du-stress/), plus bas [7]. Le soutien associé à de l'ocytocine en spray nasal donnait le cortisol le plus bas, plus de calme et moins d'anxiété [7]. Petit échantillon, uniquement masculin : à confirmer.
 
 Un appel de cinq minutes, un message vocal, un café avec un collègue : choisis quelqu'un avec qui tu te sens en sécurité.
 

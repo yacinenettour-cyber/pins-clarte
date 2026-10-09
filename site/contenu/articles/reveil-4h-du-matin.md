@@ -28,7 +28,7 @@ Bonne nouvelle : après une mauvaise nuit, le sommeil lent de la nuit suivante e
 
 ### Parce que ton cortisol remonte avant l'aube
 
-Le cortisol, l'hormone du stress, remonte naturellement pendant la seconde moitié de la nuit. Selon une revue de l'Université de Chicago publiée en 2010 dans l'*International Journal of Endocrinology* (Balbo, Leproult et Van Cauter), son rythme sur une nuit ressemble à ceci [4] :
+Le cortisol, l'[hormone du stress](/cortisol-hormone-du-stress/), remonte naturellement pendant la seconde moitié de la nuit. Selon une revue de l'Université de Chicago publiée en 2010 dans l'*International Journal of Endocrinology* (Balbo, Leproult et Van Cauter), son rythme sur une nuit ressemble à ceci [4] :
 
 | Moment | Taux de cortisol |
 |---|---|
@@ -41,7 +41,7 @@ Ce rythme est normal et concerne tout le monde. Chez les personnes qui dorment m
 
 ### Parce que le stress fragilise la seconde moitié de la nuit
 
-Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress, les difficultés touchent surtout la seconde moitié de la nuit, avec l'impression de somnoler à partir de 4 ou 5 heures du matin [3]. Une fois réveillé, ton esprit attrape vite un souci de la veille, et l'éveil se prolonge.
+Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress, les difficultés touchent surtout la seconde moitié de la nuit, avec l'impression de somnoler à partir de 4 ou 5 heures du matin [3]. Une fois réveillé, ton esprit attrape vite un [souci de la veille](/ruminations-le-soir/), et l'éveil se prolonge.
 
 ### Parce que l'alcool du soir se paie en fin de nuit
 

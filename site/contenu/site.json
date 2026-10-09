@@ -25,7 +25,8 @@
     "Un calendrier de 30 jours, sans matériel"
    ],
    "bouton": "Recevoir le guide gratuit",
-   "url": "https://lp.contactapaisement-mental.fr/tonguide"
+   "url": "https://lp.contactapaisement-mental.fr/tonguide",
+   "rappel": "Pour les soirs où le mental tourne en boucle : une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel."
   },
   "cortisol": {
    "titre": "Le plan anti-cortisol en 7 jours",
@@ -37,7 +38,8 @@
     "Sans matériel, sans régime, téléchargement immédiat"
    ],
    "bouton": "Recevoir le plan gratuit",
-   "url": "https://lp.contactapaisement-mental.fr/63d489c7"
+   "url": "https://lp.contactapaisement-mental.fr/63d489c7",
+   "rappel": "Un geste simple par jour pendant 7 jours (lumière, respiration, assiette, mouvement, pauses, soirée, sommeil), 10 à 15 minutes, avec un tableau de suivi à cocher."
   }
  },
  "categories": {
@@ -197,5 +199,98 @@
    ]
   ]
  },
- "nav_formation": "/la-formation/"
+ "nav_formation": "/la-formation/",
+ "mesure": {
+  "cloudflare_jeton": "",
+  "google_verification": "",
+  "_note": "cloudflare_jeton : jeton de Cloudflare Web Analytics (sans cookie). google_verification : code de la balise meta de Google Search Console, seulement si la vérification par DNS n'est pas utilisée. Laisser vide tant que l'utilisateur ne les a pas fournis."
+ },
+ "themes": {
+  "sommeil": {
+   "slug": "mieux-dormir",
+   "nom": "Mieux dormir",
+   "titre": "Mieux dormir : apaiser tes soirées et tes nuits",
+   "titre_seo": "Mieux dormir : ruminations, réveils nocturnes, routine du soir",
+   "description": "Mieux dormir quand le stress s'invite le soir : ruminations, réveil à 4 h du matin, routine du soir, procrastination du coucher. Articles sourcés et gestes simples.",
+   "intro": [
+    "Mieux dormir, c'est d'abord apaiser ce qui se passe le soir : un mental qui rumine, un coucher qui recule, un corps encore en mode alerte au moment d'éteindre la lumière.",
+    "Les articles de ce thème expliquent ces mécanismes à partir de sources officielles (Inserm, Assurance maladie, Institut national du sommeil et de la vigilance) et d'études publiées, puis proposent des gestes simples à tester dès ce soir. Chacun se termine par une section « Quand consulter ? »."
+   ],
+   "par_ou_commencer": [
+    [
+     "Les pensées tournent dès que tu éteins la lumière",
+     "ruminations-le-soir"
+    ],
+    [
+     "Tu te réveilles vers 4 h et tu ne te rendors pas",
+     "reveil-4h-du-matin"
+    ],
+    [
+     "Tu veux un rituel simple pour préparer la nuit",
+     "routine-du-soir-anti-stress"
+    ],
+    [
+     "Tu repousses l'heure d'aller au lit malgré la fatigue",
+     "procrastination-du-coucher"
+    ]
+   ],
+   "guide": "sommeil"
+  },
+  "stress": {
+   "slug": "stress-et-systeme-nerveux",
+   "nom": "Stress et système nerveux",
+   "titre": "Stress, cortisol et système nerveux : comprendre et apaiser",
+   "titre_seo": "Stress, cortisol et système nerveux : comprendre et apaiser",
+   "description": "Stress et système nerveux : le rôle du cortisol, comment le faire redescendre naturellement, calmer le système nerveux et ce que l'on sait vraiment du nerf vague.",
+   "intro": [
+    "Le stress est la réaction de l'organisme face à une situation jugée menaçante ; deux grands acteurs l'orchestrent : le cortisol, l'hormone du stress, et le système nerveux autonome, avec son accélérateur et son frein.",
+    "Les articles de ce thème démêlent ce que disent les sources médicales et les études de ce que promettent les réseaux sociaux, puis détaillent les gestes les mieux étudiés pour aider le corps à redescendre."
+   ],
+   "par_ou_commencer": [
+    [
+     "Tu veux comprendre ce qu'est vraiment le cortisol",
+     "cortisol-hormone-du-stress"
+    ],
+    [
+     "Tu cherches des gestes concrets pour le faire redescendre",
+     "baisser-son-cortisol-naturellement"
+    ],
+    [
+     "Tu veux te calmer vite quand la pression monte",
+     "calmer-son-systeme-nerveux"
+    ],
+    [
+     "Tu as entendu parler du nerf vague et tu veux démêler le vrai du faux",
+     "nerf-vague"
+    ]
+   ],
+   "guide": "cortisol"
+  },
+  "mental": {
+   "slug": "charge-mentale-et-burn-out",
+   "nom": "Charge mentale et burn-out",
+   "titre": "Charge mentale et burn-out : alléger, repérer, se faire aider",
+   "titre_seo": "Charge mentale et burn-out : alléger, repérer, se faire aider",
+   "description": "Charge mentale et burn-out : définition de la charge mentale, méthodes pour l'alléger, signes du burn-out et à qui en parler. Articles sourcés (HAS, OMS, INRS).",
+   "intro": [
+    "La charge mentale est le travail invisible qui consiste à penser à tout : anticiper, organiser, décider, vérifier. Quand elle s'ajoute durablement à un travail exigeant, elle peut mener à l'épuisement.",
+    "Les articles de ce thème s'appuient sur la Haute Autorité de santé, l'Organisation mondiale de la santé, l'INRS et des études publiées pour t'aider à alléger ce qui peut l'être, et à repérer le moment où il faut en parler à un médecin."
+   ],
+   "par_ou_commencer": [
+    [
+     "Tu as l'impression de penser à tout, tout le temps",
+     "charge-mentale"
+    ],
+    [
+     "Tu te demandes si ta fatigue ressemble à un burn-out",
+     "signes-du-burn-out"
+    ],
+    [
+     "La liste des choses à faire tourne au moment de dormir",
+     "ruminations-le-soir"
+    ]
+   ],
+   "guide": "sommeil"
+  }
+ }
 }
