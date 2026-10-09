@@ -23,7 +23,7 @@ from xml.sax.saxutils import escape as xml_escape
 
 import markdown
 from markdown.extensions.toc import slugify_unicode
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageStat
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SORTIE = os.path.join(RACINE, "_build")
@@ -208,6 +208,8 @@ def preparer_image(nom):
         chemin = os.path.join(dossier, f"{base}-{largeur}.webp")
         red.save(chemin, "WEBP", quality=78, method=6)
         sorties[largeur] = (f"/img/{base}-{largeur}.webp", red.width, red.height)
+    # Photo déjà très sombre (luminosité moyenne < 50/255) : pas de teinte commune, elle la noircirait.
+    sorties["sombre"] = ImageStat.Stat(img.convert("L")).mean[0] < 50
     og = ImageOps.fit(img, (1200, 630), Image.LANCZOS, centering=(0.5, 0.3))
     og.save(os.path.join(dossier, f"og-{base}.jpg"), "JPEG", quality=82, optimize=True)
     sorties["og"] = f"/img/og-{base}.jpg"
@@ -302,11 +304,17 @@ def encart_formation(slug):
 </aside>"""
 
 
+def teinte(img, a):
+    """Enveloppe une photo d'article : teinte commune (verte et sourde) pour l'accorder aux couleurs du site."""
+    sombre = " sombre" if a.get("images", {}).get("sombre") else ""
+    return f'<span class="teinte{sombre}">{img}</span>'
+
+
 def carte_article(a, niveau="h3"):
     img = ""
     if a.get("images"):
         src, l, h = a["images"][640]
-        img = f'<img src="{src}" width="{l}" height="{h}" alt="" loading="lazy" decoding="async">'
+        img = teinte(f'<img src="{src}" width="{l}" height="{h}" alt="" loading="lazy" decoding="async">', a)
     return f"""<article class="carte">{img}<div class="corps">
 <p class="cat">{e(SITE["categories"][a["categorie"]])}</p>
 <{niveau}><a href="/{a['slug']}/">{e(a['titre'])}</a></{niveau}>
@@ -384,9 +392,9 @@ def construire_article(a, tous):
         src, l, h = a["images"][1200]
         src_p = a["images"][640][0]
         credit = f"<figcaption>{e(a['credit'])}</figcaption>" if a["credit"] else ""
-        photo = (f'<figure class="photo"><img src="{src}" srcset="{src_p} 640w, {src} 1200w" '
+        photo = (f'<figure class="photo">' + teinte(f'<img src="{src}" srcset="{src_p} 640w, {src} 1200w" '
                  f'sizes="(max-width: 760px) 100vw, 740px" width="{l}" height="{h}" alt="{e(a["alt"])}" '
-                 f'fetchpriority="high">{credit}</figure>')
+                 f'fetchpriority="high">', a) + f'{credit}</figure>')
     proches = sorted((b for b in tous if b["slug"] != a["slug"]),
                      key=lambda b: (b["categorie"] != a["categorie"], b["guide"] != a["guide"], b["titre"]))[:3]
     lies = ('<section><h2 id="a-lire-aussi">À lire aussi</h2><div class="grille">'
@@ -455,7 +463,7 @@ def cartes_lecture(articles, image_en_ligne=False):
                 import base64
                 donnees = base64.b64encode(open(os.path.join(SORTIE, src.lstrip("/")), "rb").read()).decode()
                 src = "data:image/webp;base64," + donnees
-            img = f'<img src="{src}" width="{l}" height="{h}" alt="" loading="lazy" decoding="async">'
+            img = teinte(f'<img src="{src}" width="{l}" height="{h}" alt="" loading="lazy" decoding="async">', a)
         lien = (URL if image_en_ligne else "") + f"/{a['slug']}/"
         cartes.append(f'<a class="carte-lecture" href="{lien}">{img}<div class="corps">'
                       f'<p class="etiquette">{e(SITE["categories"][a["categorie"]])}</p>'
