@@ -2,7 +2,7 @@
 
 > Articles sourcés et conseils concrets pour apaiser le stress, calmer le système nerveux, sortir des ruminations du soir et retrouver un sommeil plus serein.
 
-Site francophone écrit par Yacine (fondateur de clarté mentale), qui n'est pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, Assurance maladie, études publiées) et indique quand consulter. Contenu libre d'accès, sans publicité.
+Site francophone écrit par Yacine Nettour (fondateur de clarté mentale), qui n'est pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, Assurance maladie, études publiées) et indique quand consulter. Contenu libre d'accès, sans publicité.
 
 ## Articles
 
@@ -30,4 +30,5 @@ Site francophone écrit par Yacine (fondateur de clarté mentale), qui n'est pas
 
 - [Texte intégral de tous les articles](https://contactapaisement-mental.fr/llms-full.txt)
 - [À propos de l'auteur](https://contactapaisement-mental.fr/a-propos/)
+- [Méthode éditoriale et choix des sources](https://contactapaisement-mental.fr/methode-editoriale/)
 - [Mentions légales](https://contactapaisement-mental.fr/mentions-legales/)
