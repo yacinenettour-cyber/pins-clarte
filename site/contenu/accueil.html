@@ -16,8 +16,8 @@
   --lisere-fort: rgba(223, 213, 198, 0.22);
   --ombre: rgba(0, 0, 0, 0.45);
   --alerte: #D9A26B;
-  --titre: "Syne", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  --texte: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --titre: "Syne", "Syne repli A", "Syne repli R", "Segoe UI", system-ui, sans-serif;
+  --texte: "Plus Jakarta Sans", "Jakarta repli A", "Jakarta repli R", "Segoe UI", system-ui, -apple-system, sans-serif;
   --rayon: 22px;
   --ombre-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.65);
   --ombre-lueur: 0 25px 50px -12px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(143, 191, 154, 0.18), 0 18px 60px -20px rgba(58, 95, 67, 0.55);
@@ -96,14 +96,14 @@ section { position: relative; z-index: 1; }
 
 /* Héro */
 .hero { padding-block: clamp(48px, 7vw, 96px) clamp(56px, 8vw, 104px); position: relative; overflow: clip; }
-.hero::before { content: ""; position: absolute; inset: -20% -10% auto -10%; height: 120%; pointer-events: none; z-index: 0; background: radial-gradient(40% 50% at 20% 30%, rgba(58, 95, 67, 0.35), transparent 70%), radial-gradient(35% 45% at 80% 20%, rgba(143, 191, 154, 0.16), transparent 70%), radial-gradient(30% 40% at 60% 85%, rgba(223, 213, 198, 0.07), transparent 70%); filter: blur(20px); animation: aurore 30s ease-in-out infinite; }
+.hero::before { content: ""; position: absolute; inset: -160px -10% 0 -10%; pointer-events: none; z-index: 0; background: radial-gradient(40% 50% at 20% 30%, rgba(58, 95, 67, 0.35), transparent 70%), radial-gradient(35% 45% at 80% 20%, rgba(143, 191, 154, 0.16), transparent 70%), radial-gradient(30% 40% at 60% 85%, rgba(223, 213, 198, 0.07), transparent 70%); filter: blur(20px); animation: aurore 30s ease-in-out infinite; }
 .hero .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
 .hero-texte { display: grid; gap: 26px; min-width: 0; }
 .hero h1 { display: grid; gap: 18px; }
 .hero h1 .kicker { font: 600 13px/1.3 var(--texte); letter-spacing: 0.2em; text-transform: uppercase; color: var(--brume); }
-.hero h1 .titre { font-size: clamp(42px, 6.6vw, 86px); line-height: 0.95; font-weight: 800; letter-spacing: -0.035em; }
+.hero h1 .titre { font-family: "Syne bloc", var(--titre); font-size: clamp(42px, 6.6vw, 86px); line-height: 0.95; font-weight: 800; letter-spacing: -0.035em; }
 .hero h1 .titre em { font-style: normal; color: transparent; background: var(--degrade); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: glisse 14s linear infinite; }
-.sous-titre { font-size: clamp(18px, 1.6vw, 21px); color: var(--champagne-doux); max-width: 46ch; }
+.sous-titre { font-size: clamp(18px, 1.6vw, 21px); color: var(--champagne-doux); max-width: 33.6em; }
 .sous-titre strong { color: var(--champagne); font-weight: 600; }
 .cta-duo { display: flex; flex-wrap: wrap; gap: 12px; }
 .reassurance { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; color: var(--champagne-doux); }
@@ -120,37 +120,10 @@ section { position: relative; z-index: 1; }
 .calc-intro { display: grid; gap: 18px; position: sticky; top: 110px; }
 .calc-intro p { color: var(--champagne-doux); }
 .note { font-size: 14px; color: var(--champagne-doux); border-left: 2px solid var(--emeraude); padding-left: 14px; }
-.instrument { position: relative; border-radius: 28px; padding: clamp(22px, 3vw, 36px); background: var(--verre); border: 1px solid var(--lisere); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); min-height: 470px; overflow: hidden; }
-.instrument::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: var(--degrade); background-size: 200% 100%; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: .55; pointer-events: none; }
-.progression { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; font-size: 13px; color: var(--champagne-doux); font-variant-numeric: tabular-nums; }
-.barre { flex: 1; height: 4px; border-radius: 4px; background: var(--lisere); overflow: hidden; }
-.barre i { display: block; height: 100%; width: 33%; background: var(--degrade); background-size: 200% 100%; border-radius: 4px; transition: width .6s cubic-bezier(.2,.8,.2,1); }
-.etape { display: grid; gap: 18px; animation: entree .55s cubic-bezier(.2,.8,.2,1); }
+/*@TEST_CSS*/
 @keyframes glisse { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
 @keyframes aurore { 0% { transform: translate3d(-4%, -2%, 0) scale(1); } 50% { transform: translate3d(4%, 3%, 0) scale(1.08); } 100% { transform: translate3d(-4%, -2%, 0) scale(1); } }
 @keyframes entree { from { opacity: 0; transform: translateY(14px); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
-.etape h3 { font-size: clamp(22px, 2.4vw, 28px); }
-.choix { display: grid; gap: 12px; }
-.option { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 16px 18px; border-radius: 16px; border: 1px solid var(--lisere); background: rgba(255,255,255,.02); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); color: var(--champagne); font: 500 16px/1.45 var(--texte); cursor: pointer; transition: var(--transition); }
-.option:hover { border-color: var(--lisere-fort); background: linear-gradient(90deg, rgba(58,95,67,.28), rgba(255,255,255,.04)); box-shadow: var(--ombre-2xl); }
-.option .puce { flex: none; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; font: 700 14px/1 var(--titre); color: var(--brume); border: 1px solid rgba(143,191,154,.35); background: rgba(58,95,67,.18); }
-.option[aria-pressed="true"] { border-color: var(--brume); background: rgba(58,95,67,.28); }
-.retour { justify-self: start; background: none; border: 0; color: var(--champagne-doux); font: 500 14px/1 var(--texte); cursor: pointer; padding: 6px 0; }
-.retour:hover { color: var(--champagne); }
-.resultat { display: grid; gap: 22px; animation: entree .6s cubic-bezier(.2,.8,.2,1); }
-.jauge-ligne { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: center; }
-.jauge { position: relative; width: 150px; height: 150px; }
-.jauge svg { width: 100%; height: 100%; transform: rotate(-90deg); }
-.jauge .valeur { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
-.jauge .valeur b { font: 800 44px/1 var(--titre); color: var(--champagne); font-variant-numeric: tabular-nums; }
-.jauge .valeur small { display: block; font-size: 12px; color: var(--champagne-doux); margin-top: 4px; }
-.profil { display: inline-block; padding: 6px 12px; border-radius: 999px; font: 600 13px/1 var(--texte); letter-spacing: .04em; border: 1px solid currentColor; }
-.priorites { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
-.priorites li { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 12px; padding: 14px 16px; border-radius: 14px; background: rgba(255,255,255,.025); border: 1px solid var(--lisere); font-size: 15px; }
-.priorites li b { font: 700 13px/1.6 var(--titre); color: var(--brume); }
-.deblocage { display: grid; gap: 12px; padding: 20px; border-radius: 18px; background: linear-gradient(90deg, rgba(58,95,67,.55), rgba(58,95,67,.15), rgba(143,191,154,.22), rgba(58,95,67,.55)); background-size: 200% 100%; border: 1px solid rgba(143,191,154,.3); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); }
-.deblocage p { font-size: 15px; }
-.deblocage small { color: var(--champagne-doux); font-size: 13px; }
 
 /* Bento */
 .bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; }
@@ -238,7 +211,7 @@ section { position: relative; z-index: 1; }
 .faq summary h3 { font-size: 19px; }
 .faq summary::after { content: "+"; font: 400 26px/1 var(--titre); color: var(--brume); transition: transform .3s; flex: none; }
 .faq details[open] summary::after { transform: rotate(45deg); }
-.faq details p { padding-bottom: 18px; color: var(--champagne-doux); max-width: 68ch; }
+.faq details p { padding-bottom: 18px; color: var(--champagne-doux); max-width: 49.6em; }
 
 /* Final */
 .final { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
@@ -292,7 +265,6 @@ section { position: relative; z-index: 1; }
   .lecture { grid-template-columns: minmax(0, 1fr); }
   .chiffre + .chiffre { padding-left: 0; border-left: 0; border-top: 1px solid var(--lisere); }
   .registre { padding: 4px 20px; }
-  .jauge-ligne { grid-template-columns: 1fr; justify-items: start; }
   .cta-duo .btn { width: 100%; justify-content: center; }
 }
 .insecable { white-space: nowrap; }
@@ -335,12 +307,12 @@ section { position: relative; z-index: 1; }
           <span class="kicker">Baisser le cortisol · <span class="insecable">Anti-stress naturel</span> · Mieux dormir</span>
           <span class="titre">Ton système nerveux mérite une <em>trêve.</em></span>
         </h1>
-        <p class="sous-titre">Le cortisol est l'hormone du stress : son taux devrait <strong>baisser le soir</strong>. Quand l'axe du stress reste allumé, il redescend mal et le sommeil en pâtit. Mesure ta charge en 30 secondes, puis applique les gestes que la science a réellement testés pour <strong>baisser le cortisol</strong> et <strong>mieux dormir</strong>.</p>
+        <p class="sous-titre">Le cortisol est l'hormone du stress : son taux devrait <strong>baisser le soir</strong>. Quand l'axe du stress reste allumé, il redescend mal et le sommeil en pâtit. Fais le point en 2 minutes avec un questionnaire validé, puis applique les gestes que la science a réellement testés pour <strong>baisser le cortisol</strong> et <strong>mieux dormir</strong>.</p>
         <div class="cta-duo">
-          <a class="btn btn-or btn-principal" href="#test">Calculer mon score <span class="fleche" aria-hidden="true">→</span></a>
+          <a class="btn btn-or btn-principal" href="#test">Faire le test <span class="fleche" aria-hidden="true">→</span></a>
           <a class="btn btn-verre" href="https://lp.contactapaisement-mental.fr/63d489c7?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=hero">Recevoir le plan 7 jours</a>
         </div>
-        <div class="reassurance"><span>Test gratuit, 3 questions</span><span>Sources scientifiques citées</span><span>Sans régime ni matériel</span></div>
+        <div class="reassurance"><span>Test gratuit, questionnaire validé</span><span>Sources scientifiques citées</span><span>Sans régime ni matériel</span></div>
       </div>
       <div class="hero-visuel" aria-hidden="true">
         <canvas id="reseau"></canvas>
@@ -356,13 +328,13 @@ section { position: relative; z-index: 1; }
     <div class="wrap calc">
       <div class="calc-intro">
         <p class="etiquette">Outil gratuit</p>
-        <h2>Calcule ton score de charge en cortisol</h2>
-        <p>Trois questions sur tes nuits, tes soirées et ton rythme. Le score estime à quel point tes habitudes sollicitent ton axe du stress, et te propose trois priorités adaptées.</p>
-        <p class="note">Indice de bien-être, pas une mesure de ton cortisol ni un diagnostic. Seuls des examens prescrits par un médecin mesurent le cortisol.</p>
+        <h2>Stress, anxiété, sommeil : fais le point en 2 minutes</h2>
+        <p>D'abord les 7 questions du GAD-7, un questionnaire d'anxiété validé scientifiquement, puis 6 questions sur tes nuits, ton travail et ton corps. Tu obtiens ton score sur 21 et ton profil, avec trois priorités et des lectures adaptées.</p>
+        <p class="note">Un repère, pas un diagnostic, ni une mesure de ton cortisol. Tes réponses restent sur ton appareil : rien n'est envoyé. <a href="{{B}}/test-stress-anxiete/">Comment fonctionne ce test</a></p>
       </div>
-      <div class="instrument" id="instrument" aria-live="polite">
-        <div class="progression"><span id="compteur">Question 1 sur 3</span><div class="barre" aria-hidden="true"><i id="barre"></i></div></div>
-        <div id="ecran"></div>
+      <div class="instrument" id="test-stress" aria-live="polite">
+        <div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><i id="test-barre"></i></div></div>
+        <div id="test-ecran"><noscript><p>Ce test a besoin de JavaScript pour calculer ton score dans ton navigateur.</p></noscript></div>
       </div>
     </div>
   </section>
@@ -517,7 +489,7 @@ section { position: relative; z-index: 1; }
         </details>
         <details>
           <summary><h3>Ce test mesure-t-il vraiment mon cortisol ?</h3></summary>
-          <p>Non. Il donne un indice de bien-être à partir de tes habitudes de sommeil, de soirée et de rythme. Seuls des examens de sang, de salive ou d'urine prescrits par un médecin mesurent le cortisol, et un chiffre isolé ne dit presque rien sans l'heure du prélèvement.</p>
+          <p>Non. Il repère des symptômes d'anxiété avec le questionnaire GAD-7, puis les domaines où ton stress se manifeste le plus (nuits, travail, corps). Seuls des examens de sang, de salive ou d'urine prescrits par un médecin mesurent le cortisol, et un chiffre isolé ne dit presque rien sans l'heure du prélèvement.</p>
         </details>
         <details>
           <summary><h3>Quel anti-stress naturel est le plus étudié ?</h3></summary>
@@ -588,7 +560,6 @@ section { position: relative; z-index: 1; }
 (function () {
   "use strict";
   var reduit = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var PLAN = "https://lp.contactapaisement-mental.fr/63d489c7";
 
   /* Menu mobile */
   var burger = document.getElementById("burger");
@@ -678,89 +649,8 @@ section { position: relative; z-index: 1; }
     setInterval(function () { var c = (performance.now() / 1000) % 10; pastille.textContent = c < 4 ? "Inspire · 4 s" : "Expire · 6 s"; }, 250);
   }
 
-  /* Calculateur */
-  var questions = [
-    { cle: "nuit", q: "Comment se passent tes nuits ces dernières semaines ?", r: [
-      ["Je m'endors vite et me réveille reposé(e)", 0],
-      ["Je mets longtemps à m'endormir, le mental tourne", 2],
-      ["Je me réveille la nuit ou vers 4 h sans me rendormir", 3] ] },
-    { cle: "soir", q: "En fin de journée, tu te sens plutôt…", r: [
-      ["Détendu(e), je décroche facilement", 0],
-      ["Fatigué(e) mais encore sous pression", 2],
-      ["Épuisé(e) et à cran, impossible de décrocher", 3] ] },
-    { cle: "rythme", q: "Ton rythme de vie en ce moment ?", r: [
-      ["Régulier : repas, coucher et pauses à heures fixes", 0],
-      ["Chargé : café l'après-midi, peu de pauses", 2],
-      ["Débordé : écrans tard, horaires irréguliers, sport intense le soir", 3] ] }
-  ];
-  var conseils = {
-    nuit: { 3: "Réveil à 4 h : ne regarde pas l'heure, respire en 4-6, et lève-toi sous une lumière douce si l'éveil dure plus de 20 minutes.", 2: "Avant d'éteindre, prends 5 minutes pour écrire la liste précise de demain : tes soucis ont une place, hors de ta tête.", 0: "Garde ton heure de lever fixe, même le week-end : c'est le repère principal de ton horloge." },
-    soir: { 3: "Chaque soir, 5 minutes de respiration lente : inspire 4 secondes, expire 6 secondes, assis(e) ou allongé(e).", 2: "Crée un sas de 10 minutes entre le travail et la soirée : marche, douche, musique, sans écran.", 0: "Protège tes soirées calmes : lumière tamisée et écrans rangés une heure avant le coucher." },
-    rythme: { 3: "Coupe les écrans une heure avant le coucher et place le sport intense avant 17 h.", 2: "Dernier café vers 14 h, et 10 minutes de lumière du jour dans l'heure qui suit le lever.", 0: "Ton rythme régulier est ton meilleur allié : garde-le aussi en période chargée." }
-  };
-  var noms = { nuit: "Sommeil", soir: "Soirée", rythme: "Rythme" };
-  var reponses = [], etape = 0;
-  var ecran = document.getElementById("ecran"), compteur = document.getElementById("compteur"), barre = document.getElementById("barre");
-
-  function afficherQuestion() {
-    var q = questions[etape];
-    compteur.textContent = "Question " + (etape + 1) + " sur 3";
-    barre.style.width = ((etape + 1) / 3 * 100) + "%";
-    var html = '<div class="etape"><h3>' + q.q + '</h3><div class="choix">';
-    q.r.forEach(function (r, i) {
-      html += '<button class="option" type="button" data-i="' + i + '" aria-pressed="' + (reponses[etape] === i) + '"><span class="puce">' + String.fromCharCode(65 + i) + '</span><span>' + r[0] + '</span></button>';
-    });
-    html += '</div>' + (etape > 0 ? '<button class="retour" type="button" id="retour">← Question précédente</button>' : '') + '</div>';
-    ecran.innerHTML = html;
-    ecran.querySelectorAll(".option").forEach(function (b) {
-      b.addEventListener("click", function () {
-        reponses[etape] = Number(b.dataset.i);
-        b.setAttribute("aria-pressed", "true");
-        setTimeout(function () { if (etape < 2) { etape++; afficherQuestion(); } else { afficherResultat(); } }, reduit ? 0 : 260);
-      });
-    });
-    var retour = document.getElementById("retour");
-    if (retour) retour.addEventListener("click", function () { etape--; afficherQuestion(); });
-  }
-
-  function afficherResultat() {
-    var points = questions.map(function (q, i) { return q.r[reponses[i]][1]; });
-    var total = points.reduce(function (a, b) { return a + b; }, 0);
-    var score = Math.round(total / 9 * 100);
-    var profil = score >= 67 ? ["Charge élevée", "Ton système nerveux reste en alerte jusqu'au soir : le cortisol a du mal à redescendre."]
-               : score >= 34 ? ["Charge modérée", "Certains soirs, ton axe du stress peine à se mettre au repos."]
-               : ["Charge légère", "Ton rythme laisse au cortisol le temps de redescendre. Garde tes repères."];
-    var couleur = score >= 67 ? "var(--alerte)" : score >= 34 ? "var(--champagne)" : "var(--brume)";
-    var ordre = questions.map(function (q, i) { return { cle: q.cle, pts: points[i] }; }).sort(function (a, b) { return b.pts - a.pts; });
-    var lien = PLAN + "?utm_source=site&utm_medium=landing&utm_campaign=score-cortisol&utm_content=resultat-" + (score >= 67 ? "eleve" : score >= 34 ? "modere" : "leger");
-    compteur.textContent = "Ton résultat";
-    barre.style.width = "100%";
-    var circ = 2 * Math.PI * 64;
-    ecran.innerHTML =
-      '<div class="resultat">' +
-        '<div class="jauge-ligne">' +
-          '<div class="jauge"><svg viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="64" fill="none" stroke="rgba(223,213,198,.1)" stroke-width="10"/><circle id="arc" cx="75" cy="75" r="64" fill="none" stroke="' + couleur + '" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + circ.toFixed(1) + '" stroke-dashoffset="' + circ.toFixed(1) + '" style="transition: stroke-dashoffset 1.4s cubic-bezier(.2,.8,.2,1)"/></svg>' +
-            '<div class="valeur"><div><b id="score-chiffre">0</b><small>sur 100</small></div></div></div>' +
-          '<div style="display:grid;gap:10px;min-width:0"><span class="profil" style="color:' + couleur + '">' + profil[0] + '</span><h3>' + profil[1] + '</h3></div>' +
-        '</div>' +
-        '<div><p class="etiquette" style="margin-bottom:12px">Ton protocole express, par priorité</p><ol class="priorites">' +
-          ordre.map(function (o, i) { return '<li><b>' + (i + 1) + ' · ' + noms[o.cle] + '</b><span>' + conseils[o.cle][o.pts] + '</span></li>'; }).join("") +
-        '</ol></div>' +
-        '<div class="deblocage"><p><strong>Débloque le plan complet en 7 jours</strong> : un geste par jour, 10 à 15 minutes, avec un tableau de suivi pour voir ce qui te réussit.</p>' +
-          '<a class="btn btn-or btn-principal" href="' + lien + '">Recevoir mon plan par e-mail <span class="fleche" aria-hidden="true">→</span></a>' +
-          '<small>Gratuit. Tu laisses ton e-mail sur notre page sécurisée et le plan se télécharge immédiatement. Désinscription en un clic.</small></div>' +
-        '<button class="retour" type="button" id="refaire">↺ Refaire le test</button>' +
-        '<p class="note">Indice de bien-être, pas un diagnostic. Si tes troubles durent plus de 3 semaines, parles-en à ton médecin.</p>' +
-      '</div>';
-    var arc = document.getElementById("arc"), chiffre = document.getElementById("score-chiffre");
-    requestAnimationFrame(function () { requestAnimationFrame(function () { arc.style.strokeDashoffset = (circ * (1 - score / 100)).toFixed(1); }); });
-    if (reduit) { chiffre.textContent = score; } else {
-      var debut = performance.now();
-      (function compter(t) { var k = Math.min(1, (t - debut) / 1400); chiffre.textContent = Math.round(score * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(compter); })(debut);
-    }
-    document.getElementById("refaire").addEventListener("click", function () { reponses = []; etape = 0; afficherQuestion(); });
-  }
-  afficherQuestion();
+  /* Test stress et anxiété : moteur commun (site/contenu/test/test.js), injecté à la construction. */
+  /*@TEST_JS*/
 
   /* Liseré lumineux qui suit la souris sur les tuiles */
   document.querySelectorAll(".tuile").forEach(function (t) {

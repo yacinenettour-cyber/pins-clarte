@@ -8,7 +8,9 @@
  "auteur": {
   "nom": "Yacine Nettour",
   "role": "Fondateur de Clarté Mentale",
-  "page": "/a-propos/"
+  "page": "/a-propos/",
+  "photo": "/img/yacine-nettour.jpg",
+  "photo_alt": "Yacine Nettour, fondateur de Clarté Mentale"
  },
  "pinterest": "https://www.pinterest.com/clartementale/",
  "pinterest_verification": "87ca126286ea799c1471c06852fd9bff",

@@ -118,6 +118,9 @@ TYPES_SOURCES = [
     ("msdmanuals.com", "reference", "Manuel médical de référence"),
     ("clevelandclinic.org", "reference", "Cleveland Clinic, centre médical américain"),
     ("urmc.rochester.edu", "reference", "Centre médical de l'Université de Rochester"),
+    ("phqscreeners.com", "reference", "Manuel officiel du questionnaire"),
+    ("umontreal.ca", "reference", "Université de Montréal"),
+    ("cmu.edu", "reference", "Université Carnegie Mellon"),
     ("sleepfoundation.org", "information", "Site d'information spécialisé"),
 ]
 FAMILLES_SOURCES = {"officiel": ("source officielle", "sources officielles"),
@@ -302,7 +305,18 @@ def theme_de(a):
     return SITE.get("themes", {}).get(a["categorie"])
 
 
-def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og="website", nav="", meta_article=None):
+def insecables(contenu):
+    """Typographie française : espace insécable avant « : ; ? ! » et à l'intérieur des guillemets, dans le texte
+    seulement (ni les balises, ni les scripts, ni les styles), pour éviter un « : » seul en début de ligne."""
+    def texte(m):
+        t = re.sub(r" ([:;?!»])", "\u00a0\\1", m.group(1))
+        return ">" + t.replace("« ", "«\u00a0") + "<"
+    morceaux = re.split(r"(<script.*?</script>|<style.*?</style>)", contenu, flags=re.S)
+    return "".join(m if i % 2 else re.sub(r">([^<]+)<", texte, m) for i, m in enumerate(morceaux))
+
+
+def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og="website", nav="", meta_article=None, tete=""):
+    contenu = insecables(contenu)
     canon = URL + chemin
     image_og = URL + (image_og or "/img/og-defaut.jpg")
     verif = SITE.get("pinterest_verification")
@@ -340,6 +354,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
+{tete}
 {blocs_ld}
 </head>
 <body>
@@ -352,7 +367,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
@@ -437,9 +452,29 @@ def editeur():
 
 
 def auteur():
-    return {"@type": "Person", "@id": URL + "/a-propos/#auteur", "name": SITE["auteur"]["nom"],
-            "jobTitle": SITE["auteur"]["role"], "url": URL + SITE["auteur"]["page"],
-            "worksFor": {"@id": URL + "/#organisation"}}
+    personne = {"@type": "Person", "@id": URL + "/a-propos/#auteur", "name": SITE["auteur"]["nom"],
+                "jobTitle": SITE["auteur"]["role"], "url": URL + SITE["auteur"]["page"],
+                "worksFor": {"@id": URL + "/#organisation"}}
+    if SITE["auteur"].get("photo"):
+        personne["image"] = URL + SITE["auteur"]["photo"]
+    return personne
+
+
+def avatar(taille, classe):
+    photo = SITE["auteur"].get("photo")
+    if not photo:
+        return ""
+    alt = "" if classe == "avatar" else e(SITE["auteur"].get("photo_alt", SITE["auteur"]["nom"]))
+    return f'<img class="{classe}" src="{photo}" width="{taille}" height="{taille}" alt="{alt}">'
+
+
+def liste_sources(sources, objet="l'article"):
+    return ('<section class="sources"><h2 id="sources">Sources</h2><ol>'
+            + "".join(f'<li id="source-{i + 1}"><a href="{e(u)}" rel="noopener">{e(t)}</a> '
+                      f'<span class="type-source type-{type_source(u)[0]}">{e(type_source(u)[1])}</span></li>'
+                      for i, (t, u) in enumerate(sources))
+            + '</ol><p class="note-sources">Chaque source a été ouverte et relue pour vérifier qu\'elle dit bien '
+            f'ce que {objet} lui attribue. <a href="/methode-editoriale/">Comment les contenus sont écrits et vérifiés</a></p></section>')
 
 
 # ---------------------------------------------------------------- pages
@@ -481,14 +516,7 @@ def construire_article(a, tous):
         suite_html += carte_guide(a["guide"], a["slug"], "h3")
     if a["formation"] and SITE.get("formation"):
         suite_html += encart_formation(a["slug"])
-    sources_html = ""
-    if a["sources"]:
-        sources_html = ('<section class="sources"><h2 id="sources">Sources</h2><ol>'
-                        + "".join(f'<li id="source-{i + 1}"><a href="{e(u)}" rel="noopener">{e(t)}</a> '
-                                  f'<span class="type-source type-{type_source(u)[0]}">{e(type_source(u)[1])}</span></li>'
-                                  for i, (t, u) in enumerate(a["sources"]))
-                        + '</ol><p class="note-sources">Chaque source a été ouverte et relue pour vérifier qu\'elle dit bien '
-                        'ce que l\'article lui attribue. <a href="/methode-editoriale/">Comment les articles sont écrits et vérifiés</a></p></section>')
+    sources_html = liste_sources(a["sources"]) if a["sources"] else ""
     photo = ""
     if a.get("images"):
         src, l, h = a["images"][1200]
@@ -508,7 +536,7 @@ def construire_article(a, tous):
 {nav_html}
 <article>
 <h1>{e(a['titre'])}</h1>
-<p class="meta">Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{a["maj"]}">{date_fr(a['maj'])}</time> · {a['lecture']} min de lecture</p>
+<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{a["maj"]}">{date_fr(a['maj'])}</time> · {a['lecture']} min de lecture</p>
 <p class="bilan-sources"><a href="#sources">{e(bilan_sources(a['sources']))}</a><a href="/methode-editoriale/">Méthode éditoriale</a>{'<a href="#enregistrer">Enregistrer sur Pinterest</a>' if a.get('epingle') else ''}</p>
 {intro_html}
 {photo}
@@ -550,11 +578,12 @@ def construire_article(a, tous):
                                            meta_article=meta_article))
 
 
-POLICES_CSS = """@font-face { font-family: "Syne"; src: url("/polices/syne.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
-@font-face { font-family: "Plus Jakarta Sans"; src: url("/polices/plus-jakarta-sans.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }"""
+# Polices de l'accueil : les mêmes @font-face que style.css (polices du site et polices de secours mises à l'échelle).
+POLICES_CSS = "\n".join(l.rstrip() for l in open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8")
+                        if l.startswith("@font-face"))
 TITRE_ACCUEIL = "Baisser le cortisol : test anti-stress pour mieux dormir"
-DESCRIPTION_ACCUEIL = ("Calcule en 30 secondes ton score de charge en cortisol, puis découvre les gestes anti-stress "
-                       "naturels validés par la science pour mieux dormir.")
+DESCRIPTION_ACCUEIL = ("Test stress et anxiété en 2 minutes (questionnaire validé GAD-7) et ton profil, puis les gestes "
+                       "anti-stress naturels validés par la science pour mieux dormir.")
 
 
 def cartes_lecture(articles, image_en_ligne=False):
@@ -584,8 +613,9 @@ def faq_accueil(source):
 def construire_accueil(articles):
     """Accueil : page unique « biophilic dark » (contenu/accueil.html), reliée aux articles et à la formation."""
     source = open(os.path.join(RACINE, "contenu", "accueil.html"), encoding="utf-8").read()
-    corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("{{B}}", "")
-             .replace("{{ARTICLES}}", cartes_lecture(articles)))
+    corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", "")
+             .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles)))
+    corps = insecables(corps)
     faq = faq_accueil(source)
     schemas = [
         {"@context": "https://schema.org", "@type": "WebSite", "@id": URL + "/#site", "name": SITE["nom"],
@@ -639,8 +669,9 @@ def construire_accueil(articles):
                    '&family=Syne:wght@500;600;700;800&display=swap">')
         artefact = (f"<title>{e(TITRE_ACCUEIL)}</title>\n"
                     f'<meta name="description" content="{e(DESCRIPTION_ACCUEIL)}">\n{polices}\n'
-                    + source.replace("/*@POLICES*/", "").replace("{{B}}", URL)
-                    .replace("{{ARTICLES}}", cartes_lecture(articles, image_en_ligne=True)))
+                    + source.replace("/*@POLICES*/", "").replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", URL)
+                    .replace("{{ARTICLES}}", cartes_lecture(articles, image_en_ligne=True))
+                    .replace("/*@TEST_JS*/", script_test(articles, URL)))
         open(os.environ["ARTEFACT"], "w", encoding="utf-8").write(artefact)
 
 
@@ -776,10 +807,82 @@ def construire_formation():
                                            nav="/la-formation/"))
 
 
+# ---------------------------------------------------------------- test stress et anxiété (GAD-7 + profil)
+
+DOSSIER_TEST = os.path.join(RACINE, "contenu", "test")
+INSTRUMENT_TEST = """<div class="instrument" id="test-stress" aria-live="polite">
+<div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><i id="test-barre"></i></div></div>
+<div id="test-ecran"><noscript><p>Ce test a besoin de JavaScript pour calculer ton score dans ton navigateur.</p></noscript></div>
+</div>"""
+
+
+def css_test():
+    return open(os.path.join(DOSSIER_TEST, "test.css"), encoding="utf-8").read()
+
+
+def script_test(articles, base=""):
+    """Moteur du test (contenu/test/test.js) avec les titres d'articles et les guides du site."""
+    donnees = (f"var ARTICLES = {json.dumps({a['slug']: a['titre'] for a in articles}, ensure_ascii=False)};\n"
+               f"  var GUIDES = {json.dumps({c: {k: g[k] for k in ('titre', 'type', 'rappel', 'bouton', 'url')} for c, g in SITE['guides'].items()}, ensure_ascii=False)};")
+    js = open(os.path.join(DOSSIER_TEST, "test.js"), encoding="utf-8").read()
+    return js.replace("/*@DONNEES*/", donnees.replace("</", "<\\/")).replace("{{B}}", base)
+
+
+def construire_test(articles):
+    entete, corps = lire_entete(os.path.join(RACINE, "contenu", "pages", "test-stress-anxiete.md"))
+    intro, faq, sources, corps_md = "", [], [], []
+    for titre, texte in decouper_sections(corps):
+        cle = (titre or "").lower()
+        if cle == "questions fréquentes":
+            faq = [(q.strip(), r.strip()) for q, r in re.findall(r"^### +(.+?)\s*\n(.*?)(?=^### |\Z)", texte, flags=re.M | re.S)]
+        elif cle == "sources":
+            sources = [(a.strip(), b.strip()) for a, b in re.findall(r"^\s*\d+\.\s*\[(.+?)\]\((https?://(?:[^()\s]|\([^()\s]*\))+)\)", texte, flags=re.M)]
+        elif titre is None:
+            intro = texte
+        else:
+            corps_md.append(f"## {titre}\n\n{texte}")
+    nb = len(sources)
+    intro_html = appels_de_source(md(intro), nb).replace("<p>", '<p class="chapo">', 1).replace("<p>{{TEST}}</p>", INSTRUMENT_TEST)
+    corps_html = appels_de_source(md("\n\n".join(corps_md)), nb)
+    corps_html = re.sub(r"<h2>(.*?)</h2>", lambda m: f'<h2 id="{slugify_unicode(texte_brut(m.group(1)), "-")}">{m.group(1)}</h2>', corps_html)
+    faq_html = ('<section class="faq"><h2 id="questions-frequentes">Questions fréquentes</h2>'
+                + "".join(f"<h3>{e(q)}</h3>{appels_de_source(md(r), nb)}" for q, r in faq) + "</section>")
+    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Test stress et anxiété", None)])
+    contenu = f"""<div class="etroit">{nav_html}
+<h1>{e(entete['titre'])}</h1>
+<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{entete['maj']}">{date_fr(entete['maj'])}</time> · 2 minutes</p>
+<p class="bilan-sources"><a href="#sources">{e(bilan_sources(sources))}</a><a href="/methode-editoriale/">Méthode éditoriale</a></p>
+{intro_html}
+{corps_html}
+{faq_html}
+{liste_sources(sources, "la page")}
+<p class="avertissement">Ce test donne un repère, pas un diagnostic. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+</div>
+<script>{script_test(articles)}</script>"""
+    chemin = "/test-stress-anxiete/"
+    schemas = [
+        {"@context": "https://schema.org", "@type": "WebPage", "@id": URL + chemin + "#page", "url": URL + chemin,
+         "name": entete["titre"], "description": entete["description"], "inLanguage": SITE["langue"],
+         "dateModified": entete["maj"], "author": auteur(), "publisher": editeur(), "isAccessibleForFree": True,
+         "citation": [{"@type": "ScholarlyArticle" if type_source(u)[0] == "etude" else "CreativeWork", "name": t, "url": u}
+                      for t, u in sources],
+         "publishingPrinciples": URL + "/methode-editoriale/"},
+        {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": texte_brut(md(r))}} for q, r in faq]},
+        schema_ariane,
+    ]
+    ecrire("test-stress-anxiete/index.html", page(entete["titre_seo"], entete["description"], chemin, contenu, schemas,
+                                                  nav=chemin, tete=f"<style>{css_test()}</style>"))
+    return entete
+
+
 def construire_page_fixe(nom_fichier, chemin, nav=""):
     entete, corps = lire_entete(os.path.join(RACINE, "contenu", "pages", nom_fichier))
     nav_html, schema_ariane = ariane([("Accueil", "/"), (entete["titre"], None)])
-    contenu = f'<div class="etroit">{nav_html}<h1>{e(entete["titre"])}</h1>{md(corps)}</div>'
+    corps_html = md(corps)
+    if chemin == "/a-propos/":
+        corps_html = re.sub(r"(<h2>Qui écrit[^<]*</h2>)", lambda m: m.group(1) + avatar(112, "portrait"), corps_html, count=1)
+    contenu = f'<div class="etroit">{nav_html}<h1>{e(entete["titre"])}</h1>{corps_html}</div>'
     schemas = [schema_ariane]
     if chemin == "/a-propos/":
         schemas.append({"@context": "https://schema.org", "@type": "AboutPage", "url": URL + chemin,
@@ -809,7 +912,7 @@ def ecrire(rel, contenu, mode="w"):
 def construire_fichiers_techniques(articles):
     pages = [("/", SITE["date_publication"]), ("/articles/", max(a["maj"] for a in articles)),
              ("/la-formation/", SITE["date_publication"]),
-             ("/guides-gratuits/", SITE["date_publication"]), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
+             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
              ("/mentions-legales/", SITE["date_publication"])]
     pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
@@ -834,6 +937,10 @@ def construire_fichiers_techniques(articles):
             lignes.append(f"- [{a['titre']}]({URL}/{a['slug']}/): {a['description']}")
     lignes += ["", "## Thèmes", ""] + [f"- [{th['titre']}]({URL}/{th['slug']}/): {th['description']}"
                                         for th in SITE.get("themes", {}).values()]
+    lignes += ["", "## Outils", "",
+               f"- [Test de stress et d'anxiété]({URL}/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, "
+               "score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui "
+               "donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic."]
     lignes += ["", "## Guides gratuits", ""]
     for g in SITE["guides"].values():
         lignes.append(f"- [{g['titre']}]({g['url']}): {g['accroche']} " + " ; ".join(g["points"]) + ".")
@@ -898,6 +1005,8 @@ def construire_fichiers_techniques(articles):
     except OSError:
         pass
     os.makedirs(os.path.join(SORTIE, "img"), exist_ok=True)
+    for nom in os.listdir(os.path.join(RACINE, "contenu", "img")):
+        shutil.copy(os.path.join(RACINE, "contenu", "img", nom), os.path.join(SORTIE, "img", nom))
     defaut.save(os.path.join(SORTIE, "img", "og-defaut.jpg"), quality=85)
 
 
@@ -919,6 +1028,7 @@ def main():
     for cle in SITE.get("themes", {}):
         construire_theme(cle, articles)
     construire_guides()
+    construire_test(articles)
     if SITE.get("formation"):
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")
