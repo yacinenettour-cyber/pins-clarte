@@ -141,6 +141,8 @@ Non. Ces techniques sont des outils utiles au quotidien, mais elles ne remplacen
 ## Pour aller plus loin
 Si ce stress te suit jusqu'au lit, avec des pensées qui tournent dès que tu éteins la lumière, le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à passer le cap du soir. Ce PDF te propose une routine anti-rumination à faire directement au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude, sans aucun matériel. Garde le soupir physiologique pour la journée, et le guide pour le moment du coucher.
 
+Pour pratiquer la respiration lente sans regarder l'écran, écoute les [audios de respiration guidée](/respiration-guidee/) de 3, 5 ou 10 minutes.
+
 ## Sources
 1. [Présentation du système nerveux autonome — Manuels MSD pour le grand public, 2025](https://www.msdmanuals.com/fr/accueil/troubles-du-cerveau-de-la-moelle-%C3%A9pini%C3%A8re-et-des-nerfs/troubles-du-syst%C3%A8me-nerveux-autonome/pr%C3%A9sentation-du-syst%C3%A8me-nerveux-autonome)
 2. [Brief structured respiration practices enhance mood and reduce physiological arousal — Cell Reports Medicine (Balban et al., Université Stanford), 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/)

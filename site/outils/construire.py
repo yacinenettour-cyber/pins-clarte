@@ -372,7 +372,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
@@ -833,8 +833,10 @@ def script_test(articles, base=""):
     return js.replace("/*@DONNEES*/", donnees.replace("</", "<\\/")).replace("{{B}}", base)
 
 
-def construire_test(articles):
-    entete, corps = lire_entete(os.path.join(RACINE, "contenu", "pages", "test-stress-anxiete.md"))
+def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="", script="", schemas_en_plus=()):
+    """Page « outil » sourcée (test, audios) : texte en markdown avec des marqueurs {{…}} remplacés par l'outil,
+    sections « Questions fréquentes » et « Sources » comme dans les articles."""
+    entete, corps = lire_entete(os.path.join(RACINE, "contenu", "pages", fichier))
     intro, faq, sources, corps_md = "", [], [], []
     for titre, texte in decouper_sections(corps):
         cle = (titre or "").lower()
@@ -847,24 +849,25 @@ def construire_test(articles):
         else:
             corps_md.append(f"## {titre}\n\n{texte}")
     nb = len(sources)
-    intro_html = appels_de_source(md(intro), nb).replace("<p>", '<p class="chapo">', 1).replace("<p>{{TEST}}</p>", INSTRUMENT_TEST)
+    intro_html = appels_de_source(md(intro), nb).replace("<p>", '<p class="chapo">', 1)
+    for marqueur, contenu_outil in marqueurs.items():
+        intro_html = intro_html.replace(f"<p>{marqueur}</p>", contenu_outil)
     corps_html = appels_de_source(md("\n\n".join(corps_md)), nb)
     corps_html = re.sub(r"<h2>(.*?)</h2>", lambda m: f'<h2 id="{slugify_unicode(texte_brut(m.group(1)), "-")}">{m.group(1)}</h2>', corps_html)
     faq_html = ('<section class="faq"><h2 id="questions-frequentes">Questions fréquentes</h2>'
                 + "".join(f"<h3>{e(q)}</h3>{appels_de_source(md(r), nb)}" for q, r in faq) + "</section>")
-    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Test stress et anxiété", None)])
+    nav_html, schema_ariane = ariane([("Accueil", "/"), (nom_court, None)])
     contenu = f"""<div class="etroit">{nav_html}
 <h1>{e(entete['titre'])}</h1>
-<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{entete['maj']}">{date_fr(entete['maj'])}</time> · 2 minutes</p>
+<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{entete['maj']}">{date_fr(entete['maj'])}</time> · {duree}</p>
 <p class="bilan-sources"><a href="#sources">{e(bilan_sources(sources))}</a><a href="/methode-editoriale/">Méthode éditoriale</a></p>
 {intro_html}
 {corps_html}
 {faq_html}
 {liste_sources(sources, "la page")}
-<p class="avertissement">Ce test donne un repère, pas un diagnostic. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+<p class="avertissement">Cette page donne des repères de bien-être, pas un diagnostic ni un traitement. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
 </div>
-<script>{script_test(articles)}</script>"""
-    chemin = "/test-stress-anxiete/"
+{f"<script>{script}</script>" if script else ""}"""
     schemas = [
         {"@context": "https://schema.org", "@type": "WebPage", "@id": URL + chemin + "#page", "url": URL + chemin,
          "name": entete["titre"], "description": entete["description"], "inLanguage": SITE["langue"],
@@ -874,11 +877,69 @@ def construire_test(articles):
          "publishingPrinciples": URL + "/methode-editoriale/"},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": texte_brut(md(r))}} for q, r in faq]},
-        schema_ariane,
+        schema_ariane, *schemas_en_plus,
     ]
-    ecrire("test-stress-anxiete/index.html", page(entete["titre_seo"], entete["description"], chemin, contenu, schemas,
-                                                  nav=chemin, tete=f"<style>{css_test()}</style>"))
+    ecrire(chemin.strip("/") + "/index.html", page(entete["titre_seo"], entete["description"], chemin, contenu, schemas,
+                                                   nav=chemin, tete=tete))
     return entete
+
+
+def construire_test(articles):
+    return construire_page_outil("test-stress-anxiete.md", "/test-stress-anxiete/", "Test stress et anxiété",
+                                 {"{{TEST}}": INSTRUMENT_TEST}, "2 minutes", tete=f"<style>{css_test()}</style>",
+                                 script=script_test(articles))
+
+
+# ---------------------------------------------------------------- audios de respiration guidée
+
+AUDIOS = [  # (minutes, moment conseillé) ; fichiers produits par outils/audios_respiration.py
+    (3, "une pause dans la journée"),
+    (5, "le soir, avant de te coucher"),
+    (10, "au lit, pour t'endormir"),
+]
+DEBUT_CYCLES = 8  # secondes d'introduction avant la première inspiration (voir audios_respiration.py)
+SCRIPT_AUDIO = """(function () {
+  /* Affiche la phase (inspire / expire) d'après la position de lecture : 8 s d'introduction, puis des cycles de 10 s. */
+  document.querySelectorAll(".audio").forEach(function (bloc) {
+    var a = bloc.querySelector("audio"), p = bloc.querySelector(".phase"), fin = Number(bloc.dataset.cycles) * 10 + 8;
+    function maj() {
+      var t = a.currentTime;
+      if (a.paused && t === 0) { p.textContent = "Appuie sur lecture, puis ferme les yeux si tu veux."; return; }
+      if (t < 8) { p.textContent = "Installe-toi…"; return; }
+      if (t >= fin) { p.textContent = "Reste au calme encore un instant."; return; }
+      var c = (t - 8) % 10;
+      p.textContent = c < 4 ? "Inspire… (4 s)" : "Expire… (6 s)";
+    }
+    ["timeupdate", "play", "pause", "seeked", "ended"].forEach(function (ev) { a.addEventListener(ev, maj); });
+    /* Une seule piste à la fois. */
+    a.addEventListener("play", function () { document.querySelectorAll(".audio audio").forEach(function (b) { if (b !== a) b.pause(); }); });
+  });
+})();"""
+
+
+def lecteurs_audio():
+    blocs = []
+    for minutes, moment in AUDIOS:
+        nom = f"respiration-4-6-{minutes}-min.mp3"
+        taille = os.path.getsize(os.path.join(RACINE, "contenu", "audio", nom)) / 1e6
+        cycles = minutes * 6
+        blocs.append(f'<figure class="audio" data-cycles="{cycles}"><figcaption><span><strong>{minutes} minutes</strong> · {e(moment)}</span>'
+                     f'<span class="nb">{cycles} respirations</span></figcaption>'
+                     f'<audio controls preload="none" src="/audio/{nom}"></audio>'
+                     f'<p class="phase">Appuie sur lecture, puis ferme les yeux si tu veux.</p>'
+                     f'<a href="/audio/{nom}" download>Télécharger (MP3, {f"{taille:.1f}".replace(".", ",")} Mo)</a></figure>')
+    return '<div class="audios">' + "".join(blocs) + "</div>"
+
+
+def construire_respiration():
+    objets = [{"@context": "https://schema.org", "@type": "AudioObject", "name": f"Respiration guidée 4-6 — {m} minutes",
+               "description": f"Respiration lente guidée par des sons, sans voix : inspirer 4 secondes, expirer 6 secondes, {m * 6} respirations.",
+               "contentUrl": f"{URL}/audio/respiration-4-6-{m}-min.mp3", "encodingFormat": "audio/mpeg",
+               "duration": f"PT{m}M", "inLanguage": SITE["langue"], "isAccessibleForFree": True,
+               "creator": {"@id": URL + "/#organisation"}} for m, _ in AUDIOS]
+    return construire_page_outil("respiration-guidee.md", "/respiration-guidee/", "Respiration guidée",
+                                 {"{{AUDIOS}}": lecteurs_audio()}, "3 à 10 minutes", script=SCRIPT_AUDIO,
+                                 schemas_en_plus=objets)
 
 
 def construire_page_fixe(nom_fichier, chemin, nav=""):
@@ -917,7 +978,7 @@ def ecrire(rel, contenu, mode="w"):
 def construire_fichiers_techniques(articles):
     pages = [("/", SITE["date_publication"]), ("/articles/", max(a["maj"] for a in articles)),
              ("/la-formation/", SITE["date_publication"]),
-             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
+             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
              ("/mentions-legales/", SITE["date_publication"])]
     pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
@@ -945,7 +1006,9 @@ def construire_fichiers_techniques(articles):
     lignes += ["", "## Outils", "",
                f"- [Test de stress et d'anxiété]({URL}/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, "
                "score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui "
-               "donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic."]
+               "donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.",
+               f"- [Respiration guidée 4-6]({URL}/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes) "
+               "pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme."]
     lignes += ["", "## Guides gratuits", ""]
     for g in SITE["guides"].values():
         lignes.append(f"- [{g['titre']}]({g['url']}): {g['accroche']} " + " ; ".join(g["points"]) + ".")
@@ -987,6 +1050,7 @@ def construire_fichiers_techniques(articles):
         ecrire(f"{SITE['indexnow']}.txt", SITE["indexnow"])
     shutil.copy(os.path.join(RACINE, "contenu", "style.css"), os.path.join(SORTIE, "style.css"))
     shutil.copytree(os.path.join(RACINE, "contenu", "polices"), os.path.join(SORTIE, "polices"))
+    shutil.copytree(os.path.join(RACINE, "contenu", "audio"), os.path.join(SORTIE, "audio"))
     ecrire("favicon.svg", LOGO.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))
     # Logo PNG (données structurées) et image de partage par défaut.
     logo = Image.new("RGB", (512, 512), "#080C10")
@@ -1034,6 +1098,7 @@ def main():
         construire_theme(cle, articles)
     construire_guides()
     construire_test(articles)
+    construire_respiration()
     if SITE.get("formation"):
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")

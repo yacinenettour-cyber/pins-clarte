@@ -61,7 +61,7 @@
       gestes: [
         "Parles-en à ton médecin traitant : il peut faire le point avec toi et, si besoin, t'orienter.",
         "Si tu es salarié(e), tu peux aussi contacter le médecin du travail : selon l'INRS, il évalue le besoin d'une prise en charge et peut envisager un aménagement de poste.",
-        "Chaque soir, 5 minutes de respiration lente pour marquer la fin de la journée de travail : inspire 4 secondes, expire 6 secondes. Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente (synthèse de 223 études, 2022)."
+        "Chaque soir, 5 minutes de respiration lente pour marquer la fin de la journée de travail : inspire 4 secondes, expire 6 secondes. Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente (synthèse de 223 études, 2022). <a href=\"" + B + "/respiration-guidee/\">Écouter l'audio guidé</a>"
       ],
       articles: ["signes-du-burn-out", "charge-mentale", "calmer-son-systeme-nerveux"],
       guide: "cortisol", complement: true
@@ -71,7 +71,7 @@
       resume: "Ton stress se loge dans le corps : tensions, ventre noué, cœur qui s'accélère.",
       explication: "Face au stress, le système nerveux autonome prépare le corps à réagir : le cœur accélère, les muscles se tendent. Quand cette alerte dure, le corps a du mal à revenir au repos. Les gestes qui sollicitent le nerf vague, principal nerf de la branche qui ramène le corps au calme, l'aident à redescendre.",
       gestes: [
-        "Deux fois par jour, 5 minutes de respiration lente : inspire 4 secondes, expire 6 secondes. Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente (synthèse de 223 études, Université allemande du sport de Cologne, 2022).",
+        "Deux fois par jour, 5 minutes de respiration lente : inspire 4 secondes, expire 6 secondes. Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente (synthèse de 223 études, Université allemande du sport de Cologne, 2022). <a href=\"" + B + "/respiration-guidee/\">Écouter l'audio guidé</a>",
         "Le soir, essaie la relaxation musculaire progressive : contracter un groupe de muscles quelques secondes, puis le relâcher. Une revue de 46 publications (2024) conclut qu'elle aide à réduire le stress et l'anxiété.",
         "Bouge chaque jour, même en marchant : une synthèse de 97 revues (Université d'Australie-Méridionale, 2023) montre que l'activité physique réduit l'anxiété et la détresse psychologique."
       ],

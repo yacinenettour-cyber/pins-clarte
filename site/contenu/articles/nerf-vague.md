@@ -117,6 +117,8 @@ Pas directement. Les chercheurs utilisent la variabilité de la fréquence cardi
 ## Pour aller plus loin
 Si le stress te suit jusqu'au lit et que ton mental refuse de se taire une fois la lumière éteinte, le guide gratuit « Quand le cerveau refuse de dormir » est pensé pour ces soirs-là. Tu y trouveras une routine anti-rumination à faire directement au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude, sans aucun matériel.
 
+Pour pratiquer la respiration 4-6 les yeux fermés, écoute les [audios de respiration guidée](/respiration-guidee/) de 3, 5 ou 10 minutes.
+
 ## Sources
 1. [Vagus Nerve: What It Is, Function, Location & Conditions — Cleveland Clinic, 2022](https://my.clevelandclinic.org/health/body/22279-vagus-nerve)
 2. [Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis — Neuroscience & Biobehavioral Reviews (Laborde et al., Université allemande du sport de Cologne), 2022](https://doi.org/10.1016/j.neubiorev.2022.104711)

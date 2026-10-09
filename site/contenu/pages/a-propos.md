@@ -47,6 +47,7 @@ Je suis électricien de métier : je ne suis **ni médecin, ni psychologue, ni p
 
 - **Des articles gratuits**, sans inscription, sourcés et mis à jour.
 - **Un [test gratuit de stress et d'anxiété](/test-stress-anxiete/)** : le questionnaire validé GAD-7 et ton profil (nuits, travail ou corps), calculé dans ton navigateur, sans inscription.
+- **Des [audios gratuits de respiration guidée](/respiration-guidee/)** de 3, 5 et 10 minutes, sans voix, pour respirer au rythme 4-6 les yeux fermés.
 - **Deux guides gratuits** à télécharger : « Quand le cerveau refuse de dormir », pour les soirs où le mental tourne en boucle, et « Le plan anti-cortisol en 7 jours », un geste simple par jour. Ils sont présentés sur la page [guides gratuits](/guides-gratuits/).
 - **Un programme payant**, « Quand le cerveau refuse de dormir » (37 €, paiement unique), pour calmer le mental le soir sur 28 soirs. C'est un outil de bien-être, pas un traitement : tout est expliqué sur la page [la formation](/la-formation/).
 

@@ -147,6 +147,8 @@ Ils peuvent y contribuer. Selon l'Inserm, la stimulation cérébrale et émotion
 
 Si tes soirées ressemblent souvent à ce manège, le guide gratuit « Quand le cerveau refuse de dormir » peut t'accompagner pas à pas. Tu y trouveras une routine anti-rumination à faire directement au lit, des exercices pour calmer ton mental le soir et un calendrier de 30 jours pour installer ces gestes en douceur. Sans matériel : juste toi, ton lit et quelques minutes.
 
+Au lit, quand les pensées tournent, l'[audio de respiration guidée de 10 minutes](/respiration-guidee/) peut t'aider à ralentir, les yeux fermés.
+
 ## Sources
 1. [Insomnie — Inserm, 2017](https://www.inserm.fr/dossier/insomnie/)
 2. [L'insomnie (dépliant patient) — Institut national du sommeil et de la vigilance (INSV)](https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Insomnie-3-Volets.pdf)
