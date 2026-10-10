@@ -50,8 +50,7 @@
     var t = audio.ctx.currentTime;
     param.cancelScheduledValues(t); param.setValueAtTime(param.value, t); param.linearRampToValueAtTime(valeur, t + dans);
   }
-  /* Fichier des bols : téléchargé dès que le minuteur apparaît à l'écran (sauf en mode « économie de données »),
-     décodé au premier lancement. */
+  /* Fichier des bols : téléchargé au premier geste sur le minuteur, décodé au premier lancement. */
   var telechargement = null;
   function telechargerBols() {
     if (!telechargement && BOLS && window.fetch) {
@@ -60,12 +59,13 @@
     }
     return telechargement || Promise.reject(new Error("bols"));
   }
-  if (window.IntersectionObserver && !(navigator.connection && navigator.connection.saveData)) {
-    var guetteur = new IntersectionObserver(function (vus) {
-      if (vus[0].isIntersecting) { guetteur.disconnect(); telechargerBols().catch(function () {}); }
-    }, { rootMargin: "300px" });
-    guetteur.observe(zone);
+  /* Téléchargement au premier geste sur le minuteur (choix d'un exercice, d'une durée, du son…) : rien ne se charge
+     tant que le visiteur lit, la page s'affiche aussi vite que les autres. */
+  function aPremierGeste() {
+    ["pointerdown", "keydown", "focusin"].forEach(function (t) { zone.removeEventListener(t, aPremierGeste); });
+    if (son !== "aucun") telechargerBols().catch(function () {});
   }
+  ["pointerdown", "keydown", "focusin"].forEach(function (t) { zone.addEventListener(t, aPremierGeste, { passive: true }); });
   function preparerBols() {
     if (audio.bols) return Promise.resolve();
     if (!audio.decodage) {

@@ -847,19 +847,44 @@ def construire_theme(cle, articles):
                                             contenu, [schema, schema_ariane]))
 
 
+GUIDE_FAQ = [
+    ("Le guide est-il vraiment gratuit ?",
+     "Oui. Il suffit d'une adresse e-mail : aucun paiement, aucune carte bancaire."),
+    ("Que devient mon adresse e-mail ?",
+     "Elle sert uniquement à t'envoyer le guide, des conseils pour tes soirées et la présentation du programme complet. "
+     "Tu peux te désinscrire en un clic depuis chaque e-mail. Le détail est dans les [mentions légales](/mentions-legales/)."),
+    ("Le guide remplace-t-il un avis médical ?",
+     "Non. Ce sont des repères de bien-être. Si tes difficultés de sommeil durent depuis plusieurs semaines, ou si elles "
+     "pèsent sur tes journées, parles-en à ton médecin traitant."),
+]
+
+
 def construire_guides():
     g = SITE["guides"][OFFRE]
     nav_html, schema_ariane = ariane([("Accueil", "/"), ("Guide gratuit", None)])
+    points = "".join(f"<li>{e(p)}</li>" for p in g["points"])
+    faq = "".join(f"<h3>{e(q)}</h3>{md(r)}" for q, r in GUIDE_FAQ)
     contenu = f"""<div class="etroit">{nav_html}
-<h1>Le guide gratuit</h1>
+<h1>Le guide gratuit « {e(g['titre'])} »</h1>
 <p class="chapo">Pour passer de la lecture à la pratique, le soir, quand le mental tourne en boucle au moment de dormir.</p>
 {carte_guide(OFFRE, titre_niveau='h2')}
 <p>L'inscription se fait sur une page sécurisée hébergée par systeme.io. Tu peux te désinscrire en un clic à tout moment.</p>
+<h2 id="pour-qui">À qui s'adresse ce guide ?</h2>
+<p>Ce guide s'adresse aux personnes dont le mental s'emballe au moment de dormir : pensées qui tournent en boucle, soucis du lendemain qui reviennent dès que la lumière s'éteint, difficulté à « couper » après une journée chargée. Si c'est ton cas, l'article sur les <a href="/ruminations-le-soir/">ruminations le soir</a> explique pourquoi le cerveau s'emballe à ce moment-là.</p>
+<h2 id="contenu-du-guide">Que contient le guide ?</h2>
+<p>Le guide « {e(g['titre'])} » est un PDF pratique, pensé pour le soir, sans matériel :</p>
+<ul class="liste">{points}</ul>
+<p>Tu le reçois par e-mail tout de suite après ton inscription.</p>
+<h2 id="des-ce-soir">Que faire dès ce soir ?</h2>
+<p>Sans attendre le guide, tu peux déjà poser les bases avec la <a href="/routine-du-soir-anti-stress/">routine du soir en 7 étapes</a>, ou écouter un <a href="/respiration-guidee/">audio de respiration guidée</a> au lit, écran éteint. Si tu te réveilles la nuit, lis ce qu'il faut faire en cas de <a href="/reveil-4h-du-matin/">réveil à 4 h du matin</a>.</p>
+<section class="faq" aria-labelledby="questions-guide"><h2 id="questions-guide">Questions fréquentes</h2>{faq}</section>
 </div>"""
+    schema_faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": texte_brut(md(r))}} for q, r in GUIDE_FAQ]}
     ecrire("guides-gratuits/index.html", page(f"Guide gratuit : {g['titre'][0].lower()}{g['titre'][1:]}",
                                               f"Guide gratuit « {g['titre']} » : routine anti-rumination au lit, exercices pour "
                                               "calmer le mental, calendrier de 30 jours.",
-                                              "/guides-gratuits/", contenu, [schema_ariane], nav="/guides-gratuits/"))
+                                              "/guides-gratuits/", contenu, [schema_ariane, schema_faq], nav="/guides-gratuits/"))
 
 
 COMPARATIF_FORMATION = """| | Guide gratuit | Formation |

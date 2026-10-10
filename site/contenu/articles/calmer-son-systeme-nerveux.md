@@ -71,7 +71,7 @@ L'étude reste modeste : petits groupes, pratique à distance, suivi d'un mois s
 ### 2. La respiration lente (5 minutes)
 La respiration lente consiste à respirer à moins de 10 respirations par minute [3]. Selon une revue systématique de l'Université de Pise (Italie) publiée en 2018 dans *Frontiers in Human Neuroscience*, qui réunit 15 études, elle s'accompagne d'une hausse de la variabilité cardiaque et d'une prédominance du parasympathique, par l'intermédiaire du [nerf vague](/nerf-vague/), avec plus de détente et moins d'anxiété rapportées [3]. Les auteurs soulignent que les études sont peu nombreuses et très hétérogènes [3].
 
-En pratique : inspire par le nez pendant 4 secondes, expire pendant 6 secondes. Tu tombes à 6 respirations par minute. Si la tête te tourne, reprends ton rythme naturel.
+En pratique : inspire par le nez pendant 4 secondes, expire pendant 6 secondes. Tu tombes à 6 respirations par minute. Si la tête te tourne, reprends ton rythme naturel. Pour garder le rythme sans compter, le [minuteur de respiration](/exercices-respiration/) marque chaque inspiration et chaque expiration d'un bol chantant.
 
 ### 3. La relaxation musculaire progressive (10 à 15 minutes)
 La relaxation musculaire progressive est une méthode mise au point par Jacobson : elle consiste à contracter volontairement un groupe de muscles, puis à le relâcher, pour apprendre à sentir la différence entre tension et détente [4]. Une revue systématique de l'Universiti Teknologi Malaysia publiée en 2024 dans *Psychology Research and Behavior Management*, portant sur 46 publications et plus de 3 400 adultes, conclut qu'elle aide à réduire le stress, l'anxiété et les symptômes dépressifs [4]. Limite : seules des études en anglais ont été retenues [4].
@@ -109,7 +109,7 @@ Une routine quotidienne pour apaiser le système nerveux tient en quelques rende
 | Dans la journée | Ancrage 5-4-3-2-1 dès que la pression monte | 2 min |
 | Soir | Relaxation musculaire progressive, allongé | 10 min |
 
-Ajoute un vrai échange avec un proche, même court. Et note chaque soir ton niveau de tension, de 0 à 10 : au bout de deux semaines, tu sauras ce qui marche le mieux pour toi.
+Ajoute un vrai échange avec un proche, même court. Et note chaque soir ton niveau de tension, de 0 à 10 : au bout de deux semaines, tu sauras ce qui marche le mieux pour toi. Pour garder une trace sans compte ni inscription, le [journal d'humeur](/journal-humeur/) du site suit aussi ton humeur, ton stress et tes nuits.
 
 ## Quand consulter ?
 Consulte ton médecin traitant si ton anxiété dure, revient sous forme de crises ou t'empêche de vivre normalement. Ces techniques aident à traverser un pic de stress, mais elles ne remplacent pas un avis médical, et cet article non plus. Parles-en à ton médecin si :

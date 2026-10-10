@@ -114,7 +114,7 @@
     var html = '<div class="etape">' +
       '<p class="test-partie">' + (q.partie === 1 ? "Partie 1 sur 2 · Questionnaire GAD-7" : "Partie 2 sur 2 · Ton profil") + '</p>' +
       '<p class="test-consigne">' + (q.partie === 1 ? CONSIGNE_GAD : CONSIGNE_PROFIL) + '</p>' +
-      '<h3 tabindex="-1" id="test-question">' + q.texte + '</h3><div class="choix" role="group" aria-labelledby="test-question">';
+      '<h2 tabindex="-1" id="test-question">' + q.texte + '</h2><div class="choix" role="group" aria-labelledby="test-question">';
     ECHELLE.forEach(function (libelle, i) {
       html += '<button class="option" type="button" data-i="' + i + '" aria-pressed="' + (reponses[etape] === i) + '"><span class="puce" aria-hidden="true">' + i + '</span><span>' + libelle + '</span></button>';
     });
@@ -175,17 +175,17 @@
         '<div class="jauge-ligne">' +
           '<div class="jauge"><svg viewBox="0 0 140 140" aria-hidden="true"><circle cx="70" cy="70" r="60" fill="none" stroke="rgba(223,213,198,.1)" stroke-width="10"/><circle id="test-arc" cx="70" cy="70" r="60" fill="none" stroke="' + n.couleur + '" stroke-width="10" stroke-linecap="round" stroke-dasharray="' + circ.toFixed(1) + '" stroke-dashoffset="' + circ.toFixed(1) + '" style="transition: stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)"/></svg>' +
             '<div class="valeur"><div><b id="test-chiffre">' + (reduit ? gad : 0) + '</b><small>sur 21</small></div></div></div>' +
-          '<div class="jauge-texte"><span class="niveau" style="color:' + n.couleur + '">' + n.nom + '</span><h3>Ton score au GAD-7 : ' + gad + ' sur 21</h3><p>' + n.texte + '</p></div>' +
+          '<div class="jauge-texte"><span class="niveau" style="color:' + n.couleur + '">' + n.nom + '</span><h2>Ton score au GAD-7 : ' + gad + ' sur 21</h2><p>' + n.texte + '</p></div>' +
         '</div>' +
         '<div class="test-bloc' + (n.cle === "severe" || n.cle === "modere" ? " test-alerte" : "") + '">' + conseilMedical +
           '<p>Note ton score pour en parler : <strong>GAD-7 = ' + gad + '/21, le ' + date + '</strong>.</p></div>' +
-        '<div class="test-bloc test-profil"><p class="test-etiquette">Ton profil</p><h4>' + p.nom + '</h4><p>' + p.resume + '</p><p>' + p.explication + '</p></div>' +
+        '<div class="test-bloc test-profil"><p class="test-etiquette">Ton profil</p><h3>' + p.nom + '</h3><p>' + p.resume + '</p><p>' + p.explication + '</p></div>' +
         '<div><p class="test-etiquette" style="margin-bottom:12px">Tes 3 priorités</p><ol class="priorites">' +
           p.gestes.map(function (g, i) { return '<li><b>' + (i + 1) + '</b><span>' + g + '</span></li>'; }).join("") +
         '</ol></div>' +
         (p.prudence ? '<p class="test-prive">' + p.prudence + '</p>' : '') +
         '<div class="test-bloc"><p class="test-etiquette">À lire pour toi</p><ul class="test-liens">' + p.articles.map(lien).join("") + '</ul></div>' +
-        (second ? '<div class="test-bloc"><p class="test-etiquette">Ton deuxième axe</p><h4>' + PROFILS[second].nom + '</h4><p>' + PROFILS[second].resume + '</p><ul class="test-liens">' + PROFILS[second].articles.slice(0, 2).map(lien).join("") + '</ul></div>' : '') +
+        (second ? '<div class="test-bloc"><p class="test-etiquette">Ton deuxième axe</p><h3>' + PROFILS[second].nom + '</h3><p>' + PROFILS[second].resume + '</p><ul class="test-liens">' + PROFILS[second].articles.slice(0, 2).map(lien).join("") + '</ul></div>' : '') +
         blocOffre(cle, p, n) +
         '<div class="test-bloc"><p>Si tu as des pensées suicidaires, appelle le <strong>3114</strong> (gratuit, 24 h/24 et 7 j/7). En cas d\'urgence, appelle le <strong>15</strong> ou le <strong>112</strong>.</p></div>' +
         '<div class="test-pied"><button class="retour" type="button" id="test-refaire">↺ Refaire le test</button><a href="' + B + '/test-stress-anxiete/#comment-fonctionne-ce-test">Comment fonctionne ce test</a></div>' +

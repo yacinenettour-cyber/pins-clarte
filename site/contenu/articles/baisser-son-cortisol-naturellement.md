@@ -73,6 +73,8 @@ La [respiration lente](/calmer-son-systeme-nerveux/) est une façon simple d'ent
 3. Expire doucement par la bouche pendant 6 secondes.
 4. Continue 5 minutes, idéalement à heure fixe : avant le déjeuner, ou au moment de te coucher.
 
+Si compter te distrait, le [minuteur de respiration](/exercices-respiration/) donne le rythme dans la journée ; au coucher, écran éteint, les [audios de respiration guidée](/respiration-guidee/) suivent ce même rythme 4-6.
+
 ## Les liens sociaux font-ils vraiment baisser le cortisol ?
 
 Oui : le soutien d'un proche réduit de façon mesurable la réponse de cortisol face à un stress [5]. Selon une étude de l'Université de Zurich publiée en 2003 dans *Biological Psychiatry* (Heinrichs et al.), menée sur 37 hommes en bonne santé soumis à un test de stress social en laboratoire, ceux qui avaient pu échanger avec leur meilleur ami pendant la préparation avaient une réponse de cortisol plus faible [5]. Ceux qui avaient reçu à la fois ce soutien et de l'ocytocine par spray nasal avaient le cortisol le plus bas, et se sentaient plus calmes et moins anxieux [5].

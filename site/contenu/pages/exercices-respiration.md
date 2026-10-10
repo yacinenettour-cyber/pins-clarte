@@ -1,6 +1,6 @@
 ---
 titre: Exercices de respiration : cohérence cardiaque, carrée et 4-7-8
-titre_seo: Respiration : cohérence cardiaque, carrée et 4-7-8
+titre_seo: Cohérence cardiaque et respiration carrée : minuteur gratuit
 description: Minuteur gratuit avec bols chantants et musique douce : cohérence cardiaque (5-5), respiration carrée et 4-7-8, et ce qu'en disent les études.
 maj: 2026-10-10
 ---

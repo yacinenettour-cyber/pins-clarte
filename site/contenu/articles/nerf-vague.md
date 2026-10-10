@@ -25,7 +25,7 @@ C'est le nerf principal du système nerveux parasympathique, celui des fonctions
 
 Quand tu es stressé, l'accélérateur domine. « Activer le nerf vague », c'est chercher à appuyer un peu plus sur le frein.
 
-La variabilité de la fréquence cardiaque (VFC) est l'indicateur indirect qu'utilisent les chercheurs pour estimer l'activité du nerf vague, que l'on ne peut pas mesurer directement chez soi : l'intervalle entre deux battements n'est jamais exactement le même, et une partie de ces variations reflète l'action du nerf vague sur le cœur [2]. La plupart des études mesurent donc la VFC, pas directement le stress ressenti.
+La [variabilité de la fréquence cardiaque](/glossaire/#variabilité-de-la-fréquence-cardiaque) (VFC) est l'indicateur indirect qu'utilisent les chercheurs pour estimer l'activité du nerf vague, que l'on ne peut pas mesurer directement chez soi : l'intervalle entre deux battements n'est jamais exactement le même, et une partie de ces variations reflète l'action du nerf vague sur le cœur [2]. La plupart des études mesurent donc la VFC, pas directement le stress ressenti.
 
 ## Comment activer le nerf vague par la respiration ?
 La respiration lente, autour de 6 respirations par minute, est la façon la mieux démontrée d'activer le nerf vague [2]. Selon une méta-analyse de l'Université allemande du sport de Cologne publiée en 2022 dans *Neuroscience & Biobehavioral Reviews* (Laborde et al.), qui rassemble 223 études sur la respiration lente volontaire, la variabilité cardiaque liée au nerf vague augmente pendant l'exercice, juste après une séance et après un programme de plusieurs séances [2] :
@@ -38,7 +38,7 @@ La respiration lente, autour de 6 respirations par minute, est la façon la mieu
 
 Pourquoi 6 par minute ? Ce rythme correspond à environ 0,1 hertz. Selon une revue de Paul Lehrer (Université Rutgers) et Richard Gevirtz (Université Alliant de San Diego), publiée en 2014 dans *Frontiers in Psychology*, c'est à cette fréquence que les oscillations du rythme cardiaque liées à la respiration sont maximales et le cœur se met en phase avec le souffle [3].
 
-Et l'expiration ? L'arythmie sinusale respiratoire est le mécanisme normal par lequel ton cœur accélère légèrement quand tu inspires et ralentit quand tu expires [3]. Allonger l'expiration est donc logique. Un essai randomisé de l'Université Stanford, publié en 2023 dans *Cell Reports Medicine* (Balban et al.), l'a testé : 5 minutes par jour de « soupir cyclique » pendant un mois ont davantage amélioré l'humeur et ralenti la fréquence respiratoire que 5 minutes de méditation de pleine conscience. Les auteurs signalent eux-mêmes les limites : étude à distance, petits groupes, quatre semaines de suivi [4].
+Et l'expiration ? L'[arythmie sinusale respiratoire](/glossaire/#arythmie-sinusale-respiratoire) est le mécanisme normal par lequel ton cœur accélère légèrement quand tu inspires et ralentit quand tu expires [3]. Allonger l'expiration est donc logique. Un essai randomisé de l'Université Stanford, publié en 2023 dans *Cell Reports Medicine* (Balban et al.), l'a testé : 5 minutes par jour de « soupir cyclique » pendant un mois ont davantage amélioré l'humeur et ralenti la fréquence respiratoire que 5 minutes de méditation de pleine conscience. Les auteurs signalent eux-mêmes les limites : étude à distance, petits groupes, quatre semaines de suivi [4].
 
 ### Exercice 1 : la respiration 4-6 (5 minutes)
 1. Assieds-toi ou allonge-toi, une main posée sur le ventre.
@@ -46,6 +46,8 @@ Et l'expiration ? L'arythmie sinusale respiratoire est le mécanisme normal par 
 3. Expire doucement pendant 6 secondes, sans forcer.
 4. Enchaîne : 10 secondes par cycle, soit 6 respirations par minute, pendant 5 minutes.
 5. Si tu manques d'air ou que la tête te tourne, raccourcis les temps ou reviens à ta respiration normale.
+
+Pour t'entraîner avec un repère sonore, le [minuteur de respiration](/exercices-respiration/) propose la cohérence cardiaque (5 secondes, 5 secondes), au même rythme de 6 respirations par minute.
 
 ### Exercice 2 : le soupir cyclique (5 minutes)
 1. Inspire lentement jusqu'à ce que tes poumons soient bien remplis.

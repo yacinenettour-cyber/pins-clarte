@@ -1,7 +1,7 @@
 /* Test stress et anxiété (GAD-7 + profil) : styles communs à l'accueil et à /test-stress-anxiete/. */
 .instrument { --t-leger: #8FBF9A; --t-moyen: #DFD5C6; --t-modere: #D9A26B; --t-severe: #E58C7A; position: relative; border-radius: 28px; padding: clamp(20px, 3vw, 36px); background: var(--verre); border: 1px solid var(--lisere); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); min-height: 470px; overflow: hidden; text-align: left; scroll-margin-top: 96px; }
 .instrument::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: var(--degrade); background-size: 200% 100%; -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: .55; pointer-events: none; }
-.instrument h3, .instrument h4 { margin: 0; font-family: var(--titre); color: var(--champagne); letter-spacing: -0.01em; }
+.instrument h2, .instrument h3 { margin: 0; font-family: var(--titre); color: var(--champagne); letter-spacing: -0.01em; }
 .instrument p { margin: 0; }
 .instrument a:not(.test-cta) { color: var(--brume); }
 @keyframes test-entree { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
@@ -12,7 +12,7 @@
 .etape { display: grid; gap: 16px; animation: test-entree .45s cubic-bezier(.2,.8,.2,1); }
 .test-partie { font: 600 12px/1.4 var(--texte); letter-spacing: .16em; text-transform: uppercase; color: var(--brume); }
 .test-consigne { font-size: 15px; line-height: 1.55; color: var(--champagne-doux); }
-.etape h3 { font-size: clamp(21px, 2.3vw, 27px); line-height: 1.3; outline: none; }
+.etape h2 { font-size: clamp(21px, 2.3vw, 27px); line-height: 1.3; outline: none; }
 .choix { display: grid; gap: 10px; }
 .option { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 14px 16px; border-radius: 16px; border: 1px solid var(--lisere); background: rgba(255,255,255,.02); color: var(--champagne); font: 500 16px/1.4 var(--texte); cursor: pointer; transition: var(--transition); }
 .option:hover { border-color: var(--lisere-fort); background: linear-gradient(90deg, rgba(58,95,67,.28), rgba(255,255,255,.04)); }
@@ -30,10 +30,10 @@
 .jauge .valeur b { font: 800 42px/1 var(--titre); color: var(--champagne); font-variant-numeric: tabular-nums; }
 .jauge .valeur small { display: block; font-size: 12px; color: var(--champagne-doux); margin-top: 4px; }
 .jauge-texte { display: grid; gap: 10px; min-width: 0; }
-.jauge-texte h3 { font-size: clamp(19px, 2vw, 23px); line-height: 1.3; }
+.jauge-texte h2 { font-size: clamp(19px, 2vw, 23px); line-height: 1.3; }
 .niveau { justify-self: start; display: inline-block; padding: 6px 12px; border-radius: 999px; font: 600 13px/1.2 var(--texte); letter-spacing: .03em; border: 1px solid currentColor; }
 .test-bloc { display: grid; gap: 12px; padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,.025); border: 1px solid var(--lisere); font-size: 15.5px; line-height: 1.6; }
-.test-bloc h4 { font-size: 18px; line-height: 1.3; }
+.test-bloc h3 { font-size: 18px; line-height: 1.3; }
 .test-bloc ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
 .test-etiquette { font: 600 12px/1.4 var(--texte); letter-spacing: .16em; text-transform: uppercase; color: var(--brume); }
 .test-alerte { border-color: rgba(229,140,122,.55); background: rgba(229,140,122,.08); }

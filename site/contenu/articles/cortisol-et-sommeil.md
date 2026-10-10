@@ -15,7 +15,7 @@ image: Femme qui dort paisiblement dans un lit aux draps blancs, les yeux fermé
 - Chez des personnes souffrant d'insomnie chronique, l'ACTH, l'hormone qui commande le cortisol, a été trouvée plus élevée, surtout le soir et en début de nuit.
 - Les leviers les mieux documentés : un lever à heure fixe, la lumière du matin, un café pris tôt et une soirée qui ralentit.
 
-Le cortisol et le sommeil sont liés dans les deux sens : le sommeil freine la sécrétion de cortisol, et l'activation de l'axe du stress entraîne l'éveil et les difficultés à dormir [3][5]. Quand les nuits raccourcissent, le cortisol du soir monte [2][4] ; quand le stress dure, le sommeil devient plus fragile. Ce cercle peut aussi tourner dans le bon sens : c'est l'objet de cet article.
+Le cortisol et le sommeil sont liés dans les deux sens : le sommeil freine la sécrétion de cortisol, et l'activation de l'[axe du stress](/glossaire/#axe-du-stress) entraîne l'éveil et les difficultés à dormir [3][5]. Quand les nuits raccourcissent, le cortisol du soir monte [2][4] ; quand le stress dure, le sommeil devient plus fragile. Ce cercle peut aussi tourner dans le bon sens : c'est l'objet de cet article.
 
 ## Quel est le lien entre le cortisol et le sommeil ?
 
@@ -84,7 +84,7 @@ Pour aider le cortisol à redescendre le soir et protéger ton sommeil, les gest
 | Respirer lentement au lit | Autour de 6 respirations par minute, l'activité du nerf vague, le « frein » du corps, augmente [9] | Université allemande du sport de Cologne |
 | Protéger la durée de ta nuit | Une seule nuit écourtée élève le cortisol du soir suivant [2] | Université de Chicago |
 
-Pour la respiration, la méta-analyse de l'Université allemande du sport de Cologne, publiée en 2022 dans *Neuroscience & Biobehavioral Reviews* (Laborde et al.), a rassemblé 223 études : la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente pendant et après une respiration lente volontaire [9].
+Pour la respiration, la méta-analyse de l'Université allemande du sport de Cologne, publiée en 2022 dans *Neuroscience & Biobehavioral Reviews* (Laborde et al.), a rassemblé 223 études : la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente pendant et après une respiration lente volontaire [9]. Au lit, écran éteint, les [audios de respiration guidée](/respiration-guidee/) te donnent ce rythme.
 
 Pour aller pas à pas, tu peux t'appuyer sur la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/) et sur l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/), qui fait le tri entre ce qui marche et les fausses promesses.
 
