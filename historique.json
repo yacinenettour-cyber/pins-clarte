@@ -1488,5 +1488,16 @@
   "pin_id": "600175087890081841",
   "md5": "7f0611794d0dcdda4e0917302888e951",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-10T18:08+00:00",
+  "titre": "Anxiété santé la nuit : stop aux recherches au lit",
+  "image": "images/pin-20261010-180754.jpg",
+  "fond": "fonds/pexels-10061441.jpg",
+  "theme": "sommeil",
+  "design": "clair",
+  "pin_id": "600175087890083422",
+  "md5": "fce4fdf5a5ab73f8c644fcce56a32b42",
+  "lien": "article:ruminations-le-soir"
  }
 ]
