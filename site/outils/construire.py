@@ -13,6 +13,7 @@ Tout le HTML est écrit à la main ici (aucun thème ni service externe) : pages
 structurées schema.org pour Google, et fichiers llms.txt / llms-full.txt pour les assistants IA.
 """
 import datetime
+import hashlib
 import html
 import json
 import os
@@ -297,6 +298,17 @@ def bloc_epingle(a):
 
 # ---------------------------------------------------------------- gabarits
 
+# Menu mobile commun à toutes les pages (accueil compris) : même en-tête partout sur mobile, rien ne bouge d'une page à l'autre.
+MENU_CSS = open(os.path.join(RACINE, "contenu", "menu.css"), encoding="utf-8").read().strip()
+MENU_JS = open(os.path.join(RACINE, "contenu", "menu.js"), encoding="utf-8").read().strip()
+CSS_SITE = open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8").read().rstrip() + "\n\n" + MENU_CSS + "\n"
+# Version dans l'adresse de la feuille de style : après une mise en ligne, jamais de page neuve avec l'ancien style en cache.
+VERSION_CSS = hashlib.sha1(CSS_SITE.encode("utf-8")).hexdigest()[:8]
+MENU_MOBILE = [("/", "Accueil"), ("/test-stress-anxiete/", "Le test"), ("/articles/", "Articles"),
+               ("/respiration-guidee/", "Respiration guidée"), ("/la-formation/", "La formation"),
+               ("/guides-gratuits/", "Guides gratuits"), ("/a-propos/", "À propos")]
+
+
 def balise_google(chemin):
     code = SITE.get("mesure", {}).get("google_verification")
     return f'<meta name="google-site-verification" content="{e(code)}">' if code and chemin == "/" else ""
@@ -377,7 +389,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <meta name="theme-color" content="#080C10">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v={VERSION_CSS}">
 {tete}
 {blocs_ld}
 </head>
@@ -386,7 +398,11 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <header class="entete"><div class="large">
 <a class="marque" href="/">{LOGO}{e(SITE['nom'])}</a>
 <nav class="nav" aria-label="Menu principal">{lien_nav('/articles/', 'Articles')}{lien_nav('/la-formation/', 'La formation')}{lien_nav('/guides-gratuits/', 'Guides gratuits')}{lien_nav('/a-propos/', 'À propos')}</nav>
+<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button>
 </div></header>
+<nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
+{"".join(f'<a href="{h}" tabindex="-1"' + (' aria-current="page"' if h == chemin else "") + f'>{t}</a>' for h, t in MENU_MOBILE)}
+</nav>
 <main id="contenu">
 {contenu}
 </main>
@@ -395,6 +411,9 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
+<script>
+{MENU_JS}
+</script>
 {balise_mesure()}
 </body>
 </html>
@@ -639,7 +658,8 @@ def construire_accueil(articles):
     """Accueil : page unique « biophilic dark » (contenu/accueil.html), reliée aux articles et à la formation."""
     source = open(os.path.join(RACINE, "contenu", "accueil.html"), encoding="utf-8").read()
     corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", "")
-             .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles)))
+             .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles))
+             .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS))
     corps = insecables(corps)
     faq = faq_accueil(source)
     schemas = [
@@ -697,7 +717,8 @@ def construire_accueil(articles):
                     f'<meta name="description" content="{e(DESCRIPTION_ACCUEIL)}">\n{polices}\n'
                     + source.replace("/*@POLICES*/", "").replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", URL)
                     .replace("{{ARTICLES}}", cartes_lecture(articles, image_en_ligne=True))
-                    .replace("/*@TEST_JS*/", script_test(articles, URL)))
+                    .replace("/*@TEST_JS*/", script_test(articles, URL))
+                    .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS))
         open(os.environ["ARTEFACT"], "w", encoding="utf-8").write(artefact)
 
 
@@ -1083,7 +1104,7 @@ def construire_fichiers_techniques(articles):
     ecrire(".nojekyll", "")
     if SITE.get("indexnow"):
         ecrire(f"{SITE['indexnow']}.txt", SITE["indexnow"])
-    shutil.copy(os.path.join(RACINE, "contenu", "style.css"), os.path.join(SORTIE, "style.css"))
+    ecrire("style.css", CSS_SITE)
     shutil.copytree(os.path.join(RACINE, "contenu", "polices"), os.path.join(SORTIE, "polices"))
     shutil.copytree(os.path.join(RACINE, "contenu", "audio"), os.path.join(SORTIE, "audio"))
     ecrire("favicon.svg", LOGO.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))

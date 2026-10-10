@@ -28,6 +28,9 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+/* Une partie visée par un lien (menu, ancre) s'arrête sous l'en-tête collant (73 px), pas dessous. Marge sur les cibles
+   du contenu seulement : sur toute la page (scroll-padding), le simple focus d'un bouton de l'en-tête faisait sauter la page. */
+main [id] { scroll-margin-top: 88px; }
 body {
   margin: 0;
   background-color: var(--nuit);
@@ -69,13 +72,7 @@ section { position: relative; z-index: 1; }
 .liens a { color: var(--champagne-doux); text-decoration: none; font-size: 15px; font-weight: 500; transition: color .2s; }
 .liens a:hover { color: var(--champagne); }
 .liens .btn { color: var(--nuit); }
-.burger { display: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--lisere-fort); background: var(--verre); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); color: var(--champagne); cursor: pointer; position: relative; transition: var(--transition); box-shadow: var(--ombre-2xl); }
-.burger span { position: absolute; left: 12px; right: 12px; height: 2px; background: currentColor; border-radius: 2px; transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .2s; }
-.burger span:nth-child(1) { top: 15px; } .burger span:nth-child(2) { top: 21px; } .burger span:nth-child(3) { top: 27px; }
-.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-.menu-mobile { display: none; }
+/*@MENU_CSS*/
 
 /* Boutons */
 .btn { position: relative; display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; border-radius: 999px; font: 600 16px/1 var(--texte); text-decoration: none; cursor: pointer; border: 0; overflow: hidden; transition: var(--transition); will-change: transform; }
@@ -225,7 +222,7 @@ section { position: relative; z-index: 1; }
 
 /* Survol : hover:scale-105, transition 300 ms (souris uniquement) */
 @media (hover: hover) and (pointer: fine) {
-  .btn:hover, .burger:hover { transform: scale(1.05); }
+  .btn:hover { transform: scale(1.05); }
   .tuile:hover, .carte-lecture:hover, .hero-visuel:hover { transform: scale(1.05); }
   .option:hover { transform: scale(1.02); }
 }
@@ -245,14 +242,6 @@ section { position: relative; z-index: 1; }
 }
 @media (max-width: 860px) {
   .liens { display: none; }
-  .burger { display: block; }
-  .menu-mobile { display: grid; position: fixed; inset: 0; top: 0; z-index: 19; padding: calc(96px + env(safe-area-inset-top, 0px)) var(--gouttiere) 40px; background: rgba(8, 12, 16, 0.94); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-content: start; gap: 8px; clip-path: circle(0% at calc(100% - 38px) 38px); visibility: hidden; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s .6s; }
-  .menu-mobile.ouvert { clip-path: circle(150% at calc(100% - 38px) 38px); visibility: visible; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s; }
-  .menu-mobile a { font: 700 30px/1.2 var(--titre); color: var(--champagne); text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--lisere); opacity: 0; transform: translateY(16px); transition: opacity .4s, transform .4s; }
-  .menu-mobile.ouvert a { opacity: 1; transform: none; }
-  .menu-mobile.ouvert a:nth-child(2) { transition-delay: .06s; } .menu-mobile.ouvert a:nth-child(3) { transition-delay: .12s; } .menu-mobile.ouvert a:nth-child(4) { transition-delay: .18s; } .menu-mobile.ouvert a:nth-child(5) { transition-delay: .24s; } .menu-mobile.ouvert a:nth-child(6) { transition-delay: .3s; } .menu-mobile.ouvert a:nth-child(7) { transition-delay: .36s; }
-  /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
-  .menu-mobile .btn { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
   .hero .wrap, .calc { grid-template-columns: 1fr; }
   .calc-intro { position: static; }
   .hero-visuel { aspect-ratio: 5 / 4; }
@@ -563,23 +552,7 @@ section { position: relative; z-index: 1; }
   "use strict";
   var reduit = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* Menu mobile */
-  var burger = document.getElementById("burger");
-  var menu = document.getElementById("menu-mobile");
-  function basculerMenu(ouvrir) {
-    var ouvert = typeof ouvrir === "boolean" ? ouvrir : burger.getAttribute("aria-expanded") !== "true";
-    burger.setAttribute("aria-expanded", String(ouvert));
-    burger.setAttribute("aria-label", ouvert ? "Fermer le menu" : "Ouvrir le menu");
-    menu.classList.toggle("ouvert", ouvert);
-    menu.setAttribute("aria-hidden", String(!ouvert));
-    menu.querySelectorAll("a").forEach(function (a) { a.tabIndex = ouvert ? 0 : -1; });
-    document.body.style.overflow = ouvert ? "hidden" : "";
-    if (ouvert) { var premier = menu.querySelector("a"); if (premier) premier.focus(); }
-  }
-  burger.addEventListener("click", function () { basculerMenu(); });
-  menu.addEventListener("click", function (e) { if (e.target.closest("a")) basculerMenu(false); });
-  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && burger.getAttribute("aria-expanded") === "true") { basculerMenu(false); burger.focus(); } });
-  window.addEventListener("resize", function () { if (window.innerWidth > 860 && burger.getAttribute("aria-expanded") === "true") basculerMenu(false); });
+  /*@MENU_JS*/
 
   /* Réseau nerveux vivant (héro) : des nœuds qui dérivent et « respirent » à 6 cycles par minute */
   var canvas = document.getElementById("reseau");
@@ -639,7 +612,10 @@ section { position: relative; z-index: 1; }
     dessiner(t);
   }
   dimensionner();
-  window.addEventListener("resize", function () { clearTimeout(dimensionner.t); dimensionner.t = setTimeout(dimensionner, 150); });
+  window.addEventListener("resize", function () {
+    clearTimeout(dimensionner.t);
+    dimensionner.t = setTimeout(function () { var r = canvas.getBoundingClientRect(); if (Math.round(r.width) !== Math.round(largeur) || Math.round(r.height) !== Math.round(hauteur)) dimensionner(); }, 150);
+  });
   if (!reduit) {
     /* L'animation démarre une fois la page chargée et le navigateur libre : la page s'affiche et répond d'abord. */
     var lancer = function () { requestAnimationFrame(animer); };

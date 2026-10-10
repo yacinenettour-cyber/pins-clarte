@@ -1,0 +1,31 @@
+/* Menu mobile commun à l'accueil et aux autres pages (ajouté à la construction : dans l'accueil et à la fin de style.css).
+   Sur mobile, l'en-tête est le même partout (logo + bouton menu, 73 px de haut) : rien ne bouge quand on change de page. */
+.burger { display: none; flex: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--lisere-fort); background: var(--verre); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); color: var(--champagne); cursor: pointer; position: relative; transition: var(--transition); box-shadow: var(--ombre-2xl); }
+.burger span { position: absolute; left: 12px; right: 12px; height: 2px; background: currentColor; border-radius: 2px; transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .2s; }
+.burger span:nth-child(1) { top: 15px; } .burger span:nth-child(2) { top: 21px; } .burger span:nth-child(3) { top: 27px; }
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.menu-mobile { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .burger:hover { transform: scale(1.05); }
+}
+@media (max-width: 860px) {
+  .burger { display: block; }
+  /* Le menu défile lui-même s'il est plus haut que l'écran, sans jamais faire défiler la page du dessous
+     (overscroll-behavior + 1 px de plus que sa hauteur pour qu'il soit toujours « défilable »). La page n'est pas
+     bloquée par overflow: hidden : sur Android, ce blocage fait réapparaître la barre d'adresse et la page saute. */
+  .menu-mobile { display: grid; position: fixed; inset: 0; z-index: 19; overflow-y: auto; overscroll-behavior: contain; padding: calc(96px + env(safe-area-inset-top, 0px)) var(--gouttiere, max(16px, 4vw)) 40px; background: rgba(8, 12, 16, 0.94); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-content: start; gap: 8px; clip-path: circle(0% at calc(100% - 38px) 38px); visibility: hidden; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s .6s; }
+  .menu-mobile::before { content: ""; position: absolute; top: 0; left: 0; width: 1px; height: calc(100% + 1px); pointer-events: none; }
+  .menu-mobile.ouvert { clip-path: circle(150% at calc(100% - 38px) 38px); visibility: visible; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s; }
+  .menu-mobile a { font: 700 clamp(24px, 7.6vw, 30px)/1.2 var(--titre); color: var(--champagne); text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--lisere); opacity: 0; transform: translateY(16px); transition: opacity .4s, transform .4s; }
+  .menu-mobile a[aria-current="page"] { color: var(--brume); }
+  .menu-mobile.ouvert a { opacity: 1; transform: none; }
+  .menu-mobile.ouvert a:nth-child(2) { transition-delay: .06s; } .menu-mobile.ouvert a:nth-child(3) { transition-delay: .12s; } .menu-mobile.ouvert a:nth-child(4) { transition-delay: .18s; } .menu-mobile.ouvert a:nth-child(5) { transition-delay: .24s; } .menu-mobile.ouvert a:nth-child(6) { transition-delay: .3s; } .menu-mobile.ouvert a:nth-child(7) { transition-delay: .36s; }
+  /* Fermeture sans animation (lien vers une partie de la page, retour arrière) : la page apparaît tout de suite. */
+  .menu-mobile.instant, .menu-mobile.instant a { transition: none !important; }
+  /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
+  .menu-mobile .btn { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
+  /* Menu ouvert : un glissement commencé sur l'en-tête ne fait pas défiler la page du dessous. */
+  .menu-ouvert header { touch-action: none; }
+}

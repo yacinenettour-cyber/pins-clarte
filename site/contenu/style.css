@@ -52,6 +52,9 @@
 @keyframes glisse { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+/* Un lien vers une partie de la page (sommaire, ancre) l'amène sous l'en-tête collant, pas dessous. Marge sur les cibles
+   du contenu seulement : sur toute la page (scroll-padding), le simple focus d'un bouton de l'en-tête faisait sauter la page. */
+main [id] { scroll-margin-top: 90px; }
 body {
   margin: 0;
   background-color: var(--nuit);
@@ -72,12 +75,17 @@ img { max-width: 100%; height: auto; display: block; }
 /* En-tête */
 .entete { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(8, 12, 16, 0.78); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--lisere); }
 .entete .large { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-top: 14px; padding-bottom: 14px; }
-.marque { color: var(--champagne); text-decoration: none; font: 700 19px/1 var(--titre); letter-spacing: .02em; display: flex; align-items: center; gap: 10px; }
+.marque { color: var(--champagne); text-decoration: none; font: 700 18px/1 var(--titre); letter-spacing: .02em; display: flex; align-items: center; gap: 10px; }
 .marque svg { width: 26px; height: 26px; }
 .nav { display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; font-weight: 500; }
 .nav a { color: var(--champagne-doux); text-decoration: none; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--champagne); }
 .nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--brume); }
+/* Mobile : même en-tête que l'accueil (logo + bouton menu, 73 px), le menu s'ouvre en plein écran (menu.css). */
+@media (max-width: 860px) {
+  .entete .large { flex-wrap: nowrap; gap: 16px; }
+  .entete .nav { display: none; }
+}
 
 .large { max-width: 1120px; margin: 0 auto; padding-left: max(16px, 4vw); padding-right: max(16px, 4vw); }
 .etroit { max-width: 760px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
