@@ -30,10 +30,9 @@ Site francophone écrit par Yacine (fondateur de clarté mentale), qui n'est pas
 - [Test de stress et d'anxiété](https://www.contactapaisement-mental.fr/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.
 - [Respiration guidée 4-6](https://www.contactapaisement-mental.fr/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme.
 
-## Guides gratuits
+## Guide gratuit
 
 - [Quand le cerveau refuse de dormir](https://lp.contactapaisement-mental.fr/tonguide): Pour les soirs où le mental tourne en boucle au moment de dormir. Une routine anti-rumination à faire au lit ; Des exercices pour calmer le mental le soir ; Un calendrier de 30 jours, sans matériel.
-- [Le plan anti-cortisol en 7 jours](https://lp.contactapaisement-mental.fr/63d489c7): Un geste simple par jour pour aider ton corps à sortir du mode alerte. 7 gestes : lumière, respiration, assiette, mouvement, pauses, soirée, sommeil ; 10 à 15 minutes par jour, un tableau de suivi à cocher ; Sans matériel, sans régime, téléchargement immédiat.
 
 ## Formation payante
 
