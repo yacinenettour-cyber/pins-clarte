@@ -103,6 +103,7 @@ h3 { font-size: 20px; line-height: 1.3; font-weight: 600; margin: 30px 0 8px; }
 .meta { font-size: 15px; color: var(--champagne-doux); margin-bottom: 18px; }
 .meta a { color: var(--champagne-doux); }
 .chapo { font-size: 20px; line-height: 1.65; color: var(--champagne); }
+.liste > li + li { margin-top: 6px; }
 p, li { color: #CFC6B8; }
 strong { color: var(--champagne); }
 .photo { margin: 24px 0; border-radius: var(--rayon); overflow: hidden; background: var(--nuit-2); border: 1px solid var(--lisere); box-shadow: var(--ombre-2xl); }
@@ -201,13 +202,16 @@ sup a { text-decoration: none; font-size: 13px; }
 .carte:hover .teinte img { filter: saturate(.9) brightness(.96); }
 .carte:hover .teinte::after { opacity: 0; }
 .carte img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
-.carte .corps { padding: 16px 20px 20px; }
+.carte .corps { padding: 16px 20px 18px; display: flex; flex-direction: column; flex: 1; }
 .carte .cat { font-size: 12px; text-transform: uppercase; letter-spacing: .14em; color: var(--brume); font-weight: 700; margin: 0; }
 .carte h2, .carte h3 { font-size: 20px; margin: 6px 0 8px; }
 .carte h2 a, .carte h3 a { color: var(--champagne); text-decoration: none; }
 .carte h2 a::after, .carte h3 a::after { content: ""; position: absolute; inset: 0; }
 .carte { position: relative; }
 .carte p { font-size: 15.5px; color: var(--champagne-doux); margin: 0; }
+/* Cartes de même allure : résumé sur 3 lignes au plus, temps de lecture toujours en bas de la carte */
+.carte .resume { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+.carte .carte-meta { margin-top: auto; padding-top: 12px; font-size: 13.5px; }
 
 /* Formation */
 .surtitre { text-transform: uppercase; letter-spacing: .16em; font-size: 13px; color: var(--brume); font-weight: 700; margin: 0; }
@@ -231,8 +235,7 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .pied { border-top: 1px solid var(--lisere); color: var(--champagne-doux); font-size: 14px; margin-top: 70px; padding: 32px 0 44px; }
 .pied a { color: var(--champagne-doux); }
 .pied a:hover { color: var(--champagne); }
-.pied .large { display: grid; gap: 14px; }
-.pied nav { display: flex; flex-wrap: wrap; gap: 6px 20px; }
+.pied .large { display: grid; gap: 22px; }
 .pied p { margin: 0; color: var(--champagne-doux); }
 
 /* Survol : hover:scale-105, transition 300 ms (souris uniquement) */

@@ -47,7 +47,7 @@
 @clair .guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.16), rgba(255, 255, 255, 0.75), rgba(143, 191, 154, 0.16), rgba(58, 95, 67, 0.16)); background-size: 200% 100%; }
 @clair .prix .montant, @clair .chiffre b { background: linear-gradient(90deg, #1D2823, #2D6A46); -webkit-background-clip: text; background-clip: text; }
 @clair ul.non li::marker { color: #9A5A16; }
-@clair .urgence { background: rgba(154, 90, 22, 0.06); border-color: rgba(154, 90, 22, 0.35); }
+@clair .urgence, @clair .pied-urgence { background: rgba(154, 90, 22, 0.06); border-color: rgba(154, 90, 22, 0.35); }
 
 /* Accueil */
 @clair .hero::before { opacity: 0.45; }

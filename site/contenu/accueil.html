@@ -187,7 +187,7 @@ section { position: relative; z-index: 1; }
 .carte-lecture img { transition: var(--transition); }
 .carte-lecture:hover .teinte img { filter: saturate(.9) brightness(.96); }
 .carte-lecture:hover .teinte::after { opacity: 0; }
-.carte-lecture img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+.carte-lecture img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
 /* Teinte commune des photos d'articles, accordée au vert et au lin du site (photos très sombres exclues) */
 .teinte { position: relative; display: block; overflow: hidden; }
 .teinte img { display: block; width: 100%; filter: saturate(.62) sepia(.14) brightness(.86) contrast(1.04); transition: var(--transition); }
@@ -196,9 +196,11 @@ section { position: relative; z-index: 1; }
 .teinte.sombre::after { display: none; }
 .themes-lien { margin: 0 0 22px; color: var(--champagne-doux); font-size: 15.5px; }
 .themes-lien a { color: var(--brume); }
-.carte-lecture .corps { display: grid; gap: 8px; padding: 18px 20px 22px; }
+.carte-lecture .corps { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 18px 20px 20px; }
 .carte-lecture h3 { font-size: 19px; }
 .carte-lecture p { font-size: 14.5px; color: var(--champagne-doux); }
+.carte-lecture .resume { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+.carte-lecture .carte-meta { margin-top: auto; padding-top: 4px; font-size: 13px; }
 
 /* FAQ */
 .faq { display: grid; gap: 12px; max-width: 860px; }
@@ -223,8 +225,7 @@ section { position: relative; z-index: 1; }
 .final .tuile h3 { font-size: 21px; }
 .final .tuile .btn { align-self: flex-start; margin-top: 4px; }
 .pied { position: relative; z-index: 1; border-top: 1px solid var(--lisere); padding-block: 36px 48px; font-size: 14px; color: var(--champagne-doux); }
-.pied .wrap { display: grid; gap: 14px; }
-.pied nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.pied .wrap { display: grid; gap: 22px; }
 .pied a { color: var(--champagne-doux); }
 .pied a:hover { color: var(--champagne); }
 
@@ -540,31 +541,7 @@ section { position: relative; z-index: 1; }
   </section>
 </main>
 
-<footer class="pied">
-  <div class="wrap">
-    <nav aria-label="Liens du pied de page">
-      <a href="{{B}}/ressources-urgence/">Ressources d'urgence</a>
-      <a href="{{B}}/articles/">Tous les articles</a>
-      <a href="{{B}}/mieux-dormir/">Mieux dormir</a>
-      <a href="{{B}}/stress-et-systeme-nerveux/">Stress et système nerveux</a>
-      <a href="{{B}}/charge-mentale-et-burn-out/">Charge mentale et burn-out</a>
-      <a href="{{B}}/la-formation/">La formation</a>
-      <a href="{{B}}/guides-gratuits/">Guide gratuit</a>
-      <a href="{{B}}/a-propos/">À propos</a>
-      <a href="{{B}}/methode-editoriale/">Méthode éditoriale</a>
-      <a href="{{B}}/mentions-legales/">Mentions légales et confidentialité</a>
-      <a href="{{B}}/exercices-respiration/">Exercices de respiration</a>
-      <a href="{{B}}/journal-humeur/">Journal d'humeur</a>
-      <a href="{{B}}/recherche/">Rechercher</a>
-      <a href="{{B}}/questions-frequentes/">Questions fréquentes</a>
-      <a href="{{B}}/glossaire/">Glossaire</a>
-      <a href="{{B}}/accessibilite/">Accessibilité : non conforme</a>
-      <a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a>
-    </nav>
-    <p>Informations de bien-être fondées sur les sources citées. Elles ne remplacent pas l'avis d'un médecin. Urgence : <a href="tel:15">15</a> ou <a href="tel:112">112</a>. Pensées suicidaires : <a href="tel:3114">3114</a>, gratuit, 24 h/24. <a href="{{B}}/ressources-urgence/">Toutes les ressources d'urgence</a></p>
-    <p>© <span id="annee">2026</span> Clarté Mentale</p>
-  </div>
-</footer>
+<!--@PIED-->
 
 <script>
 (function () {

@@ -61,7 +61,10 @@ def etiqueter_cellules(table):
 
 
 def md(texte):
+    # Liste collée à la phrase qui l'annonce (sans ligne vide) : Markdown n'y voit qu'un paragraphe. On ajoute la ligne vide.
+    texte = re.sub(r"(?m)^((?![ \t]*(?:[-*+] |\d+\. |\|)).*\S.*)\n(?=[ \t]*(?:[-*+] |\d+\. ))", r"\1\n\n", texte)
     rendu = markdown.markdown(texte, extensions=["extra", "sane_lists"], output_format="html")
+    rendu = re.sub(r"<(ul|ol)>", r'<\1 class="liste">', rendu)  # listes du texte : un peu d'air entre les points
     rendu = re.sub(r"<table>.*?</table>", lambda m: etiqueter_cellules(m.group(0)), rendu, flags=re.S)
     # En-tête de première colonne vide (« | | A | B | ») : intitulé lu par les lecteurs d'écran seulement.
     rendu = re.sub(r"<th([^>]*)>\s*</th>", r'<th\1><span class="lecteur-ecran">Critère</span></th>', rendu)
@@ -386,6 +389,37 @@ def insecables(contenu):
     return "".join(m if i % 2 else re.sub(r">([^<]+)<", texte, m) for i, m in enumerate(morceaux))
 
 
+def pied(base="", conteneur="large"):
+    """Pied de page commun (accueil et autres pages) : trois colonnes de liens, puis le rappel des numéros d'urgence."""
+    colonnes = [
+        ("pied-lire", "Lire", [("/articles/", "Tous les articles")]
+         + [(f'/{th["slug"]}/', th["nom"]) for th in SITE.get("themes", {}).values()]
+         + [("/questions-frequentes/", "Questions fréquentes"), ("/glossaire/", "Glossaire")]),
+        ("pied-outils", "Outils gratuits", [
+            ("/test-stress-anxiete/", "Test stress et anxiété"), ("/respiration-guidee/", "Respiration guidée"),
+            ("/exercices-respiration/", "Exercices de respiration"), ("/journal-humeur/", "Journal d'humeur"),
+            ("/guides-gratuits/", "Guide gratuit"), ("/recherche/", "Rechercher")]),
+        ("pied-site", "Le site", [
+            ("/a-propos/", "À propos"), ("/methode-editoriale/", "Méthode éditoriale"), ("/la-formation/", "La formation"),
+            ("/mentions-legales/", "Mentions légales et confidentialité"), ("/accessibilite/", "Accessibilité : non conforme"),
+            (SITE["pinterest"], "Pinterest")]),
+    ]
+    def lien(href, texte):
+        if href.startswith("http"):
+            return f'<a href="{href}" rel="me">{e(texte)}</a>'
+        # Mot composé (« burn-out ») jamais coupé au trait d'union
+        texte = re.sub(r"(\w+-\w+)", r'<span class="mot">\1</span>', e(texte))
+        return f'<a href="{base}{href}">{texte}</a>'
+    blocs = "".join(f'<div><p class="pied-titre" id="{ident}">{titre}</p><ul aria-labelledby="{ident}">'
+                    + "".join(f"<li>{lien(h, t)}</li>" for h, t in liens) + "</ul></div>"
+                    for ident, titre, liens in colonnes)
+    return insecables(f"""<footer class="pied"><div class="{conteneur}">
+<nav class="pied-colonnes" aria-label="Liens du pied de page">{blocs}</nav>
+<p class="pied-urgence">Les contenus de ce site sont des informations de bien-être : ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24). <a href="{base}/ressources-urgence/">Toutes les ressources d'urgence</a></p>
+<p class="pied-bas">© <span id="annee">{datetime.date.today().year}</span> {e(SITE['nom'])}</p>
+</div></footer>""")
+
+
 def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og="website", nav="", meta_article=None, tete="",
          image_alt=None):
     contenu = insecables(contenu)
@@ -444,11 +478,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <main id="contenu">
 {contenu}
 </main>
-<footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a><a href="/exercices-respiration/">Exercices de respiration</a><a href="/journal-humeur/">Journal d'humeur</a><a href="/recherche/">Rechercher</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/questions-frequentes/">Questions fréquentes</a><a href="/glossaire/">Glossaire</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="/accessibilite/">Accessibilité : non conforme</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
-<p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
-<p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
-</div></footer>
+{pied()}
 <script>
 {MENU_JS}
 </script>
@@ -504,7 +534,8 @@ def carte_article(a, niveau="h3"):
     return f"""<article class="carte">{img}<div class="corps">
 <p class="cat">{e(SITE["categories"][a["categorie"]])}</p>
 <{niveau}><a href="/{a['slug']}/">{e(a['titre'])}</a></{niveau}>
-<p>{e(a['description'])}</p>
+<p class="resume">{e(a['description'])}</p>
+<p class="carte-meta">{a['lecture']} min de lecture</p>
 </div></article>"""
 
 
@@ -680,7 +711,8 @@ def cartes_lecture(articles, image_en_ligne=False):
         lien = (URL if image_en_ligne else "") + f"/{a['slug']}/"
         cartes.append(f'<a class="carte-lecture" href="{lien}">{img}<div class="corps">'
                       f'<p class="etiquette">{e(SITE["categories"][a["categorie"]])}</p>'
-                      f'<h3>{e(a["titre"])}</h3><p>{e(a["description"])}</p></div></a>')
+                      f'<h3>{e(a["titre"])}</h3><p class="resume">{e(a["description"])}</p>'
+                      f'<p class="carte-meta">{a["lecture"]} min de lecture</p></div></a>')
     return "".join(cartes)
 
 
@@ -692,6 +724,7 @@ def faq_accueil(source):
 def construire_accueil(articles):
     """Accueil : page unique « biophilic dark » (contenu/accueil.html), reliée aux articles et à la formation."""
     source = open(os.path.join(RACINE, "contenu", "accueil.html"), encoding="utf-8").read()
+    source = source.replace("<!--@PIED-->", pied("{{B}}", "wrap"))
     corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", "")
              .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles))
              .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS)
