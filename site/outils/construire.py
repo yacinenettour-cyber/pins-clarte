@@ -1011,17 +1011,18 @@ EXERCICES_HTML = """<div class="exercice" id="exercice">
 <button type="button" data-minutes="5" aria-pressed="false">5 min</button>
 </div>
 <div class="ex-choix ex-son" role="group" aria-label="Son pendant l'exercice">
-<button type="button" data-son="clochettes" aria-pressed="true">Clochettes</button>
-<button type="button" data-son="musique" aria-pressed="false">Clochettes et musique</button>
+<button type="button" data-son="bols" aria-pressed="true">Bols chantants</button>
+<button type="button" data-son="musique" aria-pressed="false">Bols et musique</button>
 <button type="button" data-son="aucun" aria-pressed="false">Sans son</button>
 </div>
 <div class="ex-scene"><div class="ex-cercle" aria-hidden="true"></div>
 <div class="ex-texte"><p class="ex-etape" role="status">Prêt</p><p class="ex-compte" aria-hidden="true"></p></div></div>
 <div class="ex-barre" aria-hidden="true"><span></span></div>
+<p class="ex-statut" role="status" hidden></p>
 <p class="ex-infos"><span class="ex-rythme">Inspire 5 s · expire 5 s</span> · reste <span class="ex-reste">3:00</span></p>
 <button type="button" class="ex-lancer bouton" aria-pressed="false">Commencer</button>
-<p class="ex-note">Avec le son, tu peux fermer les yeux : une clochette aiguë pour inspirer, une plus grave pour expirer, une plus discrète pour retenir. Respire sans forcer ; si la tête te tourne, reprends ta respiration habituelle. Le minuteur ne garde rien en mémoire.</p>
-<p class="credit-audio">Musique : « Deep Relaxation », Kevin MacLeod (<a href="https://incompetech.com/">incompetech.com</a>), sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; extrait mis en forme (fondus) par Clarté Mentale.</p>
+<p class="ex-note">Avec le son, tu peux fermer les yeux : un bol clair pour inspirer, un bol plus grave pour expirer, un petit bol discret pour retenir. Respire sans forcer ; si la tête te tourne, reprends ta respiration habituelle. Le minuteur ne garde rien en mémoire.</p>
+<p class="credit-audio">Bols chantants : enregistrements de steffcaffrey, dersinnsspace, Truthiswithin et itinerantmonk108 (<a href="https://freesound.org/">Freesound</a>), dans le domaine public (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a>). Musique : « Deep Relaxation », Kevin MacLeod (<a href="https://incompetech.com/">incompetech.com</a>), sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; extrait mis en forme (fondus) par Clarté Mentale.</p>
 </div>"""
 
 
@@ -1029,6 +1030,8 @@ def construire_exercices():
     dossier = os.path.join(RACINE, "contenu", "exercices")
     css = open(os.path.join(dossier, "exercices.css"), encoding="utf-8").read()
     js = open(os.path.join(dossier, "exercices.js"), encoding="utf-8").read()
+    bols = json.load(open(os.path.join(RACINE, "outils", "bols-minuteur.json"), encoding="utf-8"))
+    js = js.replace("/*@BOLS*/null", json.dumps(bols, separators=(",", ":")))  # positions des bols (audios_respiration.py)
     return construire_page_outil("exercices-respiration.md", "/exercices-respiration/", "Exercices de respiration",
                                  {"{{EXERCICES}}": EXERCICES_HTML}, "4 minutes de lecture", tete=f"<style>{css}</style>", script=js)
 

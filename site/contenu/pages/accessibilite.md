@@ -26,7 +26,7 @@ Tests faits en interne le 10 octobre 2026 :
 | Tableaux | En-têtes de colonnes ; sur téléphone, chaque cellule affiche l'intitulé de sa colonne |
 | Animations | Réduites quand l'appareil demande de limiter les animations |
 | Test de stress et d'anxiété | Réponses sous forme de boutons qui annoncent leur état ; à chaque question, le focus passe sur la question |
-| Journal d'humeur et minuteur de respiration | Boutons qui annoncent leur état, étape en cours annoncée aux lecteurs d'écran, courbe doublée d'un tableau ; sons du minuteur facultatifs (clochettes, musique), l'étape restant toujours écrite à l'écran |
+| Journal d'humeur et minuteur de respiration | Boutons qui annoncent leur état, étape en cours annoncée aux lecteurs d'écran, courbe doublée d'un tableau ; sons du minuteur facultatifs (bols chantants, musique), l'étape restant toujours écrite à l'écran |
 | Audios de respiration | Sans parole ; leur contenu (rythme, sons, durée) est décrit par écrit sur la page |
 
 ## Contenus non accessibles

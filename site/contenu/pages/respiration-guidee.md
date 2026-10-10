@@ -4,18 +4,18 @@ titre_seo: Respiration guidée gratuite : audio 4-6 pour se calmer
 description: Trois audios gratuits de respiration guidée 4-6 (3, 5 et 10 minutes) sur une musique de détente, sans voix : inspire 4 secondes, expire 6 secondes.
 maj: 2026-10-09
 ---
-La respiration 4-6 est une respiration lente : tu inspires pendant 4 secondes et tu expires pendant 6 secondes, soit 6 respirations par minute. Ces trois audios gratuits, sans voix, te guident sur une musique de détente lente et profonde : deux clochettes marquent l'inspiration et l'expiration. Tu peux les écouter les yeux fermés, au calme ou dans ton lit, l'écran éteint.
+La respiration 4-6 est une respiration lente : tu inspires pendant 4 secondes et tu expires pendant 6 secondes, soit 6 respirations par minute. Ces trois audios gratuits, sans voix, te guident sur une musique de détente lente et profonde : de vrais bols chantants tibétains marquent l'inspiration et l'expiration. Tu peux les écouter les yeux fermés, au calme ou dans ton lit, l'écran éteint.
 
 {{AUDIOS}}
 
 ## Comment utiliser ces audios ?
 
-Installe-toi assis ou allongé, baisse le volume, puis laisse les sons guider ta respiration : la clochette aiguë t'invite à inspirer, la clochette plus grave à expirer, et un souffle léger accompagne le mouvement sous la musique.
+Installe-toi assis ou allongé, baisse le volume, puis laisse les sons guider ta respiration : le bol clair t'invite à inspirer, le bol plus grave à expirer.
 
 1. **Les 8 premières secondes** : la musique s'installe ; profites-en pour relâcher les épaules.
-2. **À la clochette aiguë** : inspire par le nez pendant 4 secondes, en laissant le ventre se soulever.
-3. **À la clochette grave** : expire doucement pendant 6 secondes, plus longtemps que l'inspiration.
-4. **À la fin** : la musique s'éteint en fondu, puis une dernière clochette, très grave ; reste allongé quelques instants.
+2. **Au bol clair** : inspire par le nez pendant 4 secondes, en laissant le ventre se soulever.
+3. **Au bol grave** : expire doucement pendant 6 secondes, plus longtemps que l'inspiration.
+4. **À la fin** : la musique s'éteint en fondu, puis un dernier bol résonne longuement ; reste allongé quelques instants.
 
 Respire sans forcer. Si tu te sens mal à l'aise ou si la tête te tourne, reprends ta respiration habituelle et arrête l'exercice.
 
@@ -23,7 +23,7 @@ Respire sans forcer. Si tu te sens mal à l'aise ou si la tête te tourne, repre
 |---|---|---|
 | 3 minutes | Une montée de stress, une pause au travail | 18 respirations guidées |
 | 5 minutes | Le soir, avant de te coucher | 30 respirations guidées, la durée testée par l'Université Stanford [3] |
-| 10 minutes | Au lit, pour t'endormir | 60 respirations guidées, des clochettes qui s'adoucissent dans le dernier tiers |
+| 10 minutes | Au lit, pour t'endormir | 60 respirations guidées, des bols qui s'adoucissent dans le dernier tiers |
 
 ## Pourquoi respirer à 6 respirations par minute ?
 
@@ -41,12 +41,12 @@ Ces audios proposent la respiration 4-6, pas le soupir cyclique de cette étude 
 
 ## Comment ces audios ont-ils été faits ?
 
-Ces audios ont été montés par Clarté Mentale : une musique de détente, deux clochettes et un souffle léger, calés exactement sur 4 secondes d'inspiration et 6 secondes d'expiration.
+Ces audios ont été montés par Clarté Mentale : une musique de détente et de vrais bols chantants, calés exactement sur 4 secondes d'inspiration et 6 secondes d'expiration.
 
 | Élément | D'où il vient |
 |---|---|
 | La musique | « Deep Relaxation », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)) : piano, harpe et synthétiseur doux, sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr) ; un extrait est utilisé et mixé avec les repères |
-| Les clochettes et le souffle | Sons fabriqués par ordinateur pour ces audios, accordés sur la tonalité de la musique |
+| Les bols chantants | Vrais bols tibétains enregistrés par steffcaffrey, dersinnsspace et itinerantmonk108 ([Freesound](https://freesound.org/)), dans le domaine public ([CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.fr)) ; choisis pour leur frappe nette et leur résonance propre, sans bruit de fond |
 | La voix | Aucune |
 
 - Les audios sont gratuits, sans inscription, et tu peux les télécharger pour les écouter hors connexion.
@@ -71,7 +71,7 @@ Oui : l'audio de 10 minutes est fait pour ça, avec des repères qui s'adoucisse
 
 ### Pourquoi n'y a-t-il pas de voix ?
 
-Pour que rien ne sollicite ton attention : seules la musique et deux clochettes te guident. Tu peux ainsi les écouter les yeux fermés, sans avoir à suivre des consignes.
+Pour que rien ne sollicite ton attention : seules la musique et les bols chantants te guident. Tu peux ainsi les écouter les yeux fermés, sans avoir à suivre des consignes.
 
 ### Puis-je télécharger les audios ?
 

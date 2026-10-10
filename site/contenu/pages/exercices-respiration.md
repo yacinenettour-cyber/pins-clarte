@@ -1,10 +1,10 @@
 ---
 titre: Exercices de respiration : cohérence cardiaque, carrée et 4-7-8
 titre_seo: Respiration : cohérence cardiaque, carrée et 4-7-8
-description: Minuteur gratuit avec clochettes et musique douce pour 3 exercices de respiration : cohérence cardiaque (5-5), carrée et 4-7-8, et ce qu'en disent les études.
+description: Minuteur gratuit avec bols chantants et musique douce : cohérence cardiaque (5-5), respiration carrée et 4-7-8, et ce qu'en disent les études.
 maj: 2026-10-10
 ---
-Ces trois exercices de respiration se font avec le minuteur ci-dessous : choisis un rythme et une durée, puis suis le cercle, qui grandit quand tu inspires et rétrécit quand tu expires ; des clochettes marquent chaque étape, avec une musique douce si tu le veux. La cohérence cardiaque est la plus étudiée : autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente [1].
+Ces trois exercices de respiration se font avec le minuteur ci-dessous : choisis un rythme et une durée, puis suis le cercle, qui grandit quand tu inspires et rétrécit quand tu expires ; de vrais bols chantants marquent chaque étape, avec une musique douce si tu le veux. La cohérence cardiaque est la plus étudiée : autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente [1].
 
 {{EXERCICES}}
 
@@ -23,8 +23,8 @@ Dans l'essai de Stanford, c'est le « soupir cyclique » (une expiration longue)
 ## Comment faire l'exercice ?
 
 1. **Installe-toi** assis, le dos droit, ou allongé, les épaules relâchées.
-2. **Choisis un exercice, une durée et le son** (clochettes, clochettes et musique, ou sans son), puis appuie sur « Commencer ».
-3. **Inspire par le nez** quand le cercle grandit, **retiens** quand il reste immobile, **expire doucement** quand il rétrécit. Avec le son, tu peux fermer les yeux : une clochette aiguë annonce l'inspiration, une plus grave l'expiration, une plus discrète le temps où tu retiens ton souffle.
+2. **Choisis un exercice, une durée et le son** (bols chantants, bols et musique, ou sans son), puis appuie sur « Commencer ».
+3. **Inspire par le nez** quand le cercle grandit, **retiens** quand il reste immobile, **expire doucement** quand il rétrécit. Avec le son, tu peux fermer les yeux : un bol clair annonce l'inspiration, un bol plus grave l'expiration, un petit bol discret le temps où tu retiens ton souffle.
 4. **À la fin**, reste quelques secondes sans bouger avant de reprendre ton activité.
 
 Respire sans forcer : l'air doit entrer et sortir sans effort. Les temps où l'on retient son souffle sont facultatifs ; s'ils te gênent, raccourcis-les ou choisis la cohérence cardiaque.
@@ -53,9 +53,9 @@ Le cœur accélère légèrement à l'inspiration et ralentit à l'expiration [7
 
 Non : le minuteur fonctionne dans ton navigateur, sans rien envoyer ni enregistrer.
 
-### Je n'entends pas les clochettes : que faire ?
+### Je n'entends pas les bols : que faire ?
 
-Monte le volume de ton téléphone ou de ton ordinateur, puis relance l'exercice : le son démarre au moment où tu appuies sur « Commencer ». Sur un iPhone ancien, le mode silencieux peut aussi couper le son du navigateur. La musique, elle, se charge au premier lancement : elle peut mettre quelques secondes à arriver.
+Monte le volume de ton téléphone ou de ton ordinateur, puis relance l'exercice : le son démarre au moment où tu appuies sur « Commencer ». Sur un iPhone ancien, le mode silencieux peut aussi couper le son du navigateur. Les sons se chargent au premier lancement : avec une connexion lente, ils peuvent mettre quelques secondes à arriver.
 
 ## Sources
 1. [Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis — Neuroscience & Biobehavioral Reviews (Laborde et al., Université allemande du sport de Cologne), 2022](https://doi.org/10.1016/j.neubiorev.2022.104711)

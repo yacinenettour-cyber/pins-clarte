@@ -1,0 +1,21 @@
+Bols chantants (vrais enregistrements) utilisés pour les repères de respiration du site
+(minuteur de /exercices-respiration/ et audios de /respiration-guidee/), téléchargés le 10/10/2026 sur Freesound
+(aperçus haute qualité Ogg Vorbis). Tous sous licence Creative Commons 0 (domaine public,
+https://creativecommons.org/publicdomain/zero/1.0/deed.fr) : aucun crédit obligatoire, cité quand même par respect.
+
+- bol-maillet-doux_steffcaffrey_449951.ogg : « Singing Bowl Male Frequency », steffcaffrey
+  https://freesound.org/people/steffcaffrey/sounds/449951/ (bol tibétain, maillet doux, micro Rode NTK) -> inspirer
+- bol-tibetain-centre_dersinnsspace_421829.ogg : « Tibetan bowl_center hit », dersinnsspace
+  https://freesound.org/people/dersinnsspace/sounds/421829/ (bol tibétain frappé au centre, 2018) -> expirer
+- bol-tibetain-frappe_Truthiswithin_193022.ogg : « Tibetan Singing Bowl (Struck) », Truthiswithin
+  https://freesound.org/people/Truthiswithin/sounds/193022/ (petit bol tibétain de 8 cm, frappé au bois) -> retenir son souffle
+- bol-tibetain-long_itinerantmonk108_553049.ogg : « Tibetan singing bowl 1 », itinerantmonk108
+  https://freesound.org/people/itinerantmonk108/sounds/553049/ (bol tibétain frappé au bois, Tascam DR-07, résonance de 25 s) -> fin
+
+Choisis parmi une trentaine d'enregistrements analysés (frappe unique et nette, résonance qui décroît proprement,
+pas de saturation ni de bruit de fond gênant, timbre audible sur un haut-parleur de téléphone). Écartés, entre autres :
+76887 (ronflement électrique à 100 Hz), 202003 et 169289 (saturés, bruit de fond), 439235 (bol frotté, saturé),
+518702 et 518706 (son qui monte lentement : bol frotté, pas une frappe), 76888 (trois frappes à la suite),
+série 411481-411487 (stéréo en opposition de phase : disparaît sur un haut-parleur unique), 389524 et 59159 (bruits parasites).
+Fichiers sources seulement : ils ne sont pas publiés tels quels ; outils/audios_respiration.py les prépare
+(coupe avant la frappe, filtre des grondements sous 60 Hz, volume, frappe adoucie, fondu).

@@ -16,6 +16,7 @@
 .ex-barre span { display: block; height: 100%; width: 0; background: var(--brume); border-radius: inherit; }
 .ex-infos { margin: 0; font-size: 14.5px; color: var(--champagne-doux); }
 .ex-reste { font-variant-numeric: tabular-nums; }
+.ex-statut { margin: 0; font-size: 14px; color: var(--champagne-doux); }
 .ex-note { margin: 0; max-width: 460px; font-size: 14px; color: var(--champagne-doux); }
 /* Mouvements réduits : le cercle ne grandit pas, il change d'intensité selon l'étape. */
 @media (prefers-reduced-motion: reduce) {

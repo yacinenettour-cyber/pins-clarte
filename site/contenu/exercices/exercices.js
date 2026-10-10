@@ -8,17 +8,17 @@
     carree: { rythme: "Inspire 4 s · retiens 4 s · expire 4 s · retiens 4 s", phases: [["Inspire", 4, "in"], ["Retiens", 4, "haut"], ["Expire", 4, "out"], ["Retiens", 4, "bas"]] },
     "478": { rythme: "Inspire 4 s · retiens 7 s · expire 8 s", phases: [["Inspire", 4, "in"], ["Retiens", 7, "haut"], ["Expire", 8, "out"]] }
   };
-  /* Clochettes accordées comme dans les audios guidés (site/outils/audios_respiration.py) : sol pour inspirer,
-     do pour expirer, mi (plus discret) pour retenir, do grave à la fin. [fréquence, durée, crête] ; crêtes réglées
-     par rapport à la musique du minuteur (rapport affiché par audios_respiration.py). */
-  var NOTES = { "in": [783.99, 3.2, 0.181], out: [523.25, 5.0, 0.170], haut: [659.25, 2.4, 0.124], bas: [659.25, 2.4, 0.124], fin: [261.63, 7.0, 0.158] };
+  /* Vrais bols chantants (enregistrements CC0, site/sources-audio/bols/) réunis dans un seul fichier par
+     site/outils/audios_respiration.py ; position et durée de chacun injectées à la construction (bols-minuteur.json). */
+  var BOLS = /*@BOLS*/null;
+  var REPERE = { "in": "inspire", out: "expire", haut: "retiens", bas: "retiens" };
   var MUSIQUE = "/audio/musique-detente-minuteur.mp3";
   var reduit = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var motif = "coherence", minutes = 3, son = "clochettes", enCours = false, debut = 0, raf = 0, phaseAffichee = -1, total = 0, verrou = null;
+  var motif = "coherence", minutes = 3, son = "bols", enCours = false, debut = 0, raf = 0, phaseAffichee = -1, total = 0, verrou = null;
   var audio = null, jetonMusique = 0;
   var cercle = zone.querySelector(".ex-cercle"), etape = zone.querySelector(".ex-etape"), compte = zone.querySelector(".ex-compte"),
       barre = zone.querySelector(".ex-barre span"), bouton = zone.querySelector(".ex-lancer"), reste = zone.querySelector(".ex-reste"),
-      rythme = zone.querySelector(".ex-rythme");
+      rythme = zone.querySelector(".ex-rythme"), statut = zone.querySelector(".ex-statut");
 
   function dureeCycle() { return MOTIFS[motif].phases.reduce(function (a, p) { return a + p[1]; }, 0); }
   /* Durée arrondie à un nombre entier de cycles : l'exercice se termine toujours sur une expiration complète. */
@@ -37,12 +37,12 @@
     b.addEventListener("click", function () { if (enCours) arreter(false); minutes = Number(b.dataset.minutes); choisir("minutes", b); infos(); });
   });
 
-  /* ---- Sons (facultatifs) : clochettes jouées par le navigateur, musique de détente en option ---- */
+  /* ---- Sons (facultatifs) : bols chantants, musique de détente en option ---- */
   function preparerAudio() {
     var AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return null;
     try { if (navigator.audioSession) navigator.audioSession.type = "playback"; } catch (e) {}  // iPhone : jouer même en mode silencieux
-    if (!audio) audio = { ctx: new AC(), sortie: null, musique: null, t0: 0 };
+    if (!audio) audio = { ctx: new AC(), sortie: null, musique: null, t0: 0, bols: null, decodage: null };
     if (audio.ctx.state === "suspended") audio.ctx.resume().catch(function () {});
     return audio;
   }
@@ -50,26 +50,49 @@
     var t = audio.ctx.currentTime;
     param.cancelScheduledValues(t); param.setValueAtTime(param.value, t); param.linearRampToValueAtTime(valeur, t + dans);
   }
-  function clochette(ctx, sortie, t, note) {
-    [[1, 1, 1.6], [2, 0.18, 2.6], [2.76, 0.12, 3.2]].forEach(function (p) {  // partiels de bol chantant, attaque de 10 ms
-      var o = ctx.createOscillator(), g = ctx.createGain();
-      o.frequency.value = note[0] * p[0];
-      g.gain.setValueAtTime(0, t);
-      g.gain.linearRampToValueAtTime(note[2] * p[1] / 1.3, t + 0.01);
-      g.gain.setTargetAtTime(0, t + 0.01, note[1] / (p[2] * 2.2));
-      o.connect(g); g.connect(sortie);
-      o.start(t); o.stop(t + note[1]);
-    });
+  /* Fichier des bols : téléchargé dès que le minuteur apparaît à l'écran (sauf en mode « économie de données »),
+     décodé au premier lancement. */
+  var telechargement = null;
+  function telechargerBols() {
+    if (!telechargement && BOLS && window.fetch) {
+      telechargement = fetch(BOLS.fichier).then(function (r) { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); });
+      telechargement.catch(function () { telechargement = null; });
+    }
+    return telechargement || Promise.reject(new Error("bols"));
   }
-  /* Toutes les clochettes de la séance sont programmées au départ : elles restent à l'heure même si l'écran se met en veille. */
+  if (window.IntersectionObserver && !(navigator.connection && navigator.connection.saveData)) {
+    var guetteur = new IntersectionObserver(function (vus) {
+      if (vus[0].isIntersecting) { guetteur.disconnect(); telechargerBols().catch(function () {}); }
+    }, { rootMargin: "300px" });
+    guetteur.observe(zone);
+  }
+  function preparerBols() {
+    if (audio.bols) return Promise.resolve();
+    if (!audio.decodage) {
+      audio.decodage = telechargerBols().then(function (donnees) {
+        return new Promise(function (ok, ko) {
+          var p = audio.ctx.decodeAudioData(donnees, ok, ko);  // forme à rappels : anciens Safari
+          if (p && p.then) p.then(ok, ko);
+        });
+      }).then(function (tampon) { audio.bols = tampon; });
+      audio.decodage.catch(function () { audio.decodage = null; });
+    }
+    return audio.decodage;
+  }
+  function bol(ctx, sortie, t, nom) {
+    var s = BOLS.sons[nom], src = ctx.createBufferSource();
+    src.buffer = audio.bols; src.connect(sortie);
+    src.start(t - BOLS.preroule, s[0], s[1]);  // le son commence 10 ms avant la frappe : la frappe tombe à l'heure
+  }
+  /* Tous les bols de la séance sont programmés au départ : ils restent à l'heure même si l'écran se met en veille. */
   function programmerSons(t0) {
     var ctx = audio.ctx, sortie = ctx.createGain(), phases = MOTIFS[motif].phases, cycle = dureeCycle(), n = Math.round(total / cycle);
     sortie.gain.value = son === "aucun" ? 0 : 1;
     sortie.connect(ctx.destination);
     for (var k = 0; k < n; k++) {
-      for (var i = 0, acc = 0; i < phases.length; acc += phases[i][1], i++) clochette(ctx, sortie, t0 + k * cycle + acc, NOTES[phases[i][2]]);
+      for (var i = 0, acc = 0; i < phases.length; acc += phases[i][1], i++) bol(ctx, sortie, t0 + k * cycle + acc, REPERE[phases[i][2]]);
     }
-    clochette(ctx, sortie, t0 + total + 0.3, NOTES.fin);
+    bol(ctx, sortie, t0 + total + 0.3, "fin");
     audio.sortie = sortie; audio.t0 = t0;
   }
   function demarrerMusique() {
@@ -86,7 +109,7 @@
     jetonMusique++;  // annule une mise en pause en attente
     v.cancelScheduledValues(maintenant);
     v.setValueAtTime(0, maintenant); v.linearRampToValueAtTime(1, maintenant + 4);
-    v.setValueAtTime(1, fin); v.linearRampToValueAtTime(0, fin + 6);  // fondu de sortie avec la clochette de fin
+    v.setValueAtTime(1, fin); v.linearRampToValueAtTime(0, fin + 6);  // fondu de sortie avec le bol de fin
     try { m.el.currentTime = ecoule; } catch (e) {}
     var lecture = m.el.play();
     if (lecture && lecture.catch) lecture.catch(function () {});
@@ -105,7 +128,7 @@
     var sortie = audio.sortie;
     audio.sortie = null;
     if (fini) {
-      /* Fin normale : la clochette de fin et le fondu de la musique sont déjà programmés. */
+      /* Fin normale : le bol de fin et le fondu de la musique sont déjà programmés. */
       setTimeout(function () { sortie.disconnect(); }, 8000);
       if (audio.musique) pauseMusiquePlusTard(7000);
     } else {
@@ -145,21 +168,41 @@
       navigator.wakeLock.request("screen").then(function (v) { verrou = v; }).catch(function () {});
     }
   }
+  var lancement = 0;
   function lancer() {
     enCours = true; total = dureeTotale(); phaseAffichee = -1;
-    var DELAI = 0.12;  // laisse au son le temps de démarrer : clochettes et cercle partent ensemble
-    debut = performance.now() + DELAI * 1000;
-    if (preparerAudio()) {
-      programmerSons(audio.ctx.currentTime + DELAI);
-      if (son === "musique") demarrerMusique();
-    }
+    var n = ++lancement;
+    statut.hidden = true;
     bouton.textContent = "Arrêter"; bouton.setAttribute("aria-pressed", "true");
     zone.classList.add("en-cours");
     garderEcranAllume();
-    raf = requestAnimationFrame(boucle);
+    function partir(avecSon) {
+      if (n !== lancement || !enCours) return;
+      var DELAI = 0.12;  // laisse au son le temps de démarrer : bols et cercle partent ensemble
+      debut = performance.now() + DELAI * 1000;
+      if (avecSon) {
+        programmerSons(audio.ctx.currentTime + DELAI);
+        if (son === "musique") demarrerMusique();
+      }
+      raf = requestAnimationFrame(boucle);
+    }
+    if (!preparerAudio() || !BOLS) { partir(false); return; }
+    if (audio.bols) { partir(true); return; }
+    if (son === "aucun") { partir(false); preparerBols().catch(function () {}); return; }  // pas d'attente sans son
+    etape.textContent = "Préparation des sons…";
+    /* Sons pas encore prêts : on attend 4 s au plus, sinon l'exercice démarre sans eux. */
+    function sansSon() {
+      clearTimeout(attente);
+      if (n !== lancement || !enCours) return;
+      statut.textContent = "Les sons n'ont pas pu être chargés : l'exercice continue sans son.";
+      statut.hidden = false;
+      partir(false);
+    }
+    var attente = setTimeout(sansSon, 4000);
+    preparerBols().then(function () { clearTimeout(attente); partir(true); }, sansSon);
   }
   function arreter(fini) {
-    enCours = false; cancelAnimationFrame(raf);
+    enCours = false; lancement++; cancelAnimationFrame(raf);
     couperSons(fini);
     bouton.textContent = fini ? "Recommencer" : "Commencer"; bouton.setAttribute("aria-pressed", "false");
     zone.classList.remove("en-cours");
