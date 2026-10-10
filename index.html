@@ -370,7 +370,8 @@ section { position: relative; z-index: 1; }
   .menu-mobile a { font: 700 30px/1.2 var(--titre); color: var(--champagne); text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--lisere); opacity: 0; transform: translateY(16px); transition: opacity .4s, transform .4s; }
   .menu-mobile.ouvert a { opacity: 1; transform: none; }
   .menu-mobile.ouvert a:nth-child(2) { transition-delay: .06s; } .menu-mobile.ouvert a:nth-child(3) { transition-delay: .12s; } .menu-mobile.ouvert a:nth-child(4) { transition-delay: .18s; } .menu-mobile.ouvert a:nth-child(5) { transition-delay: .24s; } .menu-mobile.ouvert a:nth-child(6) { transition-delay: .3s; } .menu-mobile.ouvert a:nth-child(7) { transition-delay: .36s; }
-  .menu-mobile .btn { margin-top: 18px; justify-self: start; font-size: 17px; }
+  /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
+  .menu-mobile .btn { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
   .hero .wrap, .calc { grid-template-columns: 1fr; }
   .calc-intro { position: static; }
   .hero-visuel { aspect-ratio: 5 / 4; }
