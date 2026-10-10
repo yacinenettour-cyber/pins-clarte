@@ -1010,12 +1010,18 @@ EXERCICES_HTML = """<div class="exercice" id="exercice">
 <button type="button" data-minutes="3" aria-pressed="true">3 min</button>
 <button type="button" data-minutes="5" aria-pressed="false">5 min</button>
 </div>
+<div class="ex-choix ex-son" role="group" aria-label="Son pendant l'exercice">
+<button type="button" data-son="clochettes" aria-pressed="true">Clochettes</button>
+<button type="button" data-son="musique" aria-pressed="false">Clochettes et musique</button>
+<button type="button" data-son="aucun" aria-pressed="false">Sans son</button>
+</div>
 <div class="ex-scene"><div class="ex-cercle" aria-hidden="true"></div>
 <div class="ex-texte"><p class="ex-etape" role="status">Prêt</p><p class="ex-compte" aria-hidden="true"></p></div></div>
 <div class="ex-barre" aria-hidden="true"><span></span></div>
 <p class="ex-infos"><span class="ex-rythme">Inspire 5 s · expire 5 s</span> · reste <span class="ex-reste">3:00</span></p>
 <button type="button" class="ex-lancer bouton" aria-pressed="false">Commencer</button>
-<p class="ex-note">Respire sans forcer. Si la tête te tourne, reprends ta respiration habituelle. Le minuteur ne garde rien en mémoire.</p>
+<p class="ex-note">Avec le son, tu peux fermer les yeux : une clochette aiguë pour inspirer, une plus grave pour expirer, une plus discrète pour retenir. Respire sans forcer ; si la tête te tourne, reprends ta respiration habituelle. Le minuteur ne garde rien en mémoire.</p>
+<p class="credit-audio">Musique : « Deep Relaxation », Kevin MacLeod (<a href="https://incompetech.com/">incompetech.com</a>), sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; extrait mis en forme (fondus) par Clarté Mentale.</p>
 </div>"""
 
 

@@ -36,7 +36,7 @@ Photos issues de [Pexels](https://www.pexels.com/fr-fr/license/) et d'[Unsplash]
 
 ## Crédits musique
 
-Les [audios de respiration guidée](/respiration-guidee/) utilisent un extrait de « Deep Relaxation », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)), sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr), mixé avec des repères de respiration par Clarté Mentale.
+Les [audios de respiration guidée](/respiration-guidee/) et la musique facultative du minuteur des [exercices de respiration](/exercices-respiration/) utilisent un extrait de « Deep Relaxation », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)), sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr), mixé avec des repères de respiration (ou seulement mis en forme, pour le minuteur) par Clarté Mentale.
 
 ## Propriété intellectuelle
 

@@ -5,6 +5,7 @@
 .ex-choix button small { font-weight: 500; font-size: 12.5px; color: var(--champagne-doux); }
 .ex-choix button[aria-pressed="true"] { border-color: var(--brume); background: rgba(58, 95, 67, 0.22); box-shadow: inset 0 0 0 1px var(--brume); }
 .ex-duree button { flex: 0 1 96px; }
+.ex-son button { flex: 1 1 120px; font-size: 14.5px; }
 .ex-scene { position: relative; width: min(260px, 72vw); aspect-ratio: 1; display: grid; place-items: center; margin: 6px 0; }
 .ex-scene::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1px dashed var(--lisere-fort); }
 .ex-cercle { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(143, 191, 154, 0.6), rgba(58, 95, 67, 0.4) 55%, rgba(58, 95, 67, 0.08) 75%); box-shadow: 0 0 60px rgba(58, 95, 67, 0.35); transform: scale(0.55); will-change: transform; }

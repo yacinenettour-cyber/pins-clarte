@@ -1,10 +1,10 @@
 ---
 titre: Exercices de respiration : cohérence cardiaque, carrée et 4-7-8
 titre_seo: Respiration : cohérence cardiaque, carrée et 4-7-8
-description: Minuteur visuel gratuit pour trois exercices de respiration : cohérence cardiaque (5-5), respiration carrée et 4-7-8, avec ce qu'en disent les études.
+description: Minuteur gratuit avec clochettes et musique douce pour 3 exercices de respiration : cohérence cardiaque (5-5), carrée et 4-7-8, et ce qu'en disent les études.
 maj: 2026-10-10
 ---
-Ces trois exercices de respiration se font avec le minuteur ci-dessous : choisis un rythme et une durée, puis suis le cercle, qui grandit quand tu inspires et rétrécit quand tu expires. La cohérence cardiaque est la plus étudiée : autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente [1].
+Ces trois exercices de respiration se font avec le minuteur ci-dessous : choisis un rythme et une durée, puis suis le cercle, qui grandit quand tu inspires et rétrécit quand tu expires ; des clochettes marquent chaque étape, avec une musique douce si tu le veux. La cohérence cardiaque est la plus étudiée : autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente [1].
 
 {{EXERCICES}}
 
@@ -18,13 +18,13 @@ La cohérence cardiaque est celle qui a le plus de preuves ; les deux autres ajo
 | Respiration carrée | Inspire 4 s, retiens 4 s, expire 4 s, retiens 4 s | Dans un essai de l'Université Stanford (*Cell Reports Medicine*, 2023), 5 minutes par jour pendant un mois ont augmenté l'humeur positive ; l'anxiété baissait après chaque séance, comme avec les autres exercices testés [2] |
 | Respiration 4-7-8 | Inspire 4 s, retiens 7 s, expire 8 s | Peu étudiée : chez 43 jeunes adultes (Université Burapha, Thaïlande, *Physiological Reports*, 2022), trois séries de 6 cycles ont fait baisser aussitôt la fréquence cardiaque et la tension systolique [3] ; aucun effet à long terme n'a été mesuré |
 
-Dans l'essai de Stanford, c'est le « soupir cyclique » (une expiration longue) qui a donné la plus forte hausse de l'humeur positive au fil du mois [2]. Pour respirer les yeux fermés, sans regarder l'écran, les [audios de respiration guidée](/respiration-guidee/) suivent un rythme proche de la cohérence cardiaque : inspire 4 secondes, expire 6 secondes.
+Dans l'essai de Stanford, c'est le « soupir cyclique » (une expiration longue) qui a donné la plus forte hausse de l'humeur positive au fil du mois [2]. Pour écouter sans garder cette page ouverte, ou télécharger l'exercice, les [audios de respiration guidée](/respiration-guidee/) suivent un rythme proche de la cohérence cardiaque : inspire 4 secondes, expire 6 secondes.
 
 ## Comment faire l'exercice ?
 
 1. **Installe-toi** assis, le dos droit, ou allongé, les épaules relâchées.
-2. **Choisis un exercice et une durée** dans le minuteur, puis appuie sur « Commencer ».
-3. **Inspire par le nez** quand le cercle grandit, **retiens** quand il reste immobile, **expire doucement** quand il rétrécit.
+2. **Choisis un exercice, une durée et le son** (clochettes, clochettes et musique, ou sans son), puis appuie sur « Commencer ».
+3. **Inspire par le nez** quand le cercle grandit, **retiens** quand il reste immobile, **expire doucement** quand il rétrécit. Avec le son, tu peux fermer les yeux : une clochette aiguë annonce l'inspiration, une plus grave l'expiration, une plus discrète le temps où tu retiens ton souffle.
 4. **À la fin**, reste quelques secondes sans bouger avant de reprendre ton activité.
 
 Respire sans forcer : l'air doit entrer et sortir sans effort. Les temps où l'on retient son souffle sont facultatifs ; s'ils te gênent, raccourcis-les ou choisis la cohérence cardiaque.
@@ -52,6 +52,10 @@ Le cœur accélère légèrement à l'inspiration et ralentit à l'expiration [7
 ### Mes réglages sont-ils enregistrés ?
 
 Non : le minuteur fonctionne dans ton navigateur, sans rien envoyer ni enregistrer.
+
+### Je n'entends pas les clochettes : que faire ?
+
+Monte le volume de ton téléphone ou de ton ordinateur, puis relance l'exercice : le son démarre au moment où tu appuies sur « Commencer ». Sur un iPhone ancien, le mode silencieux peut aussi couper le son du navigateur. La musique, elle, se charge au premier lancement : elle peut mettre quelques secondes à arriver.
 
 ## Sources
 1. [Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis — Neuroscience & Biobehavioral Reviews (Laborde et al., Université allemande du sport de Cologne), 2022](https://doi.org/10.1016/j.neubiorev.2022.104711)

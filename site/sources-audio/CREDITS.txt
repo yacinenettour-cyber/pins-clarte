@@ -2,5 +2,5 @@ deep-relaxation-extrait.mp3 : 11 premières minutes de « Deep Relaxation », Ke
 licence Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/), téléchargé le 09/10/2026
 depuis https://incompetech.com/music/royalty-free/mp3-royaltyfree/Deep%20Relaxation.mp3 (réencodé en 128 kb/s,
 pochette et métadonnées retirées). Crédit obligatoire et visible partout où la musique est utilisée
-(page /respiration-guidee/, mentions légales, métadonnées des MP3). Fichier source seulement : il n'est pas publié
+(pages /respiration-guidee/ et /exercices-respiration/, mentions légales, métadonnées des MP3). Fichier source seulement : il n'est pas publié
 tel quel sur le site ; les audios publiés sont produits par outils/audios_respiration.py.

@@ -10,6 +10,7 @@ Mélange :
   l'inspiration et redescend pendant l'expiration.
 
 Usage : python3 site/outils/audios_respiration.py  -> site/contenu/audio/respiration-4-6-{3,5,10}-min.mp3
+        (+ musique seule du minuteur de /exercices-respiration/ ; « minuteur » en argument : elle seule)
 """
 import os
 import subprocess
@@ -116,8 +117,35 @@ def ecrire_mp3(x, chemin, minutes):
                     "-metadata", f"comment={CREDIT}", chemin], input=pcm, check=True)
 
 
-def main():
+MUSIQUE_MINUTEUR = "musique-detente-minuteur.mp3"
+DUREE_MINUTEUR = 330.0  # exercice le plus long du minuteur : 5 min arrondies à des cycles entiers (304 s), plus la fin
+
+
+def musique_minuteur():
+    """Musique seule pour le minuteur de /exercices-respiration/ : les clochettes sont jouées par la page (exercices.js).
+    Même musique et même niveau que dans les audios guidés ; la page règle le volume des clochettes par rapport à elle
+    (affiche le rapport à reporter dans exercices.js si on change le niveau)."""
+    m = musique(DUREE_MINUTEUR)
+    rms = float(np.sqrt(np.mean(m[: SR * 120] ** 2)))
+    gain = 0.70 / float(np.max(np.abs(m)))                # crête vers -3 dB, comme les audios guidés
+    m *= np.float32(gain)
+    chemin = os.path.join(SORTIE, MUSIQUE_MINUTEUR)
+    pcm = (np.clip(m, -1, 1) * 32767).astype("<i2").tobytes()
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ac", "2", "-ar", str(SR), "-i", "-",
+                    "-codec:a", "libmp3lame", "-b:a", "80k",
+                    "-metadata", "title=Musique de détente pour les exercices de respiration",
+                    "-metadata", "artist=Kevin MacLeod",
+                    "-metadata", f"comment={CREDIT.replace('mixé avec des repères de respiration', 'mis en forme (fondus)')}",
+                    chemin], input=pcm, check=True)
+    print(chemin, f"{os.path.getsize(chemin) / 1e6:.1f} Mo",
+          f"| clochette « sol » à {0.16 * gain:.3f} de crête (musique : {rms * gain:.4f} RMS)")
+
+
+def main(seulement=None):
     os.makedirs(SORTIE, exist_ok=True)
+    musique_minuteur()
+    if seulement == "minuteur":
+        return
     for minutes in (3, 5, 10):
         cycles = int(minutes * 60 / CYCLE)
         x = piste(cycles)
@@ -127,4 +155,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(sys.argv[1] if len(sys.argv) > 1 else None)
