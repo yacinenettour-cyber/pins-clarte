@@ -61,3 +61,26 @@
     if (titre) { titre.setAttribute("tabindex", "-1"); titre.focus({ preventScroll: true }); }
   });
 })();
+
+/* Mode clair / sombre : suit le réglage de l'appareil, ou le choix fait avec le bouton (gardé sur cet appareil). */
+(function () {
+  "use strict";
+  var racine = document.documentElement, clairAppareil = window.matchMedia("(prefers-color-scheme: light)");
+  function theme() { return racine.dataset.theme || (clairAppareil.matches ? "clair" : "sombre"); }
+  function majTheme() {
+    var t = theme(), action = t === "clair" ? "Passer en mode sombre" : "Passer en mode clair";
+    document.querySelectorAll(".theme-bascule").forEach(function (b) { b.setAttribute("aria-label", action); b.title = action; });
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", t === "clair" ? "#F4F0E8" : "#080C10");
+    document.dispatchEvent(new CustomEvent("cm-theme", { detail: t }));
+  }
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".theme-bascule")) return;
+    var t = theme() === "clair" ? "sombre" : "clair";
+    racine.dataset.theme = t;
+    try { localStorage.setItem("cm-theme", t); } catch (err) {}
+    majTheme();
+  });
+  if (clairAppareil.addEventListener) clairAppareil.addEventListener("change", majTheme);
+  majTheme();
+})();

@@ -305,7 +305,23 @@ def bloc_epingle(a):
 # Menu mobile commun à toutes les pages (accueil compris) : même en-tête partout sur mobile, rien ne bouge d'une page à l'autre.
 MENU_CSS = open(os.path.join(RACINE, "contenu", "menu.css"), encoding="utf-8").read().strip()
 MENU_JS = open(os.path.join(RACINE, "contenu", "menu.js"), encoding="utf-8").read().strip()
-CSS_SITE = open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8").read().rstrip() + "\n\n" + MENU_CSS + "\n"
+def compiler_theme(css):
+    """theme.css : « @clair » -> choix « clair » fait avec le bouton, ou appareil réglé en clair (sauf choix « sombre »)."""
+    clair = css.replace("@clair ", ':root[data-theme="clair"] ')
+    systeme = css.split("*/", 1)[1].replace("@clair ", ':root:not([data-theme="sombre"]) ')
+    return clair.strip() + "\n@media (prefers-color-scheme: light) {\n" + systeme.strip() + "\n}"
+
+
+THEME_CSS = compiler_theme(open(os.path.join(RACINE, "contenu", "theme.css"), encoding="utf-8").read())
+# Avant tout affichage : thème choisi sur cet appareil (sinon celui de l'appareil) et classe « js » (bouton du thème).
+THEME_TETE = ('<script>(function(){var r=document.documentElement;r.classList.add("js");try{var t=localStorage.getItem("cm-theme");'
+              'if(t==="clair"||t==="sombre")r.dataset.theme=t}catch(e){}})();</script>')
+THEME_BOUTON = ('<button class="theme-bascule" type="button" aria-label="Passer en mode clair" title="Passer en mode clair">'
+                '<svg class="soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4'
+                'M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+                '<svg class="lune" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>')
+CSS_SITE = (open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8").read().rstrip() + "\n\n" + MENU_CSS + "\n\n"
+            + THEME_CSS + "\n")
 # Version dans l'adresse de la feuille de style : après une mise en ligne, jamais de page neuve avec l'ancien style en cache.
 VERSION_CSS = hashlib.sha1(CSS_SITE.encode("utf-8")).hexdigest()[:8]
 MENU_MOBILE = [("/", "Accueil"), ("/test-stress-anxiete/", "Le test"), ("/articles/", "Articles"),
@@ -385,6 +401,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+{THEME_TETE}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(titre)}</title>
 <meta name="description" content="{e(description)}">
@@ -418,7 +435,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <header class="entete"><div class="large">
 <a class="marque" href="/">{LOGO}{e(SITE['nom'])}</a>
 <nav class="nav" aria-label="Menu principal">{lien_nav('/articles/', 'Articles')}{lien_nav('/la-formation/', 'La formation')}{lien_nav('/guides-gratuits/', 'Guide gratuit')}{lien_nav('/a-propos/', 'À propos')}</nav>
-<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button>
+<div class="actions-entete">{THEME_BOUTON}<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
 </div></header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
 {"".join(f'<a href="{h}" tabindex="-1"' + (' aria-current="page"' if h == chemin else "") + f'>{t}</a>' for h, t in MENU_MOBILE)}
@@ -676,7 +693,8 @@ def construire_accueil(articles):
     source = open(os.path.join(RACINE, "contenu", "accueil.html"), encoding="utf-8").read()
     corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", "")
              .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles))
-             .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS))
+             .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS)
+             .replace("/*@THEME_CSS*/", THEME_CSS).replace("<!--@THEME_BOUTON-->", THEME_BOUTON))
     corps = insecables(corps)
     faq = faq_accueil(source)
     schemas = [
@@ -694,6 +712,7 @@ def construire_accueil(articles):
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+{THEME_TETE}
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(TITRE_ACCUEIL)}</title>
 <meta name="description" content="{e(DESCRIPTION_ACCUEIL)}">
@@ -735,7 +754,8 @@ def construire_accueil(articles):
                     + source.replace("/*@POLICES*/", "").replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", URL)
                     .replace("{{ARTICLES}}", cartes_lecture(articles, image_en_ligne=True))
                     .replace("/*@TEST_JS*/", script_test(articles, URL))
-                    .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS))
+                    .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS)
+             .replace("/*@THEME_CSS*/", THEME_CSS).replace("<!--@THEME_BOUTON-->", THEME_BOUTON))
         open(os.environ["ARTEFACT"], "w", encoding="utf-8").write(artefact)
 
 

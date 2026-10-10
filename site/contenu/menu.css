@@ -34,3 +34,13 @@
 .haut-page[hidden] { display: none; }
 .haut-page svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .haut-page:hover { color: var(--brume); border-color: var(--brume); }
+/* Logo sur une seule ligne, même sur les plus petits écrans (320 px) avec les deux boutons à côté. */
+.marque { white-space: nowrap; }
+@media (max-width: 359px) { .marque { font-size: 15px; gap: 8px; } .marque svg { width: 22px; height: 22px; } }
+/* Bouton mode clair / sombre (à côté du bouton menu) : affiché seulement si JavaScript fonctionne (classe « js »). */
+.actions-entete { display: flex; align-items: center; gap: 8px; flex: none; }
+.theme-bascule { display: none; flex: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--lisere-fort); background: var(--verre); color: var(--champagne); cursor: pointer; place-items: center; padding: 0; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); transition: var(--transition); }
+.js .theme-bascule { display: grid; }
+.theme-bascule svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.theme-bascule .lune { display: none; }
+.theme-bascule:hover { color: var(--brume); border-color: var(--brume); }

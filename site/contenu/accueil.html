@@ -268,6 +268,7 @@ section { position: relative; z-index: 1; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+/*@THEME_CSS*/
 </style>
 
 <header class="nav" id="haut">
@@ -283,7 +284,7 @@ section { position: relative; z-index: 1; }
       <a href="{{B}}/la-formation/">La formation</a>
       <a class="btn btn-or btn-petit" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=nav">Guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
     </nav>
-    <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button>
+    <div class="actions-entete"><!--@THEME_BOUTON--><button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
   </div>
 </header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
@@ -575,6 +576,15 @@ section { position: relative; z-index: 1; }
     }
     dessiner(0);
   }
+  /* Couleurs du réseau lues dans le thème (sombre ou clair), relues quand le visiteur change de thème. */
+  var teinte = { trait: "143,191,154", noeud: "223,213,198" };
+  function lireTeinte() {
+    var cs = getComputedStyle(document.documentElement);
+    teinte.trait = cs.getPropertyValue("--reseau-trait").trim() || "143,191,154";
+    teinte.noeud = cs.getPropertyValue("--reseau-noeud").trim() || "223,213,198";
+  }
+  lireTeinte();
+  document.addEventListener("cm-theme", function () { lireTeinte(); dessiner(performance.now()); });
   function souffle(t) {
     var c = (t / 1000) % 10;
     return c < 4 ? 0.5 - 0.5 * Math.cos(Math.PI * c / 4) : 0.5 + 0.5 * Math.cos(Math.PI * (c - 4) / 6);
@@ -587,7 +597,7 @@ section { position: relative; z-index: 1; }
       for (var j = i + 1; j < noeuds.length; j++) {
         var b = noeuds[j], dx = a.x - b.x, dy = a.y - b.y, d = Math.sqrt(dx * dx + dy * dy);
         if (d < portee) {
-          ctx.strokeStyle = "rgba(143,191,154," + ((1 - d / portee) * (0.18 + 0.32 * s)).toFixed(3) + ")";
+          ctx.strokeStyle = "rgba(" + teinte.trait + "," + ((1 - d / portee) * (0.18 + 0.32 * s)).toFixed(3) + ")";
           ctx.lineWidth = 0.8;
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
         }
@@ -595,7 +605,7 @@ section { position: relative; z-index: 1; }
     }
     for (var k = 0; k < noeuds.length; k++) {
       var p = noeuds[k], lueur = 0.45 + 0.55 * (0.5 + 0.5 * Math.sin(t / 1600 + p.phase)) * (0.5 + s / 2);
-      ctx.fillStyle = "rgba(223,213,198," + lueur.toFixed(3) + ")";
+      ctx.fillStyle = "rgba(" + teinte.noeud + "," + lueur.toFixed(3) + ")";
       ctx.beginPath(); ctx.arc(p.x, p.y, p.r + s * 0.8, 0, Math.PI * 2); ctx.fill();
     }
     var g = ctx.createRadialGradient(largeur * .5, hauteur * .42, 0, largeur * .5, hauteur * .42, Math.max(largeur, hauteur) * (.35 + .12 * s));

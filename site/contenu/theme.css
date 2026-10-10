@@ -1,0 +1,77 @@
+/* Mode clair (10/10/2026). Le site est sombre par défaut ; il passe en clair si l'appareil est réglé en clair, ou si le
+   visiteur choisit le clair avec le bouton soleil/lune (choix gardé sur son appareil). « @clair » est remplacé à la
+   construction par :root[data-theme="clair"] et, dans @media (prefers-color-scheme: light), par
+   :root:not([data-theme="sombre"]). Contrastes vérifiés : texte 13,4:1, paragraphes 10,9:1, texte doux 6,5:1,
+   liens 5,7:1, ambre 4,8:1, blanc sur bouton vert 6,4:1 (minimum WCAG AA : 4,5:1). */
+@clair {
+  color-scheme: light;
+  --nuit: #F4F0E8;
+  --nuit-2: #FFFFFF;
+  --emeraude: #3A5F43;
+  --brume: #2D6A46;
+  --champagne: #1D2823;
+  --champagne-doux: #4D5952;
+  --verre: rgba(255, 255, 255, 0.72);
+  --verre-fort: rgba(255, 255, 255, 0.9);
+  --lisere: rgba(29, 40, 35, 0.12);
+  --lisere-fort: rgba(29, 40, 35, 0.24);
+  --ombre: rgba(29, 40, 35, 0.18);
+  --alerte: #9A5A16;
+  --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
+  --ombre-lueur: 0 18px 40px -22px rgba(29, 40, 35, 0.3), 0 0 0 1px rgba(45, 106, 70, 0.22);
+  --degrade: linear-gradient(90deg, #3A5F43, #6FA383, #3A5F43, #6FA383, #3A5F43);
+  --degrade-or: linear-gradient(90deg, #2D6A46, #3C7D57, #2D6A46, #2D6A46);
+  --reseau-trait: 45, 106, 70;
+  --reseau-noeud: 29, 40, 35;
+}
+@clair body { background-image: radial-gradient(1100px 600px at 90% -10%, rgba(58, 95, 67, 0.12), transparent 60%), radial-gradient(800px 500px at -10% 30%, rgba(58, 95, 67, 0.06), transparent 60%); }
+@clair p, @clair li, @clair th, @clair td { color: #2B3731; }
+
+/* En-têtes, menu mobile, bouton « retour en haut » */
+@clair .entete, @clair header.nav { background: rgba(244, 240, 232, 0.88); }
+@clair .menu-mobile { background: rgba(244, 240, 232, 0.97); }
+@clair .haut-page { background: rgba(255, 255, 255, 0.94); }
+
+/* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
+@clair .bouton, @clair .rappel-guide a, @clair .btn-or, @clair .liens .btn, @clair .menu-mobile .btn, @clair .test-cta { color: #FFFFFF; }
+@clair .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
+@clair .bouton:hover, @clair .btn-or:hover, @clair .test-cta:hover, @clair .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
+@clair .btn-verre:hover { color: #FFFFFF; }
+
+/* Blocs teintés : mêmes formes, teintes plus légères */
+@clair .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
+@clair th, @clair .comparatif th { background: rgba(58, 95, 67, 0.12); }
+@clair .type-etude { border-color: rgba(29, 40, 35, 0.25); }
+@clair .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
+@clair .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
+@clair .guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.16), rgba(255, 255, 255, 0.75), rgba(143, 191, 154, 0.16), rgba(58, 95, 67, 0.16)); background-size: 200% 100%; }
+@clair .prix .montant, @clair .chiffre b { background: linear-gradient(90deg, #1D2823, #2D6A46); -webkit-background-clip: text; background-clip: text; }
+@clair ul.non li::marker { color: #9A5A16; }
+@clair .urgence { background: rgba(154, 90, 22, 0.06); border-color: rgba(154, 90, 22, 0.35); }
+
+/* Accueil */
+@clair .hero::before { opacity: 0.45; }
+@clair .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
+@clair .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
+@clair .tuile { background: rgba(255, 255, 255, 0.7); }
+@clair .tuile:hover { background: rgba(255, 255, 255, 0.92); }
+@clair .tuile .icone { background: rgba(58, 95, 67, 0.1); border-color: rgba(45, 106, 70, 0.25); }
+@clair .orbe { background: radial-gradient(circle at 35% 30%, rgba(143, 191, 154, 0.7), rgba(58, 95, 67, 0.3) 55%, rgba(58, 95, 67, 0.05) 75%); }
+@clair .courbe g[stroke] { stroke: rgba(29, 40, 35, 0.12); }
+@clair .courbe path[stroke] { stroke: #2D6A46; }
+@clair .courbe circle { fill: #2D6A46; }
+
+/* Test de stress et d'anxiété */
+@clair .instrument { --t-leger: #2D6A46; --t-moyen: #6B5B3E; --t-modere: #9A5A16; --t-severe: #A93B2C; }
+@clair .option, @clair .test-bloc, @clair .priorites li { background: rgba(255, 255, 255, 0.7); }
+@clair .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); }
+@clair .option[aria-pressed="true"] { background: rgba(58, 95, 67, 0.14); }
+@clair .option .puce { border-color: rgba(45, 106, 70, 0.35); }
+@clair .test-profil { background: linear-gradient(135deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); }
+@clair .deblocage { background: linear-gradient(90deg, rgba(58, 95, 67, 0.16), rgba(255, 255, 255, 0.75), rgba(143, 191, 154, 0.16), rgba(58, 95, 67, 0.16)); }
+@clair .test-alerte { background: rgba(169, 59, 44, 0.06); border-color: rgba(169, 59, 44, 0.4); }
+@clair .jauge circle:first-child { stroke: rgba(29, 40, 35, 0.12); }
+
+/* Bouton du thème : la lune (passer en sombre) quand le site est clair */
+@clair .theme-bascule .soleil { display: none; }
+@clair .theme-bascule .lune { display: block; }
