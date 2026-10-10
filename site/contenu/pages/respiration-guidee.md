@@ -50,7 +50,7 @@ Ces audios ont été montés par Clarté Mentale : une musique de détente, deux
 | La voix | Aucune |
 
 - Les audios sont gratuits, sans inscription, et tu peux les télécharger pour les écouter hors connexion.
-- Ils ne remplacent pas un accompagnement : la formation payante « Quand le cerveau refuse de dormir » propose, elle, des audios guidés à écouter au lit ([voir ce qu'elle contient](/la-formation/)).
+- Si, une fois au lit, ce sont tes pensées qui tournent, le [guide gratuit](/guides-gratuits/) « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire au lit et un calendrier de 30 jours.
 
 ## Quand consulter ?
 

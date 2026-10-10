@@ -137,8 +137,18 @@ th, td { text-align: left; padding: 11px 13px; border-bottom: 1px solid var(--li
 th { background: rgba(58, 95, 67, 0.35); color: var(--champagne); font-weight: 600; }
 blockquote { margin: 20px 0; padding: 12px 18px; background: var(--verre); border-left: 3px solid var(--emeraude); border-radius: 10px; }
 sup a { text-decoration: none; font-size: 13px; }
-.sources { font-size: 15px; }
+.sources { font-size: 15px; margin-top: 40px; }
 .sources li { margin-bottom: 8px; word-break: break-word; }
+/* Sources repliées : une ligne discrète en bas de page, la liste complète au toucher (les CTA restent au premier plan). */
+.repli-sources { border: 1px solid var(--lisere); border-radius: 16px; background: var(--verre); }
+.repli-sources summary { position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; padding: 14px 48px 14px 18px; cursor: pointer; list-style: none; border-radius: 16px; }
+.repli-sources summary::-webkit-details-marker { display: none; }
+.repli-sources summary::after { content: ""; position: absolute; right: 20px; top: 50%; width: 8px; height: 8px; border-right: 2px solid var(--brume); border-bottom: 2px solid var(--brume); transform: translateY(-75%) rotate(45deg); transition: transform .25s; }
+.repli-sources[open] summary::after { transform: translateY(-25%) rotate(-135deg); }
+.repli-sources summary h2 { margin: 0; font-size: 17px; line-height: 1.4; }
+.resume-sources { font-size: 14px; line-height: 1.4; color: var(--champagne-doux); }
+.repli-sources ol { margin: 4px 0 0; padding: 0 20px 0 40px; }
+.repli-sources .note-sources { margin: 4px 0 0; padding: 0 18px 16px; }
 .type-source { display: inline-block; font-size: 12px; line-height: 1.45; padding: 1px 9px; margin: 2px 0 0 2px; border-radius: 999px; border: 1px solid var(--lisere-fort); color: var(--champagne-doux); background: var(--verre); }
 .type-officiel { border-color: rgba(143, 191, 154, 0.5); color: var(--brume); }
 .type-etude { border-color: rgba(223, 213, 198, 0.35); color: var(--champagne); }
@@ -216,11 +226,6 @@ sup a { text-decoration: none; font-size: 13px; }
 .deux-listes { display: grid; gap: 10px 26px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 ul.oui li::marker { content: "✓  "; color: var(--brume); }
 ul.non li::marker { content: "✕  "; color: #D9A26B; }
-.formation-encart { background: linear-gradient(90deg, rgba(223, 213, 198, 0.06), rgba(58, 95, 67, 0.2)); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(223, 213, 198, .3); border-radius: 22px; padding: 20px 24px; margin: 22px 0 30px; box-shadow: var(--ombre-2xl); transition: var(--transition); }
-.formation-encart:hover { box-shadow: var(--ombre-lueur); }
-.formation-encart .type { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: var(--brume); font-weight: 700; margin: 0; }
-.formation-encart h3 { margin: 4px 0 6px; }
-.formation-encart a { font-weight: 700; }
 
 /* Pied de page */
 .pied { border-top: 1px solid var(--lisere); color: var(--champagne-doux); font-size: 14px; margin-top: 70px; padding: 32px 0 44px; }
@@ -233,7 +238,7 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 /* Survol : hover:scale-105, transition 300 ms (souris uniquement) */
 @media (hover: hover) and (pointer: fine) {
   .bouton:hover, .carte:hover, .module:hover { transform: scale(1.05); }
-  .guide:hover, .formation-encart:hover { transform: scale(1.02); }
+  .guide:hover { transform: scale(1.02); }
 }
 
 @media (max-width: 600px) {

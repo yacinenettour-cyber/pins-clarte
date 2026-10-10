@@ -51,14 +51,15 @@ Ton profil dépend de la partie 2 : chaque domaine (nuits, travail, corps) a deu
 |---|---|---|
 | Nuits et ruminations | Pensées qui tournent au coucher, réveils la nuit ou trop tôt le matin | Des gestes pour le soir et la nuit, des articles sur les ruminations et le réveil à 4 h, le guide sommeil gratuit |
 | Épuisement lié au travail | Épuisement et prise de distance envers son travail, deux des trois dimensions du burn-out décrites par l'OMS [5] | En parler à son médecin traitant ou au médecin du travail [6], des articles sur le burn-out et la charge mentale |
-| Corps en alerte | Tensions musculaires, ventre noué, cœur qui s'accélère | Respiration lente, relaxation musculaire, activité physique, le plan anti-cortisol gratuit |
-| Pas d'axe dominant | Aucun domaine à 3 sur 6 ou plus | Garder tes repères, le plan anti-cortisol gratuit |
+| Corps en alerte | Tensions musculaires, ventre noué, cœur qui s'accélère | Respiration lente (avec les audios guidés), relaxation musculaire, activité physique |
+| Pas d'axe dominant | Aucun domaine à 3 sur 6 ou plus | Garder tes repères, refaire le test dans un mois |
 
 Quelques règles, pour que tu saches exactement ce que fait le test :
 
 - si un deuxième domaine atteint aussi 3 sur 6, il s'affiche sous ton profil ;
 - en cas d'égalité, l'ordre est : travail, puis nuits, puis corps, pour que des signes d'épuisement professionnel ne passent jamais au second plan ;
-- à partir de 10 au GAD-7, le résultat met la consultation en avant et ne propose pas la formation payante ;
+- le résultat ne propose qu'une ressource, le guide sommeil gratuit, et jamais la formation payante ;
+- à partir de 10 au GAD-7, le résultat met la consultation en avant et le guide n'est proposé qu'en complément ;
 - à partir de 15, aucun guide ni produit n'est proposé : seulement des conseils pour consulter et des articles.
 
 Les priorités proposées reprennent des gestes étudiés : écrire sa liste du lendemain avant d'éteindre [10], ne pas surveiller l'heure la nuit [11], se lever après 20 minutes d'éveil [12], la respiration lente [13], la relaxation musculaire progressive [14], l'activité physique [15] et des horaires de sommeil réguliers [16]. Le lien entre manque de sommeil et cortisol vient d'une étude de l'Université de Chicago [17], et la réaction du corps au stress est décrite par les Manuels MSD [18].

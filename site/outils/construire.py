@@ -186,7 +186,6 @@ def lire_article(chemin):
         "guide": entete.get("guide", "aucun"), "resume": resume, "intro": intro, "faq": faq,
         "suite": suite, "sources": sources, "corps_md": "\n\n".join(corps_md),
         "categorie": reglages.get("categorie", "stress"), "image": reglages.get("image", ""),
-        "formation": reglages.get("formation", False),
         "credit": reglages.get("credit", ""), "alt": reglages.get("alt", entete.get("image", "")),
         "date": entete.get("date", SITE["date_publication"]),
         "maj": entete.get("maj", entete.get("date", SITE["date_publication"])),
@@ -306,7 +305,16 @@ CSS_SITE = open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8").
 VERSION_CSS = hashlib.sha1(CSS_SITE.encode("utf-8")).hexdigest()[:8]
 MENU_MOBILE = [("/", "Accueil"), ("/test-stress-anxiete/", "Le test"), ("/articles/", "Articles"),
                ("/respiration-guidee/", "Respiration guidée"), ("/la-formation/", "La formation"),
-               ("/guides-gratuits/", "Guides gratuits"), ("/a-propos/", "À propos")]
+               ("/guides-gratuits/", "Guide gratuit"), ("/a-propos/", "À propos")]
+# Une seule offre sur tout le site (consigne de l'utilisateur du 10/10/2026 : jamais le choix entre le plan, le guide et
+# la formation au même endroit ; l'e-mail d'abord, le reste par e-mail). Le guide sommeil est le seul produit gratuit
+# relié à une séquence d'e-mails (guide envoyé tout de suite, conseils, puis présentation de la formation).
+OFFRE = "sommeil"
+# Quand le sujet de la page n'est pas le sommeil, on fait le pont vers le guide (il parle des soirs où le mental tourne).
+PONTS = {"stress": "Si ce stress te suit jusqu'au lit", "mental": "Si la charge mentale te suit jusqu'au lit"}
+SUITE_EMAIL = ("Tu le reçois tout de suite par e-mail, puis quelques conseils pour tes soirées et la présentation du "
+               "programme complet, si tu veux aller plus loin. Désinscription en un clic.")
+SOURCES_JS = open(os.path.join(RACINE, "contenu", "sources.js"), encoding="utf-8").read().strip()
 
 
 def balise_google(chemin):
@@ -397,7 +405,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <a class="saut" href="#contenu">Aller au contenu</a>
 <header class="entete"><div class="large">
 <a class="marque" href="/">{LOGO}{e(SITE['nom'])}</a>
-<nav class="nav" aria-label="Menu principal">{lien_nav('/articles/', 'Articles')}{lien_nav('/la-formation/', 'La formation')}{lien_nav('/guides-gratuits/', 'Guides gratuits')}{lien_nav('/a-propos/', 'À propos')}</nav>
+<nav class="nav" aria-label="Menu principal">{lien_nav('/articles/', 'Articles')}{lien_nav('/la-formation/', 'La formation')}{lien_nav('/guides-gratuits/', 'Guide gratuit')}{lien_nav('/a-propos/', 'À propos')}</nav>
 <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button>
 </div></header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
@@ -407,21 +415,23 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
 <script>
 {MENU_JS}
 </script>
+{f"<script>{chr(10)}{SOURCES_JS}{chr(10)}</script>" if 'class="repli-sources"' in contenu else ""}
 {balise_mesure()}
 </body>
 </html>
 """
 
 
-def carte_guide(cle, article=None, titre_niveau="h2"):
+def carte_guide(cle, article=None, titre_niveau="h2", pont=""):
     g = SITE["guides"][cle]
+    accroche = f"{pont} et que le mental s'emballe au moment de dormir, ce guide est fait pour ces soirs-là." if pont else g["accroche"]
     utm = f"utm_source=site&utm_medium={'article' if article else 'page'}&utm_campaign={article or 'site'}"
     if article:
         utm += "&utm_content=fin"
@@ -431,32 +441,22 @@ def carte_guide(cle, article=None, titre_niveau="h2"):
 <div>
 <p class="type">{e(g['type'])}</p>
 <{titre_niveau}>{e(g['titre'])}</{titre_niveau}>
-<p>{e(g['accroche'])}</p>
+<p>{e(accroche)}</p>
 <ul>{points}</ul>
 <a class="bouton" href="{g['url']}?{utm}">{e(g['bouton'])}</a>
-<small>Gratuit, sans engagement. Repères de bien-être, pas un avis médical.</small>
+<small>Gratuit. {e(SUITE_EMAIL)} Repères de bien-être, pas un avis médical.</small>
 </div>
 </aside>"""
 
 
-def rappel_guide(cle, slug):
+def rappel_guide(cle, slug, pont=""):
     """Rappel discret du guide gratuit au milieu d'un article (beaucoup de lecteurs n'arrivent pas à la fin)."""
     g = SITE["guides"][cle]
+    texte = f"{pont} : {g['rappel'].split(' : ', 1)[1]}" if pont and " : " in g["rappel"] else g["rappel"]
     lien = f"{g['url']}?utm_source=site&utm_medium=article&utm_campaign={slug}&utm_content=milieu"
     return f"""<aside class="rappel-guide" aria-label="{e(g['type'])}">
-<p><span class="type">{e(g['type'])}</span><strong>{e(g['titre'])}</strong> · {e(g['rappel'])}</p>
+<p><span class="type">{e(g['type'])}</span><strong>{e(g['titre'])}</strong> · {e(texte)}</p>
 <a href="{lien}">{e(g['bouton'])} <span aria-hidden="true">→</span></a>
-</aside>"""
-
-
-def encart_formation(slug):
-    """Encart discret en fin d'article : renvoie vers la page de présentation de la formation."""
-    f = SITE["formation"]
-    return f"""<aside class="formation-encart" aria-label="La formation">
-<p class="type">La formation complète</p>
-<h3>28 soirs pour calmer ton mental au coucher</h3>
-<p>Si les soirées difficiles reviennent souvent, le programme « {e(f['titre'])} » va plus loin que le guide gratuit : 6 modules de leçons courtes, des audios guidés à écouter au lit, le parcours des 28 soirs (une action par soir) et un kit de fiches à imprimer. {e(f['prix'])}, {e(f['prix_detail'])}, garantie de 7 jours.</p>
-<a href="/la-formation/">Découvrir le programme</a>
 </aside>"""
 
 
@@ -512,12 +512,15 @@ def avatar(taille, classe):
 
 
 def liste_sources(sources, objet="l'article"):
-    return ('<section class="sources"><h2 id="sources">Sources</h2><ol>'
+    """Sources repliées (consigne du 10/10/2026) : une ligne en bas de page, la liste complète au toucher ; les liens
+    [1] du texte et « 8 sources » en haut ouvrent la liste (sources.js). Le contenu reste dans la page (moteurs, IA)."""
+    return ('<section class="sources" id="sources"><details class="repli-sources"><summary><h2>Sources</h2>'
+            f'<span class="resume-sources">{e(bilan_sources(sources))}</span></summary><ol>'
             + "".join(f'<li id="source-{i + 1}"><a href="{e(u)}" rel="noopener">{e(t)}</a> '
                       f'<span class="type-source type-{type_source(u)[0]}">{e(type_source(u)[1])}</span></li>'
                       for i, (t, u) in enumerate(sources))
             + '</ol><p class="note-sources">Chaque source a été ouverte et relue pour vérifier qu\'elle dit bien '
-            f'ce que {objet} lui attribue. <a href="/methode-editoriale/">Comment les contenus sont écrits et vérifiés</a></p></section>')
+            f'ce que {objet} lui attribue. <a href="/methode-editoriale/">Comment les contenus sont écrits et vérifiés</a></p></details></section>')
 
 
 # ---------------------------------------------------------------- pages
@@ -533,10 +536,13 @@ def construire_article(a, tous):
         return f'<h2 id="{ident}">{m.group(1)}</h2>'
     corps_html = re.sub(r"<h2>(.*?)</h2>", ancre, corps_html)
     corps_html = appels_de_source(corps_html, len(a["sources"]))
-    if a["guide"] in SITE["guides"] and len(titres) >= 3:
+    # Une seule offre : le guide (sauf « guide: aucun », ex. burn-out : consulter d'abord), avec un pont si besoin.
+    offre = OFFRE if a["guide"] != "aucun" else None
+    pont = PONTS.get(a["categorie"], "")
+    if offre and len(titres) >= 3:
         # Après la 2e partie, avant le 3e intertitre.
         repere = f'<h2 id="{titres[2][0]}">'
-        corps_html = corps_html.replace(repere, rappel_guide(a["guide"], a["slug"]) + "\n" + repere, 1)
+        corps_html = corps_html.replace(repere, rappel_guide(offre, a["slug"], pont) + "\n" + repere, 1)
     intro_html = appels_de_source(md(a["intro"]), len(a["sources"])).replace("<p>", '<p class="chapo">', 1)
     sommaire = ""
     if len(titres) >= 3:
@@ -555,10 +561,8 @@ def construire_article(a, tous):
     suite_html = ""
     if a["suite"]:
         suite_html = f'<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>{appels_de_source(md(a["suite"]), len(a["sources"]))}'
-    if a["guide"] in SITE["guides"]:
-        suite_html += carte_guide(a["guide"], a["slug"], "h3")
-    if a["formation"] and SITE.get("formation"):
-        suite_html += encart_formation(a["slug"])
+    if offre:
+        suite_html += carte_guide(offre, a["slug"], "h3", pont)
     sources_html = liste_sources(a["sources"]) if a["sources"] else ""
     photo = ""
     if a.get("images"):
@@ -587,8 +591,8 @@ def construire_article(a, tous):
 {sommaire}
 {corps_html}
 {faq_html}
-{suite_html}
 {bloc_epingle(a)}
+{suite_html}
 {sources_html}
 <p class="avertissement">Cet article donne des repères de bien-être fondés sur les sources citées. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
 </article>
@@ -762,7 +766,7 @@ def construire_theme(cle, articles):
 {tableau}
 <h2 id="articles">Les articles du thème</h2>
 <div class="grille">{''.join(carte_article(a) for a in lot)}</div>
-{carte_guide(th['guide'], None, "h2") if th.get('guide') in SITE['guides'] else ''}
+{carte_guide(OFFRE, None, "h2", PONTS.get(cle, "")) if th.get('guide') in SITE['guides'] else ''}
 <p class="autres-themes">Autres thèmes : {' · '.join(f'<a href="/{t["slug"]}/">{e(t["nom"])}</a>' for t in autres)} · <a href="/articles/">tous les articles</a></p>
 </div>"""
     schema = {"@context": "https://schema.org", "@type": "CollectionPage", "name": th["titre"],
@@ -776,15 +780,17 @@ def construire_theme(cle, articles):
 
 
 def construire_guides():
-    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Guides gratuits", None)])
+    g = SITE["guides"][OFFRE]
+    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Guide gratuit", None)])
     contenu = f"""<div class="etroit">{nav_html}
-<h1>Les guides gratuits</h1>
-<p class="chapo">Deux ressources gratuites, à télécharger, pour passer de la lecture à la pratique.</p>
-{''.join(carte_guide(c, titre_niveau='h2') for c in SITE['guides'])}
+<h1>Le guide gratuit</h1>
+<p class="chapo">Pour passer de la lecture à la pratique, le soir, quand le mental tourne en boucle au moment de dormir.</p>
+{carte_guide(OFFRE, titre_niveau='h2')}
 <p>L'inscription se fait sur une page sécurisée hébergée par systeme.io. Tu peux te désinscrire en un clic à tout moment.</p>
 </div>"""
-    ecrire("guides-gratuits/index.html", page(f"Guides gratuits : sommeil et cortisol | {SITE['nom']}",
-                                              "Deux guides gratuits : « Quand le cerveau refuse de dormir » pour les ruminations du soir, et « Le plan anti-cortisol en 7 jours ».",
+    ecrire("guides-gratuits/index.html", page(f"Guide gratuit : {g['titre'][0].lower()}{g['titre'][1:]}",
+                                              f"Guide gratuit « {g['titre']} » : une routine anti-rumination à faire au lit, "
+                                              "des exercices pour calmer le mental et un calendrier de 30 jours.",
                                               "/guides-gratuits/", contenu, [schema_ariane], nav="/guides-gratuits/"))
 
 
@@ -831,9 +837,6 @@ def construire_formation():
 <p>Le programme est récent : je n'ai pas encore de témoignages à te montrer, et je préfère te le dire plutôt que d'en inventer. C'est pour ça que la garantie de 7 jours existe : tu testes chez toi, le soir, sans risque. — {e(SITE['auteur']['nom'])}, <a href="/a-propos/">Clarté Mentale</a></p>
 {prix}
 <section class="faq"><h2>Questions fréquentes</h2>{faq}</section>
-<h2>Pas encore prêt(e) ?</h2>
-<p>Commence par le guide gratuit : une routine anti-rumination à faire au lit et un calendrier de 30 jours, pour voir si cette approche te convient.</p>
-{carte_guide('sommeil', 'la-formation', 'h3')}
 <p class="avertissement">Ce programme propose des outils de bien-être. Il ne constitue ni un traitement médical ni une thérapie et ne remplace pas l'avis d'un professionnel de santé. Si tes difficultés de sommeil durent depuis plusieurs mois ou s'accompagnent d'un moral très bas, parles-en à ton médecin.</p>
 </div>"""
     schema_cours = {
@@ -870,7 +873,7 @@ def css_test():
 def script_test(articles, base=""):
     """Moteur du test (contenu/test/test.js) avec les titres d'articles et les guides du site."""
     donnees = (f"var ARTICLES = {json.dumps({a['slug']: a['titre'] for a in articles}, ensure_ascii=False)};\n"
-               f"  var GUIDES = {json.dumps({c: {k: g[k] for k in ('titre', 'type', 'rappel', 'bouton', 'url')} for c, g in SITE['guides'].items()}, ensure_ascii=False)};")
+               f"  var GUIDES = {json.dumps({c: {k: g[k] for k in ('titre', 'type', 'rappel', 'bouton', 'url')} for c, g in SITE['guides'].items() if c == OFFRE}, ensure_ascii=False)};")
     js = open(os.path.join(DOSSIER_TEST, "test.js"), encoding="utf-8").read()
     return js.replace("/*@DONNEES*/", donnees.replace("</", "<\\/")).replace("{{B}}", base)
 
@@ -1065,8 +1068,8 @@ def construire_fichiers_techniques(articles):
                f"- [Respiration guidée 4-6]({URL}/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), "
                "sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), "
                "pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme."]
-    lignes += ["", "## Guides gratuits", ""]
-    for g in SITE["guides"].values():
+    lignes += ["", "## Guide gratuit", ""]
+    for g in [SITE["guides"][OFFRE]]:
         lignes.append(f"- [{g['titre']}]({g['url']}): {g['accroche']} " + " ; ".join(g["points"]) + ".")
     if SITE.get("formation"):
         f = SITE["formation"]

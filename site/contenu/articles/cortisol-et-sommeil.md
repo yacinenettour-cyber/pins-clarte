@@ -118,7 +118,7 @@ Oui, elle se prend en charge. Quand les difficultés reviennent plus de trois fo
 
 ## Pour aller plus loin
 
-Retrouver des nuits calmes passe souvent par des journées mieux rythmées. Si tu veux un cadre simple, « Le plan anti-cortisol en 7 jours » te propose un geste par jour (lumière, respiration, assiette, mouvement, pauses, soirée, sommeil), 10 à 15 minutes par jour, avec un tableau de suivi à cocher. Il est gratuit, se télécharge immédiatement, et ne demande ni matériel ni régime.
+Retrouver des nuits calmes passe souvent par des journées mieux rythmées. Et si, une fois au lit, ce sont tes pensées qui t'empêchent de décrocher, le guide gratuit « Quand le cerveau refuse de dormir » est fait pour ces soirs-là : une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.
 
 ## Sources
 1. [Sommeil — Inserm, 2017 (mis à jour en 2024)](https://www.inserm.fr/dossier/sommeil/)

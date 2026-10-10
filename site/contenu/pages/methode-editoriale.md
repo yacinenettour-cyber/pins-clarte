@@ -46,7 +46,7 @@ La recherche documentaire et la rédaction s'appuient sur des outils numériques
 
 ## Quels sont les liens d'intérêt ?
 
-Clarté Mentale n'affiche **aucune publicité**, ne contient **aucun lien affilié** et ne publie **aucun article sponsorisé**. Le site propose deux guides gratuits et un programme payant, « Quand le cerveau refuse de dormir » (37 €), présentés comme tels à la fin de certains articles. Ces ressources sont des outils de bien-être : elles ne sont ni un traitement ni une thérapie, et les articles ne promettent jamais qu'elles guérissent quoi que ce soit.
+Clarté Mentale n'affiche **aucune publicité**, ne contient **aucun lien affilié** et ne publie **aucun article sponsorisé**. Le site propose un guide gratuit, présenté comme tel à la fin des articles, et un programme payant, « Quand le cerveau refuse de dormir » (37 €), présenté sur sa page et dans les e-mails reçus après l'inscription au guide. Ces ressources sont des outils de bien-être : elles ne sont ni un traitement ni une thérapie, et les articles ne promettent jamais qu'elles guérissent quoi que ce soit.
 
 ## Comment signaler une erreur ?
 

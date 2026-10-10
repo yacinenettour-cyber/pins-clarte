@@ -165,7 +165,7 @@ Selon une endocrinologue de la Cleveland Clinic, aucune preuve ne montre que ces
 
 ## Pour aller plus loin
 
-Tu n'as pas besoin de tout changer d'un coup pour sentir une différence. Si tu veux un cadre simple pour t'y mettre, « Le plan anti-cortisol en 7 jours » te guide pas à pas : un geste par jour (lumière, respiration, assiette, mouvement, pauses, soirée, sommeil), 10 à 15 minutes par jour, et un tableau de suivi à cocher pour repérer ce qui te fait du bien. Il est gratuit, se télécharge immédiatement, et ne demande ni matériel ni régime.
+Tu n'as pas besoin de tout changer d'un coup pour sentir une différence : commence par le levier qui te parle le plus et garde-le une semaine. Et si le soir, au moment où ton cortisol devrait redescendre, c'est ton mental qui repart, le guide gratuit « Quand le cerveau refuse de dormir » est fait pour ces soirs-là : une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.
 
 ## Sources
 1. [Sommeil — Inserm, 2017 (mis à jour en 2024)](https://www.inserm.fr/dossier/sommeil/)

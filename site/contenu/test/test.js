@@ -52,7 +52,7 @@
         "Réveillé(e) depuis plus de 20 minutes ? L'Institut national du sommeil et de la vigilance conseille alors de te lever et de faire autre chose."
       ],
       articles: ["ruminations-le-soir", "reveil-4h-du-matin", "cortisol-et-sommeil"],
-      guide: "sommeil", formation: true
+      guide: "sommeil"
     },
     travail: {
       nom: "Épuisement lié au travail",
@@ -64,7 +64,7 @@
         "Chaque soir, 5 minutes de respiration lente pour marquer la fin de la journée de travail : inspire 4 secondes, expire 6 secondes. Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente (synthèse de 223 études, 2022). <a href=\"" + B + "/respiration-guidee/\">Écouter l'audio guidé</a>"
       ],
       articles: ["signes-du-burn-out", "charge-mentale", "calmer-son-systeme-nerveux"],
-      guide: "cortisol", complement: true
+      guide: "sommeil", complement: true, pont: "Si le travail te suit jusqu'au lit"
     },
     corps: {
       nom: "Corps en alerte",
@@ -76,7 +76,7 @@
         "Bouge chaque jour, même en marchant : une synthèse de 97 revues (Université d'Australie-Méridionale, 2023) montre que l'activité physique réduit l'anxiété et la détresse psychologique."
       ],
       articles: ["calmer-son-systeme-nerveux", "nerf-vague", "baisser-son-cortisol-naturellement"],
-      guide: "cortisol",
+      guide: "sommeil", pont: "Si cette tension te suit jusqu'au lit",
       prudence: "Une douleur dans la poitrine, un essoufflement inhabituel ou un malaise ne doivent pas être mis d'office sur le compte du stress : appelle le 15 ou le 112."
     },
     equilibre: {
@@ -89,7 +89,7 @@
         "Refais ce test dans un mois, ou après une période chargée, pour suivre ton évolution."
       ],
       articles: ["routine-du-soir-anti-stress", "cortisol-hormone-du-stress", "baisser-son-cortisol-naturellement"],
-      guide: "cortisol"
+      guide: "sommeil"
     }
   };
   var ORDRE_AXES = ["travail", "nuit", "corps"];
@@ -133,21 +133,22 @@
     if (retour) retour.addEventListener("click", function () { etape--; afficherQuestion(); });
   }
 
+  /* Une seule offre (consigne du 10/10/2026) : le guide sommeil, relié aux e-mails ; jamais la formation dans le résultat. */
   function blocOffre(cleProfil, p, n) {
     if (n.cle === "severe") return "";
     var g = GUIDES[p.guide];
     if (!g) return "";
     var contenu = "profil-" + cleProfil + "-" + n.cle;
+    var detail = g.rappel.split(" : ").slice(1).join(" : ");
+    var texte = p.pont && detail
+      ? p.pont + " : <strong>" + g.titre + "</strong> (" + g.type.toLowerCase() + "), " + detail
+      : "<strong>" + g.titre + "</strong> (" + g.type.toLowerCase() + "), " + g.rappel.charAt(0).toLowerCase() + g.rappel.slice(1);
     var avant = p.complement || n.cle === "modere"
-      ? "<p><strong>En complément, jamais à la place d'un avis médical :</strong> " + g.titre + ", " + g.rappel.charAt(0).toLowerCase() + g.rappel.slice(1) + "</p>"
-      : "<p><strong>" + g.titre + "</strong> (" + g.type.toLowerCase() + ") : " + g.rappel.charAt(0).toLowerCase() + g.rappel.slice(1) + "</p>";
-    var html = '<div class="deblocage">' + avant +
+      ? "<p><strong>En complément, jamais à la place d'un avis médical.</strong> " + texte + "</p>"
+      : "<p>" + texte + "</p>";
+    return '<div class="deblocage">' + avant +
       '<a class="test-cta" href="' + utm(g.url, contenu) + '">' + g.bouton + ' <span aria-hidden="true">→</span></a>' +
-      '<small>Gratuit. Tu laisses ton e-mail sur une page sécurisée (systeme.io) et le guide se télécharge. Désinscription en un clic.</small>';
-    if (p.formation && n.cle !== "modere") {
-      html += '<small>Pour aller plus loin, le programme payant « Quand le cerveau refuse de dormir » t\'accompagne sur 28 soirs : <a href="' + B + '/la-formation/">voir ce qu\'il contient</a>.</small>';
-    }
-    return html + '</div>';
+      '<small>Gratuit. Tu laisses ton e-mail sur une page sécurisée (systeme.io) et tu reçois le guide tout de suite, puis quelques conseils pour tes soirées. Désinscription en un clic.</small></div>';
   }
 
   function afficherResultat() {

@@ -159,7 +159,7 @@ Non, selon les données actuelles : une revue systématique de 58 études a conc
 
 ## Pour aller plus loin
 
-Comprendre ton cortisol, c'est déjà changer de regard : le but n'est pas de le faire disparaître, mais de retrouver une courbe nette, plus haute le matin et apaisée le soir. Si tu veux passer à la pratique sans te disperser, « Le plan anti-cortisol en 7 jours » est un guide gratuit à télécharger tout de suite : un geste simple par jour (lumière, respiration, assiette, mouvement, pauses, soirée, sommeil), 10 à 15 minutes par jour, et un tableau de suivi à cocher pour voir ce qui te réussit. Sans matériel, sans régime.
+Comprendre ton cortisol, c'est déjà changer de regard : le but n'est pas de le faire disparaître, mais de retrouver une courbe nette, plus haute le matin et apaisée le soir. Pour passer à la pratique, les leviers étudiés sont détaillés dans [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/). Et si ce stress te suit jusqu'au lit, le guide gratuit « Quand le cerveau refuse de dormir » est fait pour ces soirs-là : une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.
 
 ## Sources
 1. [Présentation des glandes surrénales — Manuels MSD pour le grand public](https://www.msdmanuals.com/fr/accueil/troubles-hormonaux-et-m%C3%A9taboliques/troubles-des-glandes-surr%C3%A9nales/pr%C3%A9sentation-des-glandes-surr%C3%A9nales)
