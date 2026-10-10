@@ -328,9 +328,12 @@ CSS_SITE = (open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8")
             + THEME_CSS + "\n")
 # Version dans l'adresse de la feuille de style : après une mise en ligne, jamais de page neuve avec l'ancien style en cache.
 VERSION_CSS = hashlib.sha1(CSS_SITE.encode("utf-8")).hexdigest()[:8]
-MENU_MOBILE = [("/", "Accueil"), ("/test-stress-anxiete/", "Le test"), ("/articles/", "Articles"),
-               ("/respiration-guidee/", "Respiration guidée"), ("/la-formation/", "La formation"),
-               ("/guides-gratuits/", "Guide gratuit"), ("/a-propos/", "À propos"), ("/recherche/", "Rechercher")]
+# Menus communs à toutes les pages, accueil compris (mêmes liens, même ordre : RGAA 12.2) ; le guide n'y figure
+# qu'une fois, en bouton. Sans JavaScript, le bouton menu est remplacé par un lien vers la navigation du pied de page.
+NAV_PRINCIPALE = [("/test-stress-anxiete/", "Le test"), ("/articles/", "Articles"), ("/exercices-respiration/", "Respiration"),
+                  ("/la-formation/", "La formation"), ("/a-propos/", "À propos")]
+MENU_MOBILE = [("/", "Accueil")] + NAV_PRINCIPALE + [("/recherche/", "Rechercher")]
+MENU_SANS_JS = '<a class="menu-sans-js" href="#navigation-pied">Menu</a>'
 # Une seule offre sur tout le site (consigne de l'utilisateur du 10/10/2026 : jamais le choix entre le plan, le guide et
 # la formation au même endroit ; l'e-mail d'abord, le reste par e-mail). Le guide sommeil est le seul produit gratuit
 # relié à une séquence d'e-mails (guide envoyé tout de suite, conseils, puis présentation de la formation).
@@ -340,6 +343,12 @@ PONTS = {"stress": "Si ce stress te suit jusqu'au lit", "mental": "Si la charge 
 SUITE_EMAIL = ("Tu le reçois tout de suite par e-mail, puis quelques conseils pour tes soirées et la présentation du "
                "programme complet, si tu veux aller plus loin. Désinscription en un clic.")
 SOURCES_JS = open(os.path.join(RACINE, "contenu", "sources.js"), encoding="utf-8").read().strip()
+
+
+def lien_guide_menu(contenu, medium="menu", campagne="site"):
+    """Adresse d'inscription au guide depuis les menus (suivi par emplacement dans systeme.io)."""
+    return (f"{SITE['guides'][OFFRE]['url']}?utm_source=site&utm_medium={medium}&utm_campaign={campagne}"
+            f"&utm_content={contenu}")
 
 
 # Rappel d'urgence en bas de chaque article et page santé (numéros vérifiés sur Service-Public.fr et 3114.fr).
@@ -414,7 +423,7 @@ def pied(base="", conteneur="large"):
                     + "".join(f"<li>{lien(h, t)}</li>" for h, t in liens) + "</ul></div>"
                     for ident, titre, liens in colonnes)
     return insecables(f"""<footer class="pied"><div class="{conteneur}">
-<nav class="pied-colonnes" aria-label="Liens du pied de page">{blocs}</nav>
+<nav class="pied-colonnes" id="navigation-pied" aria-label="Liens du pied de page">{blocs}</nav>
 <p class="pied-urgence">Les contenus de ce site sont des informations de bien-être : ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24). <a href="{base}/ressources-urgence/">Toutes les ressources d'urgence</a></p>
 <p class="pied-bas">© <span id="annee">{datetime.date.today().year}</span> {e(SITE['nom'])}</p>
 </div></footer>""")
@@ -430,7 +439,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
         f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False, separators=(",", ":"))}</script>'
         for s in schemas)
     def lien_nav(href, texte):
-        courant = ' aria-current="page"' if href == nav else ""
+        courant = ' aria-current="page"' if href in (nav, chemin) else ""
         return f'<a href="{href}"{courant}>{texte}</a>'
     return f"""<!doctype html>
 <html lang="fr">
@@ -469,11 +478,12 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <a class="saut" href="#contenu">Aller au contenu</a>
 <header class="entete"><div class="large">
 <a class="marque" href="/">{LOGO}{e(SITE['nom'])}</a>
-<nav class="nav" aria-label="Menu principal">{lien_nav('/articles/', 'Articles')}{lien_nav('/la-formation/', 'La formation')}{lien_nav('/guides-gratuits/', 'Guide gratuit')}{lien_nav('/a-propos/', 'À propos')}{lien_nav('/recherche/', 'Rechercher')}</nav>
-<div class="actions-entete">{THEME_BOUTON}<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
+<nav class="nav" aria-label="Menu principal">{"".join(lien_nav(h, t) for h, t in NAV_PRINCIPALE)}<a class="bouton bouton-entete" href="{e(lien_guide_menu('entete'))}">Guide gratuit</a></nav>
+<div class="actions-entete">{THEME_BOUTON}{MENU_SANS_JS}<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
 </div></header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
 {"".join(f'<a href="{h}" tabindex="-1"' + (' aria-current="page"' if h == chemin else "") + f'>{t}</a>' for h, t in MENU_MOBILE)}
+<a class="bouton" href="{e(lien_guide_menu('menu-mobile'))}" tabindex="-1">Recevoir le guide gratuit</a>
 </nav>
 <main id="contenu">
 {contenu}
@@ -725,6 +735,14 @@ def construire_accueil(articles):
     """Accueil : page unique « biophilic dark » (contenu/accueil.html), reliée aux articles et à la formation."""
     source = open(os.path.join(RACINE, "contenu", "accueil.html"), encoding="utf-8").read()
     source = source.replace("<!--@PIED-->", pied("{{B}}", "wrap"))
+    source = source.replace('<div id="test-ecran"><noscript><p>Ce test a besoin de JavaScript pour calculer ton score dans ton navigateur.</p></noscript></div>',
+                            f'<div id="test-ecran">{test_sans_js("{{B}}")}</div>')
+    # Menus de l'accueil = menus communs ; « Le test » mène au test intégré à la page.
+    accueil = lambda h: "#test" if h == "/test-stress-anxiete/" else "{{B}}" + h
+    source = (source.replace("<!--@NAV_LIENS-->", "\n      ".join(f'<a href="{accueil(h)}">{t}</a>' for h, t in NAV_PRINCIPALE))
+              .replace("<!--@MENU_LIENS-->", "\n  ".join(f'<a href="{accueil(h)}" tabindex="-1"' + (' aria-current="page"' if h == "/" else "")
+                                                         + f'>{t}</a>' for h, t in MENU_MOBILE))
+              .replace("<!--@MENU_SANS_JS-->", MENU_SANS_JS))
     corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", "")
              .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles))
              .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS)
@@ -954,9 +972,36 @@ def construire_formation():
 # ---------------------------------------------------------------- test stress et anxiété (GAD-7 + profil)
 
 DOSSIER_TEST = os.path.join(RACINE, "contenu", "test")
-INSTRUMENT_TEST = """<div class="instrument" id="test-stress" aria-live="polite">
+def test_sans_js(base=""):
+    """Version papier du GAD-7 si JavaScript ne fonctionne pas : mêmes questions mot pour mot que le test (lues dans
+    test.js), calcul du score, seuils du manuel et conseils ; le guide n'est proposé que sous 15 points (comme le test)."""
+    js = open(os.path.join(DOSSIER_TEST, "test.js"), encoding="utf-8").read()
+    questions = re.findall(r'\{ partie: 1, texte: "([^"]+)" \}', js)
+    echelle = json.loads(re.search(r"var ECHELLE = (\[.*?\]);", js).group(1))
+    consigne = re.search(r'var CONSIGNE_GAD = "([^"]+)";', js).group(1)
+    assert len(questions) == 7 and len(echelle) == 4
+    g = SITE["guides"][OFFRE]
+    lien_guide = f"{g['url']}?utm_source=site&utm_medium=test&utm_campaign=test-stress&utm_content=sans-javascript"
+    return f"""<noscript><div class="test-papier">
+<p><strong>Ton navigateur n'exécute pas JavaScript : voici la version papier du questionnaire GAD-7.</strong> Note tes réponses sur une feuille, puis additionne tes points. Rien n'est envoyé.</p>
+<p>{e(consigne)}</p>
+<ol class="liste">{"".join(f"<li>{e(q)}</li>" for q in questions)}</ol>
+<p>Pour chaque question : {" ; ".join(f"« {e(x)} » = {i} point{'s' if i > 1 else ''}" for i, x in enumerate(echelle))}. Ton score est la somme des 7 réponses, de 0 à 21.</p>
+<ul class="liste">
+<li><strong>0 à 4</strong> : peu de symptômes d'anxiété ces deux dernières semaines.</li>
+<li><strong>5 à 9</strong> : symptômes d'anxiété légers, fréquents en période chargée.</li>
+<li><strong>10 à 14</strong> : symptômes modérés. C'est le seuil à partir duquel les auteurs du questionnaire recommandent d'en parler à un professionnel : ton médecin traitant ou un psychologue.</li>
+<li><strong>15 à 21</strong> : symptômes sévères, un signal d'alerte. Prends rendez-vous avec ton médecin sans attendre.</li>
+</ul>
+<p>Ce questionnaire ne pose pas de diagnostic. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
+<p>Si ton score est inférieur à 15 et que le mental s'emballe au moment de dormir, le guide gratuit « {e(g['titre'])} » propose une routine anti-rumination à faire au lit : <a href="{e(lien_guide)}">{e(g['bouton'])}</a>. Tu peux aussi lire <a href="{base}/ruminations-le-soir/">ruminations le soir : 6 techniques</a> ou <a href="{base}/calmer-son-systeme-nerveux/">calmer son système nerveux</a>.</p>
+</div></noscript>"""
+
+
+def instrument_test(base=""):
+    return f"""<div class="instrument" id="test-stress" aria-live="polite">
 <div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><i id="test-barre"></i></div></div>
-<div id="test-ecran"><noscript><p>Ce test a besoin de JavaScript pour calculer ton score dans ton navigateur.</p></noscript></div>
+<div id="test-ecran">{test_sans_js(base)}</div>
 </div>"""
 
 
@@ -1149,7 +1194,7 @@ def construire_recherche():
 </form>
 <p class="recherche-etat" id="recherche-etat" role="status"></p>
 <ol class="recherche-resultats" id="recherche-resultats"></ol>
-<noscript><p>La recherche a besoin de JavaScript.</p></noscript>
+<noscript><p>La recherche a besoin de JavaScript. Tu peux retrouver tous les sujets sur la page <a href="/articles/">Articles</a> et dans le <a href="/glossaire/">glossaire</a>.</p></noscript>
 <p>Tu peux aussi parcourir <a href="/articles/">tous les articles</a>, le <a href="/glossaire/">glossaire</a> ou les <a href="/questions-frequentes/">questions fréquentes</a>.</p>
 </div>
 <script>{js}</script>"""
@@ -1199,7 +1244,7 @@ def construire_urgences():
 
 def construire_test(articles):
     return construire_page_outil("test-stress-anxiete.md", "/test-stress-anxiete/", "Test stress et anxiété",
-                                 {"{{TEST}}": INSTRUMENT_TEST}, "2 minutes", tete=f"<style>{css_test()}</style>",
+                                 {"{{TEST}}": instrument_test()}, "2 minutes", tete=f"<style>{css_test()}</style>",
                                  script=script_test(articles))
 
 

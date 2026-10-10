@@ -25,7 +25,7 @@
   /* Fermeture sans animation (lien vers une partie de la page, retour arrière) : la page apparaît tout de suite. */
   .menu-mobile.instant, .menu-mobile.instant a { transition: none !important; }
   /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
-  .menu-mobile .btn { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
+  .menu-mobile .btn, .menu-mobile .bouton { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
   /* Menu ouvert : un glissement commencé sur l'en-tête ne fait pas défiler la page du dessous. */
   .menu-ouvert header { touch-action: none; }
 }
@@ -60,4 +60,11 @@
   .pied-colonnes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 20px; }
   .pied-colonnes > div:last-child { grid-column: 1 / -1; }
   .pied-colonnes > div:last-child ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+}
+
+/* Sans JavaScript, le bouton menu ne peut pas s'ouvrir : un lien « Menu » mène à la navigation du pied de page. */
+.menu-sans-js { display: none; }
+@media (max-width: 860px) {
+  html:not(.js) .burger { display: none; }
+  html:not(.js) .menu-sans-js { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--lisere-fort); color: var(--champagne); font: 600 15px/1 var(--texte); text-decoration: none; }
 }

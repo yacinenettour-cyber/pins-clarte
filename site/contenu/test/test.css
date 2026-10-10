@@ -63,3 +63,9 @@
   .etape, .resultat { animation: none; }
   .barre i, .option, .test-cta { transition: none; }
 }
+
+/* Sans JavaScript : version papier du GAD-7 (pas de barre de progression). */
+html:not(.js) .instrument .progression { display: none; }
+.test-papier { display: grid; gap: 12px; font-size: 16px; line-height: 1.6; }
+.test-papier p, .test-papier ol, .test-papier ul { margin: 0; }
+.test-papier a { color: var(--brume); font-weight: 600; }

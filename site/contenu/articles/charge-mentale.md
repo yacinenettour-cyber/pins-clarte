@@ -121,6 +121,8 @@ Consulte ton médecin traitant si ta fatigue persiste malgré les changements, o
 
 Si ton travail est en cause, tu peux aussi demander à voir le médecin du travail à tout moment, y compris pendant un arrêt, et sans en informer ton employeur si la visite a lieu en dehors des heures de travail [6]. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 
+Quand la charge mentale s'accompagne d'inquiétudes permanentes, le [test d'anxiété gratuit](/test-stress-anxiete/) t'aide à savoir si ces symptômes justifient d'en parler à un professionnel.
+
 ## Questions fréquentes
 ### Qui a inventé l'expression « charge mentale » ?
 Dans le sens où on l'emploie aujourd'hui, c'est la sociologue Monique Haicault, dans un article publié en 1984 dans la revue *Sociologie du travail* [1]. Elle y décrivait la tension constante de femmes qui géraient à la fois leur emploi et leur foyer. Elle soulignait que ces deux sphères interfèrent et se multiplient au lieu de simplement s'additionner [1].

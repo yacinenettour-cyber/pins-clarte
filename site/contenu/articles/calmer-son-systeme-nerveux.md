@@ -122,6 +122,8 @@ Consulte ton médecin traitant si ton anxiété dure, revient sous forme de cris
 
 Une douleur dans la poitrine ou un malaise inhabituel doit faire appeler le 15 ou le 112 : ne fais pas le diagnostic toi-même. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 
+Pour savoir où tu en es, le [questionnaire GAD-7](/test-stress-anxiete/), un outil validé de repérage de l'anxiété, se remplit en ligne en 2 minutes ; tes réponses restent sur ton appareil.
+
 ## Questions fréquentes
 ### Comment se calmer en une minute ?
 Fais deux ou trois soupirs physiologiques : une inspiration par le nez, une petite inspiration en plus pour remplir les poumons, puis une longue expiration par la bouche. C'est le geste le plus facile à placer n'importe où. Dans l'étude de référence, la pratique durait 5 minutes par jour [2].

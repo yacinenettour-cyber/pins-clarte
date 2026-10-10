@@ -112,6 +112,8 @@ Consulte ton médecin traitant ou le médecin du travail dès que ta fatigue per
 
 Cet article t'informe, il ne remplace pas un avis médical : seul un médecin peut évaluer ta situation.
 
+Si l'épuisement s'accompagne d'inquiétudes ou de tensions, le [test d'anxiété GAD-7](/test-stress-anxiete/) mesure tes symptômes d'anxiété des deux dernières semaines ; il ne mesure pas le burn-out et ne remplace pas l'avis de ton médecin.
+
 ## Questions fréquentes
 ### Le burn-out est-il une maladie ?
 Pour l'OMS, non : la CIM-11 le décrit comme un phénomène lié au travail, pas comme une maladie [1]. La HAS rappelle qu'il demande quand même une démarche médicale, car il peut s'accompagner d'un trouble anxieux ou dépressif [2]. Ce n'est donc ni « rien », ni un caprice.

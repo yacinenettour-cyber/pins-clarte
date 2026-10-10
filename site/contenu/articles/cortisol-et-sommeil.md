@@ -99,6 +99,8 @@ Consulte ton médecin si tes difficultés de sommeil reviennent plus de trois fo
 
 Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit et joignable 24 h/24. En cas de danger immédiat, compose le 15 ou le 112.
 
+Si le stress t'empêche de dormir, le [test d'anxiété gratuit (GAD-7)](/test-stress-anxiete/) te donne en 2 minutes un score et des repères pour savoir s'il vaut mieux en parler à ton médecin.
+
 ## Questions fréquentes
 
 ### Le manque de sommeil fait-il monter le cortisol ?

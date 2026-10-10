@@ -107,6 +107,8 @@ Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro nationa
 
 Cet article t'informe, il ne remplace pas l'avis d'un médecin.
 
+Pour situer ce que tu ressens, tu peux passer le [test d'anxiété GAD-7](/test-stress-anxiete/) : 2 minutes, un score de 0 à 21 et des repères pour savoir quand consulter.
+
 ## Questions fréquentes
 
 ### Est-ce normal de se réveiller vers 4 h du matin ?

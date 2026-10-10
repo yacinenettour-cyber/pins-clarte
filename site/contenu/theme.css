@@ -33,7 +33,7 @@
 @clair .haut-page { background: rgba(255, 255, 255, 0.94); }
 
 /* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
-@clair .bouton, @clair .rappel-guide a, @clair .btn-or, @clair .liens .btn, @clair .menu-mobile .btn, @clair .test-cta { color: #FFFFFF; }
+@clair .bouton, @clair .rappel-guide a, @clair .btn-or, @clair .liens .btn, @clair .menu-mobile .btn, @clair .menu-mobile .bouton, @clair .nav .bouton-entete, @clair .test-cta { color: #FFFFFF; }
 @clair .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
 @clair .bouton:hover, @clair .btn-or:hover, @clair .test-cta:hover, @clair .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
 @clair .btn-verre:hover { color: #FFFFFF; }

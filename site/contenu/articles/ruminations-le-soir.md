@@ -126,6 +126,8 @@ Si tes pensées deviennent des idées noires, appelle le 3114, le numéro nation
 
 Cet article t'informe, il ne remplace pas l'avis d'un médecin ou d'un psychologue.
 
+Si tes pensées tournent aussi en journée, le [test d'anxiété gratuit (GAD-7)](/test-stress-anxiete/) t'aide à faire le point en 2 minutes : il ne pose pas de diagnostic, mais il indique si tes symptômes justifient d'en parler à un professionnel.
+
 ## Questions fréquentes
 
 ### Pourquoi mes pensées tournent-elles plus le soir qu'en journée ?

@@ -94,6 +94,8 @@ Bon à savoir : face à une insomnie, l'Inserm indique que les thérapies cognit
 
 Cet article t'informe, il ne remplace pas un avis médical.
 
+Si tu repousses le coucher parce que le lit rime avec inquiétudes, le [test de stress et d'anxiété](/test-stress-anxiete/) t'aide à y voir plus clair en 2 minutes, sans rien envoyer.
+
 ## Questions fréquentes
 ### Pourquoi parle-t-on de « revanche » du soir ?
 L'expression anglaise *revenge bedtime procrastination* viendrait d'une formule chinoise exprimant la frustration face à de longues journées de travail sans temps libre [3]. Veiller devient une façon de reprendre la main sur sa journée. Le prix à payer, c'est le sommeil.

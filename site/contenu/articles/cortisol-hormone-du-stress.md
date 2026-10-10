@@ -140,6 +140,8 @@ Si tu prends des corticoïdes, ne les arrête jamais de toi-même : la baisse do
 
 Appelle le 15 (ou le 112) en cas de douleur abdominale sévère, de faiblesse intense ou de malaise : chez une personne atteinte d'insuffisance surrénalienne, ces signes peuvent annoncer une crise surrénalienne [8]. Et si le stress s'accompagne d'idées noires, le 3114, numéro national de prévention du suicide, répond 24 h/24.
 
+Le cortisol ne se mesure pas avec un questionnaire, mais le [test de stress et d'anxiété](/test-stress-anxiete/) t'aide à faire le point sur tes symptômes en 2 minutes, avec des repères pour savoir quand consulter.
+
 ## Questions fréquentes
 
 ### Le cortisol est-il mauvais pour la santé ?
