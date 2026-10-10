@@ -28,8 +28,12 @@ Site francophone écrit par Yacine (fondateur de clarté mentale), qui n'est pas
 ## Outils
 
 - [Test de stress et d'anxiété](https://www.contactapaisement-mental.fr/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.
+- [Exercices de respiration](https://www.contactapaisement-mental.fr/exercices-respiration/): minuteur visuel gratuit pour la cohérence cardiaque (5-5), la respiration carrée (4-4-4-4) et la 4-7-8, avec les études qui les ont testées et leurs limites.
 - [Respiration guidée 4-6](https://www.contactapaisement-mental.fr/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme.
 - [Ressources d'urgence](https://www.contactapaisement-mental.fr/ressources-urgence/): numéros d'urgence (15, 112, 114), prévention du suicide (3114), lignes d'écoute (SOS Amitié, Suicide Écoute, Fil Santé Jeunes, 3040, Nightline) et Mon soutien psy, vérifiés sur les sites officiels.
+- [Glossaire](https://www.contactapaisement-mental.fr/glossaire/): définitions sourcées (cortisol, nerf vague, cohérence cardiaque, charge mentale, burn-out, GAD-7…).
+- [Questions fréquentes](https://www.contactapaisement-mental.fr/questions-frequentes/): qui écrit le site, urgence, test, données personnelles, guide et programme.
+- [Accessibilité](https://www.contactapaisement-mental.fr/accessibilite/): déclaration d'accessibilité et résultats des tests.
 
 ## Guide gratuit
 
