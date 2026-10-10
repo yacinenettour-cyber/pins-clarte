@@ -39,6 +39,7 @@
   --verre-fort: rgba(255, 255, 255, 0.06);
   --lisere: rgba(223, 213, 198, 0.10);
   --lisere-fort: rgba(223, 213, 198, 0.22);
+  --trait-champ: rgba(223, 213, 198, 0.45); /* contour des champs de saisie : contraste d'au moins 3:1 (RGAA 3.3) */
   --ombre: rgba(0, 0, 0, 0.45);
   --titre: "Syne", "Syne repli A", "Syne repli R", "Segoe UI", system-ui, sans-serif;
   --texte: "Plus Jakarta Sans", "Jakarta repli A", "Jakarta repli R", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -68,6 +69,10 @@ body {
 a { color: var(--brume); text-underline-offset: 3px; }
 a:hover { color: var(--champagne); }
 :focus-visible { outline: 2px solid var(--brume); outline-offset: 3px; border-radius: 6px; }
+/* Champs de saisie : contour au focus même quand le navigateur n'applique pas :focus-visible (champ date de Chromium). */
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--brume); outline-offset: 2px; }
+/* Texte indicatif des champs : couleur du site (le gris par défaut du navigateur tombait à 3,6:1 en mode sombre, RGAA 3.2). */
+::placeholder { color: var(--champagne-doux); opacity: 1; }
 img { max-width: 100%; height: auto; display: block; }
 .saut { position: absolute; left: -999px; }
 .saut:focus { left: 16px; top: 16px; background: var(--nuit-2); color: var(--champagne); padding: 8px 12px; z-index: 30; }
@@ -82,11 +87,12 @@ img { max-width: 100%; height: auto; display: block; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--champagne); }
 .nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--brume); }
 .nav { align-items: center; }
+.nav ul { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; list-style: none; margin: 0; padding: 0; }
 .nav .bouton-entete { padding: 9px 16px; font-size: 14px; color: var(--nuit); }
 .nav .bouton-entete:hover { color: var(--nuit); }
 /* Entre le téléphone et l'ordinateur, liens et bouton tiennent sur la ligne du logo (comme sur l'accueil). */
-@media (max-width: 1080px) { .nav { gap: 4px 16px; font-size: 14px; } .nav .bouton-entete { padding: 8px 13px; } }
-@media (max-width: 960px) { .nav { gap: 4px 12px; } .entete .large { gap: 8px 14px; } }
+@media (max-width: 1080px) { .nav { font-size: 14px; } .nav ul { gap: 4px 16px; } .nav .bouton-entete { padding: 8px 13px; } }
+@media (max-width: 960px) { .nav ul { gap: 4px 12px; } .entete .large { gap: 8px 14px; } }
 /* Mobile : même en-tête que l'accueil (logo + bouton menu, 73 px), le menu s'ouvre en plein écran (menu.css). */
 @media (max-width: 860px) {
   .entete .large { flex-wrap: nowrap; gap: 16px; }
@@ -131,19 +137,23 @@ strong { color: var(--champagne); }
 .avertissement { font-size: 15px; color: var(--champagne-doux); border-top: 1px solid var(--lisere); margin-top: 44px; padding-top: 16px; }
 .tableau { overflow-x: auto; margin: 20px 0; border-radius: 14px; border: 1px solid var(--lisere); }
 @media (max-width: 560px) {
-  .tableau table, .tableau tbody, .tableau tr, .tableau td { display: block; width: 100%; }
+  .tableau table, .tableau tbody, .tableau tr, .tableau td, .tableau tbody th { display: block; width: 100%; }
   .tableau thead { display: none; }
   .tableau tr { padding: 12px 14px; border-bottom: 1px solid var(--lisere); }
   .tableau tr:last-child { border-bottom: 0; }
-  .tableau td { border: 0; padding: 3px 0; }
-  .tableau td:first-child { color: var(--champagne); font-weight: 600; }
+  .tableau td, .tableau tbody th { border: 0; padding: 3px 0; }
+  .tableau tbody th { color: var(--champagne); font-weight: 600; }
   .tableau td[data-label]:not([data-label=""])::before { content: attr(data-label); display: block; margin-top: 4px; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--brume); }
 }
 table { border-collapse: collapse; width: 100%; font-size: 16px; background: var(--verre); }
 th, td { text-align: left; padding: 11px 13px; border-bottom: 1px solid var(--lisere); vertical-align: top; color: #CFC6B8; }
 th { background: rgba(58, 95, 67, 0.35); color: var(--champagne); font-weight: 600; }
+/* En-têtes de ligne (première colonne) : en gras, sans le fond des en-têtes de colonne. */
+tbody th { background: transparent; }
 blockquote { margin: 20px 0; padding: 12px 18px; background: var(--verre); border-left: 3px solid var(--emeraude); border-radius: 10px; }
-sup a { text-decoration: none; font-size: 13px; }
+sup a { font-size: 13px; }
+/* Citations courtes (RGAA 9.4) : guillemets français ajoutés par <q>, pas tapés dans le texte. */
+q { quotes: "«\00a0" "\00a0»"; }
 .sources { font-size: 15px; margin-top: 40px; }
 .sources li { margin-bottom: 8px; word-break: break-word; }
 /* Sources repliées : une ligne discrète en bas de page, la liste complète au toucher (les CTA restent au premier plan). */
@@ -189,7 +199,7 @@ sup a { text-decoration: none; font-size: 13px; }
 /* Carte guide */
 .guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.6), rgba(58, 95, 67, 0.18), rgba(143, 191, 154, 0.22), rgba(58, 95, 67, 0.6)); background-size: 200% 100%; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(143, 191, 154, 0.3); border-radius: 22px; padding: 24px; margin: 30px 0; display: grid; gap: 18px; grid-template-columns: 96px minmax(0, 1fr); align-items: start; box-shadow: var(--ombre-2xl); transition: var(--transition); }
 .guide:hover { box-shadow: var(--ombre-lueur); animation: glisse 10s linear infinite; }
-.guide .livret { width: 96px; height: 128px; border-radius: 8px; background: linear-gradient(160deg, #E9E1D3, #BFB29C); color: var(--nuit); display: flex; flex-direction: column; justify-content: space-between; padding: 10px; font: 700 11px/1.25 var(--titre); box-shadow: 0 10px 24px rgba(0, 0, 0, .45); }
+.guide .livret { width: 96px; height: 128px; border-radius: 8px; background: linear-gradient(160deg, #E9E1D3, #BFB29C); color: #0F1714; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; font: 700 11px/1.25 var(--titre); box-shadow: 0 10px 24px rgba(0, 0, 0, .45); }
 .guide .livret span { font-size: 9px; font-weight: 600; opacity: .7; }
 .guide .type { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: var(--brume); font-weight: 700; margin: 0; }
 .guide h2, .guide h3 { margin: 4px 0 6px; font-size: 22px; }
@@ -201,7 +211,9 @@ sup a { text-decoration: none; font-size: 13px; }
 .guide small { display: block; margin-top: 8px; color: var(--champagne-doux); font-size: 13px; }
 
 /* Listes d'articles */
-.grille { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin: 20px 0 44px; }
+.grille { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin: 20px 0 44px; list-style: none; padding: 0; }
+.grille > li { display: flex; min-width: 0; }
+.grille > li > .carte { flex: 1; }
 .carte { background: var(--verre); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--lisere); border-radius: var(--rayon); overflow: hidden; display: flex; flex-direction: column; transition: var(--transition); box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.55); will-change: transform; }
 .carte:hover { z-index: 2; border-color: var(--lisere-fort); background: var(--verre-fort); box-shadow: var(--ombre-lueur); }
 .carte img { transition: var(--transition); }
@@ -270,6 +282,8 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .audio audio { width: 100%; height: 44px; }
 .audio .phase { margin: 0; min-height: 1.6em; font: 600 15px/1.6 var(--texte); color: var(--brume); }
 .audio a { font-size: 14px; justify-self: start; }
+.audio .transcription summary { cursor: pointer; font-size: 14px; font-weight: 600; color: var(--brume); width: fit-content; }
+.audio .transcription p { margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: var(--champagne-doux); }
 .credit-audio { margin: 2px 4px 0; font-size: 13.5px; line-height: 1.6; color: var(--champagne-doux); }
 /* Rappel d'urgence en bas des articles et des pages santé : numéros cliquables, page des ressources d'urgence. */
 .urgence { font-size: 15px; line-height: 1.6; margin: 12px 0 0; padding: 12px 16px; border-radius: 14px; background: rgba(217, 162, 107, 0.08); border: 1px solid rgba(217, 162, 107, 0.32); color: var(--champagne); }
@@ -277,7 +291,7 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .urgence a:hover { color: var(--brume); }
 /* Recherche interne */
 .recherche-form { display: flex; gap: 8px; margin: 18px 0 10px; }
-.recherche-form input { flex: 1; min-width: 0; font: 400 17px/1.4 var(--texte); padding: 12px 14px; border-radius: 14px; border: 1px solid var(--lisere-fort); background: var(--verre-fort); color: var(--champagne); }
+.recherche-form input { flex: 1; min-width: 0; font: 400 17px/1.4 var(--texte); padding: 12px 14px; border-radius: 14px; border: 1px solid var(--trait-champ); background: var(--verre-fort); color: var(--champagne); }
 .recherche-form .bouton { border: 0; font: 700 16px/1 var(--texte); cursor: pointer; flex: none; }
 .recherche-etat { font-size: 15px; color: var(--champagne-doux); min-height: 1.4em; }
 .recherche-resultats { list-style: none; padding: 0; margin: 10px 0 24px; display: grid; gap: 12px; }
@@ -307,10 +321,12 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   .menu-mobile { display: grid; position: fixed; inset: 0; z-index: 19; overflow-y: auto; overscroll-behavior: contain; padding: calc(96px + env(safe-area-inset-top, 0px)) var(--gouttiere, max(16px, 4vw)) 40px; background: rgba(8, 12, 16, 0.94); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-content: start; gap: 8px; clip-path: circle(0% at calc(100% - 38px) 38px); visibility: hidden; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s .6s; }
   .menu-mobile::before { content: ""; position: absolute; top: 0; left: 0; width: 1px; height: calc(100% + 1px); pointer-events: none; }
   .menu-mobile.ouvert { clip-path: circle(150% at calc(100% - 38px) 38px); visibility: visible; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s; }
+  .menu-mobile ul { display: grid; gap: 8px; align-content: start; list-style: none; margin: 0; padding: 0; }
+  .menu-mobile li > a:not(.btn):not(.bouton) { display: block; }
   .menu-mobile a { font: 700 clamp(24px, 7.6vw, 30px)/1.2 var(--titre); color: var(--champagne); text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--lisere); opacity: 0; transform: translateY(16px); transition: opacity .4s, transform .4s; }
   .menu-mobile a[aria-current="page"] { color: var(--brume); }
   .menu-mobile.ouvert a { opacity: 1; transform: none; }
-  .menu-mobile.ouvert a:nth-child(2) { transition-delay: .06s; } .menu-mobile.ouvert a:nth-child(3) { transition-delay: .12s; } .menu-mobile.ouvert a:nth-child(4) { transition-delay: .18s; } .menu-mobile.ouvert a:nth-child(5) { transition-delay: .24s; } .menu-mobile.ouvert a:nth-child(6) { transition-delay: .3s; } .menu-mobile.ouvert a:nth-child(7) { transition-delay: .36s; } .menu-mobile.ouvert a:nth-child(8) { transition-delay: .42s; }
+  .menu-mobile.ouvert li:nth-child(2) a { transition-delay: .06s; } .menu-mobile.ouvert li:nth-child(3) a { transition-delay: .12s; } .menu-mobile.ouvert li:nth-child(4) a { transition-delay: .18s; } .menu-mobile.ouvert li:nth-child(5) a { transition-delay: .24s; } .menu-mobile.ouvert li:nth-child(6) a { transition-delay: .30s; } .menu-mobile.ouvert li:nth-child(7) a { transition-delay: .36s; } .menu-mobile.ouvert li:nth-child(8) a { transition-delay: .42s; }
   /* Fermeture sans animation (lien vers une partie de la page, retour arrière) : la page apparaît tout de suite. */
   .menu-mobile.instant, .menu-mobile.instant a { transition: none !important; }
   /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
@@ -358,6 +374,9 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   html:not(.js) .menu-sans-js { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--lisere-fort); color: var(--champagne); font: 600 15px/1 var(--texte); text-decoration: none; }
 }
 
+/* Texte lu par les lecteurs d'écran seulement (aussi sur l'accueil, qui n'a pas style.css). */
+.lecteur-ecran { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
 /* Mode clair (10/10/2026). Le site est sombre par défaut ; il passe en clair si l'appareil est réglé en clair, ou si le
    visiteur choisit le clair avec le bouton soleil/lune (choix gardé sur son appareil). « :root[data-theme="clair"] » est remplacé à la
    construction par :root[data-theme="clair"] et, dans @media (prefers-color-scheme: light), par
@@ -375,6 +394,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   --verre-fort: rgba(255, 255, 255, 0.9);
   --lisere: rgba(29, 40, 35, 0.12);
   --lisere-fort: rgba(29, 40, 35, 0.24);
+  --trait-champ: rgba(29, 40, 35, 0.55);
   --ombre: rgba(29, 40, 35, 0.18);
   --alerte: #9A5A16;
   --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
@@ -401,6 +421,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
 /* Blocs teintés : mêmes formes, teintes plus légères */
 :root[data-theme="clair"] .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
 :root[data-theme="clair"] th, :root[data-theme="clair"] .comparatif th { background: rgba(58, 95, 67, 0.12); }
+:root[data-theme="clair"] tbody th, :root[data-theme="clair"] .comparatif tbody th { background: transparent; }
 :root[data-theme="clair"] .type-etude { border-color: rgba(29, 40, 35, 0.25); }
 :root[data-theme="clair"] .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
 :root[data-theme="clair"] .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
@@ -411,6 +432,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
 
 /* Accueil */
 :root[data-theme="clair"] .hero::before { opacity: 0.45; }
+:root[data-theme="clair"] .hero h1 .titre em { background: linear-gradient(90deg, #2D6A46, #3A5F43 55%, #2D6A46); -webkit-background-clip: text; background-clip: text; }
 :root[data-theme="clair"] .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
 :root[data-theme="clair"] .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
 :root[data-theme="clair"] .tuile { background: rgba(255, 255, 255, 0.7); }
@@ -448,6 +470,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   --verre-fort: rgba(255, 255, 255, 0.9);
   --lisere: rgba(29, 40, 35, 0.12);
   --lisere-fort: rgba(29, 40, 35, 0.24);
+  --trait-champ: rgba(29, 40, 35, 0.55);
   --ombre: rgba(29, 40, 35, 0.18);
   --alerte: #9A5A16;
   --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
@@ -474,6 +497,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
 /* Blocs teintés : mêmes formes, teintes plus légères */
 :root:not([data-theme="sombre"]) .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
 :root:not([data-theme="sombre"]) th, :root:not([data-theme="sombre"]) .comparatif th { background: rgba(58, 95, 67, 0.12); }
+:root:not([data-theme="sombre"]) tbody th, :root:not([data-theme="sombre"]) .comparatif tbody th { background: transparent; }
 :root:not([data-theme="sombre"]) .type-etude { border-color: rgba(29, 40, 35, 0.25); }
 :root:not([data-theme="sombre"]) .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
 :root:not([data-theme="sombre"]) .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
@@ -484,6 +508,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
 
 /* Accueil */
 :root:not([data-theme="sombre"]) .hero::before { opacity: 0.45; }
+:root:not([data-theme="sombre"]) .hero h1 .titre em { background: linear-gradient(90deg, #2D6A46, #3A5F43 55%, #2D6A46); -webkit-background-clip: text; background-clip: text; }
 :root:not([data-theme="sombre"]) .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
 :root:not([data-theme="sombre"]) .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
 :root:not([data-theme="sombre"]) .tuile { background: rgba(255, 255, 255, 0.7); }

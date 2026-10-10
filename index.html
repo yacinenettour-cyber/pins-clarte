@@ -29,9 +29,6 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.contactapaisement-mental.fr/#site","name":"Clarté Mentale","url":"https://www.contactapaisement-mental.fr/","inLanguage":"fr-FR","description":"Test stress et anxiété en 2 minutes (questionnaire validé GAD-7) et ton profil, puis les gestes anti-stress naturels validés par la science pour mieux dormir.","publisher":{"@id":"https://www.contactapaisement-mental.fr/#organisation"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.contactapaisement-mental.fr/#organisation","name":"Clarté Mentale","url":"https://www.contactapaisement-mental.fr/","logo":{"@type":"ImageObject","url":"https://www.contactapaisement-mental.fr/logo.png","width":512,"height":512},"sameAs":["https://www.pinterest.com/clartementale/"],"publishingPrinciples":"https://www.contactapaisement-mental.fr/methode-editoriale/","description":"Articles sourcés et conseils concrets pour apaiser le stress, calmer le système nerveux, sortir des ruminations du soir et retrouver un sommeil plus serein.","founder":{"@type":"Person","@id":"https://www.contactapaisement-mental.fr/a-propos/#auteur","name":"Yacine","jobTitle":"Fondateur de Clarté Mentale","url":"https://www.contactapaisement-mental.fr/a-propos/","worksFor":{"@id":"https://www.contactapaisement-mental.fr/#organisation"},"image":"https://www.contactapaisement-mental.fr/img/yacine.jpg"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Comment baisser le cortisol naturellement ?","acceptedAnswer":{"@type":"Answer","text":"Les leviers les mieux étudiés sont un sommeil régulier, la lumière du jour le matin, une activité physique douce, la relaxation ou la respiration lente, les liens sociaux et un dernier café pris au moins 6 heures avant le coucher. Commence par deux gestes, tiens-les une semaine, puis ajoutes-en un."}},{"@type":"Question","name":"Ce test mesure-t-il vraiment mon cortisol ?","acceptedAnswer":{"@type":"Answer","text":"Non. Il repère des symptômes d'anxiété avec le questionnaire GAD-7, puis les domaines où ton stress se manifeste le plus (nuits, travail, corps). Seuls des examens de sang, de salive ou d'urine prescrits par un médecin mesurent le cortisol, et un chiffre isolé ne dit presque rien sans l'heure du prélèvement."}},{"@type":"Question","name":"Quel anti-stress naturel est le plus étudié ?","acceptedAnswer":{"@type":"Answer","text":"Dans une méta-analyse de 58 essais réunissant 3 508 participants, la pleine conscience, la méditation et la relaxation étaient les approches les plus efficaces pour faire baisser le cortisol. La respiration lente, autour de 6 cycles par minute, est la porte d'entrée la plus simple."}},{"@type":"Question","name":"Pourquoi je me réveille fatigué alors que je dors assez ?","acceptedAnswer":{"@type":"Answer","text":"Un sommeil long n'est pas toujours un sommeil réparateur : stress, ruminations, alcool le soir ou écrans tardifs peuvent le fragmenter. Si la fatigue dure malgré des nuits complètes, ou si on te signale des pauses respiratoires pendant le sommeil, parles-en à ton médecin."}},{"@type":"Question","name":"Quand faut-il consulter ?","acceptedAnswer":{"@type":"Answer","text":"Si tes difficultés de sommeil reviennent plus de trois fois par semaine depuis plus de trois mois, si des changements physiques inhabituels apparaissent ou si le moral s'effondre. En cas d'urgence, appelle le 15 ou le 112. En cas de pensées suicidaires, le 3114 répond gratuitement, 24 h/24."}}]}</script>
-</head>
-<body>
-<a class="saut" href="#contenu">Aller au contenu</a>
 <style>
 @font-face { font-family: "Syne"; src: url("/polices/syne.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
 @font-face { font-family: "Plus Jakarta Sans"; src: url("/polices/plus-jakarta-sans.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
@@ -126,7 +123,7 @@ section { position: relative; z-index: 1; }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
 .marque { display: flex; align-items: center; gap: 10px; font: 700 18px/1 var(--titre); color: var(--champagne); text-decoration: none; letter-spacing: 0.02em; }
 .marque svg { width: 26px; height: 26px; }
-.liens { display: flex; align-items: center; gap: 28px; }
+.liens ul { display: flex; align-items: center; gap: 28px; list-style: none; margin: 0; padding: 0; }
 .liens a { color: var(--champagne-doux); text-decoration: none; font-size: 15px; font-weight: 500; transition: color .2s; }
 .liens a:hover { color: var(--champagne); }
 .liens .btn { color: var(--nuit); }
@@ -150,10 +147,12 @@ section { position: relative; z-index: 1; }
   .menu-mobile { display: grid; position: fixed; inset: 0; z-index: 19; overflow-y: auto; overscroll-behavior: contain; padding: calc(96px + env(safe-area-inset-top, 0px)) var(--gouttiere, max(16px, 4vw)) 40px; background: rgba(8, 12, 16, 0.94); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-content: start; gap: 8px; clip-path: circle(0% at calc(100% - 38px) 38px); visibility: hidden; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s .6s; }
   .menu-mobile::before { content: ""; position: absolute; top: 0; left: 0; width: 1px; height: calc(100% + 1px); pointer-events: none; }
   .menu-mobile.ouvert { clip-path: circle(150% at calc(100% - 38px) 38px); visibility: visible; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s; }
+  .menu-mobile ul { display: grid; gap: 8px; align-content: start; list-style: none; margin: 0; padding: 0; }
+  .menu-mobile li > a:not(.btn):not(.bouton) { display: block; }
   .menu-mobile a { font: 700 clamp(24px, 7.6vw, 30px)/1.2 var(--titre); color: var(--champagne); text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--lisere); opacity: 0; transform: translateY(16px); transition: opacity .4s, transform .4s; }
   .menu-mobile a[aria-current="page"] { color: var(--brume); }
   .menu-mobile.ouvert a { opacity: 1; transform: none; }
-  .menu-mobile.ouvert a:nth-child(2) { transition-delay: .06s; } .menu-mobile.ouvert a:nth-child(3) { transition-delay: .12s; } .menu-mobile.ouvert a:nth-child(4) { transition-delay: .18s; } .menu-mobile.ouvert a:nth-child(5) { transition-delay: .24s; } .menu-mobile.ouvert a:nth-child(6) { transition-delay: .3s; } .menu-mobile.ouvert a:nth-child(7) { transition-delay: .36s; } .menu-mobile.ouvert a:nth-child(8) { transition-delay: .42s; }
+  .menu-mobile.ouvert li:nth-child(2) a { transition-delay: .06s; } .menu-mobile.ouvert li:nth-child(3) a { transition-delay: .12s; } .menu-mobile.ouvert li:nth-child(4) a { transition-delay: .18s; } .menu-mobile.ouvert li:nth-child(5) a { transition-delay: .24s; } .menu-mobile.ouvert li:nth-child(6) a { transition-delay: .30s; } .menu-mobile.ouvert li:nth-child(7) a { transition-delay: .36s; } .menu-mobile.ouvert li:nth-child(8) a { transition-delay: .42s; }
   /* Fermeture sans animation (lien vers une partie de la page, retour arrière) : la page apparaît tout de suite. */
   .menu-mobile.instant, .menu-mobile.instant a { transition: none !important; }
   /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
@@ -201,6 +200,9 @@ section { position: relative; z-index: 1; }
   html:not(.js) .menu-sans-js { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--lisere-fort); color: var(--champagne); font: 600 15px/1 var(--texte); text-decoration: none; }
 }
 
+/* Texte lu par les lecteurs d'écran seulement (aussi sur l'accueil, qui n'a pas style.css). */
+.lecteur-ecran { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
 /* Boutons */
 .btn { position: relative; display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; border-radius: 999px; font: 600 16px/1 var(--texte); text-decoration: none; cursor: pointer; border: 0; overflow: hidden; transition: var(--transition); will-change: transform; }
 .btn .fleche { display: inline-block; transition: transform .3s cubic-bezier(.2,.8,.2,1); }
@@ -208,7 +210,6 @@ section { position: relative; z-index: 1; }
 .btn-or { background: var(--degrade-or); background-size: 200% 100%; color: var(--nuit); box-shadow: 0 10px 30px -10px rgba(223, 213, 198, 0.45), var(--ombre-2xl); }
 .btn-or::after { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.55) 50%, transparent 70%); transform: translateX(-120%); transition: transform .7s ease; }
 /* Un seul bouton animé en continu (lentement) : le bouton principal ; les autres s'animent au survol. */
-.btn-principal { animation: glisse 12s linear infinite; }
 .btn-or:hover { animation: glisse 6s linear infinite; color: var(--nuit); box-shadow: 0 18px 44px -12px rgba(223, 213, 198, 0.7), var(--ombre-2xl); }
 .btn-or:hover::after { transform: translateX(120%); }
 .btn-verre { background: var(--verre); color: var(--champagne); border: 1px solid var(--lisere-fort); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); }
@@ -226,7 +227,8 @@ section { position: relative; z-index: 1; }
 .hero h1 { display: grid; gap: 18px; }
 .hero h1 .kicker { font: 600 13px/1.3 var(--texte); letter-spacing: 0.2em; text-transform: uppercase; color: var(--brume); }
 .hero h1 .titre { font-family: "Syne bloc", var(--titre); font-size: clamp(42px, 6.6vw, 86px); line-height: 0.95; font-weight: 800; letter-spacing: -0.035em; }
-.hero h1 .titre em { font-style: normal; color: transparent; background: var(--degrade); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; animation: glisse 14s linear infinite; }
+/* Dégradé du mot clé : uniquement des teintes à 3:1 au moins sur le fond (RGAA 3.2, grand texte). */
+.hero h1 .titre em { font-style: normal; color: transparent; background: linear-gradient(90deg, #8FBF9A, #DFD5C6 55%, #8FBF9A); -webkit-background-clip: text; background-clip: text; }
 .sous-titre { font-size: clamp(18px, 1.6vw, 21px); color: var(--champagne-doux); max-width: 33.6em; }
 .sous-titre strong { color: var(--champagne); font-weight: 600; }
 .cta-duo { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -235,6 +237,14 @@ section { position: relative; z-index: 1; }
 .reassurance span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--brume); box-shadow: 0 0 10px var(--brume); }
 .hero-visuel { position: relative; min-width: 0; aspect-ratio: 4 / 5; max-width: 100%; border-radius: 32px; overflow: hidden; border: 1px solid var(--lisere); background: radial-gradient(circle at 50% 40%, rgba(58,95,67,.35), rgba(8,12,16,.2) 60%), var(--nuit-2); box-shadow: var(--ombre-2xl), 0 40px 90px -40px rgba(58, 95, 67, 0.5); transition: var(--transition); }
 .hero-visuel canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.pause-anim { position: absolute; top: 12px; right: 12px; z-index: 2; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--lisere-fort); background: var(--verre-fort); color: var(--champagne); cursor: pointer; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.pause-anim svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.pause-anim .icone-lecture { display: none; }
+.pause-anim[data-etat="pause"] .icone-pause { display: none; }
+.pause-anim[data-etat="pause"] .icone-lecture { display: inline; fill: currentColor; }
+.pause-anim:hover { border-color: var(--brume); color: var(--brume); }
+/* Le bouton pause arrête aussi le lent mouvement de lumière derrière le titre. */
+.animations-en-pause .hero::before { animation-play-state: paused; }
 .hero-visuel .legende { position: absolute; left: 18px; right: 18px; bottom: 18px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; font-size: 13px; color: var(--champagne-doux); }
 .hero-visuel .legende b { display: block; font: 700 28px/1 var(--titre); color: var(--champagne); }
 .pastille-souffle { padding: 8px 12px; border-radius: 999px; background: rgba(8,12,16,.6); border: 1px solid var(--lisere); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); white-space: nowrap; }
@@ -254,7 +264,7 @@ section { position: relative; z-index: 1; }
 .progression { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; font-size: 13px; color: var(--champagne-doux); font-variant-numeric: tabular-nums; }
 .progression span { white-space: nowrap; }
 .barre { flex: 1; height: 4px; border-radius: 4px; background: var(--lisere); overflow: hidden; }
-.barre i { display: block; height: 100%; width: 8%; background: var(--degrade); background-size: 200% 100%; border-radius: 4px; transition: width .6s cubic-bezier(.2,.8,.2,1); }
+.barre span { display: block; height: 100%; width: 8%; background: var(--degrade); background-size: 200% 100%; border-radius: 4px; transition: width .6s cubic-bezier(.2,.8,.2,1); }
 .etape { display: grid; gap: 16px; animation: test-entree .45s cubic-bezier(.2,.8,.2,1); }
 .test-partie { font: 600 12px/1.4 var(--texte); letter-spacing: .16em; text-transform: uppercase; color: var(--brume); }
 .test-consigne { font-size: 15px; line-height: 1.55; color: var(--champagne-doux); }
@@ -264,6 +274,7 @@ section { position: relative; z-index: 1; }
 .option:hover { border-color: var(--lisere-fort); background: linear-gradient(90deg, rgba(58,95,67,.28), rgba(255,255,255,.04)); }
 .option:focus-visible { outline: 2px solid var(--brume); outline-offset: 2px; }
 .option .puce { flex: none; width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; font: 700 14px/1 var(--titre); color: var(--brume); border: 1px solid rgba(143,191,154,.35); background: rgba(58,95,67,.18); font-variant-numeric: tabular-nums; }
+.option[aria-pressed="true"]::after { content: ""; flex: none; margin-left: auto; margin-right: 6px; width: 6px; height: 12px; border: solid var(--brume); border-width: 0 2px 2px 0; transform: rotate(45deg) translateY(-2px); }
 .option[aria-pressed="true"] { border-color: var(--brume); background: rgba(58,95,67,.28); }
 .retour { justify-self: start; background: none; border: 0; color: var(--champagne-doux); font: 500 14px/1 var(--texte); cursor: pointer; padding: 6px 0; }
 .retour:hover { color: var(--champagne); }
@@ -307,7 +318,7 @@ section { position: relative; z-index: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .etape, .resultat { animation: none; }
-  .barre i, .option, .test-cta { transition: none; }
+  .barre span, .option, .test-cta { transition: none; }
 }
 
 /* Sans JavaScript : version papier du GAD-7 (pas de barre de progression). */
@@ -315,13 +326,14 @@ html:not(.js) .instrument .progression { display: none; }
 .test-papier { display: grid; gap: 12px; font-size: 16px; line-height: 1.6; }
 .test-papier p, .test-papier ol, .test-papier ul { margin: 0; }
 .test-papier a { color: var(--brume); font-weight: 600; }
+.test-aide { margin: 0; font-size: 14px; color: var(--champagne-doux); }
 
 @keyframes glisse { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
 @keyframes aurore { 0% { transform: translate3d(-4%, -2%, 0) scale(1); } 50% { transform: translate3d(4%, 3%, 0) scale(1.08); } 100% { transform: translate3d(-4%, -2%, 0) scale(1); } }
 @keyframes entree { from { opacity: 0; transform: translateY(14px); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
 
 /* Bento */
-.bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; }
+.bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; list-style: none; margin: 0; padding: 0; }
 .tuile { position: relative; display: flex; flex-direction: column; gap: 14px; padding: 26px; border-radius: var(--rayon); background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--lisere); transition: var(--transition); min-width: 0; --mx: 50%; --my: 50%; box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.55); will-change: transform; }
 .tuile::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; background: radial-gradient(420px circle at var(--mx) var(--my), rgba(143, 191, 154, 0.75), rgba(223, 213, 198, 0.15) 30%, transparent 55%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity .35s; pointer-events: none; }
 .tuile::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: radial-gradient(500px circle at var(--mx) var(--my), rgba(143, 191, 154, 0.07), transparent 45%); opacity: 0; transition: opacity .35s; pointer-events: none; }
@@ -361,6 +373,7 @@ html:not(.js) .instrument .progression { display: none; }
 .comparatif table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
 .comparatif th, .comparatif td { text-align: left; vertical-align: top; padding: 12px 16px; border-bottom: 1px solid var(--lisere); color: var(--champagne-doux); }
 .comparatif th { color: var(--champagne); background: rgba(58, 95, 67, 0.35); font-weight: 600; }
+.comparatif tbody th { background: transparent; }
 .comparatif td:first-child { color: var(--champagne); font-weight: 600; }
 .comparatif td:last-child { color: var(--brume); font-size: 13.5px; }
 .comparatif tr:last-child td { border-bottom: 0; }
@@ -377,7 +390,9 @@ html:not(.js) .instrument .progression { display: none; }
 .sources li { overflow-wrap: anywhere; }
 
 /* Articles */
-.lecture { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 28px; }
+.lecture { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 28px; list-style: none; padding: 0; }
+.lecture > li { display: flex; min-width: 0; }
+.lecture > li > .carte-lecture { flex: 1; }
 .carte-lecture { position: relative; display: flex; flex-direction: column; border-radius: var(--rayon); overflow: hidden; background: var(--verre); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--lisere); text-decoration: none; color: var(--champagne); transition: var(--transition); min-width: 0; box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.55); will-change: transform; }
 .carte-lecture:hover { z-index: 2; border-color: var(--lisere-fort); background: var(--verre-fort); color: var(--champagne); box-shadow: var(--ombre-lueur); }
 .carte-lecture img { transition: var(--transition); }
@@ -414,8 +429,8 @@ html:not(.js) .instrument .progression { display: none; }
 .final { display: grid; grid-template-columns: minmax(0, 1fr); max-width: 980px; }
 .offre-unique { flex-direction: row; align-items: center; gap: 44px; padding: 34px 40px; }
 .offre-texte { display: flex; flex-direction: column; gap: 14px; flex: 1; min-width: 0; }
-.livret-offre { flex: none; width: 190px; aspect-ratio: 3 / 4; border-radius: 10px; padding: 22px 18px; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(160deg, #E9E1D3, #BFB29C); color: var(--nuit); font: 700 21px/1.15 var(--titre); box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.75); transform: rotate(-3deg); }
-.livret-offre small { font: 600 11px/1.3 var(--texte); opacity: .7; }
+.livret-offre { flex: none; width: 190px; aspect-ratio: 3 / 4; border-radius: 10px; padding: 22px 18px; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(160deg, #E9E1D3, #BFB29C); color: #0F1714; font: 700 21px/1.15 var(--titre); box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.75); transform: rotate(-3deg); }
+.livret-offre small, .offre-unique .livret-offre small { font: 600 11px/1.3 var(--texte); color: inherit; opacity: .75; }
 .points-offre { margin: 0; padding-left: 20px; color: var(--champagne-doux); }
 .offre-unique small { color: var(--champagne-doux); font-size: 13px; line-height: 1.5; }
 .final .tuile h3 { font-size: 21px; }
@@ -447,8 +462,8 @@ html:not(.js) .instrument .progression { display: none; }
   .lecture { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 /* Entre 861 et 1080 px : liens resserrés pour que l'en-tête tienne sur une ligne. */
-@media (max-width: 1080px) { .liens { gap: 16px; } .liens a { font-size: 14px; } .liens .btn-petit { padding: 10px 14px; } }
-@media (max-width: 920px) { .liens { gap: 12px; } .nav .wrap { gap: 12px; } }
+@media (max-width: 1080px) { .liens ul { gap: 16px; } .liens a { font-size: 14px; } .liens .btn-petit { padding: 10px 14px; } }
+@media (max-width: 920px) { .liens ul { gap: 12px; } .nav .wrap { gap: 12px; } }
 @media (max-width: 860px) {
   .liens { display: none; }
   .hero .wrap, .calc { grid-template-columns: 1fr; }
@@ -487,6 +502,7 @@ html:not(.js) .instrument .progression { display: none; }
   --verre-fort: rgba(255, 255, 255, 0.9);
   --lisere: rgba(29, 40, 35, 0.12);
   --lisere-fort: rgba(29, 40, 35, 0.24);
+  --trait-champ: rgba(29, 40, 35, 0.55);
   --ombre: rgba(29, 40, 35, 0.18);
   --alerte: #9A5A16;
   --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
@@ -513,6 +529,7 @@ html:not(.js) .instrument .progression { display: none; }
 /* Blocs teintés : mêmes formes, teintes plus légères */
 :root[data-theme="clair"] .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
 :root[data-theme="clair"] th, :root[data-theme="clair"] .comparatif th { background: rgba(58, 95, 67, 0.12); }
+:root[data-theme="clair"] tbody th, :root[data-theme="clair"] .comparatif tbody th { background: transparent; }
 :root[data-theme="clair"] .type-etude { border-color: rgba(29, 40, 35, 0.25); }
 :root[data-theme="clair"] .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
 :root[data-theme="clair"] .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
@@ -523,6 +540,7 @@ html:not(.js) .instrument .progression { display: none; }
 
 /* Accueil */
 :root[data-theme="clair"] .hero::before { opacity: 0.45; }
+:root[data-theme="clair"] .hero h1 .titre em { background: linear-gradient(90deg, #2D6A46, #3A5F43 55%, #2D6A46); -webkit-background-clip: text; background-clip: text; }
 :root[data-theme="clair"] .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
 :root[data-theme="clair"] .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
 :root[data-theme="clair"] .tuile { background: rgba(255, 255, 255, 0.7); }
@@ -560,6 +578,7 @@ html:not(.js) .instrument .progression { display: none; }
   --verre-fort: rgba(255, 255, 255, 0.9);
   --lisere: rgba(29, 40, 35, 0.12);
   --lisere-fort: rgba(29, 40, 35, 0.24);
+  --trait-champ: rgba(29, 40, 35, 0.55);
   --ombre: rgba(29, 40, 35, 0.18);
   --alerte: #9A5A16;
   --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
@@ -586,6 +605,7 @@ html:not(.js) .instrument .progression { display: none; }
 /* Blocs teintés : mêmes formes, teintes plus légères */
 :root:not([data-theme="sombre"]) .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
 :root:not([data-theme="sombre"]) th, :root:not([data-theme="sombre"]) .comparatif th { background: rgba(58, 95, 67, 0.12); }
+:root:not([data-theme="sombre"]) tbody th, :root:not([data-theme="sombre"]) .comparatif tbody th { background: transparent; }
 :root:not([data-theme="sombre"]) .type-etude { border-color: rgba(29, 40, 35, 0.25); }
 :root:not([data-theme="sombre"]) .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
 :root:not([data-theme="sombre"]) .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
@@ -596,6 +616,7 @@ html:not(.js) .instrument .progression { display: none; }
 
 /* Accueil */
 :root:not([data-theme="sombre"]) .hero::before { opacity: 0.45; }
+:root:not([data-theme="sombre"]) .hero h1 .titre em { background: linear-gradient(90deg, #2D6A46, #3A5F43 55%, #2D6A46); -webkit-background-clip: text; background-clip: text; }
 :root:not([data-theme="sombre"]) .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
 :root:not([data-theme="sombre"]) .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
 :root:not([data-theme="sombre"]) .tuile { background: rgba(255, 255, 255, 0.7); }
@@ -622,6 +643,10 @@ html:not(.js) .instrument .progression { display: none; }
 :root:not([data-theme="sombre"]) .theme-bascule .lune { display: block; }
 }
 </style>
+</head>
+<body>
+<a class="saut" href="#contenu">Aller au contenu</a>
+
 
 <header class="nav" id="haut">
   <div class="wrap">
@@ -629,26 +654,27 @@ html:not(.js) .instrument .progression { display: none; }
       <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="#8FBF9A" stroke-width="1.5"/><path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#DFD5C6"/></svg>
       Clarté Mentale
     </a>
-    <nav class="liens" aria-label="Menu principal">
-      <a href="#test">Le test</a>
-      <a href="/articles/">Articles</a>
-      <a href="/exercices-respiration/">Respiration</a>
-      <a href="/la-formation/">La formation</a>
-      <a href="/a-propos/">À propos</a>
-      <a class="btn btn-or btn-petit" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=nav">Guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
+    <nav class="liens" aria-label="Menu principal"><ul>
+      <li><a href="#test">Le test</a></li>
+      <li><a href="/articles/">Articles</a></li>
+      <li><a href="/exercices-respiration/">Respiration</a></li>
+      <li><a href="/la-formation/">La formation</a></li>
+      <li><a href="/a-propos/">À propos</a></li>
+      <li><a class="btn btn-or btn-petit" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=nav">Guide gratuit <span class="fleche" aria-hidden="true">→</span></a></li></ul>
     </nav>
     <div class="actions-entete"><button class="theme-bascule" type="button" aria-label="Passer en mode clair" title="Passer en mode clair"><svg class="soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="lune" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button><a class="menu-sans-js" href="#navigation-pied">Menu</a><button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
   </div>
 </header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
-  <a href="/" tabindex="-1" aria-current="page">Accueil</a>
-  <a href="#test" tabindex="-1">Le test</a>
-  <a href="/articles/" tabindex="-1">Articles</a>
-  <a href="/exercices-respiration/" tabindex="-1">Respiration</a>
-  <a href="/la-formation/" tabindex="-1">La formation</a>
-  <a href="/a-propos/" tabindex="-1">À propos</a>
-  <a href="/recherche/" tabindex="-1">Rechercher</a>
-  <a class="btn btn-or" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=menu-mobile" tabindex="-1">Recevoir le guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
+<ul>
+  <li><a href="/" tabindex="-1" aria-current="page">Accueil</a></li>
+  <li><a href="#test" tabindex="-1">Le test</a></li>
+  <li><a href="/articles/" tabindex="-1">Articles</a></li>
+  <li><a href="/exercices-respiration/" tabindex="-1">Respiration</a></li>
+  <li><a href="/la-formation/" tabindex="-1">La formation</a></li>
+  <li><a href="/a-propos/" tabindex="-1">À propos</a></li>
+  <li><a href="/recherche/" tabindex="-1">Rechercher</a></li>
+  <li><a class="btn btn-or" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=menu-mobile" tabindex="-1">Recevoir le guide gratuit <span class="fleche" aria-hidden="true">→</span></a></li></ul>
 </nav>
 
 <main id="contenu">
@@ -666,9 +692,10 @@ html:not(.js) .instrument .progression { display: none; }
         </div>
         <div class="reassurance"><span>Test gratuit, questionnaire validé</span><span>Sources scientifiques citées</span><span>Sans régime ni matériel</span></div>
       </div>
-      <div class="hero-visuel" aria-hidden="true">
+      <div class="hero-visuel">
         <canvas id="reseau" aria-hidden="true"></canvas>
-        <div class="legende">
+        <button class="pause-anim" id="pause-anim" type="button" data-etat="lecture" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="icone-pause" d="M9 6v12M15 6v12"/><path class="icone-lecture" d="M8 5.5v13l11-6.5z"/></svg><span class="lecteur-ecran">Mettre l'animation en pause</span></button>
+        <div class="legende" aria-hidden="true">
           <div><b>6</b> cycles par minute</div>
           <div class="pastille-souffle" id="pastille">Inspire 4 s · Expire 6 s</div>
         </div>
@@ -685,7 +712,7 @@ html:not(.js) .instrument .progression { display: none; }
         <p class="note">Un repère, pas un diagnostic, ni une mesure de ton cortisol. Tes réponses restent sur ton appareil : rien n'est envoyé. <a href="/test-stress-anxiete/">Comment fonctionne ce test</a></p>
       </div>
       <div class="instrument" id="test-stress" aria-live="polite">
-        <div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><i id="test-barre"></i></div></div>
+        <div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><span id="test-barre"></span></div></div>
         <div id="test-ecran"><noscript><div class="test-papier">
 <p><strong>Ton navigateur n'exécute pas JavaScript : voici la version papier du questionnaire GAD-7.</strong> Note tes réponses sur une feuille, puis additionne tes points. Rien n'est envoyé.</p>
 <p>Au cours des 14 derniers jours, à quelle fréquence avez-vous été dérangé(e) par les problèmes suivants ?</p>
@@ -711,9 +738,9 @@ html:not(.js) .instrument .progression { display: none; }
         <h2>Baisser le cortisol naturellement : 7 leviers validés</h2>
         <p>Le cortisol est une hormone produite par les glandes surrénales en réponse au stress ; son taux suit une courbe, haut le matin et bas le soir. Pas de cocktail miracle ni de complément magique : voici les gestes étudiés qui l'aident à suivre cette courbe.</p>
       </div>
-      <div class="bento">
-        <article class="tuile t-circadien">
-          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 17h18M6 17a6 6 0 0 1 12 0"/><path d="M12 4v3M4.9 8.9l2 2M19.1 8.9l-2 2"/></svg></div>
+      <ul class="bento" role="list">
+        <li class="tuile t-circadien">
+          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M3 17h18M6 17a6 6 0 0 1 12 0"/><path d="M12 4v3M4.9 8.9l2 2M19.1 8.9l-2 2"/></svg></div>
           <h3>Rythme circadien : le cortisol suit une horloge</h3>
           <p>Le cortisol est au plus bas vers minuit, remonte en fin de nuit et culmine tôt le matin. Lumière du jour au réveil, lever à heure fixe et pénombre le soir donnent des repères nets à cette horloge.</p>
           <svg class="courbe" viewBox="0 0 640 230" role="img" aria-label="Schéma du rythme du cortisol sur 24 heures : bas vers minuit, pic tôt le matin, baisse au fil de la journée">
@@ -730,53 +757,53 @@ html:not(.js) .instrument .progression { display: none; }
             <g><text x="40" y="214" text-anchor="middle">0 h</text><text x="185" y="214" text-anchor="middle">6 h</text><text x="330" y="214" text-anchor="middle">12 h</text><text x="475" y="214" text-anchor="middle">18 h</text><text x="620" y="214" text-anchor="middle">24 h</text></g>
           </svg>
           <p class="ref">Schéma du rythme habituel, pas une mesure. Source : Balbo, Leproult et Van Cauter, 2010 [9].</p>
-        </article>
+        </li>
 
-        <article class="tuile t-souffle">
-          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 9h11a3 3 0 1 0-3-3M3 15h15a3 3 0 1 1-3 3M3 12h8"/></svg></div>
+        <li class="tuile t-souffle">
+          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M3 9h11a3 3 0 1 0-3-3M3 15h15a3 3 0 1 1-3 3M3 12h8"/></svg></div>
           <h3>Respiration lente : l'anti-stress naturel le plus simple</h3>
           <p>Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente, d'après 223 études [8].</p>
           <div class="orbe-zone"><div class="orbe" id="orbe">Prêt</div></div>
-          <button class="btn btn-verre btn-petit" id="lancer-souffle" type="button" aria-pressed="false">Lancer 1 minute <span class="fleche" aria-hidden="true">→</span></button>
+          <button class="btn btn-verre btn-petit" id="lancer-souffle" type="button">Lancer 1 minute <span class="fleche" aria-hidden="true">→</span></button>
           <span class="minuteur" id="minuteur">Inspire 4 s, expire 6 s</span>
           <a class="ref" href="/respiration-guidee/">Version audio guidée : 3, 5 ou 10 minutes, les yeux fermés →</a>
-        </article>
+        </li>
 
-        <article class="tuile t-nuit">
-          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></div>
+        <li class="tuile t-nuit">
+          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></div>
           <h3>Rituels de nuit pour mieux dormir</h3>
           <p>Une nuit écourtée fait monter le cortisol du lendemain soir de 37 % [1]. Avant d'éteindre, 5 minutes pour écrire la liste précise de demain ont aidé de jeunes adultes à s'endormir environ 9 minutes plus vite [7].</p>
           <a class="btn btn-verre btn-petit" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=bento-nuit">Le guide sommeil gratuit <span class="fleche" aria-hidden="true">→</span></a>
-        </article>
+        </li>
 
-        <article class="tuile t-assiette">
-          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12h16a8 8 0 0 1-16 0zM12 4c2 1.5 2 4 0 6M8 6c1.2 1 1.2 2.5 0 3.5"/></svg></div>
+        <li class="tuile t-assiette">
+          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 12h16a8 8 0 0 1-16 0zM12 4c2 1.5 2 4 0 6M8 6c1.2 1 1.2 2.5 0 3.5"/></svg></div>
           <h3>Alimentation anti-cortisol, sans régime</h3>
           <ul>
             <li>Des repas à heures régulières, qui donnent eux aussi des repères à ton horloge.</li>
             <li>Les « cocktails anti-cortisol » des réseaux : aucune preuve qu'ils baissent le cortisol [6].</li>
             <li>Les compléments comme l'ashwagandha : preuves limitées, interactions possibles, avis médical avant.</li>
           </ul>
-        </article>
+        </li>
 
-        <article class="tuile t-mouvement">
-          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="13" cy="4.5" r="1.8"/><path d="M8 21l3-6 3 2v4M11 15l1-5 4 3h3M12 10l-4 1-2 3"/></svg></div>
+        <li class="tuile t-mouvement">
+          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="13" cy="4.5" r="1.8"/><path d="M8 21l3-6 3 2v4M11 15l1-5 4 3h3M12 10l-4 1-2 3"/></svg></div>
           <h3>Mouvement doux les jours tendus</h3>
           <p>30 minutes d'effort intense : +83 % de cortisol. À faible intensité : aucune hausse notable [3]. Marche et vélo tranquille gardent l'avantage les jours chargés.</p>
-        </article>
+        </li>
 
-        <article class="tuile t-liens">
-          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 19a5 5 0 0 1 10 0M13 19a4 4 0 0 1 8 0"/></svg></div>
+        <li class="tuile t-liens">
+          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 19a5 5 0 0 1 10 0M13 19a4 4 0 0 1 8 0"/></svg></div>
           <h3>Liens sociaux</h3>
           <p>Face à un test de stress, le soutien d'un ami proche a réduit la réponse du cortisol [5]. Un appel avant un moment tendu compte.</p>
-        </article>
+        </li>
 
-        <article class="tuile t-cafe">
-          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h12v5a5 5 0 0 1-10 0zM16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 3v3M12 3v3"/></svg></div>
+        <li class="tuile t-cafe">
+          <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 9h12v5a5 5 0 0 1-10 0zM16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 3v3M12 3v3"/></svg></div>
           <h3>Caféine : l'heure compte</h3>
           <p>Une forte dose de caféine perturbe encore le sommeil prise 6 heures avant le coucher [4]. Dernier café vers 14 h.</p>
-        </article>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -794,19 +821,19 @@ html:not(.js) .instrument .progression { display: none; }
         <div class="chiffre"><b data-cible="50" data-prefixe="&gt;">&gt;50<small>%</small></b><p>des insomnies sont dues au stress, à l'anxiété ou à la dépression.</p><cite>Assurance maladie (ameli.fr) [10]</cite></div>
       </div>
       <div class="comparatif">
-        <h3>Les leviers anti-cortisol comparés</h3>
+        <h3 id="titre-comparatif">Les leviers anti-cortisol comparés</h3>
         <div class="tableau-defile">
-          <table>
+          <table aria-labelledby="titre-comparatif">
             <thead><tr><th scope="col">Levier</th><th scope="col">Effet mesuré</th><th scope="col">Qui l'a mesuré</th></tr></thead>
             <tbody>
-              <tr><td>Dormir assez</td><td>Une nuit écourtée : +37 % de cortisol le lendemain soir</td><td>Université de Chicago, 1997 [1]</td></tr>
-              <tr><td>Relaxation, pleine conscience</td><td>Baisse du cortisol, effet moyen sur 58 essais</td><td>Université de Leeds, 2024 [2]</td></tr>
-              <tr><td>Respiration lente (6 par minute)</td><td>Variabilité cardiaque liée au nerf vague en hausse, 223 études</td><td>Université allemande du sport de Cologne, 2022 [8]</td></tr>
-              <tr><td>Effort doux les jours tendus</td><td>Effort intense : +83 % ; effort faible : pas de hausse notable</td><td>Université de Caroline du Nord, 2008 [3]</td></tr>
-              <tr><td>Soutien d'un proche</td><td>Réponse de cortisol plus faible face à un stress</td><td>Université de Zurich, 2003 [5]</td></tr>
-              <tr><td>Dernier café 6 h avant le coucher</td><td>400 mg de caféine pris 6 h avant le coucher perturbent encore le sommeil</td><td>Hôpital Henry Ford, Détroit, 2013 [4]</td></tr>
-              <tr><td>Liste de demain au coucher</td><td>Endormissement environ 9 minutes plus rapide</td><td>Université Baylor, 2018 [7]</td></tr>
-              <tr><td>Cocktail « anti-cortisol »</td><td>Aucune preuve d'effet sur le cortisol</td><td>Cleveland Clinic [6]</td></tr>
+              <tr><th scope="row">Dormir assez</th><td>Une nuit écourtée : +37 % de cortisol le lendemain soir</td><td>Université de Chicago, 1997 [1]</td></tr>
+              <tr><th scope="row">Relaxation, pleine conscience</th><td>Baisse du cortisol, effet moyen sur 58 essais</td><td>Université de Leeds, 2024 [2]</td></tr>
+              <tr><th scope="row">Respiration lente (6 par minute)</th><td>Variabilité cardiaque liée au nerf vague en hausse, 223 études</td><td>Université allemande du sport de Cologne, 2022 [8]</td></tr>
+              <tr><th scope="row">Effort doux les jours tendus</th><td>Effort intense : +83 % ; effort faible : pas de hausse notable</td><td>Université de Caroline du Nord, 2008 [3]</td></tr>
+              <tr><th scope="row">Soutien d'un proche</th><td>Réponse de cortisol plus faible face à un stress</td><td>Université de Zurich, 2003 [5]</td></tr>
+              <tr><th scope="row">Dernier café 6 h avant le coucher</th><td>400 mg de caféine pris 6 h avant le coucher perturbent encore le sommeil</td><td>Hôpital Henry Ford, Détroit, 2013 [4]</td></tr>
+              <tr><th scope="row">Liste de demain au coucher</th><td>Endormissement environ 9 minutes plus rapide</td><td>Université Baylor, 2018 [7]</td></tr>
+              <tr><th scope="row">Cocktail « anti-cortisol »</th><td>Aucune preuve d'effet sur le cortisol</td><td>Cleveland Clinic [6]</td></tr>
             </tbody>
           </table>
         </div>
@@ -814,15 +841,15 @@ html:not(.js) .instrument .progression { display: none; }
       <details class="sources">
         <summary>Voir les 10 sources</summary>
         <ol>
-          <li><a href="https://doi.org/10.1093/sleep/20.10.865">Leproult R. et al. Sleep loss results in an elevation of cortisol levels the next evening. Sleep, 1997.</a></li>
-          <li><a href="https://doi.org/10.1016/j.psyneuen.2023.106415">Rogerson O. et al. Effectiveness of stress management interventions to change cortisol levels: a systematic review and meta-analysis. Psychoneuroendocrinology, 2024.</a></li>
-          <li><a href="https://doi.org/10.1007/BF03345606">Hill E.E. et al. Exercise and circulating cortisol levels: the intensity threshold effect. J Endocrinol Invest, 2008.</a></li>
-          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3805807/">Drake C. et al. Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. J Clin Sleep Med, 2013.</a></li>
-          <li><a href="https://doi.org/10.1016/S0006-3223(03)00465-7">Heinrichs M. et al. Social support and oxytocin interact to suppress cortisol and subjective responses to psychosocial stress. Biol Psychiatry, 2003.</a></li>
-          <li><a href="https://health.clevelandclinic.org/what-to-know-about-adrenal-cocktails">Cleveland Clinic. Cortisol cocktail: what is it and does it work?</a></li>
-          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5758411/">Scullin M.K. et al. The effects of bedtime writing on difficulty falling asleep. J Exp Psychol Gen, 2018.</a></li>
-          <li><a href="https://doi.org/10.1016/j.neubiorev.2022.104711">Laborde S. et al. Effects of voluntary slow breathing on heart rate and heart rate variability. Neurosci Biobehav Rev, 2022.</a></li>
-          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2902103/">Balbo M., Leproult R., Van Cauter E. Impact of sleep and its disturbances on hypothalamo-pituitary-adrenal axis activity. Int J Endocrinol, 2010.</a></li>
+          <li><a href="https://doi.org/10.1093/sleep/20.10.865" lang="en">Leproult R. et al. Sleep loss results in an elevation of cortisol levels the next evening. Sleep, 1997.</a></li>
+          <li><a href="https://doi.org/10.1016/j.psyneuen.2023.106415" lang="en">Rogerson O. et al. Effectiveness of stress management interventions to change cortisol levels: a systematic review and meta-analysis. Psychoneuroendocrinology, 2024.</a></li>
+          <li><a href="https://doi.org/10.1007/BF03345606" lang="en">Hill E.E. et al. Exercise and circulating cortisol levels: the intensity threshold effect. J Endocrinol Invest, 2008.</a></li>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3805807/" lang="en">Drake C. et al. Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. J Clin Sleep Med, 2013.</a></li>
+          <li><a href="https://doi.org/10.1016/S0006-3223(03)00465-7" lang="en">Heinrichs M. et al. Social support and oxytocin interact to suppress cortisol and subjective responses to psychosocial stress. Biol Psychiatry, 2003.</a></li>
+          <li><a href="https://health.clevelandclinic.org/what-to-know-about-adrenal-cocktails" lang="en">Cleveland Clinic. Cortisol cocktail: what is it and does it work?</a></li>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5758411/" lang="en">Scullin M.K. et al. The effects of bedtime writing on difficulty falling asleep. J Exp Psychol Gen, 2018.</a></li>
+          <li><a href="https://doi.org/10.1016/j.neubiorev.2022.104711" lang="en">Laborde S. et al. Effects of voluntary slow breathing on heart rate and heart rate variability. Neurosci Biobehav Rev, 2022.</a></li>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2902103/" lang="en">Balbo M., Leproult R., Van Cauter E. Impact of sleep and its disturbances on hypothalamo-pituitary-adrenal axis activity. Int J Endocrinol, 2010.</a></li>
           <li><a href="https://www.ameli.fr/assure/sante/themes/insomnie-adulte/definition-facteurs-favorisants">Assurance maladie. Insomnie de l'adulte : définition, facteurs favorisants et conséquences.</a></li>
         </ol>
       </details>
@@ -836,7 +863,7 @@ html:not(.js) .instrument .progression { display: none; }
         <h2>Comprendre ce qui se passe dans ton corps</h2>
         <p>Des articles complets et sourcés pour mieux dormir, calmer ton système nerveux et sortir des ruminations du soir.</p>
       </div>
-      <div class="lecture"><a class="carte-lecture" href="/ruminations-le-soir/"><span class="teinte"><img src="/img/ruminations-le-soir-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Ruminations le soir : pourquoi ton cerveau s&#x27;emballe au coucher</h3><p class="resume">Ruminations le soir, pensées qui tournent au coucher : comprends pourquoi ton cerveau ne s&#x27;arrête pas la nuit et essaie 6 techniques étudiées.</p><p class="carte-meta">10 min de lecture</p></div></a><a class="carte-lecture" href="/reveil-4h-du-matin/"><span class="teinte sombre"><img src="/img/reveil-4h-du-matin-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment</h3><p class="resume">Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.</p><p class="carte-meta">10 min de lecture</p></div></a><a class="carte-lecture" href="/routine-du-soir-anti-stress/"><span class="teinte"><img src="/img/routine-du-soir-anti-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes</h3><p class="resume">Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.</p><p class="carte-meta">9 min de lecture</p></div></a><a class="carte-lecture" href="/procrastination-du-coucher/"><span class="teinte"><img src="/img/procrastination-du-coucher-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Procrastination du coucher : pourquoi on veille et comment arrêter</h3><p class="resume">Procrastination du coucher : pourquoi tu repousses l&#x27;heure d&#x27;aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.</p><p class="carte-meta">9 min de lecture</p></div></a><a class="carte-lecture" href="/cortisol-hormone-du-stress/"><span class="teinte"><img src="/img/cortisol-hormone-du-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Cortisol, hormone du stress : son rôle, son rythme et les idées reçues</h3><p class="resume">Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».</p><p class="carte-meta">11 min de lecture</p></div></a><a class="carte-lecture" href="/baisser-son-cortisol-naturellement/"><span class="teinte"><img src="/img/baisser-son-cortisol-naturellement-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Baisser son cortisol naturellement : ce qui marche vraiment</h3><p class="resume">Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.</p><p class="carte-meta">13 min de lecture</p></div></a></div>
+      <ul class="lecture" role="list"><li><a class="carte-lecture" href="/ruminations-le-soir/"><span class="teinte"><img src="/img/ruminations-le-soir-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Ruminations le soir : pourquoi ton cerveau s&#x27;emballe au coucher</h3><p class="resume">Ruminations le soir, pensées qui tournent au coucher : comprends pourquoi ton cerveau ne s&#x27;arrête pas la nuit et essaie 6 techniques étudiées.</p><p class="carte-meta">10 min de lecture</p></div></a></li><li><a class="carte-lecture" href="/reveil-4h-du-matin/"><span class="teinte sombre"><img src="/img/reveil-4h-du-matin-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment</h3><p class="resume">Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.</p><p class="carte-meta">10 min de lecture</p></div></a></li><li><a class="carte-lecture" href="/routine-du-soir-anti-stress/"><span class="teinte"><img src="/img/routine-du-soir-anti-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes</h3><p class="resume">Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.</p><p class="carte-meta">9 min de lecture</p></div></a></li><li><a class="carte-lecture" href="/procrastination-du-coucher/"><span class="teinte"><img src="/img/procrastination-du-coucher-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Procrastination du coucher : pourquoi on veille et comment arrêter</h3><p class="resume">Procrastination du coucher : pourquoi tu repousses l&#x27;heure d&#x27;aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.</p><p class="carte-meta">9 min de lecture</p></div></a></li><li><a class="carte-lecture" href="/cortisol-hormone-du-stress/"><span class="teinte"><img src="/img/cortisol-hormone-du-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Cortisol, hormone du stress : son rôle, son rythme et les idées reçues</h3><p class="resume">Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».</p><p class="carte-meta">11 min de lecture</p></div></a></li><li><a class="carte-lecture" href="/baisser-son-cortisol-naturellement/"><span class="teinte"><img src="/img/baisser-son-cortisol-naturellement-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Baisser son cortisol naturellement : ce qui marche vraiment</h3><p class="resume">Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.</p><p class="carte-meta">13 min de lecture</p></div></a></li></ul>
       <p class="themes-lien">Explorer par thème : <a href="/mieux-dormir/">Mieux dormir</a> · <a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a> · <a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a></p>
       <a class="btn btn-verre" href="/articles/">Tous les articles <span class="fleche" aria-hidden="true">→</span></a>
     </div>
@@ -901,7 +928,7 @@ html:not(.js) .instrument .progression { display: none; }
 </main>
 
 <footer class="pied"><div class="wrap">
-<nav class="pied-colonnes" id="navigation-pied" aria-label="Liens du pied de page"><div><p class="pied-titre" id="pied-lire">Lire</p><ul aria-labelledby="pied-lire"><li><a href="/articles/">Tous les articles</a></li><li><a href="/mieux-dormir/">Mieux dormir</a></li><li><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a></li><li><a href="/charge-mentale-et-burn-out/">Charge mentale et <span class="mot">burn-out</span></a></li><li><a href="/questions-frequentes/">Questions fréquentes</a></li><li><a href="/glossaire/">Glossaire</a></li></ul></div><div><p class="pied-titre" id="pied-outils">Outils gratuits</p><ul aria-labelledby="pied-outils"><li><a href="/test-stress-anxiete/">Test stress et anxiété</a></li><li><a href="/respiration-guidee/">Respiration guidée</a></li><li><a href="/exercices-respiration/">Exercices de respiration</a></li><li><a href="/journal-humeur/">Journal d&#x27;humeur</a></li><li><a href="/guides-gratuits/">Guide gratuit</a></li><li><a href="/recherche/">Rechercher</a></li></ul></div><div><p class="pied-titre" id="pied-site">Le site</p><ul aria-labelledby="pied-site"><li><a href="/a-propos/">À propos</a></li><li><a href="/methode-editoriale/">Méthode éditoriale</a></li><li><a href="/la-formation/">La formation</a></li><li><a href="/mentions-legales/">Mentions légales et confidentialité</a></li><li><a href="/accessibilite/">Accessibilité : non conforme</a></li><li><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></li></ul></div></nav>
+<nav class="pied-colonnes" id="navigation-pied" aria-label="Liens du pied de page"><div><h2 class="pied-titre" id="pied-lire">Lire</h2><ul aria-labelledby="pied-lire"><li><a href="/articles/">Tous les articles</a></li><li><a href="/mieux-dormir/">Mieux dormir</a></li><li><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a></li><li><a href="/charge-mentale-et-burn-out/">Charge mentale et <span class="mot">burn-out</span></a></li><li><a href="/questions-frequentes/">Questions fréquentes</a></li><li><a href="/glossaire/">Glossaire</a></li></ul></div><div><h2 class="pied-titre" id="pied-outils">Outils gratuits</h2><ul aria-labelledby="pied-outils"><li><a href="/test-stress-anxiete/">Test stress et anxiété</a></li><li><a href="/respiration-guidee/">Respiration guidée</a></li><li><a href="/exercices-respiration/">Exercices de respiration</a></li><li><a href="/journal-humeur/">Journal d&#x27;humeur</a></li><li><a href="/guides-gratuits/">Guide gratuit</a></li><li><a href="/recherche/">Rechercher</a></li></ul></div><div><h2 class="pied-titre" id="pied-site">Le site</h2><ul aria-labelledby="pied-site"><li><a href="/a-propos/">À propos</a></li><li><a href="/methode-editoriale/">Méthode éditoriale</a></li><li><a href="/la-formation/">La formation</a></li><li><a href="/mentions-legales/">Mentions légales et confidentialité</a></li><li><a href="/accessibilite/">Accessibilité : partiellement conforme</a></li><li><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></li></ul></div></nav>
 <p class="pied-urgence">Les contenus de ce site sont des informations de bien-être : ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24). <a href="/ressources-urgence/">Toutes les ressources d'urgence</a></p>
 <p class="pied-bas">© <span id="annee">2026</span> Clarté Mentale</p>
 </div></footer>
@@ -1070,14 +1097,31 @@ html:not(.js) .instrument .progression { display: none; }
     dimensionner.t = setTimeout(function () { var r = canvas.getBoundingClientRect(); if (Math.round(r.width) !== Math.round(largeur) || Math.round(r.height) !== Math.round(hauteur)) dimensionner(); }, 150);
   });
   if (!reduit) {
+    /* Bouton pause (RGAA 13.8 : tout mouvement de plus de 5 secondes doit pouvoir être arrêté) ; choix gardé sur l'appareil. */
+    var enPause = false, boutonPause = document.getElementById("pause-anim");
+    try { enPause = localStorage.getItem("cm-animation") === "pause"; } catch (e) {}
+    function appliquerPause() {
+      boutonPause.dataset.etat = enPause ? "pause" : "lecture";  // le nom du bouton change, sans aria-pressed
+      document.documentElement.classList.toggle("animations-en-pause", enPause);
+      boutonPause.querySelector(".lecteur-ecran").textContent = enPause ? "Relancer l'animation" : "Mettre l'animation en pause";
+      boutonPause.title = enPause ? "Relancer l'animation" : "Mettre l'animation en pause";
+      if (enPause) enCours = false; else if (!enCours) { enCours = true; requestAnimationFrame(animer); }
+    }
+    boutonPause.hidden = false;
+    boutonPause.addEventListener("click", function () {
+      enPause = !enPause;
+      try { localStorage.setItem("cm-animation", enPause ? "pause" : "lecture"); } catch (e) {}
+      appliquerPause();
+    });
+    appliquerPause();
     /* L'animation démarre une fois la page chargée et le navigateur libre : la page s'affiche et répond d'abord. */
-    var lancer = function () { requestAnimationFrame(animer); };
+    var lancer = function () { if (!enPause) requestAnimationFrame(animer); };
     if ("requestIdleCallback" in window) requestIdleCallback(lancer, { timeout: 2500 }); else setTimeout(lancer, 1200);
     if ("IntersectionObserver" in window) {
-      new IntersectionObserver(function (e) { var vu = e[0].isIntersecting; if (vu && !enCours) { enCours = true; requestAnimationFrame(animer); } else if (!vu) { enCours = false; } }).observe(canvas);
+      new IntersectionObserver(function (e) { var vu = e[0].isIntersecting; if (vu && !enCours && !enPause) { enCours = true; requestAnimationFrame(animer); } else if (!vu) { enCours = false; } }).observe(canvas);
     }
     var pastille = document.getElementById("pastille");
-    setInterval(function () { var c = (performance.now() / 1000) % 10; pastille.textContent = c < 4 ? "Inspire · 4 s" : "Expire · 6 s"; }, 250);
+    setInterval(function () { if (enPause) return; var c = (performance.now() / 1000) % 10; pastille.textContent = c < 4 ? "Inspire · 4 s" : "Expire · 6 s"; }, 250);
   }
 
   /* Test stress et anxiété : moteur commun (site/contenu/test/test.js), injecté à la construction. */
@@ -1198,6 +1242,7 @@ html:not(.js) .instrument .progression { display: none; }
     var html = '<div class="etape">' +
       '<p class="test-partie">' + (q.partie === 1 ? "Partie 1 sur 2 · Questionnaire GAD-7" : "Partie 2 sur 2 · Ton profil") + '</p>' +
       '<p class="test-consigne">' + (q.partie === 1 ? CONSIGNE_GAD : CONSIGNE_PROFIL) + '</p>' +
+      (etape === 0 ? '<p class="test-aide">Chaque réponse fait passer à la question suivante ; tu pourras revenir en arrière.</p>' : '') +
       '<h2 tabindex="-1" id="test-question">' + q.texte + '</h2><div class="choix" role="group" aria-labelledby="test-question">';
     ECHELLE.forEach(function (libelle, i) {
       html += '<button class="option" type="button" data-i="' + i + '" aria-pressed="' + (reponses[etape] === i) + '"><span class="puce" aria-hidden="true">' + i + '</span><span>' + libelle + '</span></button>';
@@ -1304,13 +1349,13 @@ html:not(.js) .instrument .progression { display: none; }
   var orbe = document.getElementById("orbe"), bouton = document.getElementById("lancer-souffle"), minuteur = document.getElementById("minuteur"), boucle = null;
   function arreterSouffle(fini) {
     clearInterval(boucle); boucle = null; orbe.classList.remove("actif"); orbe.textContent = fini ? "Bravo" : "Prêt";
-    bouton.setAttribute("aria-pressed", "false"); bouton.firstChild.textContent = "Lancer 1 minute ";
+    bouton.firstChild.textContent = "Lancer 1 minute ";
     minuteur.textContent = fini ? "1 minute, 6 respirations lentes. Refais-le ce soir au lit." : "Inspire 4 s, expire 6 s";
   }
   bouton.addEventListener("click", function () {
     if (boucle) { arreterSouffle(false); return; }
     var debut = performance.now();
-    orbe.classList.add("actif"); bouton.setAttribute("aria-pressed", "true"); bouton.firstChild.textContent = "Arrêter ";
+    orbe.classList.add("actif"); bouton.firstChild.textContent = "Arrêter ";
     boucle = setInterval(function () {
       var e = (performance.now() - debut) / 1000, c = e % 10;
       if (e >= 60) { arreterSouffle(true); return; }
