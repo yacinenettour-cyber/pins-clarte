@@ -140,7 +140,7 @@ Si tu prends des corticoïdes, ne les arrête jamais de toi-même : la baisse do
 
 Appelle le 15 (ou le 112) en cas de douleur abdominale sévère, de faiblesse intense ou de malaise : chez une personne atteinte d'insuffisance surrénalienne, ces signes peuvent annoncer une crise surrénalienne [8]. Et si le stress s'accompagne d'idées noires, le 3114, numéro national de prévention du suicide, répond 24 h/24.
 
-Le cortisol ne se mesure pas avec un questionnaire, mais le [test de stress et d'anxiété](/test-stress-anxiete/) t'aide à faire le point sur tes symptômes en 2 minutes, avec des repères pour savoir quand consulter.
+Le cortisol ne se mesure pas avec un questionnaire, mais le [test de stress et d'anxiété](/test-stress-anxiete/) t'aide à faire le point sur tes symptômes en 2 minutes, avec des repères pour savoir quand consulter. Si ce stress vient surtout du travail, lis aussi les [signes du burn-out et qui consulter](/signes-du-burn-out/).
 
 ## Questions fréquentes
 
@@ -155,6 +155,9 @@ L'adrénaline agit immédiatement pour préparer au combat ou à la fuite ; le c
 
 ### Le stress peut-il donner un « cortisol face » ?
 Ce n'est pas la cause habituelle. Le « cortisol face » des réseaux correspond au faciès lunaire, dont la cause la plus fréquente est la prise prolongée de corticoïdes ; il peut aussi signaler un syndrome de Cushing ou une hypothyroïdie [5]. Si ton visage s'arrondit sans raison évidente, parles-en à ton médecin plutôt que de t'auto-évaluer.
+
+### Cortisol élevé : quels signes, et que faire ?
+Un vrai excès de cortisol est une maladie, le syndrome de Cushing, qui associe graisse sur le torse, visage arrondi, peau qui s'amincit et muscles qui fondent [6]. Un visage arrondi vient le plus souvent d'un traitement prolongé par corticoïdes [5]. Un test fait seul renseigne peu, car le taux varie beaucoup au fil de la journée [1] : si tu as ces signes, c'est ton médecin qui choisit les examens, par exemple le cortisol dans l'urine, la salive ou le sang, puis un test de freinage [6]. Pour le stress du quotidien, vois plutôt les gestes qui aident à [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/).
 
 ### La fatigue surrénalienne existe-t-elle ?
 Non, selon les données actuelles : une revue systématique de 58 études a conclu que rien ne permet d'en faire une maladie réelle [7]. Une fatigue qui dure mérite quand même une consultation, pour en trouver la vraie cause.

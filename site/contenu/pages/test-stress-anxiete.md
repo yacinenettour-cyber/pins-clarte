@@ -1,6 +1,6 @@
 ---
 titre: Test de stress et d'anxiété : le GAD-7 et ton profil
-titre_seo: Test d'anxiété gratuit (GAD-7) et profil stress-sommeil
+titre_seo: Test de stress et d'anxiété gratuit (GAD-7, 2 minutes)
 description: Test gratuit en 2 minutes : le questionnaire d'anxiété GAD-7, validé scientifiquement, puis ton profil (nuits, travail ou corps) avec des priorités adaptées.
 maj: 2026-10-09
 ---

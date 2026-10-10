@@ -93,7 +93,7 @@ Non, il n'est pas nécessaire d'arrêter le café : c'est surtout le café pris 
 
 Les auteurs conseillent donc d'éviter une caféine importante au moins 6 heures avant de dormir [6].
 
-Le lien avec le cortisol est indirect, mais logique : moins de sommeil, c'est un cortisol plus élevé le lendemain soir [2]. Garde ton café pour la matinée et fixe-toi une heure limite en début d'après-midi. Pense aussi aux autres boissons qui contiennent de la caféine.
+Le lien avec le cortisol est indirect, mais logique : moins de sommeil, c'est un cortisol plus élevé le lendemain soir [2]. Garde ton café pour la matinée et fixe-toi une heure limite en début d'après-midi. Pense aussi aux autres boissons qui contiennent de la caféine. Pour le reste de l'assiette, vois ce que les études disent de l'[alimentation anti-stress](/alimentation-anti-stress/).
 
 ## Cocktails « anti-cortisol », compléments, adaptogènes : que valent-ils ?
 

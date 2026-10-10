@@ -32,3 +32,7 @@ else
 fi
 git push -q origin gh-pages
 echo "Publié sur la branche gh-pages."
+# Le registre des dates du plan du site change quand une page change : il doit suivre le dépôt (main).
+if [ -n "$(git -C "$DEPOT" status --porcelain -- site/outils/dates-contenu.json)" ]; then
+  echo "À committer sur main : site/outils/dates-contenu.json (dates de mise à jour du plan du site)."
+fi

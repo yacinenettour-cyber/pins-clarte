@@ -65,6 +65,6 @@ Le détail de ces règles, la hiérarchie des sources et la façon de signaler u
 
 ## Me contacter
 
-Par e-mail : [yavo88@hotmail.com](mailto:yavo88@hotmail.com). Si tu repères une erreur dans un article, écris-moi : je vérifie, je corrige, et la date de mise à jour change. Les informations sur l'éditeur du site figurent dans les [mentions légales](/mentions-legales/).
+Par e-mail : [yavo88@hotmail.com](mailto:yavo88@hotmail.com). Si tu repères une erreur dans un article, écris-moi : je vérifie, je corrige, et la date de mise à jour change. Les informations sur l'éditeur du site figurent dans les [mentions légales](/mentions-legales/), et les réponses aux questions courantes (test, guide, vie privée) dans les [questions fréquentes](/questions-frequentes/).
 
 En cas d'urgence, appelle le **[15](tel:15)** ou le **[112](tel:112)**. Si tu as des pensées suicidaires, le **[3114](tel:3114)** répond gratuitement, 24 h/24 et 7 j/7. Les autres numéros utiles sont sur la page [ressources d'urgence](/ressources-urgence/).

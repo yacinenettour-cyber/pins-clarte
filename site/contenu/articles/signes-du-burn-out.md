@@ -11,7 +11,7 @@ image: Une personne assise à son bureau en fin de journée, la tête appuyée s
 ## L'essentiel
 - Pour l'OMS, le burn-out est un phénomène lié au travail et non une maladie, mais il mérite d'être pris au sérieux [1][2].
 - Il repose sur trois dimensions : l'épuisement, la mise à distance du travail (cynisme) et le sentiment de ne plus être efficace [1][3].
-- Ses premiers signes sont physiques, émotionnels, cognitifs et comportementaux, et ils s'installent souvent sans bruit [2][3].
+- Ses premiers signes, les signes avant-coureurs, sont physiques, émotionnels, cognitifs et comportementaux, et ils s'installent souvent sans bruit [2][3].
 - Le médecin traitant et le médecin du travail sont les deux interlocuteurs clés, et un arrêt de travail est souvent nécessaire [2].
 
 Le burn-out est un syndrome d'épuisement lié au travail [1]. Ses signes associent un épuisement profond, une prise de distance avec ton travail (indifférence, cynisme) et l'impression de ne plus y arriver. Ils s'installent progressivement et touchent à la fois le corps, les émotions et le comportement. Si tu t'y reconnais, parles-en à ton médecin traitant ou au médecin du travail : c'est leur rôle.

@@ -732,7 +732,8 @@ def construire_article(a, tous):
 # Polices de l'accueil : les mêmes @font-face que style.css (polices du site et polices de secours mises à l'échelle).
 POLICES_CSS = "\n".join(l.rstrip() for l in open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8")
                         if l.startswith("@font-face"))
-TITRE_ACCUEIL = "Baisser le cortisol : test anti-stress pour mieux dormir"
+# L'accueil ne vise pas « baisser le cortisol » : c'est le mot-clé de l'article dédié (pas deux pages sur la même recherche).
+TITRE_ACCUEIL = "Stress et sommeil : gestes anti-stress naturels validés"
 DESCRIPTION_ACCUEIL = ("Test stress et anxiété en 2 minutes (questionnaire validé GAD-7) et ton profil, puis les gestes "
                        "anti-stress naturels validés par la science pour mieux dormir.")
 
@@ -1383,13 +1384,56 @@ def ecrire(rel, contenu, mode="w"):
         f.write(contenu)
 
 
+DATES_CONTENU = os.path.join(RACINE, "outils", "dates-contenu.json")
+
+
+def empreinte_contenu(chemin):
+    """Empreinte de ce que la page dit et relie : zone <main> et données structurées, sans l'en-tête ni le pied
+    de page (communs à toutes les pages). Un changement de menu ne date donc pas toutes les pages du jour."""
+    s = open(chemin, encoding="utf-8").read()
+    m = re.search(r"<main.*?</main>", s, re.S)
+    zone = re.sub(r"<(script|style)[^>]*>.*?</\1>", "", m.group(0) if m else s, flags=re.S)
+    # Texte, adresses des liens et des images, données structurées : le balisage seul (classes, attributs) ne compte pas.
+    texte = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", zone))).strip()
+    adresses = " ".join(re.findall(r'(?:href|src)="([^"]*)"', zone))
+    ld = "".join(re.findall(r'<script type="application/ld\+json">.*?</script>', s, re.S))
+    return hashlib.sha1((texte + "\n" + adresses + "\n" + re.sub(r"\s+", " ", ld)).encode("utf-8")).hexdigest()[:16]
+
+
+def dates_contenu(chemins):
+    """Date de dernière modification réelle de chaque page (pour le plan du site) : la date du jour quand le
+    contenu principal a changé depuis la dernière construction, sinon la date gardée dans
+    outils/dates-contenu.json (registre à committer avec le reste après chaque publication)."""
+    try:
+        registre = json.load(open(DATES_CONTENU, encoding="utf-8"))
+    except FileNotFoundError:
+        registre = {}
+    aujourdhui = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+    nouveau = {}
+    for p in chemins:
+        emp = empreinte_contenu(os.path.join(SORTIE, p.strip("/"), "index.html") if p != "/" else os.path.join(SORTIE, "index.html"))
+        ancien = registre.get(p)
+        nouveau[p] = ancien if ancien and ancien["empreinte"] == emp else {"empreinte": emp, "date": aujourdhui}
+    if nouveau != registre:
+        with open(DATES_CONTENU, "w", encoding="utf-8") as f:
+            json.dump(nouveau, f, ensure_ascii=False, indent=1, sort_keys=True)
+            f.write("\n")
+    return {p: v["date"] for p, v in nouveau.items()}
+
+
+def md_brut(t):
+    """Balises gardées dans le markdown (citations <q>, mots anglais <em lang="en">) remises en texte brut (llms-full.txt)."""
+    return re.sub(r'<em lang="en">(.*?)</em>', r"*\1*", re.sub(r"<q>(.*?)</q>", r"« \1 »", t))
+
+
 def construire_fichiers_techniques(articles):
-    pages = [("/", SITE["date_publication"]), ("/articles/", max(a["maj"] for a in articles)),
-             ("/la-formation/", SITE["date_publication"]),
-             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/ressources-urgence/", "2026-10-10"), ("/exercices-respiration/", "2026-10-10"), ("/journal-humeur/", "2026-10-10"), ("/glossaire/", "2026-10-10"), ("/questions-frequentes/", "2026-10-10"), ("/accessibilite/", "2026-10-10"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
-             ("/mentions-legales/", SITE["date_publication"])]
-    pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
-    pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
+    # Dates du plan du site : changement réel du contenu (registre), jamais avant la date « maj » d'un article.
+    fixes = ["/", "/articles/", "/la-formation/", "/guides-gratuits/", "/test-stress-anxiete/", "/respiration-guidee/",
+             "/ressources-urgence/", "/exercices-respiration/", "/journal-humeur/", "/glossaire/", "/questions-frequentes/",
+             "/accessibilite/", "/a-propos/", "/methode-editoriale/", "/mentions-legales/"]
+    fixes += [f"/{th['slug']}/" for th in SITE.get("themes", {}).values()]
+    dates = dates_contenu(fixes + [f"/{a['slug']}/" for a in articles])
+    pages = [(p, dates[p]) for p in fixes] + [(f"/{a['slug']}/", max(dates[f"/{a['slug']}/"], a["maj"])) for a in articles]
     # Images de chaque article (photo principale et image à épingler), pour Google Images.
     images_page = {f"/{a['slug']}/": [a["images"][1200][0]] + ([a["epingle"]] if a.get("epingle") else [])
                    for a in articles if a.get("images")}
@@ -1453,9 +1497,9 @@ def construire_fichiers_techniques(articles):
                     f"Mis à jour le {date_fr(a['maj'])} — par {SITE['auteur']['nom']}", "", a["intro"], ""]
         if a["resume"]:
             complet += ["## L'essentiel", ""] + [f"- {p}" for p in a["resume"]] + [""]
-        complet += [re.sub(r"<q>(.*?)</q>", "« \\1 »", a["corps_md"]), ""]  # citations <q> remises entre guillemets en texte brut
+        complet += [md_brut(a["corps_md"]), ""]
         if a["faq"]:
-            complet += ["## Questions fréquentes", ""] + [f"### {q}\n\n{r}\n" for q, r in a["faq"]]
+            complet += ["## Questions fréquentes", ""] + [f"### {q}\n\n{md_brut(r)}\n" for q, r in a["faq"]]
         if a["sources"]:
             complet += ["## Sources", ""] + [f"{i + 1}. [{t}]({u.replace('(', '%28').replace(')', '%29')})" for i, (t, u) in enumerate(a["sources"])] + [""]
     ecrire("llms-full.txt", "\n".join(complet))

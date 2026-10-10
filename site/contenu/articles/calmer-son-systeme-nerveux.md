@@ -14,7 +14,7 @@ image: Femme assise près d'une fenêtre en fin de journée, les yeux fermés, u
 - Relaxation musculaire, ancrage par les cinq sens, marche et présence d'un proche complètent la boîte à outils.
 - Si l'anxiété dure, revient sous forme de crises ou t'empêche de vivre normalement, parles-en à un médecin.
 
-Calmer son système nerveux, c'est aider le système parasympathique, le « frein » de l'organisme, à reprendre la main sur le mode alerte. Le geste le plus simple est de ralentir ta respiration en allongeant l'expiration : respirer lentement favorise l'activité de ce frein [3]. En quelques minutes, le soupir physiologique, la relaxation musculaire ou l'ancrage par les cinq sens peuvent faire redescendre la pression. Voici comment les pratiquer.
+Calmer son système nerveux (on parle aussi de le réguler), c'est aider le système parasympathique, le « frein » de l'organisme, à reprendre la main sur le mode alerte. Le geste le plus simple est de ralentir ta respiration en allongeant l'expiration : respirer lentement favorise l'activité de ce frein [3]. En quelques minutes, le soupir physiologique, la relaxation musculaire ou l'ancrage par les cinq sens peuvent faire redescendre la pression. Voici comment les pratiquer.
 
 ## Comment fonctionne le système nerveux face au stress ?
 Le système nerveux autonome est la partie du système nerveux qui gère tout ce qui se passe sans que tu y penses : le rythme du cœur, la tension artérielle, la digestion [1]. Il a deux branches, qui ont parfois des effets opposés sur un même organe [1].
@@ -122,7 +122,7 @@ Consulte ton médecin traitant si ton anxiété dure, revient sous forme de cris
 
 Une douleur dans la poitrine ou un malaise inhabituel doit faire appeler le 15 ou le 112 : ne fais pas le diagnostic toi-même. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 
-Pour savoir où tu en es, le [questionnaire GAD-7](/test-stress-anxiete/), un outil validé de repérage de l'anxiété, se remplit en ligne en 2 minutes ; tes réponses restent sur ton appareil.
+Pour savoir où tu en es, le [questionnaire GAD-7](/test-stress-anxiete/), un outil validé de repérage de l'anxiété, se remplit en ligne en 2 minutes ; tes réponses restent sur ton appareil. Si ton stress vient surtout du travail et que tu te sens à bout, lis aussi les [signes du burn-out](/signes-du-burn-out/).
 
 ## Questions fréquentes
 ### Comment se calmer en une minute ?

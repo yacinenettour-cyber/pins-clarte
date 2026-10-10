@@ -45,7 +45,7 @@ Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress
 
 ### Parce que l'alcool du soir se paie en fin de nuit
 
-L'alcool du soir est trompeur : il aide souvent à s'endormir, mais à doses élevées il peut perturber la seconde moitié de la nuit, et son effet sédatif s'émousse vite avec l'habitude [5]. C'est la conclusion d'une revue du centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, publiée en 2001 dans la revue de l'Institut national américain sur l'abus d'alcool et l'alcoolisme (NIAAA) [5]. L'INSV conseille d'ailleurs d'éviter l'alcool au dîner [3].
+L'alcool du soir est trompeur : il aide souvent à s'endormir, mais à doses élevées il peut perturber la seconde moitié de la nuit, et son effet sédatif s'émousse vite avec l'habitude [5]. C'est la conclusion d'une revue du centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, publiée en 2001 dans la revue de l'Institut national américain sur l'abus d'alcool et l'alcoolisme (NIAAA) [5]. L'INSV conseille d'ailleurs d'éviter l'alcool au dîner [3]. Le café et l'alcool sont aussi détaillés dans l'article sur l'[alimentation anti-stress](/alimentation-anti-stress/).
 
 ### Parce que la lumière envoie un signal d'éveil
 
@@ -116,6 +116,9 @@ Se réveiller en fin de nuit n'a rien d'étrange : c'est une période de sommeil
 
 ### Le réveil à 4h du matin est-il lié au cortisol ?
 Peut-être en partie, mais sans dramatiser. Le cortisol remonte normalement pendant la seconde moitié de la nuit, chez tout le monde [4]. Le stress et l'hyper-éveil peuvent rendre cette période plus fragile [2], mais le cortisol reste un facteur parmi d'autres.
+
+### Que signifie se réveiller à 4h du matin ?
+Le plus souvent, rien de grave ni de mystérieux : la fin de nuit est une période de sommeil plus léger [1], et le cortisol y remonte naturellement [4]. Le stress, l'alcool du soir, la lumière ou un coucher trop précoce fragilisent encore ce moment [3][5]. Cet article s'en tient à ce que mesure la recherche sur le sommeil : les lectures de la médecine chinoise (l'« horloge des organes ») ou spirituelles n'en font pas partie.
 
 ### Faut-il prendre un somnifère quand on se réveille la nuit ?
 Pas de ta propre initiative : l'INSV conseille de ne jamais en prendre seul et d'en parler à ton médecin [3]. Selon l'Inserm, ces médicaments peuvent être utiles ponctuellement, mais quand l'insomnie dure, l'approche comportementale est toujours à privilégier [2].

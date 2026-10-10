@@ -29,7 +29,7 @@ Ces pensées prennent deux formes :
 | Elle regarde vers | Le passé | L'avenir |
 | Exemple | « Pourquoi j'ai dit ça ? » | « Et si je n'y arrive pas demain ? » |
 
-Les soucis liés aux tâches pas encore faites contribuent nettement aux difficultés d'endormissement [4].
+Les soucis liés aux tâches pas encore faites contribuent nettement aux difficultés d'endormissement [4]. Si cette liste ne te quitte jamais, lis aussi l'article sur la [charge mentale](/charge-mentale/).
 
 ## Que se passe-t-il quand ton cerveau ne s'arrête pas la nuit ?
 

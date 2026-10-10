@@ -22,7 +22,7 @@ La procrastination du coucher est le fait de ne pas aller se coucher à l'heure 
 
 Dans leur enquête en ligne auprès de 177 personnes, les chercheurs ont observé que les personnes ayant le plus de mal à s'autoréguler (à tenir leurs propres intentions) repoussaient plus souvent leur coucher, et que cette habitude allait de pair avec le sentiment de ne pas dormir assez [1]. Leur hypothèse : le problème n'est pas tant de ne pas vouloir dormir que de **ne pas vouloir arrêter ce qu'on est en train de faire** [1].
 
-Le phénomène est devenu célèbre sous le nom anglais de *revenge bedtime procrastination*. D'après la Sleep Foundation, l'expression vient d'une formule chinoise qui traduisait la frustration face à de longues journées de travail stressantes, sans temps pour soi : veiller devient une petite « revanche » sur ces journées [3].
+Le phénomène est devenu célèbre sous le nom anglais de <em lang="en">revenge bedtime procrastination</em>, que l'on traduit par procrastination du coucher « par revanche » ou « par vengeance ». D'après la Sleep Foundation, l'expression vient d'une formule chinoise qui traduisait la frustration face à de longues journées de travail stressantes, sans temps pour soi : veiller devient une petite « revanche » sur ces journées [3].
 
 À ne pas confondre avec l'insomnie, que l'Inserm définit comme un manque de sommeil **involontaire** [8]. Ici, c'est l'heure du coucher qui recule, pas le sommeil qui se refuse :
 
@@ -98,7 +98,7 @@ Si tu repousses le coucher parce que le lit rime avec inquiétudes, le [test de 
 
 ## Questions fréquentes
 ### Pourquoi parle-t-on de « revanche » du soir ?
-L'expression anglaise *revenge bedtime procrastination* viendrait d'une formule chinoise exprimant la frustration face à de longues journées de travail sans temps libre [3]. Veiller devient une façon de reprendre la main sur sa journée. Le prix à payer, c'est le sommeil.
+L'expression anglaise <em lang="en">revenge bedtime procrastination</em> viendrait d'une formule chinoise exprimant la frustration face à de longues journées de travail sans temps libre [3]. Veiller devient une façon de reprendre la main sur sa journée. Le prix à payer, c'est le sommeil.
 ### Est-ce la même chose que l'insomnie ?
 Non. Dans l'insomnie, le manque de sommeil est involontaire : tu voudrais dormir, mais le sommeil ne vient pas [8]. Dans la procrastination du coucher, c'est le moment d'aller au lit qui recule alors que rien ne t'en empêche [1]. Les deux peuvent toutefois se mêler [2].
 ### Est-ce un manque de volonté ?
