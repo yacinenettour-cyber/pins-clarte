@@ -26,7 +26,7 @@
 <meta name="theme-color" content="#080C10">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v=86c698e8">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","@id":"https://www.contactapaisement-mental.fr/la-formation/#formation","name":"Quand le cerveau refuse de dormir","description":"Le programme pour calmer ton mental le soir et laisser le sommeil revenir naturellement, même quand tu es épuisé(e) et très stressé(e).","inLanguage":"fr-FR","provider":{"@id":"https://www.contactapaisement-mental.fr/#organisation","@type":"Organization","name":"Clarté Mentale","url":"https://www.contactapaisement-mental.fr/"},"url":"https://www.contactapaisement-mental.fr/la-formation/","offers":{"@type":"Offer","price":"37.00","priceCurrency":"EUR","category":"Paid","availability":"https://schema.org/InStock","url":"https://lp.contactapaisement-mental.fr/689e4290"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"Online","courseWorkload":"PT10M"},"teaches":["Apaiser le système nerveux","Sortir des ruminations sans lutter","Un rituel du soir stabilisant","Consolider le sommeil dans le temps","Le parcours des 28 soirs","Et si c'est ton cas ?","Un kit de 7 fiches à imprimer","Bonus : l'audio express"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Est-ce que ce programme remplace un traitement médical ?","acceptedAnswer":{"@type":"Answer","text":"Non. Ce programme n'est ni un traitement médical ni une thérapie. Il propose des outils de bien-être pour apaiser le stress et calmer le mental le soir. Il peut être utilisé en complément d'un suivi, mais ne remplace jamais l'avis d'un professionnel de santé."}},{"@type":"Question","name":"Combien de temps faut-il y consacrer ?","acceptedAnswer":{"@type":"Answer","text":"Les exercices durent de 2 à 10 minutes, et le parcours propose une seule action par soir pendant 28 soirs. Tu avances à ton rythme, depuis ton téléphone, ta tablette ou ton ordinateur."}},{"@type":"Question","name":"En combien de temps vais-je ressentir un apaisement ?","acceptedAnswer":{"@type":"Answer","text":"Cela dépend des personnes : pour certaines, le soulagement se fait sentir dès les premiers soirs, pour d'autres il est plus progressif. Le but est un mental plus calme et moins de pression au moment du coucher, pas un résultat garanti."}},{"@type":"Question","name":"Y a-t-il des avis de clients ?","acceptedAnswer":{"@type":"Answer","text":"Pas encore : le programme est récent, et je préfère te le dire plutôt que d'inventer des témoignages. C'est pour ça qu'il y a une garantie de 7 jours : tu testes chez toi, le soir, sans risque."}},{"@type":"Question","name":"Et si ça ne me convient pas ?","acceptedAnswer":{"@type":"Answer","text":"Tu as 7 jours après l'achat pour demander un remboursement intégral, sans justification, par simple e-mail."}}]}</script>
@@ -37,7 +37,11 @@
 <header class="entete"><div class="large">
 <a class="marque" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#080C10" stroke="#8FBF9A" stroke-width="1.5"/><path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#DFD5C6"/></svg>Clarté Mentale</a>
 <nav class="nav" aria-label="Menu principal"><a href="/articles/">Articles</a><a href="/la-formation/" aria-current="page">La formation</a><a href="/guides-gratuits/">Guides gratuits</a><a href="/a-propos/">À propos</a></nav>
+<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button>
 </div></header>
+<nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
+<a href="/" tabindex="-1">Accueil</a><a href="/test-stress-anxiete/" tabindex="-1">Le test</a><a href="/articles/" tabindex="-1">Articles</a><a href="/respiration-guidee/" tabindex="-1">Respiration guidée</a><a href="/la-formation/" tabindex="-1" aria-current="page">La formation</a><a href="/guides-gratuits/" tabindex="-1">Guides gratuits</a><a href="/a-propos/" tabindex="-1">À propos</a>
+</nav>
 <main id="contenu">
 <div class="etroit"><nav class="ariane" aria-label="Fil d'Ariane"><ol><li><a href="/">Accueil</a></li><li aria-current="page">La formation</li></ol></nav>
 <p class="surtitre">La formation Clarté Mentale</p>
@@ -123,6 +127,45 @@
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
 <p>© 2026 Clarté Mentale</p>
 </div></footer>
+<script>
+/* Menu mobile commun à l'accueil et aux autres pages (injecté à la construction). */
+(function () {
+  "use strict";
+  var burger = document.getElementById("burger"), menu = document.getElementById("menu-mobile");
+  if (!burger || !menu) return;
+  function estOuvert() { return burger.getAttribute("aria-expanded") === "true"; }
+  function basculer(ouvrir, instant) {
+    var ouvert = typeof ouvrir === "boolean" ? ouvrir : !estOuvert();
+    if (instant) menu.classList.add("instant");
+    burger.setAttribute("aria-expanded", String(ouvert));
+    burger.setAttribute("aria-label", ouvert ? "Fermer le menu" : "Ouvrir le menu");
+    menu.classList.toggle("ouvert", ouvert);
+    menu.setAttribute("aria-hidden", String(!ouvert));
+    menu.querySelectorAll("a").forEach(function (a) { a.tabIndex = ouvert ? 0 : -1; });
+    document.documentElement.classList.toggle("menu-ouvert", ouvert);
+    if (instant) { void menu.offsetWidth; menu.classList.remove("instant"); }
+    if (ouvert) { var premier = menu.querySelector("a"); if (premier) premier.focus({ preventScroll: true }); }
+  }
+  burger.addEventListener("click", function () { basculer(); });
+  menu.addEventListener("click", function (e) {
+    var a = e.target.closest("a");
+    if (!a) return;
+    var cible = a.hash && a.pathname === location.pathname ? document.getElementById(decodeURIComponent(a.hash.slice(1))) : null;
+    /* Lien vers une autre page : le menu reste affiché jusqu'à l'arrivée de la nouvelle page (rien ne bouge entre-temps). */
+    if (!cible) return;
+    /* Partie de la même page : le menu se ferme d'un coup, puis la page défile jusqu'à la partie, sous l'en-tête. */
+    e.preventDefault();
+    basculer(false, true);
+    if (history.pushState) history.pushState(null, "", a.hash);
+    var doux = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    requestAnimationFrame(function () { cible.scrollIntoView({ behavior: doux ? "smooth" : "auto", block: "start" }); });
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && estOuvert()) { basculer(false); burger.focus(); } });
+  window.addEventListener("resize", function () { if (window.innerWidth > 860 && estOuvert()) basculer(false, true); });
+  /* Retour arrière : la page revient du cache telle qu'on l'a quittée, menu ouvert ; on le referme sans animation. */
+  window.addEventListener("pageshow", function (e) { if (e.persisted && estOuvert()) basculer(false, true); });
+})();
+</script>
 <script>(function(){var cle="cm-ne-pas-compter",m=/[?&]compter=(oui|non)\b/.exec(location.search),moi=false;
 try{if(m){if(m[1]==="non")localStorage.setItem(cle,"1");else localStorage.removeItem(cle);}moi=localStorage.getItem(cle)==="1";}catch(e){}
 if(m){var d=document.createElement("div");d.setAttribute("role","status");d.textContent=moi?"Tes visites ne sont plus comptées sur cet appareil.":"Tes visites sont de nouveau comptées sur cet appareil.";
