@@ -41,7 +41,7 @@ Ce rythme est normal et concerne tout le monde. Chez les personnes qui dorment m
 
 ### Parce que le stress fragilise la seconde moitié de la nuit
 
-Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress, les difficultés touchent surtout la seconde moitié de la nuit, avec l'impression de somnoler à partir de 4 ou 5 heures du matin [3]. Une fois réveillé, ton esprit attrape vite un [souci de la veille](/ruminations-le-soir/), et l'éveil se prolonge.
+Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress, les difficultés touchent surtout la seconde moitié de la nuit, avec l'impression de somnoler à partir de 4 ou 5 heures du matin [3]. Une fois réveillé, ton esprit attrape vite un [souci de la veille](/ruminations-le-soir/), et l'éveil se prolonge. Si tu te réveilles avec le cœur qui bat et une peur qui monte, lis aussi l'article sur l'[angoisse le soir et la nuit](/angoisse-le-soir/).
 
 ### Parce que l'alcool du soir se paie en fin de nuit
 

@@ -132,7 +132,7 @@ Fais deux ou trois soupirs physiologiques : une inspiration par le nez, une peti
 Le nerf vague participe au système parasympathique, le « frein » du corps. Selon une revue de 2018, respirer lentement, à moins de 10 respirations par minute, favorise la prédominance du parasympathique par l'intermédiaire de l'activité vagale [3]. D'où l'intérêt d'allonger l'expiration.
 
 ### Combien de temps dure une crise d'angoisse ?
-Selon l'Assurance maladie, une attaque de panique apparaît brutalement, atteint son maximum en une vingtaine de minutes, puis les symptômes diminuent progressivement [8]. C'est très désagréable, mais cela passe. Si les crises se répètent, parles-en à ton médecin.
+Selon l'Assurance maladie, une attaque de panique apparaît brutalement, atteint son maximum en une vingtaine de minutes, puis les symptômes diminuent progressivement [8]. C'est très désagréable, mais cela passe. Si les crises se répètent, parles-en à ton médecin. Si elles te réveillent la nuit, lis ce qu'il faut faire en cas de [crise d'angoisse la nuit](/angoisse-le-soir/).
 
 ### Faut-il pratiquer tous les jours ?
 C'est préférable. Dans l'essai de Stanford, les participants pratiquaient 5 minutes chaque jour pendant un mois [2]. Entraîne-toi quand tout va bien : le geste sera plus facile à retrouver en plein stress.

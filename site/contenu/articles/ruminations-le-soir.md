@@ -20,7 +20,7 @@ Les ruminations le soir sont des pensées qui tournent en boucle au coucher, qua
 
 Les ruminations arrivent le soir parce qu'au lit, plus rien n'occupe ton attention : l'esprit vagabonde librement et ressasse facilement [3]. Selon une revue du centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, publiée en 2018 dans *Nature and Science of Sleep* (Kalmbach et al.), ce temps passé éveillé au lit est un moment sans structure, souvent solitaire : un terrain idéal pour ressasser [3].
 
-L'Institut national du sommeil et de la vigilance (INSV) observe que chez les personnes anxieuses, la difficulté porte surtout sur l'endormissement : elles ont du mal à se détendre, avec beaucoup de pensées et de préoccupations au moment du coucher [2].
+L'Institut national du sommeil et de la vigilance (INSV) observe que chez les personnes anxieuses, la difficulté porte surtout sur l'endormissement : elles ont du mal à se détendre, avec beaucoup de pensées et de préoccupations au moment du coucher [2]. Si c'est plutôt une angoisse qui monte, avec des signes dans le corps, lis l'article sur l'[angoisse le soir](/angoisse-le-soir/).
 
 Ces pensées prennent deux formes :
 

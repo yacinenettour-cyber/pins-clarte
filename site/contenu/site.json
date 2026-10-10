@@ -129,6 +129,13 @@
    "alt": "Femme qui dort paisiblement, les yeux fermés, dans un lit aux draps blancs",
    "credit": "Photo : Pexels",
    "formation": true
+  },
+  "angoisse-le-soir": {
+   "categorie": "sommeil",
+   "image": "unsplash-RiFW3Von_as.jpg",
+   "alt": "Personne assise dans son lit la nuit, les mains sur les tempes, l'air inquiet",
+   "credit": "Photo : Samir Vanegas / Unsplash",
+   "formation": true
   }
  },
  "formation": {
@@ -236,6 +243,10 @@
     [
      "Les pensées tournent dès que tu éteins la lumière",
      "ruminations-le-soir"
+    ],
+    [
+     "L'angoisse monte au coucher ou te réveille la nuit",
+     "angoisse-le-soir"
     ],
     [
      "Tu sens que le stress abîme tes nuits",
