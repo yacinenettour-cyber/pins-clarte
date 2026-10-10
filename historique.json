@@ -1400,5 +1400,16 @@
   "design": "sombre",
   "pin_id": "600175087890068893",
   "md5": "dfcd9dd1245662ae8bcc5b003e85f0ef"
+ },
+ {
+  "date": "2026-10-10T05:07+00:00",
+  "titre": "Chocolat noir et stress : ce qu'en attendre vraiment",
+  "image": "images/pin-20261010-050746.jpg",
+  "fond": "fonds/dedie-chocolat-noir.jpg",
+  "theme": "alimentation",
+  "design": "clair",
+  "pin_id": "600175087890075146",
+  "md5": "1e70148577b1a522965223a8393f6a8e",
+  "lien": "guide:cortisol"
  }
 ]
