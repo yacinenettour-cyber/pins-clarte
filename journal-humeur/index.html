@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<script>(function(){var r=document.documentElement;r.classList.add("js");try{var t=localStorage.getItem("cm-theme");if(t==="clair"||t==="sombre")r.dataset.theme=t}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal d&#x27;humeur gratuit : humeur, stress et sommeil</title>
+<meta name="description" content="Journal d&#x27;humeur gratuit et privé : note chaque jour ton humeur, ton stress et ta nuit en 30 secondes. Tes notes restent sur ton appareil, rien n&#x27;est envoyé.">
+<link rel="canonical" href="https://www.contactapaisement-mental.fr/journal-humeur/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Clarté Mentale">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Journal d&#x27;humeur gratuit : humeur, stress et sommeil">
+<meta property="og:description" content="Journal d&#x27;humeur gratuit et privé : note chaque jour ton humeur, ton stress et ta nuit en 30 secondes. Tes notes restent sur ton appareil, rien n&#x27;est envoyé.">
+<meta property="og:url" content="https://www.contactapaisement-mental.fr/journal-humeur/">
+<meta property="og:image" content="https://www.contactapaisement-mental.fr/img/og-defaut.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clarté Mentale : un croissant de lune sur fond de nuit et la phrase « Ton système nerveux mérite une trêve. »">
+<meta name="twitter:card" content="summary_large_image">
+
+
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Clarté Mentale" href="/feed.xml">
+<meta name="theme-color" content="#080C10">
+<link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=1d276a53">
+<style>/* Journal d'humeur (couleurs du thème : sombre ou clair). */
+.journal { display: grid; gap: 18px; margin: 26px 0 34px; padding: clamp(18px, 3vw, 28px); border-radius: 26px; background: var(--verre); border: 1px solid var(--lisere); box-shadow: var(--ombre-2xl); }
+.jr-message { margin: 0; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--brume); font-size: 15px; }
+.jr-ligne { display: grid; gap: 8px; }
+.jr-ligne > span, .jr-ligne label { font-weight: 600; font-size: 15.5px; color: var(--champagne); }
+.jr-ligne input[type="date"], .jr-ligne textarea { font: 400 16px/1.5 var(--texte); color: var(--champagne); background: var(--verre-fort); border: 1px solid var(--lisere-fort); border-radius: 12px; padding: 10px 12px; width: 100%; }
+.jr-ligne input[type="date"] { max-width: 220px; color-scheme: inherit; }
+.jr-ligne textarea { min-height: 70px; resize: vertical; }
+.jr-echelle { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.jr-echelle button { display: grid; gap: 2px; justify-items: center; padding: 9px 4px; border-radius: 12px; border: 1px solid var(--lisere-fort); background: transparent; color: var(--champagne); font: 700 17px/1.1 var(--titre); cursor: pointer; transition: var(--transition); min-height: 56px; }
+.jr-echelle button small { font: 500 11.5px/1.2 var(--texte); color: var(--champagne-doux); text-align: center; }
+.jr-echelle button[aria-pressed="true"] { border-color: var(--brume); background: rgba(58, 95, 67, 0.22); box-shadow: inset 0 0 0 1px var(--brume); }
+.jr-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.jr-actions .bouton { border: 0; font: 700 16px/1 var(--texte); cursor: pointer; }
+.jr-secondaire { padding: 10px 14px; border-radius: 999px; border: 1px solid var(--lisere-fort); background: transparent; color: var(--champagne); font: 600 14.5px/1 var(--texte); cursor: pointer; }
+.jr-secondaire:hover { border-color: var(--brume); color: var(--brume); }
+.jr-effacer { color: var(--champagne-doux); }
+.jr-courbe svg { width: 100%; height: auto; display: block; }
+.jr-grille line { stroke: var(--lisere); stroke-width: 1; }
+.jr-courbe path { fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.jr-h path { stroke: var(--brume); } .jr-h circle { fill: var(--brume); }
+.jr-t path { stroke: var(--alerte, #D9A26B); stroke-dasharray: 5 4; } .jr-t circle { fill: var(--alerte, #D9A26B); }
+.jr-legende { margin: 6px 0 0; font-size: 13.5px; color: var(--champagne-doux); }
+.jr-puce-h, .jr-puce-t { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin: 0 6px 3px 0; vertical-align: middle; background: var(--brume); }
+.jr-puce-t { background: var(--alerte, #D9A26B); margin-left: 10px; }
+.jr-vide .jr-courbe { display: none; }
+.jr-repere { margin: 0; padding: 14px 16px; border-radius: 14px; background: rgba(217, 162, 107, 0.08); border: 1px solid rgba(217, 162, 107, 0.35); font-size: 15.5px; line-height: 1.6; }
+.jr-titre-liste { margin: 0 0 6px; font-size: 14px; color: var(--champagne-doux); }
+.jr-rien { margin: 0; color: var(--champagne-doux); font-size: 15px; }
+.jr-confidentialite { margin: 0; font-size: 14px; color: var(--champagne-doux); }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://www.contactapaisement-mental.fr/journal-humeur/#page","url":"https://www.contactapaisement-mental.fr/journal-humeur/","name":"Journal d'humeur : note ton humeur, ton stress et tes nuits","description":"Journal d'humeur gratuit et privé : note chaque jour ton humeur, ton stress et ta nuit en 30 secondes. Tes notes restent sur ton appareil, rien n'est envoyé.","inLanguage":"fr-FR","dateModified":"2026-10-10","author":{"@type":"Person","@id":"https://www.contactapaisement-mental.fr/a-propos/#auteur","name":"Yacine","jobTitle":"Fondateur de Clarté Mentale","url":"https://www.contactapaisement-mental.fr/a-propos/","worksFor":{"@id":"https://www.contactapaisement-mental.fr/#organisation"},"image":"https://www.contactapaisement-mental.fr/img/yacine.jpg"},"publisher":{"@type":"Organization","@id":"https://www.contactapaisement-mental.fr/#organisation","name":"Clarté Mentale","url":"https://www.contactapaisement-mental.fr/","logo":{"@type":"ImageObject","url":"https://www.contactapaisement-mental.fr/logo.png","width":512,"height":512},"sameAs":["https://www.pinterest.com/clartementale/"],"publishingPrinciples":"https://www.contactapaisement-mental.fr/methode-editoriale/"},"isAccessibleForFree":true,"citation":[{"@type":"CreativeWork","name":"Dépression de l'adulte : repérage et prise en charge initiale (infographie) — Haute Autorité de santé (HAS), 2017","url":"https://www.has-sante.fr/upload/docs/application/pdf/2017-11/infographie_depression_adultes_webzine.pdf"},{"@type":"CreativeWork","name":"Numéro national de prévention du suicide - 3114 — Ministère chargé de la santé","url":"https://3114.fr/"},{"@type":"CreativeWork","name":"Quels sont les numéros en cas d'urgence (Samu, pompiers...) et les numéros d'écoute ? — Service-Public.fr, 2026","url":"https://www.service-public.gouv.fr/particuliers/vosdroits/F33954"},{"@type":"CreativeWork","name":"Remboursement de séances chez le psychologue : dispositif Mon soutien psy — Assurance maladie (ameli.fr)","url":"https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy"}],"publishingPrinciples":"https://www.contactapaisement-mental.fr/methode-editoriale/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Puis-je montrer mon journal à mon médecin ?","acceptedAnswer":{"@type":"Answer","text":"Oui : le tableau de tes notes s'affiche sous la courbe, et « Enregistrer une copie » crée un fichier que tu peux ouvrir ou transmettre. C'est toi qui décides de le montrer ou non."}},{"@type":"Question","name":"Que se passe-t-il si je change de téléphone ?","acceptedAnswer":{"@type":"Answer","text":"Enregistre une copie sur l'ancien appareil, envoie-toi le fichier, puis utilise « Reprendre une copie » sur le nouveau : tes notes y sont ajoutées."}},{"@type":"Question","name":"Le journal fonctionne-t-il en navigation privée ?","acceptedAnswer":{"@type":"Answer","text":"Souvent mal : en navigation privée, le navigateur efface les données à la fermeture de la fenêtre, ou bloque leur enregistrement. Si l'enregistrement est bloqué, un message s'affiche au-dessus du journal."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.contactapaisement-mental.fr/"},{"@type":"ListItem","position":2,"name":"Journal d'humeur"}]}</script>
+</head>
+<body>
+<a class="saut" href="#contenu">Aller au contenu</a>
+<header class="entete"><div class="large">
+<a class="marque" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#080C10" stroke="#8FBF9A" stroke-width="1.5"/><path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#DFD5C6"/></svg>Clarté Mentale</a>
+<nav class="nav" aria-label="Menu principal"><a href="/articles/">Articles</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/recherche/">Rechercher</a></nav>
+<div class="actions-entete"><button class="theme-bascule" type="button" aria-label="Passer en mode clair" title="Passer en mode clair"><svg class="soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="lune" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button><button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
+</div></header>
+<nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
+<a href="/" tabindex="-1">Accueil</a><a href="/test-stress-anxiete/" tabindex="-1">Le test</a><a href="/articles/" tabindex="-1">Articles</a><a href="/respiration-guidee/" tabindex="-1">Respiration guidée</a><a href="/la-formation/" tabindex="-1">La formation</a><a href="/guides-gratuits/" tabindex="-1">Guide gratuit</a><a href="/a-propos/" tabindex="-1">À propos</a><a href="/recherche/" tabindex="-1">Rechercher</a>
+</nav>
+<main id="contenu">
+<div class="etroit"><nav class="ariane" aria-label="Fil d'Ariane"><ol><li><a href="/">Accueil</a></li><li aria-current="page">Journal d&#x27;humeur</li></ol></nav>
+<h1>Journal d&#x27;humeur : note ton humeur, ton stress et tes nuits</h1>
+<p class="meta"><img class="avatar" src="/img/yacine.jpg" width="28" height="28" alt="">Par <a href="/a-propos/" rel="author">Yacine</a> · Mis à jour le <time datetime="2026-10-10">10 octobre 2026</time> · outil gratuit et privé</p>
+<p class="bilan-sources"><a href="#sources">4 sources : 4 sources officielles</a><a href="/methode-editoriale/">Méthode éditoriale</a></p>
+<p class="chapo">Ce journal d'humeur te permet de noter chaque jour, en 30 secondes, ton humeur, ton niveau de stress et la qualité de ta nuit. <strong>Tes notes restent sur ton appareil</strong> : elles ne sont envoyées nulle part, il n'y a ni compte ni inscription. Au fil des jours, la courbe peut t'aider à repérer ce qui pèse sur tes journées, et à en parler avec des faits si tu consultes.</p>
+<div class="journal" id="journal">
+<p class="jr-message" role="status" hidden></p>
+<div class="jr-ligne"><label for="jr-date">Jour</label><input type="date" id="jr-date"></div>
+<div class="jr-ligne" role="group" aria-labelledby="jr-l-h"><span id="jr-l-h">Mon humeur</span><div class="jr-echelle" data-echelle="h"><button type="button" data-valeur="1" aria-pressed="false">1<small>Très difficile</small></button><button type="button" data-valeur="2" aria-pressed="false">2<small>Difficile</small></button><button type="button" data-valeur="3" aria-pressed="false">3<small>Moyenne</small></button><button type="button" data-valeur="4" aria-pressed="false">4<small>Bonne</small></button><button type="button" data-valeur="5" aria-pressed="false">5<small>Très bonne</small></button></div></div>
+<div class="jr-ligne" role="group" aria-labelledby="jr-l-t"><span id="jr-l-t">Mon stress</span><div class="jr-echelle" data-echelle="t"><button type="button" data-valeur="1" aria-pressed="false">1<small>Très calme</small></button><button type="button" data-valeur="2" aria-pressed="false">2<small>Calme</small></button><button type="button" data-valeur="3" aria-pressed="false">3<small>Moyen</small></button><button type="button" data-valeur="4" aria-pressed="false">4<small>Tendu</small></button><button type="button" data-valeur="5" aria-pressed="false">5<small>Très tendu</small></button></div></div>
+<div class="jr-ligne" role="group" aria-labelledby="jr-l-s"><span id="jr-l-s">Ma dernière nuit</span><div class="jr-echelle" data-echelle="s"><button type="button" data-valeur="1" aria-pressed="false">1<small>Très mauvaise</small></button><button type="button" data-valeur="2" aria-pressed="false">2<small>Mauvaise</small></button><button type="button" data-valeur="3" aria-pressed="false">3<small>Moyenne</small></button><button type="button" data-valeur="4" aria-pressed="false">4<small>Bonne</small></button><button type="button" data-valeur="5" aria-pressed="false">5<small>Très bonne</small></button></div></div>
+<div class="jr-ligne"><label for="jr-note">Un mot sur ta journée (facultatif)</label><textarea id="jr-note" maxlength="300" placeholder="Ex. : réunion tendue, marche le soir, endormie vite"></textarea></div>
+<div class="jr-actions"><button type="button" class="bouton jr-enregistrer">Enregistrer la note</button></div>
+<p class="jr-repere" hidden>Ces deux dernières semaines, tu as noté ton humeur « difficile » ou « très difficile » presque à chaque fois. Ce n'est pas un diagnostic, mais une humeur triste presque tous les jours depuis au moins deux semaines mérite d'en parler à ton médecin sans attendre. Pensées suicidaires : <a href="tel:3114">3114</a>, gratuit, 24 h/24. <a href="/ressources-urgence/">Toutes les ressources d'urgence</a></p>
+<div class="jr-courbe"></div>
+<div class="jr-liste"></div>
+<div class="jr-actions"><button type="button" class="jr-secondaire jr-exporter">Enregistrer une copie</button><button type="button" class="jr-secondaire jr-importer">Reprendre une copie</button><input type="file" id="jr-fichier" accept="application/json,.json" hidden><button type="button" class="jr-secondaire jr-effacer">Tout effacer</button></div>
+<p class="jr-confidentialite">Tes notes restent sur cet appareil : rien n'est envoyé, ni à l'éditeur du site ni à personne.</p>
+</div>
+<h2 id="comment-utiliser-ce-journal">Comment utiliser ce journal ?</h2>
+<ol>
+<li><strong>Chaque soir</strong>, choisis une note pour ton humeur, ton stress et ta dernière nuit.</li>
+<li><strong>Ajoute un mot si tu veux</strong> : un événement, une nuit agitée, un moment qui t'a fait du bien.</li>
+<li><strong>Après une ou deux semaines</strong>, regarde la courbe : les journées tendues suivent-elles les nuits courtes ? Qu'est-ce qui revient les meilleurs jours ?</li>
+</ol>
+<p>Une seule note par jour : si tu enregistres de nouveau le même jour, la note précédente est remplacée.</p>
+<h2 id="que-deviennent-mes-notes">Que deviennent mes notes ?</h2>
+<p>Elles sont enregistrées dans ton navigateur, sur cet appareil uniquement : ni l'éditeur du site ni personne d'autre ne peut les lire. Elles disparaissent si tu effaces les données du site dans ton navigateur. Pour les garder ou les retrouver sur un autre appareil, utilise « Enregistrer une copie » puis « Reprendre une copie ». Le bouton « Tout effacer » supprime toutes tes notes de cet appareil.</p>
+<h2 id="quand-consulter">Quand consulter ?</h2>
+<p>Ce journal n'est pas un outil de diagnostic. Si ton humeur est triste, si tu as perdu l'envie ou si tu te sens inhabituellement fatigué presque tous les jours depuis au moins deux semaines, consulte ton médecin sans attendre <sup>[<a href="#source-1" aria-label="Source 1">1</a>]</sup>. Avec le dispositif Mon soutien psy, tu peux aussi être accompagné par un psychologue partenaire, avec jusqu'à 12 séances par an prises en charge <sup>[<a href="#source-4" aria-label="Source 4">4</a>]</sup>.</p>
+<p>Si tu as des pensées suicidaires, appelle le 3114, gratuit, 24 h/24 et 7 j/7 <sup>[<a href="#source-2" aria-label="Source 2">2</a>]</sup>. En cas d'urgence, appelle le 15 ou le 112 <sup>[<a href="#source-3" aria-label="Source 3">3</a>]</sup>.</p>
+<section class="faq"><h2 id="questions-frequentes">Questions fréquentes</h2><h3>Puis-je montrer mon journal à mon médecin ?</h3><p>Oui : le tableau de tes notes s'affiche sous la courbe, et « Enregistrer une copie » crée un fichier que tu peux ouvrir ou transmettre. C'est toi qui décides de le montrer ou non.</p><h3>Que se passe-t-il si je change de téléphone ?</h3><p>Enregistre une copie sur l'ancien appareil, envoie-toi le fichier, puis utilise « Reprendre une copie » sur le nouveau : tes notes y sont ajoutées.</p><h3>Le journal fonctionne-t-il en navigation privée ?</h3><p>Souvent mal : en navigation privée, le navigateur efface les données à la fermeture de la fenêtre, ou bloque leur enregistrement. Si l'enregistrement est bloqué, un message s'affiche au-dessus du journal.</p></section>
+<section class="sources" id="sources"><details class="repli-sources"><summary><h2>Sources</h2><span class="resume-sources">4 sources : 4 sources officielles</span></summary><ol><li id="source-1"><a href="https://www.has-sante.fr/upload/docs/application/pdf/2017-11/infographie_depression_adultes_webzine.pdf" rel="noopener">Dépression de l&#x27;adulte : repérage et prise en charge initiale (infographie) — Haute Autorité de santé (HAS), 2017</a> <span class="type-source type-officiel">Haute Autorité de santé</span></li><li id="source-2"><a href="https://3114.fr/" rel="noopener">Numéro national de prévention du suicide - 3114 — Ministère chargé de la santé</a> <span class="type-source type-officiel">Numéro national de prévention du suicide</span></li><li id="source-3"><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F33954" rel="noopener">Quels sont les numéros en cas d&#x27;urgence (Samu, pompiers...) et les numéros d&#x27;écoute ? — Service-Public.fr, 2026</a> <span class="type-source type-officiel">Service-Public.fr, site officiel de l&#x27;administration</span></li><li id="source-4"><a href="https://www.ameli.fr/assure/remboursements/rembourse/remboursement-seance-psychologue-mon-soutien-psy" rel="noopener">Remboursement de séances chez le psychologue : dispositif Mon soutien psy — Assurance maladie (ameli.fr)</a> <span class="type-source type-officiel">Assurance maladie</span></li></ol><p class="note-sources">Chaque source a été ouverte et relue pour vérifier qu'elle dit bien ce que la page lui attribue. <a href="/methode-editoriale/">Comment les contenus sont écrits et vérifiés</a></p></details></section>
+<p class="avertissement">Cette page donne des repères de bien-être, pas un diagnostic ni un traitement. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+<p class="urgence">Urgence : <a href="tel:15">15</a> ou <a href="tel:112">112</a> (<a href="sms:114">114</a> par SMS pour les personnes sourdes ou malentendantes). Pensées suicidaires : <a href="tel:3114">3114</a>, gratuit, 24 h/24. <a href="/ressources-urgence/">Toutes les ressources d'urgence et lignes d'écoute</a></p>
+</div>
+<script>/* Journal d'humeur (page /journal-humeur/) : les notes restent dans le navigateur (localStorage), rien n'est envoyé. */
+(function () {
+  "use strict";
+  var zone = document.getElementById("journal");
+  if (!zone) return;
+  var CLE = "cm-journal";
+  var ECHELLES = {
+    h: ["Très difficile", "Difficile", "Moyenne", "Bonne", "Très bonne"],
+    t: ["Très calme", "Calme", "Moyen", "Tendu", "Très tendu"],
+    s: ["Très mauvaise", "Mauvaise", "Moyenne", "Bonne", "Très bonne"]
+  };
+  var choix = { h: 0, t: 0, s: 0 };
+  var $ = function (sel) { return zone.querySelector(sel); };
+  var message = $(".jr-message"), date = $("#jr-date"), note = $("#jr-note"), liste = $(".jr-liste"), courbe = $(".jr-courbe"), alerte = $(".jr-repere");
+
+  function lire() {
+    try { var v = JSON.parse(localStorage.getItem(CLE) || "[]"); return Array.isArray(v) ? v : []; } catch (e) { return []; }
+  }
+  function ecrire(notes) {
+    try { localStorage.setItem(CLE, JSON.stringify(notes)); return true; } catch (e) { return false; }
+  }
+  function stockageDisponible() {
+    try { localStorage.setItem("cm-test", "1"); localStorage.removeItem("cm-test"); return true; } catch (e) { return false; }
+  }
+  function aujourdhui() { var d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); }
+  function dateFr(iso) { var p = iso.split("-"); return p[2] + "/" + p[1] + "/" + p[0]; }
+  function afficherMessage(texte) { message.textContent = texte; message.hidden = !texte; }
+  function echapper(t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  /* Boutons de note (1 à 5) */
+  zone.querySelectorAll("[data-echelle]").forEach(function (groupe) {
+    var cle = groupe.dataset.echelle;
+    groupe.querySelectorAll("button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        choix[cle] = Number(b.dataset.valeur);
+        groupe.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      });
+    });
+  });
+
+  function remplirFormulaire(n) {
+    ["h", "t", "s"].forEach(function (cle) {
+      choix[cle] = n ? n[cle] : 0;
+      zone.querySelectorAll('[data-echelle="' + cle + '"] button').forEach(function (b) { b.setAttribute("aria-pressed", String(n && Number(b.dataset.valeur) === n[cle])); });
+    });
+    note.value = n ? (n.n || "") : "";
+  }
+  date.addEventListener("change", function () {
+    var n = lire().filter(function (x) { return x.d === date.value; })[0];
+    remplirFormulaire(n);
+  });
+
+  $(".jr-enregistrer").addEventListener("click", function () {
+    if (!date.value) { afficherMessage("Choisis une date."); return; }
+    if (!choix.h || !choix.t || !choix.s) { afficherMessage("Choisis une note pour ton humeur, ton stress et ta nuit."); return; }
+    var notes = lire().filter(function (x) { return x.d !== date.value; });
+    var remplace = notes.length !== lire().length;
+    notes.push({ d: date.value, h: choix.h, t: choix.t, s: choix.s, n: note.value.trim().slice(0, 300) });
+    notes.sort(function (a, b) { return a.d < b.d ? -1 : 1; });
+    if (!ecrire(notes)) { afficherMessage("Ton navigateur bloque l'enregistrement (navigation privée ?) : la note n'a pas été gardée."); return; }
+    afficherMessage((remplace ? "Note du " + dateFr(date.value) + " remplacée." : "Note du " + dateFr(date.value) + " enregistrée sur cet appareil."));
+    afficher();
+  });
+
+  /* Courbe des 14 derniers jours (humeur et stress) : décorative, le tableau donne les mêmes informations. */
+  function dessinerCourbe(notes) {
+    var jours = [], fin = new Date(aujourdhui() + "T12:00:00");
+    for (var i = 13; i >= 0; i--) { var d = new Date(fin); d.setDate(d.getDate() - i); jours.push(d.toISOString().slice(0, 10)); }
+    var parJour = {}; notes.forEach(function (n) { parJour[n.d] = n; });
+    var L = 320, H = 120, x = function (i) { return 14 + i * (L - 28) / 13; }, y = function (v) { return H - 14 - (v - 1) * (H - 28) / 4; };
+    function trace(cle) {
+      var pts = jours.map(function (j, i) { return parJour[j] ? [x(i), y(parJour[j][cle])] : null; });
+      var d = "", ouvert = false;
+      pts.forEach(function (p) { if (p) { d += (ouvert ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1); ouvert = true; } else { ouvert = false; } });
+      var ronds = pts.filter(Boolean).map(function (p) { return '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1].toFixed(1) + '" r="3.5"/>'; }).join("");
+      return '<g class="jr-' + cle + '"><path d="' + d + '"/>' + ronds + "</g>";
+    }
+    var grille = [1, 2, 3, 4, 5].map(function (v) { return '<line x1="8" x2="' + (L - 8) + '" y1="' + y(v) + '" y2="' + y(v) + '"/>'; }).join("");
+    courbe.innerHTML = '<svg viewBox="0 0 ' + L + " " + H + '" aria-hidden="true"><g class="jr-grille">' + grille + "</g>" + trace("t") + trace("h") + "</svg>" +
+      '<p class="jr-legende"><span class="jr-puce-h"></span>Humeur <span class="jr-puce-t"></span>Stress · 14 derniers jours, du plus ancien au plus récent</p>';
+  }
+
+  /* Repère : humeur basse presque tous les jours sur 14 jours (au moins 7 notes, 80 % à « difficile » ou moins). */
+  function repere(notes) {
+    var limite = new Date(aujourdhui() + "T12:00:00"); limite.setDate(limite.getDate() - 13);
+    var recentes = notes.filter(function (n) { return new Date(n.d + "T12:00:00") >= limite; });
+    var basses = recentes.filter(function (n) { return n.h <= 2; }).length;
+    alerte.hidden = !(recentes.length >= 7 && basses / recentes.length >= 0.8);
+  }
+
+  function afficher() {
+    var notes = lire();
+    zone.classList.toggle("jr-vide", !notes.length);
+    dessinerCourbe(notes);
+    repere(notes);
+    var lignes = notes.slice().reverse().slice(0, 60).map(function (n) {
+      return '<tr><td data-label="Date">' + dateFr(n.d) + '</td><td data-label="Humeur">' + n.h + " · " + ECHELLES.h[n.h - 1] +
+        '</td><td data-label="Stress">' + n.t + " · " + ECHELLES.t[n.t - 1] + '</td><td data-label="Nuit">' + n.s + " · " + ECHELLES.s[n.s - 1] +
+        '</td><td data-label="' + (n.n ? "Note" : "") + '">' + echapper(n.n || "") + "</td></tr>";
+    }).join("");
+    liste.innerHTML = notes.length
+      ? '<p class="jr-titre-liste" id="jr-titre-liste">Tes notes, de la plus récente à la plus ancienne</p><div class="tableau"><table aria-labelledby="jr-titre-liste"><thead><tr><th scope="col">Date</th><th scope="col">Humeur</th><th scope="col">Stress</th><th scope="col">Nuit</th><th scope="col">Note</th></tr></thead><tbody>' + lignes + "</tbody></table></div>"
+      : '<p class="jr-rien">Aucune note pour l\'instant : ta première note apparaîtra ici.</p>';
+  }
+
+  /* Copie de sauvegarde (fichier JSON), reprise d'une copie, effacement */
+  $(".jr-exporter").addEventListener("click", function () {
+    var notes = lire();
+    if (!notes.length) { afficherMessage("Aucune note à enregistrer pour l'instant."); return; }
+    var lien = document.createElement("a");
+    lien.href = URL.createObjectURL(new Blob([JSON.stringify({ journal: "Clarté Mentale", notes: notes }, null, 1)], { type: "application/json" }));
+    lien.download = "journal-humeur-" + aujourdhui() + ".json";
+    document.body.appendChild(lien); lien.click(); lien.remove();
+    afficherMessage("Copie enregistrée dans tes téléchargements.");
+  });
+  var fichier = $("#jr-fichier");
+  $(".jr-importer").addEventListener("click", function () { fichier.click(); });
+  fichier.addEventListener("change", function () {
+    var f = fichier.files && fichier.files[0];
+    if (!f) return;
+    f.text().then(function (texte) {
+      var donnees = JSON.parse(texte), notes = lire(), parDate = {};
+      notes.forEach(function (n) { parDate[n.d] = n; });
+      var ajoutees = 0;
+      (donnees.notes || []).forEach(function (n) {
+        var ok = /^\d{4}-\d{2}-\d{2}$/.test(n.d) && [n.h, n.t, n.s].every(function (v) { return v >= 1 && v <= 5 && v % 1 === 0; });
+        if (ok && !parDate[n.d]) { parDate[n.d] = { d: n.d, h: n.h, t: n.t, s: n.s, n: String(n.n || "").slice(0, 300) }; ajoutees++; }
+      });
+      var toutes = Object.keys(parDate).sort().map(function (k) { return parDate[k]; });
+      if (!ecrire(toutes)) { afficherMessage("Ton navigateur bloque l'enregistrement : la copie n'a pas pu être reprise."); return; }
+      afficherMessage(ajoutees + " note(s) ajoutée(s) depuis la copie.");
+      afficher();
+    }).catch(function () { afficherMessage("Ce fichier n'est pas une copie du journal."); });
+    fichier.value = "";
+  });
+  $(".jr-effacer").addEventListener("click", function () {
+    if (!lire().length) { afficherMessage("Il n'y a aucune note à effacer."); return; }
+    if (!window.confirm("Effacer toutes tes notes de cet appareil ? Cette action est définitive.")) return;
+    try { localStorage.removeItem(CLE); } catch (e) {}
+    remplirFormulaire(null);
+    afficherMessage("Toutes tes notes ont été effacées de cet appareil.");
+    afficher();
+  });
+
+  date.value = aujourdhui();
+  date.max = aujourdhui();
+  if (!stockageDisponible()) afficherMessage("Ton navigateur bloque l'enregistrement (navigation privée ?) : tes notes ne pourront pas être gardées.");
+  remplirFormulaire(lire().filter(function (x) { return x.d === date.value; })[0]);
+  afficher();
+})();
+</script>
+</main>
+<footer class="pied"><div class="large">
+<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a><a href="/exercices-respiration/">Exercices de respiration</a><a href="/journal-humeur/">Journal d'humeur</a><a href="/recherche/">Rechercher</a><a href="/mieux-dormir/">Mieux dormir</a><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a><a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/questions-frequentes/">Questions fréquentes</a><a href="/glossaire/">Glossaire</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="/accessibilite/">Accessibilité : non conforme</a><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></nav>
+<p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
+<p>© 2026 Clarté Mentale</p>
+</div></footer>
+<script>
+/* Menu mobile commun à l'accueil et aux autres pages (injecté à la construction). */
+(function () {
+  "use strict";
+  var burger = document.getElementById("burger"), menu = document.getElementById("menu-mobile");
+  if (!burger || !menu) return;
+  function estOuvert() { return burger.getAttribute("aria-expanded") === "true"; }
+  function basculer(ouvrir, instant) {
+    var ouvert = typeof ouvrir === "boolean" ? ouvrir : !estOuvert();
+    if (instant) menu.classList.add("instant");
+    burger.setAttribute("aria-expanded", String(ouvert));
+    burger.setAttribute("aria-label", ouvert ? "Fermer le menu" : "Ouvrir le menu");
+    menu.classList.toggle("ouvert", ouvert);
+    menu.setAttribute("aria-hidden", String(!ouvert));
+    menu.querySelectorAll("a").forEach(function (a) { a.tabIndex = ouvert ? 0 : -1; });
+    document.documentElement.classList.toggle("menu-ouvert", ouvert);
+    if (instant) { void menu.offsetWidth; menu.classList.remove("instant"); }
+    if (ouvert) { var premier = menu.querySelector("a"); if (premier) premier.focus({ preventScroll: true }); }
+  }
+  burger.addEventListener("click", function () { basculer(); });
+  menu.addEventListener("click", function (e) {
+    var a = e.target.closest("a");
+    if (!a) return;
+    var cible = a.hash && a.pathname === location.pathname ? document.getElementById(decodeURIComponent(a.hash.slice(1))) : null;
+    /* Lien vers une autre page : le menu reste affiché jusqu'à l'arrivée de la nouvelle page (rien ne bouge entre-temps). */
+    if (!cible) return;
+    /* Partie de la même page : le menu se ferme d'un coup, puis la page défile jusqu'à la partie, sous l'en-tête. */
+    e.preventDefault();
+    basculer(false, true);
+    if (history.pushState) history.pushState(null, "", a.hash);
+    var doux = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    requestAnimationFrame(function () { cible.scrollIntoView({ behavior: doux ? "smooth" : "auto", block: "start" }); });
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && estOuvert()) { basculer(false); burger.focus(); } });
+  window.addEventListener("resize", function () { if (window.innerWidth > 860 && estOuvert()) basculer(false, true); });
+  /* Retour arrière : la page revient du cache telle qu'on l'a quittée, menu ouvert ; on le referme sans animation. */
+  window.addEventListener("pageshow", function (e) { if (e.persisted && estOuvert()) basculer(false, true); });
+})();
+
+/* Bouton « retour en haut » : apparaît après un écran et demi de lecture ; au clic, la page remonte et le focus va au
+   titre principal (utile au clavier et aux lecteurs d'écran). */
+(function () {
+  "use strict";
+  var bouton = document.createElement("button");
+  bouton.type = "button";
+  bouton.className = "haut-page";
+  bouton.hidden = true;
+  bouton.setAttribute("aria-label", "Revenir en haut de la page");
+  bouton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  document.body.appendChild(bouton);
+  var visible = false;
+  function majBouton() {
+    var v = window.scrollY > window.innerHeight * 1.5;
+    if (v !== visible) { visible = v; bouton.hidden = !v; }
+  }
+  window.addEventListener("scroll", majBouton, { passive: true });
+  majBouton();
+  bouton.addEventListener("click", function () {
+    var doux = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: doux ? "smooth" : "auto" });
+    var titre = document.querySelector("h1");
+    if (titre) { titre.setAttribute("tabindex", "-1"); titre.focus({ preventScroll: true }); }
+  });
+})();
+
+/* Mode clair / sombre : suit le réglage de l'appareil, ou le choix fait avec le bouton (gardé sur cet appareil). */
+(function () {
+  "use strict";
+  var racine = document.documentElement, clairAppareil = window.matchMedia("(prefers-color-scheme: light)");
+  function theme() { return racine.dataset.theme || (clairAppareil.matches ? "clair" : "sombre"); }
+  function majTheme() {
+    var t = theme(), action = t === "clair" ? "Passer en mode sombre" : "Passer en mode clair";
+    document.querySelectorAll(".theme-bascule").forEach(function (b) { b.setAttribute("aria-label", action); b.title = action; });
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", t === "clair" ? "#F4F0E8" : "#080C10");
+    document.dispatchEvent(new CustomEvent("cm-theme", { detail: t }));
+  }
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".theme-bascule")) return;
+    var t = theme() === "clair" ? "sombre" : "clair";
+    racine.dataset.theme = t;
+    try { localStorage.setItem("cm-theme", t); } catch (err) {}
+    majTheme();
+  });
+  if (clairAppareil.addEventListener) clairAppareil.addEventListener("change", majTheme);
+  majTheme();
+})();
+</script>
+<script>
+/* Sources repliées en bas de page : un lien vers une source (exposant [1], « 8 sources » en haut de page) ouvre la liste
+   avant que la page n'y descende, pour que la source visée soit visible. */
+(function () {
+  "use strict";
+  var repli = document.querySelector(".repli-sources");
+  if (!repli) return;
+  function ouvrirPour(hash) {
+    if (!hash || hash.charAt(0) !== "#") return;
+    var cible = document.getElementById(decodeURIComponent(hash.slice(1)));
+    if (cible && (cible.contains(repli) || repli.contains(cible))) repli.open = true;
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest('a[href^="#"]');
+    if (a) ouvrirPour(a.getAttribute("href"));
+  });
+  window.addEventListener("hashchange", function () { ouvrirPour(location.hash); });
+  ouvrirPour(location.hash);
+})();
+</script>
+<script>(function(){var cle="cm-ne-pas-compter",m=/[?&]compter=(oui|non)\b/.exec(location.search),moi=false;
+try{if(m){if(m[1]==="non")localStorage.setItem(cle,"1");else localStorage.removeItem(cle);}moi=localStorage.getItem(cle)==="1";}catch(e){}
+if(m){var d=document.createElement("div");d.setAttribute("role","status");d.textContent=moi?"Tes visites ne sont plus comptées sur cet appareil.":"Tes visites sont de nouveau comptées sur cet appareil.";
+d.style.cssText="position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:99;max-width:90vw;padding:12px 18px;border-radius:12px;background:#DFD5C6;color:#080C10;font:600 15px/1.4 system-ui,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.4)";
+document.body.appendChild(d);setTimeout(function(){d.remove();},6000);}
+if(moi)return;var s=document.createElement("script");s.type="module";s.src="https://static.cloudflareinsights.com/beacon.min.js";
+s.setAttribute("data-cf-beacon","{\"token\": \"fe038fee5d6847dfa5f836cbf5080717\"}");document.body.appendChild(s);})();</script>
+</body>
+</html>

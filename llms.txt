@@ -34,6 +34,7 @@ Site francophone écrit par Yacine (fondateur de clarté mentale), qui n'est pas
 - [Glossaire](https://www.contactapaisement-mental.fr/glossaire/): définitions sourcées (cortisol, nerf vague, cohérence cardiaque, charge mentale, burn-out, GAD-7…).
 - [Questions fréquentes](https://www.contactapaisement-mental.fr/questions-frequentes/): qui écrit le site, urgence, test, données personnelles, guide et programme.
 - [Accessibilité](https://www.contactapaisement-mental.fr/accessibilite/): déclaration d'accessibilité et résultats des tests.
+- [Journal d'humeur](https://www.contactapaisement-mental.fr/journal-humeur/): noter humeur, stress et nuit chaque jour ; les notes restent sur l'appareil, rien n'est envoyé.
 
 ## Guide gratuit
 
