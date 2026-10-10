@@ -249,6 +249,9 @@ section { position: relative; z-index: 1; }
   .livret-offre { display: none; }
   .lecture { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+/* Entre 861 et 1080 px : liens resserrés pour que l'en-tête tienne sur une ligne. */
+@media (max-width: 1080px) { .liens { gap: 16px; } .liens a { font-size: 14px; } .liens .btn-petit { padding: 10px 14px; } }
+@media (max-width: 920px) { .liens { gap: 12px; } .nav .wrap { gap: 12px; } }
 @media (max-width: 860px) {
   .liens { display: none; }
   .hero .wrap, .calc { grid-template-columns: 1fr; }
@@ -284,6 +287,7 @@ section { position: relative; z-index: 1; }
       <a href="#solutions">Solutions</a>
       <a href="{{B}}/articles/">Articles</a>
       <a href="{{B}}/la-formation/">La formation</a>
+      <a href="{{B}}/recherche/">Rechercher</a>
       <a class="btn btn-or btn-petit" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=nav">Guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
     </nav>
     <div class="actions-entete"><!--@THEME_BOUTON--><button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
@@ -296,6 +300,7 @@ section { position: relative; z-index: 1; }
   <a href="{{B}}/la-formation/" tabindex="-1">La formation</a>
   <a href="{{B}}/guides-gratuits/" tabindex="-1">Guide gratuit</a>
   <a href="{{B}}/a-propos/" tabindex="-1">À propos</a>
+  <a href="{{B}}/recherche/" tabindex="-1">Rechercher</a>
   <a class="btn btn-or" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=menu-mobile" tabindex="-1">Recevoir le guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
 </nav>
 
@@ -549,6 +554,8 @@ section { position: relative; z-index: 1; }
       <a href="{{B}}/methode-editoriale/">Méthode éditoriale</a>
       <a href="{{B}}/mentions-legales/">Mentions légales et confidentialité</a>
       <a href="{{B}}/exercices-respiration/">Exercices de respiration</a>
+      <a href="{{B}}/journal-humeur/">Journal d'humeur</a>
+      <a href="{{B}}/recherche/">Rechercher</a>
       <a href="{{B}}/questions-frequentes/">Questions fréquentes</a>
       <a href="{{B}}/glossaire/">Glossaire</a>
       <a href="{{B}}/accessibilite/">Accessibilité : non conforme</a>

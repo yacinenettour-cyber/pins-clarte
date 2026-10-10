@@ -1,0 +1,30 @@
+/* Journal d'humeur (couleurs du thème : sombre ou clair). */
+.journal { display: grid; gap: 18px; margin: 26px 0 34px; padding: clamp(18px, 3vw, 28px); border-radius: 26px; background: var(--verre); border: 1px solid var(--lisere); box-shadow: var(--ombre-2xl); }
+.jr-message { margin: 0; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--brume); font-size: 15px; }
+.jr-ligne { display: grid; gap: 8px; }
+.jr-ligne > span, .jr-ligne label { font-weight: 600; font-size: 15.5px; color: var(--champagne); }
+.jr-ligne input[type="date"], .jr-ligne textarea { font: 400 16px/1.5 var(--texte); color: var(--champagne); background: var(--verre-fort); border: 1px solid var(--lisere-fort); border-radius: 12px; padding: 10px 12px; width: 100%; }
+.jr-ligne input[type="date"] { max-width: 220px; color-scheme: inherit; }
+.jr-ligne textarea { min-height: 70px; resize: vertical; }
+.jr-echelle { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.jr-echelle button { display: grid; gap: 2px; justify-items: center; padding: 9px 4px; border-radius: 12px; border: 1px solid var(--lisere-fort); background: transparent; color: var(--champagne); font: 700 17px/1.1 var(--titre); cursor: pointer; transition: var(--transition); min-height: 56px; }
+.jr-echelle button small { font: 500 11.5px/1.2 var(--texte); color: var(--champagne-doux); text-align: center; }
+.jr-echelle button[aria-pressed="true"] { border-color: var(--brume); background: rgba(58, 95, 67, 0.22); box-shadow: inset 0 0 0 1px var(--brume); }
+.jr-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.jr-actions .bouton { border: 0; font: 700 16px/1 var(--texte); cursor: pointer; }
+.jr-secondaire { padding: 10px 14px; border-radius: 999px; border: 1px solid var(--lisere-fort); background: transparent; color: var(--champagne); font: 600 14.5px/1 var(--texte); cursor: pointer; }
+.jr-secondaire:hover { border-color: var(--brume); color: var(--brume); }
+.jr-effacer { color: var(--champagne-doux); }
+.jr-courbe svg { width: 100%; height: auto; display: block; }
+.jr-grille line { stroke: var(--lisere); stroke-width: 1; }
+.jr-courbe path { fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.jr-h path { stroke: var(--brume); } .jr-h circle { fill: var(--brume); }
+.jr-t path { stroke: var(--alerte, #D9A26B); stroke-dasharray: 5 4; } .jr-t circle { fill: var(--alerte, #D9A26B); }
+.jr-legende { margin: 6px 0 0; font-size: 13.5px; color: var(--champagne-doux); }
+.jr-puce-h, .jr-puce-t { display: inline-block; width: 14px; height: 3px; border-radius: 2px; margin: 0 6px 3px 0; vertical-align: middle; background: var(--brume); }
+.jr-puce-t { background: var(--alerte, #D9A26B); margin-left: 10px; }
+.jr-vide .jr-courbe { display: none; }
+.jr-repere { margin: 0; padding: 14px 16px; border-radius: 14px; background: rgba(217, 162, 107, 0.08); border: 1px solid rgba(217, 162, 107, 0.35); font-size: 15.5px; line-height: 1.6; }
+.jr-titre-liste { margin: 0 0 6px; font-size: 14px; color: var(--champagne-doux); }
+.jr-rien { margin: 0; color: var(--champagne-doux); font-size: 15px; }
+.jr-confidentialite { margin: 0; font-size: 14px; color: var(--champagne-doux); }

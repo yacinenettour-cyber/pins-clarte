@@ -21,7 +21,7 @@
   .menu-mobile a { font: 700 clamp(24px, 7.6vw, 30px)/1.2 var(--titre); color: var(--champagne); text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--lisere); opacity: 0; transform: translateY(16px); transition: opacity .4s, transform .4s; }
   .menu-mobile a[aria-current="page"] { color: var(--brume); }
   .menu-mobile.ouvert a { opacity: 1; transform: none; }
-  .menu-mobile.ouvert a:nth-child(2) { transition-delay: .06s; } .menu-mobile.ouvert a:nth-child(3) { transition-delay: .12s; } .menu-mobile.ouvert a:nth-child(4) { transition-delay: .18s; } .menu-mobile.ouvert a:nth-child(5) { transition-delay: .24s; } .menu-mobile.ouvert a:nth-child(6) { transition-delay: .3s; } .menu-mobile.ouvert a:nth-child(7) { transition-delay: .36s; }
+  .menu-mobile.ouvert a:nth-child(2) { transition-delay: .06s; } .menu-mobile.ouvert a:nth-child(3) { transition-delay: .12s; } .menu-mobile.ouvert a:nth-child(4) { transition-delay: .18s; } .menu-mobile.ouvert a:nth-child(5) { transition-delay: .24s; } .menu-mobile.ouvert a:nth-child(6) { transition-delay: .3s; } .menu-mobile.ouvert a:nth-child(7) { transition-delay: .36s; } .menu-mobile.ouvert a:nth-child(8) { transition-delay: .42s; }
   /* Fermeture sans animation (lien vers une partie de la page, retour arrière) : la page apparaît tout de suite. */
   .menu-mobile.instant, .menu-mobile.instant a { transition: none !important; }
   /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */

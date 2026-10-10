@@ -13,6 +13,7 @@ Tout le HTML est écrit à la main ici (aucun thème ni service externe) : pages
 structurées schema.org pour Google, et fichiers llms.txt / llms-full.txt pour les assistants IA.
 """
 import datetime
+import glob
 import hashlib
 import html
 import json
@@ -326,7 +327,7 @@ CSS_SITE = (open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8")
 VERSION_CSS = hashlib.sha1(CSS_SITE.encode("utf-8")).hexdigest()[:8]
 MENU_MOBILE = [("/", "Accueil"), ("/test-stress-anxiete/", "Le test"), ("/articles/", "Articles"),
                ("/respiration-guidee/", "Respiration guidée"), ("/la-formation/", "La formation"),
-               ("/guides-gratuits/", "Guide gratuit"), ("/a-propos/", "À propos")]
+               ("/guides-gratuits/", "Guide gratuit"), ("/a-propos/", "À propos"), ("/recherche/", "Rechercher")]
 # Une seule offre sur tout le site (consigne de l'utilisateur du 10/10/2026 : jamais le choix entre le plan, le guide et
 # la formation au même endroit ; l'e-mail d'abord, le reste par e-mail). Le guide sommeil est le seul produit gratuit
 # relié à une séquence d'e-mails (guide envoyé tout de suite, conseils, puis présentation de la formation).
@@ -434,7 +435,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <a class="saut" href="#contenu">Aller au contenu</a>
 <header class="entete"><div class="large">
 <a class="marque" href="/">{LOGO}{e(SITE['nom'])}</a>
-<nav class="nav" aria-label="Menu principal">{lien_nav('/articles/', 'Articles')}{lien_nav('/la-formation/', 'La formation')}{lien_nav('/guides-gratuits/', 'Guide gratuit')}{lien_nav('/a-propos/', 'À propos')}</nav>
+<nav class="nav" aria-label="Menu principal">{lien_nav('/articles/', 'Articles')}{lien_nav('/la-formation/', 'La formation')}{lien_nav('/guides-gratuits/', 'Guide gratuit')}{lien_nav('/a-propos/', 'À propos')}{lien_nav('/recherche/', 'Rechercher')}</nav>
 <div class="actions-entete">{THEME_BOUTON}<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
 </div></header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
@@ -444,7 +445,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a><a href="/exercices-respiration/">Exercices de respiration</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/questions-frequentes/">Questions fréquentes</a><a href="/glossaire/">Glossaire</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="/accessibilite/">Accessibilité : non conforme</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a><a href="/exercices-respiration/">Exercices de respiration</a><a href="/journal-humeur/">Journal d'humeur</a><a href="/recherche/">Rechercher</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/questions-frequentes/">Questions fréquentes</a><a href="/glossaire/">Glossaire</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="/accessibilite/">Accessibilité : non conforme</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
@@ -1034,6 +1035,97 @@ def construire_faq():
                                                    [schema, schema_ariane]))
 
 
+def echelle_journal(cle, titre, libelles):
+    boutons = "".join(f'<button type="button" data-valeur="{i + 1}" aria-pressed="false">{i + 1}<small>{l}</small></button>'
+                      for i, l in enumerate(libelles))
+    return (f'<div class="jr-ligne" role="group" aria-labelledby="jr-l-{cle}"><span id="jr-l-{cle}">{titre}</span>'
+            f'<div class="jr-echelle" data-echelle="{cle}">{boutons}</div></div>')
+
+
+JOURNAL_HTML = ('<div class="journal" id="journal">\n<p class="jr-message" role="status" hidden></p>\n'
+                '<div class="jr-ligne"><label for="jr-date">Jour</label><input type="date" id="jr-date"></div>\n'
+                + echelle_journal("h", "Mon humeur", ["Très difficile", "Difficile", "Moyenne", "Bonne", "Très bonne"]) + "\n"
+                + echelle_journal("t", "Mon stress", ["Très calme", "Calme", "Moyen", "Tendu", "Très tendu"]) + "\n"
+                + echelle_journal("s", "Ma dernière nuit", ["Très mauvaise", "Mauvaise", "Moyenne", "Bonne", "Très bonne"]) + "\n"
+                '<div class="jr-ligne"><label for="jr-note">Un mot sur ta journée (facultatif)</label>'
+                '<textarea id="jr-note" maxlength="300" placeholder="Ex. : réunion tendue, marche le soir, endormie vite"></textarea></div>\n'
+                '<div class="jr-actions"><button type="button" class="bouton jr-enregistrer">Enregistrer la note</button></div>\n'
+                '<p class="jr-repere" hidden>Ces deux dernières semaines, tu as noté ton humeur « difficile » ou « très difficile » presque '
+                'à chaque fois. Ce n\'est pas un diagnostic, mais une humeur triste presque tous les jours depuis au moins deux semaines '
+                'mérite d\'en parler à ton médecin sans attendre. Pensées suicidaires : <a href="tel:3114">3114</a>, gratuit, 24 h/24. '
+                '<a href="/ressources-urgence/">Toutes les ressources d\'urgence</a></p>\n'
+                '<div class="jr-courbe"></div>\n<div class="jr-liste"></div>\n'
+                '<div class="jr-actions"><button type="button" class="jr-secondaire jr-exporter">Enregistrer une copie</button>'
+                '<button type="button" class="jr-secondaire jr-importer">Reprendre une copie</button>'
+                '<input type="file" id="jr-fichier" accept="application/json,.json" hidden>'
+                '<button type="button" class="jr-secondaire jr-effacer">Tout effacer</button></div>\n'
+                '<p class="jr-confidentialite">Tes notes restent sur cet appareil : rien n\'est envoyé, ni à l\'éditeur du site ni à personne.</p>\n</div>')
+
+
+def construire_journal():
+    dossier = os.path.join(RACINE, "contenu", "journal")
+    css = open(os.path.join(dossier, "journal.css"), encoding="utf-8").read()
+    js = open(os.path.join(dossier, "journal.js"), encoding="utf-8").read()
+    return construire_page_outil("journal-humeur.md", "/journal-humeur/", "Journal d'humeur", {"{{JOURNAL}}": JOURNAL_HTML},
+                                 "outil gratuit et privé", tete=f"<style>{css}</style>", script=js)
+
+
+def construire_recherche():
+    js = open(os.path.join(RACINE, "contenu", "recherche", "recherche.js"), encoding="utf-8").read()
+    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Rechercher", None)])
+    contenu = f"""<div class="etroit">{nav_html}
+<h1>Rechercher sur le site</h1>
+<form class="recherche-form" id="form-recherche" role="search" action="/recherche/" method="get">
+<label class="lecteur-ecran" for="q">Mots à rechercher</label>
+<input type="search" id="q" name="q" placeholder="Ex. : cortisol, réveil la nuit" autocomplete="off" enterkeyhint="search">
+<button class="bouton" type="submit">Rechercher</button>
+</form>
+<p class="recherche-etat" id="recherche-etat" role="status"></p>
+<ol class="recherche-resultats" id="recherche-resultats"></ol>
+<noscript><p>La recherche a besoin de JavaScript.</p></noscript>
+<p>Tu peux aussi parcourir <a href="/articles/">tous les articles</a>, le <a href="/glossaire/">glossaire</a> ou les <a href="/questions-frequentes/">questions fréquentes</a>.</p>
+</div>
+<script>{js}</script>"""
+    html_r = page(f"Rechercher sur le site | {SITE['nom']}", "Rechercher dans les articles, les outils et le glossaire de Clarté Mentale.",
+                  "/recherche/", contenu, [schema_ariane], nav="/recherche/")
+    ecrire("recherche/index.html", html_r.replace('content="index, follow', 'content="noindex, follow'))
+
+
+def construire_index_recherche(articles):
+    """Index de la recherche interne (/recherche/index.json) : titre, description, intertitres et texte de chaque page,
+    plus chaque terme du glossaire. Le texte des sources, des offres et de la navigation n'est pas indexé."""
+    slugs = {a["slug"] for a in articles}
+    themes = {th["slug"] for th in SITE.get("themes", {}).values()}
+    outils = {"test-stress-anxiete", "respiration-guidee", "exercices-respiration", "journal-humeur", "ressources-urgence"}
+    entrees = []
+    for chemin in sorted(glob.glob(os.path.join(SORTIE, "**", "index.html"), recursive=True)):
+        rel = "/" + os.path.relpath(os.path.dirname(chemin), SORTIE).replace(os.sep, "/") + "/"
+        rel = "/" if rel == "/./" else rel
+        if rel == "/recherche/":
+            continue
+        t = open(chemin, encoding="utf-8").read()
+        m = re.search(r"<main[^>]*>(.*?)</main>", t, flags=re.S)
+        if not m:
+            continue
+        corps = re.sub(r"(?is)<(script|style|nav|aside|form|noscript)\b.*?</\1>", " ", m.group(1))
+        corps = re.sub(r'(?is)<section class="sources".*?</section>', " ", corps)
+        corps = re.sub(r'(?is)<h1\b.*?</h1>|<p class="(?:meta|bilan-sources|avertissement|urgence)".*?</p>', " ", corps)
+        h1 = re.search(r"<h1[^>]*>(.*?)</h1>", t, flags=re.S)
+        desc = re.search(r'<meta name="description" content="([^"]*)"', t)
+        cle = rel.strip("/")
+        entrees.append({"u": rel, "t": re.sub(r"\s+", " ", texte_brut(h1.group(1))).strip() if h1 else SITE["nom"],
+                        "d": html.unescape(desc.group(1)) if desc else "",
+                        "h": [re.sub(r"\s+", " ", texte_brut(x)).strip() for x in re.findall(r"<h2[^>]*>(.*?)</h2>", corps, flags=re.S)][:24],
+                        "x": re.sub(r"\s+", " ", texte_brut(corps)).strip()[:7000],
+                        "k": "Article" if cle in slugs else "Thème" if cle in themes else "Outil" if cle in outils else "Accueil" if rel == "/" else "Page"})
+    corps_g = lire_entete(os.path.join(RACINE, "contenu", "pages", "glossaire.md"))[1].split("## Sources", 1)[0]
+    for terme, definition in re.findall(r"^## +(.+?)\s*\n+(.+?)(?:\n\n|\Z)", corps_g, flags=re.M | re.S):
+        texte = re.sub(r"\s*\[[\d, ]+\]", "", texte_brut(md(definition))).strip()
+        entrees.append({"u": f"/glossaire/#{slugify_unicode(terme, '-')}", "t": terme, "d": texte, "h": [], "x": texte, "k": "Glossaire"})
+    ecrire("recherche/index.json", json.dumps(entrees, ensure_ascii=False, separators=(",", ":")))
+    return len(entrees)
+
+
 def construire_urgences():
     return construire_page_outil("ressources-urgence.md", "/ressources-urgence/", "Ressources d'urgence", {}, "2 minutes de lecture")
 
@@ -1140,7 +1232,7 @@ def ecrire(rel, contenu, mode="w"):
 def construire_fichiers_techniques(articles):
     pages = [("/", SITE["date_publication"]), ("/articles/", max(a["maj"] for a in articles)),
              ("/la-formation/", SITE["date_publication"]),
-             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/ressources-urgence/", "2026-10-10"), ("/exercices-respiration/", "2026-10-10"), ("/glossaire/", "2026-10-10"), ("/questions-frequentes/", "2026-10-10"), ("/accessibilite/", "2026-10-10"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
+             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/ressources-urgence/", "2026-10-10"), ("/exercices-respiration/", "2026-10-10"), ("/journal-humeur/", "2026-10-10"), ("/glossaire/", "2026-10-10"), ("/questions-frequentes/", "2026-10-10"), ("/accessibilite/", "2026-10-10"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
              ("/mentions-legales/", SITE["date_publication"])]
     pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
@@ -1185,7 +1277,8 @@ def construire_fichiers_techniques(articles):
                "lignes d'écoute (SOS Amitié, Suicide Écoute, Fil Santé Jeunes, 3040, Nightline) et Mon soutien psy, vérifiés sur les sites officiels."]
     lignes += [f"- [Glossaire]({URL}/glossaire/): définitions sourcées (cortisol, nerf vague, cohérence cardiaque, charge mentale, burn-out, GAD-7…).",
                f"- [Questions fréquentes]({URL}/questions-frequentes/): qui écrit le site, urgence, test, données personnelles, guide et programme.",
-               f"- [Accessibilité]({URL}/accessibilite/): déclaration d'accessibilité et résultats des tests."]
+               f"- [Accessibilité]({URL}/accessibilite/): déclaration d'accessibilité et résultats des tests.",
+               f"- [Journal d'humeur]({URL}/journal-humeur/): noter humeur, stress et nuit chaque jour ; les notes restent sur l'appareil, rien n'est envoyé."]
     lignes += ["", "## Guide gratuit", ""]
     for g in [SITE["guides"][OFFRE]]:
         lignes.append(f"- [{g['titre']}]({g['url']}): {g['accroche']} " + " ; ".join(g["points"]) + ".")
@@ -1280,6 +1373,8 @@ def main():
     construire_exercices()
     construire_glossaire()
     construire_faq()
+    construire_journal()
+    construire_recherche()
     if SITE.get("formation"):
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")
@@ -1290,6 +1385,7 @@ def main():
     construire_page_fixe("mentions-legales.md", "/mentions-legales/")
     construire_page_fixe("accessibilite.md", "/accessibilite/")
     construire_404()
+    construire_index_recherche(articles)
     construire_fichiers_techniques(articles)
     print(f"{len(articles)} articles construits dans site/_build/ :",
           ", ".join(f"{a['slug']} ({a['mots']} mots, {len(a['sources'])} sources)" for a in articles))
