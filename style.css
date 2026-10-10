@@ -81,6 +81,12 @@ img { max-width: 100%; height: auto; display: block; }
 .nav a { color: var(--champagne-doux); text-decoration: none; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--champagne); }
 .nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--brume); }
+.nav { align-items: center; }
+.nav .bouton-entete { padding: 9px 16px; font-size: 14px; color: var(--nuit); }
+.nav .bouton-entete:hover { color: var(--nuit); }
+/* Entre le téléphone et l'ordinateur, liens et bouton tiennent sur la ligne du logo (comme sur l'accueil). */
+@media (max-width: 1080px) { .nav { gap: 4px 16px; font-size: 14px; } .nav .bouton-entete { padding: 8px 13px; } }
+@media (max-width: 960px) { .nav { gap: 4px 12px; } .entete .large { gap: 8px 14px; } }
 /* Mobile : même en-tête que l'accueil (logo + bouton menu, 73 px), le menu s'ouvre en plein écran (menu.css). */
 @media (max-width: 860px) {
   .entete .large { flex-wrap: nowrap; gap: 16px; }
@@ -308,7 +314,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   /* Fermeture sans animation (lien vers une partie de la page, retour arrière) : la page apparaît tout de suite. */
   .menu-mobile.instant, .menu-mobile.instant a { transition: none !important; }
   /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
-  .menu-mobile .btn { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
+  .menu-mobile .btn, .menu-mobile .bouton { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
   /* Menu ouvert : un glissement commencé sur l'en-tête ne fait pas défiler la page du dessous. */
   .menu-ouvert header { touch-action: none; }
 }
@@ -343,6 +349,13 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   .pied-colonnes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 20px; }
   .pied-colonnes > div:last-child { grid-column: 1 / -1; }
   .pied-colonnes > div:last-child ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+}
+
+/* Sans JavaScript, le bouton menu ne peut pas s'ouvrir : un lien « Menu » mène à la navigation du pied de page. */
+.menu-sans-js { display: none; }
+@media (max-width: 860px) {
+  html:not(.js) .burger { display: none; }
+  html:not(.js) .menu-sans-js { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--lisere-fort); color: var(--champagne); font: 600 15px/1 var(--texte); text-decoration: none; }
 }
 
 /* Mode clair (10/10/2026). Le site est sombre par défaut ; il passe en clair si l'appareil est réglé en clair, ou si le
@@ -380,7 +393,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
 :root[data-theme="clair"] .haut-page { background: rgba(255, 255, 255, 0.94); }
 
 /* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
-:root[data-theme="clair"] .bouton, :root[data-theme="clair"] .rappel-guide a, :root[data-theme="clair"] .btn-or, :root[data-theme="clair"] .liens .btn, :root[data-theme="clair"] .menu-mobile .btn, :root[data-theme="clair"] .test-cta { color: #FFFFFF; }
+:root[data-theme="clair"] .bouton, :root[data-theme="clair"] .rappel-guide a, :root[data-theme="clair"] .btn-or, :root[data-theme="clair"] .liens .btn, :root[data-theme="clair"] .menu-mobile .btn, :root[data-theme="clair"] .menu-mobile .bouton, :root[data-theme="clair"] .nav .bouton-entete, :root[data-theme="clair"] .test-cta { color: #FFFFFF; }
 :root[data-theme="clair"] .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
 :root[data-theme="clair"] .bouton:hover, :root[data-theme="clair"] .btn-or:hover, :root[data-theme="clair"] .test-cta:hover, :root[data-theme="clair"] .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
 :root[data-theme="clair"] .btn-verre:hover { color: #FFFFFF; }
@@ -453,7 +466,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
 :root:not([data-theme="sombre"]) .haut-page { background: rgba(255, 255, 255, 0.94); }
 
 /* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
-:root:not([data-theme="sombre"]) .bouton, :root:not([data-theme="sombre"]) .rappel-guide a, :root:not([data-theme="sombre"]) .btn-or, :root:not([data-theme="sombre"]) .liens .btn, :root:not([data-theme="sombre"]) .menu-mobile .btn, :root:not([data-theme="sombre"]) .test-cta { color: #FFFFFF; }
+:root:not([data-theme="sombre"]) .bouton, :root:not([data-theme="sombre"]) .rappel-guide a, :root:not([data-theme="sombre"]) .btn-or, :root:not([data-theme="sombre"]) .liens .btn, :root:not([data-theme="sombre"]) .menu-mobile .btn, :root:not([data-theme="sombre"]) .menu-mobile .bouton, :root:not([data-theme="sombre"]) .nav .bouton-entete, :root:not([data-theme="sombre"]) .test-cta { color: #FFFFFF; }
 :root:not([data-theme="sombre"]) .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
 :root:not([data-theme="sombre"]) .bouton:hover, :root:not([data-theme="sombre"]) .btn-or:hover, :root:not([data-theme="sombre"]) .test-cta:hover, :root:not([data-theme="sombre"]) .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
 :root:not([data-theme="sombre"]) .btn-verre:hover { color: #FFFFFF; }

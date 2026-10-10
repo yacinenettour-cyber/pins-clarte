@@ -157,7 +157,7 @@ section { position: relative; z-index: 1; }
   /* Fermeture sans animation (lien vers une partie de la page, retour arrière) : la page apparaît tout de suite. */
   .menu-mobile.instant, .menu-mobile.instant a { transition: none !important; }
   /* Le bouton garde son propre style : la règle des liens du menu (texte champagne, sans marge intérieure) le rendait illisible. */
-  .menu-mobile .btn { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
+  .menu-mobile .btn, .menu-mobile .bouton { margin-top: 18px; justify-self: start; max-width: 100%; padding: 16px 26px; border-bottom: 0; font: 600 17px/1.2 var(--texte); color: var(--nuit); }
   /* Menu ouvert : un glissement commencé sur l'en-tête ne fait pas défiler la page du dessous. */
   .menu-ouvert header { touch-action: none; }
 }
@@ -192,6 +192,13 @@ section { position: relative; z-index: 1; }
   .pied-colonnes { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 20px; }
   .pied-colonnes > div:last-child { grid-column: 1 / -1; }
   .pied-colonnes > div:last-child ul { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
+}
+
+/* Sans JavaScript, le bouton menu ne peut pas s'ouvrir : un lien « Menu » mène à la navigation du pied de page. */
+.menu-sans-js { display: none; }
+@media (max-width: 860px) {
+  html:not(.js) .burger { display: none; }
+  html:not(.js) .menu-sans-js { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--lisere-fort); color: var(--champagne); font: 600 15px/1 var(--texte); text-decoration: none; }
 }
 
 /* Boutons */
@@ -302,6 +309,12 @@ section { position: relative; z-index: 1; }
   .etape, .resultat { animation: none; }
   .barre i, .option, .test-cta { transition: none; }
 }
+
+/* Sans JavaScript : version papier du GAD-7 (pas de barre de progression). */
+html:not(.js) .instrument .progression { display: none; }
+.test-papier { display: grid; gap: 12px; font-size: 16px; line-height: 1.6; }
+.test-papier p, .test-papier ol, .test-papier ul { margin: 0; }
+.test-papier a { color: var(--brume); font-weight: 600; }
 
 @keyframes glisse { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
 @keyframes aurore { 0% { transform: translate3d(-4%, -2%, 0) scale(1); } 50% { transform: translate3d(4%, 3%, 0) scale(1.08); } 100% { transform: translate3d(-4%, -2%, 0) scale(1); } }
@@ -492,7 +505,7 @@ section { position: relative; z-index: 1; }
 :root[data-theme="clair"] .haut-page { background: rgba(255, 255, 255, 0.94); }
 
 /* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
-:root[data-theme="clair"] .bouton, :root[data-theme="clair"] .rappel-guide a, :root[data-theme="clair"] .btn-or, :root[data-theme="clair"] .liens .btn, :root[data-theme="clair"] .menu-mobile .btn, :root[data-theme="clair"] .test-cta { color: #FFFFFF; }
+:root[data-theme="clair"] .bouton, :root[data-theme="clair"] .rappel-guide a, :root[data-theme="clair"] .btn-or, :root[data-theme="clair"] .liens .btn, :root[data-theme="clair"] .menu-mobile .btn, :root[data-theme="clair"] .menu-mobile .bouton, :root[data-theme="clair"] .nav .bouton-entete, :root[data-theme="clair"] .test-cta { color: #FFFFFF; }
 :root[data-theme="clair"] .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
 :root[data-theme="clair"] .bouton:hover, :root[data-theme="clair"] .btn-or:hover, :root[data-theme="clair"] .test-cta:hover, :root[data-theme="clair"] .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
 :root[data-theme="clair"] .btn-verre:hover { color: #FFFFFF; }
@@ -565,7 +578,7 @@ section { position: relative; z-index: 1; }
 :root:not([data-theme="sombre"]) .haut-page { background: rgba(255, 255, 255, 0.94); }
 
 /* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
-:root:not([data-theme="sombre"]) .bouton, :root:not([data-theme="sombre"]) .rappel-guide a, :root:not([data-theme="sombre"]) .btn-or, :root:not([data-theme="sombre"]) .liens .btn, :root:not([data-theme="sombre"]) .menu-mobile .btn, :root:not([data-theme="sombre"]) .test-cta { color: #FFFFFF; }
+:root:not([data-theme="sombre"]) .bouton, :root:not([data-theme="sombre"]) .rappel-guide a, :root:not([data-theme="sombre"]) .btn-or, :root:not([data-theme="sombre"]) .liens .btn, :root:not([data-theme="sombre"]) .menu-mobile .btn, :root:not([data-theme="sombre"]) .menu-mobile .bouton, :root:not([data-theme="sombre"]) .nav .bouton-entete, :root:not([data-theme="sombre"]) .test-cta { color: #FFFFFF; }
 :root:not([data-theme="sombre"]) .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
 :root:not([data-theme="sombre"]) .bouton:hover, :root:not([data-theme="sombre"]) .btn-or:hover, :root:not([data-theme="sombre"]) .test-cta:hover, :root:not([data-theme="sombre"]) .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
 :root:not([data-theme="sombre"]) .btn-verre:hover { color: #FFFFFF; }
@@ -618,21 +631,21 @@ section { position: relative; z-index: 1; }
     </a>
     <nav class="liens" aria-label="Menu principal">
       <a href="#test">Le test</a>
-      <a href="#solutions">Solutions</a>
       <a href="/articles/">Articles</a>
+      <a href="/exercices-respiration/">Respiration</a>
       <a href="/la-formation/">La formation</a>
-      <a href="/recherche/">Rechercher</a>
+      <a href="/a-propos/">À propos</a>
       <a class="btn btn-or btn-petit" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=nav">Guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
     </nav>
-    <div class="actions-entete"><button class="theme-bascule" type="button" aria-label="Passer en mode clair" title="Passer en mode clair"><svg class="soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="lune" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button><button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
+    <div class="actions-entete"><button class="theme-bascule" type="button" aria-label="Passer en mode clair" title="Passer en mode clair"><svg class="soleil" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="lune" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button><a class="menu-sans-js" href="#navigation-pied">Menu</a><button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
   </div>
 </header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
+  <a href="/" tabindex="-1" aria-current="page">Accueil</a>
   <a href="#test" tabindex="-1">Le test</a>
-  <a href="#solutions" tabindex="-1">Solutions</a>
   <a href="/articles/" tabindex="-1">Articles</a>
+  <a href="/exercices-respiration/" tabindex="-1">Respiration</a>
   <a href="/la-formation/" tabindex="-1">La formation</a>
-  <a href="/guides-gratuits/" tabindex="-1">Guide gratuit</a>
   <a href="/a-propos/" tabindex="-1">À propos</a>
   <a href="/recherche/" tabindex="-1">Rechercher</a>
   <a class="btn btn-or" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=menu-mobile" tabindex="-1">Recevoir le guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
@@ -673,7 +686,20 @@ section { position: relative; z-index: 1; }
       </div>
       <div class="instrument" id="test-stress" aria-live="polite">
         <div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><i id="test-barre"></i></div></div>
-        <div id="test-ecran"><noscript><p>Ce test a besoin de JavaScript pour calculer ton score dans ton navigateur.</p></noscript></div>
+        <div id="test-ecran"><noscript><div class="test-papier">
+<p><strong>Ton navigateur n'exécute pas JavaScript : voici la version papier du questionnaire GAD-7.</strong> Note tes réponses sur une feuille, puis additionne tes points. Rien n'est envoyé.</p>
+<p>Au cours des 14 derniers jours, à quelle fréquence avez-vous été dérangé(e) par les problèmes suivants ?</p>
+<ol class="liste"><li>Sentiment de nervosité, d&#x27;anxiété ou de tension</li><li>Incapable d&#x27;arrêter de vous inquiéter ou de contrôler vos inquiétudes</li><li>Inquiétudes excessives à propos de tout et de rien</li><li>Difficulté à se détendre</li><li>Agitation telle qu&#x27;il est difficile de rester tranquille</li><li>Devenir facilement contrarié(e) ou irritable</li><li>Avoir peur que quelque chose d&#x27;épouvantable puisse arriver</li></ol>
+<p>Pour chaque question : « Jamais » = 0 point ; « Plusieurs jours » = 1 point ; « Plus de la moitié des jours » = 2 points ; « Presque tous les jours » = 3 points. Ton score est la somme des 7 réponses, de 0 à 21.</p>
+<ul class="liste">
+<li><strong>0 à 4</strong> : peu de symptômes d'anxiété ces deux dernières semaines.</li>
+<li><strong>5 à 9</strong> : symptômes d'anxiété légers, fréquents en période chargée.</li>
+<li><strong>10 à 14</strong> : symptômes modérés. C'est le seuil à partir duquel les auteurs du questionnaire recommandent d'en parler à un professionnel : ton médecin traitant ou un psychologue.</li>
+<li><strong>15 à 21</strong> : symptômes sévères, un signal d'alerte. Prends rendez-vous avec ton médecin sans attendre.</li>
+</ul>
+<p>Ce questionnaire ne pose pas de diagnostic. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
+<p>Si ton score est inférieur à 15 et que le mental s'emballe au moment de dormir, le guide gratuit « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire au lit : <a href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=test&amp;utm_campaign=test-stress&amp;utm_content=sans-javascript">Recevoir le guide gratuit</a>. Tu peux aussi lire <a href="/ruminations-le-soir/">ruminations le soir : 6 techniques</a> ou <a href="/calmer-son-systeme-nerveux/">calmer son système nerveux</a>.</p>
+</div></noscript></div>
       </div>
     </div>
   </section>
@@ -810,7 +836,7 @@ section { position: relative; z-index: 1; }
         <h2>Comprendre ce qui se passe dans ton corps</h2>
         <p>Des articles complets et sourcés pour mieux dormir, calmer ton système nerveux et sortir des ruminations du soir.</p>
       </div>
-      <div class="lecture"><a class="carte-lecture" href="/ruminations-le-soir/"><span class="teinte"><img src="/img/ruminations-le-soir-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Ruminations le soir : pourquoi ton cerveau s&#x27;emballe au coucher</h3><p class="resume">Ruminations le soir, pensées qui tournent au coucher : comprends pourquoi ton cerveau ne s&#x27;arrête pas la nuit et essaie 6 techniques étudiées.</p><p class="carte-meta">10 min de lecture</p></div></a><a class="carte-lecture" href="/reveil-4h-du-matin/"><span class="teinte sombre"><img src="/img/reveil-4h-du-matin-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment</h3><p class="resume">Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.</p><p class="carte-meta">9 min de lecture</p></div></a><a class="carte-lecture" href="/routine-du-soir-anti-stress/"><span class="teinte"><img src="/img/routine-du-soir-anti-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes</h3><p class="resume">Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.</p><p class="carte-meta">9 min de lecture</p></div></a><a class="carte-lecture" href="/procrastination-du-coucher/"><span class="teinte"><img src="/img/procrastination-du-coucher-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Procrastination du coucher : pourquoi on veille et comment arrêter</h3><p class="resume">Procrastination du coucher : pourquoi tu repousses l&#x27;heure d&#x27;aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.</p><p class="carte-meta">9 min de lecture</p></div></a><a class="carte-lecture" href="/cortisol-hormone-du-stress/"><span class="teinte"><img src="/img/cortisol-hormone-du-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Cortisol, hormone du stress : son rôle, son rythme et les idées reçues</h3><p class="resume">Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».</p><p class="carte-meta">11 min de lecture</p></div></a><a class="carte-lecture" href="/baisser-son-cortisol-naturellement/"><span class="teinte"><img src="/img/baisser-son-cortisol-naturellement-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Baisser son cortisol naturellement : ce qui marche vraiment</h3><p class="resume">Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.</p><p class="carte-meta">13 min de lecture</p></div></a></div>
+      <div class="lecture"><a class="carte-lecture" href="/ruminations-le-soir/"><span class="teinte"><img src="/img/ruminations-le-soir-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Ruminations le soir : pourquoi ton cerveau s&#x27;emballe au coucher</h3><p class="resume">Ruminations le soir, pensées qui tournent au coucher : comprends pourquoi ton cerveau ne s&#x27;arrête pas la nuit et essaie 6 techniques étudiées.</p><p class="carte-meta">10 min de lecture</p></div></a><a class="carte-lecture" href="/reveil-4h-du-matin/"><span class="teinte sombre"><img src="/img/reveil-4h-du-matin-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment</h3><p class="resume">Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.</p><p class="carte-meta">10 min de lecture</p></div></a><a class="carte-lecture" href="/routine-du-soir-anti-stress/"><span class="teinte"><img src="/img/routine-du-soir-anti-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes</h3><p class="resume">Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.</p><p class="carte-meta">9 min de lecture</p></div></a><a class="carte-lecture" href="/procrastination-du-coucher/"><span class="teinte"><img src="/img/procrastination-du-coucher-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Sommeil et soirées</p><h3>Procrastination du coucher : pourquoi on veille et comment arrêter</h3><p class="resume">Procrastination du coucher : pourquoi tu repousses l&#x27;heure d&#x27;aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.</p><p class="carte-meta">9 min de lecture</p></div></a><a class="carte-lecture" href="/cortisol-hormone-du-stress/"><span class="teinte"><img src="/img/cortisol-hormone-du-stress-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Cortisol, hormone du stress : son rôle, son rythme et les idées reçues</h3><p class="resume">Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».</p><p class="carte-meta">11 min de lecture</p></div></a><a class="carte-lecture" href="/baisser-son-cortisol-naturellement/"><span class="teinte"><img src="/img/baisser-son-cortisol-naturellement-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></span><div class="corps"><p class="etiquette">Stress et système nerveux</p><h3>Baisser son cortisol naturellement : ce qui marche vraiment</h3><p class="resume">Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.</p><p class="carte-meta">13 min de lecture</p></div></a></div>
       <p class="themes-lien">Explorer par thème : <a href="/mieux-dormir/">Mieux dormir</a> · <a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a> · <a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a></p>
       <a class="btn btn-verre" href="/articles/">Tous les articles <span class="fleche" aria-hidden="true">→</span></a>
     </div>
@@ -875,7 +901,7 @@ section { position: relative; z-index: 1; }
 </main>
 
 <footer class="pied"><div class="wrap">
-<nav class="pied-colonnes" aria-label="Liens du pied de page"><div><p class="pied-titre" id="pied-lire">Lire</p><ul aria-labelledby="pied-lire"><li><a href="/articles/">Tous les articles</a></li><li><a href="/mieux-dormir/">Mieux dormir</a></li><li><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a></li><li><a href="/charge-mentale-et-burn-out/">Charge mentale et <span class="mot">burn-out</span></a></li><li><a href="/questions-frequentes/">Questions fréquentes</a></li><li><a href="/glossaire/">Glossaire</a></li></ul></div><div><p class="pied-titre" id="pied-outils">Outils gratuits</p><ul aria-labelledby="pied-outils"><li><a href="/test-stress-anxiete/">Test stress et anxiété</a></li><li><a href="/respiration-guidee/">Respiration guidée</a></li><li><a href="/exercices-respiration/">Exercices de respiration</a></li><li><a href="/journal-humeur/">Journal d&#x27;humeur</a></li><li><a href="/guides-gratuits/">Guide gratuit</a></li><li><a href="/recherche/">Rechercher</a></li></ul></div><div><p class="pied-titre" id="pied-site">Le site</p><ul aria-labelledby="pied-site"><li><a href="/a-propos/">À propos</a></li><li><a href="/methode-editoriale/">Méthode éditoriale</a></li><li><a href="/la-formation/">La formation</a></li><li><a href="/mentions-legales/">Mentions légales et confidentialité</a></li><li><a href="/accessibilite/">Accessibilité : non conforme</a></li><li><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></li></ul></div></nav>
+<nav class="pied-colonnes" id="navigation-pied" aria-label="Liens du pied de page"><div><p class="pied-titre" id="pied-lire">Lire</p><ul aria-labelledby="pied-lire"><li><a href="/articles/">Tous les articles</a></li><li><a href="/mieux-dormir/">Mieux dormir</a></li><li><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a></li><li><a href="/charge-mentale-et-burn-out/">Charge mentale et <span class="mot">burn-out</span></a></li><li><a href="/questions-frequentes/">Questions fréquentes</a></li><li><a href="/glossaire/">Glossaire</a></li></ul></div><div><p class="pied-titre" id="pied-outils">Outils gratuits</p><ul aria-labelledby="pied-outils"><li><a href="/test-stress-anxiete/">Test stress et anxiété</a></li><li><a href="/respiration-guidee/">Respiration guidée</a></li><li><a href="/exercices-respiration/">Exercices de respiration</a></li><li><a href="/journal-humeur/">Journal d&#x27;humeur</a></li><li><a href="/guides-gratuits/">Guide gratuit</a></li><li><a href="/recherche/">Rechercher</a></li></ul></div><div><p class="pied-titre" id="pied-site">Le site</p><ul aria-labelledby="pied-site"><li><a href="/a-propos/">À propos</a></li><li><a href="/methode-editoriale/">Méthode éditoriale</a></li><li><a href="/la-formation/">La formation</a></li><li><a href="/mentions-legales/">Mentions légales et confidentialité</a></li><li><a href="/accessibilite/">Accessibilité : non conforme</a></li><li><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></li></ul></div></nav>
 <p class="pied-urgence">Les contenus de ce site sont des informations de bien-être : ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24). <a href="/ressources-urgence/">Toutes les ressources d'urgence</a></p>
 <p class="pied-bas">© <span id="annee">2026</span> Clarté Mentale</p>
 </div></footer>
