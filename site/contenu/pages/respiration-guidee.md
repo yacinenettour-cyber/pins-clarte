@@ -50,6 +50,7 @@ Ces audios ont été montés par Clarté Mentale : une musique de détente, deux
 | La voix | Aucune |
 
 - Les audios sont gratuits, sans inscription, et tu peux les télécharger pour les écouter hors connexion.
+- Tu préfères suivre un rythme à l'écran ? Les [exercices de respiration](/exercices-respiration/) proposent un minuteur visuel pour la cohérence cardiaque, la respiration carrée et la 4-7-8.
 - Si, une fois au lit, ce sont tes pensées qui tournent, le [guide gratuit](/guides-gratuits/) « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire au lit et un calendrier de 30 jours.
 
 ## Quand consulter ?

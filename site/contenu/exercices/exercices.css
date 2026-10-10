@@ -1,0 +1,24 @@
+/* Minuteur visuel des exercices de respiration (couleurs du thème : sombre ou clair). */
+.exercice { display: grid; gap: 18px; justify-items: center; text-align: center; margin: 26px 0 34px; padding: clamp(18px, 3vw, 30px); border-radius: 26px; background: var(--verre); border: 1px solid var(--lisere); box-shadow: var(--ombre-2xl); }
+.ex-choix { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
+.ex-choix button { flex: 1 1 150px; max-width: 220px; display: grid; gap: 2px; padding: 11px 14px; border-radius: 14px; border: 1px solid var(--lisere-fort); background: transparent; color: var(--champagne); font: 600 15px/1.3 var(--texte); cursor: pointer; transition: var(--transition); }
+.ex-choix button small { font-weight: 500; font-size: 12.5px; color: var(--champagne-doux); }
+.ex-choix button[aria-pressed="true"] { border-color: var(--brume); background: rgba(58, 95, 67, 0.22); box-shadow: inset 0 0 0 1px var(--brume); }
+.ex-duree button { flex: 0 1 96px; }
+.ex-scene { position: relative; width: min(260px, 72vw); aspect-ratio: 1; display: grid; place-items: center; margin: 6px 0; }
+.ex-scene::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1px dashed var(--lisere-fort); }
+.ex-cercle { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(143, 191, 154, 0.6), rgba(58, 95, 67, 0.4) 55%, rgba(58, 95, 67, 0.08) 75%); box-shadow: 0 0 60px rgba(58, 95, 67, 0.35); transform: scale(0.55); will-change: transform; }
+.ex-texte { position: relative; display: grid; gap: 2px; }
+.ex-etape { margin: 0; font: 700 clamp(22px, 5vw, 28px)/1.2 var(--titre); color: var(--champagne); }
+.ex-compte { margin: 0; min-height: 1.3em; font: 600 18px/1.3 var(--texte); font-variant-numeric: tabular-nums; color: var(--champagne-doux); }
+.ex-barre { width: 100%; max-width: 420px; height: 6px; border-radius: 999px; background: var(--lisere); overflow: hidden; }
+.ex-barre span { display: block; height: 100%; width: 0; background: var(--brume); border-radius: inherit; }
+.ex-infos { margin: 0; font-size: 14.5px; color: var(--champagne-doux); }
+.ex-reste { font-variant-numeric: tabular-nums; }
+.ex-note { margin: 0; max-width: 460px; font-size: 14px; color: var(--champagne-doux); }
+/* Mouvements réduits : le cercle ne grandit pas, il change d'intensité selon l'étape. */
+@media (prefers-reduced-motion: reduce) {
+  .ex-cercle { transform: none; opacity: 0.45; transition: opacity .6s; }
+  .ex-cercle[data-phase="in"], .ex-cercle[data-phase="haut"] { opacity: 1; }
+}
+.ex-lancer { border: 0; font: 700 16px/1 var(--texte); cursor: pointer; }

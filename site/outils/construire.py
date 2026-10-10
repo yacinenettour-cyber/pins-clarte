@@ -444,7 +444,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a><a href="/exercices-respiration/">Exercices de respiration</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/questions-frequentes/">Questions fréquentes</a><a href="/glossaire/">Glossaire</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="/accessibilite/">Accessibilité : non conforme</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
 <p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
@@ -739,6 +739,7 @@ def construire_accueil(articles):
 {blocs_ld}
 </head>
 <body>
+<a class="saut" href="#contenu">Aller au contenu</a>
 {corps}
 {balise_mesure()}
 </body>
@@ -822,8 +823,8 @@ def construire_guides():
 <p>L'inscription se fait sur une page sécurisée hébergée par systeme.io. Tu peux te désinscrire en un clic à tout moment.</p>
 </div>"""
     ecrire("guides-gratuits/index.html", page(f"Guide gratuit : {g['titre'][0].lower()}{g['titre'][1:]}",
-                                              f"Guide gratuit « {g['titre']} » : une routine anti-rumination à faire au lit, "
-                                              "des exercices pour calmer le mental et un calendrier de 30 jours.",
+                                              f"Guide gratuit « {g['titre']} » : routine anti-rumination au lit, exercices pour "
+                                              "calmer le mental, calendrier de 30 jours.",
                                               "/guides-gratuits/", contenu, [schema_ariane], nav="/guides-gratuits/"))
 
 
@@ -934,7 +935,7 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
     corps_html = appels_de_source(md("\n\n".join(corps_md)), nb)
     corps_html = re.sub(r"<h2>(.*?)</h2>", lambda m: f'<h2 id="{slugify_unicode(texte_brut(m.group(1)), "-")}">{m.group(1)}</h2>', corps_html)
     faq_html = ('<section class="faq"><h2 id="questions-frequentes">Questions fréquentes</h2>'
-                + "".join(f"<h3>{e(q)}</h3>{appels_de_source(md(r), nb)}" for q, r in faq) + "</section>")
+                + "".join(f"<h3>{e(q)}</h3>{appels_de_source(md(r), nb)}" for q, r in faq) + "</section>") if faq else ""
     nav_html, schema_ariane = ariane([("Accueil", "/"), (nom_court, None)])
     contenu = f"""<div class="etroit">{nav_html}
 <h1>{e(entete['titre'])}</h1>
@@ -955,13 +956,82 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
          "citation": [{"@type": "ScholarlyArticle" if type_source(u)[0] == "etude" else "CreativeWork", "name": t, "url": u}
                       for t, u in sources],
          "publishingPrinciples": URL + "/methode-editoriale/"},
-        {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": texte_brut(md(r))}} for q, r in faq]},
+        *([{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": texte_brut(md(r))}} for q, r in faq]}] if faq else []),
         schema_ariane, *schemas_en_plus,
     ]
     ecrire(chemin.strip("/") + "/index.html", page(entete["titre_seo"], entete["description"], chemin, contenu, schemas,
                                                    nav=chemin, tete=tete))
     return entete
+
+
+EXERCICES_HTML = """<div class="exercice" id="exercice">
+<div class="ex-choix" role="group" aria-label="Choisis ton exercice">
+<button type="button" data-motif="coherence" aria-pressed="true">Cohérence cardiaque<small>5 s · 5 s</small></button>
+<button type="button" data-motif="carree" aria-pressed="false">Respiration carrée<small>4 · 4 · 4 · 4</small></button>
+<button type="button" data-motif="478" aria-pressed="false">Respiration 4-7-8<small>4 · 7 · 8</small></button>
+</div>
+<div class="ex-choix ex-duree" role="group" aria-label="Durée de l'exercice">
+<button type="button" data-minutes="1" aria-pressed="false">1 min</button>
+<button type="button" data-minutes="3" aria-pressed="true">3 min</button>
+<button type="button" data-minutes="5" aria-pressed="false">5 min</button>
+</div>
+<div class="ex-scene"><div class="ex-cercle" aria-hidden="true"></div>
+<div class="ex-texte"><p class="ex-etape" role="status">Prêt</p><p class="ex-compte" aria-hidden="true"></p></div></div>
+<div class="ex-barre" aria-hidden="true"><span></span></div>
+<p class="ex-infos"><span class="ex-rythme">Inspire 5 s · expire 5 s</span> · reste <span class="ex-reste">3:00</span></p>
+<button type="button" class="ex-lancer bouton" aria-pressed="false">Commencer</button>
+<p class="ex-note">Respire sans forcer. Si la tête te tourne, reprends ta respiration habituelle. Le minuteur ne garde rien en mémoire.</p>
+</div>"""
+
+
+def construire_exercices():
+    dossier = os.path.join(RACINE, "contenu", "exercices")
+    css = open(os.path.join(dossier, "exercices.css"), encoding="utf-8").read()
+    js = open(os.path.join(dossier, "exercices.js"), encoding="utf-8").read()
+    return construire_page_outil("exercices-respiration.md", "/exercices-respiration/", "Exercices de respiration",
+                                 {"{{EXERCICES}}": EXERCICES_HTML}, "4 minutes de lecture", tete=f"<style>{css}</style>", script=js)
+
+
+def construire_glossaire():
+    """Glossaire : un intertitre par terme (ancre pour y renvoyer), données structurées DefinedTermSet."""
+    corps = lire_entete(os.path.join(RACINE, "contenu", "pages", "glossaire.md"))[1].split("## Sources", 1)[0]
+    termes = re.findall(r"^## +(.+?)\s*\n+(.+?)(?:\n\n|\Z)", corps, flags=re.M | re.S)
+    jeu = {"@context": "https://schema.org", "@type": "DefinedTermSet", "@id": URL + "/glossaire/#termes",
+           "name": "Glossaire du stress, du sommeil et du système nerveux", "inLanguage": SITE["langue"],
+           "hasDefinedTerm": [{"@type": "DefinedTerm", "name": t, "inDefinedTermSet": URL + "/glossaire/#termes",
+                               "url": f"{URL}/glossaire/#{slugify_unicode(t, '-')}",
+                               "description": re.sub(r"\s*\[[\d, ]+\]", "", texte_brut(md(d))).strip()} for t, d in termes]}
+    return construire_page_outil("glossaire.md", "/glossaire/", "Glossaire", {}, f"{len(termes)} définitions", schemas_en_plus=(jeu,))
+
+
+def construire_faq():
+    """Questions fréquentes sur le site : groupes (##) de questions (###), sources numérotées, données FAQPage."""
+    entete, corps = lire_entete(os.path.join(RACINE, "contenu", "pages", "questions-frequentes.md"))
+    corps, bloc_sources = corps.split("## Sources", 1)
+    sources = [(a.strip(), b.strip()) for a, b in re.findall(r"^\s*\d+\.\s*\[(.+?)\]\((https?://(?:[^()\s]|\([^()\s]*\))+)\)", bloc_sources, flags=re.M)]
+    nb = len(sources)
+    intro, *groupes = re.split(r"^## +", corps, flags=re.M)
+    toutes, sections = [], ""
+    for g in groupes:
+        titre, texte = g.split("\n", 1)
+        items = re.findall(r"^### +(.+?)\s*\n(.*?)(?=^### |\Z)", texte, flags=re.M | re.S)
+        toutes += items
+        sections += (f'<section class="faq"><h2 id="{slugify_unicode(titre.strip(), "-")}">{e(titre.strip())}</h2>'
+                     + "".join(f"<h3>{e(q)}</h3>{appels_de_source(md(r), nb)}" for q, r in items) + "</section>")
+    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Questions fréquentes", None)])
+    contenu = f"""<div class="etroit">{nav_html}
+<h1>{e(entete['titre'])}</h1>
+{appels_de_source(md(intro), nb).replace("<p>", '<p class="chapo">', 1)}
+{sections}
+{liste_sources(sources, "la page")}
+<p class="avertissement">Ces réponses donnent des repères de bien-être, pas un avis médical. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+{URGENCE_HTML}
+</div>"""
+    schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": texte_brut(md(r))}} for q, r in toutes]}
+    ecrire("questions-frequentes/index.html", page(entete["titre_seo"], entete["description"], "/questions-frequentes/", contenu,
+                                                   [schema, schema_ariane]))
 
 
 def construire_urgences():
@@ -1070,7 +1140,7 @@ def ecrire(rel, contenu, mode="w"):
 def construire_fichiers_techniques(articles):
     pages = [("/", SITE["date_publication"]), ("/articles/", max(a["maj"] for a in articles)),
              ("/la-formation/", SITE["date_publication"]),
-             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/ressources-urgence/", "2026-10-10"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
+             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/ressources-urgence/", "2026-10-10"), ("/exercices-respiration/", "2026-10-10"), ("/glossaire/", "2026-10-10"), ("/questions-frequentes/", "2026-10-10"), ("/accessibilite/", "2026-10-10"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
              ("/mentions-legales/", SITE["date_publication"])]
     pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
@@ -1106,11 +1176,16 @@ def construire_fichiers_techniques(articles):
                f"- [Test de stress et d'anxiété]({URL}/test-stress-anxiete/): questionnaire GAD-7 (7 questions validées, "
                "score de 0 à 21, seuils 5, 10 et 15) suivi de 6 questions d'orientation (nuits, travail, corps) qui "
                "donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.",
+               f"- [Exercices de respiration]({URL}/exercices-respiration/): minuteur visuel gratuit pour la cohérence cardiaque (5-5), "
+               "la respiration carrée (4-4-4-4) et la 4-7-8, avec les études qui les ont testées et leurs limites.",
                f"- [Respiration guidée 4-6]({URL}/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), "
                "sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), "
                "pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme.",
                f"- [Ressources d'urgence]({URL}/ressources-urgence/): numéros d'urgence (15, 112, 114), prévention du suicide (3114), "
                "lignes d'écoute (SOS Amitié, Suicide Écoute, Fil Santé Jeunes, 3040, Nightline) et Mon soutien psy, vérifiés sur les sites officiels."]
+    lignes += [f"- [Glossaire]({URL}/glossaire/): définitions sourcées (cortisol, nerf vague, cohérence cardiaque, charge mentale, burn-out, GAD-7…).",
+               f"- [Questions fréquentes]({URL}/questions-frequentes/): qui écrit le site, urgence, test, données personnelles, guide et programme.",
+               f"- [Accessibilité]({URL}/accessibilite/): déclaration d'accessibilité et résultats des tests."]
     lignes += ["", "## Guide gratuit", ""]
     for g in [SITE["guides"][OFFRE]]:
         lignes.append(f"- [{g['titre']}]({g['url']}): {g['accroche']} " + " ; ".join(g["points"]) + ".")
@@ -1202,6 +1277,9 @@ def main():
     construire_test(articles)
     construire_respiration()
     construire_urgences()
+    construire_exercices()
+    construire_glossaire()
+    construire_faq()
     if SITE.get("formation"):
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")
@@ -1210,6 +1288,7 @@ def main():
     if balise_mesure() and "n'utilise aucun outil de mesure d'audience" in mentions:
         sys.exit("Mesure d'audience activée : mettre d'abord à jour les mentions légales (elles disent « aucun outil de mesure d'audience »).")
     construire_page_fixe("mentions-legales.md", "/mentions-legales/")
+    construire_page_fixe("accessibilite.md", "/accessibilite/")
     construire_404()
     construire_fichiers_techniques(articles)
     print(f"{len(articles)} articles construits dans site/_build/ :",

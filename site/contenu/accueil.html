@@ -50,6 +50,8 @@ body::before {
 }
 a { color: var(--brume); text-underline-offset: 3px; }
 a:hover { color: var(--champagne); }
+.saut { position: absolute; left: -999px; z-index: 30; }
+.saut:focus { left: 16px; top: 16px; background: var(--nuit-2); color: var(--champagne); padding: 8px 12px; border-radius: 8px; }
 :focus-visible { outline: 2px solid var(--brume); outline-offset: 3px; border-radius: 8px; }
 h1, h2, h3 { font-family: var(--titre); color: var(--champagne); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
 h2 { font-size: clamp(30px, 4.4vw, 52px); line-height: 1.05; font-weight: 700; }
@@ -297,7 +299,7 @@ section { position: relative; z-index: 1; }
   <a class="btn btn-or" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=menu-mobile" tabindex="-1">Recevoir le guide gratuit <span class="fleche" aria-hidden="true">→</span></a>
 </nav>
 
-<main>
+<main id="contenu">
   <section class="hero">
     <div class="wrap">
       <div class="hero-texte">
@@ -313,7 +315,7 @@ section { position: relative; z-index: 1; }
         <div class="reassurance"><span>Test gratuit, questionnaire validé</span><span>Sources scientifiques citées</span><span>Sans régime ni matériel</span></div>
       </div>
       <div class="hero-visuel" aria-hidden="true">
-        <canvas id="reseau"></canvas>
+        <canvas id="reseau" aria-hidden="true"></canvas>
         <div class="legende">
           <div><b>6</b> cycles par minute</div>
           <div class="pastille-souffle" id="pastille">Inspire 4 s · Expire 6 s</div>
@@ -546,6 +548,10 @@ section { position: relative; z-index: 1; }
       <a href="{{B}}/a-propos/">À propos</a>
       <a href="{{B}}/methode-editoriale/">Méthode éditoriale</a>
       <a href="{{B}}/mentions-legales/">Mentions légales et confidentialité</a>
+      <a href="{{B}}/exercices-respiration/">Exercices de respiration</a>
+      <a href="{{B}}/questions-frequentes/">Questions fréquentes</a>
+      <a href="{{B}}/glossaire/">Glossaire</a>
+      <a href="{{B}}/accessibilite/">Accessibilité : non conforme</a>
       <a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a>
     </nav>
     <p>Informations de bien-être fondées sur les sources citées. Elles ne remplacent pas l'avis d'un médecin. Urgence : <a href="tel:15">15</a> ou <a href="tel:112">112</a>. Pensées suicidaires : <a href="tel:3114">3114</a>, gratuit, 24 h/24. <a href="{{B}}/ressources-urgence/">Toutes les ressources d'urgence</a></p>
