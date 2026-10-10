@@ -795,6 +795,8 @@ La [respiration lente](/calmer-son-systeme-nerveux/) est une façon simple d'ent
 3. Expire doucement par la bouche pendant 6 secondes.
 4. Continue 5 minutes, idéalement à heure fixe : avant le déjeuner, ou au moment de te coucher.
 
+Si compter te distrait, le [minuteur de respiration](/exercices-respiration/) donne le rythme dans la journée ; au coucher, écran éteint, les [audios de respiration guidée](/respiration-guidee/) suivent ce même rythme 4-6.
+
 ## Les liens sociaux font-ils vraiment baisser le cortisol ?
 
 Oui : le soutien d'un proche réduit de façon mesurable la réponse de cortisol face à un stress [5]. Selon une étude de l'Université de Zurich publiée en 2003 dans *Biological Psychiatry* (Heinrichs et al.), menée sur 37 hommes en bonne santé soumis à un test de stress social en laboratoire, ceux qui avaient pu échanger avec leur meilleur ami pendant la préparation avaient une réponse de cortisol plus faible [5]. Ceux qui avaient reçu à la fois ce soutien et de l'ocytocine par spray nasal avaient le cortisol le plus bas, et se sentaient plus calmes et moins anxieux [5].
@@ -1098,7 +1100,7 @@ C'est le nerf principal du système nerveux parasympathique, celui des fonctions
 
 Quand tu es stressé, l'accélérateur domine. « Activer le nerf vague », c'est chercher à appuyer un peu plus sur le frein.
 
-La variabilité de la fréquence cardiaque (VFC) est l'indicateur indirect qu'utilisent les chercheurs pour estimer l'activité du nerf vague, que l'on ne peut pas mesurer directement chez soi : l'intervalle entre deux battements n'est jamais exactement le même, et une partie de ces variations reflète l'action du nerf vague sur le cœur [2]. La plupart des études mesurent donc la VFC, pas directement le stress ressenti.
+La [variabilité de la fréquence cardiaque](/glossaire/#variabilité-de-la-fréquence-cardiaque) (VFC) est l'indicateur indirect qu'utilisent les chercheurs pour estimer l'activité du nerf vague, que l'on ne peut pas mesurer directement chez soi : l'intervalle entre deux battements n'est jamais exactement le même, et une partie de ces variations reflète l'action du nerf vague sur le cœur [2]. La plupart des études mesurent donc la VFC, pas directement le stress ressenti.
 
 ## Comment activer le nerf vague par la respiration ?
 
@@ -1112,7 +1114,7 @@ La respiration lente, autour de 6 respirations par minute, est la façon la mieu
 
 Pourquoi 6 par minute ? Ce rythme correspond à environ 0,1 hertz. Selon une revue de Paul Lehrer (Université Rutgers) et Richard Gevirtz (Université Alliant de San Diego), publiée en 2014 dans *Frontiers in Psychology*, c'est à cette fréquence que les oscillations du rythme cardiaque liées à la respiration sont maximales et le cœur se met en phase avec le souffle [3].
 
-Et l'expiration ? L'arythmie sinusale respiratoire est le mécanisme normal par lequel ton cœur accélère légèrement quand tu inspires et ralentit quand tu expires [3]. Allonger l'expiration est donc logique. Un essai randomisé de l'Université Stanford, publié en 2023 dans *Cell Reports Medicine* (Balban et al.), l'a testé : 5 minutes par jour de « soupir cyclique » pendant un mois ont davantage amélioré l'humeur et ralenti la fréquence respiratoire que 5 minutes de méditation de pleine conscience. Les auteurs signalent eux-mêmes les limites : étude à distance, petits groupes, quatre semaines de suivi [4].
+Et l'expiration ? L'[arythmie sinusale respiratoire](/glossaire/#arythmie-sinusale-respiratoire) est le mécanisme normal par lequel ton cœur accélère légèrement quand tu inspires et ralentit quand tu expires [3]. Allonger l'expiration est donc logique. Un essai randomisé de l'Université Stanford, publié en 2023 dans *Cell Reports Medicine* (Balban et al.), l'a testé : 5 minutes par jour de « soupir cyclique » pendant un mois ont davantage amélioré l'humeur et ralenti la fréquence respiratoire que 5 minutes de méditation de pleine conscience. Les auteurs signalent eux-mêmes les limites : étude à distance, petits groupes, quatre semaines de suivi [4].
 
 ### Exercice 1 : la respiration 4-6 (5 minutes)
 1. Assieds-toi ou allonge-toi, une main posée sur le ventre.
@@ -1120,6 +1122,8 @@ Et l'expiration ? L'arythmie sinusale respiratoire est le mécanisme normal par 
 3. Expire doucement pendant 6 secondes, sans forcer.
 4. Enchaîne : 10 secondes par cycle, soit 6 respirations par minute, pendant 5 minutes.
 5. Si tu manques d'air ou que la tête te tourne, raccourcis les temps ou reviens à ta respiration normale.
+
+Pour t'entraîner avec un repère sonore, le [minuteur de respiration](/exercices-respiration/) propose la cohérence cardiaque (5 secondes, 5 secondes), au même rythme de 6 respirations par minute.
 
 ### Exercice 2 : le soupir cyclique (5 minutes)
 1. Inspire lentement jusqu'à ce que tes poumons soient bien remplis.
@@ -1282,7 +1286,7 @@ L'étude reste modeste : petits groupes, pratique à distance, suivi d'un mois s
 ### 2. La respiration lente (5 minutes)
 La respiration lente consiste à respirer à moins de 10 respirations par minute [3]. Selon une revue systématique de l'Université de Pise (Italie) publiée en 2018 dans *Frontiers in Human Neuroscience*, qui réunit 15 études, elle s'accompagne d'une hausse de la variabilité cardiaque et d'une prédominance du parasympathique, par l'intermédiaire du [nerf vague](/nerf-vague/), avec plus de détente et moins d'anxiété rapportées [3]. Les auteurs soulignent que les études sont peu nombreuses et très hétérogènes [3].
 
-En pratique : inspire par le nez pendant 4 secondes, expire pendant 6 secondes. Tu tombes à 6 respirations par minute. Si la tête te tourne, reprends ton rythme naturel.
+En pratique : inspire par le nez pendant 4 secondes, expire pendant 6 secondes. Tu tombes à 6 respirations par minute. Si la tête te tourne, reprends ton rythme naturel. Pour garder le rythme sans compter, le [minuteur de respiration](/exercices-respiration/) marque chaque inspiration et chaque expiration d'un bol chantant.
 
 ### 3. La relaxation musculaire progressive (10 à 15 minutes)
 La relaxation musculaire progressive est une méthode mise au point par Jacobson : elle consiste à contracter volontairement un groupe de muscles, puis à le relâcher, pour apprendre à sentir la différence entre tension et détente [4]. Une revue systématique de l'Universiti Teknologi Malaysia publiée en 2024 dans *Psychology Research and Behavior Management*, portant sur 46 publications et plus de 3 400 adultes, conclut qu'elle aide à réduire le stress, l'anxiété et les symptômes dépressifs [4]. Limite : seules des études en anglais ont été retenues [4].
@@ -1321,7 +1325,7 @@ Une routine quotidienne pour apaiser le système nerveux tient en quelques rende
 | Dans la journée | Ancrage 5-4-3-2-1 dès que la pression monte | 2 min |
 | Soir | Relaxation musculaire progressive, allongé | 10 min |
 
-Ajoute un vrai échange avec un proche, même court. Et note chaque soir ton niveau de tension, de 0 à 10 : au bout de deux semaines, tu sauras ce qui marche le mieux pour toi.
+Ajoute un vrai échange avec un proche, même court. Et note chaque soir ton niveau de tension, de 0 à 10 : au bout de deux semaines, tu sauras ce qui marche le mieux pour toi. Pour garder une trace sans compte ni inscription, le [journal d'humeur](/journal-humeur/) du site suit aussi ton humeur, ton stress et tes nuits.
 
 ## Quand consulter ?
 
@@ -1680,7 +1684,7 @@ Non. Selon la HAS, les questionnaires connus, comme le Maslach Burnout Inventory
 Adresse : https://www.contactapaisement-mental.fr/cortisol-et-sommeil/
 Mis à jour le 9 octobre 2026 — par Yacine
 
-Le cortisol et le sommeil sont liés dans les deux sens : le sommeil freine la sécrétion de cortisol, et l'activation de l'axe du stress entraîne l'éveil et les difficultés à dormir [3][5]. Quand les nuits raccourcissent, le cortisol du soir monte [2][4] ; quand le stress dure, le sommeil devient plus fragile. Ce cercle peut aussi tourner dans le bon sens : c'est l'objet de cet article.
+Le cortisol et le sommeil sont liés dans les deux sens : le sommeil freine la sécrétion de cortisol, et l'activation de l'[axe du stress](/glossaire/#axe-du-stress) entraîne l'éveil et les difficultés à dormir [3][5]. Quand les nuits raccourcissent, le cortisol du soir monte [2][4] ; quand le stress dure, le sommeil devient plus fragile. Ce cercle peut aussi tourner dans le bon sens : c'est l'objet de cet article.
 
 ## L'essentiel
 
@@ -1756,7 +1760,7 @@ Pour aider le cortisol à redescendre le soir et protéger ton sommeil, les gest
 | Respirer lentement au lit | Autour de 6 respirations par minute, l'activité du nerf vague, le « frein » du corps, augmente [9] | Université allemande du sport de Cologne |
 | Protéger la durée de ta nuit | Une seule nuit écourtée élève le cortisol du soir suivant [2] | Université de Chicago |
 
-Pour la respiration, la méta-analyse de l'Université allemande du sport de Cologne, publiée en 2022 dans *Neuroscience & Biobehavioral Reviews* (Laborde et al.), a rassemblé 223 études : la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente pendant et après une respiration lente volontaire [9].
+Pour la respiration, la méta-analyse de l'Université allemande du sport de Cologne, publiée en 2022 dans *Neuroscience & Biobehavioral Reviews* (Laborde et al.), a rassemblé 223 études : la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente pendant et après une respiration lente volontaire [9]. Au lit, écran éteint, les [audios de respiration guidée](/respiration-guidee/) te donnent ce rythme.
 
 Pour aller pas à pas, tu peux t'appuyer sur la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/) et sur l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/), qui fait le tri entre ce qui marche et les fausses promesses.
 
