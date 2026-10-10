@@ -1411,5 +1411,16 @@
   "pin_id": "600175087890075146",
   "md5": "1e70148577b1a522965223a8393f6a8e",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-10T06:07+00:00",
+  "titre": "Douche du soir : le bon moment pour mieux t'endormir",
+  "image": "images/pin-20261010-060743.jpg",
+  "fond": "fonds/fond-165.jpg",
+  "theme": "sommeil",
+  "design": "sombre",
+  "pin_id": "600175087890075777",
+  "md5": "6a1fafa0c227a9d759cf53632ffc76a2",
+  "lien": "article:routine-du-soir-anti-stress"
  }
 ]
