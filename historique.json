@@ -1488,5 +1488,27 @@
   "pin_id": "600175087890081841",
   "md5": "7f0611794d0dcdda4e0917302888e951",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-10T18:08+00:00",
+  "titre": "Anxiété santé la nuit : stop aux recherches au lit",
+  "image": "images/pin-20261010-180754.jpg",
+  "fond": "fonds/pexels-10061441.jpg",
+  "theme": "sommeil",
+  "design": "clair",
+  "pin_id": "600175087890083422",
+  "md5": "fce4fdf5a5ab73f8c644fcce56a32b42",
+  "lien": "article:ruminations-le-soir"
+ },
+ {
+  "date": "2026-10-10T20:08+00:00",
+  "titre": "Thé vert et stress : le calme sans somnolence",
+  "image": "images/pin-20261010-200800.jpg",
+  "fond": "fonds/dedie-the-vert.jpg",
+  "theme": "alimentation",
+  "design": "sombre",
+  "pin_id": "600175087890084805",
+  "md5": "6856526d023497713d548c2647fec42d",
+  "lien": "guide:cortisol"
  }
 ]
