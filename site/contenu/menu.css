@@ -29,3 +29,8 @@
   /* Menu ouvert : un glissement commencé sur l'en-tête ne fait pas défiler la page du dessous. */
   .menu-ouvert header { touch-action: none; }
 }
+/* Bouton « retour en haut » (créé par menu.js), sous le menu mobile quand il est ouvert. */
+.haut-page { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 18; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--lisere-fort); background: rgba(13, 19, 24, 0.88); color: var(--champagne); display: grid; place-items: center; cursor: pointer; padding: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--ombre-2xl); transition: color .2s, border-color .2s; }
+.haut-page[hidden] { display: none; }
+.haut-page svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.haut-page:hover { color: var(--brume); border-color: var(--brume); }

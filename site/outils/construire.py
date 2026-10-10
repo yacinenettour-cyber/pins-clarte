@@ -127,11 +127,16 @@ TYPES_SOURCES = [
     ("umontreal.ca", "reference", "Université de Montréal"),
     ("cmu.edu", "reference", "Université Carnegie Mellon"),
     ("sleepfoundation.org", "information", "Site d'information spécialisé"),
+    ("sos-amitie.com", "association", "Association d'écoute"),
+    ("suicide-ecoute.fr", "association", "Association de prévention du suicide"),
+    ("filsantejeunes.com", "association", "Service d'écoute pour les 12-25 ans"),
+    ("nightline.fr", "association", "Association d'écoute pour les étudiants"),
 ]
 FAMILLES_SOURCES = {"officiel": ("source officielle", "sources officielles"),
                     "reference": ("référence médicale", "références médicales"),
                     "etude": ("publication scientifique", "publications scientifiques"),
-                    "information": ("site d'information", "sites d'information")}
+                    "information": ("site d'information", "sites d'information"),
+                    "association": ("association d'écoute", "associations d'écoute")}
 
 
 def type_source(url):
@@ -317,6 +322,13 @@ SUITE_EMAIL = ("Tu le reçois tout de suite par e-mail, puis quelques conseils p
 SOURCES_JS = open(os.path.join(RACINE, "contenu", "sources.js"), encoding="utf-8").read().strip()
 
 
+# Rappel d'urgence en bas de chaque article et page santé (numéros vérifiés sur Service-Public.fr et 3114.fr).
+URGENCE_HTML = ('<p class="urgence">Urgence : <a href="tel:15">15</a> ou <a href="tel:112">112</a> '
+                '(<a href="sms:114">114</a> par SMS pour les personnes sourdes ou malentendantes). Pensées suicidaires : '
+                '<a href="tel:3114">3114</a>, gratuit, 24 h/24. <a href="/ressources-urgence/">Toutes les ressources d\'urgence et '
+                'lignes d\'écoute</a></p>')
+
+
 def balise_google(chemin):
     code = SITE.get("mesure", {}).get("google_verification")
     return f'<meta name="google-site-verification" content="{e(code)}">' if code and chemin == "/" else ""
@@ -415,8 +427,8 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {contenu}
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
-<p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
+<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a>{"".join(f'<a href="/{th["slug"]}/">{e(th["nom"])}</a>' for th in SITE.get("themes", {}).values())}<a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="{SITE['pinterest']}" rel="me">Pinterest</a></nav>
+<p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
 <p>© {datetime.date.today().year} {e(SITE['nom'])}</p>
 </div></footer>
 <script>
@@ -595,6 +607,7 @@ def construire_article(a, tous):
 {suite_html}
 {sources_html}
 <p class="avertissement">Cet article donne des repères de bien-être fondés sur les sources citées. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+{URGENCE_HTML}
 </article>
 {lies}
 </div>"""
@@ -838,6 +851,7 @@ def construire_formation():
 {prix}
 <section class="faq"><h2>Questions fréquentes</h2>{faq}</section>
 <p class="avertissement">Ce programme propose des outils de bien-être. Il ne constitue ni un traitement médical ni une thérapie et ne remplace pas l'avis d'un professionnel de santé. Si tes difficultés de sommeil durent depuis plusieurs mois ou s'accompagnent d'un moral très bas, parles-en à ton médecin.</p>
+{URGENCE_HTML}
 </div>"""
     schema_cours = {
         "@context": "https://schema.org", "@type": "Course", "@id": URL + "/la-formation/#formation",
@@ -911,6 +925,7 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
 {faq_html}
 {liste_sources(sources, "la page")}
 <p class="avertissement">Cette page donne des repères de bien-être, pas un diagnostic ni un traitement. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+{URGENCE_HTML}
 </div>
 {f"<script>{script}</script>" if script else ""}"""
     schemas = [
@@ -927,6 +942,10 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
     ecrire(chemin.strip("/") + "/index.html", page(entete["titre_seo"], entete["description"], chemin, contenu, schemas,
                                                    nav=chemin, tete=tete))
     return entete
+
+
+def construire_urgences():
+    return construire_page_outil("ressources-urgence.md", "/ressources-urgence/", "Ressources d'urgence", {}, "2 minutes de lecture")
 
 
 def construire_test(articles):
@@ -999,6 +1018,8 @@ def construire_page_fixe(nom_fichier, chemin, nav=""):
     corps_html = md(corps)
     if chemin == "/a-propos/":
         corps_html = re.sub(r"(<h2>Qui écrit[^<]*</h2>)", lambda m: m.group(1) + avatar(112, "portrait"), corps_html, count=1)
+    # Ancres sur les intertitres : on peut renvoyer vers une partie précise (ex. la relecture dans la méthode).
+    corps_html = re.sub(r"<h2>(.*?)</h2>", lambda m: f'<h2 id="{slugify_unicode(texte_brut(m.group(1)), "-")}">{m.group(1)}</h2>', corps_html)
     contenu = f'<div class="etroit">{nav_html}<h1>{e(entete["titre"])}</h1>{corps_html}</div>'
     schemas = [schema_ariane]
     if chemin == "/a-propos/":
@@ -1029,7 +1050,7 @@ def ecrire(rel, contenu, mode="w"):
 def construire_fichiers_techniques(articles):
     pages = [("/", SITE["date_publication"]), ("/articles/", max(a["maj"] for a in articles)),
              ("/la-formation/", SITE["date_publication"]),
-             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
+             ("/guides-gratuits/", SITE["date_publication"]), ("/test-stress-anxiete/", "2026-10-09"), ("/respiration-guidee/", "2026-10-09"), ("/ressources-urgence/", "2026-10-10"), ("/a-propos/", "2026-10-09"), ("/methode-editoriale/", "2026-10-09"),
              ("/mentions-legales/", SITE["date_publication"])]
     pages += [(f"/{th['slug']}/", "2026-10-09") for th in SITE.get("themes", {}).values()]
     pages += [(f"/{a['slug']}/", a["maj"]) for a in articles]
@@ -1067,7 +1088,9 @@ def construire_fichiers_techniques(articles):
                "donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.",
                f"- [Respiration guidée 4-6]({URL}/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), "
                "sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), "
-               "pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme."]
+               "pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme.",
+               f"- [Ressources d'urgence]({URL}/ressources-urgence/): numéros d'urgence (15, 112, 114), prévention du suicide (3114), "
+               "lignes d'écoute (SOS Amitié, Suicide Écoute, Fil Santé Jeunes, 3040, Nightline) et Mon soutien psy, vérifiés sur les sites officiels."]
     lignes += ["", "## Guide gratuit", ""]
     for g in [SITE["guides"][OFFRE]]:
         lignes.append(f"- [{g['titre']}]({g['url']}): {g['accroche']} " + " ; ".join(g["points"]) + ".")
@@ -1158,6 +1181,7 @@ def main():
     construire_guides()
     construire_test(articles)
     construire_respiration()
+    construire_urgences()
     if SITE.get("formation"):
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")

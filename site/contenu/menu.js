@@ -35,3 +35,29 @@
   /* Retour arrière : la page revient du cache telle qu'on l'a quittée, menu ouvert ; on le referme sans animation. */
   window.addEventListener("pageshow", function (e) { if (e.persisted && estOuvert()) basculer(false, true); });
 })();
+
+/* Bouton « retour en haut » : apparaît après un écran et demi de lecture ; au clic, la page remonte et le focus va au
+   titre principal (utile au clavier et aux lecteurs d'écran). */
+(function () {
+  "use strict";
+  var bouton = document.createElement("button");
+  bouton.type = "button";
+  bouton.className = "haut-page";
+  bouton.hidden = true;
+  bouton.setAttribute("aria-label", "Revenir en haut de la page");
+  bouton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  document.body.appendChild(bouton);
+  var visible = false;
+  function majBouton() {
+    var v = window.scrollY > window.innerHeight * 1.5;
+    if (v !== visible) { visible = v; bouton.hidden = !v; }
+  }
+  window.addEventListener("scroll", majBouton, { passive: true });
+  majBouton();
+  bouton.addEventListener("click", function () {
+    var doux = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: doux ? "smooth" : "auto" });
+    var titre = document.querySelector("h1");
+    if (titre) { titre.setAttribute("tabindex", "-1"); titre.focus({ preventScroll: true }); }
+  });
+})();

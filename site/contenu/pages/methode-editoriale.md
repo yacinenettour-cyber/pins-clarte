@@ -48,12 +48,25 @@ La recherche documentaire et la rédaction s'appuient sur des outils numériques
 
 Clarté Mentale n'affiche **aucune publicité**, ne contient **aucun lien affilié** et ne publie **aucun article sponsorisé**. Le site propose un guide gratuit, présenté comme tel à la fin des articles, et un programme payant, « Quand le cerveau refuse de dormir » (37 €), présenté sur sa page et dans les e-mails reçus après l'inscription au guide. Ces ressources sont des outils de bien-être : elles ne sont ni un traitement ni une thérapie, et les articles ne promettent jamais qu'elles guérissent quoi que ce soit.
 
+## Les contenus sont-ils relus par un professionnel de santé ?
+
+Pas encore : à ce jour, aucun professionnel de santé n'a relu les articles de ce site, et je préfère te le dire clairement. Je cherche un relecteur, et voici comment la relecture fonctionnera quand elle commencera :
+
+| Point | Ce qui est prévu |
+|---|---|
+| Qui relit | Un professionnel de santé en exercice, de préférence psychologue ou médecin, dont l'inscription professionnelle pourra être vérifiée |
+| Ce qui est relu | L'exactitude des informations, le choix des sources, les limites signalées et la section « Quand consulter ? » |
+| Ce qui sera affiché | Sur chaque article relu : le nom du relecteur, sa profession et la date de relecture ; un article non relu ne portera aucune mention de relecture |
+| Indépendance | Le relecteur vérifie les informations ; il ne recommande ni le guide gratuit ni le programme payant |
+
+En attendant, chaque article suit la méthode décrite sur cette page, et toute erreur signalée est corrigée.
+
 ## Comment signaler une erreur ?
 
 Écris à [yavo88@hotmail.com](mailto:yavo88@hotmail.com) en précisant l'article et le passage concerné. Si l'erreur est confirmée, l'article est corrigé et sa date de mise à jour change.
 
 ## Ce que ce site n'est pas
 
-Clarté Mentale n'est pas un site médical. Ses articles sont des repères de bien-être fondés sur des sources publiques : ils n'établissent aucun diagnostic et ne remplacent jamais une consultation. En cas d'urgence, appelle le **15** ou le **112** ; en cas de pensées suicidaires, le **3114** (gratuit, 24 h/24).
+Clarté Mentale n'est pas un site médical. Ses articles sont des repères de bien-être fondés sur des sources publiques : ils n'établissent aucun diagnostic et ne remplacent jamais une consultation. En cas d'urgence, appelle le **[15](tel:15)** ou le **[112](tel:112)** ; en cas de pensées suicidaires, le **[3114](tel:3114)** (gratuit, 24 h/24). Les autres numéros utiles sont sur la page [ressources d'urgence](/ressources-urgence/).
 
 Pour savoir qui écrit ce site, lis la page [À propos](/a-propos/).
