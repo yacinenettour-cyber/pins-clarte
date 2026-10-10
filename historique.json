@@ -1444,5 +1444,16 @@
   "pin_id": "600175087890076841",
   "md5": "8adc34a699e59362bc6336aa9012d6a5",
   "lien": "article:routine-du-soir-anti-stress"
+ },
+ {
+  "date": "2026-10-10T10:07+00:00",
+  "titre": "Anxiété sociale : rejouer la soirée une fois au lit",
+  "image": "images/pin-20261010-100750.jpg",
+  "fond": "fonds/fond-71.jpg",
+  "theme": "sommeil",
+  "design": "clair",
+  "pin_id": "600175087890077784",
+  "md5": "6ad7f69be188cae426d867c5a382dccc",
+  "lien": "guide:sommeil"
  }
 ]
