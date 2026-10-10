@@ -262,6 +262,10 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .audio .phase { margin: 0; min-height: 1.6em; font: 600 15px/1.6 var(--texte); color: var(--brume); }
 .audio a { font-size: 14px; justify-self: start; }
 .credit-audio { margin: 2px 4px 0; font-size: 13.5px; line-height: 1.6; color: var(--champagne-doux); }
+/* Rappel d'urgence en bas des articles et des pages santé : numéros cliquables, page des ressources d'urgence. */
+.urgence { font-size: 15px; line-height: 1.6; margin: 12px 0 0; padding: 12px 16px; border-radius: 14px; background: rgba(217, 162, 107, 0.08); border: 1px solid rgba(217, 162, 107, 0.32); color: var(--champagne); }
+.urgence a { color: var(--champagne); font-weight: 700; }
+.urgence a:hover { color: var(--brume); }
 
 /* Menu mobile commun à l'accueil et aux autres pages (ajouté à la construction : dans l'accueil et à la fin de style.css).
    Sur mobile, l'en-tête est le même partout (logo + bouton menu, 73 px de haut) : rien ne bouge quand on change de page. */
@@ -294,3 +298,8 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
   /* Menu ouvert : un glissement commencé sur l'en-tête ne fait pas défiler la page du dessous. */
   .menu-ouvert header { touch-action: none; }
 }
+/* Bouton « retour en haut » (créé par menu.js), sous le menu mobile quand il est ouvert. */
+.haut-page { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 18; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--lisere-fort); background: rgba(13, 19, 24, 0.88); color: var(--champagne); display: grid; place-items: center; cursor: pointer; padding: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--ombre-2xl); transition: color .2s, border-color .2s; }
+.haut-page[hidden] { display: none; }
+.haut-page svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.haut-page:hover { color: var(--brume); border-color: var(--brume); }

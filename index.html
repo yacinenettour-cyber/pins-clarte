@@ -157,6 +157,11 @@ section { position: relative; z-index: 1; }
   /* Menu ouvert : un glissement commencé sur l'en-tête ne fait pas défiler la page du dessous. */
   .menu-ouvert header { touch-action: none; }
 }
+/* Bouton « retour en haut » (créé par menu.js), sous le menu mobile quand il est ouvert. */
+.haut-page { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 18; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--lisere-fort); background: rgba(13, 19, 24, 0.88); color: var(--champagne); display: grid; place-items: center; cursor: pointer; padding: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--ombre-2xl); transition: color .2s, border-color .2s; }
+.haut-page[hidden] { display: none; }
+.haut-page svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.haut-page:hover { color: var(--brume); border-color: var(--brume); }
 
 /* Boutons */
 .btn { position: relative; display: inline-flex; align-items: center; gap: 10px; padding: 15px 24px; border-radius: 999px; font: 600 16px/1 var(--texte); text-decoration: none; cursor: pointer; border: 0; overflow: hidden; transition: var(--transition); will-change: transform; }
@@ -684,6 +689,7 @@ section { position: relative; z-index: 1; }
 <footer class="pied">
   <div class="wrap">
     <nav aria-label="Liens du pied de page">
+      <a href="/ressources-urgence/">Ressources d'urgence</a>
       <a href="/articles/">Tous les articles</a>
       <a href="/mieux-dormir/">Mieux dormir</a>
       <a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a>
@@ -695,7 +701,7 @@ section { position: relative; z-index: 1; }
       <a href="/mentions-legales/">Mentions légales et confidentialité</a>
       <a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a>
     </nav>
-    <p>Informations de bien-être fondées sur les sources citées. Elles ne remplacent pas l'avis d'un médecin. Urgence : 15 ou 112. Pensées suicidaires : 3114, gratuit, 24 h/24.</p>
+    <p>Informations de bien-être fondées sur les sources citées. Elles ne remplacent pas l'avis d'un médecin. Urgence : <a href="tel:15">15</a> ou <a href="tel:112">112</a>. Pensées suicidaires : <a href="tel:3114">3114</a>, gratuit, 24 h/24. <a href="/ressources-urgence/">Toutes les ressources d'urgence</a></p>
     <p>© <span id="annee">2026</span> Clarté Mentale</p>
   </div>
 </footer>
@@ -741,6 +747,32 @@ section { position: relative; z-index: 1; }
   window.addEventListener("resize", function () { if (window.innerWidth > 860 && estOuvert()) basculer(false, true); });
   /* Retour arrière : la page revient du cache telle qu'on l'a quittée, menu ouvert ; on le referme sans animation. */
   window.addEventListener("pageshow", function (e) { if (e.persisted && estOuvert()) basculer(false, true); });
+})();
+
+/* Bouton « retour en haut » : apparaît après un écran et demi de lecture ; au clic, la page remonte et le focus va au
+   titre principal (utile au clavier et aux lecteurs d'écran). */
+(function () {
+  "use strict";
+  var bouton = document.createElement("button");
+  bouton.type = "button";
+  bouton.className = "haut-page";
+  bouton.hidden = true;
+  bouton.setAttribute("aria-label", "Revenir en haut de la page");
+  bouton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  document.body.appendChild(bouton);
+  var visible = false;
+  function majBouton() {
+    var v = window.scrollY > window.innerHeight * 1.5;
+    if (v !== visible) { visible = v; bouton.hidden = !v; }
+  }
+  window.addEventListener("scroll", majBouton, { passive: true });
+  majBouton();
+  bouton.addEventListener("click", function () {
+    var doux = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: doux ? "smooth" : "auto" });
+    var titre = document.querySelector("h1");
+    if (titre) { titre.setAttribute("tabindex", "-1"); titre.focus({ preventScroll: true }); }
+  });
 })();
 
   /* Réseau nerveux vivant (héro) : des nœuds qui dérivent et « respirent » à 6 cycles par minute */

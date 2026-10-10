@@ -26,7 +26,7 @@
 <meta name="theme-color" content="#080C10">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?v=5b22e4f3">
+<link rel="stylesheet" href="/style.css?v=b075ed32">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tous les articles","url":"https://www.contactapaisement-mental.fr/articles/","inLanguage":"fr-FR","hasPart":[{"@type":"Article","headline":"Ruminations le soir : pourquoi ton cerveau s'emballe au coucher","url":"https://www.contactapaisement-mental.fr/ruminations-le-soir/"},{"@type":"Article","headline":"Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment","url":"https://www.contactapaisement-mental.fr/reveil-4h-du-matin/"},{"@type":"Article","headline":"Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes","url":"https://www.contactapaisement-mental.fr/routine-du-soir-anti-stress/"},{"@type":"Article","headline":"Procrastination du coucher : pourquoi on veille et comment arrêter","url":"https://www.contactapaisement-mental.fr/procrastination-du-coucher/"},{"@type":"Article","headline":"Cortisol, hormone du stress : son rôle, son rythme et les idées reçues","url":"https://www.contactapaisement-mental.fr/cortisol-hormone-du-stress/"},{"@type":"Article","headline":"Baisser son cortisol naturellement : ce qui marche vraiment","url":"https://www.contactapaisement-mental.fr/baisser-son-cortisol-naturellement/"},{"@type":"Article","headline":"Alimentation anti-stress : ce que la science dit vraiment","url":"https://www.contactapaisement-mental.fr/alimentation-anti-stress/"},{"@type":"Article","headline":"Nerf vague : comment l'activer naturellement, ce qui marche vraiment","url":"https://www.contactapaisement-mental.fr/nerf-vague/"},{"@type":"Article","headline":"Calmer son système nerveux : 6 gestes pour se calmer rapidement","url":"https://www.contactapaisement-mental.fr/calmer-son-systeme-nerveux/"},{"@type":"Article","headline":"Charge mentale : définition, signes et 6 façons de l'alléger","url":"https://www.contactapaisement-mental.fr/charge-mentale/"},{"@type":"Article","headline":"Signes du burn-out : les repérer tôt et savoir qui consulter","url":"https://www.contactapaisement-mental.fr/signes-du-burn-out/"},{"@type":"Article","headline":"Cortisol et sommeil : comment le stress dérègle tes nuits, et comment les apaiser","url":"https://www.contactapaisement-mental.fr/cortisol-et-sommeil/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.contactapaisement-mental.fr/"},{"@type":"ListItem","position":2,"name":"Articles"}]}</script>
@@ -96,8 +96,8 @@
 </div></article></div></div>
 </main>
 <footer class="pied"><div class="large">
-<nav aria-label="Liens du pied de page"><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a><a href="/mieux-dormir/">Mieux dormir</a><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a><a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></nav>
-<p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le 15 ou le 112 ; en cas de pensées suicidaires, le 3114 (gratuit, 24 h/24).</p>
+<nav aria-label="Liens du pied de page"><a href="/ressources-urgence/">Ressources d'urgence</a><a href="/articles/">Tous les articles</a><a href="/test-stress-anxiete/">Test stress et anxiété</a><a href="/respiration-guidee/">Respiration guidée</a><a href="/mieux-dormir/">Mieux dormir</a><a href="/stress-et-systeme-nerveux/">Stress et système nerveux</a><a href="/charge-mentale-et-burn-out/">Charge mentale et burn-out</a><a href="/la-formation/">La formation</a><a href="/guides-gratuits/">Guide gratuit</a><a href="/a-propos/">À propos</a><a href="/methode-editoriale/">Méthode éditoriale</a><a href="/mentions-legales/">Mentions légales et confidentialité</a><a href="https://www.pinterest.com/clartementale/" rel="me">Pinterest</a></nav>
+<p>Les contenus de ce site sont des informations de bien-être. Ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. En cas d'urgence, appelle le <a href="tel:15">15</a> ou le <a href="tel:112">112</a> ; en cas de pensées suicidaires, le <a href="tel:3114">3114</a> (gratuit, 24 h/24).</p>
 <p>© 2026 Clarté Mentale</p>
 </div></footer>
 <script>
@@ -137,6 +137,32 @@
   window.addEventListener("resize", function () { if (window.innerWidth > 860 && estOuvert()) basculer(false, true); });
   /* Retour arrière : la page revient du cache telle qu'on l'a quittée, menu ouvert ; on le referme sans animation. */
   window.addEventListener("pageshow", function (e) { if (e.persisted && estOuvert()) basculer(false, true); });
+})();
+
+/* Bouton « retour en haut » : apparaît après un écran et demi de lecture ; au clic, la page remonte et le focus va au
+   titre principal (utile au clavier et aux lecteurs d'écran). */
+(function () {
+  "use strict";
+  var bouton = document.createElement("button");
+  bouton.type = "button";
+  bouton.className = "haut-page";
+  bouton.hidden = true;
+  bouton.setAttribute("aria-label", "Revenir en haut de la page");
+  bouton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  document.body.appendChild(bouton);
+  var visible = false;
+  function majBouton() {
+    var v = window.scrollY > window.innerHeight * 1.5;
+    if (v !== visible) { visible = v; bouton.hidden = !v; }
+  }
+  window.addEventListener("scroll", majBouton, { passive: true });
+  majBouton();
+  bouton.addEventListener("click", function () {
+    var doux = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: doux ? "smooth" : "auto" });
+    var titre = document.querySelector("h1");
+    if (titre) { titre.setAttribute("tabindex", "-1"); titre.focus({ preventScroll: true }); }
+  });
 })();
 </script>
 
