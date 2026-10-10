@@ -303,3 +303,165 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .haut-page[hidden] { display: none; }
 .haut-page svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .haut-page:hover { color: var(--brume); border-color: var(--brume); }
+/* Logo sur une seule ligne, même sur les plus petits écrans (320 px) avec les deux boutons à côté. */
+.marque { white-space: nowrap; }
+@media (max-width: 359px) { .marque { font-size: 15px; gap: 8px; } .marque svg { width: 22px; height: 22px; } }
+/* Bouton mode clair / sombre (à côté du bouton menu) : affiché seulement si JavaScript fonctionne (classe « js »). */
+.actions-entete { display: flex; align-items: center; gap: 8px; flex: none; }
+.theme-bascule { display: none; flex: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--lisere-fort); background: var(--verre); color: var(--champagne); cursor: pointer; place-items: center; padding: 0; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--ombre-2xl); transition: var(--transition); }
+.js .theme-bascule { display: grid; }
+.theme-bascule svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.theme-bascule .lune { display: none; }
+.theme-bascule:hover { color: var(--brume); border-color: var(--brume); }
+
+/* Mode clair (10/10/2026). Le site est sombre par défaut ; il passe en clair si l'appareil est réglé en clair, ou si le
+   visiteur choisit le clair avec le bouton soleil/lune (choix gardé sur son appareil). « :root[data-theme="clair"] » est remplacé à la
+   construction par :root[data-theme="clair"] et, dans @media (prefers-color-scheme: light), par
+   :root:not([data-theme="sombre"]). Contrastes vérifiés : texte 13,4:1, paragraphes 10,9:1, texte doux 6,5:1,
+   liens 5,7:1, ambre 4,8:1, blanc sur bouton vert 6,4:1 (minimum WCAG AA : 4,5:1). */
+:root[data-theme="clair"] {
+  color-scheme: light;
+  --nuit: #F4F0E8;
+  --nuit-2: #FFFFFF;
+  --emeraude: #3A5F43;
+  --brume: #2D6A46;
+  --champagne: #1D2823;
+  --champagne-doux: #4D5952;
+  --verre: rgba(255, 255, 255, 0.72);
+  --verre-fort: rgba(255, 255, 255, 0.9);
+  --lisere: rgba(29, 40, 35, 0.12);
+  --lisere-fort: rgba(29, 40, 35, 0.24);
+  --ombre: rgba(29, 40, 35, 0.18);
+  --alerte: #9A5A16;
+  --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
+  --ombre-lueur: 0 18px 40px -22px rgba(29, 40, 35, 0.3), 0 0 0 1px rgba(45, 106, 70, 0.22);
+  --degrade: linear-gradient(90deg, #3A5F43, #6FA383, #3A5F43, #6FA383, #3A5F43);
+  --degrade-or: linear-gradient(90deg, #2D6A46, #3C7D57, #2D6A46, #2D6A46);
+  --reseau-trait: 45, 106, 70;
+  --reseau-noeud: 29, 40, 35;
+}
+:root[data-theme="clair"] body { background-image: radial-gradient(1100px 600px at 90% -10%, rgba(58, 95, 67, 0.12), transparent 60%), radial-gradient(800px 500px at -10% 30%, rgba(58, 95, 67, 0.06), transparent 60%); }
+:root[data-theme="clair"] p, :root[data-theme="clair"] li, :root[data-theme="clair"] th, :root[data-theme="clair"] td { color: #2B3731; }
+
+/* En-têtes, menu mobile, bouton « retour en haut » */
+:root[data-theme="clair"] .entete, :root[data-theme="clair"] header.nav { background: rgba(244, 240, 232, 0.88); }
+:root[data-theme="clair"] .menu-mobile { background: rgba(244, 240, 232, 0.97); }
+:root[data-theme="clair"] .haut-page { background: rgba(255, 255, 255, 0.94); }
+
+/* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
+:root[data-theme="clair"] .bouton, :root[data-theme="clair"] .rappel-guide a, :root[data-theme="clair"] .btn-or, :root[data-theme="clair"] .liens .btn, :root[data-theme="clair"] .menu-mobile .btn, :root[data-theme="clair"] .test-cta { color: #FFFFFF; }
+:root[data-theme="clair"] .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
+:root[data-theme="clair"] .bouton:hover, :root[data-theme="clair"] .btn-or:hover, :root[data-theme="clair"] .test-cta:hover, :root[data-theme="clair"] .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
+:root[data-theme="clair"] .btn-verre:hover { color: #FFFFFF; }
+
+/* Blocs teintés : mêmes formes, teintes plus légères */
+:root[data-theme="clair"] .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
+:root[data-theme="clair"] th, :root[data-theme="clair"] .comparatif th { background: rgba(58, 95, 67, 0.12); }
+:root[data-theme="clair"] .type-etude { border-color: rgba(29, 40, 35, 0.25); }
+:root[data-theme="clair"] .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
+:root[data-theme="clair"] .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
+:root[data-theme="clair"] .guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.16), rgba(255, 255, 255, 0.75), rgba(143, 191, 154, 0.16), rgba(58, 95, 67, 0.16)); background-size: 200% 100%; }
+:root[data-theme="clair"] .prix .montant, :root[data-theme="clair"] .chiffre b { background: linear-gradient(90deg, #1D2823, #2D6A46); -webkit-background-clip: text; background-clip: text; }
+:root[data-theme="clair"] ul.non li::marker { color: #9A5A16; }
+:root[data-theme="clair"] .urgence { background: rgba(154, 90, 22, 0.06); border-color: rgba(154, 90, 22, 0.35); }
+
+/* Accueil */
+:root[data-theme="clair"] .hero::before { opacity: 0.45; }
+:root[data-theme="clair"] .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
+:root[data-theme="clair"] .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
+:root[data-theme="clair"] .tuile { background: rgba(255, 255, 255, 0.7); }
+:root[data-theme="clair"] .tuile:hover { background: rgba(255, 255, 255, 0.92); }
+:root[data-theme="clair"] .tuile .icone { background: rgba(58, 95, 67, 0.1); border-color: rgba(45, 106, 70, 0.25); }
+:root[data-theme="clair"] .orbe { background: radial-gradient(circle at 35% 30%, rgba(143, 191, 154, 0.7), rgba(58, 95, 67, 0.3) 55%, rgba(58, 95, 67, 0.05) 75%); }
+:root[data-theme="clair"] .courbe g[stroke] { stroke: rgba(29, 40, 35, 0.12); }
+:root[data-theme="clair"] .courbe path[stroke] { stroke: #2D6A46; }
+:root[data-theme="clair"] .courbe circle { fill: #2D6A46; }
+
+/* Test de stress et d'anxiété */
+:root[data-theme="clair"] .instrument { --t-leger: #2D6A46; --t-moyen: #6B5B3E; --t-modere: #9A5A16; --t-severe: #A93B2C; }
+:root[data-theme="clair"] .option, :root[data-theme="clair"] .test-bloc, :root[data-theme="clair"] .priorites li { background: rgba(255, 255, 255, 0.7); }
+:root[data-theme="clair"] .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); }
+:root[data-theme="clair"] .option[aria-pressed="true"] { background: rgba(58, 95, 67, 0.14); }
+:root[data-theme="clair"] .option .puce { border-color: rgba(45, 106, 70, 0.35); }
+:root[data-theme="clair"] .test-profil { background: linear-gradient(135deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); }
+:root[data-theme="clair"] .deblocage { background: linear-gradient(90deg, rgba(58, 95, 67, 0.16), rgba(255, 255, 255, 0.75), rgba(143, 191, 154, 0.16), rgba(58, 95, 67, 0.16)); }
+:root[data-theme="clair"] .test-alerte { background: rgba(169, 59, 44, 0.06); border-color: rgba(169, 59, 44, 0.4); }
+:root[data-theme="clair"] .jauge circle:first-child { stroke: rgba(29, 40, 35, 0.12); }
+
+/* Bouton du thème : la lune (passer en sombre) quand le site est clair */
+:root[data-theme="clair"] .theme-bascule .soleil { display: none; }
+:root[data-theme="clair"] .theme-bascule .lune { display: block; }
+@media (prefers-color-scheme: light) {
+:root:not([data-theme="sombre"]) {
+  color-scheme: light;
+  --nuit: #F4F0E8;
+  --nuit-2: #FFFFFF;
+  --emeraude: #3A5F43;
+  --brume: #2D6A46;
+  --champagne: #1D2823;
+  --champagne-doux: #4D5952;
+  --verre: rgba(255, 255, 255, 0.72);
+  --verre-fort: rgba(255, 255, 255, 0.9);
+  --lisere: rgba(29, 40, 35, 0.12);
+  --lisere-fort: rgba(29, 40, 35, 0.24);
+  --ombre: rgba(29, 40, 35, 0.18);
+  --alerte: #9A5A16;
+  --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
+  --ombre-lueur: 0 18px 40px -22px rgba(29, 40, 35, 0.3), 0 0 0 1px rgba(45, 106, 70, 0.22);
+  --degrade: linear-gradient(90deg, #3A5F43, #6FA383, #3A5F43, #6FA383, #3A5F43);
+  --degrade-or: linear-gradient(90deg, #2D6A46, #3C7D57, #2D6A46, #2D6A46);
+  --reseau-trait: 45, 106, 70;
+  --reseau-noeud: 29, 40, 35;
+}
+:root:not([data-theme="sombre"]) body { background-image: radial-gradient(1100px 600px at 90% -10%, rgba(58, 95, 67, 0.12), transparent 60%), radial-gradient(800px 500px at -10% 30%, rgba(58, 95, 67, 0.06), transparent 60%); }
+:root:not([data-theme="sombre"]) p, :root:not([data-theme="sombre"]) li, :root:not([data-theme="sombre"]) th, :root:not([data-theme="sombre"]) td { color: #2B3731; }
+
+/* En-têtes, menu mobile, bouton « retour en haut » */
+:root:not([data-theme="sombre"]) .entete, :root:not([data-theme="sombre"]) header.nav { background: rgba(244, 240, 232, 0.88); }
+:root:not([data-theme="sombre"]) .menu-mobile { background: rgba(244, 240, 232, 0.97); }
+:root:not([data-theme="sombre"]) .haut-page { background: rgba(255, 255, 255, 0.94); }
+
+/* Boutons principaux : vert foncé et texte blanc (le doré clair disparaît sur fond crème) */
+:root:not([data-theme="sombre"]) .bouton, :root:not([data-theme="sombre"]) .rappel-guide a, :root:not([data-theme="sombre"]) .btn-or, :root:not([data-theme="sombre"]) .liens .btn, :root:not([data-theme="sombre"]) .menu-mobile .btn, :root:not([data-theme="sombre"]) .test-cta { color: #FFFFFF; }
+:root:not([data-theme="sombre"]) .btn-or { box-shadow: 0 10px 30px -14px rgba(45, 106, 70, 0.55); }
+:root:not([data-theme="sombre"]) .bouton:hover, :root:not([data-theme="sombre"]) .btn-or:hover, :root:not([data-theme="sombre"]) .test-cta:hover, :root:not([data-theme="sombre"]) .rappel-guide a:hover { color: #FFFFFF; box-shadow: 0 16px 36px -14px rgba(45, 106, 70, 0.6); }
+:root:not([data-theme="sombre"]) .btn-verre:hover { color: #FFFFFF; }
+
+/* Blocs teintés : mêmes formes, teintes plus légères */
+:root:not([data-theme="sombre"]) .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
+:root:not([data-theme="sombre"]) th, :root:not([data-theme="sombre"]) .comparatif th { background: rgba(58, 95, 67, 0.12); }
+:root:not([data-theme="sombre"]) .type-etude { border-color: rgba(29, 40, 35, 0.25); }
+:root:not([data-theme="sombre"]) .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
+:root:not([data-theme="sombre"]) .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
+:root:not([data-theme="sombre"]) .guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.16), rgba(255, 255, 255, 0.75), rgba(143, 191, 154, 0.16), rgba(58, 95, 67, 0.16)); background-size: 200% 100%; }
+:root:not([data-theme="sombre"]) .prix .montant, :root:not([data-theme="sombre"]) .chiffre b { background: linear-gradient(90deg, #1D2823, #2D6A46); -webkit-background-clip: text; background-clip: text; }
+:root:not([data-theme="sombre"]) ul.non li::marker { color: #9A5A16; }
+:root:not([data-theme="sombre"]) .urgence { background: rgba(154, 90, 22, 0.06); border-color: rgba(154, 90, 22, 0.35); }
+
+/* Accueil */
+:root:not([data-theme="sombre"]) .hero::before { opacity: 0.45; }
+:root:not([data-theme="sombre"]) .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
+:root:not([data-theme="sombre"]) .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
+:root:not([data-theme="sombre"]) .tuile { background: rgba(255, 255, 255, 0.7); }
+:root:not([data-theme="sombre"]) .tuile:hover { background: rgba(255, 255, 255, 0.92); }
+:root:not([data-theme="sombre"]) .tuile .icone { background: rgba(58, 95, 67, 0.1); border-color: rgba(45, 106, 70, 0.25); }
+:root:not([data-theme="sombre"]) .orbe { background: radial-gradient(circle at 35% 30%, rgba(143, 191, 154, 0.7), rgba(58, 95, 67, 0.3) 55%, rgba(58, 95, 67, 0.05) 75%); }
+:root:not([data-theme="sombre"]) .courbe g[stroke] { stroke: rgba(29, 40, 35, 0.12); }
+:root:not([data-theme="sombre"]) .courbe path[stroke] { stroke: #2D6A46; }
+:root:not([data-theme="sombre"]) .courbe circle { fill: #2D6A46; }
+
+/* Test de stress et d'anxiété */
+:root:not([data-theme="sombre"]) .instrument { --t-leger: #2D6A46; --t-moyen: #6B5B3E; --t-modere: #9A5A16; --t-severe: #A93B2C; }
+:root:not([data-theme="sombre"]) .option, :root:not([data-theme="sombre"]) .test-bloc, :root:not([data-theme="sombre"]) .priorites li { background: rgba(255, 255, 255, 0.7); }
+:root:not([data-theme="sombre"]) .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); }
+:root:not([data-theme="sombre"]) .option[aria-pressed="true"] { background: rgba(58, 95, 67, 0.14); }
+:root:not([data-theme="sombre"]) .option .puce { border-color: rgba(45, 106, 70, 0.35); }
+:root:not([data-theme="sombre"]) .test-profil { background: linear-gradient(135deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); }
+:root:not([data-theme="sombre"]) .deblocage { background: linear-gradient(90deg, rgba(58, 95, 67, 0.16), rgba(255, 255, 255, 0.75), rgba(143, 191, 154, 0.16), rgba(58, 95, 67, 0.16)); }
+:root:not([data-theme="sombre"]) .test-alerte { background: rgba(169, 59, 44, 0.06); border-color: rgba(169, 59, 44, 0.4); }
+:root:not([data-theme="sombre"]) .jauge circle:first-child { stroke: rgba(29, 40, 35, 0.12); }
+
+/* Bouton du thème : la lune (passer en sombre) quand le site est clair */
+:root:not([data-theme="sombre"]) .theme-bascule .soleil { display: none; }
+:root:not([data-theme="sombre"]) .theme-bascule .lune { display: block; }
+}
