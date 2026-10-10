@@ -173,7 +173,7 @@
     enCours = true; total = dureeTotale(); phaseAffichee = -1;
     var n = ++lancement;
     statut.hidden = true;
-    bouton.textContent = "Arrêter"; bouton.setAttribute("aria-pressed", "true");
+    bouton.textContent = "Arrêter";
     zone.classList.add("en-cours");
     garderEcranAllume();
     function partir(avecSon) {
@@ -204,7 +204,7 @@
   function arreter(fini) {
     enCours = false; lancement++; cancelAnimationFrame(raf);
     couperSons(fini);
-    bouton.textContent = fini ? "Recommencer" : "Commencer"; bouton.setAttribute("aria-pressed", "false");
+    bouton.textContent = fini ? "Recommencer" : "Commencer";
     zone.classList.remove("en-cours");
     cercle.style.transform = ""; cercle.dataset.phase = "";
     etape.textContent = fini ? "Terminé. Reste un instant immobile." : "Prêt";

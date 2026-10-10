@@ -3,12 +3,14 @@
 .jr-message { margin: 0; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--brume); font-size: 15px; }
 .jr-ligne { display: grid; gap: 8px; }
 .jr-ligne > span, .jr-ligne label { font-weight: 600; font-size: 15.5px; color: var(--champagne); }
-.jr-ligne input[type="date"], .jr-ligne textarea { font: 400 16px/1.5 var(--texte); color: var(--champagne); background: var(--verre-fort); border: 1px solid var(--lisere-fort); border-radius: 12px; padding: 10px 12px; width: 100%; }
+.jr-ligne input[type="date"], .jr-ligne textarea { font: 400 16px/1.5 var(--texte); color: var(--champagne); background: var(--verre-fort); border: 1px solid var(--trait-champ); border-radius: 12px; padding: 10px 12px; width: 100%; }
 .jr-ligne input[type="date"] { max-width: 220px; color-scheme: inherit; }
 .jr-ligne textarea { min-height: 70px; resize: vertical; }
 .jr-echelle { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
 .jr-echelle button { display: grid; gap: 2px; justify-items: center; padding: 9px 4px; border-radius: 12px; border: 1px solid var(--lisere-fort); background: transparent; color: var(--champagne); font: 700 17px/1.1 var(--titre); cursor: pointer; transition: var(--transition); min-height: 56px; }
 .jr-echelle button small { font: 500 11.5px/1.2 var(--texte); color: var(--champagne-doux); text-align: center; }
+.jr-echelle button { position: relative; }
+.jr-echelle button[aria-pressed="true"]::after { content: ""; position: absolute; top: 6px; right: 8px; width: 5px; height: 10px; border: solid var(--brume); border-width: 0 2px 2px 0; transform: rotate(45deg); }
 .jr-echelle button[aria-pressed="true"] { border-color: var(--brume); background: rgba(58, 95, 67, 0.22); box-shadow: inset 0 0 0 1px var(--brume); }
 .jr-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .jr-actions .bouton { border: 0; font: 700 16px/1 var(--texte); cursor: pointer; }
@@ -28,3 +30,4 @@
 .jr-titre-liste { margin: 0 0 6px; font-size: 14px; color: var(--champagne-doux); }
 .jr-rien { margin: 0; color: var(--champagne-doux); font-size: 15px; }
 .jr-confidentialite { margin: 0; font-size: 14px; color: var(--champagne-doux); }
+.jr-consigne { margin: 0; font-size: 14.5px; color: var(--champagne-doux); }

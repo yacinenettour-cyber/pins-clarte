@@ -114,6 +114,7 @@
     var html = '<div class="etape">' +
       '<p class="test-partie">' + (q.partie === 1 ? "Partie 1 sur 2 · Questionnaire GAD-7" : "Partie 2 sur 2 · Ton profil") + '</p>' +
       '<p class="test-consigne">' + (q.partie === 1 ? CONSIGNE_GAD : CONSIGNE_PROFIL) + '</p>' +
+      (etape === 0 ? '<p class="test-aide">Chaque réponse fait passer à la question suivante ; tu pourras revenir en arrière.</p>' : '') +
       '<h2 tabindex="-1" id="test-question">' + q.texte + '</h2><div class="choix" role="group" aria-labelledby="test-question">';
     ECHELLE.forEach(function (libelle, i) {
       html += '<button class="option" type="button" data-i="' + i + '" aria-pressed="' + (reponses[etape] === i) + '"><span class="puce" aria-hidden="true">' + i + '</span><span>' + libelle + '</span></button>';

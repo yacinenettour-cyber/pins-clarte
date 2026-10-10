@@ -52,10 +52,18 @@ def e(texte):
 
 
 def etiqueter_cellules(table):
-    """Ajoute à chaque cellule le titre de sa colonne (data-label) : sur mobile, le tableau s'affiche en fiches."""
-    entetes = [texte_brut(h) for h in re.findall(r"<th[^>]*>(.*?)</th>", table, flags=re.S)]
+    """En-têtes de colonnes (scope="col") et de lignes : la première cellule de chaque ligne nomme la ligne
+    (scope="row", RGAA 5.6 et 5.7). Chaque cellule reçoit aussi le titre de sa colonne (data-label) : sur mobile,
+    le tableau s'affiche en fiches."""
+    # Intitulés des colonnes sans les appels de source « [4] » (ils deviendraient des liens dans l'attribut).
+    entetes = [re.sub(r"\s*\[[\d,\s–-]+\]", "", texte_brut(h)) for h in re.findall(r"<th[^>]*>(.*?)</th>", table, flags=re.S)]
+    table = re.sub(r"<th(?=[\s>])(?![^>]*scope=)([^>]*)>", r'<th scope="col"\1>', table)
+    corps = re.search(r"<tbody>.*?</tbody>", table, flags=re.S)
+    if corps:
+        lignes = re.sub(r"<tr>\s*<td([^>]*)>(.*?)</td>", r'<tr>\n<th scope="row"\1>\2</th>', corps.group(0), flags=re.S)
+        table = table[:corps.start()] + lignes + table[corps.end():]
     def ligne(m):
-        cellules = iter(entetes)
+        cellules = iter(entetes[1:])
         return re.sub(r"<td([^>]*)>", lambda c: f'<td{c.group(1)} data-label="{e(next(cellules, ""))}">', m.group(0))
     return re.sub(r"<tr>.*?</tr>", ligne, table, flags=re.S)
 
@@ -299,7 +307,7 @@ def bloc_epingle(a):
 <div>
 <p class="type">À garder pour plus tard</p>
 <p>Enregistre cet article sur Pinterest pour le retrouver le soir où tu en auras besoin.</p>
-<a class="bouton-pinterest" href="{lien}" target="_blank" rel="noopener">Enregistrer sur Pinterest</a>
+<a class="bouton-pinterest" href="{lien}" target="_blank" rel="noopener">Enregistrer sur Pinterest<span class="lecteur-ecran"> (nouvelle fenêtre)</span></a>
 </div>
 </aside>"""
 
@@ -410,7 +418,7 @@ def pied(base="", conteneur="large"):
             ("/guides-gratuits/", "Guide gratuit"), ("/recherche/", "Rechercher")]),
         ("pied-site", "Le site", [
             ("/a-propos/", "À propos"), ("/methode-editoriale/", "Méthode éditoriale"), ("/la-formation/", "La formation"),
-            ("/mentions-legales/", "Mentions légales et confidentialité"), ("/accessibilite/", "Accessibilité : non conforme"),
+            ("/mentions-legales/", "Mentions légales et confidentialité"), ("/accessibilite/", "Accessibilité : partiellement conforme"),
             (SITE["pinterest"], "Pinterest")]),
     ]
     def lien(href, texte):
@@ -419,7 +427,7 @@ def pied(base="", conteneur="large"):
         # Mot composé (« burn-out ») jamais coupé au trait d'union
         texte = re.sub(r"(\w+-\w+)", r'<span class="mot">\1</span>', e(texte))
         return f'<a href="{base}{href}">{texte}</a>'
-    blocs = "".join(f'<div><p class="pied-titre" id="{ident}">{titre}</p><ul aria-labelledby="{ident}">'
+    blocs = "".join(f'<div><h2 class="pied-titre" id="{ident}">{titre}</h2><ul aria-labelledby="{ident}">'
                     + "".join(f"<li>{lien(h, t)}</li>" for h, t in liens) + "</ul></div>"
                     for ident, titre, liens in colonnes)
     return insecables(f"""<footer class="pied"><div class="{conteneur}">
@@ -478,12 +486,12 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <a class="saut" href="#contenu">Aller au contenu</a>
 <header class="entete"><div class="large">
 <a class="marque" href="/">{LOGO}{e(SITE['nom'])}</a>
-<nav class="nav" aria-label="Menu principal">{"".join(lien_nav(h, t) for h, t in NAV_PRINCIPALE)}<a class="bouton bouton-entete" href="{e(lien_guide_menu('entete'))}">Guide gratuit</a></nav>
+<nav class="nav" aria-label="Menu principal"><ul>{"".join(f"<li>{lien_nav(h, t)}</li>" for h, t in NAV_PRINCIPALE)}<li><a class="bouton bouton-entete" href="{e(lien_guide_menu('entete'))}">Guide gratuit</a></li></ul></nav>
 <div class="actions-entete">{THEME_BOUTON}{MENU_SANS_JS}<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
 </div></header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
-{"".join(f'<a href="{h}" tabindex="-1"' + (' aria-current="page"' if h == chemin else "") + f'>{t}</a>' for h, t in MENU_MOBILE)}
-<a class="bouton" href="{e(lien_guide_menu('menu-mobile'))}" tabindex="-1">Recevoir le guide gratuit</a>
+<ul>{"".join(f'<li><a href="{h}" tabindex="-1"' + (' aria-current="page"' if h == chemin else "") + f'>{t}</a></li>' for h, t in MENU_MOBILE)}
+<li><a class="bouton" href="{e(lien_guide_menu('menu-mobile'))}" tabindex="-1">Recevoir le guide gratuit</a></li></ul>
 </nav>
 <main id="contenu">
 {contenu}
@@ -549,6 +557,11 @@ def carte_article(a, niveau="h3"):
 </div></article>"""
 
 
+def grille(articles):
+    """Cartes d'articles en liste (RGAA 9.3 : des éléments présentés visuellement en liste sont balisés en liste)."""
+    return '<ul class="grille" role="list">' + "".join(f"<li>{carte_article(a)}</li>" for a in articles) + "</ul>"
+
+
 def ariane(elements):
     lis = "".join(
         f'<li><a href="{href}">{e(nom)}</a></li>' if href else f'<li aria-current="page">{e(nom)}</li>'
@@ -582,12 +595,31 @@ def avatar(taille, classe):
     return f'<img class="{classe}" src="{photo}" width="{taille}" height="{taille}" alt="{alt}">'
 
 
+# Titres de sources en anglais (RGAA 8.7 : changement de langue indiqué) : repérés par leurs mots les plus courants,
+# plus quelques titres trop courts pour être reconnus. Les noms propres (revues, organismes) ne sont pas concernés.
+MOTS_ANGLAIS = set("the of and in on for with to a an from by is are or at its their after during between effects effect "
+                   "study trial review randomized among adults sleep stress anxiety how what does do be can not more less "
+                   "than vs versus into over".split())
+MOTS_FRANCAIS = set("le la les des du de et en un une pour sur dans au aux par est sont ou avec sans que qui ce ces son "
+                    "sa ses leur".split())
+TITRES_ANGLAIS = {"Scales", "Moon Face: Causes & Treatment", "Magnesium", "Revenge Bedtime Procrastination"}
+
+
+def titre_source_html(texte):
+    """Titre d'une source (avant « — »), balisé lang="en" s'il est en anglais ; la suite (éditeur, auteurs, année) reste telle quelle."""
+    titre, sep, reste = texte.partition(" — ")
+    mots = re.findall(r"[a-zàâçéèêëîïôûùüÿœ']+", titre.lower())
+    anglais = titre in TITRES_ANGLAIS or (sum(m in MOTS_ANGLAIS for m in mots) > sum(m in MOTS_FRANCAIS for m in mots)
+                                           and not re.search(r"[àâçéèêëîïôûùüœ]", titre.lower()))
+    return (f'<span lang="en">{e(titre)}</span>' if anglais else e(titre)) + e(sep + reste)
+
+
 def liste_sources(sources, objet="l'article"):
     """Sources repliées (consigne du 10/10/2026) : une ligne en bas de page, la liste complète au toucher ; les liens
     [1] du texte et « 8 sources » en haut ouvrent la liste (sources.js). Le contenu reste dans la page (moteurs, IA)."""
     return ('<section class="sources" id="sources"><details class="repli-sources"><summary><h2>Sources</h2>'
             f'<span class="resume-sources">{e(bilan_sources(sources))}</span></summary><ol>'
-            + "".join(f'<li id="source-{i + 1}"><a href="{e(u)}" rel="noopener">{e(t)}</a> '
+            + "".join(f'<li id="source-{i + 1}"><a href="{e(u)}" rel="noopener">{titre_source_html(t)}</a> '
                       f'<span class="type-source type-{type_source(u)[0]}">{e(type_source(u)[1])}</span></li>'
                       for i, (t, u) in enumerate(sources))
             + '</ol><p class="note-sources">Chaque source a été ouverte et relue pour vérifier qu\'elle dit bien '
@@ -639,14 +671,13 @@ def construire_article(a, tous):
     if a.get("images"):
         src, l, h = a["images"][1200]
         src_p = a["images"][640][0]
-        credit = f"<figcaption>{e(a['credit'])}</figcaption>" if a["credit"] else ""
+        # Le crédit n'est pas une légende de l'image : il va en bas de l'article (image simple, RGAA 1.9 sans objet).
         photo = (f'<figure class="photo">' + teinte(f'<img src="{src}" srcset="{src_p} 640w, {src} 1200w" '
                  f'sizes="(max-width: 760px) 100vw, 740px" width="{l}" height="{h}" alt="{e(a["alt"])}" '
-                 f'fetchpriority="high">', a) + f'{credit}</figure>')
+                 f'fetchpriority="high">', a) + '</figure>')
     proches = sorted((b for b in tous if b["slug"] != a["slug"]),
                      key=lambda b: (b["categorie"] != a["categorie"], b["guide"] != a["guide"], b["titre"]))[:3]
-    lies = ('<section><h2 id="a-lire-aussi">À lire aussi</h2><div class="grille">'
-            + "".join(carte_article(b) for b in proches) + "</div></section>")
+    lies = ('<section><h2 id="a-lire-aussi">À lire aussi</h2>' + grille(proches) + "</section>")
     th = theme_de(a)
     nav_html, schema_ariane = ariane([("Accueil", "/")] + ([(th["nom"], f"/{th['slug']}/")] if th else [("Articles", "/articles/")])
                                      + [(a["titre"], None)])
@@ -665,7 +696,7 @@ def construire_article(a, tous):
 {bloc_epingle(a)}
 {suite_html}
 {sources_html}
-<p class="avertissement">Cet article donne des repères de bien-être fondés sur les sources citées. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+<p class="avertissement">Cet article donne des repères de bien-être fondés sur les sources citées. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.{f" Crédit de la photo d'illustration : {e(a['credit'].replace('Photo : ', ''))}." if a.get("images") and a["credit"] else ""}</p>
 {URGENCE_HTML}
 </article>
 {lies}
@@ -719,10 +750,10 @@ def cartes_lecture(articles, image_en_ligne=False):
                 src = "data:image/webp;base64," + donnees
             img = teinte(f'<img src="{src}" width="{l}" height="{h}" alt="" loading="lazy" decoding="async">', a)
         lien = (URL if image_en_ligne else "") + f"/{a['slug']}/"
-        cartes.append(f'<a class="carte-lecture" href="{lien}">{img}<div class="corps">'
+        cartes.append(f'<li><a class="carte-lecture" href="{lien}">{img}<div class="corps">'
                       f'<p class="etiquette">{e(SITE["categories"][a["categorie"]])}</p>'
                       f'<h3>{e(a["titre"])}</h3><p class="resume">{e(a["description"])}</p>'
-                      f'<p class="carte-meta">{a["lecture"]} min de lecture</p></div></a>')
+                      f'<p class="carte-meta">{a["lecture"]} min de lecture</p></div></a></li>')
     return "".join(cartes)
 
 
@@ -739,15 +770,18 @@ def construire_accueil(articles):
                             f'<div id="test-ecran">{test_sans_js("{{B}}")}</div>')
     # Menus de l'accueil = menus communs ; « Le test » mène au test intégré à la page.
     accueil = lambda h: "#test" if h == "/test-stress-anxiete/" else "{{B}}" + h
-    source = (source.replace("<!--@NAV_LIENS-->", "\n      ".join(f'<a href="{accueil(h)}">{t}</a>' for h, t in NAV_PRINCIPALE))
-              .replace("<!--@MENU_LIENS-->", "\n  ".join(f'<a href="{accueil(h)}" tabindex="-1"' + (' aria-current="page"' if h == "/" else "")
-                                                         + f'>{t}</a>' for h, t in MENU_MOBILE))
+    source = (source.replace("<!--@NAV_LIENS-->", "\n      ".join(f'<li><a href="{accueil(h)}">{t}</a></li>' for h, t in NAV_PRINCIPALE))
+              .replace("<!--@MENU_LIENS-->", "\n  ".join(f'<li><a href="{accueil(h)}" tabindex="-1"' + (' aria-current="page"' if h == "/" else "")
+                                                         + f'>{t}</a></li>' for h, t in MENU_MOBILE))
               .replace("<!--@MENU_SANS_JS-->", MENU_SANS_JS))
     corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", "")
              .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles))
              .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS)
              .replace("/*@THEME_CSS*/", THEME_CSS).replace("<!--@THEME_BOUTON-->", THEME_BOUTON))
     corps = insecables(corps)
+    # La feuille de style de l'accueil va dans <head> (HTML valide : pas de <style> dans <body>).
+    m_style = re.match(r"\s*(<style>.*?</style>)", corps, flags=re.S)
+    style_accueil, corps = (m_style.group(1), corps[m_style.end():]) if m_style else ("", corps)
     faq = faq_accueil(source)
     schemas = [
         {"@context": "https://schema.org", "@type": "WebSite", "@id": URL + "/#site", "name": SITE["nom"],
@@ -789,6 +823,7 @@ def construire_accueil(articles):
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
 {blocs_ld}
+{style_accueil}
 </head>
 <body>
 <a class="saut" href="#contenu">Aller au contenu</a>
@@ -819,8 +854,7 @@ def construire_liste(articles):
         if lot:
             th = SITE.get("themes", {}).get(cle)
             lien = f' <a class="voir-theme" href="/{th["slug"]}/">Voir le thème</a>' if th else ""
-            blocs.append(f'<h2 id="{cle}">{e(nom)}{lien}</h2><div class="grille">'
-                         + "".join(carte_article(a) for a in lot) + "</div>")
+            blocs.append(f'<h2 id="{cle}">{e(nom)}{lien}</h2>' + grille(lot))
     nav_html, schema_ariane = ariane([("Accueil", "/"), ("Articles", None)])
     contenu = f"""<div class="large">{nav_html}
 <h1>Tous les articles</h1>
@@ -839,7 +873,7 @@ def construire_theme(cle, articles):
     th = SITE["themes"][cle]
     lot = [a for a in articles if a["categorie"] == cle]
     par_slug = {a["slug"]: a for a in articles}
-    lignes = "".join(f'<tr><td data-label="Ta situation">{e(sit)}</td><td data-label="À lire"><a href="/{s}/">{e(par_slug[s]["titre"])}</a></td></tr>'
+    lignes = "".join(f'<tr><th scope="row">{e(sit)}</th><td data-label="À lire"><a href="/{s}/">{e(par_slug[s]["titre"])}</a></td></tr>'
                      for sit, s in th["par_ou_commencer"])
     tableau = ('<div class="tableau"><table><thead><tr><th scope="col">Ta situation</th><th scope="col">À lire</th></tr></thead>'
                f"<tbody>{lignes}</tbody></table></div>")
@@ -851,7 +885,7 @@ def construire_theme(cle, articles):
 <h2 id="par-ou-commencer">Par où commencer ?</h2>
 {tableau}
 <h2 id="articles">Les articles du thème</h2>
-<div class="grille">{''.join(carte_article(a) for a in lot)}</div>
+{grille(lot)}
 {carte_guide(OFFRE, None, "h2", PONTS.get(cle, "")) if th.get('guide') in SITE['guides'] else ''}
 <p class="autres-themes">Autres thèmes : {' · '.join(f'<a href="/{t["slug"]}/">{e(t["nom"])}</a>' for t in autres)} · <a href="/articles/">tous les articles</a></p>
 </div>"""
@@ -1000,7 +1034,7 @@ def test_sans_js(base=""):
 
 def instrument_test(base=""):
     return f"""<div class="instrument" id="test-stress" aria-live="polite">
-<div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><i id="test-barre"></i></div></div>
+<div class="progression"><span id="test-compteur">Question 1 sur 13</span><div class="barre" aria-hidden="true"><span id="test-barre"></span></div></div>
 <div id="test-ecran">{test_sans_js(base)}</div>
 </div>"""
 
@@ -1090,9 +1124,9 @@ EXERCICES_HTML = """<div class="exercice" id="exercice">
 <div class="ex-barre" aria-hidden="true"><span></span></div>
 <p class="ex-statut" role="status" hidden></p>
 <p class="ex-infos"><span class="ex-rythme">Inspire 5 s · expire 5 s</span> · reste <span class="ex-reste">3:00</span></p>
-<button type="button" class="ex-lancer bouton" aria-pressed="false">Commencer</button>
+<button type="button" class="ex-lancer bouton">Commencer</button>
 <p class="ex-note">Avec le son, tu peux fermer les yeux : un bol clair pour inspirer, un bol plus grave pour expirer, un petit bol discret pour retenir. Respire sans forcer ; si la tête te tourne, reprends ta respiration habituelle. Le minuteur ne garde rien en mémoire.</p>
-<p class="credit-audio">Bols chantants : enregistrements de steffcaffrey, dersinnsspace, Truthiswithin et itinerantmonk108 (<a href="https://freesound.org/">Freesound</a>), dans le domaine public (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a>). Musique : « Deep Relaxation », Kevin MacLeod (<a href="https://incompetech.com/">incompetech.com</a>), sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; extrait mis en forme (fondus) par Clarté Mentale.</p>
+<p class="credit-audio">Bols chantants : enregistrements de steffcaffrey, dersinnsspace, Truthiswithin et itinerantmonk108 (<a href="https://freesound.org/">Freesound</a>), dans le domaine public (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a>). Musique : « <span lang="en">Deep Relaxation</span> », Kevin MacLeod (<a href="https://incompetech.com/">incompetech.com</a>), sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; extrait mis en forme (fondus) par Clarté Mentale.</p>
 </div>"""
 
 
@@ -1155,7 +1189,8 @@ def echelle_journal(cle, titre, libelles):
 
 
 JOURNAL_HTML = ('<div class="journal" id="journal">\n<p class="jr-message" role="status" hidden></p>\n'
-                '<div class="jr-ligne"><label for="jr-date">Jour</label><input type="date" id="jr-date"></div>\n'
+                '<p class="jr-consigne">Le jour, l\'humeur, le stress et la nuit sont obligatoires ; le mot sur ta journée est facultatif.</p>\n'
+                '<div class="jr-ligne"><label for="jr-date">Jour</label><input type="date" id="jr-date" aria-required="true"></div>\n'
                 + echelle_journal("h", "Mon humeur", ["Très difficile", "Difficile", "Moyenne", "Bonne", "Très bonne"]) + "\n"
                 + echelle_journal("t", "Mon stress", ["Très calme", "Calme", "Moyen", "Tendu", "Très tendu"]) + "\n"
                 + echelle_journal("s", "Ma dernière nuit", ["Très mauvaise", "Mauvaise", "Moyenne", "Bonne", "Très bonne"]) + "\n"
@@ -1281,12 +1316,19 @@ def lecteurs_audio():
         nom = f"respiration-4-6-{minutes}-min.mp3"
         taille = os.path.getsize(os.path.join(RACINE, "contenu", "audio", nom)) / 1e6
         cycles = minutes * 6
+        # Transcription (RGAA 4.1) : l'audio n'a pas de voix, son déroulé complet est décrit en texte.
+        adoucis = " Dans le dernier tiers, les bols deviennent plus doux." if minutes == 10 else ""
+        transcription = (f"Audio sans voix de {minutes} minutes. Pendant les {DEBUT_CYCLES} premières secondes, la musique de détente "
+                         f"(piano, harpe et synthétiseur doux) joue seule. Viennent ensuite {cycles} respirations de 10 secondes : "
+                         f"un bol chantant clair marque le début de l'inspiration (4 secondes), puis un bol plus grave le début "
+                         f"de l'expiration (6 secondes).{adoucis} À la fin, la musique s'éteint en fondu et un dernier bol résonne longuement.")
         blocs.append(f'<figure class="audio" data-cycles="{cycles}"><figcaption><span><strong>{minutes} minutes</strong> · {e(moment)}</span>'
                      f'<span class="nb">{cycles} respirations</span></figcaption>'
-                     f'<audio controls preload="none" src="/audio/{nom}"></audio>'
+                     f'<audio controls preload="none" src="/audio/{nom}" aria-label="Respiration guidée 4-6, {minutes} minutes"></audio>'
                      f'<p class="phase">Appuie sur lecture, puis ferme les yeux si tu veux.</p>'
+                     f'<details class="transcription"><summary>Transcription de l\'audio de {minutes} minutes</summary><p>{e(transcription)}</p></details>'
                      f'<a href="/audio/{nom}" download>Télécharger (MP3, {f"{taille:.1f}".replace(".", ",")} Mo)</a></figure>')
-    credit = ('<p class="credit-audio">Musique : « Deep Relaxation », Kevin MacLeod '
+    credit = ('<p class="credit-audio">Musique : « <span lang="en">Deep Relaxation</span> », Kevin MacLeod '
               '(<a href="https://incompetech.com/">incompetech.com</a>), sous licence '
               '<a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; '
               'extrait mixé avec des repères de respiration par Clarté Mentale.</p>')
@@ -1411,7 +1453,7 @@ def construire_fichiers_techniques(articles):
                     f"Mis à jour le {date_fr(a['maj'])} — par {SITE['auteur']['nom']}", "", a["intro"], ""]
         if a["resume"]:
             complet += ["## L'essentiel", ""] + [f"- {p}" for p in a["resume"]] + [""]
-        complet += [a["corps_md"], ""]
+        complet += [re.sub(r"<q>(.*?)</q>", "« \\1 »", a["corps_md"]), ""]  # citations <q> remises entre guillemets en texte brut
         if a["faq"]:
             complet += ["## Questions fréquentes", ""] + [f"### {q}\n\n{r}\n" for q, r in a["faq"]]
         if a["sources"]:

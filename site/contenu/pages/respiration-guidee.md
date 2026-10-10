@@ -45,7 +45,7 @@ Ces audios ont été montés par Clarté Mentale : une musique de détente et de
 
 | Élément | D'où il vient |
 |---|---|
-| La musique | « Deep Relaxation », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)) : piano, harpe et synthétiseur doux, sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr) ; un extrait est utilisé et mixé avec les repères |
+| La musique | « <span lang="en">Deep Relaxation</span> », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)) : piano, harpe et synthétiseur doux, sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr) ; un extrait est utilisé et mixé avec les repères |
 | Les bols chantants | Vrais bols tibétains enregistrés par steffcaffrey, dersinnsspace et itinerantmonk108 ([Freesound](https://freesound.org/)), dans le domaine public ([CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.fr)) ; choisis pour leur frappe nette et leur résonance propre, sans bruit de fond |
 | La voix | Aucune |
 

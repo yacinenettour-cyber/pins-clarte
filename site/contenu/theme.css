@@ -15,6 +15,7 @@
   --verre-fort: rgba(255, 255, 255, 0.9);
   --lisere: rgba(29, 40, 35, 0.12);
   --lisere-fort: rgba(29, 40, 35, 0.24);
+  --trait-champ: rgba(29, 40, 35, 0.55);
   --ombre: rgba(29, 40, 35, 0.18);
   --alerte: #9A5A16;
   --ombre-2xl: 0 18px 40px -22px rgba(29, 40, 35, 0.3);
@@ -41,6 +42,7 @@
 /* Blocs teintés : mêmes formes, teintes plus légères */
 @clair .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); border-color: rgba(45, 106, 70, 0.3); }
 @clair th, @clair .comparatif th { background: rgba(58, 95, 67, 0.12); }
+@clair tbody th, @clair .comparatif tbody th { background: transparent; }
 @clair .type-etude { border-color: rgba(29, 40, 35, 0.25); }
 @clair .bilan-sources a { background: rgba(58, 95, 67, 0.08); border-color: rgba(45, 106, 70, 0.35); }
 @clair .rappel-guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.14), rgba(255, 255, 255, 0.7)); }
@@ -51,6 +53,7 @@
 
 /* Accueil */
 @clair .hero::before { opacity: 0.45; }
+@clair .hero h1 .titre em { background: linear-gradient(90deg, #2D6A46, #3A5F43 55%, #2D6A46); -webkit-background-clip: text; background-clip: text; }
 @clair .hero-visuel { background: radial-gradient(circle at 50% 40%, rgba(58, 95, 67, 0.16), rgba(244, 240, 232, 0.5) 60%), #FFFFFF; }
 @clair .pastille-souffle { background: rgba(255, 255, 255, 0.8); }
 @clair .tuile { background: rgba(255, 255, 255, 0.7); }

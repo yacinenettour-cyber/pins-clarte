@@ -39,6 +39,7 @@
   --verre-fort: rgba(255, 255, 255, 0.06);
   --lisere: rgba(223, 213, 198, 0.10);
   --lisere-fort: rgba(223, 213, 198, 0.22);
+  --trait-champ: rgba(223, 213, 198, 0.45); /* contour des champs de saisie : contraste d'au moins 3:1 (RGAA 3.3) */
   --ombre: rgba(0, 0, 0, 0.45);
   --titre: "Syne", "Syne repli A", "Syne repli R", "Segoe UI", system-ui, sans-serif;
   --texte: "Plus Jakarta Sans", "Jakarta repli A", "Jakarta repli R", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -68,6 +69,10 @@ body {
 a { color: var(--brume); text-underline-offset: 3px; }
 a:hover { color: var(--champagne); }
 :focus-visible { outline: 2px solid var(--brume); outline-offset: 3px; border-radius: 6px; }
+/* Champs de saisie : contour au focus même quand le navigateur n'applique pas :focus-visible (champ date de Chromium). */
+input:focus, textarea:focus, select:focus { outline: 2px solid var(--brume); outline-offset: 2px; }
+/* Texte indicatif des champs : couleur du site (le gris par défaut du navigateur tombait à 3,6:1 en mode sombre, RGAA 3.2). */
+::placeholder { color: var(--champagne-doux); opacity: 1; }
 img { max-width: 100%; height: auto; display: block; }
 .saut { position: absolute; left: -999px; }
 .saut:focus { left: 16px; top: 16px; background: var(--nuit-2); color: var(--champagne); padding: 8px 12px; z-index: 30; }
@@ -82,11 +87,12 @@ img { max-width: 100%; height: auto; display: block; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--champagne); }
 .nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--brume); }
 .nav { align-items: center; }
+.nav ul { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; list-style: none; margin: 0; padding: 0; }
 .nav .bouton-entete { padding: 9px 16px; font-size: 14px; color: var(--nuit); }
 .nav .bouton-entete:hover { color: var(--nuit); }
 /* Entre le téléphone et l'ordinateur, liens et bouton tiennent sur la ligne du logo (comme sur l'accueil). */
-@media (max-width: 1080px) { .nav { gap: 4px 16px; font-size: 14px; } .nav .bouton-entete { padding: 8px 13px; } }
-@media (max-width: 960px) { .nav { gap: 4px 12px; } .entete .large { gap: 8px 14px; } }
+@media (max-width: 1080px) { .nav { font-size: 14px; } .nav ul { gap: 4px 16px; } .nav .bouton-entete { padding: 8px 13px; } }
+@media (max-width: 960px) { .nav ul { gap: 4px 12px; } .entete .large { gap: 8px 14px; } }
 /* Mobile : même en-tête que l'accueil (logo + bouton menu, 73 px), le menu s'ouvre en plein écran (menu.css). */
 @media (max-width: 860px) {
   .entete .large { flex-wrap: nowrap; gap: 16px; }
@@ -131,19 +137,23 @@ strong { color: var(--champagne); }
 .avertissement { font-size: 15px; color: var(--champagne-doux); border-top: 1px solid var(--lisere); margin-top: 44px; padding-top: 16px; }
 .tableau { overflow-x: auto; margin: 20px 0; border-radius: 14px; border: 1px solid var(--lisere); }
 @media (max-width: 560px) {
-  .tableau table, .tableau tbody, .tableau tr, .tableau td { display: block; width: 100%; }
+  .tableau table, .tableau tbody, .tableau tr, .tableau td, .tableau tbody th { display: block; width: 100%; }
   .tableau thead { display: none; }
   .tableau tr { padding: 12px 14px; border-bottom: 1px solid var(--lisere); }
   .tableau tr:last-child { border-bottom: 0; }
-  .tableau td { border: 0; padding: 3px 0; }
-  .tableau td:first-child { color: var(--champagne); font-weight: 600; }
+  .tableau td, .tableau tbody th { border: 0; padding: 3px 0; }
+  .tableau tbody th { color: var(--champagne); font-weight: 600; }
   .tableau td[data-label]:not([data-label=""])::before { content: attr(data-label); display: block; margin-top: 4px; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--brume); }
 }
 table { border-collapse: collapse; width: 100%; font-size: 16px; background: var(--verre); }
 th, td { text-align: left; padding: 11px 13px; border-bottom: 1px solid var(--lisere); vertical-align: top; color: #CFC6B8; }
 th { background: rgba(58, 95, 67, 0.35); color: var(--champagne); font-weight: 600; }
+/* En-têtes de ligne (première colonne) : en gras, sans le fond des en-têtes de colonne. */
+tbody th { background: transparent; }
 blockquote { margin: 20px 0; padding: 12px 18px; background: var(--verre); border-left: 3px solid var(--emeraude); border-radius: 10px; }
-sup a { text-decoration: none; font-size: 13px; }
+sup a { font-size: 13px; }
+/* Citations courtes (RGAA 9.4) : guillemets français ajoutés par <q>, pas tapés dans le texte. */
+q { quotes: "«\00a0" "\00a0»"; }
 .sources { font-size: 15px; margin-top: 40px; }
 .sources li { margin-bottom: 8px; word-break: break-word; }
 /* Sources repliées : une ligne discrète en bas de page, la liste complète au toucher (les CTA restent au premier plan). */
@@ -189,7 +199,7 @@ sup a { text-decoration: none; font-size: 13px; }
 /* Carte guide */
 .guide { background: linear-gradient(90deg, rgba(58, 95, 67, 0.6), rgba(58, 95, 67, 0.18), rgba(143, 191, 154, 0.22), rgba(58, 95, 67, 0.6)); background-size: 200% 100%; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(143, 191, 154, 0.3); border-radius: 22px; padding: 24px; margin: 30px 0; display: grid; gap: 18px; grid-template-columns: 96px minmax(0, 1fr); align-items: start; box-shadow: var(--ombre-2xl); transition: var(--transition); }
 .guide:hover { box-shadow: var(--ombre-lueur); animation: glisse 10s linear infinite; }
-.guide .livret { width: 96px; height: 128px; border-radius: 8px; background: linear-gradient(160deg, #E9E1D3, #BFB29C); color: var(--nuit); display: flex; flex-direction: column; justify-content: space-between; padding: 10px; font: 700 11px/1.25 var(--titre); box-shadow: 0 10px 24px rgba(0, 0, 0, .45); }
+.guide .livret { width: 96px; height: 128px; border-radius: 8px; background: linear-gradient(160deg, #E9E1D3, #BFB29C); color: #0F1714; display: flex; flex-direction: column; justify-content: space-between; padding: 10px; font: 700 11px/1.25 var(--titre); box-shadow: 0 10px 24px rgba(0, 0, 0, .45); }
 .guide .livret span { font-size: 9px; font-weight: 600; opacity: .7; }
 .guide .type { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: var(--brume); font-weight: 700; margin: 0; }
 .guide h2, .guide h3 { margin: 4px 0 6px; font-size: 22px; }
@@ -201,7 +211,9 @@ sup a { text-decoration: none; font-size: 13px; }
 .guide small { display: block; margin-top: 8px; color: var(--champagne-doux); font-size: 13px; }
 
 /* Listes d'articles */
-.grille { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin: 20px 0 44px; }
+.grille { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin: 20px 0 44px; list-style: none; padding: 0; }
+.grille > li { display: flex; min-width: 0; }
+.grille > li > .carte { flex: 1; }
 .carte { background: var(--verre); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--lisere); border-radius: var(--rayon); overflow: hidden; display: flex; flex-direction: column; transition: var(--transition); box-shadow: 0 20px 40px -24px rgba(0, 0, 0, 0.55); will-change: transform; }
 .carte:hover { z-index: 2; border-color: var(--lisere-fort); background: var(--verre-fort); box-shadow: var(--ombre-lueur); }
 .carte img { transition: var(--transition); }
@@ -270,6 +282,8 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .audio audio { width: 100%; height: 44px; }
 .audio .phase { margin: 0; min-height: 1.6em; font: 600 15px/1.6 var(--texte); color: var(--brume); }
 .audio a { font-size: 14px; justify-self: start; }
+.audio .transcription summary { cursor: pointer; font-size: 14px; font-weight: 600; color: var(--brume); width: fit-content; }
+.audio .transcription p { margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: var(--champagne-doux); }
 .credit-audio { margin: 2px 4px 0; font-size: 13.5px; line-height: 1.6; color: var(--champagne-doux); }
 /* Rappel d'urgence en bas des articles et des pages santé : numéros cliquables, page des ressources d'urgence. */
 .urgence { font-size: 15px; line-height: 1.6; margin: 12px 0 0; padding: 12px 16px; border-radius: 14px; background: rgba(217, 162, 107, 0.08); border: 1px solid rgba(217, 162, 107, 0.32); color: var(--champagne); }
@@ -277,7 +291,7 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .urgence a:hover { color: var(--brume); }
 /* Recherche interne */
 .recherche-form { display: flex; gap: 8px; margin: 18px 0 10px; }
-.recherche-form input { flex: 1; min-width: 0; font: 400 17px/1.4 var(--texte); padding: 12px 14px; border-radius: 14px; border: 1px solid var(--lisere-fort); background: var(--verre-fort); color: var(--champagne); }
+.recherche-form input { flex: 1; min-width: 0; font: 400 17px/1.4 var(--texte); padding: 12px 14px; border-radius: 14px; border: 1px solid var(--trait-champ); background: var(--verre-fort); color: var(--champagne); }
 .recherche-form .bouton { border: 0; font: 700 16px/1 var(--texte); cursor: pointer; flex: none; }
 .recherche-etat { font-size: 15px; color: var(--champagne-doux); min-height: 1.4em; }
 .recherche-resultats { list-style: none; padding: 0; margin: 10px 0 24px; display: grid; gap: 12px; }

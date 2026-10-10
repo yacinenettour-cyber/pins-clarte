@@ -36,7 +36,7 @@ Photos issues de [Pexels](https://www.pexels.com/fr-fr/license/) et d'[Unsplash]
 
 ## Crédits musique et sons
 
-Les [audios de respiration guidée](/respiration-guidee/) et la musique facultative du minuteur des [exercices de respiration](/exercices-respiration/) utilisent un extrait de « Deep Relaxation », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)), sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr), mixé avec des repères de respiration (ou seulement mis en forme, pour le minuteur) par Clarté Mentale. Les bols chantants de ces audios et du minuteur sont de vrais enregistrements de steffcaffrey, dersinnsspace, Truthiswithin et itinerantmonk108, publiés sur [Freesound](https://freesound.org/) dans le domaine public ([CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.fr)).
+Les [audios de respiration guidée](/respiration-guidee/) et la musique facultative du minuteur des [exercices de respiration](/exercices-respiration/) utilisent un extrait de « <span lang="en">Deep Relaxation</span> », de Kevin MacLeod ([incompetech.com](https://incompetech.com/)), sous licence [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr), mixé avec des repères de respiration (ou seulement mis en forme, pour le minuteur) par Clarté Mentale. Les bols chantants de ces audios et du minuteur sont de vrais enregistrements de steffcaffrey, dersinnsspace, Truthiswithin et itinerantmonk108, publiés sur [Freesound](https://freesound.org/) dans le domaine public ([CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.fr)).
 
 ## Propriété intellectuelle
 

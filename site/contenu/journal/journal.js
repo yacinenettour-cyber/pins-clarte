@@ -52,9 +52,13 @@
 
   $(".jr-enregistrer").addEventListener("click", function () {
     if (!date.value) { afficherMessage("Choisis une date."); return; }
-    if (!choix.h || !choix.t || !choix.s) { afficherMessage("Choisis une note pour ton humeur, ton stress et ta nuit."); return; }
+    /* Message d'erreur précis (RGAA 11.11) : on nomme ce qui manque. */
+    var manque = [["h", "ton humeur"], ["t", "ton stress"], ["s", "ta nuit"]].filter(function (x) { return !choix[x[0]]; }).map(function (x) { return x[1]; });
+    if (manque.length) { afficherMessage("Il manque une note pour " + manque.join(", ").replace(/, ([^,]*)$/, " et $1") + " : choisis un chiffre de 1 à 5."); return; }
     var notes = lire().filter(function (x) { return x.d !== date.value; });
     var remplace = notes.length !== lire().length;
+    /* Une note existe déjà pour ce jour : confirmation avant de la remplacer (RGAA 11.12). */
+    if (remplace && !window.confirm("Une note existe déjà pour le " + dateFr(date.value) + ". La remplacer par celle-ci ?")) { afficherMessage("Note du " + dateFr(date.value) + " gardée telle quelle."); return; }
     notes.push({ d: date.value, h: choix.h, t: choix.t, s: choix.s, n: note.value.trim().slice(0, 300) });
     notes.sort(function (a, b) { return a.d < b.d ? -1 : 1; });
     if (!ecrire(notes)) { afficherMessage("Ton navigateur bloque l'enregistrement (navigation privée ?) : la note n'a pas été gardée."); return; }
@@ -94,7 +98,7 @@
     dessinerCourbe(notes);
     repere(notes);
     var lignes = notes.slice().reverse().slice(0, 60).map(function (n) {
-      return '<tr><td data-label="Date">' + dateFr(n.d) + '</td><td data-label="Humeur">' + n.h + " · " + ECHELLES.h[n.h - 1] +
+      return '<tr><th scope="row" data-label="Date">' + dateFr(n.d) + '</th><td data-label="Humeur">' + n.h + " · " + ECHELLES.h[n.h - 1] +
         '</td><td data-label="Stress">' + n.t + " · " + ECHELLES.t[n.t - 1] + '</td><td data-label="Nuit">' + n.s + " · " + ECHELLES.s[n.s - 1] +
         '</td><td data-label="' + (n.n ? "Note" : "") + '">' + echapper(n.n || "") + "</td></tr>";
     }).join("");

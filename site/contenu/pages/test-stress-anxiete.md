@@ -30,7 +30,7 @@ Sa validation a été publiée en 2006 dans la revue *Archives of Internal Medic
 - le seuil retenu repérait 89 % des personnes atteintes de trouble anxieux généralisé (sensibilité) et écartait 82 % de celles qui ne l'étaient pas (spécificité) [1] ;
 - plus le score était élevé, plus les difficultés dans la vie quotidienne étaient importantes [1].
 
-Les 7 questions de la partie 1 sont celles de la version française publiée par le Département de médecine de famille et de médecine d'urgence de l'Université de Montréal, reproduites mot pour mot, d'où le vouvoiement [2]. Leur reproduction est libre : « Aucune permission requise pour reproduire, traduire, afficher ou distribuer » [2].
+Les 7 questions de la partie 1 sont celles de la version française publiée par le Département de médecine de famille et de médecine d'urgence de l'Université de Montréal, reproduites mot pour mot, d'où le vouvoiement [2]. Leur reproduction est libre : <q>Aucune permission requise pour reproduire, traduire, afficher ou distribuer</q> [2].
 
 ## Comment lire ton score au GAD-7 ?
 Le score du GAD-7 va de 0 à 21 : chaque réponse compte de 0 (« Jamais ») à 3 (« Presque tous les jours »), et les seuils de 5, 10 et 15 correspondent à des symptômes d'anxiété légers, modérés et sévères, selon le manuel officiel du questionnaire [3].
