@@ -1576,5 +1576,16 @@
   "pin_id": "600175087890094247",
   "md5": "858b5cd3353bc172b3283994f4a74fe4",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-11T14:07+00:00",
+  "titre": "Collation anti-stress : 3 idées pour le creux de 17h",
+  "image": "images/pin-20261011-140749.jpg",
+  "fond": "fonds/fond-29.jpg",
+  "theme": "alimentation",
+  "design": "clair",
+  "pin_id": "600175087890096007",
+  "md5": "dbfdd17e47aecef9630d098ea9d69a25",
+  "lien": "article:alimentation-anti-stress"
  }
 ]
