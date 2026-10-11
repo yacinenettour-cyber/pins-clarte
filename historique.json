@@ -1521,5 +1521,16 @@
   "pin_id": "600175087890090640",
   "md5": "7b9db77d5f49a1098a6e526cfb17cc83",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-11T06:07+00:00",
+  "titre": "Stress : 4 aliments riches en vitamine C",
+  "image": "images/pin-20261011-060743.jpg",
+  "fond": "fonds/dedie-vitamine-c.jpg",
+  "theme": "alimentation",
+  "design": "sombre",
+  "pin_id": "600175087890091167",
+  "md5": "c8039f2020bfff74e1c97f19efc31d7f",
+  "lien": "guide:cortisol"
  }
 ]
