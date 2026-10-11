@@ -1543,5 +1543,16 @@
   "pin_id": "600175087890091814",
   "md5": "9d0348e1235815107a83e11baf6c6a3c",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-11T08:08+00:00",
+  "titre": "Cortisol et envies de sucre : pourquoi tu craques",
+  "image": "images/pin-20261011-080757.jpg",
+  "fond": "fonds/fond-176.jpg",
+  "theme": "alimentation",
+  "design": "sombre",
+  "pin_id": "600175087890092232",
+  "md5": "945946078ed8f6f1b40daad6e686adc1",
+  "lien": "article:alimentation-anti-stress"
  }
 ]
