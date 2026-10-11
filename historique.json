@@ -1510,5 +1510,16 @@
   "pin_id": "600175087890084805",
   "md5": "6856526d023497713d548c2647fec42d",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-11T05:07+00:00",
+  "titre": "Mal dormir hors de chez toi : 3 astuces qui aident",
+  "image": "images/pin-20261011-050747.jpg",
+  "fond": "fonds/pexels-10123481.jpg",
+  "theme": "sommeil",
+  "design": "clair",
+  "pin_id": "600175087890090640",
+  "md5": "7b9db77d5f49a1098a6e526cfb17cc83",
+  "lien": "guide:sommeil"
  }
 ]
