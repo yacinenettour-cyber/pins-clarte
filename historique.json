@@ -1565,5 +1565,16 @@
   "pin_id": "600175087890093196",
   "md5": "e7bc95abf49e0d97a6b1f2f59f44d52c",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-11T12:07+00:00",
+  "titre": "Stress : manger en 5 minutes entretient la tension",
+  "image": "images/pin-20261011-120747.jpg",
+  "fond": "fonds/fond-177.jpg",
+  "theme": "alimentation",
+  "design": "sombre",
+  "pin_id": "600175087890094247",
+  "md5": "858b5cd3353bc172b3283994f4a74fe4",
+  "lien": "guide:cortisol"
  }
 ]
