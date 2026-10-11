@@ -1554,5 +1554,16 @@
   "pin_id": "600175087890092232",
   "md5": "945946078ed8f6f1b40daad6e686adc1",
   "lien": "article:alimentation-anti-stress"
+ },
+ {
+  "date": "2026-10-11T10:07+00:00",
+  "titre": "Stress au travail : ne repousse plus ton déjeuner",
+  "image": "images/pin-20261011-100744.jpg",
+  "fond": "fonds/fond-22.jpg",
+  "theme": "alimentation",
+  "design": "clair",
+  "pin_id": "600175087890093196",
+  "md5": "e7bc95abf49e0d97a6b1f2f59f44d52c",
+  "lien": "guide:cortisol"
  }
 ]
