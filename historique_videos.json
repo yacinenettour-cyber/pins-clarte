@@ -130,5 +130,22 @@
    "fonds/fond-171.jpg",
    "fonds/fond-171.jpg"
   ]
+ },
+ {
+  "date": "2026-10-11T16:33+00:00",
+  "id": "alimentation-magnesium",
+  "titre": "Stress et magnésium : les aliments à mettre dans ton assiette",
+  "video": "videopins/videopin-20261011-163220.mp4",
+  "cover": "videopins/videopin-20261011-163220.jpg",
+  "theme": "alimentation",
+  "pin_id": "600175087890098076",
+  "photos": [
+   "fonds/fond-31.jpg",
+   "fonds/fond-31.jpg",
+   "fonds/fond-34.jpg",
+   "fonds/fond-34.jpg",
+   "fonds/fond-49.jpg",
+   "fonds/fond-49.jpg"
+  ]
  }
 ]
