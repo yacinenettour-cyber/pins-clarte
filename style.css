@@ -1,7 +1,11 @@
 /* Clarté Mentale : univers « biophilic dark » commun à l'accueil, aux articles et aux pages fixes.
    Fond nuit organique, verre dépoli, vert émeraude brumeux pour le calme, or champagne pour le texte. */
+/* Police du texte en font-display: optional (11/10/2026) : utilisée seulement si elle arrive avant le premier
+   affichage (préchargée dans l'en-tête), sinon la police de secours reste jusqu'à la page suivante, sans échange en
+   cours de lecture. Avec « swap », l'échange recoupait autrement les lignes du sous-titre et faisait sauter l'accueil
+   (CLS 0,27 mesuré par Cloudflare sur l'image du haut). Syne (titres, loin sous le haut de page) reste en « swap ». */
 @font-face { font-family: "Syne"; src: url("/polices/syne.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: swap; }
-@font-face { font-family: "Plus Jakarta Sans"; src: url("/polices/plus-jakarta-sans.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("/polices/plus-jakarta-sans.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: optional; }
 /* Grand titre de l'accueil : même fichier que Syne, mais invisible le temps du chargement (font-display: block)
    plutôt qu'affiché dans une police de secours très agrandie ; sa place est déjà réservée, rien ne bouge. */
 @font-face { font-family: "Syne bloc"; src: url("/polices/syne.woff2") format("woff2"); font-weight: 400 800; font-style: normal; font-display: block; }
