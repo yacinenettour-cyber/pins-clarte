@@ -1664,5 +1664,16 @@
   "pin_id": "600175087890110263",
   "md5": "673364828517a5c0fb5aa0254606fba6",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-12T10:07+00:00",
+  "titre": "Bouchons d'oreilles : 3 repères pour bien les choisir",
+  "image": "images/pin-20261012-100749.jpg",
+  "fond": "fonds/dedie-bouchons-oreilles.jpg",
+  "theme": "sommeil",
+  "design": "clair",
+  "pin_id": "600175087890111091",
+  "md5": "eb51cad3eae6ac05ad0a10d582832b52",
+  "lien": "guide:sommeil"
  }
 ]
