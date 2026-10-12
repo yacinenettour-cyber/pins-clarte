@@ -651,6 +651,20 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
   - axe-core : 0 violation et aucun débordement (4 pages × 2 thèmes × 320 et 1 280 px) ;
   - page en ligne avec le bon titre et présente dans le plan du site ; IndexNow : 200.
 
+## 58. Prospection : seulement des sites qui ont du trafic (12/10/2026)
+
+**Consigne de l'utilisateur** : « Oui je veux que des liens de qualité avec du trafic ».
+
+- **Mesure gratuite de l'audience** : classement Tranco des 1 million de domaines les plus visités au monde (tranco-list.eu, liste du 12/10, téléchargée dans l'atelier Composio, fichier à lignes CRLF). Sur les 29 sites de la première liste, seuls aidants.fr (rang 606 785), papapositive.fr (721 289), parlonsrh.com (682 945) et reseau-morphee.fr (694 086) y figurent. Les sous-domaines universitaires (unistra, unicaen) héritent de l'autorité de leur domaine, mais leur trafic propre est inconnu. Notre propre site n'y figure pas.
+- **Classement dans `prospection-liens.json`** (champ `audience`) :
+  - **A** : domaine dans le top 1 million ;
+  - **B** : organisme national ou public reconnu ;
+  - **C** : aucun signal, statut `ecarte_audience`, jamais contacté.
+
+  Sur 29 sites, 11 passent en C : cabinets de praticiens, petits blogs et newsletters, L'Optimisme.pro. Parmi les 5 déjà contactés, 3 sont en C (Les BURN'ettes, podcast Même Plus Peur, Ghislain Bousseau) : ils ne seront pas relancés.
+- **Déclencheur « Prospection liens » mis à jour** : sites A d'abord, puis B ; jamais de site C ; l'audience de tout nouveau site est mesurée avant de lui écrire.
+- **Nouvelle recherche lancée** : 40 sites francophones avec des signes de trafic visibles (grands blogs indépendants, associations nationales, pages prévention des mutuelles, podcasts et newsletters connus). Leur rang Tranco sera vérifié avant tout envoi.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
