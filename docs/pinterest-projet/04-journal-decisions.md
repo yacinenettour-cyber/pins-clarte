@@ -665,6 +665,19 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - **Déclencheur « Prospection liens » mis à jour** : sites A d'abord, puis B ; jamais de site C ; l'audience de tout nouveau site est mesurée avant de lui écrire.
 - **Nouvelle recherche lancée** : 40 sites francophones avec des signes de trafic visibles (grands blogs indépendants, associations nationales, pages prévention des mutuelles, podcasts et newsletters connus). Leur rang Tranco sera vérifié avant tout envoi.
 
+## 59. Google Search Console connectée : état de référence (12/10/2026)
+
+**Demande de l'utilisateur** : « Quelle est la position de mon site sur Google ? » L'utilisateur a connecté la Search Console à Composio (`google_search_console`, propriété `sc-domain:contactapaisement-mental.fr`, droits de propriétaire, lecture par l'API).
+
+- **Performances depuis le lancement** (09/10 au 12/10) : 5 impressions, 0 clic. Seule l'accueil apparaît, en position 1 à 3,5, sur une seule requête (« verifie tout »), probablement une recherche de l'utilisateur. Il n'y a donc pas encore de position sur les mots-clés visés.
+- **Indexation**, contrôlée page par page (`INSPECT_URL`) :
+  - **indexées** : l'accueil (exploré le 12/10 à 02 h 37 UTC) et `/mieux-dormir/` ;
+  - **« Détectée, actuellement non indexée »** (Google connaît l'adresse mais ne l'a pas encore explorée) : routine du soir, procrastination du coucher, alimentation, nerf vague, charge mentale, burn-out, angoisse le soir, respiration guidée ;
+  - **« Google ne reconnaît pas cette URL »** : ruminations, réveil à 4 h, les 3 articles sur le cortisol, calmer son système nerveux, test, respiration pour dormir (publié le jour même).
+- **Plan du site** : 31 adresses et 26 images envoyées, aucune encore indexée, statut « en attente », dernier téléchargement par Google le 11/10. Une seconde entrée, l'adresse de l'accueil envoyée par erreur comme plan du site le 12/10 à 01 h 00, est en erreur ; elle est sans effet sur le site et peut être supprimée dans la Search Console (Sitemaps).
+- **Lecture** : c'est normal pour un site de 3 jours. Google n'a pas encore pris le temps d'explorer la plupart des pages ; ce n'est pas un refus. Ce qui accélère : les liens externes (prospection), la demande d'indexation à la main par l'utilisateur (quota d'une dizaine par jour, l'API ne le permet pas) et le temps.
+- **Bilan du 21/10 mis à jour** (`trig_01PSmwdnKuoye8wBSWiNybhJ`) : il lira la Search Console et comparera avec cet état de référence.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
