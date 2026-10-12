@@ -1686,5 +1686,16 @@
   "pin_id": "600175087890112309",
   "md5": "7e9b21d5be3fafa4f39c34840fd75695",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-12T14:07+00:00",
+  "titre": "Pieds froids au lit : pourquoi les chaussettes aident",
+  "image": "images/pin-20261012-140748.jpg",
+  "fond": "fonds/dedie-chaussettes-lit.jpg",
+  "theme": "sommeil",
+  "design": "clair",
+  "pin_id": "600175087890113919",
+  "md5": "077db5a86448598991076f4e9321e16a",
+  "lien": "guide:sommeil"
  }
 ]
