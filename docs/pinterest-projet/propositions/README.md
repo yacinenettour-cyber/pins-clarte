@@ -16,3 +16,12 @@ Vérifications : YAML valide, script Python compilé ; rendu de 258 épingles à
 (2 064 images) : 0 chevauchement, 0 image sans photo ; simulation de 70 publications : 0 répétition de thème
 (18 avec la version actuelle) ; règle de rythme testée (pause à 1,9 h, publication à 3,9 h et 6 h).
 Base : `.github/workflows/pins.yml` de main au 12/10/2026 — si `pins.yml` a changé depuis, refaire le diff.
+
+## Visuel « fiche » (12/10/2026, en attente de validation de l'utilisateur)
+
+`pins-fiche-2026-10-12.yml` = robot en ligne + visuel « fiche » pour toutes les épingles à étapes (fin du test
+clair/sombre) : papier pastel par thème, accroche manuscrite (Dancing Script), titre Playfair Display, étapes
+numérotées en cartes (Lora), photo encadrée sous le texte, invitation discrète à enregistrer, variée.
+Polices libres (OFL) dans `polices/`. Aperçu : `apercu-fiche.jpg`.
+Vérifications : 253 épingles à venir rendues, 0 chevauchement, 0 ligne trop large, 0 image sans photo,
+0 ponctuation seule en début de ligne ; exécution complète du robot en mode test sur une copie du dépôt (code 0).
