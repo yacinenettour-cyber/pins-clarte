@@ -879,12 +879,20 @@ def construire_theme(cle, articles):
     tableau = ('<div class="tableau"><table><thead><tr><th scope="col">Ta situation</th><th scope="col">À lire</th></tr></thead>'
                f"<tbody>{lignes}</tbody></table></div>")
     autres = [t for k, t in SITE["themes"].items() if k != cle]
+    # Résumés « L'essentiel » des articles (contenu déjà sourcé dans chaque article) : une vraie page de
+    # synthèse plutôt qu'une simple liste de liens, que Google tarde à indexer (12/10/2026).
+    essentiel = "".join(f'<h3><a href="/{a["slug"]}/">{e(a["titre"])}</a></h3>'
+                        + md("\n".join("- " + re.sub(r"\s*(\[\d+\])+", "", p) for p in a["resume"]))
+                        for a in lot if a["resume"])
     nav_html, schema_ariane = ariane([("Accueil", "/"), (th["nom"], None)])
     contenu = f"""<div class="large">{nav_html}
 <h1>{e(th['titre'])}</h1>
 {''.join(f'<p class="chapo">{e(p)}</p>' if i == 0 else f'<p>{e(p)}</p>' for i, p in enumerate(th['intro']))}
 <h2 id="par-ou-commencer">Par où commencer ?</h2>
 {tableau}
+<h2 id="essentiel">L'essentiel de chaque article</h2>
+<p>Les points clés de chaque article du thème, en bref. Le détail, les sources et la section « Quand consulter ? » sont dans l'article.</p>
+{essentiel}
 <h2 id="articles">Les articles du thème</h2>
 {grille(lot)}
 {carte_guide(OFFRE, None, "h2", PONTS.get(cle, "")) if th.get('guide') in SITE['guides'] else ''}
