@@ -86,6 +86,10 @@ page de ressources ou d'outils. Jamais à des sites qui vendent des remèdes mir
 > Bonne journée,
 > Yacine — www.contactapaisement-mental.fr
 
+## Prospection automatique (depuis le 12/10/2026)
+
+Les e-mails aux sites ressources partent maintenant automatiquement depuis le Gmail de l'utilisateur : au plus 5 par jour ouvré, une relance après 10 jours. Suivi dans `prospection-liens.json` (même dossier), journal section 56. L'utilisateur n'a plus à envoyer le message ci-dessus lui-même.
+
 ## Ce que je surveille
 
 Le bilan du 21/10 regarde aussi les visites venues d'autres sites (Cloudflare Web Analytics, « Referrers »)
