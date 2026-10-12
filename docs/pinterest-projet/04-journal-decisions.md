@@ -696,7 +696,8 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - **Raisons données pour ne pas passer à 3 tout de suite** : Google n'a indexé que 2 pages sur 31 (section 59), et ajouter des pages ne l'aide pas à rattraper ce retard ; la qualité de sujets de santé exige de vérifier chaque source une par une ; les sujets doivent rester distincts pour ne pas se faire concurrence entre eux.
 - **Déclencheur `trig_01JLtsNwykWqEPkdkgeWcqDm`** renommé « Articles du lundi et du jeudi », à 14 h 53 (heure de Paris) ; premier passage le jeudi 15/10. Règle de sécurité : pas de publication si le sujet manque de sources fiables ou recoupe un article existant. La liste des sujets est complétée dès qu'il en reste moins de 6.
 - **Bilan prévu le 23/11** (`trig_01WHiHevBP78brEVLGovhUPt`) : passer à 3 par semaine si les nouvelles pages s'indexent bien. Rien ne change sans l'accord de l'utilisateur.
-- **En attente de l'utilisateur** : l'option B (orienter davantage d'épingles vers les articles plutôt que vers la page du guide sur systeme.io).
+- **Option B choisie par l'utilisateur (« B »)** : dans `pins.yml`, `PART_ARTICLES` passe de 0,6 à 1,0. Toute épingle qui a un champ `article` mène maintenant à l'article, et le guide reste proposé dans l'article. Testé avec le harnais : un historique de 20 liens d'articles sur 14 jours renvoie toujours l'article.
+- **Limite constatée** : seules 67 des 257 épingles à venir ont un article. Un assistant relie les autres aux articles qui traitent vraiment leur sujet ; ses propositions sont vérifiées avant d'être appliquées.
 - **Estimations données à l'utilisateur** (ordres de grandeur du métier, pas des mesures) :
   - avec 1 000 visites par jour : 300 à 900 inscrits par mois, soit 1 à 3 %, puis 3 à 27 ventes par mois, soit 1 à 3 % des inscrits ;
   - trajectoire : 10 à 50 visites par jour à 3 mois, 200 à 600 à 12 mois, 1 000 atteignable en 18 à 24 mois.

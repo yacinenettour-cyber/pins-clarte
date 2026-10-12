@@ -864,7 +864,9 @@ jobs:
           # 0,4 → 0,6 le 12/10/2026 (audit des impressions, accord de l'utilisateur) : 132 des 150 épingles
           # avec lien menaient à la même page de capture d'environ 30 mots, alors que Pinterest demande une
           # page « avec du contenu supplémentaire clairement lié à l'épingle » ; l'article garde le guide.
-          PART_ARTICLES = 0.6
+          # 0,6 → 1,0 le 12/10/2026 (option B choisie par l'utilisateur, objectif 1 000 visites par jour) :
+          # toute épingle reliée à un article mène à l'article ; le guide reste proposé dans l'article.
+          PART_ARTICLES = 1.0
 
 
           def article_du_pin(pin, guide, historique):
