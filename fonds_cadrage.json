@@ -2622,5 +2622,37 @@
   ],
   "x": 0.64,
   "source": "manuel"
+ },
+ "dedie-cuisine-fetes.jpg": {
+  "tete": [
+   0.18,
+   0.55
+  ],
+  "x": 0.53,
+  "source": "manuel"
+ },
+ "dedie-repas-famille.jpg": {
+  "tete": [
+   0.34,
+   0.78
+  ],
+  "x": 0.62,
+  "source": "manuel"
+ },
+ "dedie-charge-noel.jpg": {
+  "tete": [
+   0.21,
+   0.52
+  ],
+  "x": 0.52,
+  "source": "manuel"
+ },
+ "dedie-body-doubling.jpg": {
+  "tete": [
+   0.34,
+   0.76
+  ],
+  "x": 0.5,
+  "source": "manuel"
  }
 }

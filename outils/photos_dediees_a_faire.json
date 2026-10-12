@@ -1,5 +1,5 @@
 {
- "statut": "en cours : 8 faites le 08/10/2026, 6 le 09/10/2026 et 7 le 11/10/2026 (quota gratuit Hugging Face épuisé ensuite), « Bain de forêt » couvert par une photo Unsplash, 4 restantes",
+ "statut": "terminé le 12/10/2026 : 8 photos le 08/10, 6 le 09/10, 7 le 11/10 et 4 le 12/10 (quota gratuit Hugging Face), « Bain de forêt » couvert par une photo Unsplash",
  "consigne": "Générer chaque photo (832x1248 ou plus), l'enregistrer dans fonds/ sous le nom indiqué, la classer \"dedie\" dans fonds_themes.json, ajouter son cadrage (outils/cadrage_fonds.py + vérification à l'œil), puis ajouter le champ \"photo\" au pin correspondant dans pins.json et relancer le test de rendu.",
  "prefixe_prompt": "Realistic editorial lifestyle photo, vertical 2:3, soft natural light, calm warm atmosphere, shallow depth of field, professional quality, no text, no logo, no watermark. ",
  "photos": [
@@ -96,7 +96,8 @@
   {
    "titre": "Bain de forêt : 3 effets de 20 minutes sur ton stress",
    "fichier": "dedie-bain-foret.jpg",
-   "prompt": "A woman walking slowly alone on a path through a tall autumn forest, golden leaves, soft sunlight through trees."
+   "prompt": "A woman walking slowly alone on a path through a tall autumn forest, golden leaves, soft sunlight through trees.",
+   "statut": "couverte par une photo Unsplash (unsplash-hkh7KQrdk9Y.jpg)"
   },
   {
    "titre": "Vaisselle en pleine conscience : ta pause du soir",
@@ -137,22 +138,26 @@
   {
    "titre": "Cuisine des fêtes : 3 étirements pour tes épaules",
    "fichier": "dedie-cuisine-fetes.jpg",
-   "prompt": "A woman in a festive kitchen pausing to stretch her shoulders, pots and holiday dishes around her."
+   "prompt": "A woman in a festive kitchen pausing to stretch her shoulders, pots and holiday dishes around her.",
+   "statut": "faite le 12/10/2026"
   },
   {
    "titre": "Repas de famille tendu : 3 gestes pour garder ton calme",
    "fichier": "dedie-repas-famille.jpg",
-   "prompt": "A festive family dinner table seen from one guest's seat, candles and plates, a woman discreetly taking a deep breath."
+   "prompt": "A festive family dinner table seen from one guest's seat, candles and plates, a woman discreetly taking a deep breath.",
+   "statut": "faite le 12/10/2026"
   },
   {
    "titre": "Charge mentale de Noël : 4 tâches à partager tôt",
    "fichier": "dedie-charge-noel.jpg",
-   "prompt": "A woman at a table covered with gift lists, wrapping paper and a laptop, looking overwhelmed, Christmas tree blurred behind."
+   "prompt": "A woman at a table covered with gift lists, wrapping paper and a laptop, looking overwhelmed, Christmas tree blurred behind.",
+   "statut": "faite le 12/10/2026"
   },
   {
    "titre": "Body doubling : l'astuce pour enfin t'y mettre",
    "fichier": "dedie-body-doubling.jpg",
-   "prompt": "Two friends working side by side on laptops at a cafe table, focused, coffee cups, daylight."
+   "prompt": "Two friends working side by side on laptops at a cafe table, focused, coffee cups, daylight.",
+   "statut": "faite le 12/10/2026"
   }
  ]
 }
