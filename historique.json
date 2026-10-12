@@ -1697,5 +1697,16 @@
   "pin_id": "600175087890113919",
   "md5": "077db5a86448598991076f4e9321e16a",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-12T16:07+00:00",
+  "titre": "Massage des pieds le soir : 3 gestes pour dormir",
+  "image": "images/pin-20261012-160743.jpg",
+  "fond": "fonds/pexels-16740002.jpg",
+  "theme": "sommeil",
+  "design": "sombre",
+  "pin_id": "600175087890115537",
+  "md5": "869010b018be385ffca19994646339cb",
+  "lien": "article:routine-du-soir-anti-stress"
  }
 ]
