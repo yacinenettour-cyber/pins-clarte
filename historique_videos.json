@@ -147,5 +147,22 @@
    "fonds/fond-49.jpg",
    "fonds/fond-49.jpg"
   ]
+ },
+ {
+  "date": "2026-10-12T16:32+00:00",
+  "id": "procrastination-emotion",
+  "titre": "La procrastination n'est pas de la paresse : c'est une émotion à éviter",
+  "video": "videopins/videopin-20261012-163148.mp4",
+  "cover": "videopins/videopin-20261012-163148.jpg",
+  "theme": "procrastination",
+  "pin_id": "600175087890115864",
+  "photos": [
+   "fonds/fond-ia-procrastination-1.jpg",
+   "fonds/fond-ia-procrastination-1.jpg",
+   "fonds/fond-ia-procrastination-3.jpg",
+   "fonds/fond-ia-procrastination-3.jpg",
+   "fonds/fond-ia-procrastination-5.jpg",
+   "fonds/fond-ia-procrastination-5.jpg"
+  ]
  }
 ]
