@@ -79,7 +79,7 @@ Pour aider le cortisol à redescendre le soir et protéger ton sommeil, les gest
 | Te lever à heure fixe, même le week-end | L'horloge biologique règle le rythme du cortisol ; des horaires réguliers lui donnent des repères stables [1][7] | Inserm, Assurance maladie |
 | Éviter les grands décalages d'horaires | Un décalage brutal du sommeil bouleverse le rythme du cortisol [3] | Université de Chicago |
 | Prendre la lumière du jour le matin | La lumière recale l'horloge interne, qui rythme le cortisol [1] | Inserm |
-| Dernier café en début d'après-midi | 400 mg de caféine perturbent encore le sommeil pris 6 heures avant le coucher [6] | Hôpital Henry Ford, Détroit |
+| Dernier café en début d'après-midi ([café et stress](/alimentation-anti-stress/)) | 400 mg de caféine perturbent encore le sommeil pris 6 heures avant le coucher [6] | Hôpital Henry Ford, Détroit |
 | Couper les écrans une heure avant | La lumière des écrans retarde l'endormissement [1][7] | Inserm, Assurance maladie |
 | Respirer lentement au lit | Autour de 6 respirations par minute, l'activité du nerf vague, le « frein » du corps, augmente [9] | Université allemande du sport de Cologne |
 | Protéger la durée de ta nuit | Une seule nuit écourtée élève le cortisol du soir suivant [2] | Université de Chicago |

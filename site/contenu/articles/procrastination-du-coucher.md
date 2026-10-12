@@ -85,7 +85,7 @@ Commence par un ou deux gestes seulement, puis observe ce qui change sur une ou 
 
 Consulte ton médecin si tu mets longtemps à t'endormir même en te couchant plus tôt, si tu as peur de ne pas trouver le sommeil ou si la somnolence te gagne en journée. La procrastination du coucher n'est pas une maladie, mais parles-en à ton médecin si :
 
-- même en te couchant plus tôt, tu mets longtemps à t'endormir ou tu te réveilles la nuit, plus de trois fois par semaine depuis au moins trois mois : ce sont les repères de l'insomnie chronique selon l'Inserm [8] ;
+- même en te couchant plus tôt, tu mets longtemps à t'endormir ou tu [te réveilles la nuit](/reveil-4h-du-matin/), plus de trois fois par semaine depuis au moins trois mois : ce sont les repères de l'insomnie chronique selon l'Inserm [8] ;
 - tu retardes volontairement le coucher parce que tu as peur de ne pas trouver le sommeil, ce « retard stratégique » pouvant cacher une insomnie [2] ;
 - la somnolence te gagne en journée, surtout au volant [6] ;
 - le stress ou les pensées du soir s'accompagnent d'une anxiété ou d'une tristesse qui envahit aussi tes journées.

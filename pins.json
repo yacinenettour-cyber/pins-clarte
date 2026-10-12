@@ -1,5 +1,47 @@
 [
  {
+  "titre": "Cocktail anti-cortisol : ce que disent les preuves",
+  "texte_image": "Cocktail anti-cortisol : vrai ou faux ?",
+  "description": "Jus d'orange, eau de coco et une pincée de sel : le « cocktail anti-cortisol » circule sur les réseaux. Ce que l'on sait vraiment 👉 selon une endocrinologue de la Cleveland Clinic, aucune preuve ne montre qu'il fasse baisser le cortisol 👉 les compléments « anti-cortisol » ont peu de preuves et de vraies précautions 👉 le sommeil, la lumière du jour et l'activité douce restent les leviers les mieux étudiés. #cortisol #stress #santementale #bienetre #antistress #nutrition #fatigue #calme",
+  "points_image": [
+   "Aucune preuve qu'il fasse baisser le cortisol",
+   "Compléments : peu de preuves, de vraies précautions",
+   "Sommeil, lumière et mouvement restent les leviers"
+  ],
+  "theme": "cortisol",
+  "guide": "aucun",
+  "article": "baisser-son-cortisol-naturellement",
+  "description_article": "Jus d'orange, eau de coco et une pincée de sel : le « cocktail anti-cortisol » circule sur les réseaux. Ce que l'on sait vraiment 👉 selon une endocrinologue de la Cleveland Clinic, aucune preuve ne montre qu'il fasse baisser le cortisol 👉 les compléments « anti-cortisol » ont peu de preuves et de vraies précautions 👉 le sommeil, la lumière du jour et l'activité douce restent les leviers les mieux étudiés. #cortisol #stress #santementale #bienetre #antistress #nutrition #fatigue #calme"
+ },
+ {
+  "titre": "Burn-out : 3 dimensions pour repérer les signes",
+  "texte_image": "Burn-out : 3 dimensions à repérer",
+  "description": "Le burn-out ne se résume pas à une grosse fatigue. L'OMS le décrit comme un phénomène lié au travail, qui repose sur trois dimensions 👉 un épuisement profond 👉 une mise à distance du travail, parfois du cynisme 👉 le sentiment de ne plus être efficace. Ces signes s'installent souvent sans bruit. Si tu t'y reconnais, le médecin traitant et le médecin du travail sont les deux bons interlocuteurs. #fatiguementale #burnout #epuisement #stress #travail #santementale #bienetre #chargementale",
+  "points_image": [
+   "Un épuisement profond, physique et émotionnel",
+   "Une mise à distance du travail",
+   "Le sentiment de ne plus être efficace"
+  ],
+  "theme": "fatiguementale",
+  "guide": "aucun",
+  "article": "signes-du-burn-out",
+  "description_article": "Le burn-out ne se résume pas à une grosse fatigue. L'OMS le décrit comme un phénomène lié au travail, qui repose sur trois dimensions 👉 un épuisement profond 👉 une mise à distance du travail, parfois du cynisme 👉 le sentiment de ne plus être efficace. Ces signes s'installent souvent sans bruit. Si tu t'y reconnais, le médecin traitant et le médecin du travail sont les deux bons interlocuteurs. #fatiguementale #burnout #epuisement #stress #travail #santementale #bienetre #chargementale"
+ },
+ {
+  "titre": "Nuit trop courte : +37 % de cortisol le lendemain",
+  "texte_image": "Nuit courte : le cortisol grimpe le lendemain",
+  "description": "Le sommeil et le cortisol s'influencent dans les deux sens. Dans une étude de l'Université de Chicago, une seule nuit écourtée a suffi à faire monter le cortisol du soir suivant de 37 %. Ce qui aide le plus à recaler les choses 👉 un lever à heure fixe, même après une mauvaise nuit 👉 la lumière du jour le matin 👉 un café pris tôt et une soirée qui ralentit vraiment. #sommeil #cortisol #stress #nuit #fatigue #rythmecircadien #mieuxdormir #bienetre",
+  "points_image": [
+   "Une seule nuit écourtée suffit",
+   "Le cortisol du soir suivant monte de 37 %",
+   "Lever fixe et lumière du matin aident à recaler"
+  ],
+  "theme": "sommeil",
+  "guide": "aucun",
+  "article": "cortisol-et-sommeil",
+  "description_article": "Le sommeil et le cortisol s'influencent dans les deux sens. Dans une étude de l'Université de Chicago, une seule nuit écourtée a suffi à faire monter le cortisol du soir suivant de 37 %. Ce qui aide le plus à recaler les choses 👉 un lever à heure fixe, même après une mauvaise nuit 👉 la lumière du jour le matin 👉 un café pris tôt et une soirée qui ralentit vraiment. #sommeil #cortisol #stress #nuit #fatigue #rythmecircadien #mieuxdormir #bienetre"
+ },
+ {
   "titre": "Sommeil et heure d'hiver : 4 réglages pour t'adapter",
   "texte_image": "Heure d'hiver : 4 réglages pour bien dormir",
   "points_image": [

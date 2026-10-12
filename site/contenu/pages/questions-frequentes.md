@@ -40,7 +40,7 @@ Non. Le GAD-7 est un questionnaire de repérage : seul un professionnel peut pos
 
 ### Le stress peut-il empêcher de dormir ?
 
-Oui, et l'inverse est vrai aussi : dans une étude de l'Université de Chicago, une nuit écourtée a fait monter le cortisol du lendemain soir de 37 % [4]. Les articles du thème [mieux dormir](/mieux-dormir/) expliquent comment casser ce cercle.
+Oui, et l'inverse est vrai aussi : dans une étude de l'Université de Chicago, une nuit écourtée a fait monter le cortisol du lendemain soir de 37 % [4]. Le mécanisme est détaillé dans l'article [cortisol et sommeil](/cortisol-et-sommeil/), et les articles du thème [mieux dormir](/mieux-dormir/) expliquent comment casser ce cercle.
 
 ## Les outils gratuits
 

@@ -32,7 +32,7 @@ Technique contre l'insomnie qui consiste à ne rester au lit que pour dormir : p
 
 ## Cortisol
 
-Hormone de la famille des glucocorticoïdes, fabriquée par les glandes surrénales sous l'impulsion du cerveau ; son taux est beaucoup plus élevé tôt le matin que plus tard dans la journée [8]. Voir [le cortisol, hormone du stress](/cortisol-hormone-du-stress/).
+Hormone de la famille des glucocorticoïdes, fabriquée par les glandes surrénales sous l'impulsion du cerveau ; son taux est beaucoup plus élevé tôt le matin que plus tard dans la journée [8]. Voir [le cortisol, hormone du stress](/cortisol-hormone-du-stress/) et, pour l'effet du café, [l'alimentation anti-stress](/alimentation-anti-stress/).
 
 ## GAD-7
 
@@ -40,7 +40,7 @@ Questionnaire de 7 questions (*Generalized Anxiety Disorder 7*) qui évalue la f
 
 ## Horloge biologique
 
-L'horloge interne qui rythme la journée, et notamment la production de cortisol : la lumière du jour la recale, alors que la lumière tardive, en particulier celle des écrans, retarde l'endormissement [9]. Voir [la routine du soir](/routine-du-soir-anti-stress/).
+L'horloge interne qui rythme la journée, et notamment la production de cortisol : la lumière du jour la recale, alors que la lumière tardive, en particulier celle des écrans, retarde l'endormissement [9]. Voir [la routine du soir](/routine-du-soir-anti-stress/) et [cortisol et sommeil](/cortisol-et-sommeil/).
 
 ## Insomnie chronique
 
