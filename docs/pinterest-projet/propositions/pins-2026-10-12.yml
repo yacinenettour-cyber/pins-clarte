@@ -1,0 +1,1006 @@
+name: Pins Pinterest
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Mode (cron-job.org utilise toujours 'publier' : le declenchement automatique n'envoie pas d'inputs, donc ne passe jamais en mode test)"
+        type: choice
+        options: [publier, test]
+        default: publier
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pins
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pillow requests
+
+      - name: Créer et publier un pin
+        env:
+          TEST: ${{ github.event.inputs.mode == 'test' && '1' || '' }}
+          COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+          LIEN_PAGE: ${{ secrets.LIEN_PAGE }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          git config user.name "robot-pins"
+          git config user.email "robot-pins@users.noreply.github.com"
+          python - <<'EOF'
+          import os, json, random, re, time, datetime, subprocess, sys, base64, io, unicodedata
+          import requests
+          from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageStat
+
+          MARQUE = "Clarté Mentale | Stress & Énergie"
+          TEST = os.environ.get("TEST") == "1"
+
+          HIST = "historique.json"
+          historique = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
+
+          # Rythme (12/10/2026, audit des impressions, accord de l'utilisateur) : au moins 3 h 50 entre
+          # deux épingles, soit environ une épingle sur deux déclenchements de cron-job.org (toutes les
+          # 2 h) au lieu d'une à chaque fois (~10 par jour). Pinterest privilégie la qualité à la quantité
+          # et limite « beaucoup d'épingles depuis le même site en peu de temps » ; le stock de pins et
+          # de photos inédites dure aussi deux fois plus longtemps. Le mode test n'est pas concerné.
+          ECART_MIN_HEURES = 3.83
+          if historique and not TEST:
+              derniere = max(datetime.datetime.fromisoformat(h["date"]) for h in historique if h.get("date"))
+              ecart = (datetime.datetime.now(datetime.timezone.utc) - derniere).total_seconds() / 3600
+              if ecart < ECART_MIN_HEURES:
+                  print(f"Dernière épingle il y a {ecart:.1f} h (minimum {ECART_MIN_HEURES} h) : pas de publication cette fois.")
+                  sys.exit(0)
+
+
+          def telecharger_police(nom, url, secours):
+              try:
+                  r = requests.get(url, timeout=30)
+                  r.raise_for_status()
+                  open(nom, "wb").write(r.content)
+                  return nom
+              except Exception:
+                  return secours if os.path.exists(secours) else None
+
+
+          def charger_police(chemin, taille):
+              if chemin:
+                  return ImageFont.truetype(chemin, taille)
+              return ImageFont.load_default(size=taille)
+
+
+          def couper_lignes(dessin, texte, police, largeur_max):
+              lignes, ligne = [], ""
+              for mot in re.split(r"(?<!«)\s+(?![?!:;»])", texte.strip()):
+                  essai = (ligne + " " + mot).strip()
+                  if dessin.textlength(essai, font=police) <= largeur_max:
+                      ligne = essai
+                  else:
+                      if ligne:
+                          lignes.append(ligne)
+                      ligne = mot
+              if ligne:
+                  lignes.append(ligne)
+              return lignes
+
+
+          def recadrer(img, L, H):
+              r = max(L / img.width, H / img.height)
+              img = img.resize((round(img.width * r), round(img.height * r)), Image.LANCZOS)
+              x, y = (img.width - L) // 2, (img.height - H) // 2
+              return img.crop((x, y, x + L, y + H))
+
+
+          def ajuster_sans_rogner(img, L, H, fond=(10, 10, 14)):
+              r = min(L / img.width, H / img.height)
+              img = img.resize((round(img.width * r), round(img.height * r)), Image.LANCZOS)
+              toile = Image.new("RGB", (L, H), fond)
+              x, y = (L - img.width) // 2, (H - img.height) // 2
+              toile.paste(img, (x, y))
+              return toile
+
+
+          THEME_ALIASES = {
+              "sommeil": "sommeil", "insomnie": "sommeil", "reveilnocturne": "sommeil",
+              "reveil": "sommeil", "sieste": "sommeil", "routinedusoir": "sommeil",
+              "dimanchesoir": "sommeil", "rythmecircadien": "sommeil", "lumiere": "sommeil",
+              "ecrans": "sommeil", "ruminations": "sommeil",
+              "cortisol": "systemenerveux", "systemenerveux": "systemenerveux",
+              "respiration": "systemenerveux", "coherencecardiaque": "systemenerveux",
+              "anxiete": "systemenerveux", "detente": "systemenerveux",
+              "fatiguementale": "fatiguementale", "chargementale": "fatiguementale",
+              "fatigue": "fatiguementale", "fatiguechronique": "fatiguementale",
+              "alimentation": "alimentation", "cafeine": "alimentation",
+              "alcool": "alimentation", "digestion": "alimentation",
+              "procrastination": "procrastination",
+              "somatisation": "somatisation", "douleurs": "somatisation",
+              "energie": "energie", "recuperation": "energie",
+              "blocagemental": "blocagemental", "clarte": "blocagemental",
+              "ecriture": "blocagemental",
+          }
+
+
+          def deviner_theme(description):
+              tags = re.findall(r"#(\w+)", description)
+              if not tags:
+                  return "systemenerveux"
+              premier = tags[0].lower()
+              if premier == "stress" and "travail" in [t.lower() for t in tags[:3]]:
+                  return "posturesantistress"
+              return THEME_ALIASES.get(premier, "systemenerveux")
+
+
+          PROMPTS_THEME_IA = {
+              "sommeil": "Photographie lifestyle editoriale realiste : une femme adulte detendue en tenue confortable dans une chambre cosy le soir, lumiere chaude tamisee (lampe de chevet, bougie), teintes bleu nuit profond en arriere-plan, ambiance calme et apaisante. Composition verticale 2:3, bas de l'image sombre et sobre (peu de details) pour laisser la place a du texte en surimpression, haut de l'image plus riche visuellement. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "systemenerveux": "Photographie lifestyle editoriale realiste : une personne adulte en respiration profonde ou moment de calme, main posee sur la poitrine, lumiere douce naturelle doree, interieur chaleureux ou terrasse avec vue degagee, ambiance sereine. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "fatiguementale": "Photographie lifestyle editoriale realiste : une personne adulte visiblement epuisee mentalement, tete posee sur la main, regard vague, cadre domestique ou bureau, lumiere naturelle douce en fin de journee, teintes chaudes. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "alimentation": "Photographie culinaire lifestyle editoriale realiste : un bol de nourriture saine et coloree (legumes, fruits, super-aliments) prepare ou tenu par une personne adulte, cuisine lumineuse en bois clair, lumiere naturelle douce, ambiance chaleureuse. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "procrastination": "Photographie lifestyle editoriale realiste : une personne adulte distraite par son telephone en soiree, bureau encombre de notes et papiers, lumiere chaude tamisee, ambiance legerement desordonnee mais cosy. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "somatisation": "Photographie lifestyle editoriale realiste : une personne adulte ressentant une tension physique (nuque, epaules ou ventre), main posee sur la zone concernee, expression legerement crispee, interieur lumineux et epure, lumiere naturelle douce. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "blocagemental": "Photographie lifestyle editoriale realiste : une personne adulte debordee devant un ordinateur portable, papiers froisses autour, tete dans les mains, lumiere chaude en soiree, ambiance de surcharge mentale mais esthetique. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "posturesantistress": "Photographie lifestyle editoriale realiste : une personne adulte en pause active au bureau, etirement doux du cou ou des epaules, bureau lumineux avec plantes vertes, lumiere naturelle du jour, ambiance professionnelle detendue. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+              "energie": "Photographie lifestyle editoriale realiste : une personne adulte pleine d'energie et souriante, en exterieur au lever ou coucher du soleil, marche ou etirement joyeux, lumiere doree chaleureuse, paysage nature ou vue degagee. Composition verticale 2:3, bas de l'image sobre pour texte en surimpression, haut plus riche. Photo professionnelle haute qualite, aucun texte ni logo dans l'image.",
+          }
+
+
+          def generer_fond_ia(theme, cle_api):
+              prompt = PROMPTS_THEME_IA.get(theme, PROMPTS_THEME_IA["systemenerveux"])
+              qualite = os.environ.get("OPENAI_IMAGE_QUALITY", "medium")
+              r = requests.post(
+                  "https://api.openai.com/v1/images/generations",
+                  headers={"Authorization": f"Bearer {cle_api}"},
+                  json={"model": "gpt-image-1.5", "prompt": prompt, "size": "1024x1536", "quality": qualite},
+                  timeout=120,
+              )
+              r.raise_for_status()
+              donnee = r.json()["data"][0]
+              if donnee.get("b64_json"):
+                  image_brute = base64.b64decode(donnee["b64_json"])
+              else:
+                  image_brute = requests.get(donnee["url"], timeout=60).content
+              chemin = "/tmp/fond_ia_" + theme + ".jpg"
+              Image.open(io.BytesIO(image_brute)).convert("RGB").save(chemin, "JPEG", quality=92)
+              return chemin
+
+
+          NUIT = (12, 18, 36)
+          TEXTE_BANDEAU = "GUIDE GRATUIT · lien dans l'épingle"
+          # Pins sans lien (07/10/2026) : invitation à enregistrer, l'enregistrement étant ce
+          # qui fait circuler un pin sur Pinterest.
+          TEXTE_GARDER = "À GARDER · enregistre l'épingle"
+          # Carte « guide » des pins avec lien (07/10/2026) : maquette du guide + son vrai titre et
+          # son vrai contenu, pour montrer qu'il y a quelque chose à recevoir derrière le lien.
+          GUIDE_LIGNES = ("GUIDE GRATUIT · lien dans l'épingle", "« Quand le cerveau refuse de dormir » :",
+                          "routine anti-rumination + 30 jours d'exercices")
+          HAUT_CARTE_GUIDE = 112
+          # Lignes de la carte du pin en cours (changées plus bas quand le pin mène au plan cortisol).
+          LIGNES_CARTE = GUIDE_LIGNES
+
+
+          def dessiner_bandeau_guide(d, L, y, fond_couleur, texte_couleur, police_grasse, texte=TEXTE_BANDEAU):
+              # Pastille d'appel sur l'image (29/09/2026) ; depuis le 07/10, sert aux pins sans lien
+              # (TEXTE_GARDER), les pins avec lien ayant la carte guide.
+              police = charger_police(police_grasse, 30)
+              w = d.textlength(texte, font=police)
+              x0 = (L - w) / 2 - 30
+              d.rounded_rectangle([x0, y, x0 + w + 60, y + 54], radius=27, fill=fond_couleur)
+              d.text((x0 + 30, y + 10), texte, font=police, fill=texte_couleur)
+              return y + 54
+
+
+          def dessiner_carte_guide(img, y, fond_carte, texte_couleur, police_grasse, police_normale, marge=70):
+              # Carte en bas de l'image : couverture du guide dessinée (nuit, lune, lignes de texte),
+              # légèrement inclinée avec ombre, et trois lignes qui disent ce qu'on reçoit.
+              L, h = img.width, HAUT_CARTE_GUIDE
+              d = ImageDraw.Draw(img)
+              d.rounded_rectangle([marge, y, L - marge, y + h], radius=28, fill=fond_carte)
+              cw, ch = 72, 96
+              couv = Image.new("RGBA", (cw + 16, ch + 16), (0, 0, 0, 0))
+              dc = ImageDraw.Draw(couv)
+              dc.rounded_rectangle([10, 12, cw + 10, ch + 12], radius=6, fill=(0, 0, 0, 90))
+              dc.rounded_rectangle([4, 4, cw + 4, ch + 4], radius=6, fill=(18, 26, 52, 255), outline=(236, 196, 120, 255), width=3)
+              dc.ellipse([cw - 30, 12, cw - 8, 34], fill=(236, 196, 120, 255))
+              dc.ellipse([cw - 25, 8, cw - 3, 30], fill=(18, 26, 52, 255))
+              for i, lg in enumerate((0.72, 0.55, 0.64)):
+                  yy = 50 + i * 13
+                  dc.rounded_rectangle([14, yy, 14 + int((cw - 20) * lg), yy + 6], radius=3, fill=(232, 235, 245, 255))
+              couv = couv.rotate(6, resample=Image.BICUBIC, expand=True)
+              img.paste(couv, (marge + 20, int(y + (h - couv.height) / 2)), couv)
+              x = marge + 20 + couv.width + 18
+              largeur = L - marge - 22 - x
+              tailles = [28, 24, 24]
+              while True:
+                  polices = [charger_police(police_grasse, tailles[0])] + [charger_police(police_normale, t) for t in tailles[1:]]
+                  if all(d.textlength(t, font=p) <= largeur for t, p in zip(LIGNES_CARTE, polices)) or tailles[0] <= 20:
+                      break
+                  tailles = [t - 1 for t in tailles]
+              hauteurs = [int(t * 1.25) for t in tailles]
+              yt = y + (h - sum(hauteurs)) / 2 - 2
+              for t, p, hl in zip(LIGNES_CARTE, polices, hauteurs):
+                  d.text((x, yt), t, font=p, fill=texte_couleur)
+                  yt += hl
+              return y + h
+
+
+          def _photo_haut_sombre(img, fond, h_photo, fondu=180):
+              # Photo en haut, recadrée sur sa zone la plus nette, avec un fondu vers le
+              # bandeau sombre : le texte est toujours posé sous la photo, jamais dessus.
+              L = img.width
+              photo = _recadrer_net(Image.open(fond).convert("RGB"), L, h_photo, os.path.basename(fond))
+              masque = Image.new("L", (1, h_photo), 0)
+              for y in range(max(0, h_photo - fondu), h_photo):
+                  masque.putpixel((0, y), int(255 * (y - (h_photo - fondu)) / fondu))
+              photo = Image.composite(Image.new("RGB", (L, h_photo), NUIT), photo, masque.resize((L, h_photo)))
+              img.paste(photo, (0, 0))
+
+
+          def dessiner_image(texte_image, chemin_sortie, police_grasse, police_normale, fond, avec_lien=False):
+              L, H = 1000, 1500
+              img = Image.new("RGB", (L, H), NUIT)
+              d = ImageDraw.Draw(img)
+              marge = 85
+              largeur = L - 2 * marge
+              taille = 104
+              while taille > 52:
+                  police = charger_police(police_grasse, taille)
+                  lignes = couper_lignes(d, texte_image, police, largeur)
+                  hauteur_ligne = int(taille * 1.22)
+                  if len(lignes) <= 5 and hauteur_ligne * len(lignes) <= 620:
+                      break
+                  taille -= 6
+              bloc = hauteur_ligne * len(lignes)
+              # V1 (aucun élément ajouté sur l'image) : ni carte guide/article ni pastille « À GARDER ».
+              # Le texte descend jusqu'à 1285 px (valeur des pins sans lien avant le 29/09/2026) :
+              # la photo du haut récupère la place (h_photo = haut_texte - 60).
+              haut_texte = 1285 - bloc
+              h_photo = haut_texte - 60 if fond else 0
+              if h_photo >= 300:
+                  _photo_haut_sombre(img, fond, h_photo)
+              else:
+                  h_photo = 0
+                  haut, bas = (22, 30, 58), (58, 70, 120)
+                  for y in range(H):
+                      t = y / H
+                      d.line([(0, y), (L, y)], fill=tuple(int(haut[i] + (bas[i] - haut[i]) * t) for i in range(3)))
+
+              y = haut_texte
+              for ligne in lignes:
+                  w = d.textlength(ligne, font=police)
+                  x = (L - w) / 2
+                  d.text((x + 3, y + 3), ligne, font=police, fill=(8, 12, 26))
+                  d.text((x, y), ligne, font=police, fill=(255, 255, 255))
+                  y += hauteur_ligne
+              d.line([(L / 2 - 70, y + 34), (L / 2 + 70, y + 34)], fill=(236, 230, 205), width=5)
+              police_pied = charger_police(police_normale, 34)
+              w = d.textlength(MARQUE, font=police_pied)
+              d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
+              marque_haut = d.textbbox(((L - w) / 2, H - 92), MARQUE, font=police_pied)[1]
+              img.save(chemin_sortie, "JPEG", quality=88, optimize=True, progressive=True)
+              return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 39,
+                      "pied_haut": marque_haut}
+
+
+          STYLES_MARQUEUR = ["numero", "coche", "fleche", "puce"]
+
+
+          def dessiner_marqueur(d, style, x_centre, y_centre, rayon, num, couleur_accent, police_num):
+              # 4 styles de puce, tous dessines en formes PIL (jamais un glyphe de
+              # police pour la coche/fleche : couverture Unicode non garantie selon
+              # la police chargee, notamment le repli DejaVu).
+              if style == "coche":
+                  d.ellipse([x_centre - rayon, y_centre - rayon, x_centre + rayon, y_centre + rayon], fill=couleur_accent)
+                  d.line([(x_centre - rayon * 0.45, y_centre + rayon * 0.05),
+                          (x_centre - rayon * 0.1, y_centre + rayon * 0.4),
+                          (x_centre + rayon * 0.5, y_centre - rayon * 0.35)],
+                         fill=(20, 20, 30), width=6, joint="curve")
+              elif style == "fleche":
+                  largeur_corps, hauteur_corps, pointe = rayon * 0.9, rayon * 0.5, rayon * 0.7
+                  pts = [
+                      (x_centre - largeur_corps, y_centre - hauteur_corps / 2),
+                      (x_centre, y_centre - hauteur_corps / 2),
+                      (x_centre, y_centre - rayon * 0.55),
+                      (x_centre + pointe, y_centre),
+                      (x_centre, y_centre + rayon * 0.55),
+                      (x_centre, y_centre + hauteur_corps / 2),
+                      (x_centre - largeur_corps, y_centre + hauteur_corps / 2),
+                  ]
+                  d.polygon(pts, fill=couleur_accent)
+              elif style == "puce":
+                  r2 = rayon * 0.55
+                  d.ellipse([x_centre - r2, y_centre - r2, x_centre + r2, y_centre + r2], fill=couleur_accent)
+              else:  # "numero"
+                  d.ellipse([x_centre - rayon, y_centre - rayon, x_centre + rayon, y_centre + rayon], fill=couleur_accent)
+                  t = str(num)
+                  w = d.textlength(t, font=police_num)
+                  d.text((x_centre - w / 2, y_centre - rayon + 4), t, font=police_num, fill=(20, 20, 30))
+
+
+          def dessiner_infographie(titre_image, points, chemin_sortie, police_grasse, police_normale, fond, style=None, avec_lien=False):
+              # Variante "infographie" sombre : titre + liste de 2-4 points dans un bandeau
+              # sombre sous la photo (jamais de texte sur la photo). Le style de puce varie.
+              style = style or random.choice(STYLES_MARQUEUR)
+              L, H = 1000, 1500
+              img = Image.new("RGB", (L, H), NUIT)
+              d = ImageDraw.Draw(img)
+              marge = 90
+              largeur = L - 2 * marge
+              rayon = 26
+              x_num_centre = marge + rayon
+              x_texte = marge + 2 * rayon + 22
+              espace_entre_points, espace_titre_points = 22, 46
+              # V1 : plus d'élément en bas, le contenu descend jusqu'à 1295 px (comme avant le 29/09).
+              bas_contenu, haut_min = 1295, 290
+
+              # Réduit titre puis points jusqu'à ce que tout tienne au-dessus du pied de page.
+              for taille_titre, taille_point in [(78, 42), (70, 40), (64, 38), (58, 36), (54, 34), (50, 32), (48, 30)]:
+                  police_titre = charger_police(police_grasse, taille_titre)
+                  lignes_titre = couper_lignes(d, titre_image, police_titre, largeur)
+                  hauteur_ligne_titre = int(taille_titre * 1.2)
+                  police_point = charger_police(police_normale, taille_point)
+                  police_num = charger_police(police_grasse, taille_point)
+                  lignes_par_point = [couper_lignes(d, p, police_point, largeur - 70) for p in points]
+                  hauteur_ligne_point = int(taille_point * 1.32)
+                  hauteur_points = sum(len(lp) * hauteur_ligne_point for lp in lignes_par_point) \
+                      + espace_entre_points * (len(points) - 1)
+                  hauteur_totale = hauteur_ligne_titre * len(lignes_titre) + espace_titre_points + hauteur_points
+                  if len(lignes_titre) <= 3 and bas_contenu - hauteur_totale >= haut_min:
+                      break
+
+              haut_texte = max(bas_contenu - hauteur_totale, haut_min)
+              h_photo = haut_texte - 50 if fond else 0
+              if h_photo >= 250:
+                  _photo_haut_sombre(img, fond, h_photo)
+              else:
+                  h_photo = 0
+
+              y = haut_texte
+              for ligne in lignes_titre:
+                  w = d.textlength(ligne, font=police_titre)
+                  x = (L - w) / 2
+                  d.text((x + 3, y + 3), ligne, font=police_titre, fill=(8, 12, 26))
+                  d.text((x, y), ligne, font=police_titre, fill=(255, 255, 255))
+                  y += hauteur_ligne_titre
+              y += espace_titre_points
+
+              couleur_accent = (236, 196, 120)
+              for i, lp in enumerate(lignes_par_point, start=1):
+                  y_centre_cercle = y + hauteur_ligne_point / 2 - 6
+                  dessiner_marqueur(d, style, x_num_centre, y_centre_cercle, rayon, i, couleur_accent, police_num)
+                  for ligne in lp:
+                      d.text((x_texte + 2, y + 2), ligne, font=police_point, fill=(8, 12, 26))
+                      d.text((x_texte, y), ligne, font=police_point, fill=(255, 255, 255))
+                      y += hauteur_ligne_point
+                  y += espace_entre_points
+
+              d.line([(L / 2 - 70, y + 10), (L / 2 + 70, y + 10)], fill=(236, 230, 205), width=5)
+              police_pied = charger_police(police_normale, 34)
+              w = d.textlength(MARQUE, font=police_pied)
+              d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
+              marque_haut = d.textbbox(((L - w) / 2, H - 92), MARQUE, font=police_pied)[1]
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+              return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 15,
+                      "pied_haut": marque_haut}
+
+
+          def git(*args):
+              return subprocess.run(["git", *args], check=True, capture_output=True, text=True).stdout.strip()
+
+
+          CREME, ENCRE, CARTE, OMBRE = (247, 243, 236), (31, 41, 64), (255, 255, 255), (228, 221, 209)
+          ACCENTS = {
+              "sommeil": (72, 88, 158), "systemenerveux": (74, 132, 112), "fatiguementale": (190, 106, 78),
+              "alimentation": (112, 140, 62), "procrastination": (214, 106, 84), "somatisation": (48, 128, 140),
+              "blocagemental": (122, 84, 148), "posturesantistress": (62, 118, 170), "energie": (200, 138, 40),
+          }
+          LIBELLES = {
+              "sommeil": "Sommeil", "systemenerveux": "Système nerveux", "fatiguementale": "Fatigue mentale",
+              "alimentation": "Alimentation & stress", "procrastination": "Procrastination",
+              "somatisation": "Signaux du corps", "blocagemental": "Clarté mentale",
+              "posturesantistress": "Anti-stress au travail", "energie": "Énergie",
+          }
+
+
+          def _etiquette_et_titre(d, theme, titre, police_grasse, marge, largeur, tailles, max_lignes):
+              accent = ACCENTS.get(theme, ACCENTS["systemenerveux"])
+              police_etq = charger_police(police_grasse, 26)
+              etq = LIBELLES.get(theme, "Bien-être").upper()
+              w = d.textlength(etq, font=police_etq)
+              clair = tuple(int(c + (255 - c) * 0.82) for c in accent)
+              d.rounded_rectangle([marge, 70, marge + w + 44, 70 + 50], radius=25, fill=clair)
+              d.text((marge + 22, 70 + 9), etq, font=police_etq, fill=accent)
+              y = 70 + 50 + 38
+              taille = tailles[0]
+              while taille > tailles[1]:
+                  police = charger_police(police_grasse, taille)
+                  lignes = couper_lignes(d, titre, police, largeur)
+                  if len(lignes) <= max_lignes:
+                      break
+                  taille -= 4
+              hl = int(taille * 1.16)
+              for ligne in lignes:
+                  d.text((marge, y), ligne, font=police, fill=ENCRE)
+                  y += hl
+              y += 22
+              d.rounded_rectangle([marge, y, marge + 120, y + 9], radius=5, fill=accent)
+              return y + 9, accent
+
+
+          # Position de la tête du sujet sur chaque photo de fonds/ (fonds_cadrage.json, écrit par
+          # outils/cadrage_fonds.py et vérifié à l'œil) : sans elle, la bande « la plus nette »
+          # tombait souvent sur un pull, des mains ou un bureau et coupait la tête (30/09/2026).
+          CADRAGE = json.load(open("fonds_cadrage.json", encoding="utf-8")) if os.path.exists("fonds_cadrage.json") else {}
+
+
+          def _recadrer_net(source, L, H, nom=None):
+              # Cadre sur la tête du sujet si elle est connue ; sinon garde la bande la plus nette
+              # (le sujet) plutôt que le centre, souvent flou sur les photos lifestyle.
+              r = max(L / source.width, H / source.height)
+              img = source.resize((round(source.width * r), round(source.height * r)), Image.LANCZOS)
+              x = (img.width - L) // 2
+              cadre = CADRAGE.get(nom) if nom else None
+              if cadre:
+                  x = int(min(max(0, cadre.get("x", 0.5) * img.width - L / 2), img.width - L))
+              if img.height == H:
+                  return img.crop((x, 0, x + L, H))
+              if cadre:
+                  t, b = cadre["tete"][0] * img.height, cadre["tete"][1] * img.height
+                  if b - t <= 0.8 * H:
+                      y = t - max(0.1 * H, 0.15 * (b - t))  # tête entière, un peu d'air au-dessus
+                  else:
+                      y = t + 0.53 * (b - t) - 0.4 * H  # gros plan : les yeux dans le haut du cadre
+                  y = int(min(max(0, y), img.height - H))
+                  return img.crop((x, y, x + L, y + H))
+              bords = img.convert("L").filter(ImageFilter.FIND_EDGES)
+              pas = max(1, (img.height - H) // 12)
+              meilleur_y = max(range(0, img.height - H + 1, pas),
+                               key=lambda y: ImageStat.Stat(bords.crop((x, y, x + L, y + H))).mean[0])
+              return img.crop((x, meilleur_y, x + L, meilleur_y + H))
+
+
+          def _photo_arrondie(img, fond, x0, y0, x1, y1, rayon=34):
+              photo = _recadrer_net(Image.open(fond).convert("RGB"), x1 - x0, y1 - y0, os.path.basename(fond))
+              masque = Image.new("L", (x1 - x0, y1 - y0), 0)
+              ImageDraw.Draw(masque).rounded_rectangle([0, 0, x1 - x0 - 1, y1 - y0 - 1], radius=rayon, fill=255)
+              img.paste(photo, (x0, y0), masque)
+
+
+          def _pied(d, L, H, police_normale):
+              police = charger_police(police_normale, 30)
+              w = d.textlength(MARQUE, font=police)
+              d.text(((L - w) / 2, H - 78), MARQUE, font=police, fill=(110, 116, 132))
+              # Haut réel du texte de la marque, pour le contrôle de chevauchement.
+              return d.textbbox(((L - w) / 2, H - 78), MARQUE, font=police)[1]
+
+
+          def _marqueur(d, style, xc, yc, r, num, accent, police_num):
+              d.ellipse([xc - r, yc - r, xc + r, yc + r], fill=accent)
+              if style == "numero":
+                  t = str(num)
+                  w = d.textlength(t, font=police_num)
+                  d.text((xc - w / 2, yc - r * 0.78), t, font=police_num, fill=(255, 255, 255))
+              else:
+                  d.line([(xc - r * 0.42, yc + r * 0.02), (xc - r * 0.1, yc + r * 0.36), (xc + r * 0.45, yc - r * 0.32)],
+                         fill=(255, 255, 255), width=7, joint="curve")
+
+
+          def dessiner_clair_infographie(titre, points, chemin_sortie, police_grasse, police_normale, fond, theme, avec_lien=False):
+              L, H, marge = 1000, 1500, 70
+              img = Image.new("RGB", (L, H), CREME)
+              d = ImageDraw.Draw(img)
+              style = "numero" if re.search(r"\d", titre) else "coche"
+              police_num = charger_police(police_grasse, 34)
+              # Photo d'au moins 300 px de haut (220 avant le 30/09/2026 : bande trop fine, visage coupé)
+              # V1 : photo jusqu'à 120 px du bas (comme les pins sans lien avant le 29/09/2026).
+              r, bas, min_photo = 30, H - 120, 300
+
+              def haut_titre(taille_titre):
+                  # Hauteur occupée par l'étiquette et le titre, mesurée sur une image de brouillon.
+                  brouillon = ImageDraw.Draw(Image.new("RGB", (L, H)))
+                  return _etiquette_et_titre(brouillon, theme, titre, police_grasse, marge, L - 2 * marge, (taille_titre, 52), 3)[0] + 44
+
+              def mise_en_page(taille_titre, taille_pt, pad, espace):
+                  y_haut = haut_titre(taille_titre)
+                  x_txt = marge + pad + 2 * r + 24
+                  police_pt = charger_police(police_normale, taille_pt)
+                  hl = int(taille_pt * 1.3)
+                  cartes = []
+                  for p in points:
+                      lignes = couper_lignes(d, p, police_pt, L - marge - pad - x_txt)
+                      cartes.append((lignes, max(2 * r, len(lignes) * hl) + 2 * pad))
+                  h_cartes = sum(h for _, h in cartes) + espace * (len(cartes) - 1)
+                  return taille_titre, taille_pt, pad, espace, x_txt, police_pt, hl, cartes, bas - y_haut - h_cartes
+
+              # La photo passe avant la taille du texte : on réduit d'abord le titre, puis le texte
+              # des étapes, les marges internes et les espacements tant qu'elle ne tient pas ; sans
+              # place même au plus petit, pas de photo (plus grand texte qui tient). Rien ne doit
+              # déborder sur le pied de page.
+              essais = [(tt, t, pad, esp) for t in (38, 36, 34, 32, 30, 28) for tt in (78, 70, 64)
+                        for pad, esp in ((26, 20), (20, 14))]
+              choix = None
+              if fond:
+                  choix = next((m for m in (mise_en_page(*e) for e in essais) if m[-1] - 40 >= min_photo), None)
+              if choix is None:
+                  choix = next((m for m in (mise_en_page(*e) for e in essais) if m[-1] >= 0), mise_en_page(*essais[-1]))
+              taille_titre, taille_pt, pad, espace, x_txt, police_pt, hl, cartes, reste = choix
+              y, accent = _etiquette_et_titre(d, theme, titre, police_grasse, marge, L - 2 * marge, (taille_titre, 52), 3)
+              y += 44
+              # V1 : plafond de la photo relevé de 430 à 520 px pour qu'elle occupe la place libérée
+              # (sinon un vide de ~80-110 px apparaît entre les cartes et la photo).
+              h_photo = min(reste - 40, 520) if fond else 0
+              if h_photo < min_photo:
+                  h_photo = 0
+              if not h_photo:
+                  y += max(0, reste // 2)
+              haut_cartes = y
+              for i, (lignes, h) in enumerate(cartes, start=1):
+                  d.rounded_rectangle([marge + 3, y + 6, L - marge + 3, y + h + 6], radius=26, fill=OMBRE)
+                  d.rounded_rectangle([marge, y, L - marge, y + h], radius=26, fill=CARTE)
+                  _marqueur(d, style, marge + pad + r, y + h / 2, r, i, accent, police_num)
+                  yt = y + (h - len(lignes) * hl) / 2 - 4
+                  for ligne in lignes:
+                      d.text((x_txt, yt), ligne, font=police_pt, fill=ENCRE)
+                      yt += hl
+                  y += h + espace
+              if h_photo:
+                  _photo_arrondie(img, fond, marge, bas - h_photo, L - marge, bas)
+              # V1 : aucun élément ajouté, seule la marque reste en pied de page.
+              marque_haut = _pied(d, L, H, police_normale)
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+              return {"texte_haut": 70, "texte_bas": y - espace + 6, "cartes_haut": haut_cartes,
+                      "photo_haut": bas - h_photo if h_photo else None, "photo_bas": bas if h_photo else None,
+                      "pied_haut": marque_haut,
+                      "taille_titre": taille_titre, "taille_texte": taille_pt}
+
+
+          def dessiner_clair_phrase(texte, chemin_sortie, police_grasse, police_normale, fond, theme, avec_lien=False):
+              L, H, marge = 1000, 1500, 70
+              img = Image.new("RGB", (L, H), CREME)
+              d = ImageDraw.Draw(img)
+              y, accent = _etiquette_et_titre(d, theme, texte, police_grasse, marge, L - 2 * marge, (92, 56), 5)
+              bas = H - 120  # V1 : la photo descend jusqu'à 120 px du bas
+              photo = bool(fond) and bas - (y + 50) >= 300
+              if photo:
+                  _photo_arrondie(img, fond, marge, y + 50, L - marge, bas)
+              # V1 : aucun élément ajouté, seule la marque reste en pied de page.
+              marque_haut = _pied(d, L, H, police_normale)
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+              return {"texte_haut": 70, "texte_bas": y, "photo_haut": y + 50 if photo else None,
+                      "photo_bas": bas if photo else None, "pied_haut": marque_haut}
+
+
+          # Expressions réellement recherchées sur Pinterest France (Pinterest Trends, 29/09/2026).
+          SUJETS_ALT = {
+              "sommeil": "sommeil et routine du soir pour mieux dormir",
+              "systemenerveux": "gestion du stress et système nerveux",
+              "fatiguementale": "fatigue mentale et charge mentale",
+              "alimentation": "alimentation anti-stress",
+              "procrastination": "procrastination et motivation",
+              "somatisation": "stress et tensions du corps",
+              "blocagemental": "clarté mentale et surcharge mentale",
+              "posturesantistress": "stress au travail",
+              "energie": "énergie et fatigue",
+          }
+
+
+          def texte_alternatif(pin, theme):
+              sujet = SUJETS_ALT.get(theme, "bien-être mental")
+              accroche = pin.get("texte_image") or pin["titre"]
+              if pin.get("points_image"):
+                  texte = f"Infographie {sujet} « {accroche} » : " + " ; ".join(pin["points_image"]) + "."
+              else:
+                  texte = f"Visuel {sujet} avec le message « {accroche} »."
+              return texte[:500]
+
+
+          def attendre_en_ligne(url, essais=18, pause=5):
+              for _ in range(essais):
+                  try:
+                      if requests.get(url, timeout=15).status_code == 200:
+                          return True
+                  except Exception:
+                      pass
+                  time.sleep(pause)
+              return False
+
+
+          police_grasse = telecharger_police("Poppins-Bold.ttf",
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
+          police_normale = telecharger_police("Poppins-Regular.ttf",
+              "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
+
+          # Themes sans rapport direct avec le contenu de la formation vendue sur LIEN_PAGE
+          # (qui ne couvre que le sommeil et les mecanismes du stress au sens large) :
+          # ces pins ne doivent pas rediriger vers la page de capture (pas de lien hors-sujet).
+          # energie et fatiguementale ajoutes le 28/09/2026 suite a un pin publie ("Le trou
+          # d'energie de 11h...") qui promettait a tort un contenu absent du guide.
+          THEMES_SANS_LIEN = {"alimentation", "procrastination", "energie", "fatiguementale"}
+
+          # 2e guide gratuit « Le plan anti-cortisol en 7 jours » (préparé le 07/10/2026, voir
+          # guides/page-systeme-io-cortisol.md). Page de capture créée le 07/10/2026 (tunnel
+          # systeme.io 7680510, PDF téléchargé sur la page de remerciement) et activée avec
+          # l'accord de l'utilisateur. Les thèmes ci-dessous et les pins marqués "guide": "cortisol"
+          # y mènent (carte et description dédiées) ; les pins marqués "guide": "aucun" restent
+          # sans lien. Vider l'adresse pour désactiver. Ne pas changer l'adresse de la page.
+          LIEN_GUIDE_CORTISOL = "https://lp.contactapaisement-mental.fr/63d489c7"
+          THEMES_GUIDE_CORTISOL = {"energie", "alimentation"}
+          LIGNES_CARTE_CORTISOL = ("PLAN GRATUIT · lien dans l'épingle", "« Le plan anti-cortisol en 7 jours » :",
+                                   "7 gestes simples + tableau de suivi")
+
+
+          # Articles du site www.contactapaisement-mental.fr (09/10/2026, accord de l'utilisateur : « des
+          # épingles doivent aussi amener vers des articles de mon site »). Un pin qui porte le champ "article"
+          # (adresse de l'article sans le domaine, associée à la main d'après le sujet du pin) mène à cet
+          # article : toujours s'il n'a pas de guide, sinon tant que les articles font moins de 40 % des pins
+          # avec lien des 14 derniers jours. Il prend alors "description_article" (son texte sans l'appel au
+          # guide, avec une fin propre à chaque pin) et une carte « ARTICLE COMPLET » sur l'image.
+          SITE_WEB = "https://www.contactapaisement-mental.fr"
+          ARTICLES_SITE = {
+              "ruminations-le-soir": "Ruminations le soir",
+              "reveil-4h-du-matin": "Réveil à 4 h du matin",
+              "routine-du-soir-anti-stress": "Routine du soir pour mieux dormir",
+              "procrastination-du-coucher": "Procrastination du coucher",
+              "cortisol-et-sommeil": "Cortisol et sommeil",
+              "cortisol-hormone-du-stress": "Cortisol, hormone du stress",
+              "baisser-son-cortisol-naturellement": "Baisser son cortisol naturellement",
+              "alimentation-anti-stress": "Alimentation anti-stress",
+              "nerf-vague": "Nerf vague",
+              "calmer-son-systeme-nerveux": "Calmer son système nerveux",
+              "charge-mentale": "Charge mentale",
+              "signes-du-burn-out": "Signes du burn-out",
+              "angoisse-le-soir": "Angoisse le soir et la nuit",
+          }
+          # 0,4 → 0,6 le 12/10/2026 (audit des impressions, accord de l'utilisateur) : 132 des 150 épingles
+          # avec lien menaient à la même page de capture d'environ 30 mots, alors que Pinterest demande une
+          # page « avec du contenu supplémentaire clairement lié à l'épingle » ; l'article garde le guide.
+          PART_ARTICLES = 0.6
+
+
+          def article_du_pin(pin, guide, historique):
+              slug = pin.get("article")
+              if slug not in ARTICLES_SITE or not pin.get("description_article"):
+                  return None
+              if guide is None:
+                  return slug
+              debut = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=14)).isoformat(timespec="minutes")
+              liens = [h["lien"] for h in historique if h.get("lien") and h.get("date", "") >= debut]
+              vers_articles = sum(1 for l in liens if l.startswith("article:"))
+              return slug if vers_articles < PART_ARTICLES * (len(liens) + 1) else None
+
+
+          def lignes_carte_article(slug):
+              return ("ARTICLE COMPLET · lien dans l'épingle", f"« {ARTICLES_SITE[slug]} »",
+                      "gratuit, avec ses sources scientifiques")
+
+
+          def lien_du_pin(guide, article, theme, titre):
+              if article:
+                  lien = f"{SITE_WEB}/{article}/"
+              else:
+                  lien = {"sommeil": os.environ["LIEN_PAGE"], "cortisol": LIEN_GUIDE_CORTISOL}.get(guide, "") if guide else ""
+              # Suivi par thème et par pin (systeme.io pour les guides, statistiques du site pour les articles).
+              if lien and "utm_source=" not in lien:
+                  # utm_content propre à chaque pin (07/10/2026) : chaque épingle pointe vers une adresse
+                  # distincte au lieu de ~7 épingles par jour vers exactement la même.
+                  slug = "-".join(re.findall(r"[a-z0-9]+", unicodedata.normalize("NFD", titre.lower()).encode("ascii", "ignore").decode()))[:60]
+                  lien += ("&" if "?" in lien else "?") + f"utm_source=pinterest&utm_medium=organic&utm_campaign={theme}&utm_content={slug}"
+              return lien
+
+
+          def guide_du_pin(pin, theme):
+              # "sommeil" (LIEN_PAGE), "cortisol" (LIEN_GUIDE_CORTISOL) ou None (pas de lien).
+              choix = pin.get("guide")
+              if choix == "aucun":
+                  return None
+              if LIEN_GUIDE_CORTISOL and (choix == "cortisol" or theme in THEMES_GUIDE_CORTISOL):
+                  return "cortisol"
+              return None if theme in THEMES_SANS_LIEN else "sommeil"
+
+
+          def theme_avec_lien(theme):
+              return theme not in THEMES_SANS_LIEN or bool(LIEN_GUIDE_CORTISOL and theme in THEMES_GUIDE_CORTISOL)
+
+
+          # Poids de rotation (08/10/2026, accord de l'utilisateur) : d'après les statistiques
+          # Pinterest réelles du 24/09 au 07/10, 14 des 15 clics sortants viennent d'épingles sur
+          # la nuit, le soir et les ruminations, dont 12 sur le sommeil (guide « Quand le cerveau
+          # refuse de dormir ») : le thème sommeil passe trois fois plus souvent qu'un autre thème
+          # avec lien.
+          POIDS_THEME = {"sommeil": 3.0}
+
+
+          def choisir_pin_equilibre(restants, historique):
+              # Rotation entre themes (evite d'enchainer un meme theme), ponderee depuis le
+              # 29/09/2026 : un theme qui mene a la page de capture passe deux fois plus
+              # souvent qu'un theme sans lien, pour augmenter les clics sortants (et le
+              # theme sommeil trois fois plus, voir POIDS_THEME).
+              par_theme = {}
+              for p in restants:
+                  t = deviner_theme(p["description"])
+                  par_theme.setdefault(t, []).append(p)
+              dernier_par_theme = {}
+              for h in historique:
+                  t = h.get("theme")
+                  if t:
+                      dernier_par_theme[t] = h["date"]
+              debut = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=14)).isoformat(timespec="minutes")
+              recents = {}
+              for h in historique:
+                  if h.get("theme") and h.get("date", "") >= debut:
+                      recents[h["theme"]] = recents.get(h["theme"], 0) + 1
+              poids = lambda t: POIDS_THEME.get(t, 1.0) if theme_avec_lien(t) else 0.5
+              # Jamais deux épingles du même thème à la suite (12/10/2026) : la pondération sommeil ×3
+              # produisait des séries (8 sommeil sur 10 les 08-09/10), et le fil Pinterest pénalise les
+              # épingles semblables qui se suivent. Repli sur tous les thèmes s'il n'en reste qu'un.
+              dates = [h for h in historique if h.get("theme") and h.get("date")]
+              precedent = max(dates, key=lambda h: h["date"])["theme"] if dates else None
+              candidats = [t for t in par_theme if t != precedent] or list(par_theme)
+              theme_choisi = min(candidats, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
+              return par_theme[theme_choisi][0]
+
+          banque = json.load(open("pins.json", encoding="utf-8"))
+          faits = {h["titre"] for h in historique}
+          restants = [p for p in banque if p["titre"] not in faits]
+          if not restants:
+              sys.exit("Banque de pins vide : ajoute de nouveaux pins dans pins.json.")
+          # Anti-doublons (07/10/2026) : avant de choisir, on écarte tout pin dont le titre ou le
+          # sujet double un pin déjà publié (historique, pins réellement en ligne lus via Composio,
+          # instantané titres_en_ligne.json, vidéos, kits Idea Pins) ou dont l'image prête a déjà servi.
+          sys.path.insert(0, "outils")
+          import anti_doublons
+          cle_composio = os.environ.get("COMPOSIO_API_KEY")
+          references = anti_doublons.charger_references(
+              cle_composio, anti_doublons.entite_composio(cle_composio) if cle_composio else None)
+          prets_utilises = {str(h.get("fond", ""))[len("prete:"):] for h in historique
+                            if str(h.get("fond", "")).startswith("prete:")}
+          restants = anti_doublons.filtrer(restants, references, deja_utilisees=prets_utilises)
+          if not restants:
+              sys.exit("Tous les pins restants doublent un pin existant : recharge pins.json avec des sujets nouveaux.")
+          # Aucune photo réutilisée (08/10/2026, consigne de l'utilisateur) : une photo déjà publiée
+          # dans un pin, un carrousel ou une vidéo n'est plus jamais reprise (outils/photos_uniques.py).
+          # Un pin dont le thème n'a plus de photo inédite attend : on publie moins plutôt que de
+          # réutiliser une photo.
+          import photos_uniques
+          photos_exclues = photos_uniques.photos_utilisees()
+          restants = [p for p in restants if p.get("image_prete")
+                      or photos_uniques.photo_dediee(p, photos_exclues)
+                      or photos_uniques.choisir_photo(deviner_theme(p["description"]), photos_exclues)]
+          if not restants:
+              sys.exit("Plus aucune photo inédite pour les pins restants : publication suspendue pour ne pas "
+                       "réutiliser une photo. Ajoute des photos dans fonds/ (classées par thème dans fonds_themes.json).")
+          pin = choisir_pin_equilibre(restants, historique)
+          print("Pins restants dans la banque :", len(restants))
+
+          PHRASES_ENREGISTRER = [
+              "À garder sous la main pour un soir difficile.",
+              "Utile à ressortir quand tu en as besoin.",
+              "Pratique pour un soir où le mental s'emballe.",
+              "Un repère simple à retrouver facilement.",
+              "Ça peut aider de l'avoir sous la main.",
+              "Pratique à ressortir les jours plus difficiles.",
+          ]
+
+          pin["titre"] = pin["titre"][:100]
+          theme = deviner_theme(pin["description"])
+          guide = guide_du_pin(pin, theme)
+          article = article_du_pin(pin, guide, historique)
+          if article:
+              guide = None
+              pin["description"] = pin["description_article"]
+          elif guide == "cortisol" and pin.get("description_guide_cortisol"):
+              pin["description"] = pin["description_guide_cortisol"]
+          LIGNES_CARTE = (lignes_carte_article(article) if article
+                          else LIGNES_CARTE_CORTISOL if guide == "cortisol" else GUIDE_LIGNES)
+          print("Cible du lien :", ("article " + article) if article else ("guide " + guide) if guide else "aucune")
+
+          hashtags_m = re.search(r"(\s#\w+(?:\s#\w+)*)\s*$", pin["description"])
+          hashtags = hashtags_m.group(1).strip() if hashtags_m else ""
+          corps = pin["description"][:hashtags_m.start()] if hashtags_m else pin["description"]
+
+          phrase = random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
+          # Ne jamais laisser la phrase d'enregistrement pousser dehors l'appel au guide
+          # (troncature du corps) ni s'ajouter après lui.
+          if phrase and (article or re.search(r"(?i)guide|plan (anti-cortisol|gratuit)", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
+              phrase = ""
+          queue = " ".join(p for p in [phrase, hashtags] if p)
+          budget_corps = 495 - (len(queue) + 1 if queue else 0)
+          corps_court = corps[:budget_corps]
+          if len(corps) > budget_corps:
+              coupe_phrase = max(corps_court.rfind(". "), corps_court.rfind("! "), corps_court.rfind("? "))
+              if coupe_phrase >= budget_corps - 150:
+                  corps_court = corps_court[:coupe_phrase + 1]
+              else:
+                  corps_court = corps_court.rsplit(" ", 1)[0].rstrip(" .,;:") + "."
+          pin["description"] = corps_court + ((" " + queue) if queue else "")
+
+          os.makedirs("images", exist_ok=True)
+          horodatage = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%d-%H%M%S")
+          nom = "pin-" + horodatage + ".jpg"
+          chemin = os.path.join("images", nom)
+
+          if pin.get("image_prete"):
+              ajuster_sans_rogner(Image.open(pin["image_prete"]).convert("RGB"), 1000, 1500).save(chemin, "JPEG", quality=93)
+              fond_etiquette = "prete:" + pin["image_prete"]
+              design = "prete"
+              print("Thème détecté :", theme)
+              print("Image prête utilisée telle quelle (pas de texte ajouté) :", pin["image_prete"])
+          else:
+              cle_openai = os.environ.get("OPENAI_API_KEY")
+              fond = None
+              fond_etiquette = None
+              if cle_openai:
+                  try:
+                      fond = generer_fond_ia(theme, cle_openai)
+                      fond_etiquette = "ia:" + theme
+                      print("Fond généré par IA (OpenAI) pour le thème :", theme)
+                  except Exception as e:
+                      print("Échec de la génération IA, on retombe sur la banque de fonds :", e)
+              # Test A/B (29/09/2026) : alternance stricte entre le visuel clair (inspiré des
+              # meilleurs Idea Pins du compte) et l'ancien visuel sombre, notée dans
+              # historique.json ("design") pour comparer les statistiques après 2-3 semaines.
+              n_clair = sum(1 for h in historique if h.get("design") == "clair")
+              n_sombre = sum(1 for h in historique if h.get("design") == "sombre")
+              design = "clair" if n_clair <= n_sombre else "sombre"
+              # Photo dédiée (07/10/2026) : champ "photo" du pin (fichier de fonds/, classé
+              # "dedie" dans fonds_themes.json, donc hors rotation) ; sinon photo du thème. Depuis
+              # le 08/10/2026, uniquement des photos jamais publiées ; le visuel clair demande une
+              # photo d'au moins 800 px de large : à défaut, ce pin passe en visuel sombre.
+              if not fond:
+                  largeur_min = 800 if design == "clair" else 0
+                  fond = (photos_uniques.photo_dediee(pin, photos_exclues, largeur_min)
+                          or photos_uniques.choisir_photo(theme, photos_exclues, largeur_min))
+                  if not fond and design == "clair":
+                      design = "sombre"
+                      print("Pas de photo inédite d'au moins 800 px pour le visuel clair : visuel sombre.")
+                      fond = (photos_uniques.photo_dediee(pin, photos_exclues)
+                              or photos_uniques.choisir_photo(theme, photos_exclues))
+                  if not fond:
+                      sys.exit("Aucune photo inédite pour ce pin : publication annulée plutôt que de réutiliser une photo.")
+                  fond_etiquette = fond
+
+              avec_lien = guide is not None or bool(article)
+              if design == "clair" and pin.get("points_image"):
+                  dessiner_clair_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
+              elif design == "clair":
+                  dessiner_clair_phrase(pin["texte_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
+              elif pin.get("points_image"):
+                  dessiner_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, avec_lien=avec_lien)
+              else:
+                  dessiner_image(pin["texte_image"], chemin, police_grasse, police_normale, fond, avec_lien)
+              print("Thème détecté :", theme, "| visuel :", design)
+              print("Fond utilisé :", fond_etiquette)
+          print("Image créée :", chemin)
+
+          if anti_doublons.image_deja_publiee(chemin, historique):
+              sys.exit("Image identique à une image déjà publiée, publication annulée : " + chemin)
+
+          if TEST:
+              sys.exit(0)
+
+          # pins.yml, videos.yml (et carousel.yml en manuel) poussent tous sur main.
+          def pousser_avec_rebase(essais=5):
+              for n in range(essais):
+                  try:
+                      git("pull", "--rebase", "origin", "main")
+                      git("push", "origin", "HEAD:main")
+                      return
+                  except subprocess.CalledProcessError as e:
+                      print(f"Push refusé (essai {n + 1}/{essais}) :", (e.stderr or "")[:300])
+                      subprocess.run(["git", "rebase", "--abort"], capture_output=True)
+                      time.sleep(5 + 5 * n)
+              sys.exit("Impossible de pousser sur main après plusieurs essais.")
+
+          git("add", chemin)
+          git("commit", "-m", "Image du pin : " + pin["titre"][:60])
+          pousser_avec_rebase()
+          sha = git("rev-parse", "HEAD")
+          if pin["titre"] in {h["titre"] for h in json.load(open(HIST, encoding="utf-8"))}:
+              sys.exit("Ce pin vient d'être publié par un autre run, publication annulée : " + pin["titre"])
+          if str(fond_etiquette or "").startswith("fonds/") and photos_uniques.cle(fond_etiquette) in photos_uniques.photos_utilisees():
+              sys.exit("Cette photo vient d'être publiée par un autre run, publication annulée : " + fond_etiquette)
+          url = f"https://cdn.jsdelivr.net/gh/{os.environ['GITHUB_REPOSITORY']}@{sha}/{chemin}"
+
+          if not attendre_en_ligne(url):
+              sys.exit("L'image n'est pas accessible en ligne : " + url)
+
+          TABLEAUX = {
+              "sommeil": "600175156531998232",
+              "systemenerveux": "600175156531995384",
+              "fatiguementale": "600175156531997290",
+              "alimentation": "600175156532001498",
+              "procrastination": "600175156532025119",
+              "somatisation": "600175156532027560",
+              "blocagemental": "600175156532029245",
+              "posturesantistress": "600175156532003400",
+              "energie": "600175156532025122",
+          }
+
+          lien = lien_du_pin(guide, article, theme, pin["titre"])
+
+          # Publication directe via l'API Composio (comme videos.yml) : permet le texte
+          # alternatif et la confirmation réelle du pin avant l'inscription à l'historique.
+          CLE = os.environ["COMPOSIO_API_KEY"]
+          entite = "pg-test-a2a2217a-e3a1-439a-aabd-cc16b6182094"
+          try:
+              comptes = requests.get(
+                  "https://backend.composio.dev/api/v3/connected_accounts",
+                  headers={"x-api-key": CLE}, params={"toolkit_slugs": "pinterest"}, timeout=30,
+              ).json().get("items", [])
+              actifs = [c for c in comptes if c.get("status") == "ACTIVE" and c.get("user_id")]
+              if actifs:
+                  entite = actifs[0]["user_id"]
+          except Exception as e:
+              print("Lecture des comptes connectés impossible, id par défaut utilisé :", e)
+
+          arguments = {
+              "board_id": TABLEAUX.get(theme, "600175156531995384"),
+              "title": pin["titre"],
+              "description": pin["description"][:800],
+              "alt_text": texte_alternatif(pin, theme),
+              "media_source": {"source_type": "image_url", "url": url},
+          }
+          if lien:
+              arguments["link"] = lien
+          r = requests.post(
+              "https://backend.composio.dev/api/v3.1/tools/execute/PINTEREST_CREATE_PIN",
+              headers={"x-api-key": CLE, "Content-Type": "application/json"},
+              json={"arguments": arguments, "entity_id": entite}, timeout=60,
+          )
+          print("Réponse Composio :", r.status_code, r.text[:300])
+          try:
+              donnee = r.json()
+          except Exception:
+              sys.exit("Réponse Composio illisible, pin non confirmé.")
+          pin_id = (donnee.get("data") or {}).get("id")
+          if r.status_code >= 300 or donnee.get("successful") is False or not pin_id:
+              sys.exit("Pinterest n'a pas confirmé la création du pin : " + str(donnee.get("error"))[:500])
+          print("Pin publié :", pin["titre"], "| pin_id :", pin_id)
+
+          # Le pin est en ligne : l'inscription à l'historique ne doit jamais être perdue.
+          entree = {"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+                    "titre": pin["titre"], "image": chemin, "fond": fond_etiquette, "theme": theme,
+                    "design": design, "pin_id": pin_id, "md5": anti_doublons.empreinte(chemin),
+                    "lien": ("article:" + article) if article else ("guide:" + guide) if guide else ""}
+          limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
+          for n in range(6):
+              git("fetch", "origin", "main")
+              git("reset", "--hard", "origin/main")
+              hist = json.load(open(HIST, encoding="utf-8"))
+              if pin["titre"] not in {h["titre"] for h in hist}:
+                  hist.append(entree)
+              json.dump(hist, open(HIST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+              for dossier in ("images", "videos"):
+                  if not os.path.isdir(dossier):
+                      continue
+                  for ancien in os.listdir(dossier):
+                      try:
+                          date_fichier = datetime.datetime.strptime(ancien[4:12], "%Y%m%d").replace(tzinfo=datetime.timezone.utc)
+                      except ValueError:
+                          continue
+                      if date_fichier < limite:
+                          os.remove(os.path.join(dossier, ancien))
+              git("add", "-A", "images", HIST)
+              if os.path.isdir("videos"):
+                  git("add", "-A", "videos")
+              if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode == 0:
+                  break
+              git("commit", "-m", "Nouveau pin : " + pin["titre"][:60])
+              try:
+                  git("push", "origin", "HEAD:main")
+                  break
+              except subprocess.CalledProcessError as e:
+                  print(f"Push historique refusé (essai {n + 1}/6) :", (e.stderr or "")[:300])
+                  time.sleep(5 + 5 * n)
+          else:
+              sys.exit(f"PIN PUBLIÉ ({pin_id}) MAIS HISTORIQUE NON ENREGISTRÉ : ajouter « {pin['titre']} » dans {HIST}")
+          EOF

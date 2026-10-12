@@ -1,0 +1,185 @@
+--- .github/workflows/pins.yml	2026-10-09 22:10:43.915951194 +0000
++++ /tmp/claude-0/-home-user-pins-clarte/52b1010b-100c-5085-8b52-481926932e64/scratchpad/robot/pins.yml	2026-10-12 10:09:43.388183223 +0000
+@@ -48,6 +48,19 @@
+           HIST = "historique.json"
+           historique = json.load(open(HIST, encoding="utf-8")) if os.path.exists(HIST) else []
+ 
++          # Rythme (12/10/2026, audit des impressions, accord de l'utilisateur) : au moins 3 h 50 entre
++          # deux épingles, soit environ une épingle sur deux déclenchements de cron-job.org (toutes les
++          # 2 h) au lieu d'une à chaque fois (~10 par jour). Pinterest privilégie la qualité à la quantité
++          # et limite « beaucoup d'épingles depuis le même site en peu de temps » ; le stock de pins et
++          # de photos inédites dure aussi deux fois plus longtemps. Le mode test n'est pas concerné.
++          ECART_MIN_HEURES = 3.83
++          if historique and not TEST:
++              derniere = max(datetime.datetime.fromisoformat(h["date"]) for h in historique if h.get("date"))
++              ecart = (datetime.datetime.now(datetime.timezone.utc) - derniere).total_seconds() / 3600
++              if ecart < ECART_MIN_HEURES:
++                  print(f"Dernière épingle il y a {ecart:.1f} h (minimum {ECART_MIN_HEURES} h) : pas de publication cette fois.")
++                  sys.exit(0)
++
+ 
+           def telecharger_police(nom, url, secours):
+               try:
+@@ -245,7 +258,10 @@
+                       break
+                   taille -= 6
+               bloc = hauteur_ligne * len(lignes)
+-              haut_texte = (1153 if avec_lien else 1215) - bloc
++              # V1 (aucun élément ajouté sur l'image) : ni carte guide/article ni pastille « À GARDER ».
++              # Le texte descend jusqu'à 1285 px (valeur des pins sans lien avant le 29/09/2026) :
++              # la photo du haut récupère la place (h_photo = haut_texte - 60).
++              haut_texte = 1285 - bloc
+               h_photo = haut_texte - 60 if fond else 0
+               if h_photo >= 300:
+                   _photo_haut_sombre(img, fond, h_photo)
+@@ -264,17 +280,13 @@
+                   d.text((x, y), ligne, font=police, fill=(255, 255, 255))
+                   y += hauteur_ligne
+               d.line([(L / 2 - 70, y + 34), (L / 2 + 70, y + 34)], fill=(236, 230, 205), width=5)
+-              bandeau_haut = H - 222 if avec_lien else H - 165
+-              if avec_lien:
+-                  dessiner_carte_guide(img, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, police_normale)
+-              else:
+-                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, TEXTE_GARDER)
+               police_pied = charger_police(police_normale, 34)
+               w = d.textlength(MARQUE, font=police_pied)
+               d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
++              marque_haut = d.textbbox(((L - w) / 2, H - 92), MARQUE, font=police_pied)[1]
+               img.save(chemin_sortie, "JPEG", quality=88, optimize=True, progressive=True)
+               return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 39,
+-                      "pied_haut": bandeau_haut}
++                      "pied_haut": marque_haut}
+ 
+ 
+           STYLES_MARQUEUR = ["numero", "coche", "fleche", "puce"]
+@@ -325,7 +337,8 @@
+               x_num_centre = marge + rayon
+               x_texte = marge + 2 * rayon + 22
+               espace_entre_points, espace_titre_points = 22, 46
+-              bas_contenu, haut_min = (1163 if avec_lien else 1225), 290
++              # V1 : plus d'élément en bas, le contenu descend jusqu'à 1295 px (comme avant le 29/09).
++              bas_contenu, haut_min = 1295, 290
+ 
+               # Réduit titre puis points jusqu'à ce que tout tienne au-dessus du pied de page.
+               for taille_titre, taille_point in [(78, 42), (70, 40), (64, 38), (58, 36), (54, 34), (50, 32), (48, 30)]:
+@@ -369,17 +382,13 @@
+                   y += espace_entre_points
+ 
+               d.line([(L / 2 - 70, y + 10), (L / 2 + 70, y + 10)], fill=(236, 230, 205), width=5)
+-              bandeau_haut = H - 222 if avec_lien else H - 165
+-              if avec_lien:
+-                  dessiner_carte_guide(img, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, police_normale)
+-              else:
+-                  dessiner_bandeau_guide(d, L, bandeau_haut, (236, 196, 120), (20, 20, 30), police_grasse, TEXTE_GARDER)
+               police_pied = charger_police(police_normale, 34)
+               w = d.textlength(MARQUE, font=police_pied)
+               d.text(((L - w) / 2, H - 92), MARQUE, font=police_pied, fill=(232, 235, 245))
++              marque_haut = d.textbbox(((L - w) / 2, H - 92), MARQUE, font=police_pied)[1]
+               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+               return {"photo_bas": h_photo, "texte_haut": haut_texte, "texte_bas": y + 15,
+-                      "pied_haut": bandeau_haut}
++                      "pied_haut": marque_haut}
+ 
+ 
+           def git(*args):
+@@ -468,6 +477,8 @@
+               police = charger_police(police_normale, 30)
+               w = d.textlength(MARQUE, font=police)
+               d.text(((L - w) / 2, H - 78), MARQUE, font=police, fill=(110, 116, 132))
++              # Haut réel du texte de la marque, pour le contrôle de chevauchement.
++              return d.textbbox(((L - w) / 2, H - 78), MARQUE, font=police)[1]
+ 
+ 
+           def _marqueur(d, style, xc, yc, r, num, accent, police_num):
+@@ -488,7 +499,8 @@
+               style = "numero" if re.search(r"\d", titre) else "coche"
+               police_num = charger_police(police_grasse, 34)
+               # Photo d'au moins 300 px de haut (220 avant le 30/09/2026 : bande trop fine, visage coupé)
+-              r, bas, min_photo = 30, H - (228 if avec_lien else 200), 300
++              # V1 : photo jusqu'à 120 px du bas (comme les pins sans lien avant le 29/09/2026).
++              r, bas, min_photo = 30, H - 120, 300
+ 
+               def haut_titre(taille_titre):
+                   # Hauteur occupée par l'étiquette et le titre, mesurée sur une image de brouillon.
+@@ -521,7 +533,9 @@
+               taille_titre, taille_pt, pad, espace, x_txt, police_pt, hl, cartes, reste = choix
+               y, accent = _etiquette_et_titre(d, theme, titre, police_grasse, marge, L - 2 * marge, (taille_titre, 52), 3)
+               y += 44
+-              h_photo = min(reste - 40, 430) if fond else 0
++              # V1 : plafond de la photo relevé de 430 à 520 px pour qu'elle occupe la place libérée
++              # (sinon un vide de ~80-110 px apparaît entre les cartes et la photo).
++              h_photo = min(reste - 40, 520) if fond else 0
+               if h_photo < min_photo:
+                   h_photo = 0
+               if not h_photo:
+@@ -538,15 +552,12 @@
+                   y += h + espace
+               if h_photo:
+                   _photo_arrondie(img, fond, marge, bas - h_photo, L - marge, bas)
+-              if avec_lien:
+-                  dessiner_carte_guide(img, H - 210, accent, (255, 255, 255), police_grasse, police_normale)
+-              else:
+-                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse, TEXTE_GARDER)
+-              _pied(d, L, H, police_normale)
++              # V1 : aucun élément ajouté, seule la marque reste en pied de page.
++              marque_haut = _pied(d, L, H, police_normale)
+               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+               return {"texte_haut": 70, "texte_bas": y - espace + 6, "cartes_haut": haut_cartes,
+                       "photo_haut": bas - h_photo if h_photo else None, "photo_bas": bas if h_photo else None,
+-                      "pied_haut": H - 210 if avec_lien else H - 160,
++                      "pied_haut": marque_haut,
+                       "taille_titre": taille_titre, "taille_texte": taille_pt}
+ 
+ 
+@@ -555,18 +566,15 @@
+               img = Image.new("RGB", (L, H), CREME)
+               d = ImageDraw.Draw(img)
+               y, accent = _etiquette_et_titre(d, theme, texte, police_grasse, marge, L - 2 * marge, (92, 56), 5)
+-              bas = H - (228 if avec_lien else 200)
++              bas = H - 120  # V1 : la photo descend jusqu'à 120 px du bas
+               photo = bool(fond) and bas - (y + 50) >= 300
+               if photo:
+                   _photo_arrondie(img, fond, marge, y + 50, L - marge, bas)
+-              if avec_lien:
+-                  dessiner_carte_guide(img, H - 210, accent, (255, 255, 255), police_grasse, police_normale)
+-              else:
+-                  dessiner_bandeau_guide(d, L, H - 160, accent, (255, 255, 255), police_grasse, TEXTE_GARDER)
+-              _pied(d, L, H, police_normale)
++              # V1 : aucun élément ajouté, seule la marque reste en pied de page.
++              marque_haut = _pied(d, L, H, police_normale)
+               img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+               return {"texte_haut": 70, "texte_bas": y, "photo_haut": y + 50 if photo else None,
+-                      "photo_bas": bas if photo else None, "pied_haut": H - 210 if avec_lien else H - 160}
++                      "photo_bas": bas if photo else None, "pied_haut": marque_haut}
+ 
+ 
+           # Expressions réellement recherchées sur Pinterest France (Pinterest Trends, 29/09/2026).
+@@ -650,8 +658,12 @@
+               "calmer-son-systeme-nerveux": "Calmer son système nerveux",
+               "charge-mentale": "Charge mentale",
+               "signes-du-burn-out": "Signes du burn-out",
++              "angoisse-le-soir": "Angoisse le soir et la nuit",
+           }
+-          PART_ARTICLES = 0.4
++          # 0,4 → 0,6 le 12/10/2026 (audit des impressions, accord de l'utilisateur) : 132 des 150 épingles
++          # avec lien menaient à la même page de capture d'environ 30 mots, alors que Pinterest demande une
++          # page « avec du contenu supplémentaire clairement lié à l'épingle » ; l'article garde le guide.
++          PART_ARTICLES = 0.6
+ 
+ 
+           def article_du_pin(pin, guide, historique):
+@@ -727,7 +739,13 @@
+                   if h.get("theme") and h.get("date", "") >= debut:
+                       recents[h["theme"]] = recents.get(h["theme"], 0) + 1
+               poids = lambda t: POIDS_THEME.get(t, 1.0) if theme_avec_lien(t) else 0.5
+-              theme_choisi = min(par_theme, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
++              # Jamais deux épingles du même thème à la suite (12/10/2026) : la pondération sommeil ×3
++              # produisait des séries (8 sommeil sur 10 les 08-09/10), et le fil Pinterest pénalise les
++              # épingles semblables qui se suivent. Repli sur tous les thèmes s'il n'en reste qu'un.
++              dates = [h for h in historique if h.get("theme") and h.get("date")]
++              precedent = max(dates, key=lambda h: h["date"])["theme"] if dates else None
++              candidats = [t for t in par_theme if t != precedent] or list(par_theme)
++              theme_choisi = min(candidats, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
+               return par_theme[theme_choisi][0]
+ 
+           banque = json.load(open("pins.json", encoding="utf-8"))
