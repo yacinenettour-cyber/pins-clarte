@@ -136,6 +136,13 @@
    "alt": "Personne assise dans son lit la nuit, les mains sur les tempes, l'air inquiet",
    "credit": "Photo : Samir Vanegas / Unsplash",
    "formation": true
+  },
+  "respiration-pour-dormir": {
+   "categorie": "sommeil",
+   "image": "unsplash-rUc9hVE-L-E.jpg",
+   "alt": "Personne endormie sous une couverture, le visage dans l'oreiller, dans une chambre à la lumière tamisée",
+   "credit": "Photo : Greg Pappas / Unsplash",
+   "formation": true
   }
  },
  "formation": {
@@ -255,6 +262,10 @@
     [
      "Tu te réveilles vers 4 h et tu ne te rendors pas",
      "reveil-4h-du-matin"
+    ],
+    [
+     "Tu cherches une respiration simple pour t'endormir",
+     "respiration-pour-dormir"
     ],
     [
      "Tu veux un rituel simple pour préparer la nuit",

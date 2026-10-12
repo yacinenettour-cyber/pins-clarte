@@ -67,7 +67,7 @@ Dans l'essai de l'Université Stanford, les participants pratiquaient 5 minutes 
 
 ### Peut-on écouter l'audio pour s'endormir ?
 
-Oui : l'audio de 10 minutes est fait pour ça, avec des repères qui s'adoucissent puis un fondu final. Si tu es toujours éveillé plus de 20 minutes après, l'Institut national du sommeil et de la vigilance conseille de te lever et de faire autre chose [7].
+Oui : l'audio de 10 minutes est fait pour ça, avec des repères qui s'adoucissent puis un fondu final. Pour savoir ce que valent les autres méthodes, 4-7-8 ou respiration carrée, lis notre article sur la [respiration pour dormir](/respiration-pour-dormir/). Si tu es toujours éveillé plus de 20 minutes après, l'Institut national du sommeil et de la vigilance conseille de te lever et de faire autre chose [7].
 
 ### Pourquoi n'y a-t-il pas de voix ?
 

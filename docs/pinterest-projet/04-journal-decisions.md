@@ -624,6 +624,33 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 
 - **Mesure d'audience vérifiée (12/10)** : 0 visite comptée entre le 10/10 à midi et le 12/10. Le compteur marche pourtant : 2 pages ouvertes par un navigateur automatique (atelier Composio) ont été comptées en moins d'une minute (« US », 12/10 à 18 h 29 UTC, à ignorer dans les bilans). Il n'y a donc pas encore de visiteurs extérieurs. Les clics Pinterest vont surtout vers les pages `lp.` de systeme.io, que Cloudflare ne voit pas. Ordres de grandeur donnés à l'utilisateur : 10 à 50 visites par mois d'ici fin 2026, 100 à 500 dans 6 mois, 500 à 2 000 dans 12 mois avec des articles réguliers et des liens.
 
+## 57. Site : un nouvel article par semaine, premier article « Respiration pour dormir » (12/10/2026)
+
+**Demande de l'utilisateur** : « Écris un nouvel article par semaine ».
+
+- **Mise en place** : liste des sujets dans `docs/referencement/articles-a-ecrire.md`. Les sujets viennent des suggestions Google lues le 12/10 ; ce sont des recherches réelles auxquelles aucune page du site ne répond. Déclencheur `trig_01JLtsNwykWqEPkdkgeWcqDm` « Article de la semaine », le lundi à 14 h 53 (heure de Paris) ; premier passage le 19/10. À chaque passage, il écrit le premier sujet de la liste, le vérifie, le publie, prévient l'utilisateur et complète la liste quand il reste moins de 4 sujets.
+- **Article** `/respiration-pour-dormir/` (2 078 mots, 12 sources), catégorie Sommeil et soirées, guide sommeil (le sujet est dans son périmètre : mental du soir et endormissement). Il compare la respiration lente 4-6, la 4-7-8, la respiration carrée, le soupir cyclique et la « méthode militaire ». Le titre visé est « respiration pour dormir », avec les recherches voisines 4-7-8, carrée et militaire. Il ne recoupe ni « Respiration guidée », qui est l'outil audio, ni le minuteur.
+- **Sources vérifiées une par une dans PubMed** (titre, revue, année, affiliation lue dans la notice) :
+  - Tsai et al., Université nationale Yang-Ming (Taipei), *Psychophysiology*, 2015 : 14 personnes qui dormaient mal et 14 bons dormeurs ; 20 minutes à 6 respirations par minute avant le coucher ; endormissement plus rapide et moins de réveils.
+  - Laborde et al., Université allemande du sport de Cologne, *Neuroscience & Biobehavioral Reviews*, 2022 : 223 études.
+  - Balban et al., Université Stanford, *Cell Reports Medicine*, 2023 : 108 participants. Le texte intégral a été lu : aucune différence sur le questionnaire de sommeil, ce que l'article dit.
+  - Vierra, Boonla et Prasertsri, Université Burapha, *Physiological Reports*, 2022 : 43 participants ; protocole de la 4-7-8 lu dans le texte intégral.
+  - Kirazli et al., Université Ege (Izmir), *Brain and Behavior*, 2026 : 23 et 25 patients avec des acouphènes.
+  - Dujawara, Ali et Kumari, Université Galgotias, *Applied Psychophysiology and Biofeedback*, 2026 : 8 essais sur la respiration carrée.
+  - Li et al., Université Putra Malaysia, *Frontiers in Public Health*, 2026 : 14 essais, 957 participants, effet incertain après 55 ans.
+  - Harvey et Payne, Université d'Oxford, *Behaviour Research and Therapy*, 2002 : 41 personnes.
+  - Sources du site déjà vérifiées : Santé.fr / Réseau Morphée, INSV, Inserm, 3114.
+
+  La « méthode militaire » n'a aucune étude propre (recherche PubMed du 12/10), et l'article le dit. Aucune affirmation de type « s'endormir en une minute ». Une étude d'une fondation privée (Jerath, 2018, simple point de vue) a été écartée.
+- **Photo** : `fonds/unsplash-rUc9hVE-L-E.jpg` (Greg Pappas, Unsplash, gratuite). Elle est inédite : sur 484 photos comparées, la plus proche diffère sur 101 des 256 points de l'empreinte. Classée `dedie`, réservée au site, inscrite dans `photos_sources.json`. Trois autres photos candidates ont été écartées : femme éveillée qui sourit, scène trop sombre, corps peu couvert.
+- **Maillage** : liens depuis « Ruminations le soir » (technique 4) et « Respiration guidée » (question sur l'endormissement) ; ajout dans « Par où commencer ? » de la page Mieux dormir.
+- **Épingles** : aucune nouvelle épingle, car la banque contient déjà des épingles sur la respiration (risque de doublon de sujet). L'épingle non publiée « Respiration 4-7-8 : 2 minutes pour s'apaiser au lit » mène maintenant à cet article au lieu de « Calmer son système nerveux », avec une nouvelle fin de description. L'article est ajouté à `ARTICLES_SITE` dans `pins.yml` ; le harnais confirme le bon lien. `verifier_banque.py` : 0 doublon.
+- **Vérifié** :
+  - titre de 49 caractères et description de 152, tous deux uniques ; les 12 sources sont toutes appelées dans le texte ;
+  - 0 problème à l'audit de référencement ; validateur W3C : 0 erreur sur 4 pages ;
+  - axe-core : 0 violation et aucun débordement (4 pages × 2 thèmes × 320 et 1 280 px) ;
+  - page en ligne avec le bon titre et présente dans le plan du site ; IndexNow : 200.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.

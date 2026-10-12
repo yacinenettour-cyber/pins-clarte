@@ -1,0 +1,143 @@
+---
+titre: Respiration pour dormir : 4-7-8, carrée ou lente, ce qui marche vraiment
+titre_seo: Respiration pour dormir : 4-7-8, carrée ou lente ?
+description: Respiration pour dormir : 4-7-8, respiration carrée, méthode militaire ou respiration lente ? Ce que disent les études, et comment faire ce soir.
+slug: respiration-pour-dormir
+mot_cle: respiration pour dormir
+guide: sommeil
+maj: 2026-10-12
+image: Personne allongée dans son lit, les yeux fermés, dans une chambre à la lumière douce
+---
+## L'essentiel
+- Respirer lentement, autour de 6 respirations par minute, active la branche du système nerveux qui calme le cœur : c'est la technique la mieux étudiée.
+- Dans une petite étude taïwanaise, 20 minutes de respiration lente avant le coucher ont aidé des personnes qui dormaient mal à s'endormir plus vite et à moins se réveiller.
+- La respiration 4-7-8 et la respiration carrée apaisent sur le moment, mais aucune étude n'a montré qu'elles font s'endormir « en une minute ».
+- La « méthode militaire » n'a jamais été évaluée telle quelle ; ses deux ingrédients, relâcher ses muscles et imaginer une scène calme, ont en revanche des études derrière eux.
+
+La respiration pour dormir désigne des exercices où l'on ralentit volontairement son souffle au moment du coucher pour calmer le corps et détourner l'esprit des pensées qui empêchent de s'endormir. Le Réseau Morphée, réseau de santé consacré aux troubles du sommeil, rappelle que le travail sur la respiration empêche les pensées de divaguer et crée un espace de transition entre la journée et la nuit [9]. Voici ce que disent les études sur les techniques les plus connues, 4-7-8, respiration carrée, soupir cyclique et méthode militaire, et comment t'y prendre ce soir.
+
+## Pourquoi respirer lentement aide-t-il à s'endormir ?
+
+Respirer lentement aide à s'endormir parce que cela renforce l'activité du nerf vague, qui ralentit le cœur, alors que le corps de beaucoup de personnes qui dorment mal reste en mode alerte [1][2].
+
+Une revue de la littérature de l'Université allemande du sport de Cologne, publiée en 2022 dans *Neuroscience & Biobehavioral Reviews* (Laborde et al.), a rassemblé 223 études : la respiration lente volontaire augmente les indicateurs de l'activité du [nerf vague](/nerf-vague/) pendant l'exercice, juste après une séance et après plusieurs semaines de pratique [2].
+
+Chez les personnes qui dorment mal, ce frein naturel est souvent moins actif. Une étude du centre de recherche sur le sommeil de l'Université nationale Yang-Ming de Taipei (Taïwan), publiée en 2015 dans *Psychophysiology* (Tsai et al.), a comparé 14 personnes qui se plaignaient d'insomnie à 14 bons dormeurs [1] :
+
+1. au repos, l'activité du nerf vague était plus faible chez les personnes qui dormaient mal ;
+2. respirer lentement, à 6 respirations par minute, la faisait remonter ;
+3. après 20 minutes de cette respiration avant le coucher, elles mettaient moins de temps à s'endormir et se réveillaient moins souvent, d'après des enregistrements du sommeil en laboratoire [1].
+
+L'étude est petite : elle montre une piste sérieuse, pas une preuve définitive.
+
+## Quelle respiration pour dormir ? Les techniques comparées
+
+La respiration la mieux étudiée pour le sommeil est la respiration lente, autour de 6 respirations par minute ; les autres techniques ont des études plus petites, ou ne portant pas sur le sommeil [1][2].
+
+| Technique | Comment faire | Ce que disent les études |
+|---|---|---|
+| Respiration lente (4-6) | Inspirer 4 secondes, expirer 6 secondes, soit 6 respirations par minute | Plus d'activité du nerf vague (223 études) [2] ; endormissement plus rapide dans une petite étude chez des personnes qui dormaient mal [1] |
+| Respiration 4-7-8 | Inspirer 4 temps par le nez, bloquer 7 temps, expirer 8 temps par la bouche | Cœur et tension qui baissent juste après [4] ; sommeil mieux noté après 6 semaines chez des patients atteints d'acouphènes [5] |
+| Respiration carrée | Inspirer, bloquer, expirer, bloquer, chaque temps de même durée | Moins de stress ressenti à court terme, résultats inégaux (8 essais) [6] |
+| Soupir cyclique | Deux inspirations à la suite, puis une longue expiration | Meilleure humeur qu'avec la méditation en 1 mois, sans effet mesuré sur le sommeil [3] |
+| « Méthode militaire » | Relâcher tous ses muscles, puis imaginer une scène calme | Jamais évaluée telle quelle ; ses deux ingrédients ont des études [7][8] |
+
+## La respiration lente 4-6 : la plus étudiée
+
+La respiration lente consiste à ralentir ton souffle jusqu'à environ 6 respirations par minute, avec une expiration un peu plus longue que l'inspiration : c'est le rythme utilisé dans l'étude taïwanaise sur le sommeil [1].
+
+Pour la pratiquer au lit :
+
+1. allonge-toi sur le dos, une main sur le ventre ;
+2. inspire doucement par le nez pendant 4 secondes, en laissant le ventre se soulever ;
+3. expire lentement pendant 6 secondes ;
+4. continue sans forcer, en ramenant ton attention sur le compte quand une pensée arrive.
+
+Dans l'étude, les participants respiraient ainsi 20 minutes avant d'aller dormir [1]. Si compter t'empêche de te détendre, tu peux te laisser guider par nos [audios de respiration guidée 4-6](/respiration-guidee/), sans voix, ou par le [minuteur de respiration](/exercices-respiration/).
+
+## La respiration 4-7-8 : ce que disent vraiment les études
+
+La respiration 4-7-8 consiste à inspirer par le nez sur 4 temps, retenir son souffle sur 7 temps, puis expirer par la bouche sur 8 temps ; elle apaise sur le moment, mais aucune étude n'a mesuré qu'elle fait s'endormir en une minute [4][5].
+
+Dans une étude de l'Université Burapha (Thaïlande), publiée en 2022 dans *Physiological Reports* (Vierra, Boonla et Prasertsri), 43 jeunes adultes en bonne santé ont fait 3 séries de 6 cycles de 4-7-8 : juste après, leur cœur battait moins vite et leur tension systolique avait baissé, qu'ils aient manqué de sommeil ou non [4].
+
+Une étude de l'Université Ege d'Izmir (Turquie), publiée en 2026 dans *Brain and Behavior* (Kirazli et al.), a proposé cette respiration pendant 6 semaines à 23 personnes souffrant d'acouphènes, comparées à 25 personnes sans exercice : leurs scores de stress, d'anxiété et de difficultés de sommeil ont baissé, pas ceux du groupe sans exercice [5].
+
+Ces résultats sont encourageants, mais ils restent limités : de petits groupes, et pour la seconde étude, des patients avec un problème précis. Le blocage de 7 temps peut aussi gêner certaines personnes : si la tête te tourne, reviens à une respiration lente sans pause.
+
+## La respiration carrée et le soupir cyclique
+
+La respiration carrée enchaîne quatre temps égaux, inspirer, bloquer, expirer, bloquer ; le soupir cyclique enchaîne deux inspirations puis une longue expiration. Les deux calment le stress, mais leur effet sur le sommeil n'a pas été démontré [3][6].
+
+Pour la respiration carrée, une revue de l'Université Galgotias (Inde), publiée en 2026 dans *Applied Psychophysiology and Biofeedback* (Dujawara, Ali et Kumari), n'a trouvé que 8 essais qui l'évaluaient vraiment : des bénéfices à court terme sur le stress ressenti, l'anxiété et l'humeur, mais des résultats inégaux d'une étude à l'autre [6].
+
+Le soupir cyclique a été comparé à la respiration carrée et à la méditation de pleine conscience par l'Université Stanford, dans une étude publiée en 2023 dans *Cell Reports Medicine* (Balban et al.) : 108 participants ont pratiqué 5 minutes par jour pendant un mois [3].
+
+- Le soupir cyclique a le plus amélioré l'humeur et le plus ralenti la respiration au repos, davantage que la méditation [3].
+- En revanche, un questionnaire sur les effets du sommeil dans la journée n'a montré de différence dans aucun groupe [3].
+
+Le soupir cyclique est donc une bonne façon de faire redescendre la pression en fin de journée, plutôt qu'une technique pour s'endormir.
+
+## Et la méthode militaire pour dormir ?
+
+La « méthode militaire » qui circule sur internet n'a jamais été évaluée telle quelle dans une étude publiée (recherche dans la base PubMed, octobre 2026). Elle associe deux gestes qui, eux, ont été étudiés : relâcher ses muscles un à un, puis occuper son esprit avec une image calme [7][8].
+
+Telle qu'elle est décrite en ligne, elle consiste à relâcher les muscles du visage, puis les épaules, les bras et les jambes, à respirer lentement, puis à imaginer une scène paisible pendant quelques secondes.
+
+- **Relâcher ses muscles** : une méta-analyse de l'Université Putra Malaysia, publiée en 2026 dans *Frontiers in Public Health* (Li et al.), a rassemblé 14 essais et 957 participants. La relaxation musculaire progressive a amélioré la qualité du sommeil ressentie chez les adultes, avec un effet net avant 55 ans et encore incertain après [7].
+- **Imaginer une scène calme** : dans une étude de l'Université d'Oxford, publiée en 2002 dans *Behaviour Research and Therapy* (Harvey et Payne), 41 personnes souffrant d'insomnie ont testé différentes consignes. Celles qui imaginaient une scène précise et intéressante s'endormaient plus vite que celles qui n'avaient reçu aucune consigne [8].
+
+Ce second geste est détaillé dans notre article sur les [ruminations du soir](/ruminations-le-soir/), où il aide à ne pas replonger dans les pensées qui tournent.
+
+## Comment faire ce soir : une routine de respiration en 10 minutes
+
+Pour essayer ce soir, associe une respiration lente à un relâchement des muscles, puis laisse ton esprit se poser sur une image calme : ce sont les trois gestes qui ont le plus d'études derrière eux [1][7][8].
+
+1. **Au lit, lumière éteinte** : allonge-toi sur le dos, une main sur le ventre.
+2. **5 minutes de respiration lente** : inspire 4 secondes, expire 6 secondes, sans forcer [1][2].
+3. **2 à 3 minutes de relâchement** : détends ton front, ta mâchoire, tes épaules, tes bras, puis tes jambes, une zone après l'autre [7].
+4. **Une scène calme** : imagine un lieu précis, avec ses détails, ses couleurs et ses sons, plutôt que d'essayer de « ne plus penser » [8].
+
+Si tu es encore éveillé au bout d'une vingtaine de minutes, l'Institut national du sommeil et de la vigilance (INSV) conseille de te lever et de faire autre chose, puis de ne revenir au lit que lorsque les signes du sommeil apparaissent : bâillements, nuque lourde, yeux qui piquent [10]. Cette respiration s'intègre aussi très bien dans une [routine du soir anti-stress](/routine-du-soir-anti-stress/).
+
+## Quand consulter ?
+
+Consulte ton médecin si tes difficultés à t'endormir reviennent au moins trois nuits par semaine depuis plus d'un mois, malgré ces exercices. Une mauvaise nuit de temps en temps, en période chargée, est fréquente et souvent passagère [11]. Parles-en en revanche à ton médecin si :
+
+- tes difficultés reviennent au moins trois nuits par semaine depuis plus d'un mois, avec de la fatigue, des difficultés de concentration ou de l'irritabilité dans la journée [10] ;
+- elles durent depuis trois mois ou plus : l'Inserm parle alors d'insomnie chronique, pour laquelle les thérapies cognitives et comportementales sont l'approche à privilégier [11] ;
+- quelqu'un a remarqué des pauses dans ta respiration pendant ton sommeil, ou tu ressens au coucher des sensations désagréables dans les jambes qui t'obligent à bouger [10] ;
+- l'angoisse monte au coucher ou te réveille en pleine nuit : notre article sur l'[angoisse le soir](/angoisse-le-soir/) t'aide à faire le point ;
+- tu as envie de prendre des somnifères : ne le fais pas seul, demande conseil à ton médecin [10].
+
+Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide : gratuit, joignable 24 h/24 et 7 j/7 [12].
+
+Cet article t'informe, il ne remplace pas l'avis d'un médecin.
+
+## Questions fréquentes
+
+### Quelle est la meilleure respiration pour dormir ?
+La respiration la mieux étudiée est la respiration lente, autour de 6 respirations par minute, par exemple 4 secondes d'inspiration et 6 d'expiration [1][2]. Les autres techniques, comme la 4-7-8 ou la respiration carrée, ont moins d'études sur le sommeil [4][6].
+
+### La respiration 4-7-8 fait-elle vraiment dormir en une minute ?
+Aucune étude ne l'a montré. La respiration 4-7-8 fait baisser le rythme du cœur et la tension juste après l'exercice [4], et une étude chez des patients atteints d'acouphènes a vu leur sommeil s'améliorer après 6 semaines de pratique [5].
+
+### Combien de temps faut-il respirer lentement pour s'endormir ?
+Dans l'étude taïwanaise, les participants respiraient lentement pendant 20 minutes avant d'aller dormir [1]. Quelques minutes suffisent déjà pour commencer à se calmer : nos [audios de respiration guidée](/respiration-guidee/) durent 3, 5 ou 10 minutes.
+
+### Que faire si la respiration me donne le tournis ?
+Arrête l'exercice et reprends ta respiration habituelle. Les pauses longues, comme les 7 temps de la 4-7-8, ne conviennent pas à tout le monde : une respiration lente sans blocage, avec une expiration un peu plus longue, est souvent plus confortable.
+
+## Sources
+1. [Efficacy of paced breathing for insomnia: enhances vagal activity and improves sleep quality — Psychophysiology (Tsai et al., Université nationale Yang-Ming, Taipei), 2015](https://pubmed.ncbi.nlm.nih.gov/25234581/)
+2. [Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis — Neuroscience & Biobehavioral Reviews (Laborde et al., Université allemande du sport de Cologne), 2022](https://pubmed.ncbi.nlm.nih.gov/35623448/)
+3. [Brief structured respiration practices enhance mood and reduce physiological arousal — Cell Reports Medicine (Balban et al., Université Stanford), 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/)
+4. [Effects of sleep deprivation and 4-7-8 breathing control on heart rate variability, blood pressure, blood glucose, and endothelial function in healthy young adults — Physiological Reports (Vierra, Boonla & Prasertsri, Université Burapha), 2022](https://pmc.ncbi.nlm.nih.gov/articles/PMC9277512/)
+5. [The Effect of 4-7-8 Breathing Exercise Technique on Tinnitus Handicap, Psychological Factors, and Sleep Quality in Tinnitus Patients: A Randomized Controlled Study — Brain and Behavior (Kirazli et al., Université Ege, Izmir), 2026](https://pubmed.ncbi.nlm.nih.gov/41676854/)
+6. [Systematic Review of Randomised Controlled Trials Evaluating Box Breathing for Stress, Autonomic, and Clinical Outcomes — Applied Psychophysiology and Biofeedback (Dujawara, Ali & Kumari, Université Galgotias), 2026](https://pubmed.ncbi.nlm.nih.gov/42768274/)
+7. [The effects of progressive muscle relaxation on sleep quality in adults: a systematic review and meta-analysis of randomized controlled trials — Frontiers in Public Health (Li et al., Université Putra Malaysia), 2026](https://pubmed.ncbi.nlm.nih.gov/42625730/)
+8. [The management of unwanted pre-sleep thoughts in insomnia: distraction with imagery versus general distraction — Behaviour Research and Therapy (Harvey & Payne, Université d'Oxford), 2002](https://pubmed.ncbi.nlm.nih.gov/11863237/)
+9. [La prise en charge non médicamenteuse de l'insomnie — Santé.fr (information proposée par le Réseau Morphée), 2016](https://www.sante.fr/la-prise-en-charge-non-medicamenteuse-de-linsomnie)
+10. [L'insomnie (dépliant patient) — Institut national du sommeil et de la vigilance (INSV)](https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Insomnie-3-Volets.pdf)
+11. [Insomnie — Inserm, 2017](https://www.inserm.fr/dossier/insomnie/)
+12. [Le numéro national de prévention du suicide — Santé.fr, 2023](https://www.sante.fr/le-numero-national-de-prevention-du-suicide-0)

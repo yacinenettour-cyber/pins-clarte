@@ -86,7 +86,7 @@ L'étude portait sur une scène choisie à l'avance ; la version « mélange » 
 
 La [respiration lente](/calmer-son-systeme-nerveux/) aide parce qu'elle occupe l'attention. Le Réseau Morphée, spécialisé dans les troubles du sommeil, explique sur Santé.fr que le travail sur la respiration empêche les pensées de divaguer et aide à se concentrer sur autre chose que les pensées négatives. Il crée aussi une transition entre l'agitation de la journée et la nuit [7].
 
-Essaie : inspire par le nez en comptant jusqu'à 4, puis expire doucement en comptant jusqu'à 6, pendant cinq minutes. Si tu perds le compte, reprends à 1, sans te juger.
+Essaie : inspire par le nez en comptant jusqu'à 4, puis expire doucement en comptant jusqu'à 6, pendant cinq minutes. Si tu perds le compte, reprends à 1, sans te juger. Les autres techniques (4-7-8, respiration carrée, méthode militaire) sont comparées dans notre article sur la [respiration pour dormir](/respiration-pour-dormir/).
 
 ### 5. Sortir du lit si le sommeil ne vient pas
 
