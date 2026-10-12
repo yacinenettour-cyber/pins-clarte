@@ -2566,5 +2566,61 @@
   ],
   "x": 0.52,
   "source": "manuel"
+ },
+ "dedie-jardiner.jpg": {
+  "tete": [
+   0.4,
+   0.78
+  ],
+  "x": 0.55,
+  "source": "manuel"
+ },
+ "dedie-vaisselle.jpg": {
+  "tete": [
+   0.3,
+   0.76
+  ],
+  "x": 0.55,
+  "source": "manuel"
+ },
+ "dedie-jambes-au-mur.jpg": {
+  "tete": [
+   0.3,
+   0.85
+  ],
+  "x": 0.5,
+  "source": "manuel"
+ },
+ "dedie-volant-fatigue.jpg": {
+  "tete": [
+   0.23,
+   0.56
+  ],
+  "x": 0.4,
+  "source": "manuel"
+ },
+ "dedie-courses-noel.jpg": {
+  "tete": [
+   0.27,
+   0.62
+  ],
+  "x": 0.53,
+  "source": "manuel"
+ },
+ "dedie-coucher-enfant-noel.jpg": {
+  "tete": [
+   0.24,
+   0.7
+  ],
+  "x": 0.55,
+  "source": "manuel"
+ },
+ "dedie-sieste-train.jpg": {
+  "tete": [
+   0.31,
+   0.58
+  ],
+  "x": 0.64,
+  "source": "manuel"
  }
 }

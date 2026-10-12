@@ -1,5 +1,5 @@
 {
- "statut": "en cours : 8 faites le 08/10/2026 et 6 le 09/10/2026 (quota gratuit Hugging Face épuisé ensuite), « Bain de forêt » couvert par une photo Unsplash, 11 restantes",
+ "statut": "en cours : 8 faites le 08/10/2026, 6 le 09/10/2026 et 7 le 11/10/2026 (quota gratuit Hugging Face épuisé ensuite), « Bain de forêt » couvert par une photo Unsplash, 4 restantes",
  "consigne": "Générer chaque photo (832x1248 ou plus), l'enregistrer dans fonds/ sous le nom indiqué, la classer \"dedie\" dans fonds_themes.json, ajouter son cadrage (outils/cadrage_fonds.py + vérification à l'œil), puis ajouter le champ \"photo\" au pin correspondant dans pins.json et relancer le test de rendu.",
  "prefixe_prompt": "Realistic editorial lifestyle photo, vertical 2:3, soft natural light, calm warm atmosphere, shallow depth of field, professional quality, no text, no logo, no watermark. ",
  "photos": [
@@ -90,7 +90,8 @@
   {
    "titre": "Stress : pourquoi jardiner 20 minutes te fait du bien",
    "fichier": "dedie-jardiner.jpg",
-   "prompt": "Hands repotting a small green plant with soil on a sunny balcony table, terracotta pots."
+   "prompt": "Hands repotting a small green plant with soil on a sunny balcony table, terracotta pots.",
+   "statut": "faite le 11/10/2026"
   },
   {
    "titre": "Bain de forêt : 3 effets de 20 minutes sur ton stress",
@@ -100,32 +101,38 @@
   {
    "titre": "Vaisselle en pleine conscience : ta pause du soir",
    "fichier": "dedie-vaisselle.jpg",
-   "prompt": "Close-up of hands washing a ceramic bowl in warm soapy water in a kitchen sink, evening warm light."
+   "prompt": "Close-up of hands washing a ceramic bowl in warm soapy water in a kitchen sink, evening warm light.",
+   "statut": "faite le 11/10/2026"
   },
   {
    "titre": "Système nerveux : 5 minutes jambes au mur en rentrant",
    "fichier": "dedie-jambes-au-mur.jpg",
-   "prompt": "A woman in comfortable clothes lying on a rug with her legs resting straight up against a wall, arms open, eyes closed, calm living room."
+   "prompt": "A woman in comfortable clothes lying on a rug with her legs resting straight up against a wall, arms open, eyes closed, calm living room.",
+   "statut": "faite le 11/10/2026"
   },
   {
    "titre": "Fatigue au volant : 3 signes qu'il faut t'arrêter",
    "fichier": "dedie-volant-fatigue.jpg",
-   "prompt": "A tired driver rubbing their eyes behind the wheel of a car on a highway at dusk."
+   "prompt": "A tired driver rubbing their eyes behind the wheel of a car on a highway at dusk.",
+   "statut": "faite le 11/10/2026"
   },
   {
    "titre": "Courses de Noël : 3 façons de préserver tes nerfs",
    "fichier": "dedie-courses-noel.jpg",
-   "prompt": "A city shopping street at dusk with Christmas lights, a woman holding shopping bags taking a calm breath."
+   "prompt": "A city shopping street at dusk with Christmas lights, a woman holding shopping bags taking a calm breath.",
+   "statut": "faite le 11/10/2026"
   },
   {
    "titre": "Avant Noël : 3 rituels du coucher pour tes enfants",
    "fichier": "dedie-coucher-enfant-noel.jpg",
-   "prompt": "A parent reading a storybook to a child in bed, soft fairy lights and a small Christmas decoration in the bedroom."
+   "prompt": "A parent reading a storybook to a child in bed, soft fairy lights and a small Christmas decoration in the bedroom.",
+   "statut": "faite le 11/10/2026"
   },
   {
    "titre": "Trajet des fêtes : 3 astuces pour dormir en route",
    "fichier": "dedie-sieste-train.jpg",
-   "prompt": "A person sleeping peacefully in a train seat with a neck pillow and a scarf, winter landscape through the window."
+   "prompt": "A person sleeping peacefully in a train seat with a neck pillow and a scarf, winter landscape through the window.",
+   "statut": "faite le 11/10/2026"
   },
   {
    "titre": "Cuisine des fêtes : 3 étirements pour tes épaules",
