@@ -678,6 +678,14 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - **Lecture** : c'est normal pour un site de 3 jours. Google n'a pas encore pris le temps d'explorer la plupart des pages ; ce n'est pas un refus. Ce qui accélère : les liens externes (prospection), la demande d'indexation à la main par l'utilisateur (quota d'une dizaine par jour, l'API ne le permet pas) et le temps.
 - **Bilan du 21/10 mis à jour** (`trig_01PSmwdnKuoye8wBSWiNybhJ`) : il lira la Search Console et comparera avec cet état de référence.
 
+## 60. Objectif : les 3 premières pages de Google (12/10/2026)
+
+**Demande de l'utilisateur** : « Je veux que mon site soit dans les 3 premières pages de Google quand les gens tapent les sujets que je traite. »
+
+- **Carte des mots-clés** dans `docs/referencement/mots-cles.md` : une page pour chaque recherche visée, avec des variantes plus longues à viser d'abord et une difficulté estimée (estimation, pas une mesure). Le fichier contient aussi la méthode de suivi et le tableau des relevés ; premier relevé le 12/10 : 2 pages indexées sur 31, 5 impressions, 0 clic.
+- **Déclencheur `trig_01Fsg2NHtMKLaRZJV2mDhEw1` « Suivi positions Google »**, le vendredi à 11 h 52 (heure de Paris), premier passage le 16/10. Il lit la Search Console et améliore au plus 3 pages par semaine parmi celles en position 11 à 40, sans rien inventer et sans changer d'adresse. Il vérifie, publie, note le relevé et envoie un résumé à l'utilisateur.
+- **Délais annoncés à l'utilisateur** (ordre de grandeur pour un site neuf sur la santé) : indexation de la plupart des pages en quelques semaines ; premières variantes longues dans les 3 premières pages en 2 à 4 mois ; mots-clés principaux disputés en 6 à 12 mois, sans garantie. Les mots courts dominés par les grands médias (« charge mentale », « nerf vague ») pourraient ne jamais y arriver.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
