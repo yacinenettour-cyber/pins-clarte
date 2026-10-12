@@ -612,6 +612,206 @@ jobs:
               return False
 
 
+          # Visuel « fiche » (12/10/2026, audit des impressions, accord de l'utilisateur) : papier pastel,
+          # accroche manuscrite, titre Playfair, étapes numérotées en cartes, photo encadrée sous le texte
+          # (jamais dessus), invitation discrète à enregistrer. Inspiré des 40 épingles les plus vues du
+          # compte (Idea Pins claires, illustrées, denses, « Sauvegarde cette épingle »), alors que les
+          # épingles du robot n'avaient reçu que 3 enregistrements sur 178. Polices libres (OFL) dans polices/.
+          import hashlib
+          from PIL import features
+          # Chiffres alignés (lnum) dans les titres Playfair si la mise en page avancée est disponible.
+          LNUM = ["lnum"] if features.check("raqm") else None
+          POLICES_FICHE = {"titre": "polices/PlayfairDisplay-Bold.ttf", "script": "polices/DancingScript-Bold.ttf",
+                           "texte": "polices/Lora-SemiBold.ttf", "texte_fin": "polices/Lora-Regular.ttf"}
+
+          PALETTES = {  # fond, teinte 1, teinte 2, encre, accent
+              "nuit": ((239, 234, 245), (214, 200, 232), (246, 222, 230), (58, 49, 82), (128, 96, 166)),
+              "sauge": ((238, 243, 235), (205, 225, 207), (244, 230, 214), (44, 72, 56), (86, 136, 100)),
+              "rose": ((248, 236, 232), (240, 205, 210), (246, 226, 206), (74, 45, 58), (184, 96, 120)),
+              "peche": ((251, 240, 228), (248, 214, 186), (238, 230, 204), (76, 52, 36), (196, 120, 62)),
+              "brume": ((236, 241, 246), (206, 220, 236), (240, 228, 236), (46, 62, 84), (88, 128, 168)),
+          }
+          THEME_PALETTE = {"sommeil": "nuit", "systemenerveux": "sauge", "somatisation": "rose", "posturesantistress": "rose",
+                           "energie": "peche", "alimentation": "peche", "blocagemental": "brume", "procrastination": "brume",
+                           "fatiguementale": "brume"}
+          ACCROCHES = {
+              "nuit": ["pour des nuits plus douces", "à lire avant de dormir", "pour apaiser tes soirées"],
+              "sauge": ["pour calmer ton système nerveux", "un geste pour souffler", "pour retrouver ton calme"],
+              "rose": ["quand le stress se loge dans le corps", "pour relâcher les tensions", "à faire dès aujourd’hui"],
+              "peche": ["pour retrouver de l’énergie", "pour une énergie plus stable", "petits gestes, grand effet"],
+              "brume": ["pour alléger ton mental", "pour enfin avancer", "quand la tête est trop pleine"],
+          }
+          ENREGISTRER = ["Enregistre cette fiche pour plus tard", "À garder pour les jours chargés",
+                         "Épingle-la pour t’en souvenir", "Garde cette fiche sous la main", "À relire ce soir, au calme"]
+
+
+          def police(cle, taille):
+              return ImageFont.truetype(POLICES_FICHE[cle], taille)
+
+
+          def _choix(liste, graine):
+              return liste[int(hashlib.md5(graine.encode()).hexdigest(), 16) % len(liste)]
+
+
+          def _couper(d, texte, f, largeur, feat=None):
+              lignes, cour = [], ""
+              for mot in texte.split():
+                  essai = (cour + " " + mot).strip()
+                  if d.textlength(essai, font=f, features=feat) <= largeur or not cour:
+                      cour = essai
+                  else:
+                      lignes.append(cour)
+                      cour = mot
+              if cour:
+                  lignes.append(cour)
+              # Ponctuation française : ne jamais laisser « : », « ? », « ! » seuls en début de ligne.
+              i = 1
+              while i < len(lignes):
+                  if lignes[i][:1] in ":?!;»":
+                      if " " in lignes[i]:
+                          tete, reste = lignes[i].split(" ", 1)
+                          lignes[i - 1] += " " + tete
+                          lignes[i] = reste
+                      else:  # ligne faite seulement de ponctuation : rattachée à la précédente
+                          lignes[i - 1] += " " + lignes.pop(i)
+                          continue
+                  i += 1
+              # Un nombre ne reste jamais seul en fin de ligne (« 3 / raisons ») : il passe avec son mot.
+              for i in range(len(lignes) - 1):
+                  mots = lignes[i].split()
+                  if len(mots) > 1 and mots[-1].isdigit():
+                      lignes[i] = " ".join(mots[:-1])
+                      lignes[i + 1] = mots[-1] + " " + lignes[i + 1]
+              return lignes
+
+
+          def _papier(L, H, pal, graine):
+              fond, t1, t2 = pal[0], pal[1], pal[2]
+              img = Image.new("RGB", (L, H), fond)
+              rnd = random.Random(graine)
+              calque = Image.new("RGB", (L, H), fond)
+              dc = ImageDraw.Draw(calque)
+              for coul, (cx, cy) in ((t1, (rnd.randint(-100, 250), rnd.randint(-100, 300))),
+                                     (t2, (rnd.randint(700, 1100), rnd.randint(1100, 1550))),
+                                     (t1, (rnd.randint(750, 1100), rnd.randint(250, 650)))):
+                  r = rnd.randint(260, 380)
+                  dc.ellipse([cx - r, cy - r * 0.8, cx + r, cy + r * 0.8], fill=coul)
+              calque = calque.filter(ImageFilter.GaussianBlur(130))
+              img = Image.blend(img, calque, 0.75)
+              # Grain de papier très léger.
+              bruit = Image.effect_noise((L, H), 10).convert("L").point(lambda v: 128 + (v - 128) // 3)
+              img = Image.blend(img, Image.merge("RGB", (bruit, bruit, bruit)), 0.04)
+              return img
+
+
+          def _ombre_carte(img, box, rayon, alpha=40, flou=14, dy=6):
+              x0, y0, x1, y1 = box
+              o = Image.new("L", img.size, 0)
+              ImageDraw.Draw(o).rounded_rectangle([x0, y0 + dy, x1, y1 + dy], radius=rayon, fill=alpha)
+              o = o.filter(ImageFilter.GaussianBlur(flou))
+              img.paste(Image.new("RGB", img.size, (60, 40, 50)), (0, 0), o)
+
+
+          def dessiner_fiche(titre, points, chemin_sortie, fond, theme, recadrer, graine=None):
+              titre, points = titre.replace("'", "’"), [p.replace("'", "’") for p in points]
+              """recadrer(photo, l, h, nom) -> photo recadrée sur le sujet (fonction de pins.yml)."""
+              L, H, marge = 1000, 1500, 64
+              graine = graine or titre
+              nom_pal = THEME_PALETTE.get(theme, "rose")
+              pal = PALETTES[nom_pal]
+              encre, accent, teinte = pal[3], pal[4], pal[1]
+              img = _papier(L, H, pal, graine)
+              d = ImageDraw.Draw(img)
+
+              # Accroche manuscrite puis titre : le titre rétrécit avant que la photo ne passe sous 320 px.
+              accroche = _choix(ACCROCHES[nom_pal], graine)
+              cta = _choix(ENREGISTRER, graine + "cta")
+              for t_titre, t_pt, esp in [(78, 38, 30), (72, 36, 26), (66, 34, 24), (60, 33, 22), (56, 31, 18), (52, 30, 16), (48, 29, 14), (44, 28, 12)]:
+                  f_titre, f_pt = police("titre", t_titre), police("texte", t_pt)
+                  l_titre = _couper(d, titre, f_titre, L - 2 * marge - 20, LNUM)
+                  h_ligne_t = int(t_titre * 1.12)
+                  y = 70 + 62 + 14  # accroche (Dancing 50) puis titre
+                  y_titre_bas = y + h_ligne_t * len(l_titre)
+                  y_cartes = y_titre_bas + 74
+                  cartes = []
+                  for p in points:
+                      lp = _couper(d, p, f_pt, L - 2 * marge - 150)
+                      h = max(96, int(t_pt * 1.3) * len(lp) + 44)
+                      cartes.append((lp, h))
+                  y_bas_cartes = y_cartes + sum(h for _, h in cartes) + esp * (len(cartes) - 1)
+                  bas_photo = H - 178
+                  h_photo = bas_photo - (y_bas_cartes + 40)
+                  larg_ok = (max(d.textlength(x, font=f_titre, features=LNUM) for x in l_titre) <= L - 2 * marge
+                             and max(d.textlength(x, font=f_pt) for lp, _ in cartes for x in lp) <= L - 2 * marge - 150)
+                  if h_photo >= 330 and len(l_titre) <= 3 and larg_ok:
+                      break
+              zones = {}
+              # Accroche
+              f_acc = police("script", 50)
+              w = d.textlength(accroche, font=f_acc)
+              d.text(((L - w) / 2, 70), accroche, font=f_acc, fill=accent)
+              # Titre centré
+              y = 70 + 62 + 14
+              zones["texte_haut"] = 70
+              for ligne in l_titre:
+                  w = d.textlength(ligne, font=f_titre, features=LNUM)
+                  d.text(((L - w) / 2, y), ligne, font=f_titre, fill=encre, features=LNUM)
+                  y += h_ligne_t
+              # Ornement : trait, losange, trait
+              yo = y_titre_bas + 34
+              d.line([(L / 2 - 90, yo), (L / 2 - 16, yo)], fill=accent, width=3)
+              d.line([(L / 2 + 16, yo), (L / 2 + 90, yo)], fill=accent, width=3)
+              d.polygon([(L / 2, yo - 8), (L / 2 + 8, yo), (L / 2, yo + 8), (L / 2 - 8, yo)], fill=accent)
+              # Cartes numérotées
+              y = y_cartes
+              f_num = police("titre", 40)
+              for i, (lp, h) in enumerate(cartes, 1):
+                  box = (marge, y, L - marge, y + h)
+                  _ombre_carte(img, box, 30)
+                  voile = Image.new("RGB", (box[2] - box[0], h), (255, 255, 255))
+                  m = Image.new("L", voile.size, 0)
+                  ImageDraw.Draw(m).rounded_rectangle([0, 0, voile.width - 1, h - 1], radius=30, fill=215)
+                  img.paste(voile, (box[0], y), m)
+                  d = ImageDraw.Draw(img)
+                  cx, cy, r = marge + 62, y + h / 2, 34
+                  d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=teinte)
+                  t = str(i)
+                  bb = d.textbbox((0, 0), t, font=f_num, features=LNUM)
+                  d.text((cx - (bb[2] - bb[0]) / 2 - bb[0], cy - (bb[3] - bb[1]) / 2 - bb[1]), t, font=f_num, fill=accent, features=LNUM)
+                  yt = y + (h - int(t_pt * 1.3) * len(lp)) / 2 - 4
+                  for ligne in lp:
+                      d.text((marge + 124, yt), ligne, font=f_pt, fill=encre)
+                      yt += int(t_pt * 1.3)
+                  y += h + esp
+              zones["texte_bas"] = y_bas_cartes
+              # Photo encadrée (bord blanc, coins arrondis, ombre douce)
+              if fond and h_photo >= 330:
+                  x0, x1, y0 = marge + 20, L - marge - 20, bas_photo - h_photo
+                  _ombre_carte(img, (x0 - 10, y0 - 10, x1 + 10, bas_photo + 10), 40, alpha=55, flou=18, dy=8)
+                  d = ImageDraw.Draw(img)
+                  d.rounded_rectangle([x0 - 10, y0 - 10, x1 + 10, bas_photo + 10], radius=40, fill=(255, 255, 255))
+                  photo = recadrer(Image.open(fond).convert("RGB"), x1 - x0, bas_photo - y0, os.path.basename(fond))
+                  m = Image.new("L", photo.size, 0)
+                  ImageDraw.Draw(m).rounded_rectangle([0, 0, photo.width - 1, photo.height - 1], radius=32, fill=255)
+                  img.paste(photo, (x0, y0), m)
+                  zones["photo_haut"], zones["photo_bas"] = y0 - 10, bas_photo + 10
+              d = ImageDraw.Draw(img)
+              # Invitation à enregistrer, manuscrite, puis la marque
+              f_cta = police("script", 46)
+              w = d.textlength(cta, font=f_cta)
+              y_cta = H - 140
+              d.text(((L - w) / 2, y_cta), cta, font=f_cta, fill=accent)
+              zones["cta_haut"] = d.textbbox(((L - w) / 2, y_cta), cta, font=f_cta)[1]
+              f_m = police("texte_fin", 26)
+              w = d.textlength(MARQUE, font=f_m)
+              d.text(((L - w) / 2, H - 62), MARQUE, font=f_m, fill=tuple(int(c * 0.6 + 255 * 0.4) for c in encre))
+              zones.update(taille_titre=t_titre, taille_texte=t_pt, lignes_titre=len(l_titre),
+                           largeur_titre=max(d.textlength(x, font=f_titre, features=LNUM) for x in l_titre),
+                           largeur_points=max(d.textlength(x, font=f_pt) for lp, _ in cartes for x in lp))
+              img.save(chemin_sortie, "JPEG", quality=90, optimize=True, progressive=True)
+              return zones
+
+
           police_grasse = telecharger_police("Poppins-Bold.ttf",
               "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf")
@@ -845,23 +1045,23 @@ jobs:
                       print("Fond généré par IA (OpenAI) pour le thème :", theme)
                   except Exception as e:
                       print("Échec de la génération IA, on retombe sur la banque de fonds :", e)
-              # Test A/B (29/09/2026) : alternance stricte entre le visuel clair (inspiré des
-              # meilleurs Idea Pins du compte) et l'ancien visuel sombre, notée dans
-              # historique.json ("design") pour comparer les statistiques après 2-3 semaines.
-              n_clair = sum(1 for h in historique if h.get("design") == "clair")
-              n_sombre = sum(1 for h in historique if h.get("design") == "sombre")
-              design = "clair" if n_clair <= n_sombre else "sombre"
+              # Visuel « fiche » pour toutes les épingles à étapes depuis le 12/10/2026 : fin du test A/B
+              # clair/sombre (aucun écart d'impressions mesurable, -5 % [-20 ; +13], et 0 enregistrement
+              # dans les deux visuels). Les rares épingles sans étapes gardent le visuel clair.
+              design = "fiche" if pin.get("points_image") else "clair"
               # Photo dédiée (07/10/2026) : champ "photo" du pin (fichier de fonds/, classé
               # "dedie" dans fonds_themes.json, donc hors rotation) ; sinon photo du thème. Depuis
               # le 08/10/2026, uniquement des photos jamais publiées ; le visuel clair demande une
               # photo d'au moins 800 px de large : à défaut, ce pin passe en visuel sombre.
               if not fond:
-                  largeur_min = 800 if design == "clair" else 0
+                  largeur_min = 800 if design in ("clair", "fiche") else 0
                   fond = (photos_uniques.photo_dediee(pin, photos_exclues, largeur_min)
                           or photos_uniques.choisir_photo(theme, photos_exclues, largeur_min))
                   if not fond and design == "clair":
                       design = "sombre"
                       print("Pas de photo inédite d'au moins 800 px pour le visuel clair : visuel sombre.")
+                  if not fond:
+                      # Fiche : une photo plus étroite est agrandie dans son cadre plutôt que d'attendre.
                       fond = (photos_uniques.photo_dediee(pin, photos_exclues)
                               or photos_uniques.choisir_photo(theme, photos_exclues))
                   if not fond:
@@ -869,7 +1069,11 @@ jobs:
                   fond_etiquette = fond
 
               avec_lien = guide is not None or bool(article)
-              if design == "clair" and pin.get("points_image"):
+              if design == "fiche":
+                  zones = dessiner_fiche(pin["texte_image"], pin["points_image"], chemin, fond, theme, _recadrer_net)
+                  if not zones.get("photo_haut"):
+                      sys.exit("Visuel fiche sans place pour la photo : publication annulée (règle texte/photo).")
+              elif design == "clair" and pin.get("points_image"):
                   dessiner_clair_infographie(pin["texte_image"], pin["points_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
               elif design == "clair":
                   dessiner_clair_phrase(pin["texte_image"], chemin, police_grasse, police_normale, fond, theme, avec_lien)
