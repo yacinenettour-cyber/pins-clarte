@@ -689,6 +689,18 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - **Déclencheur `trig_01Fsg2NHtMKLaRZJV2mDhEw1` « Suivi positions Google »**, le vendredi à 11 h 52 (heure de Paris), premier passage le 16/10. Il lit la Search Console et améliore au plus 3 pages par semaine parmi celles en position 11 à 40, sans rien inventer et sans changer d'adresse. Il vérifie, publie, note le relevé et envoie un résumé à l'utilisateur.
 - **Délais annoncés à l'utilisateur** (ordre de grandeur pour un site neuf sur la santé) : indexation de la plupart des pages en quelques semaines ; premières variantes longues dans les 3 premières pages en 2 à 4 mois ; mots-clés principaux disputés en 6 à 12 mois, sans garantie. Les mots courts dominés par les grands médias (« charge mentale », « nerf vague ») pourraient ne jamais y arriver.
 
+## 61. Rythme des articles : 2 par semaine (12/10/2026)
+
+**Demande de l'utilisateur** : l'utilisateur vise 1 000 visites par jour. Il a demandé si 3 articles par semaine était trop, puis a répondu « Ok on passe à 2 » à la recommandation de commencer à 2.
+
+- **Raisons données pour ne pas passer à 3 tout de suite** : Google n'a indexé que 2 pages sur 31 (section 59), et ajouter des pages ne l'aide pas à rattraper ce retard ; la qualité de sujets de santé exige de vérifier chaque source une par une ; les sujets doivent rester distincts pour ne pas se faire concurrence entre eux.
+- **Déclencheur `trig_01JLtsNwykWqEPkdkgeWcqDm`** renommé « Articles du lundi et du jeudi », à 14 h 53 (heure de Paris) ; premier passage le jeudi 15/10. Règle de sécurité : pas de publication si le sujet manque de sources fiables ou recoupe un article existant. La liste des sujets est complétée dès qu'il en reste moins de 6.
+- **Bilan prévu le 23/11** (`trig_01WHiHevBP78brEVLGovhUPt`) : passer à 3 par semaine si les nouvelles pages s'indexent bien. Rien ne change sans l'accord de l'utilisateur.
+- **En attente de l'utilisateur** : l'option B (orienter davantage d'épingles vers les articles plutôt que vers la page du guide sur systeme.io).
+- **Estimations données à l'utilisateur** (ordres de grandeur du métier, pas des mesures) :
+  - avec 1 000 visites par jour : 300 à 900 inscrits par mois, soit 1 à 3 %, puis 3 à 27 ventes par mois, soit 1 à 3 % des inscrits ;
+  - trajectoire : 10 à 50 visites par jour à 3 mois, 200 à 600 à 12 mois, 1 000 atteignable en 18 à 24 mois.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.

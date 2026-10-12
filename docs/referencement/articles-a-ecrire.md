@@ -1,7 +1,9 @@
 # Articles à écrire (un par semaine, depuis le 12/10/2026)
 
-Demande de l'utilisateur : « Écris un nouvel article par semaine ». Le déclencheur « Article de la semaine »
-(lundi à 14 h 53, heure de Paris) prend le premier sujet « à écrire » de cette liste. Journal section 57.
+Demande de l'utilisateur : « Écris un nouvel article par semaine », puis le 12/10 « Ok on passe à 2 ».
+Le déclencheur « Articles du lundi et du jeudi » (14 h 53, heure de Paris) prend le premier sujet « à écrire »
+de cette liste. Si un sujet manque de sources fiables ou recoupe un article existant, il ne publie rien ce
+jour-là. Bilan le 23/11 pour décider s'il faut passer à 3 par semaine. Journal sections 57 et 61.
 
 Choix des sujets : des recherches réelles (suggestions Google lues le 12/10/2026) auxquelles aucune page
 du site ne répond encore, dans le périmètre du compte (stress, sommeil, système nerveux). Une seule page par
