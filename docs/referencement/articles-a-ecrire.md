@@ -1,4 +1,4 @@
-# Articles à écrire (un par semaine, depuis le 12/10/2026)
+# Articles à écrire (2 par semaine depuis le 12/10/2026)
 
 Demande de l'utilisateur : « Écris un nouvel article par semaine », puis le 12/10 « Ok on passe à 2 ».
 Le déclencheur « Articles du lundi et du jeudi » (14 h 53, heure de Paris) prend le premier sujet « à écrire »
