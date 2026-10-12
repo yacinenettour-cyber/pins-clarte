@@ -1675,5 +1675,16 @@
   "pin_id": "600175087890111091",
   "md5": "eb51cad3eae6ac05ad0a10d582832b52",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-12T12:07+00:00",
+  "titre": "Montre connectée : quand tes nuits deviennent un score",
+  "image": "images/pin-20261012-120747.jpg",
+  "fond": "fonds/pexels-10912447.jpg",
+  "theme": "sommeil",
+  "design": "sombre",
+  "pin_id": "600175087890112309",
+  "md5": "7e9b21d5be3fafa4f39c34840fd75695",
+  "lien": "guide:sommeil"
  }
 ]
