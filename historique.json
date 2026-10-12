@@ -1653,5 +1653,16 @@
   "pin_id": "600175087890109728",
   "md5": "9a3388960bc0aa183afcea816bb547a1",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-12T08:07+00:00",
+  "titre": "Yoga nidra : 3 étapes pour débuter au lit",
+  "image": "images/pin-20261012-080747.jpg",
+  "fond": "fonds/pexels-10647894.jpg",
+  "theme": "sommeil",
+  "design": "sombre",
+  "pin_id": "600175087890110263",
+  "md5": "673364828517a5c0fb5aa0254606fba6",
+  "lien": "guide:sommeil"
  }
 ]
