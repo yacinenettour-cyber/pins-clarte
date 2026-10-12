@@ -663,7 +663,9 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 
   Sur 29 sites, 11 passent en C : cabinets de praticiens, petits blogs et newsletters, L'Optimisme.pro. Parmi les 5 déjà contactés, 3 sont en C (Les BURN'ettes, podcast Même Plus Peur, Ghislain Bousseau) : ils ne seront pas relancés.
 - **Déclencheur « Prospection liens » mis à jour** : sites A d'abord, puis B ; jamais de site C ; l'audience de tout nouveau site est mesurée avant de lui écrire.
-- **Nouvelle recherche lancée** : 40 sites francophones avec des signes de trafic visibles (grands blogs indépendants, associations nationales, pages prévention des mutuelles, podcasts et newsletters connus). Leur rang Tranco sera vérifié avant tout envoi.
+- **Nouvelle recherche (résultat le 12/10)** : 40 sites ajoutés au registre (`lot` : « recherche 2 du 12/10 ») : associations de patients, services de santé universitaires, campagnes de santé mentale, pages prévention des mutuelles, podcasts. Classement Tranco : 13 en A (dont INSV, Fédération Française des Diabétiques, Infirmiers.com, santementale.fr, ciao.ch, Essentiel Autonomie, Rose Up, universités de Genève, Paris-Saclay, Bordeaux, Laval, Namur et Moncton), 23 en B et 4 en C (podcasts indépendants, écartés).
+- **Adresses à confirmer** : la recherche n'a pas pu ouvrir les pages. Une partie des adresses vient de documents tiers parfois anciens (champ `source_email`) : toutes ont `email_verifie: false`. Le déclencheur confirme chaque adresse sur le site lui-même avant d'écrire ; sinon, statut `formulaire`.
+- **Aucun grand blog indépendant francophone** avec une audience vérifiable n'a été trouvé. Le trafic utile vient surtout des organismes, des universités et des mutuelles.
 
 ## 59. Google Search Console connectée : état de référence (12/10/2026)
 
