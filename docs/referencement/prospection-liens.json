@@ -95,16 +95,22 @@
    "site": "Réseau Morphée (réseau de santé des troubles du sommeil, Île-de-France)",
    "page_cible": "https://reseau-morphee.fr/le-monde-du-sommeil",
    "email": "contact@reseau-morphee.fr",
-   "email_verifie": false,
+   "email_verifie": true,
    "formulaire": null,
    "prenom": null,
    "note": 4,
    "pourquoi": "Page « Le Monde du Sommeil » qui renvoie vers d'autres sites du sommeil (France Insomnie, INSV, SFRMS...) ; pertinente pour un article sur le réveil nocturne ou les ruminations.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/reveil-4h-du-matin/",
    "remarque": "Très sérieux et actif (Journée du sommeil 2026, brochure Insomnie 2026) ; acteur médical qui cite surtout des structures officielles, donc chance d'ajout plus faible pour un site d'auteur non professionnel.",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "domaine": "reseau-morphee.fr",
-   "audience": "A : domaine dans le top 1 million Tranco (rang 694086, 12/10/2026)"
+   "audience": "A : domaine dans le top 1 million Tranco (rang 694086, 12/10/2026)",
+   "date_envoi": "2026-10-13",
+   "thread_id": "1a135dbbe0e2be08",
+   "sujet": "Un lien cassé sur votre page « Le Monde du Sommeil »",
+   "liens_casses": [
+    "https://hopital-antoine-beclere.aphp.fr/loffre-de-soins-dantoine-beclere/adultes/specialites-medicales/troubles-du-sommeil/ (404, confirmé 2 fois)"
+   ]
   },
   {
    "site": "Nouveau Souffle (association d'accompagnement des aidants)",
@@ -245,16 +251,19 @@
    "site": "Service de santé étudiante – Université Le Havre Normandie",
    "page_cible": "https://www.univ-lehavre.fr/fr/actualites/campus-actualites/sante-mentale-les-ressources-et-dispositifs-a-disposition-des-etudiantes-et-des-etudiants/",
    "email": "servicesante.etudiants@univ-lehavre.fr",
-   "email_verifie": false,
+   "email_verifie": true,
    "formulaire": null,
    "prenom": null,
    "note": 3,
    "pourquoi": "Page recensant les ressources et dispositifs santé mentale pour les étudiants (3040, 3114, Santé Psy Étudiant, sophrologie).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (et https://www.contactapaisement-mental.fr/ressources-urgence/)",
    "remarque": "Pages mises à jour en 2026 (rendez-vous santé dès le 24/09/2026) ; même réserve que pour toute université.",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "domaine": "univ-lehavre.fr",
-   "audience": "A : domaine dans le top 1 million Tranco (rang 106959, 12/10/2026)"
+   "audience": "A : domaine dans le top 1 million Tranco (rang 106959, 12/10/2026)",
+   "date_envoi": "2026-10-13",
+   "thread_id": "1a135dbc377243b3",
+   "sujet": "Pour votre page « Santé mentale : les ressources et dispositifs »"
   },
   {
    "site": "Ambassadeurs Santé Mentale (Fondation ARHM, jeunes 16-25 ans)",
@@ -449,8 +458,9 @@
    "pourquoi": "Page conseils « Quelles astuces pour bien dormir ? » (sommeil et équilibre glycémique) et programme gratuit Slow Diabète dont une session porte sur le sommeil et l'équilibre émotionnel ; le baromètre DiaMind (nov. 2025) relie la détresse psychique à la charge mentale de la maladie. Un exercice de respiration pour s'endormir y a sa place. URL de la page vue citée dans un export PDF du site, à confirmer en ligne.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/ (+ /respiration-guidee/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 214168, 12/10/2026)",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "formulaire",
+   "lot": "recherche 2 du 12/10",
+   "remarque": "13/10 : adresse introuvable sur le site (contact 404, mentions légales sans adresse)"
   },
   {
    "site": "FibromyalgieSOS (association nationale)",
@@ -537,7 +547,7 @@
    "domaine": "universite-paris-saclay.fr",
    "page_cible": "https://www.universite-paris-saclay.fr/vie-de-campus/sante-et-bien-etre/consultation-medicale-de-prevention",
    "email": "sse.contact@universite-paris-saclay.fr",
-   "email_verifie": false,
+   "email_verifie": true,
    "source_email": "site universite-paris-saclay.fr",
    "formulaire": null,
    "prenom": null,
@@ -545,8 +555,11 @@
    "pourquoi": "Le SSE diffuse un Prev'Mag mensuel (numéros « Sommeil et bien-être », « Examens : comment gérer le stress ? ») et ouvre une Maison de la santé le 1er octobre 2026 : une ressource gratuite de respiration pour dormir convient à un prochain numéro ou à la page santé et bien-être.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/ (+ /respiration-guidee/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 28768, 12/10/2026)",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-13",
+   "thread_id": "1a135dbbe287d55a",
+   "sujet": "Une ressource gratuite sur le sommeil pour les étudiants"
   },
   {
    "site": "Université de Bordeaux — Espace Santé Étudiants (ESE)",
@@ -569,7 +582,7 @@
    "domaine": "unige.ch",
    "page_cible": "https://www.unige.ch/ers/campagnes/nuits-sans-ennuis",
    "email": "sante@unige.ch",
-   "email_verifie": false,
+   "email_verifie": true,
    "source_email": "page unige.ch/sse (écrite sante(at)unige.ch) — service dont dépendent les ERS",
    "formulaire": null,
    "prenom": null,
@@ -577,15 +590,18 @@
    "pourquoi": "Page de campagne entièrement consacrée au sommeil des étudiants : l'article « respiration pour dormir » et les audios sans voix sont des outils concrets à lister.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 7176, 12/10/2026)",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-13",
+   "thread_id": "1a135dbbf046b6ba",
+   "sujet": "Pour votre campagne « Nuits sans ennuis » : une ressource gratuite sur stress et sommeil"
   },
   {
    "site": "Université de Namur — Cellule Médico-Psychologique (CMP)",
    "domaine": "unamur.be",
-   "page_cible": "https://www.unamur.be/en/campus/bien-etre/cmp",
+   "page_cible": "https://www.unamur.be/fr/campus/bien-etre/cmp",
    "email": "cmp@unamur.be",
-   "email_verifie": false,
+   "email_verifie": true,
    "source_email": "page CMP du site unamur.be",
    "formulaire": null,
    "prenom": null,
@@ -593,8 +609,11 @@
    "pourquoi": "La CMP anime des ateliers en petits groupes sur la gestion du stress et du sommeil ; une ressource gratuite de respiration guidée prolonge ces ateliers à la maison.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /respiration-pour-dormir/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 45207, 12/10/2026)",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-13",
+   "thread_id": "1a135dbbe799e2e6",
+   "sujet": "Un outil gratuit de respiration pour l'accompagnement à la gestion du stress"
   },
   {
    "site": "Univers Santé (asbl de promotion de la santé de l'UCLouvain)",
@@ -649,7 +668,7 @@
    "domaine": "institut-sommeil-vigilance.org",
    "page_cible": "https://institut-sommeil-vigilance.org/10-recommandations-de-nos-experts-pour-bien-dormir/",
    "email": "contact@insv.org",
-   "email_verifie": false,
+   "email_verifie": true,
    "source_email": "site institut-sommeil-vigilance.org (écrite contact[@]insv.org)",
    "formulaire": null,
    "prenom": null,
@@ -658,7 +677,8 @@
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 327400, 12/10/2026)",
    "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": "13/10 : page proposée en 404 ; seule page trouvée = annonce d'événement 2023, sans intérêt pour un lien ; adresse contact@insv.org vérifiée sur /contact/. Chercher une vraie page ressources avant d'écrire."
   },
   {
    "site": "Santé Mentale France (fédération)",
@@ -1080,7 +1100,7 @@
  "passages": [
   {
    "date": "2026-10-13",
-   "resultat": "aucun envoi : connecteur Composio (Gmail, atelier) déconnecté pendant le passage automatique ; rien n'a été envoyé ni vérifié"
+   "resultat": "5 envois (Réseau Morphée avec lien cassé signalé, UNIGE, UNamur, Paris-Saclay, Le Havre) après reconnexion du connecteur ; FFD en formulaire ; INSV reporté ; aucune réponse aux envois du 12/10"
   }
  ]
 }
