@@ -1741,5 +1741,16 @@
   "pin_id": "600175087890129346",
   "md5": "0034a4c148fbdd076c5dfec8c7b77bdc",
   "lien": "article:cortisol-et-sommeil"
+ },
+ {
+  "date": "2026-10-13T16:07+00:00",
+  "titre": "Saumon, châtaignes, clémentines : 3 alliés des fêtes",
+  "image": "images/pin-20261013-160746.jpg",
+  "fond": "fonds/dedie-aliments-fetes.jpg",
+  "theme": "alimentation",
+  "design": "fiche",
+  "pin_id": "600175087890133725",
+  "md5": "e48b084e766e5216c038095e5fc358cd",
+  "lien": "guide:cortisol"
  }
 ]
