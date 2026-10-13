@@ -71,7 +71,7 @@
     var t = theme(), action = t === "clair" ? "Passer en mode sombre" : "Passer en mode clair";
     document.querySelectorAll(".theme-bascule").forEach(function (b) { b.setAttribute("aria-label", action); b.title = action; });
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", t === "clair" ? "#F4F0E8" : "#080C10");
+    if (meta) meta.setAttribute("content", t === "clair" ? "#F4F0E8" : "#0F1724");
     document.dispatchEvent(new CustomEvent("cm-theme", { detail: t }));
   }
   document.addEventListener("click", function (e) {

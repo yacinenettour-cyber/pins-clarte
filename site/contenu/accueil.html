@@ -4,16 +4,16 @@
    une grille bento de dalles de verre sur 6 colonnes ; la science en registre sobre. Monde unique, nocturne. */
 :root {
   color-scheme: dark;
-  --nuit: #080C10;
-  --nuit-2: #0D1318;
+  --nuit: #0F1724;
+  --nuit-2: #16202F;
   --emeraude: #3A5F43;
-  --brume: #8FBF9A;
-  --champagne: #DFD5C6;
-  --champagne-doux: #A9A196;
-  --verre: rgba(255, 255, 255, 0.03);
-  --verre-fort: rgba(255, 255, 255, 0.06);
-  --lisere: rgba(223, 213, 198, 0.10);
-  --lisere-fort: rgba(223, 213, 198, 0.22);
+  --brume: #9CC8B0;
+  --champagne: #ECE6DC;
+  --champagne-doux: #B3B8C2;
+  --verre: rgba(255, 255, 255, 0.045);
+  --verre-fort: rgba(255, 255, 255, 0.08);
+  --lisere: rgba(236, 230, 220, 0.12);
+  --lisere-fort: rgba(236, 230, 220, 0.24);
   --ombre: rgba(0, 0, 0, 0.45);
   --alerte: #D9A26B;
   --titre: "Syne", "Syne repli A", "Syne repli R", "Segoe UI", system-ui, sans-serif;
@@ -35,7 +35,7 @@ body {
   margin: 0;
   background-color: var(--nuit);
   background-image:
-    radial-gradient(1200px 700px at 85% -10%, rgba(58, 95, 67, 0.28), transparent 60%),
+    radial-gradient(1200px 700px at 85% -10%, rgba(120, 150, 200, 0.18), transparent 60%),
     radial-gradient(900px 600px at -10% 40%, rgba(58, 95, 67, 0.14), transparent 60%),
     radial-gradient(800px 500px at 60% 110%, rgba(223, 213, 198, 0.05), transparent 60%);
   color: var(--champagne);
@@ -66,7 +66,7 @@ section { position: relative; z-index: 1; }
 .entete-section p { color: var(--champagne-doux); font-size: 18px; }
 
 /* Navigation */
-.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: rgba(8, 12, 16, 0.72); border-bottom: 1px solid var(--lisere); }
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); background: rgba(15, 23, 36, 0.72); border-bottom: 1px solid var(--lisere); }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
 .marque { display: flex; align-items: center; gap: 10px; font: 700 18px/1 var(--titre); color: var(--champagne); text-decoration: none; letter-spacing: 0.02em; }
 .marque svg { width: 26px; height: 26px; }
@@ -110,7 +110,7 @@ section { position: relative; z-index: 1; }
 .reassurance { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; color: var(--champagne-doux); }
 .reassurance span { display: inline-flex; align-items: center; gap: 8px; }
 .reassurance span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--brume); box-shadow: 0 0 10px var(--brume); }
-.hero-visuel { position: relative; min-width: 0; aspect-ratio: 4 / 5; max-width: 100%; border-radius: 32px; overflow: hidden; border: 1px solid var(--lisere); background: radial-gradient(circle at 50% 40%, rgba(58,95,67,.35), rgba(8,12,16,.2) 60%), var(--nuit-2); box-shadow: var(--ombre-2xl), 0 40px 90px -40px rgba(58, 95, 67, 0.5); transition: var(--transition); }
+.hero-visuel { position: relative; min-width: 0; aspect-ratio: 4 / 5; max-width: 100%; border-radius: 32px; overflow: hidden; border: 1px solid var(--lisere); background: radial-gradient(circle at 50% 40%, rgba(58,95,67,.35), rgba(15,23,36,.2) 60%), var(--nuit-2); box-shadow: var(--ombre-2xl), 0 40px 90px -40px rgba(58, 95, 67, 0.5); transition: var(--transition); }
 .hero-visuel canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .pause-anim { position: absolute; top: 12px; right: 12px; z-index: 2; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--lisere-fort); background: var(--verre-fort); color: var(--champagne); cursor: pointer; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 .pause-anim svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -122,7 +122,7 @@ section { position: relative; z-index: 1; }
 .animations-en-pause .hero::before { animation-play-state: paused; }
 .hero-visuel .legende { position: absolute; left: 18px; right: 18px; bottom: 18px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; font-size: 13px; color: var(--champagne-doux); }
 .hero-visuel .legende b { display: block; font: 700 28px/1 var(--titre); color: var(--champagne); }
-.pastille-souffle { padding: 8px 12px; border-radius: 999px; background: rgba(8,12,16,.6); border: 1px solid var(--lisere); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); white-space: nowrap; }
+.pastille-souffle { padding: 8px 12px; border-radius: 999px; background: rgba(15,23,36,.6); border: 1px solid var(--lisere); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); white-space: nowrap; }
 
 /* Calculateur */
 .calc { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
@@ -204,7 +204,7 @@ section { position: relative; z-index: 1; }
 /* Teinte commune des photos d'articles, accordée au vert et au lin du site (photos très sombres exclues) */
 .teinte { position: relative; display: block; overflow: hidden; }
 .teinte img { display: block; width: 100%; filter: saturate(.62) sepia(.14) brightness(.86) contrast(1.04); transition: var(--transition); }
-.teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(8, 12, 16, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
+.teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(15, 23, 36, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
 .teinte.sombre img { filter: saturate(.85) brightness(.92); }
 .teinte.sombre::after { display: none; }
 .themes-lien { margin: 0 0 22px; color: var(--champagne-doux); font-size: 15.5px; }

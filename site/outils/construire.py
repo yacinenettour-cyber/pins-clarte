@@ -38,7 +38,7 @@ MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août
 SECTIONS_SPECIALES = {"l'essentiel", "questions fréquentes", "pour aller plus loin", "sources"}
 
 ALT_OG_DEFAUT = "Clarté Mentale : un croissant de lune sur fond de nuit et la phrase « Ton système nerveux mérite une trêve. »"
-LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#080C10" stroke="#8FBF9A" stroke-width="1.5"/>'
+LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#0F1724" stroke="#8FBF9A" stroke-width="1.5"/>'
         '<path d="M20.5 8.5a8.5 8.5 0 1 0 3 12.6 7 7 0 1 1-3-12.6z" fill="#DFD5C6"/></svg>')
 
 
@@ -261,7 +261,7 @@ def image_epingle(a):
     if not os.path.exists(source):
         source = os.path.join(DEPOT, "fonds", a["image"])
     W, H, H_PHOTO = 1000, 1500, 860
-    toile = Image.new("RGB", (W, H), "#080C10")
+    toile = Image.new("RGB", (W, H), "#0F1724")
     photo = ImageOps.fit(ImageOps.exif_transpose(Image.open(source)).convert("RGB"), (W, H_PHOTO), Image.LANCZOS, centering=(0.5, 0.35))
     if not a["images"].get("sombre"):
         # Même teinte douce que sur le site.
@@ -383,7 +383,7 @@ def balise_mesure():
     script = """(function(){var cle="cm-ne-pas-compter",m=/[?&]compter=(oui|non)\\b/.exec(location.search),moi=false;
 try{if(m){if(m[1]==="non")localStorage.setItem(cle,"1");else localStorage.removeItem(cle);}moi=localStorage.getItem(cle)==="1";}catch(e){}
 if(m){var d=document.createElement("div");d.setAttribute("role","status");d.textContent=moi?"Tes visites ne sont plus comptées sur cet appareil.":"Tes visites sont de nouveau comptées sur cet appareil.";
-d.style.cssText="position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:99;max-width:90vw;padding:12px 18px;border-radius:12px;background:#DFD5C6;color:#080C10;font:600 15px/1.4 system-ui,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.4)";
+d.style.cssText="position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:99;max-width:90vw;padding:12px 18px;border-radius:12px;background:#DFD5C6;color:#0F1724;font:600 15px/1.4 system-ui,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.4)";
 document.body.appendChild(d);setTimeout(function(){d.remove();},6000);}
 if(moi)return;var s=document.createElement("script");s.type="module";s.src="https://static.cloudflareinsights.com/beacon.min.js";
 s.setAttribute("data-cf-beacon",@CONFIG@);document.body.appendChild(s);})();"""
@@ -475,7 +475,7 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 {balise_google(chemin)}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{e(SITE['nom'])}" href="/feed.xml">
-<meta name="theme-color" content="#080C10">
+<meta name="theme-color" content="#0F1724">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css?v={VERSION_CSS}">
@@ -805,7 +805,7 @@ def construire_accueil(articles):
 <meta name="description" content="{e(DESCRIPTION_ACCUEIL)}">
 <link rel="canonical" href="{URL}/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<meta name="theme-color" content="#080C10">
+<meta name="theme-color" content="#0F1724">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="{e(SITE['nom'])}">
 <meta property="og:type" content="website">
@@ -1529,17 +1529,17 @@ def construire_fichiers_techniques(articles):
     shutil.copytree(os.path.join(RACINE, "contenu", "audio"), os.path.join(SORTIE, "audio"))
     ecrire("favicon.svg", LOGO.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))
     # Logo PNG (données structurées) et image de partage par défaut.
-    logo = Image.new("RGB", (512, 512), "#080C10")
+    logo = Image.new("RGB", (512, 512), "#0F1724")
     from PIL import ImageDraw
     d = ImageDraw.Draw(logo)
     d.ellipse((56, 56, 456, 456), fill="#DFD5C6")
-    d.ellipse((150, 96, 470, 416), fill="#080C10")
+    d.ellipse((150, 96, 470, 416), fill="#0F1724")
     d.ellipse((40, 40, 472, 472), outline="#8FBF9A", width=10)
     logo.save(os.path.join(SORTIE, "logo.png"), optimize=True)
-    defaut = Image.new("RGB", (1200, 630), "#080C10")
+    defaut = Image.new("RGB", (1200, 630), "#0F1724")
     d = ImageDraw.Draw(defaut)
     d.ellipse((80, 165, 380, 465), fill="#DFD5C6")
-    d.ellipse((150, 140, 420, 410), fill="#080C10")
+    d.ellipse((150, 140, 420, 410), fill="#0F1724")
     d.ellipse((68, 153, 392, 477), outline="#3A5F43", width=8)
     try:
         from PIL import ImageFont

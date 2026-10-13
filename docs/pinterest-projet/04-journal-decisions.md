@@ -715,6 +715,21 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - Les audios de respiration guidée ne changent pas : leurs bols sont mélangés sous la musique.
 - Site republié.
 
+## 63. Site : mode sombre « Nuit bleue » (13/10/2026)
+
+**Demande de l'utilisateur** : « Regarde si tu peux améliorer le design du site et la couleur ».
+
+- **Constat** : le mode clair est réussi et reste inchangé. Le mode sombre, quasi noir (#080C10), est monotone et fatigant sur les longs articles. Trois rendus ont été montrés : l'actuel, A « Nuit bleue » et B « Crépuscule chaud ». L'utilisateur a choisi **A**.
+- **Nouvelles couleurs du mode sombre** :
+  - fond `--nuit` #0F1724, cartes `--nuit-2` #16202F ;
+  - vert `--brume` #9CC8B0, texte `--champagne` #ECE6DC, texte doux #B3B8C2 ;
+  - verres et liserés un peu plus visibles ;
+  - halo bleuté en haut des pages au lieu du halo vert.
+
+  Les couleurs en dur sont alignées : en-têtes, menu mobile, `theme-color`, logo, image par défaut et favicon générés par `construire.py`. Fichiers modifiés : `style.css`, `accueil.html`, `menu.css`, `menu.js`, `construire.py`. Mise en page, polices et vert principal inchangés.
+- **Vérifié** : axe-core, 0 violation sur 12 pages × 2 thèmes × 2 largeurs (390 et 1 280 px), dont les contrastes ; aucun débordement. Site republié.
+- **Proposé, sans réponse de l'utilisateur** : raccourcir le fil d'Ariane des articles sur téléphone, qui répète tout le titre.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
