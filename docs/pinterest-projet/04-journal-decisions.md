@@ -737,6 +737,12 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
   - testée dans les deux thèmes : 0 en haut, 0,5 à mi-article, 1 en fin ; aucune erreur JavaScript ; axe-core 0 violation.
 - **Écarté après examen** : la ligne horizontale sur l'accueil (ordinateur) et la case vide de la carte Pinterest. Toutes deux viennent de la capture d'écran pleine page (fond `fixed` et image chargée à la demande), pas du site.
 
+## 64. Rythme des articles : 5 par semaine (13/10/2026)
+
+- **Demande de l'utilisateur** (13/10) : objectif 150 000 visites par mois, puis « On peut passer à 5 articles par semaine ». Réponse donnée avant : 3 par jour exposerait à la règle de Google contre la production de contenu en masse (« scaled content abuse ») et ferait baisser la qualité sur un sujet santé ; 5 par semaine reste raisonnable si chaque article garde le même niveau de vérification.
+- **Déclencheur** `trig_01JLtsNwykWqEPkdkgeWcqDm`, renommé « Articles du lundi au vendredi », 14 h 53 heure de Paris, du lundi au vendredi. Règles inchangées ; ajoutées : un seul article par jour au maximum, ne rien publier si les sources manquent, compléter la liste des sujets dès qu'il en reste moins de 8, donner à l'utilisateur le lien à faire indexer.
+- **Liste** : `docs/referencement/articles-a-ecrire.md`.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
