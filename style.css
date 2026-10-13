@@ -33,17 +33,17 @@
 @font-face { font-family: "Jakarta repli R"; src: local("Roboto Bold"), local("Roboto-Bold"); font-weight: 750 900; size-adjust: 107.1%; }
 :root {
   color-scheme: dark;
-  --nuit: #080C10;
-  --nuit-2: #0D1318;
+  --nuit: #0F1724;
+  --nuit-2: #16202F;
   --emeraude: #3A5F43;
-  --brume: #8FBF9A;
-  --champagne: #DFD5C6;
-  --champagne-doux: #A9A196;
-  --verre: rgba(255, 255, 255, 0.03);
-  --verre-fort: rgba(255, 255, 255, 0.06);
-  --lisere: rgba(223, 213, 198, 0.10);
-  --lisere-fort: rgba(223, 213, 198, 0.22);
-  --trait-champ: rgba(223, 213, 198, 0.45); /* contour des champs de saisie : contraste d'au moins 3:1 (RGAA 3.3) */
+  --brume: #9CC8B0;
+  --champagne: #ECE6DC;
+  --champagne-doux: #B3B8C2;
+  --verre: rgba(255, 255, 255, 0.045);
+  --verre-fort: rgba(255, 255, 255, 0.08);
+  --lisere: rgba(236, 230, 220, 0.12);
+  --lisere-fort: rgba(236, 230, 220, 0.24);
+  --trait-champ: rgba(236, 230, 220, 0.45); /* contour des champs de saisie : contraste d'au moins 3:1 (RGAA 3.3) */
   --ombre: rgba(0, 0, 0, 0.45);
   --titre: "Syne", "Syne repli A", "Syne repli R", "Segoe UI", system-ui, sans-serif;
   --texte: "Plus Jakarta Sans", "Jakarta repli A", "Jakarta repli R", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -63,7 +63,7 @@ main [id] { scroll-margin-top: 90px; }
 body {
   margin: 0;
   background-color: var(--nuit);
-  background-image: radial-gradient(1100px 600px at 90% -10%, rgba(58, 95, 67, 0.22), transparent 60%), radial-gradient(800px 500px at -10% 30%, rgba(58, 95, 67, 0.10), transparent 60%);
+  background-image: radial-gradient(1100px 600px at 90% -10%, rgba(120, 150, 200, 0.16), transparent 60%), radial-gradient(800px 500px at -10% 30%, rgba(58, 95, 67, 0.10), transparent 60%);
   background-attachment: fixed;
   color: var(--champagne);
   font: 400 18px/1.75 var(--texte);
@@ -82,7 +82,7 @@ img { max-width: 100%; height: auto; display: block; }
 .saut:focus { left: 16px; top: 16px; background: var(--nuit-2); color: var(--champagne); padding: 8px 12px; z-index: 30; }
 
 /* En-tête */
-.entete { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(8, 12, 16, 0.78); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--lisere); }
+.entete { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(15, 23, 36, 0.78); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--lisere); }
 .entete .large { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-top: 14px; padding-bottom: 14px; }
 .marque { color: var(--champagne); text-decoration: none; font: 700 18px/1 var(--titre); letter-spacing: .02em; display: flex; align-items: center; gap: 10px; }
 .marque svg { width: 26px; height: 26px; }
@@ -126,7 +126,7 @@ strong { color: var(--champagne); }
 /* Teinte commune des photos d'articles, accordée au vert et au lin du site (photos très sombres exclues) */
 .teinte { position: relative; display: block; overflow: hidden; }
 .teinte img { display: block; width: 100%; filter: saturate(.62) sepia(.14) brightness(.86) contrast(1.04); transition: var(--transition); }
-.teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(8, 12, 16, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
+.teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(15, 23, 36, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
 .teinte.sombre img { filter: saturate(.85) brightness(.92); }
 .teinte.sombre::after { display: none; }
 .photo figcaption { font-size: 13px; color: var(--champagne-doux); padding: 8px 12px; }
@@ -322,7 +322,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   /* Le menu défile lui-même s'il est plus haut que l'écran, sans jamais faire défiler la page du dessous
      (overscroll-behavior + 1 px de plus que sa hauteur pour qu'il soit toujours « défilable »). La page n'est pas
      bloquée par overflow: hidden : sur Android, ce blocage fait réapparaître la barre d'adresse et la page saute. */
-  .menu-mobile { display: grid; position: fixed; inset: 0; z-index: 19; overflow-y: auto; overscroll-behavior: contain; padding: calc(96px + env(safe-area-inset-top, 0px)) var(--gouttiere, max(16px, 4vw)) 40px; background: rgba(8, 12, 16, 0.94); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-content: start; gap: 8px; clip-path: circle(0% at calc(100% - 38px) 38px); visibility: hidden; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s .6s; }
+  .menu-mobile { display: grid; position: fixed; inset: 0; z-index: 19; overflow-y: auto; overscroll-behavior: contain; padding: calc(96px + env(safe-area-inset-top, 0px)) var(--gouttiere, max(16px, 4vw)) 40px; background: rgba(15, 23, 36, 0.94); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); align-content: start; gap: 8px; clip-path: circle(0% at calc(100% - 38px) 38px); visibility: hidden; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s .6s; }
   .menu-mobile::before { content: ""; position: absolute; top: 0; left: 0; width: 1px; height: calc(100% + 1px); pointer-events: none; }
   .menu-mobile.ouvert { clip-path: circle(150% at calc(100% - 38px) 38px); visibility: visible; transition: clip-path .6s cubic-bezier(.7,0,.2,1), visibility 0s; }
   .menu-mobile ul { display: grid; gap: 8px; align-content: start; list-style: none; margin: 0; padding: 0; }
@@ -339,7 +339,7 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
   .menu-ouvert header { touch-action: none; }
 }
 /* Bouton « retour en haut » (créé par menu.js), sous le menu mobile quand il est ouvert. */
-.haut-page { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 18; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--lisere-fort); background: rgba(13, 19, 24, 0.88); color: var(--champagne); display: grid; place-items: center; cursor: pointer; padding: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--ombre-2xl); transition: color .2s, border-color .2s; }
+.haut-page { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 18; width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--lisere-fort); background: rgba(22, 32, 47, 0.88); color: var(--champagne); display: grid; place-items: center; cursor: pointer; padding: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--ombre-2xl); transition: color .2s, border-color .2s; }
 .haut-page[hidden] { display: none; }
 .haut-page svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .haut-page:hover { color: var(--brume); border-color: var(--brume); }
