@@ -1076,5 +1076,11 @@
    "statut": "formulaire",
    "lot": "recherche 2 du 12/10"
   }
+ ],
+ "passages": [
+  {
+   "date": "2026-10-13",
+   "resultat": "aucun envoi : connecteur Composio (Gmail, atelier) déconnecté pendant le passage automatique ; rien n'a été envoyé ni vérifié"
+  }
  ]
 }
