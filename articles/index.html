@@ -27,7 +27,7 @@
 <meta name="theme-color" content="#0F1724">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?v=fa76f468">
+<link rel="stylesheet" href="/style.css?v=81335532">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tous les articles","url":"https://www.contactapaisement-mental.fr/articles/","inLanguage":"fr-FR","hasPart":[{"@type":"Article","headline":"Ruminations le soir : pourquoi ton cerveau s'emballe au coucher","url":"https://www.contactapaisement-mental.fr/ruminations-le-soir/"},{"@type":"Article","headline":"Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment","url":"https://www.contactapaisement-mental.fr/reveil-4h-du-matin/"},{"@type":"Article","headline":"Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes","url":"https://www.contactapaisement-mental.fr/routine-du-soir-anti-stress/"},{"@type":"Article","headline":"Procrastination du coucher : pourquoi on veille et comment arrêter","url":"https://www.contactapaisement-mental.fr/procrastination-du-coucher/"},{"@type":"Article","headline":"Cortisol, hormone du stress : son rôle, son rythme et les idées reçues","url":"https://www.contactapaisement-mental.fr/cortisol-hormone-du-stress/"},{"@type":"Article","headline":"Baisser son cortisol naturellement : ce qui marche vraiment","url":"https://www.contactapaisement-mental.fr/baisser-son-cortisol-naturellement/"},{"@type":"Article","headline":"Alimentation anti-stress : ce que la science dit vraiment","url":"https://www.contactapaisement-mental.fr/alimentation-anti-stress/"},{"@type":"Article","headline":"Nerf vague : comment l'activer naturellement, ce qui marche vraiment","url":"https://www.contactapaisement-mental.fr/nerf-vague/"},{"@type":"Article","headline":"Calmer son système nerveux : 6 gestes pour se calmer rapidement","url":"https://www.contactapaisement-mental.fr/calmer-son-systeme-nerveux/"},{"@type":"Article","headline":"Charge mentale : définition, signes et 6 façons de l'alléger","url":"https://www.contactapaisement-mental.fr/charge-mentale/"},{"@type":"Article","headline":"Signes du burn-out : les repérer tôt et savoir qui consulter","url":"https://www.contactapaisement-mental.fr/signes-du-burn-out/"},{"@type":"Article","headline":"Cortisol et sommeil : comment le stress dérègle tes nuits, et comment les apaiser","url":"https://www.contactapaisement-mental.fr/cortisol-et-sommeil/"},{"@type":"Article","headline":"Angoisse le soir : pourquoi elle monte la nuit et comment la calmer","url":"https://www.contactapaisement-mental.fr/angoisse-le-soir/"},{"@type":"Article","headline":"Respiration pour dormir : 4-7-8, carrée ou lente, ce qui marche vraiment","url":"https://www.contactapaisement-mental.fr/respiration-pour-dormir/"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.contactapaisement-mental.fr/"},{"@type":"ListItem","position":2,"name":"Articles"}]}</script>
@@ -210,6 +210,28 @@
   });
   if (clairAppareil.addEventListener) clairAppareil.addEventListener("change", majTheme);
   majTheme();
+})();
+/* Barre de lecture des articles (13/10/2026) : un fin trait vert sous l'en-tête montre la part de l'article déjà lue.
+   Décorative (aria-hidden) ; sans JavaScript, rien ne s'affiche. */
+(function () {
+  "use strict";
+  var article = document.querySelector("main#contenu > .etroit > article:not([class])");
+  if (!article) return;
+  var barre = document.createElement("div");
+  barre.className = "barre-lecture";
+  barre.setAttribute("aria-hidden", "true");
+  document.body.appendChild(barre);
+  var attente = false;
+  function maj() {
+    attente = false;
+    var r = article.getBoundingClientRect(), parcours = r.height - window.innerHeight;
+    var part = parcours > 0 ? Math.min(1, Math.max(0, -r.top / parcours)) : 1;
+    barre.style.transform = "scaleX(" + part.toFixed(4) + ")";
+  }
+  function demander() { if (!attente) { attente = true; requestAnimationFrame(maj); } }
+  window.addEventListener("scroll", demander, { passive: true });
+  window.addEventListener("resize", demander);
+  maj();
 })();
 </script>
 

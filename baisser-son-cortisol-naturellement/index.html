@@ -30,7 +30,7 @@
 <meta name="theme-color" content="#0F1724">
 <link rel="preload" href="/polices/syne.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/polices/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?v=fa76f468">
+<link rel="stylesheet" href="/style.css?v=81335532">
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://www.contactapaisement-mental.fr/baisser-son-cortisol-naturellement/#article","headline":"Baisser son cortisol naturellement : ce qui marche vraiment","description":"Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.","inLanguage":"fr-FR","datePublished":"2026-10-08","dateModified":"2026-10-09","wordCount":2796,"mainEntityOfPage":"https://www.contactapaisement-mental.fr/baisser-son-cortisol-naturellement/","author":{"@type":"Person","@id":"https://www.contactapaisement-mental.fr/a-propos/#auteur","name":"Yacine","jobTitle":"Fondateur de Clarté Mentale","url":"https://www.contactapaisement-mental.fr/a-propos/","worksFor":{"@id":"https://www.contactapaisement-mental.fr/#organisation"},"image":"https://www.contactapaisement-mental.fr/img/yacine.jpg"},"publisher":{"@type":"Organization","@id":"https://www.contactapaisement-mental.fr/#organisation","name":"Clarté Mentale","url":"https://www.contactapaisement-mental.fr/","logo":{"@type":"ImageObject","url":"https://www.contactapaisement-mental.fr/logo.png","width":512,"height":512},"sameAs":["https://www.pinterest.com/clartementale/"],"publishingPrinciples":"https://www.contactapaisement-mental.fr/methode-editoriale/"},"about":"baisser son cortisol naturellement","keywords":"baisser son cortisol naturellement","articleSection":"Stress et système nerveux","isAccessibleForFree":true,"citation":[{"@type":"CreativeWork","name":"Sommeil — Inserm, 2017 (mis à jour en 2024)","url":"https://www.inserm.fr/dossier/sommeil/"},{"@type":"ScholarlyArticle","name":"Sleep loss results in an elevation of cortisol levels the next evening — Sleep (Leproult et al., Université de Chicago), 1997","url":"https://doi.org/10.1093/sleep/20.10.865"},{"@type":"ScholarlyArticle","name":"Exercise and circulating cortisol levels: the intensity threshold effect — Journal of Endocrinological Investigation (Hill et al., Université de Caroline du Nord), 2008","url":"https://doi.org/10.1007/BF03345606"},{"@type":"ScholarlyArticle","name":"Effectiveness of stress management interventions to change cortisol levels: a systematic review and meta-analysis — Psychoneuroendocrinology (Rogerson et al., Université de Leeds), 2024","url":"https://doi.org/10.1016/j.psyneuen.2023.106415"},{"@type":"ScholarlyArticle","name":"Social support and oxytocin interact to suppress cortisol and subjective responses to psychosocial stress — Biological Psychiatry (Heinrichs et al., Université de Zurich), 2003","url":"https://doi.org/10.1016/S0006-3223(03)00465-7"},{"@type":"ScholarlyArticle","name":"Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed — Journal of Clinical Sleep Medicine (Drake et al., hôpital Henry Ford, Détroit), 2013","url":"https://pmc.ncbi.nlm.nih.gov/articles/PMC3805807/"},{"@type":"CreativeWork","name":"Cortisol Cocktail: What Is It and Does It Work? — Cleveland Clinic","url":"https://health.clevelandclinic.org/what-to-know-about-adrenal-cocktails"},{"@type":"CreativeWork","name":"Ashwagandha — Manuels MSD pour le grand public","url":"https://www.msdmanuals.com/fr/accueil/sujets-particuliers/compl%C3%A9ments-alimentaires-et-vitamines/ashwagandha"}],"publishingPrinciples":"https://www.contactapaisement-mental.fr/methode-editoriale/","image":["https://www.contactapaisement-mental.fr/img/baisser-son-cortisol-naturellement-16x9.jpg","https://www.contactapaisement-mental.fr/img/baisser-son-cortisol-naturellement-4x3.jpg","https://www.contactapaisement-mental.fr/img/baisser-son-cortisol-naturellement-1x1.jpg"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.contactapaisement-mental.fr/"},{"@type":"ListItem","position":2,"name":"Stress et système nerveux","item":"https://www.contactapaisement-mental.fr/stress-et-systeme-nerveux/"},{"@type":"ListItem","position":3,"name":"Baisser son cortisol naturellement : ce qui marche vraiment"}]}</script>
@@ -404,6 +404,28 @@
   });
   if (clairAppareil.addEventListener) clairAppareil.addEventListener("change", majTheme);
   majTheme();
+})();
+/* Barre de lecture des articles (13/10/2026) : un fin trait vert sous l'en-tête montre la part de l'article déjà lue.
+   Décorative (aria-hidden) ; sans JavaScript, rien ne s'affiche. */
+(function () {
+  "use strict";
+  var article = document.querySelector("main#contenu > .etroit > article:not([class])");
+  if (!article) return;
+  var barre = document.createElement("div");
+  barre.className = "barre-lecture";
+  barre.setAttribute("aria-hidden", "true");
+  document.body.appendChild(barre);
+  var attente = false;
+  function maj() {
+    attente = false;
+    var r = article.getBoundingClientRect(), parcours = r.height - window.innerHeight;
+    var part = parcours > 0 ? Math.min(1, Math.max(0, -r.top / parcours)) : 1;
+    barre.style.transform = "scaleX(" + part.toFixed(4) + ")";
+  }
+  function demander() { if (!attente) { attente = true; requestAnimationFrame(maj); } }
+  window.addEventListener("scroll", demander, { passive: true });
+  window.addEventListener("resize", demander);
+  maj();
 })();
 </script>
 <script>
