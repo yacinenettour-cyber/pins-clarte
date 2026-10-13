@@ -84,3 +84,25 @@
   if (clairAppareil.addEventListener) clairAppareil.addEventListener("change", majTheme);
   majTheme();
 })();
+/* Barre de lecture des articles (13/10/2026) : un fin trait vert sous l'en-tête montre la part de l'article déjà lue.
+   Décorative (aria-hidden) ; sans JavaScript, rien ne s'affiche. */
+(function () {
+  "use strict";
+  var article = document.querySelector("main#contenu > .etroit > article:not([class])");
+  if (!article) return;
+  var barre = document.createElement("div");
+  barre.className = "barre-lecture";
+  barre.setAttribute("aria-hidden", "true");
+  document.body.appendChild(barre);
+  var attente = false;
+  function maj() {
+    attente = false;
+    var r = article.getBoundingClientRect(), parcours = r.height - window.innerHeight;
+    var part = parcours > 0 ? Math.min(1, Math.max(0, -r.top / parcours)) : 1;
+    barre.style.transform = "scaleX(" + part.toFixed(4) + ")";
+  }
+  function demander() { if (!attente) { attente = true; requestAnimationFrame(maj); } }
+  window.addEventListener("scroll", demander, { passive: true });
+  window.addEventListener("resize", demander);
+  maj();
+})();

@@ -730,6 +730,13 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - **Vérifié** : axe-core, 0 violation sur 12 pages × 2 thèmes × 2 largeurs (390 et 1 280 px), dont les contrastes ; aucun débordement. Site republié.
 - **Fil d'Ariane raccourci sur téléphone** (« Fais-le ») : sous 700 px, le dernier élément est masqué visuellement quand il dépasse 30 caractères (classe `long` posée par `ariane()` dans `construire.py`). Le titre de l'article reste lu par les lecteurs d'écran et figure toujours dans les données BreadcrumbList. Vérifié : axe-core, 0 violation sur 12 pages × 2 thèmes × 2 largeurs.
 
+- **Barre de lecture des articles** (« Regarde ce que tu peux faire encore pour améliorer le design ») :
+  - un fin trait vert (3 px, dégradé emeraude → brume) en haut de l'écran suit la part de l'article déjà lue ;
+  - présente seulement sur les articles (`main#contenu > .etroit > article` sans classe), code commun dans `menu.js` et `menu.css` ;
+  - décorative (`aria-hidden`), absente à l'impression ;
+  - testée dans les deux thèmes : 0 en haut, 0,5 à mi-article, 1 en fin ; aucune erreur JavaScript ; axe-core 0 violation.
+- **Écarté après examen** : la ligne horizontale sur l'accueil (ordinateur) et la case vide de la carte Pinterest. Toutes deux viennent de la capture d'écran pleine page (fond `fixed` et image chargée à la demande), pas du site.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
