@@ -157,6 +157,30 @@ DUREE_MINUTEUR = 330.0  # exercice le plus long du minuteur : 5 min arrondies à
 BLANC = 0.25            # silence entre deux bols dans le fichier du minuteur
 
 
+# Minuteur seul (11/10 → 13/10, plainte de l'utilisateur : « le bruit de cloches […] est agressif ») : mesuré, le bol
+# « inspire » montait à -0,6 dBFS en 16 ms (un « clac » à chaque respiration) et le bol de fin avait 70 % de son
+# énergie au-dessus de 2 kHz. Les audios guidés, mixés sous la musique, ne changent pas.
+ATTAQUE_DOUCE = 0.15     # montée de 150 ms : le bol « gonfle » au lieu de claquer
+COUPURE_AIGUS = {"inspire": 2200.0, "expire": 2200.0, "retiens": 1800.0, "fin": 1400.0}  # passe-bas doux (ordre 4) :
+# retire le scintillement métallique ; plus bas pour le bol de fin (partiel à 2 222 Hz) et le petit bol « retiens »
+CRETE_MAX = {"inspire": 0.30, "expire": 0.30, "retiens": 0.18, "fin": 0.30}  # crêtes plafonnées (~ -10 dBFS)
+
+
+def adoucir(x, nom):
+    """Version douce d'un bol pour le minuteur : aigus atténués, attaque lente, volume et crête plafonnés."""
+    n = len(x)
+    f = np.fft.rfftfreq(n, 1 / SR)
+    filtre = 1 / np.sqrt(1 + (f / COUPURE_AIGUS[nom]) ** 8)
+    y = np.fft.irfft(np.fft.rfft(x, axis=0) * filtre[:, None], n, axis=0).astype(np.float32)
+    t = np.arange(n) / SR
+    y *= (np.sin(np.pi / 2 * np.minimum(1.0, t / ATTAQUE_DOUCE)) ** 2)[:, None].astype(np.float32)
+    y *= np.float32(volume_percu(x) / max(volume_percu(y), 1e-9) * 10 ** (-4 / 20))  # même timbre perçu, 4 dB plus bas
+    crete = float(np.max(np.abs(y)))
+    if crete > CRETE_MAX[nom]:
+        y *= np.float32(CRETE_MAX[nom] / crete)
+    return y
+
+
 def minuteur():
     """Fichiers du minuteur de /exercices-respiration/ : musique seule et bols, au même équilibre que les audios guidés."""
     m = musique(DUREE_MINUTEUR)
@@ -167,7 +191,7 @@ def minuteur():
     # Bols bout à bout ; positions (début du son, 10 ms avant la frappe) et durées dans le JSON lu par la page.
     morceaux, positions, t = [np.zeros((int(BLANC * SR), 2), np.float32)], {}, BLANC
     for nom in ("inspire", "expire", "retiens", "fin"):
-        son = bol(nom) * np.float32(gain)
+        son = adoucir(bol(nom) * np.float32(gain), nom)
         positions[nom] = [round(t, 4), round(len(son) / SR, 4)]
         morceaux += [son, np.zeros((int(BLANC * SR), 2), np.float32)]
         t += len(son) / SR + BLANC

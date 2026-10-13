@@ -702,6 +702,19 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
   - avec 1 000 visites par jour : 300 à 900 inscrits par mois, soit 1 à 3 %, puis 3 à 27 ventes par mois, soit 1 à 3 % des inscrits ;
   - trajectoire : 10 à 50 visites par jour à 3 mois, 200 à 600 à 12 mois, 1 000 atteignable en 18 à 24 mois.
 
+## 62. Minuteur de respiration : bols adoucis (13/10/2026)
+
+**Demande de l'utilisateur** : « Essaie d'arranger le bruit de cloches pour les exercices de respiration, ils sont agressifs. »
+
+- **Mesures avant correction** (`bols-minuteur.mp3`) : le bol « inspire », joué à chaque respiration, montait à **-0,6 dBFS en 16 ms**, un vrai « clac ». Le bol de fin avait **70 %** de son énergie au-dessus de 2 kHz (scintillement métallique). Le petit bol « retiens » avait lui aussi une frappe sèche (16 ms).
+- **Correction**, fonction `adoucir()` de `site/outils/audios_respiration.py`, appliquée au minuteur seulement :
+  - passe-bas doux d'ordre 4 : 2 200 Hz pour inspire et expire, 1 800 Hz pour retiens, 1 400 Hz pour la fin ;
+  - attaque progressive de 150 ms ;
+  - volume abaissé de 4 dB, crêtes plafonnées à 0,30 (0,18 pour retiens).
+- **Après correction** : crêtes de -14 à -24 dBFS ; part d'énergie au-dessus de 2 kHz de 0,4 à 7 % ; attaques de 120 à 270 ms. Même fichier et mêmes positions (`bols-minuteur.json` inchangé), musique du minuteur inchangée.
+- Les audios de respiration guidée ne changent pas : leurs bols sont mélangés sous la musique.
+- Site republié.
+
 ## Point ouvert à ce jour
 
 **Résolu le 28/09/2026** : accès en lecture aux vraies données Pinterest Analytics obtenu via un connecteur Composio (voir section 9 ci-dessus et `01-architecture-technique.md`). Les règles de `03-regles-editoriales.md` sur les titres/hashtags ont été mises à jour en conséquence. La chute de trafic de juillet-août est expliquée (baisse d'activité de l'utilisateur, pas un problème technique) et le faible taux de clics sortants n'est pas un bug (la plupart des meilleurs pins n'ont intentionnellement pas de lien, contenu hors périmètre formation). Reste ouvert : la connexion Composio semble propre à la session (à revérifier en début de session future, `COMPOSIO_MANAGE_CONNECTIONS` action `list`) ; les tableaux orphelins : `Enregistrements rapides` passé en secret le 05/10, `🧠 Fatigue & Causes Biologiques` gardé public (description revue), `Routine anti-âge quotidienne` en attente de décision (voir section 26) ; convertir le reste de la banque non publiée (~180 pins) au nouveau format titres/hashtags reste à faire si l'utilisateur valide le lot pilote de 10 pins.
