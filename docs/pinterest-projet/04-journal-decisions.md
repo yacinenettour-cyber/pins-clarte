@@ -728,7 +728,7 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 
   Les couleurs en dur sont alignées : en-têtes, menu mobile, `theme-color`, logo, image par défaut et favicon générés par `construire.py`. Fichiers modifiés : `style.css`, `accueil.html`, `menu.css`, `menu.js`, `construire.py`. Mise en page, polices et vert principal inchangés.
 - **Vérifié** : axe-core, 0 violation sur 12 pages × 2 thèmes × 2 largeurs (390 et 1 280 px), dont les contrastes ; aucun débordement. Site republié.
-- **Proposé, sans réponse de l'utilisateur** : raccourcir le fil d'Ariane des articles sur téléphone, qui répète tout le titre.
+- **Fil d'Ariane raccourci sur téléphone** (« Fais-le ») : sous 700 px, le dernier élément est masqué visuellement quand il dépasse 30 caractères (classe `long` posée par `ariane()` dans `construire.py`). Le titre de l'article reste lu par les lecteurs d'écran et figure toujours dans les données BreadcrumbList. Vérifié : axe-core, 0 violation sur 12 pages × 2 thèmes × 2 largeurs.
 
 ## Point ouvert à ce jour
 

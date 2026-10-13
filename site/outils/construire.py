@@ -564,7 +564,7 @@ def grille(articles):
 
 def ariane(elements):
     lis = "".join(
-        f'<li><a href="{href}">{e(nom)}</a></li>' if href else f'<li aria-current="page">{e(nom)}</li>'
+        f'<li><a href="{href}">{e(nom)}</a></li>' if href else (f'<li aria-current="page" class="long">{e(nom)}</li>' if len(nom) > 30 else f'<li aria-current="page">{e(nom)}</li>')
         for nom, href in elements)
     schema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": nom, **({"item": URL + href} if href else {})}
