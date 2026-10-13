@@ -1730,5 +1730,16 @@
   "pin_id": "600175087890126509",
   "md5": "5573dd3a36ff38cbe2e2e6066b47ce8a",
   "lien": "article:signes-du-burn-out"
+ },
+ {
+  "date": "2026-10-13T10:07+00:00",
+  "titre": "Nuit trop courte : +37 % de cortisol le lendemain",
+  "image": "images/pin-20261013-100748.jpg",
+  "fond": "fonds/pexels-17491560.jpg",
+  "theme": "sommeil",
+  "design": "fiche",
+  "pin_id": "600175087890129346",
+  "md5": "0034a4c148fbdd076c5dfec8c7b77bdc",
+  "lien": "article:cortisol-et-sommeil"
  }
 ]
