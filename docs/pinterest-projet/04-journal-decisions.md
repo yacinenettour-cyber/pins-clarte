@@ -754,6 +754,7 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - **Suivi** : sur une page ouverte depuis une épingle, les liens vers le guide gardent `utm_source=pinterest` et l'épingle en `utm_term` (au clic, sans rien enregistrer).
 - **Technique** : dates des articles identiques partout (plan du site = date « maj ») ; /articles/ en ItemList ; schéma Course corrigé ; bouton du guide retiré de l'en-tête sur la page formation et l'article burn-out.
 - **Épingles** : 31 épingles non publiées reliées à un article qui ne traitait pas vraiment leur sujet repartent vers leur lien habituel ; 6 nouvelles associations vérifiées. Les épingles déjà publiées ne sont pas modifiables (règle 7).
+- **Épingles, second passage (14/10)** : sur les 18 épingles energie / alimentation / « cortisol » non publiées, 2 mènent désormais à un article qui traite vraiment leur sujet ; 2 autres associations retenues. Les 16 restantes gardent la page du plan anti-cortisol faute d'article sur l'énergie dans la journée (sujet ajouté à la liste des articles).
 - **Sujets d'articles** : « S'endormir quand on est stressé » écarté (recoupements) ; règle « une étude détaillée dans un seul article ».
 - **Vérifié** : axe-core 0 violation (16 pages, 2 thèmes, 320/390/1280 px), 0 débordement, validateur W3C 0 erreur HTML, 0 lien interne cassé, résultat du test simulé (score 12 : pas de guide ; score 0 : guide), `verifier_banque.py` 0 doublon.
 

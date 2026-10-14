@@ -1776,7 +1776,9 @@
    "Une sieste de 20 minutes maximum"
   ],
   "description": "Le sommeil ne se prépare pas seulement le soir : une partie se joue dès l'après-midi 👉 arrêter le café avant 14 h 👉 prendre une vraie pause loin des écrans 👉 bouger un peu en fin de journée pour évacuer la tension 👉 limiter la sieste à 20 minutes. Des choix discrets qui laissent le cortisol redescendre à temps. #sommeil #cafeine #sieste #cortisol #stress #routine #insomnie #bienetre #mieuxdormir #routinedusoir",
-  "theme": "sommeil"
+  "theme": "sommeil",
+  "article": "baisser-son-cortisol-naturellement",
+  "description_article": "Le sommeil ne se prépare pas seulement le soir : une partie se joue dès l'après-midi 👉 arrêter le café vers 14 h, car une forte dose de caféine gêne encore le sommeil 6 heures plus tard 👉 prendre une vraie pause loin des écrans 👉 bouger en douceur en fin de journée 👉 garder une sieste courte, 20 minutes au plus. Une journée type, heure par heure, pour laisser le cortisol redescendre le soir : à lire dans l'article. #sommeil #cafeine #sieste #cortisol #stress #routine #mieuxdormir #bienetre"
  },
  {
   "titre": "Fatigue au réveil en hiver : ce que dit ton corps",
@@ -3238,7 +3240,9 @@
   ],
   "theme": "energie",
   "guide": "cortisol",
-  "description_guide_cortisol": "Cocher les jours en se disant que tout ira mieux en vacances, alors qu'on avance sur les rotules d'ici là : attendre une coupure lointaine laisse le stress s'accumuler et rend la fatigue plus dure à rattraper 👉 une vraie pause de 10 minutes sans écran chaque jour 👉 une heure de fin de travail fixe 👉 un moment de mouvement entre deux tâches. Le plan anti-cortisol aide à souffler un peu chaque jour. #energie #fatiguementale #stress #bienetre #recuperation #systemenerveux #equilibre"
+  "description_guide_cortisol": "Cocher les jours en se disant que tout ira mieux en vacances, alors qu'on avance sur les rotules d'ici là : attendre une coupure lointaine laisse le stress s'accumuler et rend la fatigue plus dure à rattraper 👉 une vraie pause de 10 minutes sans écran chaque jour 👉 une heure de fin de travail fixe 👉 un moment de mouvement entre deux tâches. Le plan anti-cortisol aide à souffler un peu chaque jour. #energie #fatiguementale #stress #bienetre #recuperation #systemenerveux #equilibre",
+  "article": "charge-mentale",
+  "description_article": "Cocher les jours en attendant les vacances, sur les rotules d'ici là ? Attendre une coupure lointaine, c'est tenir des semaines sans souffler. Mieux vaut des pauses chaque jour 👉 10 minutes sans écran 👉 une heure de fin de travail fixe 👉 un peu de mouvement entre deux tâches. Selon une méta-analyse de 22 échantillons, ces micro-pauses augmentent un peu la vitalité et réduisent un peu la fatigue. #energie #fatiguementale #stress #pause #recuperation #fatigue #bienetre #equilibre"
  },
  {
   "titre": "Ton écran est ouvert depuis ce matin, pourtant rien n'a bougé : ce blocage a un nom",
@@ -3305,7 +3309,9 @@
    "Remettre entretient l'appréhension",
    "Se donner 5 minutes chrono désamorce l'attente"
   ],
-  "theme": "blocagemental"
+  "theme": "blocagemental",
+  "article": "charge-mentale",
+  "description_article": "Ce coup de fil repoussé depuis des jours, alors qu'il prendrait quelques minutes : une tâche non bouclée continue d'occuper l'esprit 👉 remettre entretient l'appréhension 👉 un mini-plan (quoi, quand, où) aide à la ranger 👉 5 minutes chrono désamorcent l'attente. « Appeler le dentiste » reste flou ; « mardi à 12 h 30, depuis le bureau » est un plan. Pourquoi ça libère la tête : article en lien. #blocagemental #procrastination #chargementale #organisation #clarte #mental"
  },
  {
   "titre": "Brouillard mental : pourquoi même le simple te bloque",
@@ -4434,7 +4440,9 @@
   ],
   "description": "Un réveil difficile n'est pas forcément un manque de motivation : le cortisol suit un rythme qui doit monter le matin pour t'aider à démarrer. Quelques habitudes jouent 👉 un petit-déjeuner très sucré crée vite un coup de barre 👉 la lumière naturelle dès le réveil aide l'horloge interne 👉 boire un verre d'eau avant le café. Si des nuits agitées expliquent ces réveils, le guide gratuit propose une routine anti-rumination. #cortisol #reveil #stress #calme #soir #repos #corps #mental",
   "guide": "cortisol",
-  "description_guide_cortisol": "Un réveil difficile n'est pas forcément un manque de motivation : le cortisol suit un rythme qui doit monter le matin pour t'aider à démarrer. Quelques habitudes jouent 👉 un petit-déjeuner très sucré crée vite un coup de barre 👉 la lumière naturelle dès le réveil aide l'horloge interne 👉 boire un verre d'eau avant le café. Pour un réveil plus doux, le plan anti-cortisol gratuit commence par la lumière du matin. #cortisol #reveil #stress #calme #soir #repos #corps #mental"
+  "description_guide_cortisol": "Un réveil difficile n'est pas forcément un manque de motivation : le cortisol suit un rythme qui doit monter le matin pour t'aider à démarrer. Quelques habitudes jouent 👉 un petit-déjeuner très sucré crée vite un coup de barre 👉 la lumière naturelle dès le réveil aide l'horloge interne 👉 boire un verre d'eau avant le café. Pour un réveil plus doux, le plan anti-cortisol gratuit commence par la lumière du matin. #cortisol #reveil #stress #calme #soir #repos #corps #mental",
+  "article": "cortisol-et-sommeil",
+  "description_article": "Un réveil difficile n'est pas qu'une affaire de motivation : le cortisol suit un rythme, avec une hausse normale en fin de nuit et au lever. Quelques repères comptent 👉 un décalage brutal des horaires de sommeil bouleverse ce rythme 👉 la lumière du jour le matin recale l'horloge interne 👉 un lever à heure fixe, même le week-end, lui donne des repères stables. Fatigué malgré des nuits complètes ? Mieux vaut en parler à ton médecin. #cortisol #reveil #stress #sommeil #matin #lumiere"
  },
  {
   "titre": "Respiration 4-7-8 : 2 minutes pour s'apaiser au lit",
