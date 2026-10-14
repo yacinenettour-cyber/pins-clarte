@@ -1774,5 +1774,27 @@
   "pin_id": "600175087890144525",
   "md5": "462817ea1ef96f60f816614f17e770aa",
   "lien": "article:baisser-son-cortisol-naturellement"
+ },
+ {
+  "date": "2026-10-14T10:08+00:00",
+  "titre": "Chronotype : 3 signes, es-tu du matin ou du soir ?",
+  "image": "images/pin-20261014-100805.jpg",
+  "fond": "fonds/fond-61.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890147650",
+  "md5": "91d8b009dc18762e81d2cf49ac8c88bf",
+  "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-14T14:08+00:00",
+  "titre": "Procrastination : pourquoi « je m'y mets lundi » échoue",
+  "image": "images/pin-20261014-140750.jpg",
+  "fond": "fonds/fond-ia-procrastination-2.jpg",
+  "theme": "procrastination",
+  "design": "fiche",
+  "pin_id": "600175087890150701",
+  "md5": "b4ccf1de45742aa8ad61b0a13bd5b9d1",
+  "lien": ""
  }
 ]
