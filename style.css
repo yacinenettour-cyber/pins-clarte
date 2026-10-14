@@ -134,7 +134,7 @@ strong { color: var(--champagne); }
 .teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(15, 23, 36, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
 .teinte.sombre img { filter: saturate(.85) brightness(.92); }
 .teinte.sombre::after { display: none; }
-.photo figcaption { font-size: 13px; color: var(--champagne-doux); padding: 8px 12px; }
+.photo figcaption { font-size: 14px; color: var(--champagne-doux); padding: 8px 12px; }
 
 /* Encadrés */
 .essentiel { background: linear-gradient(90deg, rgba(58, 95, 67, 0.22), rgba(255, 255, 255, 0.03)); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(143, 191, 154, 0.3); border-radius: var(--rayon); padding: 20px 24px; margin: 28px 0; box-shadow: var(--ombre-2xl); }
@@ -217,7 +217,7 @@ q { quotes: "«\00a0" "\00a0»"; }
 .bouton { position: relative; display: inline-flex; align-items: center; gap: 8px; background: var(--degrade-or); background-size: 200% 100%; color: var(--nuit); font-weight: 700; text-decoration: none; padding: 13px 22px; border-radius: 999px; transition: var(--transition); box-shadow: 0 10px 28px -12px rgba(223, 213, 198, .5), var(--ombre-2xl); will-change: transform; }
 .bouton:hover { animation: glisse 6s linear infinite; color: var(--nuit); box-shadow: 0 18px 44px -12px rgba(223, 213, 198, .7), var(--ombre-2xl); }
 .bouton:active { transform: scale(.98); }
-.guide small { display: block; margin-top: 8px; color: var(--champagne-doux); font-size: 13px; }
+.guide small { display: block; margin-top: 8px; color: var(--champagne-doux); font-size: 14.5px; line-height: 1.5; }
 
 /* Listes d'articles */
 .grille { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); margin: 20px 0 44px; list-style: none; padding: 0; }
@@ -293,7 +293,7 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .audio a { font-size: 14px; justify-self: start; }
 .audio .transcription summary { cursor: pointer; font-size: 14px; font-weight: 600; color: var(--brume); width: fit-content; }
 .audio .transcription p { margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: var(--champagne-doux); }
-.credit-audio { margin: 2px 4px 0; font-size: 13.5px; line-height: 1.6; color: var(--champagne-doux); }
+.credit-audio { margin: 2px 4px 0; font-size: 14px; line-height: 1.6; color: var(--champagne-doux); }
 /* Rappel d'urgence en bas des articles et des pages santé : numéros cliquables, page des ressources d'urgence. */
 .urgence { font-size: 15px; line-height: 1.6; margin: 12px 0 0; padding: 12px 16px; border-radius: 14px; background: rgba(217, 162, 107, 0.08); border: 1px solid rgba(217, 162, 107, 0.32); color: var(--champagne); }
 .urgence a { color: var(--champagne); font-weight: 700; }
@@ -309,6 +309,16 @@ ul.non li::marker { content: "✕  "; color: #D9A26B; }
 .recherche-resultats .type { display: block; font-size: 12.5px; color: var(--champagne-doux); margin: 4px 0; text-transform: uppercase; letter-spacing: .08em; }
 .recherche-resultats p { margin: 0; font-size: 15.5px; }
 mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px; padding: 0 2px; }
+
+/* Photo d'article juste sous le titre (audit du 13/10/2026) : bandeau recadré, pour garder le lien visuel avec l'épingle sans repousser la réponse. */
+.photo-tete { margin: 6px 0 18px; }
+.photo-tete img { aspect-ratio: 16 / 7; object-fit: cover; object-position: 50% 35%; height: auto; }
+@media (max-width: 700px) { .photo-tete img { aspect-ratio: 16 / 8; } }
+.avertissement strong { color: var(--champagne); }
+/* Audit du 13/10/2026 (mobile) : renvois aux sources plus faciles à toucher, sans changer la mise en page. */
+sup a { display: inline-block; padding: 8px 5px; margin: -8px -3px; }
+.ariane a { display: inline-block; padding: 6px 0; }
+.bilan-sources a:focus-visible { outline: 2px solid var(--brume); outline-offset: 3px; }
 
 /* Menu mobile commun à l'accueil et aux autres pages (ajouté à la construction : dans l'accueil et à la fin de style.css).
    Sur mobile, l'en-tête est le même partout (logo + bouton menu, 73 px de haut) : rien ne bouge quand on change de page. */
@@ -388,6 +398,9 @@ mark { background: rgba(143, 191, 154, 0.32); color: inherit; border-radius: 3px
 /* Barre de lecture des articles (menu.js) : sous l'en-tête collant, sans animation propre (suit le défilement). */
 .barre-lecture { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 21; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, var(--emeraude), var(--brume)); pointer-events: none; }
 @media print { .barre-lecture { display: none; } }
+.insec { white-space: nowrap; }
+/* Audit du 13/10/2026 : le bouton « retour en haut » ne recouvre plus le bas de page. */
+.pied { padding-bottom: 88px; }
 
 /* Mode clair (10/10/2026). Le site est sombre par défaut ; il passe en clair si l'appareil est réglé en clair, ou si le
    visiteur choisit le clair avec le bouton soleil/lune (choix gardé sur son appareil). « :root[data-theme="clair"] » est remplacé à la
