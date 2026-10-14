@@ -1763,5 +1763,16 @@
   "pin_id": "600175087890137656",
   "md5": "4a56814543da4303b79caa72b4237387",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-14T05:07+00:00",
+  "titre": "Cocktail anti-cortisol : ce que disent les preuves",
+  "image": "images/pin-20261014-050748.jpg",
+  "fond": "fonds/fond-23.jpg",
+  "theme": "systemenerveux",
+  "design": "fiche",
+  "pin_id": "600175087890144525",
+  "md5": "462817ea1ef96f60f816614f17e770aa",
+  "lien": "article:baisser-son-cortisol-naturellement"
  }
 ]
