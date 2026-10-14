@@ -2,9 +2,9 @@
 titre: Test de stress et d'anxiété : le GAD-7 et ton profil
 titre_seo: Test de stress et d'anxiété gratuit (GAD-7, 2 minutes)
 description: Test gratuit en 2 minutes : le questionnaire d'anxiété GAD-7, validé scientifiquement, puis ton profil (nuits, travail ou corps) avec des priorités adaptées.
-maj: 2026-10-09
+maj: 2026-10-13
 ---
-Ce test de stress et d'anxiété réunit le GAD-7, un questionnaire de 7 questions validé scientifiquement pour repérer les symptômes d'anxiété, et 6 questions qui situent où ton stress se manifeste le plus : tes nuits, ton travail ou ton corps. Il prend environ 2 minutes, ne demande aucune adresse e-mail et ne remplace pas un avis médical.
+Le GAD-7, un questionnaire validé de 7 questions sur l'anxiété, puis 6 questions sur tes nuits, ton travail et ton corps : environ 2 minutes, sans e-mail. Un repère, pas un avis médical.
 
 {{TEST}}
 
@@ -58,8 +58,8 @@ Quelques règles, pour que tu saches exactement ce que fait le test :
 
 - si un deuxième domaine atteint aussi 3 sur 6, il s'affiche sous ton profil ;
 - en cas d'égalité, l'ordre est : travail, puis nuits, puis corps, pour que des signes d'épuisement professionnel ne passent jamais au second plan ;
-- le résultat ne propose qu'une ressource, le guide sommeil gratuit, et jamais la formation payante ;
-- à partir de 10 au GAD-7, le résultat met la consultation en avant et le guide n'est proposé qu'en complément ;
+- en dessous de 10, le résultat ne propose qu'une ressource, le guide sommeil gratuit, et jamais la formation payante ;
+- à partir de 10 au GAD-7, le résultat met la consultation en avant et ne propose plus le guide : seulement deux outils gratuits du site, sans e-mail (audios de respiration guidée et article sur l'angoisse du soir) ;
 - à partir de 15, aucun guide ni produit n'est proposé : seulement des conseils pour consulter et des articles.
 
 Les priorités proposées reprennent des gestes étudiés : écrire sa liste du lendemain avant d'éteindre [10], ne pas surveiller l'heure la nuit [11], se lever après 20 minutes d'éveil [12], la respiration lente [13], la relaxation musculaire progressive [14], l'activité physique [15] et des horaires de sommeil réguliers [16]. Le lien entre manque de sommeil et cortisol vient d'une étude de l'Université de Chicago [17], et la réaction du corps au stress est décrite par les Manuels MSD [18].

@@ -296,6 +296,19 @@ def image_epingle(a):
     return f"/img/epingle-{a['slug']}.jpg"
 
 
+def miniature_epingle(chemin):
+    """Miniature WebP de l'image à épingler (affichée à ~100 px ; audit du 13/10/2026 : 158 à 300 Ko économisés).
+    L'image complète reste celle envoyée à Pinterest."""
+    source = os.path.join(SORTIE, chemin.lstrip("/"))
+    mini = os.path.splitext(chemin)[0] + "-mini.webp"
+    cible = os.path.join(SORTIE, mini.lstrip("/"))
+    if not os.path.exists(source):
+        return chemin
+    if not os.path.exists(cible) or os.path.getmtime(cible) < os.path.getmtime(source):
+        Image.open(source).convert("RGB").resize((240, 360), Image.LANCZOS).save(cible, "WEBP", quality=80)
+    return mini
+
+
 def bloc_epingle(a):
     """Bouton « Enregistrer sur Pinterest » : simple lien vers Pinterest, sans script ni cookie sur le site."""
     if not a.get("epingle"):
@@ -303,7 +316,7 @@ def bloc_epingle(a):
     lien = ("https://www.pinterest.com/pin/create/button/?url=" + quote(f"{URL}/{a['slug']}/", safe="")
             + "&media=" + quote(URL + a["epingle"], safe="") + "&description=" + quote(f"{a['titre']} — {a['description']}"[:480], safe=""))
     return f"""<aside class="epingle" id="enregistrer" aria-label="Enregistrer sur Pinterest">
-<img src="{a['epingle']}" width="1000" height="1500" alt="{e(a['titre_seo'])} : fiche à enregistrer sur Pinterest" loading="lazy" decoding="async">
+<img src="{miniature_epingle(a['epingle'])}" width="1000" height="1500" alt="{e(a['titre_seo'])} : fiche à enregistrer sur Pinterest" loading="lazy" decoding="async">
 <div>
 <p class="type">À garder pour plus tard</p>
 <p>Enregistre cet article sur Pinterest pour le retrouver le soir où tu en auras besoin.</p>
@@ -401,6 +414,8 @@ def insecables(contenu):
     def texte(m):
         t = re.sub(r" ([:;?!»%])", "\u00a0\\1", m.group(1))
         t = re.sub(r"(\d) (?=(?:g|mg|kg|ml|h|min)\b|€)", "\\1\u00a0", t)
+        # Audit du 13/10/2026 : « GAD-7 », « 4-6 », « 4-7-8 » jamais coupés au trait d'union en fin de ligne.
+        t = re.sub(r"(?<![\w-])(GAD-7|4-7-8|4-6|5-5)(?![\w-])", r'<span class="insec">\1</span>', t)
         return ">" + t.replace("« ", "«\u00a0") + "<"
     morceaux = re.split(r"(<script.*?</script>|<style.*?</style>)", contenu, flags=re.S)
     return "".join(m if i % 2 else re.sub(r">([^<]+)<", texte, m) for i, m in enumerate(morceaux))
@@ -438,8 +453,11 @@ def pied(base="", conteneur="large"):
 
 
 def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og="website", nav="", meta_article=None, tete="",
-         image_alt=None):
+         image_alt=None, sans_guide=False):
+    """sans_guide : pas de bouton du guide dans l'en-tête ni le menu (page formation, articles « guide: aucun »)."""
     contenu = insecables(contenu)
+    guide_entete = "" if sans_guide else f'<li><a class="bouton bouton-entete" href="{e(lien_guide_menu("entete"))}">Guide gratuit</a></li>'
+    guide_menu = "" if sans_guide else f'\n<li><a class="bouton" href="{e(lien_guide_menu("menu-mobile"))}" tabindex="-1">Recevoir le guide gratuit</a></li>' 
     canon = URL + chemin
     image_og = URL + (image_og or "/img/og-defaut.jpg")
     verif = SITE.get("pinterest_verification")
@@ -486,12 +504,11 @@ def page(titre, description, chemin, contenu, schemas=(), image_og=None, type_og
 <a class="saut" href="#contenu">Aller au contenu</a>
 <header class="entete"><div class="large">
 <a class="marque" href="/">{LOGO}{e(SITE['nom'])}</a>
-<nav class="nav" aria-label="Menu principal"><ul>{"".join(f"<li>{lien_nav(h, t)}</li>" for h, t in NAV_PRINCIPALE)}<li><a class="bouton bouton-entete" href="{e(lien_guide_menu('entete'))}">Guide gratuit</a></li></ul></nav>
+<nav class="nav" aria-label="Menu principal"><ul>{"".join(f"<li>{lien_nav(h, t)}</li>" for h, t in NAV_PRINCIPALE)}{guide_entete}</ul></nav>
 <div class="actions-entete">{THEME_BOUTON}{MENU_SANS_JS}<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button></div>
 </div></header>
 <nav class="menu-mobile" id="menu-mobile" aria-label="Menu mobile" aria-hidden="true">
-<ul>{"".join(f'<li><a href="{h}" tabindex="-1"' + (' aria-current="page"' if h == chemin else "") + f'>{t}</a></li>' for h, t in MENU_MOBILE)}
-<li><a class="bouton" href="{e(lien_guide_menu('menu-mobile'))}" tabindex="-1">Recevoir le guide gratuit</a></li></ul>
+<ul>{"".join(f'<li><a href="{h}" tabindex="-1"' + (' aria-current="page"' if h == chemin else "") + f'>{t}</a></li>' for h, t in MENU_MOBILE)}{guide_menu}</ul>
 </nav>
 <main id="contenu">
 {contenu}
@@ -572,6 +589,12 @@ def ariane(elements):
     return f'<nav class="ariane" aria-label="Fil d\'Ariane"><ol>{lis}</ol></nav>', schema
 
 
+# Qui écrit, rappelé sur chaque article (audit du 13/10/2026 : sujet santé, le lecteur doit le savoir sur la page lue).
+AUTEUR_HTML = ("<strong>Qui écrit ?</strong> " + SITE["auteur"]["nom"] + ", " + SITE["auteur"]["metier"]
+               + ", non professionnel de santé. Cet article n'a pas encore été relu par un professionnel de santé : "
+               "chaque affirmation renvoie à sa source (voir la <a href=\"/methode-editoriale/\">méthode éditoriale</a>).")
+
+
 def editeur():
     return {"@type": "Organization", "@id": URL + "/#organisation", "name": SITE["nom"], "url": URL + "/",
             "logo": {"@type": "ImageObject", "url": URL + "/logo.png", "width": 512, "height": 512},
@@ -580,7 +603,8 @@ def editeur():
 
 def auteur():
     personne = {"@type": "Person", "@id": URL + "/a-propos/#auteur", "name": SITE["auteur"]["nom"],
-                "jobTitle": SITE["auteur"]["role"], "url": URL + SITE["auteur"]["page"],
+                "jobTitle": SITE["auteur"]["role"], "description": SITE["auteur"]["description"],
+                "url": URL + SITE["auteur"]["page"],
                 "worksFor": {"@id": URL + "/#organisation"}}
     if SITE["auteur"].get("photo"):
         personne["image"] = URL + SITE["auteur"]["photo"]
@@ -672,7 +696,7 @@ def construire_article(a, tous):
         src, l, h = a["images"][1200]
         src_p = a["images"][640][0]
         # Le crédit n'est pas une légende de l'image : il va en bas de l'article (image simple, RGAA 1.9 sans objet).
-        photo = (f'<figure class="photo">' + teinte(f'<img src="{src}" srcset="{src_p} 640w, {src} 1200w" '
+        photo = (f'<figure class="photo photo-tete">' + teinte(f'<img src="{src}" srcset="{src_p} 640w, {src} 1200w" '
                  f'sizes="(max-width: 760px) 100vw, 740px" width="{l}" height="{h}" alt="{e(a["alt"])}" '
                  f'fetchpriority="high">', a) + '</figure>')
     proches = sorted((b for b in tous if b["slug"] != a["slug"]),
@@ -685,18 +709,18 @@ def construire_article(a, tous):
 {nav_html}
 <article>
 <h1>{e(a['titre'])}</h1>
-<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{a["maj"]}">{date_fr(a['maj'])}</time> · {a['lecture']} min de lecture</p>
-<p class="bilan-sources"><a href="#sources">{e(bilan_sources(a['sources']))}</a><a href="/methode-editoriale/">Méthode éditoriale</a>{'<a href="#enregistrer">Enregistrer sur Pinterest</a>' if a.get('epingle') else ''}</p>
-{intro_html}
+<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a>, {e(SITE['auteur']['metier'])} · Mis à jour le <time datetime="{a["maj"]}">{date_fr(a['maj'])}</time> · {a['lecture']} min de lecture</p>
 {photo}
+<p class="bilan-sources"><a href="#sources">{e(bilan_sources(a['sources']))}</a></p>
+{intro_html}
 {resume}
 {sommaire}
 {corps_html}
+{suite_html}
 {faq_html}
 {bloc_epingle(a)}
-{suite_html}
 {sources_html}
-<p class="avertissement">Cet article donne des repères de bien-être fondés sur les sources citées. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.{f" Crédit de la photo d'illustration : {e(a['credit'].replace('Photo : ', ''))}." if a.get("images") and a["credit"] else ""}</p>
+<p class="avertissement">{AUTEUR_HTML} Cet article donne des repères de bien-être fondés sur les sources citées. Il ne remplace pas une consultation : si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.{f" Crédit de la photo d'illustration : {e(a['credit'].replace('Photo : ', ''))}." if a.get("images") and a["credit"] else ""}</p>
 {URGENCE_HTML}
 </article>
 {lies}
@@ -726,16 +750,17 @@ def construire_article(a, tous):
                     f'<meta property="article:section" content="{e(SITE["categories"][a["categorie"]])}">')
     ecrire(f"{a['slug']}/index.html", page(a["titre_seo"], a["description"], f"/{a['slug']}/", contenu, schemas,
                                            a["images"]["og"] if a.get("images") else None, "article",
-                                           meta_article=meta_article, image_alt=a["alt"] if a.get("images") else None))
+                                           meta_article=meta_article, image_alt=a["alt"] if a.get("images") else None,
+                                           sans_guide=a["guide"] == "aucun"))
 
 
 # Polices de l'accueil : les mêmes @font-face que style.css (polices du site et polices de secours mises à l'échelle).
 POLICES_CSS = "\n".join(l.rstrip() for l in open(os.path.join(RACINE, "contenu", "style.css"), encoding="utf-8")
                         if l.startswith("@font-face"))
 # L'accueil ne vise pas « baisser le cortisol » : c'est le mot-clé de l'article dédié (pas deux pages sur la même recherche).
-TITRE_ACCUEIL = "Stress et sommeil : gestes anti-stress naturels validés"
+TITRE_ACCUEIL = "Stress et sommeil : gestes anti-stress naturels étudiés"
 DESCRIPTION_ACCUEIL = ("Test stress et anxiété en 2 minutes (questionnaire validé GAD-7) et ton profil, puis les gestes "
-                       "anti-stress naturels validés par la science pour mieux dormir.")
+                       "anti-stress naturels étudiés par la science pour mieux dormir.")
 
 
 def cartes_lecture(articles, image_en_ligne=False):
@@ -758,6 +783,12 @@ def cartes_lecture(articles, image_en_ligne=False):
     return "".join(cartes)
 
 
+def autres_sujets(articles, image_en_ligne=False):
+    """Liens vers les articles qui n'ont pas de carte sur l'accueil (audit du 13/10/2026 : les 14 reliés depuis l'accueil)."""
+    base = URL if image_en_ligne else ""
+    return "".join(f'<li><a href="{base}/{a["slug"]}/">{e(a["titre"])}</a></li>' for a in articles[6:])
+
+
 def faq_accueil(source):
     return [(texte_brut(q), texte_brut(r)) for q, r in
             re.findall(r"<summary><h3>(.*?)</h3></summary>\s*<p>(.*?)</p>", source, re.S)]
@@ -776,7 +807,7 @@ def construire_accueil(articles):
                                                          + f'>{t}</a></li>' for h, t in MENU_MOBILE))
               .replace("<!--@MENU_SANS_JS-->", MENU_SANS_JS))
     corps = (source.replace("/*@POLICES*/", POLICES_CSS).replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", "")
-             .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("/*@TEST_JS*/", script_test(articles))
+             .replace("{{ARTICLES}}", cartes_lecture(articles)).replace("{{AUTRES_SUJETS}}", autres_sujets(articles)).replace("/*@TEST_JS*/", script_test(articles))
              .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS)
              .replace("/*@THEME_CSS*/", THEME_CSS).replace("<!--@THEME_BOUTON-->", THEME_BOUTON))
     corps = insecables(corps)
@@ -841,7 +872,7 @@ def construire_accueil(articles):
         artefact = (f"<title>{e(TITRE_ACCUEIL)}</title>\n"
                     f'<meta name="description" content="{e(DESCRIPTION_ACCUEIL)}">\n{polices}\n'
                     + source.replace("/*@POLICES*/", "").replace("/*@TEST_CSS*/", css_test()).replace("{{B}}", URL)
-                    .replace("{{ARTICLES}}", cartes_lecture(articles, image_en_ligne=True))
+                    .replace("{{ARTICLES}}", cartes_lecture(articles, image_en_ligne=True)).replace("{{AUTRES_SUJETS}}", autres_sujets(articles, image_en_ligne=True))
                     .replace("/*@TEST_JS*/", script_test(articles, URL))
                     .replace("/*@MENU_CSS*/", MENU_CSS).replace("/*@MENU_JS*/", MENU_JS)
              .replace("/*@THEME_CSS*/", THEME_CSS).replace("<!--@THEME_BOUTON-->", THEME_BOUTON))
@@ -863,7 +894,9 @@ def construire_liste(articles):
 {''.join(blocs)}</div>"""
     schema = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Tous les articles",
               "url": URL + "/articles/", "inLanguage": SITE["langue"],
-              "hasPart": [{"@type": "Article", "headline": a["titre"], "url": f"{URL}/{a['slug']}/"} for a in articles]}
+              "mainEntity": {"@type": "ItemList", "itemListElement": [
+                  {"@type": "ListItem", "position": i + 1, "url": f"{URL}/{a['slug']}/", "name": a["titre"]}
+                  for i, a in enumerate(articles)]}}
     ecrire("articles/index.html", page(f"Articles sur le stress et le sommeil | {SITE['nom']}",
                                        "Tous les articles de Clarté Mentale : ruminations du soir, réveils nocturnes, cortisol, nerf vague, charge mentale, burn-out.",
                                        "/articles/", contenu, [schema, schema_ariane], nav="/articles/"))
@@ -1001,15 +1034,17 @@ def construire_formation():
         "url": URL + "/la-formation/",
         "offers": {"@type": "Offer", "price": f["prix_valeur"], "priceCurrency": "EUR", "category": "Paid",
                    "availability": "https://schema.org/InStock", "url": f["url"]},
-        "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": "PT10M"},
-        "teaches": [t for t, _ in f["modules"]],
+        "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online"},
+        # Ce que le programme apprend (audit du 13/10/2026 : des compétences, pas des titres de modules ni une durée fausse).
+        "teaches": ["Calmer son système nerveux le soir", "Sortir des ruminations au coucher",
+                    "Construire un rituel du soir", "Réagir aux réveils nocturnes"],
     }
     schema_faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": r}} for q, r in f["faq"]]}
-    ecrire("la-formation/index.html", page(f"Formation sommeil : {f['titre']}",
+    ecrire("la-formation/index.html", page("Formation sommeil : le programme des 28 soirs",
                                            "Programme en ligne pour calmer le mental le soir : 6 modules courts, audios guidés, parcours de 28 soirs, kit de fiches. 37 €, garantie 7 jours.",
                                            "/la-formation/", contenu, [schema_cours, schema_faq, schema_ariane],
-                                           nav="/la-formation/"))
+                                           nav="/la-formation/", sans_guide=True))
 
 
 # ---------------------------------------------------------------- test stress et anxiété (GAD-7 + profil)
@@ -1086,13 +1121,13 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
     nav_html, schema_ariane = ariane([("Accueil", "/"), (nom_court, None)])
     contenu = f"""<div class="etroit">{nav_html}
 <h1>{e(entete['titre'])}</h1>
-<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a> · Mis à jour le <time datetime="{entete['maj']}">{date_fr(entete['maj'])}</time> · {duree}</p>
-<p class="bilan-sources"><a href="#sources">{e(bilan_sources(sources))}</a><a href="/methode-editoriale/">Méthode éditoriale</a></p>
+<p class="meta">{avatar(28, "avatar")}Par <a href="/a-propos/" rel="author">{e(SITE['auteur']['nom'])}</a>, {e(SITE['auteur']['metier'])} · Mis à jour le <time datetime="{entete['maj']}">{date_fr(entete['maj'])}</time> · {duree}</p>
+<p class="bilan-sources"><a href="#sources">{e(bilan_sources(sources))}</a></p>
 {intro_html}
 {corps_html}
 {faq_html}
 {liste_sources(sources, "la page")}
-<p class="avertissement">Cette page donne des repères de bien-être, pas un diagnostic ni un traitement. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+<p class="avertissement">{AUTEUR_HTML.replace("Cet article n'a pas encore été relu", "Cette page n'a pas encore été relue")} Cette page donne des repères de bien-être, pas un diagnostic ni un traitement. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
 {URGENCE_HTML}
 </div>
 {f"<script>{script}</script>" if script else ""}"""
@@ -1113,6 +1148,14 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
 
 
 EXERCICES_HTML = """<div class="exercice" id="exercice">
+<!-- Audit du 13/10/2026 : le cercle et « Commencer » d'abord (réglages par défaut déjà choisis), les réglages ensuite. -->
+<div class="ex-scene"><div class="ex-cercle" aria-hidden="true"></div>
+<div class="ex-texte"><p class="ex-etape" role="status">Prêt</p><p class="ex-compte" aria-hidden="true"></p></div></div>
+<div class="ex-barre" aria-hidden="true"><span></span></div>
+<p class="ex-statut" role="status" hidden></p>
+<p class="ex-infos"><span class="ex-rythme">Inspire 5 s · expire 5 s</span> · reste <span class="ex-reste">3:00</span></p>
+<button type="button" class="ex-lancer bouton">Commencer</button>
+<p class="ex-reglages">Réglages</p>
 <div class="ex-choix" role="group" aria-label="Choisis ton exercice">
 <button type="button" data-motif="coherence" aria-pressed="true">Cohérence cardiaque<small>5 s · 5 s</small></button>
 <button type="button" data-motif="carree" aria-pressed="false">Respiration carrée<small>4 · 4 · 4 · 4</small></button>
@@ -1128,12 +1171,6 @@ EXERCICES_HTML = """<div class="exercice" id="exercice">
 <button type="button" data-son="musique" aria-pressed="false">Bols et musique</button>
 <button type="button" data-son="aucun" aria-pressed="false">Sans son</button>
 </div>
-<div class="ex-scene"><div class="ex-cercle" aria-hidden="true"></div>
-<div class="ex-texte"><p class="ex-etape" role="status">Prêt</p><p class="ex-compte" aria-hidden="true"></p></div></div>
-<div class="ex-barre" aria-hidden="true"><span></span></div>
-<p class="ex-statut" role="status" hidden></p>
-<p class="ex-infos"><span class="ex-rythme">Inspire 5 s · expire 5 s</span> · reste <span class="ex-reste">3:00</span></p>
-<button type="button" class="ex-lancer bouton">Commencer</button>
 <p class="ex-note">Avec le son, tu peux fermer les yeux : un bol clair pour inspirer, un bol plus grave pour expirer, un petit bol discret pour retenir. Respire sans forcer ; si la tête te tourne, reprends ta respiration habituelle. Le minuteur ne garde rien en mémoire.</p>
 <p class="credit-audio">Bols chantants : enregistrements de steffcaffrey, dersinnsspace, Truthiswithin et itinerantmonk108 (<a href="https://freesound.org/">Freesound</a>), dans le domaine public (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a>). Musique : « <span lang="en">Deep Relaxation</span> », Kevin MacLeod (<a href="https://incompetech.com/">incompetech.com</a>), sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">Creative Commons Attribution 4.0</a> ; extrait mis en forme (fondus) par Clarté Mentale.</p>
 </div>"""
@@ -1435,13 +1472,14 @@ def md_brut(t):
 
 
 def construire_fichiers_techniques(articles):
-    # Dates du plan du site : changement réel du contenu (registre), jamais avant la date « maj » d'un article.
+    # Dates du plan du site : changement réel du contenu (registre) pour les pages fixes ; pour les articles, la date
+    # « maj » affichée et donnée dans dateModified (audit du 13/10/2026 : une seule date par article, partout).
     fixes = ["/", "/articles/", "/la-formation/", "/guides-gratuits/", "/test-stress-anxiete/", "/respiration-guidee/",
              "/ressources-urgence/", "/exercices-respiration/", "/journal-humeur/", "/glossaire/", "/questions-frequentes/",
              "/accessibilite/", "/a-propos/", "/methode-editoriale/", "/mentions-legales/"]
     fixes += [f"/{th['slug']}/" for th in SITE.get("themes", {}).values()]
     dates = dates_contenu(fixes + [f"/{a['slug']}/" for a in articles])
-    pages = [(p, dates[p]) for p in fixes] + [(f"/{a['slug']}/", max(dates[f"/{a['slug']}/"], a["maj"])) for a in articles]
+    pages = [(p, dates[p]) for p in fixes] + [(f"/{a['slug']}/", a["maj"]) for a in articles]
     # Images de chaque article (photo principale et image à épingler), pour Google Images.
     images_page = {f"/{a['slug']}/": [a["images"][1200][0]] + ([a["epingle"]] if a.get("epingle") else [])
                    for a in articles if a.get("images")}

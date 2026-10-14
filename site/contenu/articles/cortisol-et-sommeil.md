@@ -6,7 +6,7 @@ slug: cortisol-et-sommeil
 mot_cle: cortisol et sommeil
 guide: cortisol
 date: 2026-10-09
-maj: 2026-10-09
+maj: 2026-10-13
 image: Femme qui dort paisiblement dans un lit aux draps blancs, les yeux fermés, un léger sourire, lumière douce du matin
 ---
 ## L'essentiel
@@ -90,7 +90,7 @@ Pour aller pas à pas, tu peux t'appuyer sur la [routine du soir en 7 étapes](/
 
 ## Quand consulter ?
 
-Consulte ton médecin si tes difficultés de sommeil reviennent plus de trois fois par semaine depuis plus de trois mois : c'est la définition de l'insomnie chronique [8]. Cet article donne des repères, il ne remplace pas un avis médical. Prends aussi rendez-vous si :
+Consulte ton médecin si tes difficultés de sommeil durent et pèsent sur tes journées, sans attendre qu'elles s'installent : au-delà de trois mois, à plus de trois nuits par semaine, on parle d'insomnie chronique [8]. Cet article donne des repères, il ne remplace pas un avis médical. Prends aussi rendez-vous si :
 
 - tu luttes contre le sommeil dans la journée, en particulier au volant : dans ce cas, ne conduis pas [7] ;
 - on te signale des pauses respiratoires pendant ton sommeil, ou tu restes fatigué malgré des nuits complètes : l'apnée du sommeil fait partie des causes possibles [1] ;
@@ -116,7 +116,7 @@ Le matin. La lumière recale l'horloge interne, qui rythme la production de cort
 Les compléments dits « anti-cortisol » ont peu de preuves solides, et certains ont des effets indésirables : le détail est dans l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/). Avant d'en prendre, demande l'avis de ton médecin ou de ton pharmacien.
 
 ### Une insomnie liée au stress se soigne-t-elle ?
-Oui, elle se prend en charge. Quand les difficultés reviennent plus de trois fois par semaine depuis plus de trois mois, on parle d'insomnie chronique [8] : c'est le moment d'en parler à ton médecin, plutôt que de chercher une solution seul.
+Oui, elle se prend en charge. Quand les difficultés reviennent plus de trois fois par semaine depuis plus de trois mois, on parle d'insomnie chronique [8]. N'attends pas ce stade pour en parler à ton médecin : dès que tes nuits pèsent sur tes journées, c'est le bon moment, plutôt que de chercher une solution seul.
 
 ## Pour aller plus loin
 

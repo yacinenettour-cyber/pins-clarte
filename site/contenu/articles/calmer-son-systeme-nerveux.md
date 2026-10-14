@@ -5,7 +5,7 @@ description: Comment calmer son système nerveux en quelques minutes ? Soupir ph
 slug: calmer-son-systeme-nerveux
 mot_cle: calmer son système nerveux
 guide: sommeil
-maj: 2026-10-09
+maj: 2026-10-13
 image: Femme assise près d'une fenêtre en fin de journée, les yeux fermés, une main posée sur le ventre, en train d'expirer lentement dans une lumière douce et chaude
 ---
 ## L'essentiel
@@ -90,7 +90,7 @@ L'ancrage 5-4-3-2-1 est un exercice qui ramène ton attention dans le présent, 
 La source est un service de santé mentale universitaire, pas un essai clinique : vois cet exercice comme un frein d'urgence pour tes pensées, à combiner avec la respiration.
 
 ### 5. Bouger : 10 minutes de marche
-La marche d'un bon pas est la forme d'activité physique la plus facile à caser pour faire retomber une montée de stress. Une vaste synthèse de l'Université d'Australie-Méridionale publiée en 2023 dans le *British Journal of Sports Medicine* (97 revues, 1 039 essais, plus de 128 000 participants) montre que l'activité physique réduit les symptômes d'anxiété et de détresse psychologique, avec un effet d'ampleur moyenne, par rapport à la prise en charge habituelle [6]. Toutes les formes d'activité étudiées étaient efficaces, et les plus intenses donnaient les plus grands bénéfices [6]. Bémol : la plupart des revues incluses étaient de faible qualité méthodologique [6].
+La marche d'un bon pas est la forme d'activité physique la plus facile à caser pour faire retomber une montée de stress. Une vaste synthèse de l'Université d'Australie-Méridionale publiée en 2023 dans le *British Journal of Sports Medicine* (97 revues, 1 039 essais, plus de 128 000 participants) montre que l'activité physique réduit les symptômes d'anxiété et de détresse psychologique, avec un effet d'ampleur moyenne, par rapport à la prise en charge habituelle [6]. Toutes les formes d'activité étudiées étaient efficaces, et les plus intenses donnaient les plus grands bénéfices [6]. Bémol : la plupart des revues incluses étaient de faible qualité méthodologique [6]. Ce bénéfice se joue sur la durée. Sur le moment, un jour très tendu ou le soir, préfère une activité douce : un effort intense fait d'abord monter le cortisol, comme l'explique l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/).
 
 En pratique : sors 10 minutes, si possible dehors.
 

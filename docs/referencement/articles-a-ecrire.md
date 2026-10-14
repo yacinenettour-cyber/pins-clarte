@@ -6,6 +6,10 @@ heure de Paris) prend le premier sujet « à écrire » de cette liste. Si un su
 recoupe un article existant, il ne publie rien ce jour-là. Il complète la liste dès qu'il reste moins de 8
 sujets. Jamais plus d'un article par jour. Journal sections 57, 61 et 64.
 
+Règles ajoutées après l'audit du 13/10/2026 : une étude n'est détaillée que dans UN article (son article
+« propriétaire ») ; les autres la résument en une phrase et renvoient vers lui. Avant d'écrire, comparer le plan
+aux articles proches et refuser tout sujet dont la réponse principale est déjà donnée ailleurs sur le site.
+
 Choix des sujets : des recherches réelles (suggestions Google lues le 12/10/2026) auxquelles aucune page
 du site ne répond encore, dans le périmètre du compte (stress, sommeil, système nerveux). Une seule page par
 recherche : ne jamais viser le mot-clé d'un article existant. Jamais « insomnie », « somatisation » ou
@@ -14,10 +18,10 @@ recherche : ne jamais viser le mot-clé d'un article existant. Jamais « insomni
 | # | Sujet et mot-clé visé | Recherches proches (suggestions Google) | Guide | Statut |
 |---|---|---|---|---|
 | 1 | Respiration pour dormir (`/respiration-pour-dormir/`) | respiration pour dormir 4-7-8, rapidement, carrée, militaire, exercice | sommeil | fait le 12/10 |
-| 2 | Symptômes physiques du stress | symptômes physiques du stress chronique, stress et angoisse, tous les symptômes | sommeil (pont « si ce stress te suit jusqu'au lit ») | à écrire |
+| 2 | Symptômes physiques du stress | symptômes physiques du stress chronique, stress et angoisse, tous les symptômes | sommeil (pont « si ce stress te suit jusqu'au lit ») | à écrire (angle : la liste des signes par partie du corps et quand consulter ; ne pas recopier le tableau des signes de « Calmer son système nerveux » ni de « Cortisol, hormone du stress », y renvoyer pour les gestes) |
 | 3 | Réveil fatigué le matin | réveil fatigué le matin, toujours fatigué, avec mal de tête | sommeil | à écrire |
 | 4 | Mâchoire serrée et stress | mâchoire serrée stress remède, crispée, contractée, bloquée | sommeil (serrer la nuit) | à écrire |
 | 5 | Hypervigilance | hypervigilance sommeil, symptômes, définition | sommeil | à écrire |
-| 6 | Écrans avant de dormir (adulte) | écran avant de dormir adulte, téléphone, impact | sommeil | à écrire |
-| 7 | S'endormir quand on est stressé | technique pour s'endormir quand on est stressé, vite, avec des mots | sommeil (vérifier qu'il ne recoupe pas les n° 1 et « Ruminations le soir ») | à écrire |
+| 6 | Écrans avant de dormir (adulte) | écran avant de dormir adulte, téléphone, impact | sommeil | à écrire (angle : ce que l'écran change vraiment, lumière ou stimulation ; ne pas refaire la partie écrans de « Routine du soir » ni de « Procrastination du coucher », y renvoyer) |
+| 7 | S'endormir quand on est stressé | technique pour s'endormir quand on est stressé, vite, avec des mots | — | écarté le 13/10 (audit : recoupe « Respiration pour dormir », « Ruminations le soir » et « Routine du soir ») |
 | 8 | Boule au ventre (stress, angoisse) | boule au ventre stress, angoisse permanente, envie de pleurer | sommeil (pont) | à écrire (vérifier qu'il ne recoupe pas « Angoisse le soir ») |

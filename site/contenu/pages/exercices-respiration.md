@@ -1,10 +1,10 @@
 ---
-titre: Exercices de respiration : cohérence cardiaque, carrée et 4-7-8
+titre: Exercices de respiration : minuteur de cohérence cardiaque
 titre_seo: Cohérence cardiaque et respiration carrée : minuteur gratuit
 description: Minuteur gratuit avec bols chantants et musique douce : cohérence cardiaque (5-5), respiration carrée et 4-7-8, et ce qu'en disent les études.
-maj: 2026-10-10
+maj: 2026-10-13
 ---
-Ces trois exercices de respiration se font avec le minuteur ci-dessous : choisis un rythme et une durée, puis suis le cercle, qui grandit quand tu inspires et rétrécit quand tu expires ; de vrais bols chantants marquent chaque étape, avec une musique douce si tu le veux. La cohérence cardiaque est la plus étudiée : autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente [1].
+Appuie sur « Commencer » et suis le cercle : il grandit quand tu inspires, rétrécit quand tu expires. La cohérence cardiaque, réglée par défaut, est la plus étudiée : autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente [1].
 
 {{EXERCICES}}
 

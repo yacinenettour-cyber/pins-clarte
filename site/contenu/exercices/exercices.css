@@ -26,3 +26,4 @@
   .ex-cercle[data-phase="in"], .ex-cercle[data-phase="haut"] { opacity: 1; }
 }
 .ex-lancer { border: 0; font: 700 16px/1 var(--texte); cursor: pointer; }
+.ex-reglages { margin: 10px 0 -6px; font-size: 14px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--champagne-doux); }

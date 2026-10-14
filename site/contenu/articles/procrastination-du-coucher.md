@@ -5,7 +5,7 @@ description: Procrastination du coucher : pourquoi tu repousses l'heure d'aller 
 slug: procrastination-du-coucher
 mot_cle: procrastination du coucher
 guide: sommeil
-maj: 2026-10-09
+maj: 2026-10-13
 image: Une chambre le soir éclairée par une petite lampe à la lumière chaude, une main qui pose un téléphone écran retourné sur la table de nuit, à côté d'un livre papier
 ---
 ## L'essentiel
@@ -85,7 +85,7 @@ Commence par un ou deux gestes seulement, puis observe ce qui change sur une ou 
 
 Consulte ton médecin si tu mets longtemps à t'endormir même en te couchant plus tôt, si tu as peur de ne pas trouver le sommeil ou si la somnolence te gagne en journée. La procrastination du coucher n'est pas une maladie, mais parles-en à ton médecin si :
 
-- même en te couchant plus tôt, tu mets longtemps à t'endormir ou tu [te réveilles la nuit](/reveil-4h-du-matin/), plus de trois fois par semaine depuis au moins trois mois : ce sont les repères de l'insomnie chronique selon l'Inserm [8] ;
+- même en te couchant plus tôt, tu mets longtemps à t'endormir ou tu [te réveilles la nuit](/reveil-4h-du-matin/), plusieurs fois par semaine et que ça pèse sur tes journées : inutile d'attendre, même si l'Inserm ne parle d'insomnie chronique qu'à partir de trois fois par semaine depuis au moins trois mois [8] ;
 - tu retardes volontairement le coucher parce que tu as peur de ne pas trouver le sommeil, ce « retard stratégique » pouvant cacher une insomnie [2] ;
 - la somnolence te gagne en journée, surtout au volant [6] ;
 - le stress ou les pensées du soir s'accompagnent d'une anxiété ou d'une tristesse qui envahit aussi tes journées.

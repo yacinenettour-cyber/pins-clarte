@@ -5,7 +5,7 @@ description: Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus lé
 slug: reveil-4h-du-matin
 mot_cle: réveil à 4h du matin
 guide: sommeil
-maj: 2026-10-09
+maj: 2026-10-13
 image: Chambre plongée dans la pénombre bleutée de l'aube, une personne allongée sous la couette, le visage détendu, un réveil retourné face contre la table de nuit et des rideaux épais à peine entrouverts
 ---
 ## L'essentiel
@@ -45,7 +45,7 @@ Selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress
 
 ### Parce que l'alcool du soir se paie en fin de nuit
 
-L'alcool du soir est trompeur : il aide souvent à s'endormir, mais à doses élevées il peut perturber la seconde moitié de la nuit, et son effet sédatif s'émousse vite avec l'habitude [5]. C'est la conclusion d'une revue du centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, publiée en 2001 dans la revue de l'Institut national américain sur l'abus d'alcool et l'alcoolisme (NIAAA) [5]. L'INSV conseille d'ailleurs d'éviter l'alcool au dîner [3]. Le café et l'alcool sont aussi détaillés dans l'article sur l'[alimentation anti-stress](/alimentation-anti-stress/).
+L'alcool du soir est trompeur : il aide souvent à s'endormir, mais à doses élevées il peut perturber la seconde moitié de la nuit, et son effet sédatif s'émousse vite avec l'habitude [5]. C'est la conclusion d'une revue du centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, publiée en 2001 dans *Alcohol Research & Health*, la revue de l'Institut national américain sur l'abus d'alcool et l'alcoolisme (NIAAA) [5]. L'INSV conseille d'ailleurs d'éviter l'alcool au dîner [3]. Le café et l'alcool sont aussi détaillés dans l'article sur l'[alimentation anti-stress](/alimentation-anti-stress/).
 
 ### Parce que la lumière envoie un signal d'éveil
 
@@ -72,7 +72,7 @@ En cas de réveil à 4h du matin, l'objectif n'est pas de forcer le sommeil, mai
 
 Le détail, étape par étape :
 
-1. **Ne regarde pas l'heure.** Selon une étude du King's College de Londres publiée en 2007 (Tang et al.), les personnes à qui l'on demandait de surveiller une horloge en essayant de s'endormir se sont davantage inquiétées et ont mis plus de temps à trouver le sommeil, qu'elles dorment bien ou mal d'habitude [6]. Tourne ton réveil vers le mur et laisse ton téléphone hors de portée.
+1. **Ne regarde pas l'heure.** Selon une étude du King's College de Londres publiée en 2007 dans le *Journal of Behavior Therapy and Experimental Psychiatry* (Tang et al.), les personnes à qui l'on demandait de surveiller une horloge en essayant de s'endormir se sont davantage inquiétées et ont mis plus de temps à trouver le sommeil, qu'elles dorment bien ou mal d'habitude [6]. Tourne ton réveil vers le mur et laisse ton téléphone hors de portée.
 2. **Garde l'obscurité.** N'allume pas d'écran : la lumière freine la mélatonine [1].
 3. **Ralentis ta respiration.** Inspire par le nez sur 4 temps, expire lentement sur 6 temps, pendant quelques minutes. Compter donne à ton attention un appui plus neutre que tes soucis.
 4. **Si l'éveil se prolonge, lève-toi.** L'INSV conseille de se lever et de faire autre chose quand on est éveillé depuis plus de 20 minutes [3]. Estime ce temps sans regarder l'heure : si tu te sens bien réveillé et agacé, c'est le moment. Va dans une autre pièce, sous une lumière douce et basse, et choisis une activité calme : lecture sur papier, musique douce, pliage de linge. Reviens au lit quand la somnolence revient.

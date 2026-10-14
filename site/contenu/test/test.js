@@ -134,9 +134,17 @@
     if (retour) retour.addEventListener("click", function () { etape--; afficherQuestion(); });
   }
 
-  /* Une seule offre (consigne du 10/10/2026) : le guide sommeil, relié aux e-mails ; jamais la formation dans le résultat. */
+  /* Une seule offre (consigne du 10/10/2026) : le guide sommeil, relié aux e-mails ; jamais la formation dans le résultat.
+     À partir de 10 au GAD-7 (audit du 13/10/2026) : plus de guide, car il ouvre la séquence d'e-mails qui présente
+     la formation ; seulement des outils gratuits du site, sans e-mail. À partir de 15 : rien de plus. */
   function blocOffre(cleProfil, p, n) {
     if (n.cle === "severe") return "";
+    if (n.cle === "modere") {
+      return '<div class="test-bloc"><p class="test-etiquette">En attendant ton rendez-vous</p>' +
+        '<p>Deux outils gratuits, sans inscription ni e-mail, pour les moments où l\'anxiété monte. Ils ne remplacent pas un avis médical.</p>' +
+        '<ul class="test-liens"><li><a href="' + B + '/respiration-guidee/">Respiration guidée : 3 audios de 3, 5 et 10 minutes</a></li>' +
+        '<li><a href="' + B + '/angoisse-le-soir/">Angoisse le soir et la nuit : que faire sur le moment</a></li></ul></div>';
+    }
     var g = GUIDES[p.guide];
     if (!g) return "";
     var contenu = "profil-" + cleProfil + "-" + n.cle;
@@ -144,12 +152,12 @@
     var texte = p.pont && detail
       ? p.pont + " : <strong>" + g.titre + "</strong> (" + g.type.toLowerCase() + "), " + detail
       : "<strong>" + g.titre + "</strong> (" + g.type.toLowerCase() + "), " + g.rappel.charAt(0).toLowerCase() + g.rappel.slice(1);
-    var avant = p.complement || n.cle === "modere"
+    var avant = p.complement
       ? "<p><strong>En complément, jamais à la place d'un avis médical.</strong> " + texte + "</p>"
       : "<p>" + texte + "</p>";
     return '<div class="deblocage">' + avant +
       '<a class="test-cta" href="' + utm(g.url, contenu) + '">' + g.bouton + ' <span aria-hidden="true">→</span></a>' +
-      '<small>Gratuit. Tu laisses ton e-mail sur une page sécurisée (systeme.io) et tu reçois le guide tout de suite, puis quelques conseils pour tes soirées. Désinscription en un clic.</small></div>';
+      '<small>Gratuit. Tu laisses ton e-mail sur une page sécurisée (systeme.io) et tu reçois le guide tout de suite, puis des conseils pour tes soirées et la présentation du programme complet. Désinscription en un clic.</small></div>';
   }
 
   function afficherResultat() {

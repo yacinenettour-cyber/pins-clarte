@@ -8,6 +8,8 @@
  "auteur": {
   "nom": "Yacine",
   "role": "Fondateur de Clarté Mentale",
+  "metier": "électricien de métier",
+  "description": "Électricien de métier, non professionnel de santé. Il rédige les articles de Clarté Mentale à partir de sources officielles et d'études publiées, citées sur chaque page ; aucun article n'a encore été relu par un professionnel de santé.",
   "page": "/a-propos/",
   "photo": "/img/yacine.jpg",
   "photo_alt": "Yacine, fondateur de Clarté Mentale"
@@ -146,8 +148,8 @@
   }
  },
  "formation": {
-  "titre": "Quand le cerveau refuse de dormir",
-  "sous_titre": "Le programme pour calmer ton mental le soir et laisser le sommeil revenir naturellement, même quand tu es épuisé(e) et très stressé(e).",
+  "titre": "Quand le cerveau refuse de dormir : le programme complet",
+  "sous_titre": "Le programme pour t'aider à calmer ton mental le soir et à retrouver des nuits plus paisibles, même quand tu es épuisé(e) et très stressé(e).",
   "prix": "37 €",
   "prix_valeur": "37.00",
   "prix_detail": "paiement unique, sans abonnement, accès immédiat et à vie",
@@ -164,7 +166,7 @@
   "modules": [
    [
     "Apaiser le système nerveux",
-    "Respirations anti-stress, soupir physiologique, relâchement musculaire et scan corporel, pour faire redescendre la pression le soir même."
+    "Respirations anti-stress, soupir physiologique, relâchement musculaire et scan corporel, pour aider la pression à redescendre le soir."
    ],
    [
     "Sortir des ruminations sans lutter",

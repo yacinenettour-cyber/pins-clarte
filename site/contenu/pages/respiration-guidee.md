@@ -2,9 +2,9 @@
 titre: Respiration guidée 4-6 : 3 audios gratuits pour te calmer
 titre_seo: Respiration guidée gratuite pour se calmer et dormir
 description: Trois audios gratuits de respiration guidée 4-6 (3, 5 et 10 minutes) sur une musique de détente, sans voix : inspire 4 secondes, expire 6 secondes.
-maj: 2026-10-10
+maj: 2026-10-13
 ---
-La respiration 4-6 est une respiration lente : tu inspires pendant 4 secondes et tu expires pendant 6 secondes, soit 6 respirations par minute. Ces trois audios gratuits, sans voix, te guident sur une musique de détente lente et profonde : de vrais bols chantants tibétains marquent l'inspiration et l'expiration. Tu peux les écouter les yeux fermés, au calme ou dans ton lit, l'écran éteint.
+Inspire 4 secondes, expire 6 secondes : 6 respirations par minute. Ces trois audios gratuits, sans voix, te guident avec de vrais bols chantants sur une musique douce, à écouter les yeux fermés, même au lit.
 
 {{AUDIOS}}
 

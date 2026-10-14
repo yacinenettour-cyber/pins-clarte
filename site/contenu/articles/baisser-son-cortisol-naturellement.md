@@ -5,7 +5,7 @@ description: Baisser son cortisol naturellement : sommeil, lumière, sport doux,
 slug: baisser-son-cortisol-naturellement
 mot_cle: baisser son cortisol naturellement
 guide: cortisol
-maj: 2026-10-09
+maj: 2026-10-13
 image: Femme d'une trentaine d'années qui marche d'un pas tranquille sur un chemin de parc au soleil du matin, visage détendu, arbres et lumière douce en arrière-plan, sans texte
 ---
 ## L'essentiel
@@ -141,7 +141,7 @@ Pas besoin de tout appliquer dès demain : choisis deux gestes, tiens-les une se
 
 Consulte ton médecin si tes difficultés de sommeil ou ta fatigue durent malgré ces changements, ou si tu remarques des changements physiques inhabituels. Ces gestes ne remplacent pas un avis médical, et cet article non plus. Prends rendez-vous avec ton médecin traitant si :
 
-- tes difficultés de sommeil ou ta fatigue durent depuis plus de trois à quatre semaines malgré ces changements ;
+- tes difficultés de sommeil ou ta fatigue durent malgré ces changements, ou pèsent sur tes journées ;
 - le stress t'empêche de travailler, de te concentrer ou de profiter de tes proches, ou si tu as besoin d'alcool ou de somnifères pour tenir ;
 - tu remarques des changements physiques inhabituels, comme ceux décrits dans notre article [« Cortisol, hormone du stress »](/cortisol-hormone-du-stress/) : seul un médecin peut prescrire et interpréter les bons examens ;
 - tu envisages un complément alors que tu prends des médicaments, que tu es enceinte, que tu allaites ou que tu as une maladie du foie [8], ou un cocktail « anti-cortisol » alors que tu es suivi pour les reins [7].

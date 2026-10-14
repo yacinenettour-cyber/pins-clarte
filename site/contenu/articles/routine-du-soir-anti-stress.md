@@ -5,7 +5,7 @@ description: Routine du soir pour mieux dormir : 7 gestes simples (lumière, éc
 slug: routine-du-soir-anti-stress
 mot_cle: routine du soir
 guide: sommeil
-maj: 2026-10-09
+maj: 2026-10-13
 image: Chambre le soir éclairée par une petite lampe de chevet à lumière chaude ; une personne assise au bord du lit écrit dans un carnet, le téléphone posé loin du lit, ambiance calme et tamisée
 ---
 ## L'essentiel
@@ -30,9 +30,9 @@ Une routine du soir efficace suit sept étapes, des horaires réguliers jusqu'à
 2. **21 h : tamise la lumière.** Passe aux petites lampes et éteins les plafonniers blancs. L'Assurance maladie conseille un éclairage chaud et tamisé le soir, et d'éviter les lumières froides [1].
 3. **Entre 21 h et 22 h : prends ta douche ou ton bain.** Selon une méta-analyse de l'Université du Texas à Austin publiée en 2019 dans *Sleep Medicine Reviews* (Haghayegh et al.), une douche ou un bain à 40-42,5 °C, pris 1 à 2 heures avant le coucher, même pendant 10 minutes seulement, raccourcit le temps d'endormissement [5]. C'est le refroidissement du corps qui suit qui semble aider. Les auteurs précisent que ce point de timing repose encore sur peu d'études [5]. À l'inverse, évite le bain très chaud juste avant de te coucher : tout ce qui fait monter la température du corps gêne l'endormissement [1].
 4. **22 h : éteins les écrans.** L'INSV conseille de se déconnecter 1 à 2 heures avant le coucher, l'Assurance maladie idéalement une heure avant [1][4]. Range le téléphone dans une autre pièce et coupe les notifications [1]. Remplace-le par une activité calme : lecture, musique douce, relaxation ou activité manuelle [4].
-5. **22 h 30 : vide ta tête sur papier.** Prends 5 minutes pour écrire, de façon très précise, ce que tu dois faire dans les prochains jours. Selon une étude de l'Université Baylor (Texas) publiée en 2018, menée en laboratoire du sommeil auprès de 57 jeunes adultes en bonne santé, ceux qui écrivaient leurs tâches à venir s'endormaient plus vite que ceux qui décrivaient ce qu'ils avaient déjà fait, et d'autant plus vite que leur liste était détaillée [6]. Si cette liste est toujours longue, l'article sur la [charge mentale](/charge-mentale/) propose des façons de la partager et de l'alléger.
+5. **22 h 30 : vide ta tête sur papier.** Prends 5 minutes pour écrire, de façon très précise, ce que tu dois faire dans les prochains jours. Selon une étude de l'Université Baylor (Texas) publiée en 2018 dans le *Journal of Experimental Psychology: General*, menée en laboratoire du sommeil auprès de 57 jeunes adultes en bonne santé, ceux qui écrivaient leurs tâches à venir s'endormaient plus vite que ceux qui décrivaient ce qu'ils avaient déjà fait, et d'autant plus vite que leur liste était détaillée [6]. Si cette liste est toujours longue, l'article sur la [charge mentale](/charge-mentale/) propose des façons de la partager et de l'alléger.
 6. **22 h 45 : prépare ta chambre.** Obscurité, silence et une température entre 18 et 20 °C, en aérant chaque jour [1][4]. Pendant la nuit, la température de ton corps baisse naturellement [3] : une chambre fraîche va dans le même sens.
-7. **Au lit : respire lentement.** Inspire par le nez environ 4 secondes, puis expire doucement environ 6 secondes, pendant quelques minutes. Ce rythme d'environ 6 respirations par minute, qui sollicite le [nerf vague](/nerf-vague/), est celui qu'étudie une méta-analyse de 223 études menée par l'Université allemande du sport de Cologne (2022) : la respiration lente augmente la variabilité cardiaque liée au système nerveux parasympathique, celui du repos [7].
+7. **Au lit : respire lentement.** Inspire par le nez environ 4 secondes, puis expire doucement environ 6 secondes, pendant quelques minutes. Ce rythme d'environ 6 respirations par minute, qui sollicite le [nerf vague](/nerf-vague/), est celui qu'étudie une méta-analyse de 223 études menée par l'Université allemande du sport de Cologne (*Neuroscience & Biobehavioral Reviews*, 2022) : la respiration lente augmente la variabilité cardiaque liée au système nerveux parasympathique, celui du repos [7].
 
 Dernier point, souvent oublié : va te coucher quand les signes de sommeil arrivent (bâillements, paupières lourdes, yeux qui piquent), pas avant [1][4].
 
@@ -71,8 +71,8 @@ Deux erreurs fréquentes à éviter :
 - se coucher très tôt « pour rattraper », sans avoir sommeil [1].
 
 ## Quand consulter ?
-Consulte ton médecin traitant si tes difficultés de sommeil reviennent plus de trois fois par semaine depuis plus de trois mois, ou si tu luttes contre le sommeil dans la journée. Une routine du soir aide beaucoup de personnes, mais elle ne règle pas tout. Parles-en à ton médecin si :
-- tes difficultés de sommeil reviennent plus de trois fois par semaine depuis plus de trois mois : c'est la définition de l'insomnie chronique [2] ;
+Consulte ton médecin traitant si tes difficultés de sommeil durent et pèsent sur tes journées, sans attendre qu'elles s'installent, ou si tu luttes contre le sommeil dans la journée. Une routine du soir aide beaucoup de personnes, mais elle ne règle pas tout. Parles-en à ton médecin si :
+- tes difficultés de sommeil reviennent souvent et durent : au-delà de trois mois, à plus de trois nuits par semaine, on parle d'insomnie chronique [2], et il vaut mieux en avoir parlé avant ;
 - tu luttes contre le sommeil dans la journée, en particulier au volant (dans ce cas, ne conduis pas) [1] ;
 - on te signale des pauses respiratoires pendant ton sommeil, ou tu restes fatigué et somnolent malgré des nuits complètes : l'apnée du sommeil fait partie des causes possibles [3] ;
 - tu ressens le soir un besoin irrépressible de bouger les jambes, avec des sensations désagréables [3] ;

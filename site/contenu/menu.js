@@ -106,3 +106,26 @@
   window.addEventListener("resize", demander);
   maj();
 })();
+
+/* Origine de la visite (audit du 13/10/2026) : quand la page est ouverte depuis une épingle (adresse avec
+   utm_source=pinterest…), les liens vers le guide gardent cette origine, pour savoir dans systeme.io quels inscrits
+   viennent de Pinterest. Rien n'est enregistré : seule l'adresse de la page ouverte est lue. */
+(function () {
+  "use strict";
+  var ici = new URLSearchParams(window.location.search), source = ici.get("utm_source");
+  if (!source || source === "site") return;
+  var epingle = (ici.get("utm_content") || ici.get("utm_campaign") || "").slice(0, 80);
+  // Au moment du clic (et non au chargement) : couvre aussi les liens créés ensuite, comme le résultat du test.
+  function marquer(ev) {
+    var a = ev.target.closest && ev.target.closest('a[href^="https://lp.contactapaisement-mental.fr/"]');
+    if (!a) return;
+    try {
+      var u = new URL(a.href);
+      u.searchParams.set("utm_source", source);
+      if (epingle) u.searchParams.set("utm_term", epingle);
+      a.href = u.toString();
+    } catch (err) { /* adresse inattendue : lien laissé tel quel */ }
+  }
+  document.addEventListener("click", marquer, true);
+  document.addEventListener("auxclick", marquer, true);
+})();

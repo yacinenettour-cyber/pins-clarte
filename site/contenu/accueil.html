@@ -207,6 +207,9 @@ section { position: relative; z-index: 1; }
 .teinte::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(58, 95, 67, 0.10), rgba(15, 23, 36, 0.28)); mix-blend-mode: multiply; transition: opacity .3s ease; }
 .teinte.sombre img { filter: saturate(.85) brightness(.92); }
 .teinte.sombre::after { display: none; }
+.autres-titre { font-family: var(--titre); font-size: 20px; margin: 36px 0 12px; color: var(--champagne); }
+.autres-sujets { list-style: none; padding: 0; margin: 0 0 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 24px; }
+.autres-sujets a { display: block; padding: 9px 0; color: var(--brume); text-underline-offset: 3px; }
 .themes-lien { margin: 0 0 22px; color: var(--champagne-doux); font-size: 15.5px; }
 .themes-lien a { color: var(--brume); }
 .carte-lecture .corps { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 18px 20px 20px; }
@@ -234,7 +237,7 @@ section { position: relative; z-index: 1; }
 .livret-offre { flex: none; width: 190px; aspect-ratio: 3 / 4; border-radius: 10px; padding: 22px 18px; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(160deg, #E9E1D3, #BFB29C); color: #0F1714; font: 700 21px/1.15 var(--titre); box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.75); transform: rotate(-3deg); }
 .livret-offre small, .offre-unique .livret-offre small { font: 600 11px/1.3 var(--texte); color: inherit; opacity: .75; }
 .points-offre { margin: 0; padding-left: 20px; color: var(--champagne-doux); }
-.offre-unique small { color: var(--champagne-doux); font-size: 13px; line-height: 1.5; }
+.offre-unique small { color: var(--champagne-doux); font-size: 14px; line-height: 1.5; }
 .final .tuile h3 { font-size: 21px; }
 .final .tuile .btn { align-self: flex-start; margin-top: 4px; }
 .pied { position: relative; z-index: 1; border-top: 1px solid var(--lisere); padding-block: 36px 48px; font-size: 14px; color: var(--champagne-doux); }
@@ -314,15 +317,15 @@ section { position: relative; z-index: 1; }
     <div class="wrap">
       <div class="hero-texte">
         <h1>
-          <span class="kicker">Baisser le cortisol · <span class="insecable">Anti-stress naturel</span> · Mieux dormir</span>
+          <span class="kicker">Stress · <span class="insecable">Système nerveux</span> · Mieux dormir</span>
           <span class="titre">Ton système nerveux mérite une <em>trêve.</em></span>
         </h1>
-        <p class="sous-titre">Le cortisol est l'hormone du stress : son taux devrait <strong>baisser le soir</strong>. Quand l'axe du stress reste allumé, il redescend mal et le sommeil en pâtit. Fais le point en 2 minutes avec un questionnaire validé, puis applique les gestes que la science a réellement testés pour <strong>baisser le cortisol</strong> et <strong>mieux dormir</strong>.</p>
+        <p class="sous-titre">Le soir, ton corps devrait ralentir : le cortisol, l'hormone du stress, est censé <strong>baisser</strong>. Quand le mental tourne encore au coucher, il redescend mal et le sommeil en pâtit. Fais le point en 2 minutes avec un questionnaire validé, puis essaie les gestes que la science a réellement testés pour <strong>calmer ton système nerveux</strong> et <strong>mieux dormir</strong>.</p>
         <div class="cta-duo">
           <a class="btn btn-or btn-principal" href="#test">Faire le test <span class="fleche" aria-hidden="true">→</span></a>
-          <a class="btn btn-verre" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=hero">Recevoir le guide gratuit</a>
+          <a class="btn btn-verre" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=hero">Recevoir le guide sommeil gratuit</a>
         </div>
-        <div class="reassurance"><span>Test gratuit, questionnaire validé</span><span>Sources scientifiques citées</span><span>Sans régime ni matériel</span></div>
+        <div class="reassurance"><span>Test gratuit, questionnaire validé</span><span>Sources scientifiques citées</span><span>Sans inscription pour le test</span></div>
       </div>
       <div class="hero-visuel">
         <canvas id="reseau" aria-hidden="true"></canvas>
@@ -353,9 +356,9 @@ section { position: relative; z-index: 1; }
   <section class="section" id="solutions">
     <div class="wrap">
       <div class="entete-section">
-        <p class="etiquette">Les leviers qui ont des preuves</p>
-        <h2>Baisser le cortisol naturellement : 7 leviers validés</h2>
-        <p>Le cortisol est une hormone produite par les glandes surrénales en réponse au stress ; son taux suit une courbe, haut le matin et bas le soir. Pas de cocktail miracle ni de complément magique : voici les gestes étudiés qui l'aident à suivre cette courbe.</p>
+        <p class="etiquette">Les gestes qui ont été étudiés</p>
+        <h2>Stress et sommeil : 7 gestes anti-stress étudiés</h2>
+        <p>Le cortisol est une hormone produite par les glandes surrénales en réponse au stress ; son taux suit une courbe, haut le matin et bas le soir. Pas de cocktail miracle ni de complément magique : voici les gestes étudiés qui l'aident à suivre cette courbe. Le détail, étude par étude : <a href="{{B}}/baisser-son-cortisol-naturellement/">baisser son cortisol naturellement</a>.</p>
       </div>
       <ul class="bento" role="list">
         <li class="tuile t-circadien">
@@ -397,9 +400,9 @@ section { position: relative; z-index: 1; }
 
         <li class="tuile t-assiette">
           <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 12h16a8 8 0 0 1-16 0zM12 4c2 1.5 2 4 0 6M8 6c1.2 1 1.2 2.5 0 3.5"/></svg></div>
-          <h3>Alimentation anti-cortisol, sans régime</h3>
+          <h3>Alimentation : des repères, pas de miracle</h3>
           <ul>
-            <li>Des repas à heures régulières, qui donnent eux aussi des repères à ton horloge.</li>
+            <li>Aucun aliment n'a montré qu'il pouvait, à lui seul, faire baisser le cortisol : c'est l'équilibre de l'ensemble qui compte (<a href="{{B}}/alimentation-anti-stress/">alimentation et stress</a>).</li>
             <li>Les « cocktails anti-cortisol » des réseaux : aucune preuve qu'ils baissent le cortisol [6].</li>
             <li>Les compléments comme l'ashwagandha : preuves limitées, interactions possibles, avis médical avant.</li>
           </ul>
@@ -440,7 +443,7 @@ section { position: relative; z-index: 1; }
         <div class="chiffre"><b data-cible="50" data-prefixe="&gt;">&gt;50<small>%</small></b><p>des insomnies sont dues au stress, à l'anxiété ou à la dépression.</p><cite>Assurance maladie (ameli.fr) [10]</cite></div>
       </div>
       <div class="comparatif">
-        <h3 id="titre-comparatif">Les leviers anti-cortisol comparés</h3>
+        <h3 id="titre-comparatif">Les gestes anti-stress comparés</h3>
         <div class="tableau-defile">
           <table aria-labelledby="titre-comparatif">
             <thead><tr><th scope="col">Levier</th><th scope="col">Effet mesuré</th><th scope="col">Qui l'a mesuré</th></tr></thead>
@@ -483,6 +486,8 @@ section { position: relative; z-index: 1; }
         <p>Des articles complets et sourcés pour mieux dormir, calmer ton système nerveux et sortir des ruminations du soir.</p>
       </div>
       <ul class="lecture" role="list">{{ARTICLES}}</ul>
+      <h3 class="autres-titre">Les autres sujets</h3>
+      <ul class="autres-sujets">{{AUTRES_SUJETS}}</ul>
       <p class="themes-lien">Explorer par thème : <a href="{{B}}/mieux-dormir/">Mieux dormir</a> · <a href="{{B}}/stress-et-systeme-nerveux/">Stress et système nerveux</a> · <a href="{{B}}/charge-mentale-et-burn-out/">Charge mentale et burn-out</a></p>
       <a class="btn btn-verre" href="{{B}}/articles/">Tous les articles <span class="fleche" aria-hidden="true">→</span></a>
     </div>
@@ -496,7 +501,7 @@ section { position: relative; z-index: 1; }
       </div>
       <div class="faq">
         <details open>
-          <summary><h3>Comment baisser le cortisol naturellement ?</h3></summary>
+          <summary><h3>Quels gestes aident vraiment à apaiser le stress ?</h3></summary>
           <p>Les leviers les mieux étudiés sont un sommeil régulier, la lumière du jour le matin, une activité physique douce, la relaxation ou la respiration lente, les liens sociaux et un dernier café pris au moins 6 heures avant le coucher. Commence par deux gestes, tiens-les une semaine, puis ajoutes-en un.</p>
         </details>
         <details>
@@ -513,7 +518,7 @@ section { position: relative; z-index: 1; }
         </details>
         <details>
           <summary><h3>Quand faut-il consulter ?</h3></summary>
-          <p>Si tes difficultés de sommeil reviennent plus de trois fois par semaine depuis plus de trois mois, si des changements physiques inhabituels apparaissent ou si le moral s'effondre. En cas d'urgence, appelle le 15 ou le 112. En cas de pensées suicidaires, le 3114 répond gratuitement, 24 h/24.</p>
+          <p>Dès que tes difficultés de sommeil durent et pèsent sur tes journées, sans attendre qu'elles s'installent : au-delà de trois mois, à plus de trois nuits par semaine, on parle d'insomnie chronique. Consulte aussi si des changements physiques inhabituels apparaissent ou si le moral s'effondre. En cas d'urgence, appelle le 15 ou le 112. En cas de pensées suicidaires, le 3114 répond gratuitement, 24 h/24.</p>
         </details>
       </div>
     </div>

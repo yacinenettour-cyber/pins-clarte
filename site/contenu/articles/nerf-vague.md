@@ -5,7 +5,7 @@ description: Nerf vague : respiration lente, expiration longue, froid, chant… 
 slug: nerf-vague
 mot_cle: nerf vague
 guide: sommeil
-maj: 2026-10-09
+maj: 2026-10-13
 image: Personne assise en tailleur près d'une fenêtre, dans la lumière douce du matin, yeux fermés, une main posée sur le ventre, en train de respirer lentement ; décor sobre avec une plante verte, ambiance calme
 ---
 ## L'essentiel
@@ -55,7 +55,7 @@ Pour t'entraîner avec un repère sonore, le [minuteur de respiration](/exercice
 3. Expire lentement, jusqu'au bout de ton souffle.
 4. Répète à ton rythme pendant 5 minutes [4].
 
-Pas le temps ? Six respirations lentes, expiration plus longue que l'inspiration, soit une minute : l'effet sur la variabilité cardiaque apparaît déjà pendant la séance [2].
+Pas le temps ? Même quelques minutes de respiration lente, expiration plus longue que l'inspiration, comptent : dans les études, l'effet sur la variabilité cardiaque apparaît déjà pendant la séance [2]. Une minute ne suffit pas à reproduire ces séances, mais elle aide à reprendre la main sur ton souffle.
 
 ## Eau froide, chant, gargarismes : qu'est-ce qui marche vraiment ?
 En dehors de la respiration lente, les preuves sont minces : le froid sur le cou a un effet limité, le chant agit surtout par le souffle, et les gargarismes ne sont pas démontrés.

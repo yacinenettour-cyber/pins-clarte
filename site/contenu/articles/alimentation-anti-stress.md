@@ -1,12 +1,12 @@
 ---
 titre: Alimentation anti-stress : ce que la science dit vraiment
-titre_seo: Alimentation anti-stress : les aliments qui aident vraiment
+titre_seo: Alimentation anti-stress : ce que les études montrent
 description: Alimentation anti-stress : oméga-3, magnésium, café, aliments ultra-transformés… ce que montrent les études, l'assiette conseillée et ce qui ne marche pas.
 slug: alimentation-anti-stress
 mot_cle: alimentation anti-stress
 guide: cortisol
 date: 2026-10-09
-maj: 2026-10-09
+maj: 2026-10-13
 image: Bol de saumon grillé, quinoa, avocat, brocoli et salade sur une table en bois, carafe d'eau citronnée
 ---
 ## L'essentiel
@@ -41,7 +41,7 @@ Aucun aliment n'efface le stress, mais trois pistes ont des études derrière el
 |---|---|---|---|
 | Oméga-3 | Poissons gras, noix [13][14] | Moins de symptômes d'anxiété, surtout à forte dose [2][3] | Moyenne : effet net seulement à partir de 2 g par jour [2] |
 | Magnésium | Légumes secs, fruits à coque, graines, céréales complètes, légumes verts à feuilles [5] | Effet possible sur l'anxiété chez des personnes déjà fragiles [4] | Faible : études de qualité médiocre [4] |
-| Moins d'ultra-transformés | Cuisiner davantage « fait maison » [12] | Plus d'aliments ultra-transformés va de pair avec plus d'anxiété [6] | Lien solide, mais sans preuve de cause [6] |
+| Moins d'ultra-transformés | Cuisiner davantage « fait maison » [12] | Plus d'aliments ultra-transformés va de pair avec plus d'anxiété [6] | Association retrouvée dans plusieurs études, données de qualité faible, sans preuve de cause [6] |
 
 ### Les oméga-3 des poissons gras et des noix
 
