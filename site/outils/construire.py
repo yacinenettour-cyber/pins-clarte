@@ -891,6 +891,15 @@ def construire_liste(articles):
     contenu = f"""<div class="large">{nav_html}
 <h1>Tous les articles</h1>
 <p class="chapo">Stress, système nerveux, sommeil, charge mentale : des articles complets, sourcés et mis à jour.</p>
+<h2 id="par-ou-commencer">Par où commencer ?</h2>
+<ul>
+<li>Ton mental tourne au moment de dormir : <a href="/ruminations-le-soir/">ruminations le soir</a>, puis <a href="/respiration-pour-dormir/">respiration pour dormir</a>.</li>
+<li>Tu te réveilles la nuit et n'arrives plus à te rendormir : <a href="/reveil-4h-du-matin/">réveil à 4 h du matin</a>.</li>
+<li>L'angoisse monte le soir, avec des signes dans le corps : <a href="/angoisse-le-soir/">angoisse le soir et la nuit</a>.</li>
+<li>Tu te sens tendu toute la journée : <a href="/calmer-son-systeme-nerveux/">calmer son système nerveux</a>.</li>
+<li>Tu penses à tout, tout le temps : <a href="/charge-mentale/">charge mentale</a> ; si l'épuisement dure : <a href="/signes-du-burn-out/">signes du burn-out</a>.</li>
+<li>Tu ne sais pas par où commencer : le <a href="/test-stress-anxiete/">test de stress et d'anxiété</a> te propose des articles selon tes réponses.</li>
+</ul>
 {''.join(blocs)}</div>"""
     schema = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Tous les articles",
               "url": URL + "/articles/", "inLanguage": SITE["langue"],

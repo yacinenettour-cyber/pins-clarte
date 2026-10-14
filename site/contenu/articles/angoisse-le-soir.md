@@ -5,7 +5,7 @@ description: Angoisse le soir, crise d'angoisse qui réveille la nuit : pourquoi
 slug: angoisse-le-soir
 mot_cle: angoisse le soir
 guide: sommeil
-maj: 2026-10-10
+maj: 2026-10-14
 image: Personne assise dans son lit la nuit, les mains sur les tempes, l'air inquiet, dans une chambre sombre
 ---
 ## L'essentiel
@@ -86,7 +86,7 @@ Pour éviter que l'angoisse monte chaque soir, sors tes soucis de ta tête plus 
 | Au lit | Respiration lente, attention posée sur le souffle | Détourne l'attention des pensées négatives, selon le Réseau Morphée [8] |
 | Si le sommeil ne vient pas | Te lever, activité calme, revenir quand la somnolence arrive | Conseil de l'INSV [3] |
 
-Selon un essai de l'Université Stanford publié en 2023 dans *Cell Reports Medicine* (Balban et al.), 108 participants ont pratiqué chaque jour, pendant un mois, 5 minutes d'un exercice respiratoire ou 5 minutes de méditation de pleine conscience : l'anxiété baissait après chaque séance dans tous les groupes [9]. Le [minuteur de respiration](/exercices-respiration/) du site t'aide à tenir ce rendez-vous en journée.
+Dans un essai de l'Université Stanford (*Cell Reports Medicine*, 2023), 5 minutes de respiration par jour pendant un mois faisaient baisser l'anxiété après chaque séance [9] ; l'étude est détaillée dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/). Le [minuteur de respiration](/exercices-respiration/) du site t'aide à tenir ce rendez-vous en journée.
 
 Le soir, donne à tes soucis un rendez-vous fixe, loin du lit. Selon une étude de l'Université Duke (Caroline du Nord) publiée en 2006 dans *Behavioral Sleep Medicine* (Carney et Waters), 33 étudiants souffrant d'insomnie qui notaient leurs soucis avec des pistes de solution pendant cinq soirs ont vu leur agitation mentale avant le sommeil diminuer [10]. La méthode pas à pas est détaillée dans l'article sur les [ruminations le soir](/ruminations-le-soir/).
 

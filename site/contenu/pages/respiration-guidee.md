@@ -2,7 +2,7 @@
 titre: Respiration guidée 4-6 : 3 audios gratuits pour te calmer
 titre_seo: Respiration guidée gratuite pour se calmer et dormir
 description: Trois audios gratuits de respiration guidée 4-6 (3, 5 et 10 minutes) sur une musique de détente, sans voix : inspire 4 secondes, expire 6 secondes.
-maj: 2026-10-13
+maj: 2026-10-14
 ---
 Inspire 4 secondes, expire 6 secondes : 6 respirations par minute. Ces trois audios gratuits, sans voix, te guident avec de vrais bols chantants sur une musique douce, à écouter les yeux fermés, même au lit.
 
@@ -31,11 +31,7 @@ Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vag
 
 L'expiration plus longue a aussi une raison : le cœur accélère légèrement quand on inspire et ralentit quand on expire, un mécanisme normal appelé arythmie sinusale respiratoire [2]. Pour aller plus loin sur ce sujet, lis [comment activer le nerf vague naturellement](/nerf-vague/).
 
-Selon un essai de l'Université Stanford publié en 2023 dans *Cell Reports Medicine* (Balban et al.), 108 participants ont pratiqué chaque jour, pendant un mois, 5 minutes d'un exercice respiratoire ou 5 minutes de méditation de pleine conscience [3] :
-
-- le « soupir cyclique », qui insiste sur une longue expiration, a donné la plus forte hausse de l'humeur positive [3] ;
-- il a aussi davantage ralenti la fréquence respiratoire que la méditation [3] ;
-- l'anxiété baissait après chaque séance dans tous les groupes, sans différence entre eux [3].
+Dans un essai de l'Université Stanford (*Cell Reports Medicine*, 2023), 5 minutes d'exercice respiratoire par jour pendant un mois ont amélioré l'humeur positive, et l'anxiété baissait après chaque séance [3] ; l'étude est détaillée dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/).
 
 Ces audios proposent la respiration 4-6, pas le soupir cyclique de cette étude : les deux reposent sur une respiration lente où l'expiration dure plus longtemps que l'inspiration.
 
