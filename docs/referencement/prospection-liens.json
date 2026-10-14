@@ -131,16 +131,20 @@
    "site": "Apsytude (association de psychologues pour les étudiants)",
    "page_cible": "https://www.apsytude.com/fr/non-classe/ressources-etudiant%C2%B7e/",
    "email": "apsytude@gmail.com",
-   "email_verifie": false,
+   "email_verifie": true,
    "formulaire": "https://apsytude.com/fr/apsytude/contact/",
    "prenom": null,
    "note": 4,
    "pourquoi": "Page « Ressources » destinée aux étudiants : des outils gratuits de respiration et de minuteur complètent leurs propres tests.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/ (et https://www.contactapaisement-mental.fr/respiration-guidee/)",
-   "remarque": "Association de psychologues active (Happsy Line 2025-2026 et 2026-2027) ; une autre page du site donne apsytude@mail.com : vérifier laquelle est à jour avant d'écrire.",
-   "statut": "a_verifier",
+   "remarque": "14/10 : apsytude@gmail.com lue sur la page Contact du site",
+   "statut": "envoye",
    "domaine": "apsytude.com",
-   "audience": "B : association nationale de psychologues pour étudiants ; absent du top 1 million Tranco"
+   "audience": "B : association nationale de psychologues pour étudiants ; absent du top 1 million Tranco",
+   "thread_id": "1a138b27b43d4e2d",
+   "sujet": "Deux liens cassés sur votre page « Ressources »",
+   "liens_casses": "14/10 : soutien-etudiant.info/services-soutien (redirige vers une page Nightline en 404) et PDF PSSM « Carnet-TRAUMA-ADULTE-1 » (404), deux essais ; signalés",
+   "date_envoi": "2026-10-14"
   },
   {
    "site": "Benoit Blanchard, psychologue (Vernaison, Lyon)",
@@ -234,18 +238,21 @@
   },
   {
    "site": "Service de santé étudiante – Université de Strasbourg",
-   "page_cible": "https://sante.unistra.fr/vie-des-campus/sante/consultations-infirmieres/gestion-stress",
+   "page_cible": "https://www.unistra.fr/fr/campus/sante-et-bien-etre/gerer-son-stress-et-se-relaxer",
    "email": "sante.etudiants@unistra.fr",
-   "email_verifie": false,
+   "email_verifie": true,
    "formulaire": null,
    "prenom": null,
    "note": 3,
    "pourquoi": "Page « Gérer son stress et se relaxer » (respiration, cohérence cardiaque) : des audios gratuits à réécouter entre deux séances sont utiles aux étudiants.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (et https://www.contactapaisement-mental.fr/exercices-respiration/)",
-   "remarque": "Service public sérieux et actif ; les universités ajoutent rarement des sites d'auteurs non professionnels.",
-   "statut": "a_verifier",
+   "remarque": "14/10 : ancienne page redirigée vers unistra.fr ; adresse lue sur la fiche du Service de santé étudiante ; aucun lien cassé",
+   "statut": "envoye",
    "domaine": "sante.unistra.fr",
-   "audience": "B : sous-domaine d'un domaine du top Tranco (unistra.fr, rang 11454) ; trafic propre inconnu"
+   "audience": "B : sous-domaine d'un domaine du top Tranco (unistra.fr, rang 11454) ; trafic propre inconnu",
+   "thread_id": "1a138b27b7c9b6c5",
+   "sujet": "Votre page « Gérer son stress et se relaxer » : des audios pour s'entraîner entre deux séances",
+   "date_envoi": "2026-10-14"
   },
   {
    "site": "Service de santé étudiante – Université Le Havre Normandie",
@@ -465,18 +472,22 @@
   {
    "site": "FibromyalgieSOS (association nationale)",
    "domaine": "fibromyalgiesos.fr",
-   "page_cible": "https://fibromyalgiesos.fr/information/recommandations-2025-has-fibromyalgie-conduite-diagnostique-et-strategie-therapeutique/",
+   "page_cible": "https://fibromyalgiesos.fr/informations-medicales/sommeil/",
    "email": "contact@fibromyalgiesos.fr",
-   "email_verifie": false,
+   "email_verifie": true,
    "source_email": "fiche France Assos Santé (2019) — à reconfirmer sur le site",
    "formulaire": null,
    "prenom": null,
    "signes_trafic": "Association nationale ayant contribué aux recommandations HAS 2025 ; forum modéré, webinaire du 30/09/2025, communiqué Journée mondiale 2026.",
    "pourquoi": "Article sur les recommandations HAS de juillet 2025 (prise en charge visant à « améliorer votre sommeil ») ; la fibromyalgie a le sommeil non réparateur parmi ses critères. Des audios de respiration gratuits et sans inscription complètent les approches non médicamenteuses citées.",
-   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/ (+ /respiration-guidee/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "thread_id": "1a138b27f2933ccf",
+   "sujet": "Votre page « Sommeil et fibromyalgie » : une ressource gratuite sur la respiration au coucher",
+   "remarque": "14/10 : adresse lue sur /contact/ ; page « Sommeil » visée (2 liens + 1 vidéo, aucun cassé)",
+   "date_envoi": "2026-10-14"
   },
   {
    "site": "France Acouphènes",
@@ -529,9 +540,9 @@
   {
    "site": "Université de Moncton — Service de santé et psychologie",
    "domaine": "umoncton.ca",
-   "page_cible": "https://www.umoncton.ca/umcm-santepsychologie/print/33",
-   "email": "psychologie@umoncton.ca",
-   "email_verifie": false,
+   "page_cible": "https://www.umoncton.ca/umcm-santepsychologie/node/33",
+   "email": "santepsychologie@umoncton.ca",
+   "email_verifie": true,
    "source_email": "site umoncton.ca",
    "formulaire": null,
    "prenom": null,
@@ -539,8 +550,13 @@
    "pourquoi": "Page « liste non exhaustive d'applications mobiles gratuites » (RespiRelax+, Calm, MindShift…) : nos audios de respiration gratuits, sans appli ni inscription, s'y ajoutent naturellement. (URL vue = version imprimable de la page.)",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 124466, 12/10/2026)",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "thread_id": "1a138b27a4815c7b",
+   "liens_casses": "14/10 : liens App Store et Google Play en 404 (deux essais, depuis un serveur hors Canada) pour Sanvello/Pacifica, Toutematête, Stop Breathe & Think, Mes outils - suicide.ca ; signalés",
+   "sujet": "Page « Applications mobiles » : 4 applications dont les liens ne s'ouvrent plus",
+   "remarque": "14/10 : adresse santepsychologie@umoncton.ca lue sur la page « Nous joindre » du service (psychologie@ = bureaux de psychologues, non utilisée)",
+   "date_envoi": "2026-10-14"
   },
   {
    "site": "Université Paris-Saclay — Service de santé étudiante (SSE)",
@@ -575,7 +591,8 @@
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /exercices-respiration/)",
    "audience": "B : page sur un domaine du top Tranco (u-bordeaux.fr, rang 17301) ; trafic propre de la page inconnu",
    "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": " 14/10 : page visée injoignable (délai dépassé), reporté."
   },
   {
    "site": "Université de Genève — Étudiant-es Relais Santé (campagne « Nuits sans ennuis »)",
@@ -750,7 +767,7 @@
    "domaine": "santementale.fr",
    "page_cible": "https://www.santementale.fr/",
    "email": "santementale@wanadoo.fr",
-   "email_verifie": false,
+   "email_verifie": true,
    "source_email": "page « la revue » du site",
    "formulaire": null,
    "prenom": null,
@@ -758,8 +775,12 @@
    "pourquoi": "Média de niche qui publie des brèves sur les nouvelles ressources (ex. livret « Prendre soin de sa santé mentale », mars 2026 ; Psychotuto, juin 2025) : une brève sur des audios de respiration et un test GAD-7 gratuits, sans publicité, est envisageable.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /test-stress-anxiete/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 608537, 12/10/2026)",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "thread_id": "1a138b27a9bf907d",
+   "sujet": "Pour la rédaction : des audios de respiration guidée gratuits, sans voix ni inscription",
+   "remarque": "14/10 : adresse de la rédaction lue sur https://www.santementale.fr/la-revue/ ; proposé : audios + test GAD-7",
+   "date_envoi": "2026-10-14"
   },
   {
    "site": "Mouvement Santé mentale Québec",
@@ -903,7 +924,8 @@
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/ (+ /respiration-guidee/)",
    "audience": "B : page sur un domaine du top Tranco (occitanie.mutualite.fr, rang 246764) ; trafic propre de la page inconnu",
    "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": " 14/10 : site injoignable depuis l'atelier (réponse 202 vide, protection anti-robots) ; reporté."
   },
   {
    "site": "Mutualité Française Grand Est — prévention",
@@ -1102,6 +1124,10 @@
   {
    "date": "2026-10-13",
    "resultat": "5 envois (Réseau Morphée avec lien cassé signalé, UNIGE, UNamur, Paris-Saclay, Le Havre) après reconnexion du connecteur ; FFD en formulaire ; INSV reporté ; aucune réponse aux envois du 12/10"
+  },
+  {
+   "date": "2026-10-14",
+   "resultat": "5 envois à 06 h 36 (heure de Paris) à la demande de l'utilisateur (« Tu peux envoyer les 5 emails ») : Université de Moncton (4 applications aux liens cassés signalées), revue Santé mentale, Université de Strasbourg, Apsytude (2 liens cassés signalés), FibromyalgieSOS ; les 5 vérifiés dans les Envoyés, aucun retour d'erreur. Quota du jour atteint : le passage automatique de 9 h 58 ne doit rien envoyer de plus. Mutualité Occitanie et Université de Bordeaux reportés (sites injoignables)."
   }
  ]
 }
