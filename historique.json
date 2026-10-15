@@ -1818,5 +1818,16 @@
   "pin_id": "600175087890162837",
   "md5": "4575e6541f4b82bb7b21b3e272cfcc20",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-15T12:08+00:00",
+  "titre": "Fatigue au volant : 3 signes qu'il faut t'arrêter",
+  "image": "images/pin-20261015-120752.jpg",
+  "fond": "fonds/dedie-volant-fatigue.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890166876",
+  "md5": "a51ef6d0f10a3d79d27facc771d1c5ae",
+  "lien": ""
  }
 ]
