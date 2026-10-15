@@ -1807,5 +1807,16 @@
   "pin_id": "600175087890154190",
   "md5": "b21a711238d48214019d279fd6f0b613",
   "lien": ""
+ },
+ {
+  "date": "2026-10-15T05:07+00:00",
+  "titre": "Épaules tendues : 3 exercices assis pour les relâcher",
+  "image": "images/pin-20261015-050748.jpg",
+  "fond": "prete:images_exercices/epaules-3-exercices-assis.jpg",
+  "theme": "posturesantistress",
+  "design": "exercices",
+  "pin_id": "600175087890162837",
+  "md5": "4575e6541f4b82bb7b21b3e272cfcc20",
+  "lien": "guide:sommeil"
  }
 ]
