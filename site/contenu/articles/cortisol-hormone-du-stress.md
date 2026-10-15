@@ -97,7 +97,7 @@ Un stress chronique peut provoquer, en quelques semaines, des troubles du sommei
 | Pensée | Difficultés de concentration, erreurs, oublis, mal à prendre des décisions |
 | Comportements | Plus de café, d'alcool ou de somnifères, repli sur soi |
 
-Ces habitudes entretiennent souvent le cercle. Si la situation dure encore, le risque de problèmes plus installés augmente, comme l'hypertension, les troubles métaboliques, l'anxiété ou la dépression [2]. Pas de panique pour autant : l'INRS rappelle que l'état de stress n'est pas une maladie en soi, mais qu'intense et durable, il peut avoir des effets sérieux sur la santé physique et mentale [2].
+Ces habitudes entretiennent souvent le cercle. Si la situation dure encore, le risque de problèmes plus installés augmente, comme l'hypertension, les troubles métaboliques, l'anxiété ou la dépression [2]. Pas de panique pour autant : l'INRS rappelle que l'état de stress n'est pas une maladie en soi, mais qu'intense et durable, il peut avoir des effets sérieux sur la santé physique et mentale [2]. Les signes que le stress peut donner dans le corps, de la tête au ventre, sont détaillés dans notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/).
 
 Le lien entre le cortisol et les nuits agitées fait l'objet d'un article à part, [cortisol et sommeil](/cortisol-et-sommeil/). Les gestes qui aident à retrouver un rythme plus apaisé (sommeil, lumière du jour, mouvement, respiration, liens sociaux) font l'objet d'un article à part : [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/).
 

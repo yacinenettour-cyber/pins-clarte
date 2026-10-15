@@ -145,6 +145,12 @@
    "alt": "Personne endormie sous une couverture, le visage dans l'oreiller, dans une chambre à la lumière tamisée",
    "credit": "Photo : Greg Pappas / Unsplash",
    "formation": true
+  },
+  "symptomes-physiques-du-stress": {
+   "categorie": "stress",
+   "image": "unsplash-wVY-mmR6Q_g.jpg",
+   "alt": "Personne de dos dans un champ au coucher du soleil, une main posée sur la nuque",
+   "credit": "Photo : Andrey K / Unsplash"
   }
  },
  "formation": {
@@ -294,6 +300,10 @@
     [
      "Tu veux comprendre ce qu'est vraiment le cortisol",
      "cortisol-hormone-du-stress"
+    ],
+    [
+     "Tu ressens le stress dans ton corps : tête, nuque, cœur, ventre",
+     "symptomes-physiques-du-stress"
     ],
     [
      "Tu veux comprendre le lien entre cortisol et sommeil",

@@ -42,7 +42,7 @@ Pas question pour autant de conclure par toi-même : c'est à un médecin de fai
 
 ## Quels sont les signes du burn-out à surveiller ?
 
-Les signes du burn-out sont physiques, émotionnels, cognitifs, comportementaux et motivationnels, et ils s'installent progressivement [2][3]. La HAS et l'INRS décrivent des manifestations très variées, plus ou moins marquées [2][3]. Aucune n'est spécifique : prise isolément, chacune peut avoir bien d'autres explications [3].
+Les signes du burn-out sont physiques, émotionnels, cognitifs, comportementaux et motivationnels, et ils s'installent progressivement [2][3]. La HAS et l'INRS décrivent des manifestations très variées, plus ou moins marquées [2][3]. Aucune n'est spécifique : prise isolément, chacune peut avoir bien d'autres explications [3]. Les signes physiques du stress, et ceux qui doivent faire consulter en urgence, sont détaillés dans notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/).
 
 | Type de signe | Exemples |
 |---|---|

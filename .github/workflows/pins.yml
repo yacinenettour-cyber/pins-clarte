@@ -860,6 +860,7 @@ jobs:
               "signes-du-burn-out": "Signes du burn-out",
               "angoisse-le-soir": "Angoisse le soir et la nuit",
               "respiration-pour-dormir": "Respiration pour dormir",
+              "symptomes-physiques-du-stress": "Symptômes physiques du stress",
           }
           # 0,4 → 0,6 le 12/10/2026 (audit des impressions, accord de l'utilisateur) : 132 des 150 épingles
           # avec lien menaient à la même page de capture d'environ 30 mots, alors que Pinterest demande une

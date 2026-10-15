@@ -41,7 +41,7 @@ Un système nerveux en alerte se reconnaît d'abord aux effets du sympathique : 
 
 Quand ces inquiétudes deviennent excessives et incontrôlables, on parle d'anxiété pathologique [8].
 
-Aucun de ces signes n'est grave en soi s'il passe vite. Ce sont leur durée, leur intensité et leur retentissement qui comptent (voir « Quand consulter ? »).
+Aucun de ces signes n'est grave en soi s'il passe vite. Ce sont leur durée, leur intensité et leur retentissement qui comptent (voir « Quand consulter ? »). Pour le détail, partie par partie du corps, et les signes qui doivent faire appeler le 15, lis notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/).
 
 ## Comment calmer son système nerveux rapidement ?
 Pour calmer son système nerveux rapidement, les gestes les mieux documentés sont la respiration (soupir physiologique, respiration lente), la relaxation musculaire, l'ancrage par les sens, la marche et le soutien d'un proche. Voici comment ils se comparent :

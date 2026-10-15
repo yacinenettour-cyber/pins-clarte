@@ -5855,7 +5855,8 @@
   "url": "https://images.unsplash.com/photo-1769029271883-2fdd3d654121?w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "candidate de l'article « symptômes physiques du stress » (14/10/2026) : cadrage centré sur le buste, moins adapté"
  },
  "unsplash-wVY-mmR6Q_g.jpg": {
   "theme": "dedie",
@@ -5867,7 +5868,8 @@
   "url": "https://images.unsplash.com/photo-1718964382697-897985745c3c?w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 935,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-wVY-mmR6Q_g.jpg"
  },
  "unsplash-1UYa6zZIBZg.jpg": {
   "theme": "dedie",
@@ -5879,7 +5881,8 @@
   "url": "https://images.unsplash.com/photo-1526722507070-c38628391c3c?w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "candidate de l'article « symptômes physiques du stress » (14/10/2026) : non retenue (une seule photo par article)"
  },
  "unsplash-aotrm-bpAAk.jpg": {
   "theme": "dedie",
@@ -5891,6 +5894,7 @@
   "url": "https://images.unsplash.com/photo-1758876201884-8695c9c98203?w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 788,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "candidate de l'article « symptômes physiques du stress » (14/10/2026) : non retenue, sujet moins lié aux signes physiques"
  }
 }
