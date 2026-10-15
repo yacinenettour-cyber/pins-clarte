@@ -921,6 +921,7 @@ jobs:
           # refuse de dormir ») : le thème sommeil passe trois fois plus souvent qu'un autre thème
           # avec lien.
           POIDS_THEME = {"sommeil": 3.0}
+          FORMATS_ILLUSTRES = {"exercices", "cles"}
 
 
           def choisir_pin_equilibre(restants, historique):
@@ -928,17 +929,19 @@ jobs:
               # 29/09/2026 : un theme qui mene a la page de capture passe deux fois plus
               # souvent qu'un theme sans lien, pour augmenter les clics sortants (et le
               # theme sommeil trois fois plus, voir POIDS_THEME).
-              # Épingles « exercices illustrés » (15/10/2026, consigne de l'utilisateur : « 1 à 2
-              # épingles de ce type par jour », publiées par le robot) : au plus 2 sur 24 h, espacées
-              # d'au moins 8 h ; prioritaires quand ce quota le permet, écartées sinon.
+              # Épingles illustrées « exercices » et « clés » (15/10/2026, consignes de l'utilisateur :
+              # « 1 à 2 épingles de ce type par jour », puis « tu regardes les épingles qui fonctionnent
+              # le mieux et tu produis des épingles similaires sans copier ») : au plus 2 sur 24 h, tous
+              # formats illustrés confondus, espacées d'au moins 8 h ; prioritaires quand ce quota le
+              # permet (en alternant les formats), écartées sinon.
               maintenant = datetime.datetime.now(datetime.timezone.utc)
-              exos_faits = [h["date"] for h in historique if h.get("design") == "exercices" and h.get("date")]
+              exos_faits = [h["date"] for h in historique if h.get("design") in FORMATS_ILLUSTRES and h.get("date")]
               debut_24h = (maintenant - datetime.timedelta(hours=24)).isoformat(timespec="minutes")
               debut_8h = (maintenant - datetime.timedelta(hours=8)).isoformat(timespec="minutes")
               exo_permis = (sum(d >= debut_24h for d in exos_faits) < 2
                             and not any(d >= debut_8h for d in exos_faits))
               if not exo_permis:
-                  restants = [p for p in restants if p.get("format") != "exercices"] or restants
+                  restants = [p for p in restants if p.get("format") not in FORMATS_ILLUSTRES] or restants
               par_theme = {}
               for p in restants:
                   t = deviner_theme(p["description"])
@@ -963,10 +966,13 @@ jobs:
               # Exercices illustrés prioritaires si le quota le permet (voir plus haut), sans casser
               # la règle du thème différent.
               if exo_permis:
-                  exos = [p for p in restants if p.get("format") == "exercices"
+                  exos = [p for p in restants if p.get("format") in FORMATS_ILLUSTRES
                           and deviner_theme(p["description"]) in candidats]
                   if exos:
-                      return exos[0]
+                      formats_faits = [h for h in historique if h.get("design") in FORMATS_ILLUSTRES]
+                      dernier_format = max(formats_faits, key=lambda h: h["date"])["design"] if formats_faits else None
+                      autres = [p for p in exos if p.get("format") != dernier_format]
+                      return (autres or exos)[0]
               theme_choisi = min(candidats, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
               return par_theme[theme_choisi][0]
 
@@ -1053,7 +1059,7 @@ jobs:
           if pin.get("image_prete"):
               ajuster_sans_rogner(Image.open(pin["image_prete"]).convert("RGB"), 1000, 1500).save(chemin, "JPEG", quality=93)
               fond_etiquette = "prete:" + pin["image_prete"]
-              design = "exercices" if pin.get("format") == "exercices" else "prete"
+              design = pin["format"] if pin.get("format") in FORMATS_ILLUSTRES else "prete"
               print("Thème détecté :", theme)
               print("Image prête utilisée telle quelle (pas de texte ajouté) :", pin["image_prete"])
           else:
