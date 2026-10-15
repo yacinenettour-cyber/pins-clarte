@@ -54,3 +54,15 @@ Comme le site propose aussi un programme payant, **ne jamais afficher le nom d'u
 ## 5. Une fois la relecture faite
 
 Envoie à Claude : le nom (ou seulement la profession, selon l'accord), la profession ou le statut exact, la date, la page relue et les corrections demandées. Claude corrige la page, ajoute la mention de relecture sur cette page uniquement, et met à jour la méthode éditoriale.
+
+## 6. Demandes envoyées
+
+**15/10/2026, 04 h 40 (heure de Paris)**, avec l'accord explicite de l'utilisateur (« Oui envoie ») : 5 demandes de relecture bénévole du [test de stress et d'anxiété](https://www.contactapaisement-mental.fr/test-stress-anxiete/), message de la section 4 personnalisé, objet « Relecture bénévole d'une page : test de stress et d'anxiété (GAD-7) ». Adresses lues sur le site de chaque psychologue ; les 5 vérifiées dans les Envoyés, aucun retour d'erreur. Aucune relance prévue sans nouvel accord de l'utilisateur.
+
+| Psychologue | Ville | Site | Fil Gmail | Numéro (à vérifier sur annuaire.sante.fr avant d'afficher un nom) | Réponse |
+|---|---|---|---|---|---|
+| Thomas Paulet (TCC, anxiété, insomnie) | Strasbourg | pauletpsytcc.fr | 1a13d6ecde34f501 | RPPS 10009423590 (affiché sur son site) | — |
+| Pélagie Micalet (TCC, EMDR, anxiété) | Paris 17e | micaletpsychologueparis17.fr | 1a13d6ec94d1e9e2 | RPPS 10009042507 (affiché sur son site) | — |
+| Julie Barbery (TCC de l'insomnie) | Montpellier | juliebarbery.fr | 1a13d6ec94967675 | ADELI 349326991 (affiché sur son site) | — |
+| Cindy Lebrun (TCC de l'insomnie) | Avignon | centre-insomnie.com | 1a13d6ec8319cb47 | à demander | — |
+| Laurent Li (TCC de l'insomnie, anxiété) | Paris 17e | laurentlipsy.fr | 1a13d6ed2b3d4a33 | à demander | — |
