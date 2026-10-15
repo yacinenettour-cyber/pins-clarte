@@ -49,4 +49,5 @@ des grands médias santé : viser d'abord les variantes.
 |---|---|---|---|---|---|
 | 12/10/2026 | 2 sur 31 | 5 | 0 | 0 (hors requête parasite « verifie tout ») | site en ligne depuis le 09/10 ; 8 pages « détectées », 8 inconnues |
 | 13/10/2026 (soir) | 16 sur 32 | — | — | — | inspection page par page : 9 « détectées, non indexées », 7 inconnues de Google ; restent à demander : signes-du-burn-out, baisser-son-cortisol, cortisol-hormone, nerf-vague, alimentation-anti-stress, puis a-propos, exercices-respiration, ressources-urgence, questions-frequentes, articles |
+| 14/10/2026 | 17 sur 32 | — | — | — | + à propos ; 12 « détectées, non indexées » (dont la-formation, ressources-urgence, questions-frequentes, methode-editoriale, cortisol-hormone, baisser-son-cortisol passées d'inconnues à détectées) ; 3 inconnues : signes-du-burn-out, journal-humeur, accessibilite |
 | 14/10/2026 (matin) | 17 sur 32 | — | — | — | + à-propos ; 12 « détectées, non indexées », 3 inconnues (journal-humeur, glossaire, signes-du-burn-out) ; indexation demandée le 14/10 par l'utilisateur pour les 5 articles restants + exercices-respiration, ressources-urgence, articles |
