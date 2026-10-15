@@ -1829,5 +1829,16 @@
   "pin_id": "600175087890166876",
   "md5": "a51ef6d0f10a3d79d27facc771d1c5ae",
   "lien": ""
+ },
+ {
+  "date": "2026-10-15T16:08+00:00",
+  "titre": "Journée chargée : 5 clés pour garder ton calme",
+  "image": "images/pin-20261015-160755.jpg",
+  "fond": "prete:images_cles/journee-chargee-5-cles-calme.jpg",
+  "theme": "systemenerveux",
+  "design": "cles",
+  "pin_id": "600175087890169933",
+  "md5": "a7618a4ba2775a5d12ed8e4ca0889ece",
+  "lien": "guide:sommeil"
  }
 ]
