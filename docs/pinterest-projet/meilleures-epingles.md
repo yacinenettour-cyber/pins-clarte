@@ -51,3 +51,18 @@ Source : statistiques Pinterest réelles (Composio `PINTEREST_LIST_PINS`, `inclu
    - `exercices` : `outils/planche_exercices.py` (cartes avec pictogramme, consigne précise, phrase de prudence) ;
    - `cles` : `outils/planche_cles.py` (cadre doré, personnage central, 5 clés numérotées avec icône, consigne et « Pour… »). Convient aussi aux « étapes », « priorités » et « signes ».
 4. Illustrations : Hugging Face gratuit uniquement, triées à l'œil, propres à chaque épingle (jamais réutilisées).
+
+## Sujets retenus, en attente d'illustrations
+
+15/10/2026 : quota gratuit Hugging Face épuisé (aucune image générée ce jour-là). Sujets vérifiés (anti_doublons.py + relecture
+de l'historique, des titres en ligne, de pins.json et des kits), à fabriquer au prochain passage :
+
+- `exercices` — « Yeux fatigués par l'écran : 3 exercices de repos » (thème fatiguementale, sans lien) : regarder au loin
+  20 secondes toutes les 20 minutes (règle 20-20-20 de l'American Academy of Ophthalmology), paumes en creux sur les yeux
+  fermés 30 secondes sans appuyer, yeux fermés + front et mâchoire relâchés pendant 5 respirations lentes ; prudence :
+  « Gêne qui dure ? Parles-en à ton médecin. »
+- `cles` — « Lâcher prise : 5 clés pour arrêter de tout contrôler » (thème blocagemental, lien guide avec pont honnête) :
+  trier ce qui dépend de toi, viser « bien » plutôt que « parfait », expirer avant de répondre, déléguer une tâche
+  entière, donner 10 minutes à un souci puis passer à autre chose.
+
+Écartés car déjà traités : étirements du soir au sol, réveil / matin, couper avec le travail, chambre, colère, dimanche soir.
