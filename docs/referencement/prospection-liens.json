@@ -459,7 +459,7 @@
    "email": "contact@federationdesdiabetiques.org",
    "email_verifie": false,
    "source_email": "dépliant professionnel FFD 2024 hébergé sur le site",
-   "formulaire": null,
+   "formulaire": "https://www.federationdesdiabetiques.org/formulaire-je-contacte-la-federation",
    "prenom": null,
    "signes_trafic": "Fédération nationale de patients ; baromètre DiaMind 2025 repris par la presse (santementale.fr, handicap.fr) ; Slow Diabète 2 à 3 sessions par an, mars 2026.",
    "pourquoi": "Page conseils « Quelles astuces pour bien dormir ? » (sommeil et équilibre glycémique) et programme gratuit Slow Diabète dont une session porte sur le sommeil et l'équilibre émotionnel ; le baromètre DiaMind (nov. 2025) relie la détresse psychique à la charge mentale de la maladie. Un exercice de respiration pour s'endormir y a sa place. URL de la page vue citée dans un export PDF du site, à confirmer en ligne.",
@@ -636,25 +636,26 @@
   {
    "site": "Univers Santé (asbl de promotion de la santé de l'UCLouvain)",
    "domaine": "univers-sante.be",
-   "page_cible": "https://www.univers-sante.be/pack-blocus-a-telecharger/",
+   "page_cible": "https://www.univers-sante.be/plannings-etude/",
    "email": null,
    "email_verifie": false,
    "source_email": "aucune adresse trouvée — page contact santé UCLouvain : https://www.uclouvain.be/fr/aide/contact-sante (non vérifiée pour Univers Santé)",
-   "formulaire": null,
+   "formulaire": "https://www.univers-sante.be/contact/",
    "prenom": null,
    "signes_trafic": "Ressource mise en avant dans les communiqués de presse de l'UCLouvain (décembre 2025) ; publics : dizaines de milliers d'étudiants.",
    "pourquoi": "Pack blocus avec livrets stress et sommeil, relayé chaque année par les communiqués de l'UCLouvain (dernier : déc. 2025) : le minuteur de respiration et les audios conviennent aux pauses du blocus.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/ (+ /respiration-guidee/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
    "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": ""
   },
   {
    "site": "Université Laval — Mon équilibre UL",
    "domaine": "ulaval.ca",
    "page_cible": "https://www.ulaval.ca/mon-equilibre-ul/ressources",
-   "email": null,
-   "email_verifie": false,
+   "email": "monequilibre@ulaval.ca",
+   "email_verifie": true,
    "source_email": "aucune adresse trouvée — coordonnées à relever sur la page",
    "formulaire": null,
    "prenom": null,
@@ -662,15 +663,16 @@
    "pourquoi": "Page « ressources » du programme de saines habitudes de vie (cours en ligne de gestion du stress, boîte à outils) ; un article de janvier 2026 rappelle la part d'étudiants avec symptômes anxieux.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 11963, 12/10/2026)",
-   "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "statut": "a_verifier",
+   "lot": "recherche 2 du 12/10",
+   "remarque": " 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md)."
   },
   {
    "site": "Université de Fribourg — projet Happy? (Uni-Social)",
    "domaine": "unifr.ch",
    "page_cible": "https://www.unifr.ch/uni/de/organisation/leitung/newsletter-interne/artikel/34410/focus-sur-le-bien-etre-a-l-unifr?cat=4",
-   "email": null,
-   "email_verifie": false,
+   "email": "uni-social@unifr.ch",
+   "email_verifie": true,
    "source_email": "aucune adresse trouvée — passer par Uni-Social",
    "formulaire": null,
    "prenom": null,
@@ -678,8 +680,9 @@
    "pourquoi": "Le projet Happy? veut faire de son portail en ligne « un espace de référence pour les ressources liées au bien-être et à la santé mentale » (newsletter interne du 17/03/2026) : moment idéal pour proposer des outils gratuits.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /journal-humeur/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 21321, 12/10/2026)",
-   "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "statut": "a_verifier",
+   "lot": "recherche 2 du 12/10",
+   "remarque": " 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md)."
   },
   {
    "site": "Institut National du Sommeil et de la Vigilance (INSV)",
@@ -753,14 +756,15 @@
    "email": null,
    "email_verifie": false,
    "source_email": "aucune adresse trouvée — passer par le site",
-   "formulaire": null,
+   "formulaire": "https://www.pssmfrance.fr/contact/",
    "prenom": null,
    "signes_trafic": "300 000 secouristes formés (communiqué avril 2026), objectif 750 000 d'ici 2030 ; formations relayées par mutuelles et universités.",
    "pourquoi": "Plus de 300 000 secouristes en santé mentale formés (avril 2026) : la page des numéros d'urgence vérifiés et le test GAD-7 sont des ressources de suivi utiles à proposer aux secouristes.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-urgence/ (+ /test-stress-anxiete/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
    "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": ""
   },
   {
    "site": "Santé mentale (revue et site d'actualités)",
@@ -837,14 +841,15 @@
    "email": null,
    "email_verifie": false,
    "source_email": "aucune adresse trouvée — passer par le site",
-   "formulaire": null,
+   "formulaire": "https://minds-ge.ch/contact",
    "prenom": null,
    "signes_trafic": "Membre du comité de coordination de la Semaine de la santé mentale 2025 ; podcast sur Ausha ; ateliers en écoles, universités, entreprises.",
    "pourquoi": "Association qui diffuse « des informations scientifiques et référencées » (dossiers, plateforme mindsUP, podcast « C'est pas que dans la tête ») : nos pages sourcées et outils gratuits correspondent à sa ligne.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /test-stress-anxiete/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
    "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": ""
   },
   {
    "site": "Fondation Jeunes en Tête",
@@ -876,7 +881,8 @@
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 180995, 12/10/2026)",
    "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": ""
   },
   {
    "site": "Association québécoise de prévention du suicide (AQPS)",
@@ -901,14 +907,15 @@
    "email": null,
    "email_verifie": false,
    "source_email": "aucune adresse trouvée — passer par le site",
-   "formulaire": null,
+   "formulaire": "https://www.ciao.ch/contacter-ciao/",
    "prenom": "Anne",
    "signes_trafic": "Près de 25 ans d'existence, une quarantaine de spécialistes ; article du Temps sur ses coulisses ; responsable du site citée : Anne Dechambre.",
    "pourquoi": "Site qui relie depuis près de 25 ans des jeunes anonymes à une quarantaine de spécialistes ; trois quarts des personnes souvent stressées dorment mal : les audios de respiration conviennent aux jeunes adultes.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 649723, 12/10/2026)",
    "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": ""
   },
   {
    "site": "Mutualité Française Occitanie — prévention",
@@ -963,8 +970,8 @@
    "site": "Mutualité Française Bretagne — podcast « Bien dans ma tête » (avec Julien Ménielle)",
    "domaine": "bretagne.mutualite.fr",
    "page_cible": "https://bretagne.mutualite.fr/outils/reseaux-prevention-du-suicide/",
-   "email": null,
-   "email_verifie": false,
+   "email": "accueil@bretagne.mutualite.fr",
+   "email_verifie": true,
    "source_email": "aucune adresse trouvée — passer par le site",
    "formulaire": null,
    "prenom": null,
@@ -972,8 +979,9 @@
    "pourquoi": "Page outils « réseaux prévention du suicide » liée au podcast santé mentale animé par Julien Ménielle : la page des numéros d'urgence vérifiés et le test GAD-7 sont des ressources complémentaires.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-urgence/ (+ /test-stress-anxiete/)",
    "audience": "B : page sur un domaine du top Tranco (bretagne.mutualite.fr, rang 246764) ; trafic propre de la page inconnu",
-   "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "statut": "a_verifier",
+   "lot": "recherche 2 du 12/10",
+   "remarque": " 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md)."
   },
   {
    "site": "Essentiel Autonomie (Malakoff Humanis) — rubrique aidants",
@@ -988,8 +996,9 @@
    "pourquoi": "Article « 5 exercices respiratoires de sophrologie pour réduire le stress » destiné aux aidants : des audios gratuits pour pratiquer ces respirations sont un ajout direct.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 292644, 12/10/2026)",
-   "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "statut": "sans_contact",
+   "lot": "recherche 2 du 12/10",
+   "remarque": " 15/10 : aucun moyen de contact adapté (seul formulaire = demande d'aide pour un proche)."
   },
   {
    "site": "Mutualité Française Bourgogne-Franche-Comté — prévention",
@@ -1110,14 +1119,15 @@
    "email": null,
    "email_verifie": false,
    "source_email": "aucune adresse trouvée — passer par le site",
-   "formulaire": null,
+   "formulaire": "https://www.rose-up.fr/nous-contacter/",
    "prenom": null,
    "signes_trafic": "Rose Magazine tiré à environ 180 000 exemplaires, diffusé gratuitement dans 1 600 services d'oncologie ; plateforme en ligne Maison RoseUp.",
    "pourquoi": "Fatigue, troubles du sommeil et stress sont fréquents pendant et après un cancer ; les audios de respiration sans voix peuvent compléter les ressources bien-être de la Maison RoseUp. Adéquation moyenne : à garder en dernier.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 344904, 12/10/2026)",
    "statut": "formulaire",
-   "lot": "recherche 2 du 12/10"
+   "lot": "recherche 2 du 12/10",
+   "remarque": ""
   },
   {
    "site": "Psycom – Santé Mentale Info",
@@ -1225,8 +1235,8 @@
    "site": "Université de Lausanne – Gérer le stress (Réussir à l'Unil)",
    "domaine": "unil.ch",
    "page_cible": "https://www.unil.ch/unil/fr/home/menuinst/etudier/reussir-a-l-unil/gerer-le-stress.html",
-   "email": null,
-   "email_verifie": false,
+   "email": "Orientation@unil.ch",
+   "email_verifie": true,
    "source_email": null,
    "formulaire": "https://www.unil.ch/unil/fr/home/contact.html",
    "prenom": null,
@@ -1234,9 +1244,9 @@
    "pourquoi": "Rubrique « Gestion du stress » avec pages « Liens utiles » et « Sélection d'applications » : un minuteur de cohérence cardiaque gratuit s'y prête.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "A : unil.ch rang 15 229 (Tranco)",
-   "statut": "formulaire",
+   "statut": "a_verifier",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Pas d'adresse dédiée au service sur la page : formulaire général de l'université."
+   "remarque": "Piste : étudiants / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Pas d'adresse dédiée au service sur la page : formulaire général de l'université. 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md)."
   },
   {
    "site": "Université de Montréal – Services à la vie étudiante (guide santé mentale)",
@@ -1398,7 +1408,7 @@
    "email": null,
    "email_verifie": false,
    "source_email": null,
-   "formulaire": "https://ciusssmcq.ca/nous-joindre/",
+   "formulaire": "https://ciusssmcq.ca/formulaires/40/vous-avez-une-question/",
    "prenom": null,
    "signes_trafic": "Tranco 395 665 ; établissement public de santé",
    "pourquoi": "Page qui liste des ressources et un site d'outils pour prendre soin de sa santé mentale ; le CIUSSS publie aussi une « Boîte à outils stress et anxiété ».",
@@ -1621,6 +1631,10 @@
   {
    "date": "2026-10-14",
    "resultat": "5 envois à 06 h 36 (heure de Paris) à la demande de l'utilisateur (« Tu peux envoyer les 5 emails ») : Université de Moncton (4 applications aux liens cassés signalées), revue Santé mentale, Université de Strasbourg, Apsytude (2 liens cassés signalés), FibromyalgieSOS ; les 5 vérifiés dans les Envoyés, aucun retour d'erreur. Quota du jour atteint : le passage automatique de 9 h 58 ne doit rien envoyer de plus. Mutualité Occitanie et Université de Bordeaux reportés (sites injoignables). Passage automatique de 9 h 58 : aucune nouvelle réponse (seulement les messages déjà traités de Même Plus Peur), aucun retour d'erreur, aucune relance due (premières le 22/10), aucun envoi supplémentaire. Recherche 3 (élargie à la demande de l'utilisateur : « élargis les recherches et les domaines sans trop t'éloigner de mes sujets ») : 29 sites ajoutés (17 A, 12 B ; 18 e-mails lus sur le site, 11 formulaires) : étudiants, collectivités, angoisse, santé au travail, aidants et parents, sommeil ; aucun site alimentation ni mutuelle retenu."
+  },
+  {
+   "date": "2026-10-15",
+   "resultat": "Messages prêts pour les sites à formulaire dans docs/referencement/formulaires-a-remplir.md (24 messages, 15 liens cassés relevés) : l'utilisateur les envoie lui-même. 4 sites sans formulaire mais avec e-mail sur le site repassent en a_verifier (Laval, Unifr, UNIL, Mutualité Bretagne) ; Essentiel Autonomie en sans_contact."
   }
  ]
 }
