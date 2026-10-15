@@ -928,6 +928,17 @@ jobs:
               # 29/09/2026 : un theme qui mene a la page de capture passe deux fois plus
               # souvent qu'un theme sans lien, pour augmenter les clics sortants (et le
               # theme sommeil trois fois plus, voir POIDS_THEME).
+              # Épingles « exercices illustrés » (15/10/2026, consigne de l'utilisateur : « 1 à 2
+              # épingles de ce type par jour », publiées par le robot) : au plus 2 sur 24 h, espacées
+              # d'au moins 8 h ; prioritaires quand ce quota le permet, écartées sinon.
+              maintenant = datetime.datetime.now(datetime.timezone.utc)
+              exos_faits = [h["date"] for h in historique if h.get("design") == "exercices" and h.get("date")]
+              debut_24h = (maintenant - datetime.timedelta(hours=24)).isoformat(timespec="minutes")
+              debut_8h = (maintenant - datetime.timedelta(hours=8)).isoformat(timespec="minutes")
+              exo_permis = (sum(d >= debut_24h for d in exos_faits) < 2
+                            and not any(d >= debut_8h for d in exos_faits))
+              if not exo_permis:
+                  restants = [p for p in restants if p.get("format") != "exercices"] or restants
               par_theme = {}
               for p in restants:
                   t = deviner_theme(p["description"])
@@ -949,6 +960,13 @@ jobs:
               dates = [h for h in historique if h.get("theme") and h.get("date")]
               precedent = max(dates, key=lambda h: h["date"])["theme"] if dates else None
               candidats = [t for t in par_theme if t != precedent] or list(par_theme)
+              # Exercices illustrés prioritaires si le quota le permet (voir plus haut), sans casser
+              # la règle du thème différent.
+              if exo_permis:
+                  exos = [p for p in restants if p.get("format") == "exercices"
+                          and deviner_theme(p["description"]) in candidats]
+                  if exos:
+                      return exos[0]
               theme_choisi = min(candidats, key=lambda t: (recents.get(t, 0) / poids(t), dernier_par_theme.get(t, "")))
               return par_theme[theme_choisi][0]
 
@@ -1035,7 +1053,7 @@ jobs:
           if pin.get("image_prete"):
               ajuster_sans_rogner(Image.open(pin["image_prete"]).convert("RGB"), 1000, 1500).save(chemin, "JPEG", quality=93)
               fond_etiquette = "prete:" + pin["image_prete"]
-              design = "prete"
+              design = "exercices" if pin.get("format") == "exercices" else "prete"
               print("Thème détecté :", theme)
               print("Image prête utilisée telle quelle (pas de texte ajouté) :", pin["image_prete"])
           else:
