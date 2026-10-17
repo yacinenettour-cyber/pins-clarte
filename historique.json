@@ -1928,5 +1928,16 @@
   "pin_id": "600175087890202860",
   "md5": "0cf00b04809bfaef9f6e5506389f2ff3",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-17T18:07+00:00",
+  "titre": "Dos tendu : 3 gestes si ton sac pèse sur une épaule",
+  "image": "images/pin-20261017-180749.jpg",
+  "fond": "fonds/pexels-5899255.jpg",
+  "theme": "posturesantistress",
+  "design": "fiche",
+  "pin_id": "600175087890206199",
+  "md5": "832811485873941e0cd9acd392cbe8bc",
+  "lien": "guide:sommeil"
  }
 ]
