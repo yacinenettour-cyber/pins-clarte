@@ -1906,5 +1906,16 @@
   "pin_id": "600175087890197849",
   "md5": "67e5dda44df390495fe0accd6129df46",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-17T10:07+00:00",
+  "titre": "Soupirs à répétition : la tension que ton corps relâche",
+  "image": "images/pin-20261017-100748.jpg",
+  "fond": "fonds/fond-ia-somatisation-2.jpg",
+  "theme": "somatisation",
+  "design": "fiche",
+  "pin_id": "600175087890200109",
+  "md5": "5837cbb156f1beb8680a88c5ef1fa0b4",
+  "lien": "guide:sommeil"
  }
 ]
