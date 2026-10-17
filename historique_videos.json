@@ -232,5 +232,22 @@
    "fonds/fond-149.jpg",
    "fonds/fond-149.jpg"
   ]
+ },
+ {
+  "date": "2026-10-17T16:33+00:00",
+  "id": "sommeil-masque-nuit",
+  "titre": "Masque de nuit : pourquoi le noir complet aide à dormir plus profondément",
+  "video": "videopins/videopin-20261017-163205.mp4",
+  "cover": "videopins/videopin-20261017-163205.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890204816",
+  "photos": [
+   "fonds/pexels-17994860.jpg",
+   "fonds/pexels-17994860.jpg",
+   "fonds/pexels-18280834.jpg",
+   "fonds/pexels-18280834.jpg",
+   "fonds/pexels-18383926.jpg",
+   "fonds/pexels-18383926.jpg"
+  ]
  }
 ]
