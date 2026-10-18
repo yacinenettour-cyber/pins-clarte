@@ -2,7 +2,7 @@
 titre: Respiration guidée 4-6 : 3 audios gratuits pour te calmer
 titre_seo: Respiration guidée gratuite pour se calmer et dormir
 description: Trois audios gratuits de respiration guidée 4-6 (3, 5 et 10 minutes) sur une musique de détente, sans voix : inspire 4 secondes, expire 6 secondes.
-maj: 2026-10-14
+maj: 2026-10-18
 ---
 Inspire 4 secondes, expire 6 secondes : 6 respirations par minute. Ces trois audios gratuits, sans voix, te guident avec de vrais bols chantants sur une musique douce, à écouter les yeux fermés, même au lit.
 
@@ -57,6 +57,10 @@ En cas d'urgence médicale (douleur dans la poitrine, essoufflement inhabituel, 
 
 ## Questions fréquentes
 
+### Qu'est-ce que la respiration guidée ?
+
+La respiration guidée est un exercice de respiration où un repère extérieur, ici le son des bols chantants, te donne le rythme : tu n'as pas à compter. Sur cette page, elle suit le rythme 4-6, soit 6 respirations par minute. Le Réseau Morphée, réseau de santé consacré aux troubles du sommeil, rappelle que le travail sur la respiration empêche les pensées de divaguer et crée un espace de transition entre les tumultes de la journée et la nuit [8].
+
 ### Combien de temps faut-il pratiquer ?
 
 Dans l'essai de l'Université Stanford, les participants pratiquaient 5 minutes par jour pendant un mois [3]. La méta-analyse de Cologne a observé l'effet sur la variabilité cardiaque dès une séance, et aussi après un programme de plusieurs séances [1]. L'audio de 5 minutes, chaque soir, est un bon point de départ.
@@ -81,3 +85,4 @@ Oui, chaque audio a un lien de téléchargement au format MP3, pour ton usage pe
 5. [Quels sont les numéros en cas d'urgence (Samu, pompiers...) et les numéros d'écoute ? — Service-Public.fr, 2026](https://www.service-public.gouv.fr/particuliers/vosdroits/F33954)
 6. [Numéro national de prévention du suicide - 3114 — Ministère chargé de la santé](https://3114.fr/)
 7. [L'insomnie (dépliant patient) — Institut national du sommeil et de la vigilance (INSV)](https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Insomnie-3-Volets.pdf)
+8. [La prise en charge non médicamenteuse de l'insomnie — Santé.fr (information proposée par le Réseau Morphée), 2016](https://www.sante.fr/la-prise-en-charge-non-medicamenteuse-de-linsomnie)

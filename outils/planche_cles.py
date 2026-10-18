@@ -50,12 +50,14 @@ def dessiner(D, sortie):
     d = ImageDraw.Draw(img)
     # personnage central en « produit » (le papier clair disparaît)
     p = Image.open(D["centre"]).convert("RGB")
-    sombre = p.convert("L").point(lambda v: 255 if v < 200 else 0).filter(ImageFilter.MaxFilter(25)).filter(ImageFilter.MinFilter(25))
+    # options (18/10/2026) : seuil_centre plus haut pour garder une peau claire (mains, visage),
+    # hauteur_centre plus petite pour un personnage large (bras écartés) qui toucherait les colonnes
+    seuil = D.get("seuil_centre", 200)
+    sombre = p.convert("L").point(lambda v: 255 if v < seuil else 0).filter(ImageFilter.MaxFilter(25)).filter(ImageFilter.MinFilter(25))
     p = p.crop(sombre.getbbox()); sombre = sombre.crop(sombre.getbbox())
-    h = 470; w = int(p.width * h / p.height)
+    h = D.get("hauteur_centre", 470); w = int(p.width * h / p.height)
     p = p.resize((w, h), Image.LANCZOS); m = sombre.resize((w, h), Image.LANCZOS).filter(ImageFilter.GaussianBlur(1.5))
-    img.paste(p, (int((W - w) / 2), 440), m); d = ImageDraw.Draw(img)
-    # titre
+    img.paste(p, (int((W - w) / 2), 440 + (470 - h) // 2), m); d = ImageDraw.Draw(img)    # titre
     f1 = f("PlayfairDisplay-Bold.ttf", 74); f5 = f("PlayfairDisplay-Bold.ttf", 120)
     a, b = D["titre1"]
     wa = d.textlength(a + " ", font=f1); w5 = d.textlength(D["chiffre"] + " ", font=f5); wb = d.textlength(b, font=f1)

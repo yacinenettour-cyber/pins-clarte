@@ -34,7 +34,7 @@ En lisant votre page « S'aider soi-même, des outils pour tous » (mise à jour
 – « Mon Agenda du Sommeil Antifatigue » (partie sommeil) : https://sanpsy.u-bordeaux.fr/fr/article82/lancement-de-l-application-mon-agenda-du-sommeil-antifatigue
 – « plus facile à comprendre » (Violentomètre) : https://www.intimagir-occitanie.org/outils-lcv
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) et le site n'a pas encore été relu par un professionnel : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé et le site n'a pas encore été relu par un professionnel : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut compléter votre partie « Avec la relaxation et les exercices de respiration » : trois audios de respiration guidée sans voix (3, 5 et 10 minutes, inspiration 4 s, expiration 6 s, repères au bol chantant, transcription écrite), gratuits et sans inscription : https://www.contactapaisement-mental.fr/respiration-guidee/
 
@@ -68,7 +68,7 @@ Sur votre page « Gestion du stress et de l'anxiété » (Vivre en santé), deux
 – « Top 10 des outils pour gérer l'anxiété chez les jeunes » renvoie une erreur 404 : https://www.miditrente.ca/fr/billet/top-10-des-outils-pour-gerer-l-anxiete-chez-les-jeunes
 Pourriez-vous transmettre ce signalement à l'équipe qui tient la page ?
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources et se termine par une section « Quand consulter ? ».
 
 Votre rubrique « Applications » cite RespiRelax+ et Prezens. Si cela peut servir, j'ai mis en ligne trois audios de respiration guidée sans voix (3, 5 et 10 minutes, inspiration 4 s, expiration 6 s), gratuits, sans inscription ni application à installer : https://www.contactapaisement-mental.fr/respiration-guidee/
 
@@ -97,7 +97,7 @@ Bonjour,
 
 Sur la page « Ressources » de Mon équilibre UL, le lien « Site Web » du Projet inspirant (tabagisme et vapotage) ne fonctionne plus : le domaine n'existe plus. Adresse actuelle du lien : https://www.expandproject.ca/s/?language=fr
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Votre page rappelle que le sommeil est « un pilier fondamental de votre santé ». Si cela peut être utile à vos étudiants, deux outils gratuits, sans inscription, pourraient compléter vos ressources : trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/), et un minuteur de cohérence cardiaque et de respiration carrée (https://www.contactapaisement-mental.fr/exercices-respiration/).
 
@@ -127,7 +127,7 @@ Bonjour,
 Dans votre article « Troubles du sommeil : les infirmiers de santé au travail en première ligne », le lien vers « l'échelle d'Epworth » renvoie aujourd'hui une erreur 404 : https://reseau-morphee.fr/wp-content/uploads/dlm_uploads/2016/11/Epworth.pdf
 Le Réseau Morphée a sans doute déplacé le fichier.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut servir aux infirmiers de santé au travail qui reçoivent ces plaintes, une page gratuite fait le point sur les respirations proposées pour s'endormir (4-7-8, respiration carrée, respiration lente) et sur ce qu'en disent les études : https://www.contactapaisement-mental.fr/respiration-pour-dormir/
 Elle renvoie vers un médecin en cas d'insomnie qui dure ou de suspicion d'apnées.
@@ -157,7 +157,7 @@ Bonjour,
 
 Votre page « Services d'aide en santé mentale jeunesse et adulte » propose, dans « Outils pour prendre soin de sa santé mentale », des ressources comme Aller mieux à ma façon, Petit BamBou ou Namatata.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile aux usagers, deux outils gratuits, sans inscription ni application, pourraient compléter cette liste : un minuteur de cohérence cardiaque et de respiration carrée (https://www.contactapaisement-mental.fr/exercices-respiration/), et trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/).
 
@@ -188,7 +188,7 @@ Bonjour,
 
 Votre page « Prendre soin de votre santé mentale » rassemble des liens utiles pour les étudiants (Cnaé, Nightline, Alpaline, Etu'zen, Santé Psy Étudiant). Pourriez-vous transmettre ce message à la personne qui la met à jour ?
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Deux pages gratuites, sans inscription, pourraient compléter vos liens :
 – un test d'anxiété en 2 minutes qui reprend le questionnaire GAD-7 mot pour mot ; à partir d'un score de 10, la page conseille d'abord de consulter, et elle ne propose aucun produit au-delà de 15 : https://www.contactapaisement-mental.fr/test-stress-anxiete/
@@ -221,7 +221,7 @@ Pourriez-vous transmettre ce message au service santé ou au conseil local de sa
 
 Votre page « Santé mentale » oriente les Meudonnais vers Psycom, Nightline, MyMood et « Mon soutien psy ». Au passage, le lien « Carte des îlots de fraîcheur » du menu du site renvoie une erreur 404 : https://atlas-sig.seineouest.fr/portal/apps/webappviewer/index.html?id=27e3bb4febb448db836039f995f3d067
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile aux habitants, deux pages gratuites, sans inscription, pourraient compléter vos ressources : trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/), et un test d'anxiété qui reprend le questionnaire GAD-7 et conseille d'abord de consulter à partir d'un score de 10 (https://www.contactapaisement-mental.fr/test-stress-anxiete/).
 
@@ -250,7 +250,7 @@ Bonjour,
 
 Sur la page « Sélection d'applications » de Réussir à l'Unil, le lien « 30/30 » (http://3030.binaryhammer.com) ne fonctionne plus : le domaine n'existe plus. Le lien « iStudiez Pro » (http://istudentpro.com) ne répondait pas non plus lors de mes deux essais.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Votre page « Gérer le stress » conseille les méthodes de détente comme la relaxation. Si cela peut servir aux étudiants, un minuteur gratuit de cohérence cardiaque et de respiration carrée, utilisable sans inscription ni application, pourrait trouver sa place dans vos liens utiles : https://www.contactapaisement-mental.fr/exercices-respiration/
 Il existe aussi en version audio guidée, sans voix : https://www.contactapaisement-mental.fr/respiration-guidee/
@@ -280,7 +280,7 @@ Bonjour,
 
 Votre page « La santé des aidants » rappelle que 29 % des aidants se sentent anxieux et stressés, et 25 % ressentent une fatigue physique et morale (DREES). Elle propose aux professionnels des fiches et un dépliant santé à remettre aux aidants.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile aux professionnels qui orientent les aidants, deux pages gratuites, sans inscription, pourraient compléter ces supports : trois audios de respiration guidée sans voix de 3, 5 et 10 minutes, à écouter même avec très peu de temps (https://www.contactapaisement-mental.fr/respiration-guidee/), et une page des numéros d'urgence et lignes d'écoute en France, vérifiés sur les sites officiels (https://www.contactapaisement-mental.fr/ressources-urgence/).
 
@@ -309,7 +309,7 @@ Bonjour,
 
 Votre page « Quelles astuces pour bien dormir ? », préparée avec l'Institut national du sommeil et de la vigilance, rappelle que bien dormir est essentiel pour la santé et l'équilibre du diabète.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) et je ne traite pas du diabète : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé et je ne traite pas du diabète : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut compléter vos conseils, une page gratuite fait le point sur les respirations proposées pour s'endormir (4-7-8, respiration carrée, respiration lente) et sur ce qu'en disent les études : https://www.contactapaisement-mental.fr/respiration-pour-dormir/
 Elle s'accompagne de trois audios de respiration guidée sans voix, gratuits et sans inscription : https://www.contactapaisement-mental.fr/respiration-guidee/
@@ -340,7 +340,7 @@ Bonjour,
 
 Votre page d'accueil met en avant l'article « La cohérence cardiaque en pratique », qui présente la cohérence cardiaque comme un outil simple pour s'aider soi-même.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut servir aux jeunes qui lisent cet article, deux outils gratuits, sans inscription ni compte, permettent de pratiquer tout de suite : un minuteur de cohérence cardiaque et de respiration carrée (https://www.contactapaisement-mental.fr/exercices-respiration/), et trois audios de respiration guidée sans voix de 3, 5 et 10 minutes, avec une transcription écrite (https://www.contactapaisement-mental.fr/respiration-guidee/).
 
@@ -369,7 +369,7 @@ Bonjour,
 
 J'ai lu dans la newsletter interne l'article « Focus sur le bien-être à l'Unifr » : avec le projet Happy?, vous voulez valoriser les ressources existantes, alors que 50 % des étudiant·e·s évoquent des difficultés de gestion du stress et 81 % une fatigue fréquente.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut enrichir les ressources de Happy?, deux outils gratuits, sans inscription : trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/), et un journal d'humeur, de stress et de sommeil dont les notes restent uniquement dans le navigateur, rien n'est envoyé (https://www.contactapaisement-mental.fr/journal-humeur/).
 
@@ -398,7 +398,7 @@ Bonjour,
 
 Sur votre site, j'ai lu « S'informer quand on a un cancer, c'est déjà se sentir moins seule », ainsi que votre article sur la dépression liée au cancer, qui rappelle que le stress et les nuits difficiles accompagnent souvent les traitements.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) et je ne parle pas du cancer ni de ses traitements : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé et je ne parle pas du cancer ni de ses traitements : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile aux lectrices de la Maison RoseUp, une page propose trois audios de respiration guidée sans voix (3, 5 et 10 minutes, inspiration 4 s, expiration 6 s), gratuits et sans inscription, pour un moment de calme le soir : https://www.contactapaisement-mental.fr/respiration-guidee/
 Ce n'est qu'un outil de détente : il ne soigne rien et ne remplace pas l'équipe soignante.
@@ -429,7 +429,7 @@ Bonjour,
 Sur votre fiche « Insomnie », dans la section « Lectures recommandées et liens utiles », le lien « Troubles du sommeil – Ordre des psychologues du Québec » renvoie aujourd'hui une erreur 404 : https://www.ordrepsy.qc.ca/-/introduction-troubles-du-sommeil
 Le site de l'Ordre fonctionne : la page a sans doute été déplacée.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile à vos lecteurs qui ont du mal à s'endormir (insomnie initiale), une page gratuite fait le point sur les respirations proposées pour s'endormir (4-7-8, respiration carrée, respiration lente) et sur ce qu'en disent les études : https://www.contactapaisement-mental.fr/respiration-pour-dormir/
 Elle renvoie vers un professionnel quand l'insomnie dure.
@@ -466,7 +466,7 @@ En lisant votre dossier « La charge mentale : anticiper la fatigue psychique »
 – « MSA » (erreur 404) : https://loire-atlantique-vendee.msa.fr/lfp/action-sociale-44-85
 – « Allo Ecoute Parent » (le domaine n'existe plus) : http://www.ecoute-parent-85.fr/allo-ecoute-parents/
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut compléter votre bibliographie, une page gratuite explique la charge mentale (définition, signes qu'elle déborde, pistes concrètes pour l'alléger à la maison comme au travail) : https://www.contactapaisement-mental.fr/charge-mentale/
 
@@ -495,7 +495,7 @@ Bonjour,
 
 Votre page « Santé psychologique étudiante » regroupe les ressources disponibles au Québec et rappelle les résultats de l'enquête « Sous ta façade » menée auprès de 23 881 membres.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile à la communauté étudiante, deux outils gratuits, sans inscription ni application, pourraient compléter vos ressources pour les périodes d'examens : un minuteur de cohérence cardiaque et de respiration carrée (https://www.contactapaisement-mental.fr/exercices-respiration/), et trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/). Ils ne remplacent pas les services d'aide des universités que vous listez.
 
@@ -524,7 +524,7 @@ Bonjour,
 
 Votre page « L'univers des aidants » rappelle qu'être aidant peut avoir un impact sur la santé physique et psychique, et oriente vers des ressources nationales comme Ma Boussole Aidants.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile aux aidants qui vous appellent, deux pages gratuites, sans inscription, pourraient compléter ces ressources : une routine du soir en 7 gestes simples, en version 3, 10 ou 20 minutes selon le temps disponible (https://www.contactapaisement-mental.fr/routine-du-soir-anti-stress/), et trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/).
 
@@ -553,7 +553,7 @@ Bonjour,
 
 Votre page « Liens utiles » de la rubrique Santé mentale et sommeil oriente vers les spécialistes du sommeil, les ligues pulmonaires et les centres du sommeil des hôpitaux romands.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut compléter vos ressources générales, deux pages gratuites, sans inscription, s'adressent aux personnes dont les pensées tournent au coucher : six techniques étudiées contre les ruminations du soir, avec les cas où il faut consulter (https://www.contactapaisement-mental.fr/ruminations-le-soir/), et trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/).
 
@@ -582,7 +582,7 @@ Bonjour,
 
 Dans votre vidéo « Aidant épuisé : que faire quand on n'en peut plus ? », le premier conseil est un exercice de respiration, et la transcription suggère de s'aider d'une application gratuite comme Respirelax.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Pour les aidants qui n'ont ni le temps ni l'envie d'installer une application, une page propose trois audios de respiration guidée sans voix (3, 5 et 10 minutes, inspiration 4 s, expiration 6 s, repères au bol chantant), gratuits, sans inscription, à écouter directement dans le navigateur : https://www.contactapaisement-mental.fr/respiration-guidee/
 Si cela vous semble utile, il pourrait trouver sa place à côté de cette suggestion.
@@ -612,7 +612,7 @@ Bonjour,
 
 Votre page « Organiser son étude : plannings à télécharger » promet des « trucs et astuces pour vivre un blocus sans stress », avec le pack blocus à télécharger.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut servir aux étudiant·e·s pendant leurs pauses, deux outils gratuits, sans inscription ni application, pourraient compléter le pack : un minuteur de cohérence cardiaque et de respiration carrée (https://www.contactapaisement-mental.fr/exercices-respiration/), et trois audios de respiration guidée sans voix de 3, 5 et 10 minutes (https://www.contactapaisement-mental.fr/respiration-guidee/).
 
@@ -643,7 +643,7 @@ Bonjour,
 
 Votre page d'accueil le dit bien : « Avoir une conversation peut tout changer. » Après la formation, les secouristes en santé mentale ont souvent besoin de savoir vers qui orienter la personne qu'ils soutiennent.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile aux secouristes, deux pages gratuites, sans inscription : les numéros d'urgence et lignes d'écoute en France (15, 112, 114, 3114…), vérifiés sur les sites officiels (https://www.contactapaisement-mental.fr/ressources-urgence/), et un test d'anxiété qui reprend le questionnaire GAD-7 mot pour mot ; à partir d'un score de 10, il conseille d'abord de consulter (https://www.contactapaisement-mental.fr/test-stress-anxiete/).
 
@@ -672,7 +672,7 @@ Bonjour,
 
 J'ai lu la page de campagne de mindsUP : « Pas d'abonnement. Pas de pub. Pas de profit. Juste l'envie de rendre la santé mentale accessible. » C'est le même esprit que mon petit projet, à une tout autre échelle.
 
-Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens en France un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut compléter vos dossiers ou vos ateliers en attendant l'application, une page propose trois audios de respiration guidée sans voix (3, 5 et 10 minutes, inspiration 4 s, expiration 6 s), gratuits, sans inscription, avec une transcription écrite : https://www.contactapaisement-mental.fr/respiration-guidee/
 Un minuteur de cohérence cardiaque l'accompagne : https://www.contactapaisement-mental.fr/exercices-respiration/
@@ -702,7 +702,7 @@ Bonjour,
 
 Sur votre page « Réseaux prévention du suicide », j'ai lu : « Le mal-être et les pensées suicidaires ne sont pas une fatalité… Vous pouvez trouver de l'aide ! », avec les dépliants « Ne restez pas seul-e » des collectifs Misaco.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut être utile aux personnes qui consultent la page ou aux membres des réseaux, j'ai rassemblé sur une page gratuite les numéros d'urgence et les lignes d'écoute en France (15, 112, 114, 3114, lignes anonymes, Mon soutien psy), vérifiés sur les sites officiels et faciles à lire sur téléphone : https://www.contactapaisement-mental.fr/ressources-urgence/
 Elle ne remplace évidemment pas vos annuaires locaux.
@@ -732,7 +732,7 @@ Bonjour,
 
 Votre article « Charge de travail, fatigue, stress… Comment j'aide mon équipe ? » rappelle que les risques psychosociaux sont le second risque professionnel en France et que des situations courantes peuvent conduire au burn-out.
 
-Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé (je suis électricien de métier) : chaque article cite ses sources (HAS, OMS, INRS, études publiées) et se termine par une section « Quand consulter ? ».
+Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé : chaque article cite ses sources (HAS, OMS, INRS, études publiées) et se termine par une section « Quand consulter ? ».
 
 Si cela peut compléter votre rubrique « Pour aller plus loin », deux pages gratuites, sans inscription : les signes du burn-out (épuisement, cynisme, perte d'efficacité), la différence avec la dépression et qui consulter (https://www.contactapaisement-mental.fr/signes-du-burn-out/), et la charge mentale, avec des pistes concrètes pour l'alléger au travail comme à la maison (https://www.contactapaisement-mental.fr/charge-mentale/).
 

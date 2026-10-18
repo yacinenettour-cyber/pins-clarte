@@ -1,5 +1,5 @@
 {
- "regles": "Au plus 5 envois par jour ouvré ; vérifier sur le site lui-même la page et l'adresse avant d'écrire ; e-mail personnalisé, signé Yacine, phrase de désinscription ; une seule relance après 10 jours sans réponse ; « non merci » ou refus = statut stop, ne plus jamais écrire ; ne jamais payer ni accepter d'offre payante. Depuis le 12/10 (consigne de l'utilisateur : « je veux que des liens de qualité avec du trafic ») : ne contacter que les sites avec un signal d'audience, A = domaine dans le top 1 million Tranco, B = organisme national ou public reconnu ; C (aucun signal) = statut ecarte_audience, jamais contacté ; pas de relance pour les envoyés classés C.",
+ "regles": "Au plus 5 envois par jour ouvré ; vérifier sur le site lui-même la page et l'adresse avant d'écrire ; e-mail personnalisé, signé Yacine, phrase de désinscription ; une seule relance après 10 jours sans réponse ; « non merci » ou refus = statut stop, ne plus jamais écrire ; ne jamais payer ni accepter d'offre payante. Depuis le 12/10 (consigne de l'utilisateur : « je veux que des liens de qualité avec du trafic ») : ne contacter que les sites avec un signal d'audience, A = domaine dans le top 1 million Tranco, B = organisme national ou public reconnu ; C (aucun signal) = statut ecarte_audience, jamais contacté ; pas de relance pour les envoyés classés C. Depuis le 18/10 (consigne de l'utilisateur : « Tu précises que je suis électricien enlève-le ») : ne plus jamais citer le métier de l'auteur dans un e-mail ni un formulaire ; garder seulement « Je ne suis pas professionnel de santé ».",
  "prospects": [
   {
    "site": "France Insomnie",
@@ -663,11 +663,15 @@
    "prenom": null,
    "signes_trafic": "Programme actif depuis 2012 ; article nouvelles.ulaval.ca du 15/01/2026 sur la santé mentale étudiante.",
    "pourquoi": "Page « ressources » du programme de saines habitudes de vie (cours en ligne de gestion du stress, boîte à outils) ; un article de janvier 2026 rappelle la part d'étudiants avec symptômes anxieux.",
-   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/ (+ /respiration-guidee/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 11963, 12/10/2026)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 2 du 12/10",
-   "remarque": " 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md)."
+   "remarque": " 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md).",
+   "date_envoi": "2026-10-18",
+   "thread_id": "1a14fd26326f4d8b",
+   "sujet": "Votre page « Ressources » : un lien qui ne fonctionne plus",
+   "liens_casses": "18/10 : lien « Site Web » de la Clinique de counseling et d'orientation (https://www.fse.ulaval.ca/counseling/individuel/?eo=individuel&eoe=groupe) en 404 (deux essais) ; signalé. faistonbudget.ca et expandproject.ca sans réponse (pas d'erreur nette, non signalés)."
   },
   {
    "site": "Université de Fribourg — projet Happy? (Uni-Social)",
@@ -1278,11 +1282,15 @@
    "prenom": null,
    "signes_trafic": "Tranco 671 870 ; plateforme nationale gratuite pour les aidants (portée par un groupe de protection sociale)",
    "pourquoi": "Article sur la prévention du burn-out des aidants salariés : notre page signes du burn-out (ou les audios) donne un outil concret d'auto-repérage.",
-   "ressource_proposee": "https://www.contactapaisement-mental.fr/signes-du-burn-out/",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/signes-du-burn-out/ (+ /charge-mentale/)",
    "audience": "A : maboussoleaidants.fr rang 671 870 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : aidants / burn-out. Adresse « communication » : bonne porte pour une proposition de contenu. Vérifier qu'aucun partenariat payant n'est demandé."
+   "remarque": "Piste : aidants / burn-out. Adresse « communication » : bonne porte pour une proposition de contenu. Vérifier qu'aucun partenariat payant n'est demandé.",
+   "date_envoi": "2026-10-18",
+   "thread_id": "1a14fd269db7473e",
+   "sujet": "Burn-out des aidants salariés : une page gratuite et sourcée sur les signes du burn-out",
+   "liens_casses": "18/10 : 20 liens testés, aucun cassé"
   },
   {
    "site": "Université Lyon 1 – Service de Santé Étudiante (Ressources / contacts / structures)",
@@ -1295,11 +1303,15 @@
    "prenom": null,
    "signes_trafic": "Tranco 16 951 (univ-lyon1.fr) ; service universitaire",
    "pourquoi": "La page recommande déjà des applis de gestion du stress (MindShift, Prezens…) et des sites (Psycom, Nightline, 3114) : nos audios gratuits sans inscription ont leur place à côté.",
-   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /exercices-respiration/)",
    "audience": "A : univ-lyon1.fr rang 16 951 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants. "
+   "remarque": "Piste : étudiants. ",
+   "date_envoi": "2026-10-18",
+   "thread_id": "1a14fd2648eef0a9",
+   "sujet": "Vos ressources en santé mentale : des audios de respiration sans application",
+   "liens_casses": "18/10 : 10 liens testés, aucun cassé"
   },
   {
    "site": "Université Grenoble Alpes – Prendre soin de votre santé mentale (portail étudiant)",
@@ -1329,11 +1341,15 @@
    "prenom": null,
    "signes_trafic": "Tranco 17 855 ; université",
    "pourquoi": "Série de pages stress, sommeil et micro-sieste pour le blocus : la respiration pour dormir et les audios guidés prolongent ces conseils.",
-   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /exercices-respiration/)",
    "audience": "A : uliege.be rang 17 855 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Belgique. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur."
+   "remarque": "Piste : étudiants / Belgique. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur.",
+   "date_envoi": "2026-10-18",
+   "thread_id": "1a14fd2657bde42c",
+   "sujet": "Votre page « Lutter contre le stress » : des outils gratuits pour s'entraîner à respirer",
+   "liens_casses": "18/10 : aucun lien cassé"
   },
   {
    "site": "ULB Santé – Santé et bien-être en blocus et examens",
@@ -1397,11 +1413,15 @@
    "prenom": null,
    "signes_trafic": "Tranco 7 612 ; université",
    "pourquoi": "Dossier stress qui renvoie à une rubrique de ressources externes sur le stress et l'anxiété.",
-   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /exercices-respiration/)",
    "audience": "A : uqam.ca rang 7 612 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur."
+   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur.",
+   "date_envoi": "2026-10-18",
+   "thread_id": "1a14fd263c395042",
+   "sujet": "Votre dossier « Mieux vivre mon stress » : des audios gratuits de respiration lente",
+   "liens_casses": "18/10 : 12 liens testés, aucun cassé"
   },
   {
    "site": "CIUSSS de la Mauricie-et-du-Centre-du-Québec – Services d'aide en santé mentale",
@@ -1640,7 +1660,7 @@
   },
   {
    "date": "2026-10-18",
-   "resultat": "Vérification des réponses à la demande de l'utilisateur (« vérifie les emails »), Gmail lu via Composio (le connecteur Gmail de claude.ai répond toujours « Forbidden ») : 2 réponses nouvelles à la prospection. Université de Genève (ERS) : refus poli le 16/10 → stop. Université de Strasbourg : ticket #82030 clos « résolu » le 15/10 sans réponse ni lien sur la page (vérifié le 18/10) → stop. Aucune autre réponse ; aucun lien obtenu à ce jour. Relecture bénévole : Julie Barbery a répondu « Non merci » le 15/10 (docs/relecture-professionnelle.md). Aucun envoi ce jour (dimanche)."
+   "resultat": "Vérification des réponses à la demande de l'utilisateur (« vérifie les emails »), Gmail lu via Composio (le connecteur Gmail de claude.ai répond toujours « Forbidden ») : 2 réponses nouvelles à la prospection. Université de Genève (ERS) : refus poli le 16/10 → stop. Université de Strasbourg : ticket #82030 clos « résolu » le 15/10 sans réponse ni lien sur la page (vérifié le 18/10) → stop. Aucune autre réponse ; aucun lien obtenu à ce jour. Relecture bénévole : Julie Barbery a répondu « Non merci » le 15/10 (docs/relecture-professionnelle.md). Aucun envoi ce jour (dimanche). Puis, à la demande de l'utilisateur (« continuer à envoyer des emails pour les backlinks ») : aucune nouvelle réponse ; 5 envois (audience A) à 18 h 22 (heure de Paris) : Université Laval (lien cassé signalé), Lyon 1, ULiège, UQAM, Ma Boussole Aidants ; pages et adresses vérifiées sur les sites, les 5 vérifiés dans les Envoyés, aucun retour d'erreur. Relances dues à partir du 22/10."
   }
  ]
 }

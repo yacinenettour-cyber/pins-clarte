@@ -8,8 +8,8 @@
  "auteur": {
   "nom": "Yacine",
   "role": "Fondateur de Clarté Mentale",
-  "metier": "électricien de métier",
-  "description": "Électricien de métier, non professionnel de santé. Il rédige les articles de Clarté Mentale à partir de sources officielles et d'études publiées, citées sur chaque page ; aucun article n'a encore été relu par un professionnel de santé.",
+  "metier": "non professionnel de santé",
+  "description": "Non professionnel de santé. Il rédige les articles de Clarté Mentale à partir de sources officielles et d'études publiées, citées sur chaque page ; aucun article n'a encore été relu par un professionnel de santé.",
   "page": "/a-propos/",
   "photo": "/img/yacine.jpg",
   "photo_alt": "Yacine, fondateur de Clarté Mentale"

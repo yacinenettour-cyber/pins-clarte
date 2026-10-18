@@ -10,7 +10,7 @@ Les réponses aux questions les plus fréquentes sur Clarté Mentale : qui écri
 
 ### Qui écrit Clarté Mentale ?
 
-Yacine, électricien de métier : il n'est ni médecin, ni psychologue, ni professionnel de santé. Il tient ce site par intérêt personnel et rapporte ce que disent les organismes officiels et les études, en citant chaque source. Tout est expliqué sur la page [À propos](/a-propos/).
+Yacine : il n'est ni médecin, ni psychologue, ni professionnel de santé. Il tient ce site par intérêt personnel et rapporte ce que disent les organismes officiels et les études, en citant chaque source. Tout est expliqué sur la page [À propos](/a-propos/).
 
 ### Ce site remplace-t-il un médecin ?
 

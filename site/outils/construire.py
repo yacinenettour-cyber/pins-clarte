@@ -591,7 +591,7 @@ def ariane(elements):
 
 # Qui écrit, rappelé sur chaque article (audit du 13/10/2026 : sujet santé, le lecteur doit le savoir sur la page lue).
 AUTEUR_HTML = ("<strong>Qui écrit ?</strong> " + SITE["auteur"]["nom"] + ", " + SITE["auteur"]["metier"]
-               + ", non professionnel de santé. Cet article n'a pas encore été relu par un professionnel de santé : "
+               + ". Cet article n'a pas encore été relu par un professionnel de santé : "
                "chaque affirmation renvoie à sa source (voir la <a href=\"/methode-editoriale/\">méthode éditoriale</a>).")
 
 
