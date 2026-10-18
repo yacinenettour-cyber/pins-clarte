@@ -25,3 +25,14 @@ numérotées en cartes (Lora), photo encadrée sous le texte, invitation discrè
 Polices libres (OFL) dans `polices/`. Aperçu : `apercu-fiche.jpg`.
 Vérifications : 253 épingles à venir rendues, 0 chevauchement, 0 ligne trop large, 0 image sans photo,
 0 ponctuation seule en début de ligne ; exécution complète du robot en mode test sur une copie du dépôt (code 0).
+
+## Lignes équilibrées sur le visuel « fiche » (18/10/2026, en attente d'autorisation)
+
+`pins-2026-10-18.yml` = `pins.yml` de main au 18/10/2026 + une seule modification : `_couper()` garde le même
+nombre de lignes mais cherche la largeur la plus étroite possible (lignes équilibrées). Défaut constaté sur les
+22 premières fiches publiées : un mot seul en dernière ligne d'une étape ou du titre (« … sans pouvoir / agir »,
+« … qui cherche une / sortie », « … hors de portée du / lit »).
+Vérifications : 257 fiches rendues avec les deux versions (fiches déjà publiées et épingles à étapes à venir) : mots seuls en fin de bloc
+212 → 7, 0 image sans photo, 0 chevauchement dans les deux versions ; 5 mises en page changent de taille de
+titre ou de hauteur de photo, sans dépassement. À coller en entier dans l'éditeur GitHub à la place de
+`.github/workflows/pins.yml`, avec l'accord de l'utilisateur ; refaire le diff si `pins.yml` a changé depuis.

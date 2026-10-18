@@ -1083,5 +1083,591 @@
   ],
   "description_guide_cortisol": "Quand la tension monte, prends un verre d'eau et bois-le très lentement, gorgée par gorgée, en sentant la fraîcheur. Ce geste simple oblige à ralentir, à respirer entre deux gorgées et à faire une vraie pause. Une minute suffit pour repartir plus posé, sans café ni sucre. Le plan anti-cortisol gratuit en lien propose d'autres micro-pauses qui calment, un geste par jour pendant 7 jours. #alimentation #stress #hydratation #pause #calme #antistress",
   "fin_avec_lien": "Plan anti-cortisol\ngratuit : en lien"
+ },
+ {
+  "id": "sommeil-matelas-fatigue",
+  "theme": "sommeil",
+  "titre": "Matelas fatigué : 4 signes qu'il gâche tes nuits",
+  "description": "Un matelas ne prévient pas quand il s'use : on s'habitue à ses creux et on accuse le stress. Quatre signes doivent alerter : tu te lèves plus raide que tu ne t'es couché(e), tu dors mieux à l'hôtel, un creux reste marqué là où tu dors, et il a dépassé 8 à 10 ans. Si c'est plutôt ta tête qui t'empêche de dormir, le guide gratuit en lien propose une routine anti-rumination à faire au lit. #sommeil #matelas #literie #mieuxdormir #dos #nuit #chambre",
+  "beats": [
+   {
+    "image": "fonds/unsplash-9i9ghz86wAY.jpg",
+    "texte": "Levé(e) plus raide\nque la veille ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/unsplash-9i9ghz86wAY.jpg",
+    "texte": "Ton matelas a peut-être\nfait son temps",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-IhYKZo-dsx8.jpg",
+    "texte": "Tu dors mieux\nà l'hôtel ?",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-IhYKZo-dsx8.jpg",
+    "texte": "Un creux reste\nmarqué ?",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-7445251.jpg",
+    "texte": "Plus de 8 à 10 ans :\nil est usé",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-7445251.jpg",
+    "texte": "Sauvegarde ce Pin\navant d'en changer",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Et si c'est ta tête ?\nGuide gratuit : lien"
+ },
+ {
+  "id": "sommeil-training-autogene",
+  "theme": "sommeil",
+  "titre": "Training autogène : s'endormir les bras lourds",
+  "description": "Le training autogène est une relaxation par l'attention : allongé(e), tu te répètes « mon bras droit est lourd », puis le gauche, puis les jambes, en laissant venir la sensation. Vient ensuite la chaleur : « mes mains sont chaudes ». Aucun muscle à contracter, juste des phrases calmes et une respiration lente. Les soirs où les pensées reviennent, le guide gratuit en lien ajoute des exercices pour le mental. #sommeil #relaxation #trainingautogene #endormissement #detente #lit #calme",
+  "beats": [
+   {
+    "image": "fonds/pexels-7241264.jpg",
+    "texte": "Allongé(e),\nyeux fermés",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-7241264.jpg",
+    "texte": "« Mon bras droit\nest lourd »",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-7493258.jpg",
+    "texte": "Puis le gauche,\npuis les jambes",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-7493258.jpg",
+    "texte": "« Mes mains\nsont chaudes »",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-9787613.jpg",
+    "texte": "Laisse venir,\nsans forcer",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-9787613.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton coucher",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Pensées qui reviennent ?\nExercices en lien"
+ },
+ {
+  "id": "sommeil-bouton-repetition",
+  "theme": "sommeil",
+  "titre": "Bouton répétition du réveil : ce qu'il dit de tes nuits",
+  "description": "Appuyer sur « répéter » n'a rien de grave : une étude menée à Stockholm en 2023 n'a pas trouvé d'effet néfaste net d'une demi-heure de répétitions. Mais ces tranches de 9 minutes coupent la fin de la nuit en morceaux, et en avoir besoin chaque matin signale souvent un sommeil trop court. Mieux vaut régler l'alarme à l'heure réelle du lever. Couché(e) tard parce que la tête tourne ? Le guide gratuit en lien aide. #sommeil #reveil #matin #fatigue #mieuxdormir #routine #nuit",
+  "beats": [
+   {
+    "image": "fonds/pexels-7623557.jpg",
+    "texte": "Tu appuies sur\n« répéter » ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-7623557.jpg",
+    "texte": "Pas grave\nde temps en temps",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-8947433.jpg",
+    "texte": "Mais la fin de nuit\npart en morceaux",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-8947433.jpg",
+    "texte": "Chaque matin ?\nTes nuits sont courtes",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-9642303.jpg",
+    "texte": "Règle l'alarme\nà l'heure du lever",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-9642303.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton réveil",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Coucher trop tard ?\nGuide sommeil en lien"
+ },
+ {
+  "id": "sommeil-chauffage-air-sec",
+  "theme": "sommeil",
+  "titre": "Chauffage et air sec : 3 signes qu'ils gênent ta nuit",
+  "description": "Quand le chauffage se rallume, l'air de la chambre s'assèche. Trois signes : la gorge sèche au réveil, le nez bouché qui pousse à respirer par la bouche, et des réveils pour aller boire. Quelques réglages aident : baisser le radiateur de la chambre autour de 17 °C, poser un bol d'eau près de la source de chaleur, ou un humidificateur. Si c'est ton mental qui te garde éveillé, le guide gratuit en lien aide. #sommeil #chambre #chauffage #hiver #mieuxdormir #nuit #respiration",
+  "beats": [
+   {
+    "image": "fonds/unsplash-D_6rzmdpebQ.jpg",
+    "texte": "Gorge sèche\nau réveil ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/unsplash-D_6rzmdpebQ.jpg",
+    "texte": "Le chauffage\nassèche l'air",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-F2SrBdv9swk.jpg",
+    "texte": "Nez bouché,\nbouche ouverte",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-F2SrBdv9swk.jpg",
+    "texte": "Baisse le radiateur\nde la chambre",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-9787922.jpg",
+    "texte": "Un bol d'eau\nprès du radiateur",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-9787922.jpg",
+    "texte": "Sauvegarde ce Pin\npour l'hiver",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Mental en éveil ?\nRoutine gratuite : lien"
+ },
+ {
+  "id": "sommeil-langue-relachee",
+  "theme": "sommeil",
+  "titre": "Langue relâchée : le détail qui aide à s'endormir",
+  "description": "Sous le stress, la langue se colle au palais et la mâchoire se serre, sans qu'on s'en rende compte, même une fois couché(e). Au lit, vérifie : laisse la langue redescendre au fond de la bouche, desserre les dents, garde les lèvres à peine fermées, puis expire lentement par le nez. Ce petit relâchement du visage invite tout le corps à se détendre. Le guide gratuit en lien enchaîne avec des exercices pour calmer le mental. #sommeil #detente #machoire #endormissement #relaxation #stress #lit",
+  "beats": [
+   {
+    "image": "fonds/pexels-7445268.jpg",
+    "texte": "Au lit, ta langue\nest collée au palais ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-7445268.jpg",
+    "texte": "C'est le stress\nqui crispe",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-7436480.jpg",
+    "texte": "Laisse-la redescendre\ndans la bouche",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-7436480.jpg",
+    "texte": "Desserre\nles dents",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/photo_posturesantistress_3771069.jpg",
+    "texte": "Expire lentement\npar le nez",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/photo_posturesantistress_3771069.jpg",
+    "texte": "Sauvegarde ce Pin\npour ce soir au lit",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Et le mental ?\nSuite gratuite en lien"
+ },
+ {
+  "id": "sommeil-draps-propres",
+  "theme": "sommeil",
+  "titre": "Draps propres : pourquoi ce soir-là on dort mieux",
+  "description": "Beaucoup de gens disent mieux dormir le soir où ils ont changé leurs draps. La fraîcheur du tissu, l'odeur de propre et un lit net donnent au cerveau un signal de confort et de sécurité. Profite de cet effet : change-les en fin de journée plutôt que le matin, lisse le drap, et fais de ce soir-là une soirée calme, lumière basse. Les autres soirs, quand la tête tourne, le guide gratuit en lien propose un calendrier de 30 jours. #sommeil #chambre #literie #routinedusoir #mieuxdormir #confort #nuit",
+  "beats": [
+   {
+    "image": "fonds/unsplash-_sLDACA2cHU.jpg",
+    "texte": "Le soir des\ndraps propres...",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/unsplash-_sLDACA2cHU.jpg",
+    "texte": "...tu dors mieux ?",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-qXLFrGa7ZuY.jpg",
+    "texte": "Fraîcheur, odeur,\nlit bien net",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-qXLFrGa7ZuY.jpg",
+    "texte": "Change-les\nen fin de journée",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-7269393.jpg",
+    "texte": "Puis lumière basse\net calme",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-7269393.jpg",
+    "texte": "Sauvegarde ce Pin\npour le jour des draps",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Les autres soirs ?\n30 jours gratuits : lien"
+ },
+ {
+  "id": "sommeil-kiwi-soir",
+  "theme": "sommeil",
+  "titre": "Kiwi le soir et sommeil : ce que dit une petite étude",
+  "description": "Une petite étude menée à Taïwan en 2011 sur 24 adultes qui dormaient mal a testé deux kiwis une heure avant le coucher pendant quatre semaines : ils s'endormaient un peu plus vite et dormaient un peu plus longtemps. Mais l'étude était courte et sans groupe témoin : à tester comme un dessert léger, pas comme un remède. Pour les nuits où la tête tourne, le guide gratuit en lien propose une routine anti-rumination. #sommeil #kiwi #endormissement #mieuxdormir #nuit #dessert #routinedusoir",
+  "beats": [
+   {
+    "image": "fonds/unsplash-t958JBIQdAM.jpg",
+    "texte": "2 kiwis avant\nde dormir ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/unsplash-t958JBIQdAM.jpg",
+    "texte": "Testé sur 24 adultes\nqui dormaient mal",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-g1kSmrogixY.jpg",
+    "texte": "Endormissement\nun peu plus rapide",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-g1kSmrogixY.jpg",
+    "texte": "Mais petite étude,\nsans groupe témoin",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/unsplash-OW3s-tEeD5g.jpg",
+    "texte": "Un dessert léger,\npas un remède",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-OW3s-tEeD5g.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton dîner",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Tête qui tourne ?\nRoutine du soir : lien"
+ },
+ {
+  "id": "sommeil-chanson-en-boucle",
+  "theme": "sommeil",
+  "titre": "Chanson en boucle au lit : comment la faire taire",
+  "description": "Une mélodie qui tourne au moment de dormir, c'est fréquent : une étude de l'université Baylor (Psychological Science, 2021) a relié ces « vers d'oreille » nocturnes à un sommeil moins bon, surtout après de la musique écoutée au coucher. Pistes : couper la musique 30 minutes avant, puis occuper ta tête avec un texte connu par cœur. Si d'autres pensées prennent le relais, le guide gratuit en lien aide à les apaiser. #sommeil #musique #endormissement #mental #nuit #ruminations",
+  "beats": [
+   {
+    "image": "fonds/unsplash-jXHzr2qTvn4.jpg",
+    "texte": "Une chanson tourne\nen boucle au lit ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/unsplash-jXHzr2qTvn4.jpg",
+    "texte": "C'est un « ver\nd'oreille »",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-6943440.jpg",
+    "texte": "Il peut gêner\nl'endormissement",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-6943440.jpg",
+    "texte": "Coupe la musique\n30 min avant",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-6943999.jpg",
+    "texte": "Récite un texte\nque tu connais",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-6943999.jpg",
+    "texte": "Sauvegarde ce Pin\npour la prochaine fois",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "D'autres pensées ?\nLe guide est en lien"
+ },
+ {
+  "id": "sommeil-pyjama-reperes",
+  "theme": "sommeil",
+  "titre": "Pyjama et sommeil : 3 repères pour moins te réveiller",
+  "description": "Pour s'endormir, le corps doit perdre un peu de chaleur. Un pyjama trop chaud ou synthétique retient la transpiration et peut provoquer des réveils. Trois repères : une matière qui respire comme le coton ou le lin, une coupe ample qui ne serre ni la taille ni les poignets, et un pyjama réservé à la nuit, enfilé seulement au coucher, comme un signal. Corps prêt mais tête agitée ? Le guide gratuit en lien prend le relais. #sommeil #pyjama #mieuxdormir #nuit #routinedusoir #confort #chambre",
+  "beats": [
+   {
+    "image": "fonds/pexels-8472937.jpg",
+    "texte": "Réveillé(e) la nuit,\ntrop chaud ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-8472937.jpg",
+    "texte": "Ton pyjama retient\npeut-être la chaleur",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-8810538.jpg",
+    "texte": "Coton ou lin :\nça respire",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-8810538.jpg",
+    "texte": "Coupe ample,\nrien qui serre",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/unsplash-JiDjge8d32E.jpg",
+    "texte": "Enfilé seulement\nau coucher",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-JiDjge8d32E.jpg",
+    "texte": "Sauvegarde ce Pin\npour tes nuits",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Corps prêt, tête non ?\nGuide gratuit en lien"
+ },
+ {
+  "id": "systemenerveux-regard-panoramique",
+  "theme": "systemenerveux",
+  "titre": "Regard panoramique : le réflexe visuel anti-stress",
+  "description": "Sous stress, le regard se resserre sur un écran ou un problème, comme un projecteur. Faire l'inverse aide le corps à relâcher : sans bouger la tête, laisse ton regard s'élargir jusqu'à percevoir en même temps les bords gauche et droit de la pièce, le plafond et le sol. Garde cette vue large 30 à 60 secondes en expirant lentement. Si la tension te suit jusqu'au soir, le guide gratuit en lien aide à calmer le mental. #systemenerveux #stress #regard #calme #pause #antistress #anxiete",
+  "beats": [
+   {
+    "image": "fonds/pexels-8335803.jpg",
+    "texte": "Stressé(e) ? Ton regard\nse resserre",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-8335803.jpg",
+    "texte": "Sans bouger\nla tête...",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-vagP_ymUXUc.jpg",
+    "texte": "...élargis ta vue\nà toute la pièce",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-vagP_ymUXUc.jpg",
+    "texte": "Bords, plafond,\nsol en même temps",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/unsplash-3KRdy9mBu7o.jpg",
+    "texte": "30 secondes,\nen expirant lentement",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-3KRdy9mBu7o.jpg",
+    "texte": "Sauvegarde ce Pin\nentre deux réunions",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Tension jusqu'au soir ?\nGuide en lien"
+ },
+ {
+  "id": "systemenerveux-calin-20-secondes",
+  "theme": "systemenerveux",
+  "titre": "Câlin de 20 secondes : l'effet calmant sur ton stress",
+  "description": "Un câlin d'une vingtaine de secondes agit autrement qu'une accolade rapide : la chaleur et la pression douce envoient au corps un signal de sécurité. Une étude de l'université de Francfort (2021) a observé une montée de cortisol plus faible face au stress chez des personnes qui se serraient dans leurs propres bras. Seul(e) ? Croise les bras sur ta poitrine et serre doucement. Le soir, le guide gratuit en lien prend le relais. #systemenerveux #stress #calin #cortisol #calme #anxiete",
+  "beats": [
+   {
+    "image": "fonds/unsplash-c4wfPC8gtIU.jpg",
+    "texte": "Un câlin\nqui dure",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/unsplash-c4wfPC8gtIU.jpg",
+    "texte": "20 secondes,\npas une accolade",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-gKwGmpqqa6A.jpg",
+    "texte": "Le corps reçoit\nun signal de sécurité",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/unsplash-gKwGmpqqa6A.jpg",
+    "texte": "Seul(e) ?\nCroise les bras",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-9017012.jpg",
+    "texte": "Serre doucement,\nrespire lentement",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-9017012.jpg",
+    "texte": "Sauvegarde ce Pin\npour quelqu'un",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Et ce soir, au lit ?\nGuide gratuit : lien"
+ },
+ {
+  "id": "systemenerveux-pousser-le-mur",
+  "theme": "systemenerveux",
+  "titre": "Pousser un mur : 20 secondes pour décharger le stress",
+  "description": "Quand le stress monte, le corps se prépare à agir : muscles tendus, énergie prête à sortir. Pose les mains à plat contre un mur, pieds bien ancrés, et pousse fort pendant 10 à 20 secondes comme pour le déplacer, puis relâche d'un coup en expirant longuement. Répète deux ou trois fois : beaucoup sentent les épaules redescendre. À éviter en cas de douleur. Agité(e) le soir ? Le guide gratuit en lien aide. #systemenerveux #stress #tension #corps #calme #antistress #emotions",
+  "beats": [
+   {
+    "image": "fonds/pexels-7272943.jpg",
+    "texte": "Le stress\nte met sous pression ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-7272943.jpg",
+    "texte": "Ton corps\nveut agir",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-8559956.jpg",
+    "texte": "Mains à plat\ncontre un mur",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-8559956.jpg",
+    "texte": "Pousse fort,\n10 à 20 secondes",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-7500704.jpg",
+    "texte": "Relâche d'un coup,\nexpire longuement",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-7500704.jpg",
+    "texte": "Sauvegarde ce Pin\npour les jours tendus",
+    "duree": 2.2
+   }
+  ],
+  "fin_avec_lien": "Agité(e) le soir ?\nGuide sommeil : en lien"
+ },
+ {
+  "id": "energie-escaliers-coup-de-mou",
+  "theme": "energie",
+  "titre": "Énergie : 2 minutes d'escaliers plutôt qu'un café",
+  "description": "En plein coup de mou, monter et descendre un ou deux étages d'un pas régulier réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a même trouvé que 10 minutes d'escaliers redonnaient un peu plus d'entrain qu'une petite dose de caféine chez des personnes en manque de sommeil. Pas besoin de courir : deux minutes suffisent souvent à sentir la différence. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
+  "beats": [
+   {
+    "image": "fonds/pexels-19783892.jpg",
+    "texte": "Coup de mou\nà 16h ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-19783892.jpg",
+    "texte": "Oublie le café\npour une fois",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-88.jpg",
+    "texte": "Monte un ou deux\nétages",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/fond-88.jpg",
+    "texte": "D'un pas régulier,\nsans courir",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-18790609.jpg",
+    "texte": "2 minutes, et le\ncorps se réveille",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-18790609.jpg",
+    "texte": "Sauvegarde ce Pin\npour ton coup de mou",
+    "duree": 2.2
+   }
+  ],
+  "description_guide_cortisol": "En plein coup de mou, monter et descendre un ou deux étages d'un pas régulier réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a même trouvé que 10 minutes d'escaliers redonnaient un peu plus d'entrain qu'une petite dose de caféine. Le plan anti-cortisol gratuit en lien propose un geste par jour pendant 7 jours, dont le mouvement. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
+  "fin_avec_lien": "7 jours anti-cortisol :\nplan gratuit en lien"
+ },
+ {
+  "id": "energie-tapotements-reveil",
+  "theme": "energie",
+  "titre": "Tapotements : 1 minute pour réveiller ton énergie",
+  "description": "Avant une réunion ou après des heures assis, une minute de tapotements remet le corps en route. Poings souples, tapote doucement le haut de la poitrine, puis les bras de l'épaule au poignet, l'extérieur des jambes et le bas du dos. Respire normalement et termine par trois grandes inspirations, bras vers le ciel. Ce geste inspiré du qi gong ramène l'attention dans le corps et donne une sensation d'éveil, sans excitant. #energie #fatigue #reveil #corps #matin #pause #bienetre",
+  "beats": [
+   {
+    "image": "fonds/pexels-6633814.jpg",
+    "texte": "Le corps\nengourdi ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-6633814.jpg",
+    "texte": "Poings souples,\ntapote la poitrine",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-39271203.jpg",
+    "texte": "Puis les bras,\nde l'épaule au poignet",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-39271203.jpg",
+    "texte": "Les jambes\net le bas du dos",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-37483943.jpg",
+    "texte": "3 grandes inspirations,\nbras au ciel",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-37483943.jpg",
+    "texte": "Sauvegarde ce Pin\npour ta pause",
+    "duree": 2.2
+   }
+  ],
+  "description_guide_cortisol": "Avant une réunion ou après des heures assis, une minute de tapotements remet le corps en route. Poings souples, tapote doucement le haut de la poitrine, puis les bras de l'épaule au poignet, l'extérieur des jambes et le bas du dos. Termine par trois grandes inspirations, bras vers le ciel. Pour d'autres gestes simples, le plan anti-cortisol gratuit en lien en propose un par jour pendant 7 jours. #energie #fatigue #reveil #corps #matin #pause #bienetre",
+  "fin_avec_lien": "Un geste par jour :\nplan anti-cortisol, lien"
+ },
+ {
+  "id": "fatiguementale-liste-du-fait",
+  "theme": "fatiguementale",
+  "titre": "Fatigue mentale : la liste de ce que tu as fait",
+  "description": "En fin de journée, l'esprit ne retient que ce qui reste à faire, et la fatigue se double d'un sentiment d'échec. La « liste du fait » inverse le regard : le soir, note tout ce que tu as accompli, même les petites choses, un appel passé, un repas préparé, un mail difficile envoyé. Cinq minutes suffisent. Voir ton travail réel noir sur blanc aide à fermer la journée sans ne compter que les manques. #fatiguementale #chargementale #organisation #motivation #soir #bienetre #mental",
+  "beats": [
+   {
+    "image": "fonds/pexels-8069139.jpg",
+    "texte": "Le soir, tu ne vois\nque ce qui reste ?",
+    "duree": 2.0
+   },
+   {
+    "image": "fonds/pexels-8069139.jpg",
+    "texte": "Fais\nl'inverse",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-9572685.jpg",
+    "texte": "Note ce que tu\nas fait aujourd'hui",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-9572685.jpg",
+    "texte": "Même les\npetites choses",
+    "duree": 2.4
+   },
+   {
+    "image": "fonds/pexels-6028576.jpg",
+    "texte": "Tes efforts,\nnoir sur blanc",
+    "duree": 2.2
+   },
+   {
+    "image": "fonds/pexels-6028576.jpg",
+    "texte": "Sauvegarde ce Pin\npour fermer ta journée",
+    "duree": 2.2
+   }
+  ]
  }
 ]
