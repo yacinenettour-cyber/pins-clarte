@@ -1,17 +1,17 @@
 ---
 titre: À propos de Clarté Mentale
 titre_seo: À propos : qui écrit Clarté Mentale et avec quelle méthode
-description: Qui écrit Clarté Mentale : Yacine, électricien de métier et non professionnel de santé. Pourquoi ce site, comment les articles sont sourcés, ce qu'il n'est pas.
+description: Qui écrit Clarté Mentale : Yacine, qui n'est pas professionnel de santé. Pourquoi ce site, comment les articles sont sourcés, ce qu'il n'est pas.
 ---
 Clarté Mentale est un site d'information bien-être en français, tenu par Yacine, qui explique ce que disent les organismes officiels de santé et les études scientifiques sur le stress, le cortisol, le système nerveux et le sommeil, avec des gestes simples à essayer dès le soir même.
 
 ## Qui écrit Clarté Mentale ?
 
-Je m'appelle **Yacine**. Je suis **électricien de métier** : je ne suis **ni médecin, ni psychologue, ni professionnel de santé**. Je tiens ce site par intérêt personnel pour le stress, le système nerveux et le sommeil, et je le dis dès le départ pour que tu saches exactement qui te parle.
+Je m'appelle **Yacine**. Je ne suis **ni médecin, ni psychologue, ni professionnel de santé**. Je tiens ce site par intérêt personnel pour le stress, le système nerveux et le sommeil, et je le dis dès le départ pour que tu saches exactement qui te parle.
 
 ## Mon parcours
 
-- **Mon métier** : électricien. Je n'ai pas de formation en santé, et je ne me présente jamais comme un soignant.
+- **Ma formation** : je n'ai pas de formation en santé, et je ne me présente jamais comme un soignant.
 - **Depuis fin 2025** : je publie Clarté Mentale sur [Pinterest](https://www.pinterest.com/clartementale/), des fiches courtes sur le stress et le sommeil.
 - **Octobre 2026** : j'ouvre ce site, pour aller plus loin que les fiches : chaque article prend le temps d'expliquer ce qui se passe dans le corps et cite ses sources.
 
