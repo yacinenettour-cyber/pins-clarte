@@ -1972,5 +1972,16 @@
   "pin_id": "600175087890219042",
   "md5": "f75c1911a5aab9c2e625d8b8154c153d",
   "lien": ""
+ },
+ {
+  "date": "2026-10-18T18:07+00:00",
+  "titre": "Bas du dos raide : 3 étirements assis au bureau",
+  "image": "images/pin-20261018-180748.jpg",
+  "fond": "prete:images_exercices/bas-du-dos-3-etirements-assis.jpg",
+  "theme": "posturesantistress",
+  "design": "exercices",
+  "pin_id": "600175087890222984",
+  "md5": "0b2ed365e7251e8b1c35fff86902f97f",
+  "lien": "guide:sommeil"
  }
 ]
