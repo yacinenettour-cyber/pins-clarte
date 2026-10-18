@@ -1,5 +1,33 @@
 [
  {
+  "titre": "Bas du dos raide : 3 étirements assis au bureau",
+  "texte_image": "3 étirements pour le bas du dos",
+  "points_image": [
+   "Arrondir le dos, mains sur les genoux",
+   "Ramener un genou contre la poitrine",
+   "Se pencher en avant, bras pendants"
+  ],
+  "description": "Après des heures assis, le bas du dos se raidit, et le stress de la journée n'aide pas. Trois étirements assis, en 2 minutes : arrondir le dos en soufflant, mains sur les genoux ; ramener un genou contre la poitrine, puis l'autre ; pencher le buste en avant, bras pendants, avant de remonter doucement. Sans forcer. Et si ce dos tendu te suit au coucher, le guide gratuit offre des exercices pour un mental qui tourne le soir. #stress #travail #dos #etirements #bureau #tensions #pause #bienetre",
+  "theme": "posturesantistress",
+  "image_prete": "images_exercices/bas-du-dos-3-etirements-assis.jpg",
+  "format": "exercices"
+ },
+ {
+  "titre": "Lâcher prise : 5 clés pour arrêter de tout contrôler",
+  "texte_image": "Top 5 clés pour lâcher prise",
+  "points_image": [
+   "Faire le tri",
+   "Viser « bien »",
+   "Souffler d'abord",
+   "Déléguer en entier",
+   "10 minutes de souci"
+  ],
+  "description": "Tout vérifier, tout anticiper, tout refaire soi-même : la tête ne se repose plus. Cinq clés pour lâcher prise : trier ce que tu peux changer et le reste, viser « bien fait » plutôt que parfait, souffler longuement avant de répondre, confier une tâche entière, donner 10 minutes à un souci, pas plus. Pour les soirs où ça tourne encore au lit, un guide gratuit rassemble 30 jours d'exercices anti-rumination. #blocagemental #lacherprise #stress #mental #controle #calme #bienetre #chargementale",
+  "theme": "blocagemental",
+  "image_prete": "images_cles/lacher-prise-5-cles.jpg",
+  "format": "cles"
+ },
+ {
   "titre": "Épaules tendues : 3 exercices assis pour les relâcher",
   "texte_image": "3 exercices pour relâcher tes épaules",
   "points_image": [

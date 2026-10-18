@@ -66,3 +66,10 @@ de l'historique, des titres en ligne, de pins.json et des kits), à fabriquer au
   entière, donner 10 minutes à un souci puis passer à autre chose.
 
 Écartés car déjà traités : étirements du soir au sol, réveil / matin, couper avec le travail, chambre, colère, dimanche soir.
+
+**18/10/2026** : « Lâcher prise : 5 clés pour arrêter de tout contrôler » fabriquée (`images_cles/lacher-prise-5-cles.jpg`).
+Le sujet « yeux fatigués par l'écran » est abandonné : il double « Stress et écrans : 3 techniques oculaires apaisantes »
+(non publiée, déjà dans pins.json, « regarder au loin » en commun). Remplacé par « Bas du dos raide : 3 étirements assis
+au bureau » (`images_exercices/bas-du-dos-3-etirements-assis.jpg`). `planche_cles.py` accepte maintenant `seuil_centre`
+(garder une peau claire : mains, visage) et `hauteur_centre` (rétrécir un personnage aux bras écartés qui toucherait
+les colonnes de texte) ; valeurs par défaut inchangées. Quota Hugging Face de nouveau épuisé après 8 images.
