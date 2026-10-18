@@ -1,10 +1,11 @@
-# Articles à écrire (5 par semaine depuis le 13/10/2026)
+# Articles à écrire (3 par semaine depuis le 18/10/2026)
 
 Demande de l'utilisateur : « Écris un nouvel article par semaine », puis le 12/10 « Ok on passe à 2 », puis le
-13/10 « On peut passer à 5 articles par semaine ». Le déclencheur « Articles du lundi au vendredi » (14 h 53,
-heure de Paris) prend le premier sujet « à écrire » de cette liste. Si un sujet manque de sources fiables ou
-recoupe un article existant, il ne publie rien ce jour-là. Il complète la liste dès qu'il reste moins de 8
-sujets. Jamais plus d'un article par jour. Journal sections 57, 61 et 64.
+13/10 « On peut passer à 5 articles par semaine », puis le 18/10 retour à 3 par semaine (« Oui fais a, b et c »).
+Le déclencheur « Articles lundi, mercredi et vendredi » (14 h 53, heure de Paris) prend le premier sujet
+« à écrire » de cette liste. Si un sujet manque de sources fiables ou recoupe un article existant, il ne publie
+rien ce jour-là. Il complète la liste dès qu'il reste moins de 8 sujets. Jamais plus d'un article par jour.
+Journal sections 57, 61, 64 et 70.
 
 Règles ajoutées après l'audit du 13/10/2026 : une étude n'est détaillée que dans UN article (son article
 « propriétaire ») ; les autres la résument en une phrase et renvoient vers lui. Avant d'écrire, comparer le plan
