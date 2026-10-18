@@ -7,9 +7,9 @@ Source : https://www.contactapaisement-mental.fr — chaque article ci-dessous e
 # Ruminations le soir : pourquoi ton cerveau s'emballe au coucher
 
 Adresse : https://www.contactapaisement-mental.fr/ruminations-le-soir/
-Mis à jour le 9 octobre 2026 — par Yacine
+Mis à jour le 18 octobre 2026 — par Yacine
 
-Les ruminations le soir sont des pensées qui tournent en boucle au coucher, quand ton cerveau reste en mode « alerte » au moment où il devrait ralentir [1] : sans les distractions de la journée, les soucis en suspens prennent toute la place. Des gestes simples peuvent aider à casser la boucle : vider ta tête sur papier, occuper ton esprit autrement, respirer lentement ou sortir du lit.
+Les ruminations le soir, ou ruminations nocturnes, sont des pensées qui tournent en boucle au coucher, quand ton cerveau reste en mode « alerte » au moment où il devrait ralentir [1] : sans les distractions de la journée, les soucis en suspens prennent toute la place. Des gestes simples peuvent aider à casser la boucle : vider ta tête sur papier, occuper ton esprit autrement, respirer lentement ou sortir du lit.
 
 ## L'essentiel
 
@@ -41,9 +41,9 @@ La « réactivité du sommeil » désigne la tendance d'un sommeil à se dégrad
 
 Un deuxième cercle vicieux s'ajoute vite : la peur de ne pas dormir. Quand les mauvaises nuits durent, l'inquiétude se déplace sur le sommeil et la fatigue du lendemain, et cette anxiété peut à son tour entretenir les difficultés [7]. L'INSV note qu'une insomnie peut ainsi persister après la disparition de sa cause de départ, entretenue surtout par cette peur [2].
 
-## Comment calmer les ruminations le soir ? 6 techniques étudiées
+## Comment arrêter de ruminer le soir et la nuit ? 6 techniques étudiées
 
-Pour calmer les ruminations le soir, six techniques ont été étudiées ou sont recommandées par des organismes de santé :
+Pour arrêter de ruminer le soir et la nuit, six techniques ont été étudiées ou sont recommandées par des organismes de santé :
 
 | Technique | Quand | Ce que montrent les sources |
 |---|---|---|
@@ -147,6 +147,10 @@ Les études vont plutôt dans ce sens. Écrire une liste de tâches précise pen
 ### Que faire si je ne dors toujours pas après 20 minutes ?
 
 Lève-toi et fais quelque chose de calme dans une autre pièce, sous une lumière douce. Reviens au lit quand les signes du sommeil arrivent : bâillements, yeux qui piquent [2]. Cela aide ton corps à associer de nouveau le lit au sommeil plutôt qu'à l'éveil [7].
+
+### Comment arrêter de ruminer la nuit, après un réveil ?
+
+Les études portent surtout sur le moment du coucher, mais les mêmes gestes peuvent servir après un réveil : occuper ton esprit avec des images précises plutôt que de suivre tes pensées [6], ou ralentir ta respiration [7]. Si le sommeil ne revient pas au bout d'une vingtaine de minutes, lève-toi pour une activité calme et reviens au lit quand la somnolence arrive [2][7]. Si ces réveils reviennent souvent vers la fin de la nuit, lis l'article sur le [réveil à 4 h du matin](/reveil-4h-du-matin/).
 
 ### Les écrans aggravent-ils les ruminations du soir ?
 
@@ -443,9 +447,9 @@ Ne reste pas à lutter dans ton lit : lève-toi, fais une activité calme sous u
 # Procrastination du coucher : pourquoi on veille et comment arrêter
 
 Adresse : https://www.contactapaisement-mental.fr/procrastination-du-coucher/
-Mis à jour le 13 octobre 2026 — par Yacine
+Mis à jour le 18 octobre 2026 — par Yacine
 
-La procrastination du coucher est le fait de repousser l'heure d'aller au lit alors que rien ne t'y oblige [1] : encore un épisode, encore un peu de téléphone, encore un moment de calme. Souvent, c'est une façon de récupérer du temps pour toi après une journée contrainte. Le souci, c'est que ce temps est pris sur ton sommeil.
+La procrastination du coucher, aussi appelée procrastination du sommeil, est le fait de repousser l'heure d'aller au lit alors que rien ne t'y oblige [1] : encore un épisode, encore un peu de téléphone, encore un moment de calme. Souvent, c'est une façon de récupérer du temps pour toi après une journée contrainte. Le souci, c'est que ce temps est pris sur ton sommeil.
 
 ## L'essentiel
 
@@ -470,7 +474,7 @@ Le phénomène est devenu célèbre sous le nom anglais de *revenge bedtime proc
 | Volontaire ? | Oui : rien n'empêche d'aller dormir [1] | Non : le manque de sommeil est involontaire [8] |
 | Ce qui aide | Des habitudes fixes plutôt que la volonté du moment [5] | Les thérapies cognitivo-comportementales (TCC), approche à privilégier selon l'Inserm [8] |
 
-## Pourquoi repousse-t-on l'heure du coucher ?
+## Pourquoi repousse-t-on l'heure du coucher ? Les causes
 
 On repousse l'heure du coucher surtout pour s'offrir du temps à soi, parce qu'on perd la notion du temps, ou parce qu'on pense mieux s'endormir plus tard [2]. Ces trois profils viennent d'une étude publiée en 2019 dans *Behavioral Sleep Medicine* par une équipe néerlandaise (Philips Research et Université d'Utrecht), qui a interrogé en profondeur 17 personnes repoussant souvent leur coucher [2] :
 
@@ -506,7 +510,7 @@ Au quotidien, cela peut donner :
 - une humeur plus fragile, car le manque de sommeil est lié à l'irritabilité et à des difficultés à réguler ses émotions [3][7] ;
 - un risque de cercle vicieux : une journée plus difficile, plus de stress, et encore plus envie de « revanche » le soir [3][4].
 
-## Comment arrêter la procrastination du coucher ?
+## Comment arrêter la procrastination du coucher ? 6 solutions
 
 Pour arrêter la procrastination du coucher, mise sur des habitudes fixes plutôt que sur ta seule volonté à 23 h. Les chercheurs d'Utrecht font l'hypothèse que les personnes qui se couchent à l'heure s'appuient surtout sur des **habitudes**, comme baisser la lumière le soir, plutôt que sur leurs ressources du moment [5]. Six gestes à tester :
 
@@ -539,6 +543,10 @@ Si tu repousses le coucher parce que le lit rime avec inquiétudes, le [test de 
 ### Pourquoi parle-t-on de « revanche » du soir ?
 
 L'expression anglaise *revenge bedtime procrastination* viendrait d'une formule chinoise exprimant la frustration face à de longues journées de travail sans temps libre [3]. Veiller devient une façon de reprendre la main sur sa journée. Le prix à payer, c'est le sommeil.
+
+### Procrastination du sommeil ou du coucher : quelle différence ?
+
+Aucune : ce sont deux noms pour le même comportement, ne pas aller se coucher à l'heure prévue alors que rien ne t'en empêche [1]. Les chercheurs qui l'ont décrit parlent en anglais de *bedtime procrastination* [1].
 
 ### Est-ce la même chose que l'insomnie ?
 
