@@ -1939,5 +1939,16 @@
   "pin_id": "600175087890206199",
   "md5": "832811485873941e0cd9acd392cbe8bc",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-18T05:07+00:00",
+  "titre": "Ruminer une erreur : 3 étapes pour tourner la page",
+  "image": "images/pin-20261018-050748.jpg",
+  "fond": "fonds/pexels-5899099.jpg",
+  "theme": "blocagemental",
+  "design": "fiche",
+  "pin_id": "600175087890213542",
+  "md5": "7dea6de3bbe803da4cc5c6b4b8351bc3",
+  "lien": "article:ruminations-le-soir"
  }
 ]
