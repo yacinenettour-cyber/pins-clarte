@@ -893,7 +893,7 @@
    0.4
   ],
   "x": 0.66,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "fond-ia-procrastination-2.jpg": {
   "tete": [
@@ -901,7 +901,7 @@
    0.45
   ],
   "x": 0.58,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "fond-ia-procrastination-3.jpg": {
   "tete": [
@@ -909,7 +909,7 @@
    0.38
   ],
   "x": 0.57,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "fond-ia-procrastination-4.jpg": {
   "tete": [
@@ -917,7 +917,7 @@
    0.72
   ],
   "x": 0.5,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "fond-ia-procrastination-5.jpg": {
   "tete": [
@@ -925,7 +925,7 @@
    0.4
   ],
   "x": 0.48,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "fond-ia-somatisation-1.jpg": {
   "tete": [
@@ -933,7 +933,7 @@
    0.33
   ],
   "x": 0.45,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "fond-ia-somatisation-2.jpg": {
   "tete": [
@@ -941,7 +941,7 @@
    0.4
   ],
   "x": 0.62,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "fond-ia-somatisation-3.jpg": {
   "tete": [
@@ -949,7 +949,7 @@
    0.62
   ],
   "x": 0.5,
-  "source": "manuel (vérifié à l'œil, 07/10)"
+  "source": "manuel (v\u00e9rifi\u00e9 \u00e0 l'\u0153il, 07/10)"
  },
  "pexels-10061441.jpg": {
   "tete": [
@@ -2653,6 +2653,286 @@
    0.76
   ],
   "x": 0.5,
+  "source": "manuel"
+ },
+ "unsplash-1q8HNCoLfmw.jpg": {
+  "tete": [
+   0.155,
+   0.472
+  ],
+  "x": 0.544,
+  "source": "visage"
+ },
+ "unsplash-2q2sWlwbcgI.jpg": {
+  "tete": [
+   0.49,
+   0.56
+  ],
+  "x": 0.462,
+  "source": "posture"
+ },
+ "unsplash-3yBTbQf0IBs.jpg": {
+  "tete": [
+   0.603,
+   0.675
+  ],
+  "x": 0.495,
+  "source": "posture"
+ },
+ "unsplash-4FYxR4STkbA.jpg": {
+  "tete": [
+   0.313,
+   0.379
+  ],
+  "x": 0.663,
+  "source": "posture"
+ },
+ "unsplash-6QbN_i4zWMU.jpg": {
+  "tete": [
+   0.27,
+   0.346
+  ],
+  "x": 0.437,
+  "source": "posture"
+ },
+ "unsplash-7JdL8HsOa2g.jpg": {
+  "tete": [
+   0.42,
+   0.62
+  ],
+  "x": 0.4,
+  "source": "manuel"
+ },
+ "unsplash-A-w7suCmYyM.jpg": {
+  "tete": [
+   0.242,
+   0.454
+  ],
+  "x": 0.539,
+  "source": "visage"
+ },
+ "unsplash-ACoLUrYADVw.jpg": {
+  "tete": [
+   0.62,
+   0.76
+  ],
+  "x": 0.42,
+  "source": "manuel"
+ },
+ "unsplash-C-M3GIkiu9Q.jpg": {
+  "tete": [
+   0.111,
+   0.525
+  ],
+  "x": 0.657,
+  "source": "visage"
+ },
+ "unsplash-CNquai784w0.jpg": {
+  "tete": [
+   0.503,
+   0.733
+  ],
+  "x": 0.331,
+  "source": "posture"
+ },
+ "unsplash-EWv_1Y9x6RE.jpg": {
+  "tete": [
+   0.2,
+   0.42
+  ],
+  "x": 0.5,
+  "source": "manuel"
+ },
+ "unsplash-GFKPATimbvM.jpg": {
+  "tete": [
+   0.05,
+   0.45
+  ],
+  "x": 0.55,
+  "source": "manuel"
+ },
+ "unsplash-HAub97Ovu1g.jpg": {
+  "tete": [
+   0.312,
+   0.378
+  ],
+  "x": 0.506,
+  "source": "posture"
+ },
+ "unsplash-MzQS4vb8GhI.jpg": {
+  "tete": [
+   0.3,
+   0.62
+  ],
+  "x": 0.4,
+  "source": "manuel"
+ },
+ "unsplash-NY9JpYy9iv4.jpg": {
+  "tete": [
+   0.45,
+   0.62
+  ],
+  "x": 0.7,
+  "source": "manuel"
+ },
+ "unsplash-NfKpPte_lZE.jpg": {
+  "tete": [
+   0.542,
+   0.626
+  ],
+  "x": 0.685,
+  "source": "posture"
+ },
+ "unsplash-QJrgVKyRT4A.jpg": {
+  "tete": [
+   0.198,
+   0.511
+  ],
+  "x": 0.496,
+  "source": "visage"
+ },
+ "unsplash-RETI_cn1_Vg.jpg": {
+  "tete": [
+   0.341,
+   0.603
+  ],
+  "x": 0.414,
+  "source": "visage"
+ },
+ "unsplash-SZK1eDRgSdM.jpg": {
+  "tete": [
+   0.42,
+   0.6
+  ],
+  "x": 0.45,
+  "source": "manuel"
+ },
+ "unsplash-WIMzQWVLhl4.jpg": {
+  "tete": [
+   0.514,
+   0.582
+  ],
+  "x": 0.672,
+  "source": "posture"
+ },
+ "unsplash-_mDCdGVVQdI.jpg": {
+  "tete": [
+   0.176,
+   0.435
+  ],
+  "x": 0.561,
+  "source": "visage"
+ },
+ "unsplash-duitQgK0SxA.jpg": {
+  "tete": [
+   0.0,
+   0.38
+  ],
+  "x": 0.45,
+  "source": "manuel"
+ },
+ "unsplash-f-DmLcyDmlA.jpg": {
+  "tete": [
+   0.1,
+   0.7
+  ],
+  "x": 0.45,
+  "source": "manuel"
+ },
+ "unsplash-gdK_yAe3TU4.jpg": {
+  "tete": [
+   0.3,
+   0.78
+  ],
+  "x": 0.55,
+  "source": "manuel"
+ },
+ "unsplash-ggmyyiUILrA.jpg": {
+  "tete": [
+   0.338,
+   0.436
+  ],
+  "x": 0.434,
+  "source": "posture"
+ },
+ "unsplash-giTKnpGfOxM.jpg": {
+  "tete": [
+   0.25,
+   0.483
+  ],
+  "x": 0.436,
+  "source": "visage"
+ },
+ "unsplash-hoeXb3j929M.jpg": {
+  "tete": [
+   0.338,
+   0.553
+  ],
+  "x": 0.531,
+  "source": "posture"
+ },
+ "unsplash-j806O1ld5Is.jpg": {
+  "tete": [
+   0.549,
+   0.762
+  ],
+  "x": 0.472,
+  "source": "visage"
+ },
+ "unsplash-lowFsK56lpw.jpg": {
+  "tete": [
+   0.15,
+   0.65
+  ],
+  "x": 0.6,
+  "source": "manuel"
+ },
+ "unsplash-p-v1DBkTrgo.jpg": {
+  "tete": [
+   0.234,
+   0.362
+  ],
+  "x": 0.518,
+  "source": "posture"
+ },
+ "unsplash-p8IxlrQjYCQ.jpg": {
+  "tete": [
+   0.3,
+   0.45
+  ],
+  "x": 0.68,
+  "source": "manuel"
+ },
+ "unsplash-sdhev_8lchc.jpg": {
+  "tete": [
+   0.525,
+   0.591
+  ],
+  "x": 0.498,
+  "source": "posture"
+ },
+ "unsplash-t0Z8AmXdFww.jpg": {
+  "tete": [
+   0.219,
+   0.472
+  ],
+  "x": 0.458,
+  "source": "visage"
+ },
+ "unsplash-u-W0wJSiUhI.jpg": {
+  "tete": [
+   0.3,
+   0.8
+  ],
+  "x": 0.45,
+  "source": "manuel"
+ },
+ "unsplash-xugoOgRPngU.jpg": {
+  "tete": [
+   0.3,
+   0.85
+  ],
+  "x": 0.6,
   "source": "manuel"
  }
 }
