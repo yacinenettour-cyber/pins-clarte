@@ -654,6 +654,24 @@ jobs:
 
 
           def _couper(d, texte, f, largeur, feat=None):
+              # Lignes équilibrées (18/10/2026) : même nombre de lignes que la coupe au plus large, mais
+              # avec la largeur la plus petite possible, pour ne plus laisser un mot seul en dernière
+              # ligne (« … sans pouvoir / agir », « … qui cherche une / sortie »).
+              lignes = _couper_glouton(d, texte, f, largeur, feat)
+              if len(lignes) < 2:
+                  return lignes
+              bas, haut = largeur * 0.3, largeur
+              for _ in range(14):
+                  milieu = (bas + haut) / 2
+                  essai = _couper_glouton(d, texte, f, milieu, feat)
+                  if len(essai) <= len(lignes) and max(d.textlength(x, font=f, features=feat) for x in essai) <= largeur:
+                      lignes, haut = essai, milieu
+                  else:
+                      bas = milieu
+              return lignes
+
+
+          def _couper_glouton(d, texte, f, largeur, feat=None):
               lignes, cour = [], ""
               for mot in texte.split():
                   essai = (cour + " " + mot).strip()
