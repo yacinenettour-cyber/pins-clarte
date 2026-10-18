@@ -247,12 +247,13 @@
    "pourquoi": "Page « Gérer son stress et se relaxer » (respiration, cohérence cardiaque) : des audios gratuits à réécouter entre deux séances sont utiles aux étudiants.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (et https://www.contactapaisement-mental.fr/exercices-respiration/)",
    "remarque": "14/10 : ancienne page redirigée vers unistra.fr ; adresse lue sur la fiche du Service de santé étudiante ; aucun lien cassé",
-   "statut": "envoye",
+   "statut": "stop",
    "domaine": "sante.unistra.fr",
    "audience": "B : sous-domaine d'un domaine du top Tranco (unistra.fr, rang 11454) ; trafic propre inconnu",
    "thread_id": "1a138b27b7c9b6c5",
    "sujet": "Votre page « Gérer son stress et se relaxer » : des audios pour s'entraîner entre deux séances",
-   "date_envoi": "2026-10-14"
+   "date_envoi": "2026-10-14",
+   "reponse": "15/10/2026 : ticket rt-suivi.unistra.fr #82030 ouvert puis clos « résolu » par le service le jour même, sans réponse écrite ; page relue le 18/10 (Firecrawl) : aucun lien vers notre site. Traité comme un refus : pas de relance."
   },
   {
    "site": "Service de santé étudiante – Université Le Havre Normandie",
@@ -607,11 +608,12 @@
    "pourquoi": "Page de campagne entièrement consacrée au sommeil des étudiants : l'article « respiration pour dormir » et les audios sans voix sont des outils concrets à lister.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 7176, 12/10/2026)",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "recherche 2 du 12/10",
    "date_envoi": "2026-10-13",
    "thread_id": "1a135dbbf046b6ba",
-   "sujet": "Pour votre campagne « Nuits sans ennuis » : une ressource gratuite sur stress et sommeil"
+   "sujet": "Pour votre campagne « Nuits sans ennuis » : une ressource gratuite sur stress et sommeil",
+   "reponse": "16/10/2026 (ers@unige.ch, équipe ERS) : refus poli : ils ont déjà une liste de ressources genevoises ou suisses. Ne plus écrire."
   },
   {
    "site": "Université de Namur — Cellule Médico-Psychologique (CMP)",
@@ -1635,6 +1637,10 @@
   {
    "date": "2026-10-15",
    "resultat": "Messages prêts pour les sites à formulaire dans docs/referencement/formulaires-a-remplir.md (24 messages, 15 liens cassés relevés) : l'utilisateur les envoie lui-même. 4 sites sans formulaire mais avec e-mail sur le site repassent en a_verifier (Laval, Unifr, UNIL, Mutualité Bretagne) ; Essentiel Autonomie en sans_contact."
+  },
+  {
+   "date": "2026-10-18",
+   "resultat": "Vérification des réponses à la demande de l'utilisateur (« vérifie les emails »), Gmail lu via Composio (le connecteur Gmail de claude.ai répond toujours « Forbidden ») : 2 réponses nouvelles à la prospection. Université de Genève (ERS) : refus poli le 16/10 → stop. Université de Strasbourg : ticket #82030 clos « résolu » le 15/10 sans réponse ni lien sur la page (vérifié le 18/10) → stop. Aucune autre réponse ; aucun lien obtenu à ce jour. Relecture bénévole : Julie Barbery a répondu « Non merci » le 15/10 (docs/relecture-professionnelle.md). Aucun envoi ce jour (dimanche)."
   }
  ]
 }
