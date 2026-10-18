@@ -5,7 +5,7 @@ description: Respiration pour dormir : 4-7-8, respiration carrée, méthode mili
 slug: respiration-pour-dormir
 mot_cle: respiration pour dormir
 guide: sommeil
-maj: 2026-10-12
+maj: 2026-10-18
 image: Personne allongée dans son lit, les yeux fermés, dans une chambre à la lumière douce
 ---
 ## L'essentiel
@@ -63,6 +63,19 @@ Dans une étude de l'Université Burapha (Thaïlande), publiée en 2022 dans *Ph
 
 Une étude de l'Université Ege d'Izmir (Turquie), publiée en 2026 dans *Brain and Behavior* (Kirazli et al.), a proposé cette respiration pendant 6 semaines à 23 personnes souffrant d'acouphènes, comparées à 25 personnes sans exercice : leurs scores de stress, d'anxiété et de difficultés de sommeil ont baissé, pas ceux du groupe sans exercice [5].
 
+### Comment faire la technique de respiration 4-7-8 pour dormir ?
+
+La technique de respiration 4-7-8 se pratique allongé, en enchaînant inspiration par le nez, pause, puis longue expiration par la bouche. Voici le protocole suivi dans l'étude de l'Université Burapha [4] :
+
+1. allonge-toi sur le dos, les yeux fermés, dans une pièce calme ;
+2. expire complètement par la bouche, en laissant passer l'air avec un léger souffle ;
+3. ferme la bouche et inspire sans bruit par le nez en comptant jusqu'à 4 ;
+4. retiens ton souffle en comptant jusqu'à 7 ;
+5. expire par la bouche, avec le même léger souffle, en comptant jusqu'à 8 ;
+6. enchaîne 6 cycles, respire normalement 1 minute, puis recommence, 3 séries en tout.
+
+Les comptes donnent un rapport entre les temps, pas une durée imposée : si 7 temps de pause te paraissent trop longs, compte plus vite. Le [minuteur de respiration](/exercices-respiration/) propose aussi un rythme 4-7-8 à suivre à l'écran.
+
 Ces résultats sont encourageants, mais ils restent limités : de petits groupes, et pour la seconde étude, des patients avec un problème précis. Le blocage de 7 temps peut aussi gêner certaines personnes : si la tête te tourne, reviens à une respiration lente sans pause.
 
 ## La respiration carrée et le soupir cyclique
@@ -118,6 +131,9 @@ Cet article t'informe, il ne remplace pas l'avis d'un médecin.
 
 ### Quelle est la meilleure respiration pour dormir ?
 La respiration la mieux étudiée est la respiration lente, autour de 6 respirations par minute, par exemple 4 secondes d'inspiration et 6 d'expiration [1][2]. Les autres techniques, comme la 4-7-8 ou la respiration carrée, ont moins d'études sur le sommeil [4][6].
+
+### Comment faire la respiration 4-7-8 ?
+Inspire par le nez en comptant jusqu'à 4, retiens ton souffle jusqu'à 7, puis expire par la bouche jusqu'à 8. Dans l'étude de l'Université Burapha, les participants, allongés, enchaînaient 6 cycles, 3 fois, avec 1 minute de respiration normale entre chaque série [4].
 
 ### La respiration 4-7-8 fait-elle vraiment dormir en une minute ?
 Aucune étude ne l'a montré. La respiration 4-7-8 fait baisser le rythme du cœur et la tension juste après l'exercice [4], et une étude chez des patients atteints d'acouphènes a vu leur sommeil s'améliorer après 6 semaines de pratique [5].
