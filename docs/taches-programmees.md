@@ -1,5 +1,7 @@
 # Tâches automatiques indépendantes : à créer dans claude.ai
 
+> **Abandonné le 18/10/2026** à la demande de l'utilisateur (« On laisse tomber cela ») : rien n'a été créé. Fichier gardé pour mémoire, au cas où.
+
 **Pourquoi** (18/10/2026, journal section 71) : les tâches programmées actuelles sont rattachées à la conversation « Analyse compte Pinterest ». Elles ne tournent que lorsque cette conversation est active. Du 15 au 18/10, rien ne s'est fait : ni article, ni e-mail, ni épingle illustrée. Une tâche créée depuis la conversation, avec une nouvelle session à chaque passage, démarre **sans le dépôt et sans connecteur** (test du 18/10). Il faut donc créer les tâches depuis l'interface de claude.ai, qui permet de choisir le dépôt et les connecteurs.
 
 ## Comment faire (une fois par tâche)
