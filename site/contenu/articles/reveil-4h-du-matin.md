@@ -5,7 +5,7 @@ description: Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus lé
 slug: reveil-4h-du-matin
 mot_cle: réveil à 4h du matin
 guide: sommeil
-maj: 2026-10-13
+maj: 2026-10-18
 image: Chambre plongée dans la pénombre bleutée de l'aube, une personne allongée sous la couette, le visage détendu, un réveil retourné face contre la table de nuit et des rideaux épais à peine entrouverts
 ---
 ## L'essentiel
@@ -74,7 +74,7 @@ Le détail, étape par étape :
 
 1. **Ne regarde pas l'heure.** Selon une étude du King's College de Londres publiée en 2007 dans le *Journal of Behavior Therapy and Experimental Psychiatry* (Tang et al.), les personnes à qui l'on demandait de surveiller une horloge en essayant de s'endormir se sont davantage inquiétées et ont mis plus de temps à trouver le sommeil, qu'elles dorment bien ou mal d'habitude [6]. Tourne ton réveil vers le mur et laisse ton téléphone hors de portée.
 2. **Garde l'obscurité.** N'allume pas d'écran : la lumière freine la mélatonine [1].
-3. **Ralentis ta respiration.** Inspire par le nez sur 4 temps, expire lentement sur 6 temps, pendant quelques minutes. Compter donne à ton attention un appui plus neutre que tes soucis.
+3. **Ralentis ta respiration.** Inspire par le nez sur 4 temps, expire lentement sur 6 temps, pendant quelques minutes. Compter donne à ton attention un appui plus neutre que tes soucis. Si tu préfères ne pas compter, l'audio de 10 minutes de [respiration guidée](/respiration-guidee/), sans voix, donne ce rythme ; les autres techniques sont comparées dans l'article sur la [respiration pour dormir](/respiration-pour-dormir/).
 4. **Si l'éveil se prolonge, lève-toi.** L'INSV conseille de se lever et de faire autre chose quand on est éveillé depuis plus de 20 minutes [3]. Estime ce temps sans regarder l'heure : si tu te sens bien réveillé et agacé, c'est le moment. Va dans une autre pièce, sous une lumière douce et basse, et choisis une activité calme : lecture sur papier, musique douce, pliage de linge. Reviens au lit quand la somnolence revient.
 5. **Si l'heure du lever approche, commence ta journée.** L'INSV recommande de ne pas chercher à prolonger ton sommeil à tout prix le matin, mais de te lever [3].
 6. **Le lendemain, garde ton rythme.** Lève-toi à ton heure habituelle, évite les longues siestes et prends la lumière du jour : selon l'Inserm, l'irrégularité des horaires, les siestes qui entrecoupent la journée et le manque de lumière naturelle perturbent encore le sommeil des personnes insomniaques [2].
@@ -111,8 +111,14 @@ Pour situer ce que tu ressens, tu peux passer le [test d'anxiété GAD-7](/test-
 
 ## Questions fréquentes
 
-### Est-ce normal de se réveiller vers 4 h du matin ?
+### Est-ce normal de se réveiller à 4 heures du matin ?
 Se réveiller en fin de nuit n'a rien d'étrange : c'est une période de sommeil plus léger [1]. Ce qui compte, c'est surtout de savoir si tu te rendors et comment tu te sens dans la journée. Si ces réveils reviennent plusieurs nuits par semaine avec de la fatigue le jour, parles-en à ton médecin [3].
+
+### Pourquoi suis-je toujours réveillé à 4 heures du matin ?
+Quand le réveil tombe toujours à la même heure, regarde d'abord ton heure de coucher : couché vers 21 h avec un besoin d'environ 7 heures de sommeil, ta nuit se termine vers 4 h. S'y ajoutent une fin de nuit plus légère [1], le cortisol qui remonte avant l'aube [4] et le stress, qui fragilise surtout la seconde moitié de la nuit, souvent à partir de 4 ou 5 heures du matin selon l'INSV [3]. Pour y voir clair, note chaque matin ton heure de coucher et de réveil : l'Inserm cite l'agenda du sommeil, tenu 2 à 4 semaines, comme un outil utile pour en parler à ton médecin [2].
+
+### Réveil précoce et réveil nocturne : quelle différence ?
+L'Inserm range les deux parmi les signes de l'insomnie : difficultés d'endormissement, éveils nocturnes et/ou réveil trop précoce, avec la sensation de ne pas avoir récupéré [2]. Le réveil à 4h du matin tient souvent des deux : un éveil en fin de nuit, trop tôt pour qu'on arrive à se rendormir. Ce qui compte n'est pas l'heure, mais la fréquence et la fatigue du lendemain : au-delà de trois fois par semaine depuis au moins trois mois, l'Inserm parle d'insomnie chronique [2].
 
 ### Le réveil à 4h du matin est-il lié au cortisol ?
 Peut-être en partie, mais sans dramatiser. Le cortisol remonte normalement pendant la seconde moitié de la nuit, chez tout le monde [4]. Le stress et l'hyper-éveil peuvent rendre cette période plus fragile [2], mais le cortisol reste un facteur parmi d'autres.
