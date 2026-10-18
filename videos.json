@@ -1478,7 +1478,7 @@
   "id": "systemenerveux-calin-20-secondes",
   "theme": "systemenerveux",
   "titre": "Câlin de 20 secondes : l'effet calmant sur ton stress",
-  "description": "Un câlin d'une vingtaine de secondes agit autrement qu'une accolade rapide : la chaleur et la pression douce envoient au corps un signal de sécurité. Une étude de l'université de Francfort (2021) a observé une montée de cortisol plus faible face au stress chez des personnes qui se serraient dans leurs propres bras. Seul(e) ? Croise les bras sur ta poitrine et serre doucement. Le soir, le guide gratuit en lien prend le relais. #systemenerveux #stress #calin #cortisol #calme #anxiete",
+  "description": "Un câlin de 20 secondes : c'est la durée testée par l'université Goethe de Francfort (2021). Face à une épreuve stressante, les personnes qui en recevaient un, comme celles qui posaient 20 secondes une main sur le cœur et l'autre sur le ventre, avaient une montée de cortisol plus faible ; le stress ressenti, lui, ne changeait pas. Seul(e) ? Fais ce geste en respirant lentement. Le soir, le guide gratuit en lien prend le relais. #systemenerveux #stress #calin #cortisol #calme #anxiete",
   "beats": [
    {
     "image": "fonds/unsplash-c4wfPC8gtIU.jpg",
@@ -1492,17 +1492,17 @@
    },
    {
     "image": "fonds/unsplash-gKwGmpqqa6A.jpg",
-    "texte": "Le corps reçoit\nun signal de sécurité",
+    "texte": "Moins de cortisol\nface au stress",
     "duree": 2.2
    },
    {
     "image": "fonds/unsplash-gKwGmpqqa6A.jpg",
-    "texte": "Seul(e) ?\nCroise les bras",
+    "texte": "Seul(e) ? Une main\nsur le cœur",
     "duree": 2.4
    },
    {
     "image": "fonds/pexels-9017012.jpg",
-    "texte": "Serre doucement,\nrespire lentement",
+    "texte": "L'autre sur le ventre,\nrespire lentement",
     "duree": 2.2
    },
    {
@@ -1555,8 +1555,8 @@
  {
   "id": "energie-escaliers-coup-de-mou",
   "theme": "energie",
-  "titre": "Énergie : 2 minutes d'escaliers plutôt qu'un café",
-  "description": "En plein coup de mou, monter et descendre un ou deux étages d'un pas régulier réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a même trouvé que 10 minutes d'escaliers redonnaient un peu plus d'entrain qu'une petite dose de caféine chez des personnes en manque de sommeil. Pas besoin de courir : deux minutes suffisent souvent à sentir la différence. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
+  "titre": "Énergie : 10 minutes d'escaliers plutôt qu'un café",
+  "description": "En plein coup de mou, monter et descendre les escaliers d'un pas tranquille réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a trouvé que 10 minutes d'escaliers redonnaient plus d'entrain qu'une petite dose de caféine à de jeunes femmes qui dormaient trop peu. L'effet était passager : un coup de pouce, pas un remède. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
   "beats": [
    {
     "image": "fonds/pexels-19783892.jpg",
@@ -1570,7 +1570,7 @@
    },
    {
     "image": "fonds/fond-88.jpg",
-    "texte": "Monte un ou deux\nétages",
+    "texte": "Monte et descends\nles escaliers",
     "duree": 2.2
    },
    {
@@ -1580,7 +1580,7 @@
    },
    {
     "image": "fonds/pexels-18790609.jpg",
-    "texte": "2 minutes, et le\ncorps se réveille",
+    "texte": "10 minutes, et le\ncorps se réveille",
     "duree": 2.2
    },
    {
@@ -1589,7 +1589,7 @@
     "duree": 2.2
    }
   ],
-  "description_guide_cortisol": "En plein coup de mou, monter et descendre un ou deux étages d'un pas régulier réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a même trouvé que 10 minutes d'escaliers redonnaient un peu plus d'entrain qu'une petite dose de caféine. Le plan anti-cortisol gratuit en lien propose un geste par jour pendant 7 jours, dont le mouvement. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
+  "description_guide_cortisol": "En plein coup de mou, monter et descendre les escaliers d'un pas tranquille réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a trouvé que 10 minutes d'escaliers redonnaient plus d'entrain qu'une petite dose de caféine à de jeunes femmes qui dormaient trop peu. Le plan anti-cortisol gratuit en lien propose un geste par jour pendant 7 jours. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
   "fin_avec_lien": "7 jours anti-cortisol :\nplan gratuit en lien"
  },
  {
