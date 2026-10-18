@@ -1950,5 +1950,16 @@
   "pin_id": "600175087890213542",
   "md5": "7dea6de3bbe803da4cc5c6b4b8351bc3",
   "lien": "article:ruminations-le-soir"
+ },
+ {
+  "date": "2026-10-18T10:08+00:00",
+  "titre": "Jambes qui s'agitent : le stress qui veut sortir",
+  "image": "images/pin-20261018-100757.jpg",
+  "fond": "fonds/fond-ia-somatisation-3.jpg",
+  "theme": "somatisation",
+  "design": "fiche",
+  "pin_id": "600175087890216399",
+  "md5": "8d11b809ad809aea008b2e1d6f7ce0c1",
+  "lien": "guide:sommeil"
  }
 ]
