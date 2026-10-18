@@ -39,7 +39,7 @@ Comme le site propose aussi un programme payant, **ne jamais afficher le nom d'u
 >
 > Bonjour [Madame / Monsieur] [Nom],
 >
-> Je m'appelle Yacine. Je suis électricien de métier et je tiens, par intérêt personnel, un site d'information en français sur le stress, le sommeil et le système nerveux : www.contactapaisement-mental.fr. Je ne suis pas professionnel de santé : chaque page s'appuie sur des sources officielles (Inserm, Haute Autorité de santé, Assurance maladie…) et des études citées en bas de page.
+> Je m'appelle Yacine et je tiens, par intérêt personnel, un site d'information en français sur le stress, le sommeil et le système nerveux : www.contactapaisement-mental.fr. Je ne suis pas professionnel de santé : chaque page s'appuie sur des sources officielles (Inserm, Haute Autorité de santé, Assurance maladie…) et des études citées en bas de page.
 >
 > Je n'ai pas de budget, mais je cherche un regard professionnel sur une seule page : [le test de stress et d'anxiété, qui utilise le questionnaire GAD-7]. Il s'agirait de vérifier l'exactitude des informations, le choix des sources et la partie « Quand consulter ? ». Cela demande environ [une demi-heure].
 >

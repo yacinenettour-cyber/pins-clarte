@@ -791,3 +791,12 @@ Demande de l'utilisateur : « Contact des personnes pour les backlinck en automa
 - **Thème postures** : il se reconnaît par `#stress` puis `#travail` dans les 3 premiers hashtags (pas `#posturesantistress`).
 - **Première épingle** : « Épaules tendues : 3 exercices assis pour les relâcher » (le premier titre doublait « Mâchoire serrée par le stress : 3 exercices simples » à 0,78). Le kit Idea Pin n° 8 préparé avant la décision a été retiré.
 - **Ajout du jour (consigne : « tu regardes les épingles qui fonctionnent le mieux et tu produis des épingles similaires sans copier »)** : analyse du top 20 dans `docs/pinterest-projet/meilleures-epingles.md` ; 2e format illustré `cles` (`outils/planche_cles.py`, cadre doré + personnage central + 5 clés, icônes Noto Color Emoji, police libre du système) ; `pins.yml` : `FORMATS_ILLUSTRES = {"exercices", "cles"}`, 2 au plus sur 24 h tous formats confondus, en alternant les formats (7 cas testés). Première épingle « clés » : « Journée chargée : 5 clés pour garder ton calme » (`images_cles/`).
+
+## 68. E-mails : ne plus citer le métier de l'auteur (18/10/2026)
+
+**Consigne de l'utilisateur** : « Tu précises que je suis électricien enlève-le » (à propos des e-mails de prospection de liens).
+
+- **Ce qui change** : les e-mails et messages de formulaire envoyés à l'extérieur ne citent plus le métier de l'auteur. Ils gardent « Je ne suis pas professionnel de santé », nécessaire pour rester honnête sur un sujet de santé.
+- **Modifié** : les 24 messages de `docs/referencement/formulaires-a-remplir.md`, le message type de `docs/relecture-professionnelle.md`, la règle de `docs/referencement/liens-externes.md`, le champ `regles` de `prospection-liens.json`, CLAUDE.md et la tâche programmée « Prospection liens » (`trig_01PcziAmEtxfgQZtZ5b61WRq`).
+- **Déjà envoyés** : les 19 e-mails de prospection et les 5 demandes de relecture partis du 12 au 18/10 citaient le métier ; un e-mail envoyé ne se modifie pas.
+- **Site non modifié** : la page À propos et la ligne sous le titre des articles présentent toujours l'auteur comme électricien de métier (section 65). Ne les changer que sur demande explicite de l'utilisateur.

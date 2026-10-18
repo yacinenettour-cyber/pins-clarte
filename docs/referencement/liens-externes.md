@@ -7,7 +7,7 @@ référencement).
 
 Règles : rien de payant ; aucun lien acheté, échangé en masse ni posté à la chaîne (Google le sanctionne,
 surtout en santé) ; un lien seulement quand il apporte vraiment quelque chose à la personne ; ne jamais
-présenter l'auteur comme professionnel de santé (il est électricien de métier) ; rappeler de consulter un
+présenter l'auteur comme professionnel de santé (dire qu'il ne l'est pas, sans citer son métier : consigne du 18/10) ; rappeler de consulter un
 médecin quand c'est utile.
 
 Ce qui est déjà fait automatiquement : épingles Pinterest vers les articles (3 nouvelles le 12/10, part des
