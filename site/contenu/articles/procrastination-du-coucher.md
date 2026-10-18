@@ -1,11 +1,11 @@
 ---
 titre: Procrastination du coucher : pourquoi on veille et comment arrêter
-titre_seo: Procrastination du coucher : pourquoi et comment arrêter
-description: Procrastination du coucher : pourquoi tu repousses l'heure d'aller au lit malgré la fatigue, le lien avec le stress, et 6 gestes simples pour arrêter.
+titre_seo: Procrastination du coucher : causes et 6 solutions
+description: Procrastination du coucher (ou du sommeil) : ses causes, le lien avec le stress et 6 solutions simples pour arrêter de repousser l'heure du lit.
 slug: procrastination-du-coucher
 mot_cle: procrastination du coucher
 guide: sommeil
-maj: 2026-10-13
+maj: 2026-10-18
 image: Une chambre le soir éclairée par une petite lampe à la lumière chaude, une main qui pose un téléphone écran retourné sur la table de nuit, à côté d'un livre papier
 ---
 ## L'essentiel
@@ -14,7 +14,7 @@ image: Une chambre le soir éclairée par une petite lampe à la lumière chaude
 - Elle est associée à un sommeil insuffisant, et le stress comme l'usage du téléphone semblent l'entretenir [1][4].
 - Des gestes simples peuvent aider : un vrai moment à toi plus tôt, une heure de fin d'écran, une alarme du coucher et un rituel court [6].
 
-La procrastination du coucher est le fait de repousser l'heure d'aller au lit alors que rien ne t'y oblige [1] : encore un épisode, encore un peu de téléphone, encore un moment de calme. Souvent, c'est une façon de récupérer du temps pour toi après une journée contrainte. Le souci, c'est que ce temps est pris sur ton sommeil.
+La procrastination du coucher, aussi appelée procrastination du sommeil, est le fait de repousser l'heure d'aller au lit alors que rien ne t'y oblige [1] : encore un épisode, encore un peu de téléphone, encore un moment de calme. Souvent, c'est une façon de récupérer du temps pour toi après une journée contrainte. Le souci, c'est que ce temps est pris sur ton sommeil.
 
 ## Qu'est-ce que la procrastination du coucher ?
 
@@ -32,7 +32,7 @@ Le phénomène est devenu célèbre sous le nom anglais de <em lang="en">revenge
 | Volontaire ? | Oui : rien n'empêche d'aller dormir [1] | Non : le manque de sommeil est involontaire [8] |
 | Ce qui aide | Des habitudes fixes plutôt que la volonté du moment [5] | Les thérapies cognitivo-comportementales (TCC), approche à privilégier selon l'Inserm [8] |
 
-## Pourquoi repousse-t-on l'heure du coucher ?
+## Pourquoi repousse-t-on l'heure du coucher ? Les causes
 
 On repousse l'heure du coucher surtout pour s'offrir du temps à soi, parce qu'on perd la notion du temps, ou parce qu'on pense mieux s'endormir plus tard [2]. Ces trois profils viennent d'une étude publiée en 2019 dans *Behavioral Sleep Medicine* par une équipe néerlandaise (Philips Research et Université d'Utrecht), qui a interrogé en profondeur 17 personnes repoussant souvent leur coucher [2] :
 
@@ -68,7 +68,7 @@ Au quotidien, cela peut donner :
 - une humeur plus fragile, car le manque de sommeil est lié à l'irritabilité et à des difficultés à réguler ses émotions [3][7] ;
 - un risque de cercle vicieux : une journée plus difficile, plus de stress, et encore plus envie de « revanche » le soir [3][4].
 
-## Comment arrêter la procrastination du coucher ?
+## Comment arrêter la procrastination du coucher ? 6 solutions
 
 Pour arrêter la procrastination du coucher, mise sur des habitudes fixes plutôt que sur ta seule volonté à 23 h. Les chercheurs d'Utrecht font l'hypothèse que les personnes qui se couchent à l'heure s'appuient surtout sur des **habitudes**, comme baisser la lumière le soir, plutôt que sur leurs ressources du moment [5]. Six gestes à tester :
 
@@ -99,6 +99,8 @@ Si tu repousses le coucher parce que le lit rime avec inquiétudes, le [test de 
 ## Questions fréquentes
 ### Pourquoi parle-t-on de « revanche » du soir ?
 L'expression anglaise <em lang="en">revenge bedtime procrastination</em> viendrait d'une formule chinoise exprimant la frustration face à de longues journées de travail sans temps libre [3]. Veiller devient une façon de reprendre la main sur sa journée. Le prix à payer, c'est le sommeil.
+### Procrastination du sommeil ou du coucher : quelle différence ?
+Aucune : ce sont deux noms pour le même comportement, ne pas aller se coucher à l'heure prévue alors que rien ne t'en empêche [1]. Les chercheurs qui l'ont décrit parlent en anglais de <em lang="en">bedtime procrastination</em> [1].
 ### Est-ce la même chose que l'insomnie ?
 Non. Dans l'insomnie, le manque de sommeil est involontaire : tu voudrais dormir, mais le sommeil ne vient pas [8]. Dans la procrastination du coucher, c'est le moment d'aller au lit qui recule alors que rien ne t'en empêche [1]. Les deux peuvent toutefois se mêler [2].
 ### Est-ce un manque de volonté ?
