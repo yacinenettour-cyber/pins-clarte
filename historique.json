@@ -2005,5 +2005,16 @@
   "pin_id": "600175087890234587",
   "md5": "1bceca8d2dd4365a1cbe8aeafd59cd69",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-19T14:08+00:00",
+  "titre": "Stress : pourquoi ton visage chauffe d'un coup",
+  "image": "images/pin-20261019-140754.jpg",
+  "fond": "fonds/pexels-20760329.jpg",
+  "theme": "somatisation",
+  "design": "fiche",
+  "pin_id": "600175087890237399",
+  "md5": "196231999dd20ee4a0312fd542273f82",
+  "lien": "guide:sommeil"
  }
 ]
