@@ -1733,6 +1733,57 @@
    "statut": "a_verifier",
    "lot": "articles invités 19/10",
    "remarque": "Ligne éditoriale centrée sur les initiatives de promotion de la santé (lectorat surtout professionnel) : proposer un sujet d'abord. Date du dernier article non relevée automatiquement : vérifier à l'œil un article 2025-2026 avant d'écrire. Site hors de France : ne pas mettre en avant nos numéros d'urgence français."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-19",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "lot": "abonnés Pinterest 19/10",
+   "site": "Keep Cool New Mom",
+   "domaine": "keepcoolnewmom.com",
+   "email": "contact@keepcoolnewmom.com",
+   "page_cible": "https://keepcoolnewmom.com/epuisement-mental-maman/",
+   "thread_id": "1a1558c31e86ba0b",
+   "sujet": "Ton article « Épuisement mental maman » : des audios de respiration gratuits",
+   "audience": "B : abonnée Pinterest de Clarté Mentale (5 518 abonnés Pinterest), blog actif ; absent du top Tranco",
+   "type": "lien_ou_article_invite"
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-19",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "lot": "abonnés Pinterest 19/10",
+   "site": "Couleur d'âme",
+   "domaine": "couleurdame.fr",
+   "email": "anne@couleurdame.fr",
+   "page_cible": "https://www.couleurdame.fr/blog",
+   "thread_id": "1a1558c315e3d6a4",
+   "sujet": "Votre article sur la culpabilité de se reposer",
+   "audience": "C : abonnée Pinterest de Clarté Mentale, petit site de soins énergétiques ; contact accepté par l'utilisateur le 19/10",
+   "type": "lien"
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-19",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "lot": "abonnés Pinterest 19/10",
+   "site": "Sheila Naturopathie",
+   "domaine": "sheilanaturopathie.com",
+   "email": "info@sheilanaturopathie.com",
+   "page_cible": "https://www.sheilanaturopathie.com/blog",
+   "thread_id": "1a1558c30105b686",
+   "sujet": "Une idée d'article sur le sommeil pour votre blog",
+   "audience": "C : abonnée Pinterest de Clarté Mentale, petit site de naturopathie ; contact accepté par l'utilisateur le 19/10",
+   "type": "article_invite"
   }
  ],
  "passages": [
@@ -1759,6 +1810,10 @@
   {
    "date": "2026-10-19",
    "resultat": "Relève du soir : FibromyalgieSOS refus poli (stop), UNIL refus poli (stop), Sherbrooke adresse rejetée (erreur), ULB accusé de réception automatique. Aucun lien obtenu."
+  },
+  {
+   "date": "2026-10-19",
+   "resultat": "Abonnés Pinterest (idée de l'utilisateur) : 202 profils publics lus, 6 sites retenus, 3 contactés par e-mail à 21 h 03 (heure de Paris) après accord de l'utilisateur (« Envoie ») : Keep Cool New Mom, Couleur d'âme, Sheila Naturopathie. Messages dans docs/referencement/messages-abonnes-pinterest.md, vérifiés dans les Envoyés. Hors quota des 5 envois quotidiens."
   }
  ]
 }
