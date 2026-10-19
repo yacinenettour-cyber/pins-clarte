@@ -703,9 +703,9 @@
    "pourquoi": "Page des 10 recommandations pour bien dormir (routine du soir calme) ; la respiration lente au coucher en est une illustration pratique. Organisateur de la Journée du sommeil (13 mars 2026).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/",
    "audience": "A : domaine dans le top 1 million Tranco (rang 327400, 12/10/2026)",
-   "statut": "a_verifier",
+   "statut": "ecarte",
    "lot": "recherche 2 du 12/10",
-   "remarque": "13/10 : page proposée en 404 ; seule page trouvée = annonce d'événement 2023, sans intérêt pour un lien ; adresse contact@insv.org vérifiée sur /contact/. Chercher une vraie page ressources avant d'écrire."
+   "remarque": "13/10 : page proposée en 404 ; seule page trouvée = annonce d'événement 2023, sans intérêt pour un lien ; adresse contact@insv.org vérifiée sur /contact/. Chercher une vraie page ressources avant d'écrire. 19/10 : page cible toujours en 404 (déjà le 13/10), aucune page à citer : écarté."
   },
   {
    "site": "Santé Mentale France (fédération)",
@@ -1707,6 +1707,10 @@
   {
    "date": "2026-10-18",
    "resultat": "Vérification des réponses à la demande de l'utilisateur (« vérifie les emails »), Gmail lu via Composio (le connecteur Gmail de claude.ai répond toujours « Forbidden ») : 2 réponses nouvelles à la prospection. Université de Genève (ERS) : refus poli le 16/10 → stop. Université de Strasbourg : ticket #82030 clos « résolu » le 15/10 sans réponse ni lien sur la page (vérifié le 18/10) → stop. Aucune autre réponse ; aucun lien obtenu à ce jour. Relecture bénévole : Julie Barbery a répondu « Non merci » le 15/10 (docs/relecture-professionnelle.md). Aucun envoi ce jour (dimanche). Puis, à la demande de l'utilisateur (« continuer à envoyer des emails pour les backlinks ») : aucune nouvelle réponse ; 5 envois (audience A) à 18 h 22 (heure de Paris) : Université Laval (lien cassé signalé), Lyon 1, ULiège, UQAM, Ma Boussole Aidants ; pages et adresses vérifiées sur les sites, les 5 vérifiés dans les Envoyés, aucun retour d'erreur. Relances dues à partir du 22/10."
+  },
+  {
+   "date": "2026-10-19",
+   "resultat": "Aucune réponse nouvelle (accusés automatiques UQAM et ULaval). Lyon 1 : message retenu par le filtre Mailinblack, CAPTCHA à valider par l'utilisateur. 5 e-mails préparés et relus (UNIL, UdeM, ULB, UQAC, Sherbrooke ; 4 liens cassés relevés), NON envoyés : l'envoi a été bloqué par le contrôle de sécurité de la session, en attente de la confirmation de l'utilisateur (brouillons dans le bloc-notes de la session du 19/10). Articles invités : Éducation Santé retenu, REISO écarté (refuse les textes rédigés par IA)."
   }
  ]
 }
