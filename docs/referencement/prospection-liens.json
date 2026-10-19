@@ -483,12 +483,13 @@
    "pourquoi": "Article sur les recommandations HAS de juillet 2025 (prise en charge visant à « améliorer votre sommeil ») ; la fibromyalgie a le sommeil non réparateur parmi ses critères. Des audios de respiration gratuits et sans inscription complètent les approches non médicamenteuses citées.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/ (+ /respiration-guidee/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "recherche 2 du 12/10",
    "thread_id": "1a138b27f2933ccf",
    "sujet": "Votre page « Sommeil et fibromyalgie » : une ressource gratuite sur la respiration au coucher",
    "remarque": "14/10 : adresse lue sur /contact/ ; page « Sommeil » visée (2 liens + 1 vidéo, aucun cassé)",
-   "date_envoi": "2026-10-14"
+   "date_envoi": "2026-10-14",
+   "reponse": "19/10 : refus poli (« trop de sollicitations, nous nous limitons à la diffusion de certaines informations »)."
   },
   {
    "site": "France Acouphènes",
@@ -1250,12 +1251,13 @@
    "pourquoi": "Rubrique « Gestion du stress » avec pages « Liens utiles » et « Sélection d'applications » : un minuteur de cohérence cardiaque gratuit s'y prête.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "A : unil.ch rang 15 229 (Tranco)",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : étudiants / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Pas d'adresse dédiée au service sur la page : formulaire général de l'université. 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md).",
    "date_envoi": "2026-10-19",
    "thread_id": "1a15403c9b88c73d",
-   "sujet": "« Gérer le stress » : deux outils de respiration gratuits"
+   "sujet": "« Gérer le stress » : deux outils de respiration gratuits",
+   "reponse": "19/10 : refus poli (« l'UNIL dispose déjà d'une offre complète de services », pas de suite)."
   },
   {
    "site": "Université de Montréal – Services à la vie étudiante (guide santé mentale)",
@@ -1404,7 +1406,7 @@
    "pourquoi": "Page d'outils bien-être qui propose déjà des méditations guidées et applis pour l'anxiété et le stress.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : usherbrooke.ca rang 24 533 (Tranco)",
-   "statut": "envoye",
+   "statut": "erreur",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Le Centre RBC (sante-mentale-jeunesse.usherbrooke.ca) a aussi une page « Stratégies pour apprivoiser mon stress » (cohérence cardiaque) : un seul envoi pour le domaine.",
    "date_envoi": "2026-10-19",
@@ -1421,7 +1423,8 @@
      "url": "https://www.ordrepsy.qc.ca/coronavirus-covid-19-conseils-psychologiques-et-informations-au-grand-public",
      "code": 404
     }
-   ]
+   ],
+   "reponse": "19/10 : adresse centrerbc.evaluation@usherbrooke.ca rejetée (introuvable chez Office 365) ; message non remis. Chercher une autre adresse affichée sur le site avant tout nouvel envoi."
   },
   {
    "site": "UQAC – Services aux étudiants (Gestion du stress)",
@@ -1752,6 +1755,10 @@
   {
    "date": "2026-10-19",
    "resultat": "Aucune réponse nouvelle (accusés automatiques UQAM et ULaval). Lyon 1 : message retenu par le filtre Mailinblack, CAPTCHA à valider par l'utilisateur. 5 e-mails préparés et relus (UNIL, UdeM, ULB, UQAC, Sherbrooke ; 4 liens cassés relevés), envoyés à 13 h 54 (heure de Paris) après confirmation de l'utilisateur (« Envoie »), l'envoi automatique ayant été bloqué par le contrôle de sécurité de la session ; les 5 vérifiés dans les Envoyés. Articles invités : Éducation Santé retenu, REISO écarté (refuse les textes rédigés par IA)."
+  },
+  {
+   "date": "2026-10-19",
+   "resultat": "Relève du soir : FibromyalgieSOS refus poli (stop), UNIL refus poli (stop), Sherbrooke adresse rejetée (erreur), ULB accusé de réception automatique. Aucun lien obtenu."
   }
  ]
 }
