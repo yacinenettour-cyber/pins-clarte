@@ -1241,7 +1241,7 @@
    "site": "Université de Lausanne – Gérer le stress (Réussir à l'Unil)",
    "domaine": "unil.ch",
    "page_cible": "https://www.unil.ch/unil/fr/home/menuinst/etudier/reussir-a-l-unil/gerer-le-stress.html",
-   "email": "Orientation@unil.ch",
+   "email": "orientation@unil.ch",
    "email_verifie": true,
    "source_email": null,
    "formulaire": "https://www.unil.ch/unil/fr/home/contact.html",
@@ -1250,9 +1250,12 @@
    "pourquoi": "Rubrique « Gestion du stress » avec pages « Liens utiles » et « Sélection d'applications » : un minuteur de cohérence cardiaque gratuit s'y prête.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "A : unil.ch rang 15 229 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Pas d'adresse dédiée au service sur la page : formulaire général de l'université. 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md)."
+   "remarque": "Piste : étudiants / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Pas d'adresse dédiée au service sur la page : formulaire général de l'université. 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md).",
+   "date_envoi": "2026-10-19",
+   "thread_id": "1a15403c9b88c73d",
+   "sujet": "« Gérer le stress » : deux outils de respiration gratuits"
   },
   {
    "site": "Université de Montréal – Services à la vie étudiante (guide santé mentale)",
@@ -1267,9 +1270,19 @@
    "pourquoi": "Guide d'aide complet en santé mentale pour la communauté étudiante, page mise à jour 2026, avec renvois externes.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : umontreal.ca rang 6 336 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur."
+   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur.",
+   "date_envoi": "2026-10-19",
+   "thread_id": "1a15403c86477628",
+   "sujet": "Guide d'aide en santé mentale : un lien qui ne fonctionne plus",
+   "liens_casses": [
+    {
+     "texte": "bouger garde la santé mentale en forme!",
+     "url": "https://nouvelles.umontreal.ca/article/2021/10/18/bouger-pour-avoir-une-sante-mentale-en-forme/",
+     "code": 404
+    }
+   ]
   },
   {
    "site": "Ma Boussole Aidants",
@@ -1364,9 +1377,19 @@
    "pourquoi": "Page blocus/examens qui renvoie vers des ressources sur le stress, le sommeil et le bien-être mental.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : ulb.be rang 34 107 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Belgique. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Adresse en ulb.ac.be lue sur la page contact du service."
+   "remarque": "Piste : étudiants / Belgique. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Adresse en ulb.ac.be lue sur la page contact du service.",
+   "date_envoi": "2026-10-19",
+   "thread_id": "1a15403c8ff6ec1c",
+   "sujet": "Page « Blocus et examens » : un lien qui ne fonctionne plus",
+   "liens_casses": [
+    {
+     "texte": "du SAA de votre faculté",
+     "url": "https://actus.ulb.be/fr/actus/enseignement/blocus-assiste-dhiver-toutes-les-infos",
+     "code": 404
+    }
+   ]
   },
   {
    "site": "Université de Sherbrooke – Outils et conseils bien-être",
@@ -1381,9 +1404,24 @@
    "pourquoi": "Page d'outils bien-être qui propose déjà des méditations guidées et applis pour l'anxiété et le stress.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : usherbrooke.ca rang 24 533 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Le Centre RBC (sante-mentale-jeunesse.usherbrooke.ca) a aussi une page « Stratégies pour apprivoiser mon stress » (cohérence cardiaque) : un seul envoi pour le domaine."
+   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Le Centre RBC (sante-mentale-jeunesse.usherbrooke.ca) a aussi une page « Stratégies pour apprivoiser mon stress » (cohérence cardiaque) : un seul envoi pour le domaine.",
+   "date_envoi": "2026-10-19",
+   "thread_id": "1a15403d109ae34b",
+   "sujet": "Outils et conseils bien-être : deux liens qui ne fonctionnent plus",
+   "liens_casses": [
+    {
+     "texte": "Outils du Mouvement Santé Mentale Québec",
+     "url": "https://mouvementsmq.ca/campagnes/campagne-20-21/medias-et-activites",
+     "code": 404
+    },
+    {
+     "texte": "Conseils de l'Ordre des psychologues du Québec",
+     "url": "https://www.ordrepsy.qc.ca/coronavirus-covid-19-conseils-psychologiques-et-informations-au-grand-public",
+     "code": 404
+    }
+   ]
   },
   {
    "site": "UQAC – Services aux étudiants (Gestion du stress)",
@@ -1398,9 +1436,12 @@
    "pourquoi": "Page gestion du stress avec liens externes (Aller mieux, Centre d'études sur le stress humain, Petit Bambou) et conseil « calmer sa respiration ».",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "A : uqac.ca rang 43 209 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur."
+   "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur.",
+   "date_envoi": "2026-10-19",
+   "thread_id": "1a15403c848b78ad",
+   "sujet": "Gestion du stress : la cohérence cardiaque sans application"
   },
   {
    "site": "UQAM – Soutien psychologique ([Dossier] Mieux vivre mon stress)",
@@ -1710,7 +1751,7 @@
   },
   {
    "date": "2026-10-19",
-   "resultat": "Aucune réponse nouvelle (accusés automatiques UQAM et ULaval). Lyon 1 : message retenu par le filtre Mailinblack, CAPTCHA à valider par l'utilisateur. 5 e-mails préparés et relus (UNIL, UdeM, ULB, UQAC, Sherbrooke ; 4 liens cassés relevés), NON envoyés : l'envoi a été bloqué par le contrôle de sécurité de la session, en attente de la confirmation de l'utilisateur (brouillons dans le bloc-notes de la session du 19/10). Articles invités : Éducation Santé retenu, REISO écarté (refuse les textes rédigés par IA)."
+   "resultat": "Aucune réponse nouvelle (accusés automatiques UQAM et ULaval). Lyon 1 : message retenu par le filtre Mailinblack, CAPTCHA à valider par l'utilisateur. 5 e-mails préparés et relus (UNIL, UdeM, ULB, UQAC, Sherbrooke ; 4 liens cassés relevés), envoyés à 13 h 54 (heure de Paris) après confirmation de l'utilisateur (« Envoie »), l'envoi automatique ayant été bloqué par le contrôle de sécurité de la session ; les 5 vérifiés dans les Envoyés. Articles invités : Éducation Santé retenu, REISO écarté (refuse les textes rédigés par IA)."
   }
  ]
 }
