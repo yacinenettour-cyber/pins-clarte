@@ -2016,5 +2016,16 @@
   "pin_id": "600175087890237399",
   "md5": "196231999dd20ee4a0312fd542273f82",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-19T18:08+00:00",
+  "titre": "Charge mentale : le piège du « je verrai plus tard »",
+  "image": "images/pin-20261019-180800.jpg",
+  "fond": "fonds/pexels-6029112.jpg",
+  "theme": "blocagemental",
+  "design": "fiche",
+  "pin_id": "600175087890240683",
+  "md5": "f3a0e08b10acf489ce53f32931d4aefb",
+  "lien": "article:charge-mentale"
  }
 ]
