@@ -14,7 +14,7 @@ des grands médias santé : viser d'abord les variantes.
 | /angoisse-le-soir/ | angoisse le soir | angoisse le soir sans raison, crise d'angoisse la nuit, anxiété la nuit | moyenne |
 | /ruminations-le-soir/ | ruminations le soir | cerveau qui ne s'arrête pas la nuit, pensées qui tournent au coucher, ruminations nocturnes, ruminations anxieuses (FAQ du 19/10) | moyenne |
 | /respiration-pour-dormir/ | respiration pour dormir | respiration 4-7-8 pour dormir, respiration carrée pour dormir, respiration militaire pour dormir | moyenne |
-| /reveil-4h-du-matin/ | réveil à 4h du matin | se réveiller à 4h du matin stress, réveil à 4h et impossible de se rendormir | moyenne |
+| /reveil-4h-du-matin/ | réveil à 4h du matin | se réveiller à 4h du matin stress, réveil à 4h et impossible de se rendormir, réveil nocturne à 2 h ou 3 h (FAQ du 19/10) | moyenne |
 | /procrastination-du-coucher/ | procrastination du coucher | procrastination du coucher par revanche, se coucher trop tard | faible à moyenne |
 | /routine-du-soir-anti-stress/ | routine du soir | routine du soir pour mieux dormir, routine du soir anti-stress | élevée (mot court) |
 | /cortisol-et-sommeil/ | cortisol et sommeil | cortisol élevé et sommeil, cortisol la nuit | moyenne |
