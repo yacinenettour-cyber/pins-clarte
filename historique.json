@@ -1983,5 +1983,16 @@
   "pin_id": "600175087890222984",
   "md5": "0b2ed365e7251e8b1c35fff86902f97f",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-19T05:07+00:00",
+  "titre": "Lâcher prise : 5 clés pour arrêter de tout contrôler",
+  "image": "images/pin-20261019-050752.jpg",
+  "fond": "prete:images_cles/lacher-prise-5-cles.jpg",
+  "theme": "blocagemental",
+  "design": "cles",
+  "pin_id": "600175087890231482",
+  "md5": "c9e59a8e9e0be56d27d63185976b9f2e",
+  "lien": "guide:sommeil"
  }
 ]
