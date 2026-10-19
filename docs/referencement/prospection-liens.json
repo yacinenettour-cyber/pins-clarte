@@ -1643,6 +1643,52 @@
    "statut": "formulaire",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : aidants. "
+  },
+  {
+   "site": "REISO – Revue d'information sociale et de santé publique (Suisse romande)",
+   "domaine": "reiso.org",
+   "type": "article_invite",
+   "page_cible": "https://www.reiso.org/articles/proposer-un-article",
+   "preuve_invites": "https://www.reiso.org/articles/proposer-un-article (consignes aux auteurs extérieurs ; liste de ~1 000 auteurs : https://www.reiso.org/a-propos-de-reiso/liste-des-auteur-e-s)",
+   "email": "info@reiso.org",
+   "email_verifie": true,
+   "source_email": "https://www.reiso.org/articles/proposer-un-article (lien « envoyer un courriel » de la rédactrice en chef Céline Rochat, objet « Proposition de contribution » ; adresse masquée, décodée depuis la page)",
+   "formulaire": null,
+   "prenom": "Céline",
+   "signes_trafic": "Revue en ligne romande, page de consignes mise à jour en février 2026, articles et annonces d'octobre 2026",
+   "pourquoi": "Revue gratuite (articles ni payants ni rémunérés) qui publie des auteurs extérieurs, y compris des « personnes bien informées », sur la prévention et la promotion de la santé.",
+   "idees_sujets": [
+    "Le sommeil des travailleurs sociaux et soignants en horaires décalés : ce que disent les études et ce que les équipes peuvent aménager",
+    "Stress chronique et précarité : pourquoi les nuits courtes entretiennent l'épuisement des publics accompagnés (synthèse de la littérature)",
+    "Prévenir l'épuisement dans les métiers de l'accompagnement : repères simples et sourcés de récupération entre deux journées"
+   ],
+   "audience": "A : rang Tranco 988960 (liste du 19/10/2026)",
+   "statut": "ecarte",
+   "lot": "articles invités 19/10",
+   "remarque": "Exigences : 6 000 à 10 000 signes, Word, 3e personne (pas de « je »), écriture inclusive avec point médian, bibliographie d'une dizaine de références, AUCUNE rédaction par IA acceptée, aucune promotion (un lien vers notre site doit apporter une vraie plus-value, sinon il sera retiré). Site hors de France : ne pas mettre en avant nos numéros d'urgence français. Délai de parution 1 à 2 mois. ÉCARTÉ le 19/10 : la revue refuse tout texte rédigé par IA ; nos articles invités sont rédigés avec Claude, les proposer serait trompeur."
+  },
+  {
+   "site": "Éducation Santé – revue de promotion de la santé (Mutualité chrétienne, Belgique)",
+   "domaine": "educationsante.be",
+   "type": "article_invite",
+   "page_cible": "https://educationsante.be/soumettre-un-article/",
+   "preuve_invites": "https://educationsante.be/soumettre-un-article/ (page « Proposer un sujet » : la rédaction invite les lecteurs à envoyer récits et expériences ; formulaire de contact avec dépôt d'un texte Word « propositions d'articles »)",
+   "email": "education.sante@mc.be",
+   "email_verifie": true,
+   "source_email": "https://educationsante.be/soumettre-un-article/",
+   "formulaire": "https://educationsante.be/contact/",
+   "prenom": null,
+   "signes_trafic": "Revue de la Mutualité chrétienne (mutualité nationale belge), site non commercial et sans publicité, © 2026",
+   "pourquoi": "Revue belge de promotion de la santé qui publie des sujets proposés par des acteurs extérieurs ; le stress et le sommeil entrent dans la santé individuelle et collective.",
+   "idees_sujets": [
+    "Promouvoir le sommeil auprès des adultes : quels messages fonctionnent vraiment d'après les études de prévention ?",
+    "Écrans, ruminations et coucher tardif : comment parler du sommeil aux jeunes adultes sans moraliser",
+    "Stress du quotidien : des outils gratuits et non médicamenteux (respiration lente, routine du soir) à relayer dans les actions de promotion de la santé"
+   ],
+   "audience": "B : revue de la Mutualité chrétienne, organisme mutualiste national belge ; absent du top 1 million Tranco",
+   "statut": "a_verifier",
+   "lot": "articles invités 19/10",
+   "remarque": "Ligne éditoriale centrée sur les initiatives de promotion de la santé (lectorat surtout professionnel) : proposer un sujet d'abord. Date du dernier article non relevée automatiquement : vérifier à l'œil un article 2025-2026 avant d'écrire. Site hors de France : ne pas mettre en avant nos numéros d'urgence français."
   }
  ],
  "passages": [
