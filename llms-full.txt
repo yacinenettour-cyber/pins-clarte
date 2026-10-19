@@ -7,7 +7,7 @@ Source : https://www.contactapaisement-mental.fr — chaque article ci-dessous e
 # Ruminations le soir : pourquoi ton cerveau s'emballe au coucher
 
 Adresse : https://www.contactapaisement-mental.fr/ruminations-le-soir/
-Mis à jour le 18 octobre 2026 — par Yacine
+Mis à jour le 19 octobre 2026 — par Yacine
 
 Les ruminations le soir, ou ruminations nocturnes, sont des pensées qui tournent en boucle au coucher, quand ton cerveau reste en mode « alerte » au moment où il devrait ralentir [1] : sans les distractions de la journée, les soucis en suspens prennent toute la place. Des gestes simples peuvent aider à casser la boucle : vider ta tête sur papier, occuper ton esprit autrement, respirer lentement ou sortir du lit.
 
@@ -156,6 +156,10 @@ Les études portent surtout sur le moment du coucher, mais les mêmes gestes peu
 
 Ils peuvent y contribuer. Selon l'Inserm, la stimulation cérébrale et émotionnelle des activités sur écran favorise l'hyper-éveil, qui va à l'encontre de l'endormissement [1]. D'où l'intérêt d'un « couvre-feu digital » en soirée [1].
 
+### Ruminations anxieuses, ruminations mentales : est-ce la même chose ?
+
+Oui, ce sont deux façons de nommer les mêmes pensées qui tournent en boucle sans déboucher sur une solution. Les techniques de cet article visent celles du soir et de la nuit. Si elles reviennent toute la journée, ou s'accompagnent d'une angoisse forte ou d'une tristesse qui dure, parles-en à ton médecin : les thérapies cognitives et comportementales sont l'approche à privilégier quand le sommeil en souffre [1][7].
+
 ## Sources
 
 1. [Insomnie — Inserm, 2017](https://www.inserm.fr/dossier/insomnie/)
@@ -172,7 +176,7 @@ Ils peuvent y contribuer. Selon l'Inserm, la stimulation cérébrale et émotion
 # Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment
 
 Adresse : https://www.contactapaisement-mental.fr/reveil-4h-du-matin/
-Mis à jour le 18 octobre 2026 — par Yacine
+Mis à jour le 19 octobre 2026 — par Yacine
 
 Le réveil à 4h du matin est un éveil en fin de nuit, au moment où le sommeil devient naturellement plus léger [1]. Il tient souvent à plusieurs choses qui s'additionnent : ton sommeil est plus léger, ton cortisol remonte naturellement, et le stress ou l'alcool de la veille fragilisent cette période. Quelques gestes simples peuvent t'aider à te rendormir. Si ces réveils s'installent, parles-en à ton médecin.
 
@@ -309,6 +313,10 @@ L'alcool aide d'abord à s'endormir, mais à doses élevées il peut perturber l
 ### Vaut-il mieux rester au lit pour récupérer ?
 
 Si tu ne te rendors pas au bout d'une vingtaine de minutes, mieux vaut te lever, faire quelque chose de calme et revenir quand la somnolence revient [3]. Le matin, si tu es réveillé, inutile de prolonger à tout prix [3]. Et rassure-toi : après une mauvaise nuit, le sommeil lent de la nuit suivante est plus profond [1].
+
+### Et si je me réveille plutôt à 2 h ou 3 h du matin ?
+
+Les mêmes repères valent : ce qui compte surtout, c'est de savoir si tu te rendors et comment tu te sens dans la journée. Le stress, l'alcool du soir et la lumière fragilisent le sommeil quelle que soit l'heure [3][5], et les gestes de cet article s'appliquent de la même façon. L'heure précise du réveil n'a pas de signification particulière ; consulte si ces réveils reviennent plusieurs nuits par semaine avec de la fatigue dans la journée [3].
 
 ## Sources
 
@@ -1249,7 +1257,7 @@ Pas directement. Les chercheurs utilisent la variabilité de la fréquence cardi
 # Calmer son système nerveux : 6 gestes pour se calmer rapidement
 
 Adresse : https://www.contactapaisement-mental.fr/calmer-son-systeme-nerveux/
-Mis à jour le 13 octobre 2026 — par Yacine
+Mis à jour le 19 octobre 2026 — par Yacine
 
 Calmer son système nerveux (on parle aussi de le réguler), c'est aider le système parasympathique, le « frein » de l'organisme, à reprendre la main sur le mode alerte. Le geste le plus simple est de ralentir ta respiration en allongeant l'expiration : respirer lentement favorise l'activité de ce frein [3]. En quelques minutes, le soupir physiologique, la relaxation musculaire ou l'ancrage par les cinq sens peuvent faire redescendre la pression. Voici comment les pratiquer.
 
@@ -1394,6 +1402,14 @@ C'est préférable. Dans l'essai de Stanford, les participants pratiquaient 5 mi
 ### La relaxation peut-elle remplacer un suivi médical ?
 
 Non. Ces techniques sont des outils utiles au quotidien, mais elles ne remplacent pas l'avis d'un médecin ou d'un psychologue. Si l'anxiété dure ou si les crises se répètent, consulte [8].
+
+### Que faire en cas de tension nerveuse ?
+
+La tension nerveuse, c'est le corps resté en mode alerte : épaules hautes, mâchoire serrée, souffle court. Le système sympathique, l'« accélérateur », prend le dessus sur le parasympathique, le « frein » [1]. Commence par allonger ton expiration pendant quelques minutes [2], puis bouge, par exemple 10 minutes de marche [6]. Si la tension dure des semaines ou s'accompagne d'angoisse, parles-en à ton médecin.
+
+### Que veut dire « système nerveux en mode survie » ?
+
+C'est une expression grand public, pas un terme médical. Elle décrit un système sympathique qui reste activé comme si le danger durait : cœur rapide, digestion ralentie, paumes moites [1]. Les gestes de cet article visent justement à aider le frein, le parasympathique, à reprendre la main.
 
 ## Sources
 
