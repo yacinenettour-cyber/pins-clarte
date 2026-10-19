@@ -73,3 +73,19 @@ Le sujet « yeux fatigués par l'écran » est abandonné : il double « Stress 
 au bureau » (`images_exercices/bas-du-dos-3-etirements-assis.jpg`). `planche_cles.py` accepte maintenant `seuil_centre`
 (garder une peau claire : mains, visage) et `hauteur_centre` (rétrécir un personnage aux bras écartés qui toucherait
 les colonnes de texte) ; valeurs par défaut inchangées. Quota Hugging Face de nouveau épuisé après 8 images.
+
+**19/10/2026** : stock à 0 épingle illustrée non publiée (« Bas du dos » publiée le 18/10 à 18 h 07, « Lâcher prise »
+le 19/10 à 5 h 07, toutes deux vérifiées en ligne sur Pinterest, pas encore de statistiques). Quota gratuit Hugging Face
+épuisé dès le premier appel : rien fabriqué. Sujets vérifiés (anti_doublons.py + relecture : « nuque », « mâchoire »,
+« mains », « front », « dire non », « hanches », « charge mentale », « hypervigilance » écartés car déjà traités), à fabriquer
+au prochain passage :
+
+- `exercices` — « Poignets tendus : 3 étirements au clavier » (posturesantistress, #stress puis #travail) : bras tendu
+  devant, paume vers l'avant, tirer doucement les doigts vers soi 15 s ; même bras, paume vers le bas, doigts vers le sol
+  15 s ; secouer les mains détendues 10 s ; prudence : « Douleur ou fourmillements ? Parles-en à ton médecin. »
+- `cles` — « Pensées négatives : 5 clés pour prendre du recul » (blocagemental, lien guide avec pont vers les ruminations
+  du soir) : nommer la pensée (« je remarque que je pense que… »), l'écrire 5 minutes, chercher un fait qui la nuance,
+  te parler comme à un ami, changer d'activité 5 minutes. Description : si ces pensées durent ou pèsent, en parler à un
+  professionnel.
+- Le cadre doré de chaque épingle « clés » doit changer de description (fleurs, feuilles, couleurs) : avec la même graine
+  681678, la même description redonnerait exactement le même cadre.
