@@ -7467,10 +7467,12 @@
   "url": "https://images.unsplash.com/photo-1539136788836-5699e78bfc75?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-mmnKI8kMxpc.jpg",
+  "epingle": "Oméga-3 et anxiété"
  },
  "unsplash-FiypVqvsweQ.jpg": {
-  "theme": "dedie",
+  "theme": "alimentation",
   "description": "pavés de saumon (oméga-3)",
   "source": "Unsplash",
   "page": "https://unsplash.com/photos/salmon-steaks-with-lime-dinner-FiypVqvsweQ",
@@ -7479,7 +7481,8 @@
   "url": "https://images.unsplash.com/photo-1788240145923-e99729607216?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 934,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-FiypVqvsweQ.jpg"
  },
  "unsplash-UTPZnnEVW4E.jpg": {
   "theme": "dedie",
@@ -7491,7 +7494,9 @@
   "url": "https://images.unsplash.com/photo-1664956618021-73c47736845e?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-UTPZnnEVW4E.jpg",
+  "epingle": "Ashwagandha et stress"
  },
  "unsplash-fSDvoJLp6EM.jpg": {
   "theme": "dedie",
@@ -7503,7 +7508,8 @@
   "url": "https://images.unsplash.com/photo-1732900293895-233f769299b3?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "gélules d'épices colorées, ambiguës ; une photo de gélules suffit"
  },
  "unsplash-4nk7VPj_m6g.jpg": {
   "theme": "dedie",
@@ -7515,7 +7521,9 @@
   "url": "https://images.unsplash.com/photo-1636647511729-6703539ba71f?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-4nk7VPj_m6g.jpg",
+  "epingle": "Aliments ultra-transformés et anxiété"
  },
  "unsplash-jvtGZlCnZws.jpg": {
   "theme": "dedie",
@@ -7527,7 +7535,8 @@
   "url": "https://images.unsplash.com/photo-1779240564443-cd08c849d968?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 807,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "paquet industriel avec logo et texte à l'arrière-plan"
  },
  "unsplash-L9TyXHIvf1w.jpg": {
   "theme": "dedie",
@@ -7539,7 +7548,8 @@
   "url": "https://images.unsplash.com/photo-1651326710058-fd7acf9f68c5?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "plat gastronomique aux champignons et jambon, peu parlant pour une assiette du quotidien"
  },
  "unsplash-7WVpQhFGUqQ.jpg": {
   "theme": "dedie",
@@ -7551,7 +7561,9 @@
   "url": "https://images.unsplash.com/photo-1789758612553-5e6044ac2ff1?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-7WVpQhFGUqQ.jpg",
+  "epingle": "Alimentation et moral (SMILES)"
  },
  "unsplash-lzQCA9sWpw0.jpg": {
   "theme": "dedie",
@@ -7563,7 +7575,9 @@
   "url": "https://images.unsplash.com/photo-1518881922778-bacb4debc3d7?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 1000,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-lzQCA9sWpw0.jpg",
+  "epingle": "Caféine cachée"
  },
  "unsplash-7liDpl93wt4.jpg": {
   "theme": "dedie",
@@ -7575,7 +7589,8 @@
   "url": "https://images.unsplash.com/photo-1491720731493-223f97d92c21?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 1111,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "étiquette de sachet de thé avec texte"
  },
  "unsplash-p1WB-F_p_Vk.jpg": {
   "theme": "dedie",
@@ -7587,7 +7602,9 @@
   "url": "https://images.unsplash.com/photo-1519010135229-1f2e4523b3c7?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-p1WB-F_p_Vk.jpg",
+  "epingle": "Alcool pour décompresser"
  },
  "unsplash-KUxGto2I2eo.jpg": {
   "theme": "dedie",
@@ -7599,7 +7616,8 @@
   "url": "https://images.unsplash.com/photo-1582640557048-bc97476c6410?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 1063,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "scène confuse, boîte avec texte sur la table"
  },
  "unsplash-oUMvXtQ_wps.jpg": {
   "theme": "dedie",
@@ -7611,7 +7629,9 @@
   "url": "https://images.unsplash.com/photo-1775181180462-18b20da9340e?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 788,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-oUMvXtQ_wps.jpg",
+  "epingle": "Légumes secs"
  },
  "unsplash-bogW-F3Vw24.jpg": {
   "theme": "dedie",
@@ -7623,7 +7643,8 @@
   "url": "https://images.unsplash.com/photo-1711915408337-ae6b1207e42d?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "soupe au lard : hors sujet (pas de légumes secs)"
  },
  "unsplash-oeWPcrOWq1w.jpg": {
   "theme": "dedie",
@@ -7635,10 +7656,11 @@
   "url": "https://images.unsplash.com/photo-1711915408198-9cac70d045c7?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "soupe au lard : hors sujet, quasi-jumelle de bogW-F3Vw24 (même séance)"
  },
  "unsplash-JS3LaqGT_Xo.jpg": {
-  "theme": "dedie",
+  "theme": "alimentation",
   "description": "bol de fruits à coque",
   "source": "Unsplash",
   "page": "https://unsplash.com/photos/a-wooden-bowl-filled-with-nuts-on-top-of-a-table-JS3LaqGT_Xo",
@@ -7647,7 +7669,8 @@
   "url": "https://images.unsplash.com/photo-1672936488565-2c213cbbc0cc?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-JS3LaqGT_Xo.jpg"
  },
  "unsplash-4cjkh_vp63Q.jpg": {
   "theme": "dedie",
@@ -7659,10 +7682,12 @@
   "url": "https://images.unsplash.com/photo-1597919926165-9a7a0829ecaa?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-4cjkh_vp63Q.jpg",
+  "epingle": "Fruits à coque"
  },
  "unsplash-FGrO63vUbaA.jpg": {
-  "theme": "dedie",
+  "theme": "alimentation",
   "description": "fruits et légumes du marché",
   "source": "Unsplash",
   "page": "https://unsplash.com/photos/a-pile-of-assorted-fruits-and-vegetables-sitting-next-to-each-other-FGrO63vUbaA",
@@ -7671,7 +7696,8 @@
   "url": "https://images.unsplash.com/photo-1634934044791-44efcd71ac04?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 934,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-FGrO63vUbaA.jpg"
  },
  "unsplash-26LFdL8exMo.jpg": {
   "theme": "dedie",
@@ -7683,10 +7709,12 @@
   "url": "https://images.unsplash.com/photo-1631021967261-c57ee4dfa9bb?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-26LFdL8exMo.jpg",
+  "epingle": "Fruits et légumes"
  },
  "unsplash-B77ypBmpYuw.jpg": {
-  "theme": "dedie",
+  "theme": "alimentation",
   "description": "panier de fruits",
   "source": "Unsplash",
   "page": "https://unsplash.com/photos/assorted-fruits-on-brown-woven-basket-B77ypBmpYuw",
@@ -7695,7 +7723,8 @@
   "url": "https://images.unsplash.com/photo-1628689469838-524a4a973b8e?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-B77ypBmpYuw.jpg"
  },
  "unsplash-8JGA8LZv9i4.jpg": {
   "theme": "dedie",
@@ -7707,10 +7736,12 @@
   "url": "https://images.unsplash.com/photo-1565181917578-a87c12e04ff7?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 868,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-8JGA8LZv9i4.jpg",
+  "epingle": "Céréales complètes"
  },
  "unsplash-TS1W9BeXnl8.jpg": {
-  "theme": "dedie",
+  "theme": "alimentation",
   "description": "pain complet (céréales complètes)",
   "source": "Unsplash",
   "page": "https://unsplash.com/photos/brown-bread-on-brown-wooden-tray-TS1W9BeXnl8",
@@ -7719,7 +7750,8 @@
   "url": "https://images.unsplash.com/photo-1626423642268-24cc183cbacb?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-TS1W9BeXnl8.jpg"
  },
  "unsplash-oq1nQ98wsas.jpg": {
   "theme": "dedie",
@@ -7731,7 +7763,8 @@
   "url": "https://images.unsplash.com/photo-1640783177357-ea141601a8ce?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "troisième photo de pain : sujet déjà couvert par deux photos gardées"
  },
  "unsplash--jvaq1qZ3Vk.jpg": {
   "theme": "dedie",
@@ -7743,7 +7776,9 @@
   "url": "https://images.unsplash.com/photo-1758273239900-2f0e2e051027?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 788,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash--jvaq1qZ3Vk.jpg",
+  "epingle": "Manger sous le coup du stress"
  },
  "unsplash-9RXfTxSfxXg.jpg": {
   "theme": "dedie",
@@ -7755,7 +7790,8 @@
   "url": "https://images.unsplash.com/photo-1765979831288-ddb29b91e5f3?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 1049,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "femme de dos dans un café vide : peu liée au sujet, photo de la fenêtre retenue"
  },
  "unsplash-lQ9rlsr7dD4.jpg": {
   "theme": "dedie",
@@ -7767,10 +7803,12 @@
   "url": "https://images.unsplash.com/photo-1657835813264-282b20ca950f?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 935,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-lQ9rlsr7dD4.jpg",
+  "epingle": "Stress et alimentation : idées reçues"
  },
  "unsplash-dsT5LGzEuzE.jpg": {
-  "theme": "dedie",
+  "theme": "alimentation",
   "description": "bol complet légumes (idées reçues)",
   "source": "Unsplash",
   "page": "https://unsplash.com/photos/meat-with-vegetables-and-sliced-tomatoes-in-black-bowl-dsT5LGzEuzE",
@@ -7779,6 +7817,7 @@
   "url": "https://images.unsplash.com/photo-1563897539633-7374c276c212?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 1089,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-dsT5LGzEuzE.jpg"
  }
 }

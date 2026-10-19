@@ -640,6 +640,9 @@ jobs:
               "rose": ["quand le stress se loge dans le corps", "pour relâcher les tensions", "à faire dès aujourd’hui"],
               "peche": ["pour retrouver de l’énergie", "pour une énergie plus stable", "petits gestes, grand effet"],
               "brume": ["pour alléger ton mental", "pour enfin avancer", "quand la tête est trop pleine"],
+              # 19/10/2026 : le tableau alimentation partage la palette « peche » de l'énergie, mais ses
+              # accroches doivent parler de stress (règle 3 du CLAUDE.md), pas d'énergie.
+              "alimentation": ["quand le stress passe par l’assiette", "manger pour souffler un peu", "petits gestes, grand effet"],
           }
           ENREGISTRER = ["Enregistre cette fiche pour plus tard", "À garder pour les jours chargés",
                          "Épingle-la pour t’en souvenir", "Garde cette fiche sous la main", "À relire ce soir, au calme"]
@@ -742,7 +745,7 @@ jobs:
               d = ImageDraw.Draw(img)
 
               # Accroche manuscrite puis titre : le titre rétrécit avant que la photo ne passe sous 320 px.
-              accroche = _choix(ACCROCHES[nom_pal], graine)
+              accroche = _choix(ACCROCHES.get(theme) or ACCROCHES[nom_pal], graine)
               cta = _choix(ENREGISTRER, graine + "cta")
               for t_titre, t_pt, esp in [(78, 38, 30), (72, 36, 26), (66, 34, 24), (60, 33, 22), (56, 31, 18), (52, 30, 16), (48, 29, 14), (44, 28, 12)]:
                   f_titre, f_pt = police("titre", t_titre), police("texte", t_pt)
