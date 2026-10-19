@@ -144,7 +144,7 @@ Non. Ces techniques sont des outils utiles au quotidien, mais elles ne remplacen
 La tension nerveuse, c'est le corps resté en mode alerte : épaules hautes, mâchoire serrée, souffle court. Le système sympathique, l'« accélérateur », prend le dessus sur le parasympathique, le « frein » [1]. Commence par allonger ton expiration pendant quelques minutes [2], puis bouge, par exemple 10 minutes de marche [6]. Si la tension dure des semaines ou s'accompagne d'angoisse, parles-en à ton médecin.
 
 ### Que veut dire « système nerveux en mode survie » ?
-C'est une expression grand public, pas un terme médical. Elle décrit un système sympathique qui reste activé comme si le danger durait : cœur rapide, digestion ralentie, paumes moites [1]. Les gestes de cet article visent justement à aider le frein, le parasympathique, à reprendre la main.
+C'est une expression grand public, pas un terme médical. Elle décrit un système sympathique qui reste activé comme si le danger durait : cœur rapide, digestion ralentie, paumes moites [1]. Les gestes de cet article visent justement à aider le frein, le parasympathique, à reprendre la main. Si cet état d'alerte dure, avec des sursauts au moindre bruit et un sommeil léger, lis notre article sur l'[hypervigilance](/hypervigilance/).
 
 ## Pour aller plus loin
 Si ce stress te suit jusqu'au lit, avec des pensées qui tournent dès que tu éteins la lumière, le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à passer le cap du soir. Ce PDF te propose une routine anti-rumination à faire directement au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude, sans aucun matériel. Garde le soupir physiologique pour la journée, et le guide pour le moment du coucher.

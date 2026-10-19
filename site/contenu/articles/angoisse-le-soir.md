@@ -129,7 +129,7 @@ Oui : chez les personnes anxieuses, la difficulté porte surtout sur l'endormiss
 
 Si cette angoisse te suit jusqu'au lit, le guide gratuit « Quand le cerveau refuse de dormir » propose une routine à faire directement au lit, des exercices pour calmer ton mental le soir et un calendrier de 30 jours, sans matériel.
 
-Si tu te réveilles plutôt vers 4 h sans réussir à te rendormir, lis ce qu'il faut faire en cas de [réveil à 4 h du matin](/reveil-4h-du-matin/).
+Si tu te réveilles plutôt vers 4 h sans réussir à te rendormir, lis ce qu'il faut faire en cas de [réveil à 4 h du matin](/reveil-4h-du-matin/). Si tu restes en alerte même dans la journée, à sursauter au moindre bruit, lis notre article sur l'[hypervigilance](/hypervigilance/).
 
 ## Sources
 1. [Trouble panique : symptômes, diagnostic et évolution — Assurance maladie (ameli.fr), 2025](https://www.ameli.fr/assure/sante/themes/trouble-panique/symptomes-diagnostic-evolution)

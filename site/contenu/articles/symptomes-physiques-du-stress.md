@@ -101,7 +101,7 @@ Ces études ne disent pas que le stress « fait tomber malade » à coup sûr : 
 
 Le stress pèse aussi sur le sommeil et l'énergie : l'INRS cite les troubles du sommeil, et l'Assurance maladie les insomnies, la somnolence dans la journée et la fatigue parmi les signes physiques des troubles anxieux [1][2].
 
-D'autres signes, moins connus, sont aussi décrits : des sueurs inhabituelles [1], des fourmillements et une envie fréquente d'uriner [2]. Le lien entre stress et nuits agitées est expliqué dans notre article sur le [cortisol et le sommeil](/cortisol-et-sommeil/).
+D'autres signes, moins connus, sont aussi décrits : des sueurs inhabituelles [1], des fourmillements et une envie fréquente d'uriner [2]. Le lien entre stress et nuits agitées est expliqué dans notre article sur le [cortisol et le sommeil](/cortisol-et-sommeil/). Si tu restes en alerte permanente, à sursauter pour un rien, lis aussi notre article sur l'[hypervigilance](/hypervigilance/).
 
 ## Stress ou autre chose : comment faire la différence ?
 

@@ -151,6 +151,12 @@
    "image": "unsplash-wVY-mmR6Q_g.jpg",
    "alt": "Personne de dos dans un champ au coucher du soleil, une main posée sur la nuque",
    "credit": "Photo : Andrey K / Unsplash"
+  },
+  "hypervigilance": {
+   "categorie": "stress",
+   "image": "unsplash-i4rOpdj444c.jpg",
+   "alt": "Femme allongée sur son lit, le visage à moitié caché par la couette, les yeux ouverts, aux aguets",
+   "credit": "Photo : Bruno van der Kraan / Unsplash"
   }
  },
  "formation": {
@@ -316,6 +322,10 @@
     [
      "Tu veux te calmer vite quand la pression monte",
      "calmer-son-systeme-nerveux"
+    ],
+    [
+     "Tu restes en alerte, tu sursautes pour un rien et tu dors mal",
+     "hypervigilance"
     ],
     [
      "Tu as entendu parler du nerf vague et tu veux démêler le vrai du faux",

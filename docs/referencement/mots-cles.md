@@ -21,6 +21,7 @@ des grands médias santé : viser d'abord les variantes.
 | /cortisol-hormone-du-stress/ | cortisol hormone du stress | rythme du cortisol sur 24 h | moyenne |
 | /baisser-son-cortisol-naturellement/ | baisser son cortisol naturellement | cocktail anti-cortisol, comment faire baisser le cortisol | élevée |
 | /symptomes-physiques-du-stress/ | symptômes physiques du stress | symptômes physiques du stress chronique, symptômes physiques du stress et de l'angoisse, douleur physique stress | moyenne |
+| /hypervigilance/ | hypervigilance | hypervigilance sommeil, hypervigilance symptômes, hypervigilance définition, hypervigilance que faire | faible |
 | /calmer-son-systeme-nerveux/ | calmer son système nerveux | réguler son système nerveux, calmer son système nerveux rapidement, tension nerveuse que faire, système nerveux en mode survie (FAQ du 19/10) | moyenne |
 | /nerf-vague/ | nerf vague | activer le nerf vague naturellement | élevée (mot court) |
 | /charge-mentale/ | charge mentale | signes de charge mentale, alléger sa charge mentale | élevée (mot court) |
