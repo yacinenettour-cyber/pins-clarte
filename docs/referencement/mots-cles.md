@@ -12,7 +12,7 @@ des grands médias santé : viser d'abord les variantes.
 | Page | Mot-clé principal | Variantes à viser d'abord | Difficulté estimée |
 |---|---|---|---|
 | /angoisse-le-soir/ | angoisse le soir | angoisse le soir sans raison, crise d'angoisse la nuit, anxiété la nuit | moyenne |
-| /ruminations-le-soir/ | ruminations le soir | cerveau qui ne s'arrête pas la nuit, pensées qui tournent au coucher | moyenne |
+| /ruminations-le-soir/ | ruminations le soir | cerveau qui ne s'arrête pas la nuit, pensées qui tournent au coucher, ruminations nocturnes, ruminations anxieuses (FAQ du 19/10) | moyenne |
 | /respiration-pour-dormir/ | respiration pour dormir | respiration 4-7-8 pour dormir, respiration carrée pour dormir, respiration militaire pour dormir | moyenne |
 | /reveil-4h-du-matin/ | réveil à 4h du matin | se réveiller à 4h du matin stress, réveil à 4h et impossible de se rendormir | moyenne |
 | /procrastination-du-coucher/ | procrastination du coucher | procrastination du coucher par revanche, se coucher trop tard | faible à moyenne |
@@ -21,7 +21,7 @@ des grands médias santé : viser d'abord les variantes.
 | /cortisol-hormone-du-stress/ | cortisol hormone du stress | rythme du cortisol sur 24 h | moyenne |
 | /baisser-son-cortisol-naturellement/ | baisser son cortisol naturellement | cocktail anti-cortisol, comment faire baisser le cortisol | élevée |
 | /symptomes-physiques-du-stress/ | symptômes physiques du stress | symptômes physiques du stress chronique, symptômes physiques du stress et de l'angoisse, douleur physique stress | moyenne |
-| /calmer-son-systeme-nerveux/ | calmer son système nerveux | réguler son système nerveux, calmer son système nerveux rapidement | moyenne |
+| /calmer-son-systeme-nerveux/ | calmer son système nerveux | réguler son système nerveux, calmer son système nerveux rapidement, tension nerveuse que faire, système nerveux en mode survie (FAQ du 19/10) | moyenne |
 | /nerf-vague/ | nerf vague | activer le nerf vague naturellement | élevée (mot court) |
 | /charge-mentale/ | charge mentale | signes de charge mentale, alléger sa charge mentale | élevée (mot court) |
 | /signes-du-burn-out/ | signes du burn-out | signes avant-coureurs du burn-out, burn-out ou dépression | élevée |

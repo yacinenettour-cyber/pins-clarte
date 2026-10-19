@@ -5,7 +5,7 @@ description: Comment calmer son système nerveux en quelques minutes ? Soupir ph
 slug: calmer-son-systeme-nerveux
 mot_cle: calmer son système nerveux
 guide: sommeil
-maj: 2026-10-13
+maj: 2026-10-19
 image: Femme assise près d'une fenêtre en fin de journée, les yeux fermés, une main posée sur le ventre, en train d'expirer lentement dans une lumière douce et chaude
 ---
 ## L'essentiel
@@ -139,6 +139,12 @@ C'est préférable. Dans l'essai de Stanford, les participants pratiquaient 5 mi
 
 ### La relaxation peut-elle remplacer un suivi médical ?
 Non. Ces techniques sont des outils utiles au quotidien, mais elles ne remplacent pas l'avis d'un médecin ou d'un psychologue. Si l'anxiété dure ou si les crises se répètent, consulte [8].
+
+### Que faire en cas de tension nerveuse ?
+La tension nerveuse, c'est le corps resté en mode alerte : épaules hautes, mâchoire serrée, souffle court. Le système sympathique, l'« accélérateur », prend le dessus sur le parasympathique, le « frein » [1]. Commence par allonger ton expiration pendant quelques minutes [2], puis bouge, par exemple 10 minutes de marche [6]. Si la tension dure des semaines ou s'accompagne d'angoisse, parles-en à ton médecin.
+
+### Que veut dire « système nerveux en mode survie » ?
+C'est une expression grand public, pas un terme médical. Elle décrit un système sympathique qui reste activé comme si le danger durait : cœur rapide, digestion ralentie, paumes moites [1]. Les gestes de cet article visent justement à aider le frein, le parasympathique, à reprendre la main.
 
 ## Pour aller plus loin
 Si ce stress te suit jusqu'au lit, avec des pensées qui tournent dès que tu éteins la lumière, le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à passer le cap du soir. Ce PDF te propose une routine anti-rumination à faire directement au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude, sans aucun matériel. Garde le soupir physiologique pour la journée, et le guide pour le moment du coucher.

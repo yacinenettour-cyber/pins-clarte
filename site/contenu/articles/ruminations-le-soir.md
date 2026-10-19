@@ -5,7 +5,7 @@ description: Ruminations le soir ou nocturnes : pourquoi ton cerveau ne s'arrêt
 slug: ruminations-le-soir
 mot_cle: ruminations le soir
 guide: sommeil
-maj: 2026-10-18
+maj: 2026-10-19
 image: Jeune femme allongée dans son lit à la lumière tamisée d'une lampe de chevet, les yeux ouverts et le regard pensif, un carnet et un stylo posés sur la table de nuit, ambiance calme aux tons chauds
 ---
 ## L'essentiel
@@ -147,6 +147,9 @@ Les études portent surtout sur le moment du coucher, mais les mêmes gestes peu
 
 ### Les écrans aggravent-ils les ruminations du soir ?
 Ils peuvent y contribuer. Selon l'Inserm, la stimulation cérébrale et émotionnelle des activités sur écran favorise l'hyper-éveil, qui va à l'encontre de l'endormissement [1]. D'où l'intérêt d'un « couvre-feu digital » en soirée [1].
+
+### Ruminations anxieuses, ruminations mentales : est-ce la même chose ?
+Oui, ce sont deux façons de nommer les mêmes pensées qui tournent en boucle sans déboucher sur une solution. Les techniques de cet article visent celles du soir et de la nuit. Si elles reviennent toute la journée, ou s'accompagnent d'une angoisse forte ou d'une tristesse qui dure, parles-en à ton médecin : les thérapies cognitives et comportementales sont l'approche à privilégier quand le sommeil en souffre [1][7].
 
 ## Pour aller plus loin
 
