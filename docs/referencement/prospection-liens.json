@@ -1787,8 +1787,8 @@
   },
   {
    "email_verifie": true,
-   "statut": "attente_accord",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1797,16 +1797,16 @@
    "domaine": "macoherence.com",
    "email": "audrey@macoherence.com",
    "page_cible": "https://macoherence.com/jamais-assez-bien/",
-   "thread_id": null,
-   "sujet": null,
+   "thread_id": "1a157828a95d7718",
+   "sujet": "Ton article « Jamais assez bien »",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
    "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /ruminations-le-soir/"
   },
   {
    "email_verifie": true,
-   "statut": "attente_accord",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1815,16 +1815,16 @@
    "domaine": "harmonie-plenitude.fr",
    "email": "adeline@harmonie-plenitude.fr",
    "page_cible": "https://harmonie-plenitude.fr/danser-evacuer-stress.html",
-   "thread_id": null,
-   "sujet": null,
+   "thread_id": "1a157828a7f2291d",
+   "sujet": "Votre article « Danser pour évacuer le stress »",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
    "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /symptomes-physiques-du-stress/"
   },
   {
    "email_verifie": true,
-   "statut": "attente_accord",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1833,16 +1833,16 @@
    "domaine": "guerir-anxiete.com",
    "email": "delphine.couet@guerir-anxiete.com",
    "page_cible": "https://guerir-anxiete.com/habitudes-qui-rassurent-entretiennent-lanxiete/",
-   "thread_id": null,
-   "sujet": null,
+   "thread_id": "1a157828a0c385ca",
+   "sujet": "Votre article sur les habitudes qui entretiennent l'anxiété",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
    "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /angoisse-le-soir/ (ne pas proposer la respiration comme remède : l'article critique le fait de vouloir se calmer à tout prix)"
   },
   {
    "email_verifie": true,
-   "statut": "attente_accord",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1851,16 +1851,16 @@
    "domaine": "montpellier-sophrologie-hypnose.fr",
    "email": "mlp.sophrologie@gmail.com",
    "page_cible": "https://montpellier-sophrologie-hypnose.fr/charge-mentale-pourquoi-est-il-si-difficile-de-deconnecter/",
-   "thread_id": null,
-   "sujet": null,
+   "thread_id": "1a157828b787d91b",
+   "sujet": "Votre article sur la charge mentale",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
    "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /charge-mentale/"
   },
   {
    "email_verifie": true,
-   "statut": "attente_accord",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1869,16 +1869,16 @@
    "domaine": "relaxationdynamique.fr",
    "email": "contact@relaxationdynamique.fr",
    "page_cible": "https://www.relaxationdynamique.fr/stress-au-travail/",
-   "thread_id": null,
-   "sujet": null,
+   "thread_id": "1a157828e0f568f1",
+   "sujet": "Votre infographie sur le stress au travail",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
    "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /exercices-respiration/"
   },
   {
    "email_verifie": true,
-   "statut": "attente_accord",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1887,8 +1887,8 @@
    "domaine": "marie-marchand.com",
    "email": "hello@marie-marchand.com",
    "page_cible": "https://marie-marchand.com/signes-burn-out/",
-   "thread_id": null,
-   "sujet": null,
+   "thread_id": "1a157828fc177cfd",
+   "sujet": "Ton article sur les signes du burn-out",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
    "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; adresse lue sur la page contact (l'article affiche aussi marmarie@hotmail.fr) ; notre page : /signes-du-burn-out/"
@@ -2124,6 +2124,10 @@
   {
    "date": "2026-10-20",
    "resultat": "Règle assouplie et passage à 10 envois/jour (consigne de l'utilisateur : « Assouplis la règle et passe à 10 »), tâche automatique mise à jour. 17 sites trouvés par les abonnés des comptes Pinterest proches : 6 messages prêts (attente_accord), 6 à vérifier, 5 écartés."
+  },
+  {
+   "date": "2026-10-20",
+   "resultat": "6 blogs du même sujet (C thématique) contactés après accord de l'utilisateur (« Envoi les 6 emails ») : Ma Cohérence, Harmonie & Plénitude, Guérir l'anxiété, Hypnose & Sophrologie Saint-Gély-du-Fesc, Relaxation dynamique, Marie Marchand. Messages dans docs/referencement/messages-blogs-thematiques-20-10.md ; Gmail les a tous marqués SENT. Ils comptent dans les 10 envois du jour."
   }
  ]
 }
