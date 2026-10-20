@@ -1272,7 +1272,7 @@
    "pourquoi": "Guide d'aide complet en santé mentale pour la communauté étudiante, page mise à jour 2026, avec renvois externes.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : umontreal.ca rang 6 336 (Tranco)",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur.",
    "date_envoi": "2026-10-19",
@@ -1284,7 +1284,8 @@
      "url": "https://nouvelles.umontreal.ca/article/2021/10/18/bouger-pour-avoir-une-sante-mentale-en-forme/",
      "code": 404
     }
-   ]
+   ],
+   "reponse": "19/10 18:39 (info@sve.umontreal.ca) : « Merci pour la proposition mais nous ne sommes pas intéressés. » Ne plus écrire."
   },
   {
    "site": "Ma Boussole Aidants",
@@ -1326,7 +1327,8 @@
    "date_envoi": "2026-10-18",
    "thread_id": "1a14fd2648eef0a9",
    "sujet": "Vos ressources en santé mentale : des audios de respiration sans application",
-   "liens_casses": "18/10 : 10 liens testés, aucun cassé"
+   "liens_casses": "18/10 : 10 liens testés, aucun cassé",
+   "note": "18/10 : réponse automatique Mailinblack (ucbl@mailinblack.univ-lyon1.fr, fil 1a14fd278cefdb5e) : le message n'est remis qu'après validation d'un CAPTCHA (bouton dans l'e-mail) ; à faire à la main par l'utilisateur s'il le souhaite, sinon le message n'est pas arrivé."
   },
   {
    "site": "Université Grenoble Alpes – Prendre soin de votre santé mentale (portail étudiant)",
@@ -1753,10 +1755,10 @@
   },
   {
    "email_verifie": true,
-   "statut": "envoye",
+   "statut": "repondu",
    "date_envoi": "2026-10-19",
    "relance": null,
-   "reponse": null,
+   "reponse": "20/10 05:35 : réponse positive sans engagement : apprécie le soin des sources et le cadre clairement posé ; garde la page /charge-mentale/ dans ses ressources et verra lors d'une prochaine mise à jour de l'article si un lien s'intègre. Aucun lien pour l'instant ; pas de relance. Réponse de remerciement proposée à l'utilisateur (non envoyée).",
    "lien_obtenu": null,
    "lot": "abonnés Pinterest 19/10",
    "site": "Couleur d'âme",
@@ -1808,7 +1810,7 @@
    "statut": "envoye",
    "date_envoi": "2026-10-20",
    "relance": null,
-   "reponse": null,
+   "reponse": "20/10 04:13 : réponse automatique (répond en général le lundi et le jeudi, hors vacances scolaires). Statut inchangé.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
    "site": "Harmonie & Plénitude (Adeline)",
@@ -1826,7 +1828,7 @@
    "statut": "envoye",
    "date_envoi": "2026-10-20",
    "relance": null,
-   "reponse": null,
+   "reponse": "20/10 04:13 : réponse automatique (en vacances, retour le 26/10). Pas une vraie réponse ; statut inchangé.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
    "site": "Guérir l'anxiété (Delphine Couet)",
@@ -1877,10 +1879,10 @@
   },
   {
    "email_verifie": true,
-   "statut": "envoye",
+   "statut": "stop",
    "date_envoi": "2026-10-20",
    "relance": null,
-   "reponse": null,
+   "reponse": "20/10 08:45 (marmarie@hotmail.fr) : refus : ne souhaite pas citer de sites « ayant du contenu généré par l'IA » (elle a regardé notre site). Ne plus écrire.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
    "site": "Marie Marchand",
@@ -1895,8 +1897,8 @@
   },
   {
    "email_verifie": true,
-   "statut": "a_verifier",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1905,15 +1907,15 @@
    "domaine": "mapsyenlignechezmoi.fr",
    "email": "contact@mapsyenlignechezmoi.fr",
    "page_cible": "https://mapsyenlignechezmoi.fr/je-souffre-emotionnellement/",
-   "thread_id": null,
-   "sujet": null,
-   "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
+   "thread_id": "1a15a5484498e57d",
+   "sujet": "Ton article « Je souffre émotionnellement »",
+   "audience": "C thématique (règle du 20/10), vérifiée le 20/10 sur le site : absent du top 1 million Tranco, critères a-d remplis",
    "type": "lien",
-   "note": "à vérifier selon la règle C thématique du 20/10 (site, date, adresse) avant tout envoi ; ligne confessionnelle, ton à adapter ; notre page possible : /hypervigilance/"
+   "note": "adresse lue sur la page /contact/ ; article publié le 12/09/2026 (mis à jour le 15/09) ; tutoiement ; aucun lien sortant mort ; notre page proposée : /ruminations-le-soir/"
   },
   {
    "email_verifie": true,
-   "statut": "a_verifier",
+   "statut": "ecarte_audience",
    "date_envoi": null,
    "relance": null,
    "reponse": null,
@@ -1925,14 +1927,14 @@
    "page_cible": "https://sandra-boyer.com/charge-mentale/",
    "thread_id": null,
    "sujet": null,
-   "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
+   "audience": "C, ne passe pas la règle C thématique",
    "type": "lien",
-   "note": "à vérifier selon la règle C thématique du 20/10 (site, date, adresse) avant tout envoi ; notre page possible : /charge-mentale/"
+   "note": "20/10 : site de coaching, formation et facilitation pour professionnels ; articles mêlant management, créativité, réussite, confiance en soi : le sujet principal n'est pas le stress ni les émotions (critère a). Page /charge-mentale/ du 11/06/2026 lue."
   },
   {
    "email_verifie": true,
-   "statut": "a_verifier",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1940,17 +1942,17 @@
    "site": "Sophrospirit (Claire Lucq)",
    "domaine": "sophrospirit.fr",
    "email": "claire.lucq@hotmail.com",
-   "page_cible": "https://sophrospirit.fr/",
-   "thread_id": null,
-   "sujet": null,
-   "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
+   "page_cible": "https://sophrospirit.fr/evacuer-les-pensees-negatives-le-nuage-magique/",
+   "thread_id": "1a15a54851443653",
+   "sujet": "Votre article « Le nuage magique »",
+   "audience": "C thématique (règle du 20/10), vérifiée le 20/10 sur le site : absent du top 1 million Tranco, critères a-d remplis",
    "type": "lien",
-   "note": "à vérifier selon la règle C thématique du 20/10 (site, date, adresse) avant tout envoi ; lire un vrai article (seule la page « Qui suis-je » a été vue) ; notre page possible : /respiration-guidee/"
+   "note": "adresse affichée sur l'accueil et /blog/ ; blog de sophrologie pour enfants (émotions, relaxation, sommeil) ; article de 2019 mis à jour le 09/09/2026, activité du blog en 09-10/2026 ; boutique de ses propres outils (pas d'articles commandités) ; aucun lien sortant mort ; notre page proposée : /respiration-guidee/ (pour les parents)"
   },
   {
    "email_verifie": true,
-   "statut": "a_verifier",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1958,17 +1960,17 @@
    "site": "Delphine Basson",
    "domaine": "delphine-basson.fr",
    "email": "delphinebassonpsycho@gmail.com",
-   "page_cible": "https://delphine-basson.fr/",
-   "thread_id": null,
-   "sujet": null,
-   "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
+   "page_cible": "https://delphine-basson.fr/sancrer-pour-ne-plus-perdre-pied/",
+   "thread_id": "1a15a5485dba2be3",
+   "sujet": "Votre article « S'ancrer pour ne plus perdre pied »",
+   "audience": "C thématique (règle du 20/10), vérifiée le 20/10 sur le site : absent du top 1 million Tranco, critères a-d remplis",
    "type": "lien",
-   "note": "à vérifier selon la règle C thématique du 20/10 (site, date, adresse) avant tout envoi ; choisir un article sur le stress ou le sommeil ; notre page possible : /respiration-pour-dormir/"
+   "note": "adresse affichée sur /contact/ et /blog/ ; psychologue et hypnothérapeute (MyPopPsy), blog stress, charge mentale, émotions ; article du 29/01/2026 ; aucun lien sortant dans l'article ; notre page proposée : /calmer-son-systeme-nerveux/"
   },
   {
    "email_verifie": true,
-   "statut": "a_verifier",
-   "date_envoi": null,
+   "statut": "envoye",
+   "date_envoi": "2026-10-20",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
@@ -1977,15 +1979,15 @@
    "domaine": "boost-ton-feeling-good.fr",
    "email": "hello@boost-ton-feeling-good.fr",
    "page_cible": "https://boost-ton-feeling-good.fr/2026/03/10/burn-out-fatigue-ou-depression/",
-   "thread_id": null,
-   "sujet": null,
-   "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
+   "thread_id": "1a15a54851f0ea1a",
+   "sujet": "Ton article « Burn out, fatigue ou dépression ? »",
+   "audience": "C thématique (règle du 20/10), vérifiée le 20/10 sur le site : absent du top 1 million Tranco, critères a-d remplis",
    "type": "lien",
-   "note": "à vérifier selon la règle C thématique du 20/10 (site, date, adresse) avant tout envoi ; petit blog, dernier article mars 2026 ; notre page possible : /signes-du-burn-out/"
+   "note": "adresse lue sur la page /contact/ ; article du 10/03/2026 (mis à jour le 27/04/2026) ; blog centré sur le burn-out ; liens sortants testés (Wikipédia, Tenor, liens internes) : aucun mort ; notre page proposée : /signes-du-burn-out/"
   },
   {
    "email_verifie": false,
-   "statut": "a_verifier",
+   "statut": "formulaire",
    "date_envoi": null,
    "relance": null,
    "reponse": null,
@@ -1999,7 +2001,7 @@
    "sujet": null,
    "audience": "A : Tranco 145 636 (20/10)",
    "type": "lien",
-   "note": "annuaire de praticiens, pas un créateur ; site en 403 pour curl, adresse non trouvée : probablement formulaire"
+   "note": "20/10 : site en 403 pour curl sur toutes les pages (accueil, contact, mentions légales, magazine) ; aucune adresse lue sur le site ; annuaire de praticiens, pas un créateur de contenu : formulaire seulement, priorité faible."
   },
   {
    "email_verifie": false,
@@ -2128,6 +2130,10 @@
   {
    "date": "2026-10-20",
    "resultat": "6 blogs du même sujet (C thématique) contactés après accord de l'utilisateur (« Envoi les 6 emails ») : Ma Cohérence, Harmonie & Plénitude, Guérir l'anxiété, Hypnose & Sophrologie Saint-Gély-du-Fesc, Relaxation dynamique, Marie Marchand. Messages dans docs/referencement/messages-blogs-thematiques-20-10.md ; Gmail les a tous marqués SENT. Ils comptent dans les 10 envois du jour."
+  },
+  {
+   "date": "2026-10-20",
+   "resultat": "Passage du soir : réponses lues : Marie Marchand refuse (ne cite pas de sites à contenu généré par IA) → stop ; Université de Montréal pas intéressée → stop ; Couleur d'âme garde la page /charge-mentale/ pour une future mise à jour (repondu, pas de lien) ; réponses automatiques de Guérir l'anxiété (retour le 26/10) et Harmonie & Plénitude ; Lyon 1 : message bloqué par un CAPTCHA Mailinblack. Aucune relance due (premiers envois le 12/10). 4 nouveaux envois C thématique (total du jour : 10) : mapsyenlignechezmoi.fr, boost-ton-feeling-good.fr, sophrospirit.fr, delphine-basson.fr, tous vérifiés dans les Envoyés. Écartés : sandra-boyer.com (sujet principal coaching pro), medoucine.com (formulaire, 403)."
   }
  ]
 }
