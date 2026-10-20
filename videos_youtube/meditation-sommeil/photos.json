@@ -1,0 +1,20 @@
+{
+ "intro": "unsplash-pq2DJBntZW0.jpg",
+ "S'installer": "unsplash-DE9MM2voqKc.jpg",
+ "Respirer lentement": "unsplash-ezBs5eD22UE.jpg",
+ "Détendre le corps": "unsplash-4V9-bh9M9A0.jpg",
+ "Laisser passer les pensées": "unsplash-ve_uN9V8xqU.jpg",
+ "Le ciel étoilé": "unsplash--wEFdRCG4IU.jpg",
+ "Glisser vers le sommeil": "unsplash-6tZUyXUFJuw.jpg",
+ "fin": "unsplash-oE6hK94KVG4.jpg",
+ "_lum": {
+  "intro": 0.85,
+  "S'installer": 1.05,
+  "Respirer lentement": 0.9,
+  "Détendre le corps": 1.1,
+  "Laisser passer les pensées": 0.8,
+  "Le ciel étoilé": 0.85,
+  "Glisser vers le sommeil": 0.62,
+  "fin": 0.9
+ }
+}
