@@ -2038,5 +2038,16 @@
   "pin_id": "600175087890248775",
   "md5": "4225f5c5e8a110c4d130c014eeabc8b5",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-20T10:07+00:00",
+  "titre": "Poignets tendus : 3 étirements au clavier",
+  "image": "images/pin-20261020-100752.jpg",
+  "fond": "prete:images_exercices/poignets-3-etirements-clavier.jpg",
+  "theme": "posturesantistress",
+  "design": "exercices",
+  "pin_id": "600175087890251207",
+  "md5": "08be6126eab8ae6ebf84b2ce769a4c69",
+  "lien": "guide:sommeil"
  }
 ]
