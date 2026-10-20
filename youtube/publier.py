@@ -6,6 +6,7 @@ import datetime, hashlib, json, mimetypes, os, sys, time
 import requests
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from commun import dossier_plan, dossier_travail, lire_plan, ecrire_plan, DEPOT
+import metadonnees
 
 API = "https://backend.composio.dev/api"
 CLE = os.environ.get("COMPOSIO_API_KEY", "")
@@ -64,10 +65,9 @@ def url_publique(chemin_depot):
 
 def envoyer(slug):
     plan, trav = lire_plan(slug), dossier_travail(slug)
-    rapport = json.load(open(os.path.join(dossier_plan(slug), "rapport.json")))
     y = plan["youtube"]
     data = executer("YOUTUBE_UPLOAD_VIDEO", {
-        "title": y["titre"], "description": rapport["description"], "tags": y["tags"],
+        "title": y["titre"], "description": metadonnees.description(plan, metadonnees.timeline(slug)), "tags": y["tags"],
         "categoryId": y.get("categorie", "26"), "privacyStatus": "unlisted",
         "videoFilePath": fichier(os.path.join(trav, "video.mp4"), "YOUTUBE_UPLOAD_VIDEO")})
     vid = id_video(data)
@@ -114,6 +114,18 @@ def envoyer(slug):
     print(json.dumps(pub, ensure_ascii=False, indent=1))
 
 
+def actualiser(slug):
+    """Réapplique titre, description et mots-clés du plan à la vidéo déjà en ligne (sans la refabriquer)."""
+    plan = lire_plan(slug)
+    y, pub = plan["youtube"], plan.get("publication") or {}
+    executer("YOUTUBE_UPDATE_VIDEO", {"video_id": pub["video_id"], "title": y["titre"], "tags": y["tags"],
+                                      "category_id": y.get("categorie", "26"),
+                                      "description": metadonnees.description(plan, metadonnees.timeline(slug))})
+    pub["metadonnees"] = "à jour " + datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes")
+    plan["publication"] = pub
+    ecrire_plan(slug, plan)
+
+
 def connexion_youtube():
     """Vrai si un compte YouTube actif est connecté pour l'utilisateur Composio du robot."""
     global UTILISATEUR
@@ -141,6 +153,12 @@ def rendre_publiques():
         prevue = datetime.datetime.fromisoformat(plan["publication_prevue"].replace("Z", "+00:00"))
         if maintenant < prevue:
             continue
+        try:  # dernières retouches du plan (description, mots-clés) appliquées avant le passage en public
+            actualiser(slug)
+            plan = lire_plan(slug)
+            pub = plan.get("publication") or {}
+        except Exception as e:
+            print("métadonnées non actualisées :", e)
         for cle in ("video_id", "short_id"):
             if pub.get(cle):
                 executer("YOUTUBE_UPDATE_VIDEO", {"video_id": pub[cle], "privacy_status": "public"})
@@ -162,5 +180,7 @@ if __name__ == "__main__":
         sys.exit(0 if sys.argv[1] == "rendre_publiques" else 1)
     if sys.argv[1] == "envoyer":
         envoyer(sys.argv[2])
+    elif sys.argv[1] == "actualiser":
+        actualiser(sys.argv[2])
     else:
         rendre_publiques()

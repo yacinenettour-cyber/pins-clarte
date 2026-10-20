@@ -85,10 +85,7 @@ def sous_titres(slug):
     return sortie
 
 
-def chapitres(tl):
-    ch = ["00:00 Introduction"] + [f"{mmss(t['debut'])} {t['texte']}" for t in tl["titres"]]
-    ch.append(f"{mmss(tl['fin_voix'] + 3)} Musique seule pour s'endormir")
-    return ch
+from metadonnees import chapitres  # noqa: E402 (défini une seule fois, dans metadonnees.py)
 
 
 # ---------- Short vertical (1080×1920, 30 i/s) : la première respiration guidée ----------

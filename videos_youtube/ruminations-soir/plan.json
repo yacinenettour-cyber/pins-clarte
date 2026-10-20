@@ -352,7 +352,7 @@
  },
  "youtube": {
   "titre": "Méditation sommeil : calmer les pensées qui tournent la nuit",
-  "description": "Une méditation guidée pour les soirs où ton cerveau ne s'arrête pas : comprendre en 2 minutes pourquoi les pensées tournent au lit, puis respiration lente, détente du corps, pensées qui passent comme des nuages, une scène calme à imaginer, et 20 minutes de musique douce pour t'endormir. Articles et outils gratuits : https://www.contactapaisement-mental.fr/ruminations-le-soir/\n\nAudios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/\nChaîne : @ClarteMentaleFR",
+  "description": "Pour les soirs où ton cerveau ne s'arrête pas : la vidéo commence par 1 minute pour comprendre pourquoi les pensées tournent au lit (trois études citées plus bas), puis te guide pas à pas. Pas besoin de réussir quoi que ce soit : si tu t'endors avant la fin, c'est parfait.",
   "sources": [
    "Kalmbach et al., Nature and Science of Sleep, 2018 (Henry Ford Health, Détroit)",
    "Harvey et Payne, Behaviour Research and Therapy, 2002 (Université d'Oxford)",
@@ -361,22 +361,27 @@
   "tags": [
    "méditation guidée sommeil",
    "méditation sommeil",
-   "ruminations",
-   "pensées qui tournent la nuit",
    "méditation pour dormir",
+   "méditation pour s'endormir",
+   "pensées qui tournent la nuit",
+   "ruminations",
    "cerveau qui ne s'arrête pas",
-   "relaxation sommeil",
    "méditation du soir",
-   "lâcher prise",
+   "relaxation sommeil",
    "respiration pour dormir",
    "musique pour dormir",
-   "méditation française"
+   "lâcher prise",
+   "méditation française",
+   "voix douce"
   ],
   "hashtags": [
    "#méditation",
    "#sommeil",
-   "#ruminations"
+   "#méditationguidée"
   ],
-  "categorie": "26"
+  "categorie": "26",
+  "accroche": "Méditation guidée pour dormir quand les pensées tournent en boucle : 10 minutes de voix douce (respiration lente, détente du corps, scène calme à imaginer), puis 20 minutes de musique pour t'endormir.",
+  "libelle_article": "Pourquoi les pensées tournent le soir et comment les apaiser (article sourcé)",
+  "guide": "sommeil"
  }
 }

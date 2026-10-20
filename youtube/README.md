@@ -22,3 +22,12 @@ Règles de contenu (contrôlées par `fabriquer.py`) : aucune promesse de soin, 
 voix, « Je ne suis pas professionnel de santé » et lien du site dans la description, études citées seulement si elles
 sont dans un article du site (déjà vérifiées). Un nom propre lu en anglais par la voix bloque la fabrication :
 reformuler la phrase. Tout est gratuit (voix Kokoro, Whisper, photos Unsplash, musique CC BY, GitHub Actions).
+
+**Description orientée trafic (20/10/2026, `metadonnees.py`)** : si `youtube.accroche` est rempli, la description
+commence par cette phrase (mot-clé recherché en tête), puis, dans la partie visible sans « Plus », les liens :
+article du site (`article` du plan, libellé `youtube.libelle_article`), guide sommeil si `youtube.guide` = `"sommeil"`
+(seule offre, texte = contenu réel du guide, lien avec `utm_source=youtube`), audios de respiration ; puis le texte,
+les chapitres, le rappel santé, l'invitation à s'abonner, les sources et les crédits. Les 3 premiers hashtags
+s'affichent au-dessus du titre. Titre, description et mots-clés du plan sont **réappliqués juste avant le passage en
+public** (`publier.py actualiser`, appelé par `rendre_publiques`) : on peut donc retoucher le plan après la mise en
+ligne sans refabriquer la vidéo.

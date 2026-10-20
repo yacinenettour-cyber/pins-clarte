@@ -5,6 +5,7 @@ import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from commun import SITE, CHAINE, MODELES, SR, dossier_plan, dossier_travail, lire_plan, ecrire_plan
 import audio, rendu, extras
+from metadonnees import description
 
 # Règles de contenu (CLAUDE.md : sujet santé, aucune promesse, auteur non professionnel de santé)
 INTERDITS = ["guérir", "guérison", "guérit", "garanti", "miracle", "remède", "traitement", "médicament", "soigner",
@@ -26,29 +27,9 @@ def controler_texte(plan):
         erreurs.append("le lien du site manque dans la description")
     if len(plan["youtube"]["titre"]) > 100:
         erreurs.append("titre YouTube de plus de 100 caractères")
-    if len(desc.encode()) > 4900:
+    if len(desc.encode()) > 4600:  # les chapitres (~300 octets) s'ajoutent ensuite ; YouTube refuse au-delà de 5000
         erreurs.append("description trop longue (5000 octets maximum)")
     return erreurs
-
-
-def description(plan, tl):
-    y = plan["youtube"]
-    morceaux = [y["description"].strip()]
-    if tl:
-        from extras import chapitres
-        morceaux.append("\n".join(chapitres(tl)))
-    morceaux.append(y.get("rappel", "À écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : "
-                                    "si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. "
-                                    "Je ne suis pas professionnel de santé."))
-    if y.get("sources"):
-        morceaux.append("Sources :\n" + "\n".join("· " + s for s in y["sources"]))
-    photographes = ", ".join(dict.fromkeys(p["photographe"] for p in plan["photos"] if p.get("photographe")))
-    morceaux.append("Voix : voix de synthèse (Kokoro, licence Apache 2.0 ; voix « ff_siwis » issue du corpus SIWIS, CC BY 4.0).\n"
-                    "Musique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 "
-                    "http://creativecommons.org/licenses/by/4.0/\n"
-                    f"Photos : Unsplash ({photographes}). Bols chantants : Freesound, domaine public (CC0).")
-    morceaux.append(" ".join(y.get("hashtags", ["#méditation", "#sommeil", "#méditationguidée"])))
-    return "\n\n".join(morceaux)
 
 
 def controler_voix(slug, tl):
