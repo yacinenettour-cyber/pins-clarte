@@ -63,13 +63,30 @@ def url_publique(chemin_depot):
     return f"https://cdn.jsdelivr.net/gh/{os.environ.get('GITHUB_REPOSITORY', 'yacinenettour-cyber/pins-clarte')}@{sha}/{chemin_depot}"
 
 
+def prochain_reessai(maintenant):
+    """Le quota quotidien d'envois YouTube (projet Google partagé de Composio) repart à minuit heure du Pacifique,
+    soit 07:00 ou 08:00 UTC : nouvel essai à 08:30 UTC, le jour même si c'est encore à venir, sinon le lendemain."""
+    r = maintenant.replace(hour=8, minute=30, second=0, microsecond=0)
+    return r if r > maintenant else r + datetime.timedelta(days=1)
+
+
 def envoyer(slug):
     plan, trav = lire_plan(slug), dossier_travail(slug)
     y = plan["youtube"]
-    data = executer("YOUTUBE_UPLOAD_VIDEO", {
-        "title": y["titre"], "description": metadonnees.description(plan, metadonnees.timeline(slug)), "tags": y["tags"],
-        "categoryId": y.get("categorie", "26"), "privacyStatus": "unlisted",
-        "videoFilePath": fichier(os.path.join(trav, "video.mp4"), "YOUTUBE_UPLOAD_VIDEO")})
+    try:
+        data = executer("YOUTUBE_UPLOAD_VIDEO", {
+            "title": y["titre"], "description": metadonnees.description(plan, metadonnees.timeline(slug)), "tags": y["tags"],
+            "categoryId": y.get("categorie", "26"), "privacyStatus": "unlisted",
+            "videoFilePath": fichier(os.path.join(trav, "video.mp4"), "YOUTUBE_UPLOAD_VIDEO")})
+    except RuntimeError as e:
+        if "429" not in str(e) and "quota" not in str(e).lower():
+            raise
+        # quota du jour épuisé : rien n'a été envoyé ; rendre_publiques remettra "a_fabriquer" à l'heure du nouvel essai
+        plan["statut"] = "attente_quota_youtube"
+        plan["reessai_apres"] = prochain_reessai(datetime.datetime.now(datetime.timezone.utc)).isoformat(timespec="minutes")
+        plan["essais_envoi"] = plan.get("essais_envoi", 0) + 1
+        ecrire_plan(slug, plan)
+        raise
     vid = id_video(data)
     if not vid:
         raise RuntimeError("identifiant de la vidéo introuvable dans la réponse")
@@ -148,6 +165,13 @@ def rendre_publiques():
             continue
         plan = lire_plan(slug)
         pub = plan.get("publication") or {}
+        if plan.get("statut") == "attente_quota_youtube" and plan.get("reessai_apres") and \
+                maintenant >= datetime.datetime.fromisoformat(plan["reessai_apres"]):
+            # la vidéo n'est gardée que dans le dossier de travail d'un run : elle sera refabriquée puis envoyée
+            plan["statut"] = "a_fabriquer"
+            ecrire_plan(slug, plan)
+            print("nouvel essai de mise en ligne au prochain passage :", slug)
+            continue
         if plan.get("statut") != "en_ligne_non_repertoriee" or plan.get("bloquee"):
             continue
         prevue = datetime.datetime.fromisoformat(plan["publication_prevue"].replace("Z", "+00:00"))

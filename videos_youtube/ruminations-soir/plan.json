@@ -1,6 +1,6 @@
 {
  "slug": "ruminations-soir",
- "statut": "fabriquee",
+ "statut": "attente_quota_youtube",
  "publication_prevue": "2026-10-23T18:00:00Z",
  "duree_totale_min": 30,
  "article": "/ruminations-le-soir/",
@@ -383,5 +383,7 @@
   "accroche": "Méditation guidée pour dormir quand les pensées tournent en boucle : 10 minutes de voix douce (respiration lente, détente du corps, scène calme à imaginer), puis 20 minutes de musique pour t'endormir.",
   "libelle_article": "Pourquoi les pensées tournent le soir et comment les apaiser (article sourcé)",
   "guide": "sommeil"
- }
+ },
+ "reessai_apres": "2026-10-21T08:30+00:00",
+ "essais_envoi": 1
 }

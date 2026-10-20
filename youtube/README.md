@@ -16,7 +16,10 @@ Mis en place le 20/10/2026 à la demande de l'utilisateur (« je veux tout autom
    Composio : statut `attente_connexion_youtube` (remettre `a_fabriquer` une fois la connexion faite).
 
 Statuts : `a_fabriquer` → `fabriquee` → `en_ligne_non_repertoriee` → `publiee` (ou `erreur_fabrication`,
-`attente_connexion_youtube`). La vidéo et le Short restent 7 jours dans l'onglet Actions (artefact `videos-youtube`).
+`attente_connexion_youtube`, `attente_quota_youtube`). **Quota YouTube** (constaté le 20/10/2026 : erreur 429 « Video
+Uploads per day », quota du projet Google partagé de Composio) : statut `attente_quota_youtube` et `reessai_apres` =
+prochain 08:30 UTC (après la remise à zéro, minuit heure du Pacifique) ; à cette heure, `rendre_publiques` remet
+`a_fabriquer` et le passage horaire suivant refabrique puis envoie la vidéo. La vidéo et le Short restent 7 jours dans l'onglet Actions (artefact `videos-youtube`).
 
 Règles de contenu (contrôlées par `fabriquer.py`) : aucune promesse de soin, rappel « jamais en conduisant » dans la
 voix, « Je ne suis pas professionnel de santé » et lien du site dans la description, études citées seulement si elles
