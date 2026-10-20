@@ -116,10 +116,16 @@ def envoyer(slug):
 
 def connexion_youtube():
     """Vrai si un compte YouTube actif est connecté pour l'utilisateur Composio du robot."""
+    global UTILISATEUR
     r = requests.get(f"{API}/v3/connected_accounts", headers=entetes(), timeout=60,
-                     params={"toolkit_slugs": "youtube", "user_ids": UTILISATEUR, "statuses": "ACTIVE"})
-    print("connexion YouTube :", r.status_code, r.text[:400])
-    return r.ok and bool(r.json().get("items"))
+                     params={"toolkit_slugs": "youtube", "statuses": "ACTIVE"})
+    print("connexion YouTube :", r.status_code)
+    items = r.json().get("items", []) if r.ok else []
+    if not items:
+        return False
+    # l'identifiant d'utilisateur Composio est relu à chaque fois (une reconnexion ne casse rien, cf. Pinterest)
+    UTILISATEUR = items[0].get("user_id") or UTILISATEUR
+    return True
 
 
 def rendre_publiques():
@@ -151,6 +157,9 @@ if __name__ == "__main__":
         sys.exit("COMPOSIO_API_KEY manquant")
     if sys.argv[1] == "connexion":
         sys.exit(0 if connexion_youtube() else 1)
+    if not connexion_youtube():
+        print("aucun compte YouTube actif connecté dans Composio")
+        sys.exit(0 if sys.argv[1] == "rendre_publiques" else 1)
     if sys.argv[1] == "envoyer":
         envoyer(sys.argv[2])
     else:
