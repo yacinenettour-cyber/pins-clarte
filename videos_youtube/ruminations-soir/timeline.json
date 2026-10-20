@@ -1,0 +1,300 @@
+{
+ "duree": 1800,
+ "fin_voix": 564.3255208333333,
+ "cues": [
+  {
+   "debut": 3.0,
+   "fin": 4.029833333333333,
+   "texte": "Bonsoir."
+  },
+  {
+   "debut": 5.529833333333333,
+   "fin": 10.550979166666668,
+   "texte": "Cette méditation t'accompagne quand ton cerveau ne s'arrête pas au moment de dormir."
+  },
+  {
+   "debut": 12.550979166666668,
+   "fin": 16.672104166666667,
+   "texte": "Écoute-la seulement allongé, au calme, jamais en conduisant."
+  },
+  {
+   "debut": 23.672104166666667,
+   "fin": 30.397,
+   "texte": "Le soir, au lit, plus rien n'occupe ton attention. Les soucis de la journée prennent alors toute la place."
+  },
+  {
+   "debut": 32.897,
+   "fin": 41.93914583333333,
+   "texte": "Des chercheurs d'un grand hôpital de Détroit, aux États-Unis, décrivent ce temps passé éveillé au lit comme un moment idéal pour ressasser."
+  },
+  {
+   "debut": 44.43914583333333,
+   "fin": 48.82614583333333,
+   "texte": "La bonne nouvelle, c'est qu'on peut donner autre chose à faire à son esprit."
+  },
+  {
+   "debut": 51.32614583333333,
+   "fin": 60.05304166666666,
+   "texte": "Dans une étude de l'université d'Oxford, des personnes qui imaginaient une scène calme et détaillée trouvaient le sommeil plus vite."
+  },
+  {
+   "debut": 62.55304166666666,
+   "fin": 72.95966666666666,
+   "texte": "Et à l'université Baylor, de jeunes adultes qui écrivaient leur liste de tâches avant d'éteindre se sont endormis plus vite que ceux qui notaient ce qu'ils avaient déjà fait."
+  },
+  {
+   "debut": 75.95966666666666,
+   "fin": 85.98254166666666,
+   "texte": "Si tu as un carnet près de toi, tu peux noter maintenant ce qui te trotte dans la tête. Sinon, ce n'est pas grave : on va s'occuper de ces pensées ensemble."
+  },
+  {
+   "debut": 96.98254166666666,
+   "fin": 99.65983333333332,
+   "texte": "Installe-toi confortablement dans ton lit."
+  },
+  {
+   "debut": 102.65983333333332,
+   "fin": 105.41952083333332,
+   "texte": "Laisse ta tête s'enfoncer un peu dans l'oreiller."
+  },
+  {
+   "debut": 108.91952083333332,
+   "fin": 111.55860416666665,
+   "texte": "Si tu le souhaites, ferme doucement les yeux."
+  },
+  {
+   "debut": 116.55860416666665,
+   "fin": 123.38241666666666,
+   "texte": "Remarque les points où ton corps touche le matelas. L'arrière de la tête. Les épaules. Le dos. Les jambes."
+  },
+  {
+   "debut": 128.38241666666664,
+   "fin": 131.91304166666663,
+   "texte": "Le matelas te porte. Tu n'as plus besoin de te tenir."
+  },
+  {
+   "debut": 143.91304166666663,
+   "fin": 149.03741666666662,
+   "texte": "Porte maintenant ton attention sur ta respiration, sans chercher à la changer."
+  },
+  {
+   "debut": 154.03741666666662,
+   "fin": 160.0184166666666,
+   "texte": "Puis, petit à petit, ralentis-la. Suis le cercle à l'écran, si tes yeux sont encore ouverts."
+  },
+  {
+   "debut": 164.0184166666666,
+   "fin": 169.53016666666662,
+   "texte": "Tu inspires doucement par le nez pendant quatre temps, et tu expires lentement pendant six temps."
+  },
+  {
+   "debut": 172.68016666666662,
+   "fin": 174.02358333333328,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 176.68016666666662,
+   "fin": 178.12333333333328,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 182.68016666666662,
+   "fin": 184.02358333333328,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 186.68016666666662,
+   "fin": 188.12333333333328,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 192.68016666666662,
+   "fin": 194.02358333333328,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 196.68016666666662,
+   "fin": 198.12333333333328,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 202.68016666666662,
+   "fin": 204.02358333333328,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 206.68016666666662,
+   "fin": 208.12333333333328,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 213.53016666666662,
+   "fin": 218.54024999999996,
+   "texte": "Continue à ton rythme. L'expiration est un peu plus longue que l'inspiration."
+  },
+  {
+   "debut": 281.54024999999996,
+   "fin": 284.9427916666666,
+   "texte": "Très bien. Laisse ta respiration redevenir naturelle."
+  },
+  {
+   "debut": 296.9427916666666,
+   "fin": 300.03656249999995,
+   "texte": "Commence par ton front. Laisse-le devenir lisse."
+  },
+  {
+   "debut": 307.03656249999995,
+   "fin": 310.5846041666666,
+   "texte": "Tes paupières deviennent lourdes. Ta mâchoire se desserre."
+  },
+  {
+   "debut": 318.5846041666666,
+   "fin": 321.5274166666666,
+   "texte": "Tes épaules descendent un peu, loin des oreilles."
+  },
+  {
+   "debut": 329.5274166666666,
+   "fin": 332.5876041666666,
+   "texte": "La détente coule dans tes bras, jusqu'au bout des doigts."
+  },
+  {
+   "debut": 340.5876041666666,
+   "fin": 343.14406249999996,
+   "texte": "Ton ventre est souple. Rien à retenir."
+  },
+  {
+   "debut": 351.14406249999996,
+   "fin": 353.7555,
+   "texte": "Tes jambes deviennent lourdes, jusqu'aux pieds."
+  },
+  {
+   "debut": 367.7555,
+   "fin": 372.72375,
+   "texte": "Des pensées vont sûrement revenir. C'est normal, c'est ce que fait un cerveau."
+  },
+  {
+   "debut": 377.72375,
+   "fin": 381.2593333333333,
+   "texte": "Tu n'as pas besoin de les chasser, ni de les régler cette nuit."
+  },
+  {
+   "debut": 386.2593333333333,
+   "fin": 390.2602708333333,
+   "texte": "Imagine que chaque pensée est un nuage dans le ciel de la nuit."
+  },
+  {
+   "debut": 396.2602708333333,
+   "fin": 399.7376875,
+   "texte": "Tu le regardes arriver, puis s'éloigner, poussé par le vent."
+  },
+  {
+   "debut": 408.7376875,
+   "fin": 413.68210416666665,
+   "texte": "Si une pensée revient, tu la laisses repartir, une fois encore. Sans te juger."
+  },
+  {
+   "debut": 423.68210416666665,
+   "fin": 428.30327083333333,
+   "texte": "Ce qui est important sera encore là demain. Cette nuit, tu peux le poser."
+  },
+  {
+   "debut": 444.30327083333333,
+   "fin": 449.44543749999997,
+   "texte": "Pour occuper ton esprit, imagine maintenant un endroit calme, avec précision."
+  },
+  {
+   "debut": 454.44543749999997,
+   "fin": 458.44129166666664,
+   "texte": "Un grand ciel étoilé, au-dessus de montagnes silencieuses."
+  },
+  {
+   "debut": 465.44129166666664,
+   "fin": 470.78489583333334,
+   "texte": "Regarde les couleurs du ciel. Le bleu profond. Les petites lumières des étoiles."
+  },
+  {
+   "debut": 479.7848958333333,
+   "fin": 483.7404166666666,
+   "texte": "Écoute le silence. Peut-être un souffle de vent très léger."
+  },
+  {
+   "debut": 493.7404166666666,
+   "fin": 496.2970416666666,
+   "texte": "Sens l'air frais et doux sur ton visage."
+  },
+  {
+   "debut": 508.2970416666666,
+   "fin": 511.11639583333323,
+   "texte": "Reste dans cette scène aussi longtemps que tu veux."
+  },
+  {
+   "debut": 530.1163958333333,
+   "fin": 534.8238749999999,
+   "texte": "Bientôt, ma voix va se taire. La musique va continuer encore longtemps."
+  },
+  {
+   "debut": 539.8238749999999,
+   "fin": 543.17775,
+   "texte": "Si tu dors déjà, continue simplement de dormir."
+  },
+  {
+   "debut": 549.17775,
+   "fin": 554.1142916666666,
+   "texte": "Et si tu es encore éveillé, ce n'est pas un problème. Le repos compte aussi."
+  },
+  {
+   "debut": 561.1142916666666,
+   "fin": 564.3255208333333,
+   "texte": "Laisse-toi glisser, doucement, vers le sommeil. Bonne nuit."
+  }
+ ],
+ "titres": [
+  {
+   "debut": 19.672104166666667,
+   "fin": 28.672104166666667,
+   "texte": "Comprendre"
+  },
+  {
+   "debut": 92.98254166666666,
+   "fin": 101.98254166666666,
+   "texte": "S'installer"
+  },
+  {
+   "debut": 139.91304166666663,
+   "fin": 148.91304166666663,
+   "texte": "Respirer lentement"
+  },
+  {
+   "debut": 292.9427916666666,
+   "fin": 301.9427916666666,
+   "texte": "Détendre le corps"
+  },
+  {
+   "debut": 363.7555,
+   "fin": 372.7555,
+   "texte": "Laisser passer les pensées"
+  },
+  {
+   "debut": 440.30327083333333,
+   "fin": 449.30327083333333,
+   "texte": "Une scène calme"
+  },
+  {
+   "debut": 526.1163958333333,
+   "fin": 535.1163958333333,
+   "texte": "Glisser vers le sommeil"
+  }
+ ],
+ "souffles": [
+  {
+   "debut": 172.53016666666662,
+   "cycles": 4
+  },
+  {
+   "debut": 220.54024999999996,
+   "cycles": 6
+  }
+ ],
+ "insp": 4.0,
+ "exp": 6.0
+}
