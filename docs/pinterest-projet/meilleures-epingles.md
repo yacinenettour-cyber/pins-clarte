@@ -102,3 +102,6 @@ anti_doublons.py) reste à fabriquer au prochain passage. Description de cadre p
 poster background, warm cream and soft gold watercolor paper, delicate golden ornamental frame border with thin double
 lines, small lavender sprigs and pale eucalyptus leaves in the corners, soft peach watercolor blush near the edges,
 completely empty center area, no people, no text ».
+Vérification Pinterest du 20/10 (PINTEREST_LIST_PINS, chiffres mis à jour le 20/10 à 5 h 09 UTC) : « Lâcher prise »
+(600175087890231482) et « Bas du dos » (600175087890222984) sont en ligne, avec 0 impression, 0 enregistrement, 0 clic
+pour l'instant (comme toutes les épingles des 18-19/10 : délai habituel des statistiques).
