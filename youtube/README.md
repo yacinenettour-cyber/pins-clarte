@@ -1,0 +1,24 @@
+# Robot vidéo YouTube (chaîne @ClarteMentaleFR)
+
+Mis en place le 20/10/2026 à la demande de l'utilisateur (« je veux tout automatiser », puis « Oui, automatise »).
+
+1. **Chaque semaine, la tâche Claude « Vidéo YouTube »** écrit `videos_youtube/<slug>/plan.json` (statut `a_fabriquer`) :
+   un sujet tiré d'un article du site, une courte partie « Comprendre » qui reprend les sources vérifiées de l'article,
+   puis la pratique guidée ; photos Unsplash (URL directes), titre, description, tags, miniature, Short.
+2. **`.github/workflows/youtube.yml`** (à chaque nouveau plan, et toutes les heures) :
+   `youtube/fabriquer.py` → photos, voix Kokoro « B » + musique + bols (`audio.py`), contrôle de la voix par
+   transcription (Whisper small, score ≥ 0,85), images animées (`rendu.py`, morceaux parallèles), Short, miniature,
+   sous-titres, contrôles (durée, images non noires, mots interdits, mentions obligatoires). Si un contrôle échoue :
+   statut `erreur_fabrication`, rien n'est publié, détail dans `rapport.json`.
+3. **Mise en ligne** (`publier.py`, API Composio, même clé que Pinterest) : vidéo et Short en « non répertorié »,
+   miniature (adresse jsDelivr du dépôt), sous-titres ; puis passage en public à `publication_prevue`, sauf si le
+   plan contient `"bloquee": true` (phase de rodage proposée à l'utilisateur). Sans compte YouTube connecté dans
+   Composio : statut `attente_connexion_youtube` (remettre `a_fabriquer` une fois la connexion faite).
+
+Statuts : `a_fabriquer` → `fabriquee` → `en_ligne_non_repertoriee` → `publiee` (ou `erreur_fabrication`,
+`attente_connexion_youtube`). La vidéo et le Short restent 7 jours dans l'onglet Actions (artefact `videos-youtube`).
+
+Règles de contenu (contrôlées par `fabriquer.py`) : aucune promesse de soin, rappel « jamais en conduisant » dans la
+voix, « Je ne suis pas professionnel de santé » et lien du site dans la description, études citées seulement si elles
+sont dans un article du site (déjà vérifiées). Un nom propre lu en anglais par la voix bloque la fabrication :
+reformuler la phrase. Tout est gratuit (voix Kokoro, Whisper, photos Unsplash, musique CC BY, GitHub Actions).

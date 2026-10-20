@@ -1,0 +1,130 @@
+name: YouTube - fabrication et mise en ligne des méditations
+
+# Ajouté le 20/10/2026 avec l'accord de l'utilisateur (« Oui, automatise ») : la tâche Claude hebdomadaire écrit
+# videos_youtube/<slug>/plan.json (statut "a_fabriquer") ; ce robot fabrique la vidéo (youtube/fabriquer.py : voix,
+# musique, photos animées, Short, miniature, sous-titres, contrôles), la met en ligne en « non répertorié » par
+# Composio, puis la rend publique à l'heure prévue (publication_prevue), sauf si le plan contient "bloquee": true.
+# Rien n'est publié si un contrôle échoue (rapport.json du dossier).
+on:
+  push:
+    branches: [main]
+    paths: ["videos_youtube/*/plan.json"]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube
+  cancel-in-progress: false
+
+jobs:
+  youtube:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      COMPOSIO_API_KEY: ${{ secrets.COMPOSIO_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Vidéos à fabriquer
+        id: liste
+        run: |
+          python - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, os
+          r = "videos_youtube"
+          slugs = [s for s in sorted(os.listdir(r))
+                   if os.path.exists(f"{r}/{s}/plan.json") and json.load(open(f"{r}/{s}/plan.json")).get("statut") == "a_fabriquer"]
+          print("slugs=" + " ".join(slugs))
+          EOF
+          cat "$GITHUB_OUTPUT"
+      - name: Outils (ffmpeg, voix, transcription)
+        if: steps.liste.outputs.slugs != ''
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q kokoro-onnx soundfile sherpa-onnx scipy pillow requests numpy
+      - name: Modèles en cache
+        if: steps.liste.outputs.slugs != ''
+        uses: actions/cache@v4
+        with:
+          path: modeles
+          key: modeles-kokoro1-whispersmall-v1
+      - name: Télécharger les modèles gratuits si absents
+        if: steps.liste.outputs.slugs != ''
+        run: |
+          mkdir -p modeles && cd modeles
+          [ -f kokoro-v1.0.onnx ] || curl -sSL -o kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+          [ -f voices-v1.0.bin ] || curl -sSL -o voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+          if [ ! -d sherpa-onnx-whisper-small ]; then
+            curl -sSL -o w.tar.bz2 https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-small.tar.bz2
+            tar xjf w.tar.bz2 && rm w.tar.bz2
+            rm -f sherpa-onnx-whisper-small/small-encoder.onnx sherpa-onnx-whisper-small/small-decoder.onnx
+          fi
+          ls -la . sherpa-onnx-whisper-small
+      - name: Fabriquer, contrôler et mettre en ligne (non répertorié)
+        if: steps.liste.outputs.slugs != ''
+        run: |
+          git config user.name "robot-youtube"
+          git config user.email "robot-youtube@users.noreply.github.com"
+          pousser() {
+            git add videos_youtube
+            git diff --cached --quiet && return 0
+            git commit -q -m "$1"
+            for n in 1 2 3 4 5; do
+              if git pull -q --rebase origin main && git push -q origin HEAD:main; then return 0; fi
+              git rebase --abort 2>/dev/null || true
+              sleep $((5 * n))
+            done
+            return 1
+          }
+          for slug in ${{ steps.liste.outputs.slugs }}; do
+            echo "=== $slug ==="
+            if python youtube/fabriquer.py "$slug"; then
+              pousser "YouTube : $slug fabriquée et contrôlée"
+              if [ -n "$COMPOSIO_API_KEY" ] && python youtube/publier.py connexion; then
+                python youtube/publier.py envoyer "$slug" || echo "Mise en ligne échouée pour $slug (voir le journal)"
+                pousser "YouTube : $slug en ligne (non répertoriée)"
+              else
+                python - "$slug" <<'EOF'
+          import json, sys
+          p = f"videos_youtube/{sys.argv[1]}/plan.json"
+          d = json.load(open(p)); d["statut"] = "attente_connexion_youtube"
+          open(p, "w").write(json.dumps(d, ensure_ascii=False, indent=1) + "\n")
+          EOF
+                pousser "YouTube : $slug fabriquée, en attente de la connexion YouTube"
+              fi
+            else
+              pousser "YouTube : $slug non publiée, contrôle échoué (rapport.json)"
+            fi
+          done
+      - name: Garder la vidéo et le Short 7 jours (téléchargeables depuis l'onglet Actions)
+        if: steps.liste.outputs.slugs != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos-youtube
+          path: |
+            travail/*/video.mp4
+            travail/*/short.mp4
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Rendre publiques les vidéos dont l'heure est venue
+        if: env.COMPOSIO_API_KEY != ''
+        run: |
+          git config user.name "robot-youtube"
+          git config user.email "robot-youtube@users.noreply.github.com"
+          pip install -q requests numpy
+          python youtube/publier.py rendre_publiques
+          git add videos_youtube
+          if ! git diff --cached --quiet; then
+            git commit -q -m "YouTube : vidéos rendues publiques"
+            for n in 1 2 3 4 5; do
+              if git pull -q --rebase origin main && git push -q origin HEAD:main; then exit 0; fi
+              git rebase --abort 2>/dev/null || true
+              sleep $((5 * n))
+            done
+            exit 1
+          fi

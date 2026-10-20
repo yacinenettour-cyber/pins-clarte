@@ -1,0 +1,382 @@
+{
+ "slug": "ruminations-soir",
+ "statut": "a_fabriquer",
+ "publication_prevue": "2026-10-23T18:00:00Z",
+ "duree_totale_min": 30,
+ "article": "/ruminations-le-soir/",
+ "ecran": {
+  "titre": "Quand ton cerveau ne s'arrête pas la nuit",
+  "sous_titre": "Méditation guidée pour le sommeil · voix douce · musique"
+ },
+ "brume": [
+  "Laisser passer les pensées"
+ ],
+ "photos": [
+  {
+   "partie": "intro",
+   "nom": "unsplash-pq2DJBntZW0.jpg",
+   "url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Jeremy Thomas",
+   "lum": 0.85
+  },
+  {
+   "partie": "Comprendre",
+   "nom": "unsplash-PjJAE7iX4zA.jpg",
+   "url": "https://images.unsplash.com/photo-1770668891698-faed64274d4e?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Lu",
+   "lum": 0.7
+  },
+  {
+   "partie": "S'installer",
+   "nom": "unsplash-DE9MM2voqKc.jpg",
+   "url": "https://images.unsplash.com/photo-1552858725-2758b5fb1286?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Jp Valery",
+   "lum": 1.05
+  },
+  {
+   "partie": "Respirer lentement",
+   "nom": "unsplash-ezBs5eD22UE.jpg",
+   "url": "https://images.unsplash.com/photo-1766354509987-2cb925fbcd12?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Michael Beier",
+   "lum": 0.9,
+   "short": true
+  },
+  {
+   "partie": "Détendre le corps",
+   "nom": "unsplash-4V9-bh9M9A0.jpg",
+   "url": "https://images.unsplash.com/photo-1567640068991-ac0aa99a430e?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Pete Nuij",
+   "lum": 1.1
+  },
+  {
+   "partie": "Laisser passer les pensées",
+   "nom": "unsplash-ve_uN9V8xqU.jpg",
+   "url": "https://images.unsplash.com/photo-1499578124509-1611b77778c8?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Ganapathy Kumar",
+   "lum": 0.8
+  },
+  {
+   "partie": "Une scène calme",
+   "nom": "unsplash--wEFdRCG4IU.jpg",
+   "url": "https://images.unsplash.com/photo-1498611291069-aa296192f1e4?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Robson Hatsukami Morgan",
+   "lum": 0.85
+  },
+  {
+   "partie": "Glisser vers le sommeil",
+   "nom": "unsplash-6tZUyXUFJuw.jpg",
+   "url": "https://images.unsplash.com/photo-1753790360880-cafe13f5ac0d?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Georgii Eletskikh",
+   "lum": 0.62
+  },
+  {
+   "partie": "fin",
+   "nom": "unsplash-oE6hK94KVG4.jpg",
+   "url": "https://images.unsplash.com/photo-1617784281277-33b71e968f62?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Hubert Lenkiewicz",
+   "lum": 0.9
+  }
+ ],
+ "script": [
+  [
+   "pause",
+   3
+  ],
+  [
+   "dire",
+   "Bonsoir.",
+   1.5
+  ],
+  [
+   "dire",
+   "Cette méditation t'accompagne quand ton cerveau ne s'arrête pas au moment de dormir.",
+   2
+  ],
+  [
+   "dire",
+   "Écoute-la seulement allongé, au calme, jamais en conduisant.",
+   3
+  ],
+  [
+   "titre",
+   "Comprendre",
+   4
+  ],
+  [
+   "dire",
+   "Le soir, au lit, plus rien n'occupe ton attention. Les soucis de la journée prennent alors toute la place.",
+   2.5
+  ],
+  [
+   "dire",
+   "Des chercheurs d'un grand hôpital de Détroit, aux États-Unis, décrivent ce temps passé éveillé au lit comme un moment idéal pour ressasser.",
+   2.5
+  ],
+  [
+   "dire",
+   "La bonne nouvelle, c'est qu'on peut donner autre chose à faire à son esprit.",
+   2.5
+  ],
+  [
+   "dire",
+   "Dans une étude de l'université d'Oxford, des personnes qui imaginaient une scène calme et détaillée trouvaient le sommeil plus vite.",
+   2.5
+  ],
+  [
+   "dire",
+   "Et à l'université Baylor, de jeunes adultes qui écrivaient leur liste de tâches avant d'éteindre se sont endormis plus vite que ceux qui notaient ce qu'ils avaient déjà fait.",
+   3
+  ],
+  [
+   "dire",
+   "Si tu as un carnet près de toi, tu peux noter maintenant ce qui te trotte dans la tête. Sinon, ce n'est pas grave : on va s'occuper de ces pensées ensemble.",
+   7
+  ],
+  [
+   "titre",
+   "S'installer",
+   4
+  ],
+  [
+   "dire",
+   "Installe-toi confortablement dans ton lit.",
+   3
+  ],
+  [
+   "dire",
+   "Laisse ta tête s'enfoncer un peu dans l'oreiller.",
+   3.5
+  ],
+  [
+   "dire",
+   "Si tu le souhaites, ferme doucement les yeux.",
+   5
+  ],
+  [
+   "dire",
+   "Remarque les points où ton corps touche le matelas. L'arrière de la tête. Les épaules. Le dos. Les jambes.",
+   5
+  ],
+  [
+   "dire",
+   "Le matelas te porte. Tu n'as plus besoin de te tenir.",
+   8
+  ],
+  [
+   "titre",
+   "Respirer lentement",
+   4
+  ],
+  [
+   "dire",
+   "Porte maintenant ton attention sur ta respiration, sans chercher à la changer.",
+   5
+  ],
+  [
+   "dire",
+   "Puis, petit à petit, ralentis-la. Suis le cercle à l'écran, si tes yeux sont encore ouverts.",
+   4
+  ],
+  [
+   "dire",
+   "Tu inspires doucement par le nez pendant quatre temps, et tu expires lentement pendant six temps.",
+   3
+  ],
+  [
+   "souffle",
+   4,
+   true
+  ],
+  [
+   "dire",
+   "Continue à ton rythme. L'expiration est un peu plus longue que l'inspiration.",
+   2
+  ],
+  [
+   "souffle",
+   6,
+   false
+  ],
+  [
+   "dire",
+   "Très bien. Laisse ta respiration redevenir naturelle.",
+   8
+  ],
+  [
+   "titre",
+   "Détendre le corps",
+   4
+  ],
+  [
+   "dire",
+   "Commence par ton front. Laisse-le devenir lisse.",
+   7
+  ],
+  [
+   "dire",
+   "Tes paupières deviennent lourdes. Ta mâchoire se desserre.",
+   8
+  ],
+  [
+   "dire",
+   "Tes épaules descendent un peu, loin des oreilles.",
+   8
+  ],
+  [
+   "dire",
+   "La détente coule dans tes bras, jusqu'au bout des doigts.",
+   8
+  ],
+  [
+   "dire",
+   "Ton ventre est souple. Rien à retenir.",
+   8
+  ],
+  [
+   "dire",
+   "Tes jambes deviennent lourdes, jusqu'aux pieds.",
+   10
+  ],
+  [
+   "titre",
+   "Laisser passer les pensées",
+   4
+  ],
+  [
+   "dire",
+   "Des pensées vont sûrement revenir. C'est normal, c'est ce que fait un cerveau.",
+   5
+  ],
+  [
+   "dire",
+   "Tu n'as pas besoin de les chasser, ni de les régler cette nuit.",
+   5
+  ],
+  [
+   "dire",
+   "Imagine que chaque pensée est un nuage dans le ciel de la nuit.",
+   6
+  ],
+  [
+   "dire",
+   "Tu le regardes arriver, puis s'éloigner, poussé par le vent.",
+   9
+  ],
+  [
+   "dire",
+   "Si une pensée revient, tu la laisses repartir, une fois encore. Sans te juger.",
+   10
+  ],
+  [
+   "dire",
+   "Ce qui est important sera encore là demain. Cette nuit, tu peux le poser.",
+   12
+  ],
+  [
+   "titre",
+   "Une scène calme",
+   4
+  ],
+  [
+   "dire",
+   "Pour occuper ton esprit, imagine maintenant un endroit calme, avec précision.",
+   5
+  ],
+  [
+   "dire",
+   "Un grand ciel étoilé, au-dessus de montagnes silencieuses.",
+   7
+  ],
+  [
+   "dire",
+   "Regarde les couleurs du ciel. Le bleu profond. Les petites lumières des étoiles.",
+   9
+  ],
+  [
+   "dire",
+   "Écoute le silence. Peut-être un souffle de vent très léger.",
+   10
+  ],
+  [
+   "dire",
+   "Sens l'air frais et doux sur ton visage.",
+   12
+  ],
+  [
+   "dire",
+   "Reste dans cette scène aussi longtemps que tu veux.",
+   15
+  ],
+  [
+   "titre",
+   "Glisser vers le sommeil",
+   4
+  ],
+  [
+   "dire",
+   "Bientôt, ma voix va se taire. La musique va continuer encore longtemps.",
+   5
+  ],
+  [
+   "dire",
+   "Si tu dors déjà, continue simplement de dormir.",
+   6
+  ],
+  [
+   "dire",
+   "Et si tu es encore éveillé, ce n'est pas un problème. Le repos compte aussi.",
+   7
+  ],
+  [
+   "dire",
+   "Laisse-toi glisser, doucement, vers le sommeil. Bonne nuit.",
+   5
+  ]
+ ],
+ "miniature": {
+  "photo": "unsplash-ve_uN9V8xqU.jpg",
+  "zoom": 1.4,
+  "cadrage_x": 0.1,
+  "cadrage_y": 0.39,
+  "ligne1": "Pensées qui",
+  "ligne2": "tournent la nuit ?",
+  "ligne3": "Méditation · 30 min",
+  "pastille": "Voix douce + musique"
+ },
+ "short": {
+  "titre": "Respire avec moi quand ton cerveau ne s'arrête pas la nuit #sommeil #respiration",
+  "description": "Exercice de respiration 4-6 pour calmer les pensées du soir.",
+  "haut1": "Respire avec moi",
+  "haut2": "pour t'endormir",
+  "bas1": "Méditation complète (30 min) sur la chaîne"
+ },
+ "youtube": {
+  "titre": "Méditation sommeil : calmer les pensées qui tournent la nuit",
+  "description": "Une méditation guidée pour les soirs où ton cerveau ne s'arrête pas : comprendre en 2 minutes pourquoi les pensées tournent au lit, puis respiration lente, détente du corps, pensées qui passent comme des nuages, une scène calme à imaginer, et 20 minutes de musique douce pour t'endormir. Articles et outils gratuits : https://www.contactapaisement-mental.fr/ruminations-le-soir/\n\nAudios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/\nChaîne : @ClarteMentaleFR",
+  "sources": [
+   "Kalmbach et al., Nature and Science of Sleep, 2018 (Henry Ford Health, Détroit)",
+   "Harvey et Payne, Behaviour Research and Therapy, 2002 (Université d'Oxford)",
+   "Scullin et al., Journal of Experimental Psychology: General, 2018 (Université Baylor)"
+  ],
+  "tags": [
+   "méditation guidée sommeil",
+   "méditation sommeil",
+   "ruminations",
+   "pensées qui tournent la nuit",
+   "méditation pour dormir",
+   "cerveau qui ne s'arrête pas",
+   "relaxation sommeil",
+   "méditation du soir",
+   "lâcher prise",
+   "respiration pour dormir",
+   "musique pour dormir",
+   "méditation française"
+  ],
+  "hashtags": [
+   "#méditation",
+   "#sommeil",
+   "#ruminations"
+  ],
+  "categorie": "26"
+ }
+}

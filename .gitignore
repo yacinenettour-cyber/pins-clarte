@@ -1,2 +1,6 @@
 # Caches Python créés par outils/verifier_banque.py (import de anti_doublons)
 __pycache__/
+
+# Robot YouTube : fichiers fabriqués et modèles téléchargés (jamais commités)
+travail/
+modeles/
