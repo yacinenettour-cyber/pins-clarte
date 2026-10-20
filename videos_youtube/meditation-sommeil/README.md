@@ -8,6 +8,12 @@ sous-titres et vraie musique de détente, qui amène du trafic vers le site. Tou
   (le modèle ancien `voice-fr-siwis-medium` de rhasspy/piper v0.0.2 les supprime). À télécharger dans `voix/` :
   `https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-fr_FR-siwis-medium.tar.bz2`,
   puis `pip install piper-tts`. Vérification : `verif_voix.py` (transcription Whisper small de sherpa-onnx, 94 %).
+- **Voix retenue (20/10, choix « B » de l'utilisateur, qui trouvait la première trop robotique)** : Kokoro (licence
+  Apache 2.0, voix `ff_siwis`), vitesse 0,82, adoucie (filtre `DOUX` d'`audio.py` : aigus et sifflantes réduits, son plus
+  chaud, léger écho). Modèle : `kokoro-v1.0.onnx` et `voices-v1.0.bin` des versions GitHub de thewh1teagle/kokoro-onnx
+  (`pip install kokoro-onnx soundfile`), à mettre dans `kokoro/`. Lancement : `python3 audio.py siwis kokoro`.
+  Le phonétiseur lit « dos » et « rythme » en anglais : corrigés dans les phonèmes ; « ... » ajouté en fin de phrase
+  (sinon la dernière syllabe est coupée) ; « Inspire doucement » / « Expire lentement » (un mot seul est mal dit).
 - **Son** : `audio.py` → `piste.wav` et `timeline.json`. Musique « Deep Relaxation » (Kevin MacLeod, CC BY 4.0,
   `site/sources-audio/`), bols chantants CC0 (`site/sources-audio/bols/`), musique baissée sous la voix.
 - **Image** : `rendu2.py` (une photo Unsplash par partie, zoom lent, fondus enchaînés, particules, brume, cercle de

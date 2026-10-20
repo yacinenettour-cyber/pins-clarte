@@ -14,6 +14,14 @@ else:
     d = f"{ICI}/voix/vits-piper-fr_FR-upmc-medium/fr_FR-upmc-medium.onnx"; spk = 0
 voix = PiperVoice.load(d, config_path=d + ".json")
 CFG = SynthesisConfig(speaker_id=spk, length_scale=1.32, noise_scale=0.55, noise_w_scale=0.7)
+# Voix « B » choisie par l'utilisateur le 20/10 : Kokoro ff_siwis (plus naturelle), ralentie puis adoucie
+KOKORO = len(sys.argv) > 2 and sys.argv[2] == "kokoro"
+if KOKORO:
+    import soundfile as sf
+    from kokoro_onnx import Kokoro
+    kok = Kokoro(f"{ICI}/kokoro/kokoro-v1.0.onnx", f"{ICI}/kokoro/voices-v1.0.bin")
+DOUX = ("highpass=f=90,lowpass=f=7500,equalizer=f=220:t=q:w=1:g=2.5,equalizer=f=3200:t=q:w=1.4:g=-3.5,deesser=i=0.4,"
+        "acompressor=threshold=-22dB:ratio=2.2:attack=25:release=300,aecho=0.85:0.55:45|85:0.14|0.09")
 INSP, EXP = 4.0, 6.0
 
 
@@ -28,8 +36,16 @@ def charger(chemin, duree=None):
 
 def tts(texte):
     tmp = f"{ICI}/_tts.wav"
-    with wave.open(tmp, "wb") as w:
-        voix.synthesize_wav(texte, w, syn_config=CFG)
+    if KOKORO:
+        # « ... » final : évite que la dernière syllabe soit coupée ; mots que le phonétiseur lit en anglais corrigés
+        ph = kok.tokenizer.phonemize(texte.rstrip(".…") + "...", "fr-fr")
+        ph = ph.replace("(en)dˈɒs(fr)", "dˈo").replace("(en)ɹˈɪθm(fr)", "ʁˈitm")
+        assert "(en)" not in ph, (texte, ph)
+        k, sr = kok.create(ph, voice="ff_siwis", speed=0.82, lang="fr-fr", is_phonemes=True)
+        sf.write(tmp, k, sr)
+    else:
+        with wave.open(tmp, "wb") as w:
+            voix.synthesize_wav(texte, w, syn_config=CFG)
     a = charger(tmp)
     # coupe les silences de bord et adoucit attaque / fin
     env = np.abs(a).max(axis=1)
@@ -60,7 +76,8 @@ for el in SCRIPT:
         for i in range(n):
             if guide:
                 for mot, decal in (("Inspire…", 0.15), ("Expire…", INSP + 0.15)):
-                    a = tts(mot.replace("…", ""))
+                    # un mot seul est mal prononcé par Kokoro : « Inspire doucement », « Expire lentement »
+                    a = tts({"Inspire…": "Inspire doucement", "Expire…": "Expire lentement"}[mot] if KOKORO else mot.replace("…", ""))
                     morceaux.append((t + decal, a))
                     cues.append({"debut": t + decal, "fin": t + decal + max(len(a) / SR, 2.5), "texte": mot})
             t += INSP + EXP
@@ -72,6 +89,13 @@ N = int(duree * SR)
 voixp = np.zeros((N, 2), np.float32)
 for d0, a in morceaux:
     i = int(d0 * SR); voixp[i:i + len(a)] += a[: N - i]
+if KOKORO:
+    brut_v = f"{ICI}/_voix.f32"
+    voixp.astype(np.float32).tofile(brut_v)
+    voixp = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ac", "2", "-ar", str(SR), "-i", brut_v,
+                                          "-af", DOUX, "-f", "f32le", "-ac", "2", "-ar", str(SR), "-"],
+                                         capture_output=True, check=True).stdout, np.float32).reshape(-1, 2)[:N].copy()
+    os.remove(brut_v)
 voixp *= 0.80 / max(1e-6, np.abs(voixp).max())
 
 # Musique « Deep Relaxation » (Kevin MacLeod, CC BY 4.0) : 11 min ; bouclée avec fondu si la vidéo est plus longue

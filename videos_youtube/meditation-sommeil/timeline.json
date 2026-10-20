@@ -1,315 +1,315 @@
 {
- "duree": 682.9033125000001,
+ "duree": 672.3387916666665,
  "cues": [
   {
    "debut": 14.0,
-   "fin": 14.951125,
+   "fin": 15.029833333333332,
    "texte": "Bonsoir."
   },
   {
-   "debut": 17.451125,
-   "fin": 22.309770833333335,
+   "debut": 17.529833333333332,
+   "fin": 22.351520833333332,
    "texte": "Cette méditation t'accompagne vers le sommeil, pendant une douzaine de minutes."
   },
   {
-   "debut": 24.809770833333335,
-   "fin": 29.035083333333336,
+   "debut": 24.851520833333332,
+   "fin": 28.972770833333332,
    "texte": "Écoute-la seulement allongé, au calme, jamais en conduisant."
   },
   {
-   "debut": 32.03508333333333,
-   "fin": 36.61997916666667,
+   "debut": 31.972770833333332,
+   "fin": 36.434687499999995,
    "texte": "Tu n'as rien à réussir. Il suffit d'écouter, et de te laisser porter."
   },
   {
-   "debut": 45.61997916666667,
-   "fin": 47.91833333333334,
+   "debut": 45.434687499999995,
+   "fin": 48.111999999999995,
    "texte": "Installe-toi confortablement dans ton lit."
   },
   {
-   "debut": 50.91833333333334,
-   "fin": 53.62485416666667,
+   "debut": 51.111999999999995,
+   "fin": 53.87170833333333,
    "texte": "Laisse ta tête s'enfoncer un peu dans l'oreiller."
   },
   {
-   "debut": 56.62485416666667,
-   "fin": 61.39766666666667,
+   "debut": 56.87170833333333,
+   "fin": 61.270291666666665,
    "texte": "Tes bras reposent le long du corps, ou sur ton ventre, comme tu préfères."
   },
   {
-   "debut": 65.39766666666668,
-   "fin": 68.40347916666668,
+   "debut": 65.27029166666667,
+   "fin": 67.909375,
    "texte": "Si tu le souhaites, ferme doucement les yeux."
   },
   {
-   "debut": 73.40347916666668,
-   "fin": 76.94789583333335,
+   "debut": 72.909375,
+   "fin": 76.57158333333334,
    "texte": "Remarque simplement les points où ton corps touche le matelas."
   },
   {
-   "debut": 79.94789583333335,
-   "fin": 86.18820833333335,
+   "debut": 79.57158333333334,
+   "fin": 83.49714583333333,
    "texte": "L'arrière de la tête. Les épaules. Le dos. Les jambes. Les talons."
   },
   {
-   "debut": 90.18820833333335,
-   "fin": 93.64254166666669,
+   "debut": 87.49714583333333,
+   "fin": 91.02777083333334,
    "texte": "Le matelas te porte. Tu n'as plus besoin de te tenir."
   },
   {
-   "debut": 104.64254166666669,
-   "fin": 109.61720833333335,
+   "debut": 102.02777083333334,
+   "fin": 107.110125,
    "texte": "Maintenant, porte ton attention sur ta respiration, sans chercher à la changer."
   },
   {
-   "debut": 113.61720833333335,
-   "fin": 120.08595833333335,
+   "debut": 111.110125,
+   "fin": 117.09114583333333,
    "texte": "Puis, petit à petit, ralentis-la. Suis le cercle à l'écran, si tes yeux sont encore ouverts."
   },
   {
-   "debut": 124.08595833333335,
-   "fin": 129.7688541666667,
+   "debut": 121.09114583333333,
+   "fin": 126.60289583333333,
    "texte": "Tu inspires doucement par le nez pendant quatre temps, et tu expires lentement pendant six temps."
   },
   {
-   "debut": 132.9188541666667,
-   "fin": 135.4188541666667,
+   "debut": 129.75289583333333,
+   "fin": 132.25289583333333,
    "texte": "Inspire…"
   },
   {
-   "debut": 136.9188541666667,
-   "fin": 139.4188541666667,
+   "debut": 133.75289583333333,
+   "fin": 136.25289583333333,
    "texte": "Expire…"
   },
   {
-   "debut": 142.9188541666667,
-   "fin": 145.4188541666667,
+   "debut": 139.75289583333333,
+   "fin": 142.25289583333333,
    "texte": "Inspire…"
   },
   {
-   "debut": 146.9188541666667,
-   "fin": 149.4188541666667,
+   "debut": 143.75289583333333,
+   "fin": 146.25289583333333,
    "texte": "Expire…"
   },
   {
-   "debut": 152.9188541666667,
-   "fin": 155.4188541666667,
+   "debut": 149.75289583333333,
+   "fin": 152.25289583333333,
    "texte": "Inspire…"
   },
   {
-   "debut": 156.9188541666667,
-   "fin": 159.4188541666667,
+   "debut": 153.75289583333333,
+   "fin": 156.25289583333333,
    "texte": "Expire…"
   },
   {
-   "debut": 162.9188541666667,
-   "fin": 165.4188541666667,
+   "debut": 159.75289583333333,
+   "fin": 162.25289583333333,
    "texte": "Inspire…"
   },
   {
-   "debut": 166.9188541666667,
-   "fin": 169.4188541666667,
+   "debut": 163.75289583333333,
+   "fin": 166.25289583333333,
    "texte": "Expire…"
   },
   {
-   "debut": 173.7688541666667,
-   "fin": 178.73152083333338,
+   "debut": 170.60289583333332,
+   "fin": 175.613,
    "texte": "Continue à ton rythme. L'expiration est un peu plus longue que l'inspiration."
   },
   {
-   "debut": 241.73152083333338,
-   "fin": 246.4023541666667,
+   "debut": 238.613,
+   "fin": 242.59856249999999,
    "texte": "Très bien. Laisse maintenant ta respiration redevenir naturelle."
   },
   {
-   "debut": 257.4023541666667,
-   "fin": 261.6672083333334,
+   "debut": 253.5985625,
+   "fin": 257.7098125,
    "texte": "Nous allons parcourir le corps, lentement, de la tête jusqu'aux pieds."
   },
   {
-   "debut": 265.6672083333334,
-   "fin": 270.2026458333334,
+   "debut": 261.7098125,
+   "fin": 265.8620208333333,
    "texte": "Commence par ton front. Laisse-le devenir lisse, comme une eau calme."
   },
   {
-   "debut": 276.2026458333334,
-   "fin": 282.39041666666674,
+   "debut": 271.8620208333333,
+   "fin": 277.65166666666664,
    "texte": "Tes paupières deviennent lourdes. Ta mâchoire se desserre. Ta langue se pose au fond de la bouche."
   },
   {
-   "debut": 289.39041666666674,
-   "fin": 292.62547916666676,
+   "debut": 284.65166666666664,
+   "fin": 287.59447916666664,
    "texte": "Tes épaules descendent un peu, loin des oreilles."
   },
   {
-   "debut": 298.62547916666676,
-   "fin": 301.45533333333344,
+   "debut": 293.59447916666664,
+   "fin": 296.6546666666666,
    "texte": "La détente coule dans tes bras, jusqu'au bout des doigts."
   },
   {
-   "debut": 308.45533333333344,
-   "fin": 311.8787708333334,
+   "debut": 303.6546666666666,
+   "fin": 306.61249999999995,
    "texte": "Ta poitrine se soulève et redescend, toute seule."
   },
   {
-   "debut": 317.8787708333334,
-   "fin": 320.5286458333334,
+   "debut": 312.61249999999995,
+   "fin": 315.1642083333333,
    "texte": "Ton ventre est souple. Rien à retenir."
   },
   {
-   "debut": 327.5286458333334,
-   "fin": 331.4945000000001,
+   "debut": 322.1642083333333,
+   "fin": 326.03412499999996,
    "texte": "Ton dos s'étale sur le matelas, vertèbre après vertèbre."
   },
   {
-   "debut": 338.4945000000001,
-   "fin": 341.75868750000006,
+   "debut": 333.03412499999996,
+   "fin": 335.6454166666666,
    "texte": "Tes hanches, tes cuisses, tes genoux deviennent lourds."
   },
   {
-   "debut": 347.75868750000006,
-   "fin": 352.0451041666667,
+   "debut": 341.6454166666666,
+   "fin": 345.2967083333333,
    "texte": "Et la détente descend jusqu'à tes mollets, tes chevilles, tes pieds."
   },
   {
-   "debut": 360.04510416666676,
-   "fin": 363.0826458333334,
+   "debut": 353.2967083333333,
+   "fin": 355.9910833333333,
    "texte": "Tout ton corps est posé. Lourd. Tranquille."
   },
   {
-   "debut": 377.0826458333334,
-   "fin": 380.83068750000007,
+   "debut": 369.9910833333333,
+   "fin": 373.2973124999999,
    "texte": "Il est possible que des pensées arrivent. C'est normal."
   },
   {
-   "debut": 384.83068750000007,
-   "fin": 389.4441666666667,
+   "debut": 377.2973124999999,
+   "fin": 381.62783333333323,
    "texte": "Une chose à faire demain. Un souvenir de la journée. Une inquiétude."
   },
   {
-   "debut": 393.4441666666667,
-   "fin": 396.8284583333334,
+   "debut": 385.62783333333323,
+   "fin": 389.1364999999999,
    "texte": "Tu n'as pas besoin de les chasser, ni de les régler maintenant."
   },
   {
-   "debut": 400.8284583333334,
-   "fin": 405.1061250000001,
+   "debut": 393.1364999999999,
+   "fin": 397.5348749999999,
    "texte": "Imagine que chaque pensée est un petit nuage dans un ciel de nuit."
   },
   {
-   "debut": 410.1061250000001,
-   "fin": 414.58297916666675,
+   "debut": 402.5348749999999,
+   "fin": 406.83372916666656,
    "texte": "Tu le regardes arriver… puis s'éloigner, lentement, poussé par le vent."
   },
   {
-   "debut": 422.58297916666675,
-   "fin": 428.9477916666668,
+   "debut": 414.83372916666656,
+   "fin": 420.4903124999999,
    "texte": "Et si une pensée revient, ce n'est pas grave. Tu la laisses repartir, une fois encore."
   },
   {
-   "debut": 438.9477916666667,
-   "fin": 444.55637500000006,
+   "debut": 430.4903124999999,
+   "fin": 435.67335416666657,
    "texte": "Elle sera encore là demain, si elle est importante. Cette nuit, tu peux la poser."
   },
   {
-   "debut": 458.55637500000006,
-   "fin": 462.40256250000004,
+   "debut": 449.67335416666657,
+   "fin": 453.51852083333324,
    "texte": "Imagine maintenant un grand ciel étoilé, au-dessus de toi."
   },
   {
-   "debut": 467.40256250000004,
-   "fin": 469.49175,
+   "debut": 458.51852083333324,
+   "fin": 460.67997916666656,
    "texte": "L'air est doux. Tout est silencieux."
   },
   {
-   "debut": 475.49175,
-   "fin": 480.0204166666667,
+   "debut": 466.67997916666656,
+   "fin": 470.4307083333332,
    "texte": "À chaque expiration, une étoile s'allume, un peu plus loin."
   },
   {
-   "debut": 487.0204166666667,
-   "fin": 490.5454375,
+   "debut": 477.4307083333332,
+   "fin": 480.83141666666654,
    "texte": "Tu n'as rien à faire. Seulement regarder, et respirer."
   },
   {
-   "debut": 500.5454375,
-   "fin": 504.1082916666667,
+   "debut": 490.83141666666654,
+   "fin": 494.7534583333332,
    "texte": "Chaque souffle t'emmène un peu plus profondément dans le calme."
   },
   {
-   "debut": 516.1082916666667,
-   "fin": 518.6504375,
+   "debut": 506.7534583333332,
+   "fin": 509.51581249999987,
    "texte": "Tu es en sécurité. Tu peux te reposer."
   },
   {
-   "debut": 536.6504375,
-   "fin": 541.7589791666666,
+   "debut": 527.5158124999998,
+   "fin": 532.1961666666665,
    "texte": "Bientôt, ma voix va se taire. La musique va continuer encore un moment."
   },
   {
-   "debut": 546.7589791666667,
-   "fin": 550.2036458333333,
+   "debut": 537.1961666666665,
+   "fin": 540.5500416666665,
    "texte": "Si tu dors déjà, continue simplement de dormir."
   },
   {
-   "debut": 555.2036458333333,
-   "fin": 560.641875,
+   "debut": 545.5500416666665,
+   "fin": 550.4935833333332,
    "texte": "Et si tu es encore éveillé, ce n'est pas un problème. Le repos compte aussi."
   },
   {
-   "debut": 566.641875,
-   "fin": 570.1231250000001,
+   "debut": 556.4935833333332,
+   "fin": 559.3115416666665,
    "texte": "Laisse-toi glisser, doucement, vers le sommeil."
   },
   {
-   "debut": 578.1231250000001,
-   "fin": 578.9033125000001,
+   "debut": 567.3115416666665,
+   "fin": 568.3387916666665,
    "texte": "Bonne nuit."
   }
  ],
  "titres": [
   {
-   "debut": 41.61997916666667,
-   "fin": 50.61997916666667,
+   "debut": 41.434687499999995,
+   "fin": 50.434687499999995,
    "texte": "S'installer"
   },
   {
-   "debut": 100.64254166666669,
-   "fin": 109.64254166666669,
+   "debut": 98.02777083333334,
+   "fin": 107.02777083333334,
    "texte": "Respirer lentement"
   },
   {
-   "debut": 253.40235416666673,
-   "fin": 262.4023541666667,
+   "debut": 249.5985625,
+   "fin": 258.5985625,
    "texte": "Détendre le corps"
   },
   {
-   "debut": 373.0826458333334,
-   "fin": 382.0826458333334,
+   "debut": 365.9910833333333,
+   "fin": 374.9910833333333,
    "texte": "Laisser passer les pensées"
   },
   {
-   "debut": 454.55637500000006,
-   "fin": 463.55637500000006,
+   "debut": 445.67335416666657,
+   "fin": 454.67335416666657,
    "texte": "Le ciel étoilé"
   },
   {
-   "debut": 532.6504375,
-   "fin": 541.6504375,
+   "debut": 523.5158124999998,
+   "fin": 532.5158124999998,
    "texte": "Glisser vers le sommeil"
   }
  ],
  "souffles": [
   {
-   "debut": 132.7688541666667,
+   "debut": 129.60289583333332,
    "cycles": 4
   },
   {
-   "debut": 180.73152083333338,
+   "debut": 177.613,
    "cycles": 6
   }
  ],
  "insp": 4.0,
  "exp": 6.0,
- "fin_voix": 578.9033125000001
+ "fin_voix": 568.3387916666665
 }

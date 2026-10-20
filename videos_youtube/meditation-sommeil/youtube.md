@@ -1,7 +1,7 @@
 # Kit de publication YouTube : méditation guidée pour le sommeil
 
 Fichiers :
-- `meditation-sommeil-v2.mp4` : vidéo principale (11 min 23 s, 1920 × 1080).
+- `meditation-sommeil-v2.mp4` : vidéo principale (11 min 12 s, 1920 × 1080).
 - `miniature-youtube.jpg` : miniature (1280 × 720).
 - `meditation-sommeil.srt` : sous-titres (à ajouter dans YouTube Studio > Sous-titres, langue français).
 - `short-respiration.mp4` : Short vertical d'environ 1 minute (1080 × 1920), qui renvoie vers la vidéo complète.
@@ -25,18 +25,18 @@ puis musique seule pour t'endormir.
 
 00:00 Introduction
 00:41 S'installer
-01:40 Respirer lentement
-04:13 Détendre le corps
-06:13 Laisser passer les pensées
-07:34 Le ciel étoilé
-08:52 Glisser vers le sommeil
-09:41 Musique seule pour s'endormir
+01:38 Respirer lentement
+04:09 Détendre le corps
+06:05 Laisser passer les pensées
+07:25 Le ciel étoilé
+08:43 Glisser vers le sommeil
+09:31 Musique seule pour s'endormir
 
 À écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si tes
 difficultés de sommeil durent plusieurs semaines ou pèsent sur tes journées, parles-en à ton médecin.
 Je ne suis pas professionnel de santé.
 
-Voix : voix de synthèse (Piper, voix « siwis », licence CC BY 4.0).
+Voix : voix de synthèse (Kokoro, licence Apache 2.0 ; voix « ff_siwis » issue du corpus SIWIS, CC BY 4.0).
 Musique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0
 http://creativecommons.org/licenses/by/4.0/
 Photos : Unsplash (Jeremy Thomas, Jp Valery, Michael Beier, Pete Nuij, Ganapathy Kumar, Robson Hatsukami Morgan,
