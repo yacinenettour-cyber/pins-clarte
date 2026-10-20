@@ -39,8 +39,10 @@ def main():
             registre[nom]["statut"] = "échec du téléchargement"
             echecs += 1
             continue
-        if img.width > LARGEUR_MAX:
-            img = img.resize((LARGEUR_MAX, round(img.height * LARGEUR_MAX / img.width)), Image.LANCZOS)
+        # « largeur_max » propre à une photo : les vidéos YouTube (1920 px, zoom lent) en demandent plus.
+        largeur_max = p.get("largeur_max", LARGEUR_MAX)
+        if img.width > largeur_max:
+            img = img.resize((largeur_max, round(img.height * largeur_max / img.width)), Image.LANCZOS)
         img.save(os.path.join(DOSSIER, nom), "JPEG", quality=88, optimize=True)
         registre[nom] = {k: p[k] for k in ("theme", "description", "source", "page", "photographe", "licence", "url") if k in p}
         registre[nom].update({"largeur": img.width, "hauteur": img.height, "statut": "à trier"})
