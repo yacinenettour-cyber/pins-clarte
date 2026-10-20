@@ -89,3 +89,16 @@ au prochain passage :
   professionnel.
 - Le cadre doré de chaque épingle « clés » doit changer de description (fleurs, feuilles, couleurs) : avec la même graine
   681678, la même description redonnerait exactement le même cadre.
+
+**20/10/2026** : stock à 0. « Poignets tendus : 3 étirements au clavier » fabriquée
+(`images_exercices/poignets-3-etirements-clavier.jpg`, posturesantistress, lien guide avec pont vers le soir). Les gestes
+prévus (tirer les doigts avec l'autre main, doigts vers le sol) ont été remplacés : le modèle n'arrive pas à dessiner une main
+qui en tire une autre ni un poignet plié vers le bas. Gestes retenus, décrits exactement comme sur les images : bras tendus
+paumes vers l'avant, paumes jointes devant la poitrine coudes écartés, doigts grands ouverts puis relâchés. Images écartées :
+une main posée sur l'épaule sans raison, bras écartés en croix, index pointé, et une silhouette dont le haut des cuisses
+paraissait dénudé. Quota Hugging Face de nouveau épuisé après 8 images, avant le cadre doré : l'épingle « clés »
+« Pensées négatives : 5 clés pour prendre du recul » (blocagemental, sujet vérifié le 19/10 et revérifié le 20/10 avec
+anti_doublons.py) reste à fabriquer au prochain passage. Description de cadre prévue (jamais utilisée) : « Elegant vertical
+poster background, warm cream and soft gold watercolor paper, delicate golden ornamental frame border with thin double
+lines, small lavender sprigs and pale eucalyptus leaves in the corners, soft peach watercolor blush near the edges,
+completely empty center area, no people, no text ».

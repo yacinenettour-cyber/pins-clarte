@@ -1,5 +1,18 @@
 [
  {
+  "titre": "Poignets tendus : 3 étirements au clavier",
+  "texte_image": "3 étirements pour des poignets tendus",
+  "points_image": [
+   "Bras tendus, paumes vers l'avant",
+   "Paumes jointes, coudes écartés",
+   "Doigts grands ouverts, puis relâchés"
+  ],
+  "description": "Souris, clavier, téléphone : les poignets travaillent toute la journée et se crispent avec la tension. Trois étirements assis, en une minute : bras tendus devant toi, paumes vers l'avant ; paumes jointes devant la poitrine, coudes écartés ; doigts grands ouverts puis relâchés, cinq fois. Sans forcer. Si cette tension te suit jusqu'au lit, le guide gratuit propose une routine du soir pour calmer le mental. #stress #travail #poignets #etirements #bureau #tensions #pause #bienetre",
+  "theme": "posturesantistress",
+  "image_prete": "images_exercices/poignets-3-etirements-clavier.jpg",
+  "format": "exercices"
+ },
+ {
   "titre": "Bas du dos raide : 3 étirements assis au bureau",
   "texte_image": "3 étirements pour le bas du dos",
   "points_image": [
