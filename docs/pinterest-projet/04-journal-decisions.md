@@ -935,3 +935,16 @@ le guide sommeil 2 avec 30. Simulation de 60 choix sur la banque réelle avant d
 énergie 10, systemenerveux 6, somatisation 6, posturesantistress 6, blocagemental 5, procrastination 3,
 fatiguementale 3 ; YAML valide. Effet attendu limité (les clics viennent surtout des anciennes épingles). À réévaluer
 le 04/11.
+
+## 80. Site : les 17 articles réécrits dans un style plus humain, sans anglais (21/10/2026)
+
+Consignes de l'utilisateur : « Regarde tous les articles du site, je veux que tu les humanises plus, que ça fasse moins
+IA », « Tu m'enlèves tous les patterns inhérents au dialogue de l'IA. Par contre, on a de l'anglais », puis, après
+lecture des exemples avant/après, « C'est bon pour moi ». Règles : docs/referencement/style-humain.md. Réécriture du
+style seulement (4 lots en parallèle) : plus de paragraphes en « **phrase en gras.** Selon une étude… », formules de
+machine retirées (« Autrement dit », « Voici… », « Bonne nouvelle »…), environ trois fois moins de deux-points, exemples
+du quotidien présentés comme des exemples (aucun vécu prêté à l'auteur), noms anglais des revues remplacés par une
+description en français dans le texte (nom exact gardé dans les sources), termes anglais traduits (noms propres gardés :
+Stanford, King's College, Henry Ford, GAD-7, SMILES). « Cortisol face » devient « visage cortisol » dans le texte
+(l'en-tête garde « cortisol face »). Contrôle `outils/verifier_humanisation.py` : 17/17 OK (en-têtes, sources, liens,
+citations, chiffres, parties, tableaux, longueur ±10 %), plus relecture des phrases sourcées. Publié sur gh-pages.
