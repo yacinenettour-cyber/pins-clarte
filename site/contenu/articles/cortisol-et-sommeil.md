@@ -10,18 +10,18 @@ maj: 2026-10-13
 image: Femme qui dort paisiblement dans un lit aux draps blancs, les yeux fermés, un léger sourire, lumière douce du matin
 ---
 ## L'essentiel
-- Le cortisol et le sommeil s'influencent dans les deux sens : l'endormissement freine le cortisol, les réveils le relancent, et l'axe du stress activé favorise l'éveil.
-- Une seule nuit écourtée suffit à faire monter le cortisol du soir suivant : + 37 % dans une étude de l'Université de Chicago.
-- Chez des personnes souffrant d'insomnie chronique, l'ACTH, l'hormone qui commande le cortisol, a été trouvée plus élevée, surtout le soir et en début de nuit.
-- Les leviers les mieux documentés : un lever à heure fixe, la lumière du matin, un café pris tôt et une soirée qui ralentit.
+- Le cortisol et le sommeil agissent l'un sur l'autre. L'endormissement freine le cortisol, les réveils le relancent, et quand l'axe du stress s'active, il pousse vers l'éveil.
+- Il suffit d'une seule nuit écourtée pour que le cortisol monte le lendemain soir. Dans une étude de l'Université de Chicago, la hausse atteignait + 37 %.
+- Chez des personnes souffrant d'insomnie chronique, on a trouvé plus d'ACTH, l'hormone qui commande le cortisol, surtout le soir et en début de nuit.
+- Ce qui est le mieux documenté tient en peu de choses : se lever à heure fixe, prendre la lumière du matin, boire son café tôt et laisser la soirée ralentir.
 
-Le cortisol et le sommeil sont liés dans les deux sens : le sommeil freine la sécrétion de cortisol, et l'activation de l'[axe du stress](/glossaire/#axe-du-stress) entraîne l'éveil et les difficultés à dormir [3][5]. Quand les nuits raccourcissent, le cortisol du soir monte [2][4] ; quand le stress dure, le sommeil devient plus fragile. Ce cercle peut aussi tourner dans le bon sens : c'est l'objet de cet article.
+Le cortisol et le sommeil marchent dans les deux sens. Le sommeil freine la sécrétion de cortisol, et quand l'[axe du stress](/glossaire/#axe-du-stress) s'active, il entraîne l'éveil et les difficultés à dormir [3][5]. Des nuits qui raccourcissent font monter le cortisol du soir [2][4]. Un stress qui dure rend le sommeil plus fragile. Ce cercle peut pourtant tourner dans le bon sens, et c'est de ça que parle cet article.
 
 ## Quel est le lien entre le cortisol et le sommeil ?
 
-Le lien entre cortisol et sommeil est réciproque : le sommeil module la production de cortisol, et l'axe du stress, lorsqu'il s'active, pousse vers l'éveil [3][5]. Le cortisol est l'[hormone du stress](/cortisol-hormone-du-stress/), fabriquée par les glandes surrénales sur ordre du cerveau.
+C'est un lien à double sens. Le sommeil joue sur la production de cortisol, et l'axe du stress, quand il s'active, pousse vers l'éveil [3][5]. Petit rappel, le cortisol est l'[hormone du stress](/cortisol-hormone-du-stress/). Ce sont les glandes surrénales qui le fabriquent, sur ordre du cerveau.
 
-Selon une revue de l'Université de Chicago publiée en 2010 dans l'*International Journal of Endocrinology* (Balbo, Leproult et Van Cauter), le rythme quotidien du cortisol est surtout réglé par l'horloge biologique ; le sommeil n'a qu'un effet modéré, mais bien réel [3] :
+Qui donne le tempo ? Surtout l'horloge biologique. C'est ce que rappellent Balbo, Leproult et Van Cauter, de l'Université de Chicago, dans un article de synthèse publié en 2010 dans une revue d'endocrinologie [3]. Le sommeil n'a qu'un effet modéré sur le rythme quotidien du cortisol, mais cet effet est bien réel [3].
 
 | Moment de la nuit | Effet sur le cortisol |
 |---|---|
@@ -30,11 +30,11 @@ Selon une revue de l'Université de Chicago publiée en 2010 dans l'*Internation
 | La fin de la nuit et le lever | S'accompagnent aussi d'une stimulation [3] |
 | Un décalage brutal des horaires de sommeil | Bouleverse profondément le rythme quotidien du cortisol [3] |
 
-L'inverse est vrai aussi. Selon des chercheurs de l'Université d'État de Pennsylvanie, l'activation de l'axe hypothalamus-hypophyse-surrénales, celui qui commande le cortisol, entraîne l'éveil et les difficultés à dormir, chez l'animal comme chez l'humain [5].
+Et ça marche aussi dans l'autre sens. Des chercheurs de l'Université d'État de Pennsylvanie le décrivent chez l'animal comme chez l'humain : quand l'axe hypothalamus-hypophyse-surrénales, celui qui commande le cortisol, s'active, il entraîne l'éveil et les difficultés à dormir [5].
 
 ## Pourquoi une nuit trop courte fait-elle monter le cortisol ?
 
-Une nuit trop courte fait monter le cortisol du soir suivant parce qu'elle retarde la récupération de l'axe du stress après son pic du matin [2]. Selon une étude de l'Université de Chicago publiée en 1997 dans la revue *Sleep* (Leproult et al.), le cortisol de jeunes hommes en bonne santé a été mesuré entre 18 h et 23 h, la veille puis le lendemain de trois types de nuits [2] :
+Parce qu'elle retarde le moment où l'axe du stress se calme après son pic du matin, si bien que le cortisol reste plus haut le soir suivant [2]. En 1997, à l'Université de Chicago, Leproult et ses collègues ont mesuré le cortisol de jeunes hommes en bonne santé entre 18 h et 23 h, la veille puis le lendemain de trois sortes de nuits. Leur étude est parue dans une revue scientifique consacrée au sommeil [2].
 
 | Nuit précédente | Cortisol du soir suivant (18 h – 23 h) |
 |---|---|
@@ -42,23 +42,23 @@ Une nuit trop courte fait monter le cortisol du soir suivant parce qu'elle retar
 | Nuit écourtée (4 h – 8 h) | + 37 % [2] |
 | Nuit blanche | + 45 % [2] |
 
-Après une nuit écourtée ou blanche, la phase de repos du cortisol commençait aussi au moins une heure plus tard [2]. Pour les auteurs, même un manque de sommeil partiel et ponctuel retarde le retour au calme de l'axe du stress [2].
+Autre détail, après une nuit écourtée ou blanche, la phase de repos du cortisol démarrait au moins une heure plus tard [2]. Les auteurs en concluent qu'un manque de sommeil, même partiel et ponctuel, retarde le retour au calme de l'axe du stress [2].
 
-Quand la dette de sommeil s'accumule, l'effet se retrouve. Selon une autre étude de l'Université de Chicago, publiée en 1999 dans *The Lancet* (Spiegel et al.), 11 jeunes hommes limités à 4 heures au lit pendant 6 nuits avaient un cortisol du soir plus élevé, et un système nerveux sympathique, l'« accélérateur » du corps, plus actif, qu'après 6 nuits de récupération [4].
+Imagine maintenant une semaine où tu te couches tard tous les soirs. La dette s'accumule, et l'effet se retrouve. Une autre équipe de l'Université de Chicago, celle de Spiegel, a publié en 1999 dans une grande revue médicale britannique une étude sur 11 jeunes hommes limités à 4 heures au lit pendant 6 nuits [4]. Leur cortisol du soir était plus élevé, et leur système nerveux sympathique, l'« accélérateur » du corps, plus actif, qu'après 6 nuits de récupération [4].
 
-Une limite à garder en tête : ces études portent sur de petits groupes de jeunes hommes, en laboratoire. Elles montrent un mécanisme, pas ce qui se passe précisément chez chacun.
+Gardons une limite en tête. Ces études portent sur de petits groupes de jeunes hommes, en laboratoire. Elles montrent un mécanisme. Elles ne disent pas précisément ce qui se passe chez chacun.
 
 ## Le stress chronique empêche-t-il de dormir ?
 
-Oui : selon l'Assurance maladie, plus de la moitié des insomnies et des difficultés à bien dormir sont dues au stress, à l'anxiété et à la dépression [8]. Les études hormonales vont dans le même sens.
+Oui, souvent. D'après l'Assurance maladie, plus de la moitié des insomnies et des difficultés à bien dormir viennent du stress, de l'anxiété et de la dépression [8]. Les études sur les hormones vont dans le même sens.
 
-Selon une étude de l'Université d'État de Pennsylvanie publiée en 2001 dans le *Journal of Clinical Endocrinology & Metabolism* (Vgontzas et al.), 11 jeunes adultes souffrant d'insomnie chronique ont été comparés à 13 bons dormeurs, après 4 nuits en laboratoire du sommeil [5] :
+En 2001, à l'Université d'État de Pennsylvanie, l'équipe de Vgontzas a comparé 11 jeunes adultes souffrant d'insomnie chronique à 13 bons dormeurs, après 4 nuits en laboratoire du sommeil. Les résultats sont parus dans une revue d'endocrinologie clinique [5].
 
 - sur 24 heures, ils sécrétaient plus d'ACTH, l'hormone qui commande le cortisol, et leur cortisol avait tendance à être plus élevé [5] ;
 - les hausses les plus marquées apparaissaient **le soir et pendant la première moitié de la nuit** [5] ;
 - ceux dont le sommeil était le plus perturbé produisaient le plus de cortisol [5].
 
-Ces travaux décrivent un cercle qui s'entretient : le stress active l'axe du stress, qui favorise l'éveil [5] ; le manque de sommeil, à son tour, élève le cortisol du soir [2][4]. La revue de Chicago note d'ailleurs que l'insomnie, la dépression ou les troubles respiratoires du sommeil associent souvent une hyperactivité de l'axe du stress et un sommeil perturbé [3].
+On voit se dessiner un cercle qui s'entretient tout seul. Le stress active l'axe du stress, et cet axe favorise l'éveil [5]. Puis le manque de sommeil fait à son tour grimper le cortisol du soir [2][4]. La revue de Chicago remarque d'ailleurs que l'insomnie, la dépression ou les troubles respiratoires du sommeil vont souvent de pair avec un axe du stress trop actif et un sommeil perturbé [3].
 
 | | Stress ponctuel | Insomnie chronique |
 |---|---|---|
@@ -68,29 +68,29 @@ Ces travaux décrivent un cercle qui s'entretient : le stress active l'axe du st
 
 ## Le cortisol explique-t-il les réveils à 4 h du matin ?
 
-En partie seulement : le cortisol remonte normalement pendant la seconde moitié de la nuit, chez tout le monde, et chaque réveil s'accompagne d'une brève hausse [3]. Ce mécanisme est normal. Le stress, l'alcool du soir ou la lumière fragilisent aussi cette période de sommeil plus léger : les causes et les gestes sur le moment sont détaillés dans l'article [réveil à 4h du matin](/reveil-4h-du-matin/).
+En partie seulement. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit, et chaque réveil s'accompagne d'une petite hausse [3]. Rien d'anormal là-dedans. Seulement, le stress, l'alcool du soir ou la lumière rendent aussi plus fragile cette période où le sommeil est plus léger. Les causes, et ce qu'on peut faire sur le moment, sont dans l'article [réveil à 4h du matin](/reveil-4h-du-matin/).
 
 ## Comment faire baisser son cortisol pour mieux dormir ?
 
-Pour aider le cortisol à redescendre le soir et protéger ton sommeil, les gestes les mieux documentés sont simples : un lever régulier, la lumière du matin, un café pris tôt, une soirée qui ralentit et des nuits assez longues.
+Avec des gestes simples, qui aident le cortisol à redescendre le soir et protègent ton sommeil. Ceux qui ont le plus d'appuis sont un lever régulier, la lumière du matin, un café pris tôt, une soirée qui ralentit et des nuits assez longues.
 
 | Geste | Pourquoi il aide | Ce qui le soutient |
 |---|---|---|
-| Te lever à heure fixe, même le week-end | L'horloge biologique règle le rythme du cortisol ; des horaires réguliers lui donnent des repères stables [1][7] | Inserm, Assurance maladie |
+| Te lever à heure fixe, même le samedi et le dimanche | L'horloge biologique règle le rythme du cortisol, et des horaires réguliers lui donnent des repères stables [1][7] | Inserm, Assurance maladie |
 | Éviter les grands décalages d'horaires | Un décalage brutal du sommeil bouleverse le rythme du cortisol [3] | Université de Chicago |
 | Prendre la lumière du jour le matin | La lumière recale l'horloge interne, qui rythme le cortisol [1] | Inserm |
-| Dernier café en début d'après-midi ([café et stress](/alimentation-anti-stress/)) | 400 mg de caféine perturbent encore le sommeil pris 6 heures avant le coucher [6] | Hôpital Henry Ford, Détroit |
+| Dernier café en début d'après-midi ([café et stress](/alimentation-anti-stress/)) | 400 mg de caféine perturbent encore le sommeil quand on les prend 6 heures avant le coucher [6] | Hôpital Henry Ford, Détroit |
 | Couper les écrans une heure avant | La lumière des écrans retarde l'endormissement [1][7] | Inserm, Assurance maladie |
 | Respirer lentement au lit | Autour de 6 respirations par minute, l'activité du nerf vague, le « frein » du corps, augmente [9] | Université allemande du sport de Cologne |
 | Protéger la durée de ta nuit | Une seule nuit écourtée élève le cortisol du soir suivant [2] | Université de Chicago |
 
-Pour la respiration, la méta-analyse de l'Université allemande du sport de Cologne, publiée en 2022 dans *Neuroscience & Biobehavioral Reviews* (Laborde et al.), a rassemblé 223 études : la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente pendant et après une respiration lente volontaire [9]. Au lit, écran éteint, les [audios de respiration guidée](/respiration-guidee/) te donnent ce rythme.
+Un mot sur la respiration. En 2022, Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont rassemblé 223 études dans une méta-analyse parue dans une revue de neurosciences [9]. Pendant et après une respiration lente volontaire, la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente [9]. Au lit, une fois l'écran éteint, les [audios de respiration guidée](/respiration-guidee/) peuvent te donner ce rythme.
 
-Pour aller pas à pas, tu peux t'appuyer sur la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/) et sur l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/), qui fait le tri entre ce qui marche et les fausses promesses.
+Tu préfères avancer pas à pas ? Appuie-toi sur la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/), et sur l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/), qui fait le tri entre ce qui marche et les fausses promesses.
 
 ## Quand consulter ?
 
-Consulte ton médecin si tes difficultés de sommeil durent et pèsent sur tes journées, sans attendre qu'elles s'installent : au-delà de trois mois, à plus de trois nuits par semaine, on parle d'insomnie chronique [8]. Cet article donne des repères, il ne remplace pas un avis médical. Prends aussi rendez-vous si :
+Va voir ton médecin si tes difficultés de sommeil durent et pèsent sur tes journées, sans attendre qu'elles s'installent. Au-delà de trois mois, à plus de trois nuits par semaine, on parle d'insomnie chronique [8]. Cet article donne des repères, il ne remplace pas un avis médical. Prends aussi rendez-vous si :
 
 - tu luttes contre le sommeil dans la journée, en particulier au volant : dans ce cas, ne conduis pas [7] ;
 - on te signale des pauses respiratoires pendant ton sommeil, ou tu restes fatigué malgré des nuits complètes : l'apnée du sommeil fait partie des causes possibles [1] ;
@@ -99,28 +99,28 @@ Consulte ton médecin si tes difficultés de sommeil durent et pèsent sur tes j
 
 Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit et joignable 24 h/24. En cas de danger immédiat, compose le 15 ou le 112.
 
-Si le stress t'empêche de dormir, le [test d'anxiété gratuit (GAD-7)](/test-stress-anxiete/) te donne en 2 minutes un score et des repères pour savoir s'il vaut mieux en parler à ton médecin.
+Si c'est le stress qui t'empêche de dormir, le [test d'anxiété gratuit (GAD-7)](/test-stress-anxiete/) te donne en 2 minutes un score et des repères pour savoir s'il vaut mieux en parler à ton médecin.
 
 ## Questions fréquentes
 
 ### Le manque de sommeil fait-il monter le cortisol ?
-Oui. Dans une étude de l'Université de Chicago, le cortisol du soir était plus élevé de 37 % après une nuit écourtée et de 45 % après une nuit blanche [2]. Une autre étude a retrouvé un cortisol du soir plus élevé après 6 nuits de 4 heures au lit [4].
+Oui. Dans une étude de l'Université de Chicago, le cortisol du soir montait de 37 % après une nuit écourtée et de 45 % après une nuit blanche [2]. Une autre étude l'a aussi trouvé plus élevé après 6 nuits de 4 heures au lit [4].
 
 ### Le cortisol peut-il me réveiller la nuit ?
-Les réveils s'accompagnent d'une brève hausse du cortisol, et l'activation de l'axe du stress favorise l'éveil [3][5]. Le cortisol remonte aussi normalement en seconde moitié de nuit [3] : ce n'est pas anormal en soi, mais le stress peut rendre cette période plus fragile.
+Chaque réveil s'accompagne d'une brève hausse du cortisol, et quand l'axe du stress s'active, il favorise l'éveil [3][5]. Le cortisol remonte aussi normalement en seconde moitié de nuit [3]. Ça n'a rien d'anormal en soi, mais le stress peut rendre ce moment plus fragile.
 
 ### Quel est le meilleur moment pour prendre la lumière du jour ?
-Le matin. La lumière recale l'horloge interne, qui rythme la production de cortisol, alors que la lumière tardive, en particulier celle des écrans, retarde l'endormissement [1].
+Le matin. La lumière recale l'horloge interne, celle qui rythme la production de cortisol. La lumière tardive, elle, retarde l'endormissement, en particulier celle des écrans [1].
 
 ### Faut-il prendre un complément pour baisser son cortisol et mieux dormir ?
-Les compléments dits « anti-cortisol » ont peu de preuves solides, et certains ont des effets indésirables : le détail est dans l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/). Avant d'en prendre, demande l'avis de ton médecin ou de ton pharmacien.
+Les compléments qu'on présente comme « anti-cortisol » ont peu de preuves solides, et certains ont des effets indésirables. Le détail est dans l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/). Avant d'en prendre, demande l'avis de ton médecin ou de ton pharmacien.
 
 ### Une insomnie liée au stress se soigne-t-elle ?
-Oui, elle se prend en charge. Quand les difficultés reviennent plus de trois fois par semaine depuis plus de trois mois, on parle d'insomnie chronique [8]. N'attends pas ce stade pour en parler à ton médecin : dès que tes nuits pèsent sur tes journées, c'est le bon moment, plutôt que de chercher une solution seul.
+Oui, elle se prend en charge. On parle d'insomnie chronique quand les difficultés reviennent plus de trois fois par semaine depuis plus de trois mois [8]. Mais n'attends pas d'en être là pour en parler à ton médecin. Dès que tes nuits pèsent sur tes journées, c'est le bon moment, plutôt que de chercher une solution seul.
 
 ## Pour aller plus loin
 
-Retrouver des nuits calmes passe souvent par des journées mieux rythmées. Et si, une fois au lit, ce sont tes pensées qui t'empêchent de décrocher, le guide gratuit « Quand le cerveau refuse de dormir » est fait pour ces soirs-là : une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.
+Des nuits plus calmes, ça commence souvent par des journées mieux rythmées. Peut-être que, une fois au lit, ce sont tes pensées qui t'empêchent de décrocher. Pour ces soirs-là, il existe le guide gratuit « Quand le cerveau refuse de dormir », avec une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.
 
 ## Sources
 1. [Sommeil — Inserm, 2017 (mis à jour en 2024)](https://www.inserm.fr/dossier/sommeil/)
