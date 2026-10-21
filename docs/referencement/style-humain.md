@@ -22,11 +22,28 @@ mais d'écrire mieux, comme une personne qui parle à une autre.
 - Des scènes concrètes et ordinaires au tutoiement, présentées comme des exemples, jamais comme un vécu de l'auteur :
   « Il est 6 h 40, le réveil n'a pas encore sonné et tu penses déjà à la réunion de 10 h. »
 - Des questions que le lecteur se pose vraiment, et des réponses franches (« Non, pas forcément. »).
-- Des études racontées naturellement, en gardant **université, revue et année** (règle du 09/10/2026), mais avec des
+- Des études racontées naturellement, en gardant **université et année** dans le texte et la revue décrite en français (règle du 09/10/2026 adaptée le 21/10 : le nom exact de la revue reste dans la liste des sources), mais avec des
   tournures variées : « Des chercheurs de Northwestern ont suivi 156 personnes pendant trois jours (PNAS, 2006) [4]. »,
   « En 2009, à l'University College London, Chida et Steptoe ont regroupé 147 études (*Biological Psychology*) [5]. »
 - Un peu de chaleur et de bon sens, sans familiarité forcée ni humour déplacé (sujet santé).
 - Chaque partie commence toujours par une réponse directe (règle GEO), mais formulée comme on la dirait à voix haute.
+
+## Pas d'anglais dans le texte (consigne de l'utilisateur, 21/10/2026 : « Par contre, on a de l'anglais »)
+
+- Dans le corps des articles, plus aucun mot ni titre anglais : le nom anglais d'une revue (*Nature and Science of
+  Sleep*, *Journal of…*) est remplacé par une description en français (« une revue scientifique consacrée au
+  sommeil », « une revue de médecine du sommeil ») ; le nom exact reste dans la liste des sources, qui ne change pas.
+  L'université et l'année restent dans le texte, en français (« l'Université Northwestern, aux États-Unis »,
+  « l'University College London » → « l'UCL, à Londres »).
+- Les termes anglais (« bedtime procrastination », « hyperarousal », « mindfulness »…) sont remplacés par leur
+  équivalent français ; seuls restent les mots passés dans le français courant (stress, burn-out).
+
+## Autres tics de dialogue d'IA à supprimer
+
+« Et si… ? », « Pas de panique », « Bonne nouvelle », « Le hic », « Concrètement », « En clair », « C'est là
+qu'intervient… », « Le secret ? », les questions rhétoriques suivies de leur réponse immédiate à répétition, les
+séries de trois, les tirets cadratins, les points d'exclamation, les phrases d'annonce (« Voyons… », « Passons à… »),
+les conclusions qui résument ce qui vient d'être dit.
 
 ## Ce qui ne change JAMAIS
 
