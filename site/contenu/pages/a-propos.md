@@ -15,13 +15,13 @@ Je m'appelle **Yacine**. Je ne suis **ni médecin, ni psychologue, ni profession
 - **Depuis fin 2025** : je publie Clarté Mentale sur [Pinterest](https://www.pinterest.com/clartementale/), des fiches courtes sur le stress et le sommeil.
 - **Octobre 2026** : j'ouvre ce site, pour aller plus loin que les fiches : chaque article prend le temps d'expliquer ce qui se passe dans le corps et cite ses sources.
 
-## Mon histoire : pourquoi ce site existe
+## Mon histoire
 
-Tout a commencé avec mes nuits blanches. Pendant deux ans, j'ai alterné les nuits compliquées et les nuits sans dormir du tout. Je me couchais, et impossible de couper. Le stress de la journée revenait, et le sommeil ne venait pas.
+Pendant deux ans, j'ai alterné les nuits compliquées et les nuits blanches. Je me couchais et je n'arrivais pas à couper. Le stress de la journée me revenait en tête, et je ne dormais pas.
 
 J'ai d'abord essayé des médicaments à base de plantes. Sur moi, ça a très peu marché. Peut-être que ça aide d'autres personnes, je ne sais pas. Dans mon cas, non.
 
-La méditation et la cohérence cardiaque m'ont beaucoup plus aidé. La cohérence cardiaque, c'est respirer lentement et régulièrement pendant quelques minutes, sans rien d'autre. Pas du jour au lendemain, mais mon stress et mon anxiété ont baissé.
+Ce qui m'a aidé, c'est la méditation et la cohérence cardiaque (on respire lentement et régulièrement pendant quelques minutes). Ça n'a pas été immédiat, mais mon stress et mon anxiété ont fini par baisser.
 
 J'ai créé ce site pour partager ce que j'ai appris en cherchant des solutions. Sur internet, on lit tout et son contraire, et moi je voulais des informations vérifiées. Alors pour chaque conseil, je cherche la source, un organisme de santé ou une étude, et je la mets en bas de l'article. Si une étude est petite ou pas très solide, je le dis.
 
@@ -31,7 +31,7 @@ Je ne suis pas professionnel de santé, et ce qui a marché pour moi ne marchera
 
 ## Pourquoi ce site ?
 
-Pour rassembler, en français et sans jargon, ce que les sources sérieuses disent du stress, du système nerveux et du sommeil, avec des gestes simples à essayer le soir même. Je ne suis pas professionnel de santé, donc je ne donne pas d'avis médical. Je parle de mon expérience quand elle a un rapport avec le sujet. Le reste vient des organismes officiels et des études, et chaque source est citée.
+Je voulais un endroit où trouver, en français et sans jargon, ce que disent les sources sérieuses sur le stress, le système nerveux et le sommeil, avec des choses simples à essayer le soir même. Je ne suis pas professionnel de santé, donc je ne donne pas d'avis médical. Je parle de mon expérience quand elle a un rapport avec le sujet. Le reste vient des organismes officiels et des études, et chaque source est citée.
 
 ## Pourquoi parler de stress, de cortisol et de sommeil ?
 

@@ -11,6 +11,6 @@ Ses mots (21/10/2026) :
 - Texte validé : « J'ai créé ce site pour partager ce que j'ai appris en cherchant des solutions » (accord « Oui, mais
   travaille plus le texte. Il faut qu'il soit plus long »).
 
-Où il est utilisé : page /a-propos/ (« Mon histoire : pourquoi ce site existe ») et un « mot de Yacine » en italique
+Où il est utilisé : page /a-propos/ (« Mon histoire ») et un « mot de Yacine » en italique
 sous l'introduction de /respiration-pour-dormir/, /ruminations-le-soir/ et /calmer-son-systeme-nerveux/.
 Ce qui l'a aidé n'est jamais présenté comme une recommandation : rappel « ne remplace pas l'avis d'un médecin ».
