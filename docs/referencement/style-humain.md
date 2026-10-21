@@ -23,8 +23,9 @@ mais d'écrire mieux, comme une personne qui parle à une autre.
   « Il est 6 h 40, le réveil n'a pas encore sonné et tu penses déjà à la réunion de 10 h. »
 - Des questions que le lecteur se pose vraiment, et des réponses franches (« Non, pas forcément. »).
 - Des études racontées naturellement, en gardant **université et année** dans le texte et la revue décrite en français (règle du 09/10/2026 adaptée le 21/10 : le nom exact de la revue reste dans la liste des sources), mais avec des
-  tournures variées : « Des chercheurs de Northwestern ont suivi 156 personnes pendant trois jours (PNAS, 2006) [4]. »,
-  « En 2009, à l'University College London, Chida et Steptoe ont regroupé 147 études (*Biological Psychology*) [5]. »
+  tournures variées : « En 2006, des chercheurs de l'Université Northwestern, aux États-Unis, ont suivi 156 personnes
+  pendant trois jours [4]. », « En 2009, deux chercheurs de l'UCL, à Londres, ont regroupé 147 études dans une revue de
+  biologie et de psychologie [5]. »
 - Un peu de chaleur et de bon sens, sans familiarité forcée ni humour déplacé (sujet santé).
 - Chaque partie commence toujours par une réponse directe (règle GEO), mais formulée comme on la dirait à voix haute.
 
