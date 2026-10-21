@@ -42,7 +42,7 @@ Ils touchent surtout la tête, les muscles, le cœur, la respiration, le ventre 
 
 Le mal de tête qui va le plus souvent avec le stress, c'est la céphalée de tension. L'Assurance maladie en fait la cause la plus fréquente des maux de tête qui durent. Elle empire quand le stress monte et s'améliore quand on se détend [3].
 
-Voici comment l'Assurance maladie la décrit [3] :
+L'Assurance maladie la décrit ainsi [3] :
 
 - une douleur continue, modérée et diffuse, comme une pression des deux côtés du crâne, qui ne bat pas au rythme du cœur ;
 - sans nausées ni vomissements, et qui ne s'aggrave pas à l'effort ;

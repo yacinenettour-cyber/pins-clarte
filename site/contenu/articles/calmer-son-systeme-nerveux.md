@@ -79,7 +79,7 @@ Le principe, mis au point par Jacobson, est simple : tu contractes volontairemen
 Tu peux suivre cet ordre, par exemple : pieds, mollets, cuisses, ventre, mains, bras, épaules, visage. Serre chaque zone environ 5 secondes, relâche en expirant, puis reste une quinzaine de secondes à sentir la détente.
 
 ### 4. L'ancrage 5-4-3-2-1 (2 minutes)
-Quand les pensées s'emballent, cet exercice ramène ton attention dans le présent en passant par les cinq sens [5]. Voici comment le décrit le centre médical de l'Université de Rochester, aux États-Unis [5].
+Quand les pensées s'emballent, cet exercice ramène ton attention dans le présent en passant par les cinq sens [5]. Le centre médical de l'Université de Rochester, aux États-Unis, le décrit ainsi [5].
 
 1. Repère 5 choses que tu vois.
 2. Repère 4 choses que tu peux toucher.
@@ -100,7 +100,7 @@ Avoir quelqu'un de confiance à ses côtés freine la réponse de l'organisme au
 Ça peut être un appel de cinq minutes, un message vocal, un café avec un collègue. L'important, c'est de choisir quelqu'un avec qui tu te sens en sécurité.
 
 ## Quelle routine quotidienne pour apaiser le système nerveux ?
-Quelques rendez-vous courts suffisent, toujours aux mêmes moments, et ça fait moins de 30 minutes au total. Tu n'as pas à tout faire. Voici un exemple de journée.
+Quelques rendez-vous courts suffisent, toujours aux mêmes moments, et ça fait moins de 30 minutes au total. Tu n'as pas à tout faire. Une journée pourrait ressembler à ça.
 
 | Moment | Geste | Durée |
 |---|---|---|

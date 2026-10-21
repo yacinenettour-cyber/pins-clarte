@@ -54,7 +54,7 @@ Il y en a de toutes sortes. Ils sont physiques, émotionnels, cognitifs, comport
 
 Le vrai signal d'alarme, c'est le **changement**. Des signes qui arrivent petit à petit, souvent sans bruit, et qui ne te ressemblent pas [2]. Imagine quelqu'un qui aimait son équipe et qui, depuis quelques mois, mange seul et ne dit plus un mot en réunion. Ce genre de repli, ou un désengagement inhabituel, doit aussi alerter l'entourage [3].
 
-Voici quelques questions à te poser franchement. Elles s'inspirent des repères de l'INRS [3].
+Prends un moment pour te poser ces questions, franchement. Elles s'inspirent des repères de l'INRS [3].
 
 - Est-ce que je manque d'énergie pour faire mon travail ?
 - Est-ce que j'ai du mal à me concentrer, à rester disponible mentalement ?
