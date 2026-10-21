@@ -943,7 +943,11 @@ jobs:
           # la nuit, le soir et les ruminations, dont 12 sur le sommeil (guide « Quand le cerveau
           # refuse de dormir ») : le thème sommeil passe trois fois plus souvent qu'un autre thème
           # avec lien.
-          POIDS_THEME = {"sommeil": 3.0}
+          # 21/10/2026 (bilan des clics, accord de l'utilisateur « Oui fais le réglage énergie et
+          # alimentation ») : du 24/09 au 20/10, le plan anti-cortisol (énergie, alimentation) fait
+          # 6 clics sortants avec 11 épingles, le guide sommeil 2 avec 30 : poids 2 pour les trois,
+          # à réévaluer le 04/11.
+          POIDS_THEME = {"sommeil": 2.0, "energie": 2.0, "alimentation": 2.0}
           FORMATS_ILLUSTRES = {"exercices", "cles"}
 
 
@@ -951,7 +955,7 @@ jobs:
               # Rotation entre themes (evite d'enchainer un meme theme), ponderee depuis le
               # 29/09/2026 : un theme qui mene a la page de capture passe deux fois plus
               # souvent qu'un theme sans lien, pour augmenter les clics sortants (et le
-              # theme sommeil trois fois plus, voir POIDS_THEME).
+              # themes sommeil, energie et alimentation deux fois plus, voir POIDS_THEME).
               # Épingles illustrées « exercices » et « clés » (15/10/2026, consignes de l'utilisateur :
               # « 1 à 2 épingles de ce type par jour », puis « tu regardes les épingles qui fonctionnent
               # le mieux et tu produis des épingles similaires sans copier ») : au plus 2 sur 24 h, tous

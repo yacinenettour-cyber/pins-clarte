@@ -925,3 +925,13 @@ Demande de l'utilisateur : « recharge la banque en épingles alimentation » (i
 - **Maillage** : liens depuis « Angoisse le soir » (Pour aller plus loin), « Réveil à 4 h du matin » (Pour aller plus loin) et « Cortisol, hormone du stress » (partie sur le matin) ; ajouté dans « Par où commencer ? » de Mieux dormir ; liens sortants vers angoisse le soir, réveil à 4 h, cortisol hormone du stress, calmer son système nerveux, ruminations, respiration guidée, hypervigilance, test.
 - **Épingles** : aucune épingle non publiée ne traite vraiment ce sujet ; deux épingles déjà publiées couvrent les gestes du matin (« Anxiété du matin : 4 choses qui aident vraiment au réveil », 05/10 ; « Réveil tendu : 4 gestes doux… », 01/10), donc nouvel angle : « Angoisse le matin : le rôle de la veille au soir » (`#systemenerveux`, 48 caractères, corps 415/414, total 490/489, 8 hashtags, `article` = angoisse-le-matin, fin du guide honnête sur le mental du coucher). Rendu de la fiche vérifié (photo 473 px, 0 chevauchement). Article ajouté à `ARTICLES_SITE` (`pins.yml`) ; harnais : bon lien, y compris avec 20 liens d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon.
 - **Vérifié** : titre 49 caractères, description 156, uniques sur tout le site ; 13 sources toutes appelées ; 0 lien interne cassé ; W3C (vnu) 0 erreur (6 pages) ; axe-core 0 violation et 0 débordement (6 pages × 2 thèmes × 320, 390 et 1 280 px) ; affichage à 320 px et recadrage de la photo vérifiés à l'œil ; aucune mention du métier de l'auteur ; publié, page en ligne (200, bon titre, dans le plan du site), liens entrants en ligne ; IndexNow 200 (5 pages). La liste garde 8 sujets « à écrire » : pas de complément nécessaire.
+
+## 79. Rotation : énergie et alimentation à égalité avec le sommeil (21/10/2026)
+
+Proposition du bilan de la section 77, acceptée par l'utilisateur (« Oui fais le réglage énergie et alimentation ») :
+`POIDS_THEME` passe de `{"sommeil": 3.0}` à `{"sommeil": 2.0, "energie": 2.0, "alimentation": 2.0}` dans `pins.yml`.
+Raison : du 24/09 au 20/10, le plan anti-cortisol (énergie, alimentation) fait 6 clics sortants avec 11 épingles,
+le guide sommeil 2 avec 30. Simulation de 60 choix sur la banque réelle avant de pousser : alimentation 11, sommeil 10,
+énergie 10, systemenerveux 6, somatisation 6, posturesantistress 6, blocagemental 5, procrastination 3,
+fatiguementale 3 ; YAML valide. Effet attendu limité (les clics viennent surtout des anciennes épingles). À réévaluer
+le 04/11.
