@@ -17,7 +17,7 @@ Je m'appelle **Yacine**. Je ne suis **ni médecin, ni psychologue, ni profession
 
 ## Mon histoire : pourquoi ce site existe
 
-Tout a commencé avec mes nuits blanches. Je me couchais, et impossible de couper. Le stress de la journée revenait, et le sommeil ne venait pas.
+Tout a commencé avec mes nuits blanches. Pendant deux ans, j'ai alterné les nuits compliquées et les nuits sans dormir du tout. Je me couchais, et impossible de couper. Le stress de la journée revenait, et le sommeil ne venait pas.
 
 J'ai d'abord essayé des médicaments à base de plantes. Sur moi, ça a très peu marché. Peut-être que ça aide d'autres personnes, je ne sais pas. Dans mon cas, non.
 
