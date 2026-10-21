@@ -1,0 +1,66 @@
+/* Fiche « 5 exercices de respiration » (21/10/2026) : page du site et version imprimable (A4, 2 pages).
+   Couleurs prises dans les variables du thème : mêmes contrastes en clair et en sombre. */
+.fiche-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 22px 0 8px; }
+.fiche-second { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 700; cursor: pointer;
+  color: var(--champagne); background: transparent; border: 1px solid var(--lisere-fort); border-radius: 999px; padding: 12px 22px; }
+.fiche-second:hover { border-color: var(--brume); color: var(--brume); }
+.fiche-second:focus-visible { outline: 2px solid var(--brume); outline-offset: 3px; }
+html:not(.js) .fiche-second { display: none; }
+.fiche-partage { font-size: 15px; color: var(--champagne-doux); margin: 4px 0 26px; }
+.fiche-ex { border: 1px solid var(--lisere); border-radius: 16px; padding: 4px 20px 14px; margin: 26px 0; background: var(--verre); }
+.fiche-ex h2 { margin-top: 18px; }
+.fiche-plus { font-size: 15px; }
+.fiche-adresse { display: none; }
+
+@media print {
+  @page { size: A4; margin: 11mm 13mm 13mm;
+    @bottom-center { content: "www.contactapaisement-mental.fr/fiche-respiration/  ·  page " counter(page) " sur " counter(pages);
+      font: 8pt "Plus Jakarta Sans", Arial, sans-serif; color: #000; } }
+  :root, :root[data-theme] { color-scheme: light; }
+  html, body { background: #fff !important; background-image: none !important; color: #000 !important; }
+  body { font-size: 9pt; line-height: 1.33; }
+  .entete, .menu-mobile, .pied, .saut, .ariane, .fiche-actions, .fiche-partage, .bilan-sources, .note-sources,
+  .type-source, .resume-sources, .haut-page, .theme-bascule, .menu-sans-js, .fiche-plus .fiche-audio { display: none !important; }
+  main, .etroit { max-width: none !important; padding: 0 !important; margin: 0 !important; }
+  *, *::before, *::after { color: #000 !important; background: transparent !important; box-shadow: none !important;
+    text-shadow: none !important; -webkit-text-fill-color: #000 !important; backdrop-filter: none !important; }
+  a { text-decoration: none; }
+  sup a { text-decoration: none; }
+  h1 { font-size: 15pt; line-height: 1.15; margin: 0 0 3pt; }
+  h2 { font-size: 11.5pt; margin: 0 0 3pt; line-height: 1.2; }
+  p, li, td, th { font-size: 9pt; line-height: 1.33; margin: 0; }
+  sup { font-size: 70%; line-height: 0; vertical-align: baseline; position: relative; top: -0.45em; }
+  p + p, p + ol, ol + p { margin-top: 3pt; }
+  .meta { font-size: 8pt; margin: 0 0 5pt; }
+  .meta img, .meta .avatar { display: none !important; }
+  .fiche-adresse { display: block; font-size: 8.5pt; margin: 0 0 5pt; padding: 3pt 6pt; border: 0.8pt solid #000; border-radius: 4pt; }
+  .chapo { font-size: 10pt; line-height: 1.4; margin: 0 0 5pt; }
+  .liste { padding-left: 14pt; margin: 2pt 0; }
+  .liste > li + li { margin-top: 1pt; }
+  .tableau { border: 0.8pt solid #000; border-radius: 0; margin: 4pt 0 6pt; overflow: visible; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 2pt 5pt !important; border-bottom: 0.5pt solid #000 !important; text-align: left; }
+  th { font-weight: 700; }
+  #avant-de-commencer { margin-top: 4pt; }
+  .fiche-exercices { columns: 2; column-gap: 6mm; margin-top: 6pt; }
+  .fiche-ex { break-inside: avoid; page-break-inside: avoid; border: 0.8pt solid #000; border-radius: 6pt;
+    padding: 4pt 7pt 5pt; margin: 0 0 5pt; }
+  .fiche-ex p, .fiche-ex li { font-size: 8.6pt; line-height: 1.3; }
+  .fiche-ex h2 { margin-top: 0; }
+  .fiche-ex .fiche-plus { font-size: 7.8pt; }
+  .fiche-plus a::after { content: " (contactapaisement-mental.fr" attr(href) ")"; }
+  .sources { margin-top: 6pt; font-size: 7.6pt; }
+  .urgence a[href="/ressources-urgence/"] { display: none; }
+  .repli-sources { border: 0 !important; border-radius: 0; }
+  .repli-sources summary { padding: 0 !important; display: block; }
+  .repli-sources summary::after { display: none !important; }
+  .repli-sources ol { padding: 0 0 0 14pt !important; columns: 2; column-gap: 6mm; }
+  .sources li { break-inside: avoid; }
+  .sources h2 { font-size: 10pt; }
+  .sources ol { padding-left: 14pt; margin: 2pt 0 0; }
+  .sources li { font-size: 7.6pt; line-height: 1.3; margin: 0 0 1pt; }
+  /* Sur papier, « Je ne suis pas professionnel de santé » et l'avis du médecin sont déjà dans « Quand consulter ? ». */
+  .avertissement { display: none !important; }
+  .urgence { font-size: 8.5pt; margin-top: 4pt; padding: 3pt 6pt; border: 0.8pt solid #000 !important; border-radius: 4pt; }
+  .insec { white-space: nowrap; }
+}

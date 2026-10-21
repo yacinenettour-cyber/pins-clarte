@@ -16,11 +16,13 @@ import datetime
 import glob
 import hashlib
 import html
+import inspect
 import json
 import os
 import re
 from urllib.parse import quote
 import shutil
+import subprocess
 import sys
 from xml.sax.saxutils import escape as xml_escape
 
@@ -429,8 +431,8 @@ def pied(base="", conteneur="large"):
          + [("/questions-frequentes/", "Questions fréquentes"), ("/glossaire/", "Glossaire")]),
         ("pied-outils", "Outils gratuits", [
             ("/test-stress-anxiete/", "Test stress et anxiété"), ("/respiration-guidee/", "Respiration guidée"),
-            ("/exercices-respiration/", "Exercices de respiration"), ("/journal-humeur/", "Journal d'humeur"),
-            ("/guides-gratuits/", "Guide gratuit"), ("/recherche/", "Rechercher")]),
+            ("/exercices-respiration/", "Exercices de respiration"), ("/fiche-respiration/", "Fiche respiration à imprimer"),
+            ("/journal-humeur/", "Journal d'humeur"), ("/guides-gratuits/", "Guide gratuit"), ("/recherche/", "Rechercher")]),
         ("pied-site", "Le site", [
             ("/a-propos/", "À propos"), ("/methode-editoriale/", "Méthode éditoriale"), ("/la-formation/", "La formation"),
             ("/mentions-legales/", "Mentions légales et confidentialité"), ("/accessibilite/", "Accessibilité : partiellement conforme"),
@@ -1104,9 +1106,11 @@ def script_test(articles, base=""):
     return js.replace("/*@DONNEES*/", donnees.replace("</", "<\\/")).replace("{{B}}", base)
 
 
-def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="", script="", schemas_en_plus=()):
+def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="", script="", schemas_en_plus=(),
+                          sans_guide=False, apres=None):
     """Page « outil » sourcée (test, audios) : texte en markdown avec des marqueurs {{…}} remplacés par l'outil,
-    sections « Questions fréquentes » et « Sources » comme dans les articles."""
+    sections « Questions fréquentes » et « Sources » comme dans les articles. apres : retouche du HTML du corps
+    (ex. un cadre par exercice sur la fiche) ; sans_guide : aucune offre dans l'en-tête ni le menu."""
     entete, corps = lire_entete(os.path.join(RACINE, "contenu", "pages", fichier))
     intro, faq, sources, corps_md = "", [], [], []
     for titre, texte in decouper_sections(corps):
@@ -1125,6 +1129,8 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
         intro_html = intro_html.replace(f"<p>{marqueur}</p>", contenu_outil)
     corps_html = appels_de_source(md("\n\n".join(corps_md)), nb)
     corps_html = re.sub(r"<h2>(.*?)</h2>", lambda m: f'<h2 id="{slugify_unicode(texte_brut(m.group(1)), "-")}">{m.group(1)}</h2>', corps_html)
+    if apres:
+        corps_html = apres(corps_html)
     faq_html = ('<section class="faq"><h2 id="questions-frequentes">Questions fréquentes</h2>'
                 + "".join(f"<h3>{e(q)}</h3>{appels_de_source(md(r), nb)}" for q, r in faq) + "</section>") if faq else ""
     nav_html, schema_ariane = ariane([("Accueil", "/"), (nom_court, None)])
@@ -1152,7 +1158,7 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
         schema_ariane, *schemas_en_plus,
     ]
     ecrire(chemin.strip("/") + "/index.html", page(entete["titre_seo"], entete["description"], chemin, contenu, schemas,
-                                                   nav=chemin, tete=tete))
+                                                   nav=chemin, tete=tete, sans_guide=sans_guide))
     return entete
 
 
@@ -1298,7 +1304,8 @@ def construire_index_recherche(articles):
     plus chaque terme du glossaire. Le texte des sources, des offres et de la navigation n'est pas indexé."""
     slugs = {a["slug"] for a in articles}
     themes = {th["slug"] for th in SITE.get("themes", {}).values()}
-    outils = {"test-stress-anxiete", "respiration-guidee", "exercices-respiration", "journal-humeur", "ressources-urgence"}
+    outils = {"test-stress-anxiete", "respiration-guidee", "exercices-respiration", "fiche-respiration", "journal-humeur",
+              "ressources-urgence"}
     entrees = []
     for chemin in sorted(glob.glob(os.path.join(SORTIE, "**", "index.html"), recursive=True)):
         rel = "/" + os.path.relpath(os.path.dirname(chemin), SORTIE).replace(os.sep, "/") + "/"
@@ -1403,6 +1410,79 @@ def construire_respiration():
                                  schemas_en_plus=objets)
 
 
+# ---------------------------------------------------------------- fiche à imprimer (21/10/2026)
+
+# Outil gratuit et neutre que les universités et associations peuvent citer : aucune offre (ni guide, ni formation)
+# sur la page ni dans le PDF. Le PDF est fabriqué à partir de la page par outils/fiche_pdf.js (Chromium, A4).
+FICHE_DOSSIER = os.path.join(RACINE, "contenu", "fiche")
+FICHE_PDF = os.path.join(FICHE_DOSSIER, "fiche-respiration.pdf")
+FICHE_EMPREINTE = os.path.join(FICHE_DOSSIER, "fiche-respiration.empreinte")
+SCRIPT_FICHE = """(function () {
+  /* Bouton « Imprimer » ; à l'impression, la liste des sources (repliée à l'écran) est dépliée. */
+  var b = document.getElementById("imprimer");
+  if (b) b.addEventListener("click", function () { window.print(); });
+  window.addEventListener("beforeprint", function () { document.querySelectorAll("details").forEach(function (d) { d.open = true; }); });
+})();"""
+
+
+def empreinte_fiche():
+    """Ce qui change le PDF : le texte de la fiche, sa feuille de style, le style du site, le script et ce gabarit."""
+    h = hashlib.sha1()
+    for f in (os.path.join(RACINE, "contenu", "pages", "fiche-respiration.md"), os.path.join(FICHE_DOSSIER, "fiche.css"),
+              os.path.join(RACINE, "contenu", "style.css"), os.path.join(RACINE, "outils", "fiche_pdf.js")):
+        h.update(open(f, "rb").read())
+    h.update(inspect.getsource(construire_fiche).encode("utf-8"))
+    return h.hexdigest()
+
+
+def construire_fiche():
+    css = open(os.path.join(FICHE_DOSSIER, "fiche.css"), encoding="utf-8").read()
+    if os.path.exists(FICHE_PDF):
+        ko = os.path.getsize(FICHE_PDF) / 1024
+        pages = len(re.findall(rb"/Type\s*/Page[^s]", open(FICHE_PDF, "rb").read()))
+        poids = f"PDF, {pages} pages, {ko:.0f} Ko" if pages > 1 else f"PDF, {ko:.0f} Ko"
+    else:
+        poids = "PDF"
+    boutons = (f'<div class="fiche-actions"><a class="bouton" href="/fiche-respiration/fiche-respiration.pdf" download>'
+               f'Télécharger la fiche ({poids})</a>'
+               '<button type="button" class="fiche-second" id="imprimer">Imprimer</button></div>'
+               '<p class="fiche-partage">Tu peux mettre un lien vers cette page ou vers le PDF depuis ton site. '
+               "L'adresse à donner : www.contactapaisement-mental.fr/fiche-respiration/</p>"
+               '<p class="fiche-adresse">Fiche gratuite à imprimer et à partager : '
+               'www.contactapaisement-mental.fr/fiche-respiration/</p>')
+
+    def cadres(corps):
+        # Un cadre par exercice (titres « 1. … » à « 5. … ») et pour « Quand consulter ? », chacun d'un seul tenant à
+        # l'impression.
+        def cadre(m):
+            ident = re.search(r'id="([^"]+)"', m.group(1)).group(1)
+            return f'<section class="fiche-ex" aria-labelledby="{ident}">{m.group(1)}</section>'
+        corps = re.sub(r'(<h2 id="(?:\d-[^"]*|quand-consulter)">.*?)(?=<h2 |\Z)', cadre, corps, flags=re.S)
+        # Les cinq cadres dans un même bloc : deux colonnes à l'impression.
+        corps = re.sub(r'(<section class="fiche-ex".*</section>)', r'<div class="fiche-exercices">\1</div>', corps, count=1, flags=re.S)
+        return corps.replace("<p>Pour aller plus loin", '<p class="fiche-plus">Pour aller plus loin')
+
+    return construire_page_outil("fiche-respiration.md", "/fiche-respiration/", "Fiche respiration",
+                                 {"{{BOUTONS}}": boutons}, "Fiche de 2 pages à imprimer", tete=f"<style>{css}</style>",
+                                 script=SCRIPT_FICHE, sans_guide=True, apres=cadres)
+
+
+def maj_pdf_fiche():
+    """Refait le PDF si la fiche a changé (empreinte), puis le copie dans le site. Sans Node ni Chromium, garde le PDF
+    versionné et prévient."""
+    a_jour = (os.path.exists(FICHE_PDF) and os.path.exists(FICHE_EMPREINTE)
+              and open(FICHE_EMPREINTE, encoding="utf-8").read().strip() == empreinte_fiche())
+    if not a_jour:
+        try:
+            subprocess.run(["node", os.path.join(RACINE, "outils", "fiche_pdf.js")], check=True)
+            open(FICHE_EMPREINTE, "w", encoding="utf-8").write(empreinte_fiche() + "\n")
+            construire_fiche()  # poids et nombre de pages du PDF à jour sur le bouton
+        except (OSError, subprocess.CalledProcessError) as erreur:
+            print(f"ATTENTION : PDF de la fiche respiration pas refait ({erreur}). Lancer node site/outils/fiche_pdf.js.")
+    if os.path.exists(FICHE_PDF):
+        shutil.copy(FICHE_PDF, os.path.join(SORTIE, "fiche-respiration", "fiche-respiration.pdf"))
+
+
 def construire_page_fixe(nom_fichier, chemin, nav=""):
     entete, corps = lire_entete(os.path.join(RACINE, "contenu", "pages", nom_fichier))
     nav_html, schema_ariane = ariane([("Accueil", "/"), (entete["titre"], None)])
@@ -1484,7 +1564,7 @@ def construire_fichiers_techniques(articles):
     # Dates du plan du site : changement réel du contenu (registre) pour les pages fixes ; pour les articles, la date
     # « maj » affichée et donnée dans dateModified (audit du 13/10/2026 : une seule date par article, partout).
     fixes = ["/", "/articles/", "/la-formation/", "/guides-gratuits/", "/test-stress-anxiete/", "/respiration-guidee/",
-             "/ressources-urgence/", "/exercices-respiration/", "/journal-humeur/", "/glossaire/", "/questions-frequentes/",
+             "/ressources-urgence/", "/exercices-respiration/", "/fiche-respiration/", "/journal-humeur/", "/glossaire/", "/questions-frequentes/",
              "/accessibilite/", "/a-propos/", "/methode-editoriale/", "/mentions-legales/"]
     fixes += [f"/{th['slug']}/" for th in SITE.get("themes", {}).values()]
     dates = dates_contenu(fixes + [f"/{a['slug']}/" for a in articles])
@@ -1523,6 +1603,9 @@ def construire_fichiers_techniques(articles):
                "donnent un profil et des priorités. Calcul dans le navigateur, aucune donnée envoyée, pas un diagnostic.",
                f"- [Exercices de respiration]({URL}/exercices-respiration/): minuteur visuel gratuit pour la cohérence cardiaque (5-5), "
                "la respiration carrée (4-4-4-4) et la 4-7-8, avec les études qui les ont testées et leurs limites.",
+               f"- [Fiche des 5 exercices de respiration]({URL}/fiche-respiration/): fiche gratuite à imprimer (A4, PDF "
+               f"{URL}/fiche-respiration/fiche-respiration.pdf) : respiration lente 4-6, cohérence cardiaque 5-5, soupir "
+               "physiologique, respiration carrée et 4-7-8, pas à pas, avec ce qu'en disent les études et quand consulter.",
                f"- [Respiration guidée 4-6]({URL}/respiration-guidee/): trois audios gratuits sans voix (3, 5 et 10 minutes), "
                "sur la musique « Deep Relaxation » de Kevin MacLeod (CC BY 4.0), "
                "pour respirer à 6 respirations par minute (inspirer 4 s, expirer 6 s), avec les études qui fondent ce rythme.",
@@ -1624,6 +1707,7 @@ def main():
     construire_respiration()
     construire_urgences()
     construire_exercices()
+    construire_fiche()
     construire_glossaire()
     construire_faq()
     construire_journal()
@@ -1640,6 +1724,7 @@ def main():
     construire_404()
     construire_index_recherche(articles)
     construire_fichiers_techniques(articles)
+    maj_pdf_fiche()
     print(f"{len(articles)} articles construits dans site/_build/ :",
           ", ".join(f"{a['slug']} ({a['mots']} mots, {len(a['sources'])} sources)" for a in articles))
 

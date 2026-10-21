@@ -33,7 +33,7 @@
  },
  "/calmer-son-systeme-nerveux/": {
   "date": "2026-10-21",
-  "empreinte": "d0d01c8a190e0ac1"
+  "empreinte": "616fde81f5e151cf"
  },
  "/charge-mentale-et-burn-out/": {
   "date": "2026-10-21",
@@ -54,6 +54,10 @@
  "/exercices-respiration/": {
   "date": "2026-10-18",
   "empreinte": "6ab4b1079f77c50e"
+ },
+ "/fiche-respiration/": {
+  "date": "2026-10-21",
+  "empreinte": "dda703bf318978ac"
  },
  "/glossaire/": {
   "date": "2026-10-18",
@@ -100,12 +104,12 @@
   "empreinte": "2ed16117403cf845"
  },
  "/respiration-guidee/": {
-  "date": "2026-10-18",
-  "empreinte": "d5f7fe7f9eb8918d"
+  "date": "2026-10-21",
+  "empreinte": "4ac4e167991bca26"
  },
  "/respiration-pour-dormir/": {
   "date": "2026-10-21",
-  "empreinte": "3ecf63f04481b725"
+  "empreinte": "22e373aab3090802"
  },
  "/ressources-urgence/": {
   "date": "2026-10-18",

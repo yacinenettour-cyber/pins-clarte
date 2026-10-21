@@ -113,7 +113,7 @@ Commence par respirer lentement, relâche ensuite tes muscles, puis laisse ton e
 3. **2 à 3 minutes de relâchement.** Détends ton front, ta mâchoire, tes épaules, tes bras, puis tes jambes, une zone après l'autre [7].
 4. **Une scène calme.** Imagine un lieu précis, avec ses détails, ses couleurs et ses sons, au lieu d'essayer de « ne plus penser » [8]. Une crique que tu connais, par exemple, ou le jardin d'une maison de vacances.
 
-Tu es encore éveillé au bout d'une vingtaine de minutes ? L'Institut national du sommeil et de la vigilance (INSV) conseille alors de te lever et de faire autre chose, puis de ne revenir au lit que lorsque les signes du sommeil apparaissent, comme les bâillements, la nuque lourde ou les yeux qui piquent [10]. Cette respiration trouve aussi très bien sa place dans une [routine du soir anti-stress](/routine-du-soir-anti-stress/).
+Tu es encore éveillé au bout d'une vingtaine de minutes ? L'Institut national du sommeil et de la vigilance (INSV) conseille alors de te lever et de faire autre chose, puis de ne revenir au lit que lorsque les signes du sommeil apparaissent, comme les bâillements, la nuque lourde ou les yeux qui piquent [10]. Cette respiration trouve aussi très bien sa place dans une [routine du soir anti-stress](/routine-du-soir-anti-stress/). Et si tu préfères avoir les consignes sur papier, à côté du lit, la respiration 4-6, la 4-7-8, la respiration carrée et deux autres exercices tiennent sur une [fiche gratuite à imprimer](/fiche-respiration/).
 
 ## Quand consulter ?
 
