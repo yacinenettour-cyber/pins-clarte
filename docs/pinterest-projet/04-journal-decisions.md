@@ -967,3 +967,25 @@ l'introduction et un H2), /respiration-pour-dormir/ (description « technique 4-
 (« respiration guidée » dans la 1re phrase), /ressources-urgence/ (question « Existe-t-il un numéro vert gratuit
 24 h/24 ? », sources déjà présentes). /cortisol-hormone-du-stress/ (« adrenaline cortisol ») déjà complet, non touché.
 Publié sur gh-pages, IndexNow pour les 4 adresses.
+
+## 83. Site : fiche gratuite « 5 exercices de respiration pour se calmer » à imprimer (21/10/2026)
+
+Demande de l'utilisateur : « Une fiche gratuite à télécharger […] Quand on écrit aux universités et aux associations, on
+leur propose cette fiche plutôt qu'un article. » Page /fiche-respiration/ (source site/contenu/pages/fiche-respiration.md,
+style site/contenu/fiche/fiche.css, construite par construire_fiche() dans construire.py) : respiration lente 4-6,
+cohérence cardiaque 5-5, soupir physiologique, respiration carrée et 4-7-8 avec ses limites, chacune avec les gestes pas
+à pas, le moment, une phrase honnête sur les études et le lien vers l'article qui la source (respiration-pour-dormir,
+nerf-vague, calmer-son-systeme-nerveux) ; aucun fait ni source qui ne soit déjà sur le site (11 sources reprises à
+l'identique). Prudence (vertige → arrêter, asthme ou maladie du cœur ou des poumons → avis médical), « Quand
+consulter ? », 15/112/3114, « Je ne suis pas professionnel de santé ». Aucune offre : ni guide, ni formation, ni plan,
+même dans l'en-tête (sans_guide) ; c'est ce qui la rend citable par une université. Version imprimable : feuille
+@media print (A4, 2 colonnes, sans menu ni pied de page, adresse du site en bas de chaque page et en tête de fiche, tout
+en noir sur blanc) et PDF gratuit /fiche-respiration/fiche-respiration.pdf (2 pages, balisé), fabriqué à partir de la
+page par site/outils/fiche_pdf.js (Playwright + Chromium local) ; construire.py le refait tout seul quand la fiche, son
+style ou le style du site changent (empreinte dans site/contenu/fiche/fiche-respiration.empreinte), sinon garde le PDF
+versionné. Boutons « Télécharger la fiche (PDF) » et « Imprimer ». Liens depuis /respiration-pour-dormir/,
+/calmer-son-systeme-nerveux/, /respiration-guidee/ et la colonne « Outils gratuits » du pied de page ; plan du site,
+recherche et llms.txt. Contrôles : axe-core 0 violation sur la fiche dans les deux thèmes (1280 et 320 px), aucun
+débordement à 320 px, W3C 0 erreur, 0 lien interne cassé, rendu du PDF regardé page par page. Prospection : règle
+datée du 21/10 dans prospection-liens.json (universités, santé étudiante, associations, institutionnels A et B :
+proposer d'abord la fiche plutôt qu'un article, mêmes interdits). Publié sur gh-pages, IndexNow.
