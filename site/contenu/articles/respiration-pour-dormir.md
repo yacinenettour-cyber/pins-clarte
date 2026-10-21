@@ -16,6 +16,8 @@ image: Personne allongée dans son lit, les yeux fermés, dans une chambre à la
 
 La respiration pour dormir, ce sont des exercices où tu ralentis exprès ton souffle au moment du coucher, pour calmer le corps et détourner l'esprit des pensées qui t'empêchent de t'endormir. Le Réseau Morphée, un réseau de santé consacré aux troubles du sommeil, rappelle que travailler sur la respiration empêche les pensées de divaguer et crée un espace de transition entre la journée et la nuit [9]. Les techniques les plus connues s'appellent 4-7-8, respiration carrée, soupir cyclique ou méthode militaire, et elles n'ont pas toutes le même poids dans les études. Tu trouveras aussi, plus bas, une façon simple de t'y mettre dès ce soir.
 
+*Un mot de Yacine : pendant mes nuits blanches, c'est la respiration lente, la cohérence cardiaque, qui m'a le plus aidé à faire baisser le stress. Ça ne marchera pas forcément de la même façon pour toi : la suite repose sur les études, pas sur mon cas. Mon histoire est sur la page [à propos](/a-propos/).*
+
 ## Pourquoi respirer lentement aide-t-il à s'endormir ?
 
 Parce que ça renforce l'activité du nerf vague, celui qui ralentit le cœur. Or chez beaucoup de personnes qui dorment mal, le corps reste en mode alerte [1][2].

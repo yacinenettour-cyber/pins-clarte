@@ -948,3 +948,10 @@ description en français dans le texte (nom exact gardé dans les sources), term
 Stanford, King's College, Henry Ford, GAD-7, SMILES). « Cortisol face » devient « visage cortisol » dans le texte
 (l'en-tête garde « cortisol face »). Contrôle `outils/verifier_humanisation.py` : 17/17 OK (en-têtes, sources, liens,
 citations, chiffres, parties, tableaux, longueur ±10 %), plus relecture des phrases sourcées. Publié sur gh-pages.
+
+## 81. Site : le vécu réel de l'auteur sur « À propos » et dans 3 articles (21/10/2026)
+
+Pour la confiance (E-E-A-T) et un site moins « IA », l'utilisateur a donné son vécu réel (docs/referencement/vecu-auteur.md :
+nuits blanches, médicaments à base de plantes peu efficaces pour lui, méditation et cohérence cardiaque qui l'ont aidé).
+Refus d'inventer une histoire à sa place (demande « Trouve-moi un exemple d'histoire pour moi ») : modèle à trous et
+questions à la place. Texte validé puis allongé à sa demande, sans aucun fait ajouté. Publié sur gh-pages, IndexNow.

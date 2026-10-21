@@ -16,6 +16,8 @@ image: Jeune femme allongée dans son lit à la lumière tamisée d'une lampe de
 
 Les ruminations le soir (on parle aussi de ruminations nocturnes), ce sont ces pensées qui tournent en boucle au coucher, quand ton cerveau reste en « alerte » alors qu'il devrait ralentir [1]. La journée ne fait plus de bruit, alors les soucis en suspens prennent toute la place. Pour casser la boucle, quelques gestes simples peuvent aider. Vider ta tête sur papier, occuper ton esprit autrement, respirer lentement, ou tout simplement sortir du lit.
 
+*Un mot de Yacine : je connais ces soirs où le stress de la journée prend toute la place au moment de dormir. Ce sont eux qui m'ont amené à créer ce site. Ici, je rapporte ce que disent les études et les organismes de santé. Mon histoire est sur la page [à propos](/a-propos/).*
+
 ## Pourquoi les ruminations arrivent-elles le soir, au moment de dormir ?
 
 Parce qu'au lit, plus rien n'occupe ton attention. L'esprit part où il veut, et il ressasse facilement [3]. Une équipe du centre des troubles du sommeil de l'hôpital Henry Ford, à Détroit, l'a décrit en 2018 (Kalmbach et ses collègues), dans une revue scientifique consacrée au sommeil. Le temps passé éveillé au lit n'a aucune structure, on y est souvent seul, et c'est un terrain idéal pour ressasser [3].
