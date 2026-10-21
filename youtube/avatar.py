@@ -57,17 +57,8 @@ def lune(img, cx, cy, r):
     return img
 
 
-def silhouette(im):
-    """Personne assise en tailleur, mains sur les genoux, sur une colline. Formes simples fondues entre elles
-    (flou puis seuil) pour un contour souple, sans angles de robot."""
-    u = S / 800
-    d = ImageDraw.Draw(im)
-    pts = [(x, S * 0.81 + 18 * u * math.sin(x / (110 * u)) - 34 * u * math.exp(-((x - S / 2) / (240 * u)) ** 2))
-           for x in range(0, S + 10, 6)]
-    d.polygon(pts + [(S, S), (0, S)], fill=(13, 14, 34, 255))
-    m = Image.new("L", im.size, 0)
-    dm = ImageDraw.Draw(m)
-    bx, by = S / 2, S * 0.765
+def forme_meditation(dm, bx, by, u):
+    """Formes de la personne en méditation (bassin en bx, by ; u = échelle) ; partagé avec la bannière."""
     E = lambda x, y, rx, ry: dm.ellipse([bx + (x - rx) * u, by + (y - ry) * u, bx + (x + rx) * u, by + (y + ry) * u], fill=255)
     E(0, -262, 33, 39)                      # tête
     E(0, -306, 17, 15)                      # chignon
@@ -82,6 +73,18 @@ def silhouette(im):
         E(sg * 130, -22, 19, 15)            # main posée sur le genou
         E(sg * 128, 0, 42, 30)              # genou
     E(0, 4, 150, 34)                        # jambes croisées
+
+
+def silhouette(im):
+    """Personne assise en tailleur, mains sur les genoux, sur une colline. Formes simples fondues entre elles
+    (flou puis seuil) pour un contour souple, sans angles de robot."""
+    u = S / 800
+    d = ImageDraw.Draw(im)
+    pts = [(x, S * 0.81 + 18 * u * math.sin(x / (110 * u)) - 34 * u * math.exp(-((x - S / 2) / (240 * u)) ** 2))
+           for x in range(0, S + 10, 6)]
+    d.polygon(pts + [(S, S), (0, S)], fill=(13, 14, 34, 255))
+    m = Image.new("L", im.size, 0)
+    forme_meditation(ImageDraw.Draw(m), S / 2, S * 0.765, u)
     m = m.filter(ImageFilter.GaussianBlur(7 * u)).point(lambda v: 255 if v > 118 else 0)
     m = m.filter(ImageFilter.GaussianBlur(0.8 * u))
     calque = Image.new("RGBA", im.size, (8, 9, 22, 255))
