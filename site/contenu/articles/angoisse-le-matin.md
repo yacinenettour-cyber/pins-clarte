@@ -10,33 +10,33 @@ maj: 2026-10-21
 image: Personne assise au bord de son lit le matin, le visage dans les mains, dans une chambre baignée de lumière douce
 ---
 ## L'essentiel
-- L'angoisse le matin est une inquiétude qui arrive dès le réveil, parfois sans raison claire, souvent tournée vers la journée qui commence.
-- Au réveil, le cortisol monte normalement pendant la première heure : ce n'est pas une anomalie, et les études ne montrent pas qu'il crée l'angoisse à lui seul.
-- Le stress et les émotions difficiles de la veille sont associés à une montée plus forte le lendemain matin.
-- Sur le moment : ralentir la respiration, se lever, prendre la lumière du jour et bouger ; à long terme, repousser les soucis à un moment fixe de la journée.
+- L'angoisse le matin, c'est une inquiétude qui arrive dès le réveil, parfois sans raison claire, et souvent tournée vers la journée qui commence.
+- Au réveil, le cortisol monte normalement pendant la première heure. Ce n'est pas une anomalie, et les études ne montrent pas qu'il crée l'angoisse à lui seul.
+- Le stress et les émotions difficiles de la veille vont de pair avec une montée plus forte le lendemain matin.
+- Sur le moment, ralentir la respiration, se lever, prendre la lumière du jour et bouger aident. À plus long terme, on peut repousser ses soucis à un moment fixe de la journée.
 - Si l'angoisse revient presque chaque matin, avec une grande fatigue ou une tristesse qui dure, parles-en à ton médecin : ce peut être un signe d'anxiété ou de dépression, qui se soignent.
 
-L'angoisse le matin, ou angoisse matinale, est une montée d'inquiétude dès le réveil : le cœur qui s'accélère, une boule au ventre, des pensées tournées vers ce qui t'attend dans la journée. L'Assurance maladie décrit l'anxiété comme une appréhension d'un danger précis ou vague, avec des inquiétudes sur l'avenir, le travail, la santé, les proches ou l'argent [1]. Voici ce que l'on sait de ce moment particulier qu'est le réveil, ce qui aide sur le moment et quand il faut consulter.
+Les yeux à peine ouverts, et déjà le cœur qui accélère. Une boule au ventre, des pensées qui filent vers tout ce qui t'attend aujourd'hui. C'est ce qu'on appelle l'angoisse le matin, ou angoisse matinale. L'Assurance maladie décrit l'anxiété comme l'appréhension d'un danger, précis ou vague, avec des inquiétudes sur l'avenir, le travail, la santé, les proches ou l'argent [1]. Le réveil est un moment à part, il existe des gestes qui aident sur le coup, et certains signes doivent pousser à consulter.
 
 ## Pourquoi l'angoisse est-elle plus forte le matin ?
 
-L'angoisse peut être plus forte le matin parce que le réveil est un moment où le corps s'active brusquement et où l'esprit se tourne vers la journée à venir [2][3]. Les études ne permettent pas de dire laquelle de ces raisons pèse le plus pour toi : ce sont des pistes, pas un diagnostic.
+Parce qu'au réveil, ton corps se met en route d'un coup et ton esprit se tourne vers la journée qui arrive [2][3]. Pour ton cas à toi, les études ne disent pas laquelle de ces raisons pèse le plus. Ce sont des pistes, pas un diagnostic.
 
-**Le cortisol monte normalement au réveil.** Selon une revue de l'Université technique de Dresde (Allemagne), publiée en 2009 dans l'*International Journal of Psychophysiology* (Fries, Dettenborn et Kirschbaum), la sécrétion de cortisol, l'hormone du stress, augmente fortement après le réveil [2]. Les chercheurs appellent ce phénomène la « réponse du cortisol au réveil ». Il s'ajoute au rythme quotidien du cortisol, plus haut le matin que le soir, expliqué dans l'article sur le [cortisol, hormone du stress](/cortisol-hormone-du-stress/). Cette hausse se produit dans la première heure après le réveil [3].
+D'abord, le cortisol monte, et c'est normal. Trois chercheurs de l'Université technique de Dresde, en Allemagne, ont fait le point sur la question en 2009 dans une revue de psychophysiologie. La sécrétion de cortisol, l'hormone du stress, grimpe fortement après le réveil [2]. Les chercheurs appellent ça la « réponse du cortisol au réveil ». Elle vient s'ajouter au rythme quotidien du cortisol, plus haut le matin que le soir (on l'explique dans l'article sur le [cortisol, hormone du stress](/cortisol-hormone-du-stress/)), et elle se joue dans la première heure après le réveil [3].
 
-**Elle dépend en partie de ce que tu vis.** Selon la même revue, la taille de cette hausse varie avec l'état de santé, les habitudes de vie ou la façon de percevoir le stress, et sa fonction exacte n'est pas encore éclaircie [2]. Les auteurs font l'hypothèse qu'elle sert à préparer la journée qui commence [2].
+Cette hausse n'est pas la même pour tout le monde. D'après la même revue, son ampleur varie avec l'état de santé, les habitudes de vie ou la façon de percevoir le stress, et on ne sait pas encore exactement à quoi elle sert [2]. Les auteurs pensent qu'elle prépare la journée qui commence [2].
 
-**La veille compte.** Une étude de l'Université Northwestern (États-Unis), publiée en 2006 dans les *Proceedings of the National Academy of Sciences* (Adam et al.), a suivi 156 adultes âgés pendant trois jours [4]. Ils notaient leurs émotions chaque soir et mesuraient leur cortisol dans la salive au réveil, 30 minutes plus tard et au coucher. Se sentir seul, triste, menacé ou sans prise sur les événements la veille était associé à une hausse plus forte du cortisol le lendemain matin [4]. L'inverse n'était pas vrai : la hausse du matin ne prédisait pas ces émotions plus tard dans la journée [4].
+La journée de la veille compte aussi. En 2006, une équipe de l'Université Northwestern, aux États-Unis, a suivi 156 adultes âgés pendant trois jours, pour une étude parue dans la revue de l'Académie américaine des sciences [4]. Chaque soir, ils notaient leurs émotions. Ils mesuraient aussi leur cortisol dans la salive au réveil, 30 minutes plus tard et au coucher. Ceux qui s'étaient sentis seuls, tristes, menacés ou sans prise sur les événements la veille avaient une hausse plus forte du cortisol le lendemain matin [4]. Dans l'autre sens, en revanche, aucun lien. La hausse du matin ne prédisait pas ces émotions plus tard dans la journée [4].
 
-**Le stress de fond aussi.** Une méta-analyse de l'University College London, publiée en 2009 dans *Biological Psychology* (Chida et Steptoe), a rassemblé 147 études issues de 62 articles [5]. La hausse du cortisol au réveil était plus forte chez les personnes qui vivaient un stress au travail ou un stress de vie général, et plus faible en cas de fatigue, d'épuisement ou de burn-out [5].
+Le stress de fond joue aussi. En 2009, deux chercheurs de l'UCL, à Londres, ont regroupé 147 études tirées de 62 articles dans une revue de biologie et de psychologie [5]. Chez les personnes stressées par leur travail ou par la vie en général, la hausse du cortisol au réveil était plus forte. Elle était plus faible en cas de fatigue, d'épuisement ou de burn-out [5].
 
-**Mais cette hausse n'est pas l'ennemie.** Une étude de l'Université de Southampton (Royaume-Uni), publiée en 2012 dans *PLoS One* (Powell et Schlotz), a suivi 23 adultes en bonne santé pendant deux jours [3]. Elle n'a trouvé aucun lien entre l'appréhension de la journée, notée au réveil, et la hausse du cortisol. Surtout, une hausse plus forte allait de pair avec des réactions moins vives aux tracas de la journée [3]. Autrement dit, le cortisol du matin t'aide plutôt à faire face : inutile de chercher à le « faire baisser » au réveil.
+Pour autant, cette hausse n'a rien d'une ennemie. En 2012, deux chercheurs de l'Université de Southampton, au Royaume-Uni, ont suivi 23 adultes en bonne santé pendant deux jours et publié leurs résultats dans une revue scientifique en libre accès [3]. Ils n'ont trouvé aucun lien entre l'appréhension de la journée, notée au réveil, et la hausse du cortisol. Mieux, une hausse plus forte allait avec des réactions moins vives aux tracas du quotidien [3]. Le cortisol du matin t'aide donc plutôt à faire face. Pas la peine de chercher à le « faire baisser » au réveil.
 
-**Le réveil laisse peu de place aux distractions.** Au lit, rien n'occupe encore ton attention, et les inquiétudes anxieuses se présentent souvent sous la forme « que va-t-il m'arriver ? » ou « je ne pourrai pas supporter… », jusqu'à de vrais scénarios catastrophes [1]. C'est le même mécanisme que le soir, détaillé dans l'article sur l'[angoisse le soir](/angoisse-le-soir/), mais tourné vers la journée qui commence.
+Au lit, en plus, rien n'occupe encore ton attention. Or les inquiétudes anxieuses prennent souvent la forme de « que va-t-il m'arriver ? » ou « je ne pourrai pas supporter… », et peuvent aller jusqu'à de vrais scénarios catastrophes [1]. C'est le même mécanisme que le soir, qu'on décrit dans l'article sur l'[angoisse le soir](/angoisse-le-soir/), sauf qu'ici il se tourne vers la journée qui commence.
 
 ## Angoisse matinale passagère, anxiété ou dépression : comment faire la différence ?
 
-Une angoisse du matin passagère, sans grand retentissement sur ta vie, fait partie des angoisses normales ; quand elle revient presque chaque matin, déborde sur la journée ou s'accompagne d'une grande fatigue et de tristesse, elle peut signaler un trouble anxieux ou une dépression [1][6].
+Si l'angoisse du matin passe vite et ne pèse pas vraiment sur ta vie, elle fait partie des angoisses normales. Quand elle revient presque tous les matins, déborde sur la journée ou vient avec une grande fatigue et de la tristesse, elle peut signaler un trouble anxieux ou une dépression [1][6].
 
 | | Angoisse matinale passagère | Trouble anxieux | Dépression |
 |---|---|---|---|
@@ -45,24 +45,24 @@ Une angoisse du matin passagère, sans grand retentissement sur ta vie, fait par
 | Le sommeil | Variable | Insomnies, somnolence dans la journée [1] | Sommeil peu réparateur, réveils précoces [6] |
 | Ce qu'il faut faire | Les gestes de cet article | En parler à ton médecin : une psychothérapie est recommandée [7] | En parler à ton médecin, surtout si cela dure plus de deux semaines [6] |
 
-Selon l'Assurance maladie, on parle d'épisode dépressif quand les symptômes sont présents presque chaque jour depuis au moins deux semaines, sont source de détresse et retentissent sur la vie professionnelle, sociale et familiale [6]. Dans l'anxiété qui devient un trouble, les angoisses et les inquiétudes sont excessives par rapport à la réalité et ne sont pas contrôlables [1].
+Pour l'Assurance maladie, on parle d'épisode dépressif quand les symptômes sont là presque chaque jour depuis au moins deux semaines, qu'ils causent de la détresse et qu'ils retentissent sur la vie professionnelle, sociale et familiale [6]. Quand l'anxiété devient un trouble, les angoisses et les inquiétudes sont excessives par rapport à la réalité, et on ne parvient pas à les contrôler [1].
 
-Si tu te réveilles avec une peur intense, des palpitations, une sensation d'étouffement ou une douleur dans la poitrine, il peut s'agir d'une crise d'angoisse (attaque de panique) : elle apparaît brutalement puis les symptômes diminuent progressivement [1]. Elle dure de quelques minutes à une heure, 20 à 30 minutes en moyenne [11]. Seul un médecin peut poser ce diagnostic, car ces symptômes existent aussi dans d'autres maladies [1]. La première fois, ou en cas de douleur dans la poitrine, appelle le 15 ou le 112. Ce qu'il faut faire pendant la crise est détaillé dans l'article sur l'[angoisse le soir et la nuit](/angoisse-le-soir/).
+Tu te réveilles avec une peur intense, des palpitations, l'impression d'étouffer ou une douleur dans la poitrine ? Il peut s'agir d'une crise d'angoisse, aussi appelée attaque de panique. Elle arrive brutalement, puis les symptômes s'atténuent peu à peu [1]. Elle dure de quelques minutes à une heure, 20 à 30 minutes en moyenne [11]. Seul un médecin peut poser ce diagnostic, car ces symptômes existent aussi dans d'autres maladies [1]. La première fois, ou s'il y a une douleur dans la poitrine, appelle le 15 ou le 112. Pour savoir quoi faire pendant la crise, va voir l'article sur l'[angoisse le soir et la nuit](/angoisse-le-soir/).
 
 ## Que faire quand l'angoisse arrive dès le réveil ?
 
-Quand l'angoisse arrive dès le réveil, le plus utile est de ralentir ta respiration, de sortir du lit plutôt que d'y ressasser, puis de prendre la lumière du jour et de bouger un peu [7][9].
+Ralentis ta respiration, sors du lit au lieu d'y ressasser, puis va chercher la lumière du jour et bouge un peu [7][9].
 
-1. **Nomme ce qui se passe.** « C'est mon angoisse du matin, elle monte puis elle redescend. » Le cortisol qui monte au réveil est un phénomène normal [2] : la sensation est désagréable, mais elle ne signifie pas que la journée sera mauvaise.
-2. **Ralentis ta respiration.** Les techniques de respiration et de relaxation font partie des outils de la thérapie comportementale et cognitive pour gérer et prévenir les angoisses [7]. Inspire par le nez en comptant jusqu'à 4, expire en comptant jusqu'à 6, pendant quelques minutes, ou laisse-toi guider par les [audios de respiration guidée](/respiration-guidee/).
-3. **Sors du lit.** Rester allongé à ressasser laisse le champ libre aux pensées anxieuses. Lève-toi, ouvre les volets, passe-toi de l'eau sur le visage : une action simple remet ton attention dans la pièce.
-4. **Prends la lumière du jour.** Selon l'Inserm, la lumière remet à l'heure l'horloge interne, qui rythme notamment la production de cortisol [9]. Quelques minutes dehors ou près d'une fenêtre suffisent pour en faire un rendez-vous du matin.
-5. **Bouge un peu.** L'activité physique fait partie des conseils de l'Assurance maladie en cas d'anxiété [7]. Une vaste synthèse de 97 revues, détaillée dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/), montre qu'elle réduit les symptômes d'anxiété [10]. Une marche de 10 minutes avant de commencer ta journée est un bon début.
-6. **Va doucement sur le café.** L'Assurance maladie conseille aux personnes anxieuses d'arrêter les excitants : café, tabac, alcool [7]. Si tu bois ton café à jeun et que ton cœur s'emballe déjà, essaie de le décaler après le petit-déjeuner ou de réduire la dose, et observe ce qui change.
+1. **Mets un nom dessus.** « C'est mon angoisse du matin, elle monte et puis elle redescend. » La montée du cortisol au réveil est normale [2]. C'est désagréable, oui, mais ça ne veut pas dire que ta journée sera mauvaise.
+2. **Respire plus lentement.** Les techniques de respiration et de relaxation font partie des outils de la thérapie comportementale et cognitive pour gérer et prévenir les angoisses [7]. Inspire par le nez en comptant jusqu'à 4, expire en comptant jusqu'à 6, et continue quelques minutes. Tu peux aussi te laisser guider par les [audios de respiration guidée](/respiration-guidee/).
+3. **Lève-toi.** Rester allongé à tourner les choses dans ta tête, c'est laisser toute la place aux pensées anxieuses. Ouvre les volets, passe-toi de l'eau sur le visage. Un geste simple suffit à ramener ton attention dans la pièce.
+4. **Va chercher la lumière.** D'après l'Inserm, la lumière remet à l'heure l'horloge interne, celle qui rythme entre autres la production de cortisol [9]. Quelques minutes dehors ou près d'une fenêtre, et tu tiens ton petit rendez-vous du matin.
+5. **Bouge un peu.** L'Assurance maladie compte l'activité physique parmi ses conseils en cas d'anxiété [7]. Une grande synthèse de 97 revues, présentée dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/), montre qu'elle réduit les symptômes d'anxiété [10]. Marcher 10 minutes avant d'attaquer ta journée, c'est déjà un bon début.
+6. **Doucement sur le café.** L'Assurance maladie conseille aux personnes anxieuses d'arrêter les excitants, qu'il s'agisse du café, du tabac ou de l'alcool [7]. Par exemple, si tu bois ton café à jeun et que ton cœur s'emballe déjà, essaie de le prendre après le petit-déjeuner, ou d'en boire moins, et regarde ce que ça change.
 
 ## Comment éviter que l'angoisse revienne chaque matin ?
 
-Pour éviter que l'angoisse revienne chaque matin, donne à tes soucis un moment fixe dans la journée, prends la lumière et bouge le matin, et prépare tes soirées [8][9][10].
+En donnant à tes soucis un moment fixe dans la journée, en prenant la lumière et en bougeant le matin, et en préparant tes soirées [8][9][10].
 
 | Moment | Geste | Ce qui le soutient |
 |---|---|---|
@@ -70,48 +70,48 @@ Pour éviter que l'angoisse revienne chaque matin, donne à tes soucis un moment
 | Dans la journée | 30 minutes pour tes soucis, toujours à la même heure et au même endroit | Moins d'inquiétude, d'anxiété et d'insomnie en 2 semaines, dans un essai de Chicago [8] |
 | Le soir | Noter ce qui t'inquiète pour demain et la prochaine action possible | Les émotions difficiles de la veille sont associées à une hausse du cortisol le lendemain [4] |
 
-**Repousse tes soucis à un rendez-vous fixe.** Selon un essai de l'Université de l'Illinois à Chicago, publié en 2013 dans *Behavior Modification* (McGowan et Behar), 53 personnes qui s'inquiétaient beaucoup ont été réparties au hasard en deux groupes pendant 2 semaines [8]. Le premier groupe réservait chaque jour 30 minutes à ses soucis, toujours à la même heure et au même endroit, et les mettait de côté le reste du temps. Il a vu ses inquiétudes, son anxiété et son insomnie baisser davantage que le groupe à qui l'on demandait seulement de ne pas éviter ses soucis [8]. Les auteurs parlent de résultats préliminaires [8]. Le matin, quand une inquiétude se présente, dis-toi : « J'y penserai à 18 h », et note-la si besoin.
+L'idée de repousser ses soucis à un rendez-vous fixe vient d'un essai mené à l'Université de l'Illinois à Chicago et publié en 2013 dans une revue de thérapie comportementale. Pendant 2 semaines, 53 personnes qui s'inquiétaient beaucoup ont été réparties au hasard en deux groupes [8]. Dans le premier, on réservait chaque jour 30 minutes à ses soucis, toujours à la même heure et au même endroit, et on les laissait de côté le reste du temps. Leurs inquiétudes, leur anxiété et leur insomnie ont baissé davantage que dans l'autre groupe, à qui l'on demandait simplement de ne pas éviter ses soucis [8]. Les auteurs restent prudents et parlent de résultats préliminaires [8]. En pratique, le matin, quand une inquiétude se pointe, tu peux te dire « J'y penserai à 18 h », et la noter si besoin.
 
-**Prépare le matin dès la veille.** Puisque la veille compte [4], prends 10 minutes en début de soirée pour poser sur papier ce qui t'attend demain et la première chose à faire. La méthode est détaillée dans l'article sur les [ruminations le soir](/ruminations-le-soir/). Si tu te réveilles plutôt en pleine nuit, vers 4 h, avec la même inquiétude, lis ce qu'il faut faire en cas de [réveil à 4 h du matin](/reveil-4h-du-matin/) : selon l'Institut national du sommeil et de la vigilance (INSV), en cas de stress, ce sont surtout les fins de nuit qui sont touchées [12].
+Tu peux aussi préparer le matin dès la veille. Puisque la veille compte [4], garde 10 minutes en début de soirée pour écrire ce qui t'attend demain et la première chose à faire. La méthode est expliquée dans l'article sur les [ruminations le soir](/ruminations-le-soir/). Si c'est plutôt en pleine nuit, vers 4 h, que tu te réveilles avec la même inquiétude, lis ce qu'il faut faire en cas de [réveil à 4 h du matin](/reveil-4h-du-matin/). L'Institut national du sommeil et de la vigilance (INSV) note qu'en cas de stress, ce sont surtout les fins de nuit qui trinquent [12].
 
 ## Quand consulter ?
 
-Consulte ton médecin traitant si l'angoisse revient presque tous les matins depuis plusieurs semaines, si elle t'empêche de partir travailler ou de sortir, ou si elle s'accompagne d'une grande tristesse [1][6]. Parles-en notamment si :
+Va voir ton médecin traitant si l'angoisse revient presque tous les matins depuis plusieurs semaines, si elle t'empêche de partir travailler ou de sortir, ou si elle vient avec une grande tristesse [1][6]. Parles-en en particulier si :
 
 - tu te sens triste, vide ou sans espoir presque toute la journée depuis au moins deux semaines, ou tu as perdu l'envie de faire ce que tu aimais [6] ;
 - tu ressens une fatigue intense dès le matin, que le repos ou le sommeil n'améliorent pas [6] ;
-- tu te réveilles très tôt sans pouvoir te rendormir, presque chaque nuit : l'INSV rappelle que l'insomnie peut être le premier signe d'une dépression [12] ;
+- tu te réveilles très tôt sans pouvoir te rendormir, presque chaque nuit (l'INSV rappelle que l'insomnie peut être le premier signe d'une dépression) [12] ;
 - tu commences à éviter des situations, des lieux ou ton travail à cause de l'angoisse [1] ;
 - tu as fait une ou plusieurs crises d'angoisse au réveil [11].
 
-L'anxiété et la dépression se soignent. Selon l'Assurance maladie, la psychothérapie est recommandée quel que soit le trouble anxieux, et la thérapie comportementale et cognitive est reconnue efficace quand l'anxiété est importante [7]. Ne prends pas d'anxiolytique sans avis médical : l'Assurance maladie rappelle leurs risques, dont la somnolence, les troubles de la mémoire et la dépendance [7].
+L'anxiété et la dépression se soignent. D'après l'Assurance maladie, la psychothérapie est recommandée quel que soit le trouble anxieux, et la thérapie comportementale et cognitive est reconnue efficace quand l'anxiété est importante [7]. Ne prends pas d'anxiolytique sans avis médical. L'Assurance maladie rappelle leurs risques, parmi lesquels la somnolence, les troubles de la mémoire et la dépendance [7].
 
-Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 [13]. Une douleur dans la poitrine ou un malaise doivent faire appeler le 15 ou le 112.
+Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 [13]. Une douleur dans la poitrine ou un malaise, c'est le 15 ou le 112.
 
-Pour faire le point, le [test de stress et d'anxiété](/test-stress-anxiete/) (questionnaire GAD-7) se remplit en 2 minutes ; tes réponses restent sur ton appareil.
+Pour faire le point, le [test de stress et d'anxiété](/test-stress-anxiete/) (questionnaire GAD-7) prend 2 minutes, et tes réponses restent sur ton appareil.
 
 ## Questions fréquentes
 
 ### Pourquoi j'ai des angoisses le matin sans raison ?
-Souvent, il n'y a pas de raison précise : au réveil, le cortisol monte normalement [2] et l'esprit, que rien n'occupe encore, se tourne vers la journée [1]. Le stress des jours précédents et les émotions difficiles de la veille peuvent rendre ce moment plus intense [4][5]. Si cela revient presque chaque matin, parles-en à ton médecin.
+Souvent, il n'y a pas de raison précise. Au réveil, le cortisol monte normalement [2], et ton esprit, que rien n'occupe encore, part vers la journée [1]. Le stress des jours précédents et les émotions difficiles de la veille peuvent rendre ce moment plus intense [4][5]. Si ça revient presque chaque matin, parles-en à ton médecin.
 
 ### L'angoisse au réveil est-elle un signe de dépression ?
-Pas forcément, mais elle peut l'être. Dans la dépression, la fatigue est souvent intense dès le matin et le sommeil devient peu réparateur, avec des réveils précoces [6]. Si tu te sens aussi triste ou sans envie presque chaque jour depuis au moins deux semaines, consulte ton médecin [6].
+Pas forcément, mais ça peut l'être. Dans la dépression, la fatigue est souvent intense dès le matin, et le sommeil devient peu réparateur, avec des réveils précoces [6]. Si en plus tu te sens triste ou sans envie presque chaque jour depuis au moins deux semaines, consulte ton médecin [6].
 
 ### Faut-il faire baisser son cortisol le matin ?
-Non. La hausse du cortisol au réveil est normale [2], et une étude de l'Université de Southampton l'a même associée à des réactions moins vives aux tracas de la journée [3]. Ce qui compte, c'est la courbe sur toute la journée, expliquée dans l'article sur le [cortisol, hormone du stress](/cortisol-hormone-du-stress/).
+Non. Sa hausse au réveil est normale [2], et une étude de l'Université de Southampton l'a même associée à des réactions moins vives aux tracas de la journée [3]. Ce qui compte, c'est la courbe sur toute la journée, expliquée dans l'article sur le [cortisol, hormone du stress](/cortisol-hormone-du-stress/).
 
 ### Que faire tout de suite quand j'angoisse au réveil ?
-Ralentis ta respiration [7], par exemple en expirant plus longtemps que tu n'inspires, puis lève-toi, ouvre les volets et bouge quelques minutes [7][9]. Note l'inquiétude qui revient et donne-lui rendez-vous plus tard dans la journée [8].
+Ralentis ta respiration [7], en expirant par exemple plus longtemps que tu n'inspires. Ensuite, lève-toi, ouvre les volets et bouge quelques minutes [7][9]. L'inquiétude qui revient, note-la et donne-lui rendez-vous plus tard dans la journée [8].
 
 ### Le café peut-il aggraver l'angoisse du matin ?
-L'Assurance maladie conseille aux personnes anxieuses d'arrêter les excitants, dont le café [7]. Observe si ton angoisse est plus forte les jours où tu le bois à jeun, et essaie de le réduire ou de le décaler.
+L'Assurance maladie conseille aux personnes anxieuses d'arrêter les excitants, café compris [7]. Regarde si ton angoisse est plus forte les jours où tu le bois à jeun, et essaie d'en boire moins ou de le décaler.
 
 ## Pour aller plus loin
 
-Si cette angoisse du matin suit des soirées où le mental tourne en boucle, le guide gratuit « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours, sans matériel. Il ne traite pas l'angoisse du réveil elle-même : si elle s'installe, parles-en d'abord à ton médecin.
+Il arrive que cette angoisse du matin suive des soirées où le mental tourne en boucle. Dans ce cas, le guide gratuit « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours, sans matériel. Il ne traite pas l'angoisse du réveil elle-même. Si elle s'installe, parles-en d'abord à ton médecin.
 
-Si l'angoisse monte plutôt au coucher, lis l'article sur l'[angoisse le soir et la nuit](/angoisse-le-soir/). Si tu restes en alerte toute la journée, à sursauter au moindre bruit, lis notre article sur l'[hypervigilance](/hypervigilance/).
+Si l'angoisse monte plutôt au coucher, lis l'article sur l'[angoisse le soir et la nuit](/angoisse-le-soir/). Si tu restes en alerte toute la journée, à sursauter au moindre bruit, jette un œil à notre article sur l'[hypervigilance](/hypervigilance/).
 
 ## Sources
 1. [Symptômes et diagnostic des troubles anxieux (anxiété grave) — Assurance maladie (ameli.fr), 2025](https://www.ameli.fr/assure/sante/themes/troubles-anxieux-anxiete/symptomes-diagnostic)
