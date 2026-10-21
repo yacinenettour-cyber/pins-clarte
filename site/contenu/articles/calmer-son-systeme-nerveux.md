@@ -16,7 +16,7 @@ image: Femme assise près d'une fenêtre en fin de journée, les yeux fermés, u
 
 Calmer son système nerveux (on dit aussi le réguler), ça veut dire aider le parasympathique, le « frein » de l'organisme, à reprendre le dessus sur le mode alerte. Le geste le plus simple consiste à ralentir ta respiration en allongeant l'expiration, parce que respirer lentement favorise l'activité de ce frein [3]. Le soupir physiologique, la relaxation musculaire ou l'ancrage par les cinq sens peuvent aussi faire redescendre la pression en quelques minutes. On les voit un par un.
 
-*Un mot de Yacine : la méditation et la cohérence cardiaque sont ce qui m'a aidé à faire baisser mon stress et mon anxiété. Chacun réagit différemment : la suite repose sur les études, pas sur mon cas. Mon histoire est sur la page [à propos](/a-propos/).*
+*Un mot de Yacine : moi, c'est la méditation et la cohérence cardiaque qui m'ont aidé à faire baisser mon stress et mon anxiété. Chacun réagit à sa façon, alors ce qui suit s'appuie sur les études. Mon histoire est sur la page [à propos](/a-propos/).*
 
 ## Comment fonctionne le système nerveux face au stress ?
 Il fonctionne avec deux pédales. Le système nerveux autonome, c'est la partie qui gère tout ce qui se passe sans que tu y penses, comme le rythme du cœur, la tension artérielle ou la digestion [1]. Il a deux branches, et elles ont parfois des effets opposés sur un même organe [1].

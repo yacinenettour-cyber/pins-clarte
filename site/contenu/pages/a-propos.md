@@ -17,21 +17,21 @@ Je m'appelle **Yacine**. Je ne suis **ni médecin, ni psychologue, ni profession
 
 ## Mon histoire : pourquoi ce site existe
 
-Tout est parti de mes nuits blanches. Le soir, une fois couché, je n'arrivais pas à couper. Le stress de la journée prenait toute la place, et le sommeil ne venait pas.
+Tout a commencé avec mes nuits blanches. Je me couchais, et impossible de couper. Le stress de la journée revenait, et le sommeil ne venait pas.
 
-Comme beaucoup de gens, j'ai d'abord cherché une solution rapide. J'ai essayé des médicaments à base de plantes. Sur moi, ça a très peu marché. Je ne dis pas que ça ne marche pour personne, seulement que dans mon cas, ce n'était pas la réponse.
+J'ai d'abord essayé des médicaments à base de plantes. Sur moi, ça a très peu marché. Peut-être que ça aide d'autres personnes, je ne sais pas. Dans mon cas, non.
 
-Ce qui m'a vraiment aidé est venu d'ailleurs : la méditation, et la cohérence cardiaque, une façon de respirer lentement et régulièrement pendant quelques minutes, sans matériel. Rien de magique ni d'instantané. Mais petit à petit, mon stress et mon anxiété ont baissé.
+La méditation et la cohérence cardiaque m'ont beaucoup plus aidé. La cohérence cardiaque, c'est respirer lentement et régulièrement pendant quelques minutes, sans rien d'autre. Pas du jour au lendemain, mais mon stress et mon anxiété ont baissé.
 
-J'ai créé ce site pour partager ce que j'ai appris en cherchant des solutions. Je ne voulais pas d'un site de plus où chacun donne son avis. Alors pour chaque information, je vais chercher la source, un organisme officiel ou une étude nommée, et je l'indique en bas de l'article. Quand une étude est petite ou qu'un résultat reste fragile, je l'écris aussi.
+J'ai créé ce site pour partager ce que j'ai appris en cherchant des solutions. Sur internet, on lit tout et son contraire, et moi je voulais des informations vérifiées. Alors pour chaque conseil, je cherche la source, un organisme de santé ou une étude, et je la mets en bas de l'article. Si une étude est petite ou pas très solide, je le dis.
 
-Si tu passes toi aussi des soirées à tourner en rond, tu trouveras ici les articles sur les [ruminations du soir](/ruminations-le-soir/) et la [respiration pour dormir](/respiration-pour-dormir/), ainsi que des [audios de respiration guidée](/respiration-guidee/) gratuits, au rythme lent qui m'a aidé.
+Si toi aussi tu tournes en rond le soir, tu peux commencer par l'article sur les [ruminations du soir](/ruminations-le-soir/), celui sur la [respiration pour dormir](/respiration-pour-dormir/), ou les [audios de respiration guidée](/respiration-guidee/). Ils sont gratuits.
 
-Ce qui m'a aidé ne fonctionnera pas forcément pour toi, et ne remplace pas l'avis d'un médecin. Je ne suis pas professionnel de santé. Si tes nuits difficiles durent, ou si l'anxiété pèse sur tes journées, parles-en à ton médecin.
+Je ne suis pas professionnel de santé, et ce qui a marché pour moi ne marchera pas forcément pour toi. Si tes nuits difficiles durent, ou si l'anxiété pèse sur tes journées, va en parler à ton médecin.
 
 ## Pourquoi ce site ?
 
-Pour rassembler, en français et sans jargon, ce que les sources sérieuses disent du stress, du système nerveux et du sommeil, avec des gestes simples à essayer le soir même. Comme je ne suis pas professionnel de santé, je ne donne pas d'avis médical : je raconte mon expérience quand elle éclaire un sujet, et pour le reste je rapporte ce que disent les organismes officiels et les études, en citant chaque source.
+Pour rassembler, en français et sans jargon, ce que les sources sérieuses disent du stress, du système nerveux et du sommeil, avec des gestes simples à essayer le soir même. Je ne suis pas professionnel de santé, donc je ne donne pas d'avis médical. Je parle de mon expérience quand elle a un rapport avec le sujet. Le reste vient des organismes officiels et des études, et chaque source est citée.
 
 ## Pourquoi parler de stress, de cortisol et de sommeil ?
 
