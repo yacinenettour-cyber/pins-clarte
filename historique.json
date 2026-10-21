@@ -2104,5 +2104,16 @@
   "pin_id": "600175087890271229",
   "md5": "e783032e96f6149550fb87f44157aee9",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-21T20:08+00:00",
+  "titre": "Ashwagandha et stress : 4 précautions à connaître",
+  "image": "images/pin-20261021-200814.jpg",
+  "fond": "fonds/unsplash-UTPZnnEVW4E.jpg",
+  "theme": "alimentation",
+  "design": "fiche",
+  "pin_id": "600175087890276339",
+  "md5": "44f4918c081368394563f3ed16ad5b0e",
+  "lien": "article:baisser-son-cortisol-naturellement"
  }
 ]
