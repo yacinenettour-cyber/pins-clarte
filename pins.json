@@ -1,5 +1,33 @@
 [
  {
+  "titre": "Pensées négatives : 5 clés pour prendre du recul",
+  "texte_image": "Top 5 clés pour prendre du recul",
+  "points_image": [
+   "Nommer la pensée",
+   "L'écrire 5 minutes",
+   "Chercher un fait",
+   "Te parler en ami",
+   "Changer d'activité"
+  ],
+  "description": "Une pensée noire tourne et finit par sembler vraie. Cinq clés pour prendre du recul : la nommer (« je remarque que je pense que… »), l'écrire 5 minutes sans te relire, chercher un fait réel qui la nuance, te parler comme à un ami, changer d'activité 5 minutes. Si ces pensées durent ou pèsent, parles-en à un professionnel. Et si elles reviennent le soir au lit, un guide gratuit propose une routine anti-rumination. #blocagemental #pensees #mental #stress #ruminations #recul #bienetre #calme",
+  "theme": "blocagemental",
+  "image_prete": "images_cles/pensees-negatives-5-cles.jpg",
+  "format": "cles"
+ },
+ {
+  "titre": "Souffle court par le stress : 3 gestes assis",
+  "texte_image": "3 gestes assis quand le souffle est court",
+  "points_image": [
+   "Un bras vers le ciel",
+   "Mains sur les côtes",
+   "Bras croisés"
+  ],
+  "description": "Sous pression, le souffle devient court et reste haut dans la poitrine. Trois gestes sur ta chaise, en 2 minutes : une main sur la cuisse, l'autre bras levé bien haut en inspirant ; mains sur la taille, sentir les côtes s'écarter ; bras croisés, respirer lentement dans le haut du dos. Gêne qui dure ou douleur : vois un médecin. Si ce souffle court te suit jusqu'au lit, le guide gratuit propose une routine du soir. #stress #travail #respiration #souffle #bureau #pause #tensions #calme",
+  "theme": "posturesantistress",
+  "image_prete": "images_exercices/souffle-court-3-gestes-assis.jpg",
+  "format": "exercices"
+ },
+ {
   "titre": "Poignets tendus : 3 étirements au clavier",
   "texte_image": "3 étirements pour des poignets tendus",
   "points_image": [
@@ -5125,5 +5153,18 @@
   "theme": "energie",
   "guide": "cortisol",
   "description_guide_cortisol": "Journées courtes, soirées qui s'enchaînent, rush avant les congés : décembre vide les réserves. Trois gestes pour tenir 👉 sortir à la lumière du jour chaque midi, même dix minutes 👉 garder au moins un soir par semaine sans sortie ni invités 👉 alterner les verres avec de l'eau pendant les soirées. Pour tenir le cap, le plan anti-cortisol en 7 jours propose un tableau de suivi à cocher. #energie #decembre #hiver #fatigue #fetes #lumiere #vitalite #noel"
+ },
+ {
+  "titre": "Angoisse le matin : le rôle de la veille au soir",
+  "texte_image": "Angoisse au réveil ? Prépare ton matin la veille",
+  "points_image": [
+   "Note tes soucis en début de soirée",
+   "Écris la première action de demain",
+   "Range la liste loin du lit"
+  ],
+  "description": "L'angoisse du matin ne tombe pas toujours du ciel. Dans une étude de l'Université Northwestern, se sentir triste, seul ou dépassé la veille allait de pair avec une montée plus forte du cortisol au réveil. 3 gestes 👉 note tes soucis en début de soirée 👉 écris à côté la première action possible 👉 range la liste loin du lit. Si le mental tourne encore au coucher, le guide gratuit propose une routine à faire au lit. #systemenerveux #angoisse #anxiete #stress #cortisol #matin #calme #mental",
+  "theme": "systemenerveux",
+  "article": "angoisse-le-matin",
+  "description_article": "L'angoisse du matin ne tombe pas toujours du ciel. Dans une étude de l'Université Northwestern, se sentir triste, seul ou dépassé la veille allait de pair avec une montée plus forte du cortisol au réveil. 3 gestes 👉 note tes soucis en début de soirée 👉 écris à côté la première action possible 👉 range la liste loin du lit. Si elle revient chaque matin, parles-en à ton médecin. Pourquoi le matin : dans l'article. #systemenerveux #angoisse #anxiete #stress #cortisol #matin #calme #mental"
  }
 ]

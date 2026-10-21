@@ -1553,46 +1553,6 @@
   "fin_avec_lien": "Agité(e) le soir ?\nGuide sommeil : en lien"
  },
  {
-  "id": "energie-escaliers-coup-de-mou",
-  "theme": "energie",
-  "titre": "Énergie : 10 minutes d'escaliers plutôt qu'un café",
-  "description": "En plein coup de mou, monter et descendre les escaliers d'un pas tranquille réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a trouvé que 10 minutes d'escaliers redonnaient plus d'entrain qu'une petite dose de caféine à de jeunes femmes qui dormaient trop peu. L'effet était passager : un coup de pouce, pas un remède. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
-  "beats": [
-   {
-    "image": "fonds/pexels-19783892.jpg",
-    "texte": "Coup de mou\nà 16h ?",
-    "duree": 2.0
-   },
-   {
-    "image": "fonds/pexels-19783892.jpg",
-    "texte": "Oublie le café\npour une fois",
-    "duree": 2.2
-   },
-   {
-    "image": "fonds/fond-88.jpg",
-    "texte": "Monte et descends\nles escaliers",
-    "duree": 2.2
-   },
-   {
-    "image": "fonds/fond-88.jpg",
-    "texte": "D'un pas régulier,\nsans courir",
-    "duree": 2.4
-   },
-   {
-    "image": "fonds/pexels-18790609.jpg",
-    "texte": "10 minutes, et le\ncorps se réveille",
-    "duree": 2.2
-   },
-   {
-    "image": "fonds/pexels-18790609.jpg",
-    "texte": "Sauvegarde ce Pin\npour ton coup de mou",
-    "duree": 2.2
-   }
-  ],
-  "description_guide_cortisol": "En plein coup de mou, monter et descendre les escaliers d'un pas tranquille réveille le corps : le cœur accélère un peu et la respiration s'approfondit. Une étude de l'université de Géorgie (2017) a trouvé que 10 minutes d'escaliers redonnaient plus d'entrain qu'une petite dose de caféine à de jeunes femmes qui dormaient trop peu. Le plan anti-cortisol gratuit en lien propose un geste par jour pendant 7 jours. #energie #fatigue #mouvement #travail #pause #concentration #bienetre",
-  "fin_avec_lien": "7 jours anti-cortisol :\nplan gratuit en lien"
- },
- {
   "id": "energie-tapotements-reveil",
   "theme": "energie",
   "titre": "Tapotements : 1 minute pour réveiller ton énergie",

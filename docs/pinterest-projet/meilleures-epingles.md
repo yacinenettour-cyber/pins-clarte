@@ -105,3 +105,31 @@ completely empty center area, no people, no text ».
 Vérification Pinterest du 20/10 (PINTEREST_LIST_PINS, chiffres mis à jour le 20/10 à 5 h 09 UTC) : « Lâcher prise »
 (600175087890231482) et « Bas du dos » (600175087890222984) sont en ligne, avec 0 impression, 0 enregistrement, 0 clic
 pour l'instant (comme toutes les épingles des 18-19/10 : délai habituel des statistiques).
+
+**21/10/2026** : stock à 0. Deux épingles fabriquées avec 6 images Hugging Face (quota gratuit, graine 681678, une seule
+image écartée ; quota non épuisé) :
+
+- `cles` — « Pensées négatives : 5 clés pour prendre du recul » (`images_cles/pensees-negatives-5-cles.jpg`, blocagemental,
+  lien guide avec pont vers les ruminations du soir, renvoi à un professionnel si les pensées durent ou pèsent). Cadre doré
+  avec la description prévue (lavande, eucalyptus, lavis pêche) ; personnage central : femme en pull et pantalon verts,
+  assise en tailleur, qui écrit dans un carnet. Le sujet recoupe en partie « Mieux dormir : la technique du nommage des
+  pensées » (une clé sur cinq) : accepté, angle de jour et 4 autres clés différentes.
+- `exercices` — « Souffle court par le stress : 3 gestes assis » (`images_exercices/souffle-court-3-gestes-assis.jpg`,
+  posturesantistress, #stress puis #travail, lien guide avec pont vers le soir). Sujet nouveau (aucune épingle sur le
+  souffle court ni les côtes ; proches relus à la main : « Poitrine serrée par le stress : 3 gestes qui desserrent » =
+  mains derrière la tête + respiration ventrale, « Respiration et nerf vague : 3 corrections de posture » = posture debout ;
+  gestes différents). Gestes décrits exactement comme sur les images : assise, une main sur la cuisse et l'autre bras levé
+  bien haut ; mains sur les côtés de la taille, coudes ouverts ; bras croisés, mains sur le haut des bras. Prudence :
+  « Gêne qui dure ou douleur ? Parles-en à un médecin. » Image écartée : une première version des bras croisés où la
+  silhouette sans encolure ni poignets paraissait dénudée. Le modèle n'a pas dessiné l'inclinaison latérale demandée
+  (seulement un bras levé) : la consigne a été adaptée à l'image.
+- Contrôles : anti_doublons.py (charger_references + est_doublon) sans doublon pour les deux titres avant insertion ;
+  titres 48 et 44 caractères, corps 416 et 417, totaux 493 et 488, 8 hashtags ; visuels relus, aucun texte qui déborde ou
+  chevauche. `verifier_banque.py` : 0 doublon pour pins.json, mais 1 doublon ancien dans **videos.json** (« Énergie : 10
+  minutes d'escaliers plutôt qu'un café », non publiée, à 0,97 de « Énergie : 2 minutes d'escaliers plutôt qu'un café »
+  publiée le 18/10) : le robot la refusera de toute façon ; son retrait de videos.json a été bloqué par les permissions de la
+  session et reste à faire (décision de l'utilisateur).
+- Vérification Pinterest (PINTEREST_LIST_PINS du tableau « stress au travail », chiffres mis à jour le 21/10 à 13 h 05 UTC) :
+  « Poignets tendus : 3 étirements au clavier » (600175087890251207) est en ligne depuis le 20/10 à 10 h 07 UTC, avec le
+  lien guide ; 0 impression, 0 clic, 0 enregistrement pour l'instant. Pour comparaison : « Bas du dos » 5 impressions,
+  2 clics sur l'épingle ; « Épaules tendues » 5 impressions, 5 clics ; 0 enregistrement et 0 clic sortant partout.

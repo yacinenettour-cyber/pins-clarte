@@ -2082,5 +2082,27 @@
   "pin_id": "600175087890265301",
   "md5": "e225a93f2fb9e728a5093bccdb22a9c1",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-21T10:08+00:00",
+  "titre": "Énergie sociale : 3 signes qu'une discussion te vide",
+  "image": "images/pin-20261021-100757.jpg",
+  "fond": "fonds/fond-98.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890268127",
+  "md5": "cc03aafd5e9fc4686ed258e643961061",
+  "lien": ""
+ },
+ {
+  "date": "2026-10-21T14:08+00:00",
+  "titre": "Pensées négatives : 5 clés pour prendre du recul",
+  "image": "images/pin-20261021-140801.jpg",
+  "fond": "prete:images_cles/pensees-negatives-5-cles.jpg",
+  "theme": "blocagemental",
+  "design": "cles",
+  "pin_id": "600175087890271229",
+  "md5": "e783032e96f6149550fb87f44157aee9",
+  "lien": "guide:sommeil"
  }
 ]
