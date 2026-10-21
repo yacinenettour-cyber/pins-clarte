@@ -2,9 +2,9 @@
 titre: Respiration guidée 4-6 : 3 audios gratuits pour te calmer
 titre_seo: Respiration guidée gratuite pour se calmer et dormir
 description: Trois audios gratuits de respiration guidée 4-6 (3, 5 et 10 minutes) sur une musique de détente, sans voix : inspire 4 secondes, expire 6 secondes.
-maj: 2026-10-18
+maj: 2026-10-21
 ---
-Inspire 4 secondes, expire 6 secondes : 6 respirations par minute. Ces trois audios gratuits, sans voix, te guident avec de vrais bols chantants sur une musique douce, à écouter les yeux fermés, même au lit.
+Inspire 4 secondes, expire 6 secondes : 6 respirations par minute. Ces trois audios gratuits de respiration guidée, sans voix, te guident avec de vrais bols chantants sur une musique douce, à écouter les yeux fermés, même au lit.
 
 {{AUDIOS}}
 

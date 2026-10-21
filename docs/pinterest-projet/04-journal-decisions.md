@@ -955,3 +955,15 @@ Pour la confiance (E-E-A-T) et un site moins « IA », l'utilisateur a donné so
 nuits blanches, médicaments à base de plantes peu efficaces pour lui, méditation et cohérence cardiaque qui l'ont aidé).
 Refus d'inventer une histoire à sa place (demande « Trouve-moi un exemple d'histoire pour moi ») : modèle à trous et
 questions à la place. Texte validé puis allongé à sa demande, sans aucun fait ajouté. Publié sur gh-pages, IndexNow.
+
+## 82. Site : optimisation mensuelle des pages « presque visibles » (21/10/2026)
+
+Demande de l'utilisateur : chaque mois, retoucher les pages que Google montre en 2e ou 3e page pour qu'elles répondent
+exactement à la recherche. Procédure et tableau de suivi : docs/referencement/optimisation-mensuelle.md (Search Console
+via Composio, couples requête + page en position 8 à 40 avec au moins 2 impressions, 6 pages au plus, aucun fait sans
+source déjà présente, slug inchangé, une seule page par recherche). 1re passe (données du 09 au 20/10) : 4 couples au
+seuil, 4 de plus à 1 impression. Retouches légères : /reveil-4h-du-matin/ (« réveil nocturne » dans la description,
+l'introduction et un H2), /respiration-pour-dormir/ (description « technique 4-7-8 pas à pas »), /respiration-guidee/
+(« respiration guidée » dans la 1re phrase), /ressources-urgence/ (question « Existe-t-il un numéro vert gratuit
+24 h/24 ? », sources déjà présentes). /cortisol-hormone-du-stress/ (« adrenaline cortisol ») déjà complet, non touché.
+Publié sur gh-pages, IndexNow pour les 4 adresses.

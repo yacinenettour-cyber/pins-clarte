@@ -1,11 +1,11 @@
 ---
 titre: Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment
 titre_seo: Réveil à 4h du matin : causes et gestes pour se rendormir
-description: Réveil à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : comprends les causes, les bons gestes et quand consulter.
+description: Réveil nocturne à 4h du matin sans pouvoir te rendormir ? Sommeil plus léger, stress, cortisol, alcool : les causes, les bons gestes et quand consulter.
 slug: reveil-4h-du-matin
 mot_cle: réveil à 4h du matin
 guide: sommeil
-maj: 2026-10-19
+maj: 2026-10-21
 image: Chambre plongée dans la pénombre bleutée de l'aube, une personne allongée sous la couette, le visage détendu, un réveil retourné face contre la table de nuit et des rideaux épais à peine entrouverts
 ---
 ## L'essentiel
@@ -14,7 +14,7 @@ image: Chambre plongée dans la pénombre bleutée de l'aube, une personne allon
 - Sur le moment, ne regarde pas l'heure et respire lentement. Si l'éveil se prolonge, lève-toi sous une lumière douce.
 - Si ça revient au moins trois nuits par semaine depuis plus d'un mois, ou avec une humeur basse, parles-en à ton médecin.
 
-Le réveil à 4h du matin, c'est un éveil en fin de nuit, au moment où le sommeil devient naturellement plus léger [1]. Il tient souvent à plusieurs choses à la fois. Ton sommeil est plus léger, ton cortisol remonte naturellement, et le stress ou l'alcool de la veille rendent cette période plus fragile. Quelques gestes simples peuvent t'aider à te rendormir, et si ces réveils s'installent, parles-en à ton médecin.
+Le réveil nocturne à 4h du matin, c'est un éveil en fin de nuit, au moment où le sommeil devient naturellement plus léger [1]. Il tient souvent à plusieurs choses à la fois. Ton sommeil est plus léger, ton cortisol remonte naturellement, et le stress ou l'alcool de la veille rendent cette période plus fragile. Quelques gestes simples peuvent t'aider à te rendormir, et si ces réveils s'installent, parles-en à ton médecin.
 
 Peut-être que tu connais la scène. Tu ouvres les yeux dans le noir, tu attrapes ton téléphone, il est quatre heures passées. Et c'est parti pour une heure à tourner dans ton lit.
 
@@ -61,7 +61,7 @@ C'est mécanique, et c'est un piège fréquent quand on est fatigué. Si tu te c
 
 Un réveil précoce qui se répète peut parfois signaler une dépression. L'INSV rappelle que la dépression se traduit surtout par des éveils précoces, en milieu et en fin de nuit, et que l'insomnie peut en être le premier signe [3]. Ce n'est pas une raison pour t'inquiéter à chaque réveil. C'en est une pour rester attentif à ton humeur (voir « Quand consulter ? »).
 
-## Que faire en cas de réveil à 4h du matin ?
+## Que faire en cas de réveil nocturne à 4h du matin ?
 
 Ne cherche pas à forcer le sommeil. Le but, c'est d'éviter de rallumer la machine, donc pas d'heure, pas de lumière, une respiration lente, et tu te lèves si l'éveil dure.
 

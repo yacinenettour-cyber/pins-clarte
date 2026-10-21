@@ -2,7 +2,7 @@
 titre: Ressources d'urgence et lignes d'écoute
 titre_seo: Urgence et lignes d'écoute : les numéros utiles en France
 description: Numéros d'urgence (15, 112, 114), prévention du suicide (3114), lignes d'écoute gratuites ou anonymes et Mon soutien psy : à qui parler, et quand, en France.
-maj: 2026-10-10
+maj: 2026-10-21
 ---
 Si ta vie ou celle de quelqu'un est en danger immédiat, appelle le **[15](tel:15)** ou le **[112](tel:112)** maintenant. Si tu as des pensées suicidaires, le **[3114](tel:3114)** répond gratuitement, 24 h/24 et 7 j/7 [1, 2]. Cette page rassemble les numéros utiles en France, vérifiés sur les sites officiels de chaque service.
 
@@ -57,6 +57,10 @@ Ton médecin traitant reste aussi un bon premier interlocuteur : il peut faire l
 ### Que faire si un proche parle de se suicider ?
 
 Appelle le 3114 : il répond aussi aux personnes qui veulent aider quelqu'un en souffrance [2]. Si ton proche est en danger immédiat, appelle le 15 ou le 112 [1].
+
+### Existe-t-il un numéro vert gratuit 24 h/24 ?
+
+Oui. Le 3114, le numéro national de prévention du suicide, est gratuit et répond 24 h/24 et 7 j/7 [2]. Si ta vie est en danger, c'est le 15 ou le 112 [1]. Le 3919, pour les violences faites aux femmes, et le 119, pour un enfant en danger, sont eux aussi gratuits et joignables jour et nuit [1]. SOS Amitié écoute 24 h/24 [3]. Le 0 800 235 236 de Fil Santé Jeunes est bien un numéro vert, mais il répond de 9 h à 23 h [5].
 
 ### Ces numéros sont-ils gratuits ?
 
