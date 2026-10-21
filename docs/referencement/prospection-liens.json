@@ -298,8 +298,8 @@
    "note": 3,
    "pourquoi": "Page intitulée « Ressources numériques » (adresse trompeuse) qui liste des applications gratuites (StopBlues, Owlie, Mon Sherpa...) : des audios de respiration gratuits entrent dans cette catégorie.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
-   "remarque": "Coordination publique active (SISM octobre 2026, PTSM 2026-2030) ; liste surtout des outils institutionnels.",
-   "statut": "a_verifier",
+   "remarque": "Coordination publique active (SISM octobre 2026, PTSM 2026-2030) ; liste surtout des outils institutionnels. 21/10 : page à jour (21/04/2026) mais aucune adresse affichée (la seule adresse du site est celle du graphiste) ; page /contact/ avec formulaire → formulaire.",
+   "statut": "formulaire",
    "domaine": "sante-mentale-ain.fr",
    "audience": "B : coordination publique (PTSM de l'Ain) ; absent du top 1 million Tranco"
   },
@@ -403,8 +403,8 @@
    "note": 2,
    "pourquoi": "Revue du web hebdomadaire (n° 609 du 9 octobre 2026) qui relaie régulièrement des contenus santé mentale au travail.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/signes-du-burn-out/",
-   "remarque": "Actif, mais l'agence vend aussi des « tribunes » : ne proposer qu'une mention gratuite dans la revue du web et refuser toute offre payante.",
-   "statut": "a_verifier",
+   "remarque": "Actif, mais l'agence vend aussi des « tribunes » : ne proposer qu'une mention gratuite dans la revue du web et refuser toute offre payante. 21/10 : aucune adresse affichée sur l'accueil ni sur /contact/ (formulaire seulement) ; contact@parlonsrh.com non vérifiable → formulaire.",
+   "statut": "formulaire",
    "domaine": "parlonsrh.com",
    "audience": "A : domaine dans le top 1 million Tranco (rang 682945, 12/10/2026)"
   },
@@ -448,8 +448,8 @@
    "note": 2,
    "pourquoi": "Page d'information sur l'anxiété ; Revivre accueille aussi les francophones de France en visio (cité par Médiagora).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
-   "remarque": "Organisme sérieux, mais québécois : les numéros d'urgence et le contexte français du site s'y appliquent mal.",
-   "statut": "a_verifier",
+   "remarque": "Organisme sérieux, mais québécois : les numéros d'urgence et le contexte français du site s'y appliquent mal. 21/10 : revivre.org redirige vers relief.ca (Revivre est devenu Relief) ; aucune adresse affichée sur /anxiete/ ni sur /nous-joindre/ → formulaire.",
+   "statut": "formulaire",
    "domaine": "revivre.org",
    "audience": "B : organisme national québécois ; absent du top 1 million Tranco"
   },
@@ -687,9 +687,13 @@
    "pourquoi": "Le projet Happy? veut faire de son portail en ligne « un espace de référence pour les ressources liées au bien-être et à la santé mentale » (newsletter interne du 17/03/2026) : moment idéal pour proposer des outils gratuits.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /journal-humeur/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 21321, 12/10/2026)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 2 du 12/10",
-   "remarque": " 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md)."
+   "remarque": "15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md). 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Adresse affichée sur https://www.unifr.ch/uni-social/fr/. Ressources proposées : /respiration-guidee/ et /journal-humeur/.",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb248ccc84fa",
+   "sujet": "Projet Happy? : deux outils gratuits pour le portail bien-être",
+   "type": "lien"
   },
   {
    "site": "Institut National du Sommeil et de la Vigilance (INSV)",
@@ -806,8 +810,9 @@
    "pourquoi": "Réseau qui fournit des outils de promotion de la santé mentale (campagne annuelle lancée le 13 mars) ; le journal d'humeur et les audios sont des outils d'auto-soin compatibles.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/journal-humeur/ (+ /respiration-guidee/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "formulaire",
+   "lot": "recherche 2 du 12/10",
+   "remarque": "21/10 : aucune adresse affichée sur l'accueil → formulaire."
   },
   {
    "site": "CAP santé mentale (anciennement Réseau Avant de Craquer)",
@@ -822,8 +827,9 @@
    "pourquoi": "Fédération des associations de proches en santé mentale : outil CAP Mieux-Être et banque d'outils pratiques pour proches aidants épuisés ; des audios de respiration gratuits s'y ajoutent.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "formulaire",
+   "lot": "recherche 2 du 12/10",
+   "remarque": "21/10 : site actif (oct. 2026), page « Ressources externes » surtout institutionnelle ; aucune adresse affichée → formulaire."
   },
   {
    "site": "Pro Mente Sana — Association romande",
@@ -871,8 +877,9 @@
    "pourquoi": "Fiche « L'anxiété des ados : comment réagir face à elle » destinée aussi aux adultes : les audios de respiration (sans voix, 3 à 10 min) sont un outil simple à proposer aux parents et aux jeunes.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "formulaire",
+   "lot": "recherche 2 du 12/10",
+   "remarque": "21/10 : fiche en ligne, mais aucune adresse affichée (fiche, /contact/, /nous-joindre/) → formulaire."
   },
   {
    "site": "Infirmiers.com",
@@ -1166,9 +1173,19 @@
    "pourquoi": "Page tenue par les psychologues des urgences, qui renvoie vers ~25 sites externes (AFTCC, Psycom, CN2R, 3114, ressources TCC…).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "A : chu-montpellier.fr rang 174 704 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : angoisse/anxiété. Page « gérée par Bastien Noisette » (psychologue) : l'adresse est explicitement donnée pour les demandes sur cette page. Ton sobre, ne pas se présenter comme soignant. Attention : boîte du service de psychologie des urgences du CHU ; e-mail très court, sans relance."
+   "remarque": "Piste : angoisse/anxiété. Page « gérée par Bastien Noisette » (psychologue) : l'adresse est explicitement donnée pour les demandes sur cette page. Ton sobre, ne pas se présenter comme soignant. Attention : boîte du service de psychologie des urgences du CHU ; e-mail très court, sans relance. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /exercices-respiration/.",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb19630dc7f2",
+   "sujet": "Page « Infos psy. » : quelques liens qui ne fonctionnent plus",
+   "type": "lien",
+   "liens_casses": [
+    "http://cn2r.fr/accompagnement-et-orientation/ (404)",
+    "http://www.alrtcc.fr/liste-des-membres-de-lalrtcc.html (404)",
+    "https://www.centre-hubertine-auclert.fr/sites/default/files/images/violentometre_maj_10072019_web.pdf (404)",
+    "https://www.mgen.fr/fileadmin/documents/5_Le_groupe_MGEN/Communiques_de_presse/2014/20141204_Enquete_MGEN_OpinionWay_sante_mentale.pdf (404)"
+   ]
   },
   {
    "site": "Canton de Neuchâtel – Office de promotion de la santé et prévention (page santé mentale)",
@@ -1183,9 +1200,13 @@
    "pourquoi": "Page santé mentale qui liste des ressources (Santépsy, ciao.ch, 143, Stop Suicide…) ; des exercices de respiration gratuits complètent l'offre d'auto-soin.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : ne.ch rang 81 116 (Tranco)",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : collectivités / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur."
+   "remarque": "Piste : collectivités / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /respiration-guidee/. Aucun lien mort confirmé (15 liens testés).",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb2489d958c5",
+   "sujet": "Votre page « Santé mentale » : des audios de respiration gratuits",
+   "type": "lien"
   },
   {
    "site": "Santé Québec – Saguenay–Lac-Saint-Jean (Ressources et liens utiles santé mentale)",
@@ -1200,9 +1221,17 @@
    "pourquoi": "Page « Ressources et liens utiles » avec ~30 organismes externes (Relief, Revivre, Mouvement SMQ, CAP santé mentale…).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "A : domaine parent gouv.qc.ca rang 16 860 (Tranco) ; le sous-domaine lui-même n'est pas classé",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Adresse générale de l'établissement : la demande risque d'être réacheminée."
+   "remarque": "Piste : Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Adresse générale de l'établissement : la demande risque d'être réacheminée. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /respiration-guidee/.",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb249216b1dc",
+   "sujet": "Page « Ressources et liens utiles » en santé mentale : deux liens à vérifier",
+   "type": "lien",
+   "liens_casses": [
+    "https://tel-aide-saguenay-lac-saint-jean.org/ (redirige vers cavernsatnaturalbridge.com, domaine sans rapport)",
+    "https://cps02.org/ (ne répond plus, 3 essais)"
+   ]
   },
   {
    "site": "Santé Québec – Capitale-Nationale (Gestion du stress et de l'anxiété)",
@@ -1516,9 +1545,17 @@
    "pourquoi": "Page « Ressources et références » qui liste ~30 organismes et outils externes.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : organisme communautaire reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : angoisse / anxiété (Québec). Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur."
+   "remarque": "Piste : angoisse / anxiété (Québec). Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /respiration-guidee/.",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb24eb703ab1",
+   "sujet": "Page « Ressources » : deux liens qui ne fonctionnent plus",
+   "type": "lien",
+   "liens_casses": [
+    "http://maisonalonzowright.com (404)",
+    "http://entrainsm.org (523)"
+   ]
   },
   {
    "site": "Fondation Sommeil",
@@ -1584,9 +1621,13 @@
    "pourquoi": "Page « J'ai besoin d'aide » qui liste ~20 ressources externes (SPS, Nightline, SOS Amitié…) et une bibliothèque de ressources sur le burn-out.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/signes-du-burn-out/",
    "audience": "B : association nationale ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : burn-out / santé au travail. "
+   "remarque": "Piste : burn-out / santé au travail.  21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Adresse affichée sur /contact/. Ressource proposée : /signes-du-burn-out/. Aucun lien mort confirmé (erreurs 503/000 dues au blocage des robots).",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb24e7ce2edb",
+   "sujet": "Votre page « J'ai besoin d'aide » : une page sur les signes du burn-out",
+   "type": "lien"
   },
   {
    "site": "Question Santé ASBL",
@@ -1601,9 +1642,13 @@
    "pourquoi": "Article « Le stress, compagnon de route ou signe d'alerte » avec encadré « Outils et ressources : stress ».",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "B : association reconnue (éducation permanente, Fédération Wallonie-Bruxelles) ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : Belgique. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur."
+   "remarque": "Piste : Belgique. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Dossier du 25/11/2025 (e-journal PSE). Ressource proposée : /exercices-respiration/. Aucun lien mort.",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb24ea26bd26",
+   "sujet": "Votre dossier « Le stress, compagnon de route ou signe d'alerte ? »",
+   "type": "lien"
   },
   {
    "site": "Maison des Adolescents et des Jeunes Adultes du Vaucluse (MDA 84)",
@@ -1618,9 +1663,13 @@
    "pourquoi": "Page « Liens utiles » qui liste ~25 sites nationaux (3114, Fil Santé Jeunes, Psycom…).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : maison des adolescents (dispositif public départemental) ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : jeunes / lycéens. "
+   "remarque": "Piste : jeunes / lycéens.  21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /respiration-guidee/. Aucun lien mort confirmé.",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb24e79f90ae",
+   "sujet": "Vos « Liens utiles » : des audios de respiration gratuits",
+   "type": "lien"
   },
   {
    "site": "Être parents en Vendée (dossier charge mentale)",
@@ -1732,9 +1781,12 @@
     "Stress du quotidien : des outils gratuits et non médicamenteux (respiration lente, routine du soir) à relayer dans les actions de promotion de la santé"
    ],
    "audience": "B : revue de la Mutualité chrétienne, organisme mutualiste national belge ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "articles invités 19/10",
-   "remarque": "Ligne éditoriale centrée sur les initiatives de promotion de la santé (lectorat surtout professionnel) : proposer un sujet d'abord. Date du dernier article non relevée automatiquement : vérifier à l'œil un article 2025-2026 avant d'écrire. Site hors de France : ne pas mettre en avant nos numéros d'urgence français."
+   "remarque": "Ligne éditoriale centrée sur les initiatives de promotion de la santé (lectorat surtout professionnel) : proposer un sujet d'abord. Date du dernier article non relevée automatiquement : vérifier à l'œil un article 2025-2026 avant d'écrire. Site hors de France : ne pas mettre en avant nos numéros d'urgence français. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Numéro d'octobre 2026 en ligne, auteurs extérieurs (ex. Sonia De Vree, HELMo). Article cité : « Handicap invisible : un outil pour les patients et professionnels ». 3 idées envoyées (messages de prévention du sommeil, ruminations du soir chez les jeunes adultes, respiration lente et routine du soir).",
+   "date_envoi": "2026-10-21",
+   "thread_id": "1a15fb248063da27",
+   "sujet": "Proposition d'article gratuit : sommeil et stress en promotion de la santé"
   },
   {
    "email_verifie": true,
@@ -2093,6 +2145,24 @@
    "audience": "C, ne passe pas la règle C thématique",
    "type": "lien",
    "note": "aucune adresse affichée"
+  },
+  {
+   "site": "Neuro & Psycho (plateforme collaborative neurosciences et psychologie)",
+   "domaine": "neuroetpsycho.com",
+   "type": "article_invite",
+   "page_cible": "https://www.neuroetpsycho.com/guide-pour-les-auteurs/",
+   "email": "contact@neuroetpsycho.com",
+   "email_verifie": true,
+   "statut": "ecarte_audience",
+   "date_envoi": null,
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "thread_id": null,
+   "sujet": null,
+   "lot": "recherche articles invités 21/10",
+   "audience": "C, ne passe pas la règle C thématique",
+   "note": "21/10 : absent du top 1M Tranco ; accepte des auteurs extérieurs (guide pour les auteurs), mais sujet principal neurosciences/psychologie générale (critère a non rempli) et articles « validés par des spécialistes » pour un lectorat de chercheurs et cliniciens. À soumettre à l'utilisateur s'il veut l'élargir."
   }
  ],
  "passages": [
@@ -2135,6 +2205,10 @@
   {
    "date": "2026-10-20",
    "resultat": "Passage du soir : réponses lues : Marie Marchand refuse (ne cite pas de sites à contenu généré par IA) → stop ; Université de Montréal pas intéressée → stop ; Couleur d'âme garde la page /charge-mentale/ pour une future mise à jour (repondu, pas de lien) ; réponses automatiques de Guérir l'anxiété (retour le 26/10) et Harmonie & Plénitude ; Lyon 1 : message bloqué par un CAPTCHA Mailinblack. Aucune relance due (premiers envois le 12/10). 4 nouveaux envois C thématique (total du jour : 10) : mapsyenlignechezmoi.fr, boost-ton-feeling-good.fr, sophrospirit.fr, delphine-basson.fr, tous vérifiés dans les Envoyés. Écartés : sandra-boyer.com (sujet principal coaching pro), medoucine.com (formulaire, 403)."
+  },
+  {
+   "date": "2026-10-21",
+   "resultat": "Tâche du matin (mercredi) : aucune nouvelle réponse depuis le passage du 20/10 au soir (boîte, promotions et spam relus ; aucun retour mailer-daemon). Aucune relance due (premiers envois le 12/10, 10 jours le 22/10). 9 envois, tous vus dans les Envoyés : CHU de Montpellier (A, lien, 4 liens morts signalés), Santé Québec Saguenay–Lac-Saint-Jean (A, lien, Tel-Aide redirige vers un site sans rapport et cps02.org ne répond plus), Canton de Neuchâtel (A, lien), Unifr Uni-Social (A, lien), Éducation Santé (B, article invité), La Clé des champs (B, lien, 2 liens morts), Question Santé (B, lien), Coup de Blouse (B, lien), MDA 84 (B, lien). Passés en formulaire faute d'adresse affichée : parlonsrh.com, sante-mentale-ain.fr, revivre.org (devenu relief.ca), fondationjeunesentete.org, capsantementale.ca, mouvementsmq.ca. Recherche d'articles invités : la plupart des sites trouvés vendent des articles (exclus) ; neuroetpsycho.com écarté (pas C thématique). Classement Tranco du 20/10 téléchargé (tranco-list.eu)."
   }
  ]
 }
