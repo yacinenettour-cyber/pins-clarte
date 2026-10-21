@@ -17,13 +17,14 @@ articles relevée), liens internes renforcés, plan du site et robots.txt correc
 
 Par ordre d'impact, environ 30 minutes au total, une seule fois :
 
-1. **Profil Pinterest → site du profil** (1 min) : Pinterest → photo de profil → Modifier le profil →
-   « Site web » : remplacer `lp.contactapaisement-mental.fr/tonguide` par
-   `https://www.contactapaisement-mental.fr/`. Pinterest ne permet pas de le faire par l'API (vérifié le 12/10).
+1. ~~**Profil Pinterest → site du profil**~~ : **fait** (vérifié le 21/10 par `PINTEREST_GET_PROFILE` :
+   `www.contactapaisement-mental.fr`).
 2. **Bing Webmaster Tools** (3 min, gratuit) : https://www.bing.com/webmasters → « Importer depuis Google
    Search Console ». Le site devient visible dans Bing, DuckDuckGo et les recherches de ChatGPT, et l'envoi
    IndexNow déjà en place y est pris en compte.
-3. **Search Console → Demander une indexation** pour l'accueil et 4 articles (journal section 54).
+3. **Search Console → Demander une indexation** (Inspection de l'URL → « Demander une indexation ») : au 21/10,
+   31 pages sur 34 sont indexées. Il ne reste que `/guides-gratuits/`, `/la-formation/` et `/journal-humeur/`
+   (journal section 77).
 4. **Publier 1 réponse par semaine** parmi celles ci-dessous, sur un forum ou un réseau où la question est
    réellement posée (Quora en français, groupes Facebook sur le sommeil ou le stress) : seulement dans les
    communautés dont le sujet correspond, et jamais deux fois le même texte.
