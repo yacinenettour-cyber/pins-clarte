@@ -26,7 +26,7 @@ Un article suit sept étapes, toujours dans le même ordre :
 1. **Partir d'une vraie question.** Les sujets viennent de ce que les gens cherchent réellement sur Pinterest et sur Google : « réveil à 4 h du matin », « baisser son cortisol », « charge mentale »…
 2. **Chercher les sources dans l'ordre de la hiérarchie** ci-dessus, en commençant par les organismes officiels français.
 3. **Ouvrir et relire chaque source.** Chaque affirmation est vérifiée dans le texte de la source qu'elle cite ; les chiffres sont recopiés tels quels, sans arrondi flatteur.
-4. **Nommer les études.** Dans le texte, chaque étude est présentée avec son université ou son hôpital, sa revue et son année. Ces informations sont vérifiées dans les bases scientifiques (Europe PMC, PubMed, Crossref).
+4. **Nommer les études.** Dans le texte, chaque étude est présentée avec son université ou son hôpital et son année, et le type de revue est décrit en français. Le nom exact de la revue et le lien sont dans la liste des sources. Ces informations sont vérifiées dans les bases scientifiques (Europe PMC, PubMed, Crossref).
 5. **Dire les limites.** Petit nombre de participants, étude menée uniquement chez des hommes, en laboratoire, ou simple association statistique : quand c'est le cas, l'article l'écrit.
 6. **Ajouter une section « Quand consulter ? »**, avec les signes qui justifient un avis médical et les numéros d'urgence (15, 112, 3114).
 7. **Dater l'article.** La date de dernière mise à jour figure en haut de chaque article.
