@@ -142,6 +142,8 @@ Les mêmes repères valent : ce qui compte surtout, c'est de savoir si tu te ren
 
 Si tes réveils de fin de nuit s'accompagnent souvent de pensées qui tournent en boucle, le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à apaiser ce mental qui s'emballe. Il propose une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude. Sans matériel, à ton rythme.
 
+Si tu dors jusqu'au matin mais que l'angoisse te serre dès le réveil, lis l'article sur l'[angoisse le matin au réveil](/angoisse-le-matin/).
+
 ## Sources
 1. [Sommeil — Inserm, 2017 (mis à jour en 2024)](https://www.inserm.fr/dossier/sommeil/)
 2. [Insomnie — Inserm, 2017](https://www.inserm.fr/dossier/insomnie/)

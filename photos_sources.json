@@ -8018,7 +8018,8 @@
   "url": "https://images.unsplash.com/photo-1680505006557-93997407922c?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "femme de dos, apaisée face à la fenêtre : ne montre pas l'angoisse du réveil"
  },
  "unsplash-BpR3HzI7csk.jpg": {
   "theme": "sommeil",
@@ -8030,7 +8031,8 @@
   "url": "https://images.unsplash.com/photo-1665327462413-83a11a0a4d2f?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "décor de studio très mis en scène (chapeaux au mur), expression peu lisible"
  },
  "unsplash-UeOHqXbOQ1U.jpg": {
   "theme": "sommeil",
@@ -8042,7 +8044,8 @@
   "url": "https://images.unsplash.com/photo-1650094460561-3030fdf1284a?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "pose de portrait souriante, jambes nues : hors sujet"
  },
  "unsplash-l_G8WL5aqf0.jpg": {
   "theme": "sommeil",
@@ -8054,10 +8057,11 @@
   "url": "https://images.unsplash.com/photo-1676323439511-955e11a92e36?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée",
+  "motif": "texte imprimé sur le t-shirt"
  },
  "unsplash-ZJDGL6mlA38.jpg": {
-  "theme": "sommeil",
+  "theme": "dedie",
   "description": "woman beside wall",
   "source": "Unsplash",
   "page": "https://unsplash.com/photos/woman-beside-wall-ZJDGL6mlA38",
@@ -8066,6 +8070,7 @@
   "url": "https://images.unsplash.com/photo-1550025353-b0d3b8323d73?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 927,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-ZJDGL6mlA38.jpg"
  }
 }

@@ -47,7 +47,7 @@ Selon le neuroendocrinologue Bruce McEwen, de l'Université Rockefeller de New Y
 
 ## Pourquoi le cortisol est-il plus élevé le matin ?
 
-Le cortisol est plus élevé le matin parce qu'il suit un rythme quotidien : son taux est beaucoup plus élevé tôt le matin que plus tard dans la journée [1]. On parle souvent d'un pic au réveil et d'un creux le soir.
+Le cortisol est plus élevé le matin parce qu'il suit un rythme quotidien : son taux est beaucoup plus élevé tôt le matin que plus tard dans la journée [1]. On parle souvent d'un pic au réveil et d'un creux le soir. Cette hausse du réveil est normale ; si tu ressens de l'angoisse à ce moment-là, lis ce que l'on sait de l'[angoisse le matin](/angoisse-le-matin/).
 
 La pente diurne est le nom que les chercheurs donnent à cette descente entre le matin et le soir. Selon une méta-analyse de 80 études menée par l'équipe d'Emma Adam (Université Northwestern, États-Unis) et publiée en 2017 dans la revue *Psychoneuroendocrinology*, une pente plus plate est associée à une moins bonne santé physique et émotionnelle [4].
 
