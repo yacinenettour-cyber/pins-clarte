@@ -2115,5 +2115,16 @@
   "pin_id": "600175087890276339",
   "md5": "44f4918c081368394563f3ed16ad5b0e",
   "lien": "article:baisser-son-cortisol-naturellement"
+ },
+ {
+  "date": "2026-10-22T05:08+00:00",
+  "titre": "Souffle court par le stress : 3 gestes assis",
+  "image": "images/pin-20261022-050754.jpg",
+  "fond": "prete:images_exercices/souffle-court-3-gestes-assis.jpg",
+  "theme": "posturesantistress",
+  "design": "exercices",
+  "pin_id": "600175087890282902",
+  "md5": "136953f0e71400a2c188b5c4591e716e",
+  "lien": "guide:sommeil"
  }
 ]
