@@ -2148,5 +2148,16 @@
   "pin_id": "600175087890288980",
   "md5": "1b653a7649056ccb078cae05e77f2732",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-22T18:08+00:00",
+  "titre": "Fatigue en dents de scie : pourquoi tu es à plat",
+  "image": "images/pin-20261022-180757.jpg",
+  "fond": "fonds/pexels-13572006.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890292247",
+  "md5": "60da83671971d94faa49a5b12b0d110d",
+  "lien": "guide:cortisol"
  }
 ]
