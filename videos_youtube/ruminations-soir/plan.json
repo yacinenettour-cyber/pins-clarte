@@ -389,10 +389,12 @@
  "publication": {
   "video_id": "Zp-e755b89M",
   "video_url": "https://youtu.be/Zp-e755b89M",
-  "etat": "non_repertoriee",
+  "etat": "echec_youtube",
   "envoyee_le": "2026-10-22T07:19+00:00",
   "miniature": "ok",
   "sous_titres": "ok",
-  "short_id": "wN0aaTl45As"
- }
+  "short_id": "wN0aaTl45As",
+  "probleme": "22/10 : envoyée sur la mauvaise chaîne (PulsePositif, connexion Composio) et « Échec de la mise en ligne : impossible de traiter le fichier » pour la vidéo et le Short (capture de l'utilisateur)."
+ },
+ "bloquee": true
 }
