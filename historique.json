@@ -2137,5 +2137,16 @@
   "pin_id": "600175087890286017",
   "md5": "b508b7a0347079dd5496d10c4f8e202d",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-22T14:08+00:00",
+  "titre": "Rituel du soir : 5 minutes à regarder le ciel",
+  "image": "images/pin-20261022-140840.jpg",
+  "fond": "fonds/pexels-29100031.jpg",
+  "theme": "sommeil",
+  "design": "fiche",
+  "pin_id": "600175087890288980",
+  "md5": "1b653a7649056ccb078cae05e77f2732",
+  "lien": "guide:sommeil"
  }
 ]
