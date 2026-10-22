@@ -1,6 +1,6 @@
 {
  "slug": "ruminations-soir",
- "statut": "fabriquee",
+ "statut": "en_ligne_non_repertoriee",
  "publication_prevue": "2026-10-23T18:00:00Z",
  "duree_totale_min": 30,
  "article": "/ruminations-le-soir/",
@@ -385,5 +385,14 @@
   "guide": "sommeil"
  },
  "reessai_apres": "2026-10-22T06:35+00:00",
- "essais_envoi": 2
+ "essais_envoi": 2,
+ "publication": {
+  "video_id": "Zp-e755b89M",
+  "video_url": "https://youtu.be/Zp-e755b89M",
+  "etat": "non_repertoriee",
+  "envoyee_le": "2026-10-22T07:19+00:00",
+  "miniature": "ok",
+  "sous_titres": "ok",
+  "short_id": "wN0aaTl45As"
+ }
 }
