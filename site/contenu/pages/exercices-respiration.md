@@ -18,6 +18,18 @@ La cohérence cardiaque est celle qui a le plus de preuves ; les deux autres ajo
 | Respiration carrée | Inspire 4 s, retiens 4 s, expire 4 s, retiens 4 s | Dans un essai de l'Université Stanford (*Cell Reports Medicine*, 2023), 5 minutes par jour pendant un mois ont augmenté l'humeur positive ; l'anxiété baissait après chaque séance, comme avec les autres exercices testés [2] |
 | Respiration 4-7-8 | Inspire 4 s, retiens 7 s, expire 8 s | Peu étudiée : chez 43 jeunes adultes (Université Burapha, Thaïlande, *Physiological Reports*, 2022), trois séries de 6 cycles ont fait baisser aussitôt la fréquence cardiaque et la tension systolique [3] ; aucun effet à long terme n'a été mesuré |
 
+### Cohérence cardiaque, en schéma
+
+{{SCHEMA:coherence-5-5}}
+
+### Respiration carrée, en schéma
+
+{{SCHEMA:carree}}
+
+### Respiration 4-7-8, en schéma
+
+{{SCHEMA:4-7-8}}
+
 Dans l'essai de Stanford, c'est le « soupir cyclique » (une expiration longue) qui a donné la plus forte hausse de l'humeur positive au fil du mois [2]. Pour écouter sans garder cette page ouverte, ou télécharger l'exercice, les [audios de respiration guidée](/respiration-guidee/) suivent un rythme proche de la cohérence cardiaque : inspire 4 secondes, expire 6 secondes.
 
 ## Comment faire l'exercice ?

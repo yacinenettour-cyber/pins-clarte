@@ -17,6 +17,8 @@ Installe-toi assis ou allongé, baisse le volume, puis laisse les sons guider ta
 3. **Au bol grave** : expire doucement pendant 6 secondes, plus longtemps que l'inspiration.
 4. **À la fin** : la musique s'éteint en fondu, puis un dernier bol résonne longuement ; reste allongé quelques instants.
 
+{{SCHEMA:lente-4-6}}
+
 Respire sans forcer. Si tu te sens mal à l'aise ou si la tête te tourne, reprends ta respiration habituelle et arrête l'exercice.
 
 | Audio | Quand l'écouter | Ce qu'il contient |

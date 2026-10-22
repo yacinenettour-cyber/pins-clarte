@@ -52,6 +52,8 @@ function serveur() {
     await page.goto(`${base}/fiche-respiration/`, { waitUntil: "networkidle" });
     await page.evaluate(async () => {
       document.querySelectorAll("details").forEach((d) => { d.open = true; });
+      // Illustrations en chargement différé sur la page : toutes chargées avant l'impression (22/10/2026).
+      await Promise.all([...document.images].map((i) => { i.loading = "eager"; return i.decode().catch(() => {}); }));
       await document.fonts.ready;
     });
     fs.mkdirSync(path.dirname(SORTIE), { recursive: true });

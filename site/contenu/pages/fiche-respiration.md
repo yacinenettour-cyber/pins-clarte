@@ -24,6 +24,8 @@ Respire sans forcer, l'air doit entrer et sortir sans effort. Si la tête te tou
 
 C'est la plus étudiée, et la plus simple à retenir. Tu inspires sur 4 secondes, tu expires sur 6, ce qui fait 6 respirations par minute.
 
+{{VISUEL:lente-4-6}}
+
 1. Assieds-toi, ou allonge-toi sur le dos, une main sur le ventre.
 2. Inspire doucement par le nez pendant 4 secondes, en laissant le ventre se soulever.
 3. Expire lentement pendant 6 secondes, sans forcer.
@@ -37,6 +39,8 @@ Pour aller plus loin : [Respiration pour dormir](/respiration-pour-dormir/). Pou
 
 Même rythme de 6 respirations par minute, mais avec une inspiration et une expiration de même durée. Elle se fait bien assis, au bureau ou dans les transports.
 
+{{VISUEL:coherence-5-5}}
+
 1. Assieds-toi le dos droit, les épaules relâchées.
 2. Inspire par le nez pendant 5 secondes.
 3. Expire doucement pendant 5 secondes.
@@ -49,6 +53,8 @@ Pour aller plus loin : [Activer le nerf vague naturellement](/nerf-vague/). Le [
 ## 3. Le soupir physiologique
 
 Deux inspirations par le nez, puis une longue expiration par la bouche. C'est le geste le plus facile à placer n'importe où.
+
+{{VISUEL:soupir}}
 
 1. Assieds-toi ou allonge-toi.
 2. Inspire lentement par le nez.
@@ -64,6 +70,8 @@ Pour aller plus loin : [Calmer son système nerveux](/calmer-son-systeme-nerveux
 
 Quatre temps égaux, comme les quatre côtés d'un carré : inspirer, retenir, expirer, retenir.
 
+{{VISUEL:carree}}
+
 1. Inspire par le nez pendant 4 secondes.
 2. Retiens ton souffle pendant 4 secondes.
 3. Expire pendant 4 secondes.
@@ -76,6 +84,8 @@ Pour aller plus loin : [Respiration pour dormir](/respiration-pour-dormir/).
 ## 5. La respiration 4-7-8
 
 Inspirer sur 4 temps, retenir sur 7, expirer sur 8. Elle apaise sur le moment, mais elle a ses limites.
+
+{{VISUEL:4-7-8}}
 
 1. Allonge-toi sur le dos, les yeux fermés, dans une pièce calme.
 2. Expire complètement par la bouche, avec un léger souffle.

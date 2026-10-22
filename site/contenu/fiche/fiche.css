@@ -1,4 +1,5 @@
-/* Fiche « 5 exercices de respiration » (21/10/2026) : page du site et version imprimable (A4, 2 pages).
+/* Fiche « 5 exercices de respiration » (21/10/2026) : page du site et version imprimable (A4, 3 pages depuis les
+   illustrations et les schémas du 22/10/2026).
    Couleurs prises dans les variables du thème : mêmes contrastes en clair et en sombre. */
 .fiche-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 22px 0 8px; }
 .fiche-second { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 700; cursor: pointer;
@@ -56,7 +57,7 @@ html:not(.js) .fiche-second { display: none; }
   .repli-sources summary::after { display: none !important; }
   .repli-sources ol { padding: 0 0 0 14pt !important; columns: 2; column-gap: 6mm; }
   .sources li { break-inside: avoid; }
-  .sources h2 { font-size: 10pt; }
+  .sources h2 { font-size: 10pt; break-after: avoid; page-break-after: avoid; }
   .sources ol { padding-left: 14pt; margin: 2pt 0 0; }
   .sources li { font-size: 7.6pt; line-height: 1.3; margin: 0 0 1pt; }
   /* Sur papier, « Je ne suis pas professionnel de santé » et l'avis du médecin sont déjà dans « Quand consulter ? ». */

@@ -1129,8 +1129,11 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
         intro_html = intro_html.replace(f"<p>{marqueur}</p>", contenu_outil)
     corps_html = appels_de_source(md("\n\n".join(corps_md)), nb)
     corps_html = re.sub(r"<h2>(.*?)</h2>", lambda m: f'<h2 id="{slugify_unicode(texte_brut(m.group(1)), "-")}">{m.group(1)}</h2>', corps_html)
+    corps_html = remplacer_schemas(corps_html)
     if apres:
         corps_html = apres(corps_html)
+    if 'class="schema-resp' in corps_html:
+        tete += f"<style>{SCHEMA_CSS}</style>"
     faq_html = ('<section class="faq"><h2 id="questions-frequentes">Questions fréquentes</h2>'
                 + "".join(f"<h3>{e(q)}</h3>{appels_de_source(md(r), nb)}" for q, r in faq) + "</section>") if faq else ""
     nav_html, schema_ariane = ariane([("Accueil", "/"), (nom_court, None)])
@@ -1160,6 +1163,211 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
     ecrire(chemin.strip("/") + "/index.html", page(entete["titre_seo"], entete["description"], chemin, contenu, schemas,
                                                    nav=chemin, tete=tete, sans_guide=sans_guide))
     return entete
+
+
+# ---------------------------------------------------------------- schémas et illustrations des exercices (22/10/2026)
+
+# Consigne de l'utilisateur (22/10/2026) : « Quand tu mets des exercices, faut faire des schémas […] des dessins. » Tout
+# exercice décrit sur le site a son schéma, dessiné ici en SVG (aucune image générée), qui reprend exactement la consigne
+# écrite (mêmes durées, même ordre). Lisible en noir et blanc : chaque phase a son motif (hachures = inspirer, points =
+# retenir, trait seul = expirer) et son libellé ; couleurs = currentColor et --brume (variantes claire et sombre).
+# Dans un texte de page, une ligne {{SCHEMA:nom}} donne le schéma seul, {{VISUEL:nom}} l'illustration et le schéma côte à côte.
+SCHEMA_CSS = """.schema-resp { margin: 18px 0 20px; color: var(--champagne); }
+.schema-resp svg { display: block; width: 100%; max-width: 460px; height: auto; overflow: visible; }
+.schema-resp text { fill: currentColor; font-family: inherit; }
+.schema-resp .fort { font-weight: 700; }
+.schema-resp .trait { fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linejoin: round; stroke-linecap: round; }
+.schema-resp .fin { fill: none; stroke: currentColor; stroke-width: 1; }
+.schema-resp .repere { fill: none; stroke: currentColor; stroke-width: 1; stroke-dasharray: 3 3; opacity: .7; }
+.schema-resp .fleche { fill: currentColor; }
+.schema-resp .motif-trait { stroke: var(--brume); stroke-width: 1.6; }
+.schema-resp .motif-point { fill: var(--brume); }
+.schema-etiquettes { display: grid; max-width: 460px; padding: 0 3.9%; box-sizing: border-box; margin-top: 4px;
+  font-size: 14px; line-height: 1.25; text-align: center; }
+.schema-etiquettes span { padding: 0 2px; hyphens: auto; }
+@media (max-width: 480px) { .schema-etiquettes { font-size: 12.5px; padding: 0 2%; } .schema-etiquettes span { padding: 0 1px; } }
+.schema-etiquettes strong { display: block; }
+.schema-carree svg { max-width: 330px; }
+.schema-resp figcaption { font-size: 15px; color: var(--champagne-doux); margin-top: 6px; max-width: 460px; }
+.visuel-ex { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 18px; margin: 16px 0 18px; }
+.visuel-ex img { width: 150px; height: auto; border-radius: 14px; flex: none; }
+.visuel-ex .schema-resp { flex: 1 1 260px; margin: 0; }
+@media print {
+  .schema-resp, .schema-resp * { color: #000 !important; }
+  .schema-resp .motif-trait { stroke: #000 !important; }
+  .schema-resp .motif-point { fill: #000 !important; }
+  .schema-resp { margin: 3pt 0 4pt; break-inside: avoid; }
+  .schema-resp svg { max-width: none; }
+  .schema-carree svg { max-width: 52mm; margin: 0 auto; }
+  .schema-etiquettes { max-width: none; font-size: 7.6pt; line-height: 1.2; margin-top: 1pt; }
+  .schema-resp figcaption { font-size: 7.4pt; line-height: 1.25; margin-top: 2pt; max-width: none; }
+  .visuel-ex { flex-wrap: nowrap; gap: 0 6pt; margin: 3pt 0 4pt; break-inside: avoid; }
+  .visuel-ex img { width: 25mm; border-radius: 3pt; }
+  .visuel-ex .schema-resp { flex: 1 1 auto; min-width: 0; margin: 0; }
+}"""
+
+
+def _motifs(p):
+    """Motifs du schéma (identifiants préfixés : plusieurs schémas par page)."""
+    return (f'<defs><pattern id="{p}-in" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+            f'<line x1="0" y1="0" x2="0" y2="7" class="motif-trait"/></pattern>'
+            f'<pattern id="{p}-tiens" width="7" height="7" patternUnits="userSpaceOnUse">'
+            f'<circle cx="3.5" cy="3.5" r="1.3" class="motif-point"/></pattern></defs>')
+
+
+def _fleche(x, y, angle):
+    """Petite pointe de flèche centrée en (x, y), orientée selon angle (degrés, 0 = vers la droite)."""
+    return f'<path class="fleche" d="M6 0 L-5 -5 L-5 5 Z" transform="translate({x:.1f} {y:.1f}) rotate({angle:.1f})"/>'
+
+
+def _svg(ident, titre, largeur, hauteur, corps):
+    return (f'<svg viewBox="0 0 {largeur} {hauteur}" role="img" aria-labelledby="{ident}-titre" focusable="false" '
+            f'xmlns="http://www.w3.org/2000/svg"><title id="{ident}-titre">{e(titre)}</title>{corps}</svg>')
+
+
+def _profil(ident, titre, phases, graduer=True):
+    """Courbe du souffle (l'air dans les poumons) au fil du temps, phase par phase. phases : (genre, points, ligne 1,
+    ligne 2), genre = in / tiens / out, points = [(durée, niveau 0-1), …] parcourus dans la phase."""
+    import math
+    x0, x1, haut, base = 14, 346, 26, 92
+    total = sum(d for _, pts, _, _ in phases for d, _ in pts)
+    ux = (x1 - x0) / total
+    y = lambda n: base - n * (base - haut)
+    corps, x, niveau = [_motifs(ident)], x0, 0.0
+    trace, bornes = [f"M{x0} {base}"], [x0]
+    for genre, pts, l1, l2 in phases:
+        debut_x, debut_n, poly = x, niveau, [(x, y(niveau))]
+        for d, n in pts:
+            xa, ya = x, y(niveau)
+            x += d * ux
+            niveau = n
+            poly.append((x, y(niveau)))
+            trace.append(f"L{x:.1f} {y(niveau):.1f}")
+            if d * ux > 18:  # flèche au milieu de chaque montée, palier ou descente
+                ang = math.degrees(math.atan2(y(niveau) - ya, x - xa))
+                corps.append(("F", (xa + x) / 2, (ya + y(niveau)) / 2, ang))
+        aire = " ".join(f"{a:.1f},{b:.1f}" for a, b in poly) + f" {x:.1f},{base} {debut_x:.1f},{base}"
+        remplissage = {"in": f"url(#{ident}-in)", "tiens": f"url(#{ident}-tiens)", "out": "none"}[genre]
+        corps.insert(1, f'<polygon points="{aire}" fill="{remplissage}" stroke="none"/>')
+        bornes.append(x)
+    for b in bornes[1:-1]:
+        corps.append(f'<line x1="{b:.1f}" y1="{haut - 8}" x2="{b:.1f}" y2="{base}" class="repere"/>')
+    corps.append(f'<line x1="{x0}" y1="{base}" x2="{x1}" y2="{base}" class="fin"/>')
+    if graduer:
+        for i in range(int(round(total)) + 1):
+            corps.append(f'<line x1="{x0 + i * ux:.1f}" y1="{base}" x2="{x0 + i * ux:.1f}" y2="{base + 5}" class="fin"/>')
+    corps.append(f'<path class="trait" d="{" ".join(trace)}"/>')
+    rendu = "".join(_fleche(c[1], c[2], c[3]) if isinstance(c, tuple) else c for c in corps)
+    # Libellés des phases en HTML sous la courbe (lisibles à toutes les tailles), colonnes proportionnelles aux durées.
+    colonnes = " ".join(f"{sum(d for d, _ in pts):g}fr" for _, pts, _, _ in phases)
+    etiquettes = "".join(f"<span><strong>{e(l1)}</strong> {e(l2)}</span>" for _, _, l1, l2 in phases)
+    return (_svg(ident, titre, 360, 100, rendu)
+            + f'<div class="schema-etiquettes" style="grid-template-columns: {colonnes}">{etiquettes}</div>')
+
+
+def _carre(ident, titre):
+    """Respiration carrée : départ en bas à gauche, on monte (inspirer), on va à droite (retenir), on descend (expirer),
+    on revient à gauche (retenir), dans le sens des aiguilles d'une montre."""
+    g, d, h, b = 95, 185, 34, 124
+    c = [_motifs(ident),
+         f'<rect x="{g}" y="{h}" width="{d - g}" height="{b - h}" fill="none" stroke="none"/>',
+         f'<line x1="{g}" y1="{b}" x2="{g}" y2="{h}" class="trait"/>',                                  # inspire : trait plein
+         f'<line x1="{g}" y1="{h}" x2="{d}" y2="{h}" class="trait" stroke-dasharray="1 7"/>',           # retiens : pointillés
+         f'<line x1="{d}" y1="{h}" x2="{d}" y2="{b}" class="trait" stroke-dasharray="10 6"/>',          # expire : tirets
+         f'<line x1="{d}" y1="{b}" x2="{g}" y2="{b}" class="trait" stroke-dasharray="1 7"/>',           # retiens : pointillés
+         _fleche(g, (h + b) / 2, -90), _fleche((g + d) / 2, h, 0), _fleche(d, (h + b) / 2, 90), _fleche((g + d) / 2, b, 180),
+         f'<circle cx="{g}" cy="{b}" r="5" class="fleche"/>',
+         f'<text x="{g - 8}" y="{b + 18}" text-anchor="end" font-size="13">départ</text>',
+         f'<text x="{g - 12}" y="{(h + b) / 2 - 3}" text-anchor="end" font-size="15" class="fort">1. Inspire</text>',
+         f'<text x="{g - 12}" y="{(h + b) / 2 + 14}" text-anchor="end" font-size="14">4 s</text>',
+         f'<text x="{(g + d) / 2}" y="{h - 12}" text-anchor="middle" font-size="15"><tspan class="fort">2. Retiens</tspan> 4 s</text>',
+         f'<text x="{d + 12}" y="{(h + b) / 2 - 3}" font-size="15" class="fort">3. Expire</text>',
+         f'<text x="{d + 12}" y="{(h + b) / 2 + 14}" font-size="14">4 s</text>',
+         f'<text x="{(g + d) / 2}" y="{b + 24}" text-anchor="middle" font-size="15"><tspan class="fort">4. Retiens</tspan> 4 s</text>']
+    return _svg(ident, titre, 280, 160, "".join(c))
+
+
+# nom -> (titre lu par les lecteurs d'écran, légende visible, dessin)
+SCHEMAS = {
+    "lente-4-6": ("Schéma de la respiration lente 4-6 : le souffle monte pendant 4 secondes d'inspiration, puis descend "
+                  "pendant 6 secondes d'expiration, soit un cycle de 10 secondes.",
+                  "Un cycle de 10 secondes : la courbe monte quand tu inspires, descend quand tu expires. À répéter pendant 5 minutes.",
+                  lambda i: _profil(i, SCHEMAS["lente-4-6"][0], [
+                      ("in", [(4, 1)], "Inspire", "4 s, par le nez"), ("out", [(6, 0)], "Expire", "6 s, sans forcer")])),
+    "coherence-5-5": ("Schéma de la cohérence cardiaque 5-5 : le souffle monte pendant 5 secondes d'inspiration, puis "
+                      "descend pendant 5 secondes d'expiration, de façon symétrique.",
+                      "Un cycle de 10 secondes, montée et descente de même durée. À répéter pendant 5 minutes.",
+                      lambda i: _profil(i, SCHEMAS["coherence-5-5"][0], [
+                          ("in", [(5, 1)], "Inspire", "5 s, par le nez"), ("out", [(5, 0)], "Expire", "5 s, doucement")])),
+    "soupir": ("Schéma du soupir physiologique : deux marches qui montent, une grande inspiration par le nez puis une petite "
+               "inspiration en plus, suivies d'une longue pente qui descend, l'expiration lente par la bouche.",
+               "Deux inspirations par le nez, la seconde plus courte, puis une longue expiration par la bouche. Les durées ne "
+               "sont pas imposées.",
+               lambda i: _profil(i, SCHEMAS["soupir"][0], [
+                   ("in", [(3, 0.7)], "1. Inspire", "par le nez"),
+                   ("in", [(1.2, 0.7), (1.6, 1)], "2. Encore", "un peu"),
+                   ("out", [(6.5, 0)], "3. Expire", "lentement, par la bouche")], graduer=False)),
+    "carree": ("Schéma de la respiration carrée : un carré parcouru dans le sens des aiguilles d'une montre, depuis le coin en "
+               "bas à gauche ; côté gauche, inspire 4 secondes ; en haut, retiens 4 secondes ; côté droit, expire 4 secondes ; "
+               "en bas, retiens 4 secondes.",
+               "Un côté du carré toutes les 4 secondes, en suivant les flèches, puis on recommence.",
+               lambda i: _carre(i, SCHEMAS["carree"][0])),
+    "4-7-8": ("Schéma de la respiration 4-7-8 : le souffle monte pendant 4 temps d'inspiration par le nez, reste en haut "
+              "pendant 7 temps où l'on retient son souffle, puis descend pendant 8 temps d'expiration par la bouche.",
+              "Un cycle, après avoir vidé l'air une première fois. Les longueurs suivent les comptes 4, 7 et 8 : ce sont des "
+              "temps, pas des secondes imposées.",
+              lambda i: _profil(i, SCHEMAS["4-7-8"][0], [
+                  ("in", [(4, 1)], "Inspire", "4 temps"), ("tiens", [(7, 1)], "Retiens", "7 temps"),
+                  ("out", [(8, 0)], "Expire", "8 temps")])),
+}
+
+# Illustrations dessinées (Hugging Face, quota gratuit, graine 681678 ; registre : photos_utilisees_hors_historique.json).
+# Réservées à la fiche respiration : jamais réutilisées ailleurs. nom -> (fichier dans contenu/img/exercices/, texte alternatif)
+ILLUSTRATIONS_DOSSIER = os.path.join(RACINE, "contenu", "img", "exercices")
+ILLUSTRATIONS = {
+    "lente-4-6": ("respiration-lente-4-6-assise-main-sur-le-ventre.webp",
+                  "Dessin à l'aquarelle d'une femme assise en tailleur, le dos droit, les yeux fermés, une main posée à plat "
+                  "sur le ventre et l'autre sur le genou."),
+    "coherence-5-5": ("coherence-cardiaque-assise-sur-une-chaise.webp",
+                      "Dessin à l'aquarelle d'une femme assise sur une chaise, le dos droit, les épaules relâchées, les mains "
+                      "posées sur les cuisses et les yeux fermés."),
+}
+
+
+def schema_html(nom, suffixe=""):
+    titre, legende, dessin = SCHEMAS[nom]
+    ident = f"schema-{nom}{suffixe}"
+    return f'<figure class="schema-resp schema-{nom}">{dessin(ident)}<figcaption>{e(legende)}</figcaption></figure>'
+
+
+def illustrations_pretes():
+    """Les illustrations n'apparaissent que toutes ensemble (une par exercice de la fiche), sinon schémas seuls."""
+    return set(ILLUSTRATIONS) == {"lente-4-6", "coherence-5-5", "soupir", "carree", "4-7-8"} and all(
+        os.path.exists(os.path.join(ILLUSTRATIONS_DOSSIER, f)) for f, _ in ILLUSTRATIONS.values())
+
+
+def visuel_html(nom):
+    if nom not in ILLUSTRATIONS or not illustrations_pretes():
+        return schema_html(nom)
+    fichier, alt = ILLUSTRATIONS[nom]
+    with Image.open(os.path.join(ILLUSTRATIONS_DOSSIER, fichier)) as im:
+        l, h = im.size
+    return (f'<div class="visuel-ex"><img src="/img/exercices/{fichier}" width="{l}" height="{h}" alt="{e(alt)}" '
+            f'loading="lazy" decoding="async">{schema_html(nom)}</div>')
+
+
+def remplacer_schemas(corps_html):
+    """Lignes {{SCHEMA:nom}} et {{VISUEL:nom}} d'un texte de page → figures (voir SCHEMAS)."""
+    corps_html = re.sub(r"<p>\{\{SCHEMA:([\w-]+)\}\}</p>", lambda m: schema_html(m.group(1)), corps_html)
+    return re.sub(r"<p>\{\{VISUEL:([\w-]+)\}\}</p>", lambda m: visuel_html(m.group(1)), corps_html)
+
+
+def copier_illustrations():
+    if os.path.isdir(ILLUSTRATIONS_DOSSIER):
+        cible = os.path.join(SORTIE, "img", "exercices")
+        os.makedirs(cible, exist_ok=True)
+        for f in os.listdir(ILLUSTRATIONS_DOSSIER):
+            shutil.copy(os.path.join(ILLUSTRATIONS_DOSSIER, f), os.path.join(cible, f))
 
 
 EXERCICES_HTML = """<div class="exercice" id="exercice">
@@ -1432,6 +1640,12 @@ def empreinte_fiche():
               os.path.join(RACINE, "contenu", "style.css"), os.path.join(RACINE, "outils", "fiche_pdf.js")):
         h.update(open(f, "rb").read())
     h.update(inspect.getsource(construire_fiche).encode("utf-8"))
+    for f in (_profil, _carre, _motifs, _fleche, schema_html, visuel_html):  # schémas et illustrations (22/10/2026)
+        h.update(inspect.getsource(f).encode("utf-8"))
+    h.update((SCHEMA_CSS + json.dumps(ILLUSTRATIONS, ensure_ascii=False)
+              + json.dumps({n: s[:2] for n, s in SCHEMAS.items()}, ensure_ascii=False)).encode("utf-8"))
+    for f in sorted(glob.glob(os.path.join(ILLUSTRATIONS_DOSSIER, "*"))):
+        h.update(open(f, "rb").read())
     return h.hexdigest()
 
 
@@ -1442,7 +1656,7 @@ def construire_fiche():
         pages = len(re.findall(rb"/Type\s*/Page[^s]", open(FICHE_PDF, "rb").read()))
         poids = f"PDF, {pages} pages, {ko:.0f} Ko" if pages > 1 else f"PDF, {ko:.0f} Ko"
     else:
-        poids = "PDF"
+        poids, pages = "PDF", 3
     boutons = (f'<div class="fiche-actions"><a class="bouton" href="/fiche-respiration/fiche-respiration.pdf" download>'
                f'Télécharger la fiche ({poids})</a>'
                '<button type="button" class="fiche-second" id="imprimer">Imprimer</button></div>'
@@ -1463,7 +1677,7 @@ def construire_fiche():
         return corps.replace("<p>Pour aller plus loin", '<p class="fiche-plus">Pour aller plus loin')
 
     return construire_page_outil("fiche-respiration.md", "/fiche-respiration/", "Fiche respiration",
-                                 {"{{BOUTONS}}": boutons}, "Fiche de 2 pages à imprimer", tete=f"<style>{css}</style>",
+                                 {"{{BOUTONS}}": boutons}, f"Fiche de {pages} pages à imprimer", tete=f"<style>{css}</style>",
                                  script=SCRIPT_FICHE, sans_guide=True, apres=cadres)
 
 
@@ -1657,6 +1871,7 @@ def construire_fichiers_techniques(articles):
     ecrire("style.css", CSS_SITE)
     shutil.copytree(os.path.join(RACINE, "contenu", "polices"), os.path.join(SORTIE, "polices"))
     shutil.copytree(os.path.join(RACINE, "contenu", "audio"), os.path.join(SORTIE, "audio"))
+    copier_illustrations()
     ecrire("favicon.svg", LOGO.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))
     # Logo PNG (données structurées) et image de partage par défaut.
     logo = Image.new("RGB", (512, 512), "#0F1724")
@@ -1681,6 +1896,8 @@ def construire_fichiers_techniques(articles):
         pass
     os.makedirs(os.path.join(SORTIE, "img"), exist_ok=True)
     for nom in os.listdir(os.path.join(RACINE, "contenu", "img")):
+        if os.path.isdir(os.path.join(RACINE, "contenu", "img", nom)):
+            continue  # img/exercices/ : copié par copier_illustrations()
         shutil.copy(os.path.join(RACINE, "contenu", "img", nom), os.path.join(SORTIE, "img", nom))
     defaut.save(os.path.join(SORTIE, "img", "og-defaut.jpg"), quality=85)
 
