@@ -57,3 +57,19 @@ les conclusions qui résument ce qui vient d'être dit.
   permis), « Quand consulter ? », questions fréquentes, liste des sources intacte.
 - Prudence : aucune promesse, les conseils de consultation et numéros d'urgence identiques.
 - Longueur à peu près identique (± 10 %).
+
+## Exercices : une illustration dessinée et un schéma (consignes de l'utilisateur, 22/10/2026)
+
+« Quand tu mets des exercices, faut faire des schémas, faut mettre des schémas aussi, des dessins. » puis « Il faut
+mettre des illustrations, je veux dire. » Tout exercice décrit sur le site (page, article, fiche PDF) a donc :
+
+- **une illustration dessinée** d'une personne qui fait l'exercice, dans le style des épingles illustrées du compte
+  (aquarelle douce, silhouette vert sauge, pull et pantalon amples, fond crème, aucun texte) : outil gratuit Hugging Face
+  uniquement (quota gratuit, rien de payant), image regardée avant usage (pose exacte de la consigne, anatomie correcte,
+  personne jamais dénudée, aucun texte), propre à un seul exercice, jamais réutilisée, inscrite dans
+  `photos_utilisees_hors_historique.json`, WebP léger, texte alternatif descriptif en français. Si la pose dessinée ne
+  correspond pas à la consigne, on regénère ou on adapte la consigne de position, jamais le contenu sourcé ;
+- **un schéma du rythme** dessiné en SVG dans le code (`SCHEMAS` de `site/outils/construire.py`, lignes `{{SCHEMA:nom}}`
+  ou `{{VISUEL:nom}}` dans le texte d'une page) : mêmes durées et même ordre que la consigne écrite, libellés en
+  français, `role="img"` avec un titre accessible, `currentColor` et variables du thème (clair et sombre), lisible en noir
+  et blanc (motif et libellé par phase, jamais la couleur seule).
