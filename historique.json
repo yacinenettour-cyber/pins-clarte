@@ -2181,5 +2181,16 @@
   "pin_id": "600175087890303485",
   "md5": "591be4f96620aa1f943f62061b8ee09b",
   "lien": "article:charge-mentale"
+ },
+ {
+  "date": "2026-10-23T14:08+00:00",
+  "titre": "Poitrine serrée par le stress : 3 gestes qui desserrent",
+  "image": "images/pin-20261023-140813.jpg",
+  "fond": "fonds/pexels-3958565.jpg",
+  "theme": "somatisation",
+  "design": "fiche",
+  "pin_id": "600175087890306268",
+  "md5": "1375d3573af722b2c6937dcf57a4a92a",
+  "lien": "article:symptomes-physiques-du-stress"
  }
 ]
