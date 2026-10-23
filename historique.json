@@ -2159,5 +2159,16 @@
   "pin_id": "600175087890292247",
   "md5": "60da83671971d94faa49a5b12b0d110d",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-23T05:07+00:00",
+  "titre": "Aliments ultra-transformés et anxiété : 3 repères",
+  "image": "images/pin-20261023-050750.jpg",
+  "fond": "fonds/unsplash-4nk7VPj_m6g.jpg",
+  "theme": "alimentation",
+  "design": "fiche",
+  "pin_id": "600175087890300610",
+  "md5": "a980bde78f3a12295f8e9f17462f24bb",
+  "lien": "article:alimentation-anti-stress"
  }
 ]
