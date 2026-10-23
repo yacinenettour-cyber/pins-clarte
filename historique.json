@@ -2170,5 +2170,16 @@
   "pin_id": "600175087890300610",
   "md5": "a980bde78f3a12295f8e9f17462f24bb",
   "lien": "article:alimentation-anti-stress"
+ },
+ {
+  "date": "2026-10-23T10:08+00:00",
+  "titre": "Fatigue avant les vacances : souffler sans attendre",
+  "image": "images/pin-20261023-100802.jpg",
+  "fond": "fonds/pexels-16267306.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890303485",
+  "md5": "591be4f96620aa1f943f62061b8ee09b",
+  "lien": "article:charge-mentale"
  }
 ]
