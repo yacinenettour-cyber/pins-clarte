@@ -2236,5 +2236,16 @@
   "pin_id": "600175087890323434",
   "md5": "6752052ac1fc659447e4e15c488e4799",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-24T18:08+00:00",
+  "titre": "Mains moites et stress : 3 gestes avant un rendez-vous",
+  "image": "images/pin-20261024-180756.jpg",
+  "fond": "fonds/pexels-4153238.jpg",
+  "theme": "somatisation",
+  "design": "fiche",
+  "pin_id": "600175087890326555",
+  "md5": "29da80761550b1a913f567a26e2ed55c",
+  "lien": "guide:sommeil"
  }
 ]
