@@ -2225,5 +2225,16 @@
   "pin_id": "600175087890320494",
   "md5": "6a583319ce230bb700fcfe0153daf6b1",
   "lien": "article:alimentation-anti-stress"
+ },
+ {
+  "date": "2026-10-24T14:07+00:00",
+  "titre": "Trajet en voiture tendu : 4 gestes pour arriver calme",
+  "image": "images/pin-20261024-140749.jpg",
+  "fond": "fonds/pexels-11488944.jpg",
+  "theme": "systemenerveux",
+  "design": "fiche",
+  "pin_id": "600175087890323434",
+  "md5": "6752052ac1fc659447e4e15c488e4799",
+  "lien": "guide:sommeil"
  }
 ]
