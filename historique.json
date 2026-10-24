@@ -2214,5 +2214,16 @@
   "pin_id": "600175087890317953",
   "md5": "d44bd93e705b15f2e012d449093988e5",
   "lien": "article:ruminations-le-soir"
+ },
+ {
+  "date": "2026-10-24T10:08+00:00",
+  "titre": "Alimentation et moral : 3 leçons de l'essai SMILES",
+  "image": "images/pin-20261024-100757.jpg",
+  "fond": "fonds/unsplash-7WVpQhFGUqQ.jpg",
+  "theme": "alimentation",
+  "design": "fiche",
+  "pin_id": "600175087890320494",
+  "md5": "6a583319ce230bb700fcfe0153daf6b1",
+  "lien": "article:alimentation-anti-stress"
  }
 ]
