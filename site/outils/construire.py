@@ -665,6 +665,9 @@ def construire_article(a, tous):
         return f'<h2 id="{ident}">{m.group(1)}</h2>'
     corps_html = re.sub(r"<h2>(.*?)</h2>", ancre, corps_html)
     corps_html = appels_de_source(corps_html, len(a["sources"]))
+    # Schéma d'exercice ({{SCHEMA:nom}}, voir SCHEMAS) : tout exercice décrit dans un article a son schéma (22/10/2026).
+    corps_html = remplacer_schemas(corps_html)
+    tete_article = f"<style>{SCHEMA_CSS}</style>" if 'class="schema-resp' in corps_html else ""
     # Une seule offre : le guide (sauf « guide: aucun », ex. burn-out : consulter d'abord), avec un pont si besoin.
     offre = OFFRE if a["guide"] != "aucun" else None
     pont = PONTS.get(a["categorie"], "")
@@ -753,7 +756,7 @@ def construire_article(a, tous):
     ecrire(f"{a['slug']}/index.html", page(a["titre_seo"], a["description"], f"/{a['slug']}/", contenu, schemas,
                                            a["images"]["og"] if a.get("images") else None, "article",
                                            meta_article=meta_article, image_alt=a["alt"] if a.get("images") else None,
-                                           sans_guide=a["guide"] == "aucun"))
+                                           sans_guide=a["guide"] == "aucun", tete=tete_article))
 
 
 # Polices de l'accueil : les mêmes @font-face que style.css (polices du site et polices de secours mises à l'échelle).

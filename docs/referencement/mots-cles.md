@@ -23,6 +23,7 @@ des grands médias santé : viser d'abord les variantes.
 | /symptomes-physiques-du-stress/ | symptômes physiques du stress | symptômes physiques du stress chronique, symptômes physiques du stress et de l'angoisse, douleur physique stress | moyenne |
 | /hypervigilance/ | hypervigilance | hypervigilance sommeil, hypervigilance symptômes, hypervigilance définition, hypervigilance que faire | faible |
 | /angoisse-le-matin/ | angoisse le matin | angoisse matinale, angoisse au réveil, angoisse le matin sans raison, angoisse au réveil que faire, angoisse au réveil dépression (suggestions Google du 21/10) | faible |
+| /boule-au-ventre/ | boule au ventre stress | boule au ventre angoisse, boule au ventre permanente, boule au ventre que faire, boule au ventre sans raison (article du 25/10) | moyenne |
 | /calmer-son-systeme-nerveux/ | calmer son système nerveux | réguler son système nerveux, calmer son système nerveux rapidement, tension nerveuse que faire, système nerveux en mode survie (FAQ du 19/10) | moyenne |
 | /nerf-vague/ | nerf vague | activer le nerf vague naturellement | élevée (mot court) |
 | /charge-mentale/ | charge mentale | signes de charge mentale, alléger sa charge mentale | élevée (mot court) |
