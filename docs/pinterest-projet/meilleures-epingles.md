@@ -195,3 +195,24 @@ milieu ». Le personnage central des infographies (formats `cles`, `exercices` e
 une personne réaliste, façon photo (image générée gratuitement sur Hugging Face, ou photo libre de droits inédite),
 et non plus une silhouette aquarelle ou un pictogramme. Toujours habillée, rien de suggestif, pose exacte de ce que
 dit le texte, jamais réutilisée d'une épingle à l'autre.
+
+## Ce que montrent les images des 8 meilleures épingles (regardées le 25/10/2026)
+
+Images de référence dans `photos_attente/ref-top*.jpg` (jamais publiées, seulement pour l'analyse).
+
+- **Une personne au centre ou en haut, réaliste et expressive** (portrait peint, visage détaillé, émotion lisible :
+  main sur le front, regard pensif, posture assurée). Jamais une silhouette plate, sauf « 5 étirements » (pictogrammes).
+- **Une petite vignette illustrée pour chaque point** (tomate Pomodoro, chronomètre, grenouille, check-list, lit, forêt,
+  carnet…), à côté du texte du point. Beaucoup de détails : l'image « se lit » en la regardant.
+- **Titre sur deux niveaux** : une partie en grandes capitales ou en serif, et le mot-clé en écriture manuscrite ou en
+  couleur (« stress chronique », « procrastination », « anti-fatigue », « Glycémie élevée »).
+- **Mises en page qui reviennent** : liste numérotée verticale reliée par des flèches ; deux colonnes « Ce que tu
+  ressens / Solutions » (✗ et ✓) ; 4 clés autour du personnage + 1 en bas.
+- **Palette chaude et douce** (crème, rose poudré, sauge, doré), fond texturé papier ou aquarelle.
+- **Bandeau final « Sauvegarde cette épingle pour… »** avec une punaise ou un signet, et souvent « Clarté Mentale |
+  Stress & Énergie » en signature.
+- À ne pas reprendre : le chiffre « -30 % de cortisol en 5 jours » de l'épingle aliments (promesse non sourcée).
+
+Conséquence pour la fabrication (avec la règle de l'utilisateur du même jour) : personnage central réaliste (portrait
+peint réaliste, habillé), une vignette illustrée par point, titre à deux niveaux avec mot-clé manuscrit, bandeau
+« Sauvegarde cette épingle pour… » et signature du compte ; texte toujours dessiné par PIL (règle 8 du CLAUDE.md).
