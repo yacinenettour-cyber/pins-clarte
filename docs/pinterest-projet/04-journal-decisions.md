@@ -989,3 +989,15 @@ recherche et llms.txt. Contrôles : axe-core 0 violation sur la fiche dans les d
 débordement à 320 px, W3C 0 erreur, 0 lien interne cassé, rendu du PDF regardé page par page. Prospection : règle
 datée du 21/10 dans prospection-liens.json (universités, santé étudiante, associations, institutionnels A et B :
 proposer d'abord la fiche plutôt qu'un article, mêmes interdits). Publié sur gh-pages, IndexNow.
+
+## YouTube : l'envoi automatique par Composio ne fonctionne pas (22/10/2026)
+
+3e essai envoyé à 07:19 UTC, mais sur la chaîne PulsePositif (connexion Composio faite sur la mauvaise chaîne) et
+YouTube affiche « Échec de la mise en ligne : impossible de traiter le fichier » pour la vidéo ET le Short (captures de
+l'utilisateur), alors que les fichiers sont au format standard (H.264 yuv420p + AAC, faststart). Reconnexion faite
+par l'utilisateur sur ClarteMentale (@clartementalefr, UCHDMGJxrRYnRwGZZFJNBpfg). Test du 22/10 10:07 UTC
+(videos_youtube/_test_envoi.json, fichier de 6 s, privé) : YOUTUBE_MULTIPART_UPLOAD_VIDEO refusé (quota 429 du
+projet partagé), YOUTUBE_UPLOAD_VIDEO renvoie un identifiant mais la vidéo reste introuvable 6 min plus tard
+(traitement en échec). Conclusion : l'outil d'envoi de Composio n'est pas fiable (fichier transmis non traitable +
+quota partagé). ruminations-soir bloquée (« bloquee »: true) ; kit de mise en ligne manuelle envoyé à l'utilisateur
+(fichier dans l'artefact du run 39735065577, texte, miniature, sous-titres).

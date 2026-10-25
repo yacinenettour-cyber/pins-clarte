@@ -2104,5 +2104,181 @@
   "pin_id": "600175087890271229",
   "md5": "e783032e96f6149550fb87f44157aee9",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-21T20:08+00:00",
+  "titre": "Ashwagandha et stress : 4 précautions à connaître",
+  "image": "images/pin-20261021-200814.jpg",
+  "fond": "fonds/unsplash-UTPZnnEVW4E.jpg",
+  "theme": "alimentation",
+  "design": "fiche",
+  "pin_id": "600175087890276339",
+  "md5": "44f4918c081368394563f3ed16ad5b0e",
+  "lien": "article:baisser-son-cortisol-naturellement"
+ },
+ {
+  "date": "2026-10-22T05:08+00:00",
+  "titre": "Souffle court par le stress : 3 gestes assis",
+  "image": "images/pin-20261022-050754.jpg",
+  "fond": "prete:images_exercices/souffle-court-3-gestes-assis.jpg",
+  "theme": "posturesantistress",
+  "design": "exercices",
+  "pin_id": "600175087890282902",
+  "md5": "136953f0e71400a2c188b5c4591e716e",
+  "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-22T10:08+00:00",
+  "titre": "Stress : bâiller exprès, le réflexe calmant oublié",
+  "image": "images/pin-20261022-100758.jpg",
+  "fond": "fonds/fond-72.jpg",
+  "theme": "systemenerveux",
+  "design": "fiche",
+  "pin_id": "600175087890286017",
+  "md5": "b508b7a0347079dd5496d10c4f8e202d",
+  "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-22T14:08+00:00",
+  "titre": "Rituel du soir : 5 minutes à regarder le ciel",
+  "image": "images/pin-20261022-140840.jpg",
+  "fond": "fonds/pexels-29100031.jpg",
+  "theme": "sommeil",
+  "design": "fiche",
+  "pin_id": "600175087890288980",
+  "md5": "1b653a7649056ccb078cae05e77f2732",
+  "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-22T18:08+00:00",
+  "titre": "Fatigue en dents de scie : pourquoi tu es à plat",
+  "image": "images/pin-20261022-180757.jpg",
+  "fond": "fonds/pexels-13572006.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890292247",
+  "md5": "60da83671971d94faa49a5b12b0d110d",
+  "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-23T05:07+00:00",
+  "titre": "Aliments ultra-transformés et anxiété : 3 repères",
+  "image": "images/pin-20261023-050750.jpg",
+  "fond": "fonds/unsplash-4nk7VPj_m6g.jpg",
+  "theme": "alimentation",
+  "design": "fiche",
+  "pin_id": "600175087890300610",
+  "md5": "a980bde78f3a12295f8e9f17462f24bb",
+  "lien": "article:alimentation-anti-stress"
+ },
+ {
+  "date": "2026-10-23T10:08+00:00",
+  "titre": "Fatigue avant les vacances : souffler sans attendre",
+  "image": "images/pin-20261023-100802.jpg",
+  "fond": "fonds/pexels-16267306.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890303485",
+  "md5": "591be4f96620aa1f943f62061b8ee09b",
+  "lien": "article:charge-mentale"
+ },
+ {
+  "date": "2026-10-23T14:08+00:00",
+  "titre": "Poitrine serrée par le stress : 3 gestes qui desserrent",
+  "image": "images/pin-20261023-140813.jpg",
+  "fond": "fonds/pexels-3958565.jpg",
+  "theme": "somatisation",
+  "design": "fiche",
+  "pin_id": "600175087890306268",
+  "md5": "1375d3573af722b2c6937dcf57a4a92a",
+  "lien": "article:symptomes-physiques-du-stress"
+ },
+ {
+  "date": "2026-10-23T18:08+00:00",
+  "titre": "Messages en attente : quand « plus tard » s'empile",
+  "image": "images/pin-20261023-180805.jpg",
+  "fond": "fonds/pexels-6001475.jpg",
+  "theme": "procrastination",
+  "design": "fiche",
+  "pin_id": "600175087890309751",
+  "md5": "ce2d02175ea5c8ea8a0761ebc47ed813",
+  "lien": ""
+ },
+ {
+  "date": "2026-10-24T05:08+00:00",
+  "titre": "La veille d'un examen : 4 gestes pour réussir à dormir",
+  "image": "images/pin-20261024-050756.jpg",
+  "fond": "fonds/pexels-30309410.jpg",
+  "theme": "sommeil",
+  "design": "fiche",
+  "pin_id": "600175087890317953",
+  "md5": "d44bd93e705b15f2e012d449093988e5",
+  "lien": "article:ruminations-le-soir"
+ },
+ {
+  "date": "2026-10-24T10:08+00:00",
+  "titre": "Alimentation et moral : 3 leçons de l'essai SMILES",
+  "image": "images/pin-20261024-100757.jpg",
+  "fond": "fonds/unsplash-7WVpQhFGUqQ.jpg",
+  "theme": "alimentation",
+  "design": "fiche",
+  "pin_id": "600175087890320494",
+  "md5": "6a583319ce230bb700fcfe0153daf6b1",
+  "lien": "article:alimentation-anti-stress"
+ },
+ {
+  "date": "2026-10-24T14:07+00:00",
+  "titre": "Trajet en voiture tendu : 4 gestes pour arriver calme",
+  "image": "images/pin-20261024-140749.jpg",
+  "fond": "fonds/pexels-11488944.jpg",
+  "theme": "systemenerveux",
+  "design": "fiche",
+  "pin_id": "600175087890323434",
+  "md5": "6752052ac1fc659447e4e15c488e4799",
+  "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-24T18:08+00:00",
+  "titre": "Mains moites et stress : 3 gestes avant un rendez-vous",
+  "image": "images/pin-20261024-180756.jpg",
+  "fond": "fonds/pexels-4153238.jpg",
+  "theme": "somatisation",
+  "design": "fiche",
+  "pin_id": "600175087890326555",
+  "md5": "29da80761550b1a913f567a26e2ed55c",
+  "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-25T06:08+00:00",
+  "titre": "Demander de l'aide : 3 signes que tu portes tout seul",
+  "image": "images/pin-20261025-060807.jpg",
+  "fond": "fonds/pexels-6624429.jpg",
+  "theme": "blocagemental",
+  "design": "fiche",
+  "pin_id": "600175087890335665",
+  "md5": "7d7f7fbcd7c56ba4d84965082aa156fe",
+  "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-25T11:08+00:00",
+  "titre": "Fatigue du lundi : le week-end au lit ne recharge pas",
+  "image": "images/pin-20261025-110755.jpg",
+  "fond": "fonds/pexels-18020048.jpg",
+  "theme": "energie",
+  "design": "fiche",
+  "pin_id": "600175087890338729",
+  "md5": "fe3b12df3079dff7f719e32f88f2e41a",
+  "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-25T15:08+00:00",
+  "titre": "Stress : 3 postures défensives qui l'entretiennent",
+  "image": "images/pin-20261025-150758.jpg",
+  "fond": "fonds/pexels-6339727.jpg",
+  "theme": "posturesantistress",
+  "design": "fiche",
+  "pin_id": "600175087890341787",
+  "md5": "941df26376eca0d7089e7f7515072d96",
+  "lien": "guide:sommeil"
  }
 ]

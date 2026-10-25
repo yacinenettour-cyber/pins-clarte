@@ -10,7 +10,7 @@
    "statut": "envoye",
    "date_envoi": "2026-10-12",
    "thread_id": "1a13159887b314a0",
-   "relance": null,
+   "relance": "2026-10-22",
    "reponse": null,
    "lien_obtenu": null,
    "domaine": "franceinsomnie.fr",
@@ -40,7 +40,7 @@
    "statut": "envoye",
    "date_envoi": "2026-10-12",
    "thread_id": "1a131598714ca82d",
-   "relance": null,
+   "relance": "2026-10-22",
    "reponse": null,
    "lien_obtenu": null,
    "domaine": "papapositive.fr",
@@ -374,9 +374,11 @@
    "pourquoi": "Thématique Sommeil avec un guide « Ressources » (2025) pour les étudiants en santé qui animent des actions de prévention.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/routine-du-soir-anti-stress/",
    "remarque": "Sérieux et actif, mais public d'animateurs de prévention qui privilégient les supports institutionnels (Réseau Morphée, Santé publique France).",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "domaine": "sses-normandie.unicaen.fr",
-   "audience": "B : sous-domaine d'un domaine du top Tranco (unicaen.fr, rang 20386) ; trafic propre inconnu"
+   "audience": "B : sous-domaine d'un domaine du top Tranco (unicaen.fr, rang 20386) ; trafic propre inconnu",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a16428df75ac243"
   },
   {
    "site": "DOCcitanie (centres de documentation santé d'Occitanie)",
@@ -504,8 +506,11 @@
    "pourquoi": "Association de patients (acouphènes, hyperacousie) ; le silence du coucher amplifie l'acouphène et la gestion du stress fait partie des conseils habituels. Page précise sommeil/relaxation non trouvée : demander où une ressource « respiration pour s'endormir » serait la plus utile.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-pour-dormir/ (+ /respiration-guidee/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "repondu",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a1644cc04f5dc0e",
+   "reponse": "23/10 (Claire Duval) : accusé de réception, « Nous avons bien reçu votre message et vous remercions des informations transmises » ; aucun lien annoncé, rien à répondre."
   },
   {
    "site": "Acouphènes Québec",
@@ -520,8 +525,10 @@
    "pourquoi": "Association québécoise partenaire de la Semaine nationale de sensibilisation aux acouphènes 2026 ; stress et hygiène du sommeil sont les deux axes cités dans la prise en charge. Audios sans voix utilisables au coucher.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a1644cc1a4431c6"
   },
   {
    "site": "AFA Crohn RCH France",
@@ -725,8 +732,10 @@
    "pourquoi": "Fédération reconnue d'utilité publique, plus de 250 structures membres, partie prenante des SISM : peut relayer des outils gratuits d'auto-assistance auprès de ses membres.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /ressources-urgence/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a1644cc000c2aaa"
   },
   {
    "site": "Semaines d'information sur la santé mentale (SISM)",
@@ -1050,7 +1059,7 @@
    "site": "Fédération nationale des Écoles des parents et des éducateurs (FNEPE)",
    "domaine": "ecoledesparents-federation.org",
    "page_cible": "https://ecoledesparents-federation.org/",
-   "email": "contact@ecoledesparents.org",
+   "email": "secretariat@ecoledesparents.org",
    "email_verifie": false,
    "source_email": "brochure 2019 sur l'ancien domaine ecoledesparents.org — le site a changé de domaine, adresse à vérifier",
    "formulaire": null,
@@ -1059,8 +1068,10 @@
    "pourquoi": "Revue « L'école des parents » (numéro consacré au burn-out parental) et réseau de 36 EPE ; la page sur la charge mentale et les audios conviennent aux parents épuisés.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/charge-mentale/ (+ /respiration-guidee/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a1644cc13c8d428"
   },
   {
    "site": "Les Petits Plus Zen — podcast de Séverine Feiss",
@@ -1528,9 +1539,11 @@
    "pourquoi": "Association de soutien aux troubles anxieux avec rubriques ressources / liens utiles : nos audios de respiration sont un outil d'autogestion complémentaire.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : organisme communautaire reconnu (cité dans les pages ressources de Santé Québec) ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : angoisse / anxiété (Québec). Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Page ressources précise à choisir à la main (rubrique « Coups de cœur de l'équipe » surtout des vidéos)."
+   "remarque": "Piste : angoisse / anxiété (Québec). Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Page ressources précise à choisir à la main (rubrique « Coups de cœur de l'équipe » surtout des vidéos).",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a16428e946ab962"
   },
   {
    "site": "La Clé des champs – réseau d'entraide anxiété",
@@ -1587,9 +1600,11 @@
    "pourquoi": "Page « Ateliers et ressources » avec liens utiles (INRS, ARACT, Carsat…) et ateliers stress pour les salariés.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/charge-mentale/",
    "audience": "B : service de santé au travail agréé (mission de service public) ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : burn-out / santé au travail. "
+   "remarque": "Piste : burn-out / santé au travail. ",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a16428de40dd468"
   },
   {
    "site": "Présanse Pays de la Loire (fédération des services de santé au travail)",
@@ -1701,9 +1716,11 @@
    "pourquoi": "Page du CLSM qui liste ~15 ressources (Psycom, Santé mentale info service, 3114, Nightline…).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : collectivité (conseil local de santé mentale) ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "lot": "recherche 3 du 14/10",
-   "remarque": "Piste : collectivités / CLSM. Adresse d'accueil générale : demander de transmettre à la coordination du CLSM."
+   "remarque": "Piste : collectivités / CLSM. Adresse d'accueil générale : demander de transmettre à la coordination du CLSM.",
+   "date_envoi": "2026-10-22",
+   "thread_id": "1a16428de680ada6"
   },
   {
    "site": "Union étudiante du Québec – Santé psychologique étudiante",
@@ -1781,12 +1798,13 @@
     "Stress du quotidien : des outils gratuits et non médicamenteux (respiration lente, routine du soir) à relayer dans les actions de promotion de la santé"
    ],
    "audience": "B : revue de la Mutualité chrétienne, organisme mutualiste national belge ; absent du top 1 million Tranco",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "articles invités 19/10",
    "remarque": "Ligne éditoriale centrée sur les initiatives de promotion de la santé (lectorat surtout professionnel) : proposer un sujet d'abord. Date du dernier article non relevée automatiquement : vérifier à l'œil un article 2025-2026 avant d'écrire. Site hors de France : ne pas mettre en avant nos numéros d'urgence français. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Numéro d'octobre 2026 en ligne, auteurs extérieurs (ex. Sonia De Vree, HELMo). Article cité : « Handicap invisible : un outil pour les patients et professionnels ». 3 idées envoyées (messages de prévention du sommeil, ruminations du soir chez les jeunes adultes, respiration lente et routine du soir).",
    "date_envoi": "2026-10-21",
    "thread_id": "1a15fb248063da27",
-   "sujet": "Proposition d'article gratuit : sommeil et stress en promotion de la santé"
+   "sujet": "Proposition d'article gratuit : sommeil et stress en promotion de la santé",
+   "reponse": "22/10 : refus poli, un article sur le sujet a déjà été publié en juin."
   },
   {
    "email_verifie": true,
@@ -2022,10 +2040,10 @@
   },
   {
    "email_verifie": true,
-   "statut": "envoye",
+   "statut": "stop",
    "date_envoi": "2026-10-20",
    "relance": null,
-   "reponse": null,
+   "reponse": "22/10 (Sarra) : refus, son site et son podcast traitent déjà ces sujets.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
    "site": "Boost ton feeling good",
@@ -2209,6 +2227,14 @@
   {
    "date": "2026-10-21",
    "resultat": "Tâche du matin (mercredi) : aucune nouvelle réponse depuis le passage du 20/10 au soir (boîte, promotions et spam relus ; aucun retour mailer-daemon). Aucune relance due (premiers envois le 12/10, 10 jours le 22/10). 9 envois, tous vus dans les Envoyés : CHU de Montpellier (A, lien, 4 liens morts signalés), Santé Québec Saguenay–Lac-Saint-Jean (A, lien, Tel-Aide redirige vers un site sans rapport et cps02.org ne répond plus), Canton de Neuchâtel (A, lien), Unifr Uni-Social (A, lien), Éducation Santé (B, article invité), La Clé des champs (B, lien, 2 liens morts), Question Santé (B, lien), Coup de Blouse (B, lien), MDA 84 (B, lien). Passés en formulaire faute d'adresse affichée : parlonsrh.com, sante-mentale-ain.fr, revivre.org (devenu relief.ca), fondationjeunesentete.org, capsantementale.ca, mouvementsmq.ca. Recherche d'articles invités : la plupart des sites trouvés vendent des articles (exclus) ; neuroetpsycho.com écarté (pas C thématique). Classement Tranco du 20/10 téléchargé (tranco-list.eu)."
+  },
+  {
+   "date": "2026-10-22",
+   "resultat": "Passage du 22/10 (reconstitué le 25/10 d'après les Envoyés : l'agent s'était arrêté avant de mettre le registre à jour) : 2 relances (France Insomnie, Papa Positive) et 8 envois (fiche respiration proposée en premier, règle du 21/10) : Acouphènes Québec, Fnepe/École des parents, France Acouphènes (lien en panne signalé), Santé Mentale France, Phobies-Zéro, Université de Caen (service sanitaire), CLSM de Fontenay-aux-Roses, SMTI 82 (2 liens morts signalés) ; 10 au total."
+  },
+  {
+   "date": "2026-10-25",
+   "resultat": "Lecture des réponses (dimanche, aucun envoi) : Éducation Santé refuse (article déjà publié en juin) → stop ; Boost ton feeling good refuse (sujets déjà traités) → stop ; France Acouphènes accuse réception, sans lien → repondu. Les 23 et 24/10, la tâche n'a pas tourné (limite hebdomadaire d'utilisation atteinte) : 9 relances dues restent à faire au prochain jour ouvré."
   }
  ]
 }

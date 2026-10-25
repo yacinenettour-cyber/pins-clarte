@@ -1,0 +1,17 @@
+{
+ "statut": "teste",
+ "pourquoi": "22/10/2026 : vidéo et Short refusés par YouTube (« impossible de traiter le fichier ») ; test des deux outils d envoi Composio avec un fichier de 6 s",
+ "date": "2026-10-22T10:07+00:00",
+ "essais": [
+  {
+   "outil": "YOUTUBE_MULTIPART_UPLOAD_VIDEO",
+   "erreur": "YOUTUBE_MULTIPART_UPLOAD_VIDEO : {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleapis.com' for consumer 'project_number:1068312718386'.\",\n    \"errors\": [\n      {\n        \"message\": \"Quota exceeded for quota metric 'Video Uploads' and limit 'Video Uploads per day' of service 'youtube.googleap"
+  },
+  {
+   "outil": "YOUTUBE_UPLOAD_VIDEO",
+   "video_id": "eFwHd1x6mHU",
+   "details": "lecture impossible : YOUTUBE_GET_VIDEO_DETAILS_BATCH : None of the 1 requested video IDs returned results. Video IDs: ['eFwHd1x6mHU']. Possible reasons: videos may be private, deleted, region-restricted, or the IDs are invalid. YouTube video IDs are 11 characters (e.g., 'dQw4w9WgXcQ'). Verify the ID",
+   "supprimee": true
+  }
+ ]
+}

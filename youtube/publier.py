@@ -153,8 +153,57 @@ def connexion_youtube():
     if not items:
         return False
     # l'identifiant d'utilisateur Composio est relu à chaque fois (une reconnexion ne casse rien, cf. Pinterest)
+    # plusieurs connexions possibles (22/10 : reconnexion sur la bonne chaîne) : la plus récente gagne
+    items.sort(key=lambda c: c.get("created_at") or c.get("updated_at") or "", reverse=True)
+    print("comptes YouTube actifs :", [(c.get("id"), c.get("created_at")) for c in items])
     UTILISATEUR = items[0].get("user_id") or UTILISATEUR
     return True
+
+
+def tester_envoi():
+    """Test d'envoi (22/10/2026, après « Échec de la mise en ligne : impossible de traiter le fichier ») : envoie
+    youtube/test_envoi.mp4 (6 s) en privé avec les deux outils Composio, relève l'état de traitement chez YouTube,
+    puis supprime la vidéo de test. Lancé seulement si videos_youtube/_test_envoi.json a le statut "a_tester"."""
+    chemin = os.path.join(DEPOT, "videos_youtube", "_test_envoi.json")
+    if not os.path.exists(chemin):
+        return
+    etat = json.load(open(chemin))
+    if etat.get("statut") != "a_tester":
+        return
+    essais = []
+    for outil, champ in (("YOUTUBE_MULTIPART_UPLOAD_VIDEO", "videoFile"), ("YOUTUBE_UPLOAD_VIDEO", "videoFilePath")):
+        e = {"outil": outil}
+        try:
+            args = {"title": f"Test d'envoi {outil[8:]}", "description": "Test technique, supprimé automatiquement.",
+                    "categoryId": "26", "privacyStatus": "private",
+                    champ: fichier(os.path.join(DEPOT, "youtube", "test_envoi.mp4"), outil)}
+            if outil == "YOUTUBE_UPLOAD_VIDEO":
+                args["tags"] = ["test"]
+            e["video_id"] = id_video(executer(outil, args))
+        except Exception as err:
+            e["erreur"] = str(err)[:400]
+        essais.append(e)
+    for e in essais:
+        if not e.get("video_id"):
+            continue
+        for _ in range(12):  # jusqu'à 6 minutes de traitement
+            time.sleep(30)
+            try:
+                d = executer("YOUTUBE_GET_VIDEO_DETAILS_BATCH", {"id": [e["video_id"]], "parts": ["status", "processingDetails"]})
+                texte = json.dumps(d, ensure_ascii=False)
+                e["details"] = texte[:900]
+                if '"processed"' in texte or '"failed"' in texte or '"rejected"' in texte or '"succeeded"' in texte:
+                    break
+            except Exception as err:
+                e["details"] = f"lecture impossible : {err}"[:300]
+        try:
+            executer("YOUTUBE_DELETE_VIDEO", {"videoId": e["video_id"], "confirmDelete": True})
+            e["supprimee"] = True
+        except Exception as err:
+            e["supprimee"] = f"échec : {err}"[:200]
+    etat.update(statut="teste", date=datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"), essais=essais)
+    open(chemin, "w").write(json.dumps(etat, ensure_ascii=False, indent=1) + "\n")
+    print(json.dumps(etat, ensure_ascii=False, indent=1))
 
 
 def rendre_publiques():
@@ -202,6 +251,11 @@ if __name__ == "__main__":
     if not connexion_youtube():
         print("aucun compte YouTube actif connecté dans Composio")
         sys.exit(0 if sys.argv[1] == "rendre_publiques" else 1)
+    if sys.argv[1] == "rendre_publiques":
+        try:
+            tester_envoi()
+        except Exception as err:
+            print("test d'envoi impossible :", err)
     if sys.argv[1] == "envoyer":
         envoyer(sys.argv[2])
     elif sys.argv[1] == "actualiser":
