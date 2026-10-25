@@ -2247,5 +2247,16 @@
   "pin_id": "600175087890326555",
   "md5": "29da80761550b1a913f567a26e2ed55c",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-25T06:08+00:00",
+  "titre": "Demander de l'aide : 3 signes que tu portes tout seul",
+  "image": "images/pin-20261025-060807.jpg",
+  "fond": "fonds/pexels-6624429.jpg",
+  "theme": "blocagemental",
+  "design": "fiche",
+  "pin_id": "600175087890335665",
+  "md5": "7d7f7fbcd7c56ba4d84965082aa156fe",
+  "lien": "guide:sommeil"
  }
 ]
