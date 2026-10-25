@@ -135,7 +135,7 @@ Oui. Chez les personnes anxieuses, c'est surtout l'endormissement qui coince [3]
 
 Si cette angoisse te suit jusqu'au lit, le guide gratuit « Quand le cerveau refuse de dormir » propose une routine à faire directement au lit, des exercices pour calmer ton mental le soir et un calendrier de 30 jours, sans matériel.
 
-Tu te réveilles plutôt vers 4 h sans réussir à te rendormir ? Lis ce qu'il faut faire en cas de [réveil à 4 h du matin](/reveil-4h-du-matin/). Si l'angoisse te serre plutôt dès le réveil, l'article sur l'[angoisse le matin](/angoisse-le-matin/) est fait pour toi. Si tu restes en alerte même dans la journée, à sursauter au moindre bruit, va voir notre article sur l'[hypervigilance](/hypervigilance/).
+Tu te réveilles plutôt vers 4 h sans réussir à te rendormir ? Lis ce qu'il faut faire en cas de [réveil à 4 h du matin](/reveil-4h-du-matin/). Si l'angoisse te serre plutôt dès le réveil, l'article sur l'[angoisse le matin](/angoisse-le-matin/) est fait pour toi. Si tu restes en alerte même dans la journée, à sursauter au moindre bruit, va voir notre article sur l'[hypervigilance](/hypervigilance/). Et si l'angoisse se loge surtout dans ton ventre, l'article sur la [boule au ventre](/boule-au-ventre/) explique d'où vient cette sensation et quand consulter.
 
 ## Sources
 1. [Trouble panique : symptômes, diagnostic et évolution — Assurance maladie (ameli.fr), 2025](https://www.ameli.fr/assure/sante/themes/trouble-panique/symptomes-diagnostic-evolution)

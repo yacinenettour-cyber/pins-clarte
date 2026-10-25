@@ -43,7 +43,7 @@ Tu le sens d'abord dans le corps, avec les effets du sympathique : le cœur qui 
 
 Si ces inquiétudes deviennent excessives et que tu n'as plus de prise dessus, on parle d'anxiété pathologique [8].
 
-Pris un par un, aucun de ces signes n'est grave s'il passe vite. Ce qui compte, c'est combien de temps ça dure, avec quelle force, et ce que ça t'empêche de faire (voir « Quand consulter ? »). Le détail, partie du corps par partie du corps, avec les signes qui doivent faire appeler le 15, se trouve dans notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/).
+Pris un par un, aucun de ces signes n'est grave s'il passe vite. Ce qui compte, c'est combien de temps ça dure, avec quelle force, et ce que ça t'empêche de faire (voir « Quand consulter ? »). Le détail, partie du corps par partie du corps, avec les signes qui doivent faire appeler le 15, se trouve dans notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/). Si c'est surtout ton ventre qui se noue, lis plutôt celui sur la [boule au ventre](/boule-au-ventre/).
 
 ## Comment calmer son système nerveux rapidement ?
 Les gestes les mieux documentés passent d'abord par la respiration : le soupir physiologique ou la respiration lente. Viennent ensuite la relaxation musculaire, l'ancrage par les sens, la marche et le soutien d'un proche. Le tableau te donne une idée de ce que chacun demande.
