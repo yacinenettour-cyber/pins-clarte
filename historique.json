@@ -2280,5 +2280,16 @@
   "pin_id": "600175087890341787",
   "md5": "941df26376eca0d7089e7f7515072d96",
   "lien": "guide:sommeil"
+ },
+ {
+  "date": "2026-10-25T19:07+00:00",
+  "titre": "Séries le soir : 3 réglages pour ne pas veiller",
+  "image": "images/pin-20261025-190753.jpg",
+  "fond": "fonds/pexels-30817988.jpg",
+  "theme": "sommeil",
+  "design": "fiche",
+  "pin_id": "600175087890345478",
+  "md5": "415dd4013173cfa2a3cb3b702dda022c",
+  "lien": "article:procrastination-du-coucher"
  }
 ]
