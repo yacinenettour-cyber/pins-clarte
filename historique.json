@@ -2269,5 +2269,16 @@
   "pin_id": "600175087890338729",
   "md5": "fe3b12df3079dff7f719e32f88f2e41a",
   "lien": "guide:cortisol"
+ },
+ {
+  "date": "2026-10-25T15:08+00:00",
+  "titre": "Stress : 3 postures défensives qui l'entretiennent",
+  "image": "images/pin-20261025-150758.jpg",
+  "fond": "fonds/pexels-6339727.jpg",
+  "theme": "posturesantistress",
+  "design": "fiche",
+  "pin_id": "600175087890341787",
+  "md5": "941df26376eca0d7089e7f7515072d96",
+  "lien": "guide:sommeil"
  }
 ]
