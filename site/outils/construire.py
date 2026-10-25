@@ -1331,6 +1331,15 @@ ILLUSTRATIONS = {
     "coherence-5-5": ("coherence-cardiaque-assise-sur-une-chaise.webp",
                       "Dessin à l'aquarelle d'une femme assise sur une chaise, le dos droit, les épaules relâchées, les mains "
                       "posées sur les cuisses et les yeux fermés."),
+    "soupir": ("soupir-physiologique-assise-expiration-par-la-bouche.webp",
+               "Dessin à l'aquarelle d'une femme assise sur une chaise, vue de profil, les mains sur les cuisses, qui "
+               "souffle lentement par la bouche ; quelques traits bleu pâle figurent l'air expiré."),
+    "carree": ("respiration-carree-assise-au-bureau.webp",
+               "Dessin à l'aquarelle d'une femme assise bien droite à son bureau, vue de profil, les mains posées devant "
+               "son ordinateur portable, les yeux fermés le temps d'une pause."),
+    "4-7-8": ("respiration-4-7-8-allongee-yeux-fermes.webp",
+              "Dessin à l'aquarelle d'une femme allongée sur le dos dans un lit, la tête sur un oreiller, les bras le long "
+              "du corps et les yeux fermés."),
 }
 
 
