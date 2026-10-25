@@ -153,3 +153,39 @@ repos » et « dire non sans culpabiliser » ont un autre angle), à terminer au
   produire ; remarquer le « je devrais… » sans lui obéir ; choisir un repos qui recharge (marche, lecture) plutôt que
   l'écran. Cadre doré à décrire autrement que les précédents ; personnage central : femme habillée en vert, assise dans un
   fauteuil avec une tasse.
+
+## Statistiques du compte sur 90 jours (lues le 25/10/2026, nouvelles fonctions Composio)
+
+Source : `PINTEREST_GET_ACCOUNT_ANALYTICS` (28/07 → 24/10/2026) et `PINTEREST_GET_TOP_PINS`.
+
+| Quinzaine | Impressions | Enregistrements | Clics sur l'épingle | Clics vers le site |
+|---|---|---|---|---|
+| fin juillet | 9 380 | 104 | 579 | 4 |
+| 1-15 août | 21 584 | 199 | 1 162 | 1 |
+| 16-31 août | 20 815 | 198 | 1 137 | 2 |
+| 1-15 sept. | 14 484 | 125 | 856 | 2 |
+| 16-30 sept. | 21 398 | 187 | 1 224 | 20 |
+| 1-15 oct. | 21 702 | 200 | 1 224 | 27 |
+| 16-24 oct. (9 j) | 9 556 | 103 | 572 | 8 |
+
+Total 90 jours : 119 479 impressions, 1 116 enregistrements, 65 clics vers le site (vidéos : 560 impressions).
+
+Constats :
+- **Presque toutes les impressions et tous les enregistrements viennent des anciennes épingles faites à la main dans
+  l'application** (type `IDEA`, déc. 2025 – juin 2026). Top 3 sur 90 jours : « 5 gestes doux pour apaiser le corps dès
+  le matin » (23 578 impressions, 324 enregistrements), « 5 Clés pour Vaincre la Procrastination » (10 294 ; 126),
+  « 6 étapes pour débloquer ton mental » (7 299 ; 63). Suivent : « Si ton cerveau ne s'arrête jamais la nuit », « La
+  formule anti-fatigue mentale », « Cortisol élevé : 7 aliments à privilégier », « Stress et libido », « Comment vaincre
+  la procrastination : le guide complet en 5 étapes », « 7 signes d'une glycémie trop élevée », « Fatigue mentale :
+  7 signaux que tu ignores », « 7 signes physiques du stress chronique », « Stress qui monte ? 5 gestes rapides »,
+  « Cortisol élevé : 5 leviers alimentaires clés », « Les 9 signes d'un cortisol élevé », « 9 gestes simples pour
+  retrouver le moral ».
+- **Les épingles du robot (type `REGULAR`, publiées par l'API) ne sont presque pas diffusées** : la meilleure des
+  30 derniers jours a 48 impressions, 0 enregistrement. Les épingles illustrées du robot ne font pas mieux : « Lâcher
+  prise » 2 impressions en une semaine, « Bas du dos » 6, « Poignets tendus » 2.
+- **Mais le robot apporte les clics vers le site** : 2 clics par quinzaine avant le 24/09, 20 à 27 depuis (liens vers
+  le guide et les articles). La meilleure source de clics est « Réveil à 3h du matin la tête pleine » (4 clics pour
+  68 impressions).
+- Hypothèse la plus probable (non prouvée) : Pinterest diffuse beaucoup plus les épingles créées dans l'application que
+  celles publiées par l'API, quel que soit le visuel. Test proposé à l'utilisateur le 25/10 : publier à la main, dans
+  l'application, quelques épingles préparées dans le format gagnant, et comparer au bout de 2 semaines.
