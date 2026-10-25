@@ -1001,3 +1001,37 @@ projet partagé), YOUTUBE_UPLOAD_VIDEO renvoie un identifiant mais la vidéo res
 (traitement en échec). Conclusion : l'outil d'envoi de Composio n'est pas fiable (fichier transmis non traitable +
 quota partagé). ruminations-soir bloquée (« bloquee »: true) ; kit de mise en ligne manuelle envoyé à l'utilisateur
 (fichier dans l'artefact du run 39735065577, texte, miniature, sous-titres).
+
+## 84. Site : 15 recherches cibles pour entrer dans le top 20 Google, et analyse de longue traîne (22-25/10/2026)
+
+Demande de l'utilisateur (22/10/2026) : « viser au moins les 10 ou 20 premières places Google », plan validé (« Oui »),
+puis « Analyse les mots-clés longue traîne etc. où il y a du volume de recherche ». Travail interrompu le 22/10 (limite
+d'utilisation), repris et terminé le 25/10. Rien de payant : suggestions Google, Google Trends (API gratuite),
+Search Console via Composio, pages de résultats gratuites. DuckDuckGo a bloqué l'atelier après 2 requêtes et Bing
+renvoie des résultats sans rapport aux scripts : le top 10 a été lu sur Brave Search, ce qui n'est qu'une approximation
+de Google (dit dans le document). Aucun volume exact n'est disponible sans outil payant : classement en volume
+probable fort / moyen / faible, méthode écrite.
+
+- **`docs/referencement/cibles-top20.md`** : 15 recherches cibles (une par article), place et impressions Search
+  Console du 09/10 au 24/10, qui occupe le top 10, pourquoi c'est gagnable, une colonne par mardi jusqu'au 15/12
+  (tâche hebdomadaire du mardi) ; longue traîne par sujet (volume et difficulté) ; nouveaux articles possibles ;
+  top 15 des requêtes par volume probable. Non ciblées : baisser son cortisol naturellement (marques de compléments,
+  recherche à la mode) et signes du burn-out (« burn out symptômes » déjà écarté pour concurrence).
+- **14 articles retouchés** (maj 25/10) : une partie ou une question fréquente qui reprend la formulation exacte de la
+  recherche, réponse directe en tête, uniquement des sources déjà présentes dans la page (aucune nouvelle source) :
+  angoisse le soir sans raison (H3), angoisse matinale sans raison (H3 + question « traitement »), arrêter de ruminer la
+  nuit (réponse directe, titre SEO, description), causes de la procrastination du sommeil (H2 + réponse directe),
+  meilleure routine du soir pour bien dormir (question + titre SEO), cortisol élevé la nuit (H2 + tableau, d'après
+  Chicago 2010, 1997 et Pennsylvanie 2001), lien entre le cortisol et le stress (question ; description sans l'anglais
+  « cortisol face »), symptômes physiques de l'hypervigilance, comment réguler son système nerveux, activer le nerf vague
+  pour dormir, symptômes physiques de la charge mentale (repères HAS), stress aigu ou chronique (tableau INRS,
+  Carnegie Mellon, Kentucky), que manger contre le stress (recommandations officielles). `/respiration-pour-dormir/` et
+  `/reveil-4h-du-matin/`, retouchées les 18 et 21/10, ne changent pas (règle d'un mois) : seuls des liens s'ajoutent.
+- **Liens internes** : 32 liens contextuels ajoutés, texte proche de la recherche cible ; chaque page cible en reçoit
+  au moins 4 depuis d'autres articles (procrastination du coucher n'en avait aucun).
+- `articles-a-ecrire.md` : 3 sujets à volume ajoutés (respiration carrée, palpitations et stress, pensées
+  intrusives) et volumes probables notés pour 4 sujets déjà listés.
+- Contrôles : construction OK, titres et descriptions uniques (titres 45-60, descriptions 138-156), 0 lien interne
+  cassé sur 38 pages, numéros de sources tous dans la liste. Publié (gh-pages), 8 pages vérifiées en ligne (200 et
+  nouveaux textes), IndexNow 200 pour les 14 adresses modifiées (le pare-feu de Composio refuse la commande curl :
+  envoi fait depuis l'atelier Python).
