@@ -31,7 +31,8 @@
   "site/contenu/img/exercices/coherence-cardiaque-assise-sur-une-chaise.webp",
   "site/contenu/img/exercices/soupir-physiologique-assise-expiration-par-la-bouche.webp",
   "site/contenu/img/exercices/respiration-carree-assise-au-bureau.webp",
-  "site/contenu/img/exercices/respiration-4-7-8-allongee-yeux-fermes.webp"
+  "site/contenu/img/exercices/respiration-4-7-8-allongee-yeux-fermes.webp",
+  "fonds/unsplash-_cJT-w00-VE.jpg"
  ],
  "sources": {
   "fonds/fond-58.jpg": "diapositive 3 du carrousel « 3 raisons qui expliquent pourquoi ton coup de barre revient à la même heure » (29/09/2026, pin 600175087889887532), identifiée par comparaison d'images",
@@ -64,6 +65,7 @@
   "site/contenu/img/exercices/coherence-cardiaque-assise-sur-une-chaise.webp": "illustration de la cohérence cardiaque 5-5 sur la fiche /fiche-respiration/ du site (Hugging Face Z-Image Turbo, quota gratuit, graine 681678, 22/10/2026) : réservée à la fiche, jamais réutilisée ailleurs",
   "site/contenu/img/exercices/soupir-physiologique-assise-expiration-par-la-bouche.webp": "illustration du soupir physiologique sur la fiche /fiche-respiration/ du site (Hugging Face Z-Image Turbo, quota gratuit, graine 681678, 25/10/2026) : réservée à la fiche, jamais réutilisée ailleurs",
   "site/contenu/img/exercices/respiration-carree-assise-au-bureau.webp": "illustration de la respiration carrée sur la fiche /fiche-respiration/ du site (Hugging Face Z-Image Turbo, quota gratuit, graine 681678, 25/10/2026) : réservée à la fiche, jamais réutilisée ailleurs",
-  "site/contenu/img/exercices/respiration-4-7-8-allongee-yeux-fermes.webp": "illustration de la respiration 4-7-8 sur la fiche /fiche-respiration/ du site (Hugging Face Z-Image Turbo, quota gratuit, graine 681678, 25/10/2026) : réservée à la fiche, jamais réutilisée ailleurs"
+  "site/contenu/img/exercices/respiration-4-7-8-allongee-yeux-fermes.webp": "illustration de la respiration 4-7-8 sur la fiche /fiche-respiration/ du site (Hugging Face Z-Image Turbo, quota gratuit, graine 681678, 25/10/2026) : réservée à la fiche, jamais réutilisée ailleurs",
+  "fonds/unsplash-_cJT-w00-VE.jpg": "photo de l'article « boule-au-ventre » du site contactapaisement-mental.fr (25/10/2026) : réservée au site, jamais réutilisée sur Pinterest"
  }
 }

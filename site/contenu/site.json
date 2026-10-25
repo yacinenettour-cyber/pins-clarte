@@ -165,7 +165,10 @@
    "credit": "Photo : Emily Leake / Unsplash"
   },
   "boule-au-ventre": {
-   "categorie": "stress"
+   "categorie": "stress",
+   "image": "unsplash-_cJT-w00-VE.jpg",
+   "alt": "Personne debout, vue de près, les deux mains serrées sur le ventre, sur un fond gris-vert",
+   "credit": "Photo : Sasun Bughdaryan / Unsplash"
   }
  },
  "formation": {
