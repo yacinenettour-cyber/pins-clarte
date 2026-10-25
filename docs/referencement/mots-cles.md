@@ -23,6 +23,7 @@ des grands médias santé : viser d'abord les variantes.
 | /symptomes-physiques-du-stress/ | symptômes physiques du stress | symptômes physiques du stress chronique, symptômes physiques du stress et de l'angoisse, douleur physique stress | moyenne |
 | /hypervigilance/ | hypervigilance | hypervigilance sommeil, hypervigilance symptômes, hypervigilance définition, hypervigilance que faire | faible |
 | /angoisse-le-matin/ | angoisse le matin | angoisse matinale, angoisse au réveil, angoisse le matin sans raison, angoisse au réveil que faire, angoisse au réveil dépression (suggestions Google du 21/10) | faible |
+| /relaxation-jacobson/ | relaxation Jacobson | relaxation musculaire progressive, relaxation pour s'endormir, relaxation profonde, relaxation Jacobson pour dormir (suggestions Google du 15/10) | moyenne sur « relaxation Jacobson », plus faible sur la longue traîne |
 | /calmer-son-systeme-nerveux/ | calmer son système nerveux | réguler son système nerveux, calmer son système nerveux rapidement, tension nerveuse que faire, système nerveux en mode survie (FAQ du 19/10) | moyenne |
 | /nerf-vague/ | nerf vague | activer le nerf vague naturellement | élevée (mot court) |
 | /charge-mentale/ | charge mentale | signes de charge mentale, alléger sa charge mentale | élevée (mot court) |

@@ -99,7 +99,7 @@ Telle qu'elle circule sur internet, la « méthode militaire » n'a jamais été
 
 En ligne, on la décrit ainsi. Tu relâches les muscles du visage, puis les épaules, les bras et les jambes, tu respires lentement, et tu imagines une scène paisible pendant quelques secondes.
 
-- Pour le **relâchement des muscles**, Li et ses collègues, de l'Université Putra de Malaisie, ont rassemblé 14 essais et 957 participants dans une méta-analyse publiée en 2026 dans une revue de santé publique. La relaxation musculaire progressive a amélioré la qualité du sommeil ressentie chez les adultes. L'effet est net avant 55 ans, encore incertain après [7].
+- Pour le **relâchement des muscles**, Li et ses collègues, de l'Université Putra de Malaisie, ont rassemblé 14 essais et 957 participants dans une méta-analyse publiée en 2026 dans une revue de santé publique. La relaxation musculaire progressive a amélioré la qualité du sommeil ressentie chez les adultes. L'effet est net avant 55 ans, encore incertain après [7]. La méthode est détaillée pas à pas dans notre article sur la [relaxation Jacobson](/relaxation-jacobson/).
 - Pour la **scène calme**, on peut s'appuyer sur une étude de l'Université d'Oxford (Harvey et Payne, 2002, dans une revue de recherche en thérapie comportementale). Sur 41 personnes souffrant d'insomnie qui ont testé différentes consignes, celles qui imaginaient une scène précise et intéressante s'endormaient plus vite que celles qui n'avaient reçu aucune consigne [8].
 
 Ce second geste est détaillé dans notre article sur les [ruminations du soir](/ruminations-le-soir/), où il aide à ne pas replonger dans les pensées qui tournent.

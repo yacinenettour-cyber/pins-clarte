@@ -163,6 +163,12 @@
    "image": "unsplash-ZJDGL6mlA38.jpg",
    "alt": "Femme assise contre la tête de son lit le matin, le regard baissé, dans la lumière qui filtre à travers les stores",
    "credit": "Photo : Emily Leake / Unsplash"
+  },
+  "relaxation-jacobson": {
+   "categorie": "sommeil",
+   "image": "unsplash-VsPUVN5QlVY.jpg",
+   "alt": "Jeune femme allongée sur le dos dans un lit blanc, les yeux fermés, le visage détendu, la couette remontée jusqu'aux épaules",
+   "credit": "Photo : Vitaly Gariev / Unsplash"
   }
  },
  "formation": {
@@ -290,6 +296,10 @@
     [
      "Tu cherches une respiration simple pour t'endormir",
      "respiration-pour-dormir"
+    ],
+    [
+     "Ton corps reste crispé au moment de dormir",
+     "relaxation-jacobson"
     ],
     [
      "Tu veux un rituel simple pour préparer la nuit",
