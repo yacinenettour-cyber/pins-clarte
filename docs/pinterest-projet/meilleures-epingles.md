@@ -133,3 +133,23 @@ image écartée ; quota non épuisé) :
   « Poignets tendus : 3 étirements au clavier » (600175087890251207) est en ligne depuis le 20/10 à 10 h 07 UTC, avec le
   lien guide ; 0 impression, 0 clic, 0 enregistrement pour l'instant. Pour comparaison : « Bas du dos » 5 impressions,
   2 clics sur l'épingle ; « Épaules tendues » 5 impressions, 5 clics ; 0 enregistrement et 0 clic sortant partout.
+
+**23-25/10/2026** : rien fabriqué les 23 et 24/10 (limite hebdomadaire d'utilisation de Claude atteinte), stock à 0 depuis le
+23/10. Le 25/10 au soir, quota Hugging Face revenu : 3 illustrations faites pour la fiche respiration du site, puis 4 essais
+pour les épingles avant un nouvel épuisement du quota. Sujets vérifiés (anti_doublons.py sans doublon ; relecture des titres :
+« Épaules tendues », « Dos tendu (sac) », « Bas du dos », « Fin de journée au travail » ont d'autres gestes ; « besoin de
+repos » et « dire non sans culpabiliser » ont un autre angle), à terminer au prochain passage :
+
+- `exercices` — « Haut du dos tendu : 3 étirements assis » (posturesantistress, #stress puis #travail, lien guide avec pont
+  vers le soir). Images gardées dans le bloc-notes de la session (illus_2510/) : `hautdos-bras-ouverts.webp` (assise, bras
+  tendus sur les côtés à hauteur d'épaules, paumes ouvertes → « Ouvrir les bras » : rapprocher doucement les omoplates,
+  5 respirations) et `hautdos-torsion-dossier.webp` (assise, un bras posé sur le dossier, l'autre main sur le genou opposé →
+  « Tourner vers le dossier » : tourner doucement le buste, 5 respirations de chaque côté). Il manque le 3e geste (essayé :
+  « dos rond bras devant » → bras en croix ; « se serrer dans ses bras » → silhouette qui paraît effondrée, écartée ;
+  « bras tendus paumes jointes » → index pointé, écarté). Prochain essai : bouts des doigts sur les épaules, coudes levés
+  devant (cercles d'épaules). Prudence : « Douleur qui dure ? Parles-en à ton médecin. »
+- `cles` — « Culpabilité de se reposer : 5 clés pour souffler » (fatiguementale, sans lien : aucune promesse de guide) :
+  noter la pause dans l'agenda ; se rappeler que récupérer fait partie de l'effort ; commencer par 10 minutes sans rien
+  produire ; remarquer le « je devrais… » sans lui obéir ; choisir un repos qui recharge (marche, lecture) plutôt que
+  l'écran. Cadre doré à décrire autrement que les précédents ; personnage central : femme habillée en vert, assise dans un
+  fauteuil avec une tasse.
