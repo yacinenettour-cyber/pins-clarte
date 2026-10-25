@@ -19,7 +19,7 @@ Par ordre d'impact, environ 30 minutes au total, une seule fois :
 
 1. ~~**Profil Pinterest → site du profil**~~ : **fait** (vérifié le 21/10 par `PINTEREST_GET_PROFILE` :
    `www.contactapaisement-mental.fr`).
-2. **Bing Webmaster Tools** (3 min, gratuit) : https://www.bing.com/webmasters → « Importer depuis Google
+2. ~~**Bing Webmaster Tools**~~ : **fait par l'utilisateur le 25/10/2026** (import depuis la Search Console). Pour mémoire : (3 min, gratuit) : https://www.bing.com/webmasters → « Importer depuis Google
    Search Console ». Le site devient visible dans Bing, DuckDuckGo et les recherches de ChatGPT, et l'envoi
    IndexNow déjà en place y est pris en compte.
 3. **Search Console → Demander une indexation** (Inspection de l'URL → « Demander une indexation ») : au 21/10,
