@@ -189,3 +189,9 @@ Constats :
 - Hypothèse la plus probable (non prouvée) : Pinterest diffuse beaucoup plus les épingles créées dans l'application que
   celles publiées par l'API, quel que soit le visuel. Test proposé à l'utilisateur le 25/10 : publier à la main, dans
   l'application, quelques épingles préparées dans le format gagnant, et comparer au bout de 2 semaines.
+
+**Règle de l'utilisateur (25/10/2026)** : « quand tu crées des épingles infographie, il faut une personne réaliste au
+milieu ». Le personnage central des infographies (formats `cles`, `exercices` et tout nouveau format) est désormais
+une personne réaliste, façon photo (image générée gratuitement sur Hugging Face, ou photo libre de droits inédite),
+et non plus une silhouette aquarelle ou un pictogramme. Toujours habillée, rien de suggestif, pose exacte de ce que
+dit le texte, jamais réutilisée d'une épingle à l'autre.
