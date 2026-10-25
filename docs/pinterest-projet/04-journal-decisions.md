@@ -1027,7 +1027,7 @@ probable fort / moyen / faible, méthode écrite.
   pour dormir, symptômes physiques de la charge mentale (repères HAS), stress aigu ou chronique (tableau INRS,
   Carnegie Mellon, Kentucky), que manger contre le stress (recommandations officielles). `/respiration-pour-dormir/` et
   `/reveil-4h-du-matin/`, retouchées les 18 et 21/10, ne changent pas (règle d'un mois) : seuls des liens s'ajoutent.
-- **Liens internes** : 32 liens contextuels ajoutés, texte proche de la recherche cible ; chaque page cible en reçoit
+- **Liens internes** : 28 liens contextuels ajoutés, texte proche de la recherche cible ; chaque page cible en reçoit
   au moins 4 depuis d'autres articles (procrastination du coucher n'en avait aucun).
 - `articles-a-ecrire.md` : 3 sujets à volume ajoutés (respiration carrée, palpitations et stress, pensées
   intrusives) et volumes probables notés pour 4 sujets déjà listés.
