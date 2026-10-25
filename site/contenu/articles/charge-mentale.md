@@ -1,11 +1,11 @@
 ---
 titre: Charge mentale : définition, signes et 6 façons de l'alléger
-titre_seo: Charge mentale : définition, signes et solutions
-description: La charge mentale : définition, origine du terme, signes qu'elle déborde et 6 méthodes concrètes pour l'alléger, à la maison comme au travail.
+titre_seo: Charge mentale : définition, symptômes et solutions
+description: Charge mentale : définition, origine du terme, symptômes physiques quand elle déborde et 6 méthodes pour l'alléger, à la maison comme au travail.
 slug: charge-mentale
 mot_cle: charge mentale
 guide: sommeil
-maj: 2026-10-09
+maj: 2026-10-25
 image: Femme assise à la table de la cuisine en fin de journée, en train d'écrire une liste dans un carnet ouvert, une tasse fumante à côté, lumière chaude et ambiance calme
 ---
 ## L'essentiel
@@ -57,6 +57,9 @@ Ce n'est pas un diagnostic. Mais plusieurs de ces signes ressemblent à ceux que
 | Tu oublies et tu as du mal à te concentrer | Troubles de la mémoire, de l'attention et de la concentration [6] |
 | Tu te couches avec une liste qui tourne | Troubles du sommeil [6] |
 
+### Charge mentale : quels symptômes physiques ?
+Ce sont surtout la fatigue, les troubles du sommeil, les maux de tête et les tensions musculaires. La charge mentale n'est pas un diagnostic, donc elle n'a pas de liste officielle de symptômes. Mais quand elle pèse longtemps, ces signes du corps sont ceux que la HAS décrit pour l'épuisement professionnel [6]. Une fatigue qui persiste malgré des changements dans ton quotidien, ou qui s'accompagne de fièvre, de douleurs ou d'une perte de poids non voulue, mérite une consultation [8]. D'autres signaux, du cœur au ventre, sont passés en revue dans notre article sur les [symptômes physiques du stress chronique](/symptomes-physiques-du-stress/).
+
 ## Pourquoi la charge mentale fatigue et empêche de dormir ?
 Parce qu'une tâche pas terminée continue d'encombrer l'esprit. Et le soir, l'[inquiétude au coucher](/ruminations-le-soir/) retarde l'endormissement [4, 5]. À l'Université d'État de Floride, Masicampo et Baumeister l'ont montré dans une série d'expériences publiée en 2011 dans une revue de psychologie sociale [4]. Des objectifs laissés en plan faisaient surgir des pensées parasites pendant une lecture qui n'avait rien à voir, et les participants réussissaient moins bien une autre tâche [4]. Mais quand ils pouvaient écrire un plan précis pour ces objectifs, ces effets disparaissaient [4]. Les auteurs l'expliquent ainsi : une fois le plan fixé, l'esprit met la tâche en pause jusqu'au moment prévu [4].
 
@@ -97,7 +100,7 @@ Une liste de courses partagée, un agenda familial commun, un tableau des tâche
 Chaque décision, c'est une étape de plus à porter. Alors installe des choix par défaut. Des menus types sur deux semaines, des courses qui reviennent toujours, une tenue préparée la veille, des créneaux fixes pour lire tes messages. Moins tu décides au coup par coup, moins tu as de choses à garder en tête.
 
 ### 6. Prendre de vraies micro-pauses
-Une micro-pause, c'est une pause de 10 minutes maximum au milieu d'une tâche. En 2022, une équipe de l'Université de l'Ouest de Timișoara, en Roumanie, a regroupé 22 échantillons et 2 335 participants dans une méta-analyse parue dans une revue scientifique en libre accès [7]. Ces pauses courtes donnaient un peu plus de vitalité et un peu moins de fatigue [7]. Sur la performance, en revanche, l'effet global n'était pas significatif, et pour les tâches très exigeantes, les auteurs pensent qu'il faut sans doute des pauses plus longues [7]. Lève-toi, marche un peu, regarde dehors. Sans écran.
+Une micro-pause, c'est une pause de 10 minutes maximum au milieu d'une tâche. En 2022, une équipe de l'Université de l'Ouest de Timișoara, en Roumanie, a regroupé 22 échantillons et 2 335 participants dans une méta-analyse parue dans une revue scientifique en libre accès [7]. Ces pauses courtes donnaient un peu plus de vitalité et un peu moins de fatigue [7]. Sur la performance, en revanche, l'effet global n'était pas significatif, et pour les tâches très exigeantes, les auteurs pensent qu'il faut sans doute des pauses plus longues [7]. Lève-toi, marche un peu, regarde dehors. Sans écran. Et si tu te surprends à veiller tard pour t'offrir enfin ce temps à toi, lis notre article sur la [procrastination du coucher](/procrastination-du-coucher/).
 
 ## Charge mentale ou burn-out : où est la limite ?
 C'est une limite médicale. La charge mentale n'est pas un diagnostic, alors que le burn-out est un épuisement que repère un médecin [6]. La Haute Autorité de santé le définit comme un <q>épuisement physique, émotionnel et mental</q> qui vient d'un investissement prolongé dans des situations de travail exigeantes sur le plan émotionnel [6]. Il s'installe petit à petit, souvent sans qu'on s'en rende compte [6]. Les signes décrits vont de la fatigue aux troubles du sommeil, en passant par les maux de tête, les tensions musculaires, l'anxiété, l'irritabilité, le repli sur soi, la baisse de motivation ou les doutes sur ses propres compétences [6].

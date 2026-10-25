@@ -5,7 +5,7 @@ description: Hypervigilance : définition, symptômes, lien avec le stress, l'an
 slug: hypervigilance
 mot_cle: hypervigilance
 guide: sommeil
-maj: 2026-10-19
+maj: 2026-10-25
 image: Femme allongée sur son lit, le visage à moitié caché par la couette, les yeux ouverts, aux aguets
 ---
 ## L'essentiel
@@ -81,7 +81,7 @@ D'abord en trouvant la cause, avec un professionnel. Après un traumatisme, les 
 1. Après un traumatisme, la base reste une **psychothérapie**. L'Inserm cite en première intention la thérapie cognitivo-comportementale et l'EMDR. Des médicaments peuvent être prescrits en complément, mais leur efficacité est limitée [1]. Le Manuel MSD, lui, présente la thérapie cognitivo-comportementale axée sur le traumatisme comme le traitement le plus efficace du TSPT. Il conseille de chercher quelqu'un de chaleureux et de rassurant, parce que la honte, l'évitement et l'hypervigilance sont fréquents [2].
 2. **Le sommeil se soigne aussi.** À l'Université de Californie à San Francisco, Talbot et ses collègues ont proposé 8 séances de thérapie cognitivo-comportementale de l'insomnie (TCC-I) à 29 adultes avec un TSPT, et les ont comparés à 16 personnes restées en liste d'attente. D'après leur étude, publiée en 2014 dans une revue scientifique consacrée au sommeil, le sommeil s'est amélioré, avec 41 % de rémission complète de l'insomnie contre 0 %, et des gains toujours là 6 mois plus tard [11]. Dans ce même essai, la peur de dormir a diminué après la TCC-I [10]. Pour l'insomnie en général, c'est d'ailleurs l'approche que l'Inserm conseille de privilégier, les thérapies cognitives et comportementales [6].
 3. Garder des **journées régulières**. Pendant et après une période traumatisante, le Manuel MSD conseille des horaires sains pour manger, dormir et bouger, une routine quotidienne toute simple (se lever, se doucher, s'habiller, sortir marcher), et peu d'alcool ou de médicaments sédatifs [2].
-4. Laisser l'attention se poser, quelques minutes. Le même manuel cite les étirements et l'exercice, mais aussi quelque chose de très simple : rester assis, immobile, à compter ses respirations ou à écouter attentivement les sons autour de soi [2]. Les techniques de respiration lente, avec leurs études, sont détaillées dans notre article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/).
+4. Laisser l'attention se poser, quelques minutes. Le même manuel cite les étirements et l'exercice, mais aussi quelque chose de très simple : rester assis, immobile, à compter ses respirations ou à écouter attentivement les sons autour de soi [2]. Les techniques de respiration lente, avec leurs études, sont détaillées dans notre article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/), et la façon d'[activer le nerf vague par la respiration](/nerf-vague/) dans un article à part.
 5. **Moins d'images qui réactivent l'alerte.** Après un traumatisme, le Manuel MSD conseille d'éviter les reportages d'actualité qui font revivre l'événement [2]. L'Inserm rapporte d'ailleurs qu'après les attentats de 2015, le temps passé devant les images à la télévision était associé à un risque plus élevé de symptômes de stress post-traumatique [1].
 6. Au lit, ne pas lutter. Tu es encore éveillé au bout d'une vingtaine de minutes ? L'Institut national du sommeil et de la vigilance (INSV) conseille de te lever, de faire autre chose, et de ne revenir au lit que lorsque les signes du sommeil apparaissent [12].
 
@@ -111,6 +111,9 @@ C'est un état d'alerte excessif. L'attention guette sans cesse les signes de da
 
 ### Quels sont les symptômes de l'hypervigilance ?
 Les plus décrits sont les sursauts faciles, une surveillance constante de l'entourage, du mal à se concentrer et à s'endormir, l'irritabilité et des accès de colère [1][2]. Le corps suit, avec un cœur rapide, des sueurs, des tensions [1][4].
+
+### Quels sont les symptômes physiques de l'hypervigilance ?
+Le corps reste prêt à réagir. Le cœur bat vite, les mains transpirent, les muscles restent tendus et la digestion ralentit, parce que l'accélérateur du système nerveux, le sympathique, garde la main [1][4]. S'y ajoutent les sursauts au moindre bruit et un sommeil difficile à trouver [2]. Ces signes n'ont rien de spécifique, alors si tu les ressens souvent, parles-en à ton médecin, qui pourra aussi écarter une autre cause.
 
 ### Pourquoi l'hypervigilance gêne-t-elle le sommeil ?
 Parce que dormir demande de baisser la garde. Chez les personnes insomniaques, les études trouvent un état d'hyper-éveil jour et nuit [5]. Chez les personnes avec un TSPT, le sommeil est plus léger et moins profond [8]. La peur de dormir peut s'y ajouter [10].

@@ -24,6 +24,10 @@ variante longue (« mâchoire serrée stress ») plutôt que le terme seul. Éca
 « crise d'angoisse que faire », « anxiété symptômes », « burn out symptômes », « stress au travail »,
 « cortisol élevé », « méditation pour dormir ». La Search Console dira ensuite où le site se place vraiment.
 
+Volumes probables (analyse gratuite du 25/10/2026, `cibles-top20.md`, aucun chiffre exact disponible) : « boule au
+ventre stress » fort (le terme seul est en partie une chanson), « sommeil léger » et « fatigue nerveuse » moyens à
+forts (Trends ≈ 7), « mâchoire serrée » faible (Trends ≈ 0,2, plus faible qu'estimé).
+
 | # | Sujet et mot-clé visé | Recherches proches (suggestions Google) | Guide | Statut |
 |---|---|---|---|---|
 | 1 | Respiration pour dormir (`/respiration-pour-dormir/`) | respiration pour dormir 4-7-8, rapidement, carrée, militaire, exercice | sommeil | fait le 12/10 |
@@ -39,4 +43,7 @@ variante longue (« mâchoire serrée stress ») plutôt que le terme seul. Éca
 | 3 | Réveil fatigué le matin | réveil fatigué le matin, toujours fatigué, avec mal de tête | sommeil | à écrire ; concurrence estimée : moyenne |
 | 6 | Écrans avant de dormir (adulte) | écran avant de dormir adulte, téléphone, impact | sommeil | à écrire (angle : ce que l'écran change vraiment, lumière ou stimulation ; ne pas refaire la partie écrans de « Routine du soir » ni de « Procrastination du coucher », y renvoyer) ; concurrence estimée : moyenne à élevée (sujet repris par les grands médias) |
 | 12 | Gestion des émotions (adulte) | gestion des émotions adulte, gestion des émotions psychologue (suggestions Google du 15/10) | sommeil (pont honnête) | à écrire (mot-clé prioritaire de CLAUDE.md ; angle adulte et stress, pas l'enfant ; ne pas recouper « Calmer son système nerveux » ni « Charge mentale ») ; concurrence estimée : élevée sur le terme seul : viser « gestion des émotions adulte » |
+| 15 | Respiration carrée (`respiration carrée bienfaits`, `combien de temps`, `anxiété`) | respiration carrée bienfaits, danger, combien de fois par jour, 4 4 4 4, anxiété (suggestions Google du 25/10) | sommeil (pont) | à écrire (analyse longue traîne du 25/10, `cibles-top20.md` : volume probable fort, Trends ≈ 10 fois « angoisse le soir ») ; angle « se calmer en journée » ; ne pas refaire la partie sommeil de « Respiration pour dormir », qui y renverra ; illustration et schéma obligatoires (règle du 22/10) ; jamais « cohérence cardiaque » comme mot-clé |
+| 16 | Palpitations et stress (`palpitations stress que faire`) | palpitations stress angoisse, symptômes, que faire, chronique (suggestions Google du 25/10) | sommeil (pont « si ça te réveille la nuit ») | à écrire (volume probable fort, Trends ≈ 13) ; sujet santé sensible : urgence cardiaque (15/112) dès l'introduction, sources Ameli ; ne pas refaire la partie « cœur » de « Symptômes physiques du stress », y renvoyer |
+| 17 | Pensées intrusives (`pensées intrusives anxiété`) | pensées intrusives exemples, anxiété, causes, culpabilité, TOC (suggestions Google du 25/10) | sommeil (pont honnête) | à écrire (volume probable moyen, Trends ≈ 5) ; prudence : lien avec le TOC, sources psychiatriques solides ; distinct des « Ruminations le soir » |
 | 11 | Méditation pour dormir | méditation pour dormir rapidement, 10 minutes, et lâcher prise (suggestions Google du 15/10) | sommeil | reporté le 19/10 : concurrence élevée (applis et vidéos YouTube occupent les résultats) ; angle : ce que disent les études sur la pleine conscience au coucher ; ne pas refaire « Respiration pour dormir » ni « Respiration guidée », y renvoyer) |

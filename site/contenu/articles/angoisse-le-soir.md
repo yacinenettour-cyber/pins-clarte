@@ -1,11 +1,11 @@
 ---
 titre: Angoisse le soir : pourquoi elle monte la nuit et comment la calmer
 titre_seo: Angoisse le soir : pourquoi elle monte et comment la calmer
-description: Angoisse le soir, crise d'angoisse qui réveille la nuit : pourquoi l'anxiété monte au coucher, que faire sur le moment et quand consulter. Sources citées.
+description: Angoisse le soir, même sans raison, ou crise qui réveille la nuit : pourquoi l'anxiété monte au coucher, que faire sur le moment et quand consulter.
 slug: angoisse-le-soir
 mot_cle: angoisse le soir
 guide: sommeil
-maj: 2026-10-14
+maj: 2026-10-25
 image: Personne assise dans son lit la nuit, les mains sur les tempes, l'air inquiet, dans une chambre sombre
 ---
 ## L'essentiel
@@ -33,6 +33,12 @@ Imagine par exemple que tu remarques ton cœur qui bat un peu fort à ce moment-
 
 Et ça marche dans les deux sens. En 2013, trois chercheurs de l'Université d'Adélaïde, en Australie, ont passé en revue 9 études pour une revue spécialisée dans le sommeil, et l'insomnie et l'anxiété y apparaissent liées dans un sens comme dans l'autre [7]. Quand tu dors mal, tu es plus fragile face à l'anxiété. Quand tu es anxieux, ton sommeil en pâtit.
 
+### Angoisse le soir sans raison : d'où vient-elle ?
+
+Le plus souvent, d'aucun événement précis. C'est le moment lui-même qui la favorise. Au lit, le temps n'a plus de cadre, on est seul, et l'esprit ressasse [6]. L'inquiétude pour la nuit ou pour le lendemain suffit ensuite à garder le corps en alerte [5]. Chez les personnes anxieuses, c'est justement au coucher que les préoccupations affluent [3].
+
+« Sans raison » ne veut donc pas dire « sans cause ». Ça veut dire que tu ne trouves pas de souci à nommer. Par exemple, la journée s'est bien passée, tu ne penses à rien de particulier, et pourtant la boule au ventre est là dès que tu éteins. Si ça revient presque tous les soirs, que ça déborde sur la journée ou que tu n'as plus de prise sur ces inquiétudes, parles-en à ton médecin. Quand l'angoisse devient excessive par rapport à la réalité et impossible à contrôler, on parle de trouble anxieux, et ça se prend en charge [12].
+
 ## Angoisse du soir, ruminations ou crise d'angoisse : comment faire la différence ?
 
 L'angoisse du soir s'installe peu à peu. Une crise d'angoisse, qu'on appelle aussi attaque de panique, c'est autre chose : une peur soudaine et intense, qui arrive d'un coup [1][12].
@@ -53,7 +59,7 @@ Dans une crise d'angoisse, le corps réagit toujours [1]. Selon les cas, on ress
 - des frissons, des bouffées de chaleur ou des sueurs ;
 - des tremblements, des fourmillements, des jambes qui semblent lâcher.
 
-La personne peut avoir peur de perdre le contrôle, de « devenir folle » ou de mourir [1]. Et ces sensations font monter l'angoisse à leur tour, parce qu'elles font craindre une maladie du corps [1].
+La personne peut avoir peur de perdre le contrôle, de « devenir folle » ou de mourir [1]. Et ces sensations font monter l'angoisse à leur tour, parce qu'elles font craindre une maladie du corps [1]. Hors de toute crise, quand le stress dure, le corps envoie d'autres signaux, passés en revue dans notre article sur les [symptômes physiques du stress chronique](/symptomes-physiques-du-stress/).
 
 ## Pourquoi se réveille-t-on en pleine crise d'angoisse la nuit ?
 

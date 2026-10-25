@@ -1,11 +1,11 @@
 ---
 titre: Nerf vague : comment l'activer naturellement, ce qui marche vraiment
 titre_seo: Nerf vague : l'activer naturellement, ce qui marche vraiment
-description: Nerf vague : respiration lente, expiration longue, froid, chant… Ce que la science confirme, ce qui reste à prouver, et des exercices simples à tester.
+description: Nerf vague : comment l'activer par la respiration lente, ce que valent le froid ou le chant, ce qui reste à prouver, et deux exercices simples.
 slug: nerf-vague
 mot_cle: nerf vague
 guide: sommeil
-maj: 2026-10-13
+maj: 2026-10-25
 image: Personne assise en tailleur près d'une fenêtre, dans la lumière douce du matin, yeux fermés, une main posée sur le ventre, en train de respirer lentement ; décor sobre avec une plante verte, ambiance calme
 ---
 ## L'essentiel
@@ -47,7 +47,7 @@ Quand tu inspires, ton cœur accélère un tout petit peu, et quand tu expires, 
 4. Enchaîne les cycles de 10 secondes, ce qui fait 6 respirations par minute, pendant 5 minutes.
 5. Si tu manques d'air ou que la tête te tourne, raccourcis les temps ou reviens à ta respiration normale.
 
-Si tu préfères un repère sonore, le [minuteur de respiration](/exercices-respiration/) propose la cohérence cardiaque (5 secondes, 5 secondes), au même rythme de 6 respirations par minute.
+Si tu préfères un repère sonore, le [minuteur de respiration](/exercices-respiration/) propose la cohérence cardiaque (5 secondes, 5 secondes), au même rythme de 6 respirations par minute. Pour [réguler son système nerveux](/calmer-son-systeme-nerveux/) au fil de la journée, d'autres gestes complètent celui-ci.
 
 ### Exercice 2 : le soupir cyclique (5 minutes)
 1. Inspire lentement, jusqu'à bien remplir tes poumons.
@@ -103,6 +103,9 @@ Cet article donne des repères généraux et ne remplace pas un avis médical.
 ## Questions fréquentes
 ### Comment activer le nerf vague rapidement en cas de stress ?
 Ralentis ta respiration. Inspire environ 4 secondes, expire environ 6 secondes, pendant une à cinq minutes. D'après une méta-analyse de 223 études, la variabilité cardiaque liée au nerf vague augmente dès la séance [2]. Garder l'expiration plus longue que l'inspiration va dans le même sens.
+
+### Comment activer le nerf vague pour dormir ?
+Avec la même respiration lente, une fois couché, lumière éteinte. Inspire environ 4 secondes, expire environ 6 secondes, pendant quelques minutes. La variabilité cardiaque liée au nerf vague augmente dès la séance [2]. Aucun exercice ne garantit l'endormissement, et ce que les études disent vraiment du sommeil, y compris de la [technique de respiration 4-7-8 pour dormir](/respiration-pour-dormir/), est rassemblé dans un article à part.
 
 ### Combien de temps faut-il pratiquer pour sentir un effet ?
 Les études voient un effet sur la variabilité cardiaque pendant la séance, juste après, et après plusieurs semaines de pratique [2]. Dans un essai de l'Université Stanford, 5 minutes par jour pendant un mois ont amélioré l'humeur des participants, plus qu'une méditation de même durée [4]. La régularité compte plus que la durée.

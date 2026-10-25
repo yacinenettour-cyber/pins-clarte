@@ -1,11 +1,11 @@
 ---
 titre: Symptômes physiques du stress : les signes, de la tête au ventre
 titre_seo: Symptômes physiques du stress : de la tête au ventre
-description: Symptômes physiques du stress : tête, mâchoire, cœur, souffle, ventre, défenses. Les signes partie par partie du corps, et quand consulter en urgence.
+description: Symptômes physiques du stress, aigu ou chronique : tête, mâchoire, cœur, souffle, ventre, défenses. Les signes zone par zone, et quand consulter vite.
 slug: symptomes-physiques-du-stress
 mot_cle: symptômes physiques du stress
 guide: sommeil
-maj: 2026-10-14
+maj: 2026-10-25
 image: Personne de dos dans un champ au coucher du soleil, une main posée sur la nuque tendue
 ---
 ## L'essentiel
@@ -23,6 +23,16 @@ Parce que le stress est d'abord une réaction du corps. Devant une situation qu'
 Cette réaction sert à se préparer à agir, par exemple en envoyant plus d'oxygène aux organes qui vont travailler [1]. Sur quelques minutes, elle rend service. Quand la situation se prolonge, d'autres hormones prennent le relais, dont le cortisol. Et c'est lorsque le stress s'installe que les symptômes physiques arrivent, en quelques semaines d'après l'INRS [1]. Si tu veux savoir ce que fait chaque hormone, notre article sur le [cortisol, l'hormone du stress](/cortisol-hormone-du-stress/) l'explique.
 
 Les troubles anxieux ne sont pas la même chose qu'un stress passager. Ils donnent pourtant eux aussi des signes physiques très variés, qui changent d'une personne à l'autre, comme des douleurs et tensions musculaires, des fourmillements, des palpitations, des douleurs dans la poitrine, des troubles digestifs, une envie fréquente d'uriner, de la fatigue, des maux de tête ou des vertiges [2].
+
+### Stress aigu ou stress chronique : quels symptômes physiques ?
+
+Un stress bref se sent tout de suite, et il retombe. Un stress chronique, lui, laisse des symptômes qui s'installent en quelques semaines [1].
+
+| | Stress aigu (quelques minutes) | Stress chronique (des semaines) |
+|---|---|---|
+| Ce qu'on ressent | Cœur qui accélère, tension qui monte, vigilance en hausse, corps qui chauffe [1] | Douleurs (tête, muscles, articulations, ventre), troubles du sommeil, de l'appétit et de la digestion, essoufflement, sueurs [1] |
+| Les défenses | Certaines sont activées [11] | Plusieurs mesures de l'immunité baissent, plus de rhumes [10][11] |
+| À quoi ça sert, ce que ça coûte | Une réaction utile, qui prépare le corps à agir [1] | Hypertension artérielle et maladies cardiovasculaires associées au stress chronique au travail [1] |
 
 ## Les symptômes physiques du stress, partie par partie
 
@@ -101,7 +111,7 @@ Ces études ne disent pas que le stress « fait tomber malade » à coup sûr. E
 
 Le sommeil et l'énergie en pâtissent aussi. L'INRS cite les troubles du sommeil, et l'Assurance maladie range les insomnies, la somnolence en journée et la fatigue parmi les signes physiques des troubles anxieux [1][2].
 
-D'autres signes, moins connus, sont décrits, comme des sueurs inhabituelles [1], des fourmillements ou une envie fréquente d'uriner [2]. Notre article sur le [cortisol et le sommeil](/cortisol-et-sommeil/) explique le lien entre stress et nuits agitées. Si tu te sens en alerte permanente, à sursauter pour un rien, jette aussi un œil à notre article sur l'[hypervigilance](/hypervigilance/).
+D'autres signes, moins connus, sont décrits, comme des sueurs inhabituelles [1], des fourmillements ou une envie fréquente d'uriner [2]. Notre article sur le [cortisol et le sommeil](/cortisol-et-sommeil/) explique le lien entre stress et nuits agitées. Si tu te sens en alerte permanente, à sursauter pour un rien, jette aussi un œil aux [symptômes de l'hypervigilance](/hypervigilance/). Et si c'est surtout ta tête qui ne débranche jamais, avec une liste de choses à penser qui tourne en continu, lis notre article sur les [symptômes de la charge mentale](/charge-mentale/).
 
 ## Stress ou autre chose : comment faire la différence ?
 
@@ -137,7 +147,7 @@ Cet article t'informe, il ne remplace pas l'avis d'un médecin.
 L'INRS cite des douleurs (maux de tête, douleurs musculaires et articulaires, coliques), des troubles du sommeil, de l'appétit et de la digestion, des sensations d'essoufflement ou d'oppression et des sueurs inhabituelles [1]. Pour l'anxiété, l'Assurance maladie y ajoute les palpitations, les fourmillements, les vertiges et l'envie fréquente d'uriner [2].
 
 ### Quels sont les symptômes physiques du stress chronique ?
-Quand le stress dure, les symptômes arrivent en quelques semaines. Douleurs, troubles du sommeil, de l'appétit et de la digestion, essoufflement, sueurs [1]. S'il se prolonge encore, l'INRS évoque des atteintes plus durables, comme l'hypertension artérielle et les maladies cardiovasculaires [1].
+Quand le stress dure, les symptômes arrivent en quelques semaines. Douleurs, troubles du sommeil, de l'appétit et de la digestion, essoufflement, sueurs [1]. S'il se prolonge encore, l'INRS évoque des atteintes plus durables, comme l'hypertension artérielle et les maladies cardiovasculaires [1]. Un stress qui dure va aussi de pair avec plus de rhumes et une baisse de plusieurs mesures de l'immunité [10][11].
 
 ### Le stress peut-il donner des douleurs dans la poitrine ?
 Oui, l'anxiété peut provoquer des douleurs dans la poitrine et des palpitations [2]. Mais une douleur dans la poitrine peut aussi être un infarctus. L'Assurance maladie demande d'appeler le 15 ou le 112 devant une douleur en étau, une douleur qui gagne les bras ou la mâchoire, et même en cas de doute [6].

@@ -83,7 +83,7 @@ Dans l'ordre, ça donne ceci.
 
 ## Comment limiter les réveils nocturnes au quotidien ?
 
-En agissant sur ce qui dépend de toi, c'est-à-dire la chambre, l'alcool, la lumière, l'heure du coucher et ta façon de gérer le stress.
+En agissant sur ce qui dépend de toi, c'est-à-dire la chambre, l'alcool, la lumière, l'heure du coucher et ta façon de gérer le stress. Une [routine du soir pour bien dormir](/routine-du-soir-anti-stress/) rassemble la plupart de ces gestes en quelques minutes.
 
 | Ce qui peut te réveiller | Ce qui se passe | Ce que tu peux essayer |
 |---|---|---|
@@ -123,7 +123,7 @@ Quand le réveil tombe toujours à la même heure, regarde d'abord à quelle heu
 Pour l'Inserm, les deux font partie des signes de l'insomnie, qui associe des difficultés d'endormissement, des éveils nocturnes et/ou un réveil trop précoce, avec la sensation de ne pas avoir récupéré [2]. Le réveil à 4h du matin tient souvent des deux. C'est un éveil en fin de nuit, trop tôt pour qu'on arrive à se rendormir. Ce qui compte, ce n'est pas l'heure, mais la fréquence et la fatigue du lendemain. Au-delà de trois fois par semaine depuis au moins trois mois, l'Inserm parle d'insomnie chronique [2].
 
 ### Le réveil à 4h du matin est-il lié au cortisol ?
-Peut-être en partie, sans qu'il faille dramatiser. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit [4]. Le stress et l'hyper-éveil peuvent rendre cette période plus fragile [2], mais le cortisol reste un facteur parmi d'autres.
+Peut-être en partie, sans qu'il faille dramatiser. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit [4]. Le stress et l'hyper-éveil peuvent rendre cette période plus fragile [2], mais le cortisol reste un facteur parmi d'autres. Ce que les études disent d'un [cortisol élevé la nuit](/cortisol-et-sommeil/) est détaillé dans un article à part.
 
 ### Que signifie se réveiller à 4h du matin ?
 Le plus souvent, rien de grave ni de mystérieux. La fin de nuit est une période de sommeil plus léger [1], et le cortisol y remonte naturellement [4]. Le stress, l'alcool du soir, la lumière ou un coucher trop précoce fragilisent encore ce moment [3][5]. Cet article s'en tient à ce que mesure la recherche sur le sommeil. Les lectures de la médecine chinoise (l'« horloge des organes ») ou les lectures spirituelles n'en font pas partie.
@@ -142,7 +142,7 @@ Les mêmes repères valent. Ce qui compte surtout, c'est de savoir si tu te rend
 
 ## Pour aller plus loin
 
-Tes réveils de fin de nuit s'accompagnent souvent de pensées qui tournent en boucle ? Le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à apaiser ce mental qui s'emballe. Il propose une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude. Sans matériel, à ton rythme.
+Tes réveils de fin de nuit s'accompagnent souvent de pensées qui tournent en boucle ? Les techniques pour [arrêter de ruminer la nuit](/ruminations-le-soir/) sont expliquées pas à pas dans un autre article. Le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à apaiser ce mental qui s'emballe. Il propose une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude. Sans matériel, à ton rythme.
 
 Si tu dors jusqu'au matin mais que l'angoisse te serre dès le réveil, lis l'article sur l'[angoisse le matin au réveil](/angoisse-le-matin/).
 

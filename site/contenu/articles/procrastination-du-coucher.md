@@ -5,7 +5,7 @@ description: Procrastination du coucher (ou du sommeil) : ses causes, le lien av
 slug: procrastination-du-coucher
 mot_cle: procrastination du coucher
 guide: sommeil
-maj: 2026-10-18
+maj: 2026-10-25
 image: Une chambre le soir éclairée par une petite lampe à la lumière chaude, une main qui pose un téléphone écran retourné sur la table de nuit, à côté d'un livre papier
 ---
 ## L'essentiel
@@ -32,9 +32,9 @@ Il ne faut pas la confondre avec l'insomnie, que l'Inserm définit comme un manq
 | Volontaire ? | Oui, rien n'empêche d'aller dormir [1] | Non, le manque de sommeil est involontaire [8] |
 | Ce qui aide | Des habitudes fixes plutôt que la volonté du moment [5] | Les thérapies cognitivo-comportementales (TCC), approche à privilégier selon l'Inserm [8] |
 
-## Pourquoi repousse-t-on l'heure du coucher ? Les causes
+## Procrastination du sommeil : quelles sont les causes ?
 
-Le plus souvent pour s'offrir du temps à soi. Parfois aussi parce qu'on perd la notion du temps, ou parce qu'on pense mieux s'endormir plus tard [2]. Ces profils viennent d'une étude néerlandaise publiée en 2019 dans une revue de médecine comportementale du sommeil. L'équipe, qui réunissait le centre de recherche de Philips et l'Université d'Utrecht, a longuement interrogé 17 personnes qui repoussaient souvent leur coucher [2].
+Les causes les plus décrites sont le manque de temps à soi dans la journée, la fatigue de l'autocontrôle le soir, les écrans qui ne s'arrêtent jamais, le stress, et le fait d'être naturellement « du soir » [1][3][4][5]. Le plus souvent, on repousse l'heure du coucher pour s'offrir du temps à soi. Parfois aussi parce qu'on perd la notion du temps, ou parce qu'on pense mieux s'endormir plus tard [2]. Ces profils viennent d'une étude néerlandaise publiée en 2019 dans une revue de médecine comportementale du sommeil. L'équipe, qui réunissait le centre de recherche de Philips et l'Université d'Utrecht, a longuement interrogé 17 personnes qui repoussaient souvent leur coucher [2].
 
 | Profil | Ce qui se passe | Ce qui peut aider |
 |---|---|---|
@@ -44,7 +44,7 @@ Le plus souvent pour s'offrir du temps à soi. Parfois aussi parce qu'on perd la
 
 Derrière ces profils, on retrouve souvent les mêmes mécanismes.
 
-Le premier, c'est le manque de temps à soi. La fondation relie le phénomène à un stress important en journée et à des horaires qui ne laissent presque aucune place à la détente [3]. Imagine une journée qui enchaîne le travail, les trajets, les courses, le repas. Quand tout est enfin rangé, il est déjà tard, et tu n'as pas eu une minute pour toi.
+Le premier, c'est le manque de temps à soi. La fondation relie le phénomène à un stress important en journée et à des horaires qui ne laissent presque aucune place à la détente [3]. Imagine une journée qui enchaîne le travail, les trajets, les courses, le repas. Quand tout est enfin rangé, il est déjà tard, et tu n'as pas eu une minute pour toi. Si ta tête n'arrête jamais de penser à tout ce qu'il reste à faire, lis aussi notre article sur les [symptômes de la charge mentale](/charge-mentale/).
 
 Ensuite, il y a la fatigue de l'autocontrôle. On décide d'aller au lit en fin de journée, au moment où les capacités d'autocontrôle sont en général au plus bas [1][3]. Ce n'est donc pas une question de « volonté » au sens moral.
 
@@ -58,7 +58,7 @@ Plus on est stressé, plus on a tendance à repousser le coucher, en partie à c
 
 Avec les écrans, le problème est double. L'Inserm explique que l'usage tardif d'écrans ou de lumières LED, riches en lumière bleue, retarde l'endormissement [7]. Les activités sociales ou ludiques sur écran, en plus, stimulent et entretiennent un état d'« hyper-éveil » qui va à l'encontre du sommeil [8].
 
-Reste ce qui se passe une fois la lumière éteinte. Pour l'Inserm, le stress déclenche souvent les insomnies, et l'anxiété face à la nuit peut les faire durer [8]. Tu repousses le coucher pour ne pas rester au lit sans dormir, avec les pensées qui tournent ? Tu te rapproches alors du « retard stratégique », qui peut signaler une insomnie [2]. Dans ce cas, apaiser les [ruminations du soir](/ruminations-le-soir/) compte autant que l'heure du coucher. C'est justement l'objet du guide gratuit présenté en fin d'article.
+Reste ce qui se passe une fois la lumière éteinte. Pour l'Inserm, le stress déclenche souvent les insomnies, et l'anxiété face à la nuit peut les faire durer [8]. Tu repousses le coucher pour ne pas rester au lit sans dormir, avec les pensées qui tournent ? Tu te rapproches alors du « retard stratégique », qui peut signaler une insomnie [2]. Dans ce cas, apaiser les [ruminations du soir](/ruminations-le-soir/) compte autant que l'heure du coucher. C'est justement l'objet du guide gratuit présenté en fin d'article. Et si c'est plutôt une boule d'angoisse qui monte au moment d'aller au lit, parfois sans que tu saches pourquoi, va voir notre article sur l'[angoisse le soir sans raison apparente](/angoisse-le-soir/).
 
 ## Quelles conséquences sur ton sommeil ?
 
@@ -77,7 +77,7 @@ En misant sur des habitudes fixes plutôt que sur ta seule volonté à 23 h. Les
 1. **Protège un vrai moment à toi, plus tôt.** Si tu veilles pour avoir du temps pour toi [2], offre-le-toi avant. Par exemple, 20 à 30 minutes rien qu'à toi juste après le dîner, sans tâche ni message de travail. La revanche n'a plus besoin d'attendre minuit.
 2. Fixe une heure de **fin d'écran**. L'Assurance Maladie conseille d'arrêter les écrans idéalement une heure avant le coucher, de les ranger dans une autre pièce et de couper les notifications [6].
 3. Programme une **alarme du coucher**. Elle ne sert pas à te réveiller, mais à te prévenir, 30 à 45 minutes avant l'heure visée, qu'il est temps de lancer ton rituel. C'est pratique si tu perds facilement la notion du temps [2].
-4. **Un rituel court, et toujours le même.** Une lumière chaude et tamisée, de la lecture, de la musique douce, quelques minutes de calme [6]. À force de répétition, ton organisme apprend à reconnaître les signaux qui annoncent la nuit [6].
+4. **Un rituel court, et toujours le même.** Une lumière chaude et tamisée, de la lecture, de la musique douce, quelques minutes de calme [6]. À force de répétition, ton organisme apprend à reconnaître les signaux qui annoncent la nuit [6]. Un exemple complet, en 3, 10 ou 20 minutes, se trouve dans notre [routine du soir pour bien dormir](/routine-du-soir-anti-stress/).
 5. Choisis une **heure de coucher réaliste**. Vise une durée de sommeil adaptée à tes besoins et rapproche-toi de ton objectif petit à petit, au lieu d'avancer ton coucher d'une heure d'un coup [6]. Garde aussi un lever régulier, même le week-end [6].
 6. **Remplace plutôt que de supprimer.** Si le téléphone est ta seule détente, prévois autre chose d'agréable, un livre papier, de la musique douce ou un jeu de société [6]. Le téléphone, lui, se recharge hors de la chambre [6].
 

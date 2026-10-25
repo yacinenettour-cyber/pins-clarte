@@ -1,12 +1,12 @@
 ---
 titre: Cortisol et sommeil : comment le stress dérègle tes nuits, et comment les apaiser
 titre_seo: Cortisol et sommeil : le lien, et comment mieux dormir
-description: Cortisol et sommeil : pourquoi une nuit courte fait monter le cortisol du soir, ce que montrent les études sur l'insomnie et les gestes qui apaisent tes nuits.
+description: Cortisol et sommeil : quand un cortisol élevé la nuit est normal, pourquoi une nuit courte le fait monter le soir, et les gestes qui apaisent tes nuits.
 slug: cortisol-et-sommeil
 mot_cle: cortisol et sommeil
 guide: cortisol
 date: 2026-10-09
-maj: 2026-10-13
+maj: 2026-10-25
 image: Femme qui dort paisiblement dans un lit aux draps blancs, les yeux fermés, un léger sourire, lumière douce du matin
 ---
 ## L'essentiel
@@ -44,7 +44,7 @@ Parce qu'elle retarde le moment où l'axe du stress se calme après son pic du m
 
 Autre détail, après une nuit écourtée ou blanche, la phase de repos du cortisol démarrait au moins une heure plus tard [2]. Les auteurs en concluent qu'un manque de sommeil, même partiel et ponctuel, retarde le retour au calme de l'axe du stress [2].
 
-Imagine maintenant une semaine où tu te couches tard tous les soirs. La dette s'accumule, et l'effet se retrouve. Une autre équipe de l'Université de Chicago, celle de Spiegel, a publié en 1999 dans une grande revue médicale britannique une étude sur 11 jeunes hommes limités à 4 heures au lit pendant 6 nuits [4]. Leur cortisol du soir était plus élevé, et leur système nerveux sympathique, l'« accélérateur » du corps, plus actif, qu'après 6 nuits de récupération [4].
+Imagine maintenant une semaine où tu te couches tard tous les soirs (si c'est sans contrainte, juste pour profiter de ta soirée, c'est peut-être de la [procrastination du sommeil](/procrastination-du-coucher/)). La dette s'accumule, et l'effet se retrouve. Une autre équipe de l'Université de Chicago, celle de Spiegel, a publié en 1999 dans une grande revue médicale britannique une étude sur 11 jeunes hommes limités à 4 heures au lit pendant 6 nuits [4]. Leur cortisol du soir était plus élevé, et leur système nerveux sympathique, l'« accélérateur » du corps, plus actif, qu'après 6 nuits de récupération [4].
 
 Gardons une limite en tête. Ces études portent sur de petits groupes de jeunes hommes, en laboratoire. Elles montrent un mécanisme. Elles ne disent pas précisément ce qui se passe chez chacun.
 
@@ -58,6 +58,8 @@ En 2001, à l'Université d'État de Pennsylvanie, l'équipe de Vgontzas a compa
 - les hausses les plus marquées apparaissaient **le soir et pendant la première moitié de la nuit** [5] ;
 - ceux dont le sommeil était le plus perturbé produisaient le plus de cortisol [5].
 
+Si tu restes en alerte au moindre bruit, même la journée, regarde aussi les [symptômes de l'hypervigilance](/hypervigilance/).
+
 On voit se dessiner un cercle qui s'entretient tout seul. Le stress active l'axe du stress, et cet axe favorise l'éveil [5]. Puis le manque de sommeil fait à son tour grimper le cortisol du soir [2][4]. La revue de Chicago remarque d'ailleurs que l'insomnie, la dépression ou les troubles respiratoires du sommeil vont souvent de pair avec un axe du stress trop actif et un sommeil perturbé [3].
 
 | | Stress ponctuel | Insomnie chronique |
@@ -69,6 +71,19 @@ On voit se dessiner un cercle qui s'entretient tout seul. Le stress active l'axe
 ## Le cortisol explique-t-il les réveils à 4 h du matin ?
 
 En partie seulement. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit, et chaque réveil s'accompagne d'une petite hausse [3]. Rien d'anormal là-dedans. Seulement, le stress, l'alcool du soir ou la lumière rendent aussi plus fragile cette période où le sommeil est plus léger. Les causes, et ce qu'on peut faire sur le moment, sont dans l'article [réveil à 4h du matin](/reveil-4h-du-matin/).
+
+## Cortisol élevé la nuit : est-ce normal ?
+
+Ça dépend du moment. En début de nuit, le cortisol est normalement au plus bas, puis il remonte pendant la seconde moitié et atteint son maximum tôt le matin [3]. Un taux qui grimpe vers l'aube n'a donc rien d'anormal, et chaque réveil s'accompagne d'une brève hausse [3].
+
+Ce qui sort de l'ordinaire, c'est un cortisol qui reste haut le soir et en début de nuit. C'est ce qu'on observe après une nuit écourtée, avec un cortisol du soir suivant plus élevé de 37 % [2], et chez des personnes souffrant d'insomnie chronique, dont l'ACTH et le cortisol étaient plus élevés surtout le soir et pendant la première moitié de la nuit [5]. Pourquoi un taux isolé ne dit pas grand-chose, et quand un vrai excès de cortisol doit être recherché par un médecin, c'est expliqué dans l'article [Cortisol, hormone du stress](/cortisol-hormone-du-stress/).
+
+| Moment | Ce qui est habituel |
+|---|---|
+| Début de nuit | Cortisol au plus bas [3] |
+| Seconde moitié de la nuit | Remontée rapide [3] |
+| Tôt le matin | Maximum de la journée [3] |
+| Le soir après une nuit trop courte | Plus élevé que d'habitude [2] |
 
 ## Comment faire baisser son cortisol pour mieux dormir ?
 
@@ -120,7 +135,7 @@ Oui, elle se prend en charge. On parle d'insomnie chronique quand les difficult�
 
 ## Pour aller plus loin
 
-Des nuits plus calmes, ça commence souvent par des journées mieux rythmées. Peut-être que, une fois au lit, ce sont tes pensées qui t'empêchent de décrocher. Pour ces soirs-là, il existe le guide gratuit « Quand le cerveau refuse de dormir », avec une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.
+Des nuits plus calmes, ça commence souvent par des journées mieux rythmées. Peut-être que, une fois au lit, ce sont tes pensées qui t'empêchent de décrocher. Les techniques pour [arrêter de ruminer la nuit](/ruminations-le-soir/) sont détaillées dans un autre article. Pour ces soirs-là, il existe le guide gratuit « Quand le cerveau refuse de dormir », avec une routine anti-rumination à faire au lit, des exercices pour calmer le mental et un calendrier de 30 jours, sans matériel.
 
 ## Sources
 1. [Sommeil — Inserm, 2017 (mis à jour en 2024)](https://www.inserm.fr/dossier/sommeil/)

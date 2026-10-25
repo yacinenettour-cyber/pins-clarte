@@ -1,12 +1,12 @@
 ---
 titre: Alimentation anti-stress : ce que la science dit vraiment
 titre_seo: Alimentation anti-stress : ce que les études montrent
-description: Alimentation anti-stress : oméga-3, magnésium, café, aliments ultra-transformés… ce que montrent les études, l'assiette conseillée et ce qui ne marche pas.
+description: Alimentation anti-stress : que manger contre le stress, ce que valent oméga-3, magnésium et café, ce que montrent les études et l'assiette conseillée.
 slug: alimentation-anti-stress
 mot_cle: alimentation anti-stress
 guide: cortisol
 date: 2026-10-09
-maj: 2026-10-13
+maj: 2026-10-25
 image: Bol de saumon grillé, quinoa, avocat, brocoli et salade sur une table en bois, carafe d'eau citronnée
 ---
 ## L'essentiel
@@ -110,7 +110,7 @@ Sur une journée ordinaire, ces repères pourraient donner ceci :
 
 ## Que manger le soir quand le stress empêche de dormir ?
 
-Quelque chose de léger, sans alcool et sans excitant. L'Institut national du sommeil et de la vigilance conseille d'éviter les repas trop copieux le soir, l'alcool au dîner et les excitants comme le café, le thé ou les colas [11]. Pour la caféine, garde en tête que le dernier café se prend au moins 6 heures avant le coucher [9].
+Quelque chose de léger, sans alcool et sans excitant. L'Institut national du sommeil et de la vigilance conseille d'éviter les repas trop copieux le soir, l'alcool au dîner et les excitants comme le café, le thé ou les colas [11]. Pour la caféine, garde en tête que le dernier café se prend au moins 6 heures avant le coucher [9]. Si tu te réveilles malgré tout en pleine nuit, vers 4 h, lis ce qu'il faut faire en cas de [réveil nocturne à 4h](/reveil-4h-du-matin/).
 
 Ces repères s'ajoutent à ceux de la [routine du soir anti-stress](/routine-du-soir-anti-stress/). Pour comprendre pourquoi une soirée agitée suivie d'une nuit courte entretient le cortisol, va lire [cortisol et sommeil](/cortisol-et-sommeil/).
 
@@ -129,6 +129,10 @@ Va voir ton médecin si la nourriture prend trop de place dans ta tête, ou si t
 Le plus souvent, le traitement de ces troubles réunit médecins, psychologues et diététiciens [18]. Si tu as des pensées suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 [19].
 
 ## Questions fréquentes
+
+### Que manger contre le stress et l'angoisse ?
+
+Pas d'aliment miracle, mais une assiette simple et régulière. Du poisson deux fois par semaine, dont un poisson gras [13], une petite poignée de fruits à coque par jour [14], des légumes secs au moins deux fois par semaine [15], des céréales complètes, des fruits et des légumes [12][16], et moins de produits ultra-transformés [12]. C'est l'assiette qui apporte les oméga-3, le magnésium et les fibres dont parlent les études [2][4][6]. Côté boissons, le café reste le matin et l'alcool ne s'invite pas au dîner [9][11].
 
 ### Quel aliment fait baisser le cortisol ?
 

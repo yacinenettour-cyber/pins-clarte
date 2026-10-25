@@ -1,11 +1,11 @@
 ---
 titre: Calmer son système nerveux : 6 gestes pour se calmer rapidement
 titre_seo: Calmer son système nerveux : 6 gestes rapides
-description: Comment calmer son système nerveux en quelques minutes ? Soupir physiologique, respiration lente, ancrage 5-4-3-2-1 : 6 gestes simples et sourcés.
+description: Comment calmer et réguler son système nerveux ? Soupir physiologique, respiration lente, ancrage 5-4-3-2-1 : 6 gestes simples, rapides et sourcés.
 slug: calmer-son-systeme-nerveux
 mot_cle: calmer son système nerveux
 guide: sommeil
-maj: 2026-10-19
+maj: 2026-10-25
 image: Femme assise près d'une fenêtre en fin de journée, les yeux fermés, une main posée sur le ventre, en train d'expirer lentement dans une lumière douce et chaude
 ---
 ## L'essentiel
@@ -127,11 +127,14 @@ Une douleur dans la poitrine ou un malaise inhabituel, c'est le 15 ou le 112. Ne
 Pour savoir où tu en es, le [questionnaire GAD-7](/test-stress-anxiete/), un outil validé de repérage de l'anxiété, se remplit en ligne en 2 minutes, et tes réponses restent sur ton appareil. Si ton stress vient surtout du travail et que tu te sens à bout, jette aussi un œil aux [signes du burn-out](/signes-du-burn-out/).
 
 ## Questions fréquentes
+### Comment réguler son système nerveux ?
+En donnant chaque jour quelques minutes au « frein », le parasympathique, plutôt qu'en attendant le prochain pic de stress. Les exercices les mieux étudiés sont la respiration lente, autour de 6 respirations par minute [3], le soupir physiologique [2] et la relaxation musculaire progressive [4], auxquels s'ajoutent l'activité physique régulière [6] et le soutien d'un proche [7]. « Réguler son système nerveux » n'est pas un terme médical, c'est une autre façon de dire la même chose. La routine de la journée, plus haut, montre comment les placer en moins de 30 minutes.
+
 ### Comment se calmer en une minute ?
 Fais deux ou trois soupirs physiologiques. Une inspiration par le nez, une petite inspiration en plus pour finir de remplir les poumons, puis une longue expiration par la bouche. C'est le geste le plus facile à placer n'importe où. Dans l'étude de référence, la pratique durait 5 minutes par jour [2].
 
 ### Quel est le lien entre la respiration et le nerf vague ?
-Le nerf vague fait partie du parasympathique, le « frein » du corps. Une revue de 2018 montre que respirer lentement, sous les 10 respirations par minute, aide le parasympathique à dominer, par l'intermédiaire de l'activité vagale [3]. C'est pour ça qu'on insiste tant sur l'expiration longue.
+Le nerf vague fait partie du parasympathique, le « frein » du corps. Une revue de 2018 montre que respirer lentement, sous les 10 respirations par minute, aide le parasympathique à dominer, par l'intermédiaire de l'activité vagale [3]. C'est pour ça qu'on insiste tant sur l'expiration longue. Les deux exercices pour [activer le nerf vague par la respiration](/nerf-vague/) sont détaillés dans un article à part.
 
 ### Combien de temps dure une crise d'angoisse ?
 D'après l'Assurance maladie, une attaque de panique arrive brutalement, atteint son pic en une vingtaine de minutes, puis les symptômes baissent peu à peu [8]. C'est très désagréable, mais ça passe. Si les crises reviennent, parles-en à ton médecin. Quand elles te réveillent la nuit, regarde ce qu'il faut faire en cas de [crise d'angoisse la nuit](/angoisse-le-soir/).

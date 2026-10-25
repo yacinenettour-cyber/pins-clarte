@@ -1,11 +1,11 @@
 ---
 titre: Ruminations le soir : pourquoi ton cerveau s'emballe au coucher
-titre_seo: Ruminations le soir et la nuit : 6 techniques pour apaiser
-description: Ruminations le soir ou nocturnes : pourquoi ton cerveau ne s'arrête pas la nuit, et 6 techniques étudiées pour arrêter de ruminer au lit.
+titre_seo: Ruminations le soir : comment arrêter de ruminer la nuit
+description: Ruminations le soir ou nocturnes : pourquoi ton cerveau ne s'arrête pas, et comment arrêter de ruminer la nuit avec 6 techniques étudiées.
 slug: ruminations-le-soir
 mot_cle: ruminations le soir
 guide: sommeil
-maj: 2026-10-19
+maj: 2026-10-25
 image: Jeune femme allongée dans son lit à la lumière tamisée d'une lampe de chevet, les yeux ouverts et le regard pensif, un carnet et un stylo posés sur la table de nuit, ambiance calme aux tons chauds
 ---
 ## L'essentiel
@@ -41,9 +41,11 @@ Les chercheurs parlent aussi de « réactivité du sommeil ». C'est la tendance
 
 Vient vite s'ajouter un deuxième cercle, la peur de ne pas dormir. Tu as peut-être déjà vécu ça : après plusieurs mauvaises nuits, tu te couches en te demandant si ce soir encore ça va mal se passer, et dans quel état tu seras demain. Quand les mauvaises nuits durent, l'inquiétude glisse ainsi vers le sommeil et la fatigue du lendemain, et cette anxiété peut à son tour entretenir les difficultés [7]. Une insomnie peut même continuer après que sa cause de départ a disparu, note l'INSV, nourrie surtout par cette peur [2].
 
+Si cet état d'alerte ne te quitte pas non plus dans la journée, au point de sursauter au moindre bruit, jette un œil aux [symptômes de l'hypervigilance](/hypervigilance/).
+
 ## Comment arrêter de ruminer le soir et la nuit ? 6 techniques étudiées
 
-Six techniques ont été étudiées ou sont recommandées par des organismes de santé, et le tableau les résume.
+Pour arrêter de ruminer la nuit, donne d'abord à tes soucis un autre rendez-vous que l'heure du coucher [5]. Une fois au lit, occupe ton esprit avec des images précises ou une respiration lente [6][7]. Et si le sommeil ne vient pas au bout d'une vingtaine de minutes, lève-toi au lieu de lutter [2]. Ces gestes font partie de six techniques étudiées ou recommandées par des organismes de santé, que le tableau résume.
 
 | Technique | Quand | Ce que montrent les sources |
 |---|---|---|
@@ -102,7 +104,7 @@ Il s'agit de réapprendre à ton corps que le lit sert à dormir [7]. Quand une 
 
 ### 6. Créer un sas entre la journée et la nuit
 
-C'est un rituel, toujours le même, qui annonce le coucher. L'Inserm recommande un « couvre-feu digital » le soir et un rituel constant et régulier autour du coucher [1], un peu comme la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/). Ça peut donner, par exemple, écrans coupés, lumière tamisée, douche tiède, quelques pages d'un livre, et ta liste de tâches pour finir. Dans le même ordre chaque soir, pour que ça devienne un repère.
+C'est un rituel, toujours le même, qui annonce le coucher. L'Inserm recommande un « couvre-feu digital » le soir et un rituel constant et régulier autour du coucher [1], un peu comme la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/). Ça peut donner, par exemple, écrans coupés, lumière tamisée, douche tiède, quelques pages d'un livre, et ta liste de tâches pour finir. Dans le même ordre chaque soir, pour que ça devienne un repère. Et si ton problème est plutôt de repousser ce moment parce que la soirée est le seul temps calme pour toi, lis notre article sur la [procrastination du sommeil et ses causes](/procrastination-du-coucher/).
 
 Si tu préfères une routine toute prête, le guide gratuit présenté en fin d'article propose une routine anti-rumination à faire au lit.
 

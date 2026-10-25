@@ -1,11 +1,11 @@
 ---
 titre: Cortisol, hormone du stress : son rôle, son rythme et les idées reçues
 titre_seo: Cortisol, hormone du stress : rôle et rythme sur 24 h
-description: Cortisol, hormone du stress : à quoi il sert, pourquoi il culmine le matin, ce que change le stress chronique et ce que cache le « cortisol face ».
+description: Cortisol, hormone du stress : c'est quoi, quel lien entre le cortisol et le stress, pourquoi il culmine le matin et ce que cache le « visage cortisol ».
 slug: cortisol-hormone-du-stress
 mot_cle: cortisol hormone du stress
 guide: cortisol
-maj: 2026-10-09
+maj: 2026-10-25
 image: Personne assise au bord de son lit au petit matin, les pieds nus sur un parquet clair, qui s'étire face à une fenêtre où entre une lumière dorée de lever de soleil, ambiance calme et chaleureuse, sans texte
 ---
 ## L'essentiel
@@ -84,7 +84,7 @@ Le stress aigu est bref et retombe une fois la situation passée. Le stress chro
 | Régulation de l'axe du stress | Le frein fonctionne, le taux redescend [2] | Hyperactivité au début, puis hypoactivité, selon des études récentes [2] |
 | Conséquence | Aide à faire face [2] | Peut avoir des effets sérieux sur la santé physique et mentale [2] |
 
-Un stress chronique, ce n'est donc pas forcément « trop de cortisol ». C'est plutôt une régulation qui a perdu sa souplesse. Et Bruce McEwen le précise, ce ne sont pas seulement les gros coups durs qui pèsent. Les nombreux [tracas du quotidien](/charge-mentale/) maintiennent eux aussi le corps en activation, font perdre du sommeil ou poussent à trop manger [3]. Or ce quotidien-là, c'est justement là que tu as le plus de prise.
+Un stress chronique, ce n'est donc pas forcément « trop de cortisol ». C'est plutôt une régulation qui a perdu sa souplesse. Pour [réguler son système nerveux](/calmer-son-systeme-nerveux/) au quotidien, quelques gestes simples ont été étudiés. Et Bruce McEwen le précise, ce ne sont pas seulement les gros coups durs qui pèsent. Les nombreux [tracas du quotidien](/charge-mentale/) maintiennent eux aussi le corps en activation, font perdre du sommeil ou poussent à trop manger [3]. Sur ce dernier point, on a rassemblé ce que les études disent de [que manger contre le stress](/alimentation-anti-stress/). Or ce quotidien-là, c'est justement là que tu as le plus de prise.
 
 ## Quels effets un stress chronique peut-il avoir sur le sommeil et l'énergie ?
 
@@ -144,6 +144,9 @@ Aucun questionnaire ne mesure le cortisol. Le [test de stress et d'anxiété](/t
 
 ## Questions fréquentes
 
+### Quel est le lien entre le cortisol et le stress ?
+Le cortisol est l'une des hormones que le corps libère face à un stress. L'adrénaline agit en premier, puis le cortisol prend le relais si la situation dure, en faisant monter le sucre dans le sang pour fournir de l'énergie [2]. C'est le cerveau qui juge ce qui est menaçant et qui lance cette réponse [3]. Quand les stress s'enchaînent sans vraie récupération, le problème n'est pas forcément « trop de cortisol ». C'est plutôt sa régulation qui perd sa souplesse [2].
+
 ### Le cortisol est-il mauvais pour la santé ?
 Non, il est même indispensable. C'est lui qui fournit au corps l'énergie pour faire face à un défi [2]. Ce qui pose problème, c'est quand l'axe du stress est sollicité encore et encore, longtemps, au point d'user l'organisme [3].
 
@@ -157,7 +160,7 @@ L'adrénaline agit tout de suite, pour te préparer à combattre ou à fuir. Le 
 Ce n'est pas la cause habituelle. Ce que les réseaux appellent ainsi, c'est le faciès lunaire, et sa cause la plus fréquente est la prise prolongée de corticoïdes. Il peut aussi signaler un syndrome de Cushing ou une hypothyroïdie [5]. Si ton visage s'arrondit sans raison évidente, parles-en à ton médecin plutôt que de te juger toi-même.
 
 ### Cortisol élevé : quels signes, et que faire ?
-Un vrai excès de cortisol, c'est une maladie, le syndrome de Cushing. Elle associe graisse sur le torse, visage arrondi, peau qui s'amincit et muscles qui fondent [6]. Un visage arrondi vient le plus souvent d'un traitement prolongé par corticoïdes [5]. Faire un test seul ne t'apprendra pas grand-chose, car le taux varie beaucoup au fil de la journée [1]. Si tu as ces signes, c'est ton médecin qui choisira les examens, par exemple le cortisol dans l'urine, la salive ou le sang, puis un test de freinage [6]. Pour le stress de tous les jours, tourne-toi plutôt vers les gestes qui aident à [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/).
+Un vrai excès de cortisol, c'est une maladie, le syndrome de Cushing. Elle associe graisse sur le torse, visage arrondi, peau qui s'amincit et muscles qui fondent [6]. Un visage arrondi vient le plus souvent d'un traitement prolongé par corticoïdes [5]. Faire un test seul ne t'apprendra pas grand-chose, car le taux varie beaucoup au fil de la journée [1]. Si tu as ces signes, c'est ton médecin qui choisira les examens, par exemple le cortisol dans l'urine, la salive ou le sang, puis un test de freinage [6]. Pour le stress de tous les jours, tourne-toi plutôt vers les gestes qui aident à [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/). Et si c'est la nuit qui t'inquiète, l'article sur le [cortisol élevé la nuit](/cortisol-et-sommeil/) explique ce qui est normal ou pas.
 
 ### La fatigue surrénalienne existe-t-elle ?
 Pas d'après les données actuelles. Une revue systématique de 58 études a conclu que rien ne permet d'en faire une maladie réelle [7]. Une fatigue qui dure mérite quand même une consultation, pour en trouver la vraie cause.

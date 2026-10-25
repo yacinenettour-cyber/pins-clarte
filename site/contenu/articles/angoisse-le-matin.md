@@ -6,7 +6,7 @@ slug: angoisse-le-matin
 mot_cle: angoisse le matin
 guide: sommeil
 date: 2026-10-21
-maj: 2026-10-21
+maj: 2026-10-25
 image: Personne assise au bord de son lit le matin, le visage dans les mains, dans une chambre baignée de lumière douce
 ---
 ## L'essentiel
@@ -34,6 +34,12 @@ Pour autant, cette hausse n'a rien d'une ennemie. En 2012, deux chercheurs de l'
 
 Au lit, en plus, rien n'occupe encore ton attention. Or les inquiétudes anxieuses prennent souvent la forme de « que va-t-il m'arriver ? » ou « je ne pourrai pas supporter… », et peuvent aller jusqu'à de vrais scénarios catastrophes [1]. C'est le même mécanisme que le soir, qu'on décrit dans l'article sur l'[angoisse le soir](/angoisse-le-soir/), sauf qu'ici il se tourne vers la journée qui commence.
 
+### Angoisse matinale sans raison : est-ce normal ?
+
+Oui, c'est fréquent qu'aucune raison précise n'apparaisse. Tu n'as rien de spécial ce jour-là, et l'inquiétude est là quand même. Plusieurs choses se cumulent sans faire de bruit. Le cortisol grimpe normalement après le réveil [2], ton esprit n'a encore rien pour l'occuper [1], et le stress ou les émotions difficiles des jours précédents rendent ce moment plus intense [4][5]. L'angoisse sans objet clair fait d'ailleurs partie de la définition de l'anxiété, qui peut porter sur un danger précis ou vague [1].
+
+Ce qui doit faire consulter, ce n'est pas l'absence de raison. C'est la fréquence, la durée et ce que ça t'empêche de faire. Les repères sont dans le tableau juste en dessous.
+
 ## Angoisse matinale passagère, anxiété ou dépression : comment faire la différence ?
 
 Si l'angoisse du matin passe vite et ne pèse pas vraiment sur ta vie, elle fait partie des angoisses normales. Quand elle revient presque tous les matins, déborde sur la journée ou vient avec une grande fatigue et de la tristesse, elle peut signaler un trouble anxieux ou une dépression [1][6].
@@ -58,7 +64,7 @@ Ralentis ta respiration, sors du lit au lieu d'y ressasser, puis va chercher la 
 3. **Lève-toi.** Rester allongé à tourner les choses dans ta tête, c'est laisser toute la place aux pensées anxieuses. Ouvre les volets, passe-toi de l'eau sur le visage. Un geste simple suffit à ramener ton attention dans la pièce.
 4. **Va chercher la lumière.** D'après l'Inserm, la lumière remet à l'heure l'horloge interne, celle qui rythme entre autres la production de cortisol [9]. Quelques minutes dehors ou près d'une fenêtre, et tu tiens ton petit rendez-vous du matin.
 5. **Bouge un peu.** L'Assurance maladie compte l'activité physique parmi ses conseils en cas d'anxiété [7]. Une grande synthèse de 97 revues, présentée dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/), montre qu'elle réduit les symptômes d'anxiété [10]. Marcher 10 minutes avant d'attaquer ta journée, c'est déjà un bon début.
-6. **Doucement sur le café.** L'Assurance maladie conseille aux personnes anxieuses d'arrêter les excitants, qu'il s'agisse du café, du tabac ou de l'alcool [7]. Par exemple, si tu bois ton café à jeun et que ton cœur s'emballe déjà, essaie de le prendre après le petit-déjeuner, ou d'en boire moins, et regarde ce que ça change.
+6. **Doucement sur le café.** L'Assurance maladie conseille aux personnes anxieuses d'arrêter les excitants, qu'il s'agisse du café, du tabac ou de l'alcool [7]. Par exemple, si tu bois ton café à jeun et que ton cœur s'emballe déjà, essaie de le prendre après le petit-déjeuner, ou d'en boire moins, et regarde ce que ça change. Ce que les études disent du café et des [aliments anti-stress](/alimentation-anti-stress/) est rassemblé dans un autre article.
 
 ## Comment éviter que l'angoisse revienne chaque matin ?
 
@@ -103,6 +109,9 @@ Non. Sa hausse au réveil est normale [2], et une étude de l'Université de Sou
 
 ### Que faire tout de suite quand j'angoisse au réveil ?
 Ralentis ta respiration [7], en expirant par exemple plus longtemps que tu n'inspires. Ensuite, lève-toi, ouvre les volets et bouge quelques minutes [7][9]. L'inquiétude qui revient, note-la et donne-lui rendez-vous plus tard dans la journée [8].
+
+### Existe-t-il un traitement contre l'angoisse matinale ?
+Quand elle s'installe, oui, et il passe par ton médecin. D'après l'Assurance maladie, une psychothérapie est recommandée quel que soit le trouble anxieux, et la thérapie comportementale et cognitive est reconnue efficace quand l'anxiété est importante [7]. Les anxiolytiques ne se prennent jamais sans avis médical, à cause de leurs risques, dont la dépendance [7]. Si elle vient avec une tristesse ou une perte d'envie presque chaque jour depuis au moins deux semaines, parles-en vite à ton médecin [6].
 
 ### Le café peut-il aggraver l'angoisse du matin ?
 L'Assurance maladie conseille aux personnes anxieuses d'arrêter les excitants, café compris [7]. Regarde si ton angoisse est plus forte les jours où tu le bois à jeun, et essaie d'en boire moins ou de le décaler.
