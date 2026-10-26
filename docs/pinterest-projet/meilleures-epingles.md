@@ -154,6 +154,37 @@ repos » et « dire non sans culpabiliser » ont un autre angle), à terminer au
   l'écran. Cadre doré à décrire autrement que les précédents ; personnage central : femme habillée en vert, assise dans un
   fauteuil avec une tasse.
 
+**26/10/2026** : stock à 0 ; quota gratuit Hugging Face épuisé dès le premier appel (« 0s left ») : rien fabriqué.
+Les images du 25/10 (silhouettes aquarelle, `illus_2510/`) ne respectent plus la règle de la personne réaliste : à
+refaire. Sujet « Culpabilité de se reposer : 5 clés pour souffler » revérifié (anti_doublons.py : aucun doublon) ; la clé
+« choisir un repos qui recharge plutôt que l'écran » recoupe « 3 fausses pauses qui épuisent ton énergie » (publiée) : à
+remplacer par « Annoncer ta pause » (« je fais une pause, je reviens à 15 h » ; pour assumer sans te justifier). Prévu :
+titre2 « souffler sans culpabiliser » en écriture manuscrite ; personnage central réaliste (« Realistic soft painted
+portrait of a woman in her thirties sitting relaxed in a cozy cream armchair, holding a warm cup of tea with both hands,
+eyes gently closed… sage green knit sweater… long beige trousers… ») ; cadre doré avec poudre rose et fleurs séchées.
+
+Statistiques des épingles illustrées du robot (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 25/10, lues le 26/10) :
+
+| Épingle | Publiée | Impressions | Clics sur l'épingle | Enregistrements | Clics sortants |
+|---|---|---|---|---|---|
+| Journée chargée : 5 clés pour garder ton calme | 15/10 | 48 | 8 | 0 | 0 |
+| Bas du dos raide : 3 étirements assis au bureau | 18/10 | 7 | 2 | 0 | 0 |
+| Épaules tendues : 3 exercices assis pour les relâcher | 15/10 | 6 | 6 | 0 | 0 |
+| Pensées négatives : 5 clés pour prendre du recul | 21/10 | 5 | 2 | 0 | 0 |
+| Lâcher prise : 5 clés pour arrêter de tout contrôler | 19/10 | 3 | 1 | 0 | 0 |
+| Poignets tendus : 3 étirements au clavier | 20/10 | 3 | 0 | 0 | 0 |
+| Souffle court par le stress : 3 gestes assis | 22/10 | 2 | 1 | 0 | 0 |
+
+Top 10 (enregistrements) relu le lundi 26/10 (PINTEREST_GET_TOP_PINS) — 30 jours (26/09 → 25/10) : « 5 gestes doux
+pour apaiser le corps dès le matin » 109 enr. / 7 266 impr., « 5 Clés pour Vaincre la Procrastination » 45 / 3 523,
+« 6 étapes pour débloquer ton mental » 19 / 1 390, « Cortisol élevé : 7 aliments à privilégier » 16 / 1 061, « La formule
+anti-fatigue mentale » 10 / 694, « 9 gestes simples pour retrouver le moral » 9 / 501, « 6 étapes… » (2e version) 8 / 1 269,
+« Cortisol élevé ? 8 aliments clés après 40 ans » 8 / 565, « Technique 4-6 » 7 / 422, « 7 signes d'une glycémie trop
+élevée » 7 / 477. 90 jours : même tête (327 / 23 727 ; 128 / 10 391 ; 63 / 7 299), puis « Cortisol élevé : 7 aliments à
+privilégier », « 9 gestes simples… », « La formule anti-fatigue… », « Technique 4-6 », « Cortisol élevé : 7 aliments
+anti-stress », « Cortisol élevé ? 8 aliments clés après 40 ans ». Toutes sont des épingles `IDEA` faites à la main ;
+aucune épingle du robot dans le top 10. Le constat du 25/10 tient toujours.
+
 ## Statistiques du compte sur 90 jours (lues le 25/10/2026, nouvelles fonctions Composio)
 
 Source : `PINTEREST_GET_ACCOUNT_ANALYTICS` (28/07 → 24/10/2026) et `PINTEREST_GET_TOP_PINS`.
