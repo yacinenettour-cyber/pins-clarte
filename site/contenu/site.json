@@ -175,6 +175,12 @@
    "image": "unsplash-VsPUVN5QlVY.jpg",
    "alt": "Jeune femme allongée sur le dos dans un lit blanc, les yeux fermés, le visage détendu, la couette remontée jusqu'aux épaules",
    "credit": "Photo : Vitaly Gariev / Unsplash"
+  },
+  "sommeil-leger": {
+   "categorie": "sommeil",
+   "image": "pexels-6753359.jpg",
+   "alt": "Femme allongée sur le dos dans un lit aux draps clairs, vue d'en haut, les yeux grands ouverts et les bras le long du corps, dans une lumière chaude",
+   "credit": "Photo : Pexels"
   }
  },
  "formation": {
@@ -298,6 +304,10 @@
     [
      "Tu te réveilles vers 4 h et tu ne te rendors pas",
      "reveil-4h-du-matin"
+    ],
+    [
+     "Le moindre bruit te réveille, ton sommeil reste léger",
+     "sommeil-leger"
     ],
     [
      "Tu cherches une respiration simple pour t'endormir",

@@ -146,6 +146,8 @@ Tes réveils de fin de nuit s'accompagnent souvent de pensées qui tournent en b
 
 Si tu dors jusqu'au matin mais que l'angoisse te serre dès le réveil, lis l'article sur l'[angoisse le matin au réveil](/angoisse-le-matin/).
 
+Si ce n'est pas seulement en fin de nuit, mais toute la nuit que le moindre bruit te réveille, l'article sur le [sommeil léger](/sommeil-leger/) explique ce qui le fragilise et ce que valent bouchons d'oreilles et bruit blanc.
+
 ## Sources
 1. [Sommeil — Inserm, 2017 (mis à jour en 2024)](https://www.inserm.fr/dossier/sommeil/)
 2. [Insomnie — Inserm, 2017](https://www.inserm.fr/dossier/insomnie/)

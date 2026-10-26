@@ -128,6 +128,8 @@ Après un traumatisme, la psychothérapie est le traitement recommandé en premi
 
 Pour faire le point sur ton niveau d'anxiété, le [test de stress et d'anxiété](/test-stress-anxiete/) se remplit en 2 minutes. Il ne remplace pas une consultation, mais il te donne des repères pour en parler.
 
+Tu te réveilles la nuit au moindre bruit ? L'article sur le [sommeil léger](/sommeil-leger/) détaille ce qui peut rendre le sommeil plus fragile, dont un cerveau resté en alerte.
+
 Si cette alerte te suit jusqu'au lit, avec des pensées qui tournent au moment d'éteindre la lumière, le guide gratuit « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire directement au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours, sans matériel. Il ne traite pas le traumatisme. Si ton hypervigilance a commencé après un événement traumatisant, c'est d'abord un professionnel qu'il faut voir.
 
 ## Sources

@@ -334,7 +334,8 @@
   "largeur": 1400,
   "hauteur": 2100,
   "statut": "gardée",
-  "fichier": "fonds/pexels-6753359.jpg"
+  "fichier": "fonds/pexels-6753359.jpg",
+  "usage": "site : article « sommeil-leger » (26/10/2026)"
  },
  "pexels-8410720.jpg": {
   "theme": "sommeil",
