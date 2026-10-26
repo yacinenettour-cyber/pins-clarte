@@ -1,0 +1,13 @@
+{
+ "pourquoi": "26/10/2026 : l'utilisateur trouve la voix Kokoro peu naturelle ; essai de Chatterbox Multilingual (gratuit, licence MIT)",
+ "phrases": [
+  "Allonge-toi sur le dos, les bras le long du corps.",
+  "Ramène tes orteils vers ta tête, et serre les muscles des pieds et des chevilles. Tiens.",
+  "Et relâche. Imagine tes pieds qui deviennent plus lourds."
+ ],
+ "variantes": [
+  {"nom": "D-chatterbox-naturelle", "expressivite": 0.5, "rythme": 0.5, "temperature": 0.8},
+  {"nom": "E-chatterbox-posee", "expressivite": 0.35, "rythme": 0.3, "temperature": 0.7},
+  {"nom": "F-chatterbox-tres-calme", "expressivite": 0.25, "rythme": 0.2, "temperature": 0.6}
+ ]
+}
