@@ -1,9 +1,11 @@
 # Mise en ligne à la main : « Relaxation Jacobson pour dormir : détendre tout le corps (voix guidée) »
 
-Vidéo (30 min) et Short (61 s) : onglet Actions de GitHub, run « YouTube : vidéo Relaxation Jacobson refabriquée avec la voix Chatterbox » (26/10/2026), fichier **videos-youtube** en bas de la page (zip), téléchargeable jusqu'au 02/11/2026 :
-https://github.com/yacinenettour-cyber/pins-clarte/actions/runs/40274922568
+Voix : **H** (Chatterbox, voix de référence française), choisie par l'utilisateur le 26/10/2026.
 
-⚠️ Ne pas prendre le fichier du run précédent (40268348436) : c'est l'ancienne voix.
+Vidéo (30 min) et Short (61 s) : onglet Actions de GitHub, run du 26/10 au soir « YouTube : vidéo Relaxation Jacobson refabriquée avec la voix H », fichier **videos-youtube** en bas de la page (zip), téléchargeable 7 jours :
+https://github.com/yacinenettour-cyber/pins-clarte/actions/runs/40376207156
+
+⚠️ Ne pas prendre les fichiers des runs précédents (40268348436 et 40274922568) : anciennes voix.
 
 ## Vidéo
 - Titre : Relaxation Jacobson pour dormir : détendre tout le corps (voix guidée)
@@ -24,16 +26,16 @@ Relaxation de Jacobson guidée pour s'endormir : une dizaine de minutes de voix 
 Pour les soirs où ton corps reste crispé : la vidéo commence par 1 minute pour comprendre la méthode (études citées plus bas), puis te guide zone par zone. Contracte assez pour sentir la tension, jamais au point d'avoir mal. Si une zone est blessée ou douloureuse, laisse-la au repos. Si tu t'endors avant la fin, c'est parfait.
 
 00:00 Introduction
-00:25 Comprendre
-01:20 S'installer
-01:50 Respirer lentement
-03:47 Les pieds et les jambes
-05:12 Le ventre et la poitrine
-06:08 Les bras et les épaules
-07:27 Le visage
-08:18 Tout le corps relâché
-09:40 Glisser vers le sommeil
-10:21 Musique seule pour s'endormir
+00:29 Comprendre
+01:35 S'installer
+02:06 Respirer lentement
+04:06 Les pieds et les jambes
+05:42 Le ventre et la poitrine
+06:38 Les bras et les épaules
+08:01 Le visage
+08:55 Tout le corps relâché
+10:18 Glisser vers le sommeil
+11:02 Musique seule pour s'endormir
 
 À écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. Je ne suis pas professionnel de santé.
 
@@ -44,7 +46,7 @@ Sources :
 · Xiao et al., Medicine, 2020 (Fujian Medical University Union Hospital)
 · Braith, McCullough et Bush, Journal of Behavior Therapy and Experimental Psychiatry, 1988 (Virginia Commonwealth University)
 
-Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT).
+Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT ; voix de référence française issue du corpus SIWIS, CC BY 4.0).
 Musique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 http://creativecommons.org/licenses/by/4.0/
 Photos : Unsplash (daniel castillo, Paul Pastourmatzis, Polina Kuzovkova, Mario Häfliger, Colter Olmstead, Emma Harper, Dylan Crawford, Kyle Glenn, Ahmet Yüksek, ji tuneji3_3, Benjamin Voros). Bols chantants : Freesound, domaine public (CC0).
 
