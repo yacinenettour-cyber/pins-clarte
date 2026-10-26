@@ -1035,3 +1035,20 @@ probable fort / moyen / faible, méthode écrite.
   cassé sur 38 pages, numéros de sources tous dans la liste. Publié (gh-pages), 8 pages vérifiées en ligne (200 et
   nouveaux textes), IndexNow 200 pour les 14 adresses modifiées (le pare-feu de Composio refuse la commande curl :
   envoi fait depuis l'atelier Python).
+
+## 85. Site : articles « Boule au ventre » et « Relaxation Jacobson pour dormir » en ligne (25-26/10/2026)
+
+- `/boule-au-ventre/` (15 sources) était sur main depuis le 25/10 mais pas encore publié : publié avec le suivant.
+- `/relaxation-jacobson/` (14 sources vérifiées dans les notices PubMed, mot-clé « relaxation Jacobson », guide
+  sommeil) : méthode pas à pas, tableau, Quand consulter, FAQ ; renvoie à « Respiration pour dormir » au lieu de la
+  refaire. Les articles acceptent `{{SCHEMA:nom}}` ; le schéma « contracte 3 à 5 s / relâche 10 à 15 s » est dans
+  `SCHEMAS_ARTICLES` (hors empreinte du PDF de la fiche respiration), contrôlé à l'œil dans le navigateur (ordinateur
+  et mobile, pas de débordement). Photo Unsplash inédite (Vitaly Gariev) réservée au site. Liens depuis 4 articles
+  et la page thème Mieux dormir. Méta-analyse de Li 2026 : détaillée ici seulement (règle « une étude détaillée
+  dans un seul article »).
+- Fusion des deux branches : registres (photos, site.json, mots-clés, sujets) gardent les deux articles ; dans
+  routine-du-soir, les deux renvois (4-7-8 et Jacobson) sont conservés.
+- Contrôles : 0 lien interne cassé, titres et descriptions uniques, 0 doublon dans la banque de pins. Publié
+  (gh-pages), 7 pages vérifiées en ligne (200), IndexNow 200 pour 9 adresses.
+- Reste : illustration dessinée du schéma quand le quota Hugging Face reviendra ; épingle reliée à l'article
+  (nécessite l'accord de l'utilisateur pour `ARTICLES_SITE` de pins.yml) ; audio guidé de relaxation (facultatif).

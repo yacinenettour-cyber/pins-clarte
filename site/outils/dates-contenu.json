@@ -1,7 +1,7 @@
 {
  "/": {
-  "date": "2026-10-25",
-  "empreinte": "3796e5760aea0049"
+  "date": "2026-10-26",
+  "empreinte": "977bc5f0bca55a51"
  },
  "/a-propos/": {
   "date": "2026-10-21",
@@ -12,28 +12,32 @@
   "empreinte": "2c8b8d118b335f15"
  },
  "/alimentation-anti-stress/": {
-  "date": "2026-10-25",
-  "empreinte": "ab9173e47bc2fcef"
+  "date": "2026-10-26",
+  "empreinte": "264d07b58254bc0b"
  },
  "/angoisse-le-matin/": {
-  "date": "2026-10-25",
-  "empreinte": "0a6c943849a6db91"
+  "date": "2026-10-26",
+  "empreinte": "dc690cfb310bfa6f"
  },
  "/angoisse-le-soir/": {
-  "date": "2026-10-25",
-  "empreinte": "4b8b30e19c33e5d4"
+  "date": "2026-10-26",
+  "empreinte": "97be8fb06ca33d66"
  },
  "/articles/": {
-  "date": "2026-10-25",
-  "empreinte": "12b76dda78a032bf"
+  "date": "2026-10-26",
+  "empreinte": "9395b8675b0e0aa0"
  },
  "/baisser-son-cortisol-naturellement/": {
-  "date": "2026-10-25",
-  "empreinte": "7dbd709fb213f2e3"
+  "date": "2026-10-26",
+  "empreinte": "a04cd13f119d153c"
+ },
+ "/boule-au-ventre/": {
+  "date": "2026-10-26",
+  "empreinte": "d1966eb386bc9f70"
  },
  "/calmer-son-systeme-nerveux/": {
-  "date": "2026-10-25",
-  "empreinte": "461f72c2c4031a2c"
+  "date": "2026-10-26",
+  "empreinte": "4f8d356c97c63461"
  },
  "/charge-mentale-et-burn-out/": {
   "date": "2026-10-25",
@@ -48,8 +52,8 @@
   "empreinte": "eae4bcb22a622f8c"
  },
  "/cortisol-hormone-du-stress/": {
-  "date": "2026-10-25",
-  "empreinte": "25adc6b2d0926bda"
+  "date": "2026-10-26",
+  "empreinte": "afd006ed9ad86fac"
  },
  "/exercices-respiration/": {
   "date": "2026-10-22",
@@ -68,8 +72,8 @@
   "empreinte": "a8f06bdfd5094180"
  },
  "/hypervigilance/": {
-  "date": "2026-10-25",
-  "empreinte": "db8eb91888910386"
+  "date": "2026-10-26",
+  "empreinte": "042c4e33075d25a6"
  },
  "/journal-humeur/": {
   "date": "2026-10-18",
@@ -88,28 +92,32 @@
   "empreinte": "ef263baf03ccff20"
  },
  "/mieux-dormir/": {
-  "date": "2026-10-25",
-  "empreinte": "8a565c4f273b1134"
+  "date": "2026-10-26",
+  "empreinte": "95d596d745f55b7f"
  },
  "/nerf-vague/": {
-  "date": "2026-10-25",
-  "empreinte": "675e432e227bfdb8"
+  "date": "2026-10-26",
+  "empreinte": "3420aead34e6976b"
  },
  "/procrastination-du-coucher/": {
-  "date": "2026-10-25",
-  "empreinte": "811b527728dcae48"
+  "date": "2026-10-26",
+  "empreinte": "25b20b09b0affff7"
  },
  "/questions-frequentes/": {
   "date": "2026-10-18",
   "empreinte": "2ed16117403cf845"
+ },
+ "/relaxation-jacobson/": {
+  "date": "2026-10-26",
+  "empreinte": "0216e09893e5c0a7"
  },
  "/respiration-guidee/": {
   "date": "2026-10-22",
   "empreinte": "8455b89a8e803601"
  },
  "/respiration-pour-dormir/": {
-  "date": "2026-10-25",
-  "empreinte": "d9ae4e540c732782"
+  "date": "2026-10-26",
+  "empreinte": "8e214f0188113574"
  },
  "/ressources-urgence/": {
   "date": "2026-10-21",
@@ -120,24 +128,24 @@
   "empreinte": "d0b1a50c000eb9eb"
  },
  "/routine-du-soir-anti-stress/": {
-  "date": "2026-10-25",
-  "empreinte": "9e741b30ed29c6a0"
+  "date": "2026-10-26",
+  "empreinte": "c07ab9981f50afae"
  },
  "/ruminations-le-soir/": {
-  "date": "2026-10-25",
-  "empreinte": "d97b489c9290683c"
+  "date": "2026-10-26",
+  "empreinte": "fdc2108dfb50a706"
  },
  "/signes-du-burn-out/": {
   "date": "2026-10-25",
   "empreinte": "a00914cb979055ba"
  },
  "/stress-et-systeme-nerveux/": {
-  "date": "2026-10-25",
-  "empreinte": "96a1cb095f7f302c"
+  "date": "2026-10-26",
+  "empreinte": "ffb6d0524a91c20f"
  },
  "/symptomes-physiques-du-stress/": {
-  "date": "2026-10-25",
-  "empreinte": "ae97abdcf1b87491"
+  "date": "2026-10-26",
+  "empreinte": "2c5118494e217ef2"
  },
  "/test-stress-anxiete/": {
   "date": "2026-10-18",
