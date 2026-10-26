@@ -159,7 +159,7 @@ Oui. Ce sont deux noms pour les mêmes pensées qui tournent en boucle sans jama
 
 Si tes soirées ressemblent souvent à ce manège, le guide gratuit « Quand le cerveau refuse de dormir » peut t'accompagner pas à pas. Tu y trouveras une routine anti-rumination à faire directement au lit, des exercices pour calmer ton mental le soir et un calendrier de 30 jours pour installer ces gestes en douceur. Aucun matériel n'est nécessaire, ton lit et quelques minutes suffisent.
 
-Au lit, quand les pensées tournent, l'[audio de respiration guidée de 10 minutes](/respiration-guidee/) peut t'aider à ralentir, les yeux fermés.
+Au lit, quand les pensées tournent, l'[audio de respiration guidée de 10 minutes](/respiration-guidee/) peut t'aider à ralentir, les yeux fermés. Et si ce sont tes muscles qui restent tendus, la [relaxation Jacobson](/relaxation-jacobson/) se fait elle aussi au lit, zone par zone.
 
 ## Sources
 1. [Insomnie — Inserm, 2017](https://www.inserm.fr/dossier/insomnie/)

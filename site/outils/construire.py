@@ -1368,9 +1368,32 @@ def visuel_html(nom):
             f'loading="lazy" decoding="async">{schema_html(nom)}</div>')
 
 
+# Schémas des exercices décrits dans les articles (25/10/2026). Dictionnaire à part : SCHEMAS entre dans l'empreinte du PDF
+# de la fiche respiration, qui ne doit pas changer quand on ajoute un schéma d'article. Même forme que SCHEMAS.
+SCHEMAS_ARTICLES = {
+    # Relaxation musculaire progressive (article /relaxation-jacobson/) : un groupe de muscles, contraction 3 à 5 s puis
+    # relâchement 10 à 15 s (protocole de Xiao et al., 2020, source 8 de l'article), dessiné à 5 s puis 15 s.
+    "jacobson": ("Schéma de la relaxation musculaire progressive : pour un groupe de muscles, la tension monte vite et reste "
+                 "haute pendant 3 à 5 secondes de contraction, puis retombe et reste basse pendant 10 à 15 secondes de "
+                 "relâchement, avant de passer au groupe suivant.",
+                 "Un groupe de muscles à la fois : la courbe montre la tension, haute quand tu contractes, basse quand tu "
+                 "relâches. Puis zone suivante, des pieds jusqu'au visage.",
+                 lambda i: _profil(i, SCHEMAS_ARTICLES["jacobson"][0], [
+                     ("in", [(0.6, 1), (4.4, 1)], "Contracte", "3 à 5 s"),
+                     ("out", [(1.2, 0.12), (13.8, 0.12)], "Relâche", "10 à 15 s, plus longtemps")])),
+}
+
+
+def schema_article_html(nom):
+    titre, legende, dessin = SCHEMAS_ARTICLES[nom]
+    ident = f"schema-{nom}"
+    return f'<figure class="schema-resp schema-{nom}">{dessin(ident)}<figcaption>{e(legende)}</figcaption></figure>'
+
+
 def remplacer_schemas(corps_html):
-    """Lignes {{SCHEMA:nom}} et {{VISUEL:nom}} d'un texte de page → figures (voir SCHEMAS)."""
-    corps_html = re.sub(r"<p>\{\{SCHEMA:([\w-]+)\}\}</p>", lambda m: schema_html(m.group(1)), corps_html)
+    """Lignes {{SCHEMA:nom}} et {{VISUEL:nom}} d'un texte de page → figures (voir SCHEMAS et SCHEMAS_ARTICLES)."""
+    corps_html = re.sub(r"<p>\{\{SCHEMA:([\w-]+)\}\}</p>", lambda m: schema_article_html(m.group(1))
+                        if m.group(1) in SCHEMAS_ARTICLES else schema_html(m.group(1)), corps_html)
     return re.sub(r"<p>\{\{VISUEL:([\w-]+)\}\}</p>", lambda m: visuel_html(m.group(1)), corps_html)
 
 
