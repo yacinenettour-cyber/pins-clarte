@@ -25,11 +25,12 @@
    "statut": "envoye",
    "date_envoi": "2026-10-12",
    "thread_id": "1a1315989141a8b0",
-   "relance": null,
+   "relance": "2026-10-26",
    "reponse": null,
    "lien_obtenu": null,
    "domaine": "lesburn-ettes.com",
-   "audience": "C : absent du top 1 million Tranco, aucun signal d'audience"
+   "audience": "C : absent du top 1 million Tranco, aucun signal d'audience",
+   "relance_thread_id": "1a178a7e05323b58"
   },
   {
    "site": "Papa positive !",
@@ -70,11 +71,12 @@
    "statut": "envoye",
    "date_envoi": "2026-10-12",
    "thread_id": "1a131598d49b19f1",
-   "relance": null,
+   "relance": "2026-10-26",
    "reponse": null,
    "lien_obtenu": null,
    "domaine": "ghislain-bousseau-psy.com",
-   "audience": "C : absent du top 1 million Tranco, aucun signal d'audience"
+   "audience": "C : absent du top 1 million Tranco, aucun signal d'audience",
+   "relance_thread_id": "1a178a7e7477e0e2"
   },
   {
    "site": "Médiagora (réseau d'entraide anxiété, phobies, panique)",
@@ -110,7 +112,9 @@
    "sujet": "Un lien cassé sur votre page « Le Monde du Sommeil »",
    "liens_casses": [
     "https://hopital-antoine-beclere.aphp.fr/loffre-de-soins-dantoine-beclere/adultes/specialites-medicales/troubles-du-sommeil/ (404, confirmé 2 fois)"
-   ]
+   ],
+   "relance": "2026-10-26",
+   "relance_thread_id": "1a178a77a259ecc0"
   },
   {
    "site": "Nouveau Souffle (association d'accompagnement des aidants)",
@@ -144,7 +148,9 @@
    "thread_id": "1a138b27b43d4e2d",
    "sujet": "Deux liens cassés sur votre page « Ressources »",
    "liens_casses": "14/10 : soutien-etudiant.info/services-soutien (redirige vers une page Nightline en 404) et PDF PSSM « Carnet-TRAUMA-ADULTE-1 » (404), deux essais ; signalés",
-   "date_envoi": "2026-10-14"
+   "date_envoi": "2026-10-14",
+   "relance": "2026-10-26",
+   "relance_thread_id": "1a178a7bd7f1dd5d"
   },
   {
    "site": "Benoit Blanchard, psychologue (Vernaison, Lyon)",
@@ -271,7 +277,9 @@
    "audience": "A : domaine dans le top 1 million Tranco (rang 106959, 12/10/2026)",
    "date_envoi": "2026-10-13",
    "thread_id": "1a135dbc377243b3",
-   "sujet": "Pour votre page « Santé mentale : les ressources et dispositifs »"
+   "sujet": "Pour votre page « Santé mentale : les ressources et dispositifs »",
+   "relance": "2026-10-26",
+   "relance_thread_id": "1a178a7c3b41888e"
   },
   {
    "site": "Ambassadeurs Santé Mentale (Fondation ARHM, jeunes 16-25 ans)",
@@ -384,16 +392,21 @@
    "site": "DOCcitanie (centres de documentation santé d'Occitanie)",
    "page_cible": "https://doccitanie-sante.fr/ressources/sitotheque/sitotheque-sante-mentale/",
    "email": "centredoc.toulouse@promotion-sante-occitanie.org",
-   "email_verifie": false,
+   "email_verifie": true,
    "formulaire": null,
    "prenom": null,
    "note": 2,
    "pourquoi": "Sitothèque santé mentale : sélection de sites de référence.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-urgence/",
    "remarque": "Sélection documentaire sérieuse, mais réservée en pratique aux sources institutionnelles ; site d'auteur non professionnel peu susceptible d'y entrer.",
-   "statut": "a_verifier",
+   "statut": "envoye",
    "domaine": "doccitanie-sante.fr",
-   "audience": "B : centres de documentation santé publique ; absent du top 1 million Tranco"
+   "audience": "B : centres de documentation santé publique ; absent du top 1 million Tranco",
+   "date_envoi": "2026-10-26",
+   "thread_id": "1a178aa088d3385b",
+   "sujet": "Sitothèque « Santé mentale » : une fiche gratuite de respiration à proposer",
+   "liens_casses": "aucun lien mort (21 liens testés le 26/10 ; cmha.ca 403 = blocage des robots) ; orsm-occitanie.fr affiche « Ce site est temporairement fermé » (503), signalé comme simple information",
+   "note_verification": "adresse lue sur https://doccitanie-sante.fr/nos-centres-de-ressources/ ; la page invite à « partager les ressources que vous souhaiteriez voir référencées » ; fiche respiration proposée en premier (règle du 21/10), puis le minuteur"
   },
   {
    "site": "Parlons RH (média RH, revue du web hebdomadaire)",
@@ -565,7 +578,9 @@
    "liens_casses": "14/10 : liens App Store et Google Play en 404 (deux essais, depuis un serveur hors Canada) pour Sanvello/Pacifica, Toutematête, Stop Breathe & Think, Mes outils - suicide.ca ; signalés",
    "sujet": "Page « Applications mobiles » : 4 applications dont les liens ne s'ouvrent plus",
    "remarque": "14/10 : adresse santepsychologie@umoncton.ca lue sur la page « Nous joindre » du service (psychologie@ = bureaux de psychologues, non utilisée)",
-   "date_envoi": "2026-10-14"
+   "date_envoi": "2026-10-14",
+   "relance": "2026-10-26",
+   "relance_thread_id": "1a178a7ca5b0a1a8"
   },
   {
    "site": "Université Paris-Saclay — Service de santé étudiante (SSE)",
@@ -584,7 +599,9 @@
    "lot": "recherche 2 du 12/10",
    "date_envoi": "2026-10-13",
    "thread_id": "1a135dbbe287d55a",
-   "sujet": "Une ressource gratuite sur le sommeil pour les étudiants"
+   "sujet": "Une ressource gratuite sur le sommeil pour les étudiants",
+   "relance": "2026-10-26",
+   "relance_thread_id": "1a178a7d029d7500"
   },
   {
    "site": "Université de Bordeaux — Espace Santé Étudiants (ESE)",
@@ -641,7 +658,9 @@
    "date_envoi": "2026-10-13",
    "thread_id": "1a135dbbe799e2e6",
    "sujet": "Un outil gratuit de respiration pour l'accompagnement à la gestion du stress",
-   "reponse": "13/10 : réponse automatique d'accusé de réception (aucune réponse humaine à ce jour)."
+   "reponse": "13/10 : réponse automatique d'accusé de réception (aucune réponse humaine à ce jour).",
+   "relance": "2026-10-26",
+   "relance_thread_id": "1a178a7d4cc8476d"
   },
   {
    "site": "Univers Santé (asbl de promotion de la santé de l'UCLouvain)",
@@ -804,7 +823,9 @@
    "thread_id": "1a138b27a9bf907d",
    "sujet": "Pour la rédaction : des audios de respiration guidée gratuits, sans voix ni inscription",
    "remarque": "14/10 : adresse de la rédaction lue sur https://www.santementale.fr/la-revue/ ; proposé : audios + test GAD-7",
-   "date_envoi": "2026-10-14"
+   "date_envoi": "2026-10-14",
+   "relance": "2026-10-26",
+   "relance_thread_id": "1a178a7db4222ac4"
   },
   {
    "site": "Mouvement Santé mentale Québec",
@@ -1211,13 +1232,14 @@
    "pourquoi": "Page santé mentale qui liste des ressources (Santépsy, ciao.ch, 143, Stop Suicide…) ; des exercices de respiration gratuits complètent l'offre d'auto-soin.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "A : ne.ch rang 81 116 (Tranco)",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : collectivités / Suisse romande. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /respiration-guidee/. Aucun lien mort confirmé (15 liens testés).",
    "date_envoi": "2026-10-21",
    "thread_id": "1a15fb2489d958c5",
    "sujet": "Votre page « Santé mentale » : des audios de respiration gratuits",
-   "type": "lien"
+   "type": "lien",
+   "reponse": "26/10 07:49 : refus poli (Office de la promotion de la santé et de la prévention, Neuchâtel) : ne pourra pas intégrer le site ni ses ressources. Ne plus écrire."
   },
   {
    "site": "Santé Québec – Saguenay–Lac-Saint-Jean (Ressources et liens utiles santé mentale)",
@@ -1657,13 +1679,14 @@
    "pourquoi": "Article « Le stress, compagnon de route ou signe d'alerte » avec encadré « Outils et ressources : stress ».",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "B : association reconnue (éducation permanente, Fédération Wallonie-Bruxelles) ; absent du top 1 million Tranco",
-   "statut": "envoye",
+   "statut": "repondu",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : Belgique. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Dossier du 25/11/2025 (e-journal PSE). Ressource proposée : /exercices-respiration/. Aucun lien mort.",
    "date_envoi": "2026-10-21",
    "thread_id": "1a15fb24ea26bd26",
    "sujet": "Votre dossier « Le stress, compagnon de route ou signe d'alerte ? »",
-   "type": "lien"
+   "type": "lien",
+   "reponse": "26/10 09:08 : Question Santé remercie et transfère le message à l'Office National de l'Enfance (ONE), commanditaire de la publication. Aucune action à faire ; attendre une éventuelle réponse de l'ONE."
   },
   {
    "site": "Maison des Adolescents et des Jeunes Adultes du Vaucluse (MDA 84)",
@@ -2235,6 +2258,10 @@
   {
    "date": "2026-10-25",
    "resultat": "Lecture des réponses (dimanche, aucun envoi) : Éducation Santé refuse (article déjà publié en juin) → stop ; Boost ton feeling good refuse (sujets déjà traités) → stop ; France Acouphènes accuse réception, sans lien → repondu. Les 23 et 24/10, la tâche n'a pas tourné (limite hebdomadaire d'utilisation atteinte) : 9 relances dues restent à faire au prochain jour ouvré."
+  },
+  {
+   "date": "2026-10-26",
+   "resultat": "Passage du 26/10 (fait l'après-midi, la tâche du matin ayant été interrompue) : réponses lues sur 46 fils ; ne.ch refuse → stop ; Question Santé transfère à l'ONE → repondu. 9 relances (Réseau Morphée, Apsytude, Université Le Havre, Université de Moncton, Université Paris-Saclay, Université de Namur, Santé mentale, Les BURN'ettes, Ghislain Bousseau). Les premiers e-mails citaient encore le métier de l'auteur (écrits avant le 18/10) : relances envoyées en messages neufs « Re: … » sans citation (GMAIL_SEND_EMAIL ignore thread_id : nouveaux fils, notés dans relance_thread_id), aucune mention du métier, vérifiées dans les Envoyés. 1 envoi : DOCcitanie (sitothèque santé mentale, fiche respiration). 10 au total. Incident : un e-mail d'essai « x » envoyé par erreur à x@example.invalid (adresse fictive, revenu en erreur « Adresse introuvable »), aucun destinataire réel."
   }
  ]
 }
