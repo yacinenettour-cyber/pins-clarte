@@ -1,13 +1,31 @@
 {
- "pourquoi": "26/10/2026 : l'utilisateur trouve la voix Kokoro peu naturelle ; essai de Chatterbox Multilingual (gratuit, licence MIT)",
+ "pourquoi": "26/10/2026 (2e essai) : l'utilisateur trouve un ton anglais aux deux vidéos (Kokoro et Chatterbox voix par défaut) ; essai de Chatterbox avec une voix de référence française (reference-voix-francaise.wav, faite avec la voix française ff_siwis de Kokoro, corpus SIWIS CC BY 4.0)",
  "phrases": [
   "Allonge-toi sur le dos, les bras le long du corps.",
   "Ramène tes orteils vers ta tête, et serre les muscles des pieds et des chevilles. Tiens.",
   "Et relâche. Imagine tes pieds qui deviennent plus lourds."
  ],
  "variantes": [
-  {"nom": "D-chatterbox-naturelle", "expressivite": 0.5, "rythme": 0.5, "temperature": 0.8},
-  {"nom": "E-chatterbox-posee", "expressivite": 0.35, "rythme": 0.3, "temperature": 0.7},
-  {"nom": "F-chatterbox-tres-calme", "expressivite": 0.25, "rythme": 0.2, "temperature": 0.6}
+  {
+   "nom": "G-chatterbox-voix-francaise-posee",
+   "reference": "reference-voix-francaise.wav",
+   "expressivite": 0.35,
+   "rythme": 0.3,
+   "temperature": 0.7
+  },
+  {
+   "nom": "H-chatterbox-voix-francaise-accent-neutre",
+   "reference": "reference-voix-francaise.wav",
+   "expressivite": 0.35,
+   "rythme": 0.0,
+   "temperature": 0.7
+  },
+  {
+   "nom": "I-chatterbox-voix-francaise-expressive",
+   "reference": "reference-voix-francaise.wav",
+   "expressivite": 0.5,
+   "rythme": 0.0,
+   "temperature": 0.8
+  }
  ]
 }

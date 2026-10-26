@@ -16,8 +16,11 @@ for v in demande["variantes"]:
     morceaux = []
     for phrase in demande["phrases"]:
         torch.manual_seed(v.get("graine", 42))
+        # « reference » (26/10/2026) : voix française à imiter, pour éviter l'accent anglais de la voix par défaut ;
+        # rythme 0 = réglage conseillé par Resemble AI pour ne pas reprendre l'accent de la référence.
+        ref = os.path.join(D, v["reference"]) if v.get("reference") else None
         w = modele.generate(phrase, language_id="fr", exaggeration=v["expressivite"], cfg_weight=v["rythme"],
-                            temperature=v.get("temperature", 0.8))
+                            temperature=v.get("temperature", 0.8), audio_prompt_path=ref)
         tmp = os.path.join(D, "_tmp.wav")
         torchaudio.save(tmp, w, modele.sr)
         morceaux.append(charger_audio(tmp))
