@@ -1052,3 +1052,17 @@ probable fort / moyen / faible, méthode écrite.
   (gh-pages), 7 pages vérifiées en ligne (200), IndexNow 200 pour 9 adresses.
 - Reste : illustration dessinée du schéma quand le quota Hugging Face reviendra ; épingle reliée à l'article
   (nécessite l'accord de l'utilisateur pour `ARTICLES_SITE` de pins.yml) ; audio guidé de relaxation (facultatif).
+
+## 86. Pinterest : épingle reliée à l'article « Relaxation Jacobson » (26/10/2026, accord de l'utilisateur)
+
+- L'épingle « Relaxation au lit : la méthode Jacobson en 4 zones » est déjà publiée (09/10) : une 2e épingle sur la
+  méthode serait un doublon de sujet. Angle retenu : choisir sa relaxation selon son soir (partie « Relaxation
+  musculaire, respiration lente ou scène calme : comment choisir ? » de l'article, étude du Luther College 2021).
+- Pin ajouté en tête de `pins.json` : « Relaxation pour s'endormir : 3 techniques au choix » (50 caractères), thème
+  sommeil, `article` = relaxation-jacobson, `description_article` (469 caractères) et `description` avec appel au guide
+  sommeil (481), 8 hashtags, fins uniques. Photo dédiée `pexels-6941123.jpg` (jamais publiée, passée en « dedie »).
+- `pins.yml` : `relaxation-jacobson` ajouté à `ARTICLES_SITE` (accord de l'utilisateur pour ce changement).
+- Contrôles : anti_doublons accepte le titre (plus proche 0,53), verifier_banque 0 doublon, pins existants intacts,
+  simulation du pipeline en mode TEST : cible « article relaxation-jacobson », photo dédiée, visuel fiche relu à l'œil
+  (texte et photo séparés). Une 2e formulation « enchaîner les deux » (ambiguë après 3 techniques) corrigée.
+- Non fait : `boule-au-ventre` n'est pas encore dans `ARTICLES_SITE` (aucun pin ne le vise pour l'instant).
