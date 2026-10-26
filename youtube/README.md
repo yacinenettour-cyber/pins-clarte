@@ -15,6 +15,8 @@ Mis en place le 20/10/2026 à la demande de l'utilisateur (« je veux tout autom
    plan contient `"bloquee": true` (phase de rodage proposée à l'utilisateur). Sans compte YouTube connecté dans
    Composio : statut `attente_connexion_youtube` (remettre `a_fabriquer` une fois la connexion faite).
 
+**Envoi manuel (26/10/2026)** : avec `"envoi_manuel": true` dans le plan, la vidéo est fabriquée et contrôlée mais rien n'est envoyé (l'envoi par Composio échoue, voir le journal du 22/10) : statut `fabriquee`, vidéo et Short dans l'artefact du run (onglet Actions, 7 jours), miniature et sous-titres dans le dossier du plan ; l'utilisateur met en ligne à la main.
+
 Statuts : `a_fabriquer` → `fabriquee` → `en_ligne_non_repertoriee` → `publiee` (ou `erreur_fabrication`,
 `attente_connexion_youtube`, `attente_quota_youtube`). **Quota YouTube** (constaté le 20/10/2026 : erreur 429 « Video
 Uploads per day », quota du projet Google partagé de Composio) : statut `attente_quota_youtube` et `reessai_apres` =

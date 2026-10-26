@@ -1,0 +1,443 @@
+{
+ "slug": "relaxation-jacobson",
+ "statut": "a_fabriquer",
+ "envoi_manuel": true,
+ "bloquee": true,
+ "publication_prevue": "2026-10-30T18:00:00Z",
+ "duree_totale_min": 30,
+ "article": "/relaxation-jacobson/",
+ "ecran": {
+  "titre": "Détendre tout ton corps pour dormir",
+  "sous_titre": "Relaxation musculaire progressive guidée · voix douce · musique"
+ },
+ "brume": [
+  "Tout le corps relâché"
+ ],
+ "photos": [
+  {
+   "partie": "intro",
+   "nom": "unsplash-GO6Szy_luVg.jpg",
+   "url": "https://images.unsplash.com/photo-1775378069772-0ce8c78652e6?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "daniel castillo",
+   "lum": 0.9
+  },
+  {
+   "partie": "Comprendre",
+   "nom": "unsplash-KT3WlrL_bsg.jpg",
+   "url": "https://images.unsplash.com/photo-1487621167305-5d248087c724?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Paul Pastourmatzis",
+   "lum": 0.8
+  },
+  {
+   "partie": "S'installer",
+   "nom": "unsplash-mq8FusIZ-ac.jpg",
+   "url": "https://images.unsplash.com/photo-1703783010857-9bd7a7b97c50?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Polina Kuzovkova",
+   "lum": 1.0
+  },
+  {
+   "partie": "Respirer lentement",
+   "nom": "unsplash-Su-fz2FOeGw.jpg",
+   "url": "https://images.unsplash.com/photo-1660162129457-d099326c2660?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Mario Häfliger",
+   "lum": 0.9,
+   "short": true
+  },
+  {
+   "partie": "Les pieds et les jambes",
+   "nom": "unsplash-K54o7K3A1o0.jpg",
+   "url": "https://images.unsplash.com/photo-1534258690312-27d7966899e1?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Colter Olmstead",
+   "lum": 0.9
+  },
+  {
+   "partie": "Le ventre et la poitrine",
+   "nom": "unsplash-j3CjZYckM88.jpg",
+   "url": "https://images.unsplash.com/photo-1533757879476-8f4a3cb1ae4b?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Emma Harper",
+   "lum": 0.8
+  },
+  {
+   "partie": "Les bras et les épaules",
+   "nom": "unsplash-BiBM6WVuKUw.jpg",
+   "url": "https://images.unsplash.com/photo-1724019576112-08e9e0024a64?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Dylan Crawford",
+   "lum": 0.85
+  },
+  {
+   "partie": "Le visage",
+   "nom": "unsplash-SrASYZZpyjw.jpg",
+   "url": "https://images.unsplash.com/photo-1506452305024-9d3f02d1c9b5?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Kyle Glenn",
+   "lum": 0.85
+  },
+  {
+   "partie": "Tout le corps relâché",
+   "nom": "unsplash-1E3gWJFOXms.jpg",
+   "url": "https://images.unsplash.com/photo-1755918909925-f62b86d93c2a?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Ahmet Yüksek",
+   "lum": 1.0
+  },
+  {
+   "partie": "Glisser vers le sommeil",
+   "nom": "unsplash-zKHNnFhGYmE.jpg",
+   "url": "https://images.unsplash.com/photo-1788086602843-3f9556439535?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "ji tuneji3_3",
+   "lum": 0.9
+  },
+  {
+   "partie": "fin",
+   "nom": "unsplash-phIFdC6lA4E.jpg",
+   "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Benjamin Voros",
+   "lum": 0.85
+  }
+ ],
+ "script": [
+  [
+   "pause",
+   3
+  ],
+  [
+   "dire",
+   "Bonsoir.",
+   1.5
+  ],
+  [
+   "dire",
+   "Cette relaxation t'accompagne quand ton corps reste crispé au moment de dormir.",
+   2
+  ],
+  [
+   "dire",
+   "Écoute-la seulement allongé, au calme, jamais en conduisant.",
+   2
+  ],
+  [
+   "dire",
+   "Si une partie de ton corps est blessée ou douloureuse, ne la contracte pas : laisse-la simplement au repos.",
+   3
+  ],
+  [
+   "titre",
+   "Comprendre",
+   4
+  ],
+  [
+   "dire",
+   "La méthode que tu vas suivre s'appelle la relaxation musculaire progressive. On la doit à Jacobson, qui l'a proposée il y a près d'un siècle.",
+   2.5
+  ],
+  [
+   "dire",
+   "Le principe est simple : tu serres un groupe de muscles quelques secondes, puis tu le relâches plus longtemps, pour bien sentir la différence.",
+   2.5
+  ],
+  [
+   "dire",
+   "Des chercheurs de l'université Putra, en Malaisie, ont rassemblé quatorze essais. La qualité du sommeil ressentie s'améliorait, surtout chez les adultes de moins de cinquante-cinq ans.",
+   2.5
+  ],
+  [
+   "dire",
+   "Le déroulé de ce soir est celui d'une équipe de l'université de médecine du Fujian, en Chine : contracter trois à cinq secondes, puis relâcher dix à quinze secondes, des pieds jusqu'au visage.",
+   2.5
+  ],
+  [
+   "dire",
+   "Chez quelques personnes anxieuses, se relaxer fait d'abord monter la tension. Si c'est ton cas, arrête simplement, et parles-en à ton médecin.",
+   3
+  ],
+  [
+   "titre",
+   "S'installer",
+   4
+  ],
+  [
+   "dire",
+   "Allonge-toi sur le dos, les bras le long du corps.",
+   3
+  ],
+  [
+   "dire",
+   "Si tu le souhaites, ferme doucement les yeux.",
+   4
+  ],
+  [
+   "dire",
+   "Sens le poids de ton corps sur le matelas. Tu n'as rien à retenir.",
+   6
+  ],
+  [
+   "titre",
+   "Respirer lentement",
+   4
+  ],
+  [
+   "dire",
+   "Commence par ralentir ta respiration. Suis le cercle à l'écran, si tes yeux sont encore ouverts.",
+   3
+  ],
+  [
+   "dire",
+   "Tu inspires doucement par le nez pendant quatre temps, et tu expires lentement pendant six temps.",
+   3
+  ],
+  [
+   "souffle",
+   4,
+   true
+  ],
+  [
+   "dire",
+   "Continue à ton rythme. L'expiration est un peu plus longue que l'inspiration.",
+   2
+  ],
+  [
+   "souffle",
+   4,
+   false
+  ],
+  [
+   "dire",
+   "Très bien. Laisse ta respiration redevenir naturelle.",
+   5
+  ],
+  [
+   "titre",
+   "Les pieds et les jambes",
+   4
+  ],
+  [
+   "dire",
+   "À chaque fois, contracte assez pour sentir la tension, jamais au point d'avoir mal.",
+   3
+  ],
+  [
+   "dire",
+   "Ramène tes orteils vers ta tête, et serre les muscles des pieds et des chevilles. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Et relâche. Imagine tes pieds qui deviennent plus lourds.",
+   12
+  ],
+  [
+   "dire",
+   "Pousse maintenant tes pieds vers l'avant, pour tendre les mollets. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Relâche. Tes mollets deviennent souples et lourds.",
+   12
+  ],
+  [
+   "dire",
+   "Serre tes cuisses l'une contre l'autre. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Et relâche. Laisse tes jambes s'enfoncer dans le matelas.",
+   13
+  ],
+  [
+   "titre",
+   "Le ventre et la poitrine",
+   4
+  ],
+  [
+   "dire",
+   "Contracte les muscles des hanches et de la taille. Garde la position.",
+   5
+  ],
+  [
+   "dire",
+   "Relâche. Laisse-les revenir à leur état de départ.",
+   12
+  ],
+  [
+   "dire",
+   "Inspire profondément, et retiens ton souffle en sentant ta poitrine se tendre.",
+   5
+  ],
+  [
+   "dire",
+   "Puis expire lentement, en relâchant tout.",
+   12
+  ],
+  [
+   "titre",
+   "Les bras et les épaules",
+   4
+  ],
+  [
+   "dire",
+   "Serre les poings, et tends les muscles des avant-bras. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Et ouvre les mains. Laisse les doigts se détendre.",
+   12
+  ],
+  [
+   "dire",
+   "Tends maintenant tes bras entiers, de l'épaule jusqu'aux poings. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Relâche. Tes bras retombent, lourds, le long du corps.",
+   12
+  ],
+  [
+   "dire",
+   "Monte tes épaules vers tes oreilles. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Et laisse-les retomber. Sens ta nuque qui se détend.",
+   13
+  ],
+  [
+   "titre",
+   "Le visage",
+   4
+  ],
+  [
+   "dire",
+   "Plisse le front, et fronce les sourcils. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Relâche. Ton front devient lisse.",
+   12
+  ],
+  [
+   "dire",
+   "Serre les dents, en étirant les coins de la bouche. Tiens.",
+   5
+  ],
+  [
+   "dire",
+   "Et relâche. Laisse ta bouche s'entrouvrir légèrement.",
+   14
+  ],
+  [
+   "titre",
+   "Tout le corps relâché",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, laisse ton attention parcourir tout ton corps, des pieds jusqu'à la tête.",
+   5
+  ],
+  [
+   "dire",
+   "Si une zone est encore tendue, imagine que ton souffle va vers elle, et laisse-la se relâcher.",
+   8
+  ],
+  [
+   "dire",
+   "Tes pieds sont lourds. Tes jambes sont lourdes.",
+   8
+  ],
+  [
+   "dire",
+   "Ton ventre est souple. Tes bras reposent.",
+   8
+  ],
+  [
+   "dire",
+   "Tes épaules sont basses. Ton visage est calme.",
+   10
+  ],
+  [
+   "dire",
+   "Tu n'as plus rien à faire. Le matelas te porte entièrement.",
+   14
+  ],
+  [
+   "titre",
+   "Glisser vers le sommeil",
+   4
+  ],
+  [
+   "dire",
+   "Bientôt, ma voix va se taire. La musique va continuer encore longtemps.",
+   5
+  ],
+  [
+   "dire",
+   "Si tu dors déjà, continue simplement de dormir.",
+   6
+  ],
+  [
+   "dire",
+   "Et si tu es encore éveillé, ce n'est pas grave. Le repos compte aussi.",
+   7
+  ],
+  [
+   "dire",
+   "Laisse ton corps détendu t'emmener, doucement, vers le sommeil. Bonne nuit.",
+   5
+  ]
+ ],
+ "miniature": {
+  "photo": "unsplash-GO6Szy_luVg.jpg",
+  "zoom": 1.1,
+  "cadrage_x": 0.5,
+  "cadrage_y": 0.5,
+  "ligne1": "Corps crispé",
+  "ligne2": "au moment de dormir ?",
+  "ligne3": "Relaxation guidée · 30 min",
+  "pastille": "Méthode Jacobson · voix douce"
+ },
+ "short": {
+  "titre": "Respire avec moi avant de relâcher tout ton corps #sommeil #relaxation",
+  "description": "Respiration 4-6 pour préparer la relaxation musculaire du soir.",
+  "haut1": "Respire avec moi",
+  "haut2": "pour détendre ton corps",
+  "bas1": "Relaxation complète (30 min) sur la chaîne"
+ },
+ "youtube": {
+  "titre": "Relaxation Jacobson pour dormir : détendre tout le corps (voix guidée)",
+  "accroche": "Relaxation de Jacobson guidée pour s'endormir : une dizaine de minutes de voix douce pour détendre le corps muscle après muscle, des pieds jusqu'au visage, puis de la musique pour dormir (30 minutes en tout).",
+  "libelle_article": "La relaxation de Jacobson pas à pas et ce que disent les études (article sourcé)",
+  "guide": "sommeil",
+  "description": "Pour les soirs où ton corps reste crispé : la vidéo commence par 1 minute pour comprendre la méthode (études citées plus bas), puis te guide zone par zone. Contracte assez pour sentir la tension, jamais au point d'avoir mal. Si une zone est blessée ou douloureuse, laisse-la au repos. Si tu t'endors avant la fin, c'est parfait.",
+  "sources": [
+   "Li et al., Frontiers in Public Health, 2026 (Université Putra Malaysia)",
+   "Xiao et al., Medicine, 2020 (Fujian Medical University Union Hospital)",
+   "Braith, McCullough et Bush, Journal of Behavior Therapy and Experimental Psychiatry, 1988 (Virginia Commonwealth University)"
+  ],
+  "tags": [
+   "relaxation jacobson",
+   "relaxation musculaire progressive",
+   "relaxation pour dormir",
+   "relaxation pour s'endormir",
+   "relaxation guidée",
+   "relaxation profonde",
+   "méditation guidée sommeil",
+   "méditation pour dormir",
+   "détente musculaire",
+   "corps tendu le soir",
+   "méditation française",
+   "voix douce",
+   "musique pour dormir",
+   "endormissement"
+  ],
+  "hashtags": [
+   "#relaxation",
+   "#sommeil",
+   "#méditationguidée"
+  ],
+  "categorie": "26"
+ }
+}

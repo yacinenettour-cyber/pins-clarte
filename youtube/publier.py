@@ -72,6 +72,11 @@ def prochain_reessai(maintenant):
 
 def envoyer(slug):
     plan, trav = lire_plan(slug), dossier_travail(slug)
+    if plan.get("envoi_manuel"):
+        # 26/10/2026 : l'envoi par Composio n'est pas fiable (journal, 22/10) ; la vidéo reste dans l'artefact du run
+        # (onglet Actions, 7 jours) et l'utilisateur la met en ligne à la main avec la miniature et les sous-titres.
+        print(f"{slug} : envoi manuel, rien n'est envoyé à YouTube")
+        return
     y = plan["youtube"]
     try:
         data = executer("YOUTUBE_UPLOAD_VIDEO", {
