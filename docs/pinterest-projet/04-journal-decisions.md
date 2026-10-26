@@ -1082,3 +1082,30 @@ probable fort / moyen / faible, méthode écrite.
   `chatterbox_posee` dans `audio.py`, crédit de voix adapté dans la description.
 - 1re fabrication (voix Kokoro, non utilisée) : tous les contrôles passés ; miniature vérifiée à l'œil, la lune
   touchait le titre → zoom 1,3 et cadrage à gauche pour la nouvelle fabrication.
+
+
+## 88. Lundi 26/10/2026 : article « Sommeil léger », relance des psychologues, prospection, épingles illustrées
+
+- **Article** `/sommeil-leger/` (« Sommeil léger : réveillé au moindre bruit, que faire ? », titre SEO 54 caractères,
+  description 151) : premier sujet de la liste ; suggestions Google relues le 26/10 ; angle distinct de « Réveil à 4h »
+  (qui garde la fin de nuit, avec renvoi). 12 sources : 8 études vérifiées une par une dans PubMed (titre, revue, année,
+  affiliation du premier auteur, résumé ; aucun chiffre hors résumé) : Ohayon/Stanford 2004, Riemann/Fribourg-en-Brisgau
+  2010, Drake/Henry Ford 2013, Ebrahim/London Sleep Centre 2013, Dang-Vu/Harvard 2010, Basner/Pennsylvanie 2014,
+  Locihová/Comenius 2018, Riedy/Pennsylvanie 2021 ; plus Inserm (sommeil relu le 26/10, insomnie), dépliant INSV et
+  Santé.fr (déjà vérifiés). Seuils de bruit de l'OMS non cités (chiffres seulement dans le PDF, non lu). Photo
+  `pexels-6753359.jpg` (jamais publiée, passée en « dedie », réservée au site). Liens depuis Réveil à 4h, Hypervigilance
+  et la page thème Mieux dormir. Contrôles : 0 lien cassé, titre et description uniques, W3C 0 erreur (4 pages),
+  axe-core 0 violation (deux thèmes), 320 px sans débordement, recadrage de la photo regardé. Publié, page vérifiée en
+  ligne, IndexNow 200 (6 adresses). 3 épingles non publiées reliées (Nuits de tempête, Sommeil léger : 4 signes, Mieux
+  dormir après 40 ans) ; verifier_banque 0 doublon. « Réveils nocturnes : 3 par nuit » non reliée (chiffres non
+  sourcés). 8 sujets restent à écrire.
+- **ARTICLES_SITE (pins.yml) : en attente.** L'ajout de `sommeil-leger` a été testé (simulation : cible « article
+  sommeil-leger ») mais l'envoi sur main d'un fichier de workflow a été refusé par le contrôle de sécurité de la session ;
+  modification gardée de côté (git stash) en attendant l'accord explicite de l'utilisateur. D'ici là, les 3 épingles
+  reliées mènent au guide comme avant (article_du_pin ignore un article absent d'ARTICLES_SITE).
+- **Relance des psychologues** (section 70) : 4 relances uniques ; Gmail a recopié sous la relance le message du 15/10
+  qui citait le métier de l'auteur (impossible à retirer) ; noté dans `docs/relecture-professionnelle.md`.
+- **Prospection** : relances envoyées en messages neufs sans citation (les premiers messages citaient le métier) ;
+  détail dans le registre (passage du 26/10). Un e-mail d'essai « x » parti par erreur vers une adresse fictive, revenu
+  en erreur.
+- **Épingles illustrées** : quota Hugging Face épuisé, rien fabriqué (meilleures-epingles.md, 26/10).

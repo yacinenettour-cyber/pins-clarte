@@ -1263,7 +1263,9 @@
   ],
   "description": "Les nuits de tempête, chaque rafale ou volet qui claque relance l'alerte. Trois façons de dormir quand même 👉 accepter la pluie comme un bruit de fond régulier plutôt que de guetter le prochain coup 👉 fermer volets et rideaux pour étouffer le vent 👉 compter tes expirations au lieu des bruits. Le corps s'habitue plus vite qu'on ne le croit. Si l'inquiétude grandit dans le noir, le guide gratuit propose des exercices pour calmer le mental. #sommeil #orage #soir #bruit #calme #lit #nuit #repos",
   "theme": "sommeil",
-  "photo": "dedie-pluie-nuit.jpg"
+  "photo": "dedie-pluie-nuit.jpg",
+  "article": "sommeil-leger",
+  "description_article": "Les nuits de tempête, chaque rafale ou volet qui claque relance l'alerte. Trois façons de dormir quand même 👉 accepter la pluie comme un bruit de fond régulier plutôt que de guetter le prochain coup 👉 fermer volets et rideaux pour étouffer le vent 👉 compter tes expirations au lieu des bruits. Le corps s'habitue plus vite qu'on ne le croit. Bouchons d'oreilles, bruit blanc : ce que disent les études, dans l'article en lien. #sommeil #orage #soir #bruit #calme #lit #nuit #repos"
  },
  {
   "titre": "Réveil à 5h du matin : 3 pistes pour comprendre",
@@ -1937,7 +1939,9 @@
    "Tu dors mieux en vacances qu'en semaine"
   ],
   "description": "On accuse souvent le matelas, alors que le vrai frein est parfois un système nerveux qui reste en veille la nuit. Quatre signes pointent vers le stress : des réveils au moindre bruit, des rêves agités, une mâchoire serrée au lever, et des nuits bien meilleures en vacances. Si l'endormissement reste difficile, le guide gratuit rassemble des exercices pour calmer le mental du soir, sans matériel. #sommeil #stress #bruxisme #anxiete #insomnie #fatigue #mieuxdormir #routinedusoir",
-  "theme": "sommeil"
+  "theme": "sommeil",
+  "article": "sommeil-leger",
+  "description_article": "On accuse souvent le matelas, alors que le vrai frein est parfois un système nerveux qui reste en veille la nuit. Quatre signes pointent vers le stress : des réveils au moindre bruit, des rêves agités, une mâchoire serrée au lever, et des nuits bien meilleures en vacances. Âge, café, alcool, bruit : ce qui rend le sommeil léger et ce qui aide vraiment, dans l'article complet en lien. #sommeil #stress #bruxisme #anxiete #insomnie #fatigue #mieuxdormir #routinedusoir"
  },
  {
   "titre": "Caféine cachée : 4 sources à surveiller si tu stresses",
@@ -4158,7 +4162,9 @@
    "Les réveils nocturnes deviennent plus fréquents"
   ],
   "description": "Après 40 ans, le sommeil change naturellement : la part de sommeil profond diminue, le cortisol commence à monter plus tôt le matin, et les réveils nocturnes deviennent plus fréquents. Ce n'est pas une maladie, c'est une évolution physiologique. Pour les soirs agités, le guide gratuit rassemble des exercices pour calmer le mental du soir, sans matériel. #sommeil #age #sommeilprofond #cortisol #melatonine #reveilnocturne #mieuxdormir #routinedusoir",
-  "theme": "sommeil"
+  "theme": "sommeil",
+  "article": "sommeil-leger",
+  "description_article": "Après 40 ans, le sommeil change naturellement : la part de sommeil profond diminue, le cortisol commence à monter plus tôt le matin, et les réveils nocturnes deviennent plus fréquents. Ce n'est pas une maladie, c'est une évolution physiologique. Pourquoi le sommeil devient plus léger avec les années, ce qui aide, et quand en parler au médecin : article complet en lien. #sommeil #age #sommeilprofond #cortisol #melatonine #reveilnocturne #mieuxdormir #routinedusoir"
  },
  {
   "titre": "Sommeil des parents : 4 conseils autour du coucher",
