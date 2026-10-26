@@ -44,7 +44,9 @@ def description(plan, tl):
     if y.get("sources"):
         morceaux.append("Sources :\n" + "\n".join("· " + s for s in y["sources"]))
     photographes = ", ".join(dict.fromkeys(p["photographe"] for p in plan["photos"] if p.get("photographe")))
-    voix = ("Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT).\n"
+    voix = ("Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT ; voix de référence française "
+            "issue du corpus SIWIS, CC BY 4.0).\n" if plan.get("voix") == "chatterbox_francais" else
+            "Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT).\n"
             if str(plan.get("voix", "")).startswith("chatterbox") else
             "Voix : voix de synthèse (Kokoro, licence Apache 2.0 ; voix « ff_siwis » issue du corpus SIWIS, CC BY 4.0).\n")
     morceaux.append(voix +

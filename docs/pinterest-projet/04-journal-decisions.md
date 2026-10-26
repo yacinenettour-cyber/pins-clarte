@@ -1109,3 +1109,8 @@ probable fort / moyen / faible, méthode écrite.
   détail dans le registre (passage du 26/10). Un e-mail d'essai « x » parti par erreur vers une adresse fictive, revenu
   en erreur.
 - **Épingles illustrées** : quota Hugging Face épuisé, rien fabriqué (meilleures-epingles.md, 26/10).
+
+- **YouTube, 26/10 au soir** : l'utilisateur a regardé les deux vidéos et trouve « un ton anglais ». 2e essai de voix
+  (Chatterbox imitant une voix de référence française faite avec Kokoro ff_siwis) : extraits G/H/I ; choix de
+  l'utilisateur : **H** (rythme 0, réglage contre l'accent). Réglage `chatterbox_francais` dans `audio.py`, plan
+  relaxation-jacobson remis à fabriquer (sans changement de workflow).

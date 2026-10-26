@@ -4,7 +4,7 @@ Produit travail/<slug>/piste.wav, voix.wav (voix seule, pour le contrôle) et ti
 import json, os, subprocess, sys
 import numpy as np
 import soundfile as sf
-from commun import SR, MUSIQUE, BOLS, MODELES, charger_audio, dossier_travail, lire_plan
+from commun import DEPOT, SR, MUSIQUE, BOLS, MODELES, charger_audio, dossier_travail, lire_plan
 
 INSP, EXP = 4.0, 6.0
 VITESSE = 0.82
@@ -29,6 +29,11 @@ REGLAGES_VOIX = {
     # l'utilisateur le 26/10/2026 (essais_voix/E-chatterbox-posee.mp3) : même réglages, aucun filtre ajouté.
     "chatterbox_posee": {"moteur": "chatterbox", "expressivite": 0.35, "rythme": 0.3, "temperature": 0.7, "graine": 42,
                          "filtre": "highpass=f=70", "niveau": 0.80},
+    # Même voix, imitant une voix de référence française (youtube/voix/reference-francaise.wav, faite avec la voix
+    # ff_siwis de Kokoro, corpus SIWIS CC BY 4.0) et rythme 0 (réglage conseillé contre l'accent de la référence) :
+    # extrait « H » choisi à l'oreille par l'utilisateur le 26/10/2026, qui trouvait un ton anglais aux deux vidéos.
+    "chatterbox_francais": {"moteur": "chatterbox", "expressivite": 0.35, "rythme": 0.0, "temperature": 0.7, "graine": 42,
+                            "reference": "youtube/voix/reference-francaise.wav", "filtre": "highpass=f=70", "niveau": 0.80},
 }
 # mots que le phonétiseur lit en anglais (constaté le 20/10) : remplacés dans les phonèmes
 CORRECTIONS = {"(en)dˈɒs(fr)": "dˈo", "(en)ɹˈɪθm(fr)": "ʁˈitm"}
@@ -74,8 +79,9 @@ class VoixChatterbox:
         if texte not in self.cache:
             import torch, torchaudio
             torch.manual_seed(self.r["graine"])
+            ref = os.path.join(DEPOT, self.r["reference"]) if self.r.get("reference") else None
             w = self.m.generate(texte, language_id="fr", exaggeration=self.r["expressivite"], cfg_weight=self.r["rythme"],
-                                temperature=self.r["temperature"])
+                                temperature=self.r["temperature"], audio_prompt_path=ref)
             torchaudio.save(tmp, w, self.m.sr)
             a = charger_audio(tmp)
             env = np.abs(a).max(axis=1)
