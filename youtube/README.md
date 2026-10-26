@@ -15,6 +15,8 @@ Mis en place le 20/10/2026 à la demande de l'utilisateur (« je veux tout autom
    plan contient `"bloquee": true` (phase de rodage proposée à l'utilisateur). Sans compte YouTube connecté dans
    Composio : statut `attente_connexion_youtube` (remettre `a_fabriquer` une fois la connexion faite).
 
+**Voix (26/10/2026)** : champ `voix` du plan, réglages dans `REGLAGES_VOIX` (`audio.py`). Sans ce champ : Kokoro « B » (1re vidéo). L'utilisateur trouve Kokoro peu naturel ; après écoute d'extraits (`essais_voix/`, workflow `essai-voix.yml`), il a choisi `chatterbox_posee` : Chatterbox Multilingual (Resemble AI, licence MIT, gratuit), expressivité 0,35, rythme 0,3, température 0,7. Le crédit de la description suit la voix utilisée.
+
 **Envoi manuel (26/10/2026)** : avec `"envoi_manuel": true` dans le plan, la vidéo est fabriquée et contrôlée mais rien n'est envoyé (l'envoi par Composio échoue, voir le journal du 22/10) : statut `fabriquee`, vidéo et Short dans l'artefact du run (onglet Actions, 7 jours), miniature et sous-titres dans le dossier du plan ; l'utilisateur met en ligne à la main.
 
 Statuts : `a_fabriquer` → `fabriquee` → `en_ligne_non_repertoriee` → `publiee` (ou `erreur_fabrication`,

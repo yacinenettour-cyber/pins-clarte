@@ -1,6 +1,6 @@
 {
  "slug": "relaxation-jacobson",
- "statut": "fabriquee",
+ "statut": "a_fabriquer",
  "envoi_manuel": true,
  "bloquee": true,
  "publication_prevue": "2026-10-30T18:00:00Z",
@@ -391,8 +391,8 @@
  ],
  "miniature": {
   "photo": "unsplash-GO6Szy_luVg.jpg",
-  "zoom": 1.1,
-  "cadrage_x": 0.5,
+  "zoom": 1.3,
+  "cadrage_x": 0.1,
   "cadrage_y": 0.5,
   "ligne1": "Corps crispé",
   "ligne2": "au moment de dormir ?",
@@ -439,5 +439,6 @@
    "#méditationguidée"
   ],
   "categorie": "26"
- }
+ },
+ "voix": "chatterbox_posee"
 }

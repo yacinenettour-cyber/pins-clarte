@@ -1066,3 +1066,19 @@ probable fort / moyen / faible, méthode écrite.
   simulation du pipeline en mode TEST : cible « article relaxation-jacobson », photo dédiée, visuel fiche relu à l'œil
   (texte et photo séparés). Une 2e formulation « enchaîner les deux » (ambiguë après 3 techniques) corrigée.
 - Non fait : `boule-au-ventre` n'est pas encore dans `ARTICLES_SITE` (aucun pin ne le vise pour l'instant).
+
+## 87. YouTube : 2e vidéo « Relaxation Jacobson pour dormir », voix Chatterbox (26/10/2026)
+
+- 1re vidéo (ruminations-soir, mise en ligne à la main) : 25 vues, 2 j'aime selon l'utilisateur. 2e vidéo demandée :
+  `videos_youtube/relaxation-jacobson/` (sujet du nouvel article, déroulé du Fujian : contracter 3 à 5 s, relâcher
+  10 à 15 s ; précautions de l'article dans la voix ; 11 photos Unsplash choisies sur leur description, Unsplash
+  étant bloqué depuis le conteneur).
+- Envoi automatique par Composio toujours abandonné : option `envoi_manuel` (`publier.py`), la vidéo reste dans
+  l'artefact du run et l'utilisateur la met en ligne à la main.
+- Voix : l'utilisateur veut une voix plus douce puis plus naturelle que Kokoro ; réglages Kokoro adoucis (B, C)
+  refusés (« pas naturelle »). Essai de Chatterbox Multilingual (Resemble AI, licence MIT, gratuit) par le workflow
+  `essai-voix.yml` (accord de l'utilisateur), extraits D/E/F dans `essais_voix/` ; choix de l'utilisateur : **E
+  (posée)**. `youtube.yml` modifié avec son accord (Python 3.11, installation de Chatterbox), réglage
+  `chatterbox_posee` dans `audio.py`, crédit de voix adapté dans la description.
+- 1re fabrication (voix Kokoro, non utilisée) : tous les contrôles passés ; miniature vérifiée à l'œil, la lune
+  touchait le titre → zoom 1,3 et cadrage à gauche pour la nouvelle fabrication.

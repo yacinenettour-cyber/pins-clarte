@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"  # 3.11 (26/10/2026) : version avec laquelle Chatterbox a été essayé
       - name: Vidéos à fabriquer
         id: liste
         run: |
@@ -47,6 +47,9 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install -q kokoro-onnx soundfile sherpa-onnx scipy pillow requests numpy
+          # voix Chatterbox Multilingual (gratuite, licence MIT), choisie par l'utilisateur le 26/10/2026 (réglage « chatterbox_posee »)
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts
       - name: Modèles en cache
         if: steps.liste.outputs.slugs != ''
         uses: actions/cache@v4

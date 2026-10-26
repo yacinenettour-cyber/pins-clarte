@@ -44,7 +44,10 @@ def description(plan, tl):
     if y.get("sources"):
         morceaux.append("Sources :\n" + "\n".join("· " + s for s in y["sources"]))
     photographes = ", ".join(dict.fromkeys(p["photographe"] for p in plan["photos"] if p.get("photographe")))
-    morceaux.append("Voix : voix de synthèse (Kokoro, licence Apache 2.0 ; voix « ff_siwis » issue du corpus SIWIS, CC BY 4.0).\n"
+    voix = ("Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT).\n"
+            if str(plan.get("voix", "")).startswith("chatterbox") else
+            "Voix : voix de synthèse (Kokoro, licence Apache 2.0 ; voix « ff_siwis » issue du corpus SIWIS, CC BY 4.0).\n")
+    morceaux.append(voix +
                     "Musique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 "
                     "http://creativecommons.org/licenses/by/4.0/\n"
                     f"Photos : Unsplash ({photographes}). Bols chantants : Freesound, domaine public (CC0).")

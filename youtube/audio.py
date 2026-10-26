@@ -25,6 +25,10 @@ REGLAGES_VOIX = {
         "highpass=f=80,lowpass=f=5200,equalizer=f=180:t=q:w=1:g=4,equalizer=f=2800:t=q:w=1.5:g=-6,"
         "equalizer=f=6000:t=q:w=1:g=-6,deesser=i=0.7,acompressor=threshold=-26dB:ratio=2:attack=40:release=500,"
         f"asetrate={int(SR * 0.94)},aresample={SR},atempo={1 / 0.94:.7f},aecho=0.85:0.65:60|110:0.18|0.12")},
+    # Voix Chatterbox Multilingual (Resemble AI, licence MIT, gratuite), réglage « E — posée » choisi à l'oreille par
+    # l'utilisateur le 26/10/2026 (essais_voix/E-chatterbox-posee.mp3) : même réglages, aucun filtre ajouté.
+    "chatterbox_posee": {"moteur": "chatterbox", "expressivite": 0.35, "rythme": 0.3, "temperature": 0.7, "graine": 42,
+                         "filtre": "highpass=f=70", "niveau": 0.80},
 }
 # mots que le phonétiseur lit en anglais (constaté le 20/10) : remplacés dans les phonèmes
 CORRECTIONS = {"(en)dˈɒs(fr)": "dˈo", "(en)ɹˈɪθm(fr)": "ʁˈitm"}
@@ -59,12 +63,37 @@ class Voix:
         return a
 
 
+class VoixChatterbox:
+    """Même usage que Voix ; chaque phrase est générée une fois (les mots de la respiration reviennent souvent)."""
+    def __init__(self, reglage):
+        from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+        self.r, self.cache = reglage, {}
+        self.m = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+
+    def dire(self, texte, tmp):
+        if texte not in self.cache:
+            import torch, torchaudio
+            torch.manual_seed(self.r["graine"])
+            w = self.m.generate(texte, language_id="fr", exaggeration=self.r["expressivite"], cfg_weight=self.r["rythme"],
+                                temperature=self.r["temperature"])
+            torchaudio.save(tmp, w, self.m.sr)
+            a = charger_audio(tmp)
+            env = np.abs(a).max(axis=1)
+            idx = np.where(env > 0.01)[0]
+            a = a[max(0, idx[0] - 800): idx[-1] + 4000]
+            f = min(len(a) // 4, 1200)
+            a[:f] *= np.linspace(0, 1, f)[:, None]
+            a[-f:] *= np.linspace(1, 0, f)[:, None]
+            self.cache[texte] = a
+        return self.cache[texte].copy()
+
+
 def fabriquer(slug):
     plan = lire_plan(slug)
     trav = dossier_travail(slug)
     tmp = os.path.join(trav, "_tts.wav")
     reglage = REGLAGES_VOIX[plan.get("voix", "standard")]
-    voix = Voix(reglage["vitesse"])
+    voix = VoixChatterbox(reglage) if reglage.get("moteur") == "chatterbox" else Voix(reglage["vitesse"])
     morceaux, cues, titres, souffles = [], [], [], []
     t = 0.0
     for el in plan["script"]:
