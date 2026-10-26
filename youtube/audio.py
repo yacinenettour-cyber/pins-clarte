@@ -11,13 +11,29 @@ VITESSE = 0.82
 # voix adoucie : aigus et sifflantes réduits, son plus chaud, léger écho de pièce
 DOUX = ("highpass=f=90,lowpass=f=7500,equalizer=f=220:t=q:w=1:g=2.5,equalizer=f=3200:t=q:w=1.4:g=-3.5,deesser=i=0.4,"
         "acompressor=threshold=-22dB:ratio=2.2:attack=25:release=300,aecho=0.85:0.55:45|85:0.14|0.09")
+# Réglages de voix choisis par vidéo (plan["voix"] = nom du réglage) ; sans champ « voix » : réglage de la 1re vidéo.
+# « plus_douce » et « tres_douce » (26/10/2026, demande de l'utilisateur : « une voix plus douce que dans la 1re vidéo ») :
+# plus lente, un peu plus grave (hauteur -4 % / -6 % à durée égale), aigus et sifflantes plus atténués, voix un peu
+# moins forte au-dessus de la musique.
+REGLAGES_VOIX = {
+    "standard": {"vitesse": VITESSE, "filtre": DOUX, "niveau": 0.80},
+    "plus_douce": {"vitesse": 0.76, "niveau": 0.72, "filtre": (
+        "highpass=f=80,lowpass=f=6000,equalizer=f=200:t=q:w=1:g=3.5,equalizer=f=3000:t=q:w=1.5:g=-5,"
+        "equalizer=f=6500:t=q:w=1:g=-4,deesser=i=0.6,acompressor=threshold=-24dB:ratio=2:attack=30:release=400,"
+        f"asetrate={int(SR * 0.96)},aresample={SR},atempo={1 / 0.96:.7f},aecho=0.85:0.6:50|95:0.16|0.10")},
+    "tres_douce": {"vitesse": 0.72, "niveau": 0.68, "filtre": (
+        "highpass=f=80,lowpass=f=5200,equalizer=f=180:t=q:w=1:g=4,equalizer=f=2800:t=q:w=1.5:g=-6,"
+        "equalizer=f=6000:t=q:w=1:g=-6,deesser=i=0.7,acompressor=threshold=-26dB:ratio=2:attack=40:release=500,"
+        f"asetrate={int(SR * 0.94)},aresample={SR},atempo={1 / 0.94:.7f},aecho=0.85:0.65:60|110:0.18|0.12")},
+}
 # mots que le phonétiseur lit en anglais (constaté le 20/10) : remplacés dans les phonèmes
 CORRECTIONS = {"(en)dˈɒs(fr)": "dˈo", "(en)ɹˈɪθm(fr)": "ʁˈitm"}
 MOTS_SOUFFLE = {"Inspire…": "Inspire doucement", "Expire…": "Expire lentement"}
 
 
 class Voix:
-    def __init__(self):
+    def __init__(self, vitesse=VITESSE):
+        self.vitesse = vitesse
         from kokoro_onnx import Kokoro
         self.k = Kokoro(os.path.join(MODELES, "kokoro-v1.0.onnx"), os.path.join(MODELES, "voices-v1.0.bin"))
 
@@ -31,7 +47,7 @@ class Voix:
         return ph
 
     def dire(self, texte, tmp):
-        a, sr = self.k.create(self.phonemes(texte), voice="ff_siwis", speed=VITESSE, lang="fr-fr", is_phonemes=True)
+        a, sr = self.k.create(self.phonemes(texte), voice="ff_siwis", speed=self.vitesse, lang="fr-fr", is_phonemes=True)
         sf.write(tmp, a, sr)
         a = charger_audio(tmp)
         env = np.abs(a).max(axis=1)
@@ -47,7 +63,8 @@ def fabriquer(slug):
     plan = lire_plan(slug)
     trav = dossier_travail(slug)
     tmp = os.path.join(trav, "_tts.wav")
-    voix = Voix()
+    reglage = REGLAGES_VOIX[plan.get("voix", "standard")]
+    voix = Voix(reglage["vitesse"])
     morceaux, cues, titres, souffles = [], [], [], []
     t = 0.0
     for el in plan["script"]:
@@ -85,10 +102,10 @@ def fabriquer(slug):
     brut = os.path.join(trav, "_voix.f32")
     voixp.tofile(brut)
     voixp = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ac", "2", "-ar", str(SR), "-i", brut,
-                                          "-af", DOUX, "-f", "f32le", "-ac", "2", "-ar", str(SR), "-"],
+                                          "-af", reglage["filtre"], "-f", "f32le", "-ac", "2", "-ar", str(SR), "-"],
                                          capture_output=True, check=True).stdout, np.float32).reshape(-1, 2)[:N].copy()
     os.remove(brut)
-    voixp *= 0.80 / max(1e-6, np.abs(voixp).max())
+    voixp *= reglage["niveau"] / max(1e-6, np.abs(voixp).max())
     sf.write(os.path.join(trav, "voix.wav"), voixp.mean(axis=1), SR)
 
     # musique bouclée avec fondu enchaîné de 8 s aussi longtemps que nécessaire
