@@ -74,6 +74,8 @@ Allongé dans ton lit, tu contractes chaque zone 3 à 5 secondes, puis tu la rel
 
 Les durées ne sont pas gravées dans le marbre. À l'hôpital du Hainan, les patients tenaient la contraction 10 à 15 secondes et le relâchement 15 à 20 secondes, en répétant chaque zone trois fois, à midi et avant de dormir [9]. Garde une seule règle, le relâchement dure plus longtemps que la contraction.
 
+Si ta mâchoire reste serrée aussi dans la journée, notre article sur la [mâchoire serrée et le stress](/machoire-serree-stress/) explique ce qui l'entretient et ce qui aide.
+
 Contracte franchement, mais sans aller jusqu'à la douleur. Si une zone est blessée ou douloureuse, saute-la. Dans l'étude du Fujian, l'exercice était interrompu dès qu'un patient se sentait mal [8].
 
 Les premiers soirs, tu vas sans doute compter les secondes et te demander si tu fais bien. Ce n'est pas grave. Si suivre la liste de tête t'empêche de te détendre, sache que les patients du Fujian, eux, se laissaient guider par un enregistrement [8].

@@ -1136,3 +1136,25 @@ probable fort / moyen / faible, méthode écrite.
   les chiffres seulement après lecture d'une page officielle.
 - **Vérifié** : W3C (0 erreur hors CSS déjà connues de l'accueil), axe 0 violation sur 4 pages × 2 thèmes, 21 pages en
   ligne avec le lien, IndexNow 200.
+
+## 90. Indexation Google vérifiée, dates corrigées, article « Mâchoire serrée et stress » (27/10/2026)
+
+- **Demande** : « Vérifie pourquoi certaines pages ne sont pas indexées sur mon site et envoie les liens que je dois
+  indexer ; si tu as des articles à créer, fais-le. »
+- **Constat (Search Console, inspection des 39 adresses du plan du site)** : 36 indexées ; 3 « inconnues de Google » :
+  `/boule-au-ventre/`, `/relaxation-jacobson/`, `/sommeil-leger/`, les trois plus récentes. Aucun blocage (réponse 200,
+  `index, follow`, canonique correcte, robots.txt ouvert) : Google n'avait pas relu le plan du site depuis le 25/10 à
+  16 h 38, avant leur mise en ligne. Plan du site renvoyé à Google par l'API le 27/10 ; indexation à demander à la main
+  dans la Search Console (l'API d'indexation de Google est réservée aux offres d'emploi et aux vidéos en direct).
+- **Dates de publication fausses corrigées** : 15 articles n'avaient pas de `date:` et prenaient la date par défaut
+  (08/10). Vraie date ajoutée pour 9 d'entre eux (date du premier commit) ; « Sommeil léger » affichait le 08/10 au
+  lieu du 26/10, ce qui pouvait le faire passer pour une page ancienne. Les 6 du 08/10 gardent la date par défaut,
+  exacte. À l'avenir, toujours mettre `date:` dans l'en-tête d'un nouvel article.
+- **Article « Mâchoire serrée et stress »** (`/machoire-serree-stress/`, sujet n° 4 de la liste) : 13 sources (NHS ×2,
+  Assurance maladie, Santé.fr, 9 études vérifiées dans PubMed avec affiliation). ameli.fr renvoyait 403 ce jour-là :
+  conseils pratiques pris au NHS, ajouté aux sources officielles du générateur (`TYPES_SOURCES`). Photo Unsplash
+  (engin akyurt, compresse contre la joue), réservée au site ; 2 autres candidates écartées. Liens ajoutés depuis
+  « Symptômes physiques du stress », « Relaxation Jacobson » et la page thème Stress.
+- **YouTube** : la vidéo Jacobson avait été arrêtée par le contrôle sur une seule phrase juste en longueur (similarité
+  0,85 à l'arrondi). Seuil assoupli seulement quand la longueur est juste (0,9 à 1,1) ; les paroles inventées restent
+  refusées. Vidéo remise à fabriquer.

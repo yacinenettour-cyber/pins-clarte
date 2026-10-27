@@ -66,7 +66,7 @@ Prends l'exemple d'une tête qui serre presque chaque soir, après une longue jo
 
 Oui, le stress peut laisser les muscles contractés. L'INRS range les douleurs musculaires et articulaires parmi les symptômes physiques du stress chronique, et l'Assurance maladie compte les tensions musculaires parmi les signes des troubles anxieux [1][2].
 
-- **La mâchoire.** En 2020, Chemelo et ses collègues, à l'Université fédérale du Pará, au Brésil, ont publié une méta-analyse dans une revue de neurologie. D'après eux, les personnes stressées ont environ deux fois plus de risque que les autres de faire du bruxisme, c'est-à-dire de serrer ou de grincer des dents. Ce résultat ne repose que sur trois études chiffrées, et les auteurs eux-mêmes jugent la certitude de ce lien faible [5].
+- **La mâchoire.** En 2020, Chemelo et ses collègues, à l'Université fédérale du Pará, au Brésil, ont publié une méta-analyse dans une revue de neurologie. D'après eux, les personnes stressées ont environ deux fois plus de risque que les autres de faire du bruxisme, c'est-à-dire de serrer ou de grincer des dents. Ce résultat ne repose que sur trois études chiffrées, et les auteurs eux-mêmes jugent la certitude de ce lien faible [5]. Les gestes qui aident à desserrer les dents sont dans notre article sur la [mâchoire serrée et le stress](/machoire-serree-stress/).
 - **La nuque et les épaules.** La céphalée de tension va souvent de pair avec une contracture des muscles du cou [3].
 - **Le dos et les bras.** Les troubles musculosquelettiques du dos et des membres supérieurs ne viennent pas seulement des gestes et des postures, rappelle l'INRS. Une forte demande psychologique au travail, peu de marges de manœuvre ou un manque de soutien y contribuent aussi [1].
 

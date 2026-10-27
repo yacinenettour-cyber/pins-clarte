@@ -181,6 +181,12 @@
    "image": "pexels-6753359.jpg",
    "alt": "Femme allongée sur le dos dans un lit aux draps clairs, vue d'en haut, les yeux grands ouverts et les bras le long du corps, dans une lumière chaude",
    "credit": "Photo : Pexels"
+  },
+  "machoire-serree-stress": {
+   "categorie": "stress",
+   "image": "unsplash-NKTJCOHzrUM.jpg",
+   "alt": "Femme aux cheveux châtains qui tient une compresse blanche contre sa joue et sa mâchoire, le regard fatigué, dans une lumière claire",
+   "credit": "Photo : engin akyurt / Unsplash"
   }
  },
  "formation": {
@@ -350,6 +356,10 @@
     [
      "Ton ventre se noue dès que tu stresses ou que tu angoisses",
      "boule-au-ventre"
+    ],
+    [
+     "Tu serres les dents ou ta mâchoire se crispe quand tu es stressé(e)",
+     "machoire-serree-stress"
     ],
     [
      "Tu veux comprendre le lien entre cortisol et sommeil",

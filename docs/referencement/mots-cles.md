@@ -26,6 +26,7 @@ des grands médias santé : viser d'abord les variantes.
 | /boule-au-ventre/ | boule au ventre stress | boule au ventre angoisse, boule au ventre permanente, boule au ventre que faire, boule au ventre sans raison (article du 25/10) | moyenne |
 | /relaxation-jacobson/ | relaxation Jacobson | relaxation musculaire progressive, relaxation pour s'endormir, relaxation profonde, relaxation Jacobson pour dormir (suggestions Google du 15/10) | moyenne sur « relaxation Jacobson », plus faible sur la longue traîne |
 | /sommeil-leger/ | sommeil léger | sommeil léger réveil au moindre bruit, sommeil léger que faire, sommeil léger toute la nuit, sommeil léger cause, bouchons d'oreilles pour dormir, bruit blanc pour dormir (suggestions Google du 26/10) | faible à moyenne (longue traîne) |
+| /machoire-serree-stress/ | mâchoire serrée stress | mâchoire serrée stress remède, mâchoire crispée, contractée, bloquée, serrer les dents stress, bruxisme stress (suggestions Google du 15/10) | faible à moyenne (longue traîne) |
 | /calmer-son-systeme-nerveux/ | calmer son système nerveux | réguler son système nerveux, calmer son système nerveux rapidement, tension nerveuse que faire, système nerveux en mode survie (FAQ du 19/10) | moyenne |
 | /nerf-vague/ | nerf vague | activer le nerf vague naturellement | élevée (mot court) |
 | /charge-mentale/ | charge mentale | signes de charge mentale, alléger sa charge mentale | élevée (mot court) |

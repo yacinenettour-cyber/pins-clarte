@@ -133,6 +133,7 @@ TYPES_SOURCES = [
     ("mangerbouger.fr", "officiel", "Manger Bouger, Programme national nutrition santé"),
     ("efsa.europa.eu", "officiel", "Autorité européenne de sécurité des aliments"),
     ("ods.od.nih.gov", "officiel", "Instituts nationaux de la santé des États-Unis (NIH)"),
+    ("nhs.uk", "officiel", "NHS, service de santé publique britannique"),
     ("institut-sommeil-vigilance.org", "reference", "Institut national du sommeil et de la vigilance"),
     ("msdmanuals.com", "reference", "Manuel médical de référence"),
     ("clevelandclinic.org", "reference", "Cleveland Clinic, centre médical américain"),

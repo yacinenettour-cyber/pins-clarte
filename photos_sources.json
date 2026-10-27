@@ -8234,7 +8234,9 @@
   "url": "https://images.unsplash.com/photo-1602932213623-cc17e9541bb4?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "gardée",
+  "fichier": "fonds/unsplash-NKTJCOHzrUM.jpg",
+  "usage": "site : article « machoire-serree-stress » (27/10/2026)"
  },
  "unsplash-tuiYHBro_zs.jpg": {
   "theme": "dedie",
@@ -8246,7 +8248,7 @@
   "url": "https://images.unsplash.com/photo-1583330618332-d1cc2fab8936?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "écartée (grimace / sujet moins clair, 27/10/2026)"
  },
  "unsplash-w46D867SiGc.jpg": {
   "theme": "dedie",
@@ -8258,6 +8260,6 @@
   "url": "https://images.unsplash.com/photo-1651083189326-0ea9dedf6e73?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 788,
-  "statut": "à trier"
+  "statut": "écartée (grimace / sujet moins clair, 27/10/2026)"
  }
 }
