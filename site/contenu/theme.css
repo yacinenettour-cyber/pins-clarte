@@ -67,7 +67,7 @@
 /* Test de stress et d'anxiété */
 @clair .instrument { --t-leger: #2D6A46; --t-moyen: #6B5B3E; --t-modere: #9A5A16; --t-severe: #A93B2C; }
 @clair .option, @clair .test-bloc, @clair .priorites li { background: rgba(255, 255, 255, 0.7); }
-@clair .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); }
+@media (hover: hover) and (pointer: fine) { @clair .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); } }
 @clair .option[aria-pressed="true"] { background: rgba(58, 95, 67, 0.14); }
 @clair .option .puce { border-color: rgba(45, 106, 70, 0.35); }
 @clair .test-profil { background: linear-gradient(135deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); }

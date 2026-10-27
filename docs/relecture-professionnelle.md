@@ -62,7 +62,7 @@ Envoie à Claude : le nom (ou seulement la profession, selon l'accord), la profe
 | Psychologue | Ville | Site | Fil Gmail | Numéro (à vérifier sur annuaire.sante.fr avant d'afficher un nom) | Réponse |
 |---|---|---|---|---|---|
 | Thomas Paulet (TCC, anxiété, insomnie) | Strasbourg | pauletpsytcc.fr | 1a13d6ecde34f501 | RPPS 10009423590 (affiché sur son site) | — |
-| Pélagie Micalet (TCC, EMDR, anxiété) | Paris 17e | micaletpsychologueparis17.fr | 1a13d6ec94d1e9e2 | RPPS 10009042507 (affiché sur son site) | — |
+| Pélagie Micalet (TCC, EMDR, anxiété) | Paris 17e | micaletpsychologueparis17.fr | 1a13d6ec94d1e9e2 | RPPS 10009042507 (affiché sur son site) ; ADELI 759398506 (dans sa signature) | 26/10 (après la relance) : a relu le test ; « très bien fait », « éthique », GAD-7 = « l'échelle de référence » ; 2 suggestions : réponse qui semble présélectionnée à la question suivante (corrigé le 27/10) et mettre davantage en avant la consultation d'un psychologue (proposé à l'utilisateur). Réponse à faire par l'utilisateur (proposée, non envoyée). Ne pas afficher son nom sans son accord écrit. |
 | Julie Barbery (TCC de l'insomnie) | Montpellier | juliebarbery.fr | 1a13d6ec94967675 | ADELI 349326991 (affiché sur son site) | 15/10 : « Non merci » — ne plus écrire |
 | Cindy Lebrun (TCC de l'insomnie) | Avignon | centre-insomnie.com | 1a13d6ec8319cb47 | à demander | — |
 | Laurent Li (TCC de l'insomnie, anxiété) | Paris 17e | laurentlipsy.fr | 1a13d6ed2b3d4a33 | à demander | — |
