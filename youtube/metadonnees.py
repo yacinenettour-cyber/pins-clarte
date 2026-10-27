@@ -40,11 +40,12 @@ def description(plan, tl):
                                     "si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. "
                                     "Je ne suis pas professionnel de santé."))
     if y.get("accroche"):
-        morceaux.append(f"🔔 Une nouvelle méditation chaque semaine : https://www.youtube.com/{CHAINE}?sub_confirmation=1")
+        morceaux.append(f"🔔 Abonne-toi pour recevoir les prochaines méditations : https://www.youtube.com/{CHAINE}?sub_confirmation=1")
     if y.get("sources"):
         morceaux.append("Sources :\n" + "\n".join("· " + s for s in y["sources"]))
     photographes = ", ".join(dict.fromkeys(p["photographe"] for p in plan["photos"] if p.get("photographe")))
-    voix = ("Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT ; voix de référence française "
+    voix = ("Voix : voix de synthèse ElevenLabs (elevenlabs.io), voix « Mila ».\n" if plan.get("voix") == "elevenlabs_mila" else
+            "Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT ; voix de référence française "
             "issue du corpus SIWIS, CC BY 4.0).\n" if plan.get("voix") == "chatterbox_francais" else
             "Voix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT).\n"
             if str(plan.get("voix", "")).startswith("chatterbox") else

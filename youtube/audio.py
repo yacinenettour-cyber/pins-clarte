@@ -34,6 +34,8 @@ REGLAGES_VOIX = {
     # extrait « H » choisi à l'oreille par l'utilisateur le 26/10/2026, qui trouvait un ton anglais aux deux vidéos.
     "chatterbox_francais": {"moteur": "chatterbox", "expressivite": 0.35, "rythme": 0.0, "temperature": 0.7, "graine": 42,
                             "reference": "youtube/voix/reference-francaise.wav", "filtre": "highpass=f=70", "niveau": 0.80},
+    # Voix ElevenLabs « Mila » (voix féminine douce, plan gratuit, 2 vidéos par mois), choisie par l'utilisateur le 27/10/2026
+    "elevenlabs_mila": {"moteur": "elevenlabs", "filtre": "highpass=f=70", "niveau": 0.80},
 }
 # mots que le phonétiseur lit en anglais (constaté le 20/10) : remplacés dans les phonèmes
 CORRECTIONS = {"(en)dˈɒs(fr)": "dˈo", "(en)ɹˈɪθm(fr)": "ʁˈitm"}
@@ -128,12 +130,40 @@ class VoixChatterbox:
         return self.cache[texte].copy()
 
 
+class VoixElevenLabs:
+    """Voix ElevenLabs « Mila » (choix de l'utilisateur, 27/10/2026) : les phrases sont générées et réécoutées pendant
+    une session Claude (youtube/voix_elevenlabs.py), rangées dans videos_youtube/<slug>/voix_elevenlabs/ ; ici on ne
+    fait que les relire. Une phrase absente arrête la fabrication (le robot n'a pas accès à ElevenLabs)."""
+
+    def __init__(self, slug):
+        from voix_elevenlabs import chemin
+        self.chemin = lambda texte: chemin(slug, texte)
+
+    def dire(self, texte, tmp):
+        f = self.chemin(texte)
+        if not os.path.exists(f):
+            raise FileNotFoundError(f"Phrase ElevenLabs absente, à générer pendant une session Claude : {texte!r}")
+        a = charger_audio(f)
+        env = np.abs(a).max(axis=1)
+        idx = np.where(env > 0.01)[0]
+        a = a[max(0, idx[0] - 800): idx[-1] + 4000]
+        n = min(len(a) // 4, 1200)
+        a[:n] *= np.linspace(0, 1, n)[:, None]
+        a[-n:] *= np.linspace(1, 0, n)[:, None]
+        return a
+
+
 def fabriquer(slug):
     plan = lire_plan(slug)
     trav = dossier_travail(slug)
     tmp = os.path.join(trav, "_tts.wav")
     reglage = REGLAGES_VOIX[plan.get("voix", "standard")]
-    voix = VoixChatterbox(reglage) if reglage.get("moteur") == "chatterbox" else Voix(reglage["vitesse"])
+    if reglage.get("moteur") == "elevenlabs":
+        voix = VoixElevenLabs(slug)
+    elif reglage.get("moteur") == "chatterbox":
+        voix = VoixChatterbox(reglage)
+    else:
+        voix = Voix(reglage["vitesse"])
     morceaux, cues, titres, souffles = [], [], [], []
     t = 0.0
     for el in plan["script"]:
@@ -163,16 +193,19 @@ def fabriquer(slug):
     fin_voix = cues[-1]["fin"]
     duree = max(t, plan.get("duree_totale_min", 0) * 60)
     N = int(duree * SR)
+    # Mémoire (27/10/2026, vidéo d'1 h) : la voix et les bols n'occupent que le début ; la musique et le mélange final
+    # sont traités par morceaux (le mélange d'1 h en un bloc dépassait la mémoire de la machine).
+    Nv = min(N, int((fin_voix + 30) * SR))
 
-    voixp = np.zeros((N, 2), np.float32)
+    voixp = np.zeros((Nv, 2), np.float32)
     for d0, a in morceaux:
         i = int(d0 * SR)
-        voixp[i:i + len(a)] += a[: N - i]
+        voixp[i:i + len(a)] += a[: Nv - i]
     brut = os.path.join(trav, "_voix.f32")
     voixp.tofile(brut)
     voixp = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ac", "2", "-ar", str(SR), "-i", brut,
                                           "-af", reglage["filtre"], "-f", "f32le", "-ac", "2", "-ar", str(SR), "-"],
-                                         capture_output=True, check=True).stdout, np.float32).reshape(-1, 2)[:N].copy()
+                                         capture_output=True, check=True).stdout, np.float32).reshape(-1, 2)[:Nv].copy()
     os.remove(brut)
     voixp *= reglage["niveau"] / max(1e-6, np.abs(voixp).max())
     sf.write(os.path.join(trav, "voix.wav"), voixp.mean(axis=1), SR)
@@ -180,23 +213,31 @@ def fabriquer(slug):
     # musique bouclée avec fondu enchaîné de 8 s aussi longtemps que nécessaire
     mus0 = charger_audio(MUSIQUE)
     mus0 /= max(1e-6, np.abs(mus0).max())
-    x = 8 * SR
-    mus = mus0.copy()
-    while len(mus) < N:
-        fond = np.linspace(0, 1, x)[:, None]
-        mus = np.concatenate([mus[:-x], mus[-x:] * (1 - fond) + mus0[:x] * fond, mus0[x:]])
-    mus = mus[:N]
-    env = np.convolve(np.abs(voixp[::480, 0]), np.ones(150) / 150, mode="same")
+    x, L = 8 * SR, len(mus0)
+    fond = np.linspace(0, 1, x, dtype=np.float32)[:, None]
+    mus = np.empty((N, 2), np.float32)
+    mus[:min(N, L)] = mus0[:min(N, L)]
+    s0 = L - x
+    while s0 < N:
+        k = min(x, N - s0)
+        mus[s0:s0 + k] = mus[s0:s0 + k] * (1 - fond[:k]) + mus0[:k] * fond[:k]
+        k2 = min(L, N - s0)
+        if k2 > x:
+            mus[s0 + x:s0 + k2] = mus0[x:k2]
+        s0 += L - x
+    # volume de la musique calculé toutes les 480 échantillons (100 par seconde), puis appliqué morceau par morceau
+    K = 480
+    nb = (N + K - 1) // K
+    tk = np.arange(nb) * K / SR
+    env = np.convolve(np.abs(voixp[::K, 0]), np.ones(150) / 150, mode="same")
     parle = np.convolve((env > 0.01).astype(float), np.ones(200) / 200, mode="same").clip(0, 1)
-    duck = np.interp(np.arange(N) / 480, np.arange(len(parle)), parle)
+    duck = np.zeros(nb)
+    duck[:len(parle)] = parle[:nb]
     vol = 0.30 - 0.12 * duck
-    vol[: 6 * SR] *= np.linspace(0, 1, 6 * SR)
+    vol *= np.clip(tk / 6, 0, 1)
     # après la voix, la musique baisse lentement d'un tiers (sommeil), puis fondu final de 60 s
-    apres = np.clip((np.arange(N) / SR - fin_voix) / 120, 0, 1)
-    vol *= 1 - 0.33 * apres
-    fin = min(N, 60 * SR)
-    vol[-fin:] *= np.linspace(1, 0, fin) ** 1.5
-    mus *= vol[:, None]
+    vol *= 1 - 0.33 * np.clip((tk - fin_voix) / 120, 0, 1)
+    vol *= np.clip((duree - tk) / min(duree, 60), 0, 1) ** 1.5
 
     bol_long = charger_audio(os.path.join(BOLS, "bol-tibetain-long_itinerantmonk108_553049.ogg"), 14)
     bol_doux = charger_audio(os.path.join(BOLS, "bol-maillet-doux_steffcaffrey_449951.ogg"), 10)
@@ -204,11 +245,11 @@ def fabriquer(slug):
         b /= max(1e-6, np.abs(b).max())
         f = int(1.5 * SR)
         b[-f:] *= np.linspace(1, 0, f)[:, None]
-    bols = np.zeros((N, 2), np.float32)
+    bols = np.zeros((Nv, 2), np.float32)
 
     def poser(b, t0, g):
         i = int(t0 * SR)
-        bols[i:i + len(b)] += g * b[: N - i]
+        bols[i:i + len(b)] += g * b[: Nv - i]
     # cloche de départ : 0,35 → 0,12 avec une montée de 2 s (« la cloche au démarrage est trop forte », 27/10/2026)
     debut = bol_long.copy()
     debut[: 2 * SR] *= np.linspace(0, 1, 2 * SR)[:, None]
@@ -217,10 +258,22 @@ def fabriquer(slug):
         poser(bol_doux, ti["debut"], 0.18)
     poser(bol_long, fin_voix + 2, 0.22)
 
-    piste = voixp + mus + bols
-    piste *= 0.89 / np.abs(piste).max()
     brut = os.path.join(trav, "_piste.f32")
-    piste.astype(np.float32).tofile(brut)
+    piste = np.memmap(brut, np.float32, "w+", shape=(N, 2))
+    pic, M = 0.0, 600 * SR
+    for a in range(0, N, M):
+        b = min(N, a + M)
+        v = np.repeat(vol[a // K: (b + K - 1) // K], K)[: b - a].astype(np.float32)[:, None]
+        m = mus[a:b] * v
+        if a < Nv:
+            c = min(b, Nv)
+            m[: c - a] += voixp[a:c] + bols[a:c]
+        piste[a:b] = m
+        pic = max(pic, float(np.abs(m).max()))
+    for a in range(0, N, M):
+        piste[a:a + M] *= 0.89 / pic
+    piste.flush()
+    del piste, mus
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ac", "2", "-ar", str(SR), "-i", brut,
                     "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", str(SR), os.path.join(trav, "piste.wav")], check=True)
     os.remove(brut)
