@@ -103,7 +103,8 @@ class VoixChatterbox:
         sim = difflib.SequenceMatcher(None, prevu, entendu).ratio()
         longueur = len(entendu) / max(1, len(prevu))
         vitesse = len(texte) / (len(a) / SR)
-        texte_ok = sim >= 0.85 and 0.8 <= longueur <= 1.15
+        # Longueur juste (aucun mot en trop) : un écart de transcription léger est toléré.
+        texte_ok = (sim >= 0.85 and 0.8 <= longueur <= 1.15) or (sim >= 0.8 and 0.9 <= longueur <= 1.1)
         ok = texte_ok and (len(texte) < 20 or vitesse >= self.VITESSE_MIN)
         note = sim - abs(1 - longueur) - max(0, self.VITESSE_MIN - vitesse) / 10
         return ok, texte_ok, note, (round(sim, 2), round(longueur, 2), round(vitesse, 1))
