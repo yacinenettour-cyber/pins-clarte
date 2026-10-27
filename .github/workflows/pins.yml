@@ -53,7 +53,10 @@ jobs:
           # 2 h) au lieu d'une à chaque fois (~10 par jour). Pinterest privilégie la qualité à la quantité
           # et limite « beaucoup d'épingles depuis le même site en peu de temps » ; le stock de pins et
           # de photos inédites dure aussi deux fois plus longtemps. Le mode test n'est pas concerné.
-          ECART_MIN_HEURES = 3.83
+          # 27/10/2026 (analyse en profondeur, choix de l'utilisateur « Moins mais mieux ») : 263 épingles
+          # du robot en 5 semaines pour 4 enregistrements ; Pinterest montre de moins en moins les épingles
+          # d'un compte qui en publie beaucoup sans engagement. Au plus 2 par jour (11 h d'écart).
+          ECART_MIN_HEURES = 11
           if historique and not TEST:
               derniere = max(datetime.datetime.fromisoformat(h["date"]) for h in historique if h.get("date"))
               ecart = (datetime.datetime.now(datetime.timezone.utc) - derniere).total_seconds() / 3600
@@ -854,6 +857,7 @@ jobs:
           # y mènent (carte et description dédiées) ; les pins marqués "guide": "aucun" restent
           # sans lien. Vider l'adresse pour désactiver. Ne pas changer l'adresse de la page.
           LIEN_GUIDE_CORTISOL = "https://lp.contactapaisement-mental.fr/63d489c7"
+          SANS_PAGES_CAPTURE = True
           THEMES_GUIDE_CORTISOL = {"energie", "alimentation"}
           LIGNES_CARTE_CORTISOL = ("PLAN GRATUIT · lien dans l'épingle", "« Le plan anti-cortisol en 7 jours » :",
                                    "7 gestes simples + tableau de suivi")
@@ -929,6 +933,12 @@ jobs:
 
           def guide_du_pin(pin, theme):
               # "sommeil" (LIEN_PAGE), "cortisol" (LIEN_GUIDE_CORTISOL) ou None (pas de lien).
+              # 27/10/2026 (analyse en profondeur, choix de l'utilisateur) : plus aucun lien vers les pages
+              # de capture lp.contactapaisement-mental.fr. Depuis le 19/04/2026, les épingles qui y mènent ne
+              # sont presque plus diffusées (page /tonguide : 30 mots, sans titre). Les épingles mènent à un
+              # article du site quand il traite leur sujet, sinon elles n'ont pas de lien.
+              if SANS_PAGES_CAPTURE:
+                  return None
               choix = pin.get("guide")
               if choix == "aucun":
                   return None
@@ -951,7 +961,7 @@ jobs:
           # 6 clics sortants avec 11 épingles, le guide sommeil 2 avec 30 : poids 2 pour les trois,
           # à réévaluer le 04/11.
           POIDS_THEME = {"sommeil": 2.0, "energie": 2.0, "alimentation": 2.0}
-          FORMATS_ILLUSTRES = {"exercices", "cles"}
+          FORMATS_ILLUSTRES = {"exercices", "cles", "riche"}
 
 
           def choisir_pin_equilibre(restants, historique):
@@ -1040,6 +1050,15 @@ jobs:
           if not restants:
               sys.exit("Plus aucune photo inédite pour les pins restants : publication suspendue pour ne pas "
                        "réutiliser une photo. Ajoute des photos dans fonds/ (classées par thème dans fonds_themes.json).")
+          # 27/10/2026 (choix de l'utilisateur « Moins mais mieux ») : le robot ne publie plus que des
+          # infographies illustrées (format des épingles du compte qui ont marché). Une épingle sans article
+          # ne doit rien promettre (« guide gratuit », « plan ») puisqu'elle n'a plus de lien.
+          restants = [p for p in restants if p.get("format") in FORMATS_ILLUSTRES
+                      and ((p.get("article") in ARTICLES_SITE and p.get("description_article"))
+                           or not re.search(r"(?i)guide gratuit|plan anti-cortisol|plan gratuit|en lien", p["description"]))]
+          if not restants:
+              print("Aucune infographie illustrée prête : pas de publication cette fois (on publie moins plutôt que moins bien).")
+              sys.exit(0)
           pin = choisir_pin_equilibre(restants, historique)
           print("Pins restants dans la banque :", len(restants))
 
