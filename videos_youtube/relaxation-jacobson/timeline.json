@@ -1,337 +1,322 @@
 {
- "duree": 1800,
- "fin_voix": 646.3097708333333,
+ "duree": 3600,
+ "fin_voix": 602.9528958333333,
  "cues": [
   {
    "debut": 3.0,
-   "fin": 3.9521875,
+   "fin": 3.8306875,
    "texte": "Bonsoir."
   },
   {
-   "debut": 5.4521875,
-   "fin": 10.840583333333333,
+   "debut": 5.3306875,
+   "fin": 10.370458333333334,
    "texte": "Cette relaxation t'accompagne quand ton corps reste crispé au moment de dormir."
   },
   {
-   "debut": 12.840583333333333,
-   "fin": 17.9893125,
+   "debut": 12.370458333333334,
+   "fin": 16.367979166666668,
    "texte": "Écoute-la seulement allongé, au calme, jamais en conduisant."
   },
   {
-   "debut": 19.9893125,
-   "fin": 26.184270833333333,
+   "debut": 18.367979166666665,
+   "fin": 25.183395833333332,
    "texte": "Si une partie de ton corps est blessée ou douloureuse, ne la contracte pas : laisse-la simplement au repos."
   },
   {
-   "debut": 33.18427083333333,
-   "fin": 42.159729166666665,
+   "debut": 28.183395833333332,
+   "fin": 38.24752083333333,
    "texte": "La méthode que tu vas suivre s'appelle la relaxation musculaire progressive. On la doit à Jacobson, qui l'a proposée il y a près d'un siècle."
   },
   {
-   "debut": 44.659729166666665,
-   "fin": 52.802375,
+   "debut": 40.74752083333333,
+   "fin": 49.50175,
    "texte": "Le principe est simple : tu serres un groupe de muscles quelques secondes, puis tu le relâches plus longtemps, pour bien sentir la différence."
   },
   {
-   "debut": 55.302375,
-   "fin": 65.59695833333333,
-   "texte": "Des chercheurs de l'université Putra, en Malaisie, ont rassemblé quatorze essais. La qualité du sommeil ressentie s'améliorait, surtout chez les adultes de moins de cinquante-cinq ans."
-  },
-  {
-   "debut": 68.09695833333333,
-   "fin": 80.46195833333333,
-   "texte": "Le déroulé de ce soir est celui d'une équipe de l'université de médecine du Fujian, en Chine : contracter trois à cinq secondes, puis relâcher dix à quinze secondes, des pieds jusqu'au visage."
-  },
-  {
-   "debut": 82.96195833333333,
-   "fin": 92.42404166666667,
+   "debut": 52.00175,
+   "fin": 61.96720833333333,
    "texte": "Chez quelques personnes anxieuses, se relaxer fait d'abord monter la tension. Si c'est ton cas, arrête simplement, et parles-en à ton médecin."
   },
   {
-   "debut": 99.42404166666667,
-   "fin": 103.0111875,
+   "debut": 68.96720833333333,
+   "fin": 72.14489583333334,
    "texte": "Allonge-toi sur le dos, les bras le long du corps."
   },
   {
-   "debut": 106.0111875,
-   "fin": 109.62420833333334,
+   "debut": 75.14489583333334,
+   "fin": 77.17666666666668,
    "texte": "Si tu le souhaites, ferme doucement les yeux."
   },
   {
-   "debut": 113.62420833333334,
-   "fin": 118.36364583333334,
+   "debut": 81.17666666666668,
+   "fin": 85.94406250000002,
    "texte": "Sens le poids de ton corps sur le matelas. Tu n'as rien à retenir."
   },
   {
-   "debut": 128.36364583333335,
-   "fin": 134.9967916666667,
+   "debut": 95.94406250000002,
+   "fin": 103.45302083333335,
    "texte": "Commence par ralentir ta respiration. Suis le cercle à l'écran, si tes yeux sont encore ouverts."
   },
   {
-   "debut": 137.9967916666667,
-   "fin": 144.1453541666667,
+   "debut": 106.45302083333334,
+   "fin": 112.26887500000001,
    "texte": "Tu inspires doucement par le nez pendant quatre temps, et tu expires lentement pendant six temps."
   },
   {
-   "debut": 147.2953541666667,
-   "fin": 149.02920833333337,
+   "debut": 115.41887500000001,
+   "fin": 116.57452083333335,
    "texte": "Inspire…"
   },
   {
-   "debut": 151.2953541666667,
-   "fin": 152.72981250000004,
+   "debut": 119.41887500000001,
+   "fin": 120.62800000000001,
    "texte": "Expire…"
   },
   {
-   "debut": 157.2953541666667,
-   "fin": 159.02920833333337,
+   "debut": 125.41887500000001,
+   "fin": 126.57452083333335,
    "texte": "Inspire…"
   },
   {
-   "debut": 161.2953541666667,
-   "fin": 162.72981250000004,
+   "debut": 129.418875,
+   "fin": 130.62800000000001,
    "texte": "Expire…"
   },
   {
-   "debut": 167.2953541666667,
-   "fin": 169.02920833333337,
+   "debut": 135.418875,
+   "fin": 136.57452083333334,
    "texte": "Inspire…"
   },
   {
-   "debut": 171.2953541666667,
-   "fin": 172.72981250000004,
+   "debut": 139.418875,
+   "fin": 140.62800000000001,
    "texte": "Expire…"
   },
   {
-   "debut": 177.2953541666667,
-   "fin": 179.02920833333337,
+   "debut": 145.418875,
+   "fin": 146.57452083333334,
    "texte": "Inspire…"
   },
   {
-   "debut": 181.2953541666667,
-   "fin": 182.72981250000004,
+   "debut": 149.418875,
+   "fin": 150.62800000000001,
    "texte": "Expire…"
   },
   {
-   "debut": 188.1453541666667,
-   "fin": 192.53095833333336,
+   "debut": 156.268875,
+   "fin": 161.09972916666666,
    "texte": "Continue à ton rythme. L'expiration est un peu plus longue que l'inspiration."
   },
   {
-   "debut": 235.53095833333336,
-   "fin": 238.85095833333335,
+   "debut": 204.09972916666666,
+   "fin": 207.64277083333332,
    "texte": "Très bien. Laisse ta respiration redevenir naturelle."
   },
   {
-   "debut": 247.85095833333335,
-   "fin": 252.80987500000003,
+   "debut": 216.64277083333332,
+   "fin": 221.907875,
    "texte": "À chaque fois, contracte assez pour sentir la tension, jamais au point d'avoir mal."
   },
   {
-   "debut": 255.80987500000003,
-   "fin": 261.9522291666667,
+   "debut": 224.907875,
+   "fin": 230.16495833333332,
    "texte": "Ramène tes orteils vers ta tête, et serre les muscles des pieds et des chevilles. Tiens."
   },
   {
-   "debut": 266.9522291666667,
-   "fin": 270.56933333333336,
+   "debut": 235.16495833333332,
+   "fin": 239.01966666666664,
    "texte": "Et relâche. Imagine tes pieds qui deviennent plus lourds."
   },
   {
-   "debut": 282.56933333333336,
-   "fin": 287.4708958333334,
+   "debut": 251.01966666666664,
+   "fin": 254.8905208333333,
    "texte": "Pousse maintenant tes pieds vers l'avant, pour tendre les mollets. Tiens."
   },
   {
-   "debut": 292.4708958333334,
-   "fin": 296.3797083333334,
+   "debut": 259.8905208333333,
+   "fin": 263.1138125,
    "texte": "Relâche. Tes mollets deviennent souples et lourds."
   },
   {
-   "debut": 308.3797083333334,
-   "fin": 312.8120625,
+   "debut": 275.1138125,
+   "fin": 277.7463333333333,
    "texte": "Serre tes cuisses l'une contre l'autre. Tiens."
   },
   {
-   "debut": 317.8120625,
-   "fin": 322.43972916666667,
+   "debut": 282.7463333333333,
+   "fin": 285.9937083333333,
    "texte": "Et relâche. Laisse tes jambes s'enfoncer dans le matelas."
   },
   {
-   "debut": 339.43972916666667,
-   "fin": 344.037625,
+   "debut": 302.9937083333333,
+   "fin": 307.4305833333333,
    "texte": "Contracte les muscles des hanches et de la taille. Garde la position."
   },
   {
-   "debut": 349.037625,
-   "fin": 352.4950833333333,
+   "debut": 312.4305833333333,
+   "fin": 315.91141666666664,
    "texte": "Relâche. Laisse-les revenir à leur état de départ."
   },
   {
-   "debut": 364.4950833333333,
-   "fin": 369.8386875,
+   "debut": 327.91141666666664,
+   "fin": 333.25135416666666,
    "texte": "Inspire profondément, et retiens ton souffle en sentant ta poitrine se tendre."
   },
   {
-   "debut": 374.8386875,
-   "fin": 377.600625,
+   "debut": 338.25135416666666,
+   "fin": 340.56241666666665,
    "texte": "Puis expire lentement, en relâchant tout."
   },
   {
-   "debut": 393.600625,
-   "fin": 398.554375,
+   "debut": 356.56241666666665,
+   "fin": 359.95379166666663,
    "texte": "Serre les poings, et tends les muscles des avant-bras. Tiens."
   },
   {
-   "debut": 403.554375,
-   "fin": 406.43454166666663,
+   "debut": 364.95379166666663,
+   "fin": 368.30785416666663,
    "texte": "Et ouvre les mains. Laisse les doigts se détendre."
   },
   {
-   "debut": 418.43454166666663,
-   "fin": 423.0088125,
-   "texte": "Tends maintenant tes bras entiers, de l'épaule jusqu'aux poings. Tiens."
+   "debut": 380.30785416666663,
+   "fin": 384.75904166666663,
+   "texte": "Maintenant, tends tes bras entiers, de l'épaule jusqu'aux poings. Tiens."
   },
   {
-   "debut": 428.0088125,
-   "fin": 432.56562499999995,
+   "debut": 389.75904166666663,
+   "fin": 393.6345833333333,
    "texte": "Relâche. Tes bras retombent, lourds, le long du corps."
   },
   {
-   "debut": 444.56562499999995,
-   "fin": 447.34899999999993,
+   "debut": 405.6345833333333,
+   "fin": 408.30685416666665,
    "texte": "Monte tes épaules vers tes oreilles. Tiens."
   },
   {
-   "debut": 452.34899999999993,
-   "fin": 456.8179374999999,
+   "debut": 413.30685416666665,
+   "fin": 416.37166666666667,
    "texte": "Et laisse-les retomber. Sens ta nuque qui se détend."
   },
   {
-   "debut": 473.8179374999999,
-   "fin": 476.4501874999999,
+   "debut": 433.37166666666667,
+   "fin": 435.82416666666666,
    "texte": "Plisse le front, et fronce les sourcils. Tiens."
   },
   {
-   "debut": 481.4501874999999,
-   "fin": 483.8664791666666,
+   "debut": 440.82416666666666,
+   "fin": 443.133875,
    "texte": "Relâche. Ton front devient lisse."
   },
   {
-   "debut": 495.8664791666666,
-   "fin": 500.5951041666666,
+   "debut": 455.133875,
+   "fin": 458.91116666666665,
    "texte": "Serre les dents, en étirant les coins de la bouche. Tiens."
   },
   {
-   "debut": 505.5951041666666,
-   "fin": 510.3848749999999,
+   "debut": 463.91116666666665,
+   "fin": 467.7236875,
    "texte": "Et relâche. Laisse ta bouche s'entrouvrir légèrement."
   },
   {
-   "debut": 528.384875,
-   "fin": 533.8211875,
+   "debut": 485.7236875,
+   "fin": 490.6327083333333,
    "texte": "Maintenant, laisse ton attention parcourir tout ton corps, des pieds jusqu'à la tête."
   },
   {
-   "debut": 538.8211875,
-   "fin": 544.89375,
+   "debut": 495.6327083333333,
+   "fin": 501.3692291666666,
    "texte": "Si une zone est encore tendue, imagine que ton souffle va vers elle, et laisse-la se relâcher."
   },
   {
-   "debut": 552.89375,
-   "fin": 555.5864166666667,
+   "debut": 509.3692291666666,
+   "fin": 512.6060833333333,
    "texte": "Tes pieds sont lourds. Tes jambes sont lourdes."
   },
   {
-   "debut": 563.5864166666667,
-   "fin": 566.5282916666666,
+   "debut": 520.6060833333333,
+   "fin": 523.5975,
    "texte": "Ton ventre est souple. Tes bras reposent."
   },
   {
-   "debut": 574.5282916666666,
-   "fin": 577.5011458333333,
+   "debut": 531.5975,
+   "fin": 534.5312916666667,
    "texte": "Tes épaules sont basses. Ton visage est calme."
   },
   {
-   "debut": 587.5011458333333,
-   "fin": 592.1634791666667,
+   "debut": 544.5312916666667,
+   "fin": 548.0065416666666,
    "texte": "Tu n'as plus rien à faire. Le matelas te porte entièrement."
   },
   {
-   "debut": 610.1634791666667,
-   "fin": 616.0459375,
+   "debut": 566.0065416666666,
+   "fin": 570.7847083333334,
    "texte": "Bientôt, ma voix va se taire. La musique va continuer encore longtemps."
   },
   {
-   "debut": 621.0459375,
-   "fin": 624.4269375,
+   "debut": 575.7847083333334,
+   "fin": 578.3145833333333,
    "texte": "Si tu dors déjà, continue simplement de dormir."
   },
   {
-   "debut": 630.4269375,
-   "fin": 634.4071875,
+   "debut": 584.3145833333333,
+   "fin": 588.9922083333333,
    "texte": "Et si tu es encore éveillé, ce n'est pas grave. Le repos compte aussi."
   },
   {
-   "debut": 641.4071875,
-   "fin": 646.3097708333333,
+   "debut": 595.9922083333333,
+   "fin": 602.9528958333333,
    "texte": "Laisse ton corps détendu t'emmener, doucement, vers le sommeil. Bonne nuit."
   }
  ],
  "titres": [
   {
-   "debut": 29.184270833333333,
-   "fin": 38.18427083333333,
-   "texte": "Comprendre"
-  },
-  {
-   "debut": 95.42404166666667,
-   "fin": 104.42404166666667,
+   "debut": 64.96720833333333,
+   "fin": 73.96720833333333,
    "texte": "S'installer"
   },
   {
-   "debut": 124.36364583333335,
-   "fin": 133.36364583333335,
+   "debut": 91.94406250000002,
+   "fin": 100.94406250000002,
    "texte": "Respirer lentement"
   },
   {
-   "debut": 243.85095833333335,
-   "fin": 252.85095833333335,
+   "debut": 212.64277083333332,
+   "fin": 221.64277083333332,
    "texte": "Les pieds et les jambes"
   },
   {
-   "debut": 335.43972916666667,
-   "fin": 344.43972916666667,
+   "debut": 298.9937083333333,
+   "fin": 307.9937083333333,
    "texte": "Le ventre et la poitrine"
   },
   {
-   "debut": 389.600625,
-   "fin": 398.600625,
+   "debut": 352.56241666666665,
+   "fin": 361.56241666666665,
    "texte": "Les bras et les épaules"
   },
   {
-   "debut": 469.8179374999999,
-   "fin": 478.8179374999999,
+   "debut": 429.37166666666667,
+   "fin": 438.37166666666667,
    "texte": "Le visage"
   },
   {
-   "debut": 524.384875,
-   "fin": 533.384875,
+   "debut": 481.7236875,
+   "fin": 490.7236875,
    "texte": "Tout le corps relâché"
   },
   {
-   "debut": 606.1634791666667,
-   "fin": 615.1634791666667,
+   "debut": 562.0065416666666,
+   "fin": 571.0065416666666,
    "texte": "Glisser vers le sommeil"
   }
  ],
  "souffles": [
   {
-   "debut": 147.1453541666667,
+   "debut": 115.26887500000001,
    "cycles": 4
   },
   {
-   "debut": 194.53095833333336,
+   "debut": 163.09972916666666,
    "cycles": 4
   }
  ],

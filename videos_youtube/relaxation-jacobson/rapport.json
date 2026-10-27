@@ -1,22 +1,179 @@
 {
  "slug": "relaxation-jacobson",
  "erreurs": [],
- "voix_score": 0.974,
+ "voix_score": 0.983,
  "phrases_douteuses": [],
- "duree_video": 1800.0,
+ "mots_ecarts": [
+  {
+   "debut": 5.3,
+   "phrase": "Cette relaxation t'accompagne quand ton corps reste crispé au moment de dormir.",
+   "prevu": "crispé",
+   "entendu": "crisper"
+  },
+  {
+   "debut": 12.4,
+   "phrase": "Écoute-la seulement allongé, au calme, jamais en conduisant.",
+   "prevu": "écoute",
+   "entendu": "écoutent"
+  },
+  {
+   "debut": 12.4,
+   "phrase": "Écoute-la seulement allongé, au calme, jamais en conduisant.",
+   "prevu": "allongé",
+   "entendu": "allongée"
+  },
+  {
+   "debut": 28.2,
+   "phrase": "La méthode que tu vas suivre s'appelle la relaxation musculaire progressive. On la doit à Jacobson, qui l'a proposée il y a près d'un siècle.",
+   "prevu": "proposée",
+   "entendu": "proposé"
+  },
+  {
+   "debut": 40.7,
+   "phrase": "Le principe est simple : tu serres un groupe de muscles quelques secondes, puis tu le relâches plus longtemps, pour bien sentir la différence.",
+   "prevu": "serre",
+   "entendu": "ser à"
+  },
+  {
+   "debut": 52.0,
+   "phrase": "Chez quelques personnes anxieuses, se relaxer fait d'abord monter la tension. Si c'est ton cas, arrête simplement, et parles-en à ton médecin.",
+   "prevu": "se relaxer",
+   "entendu": "ce relaxé"
+  },
+  {
+   "debut": 52.0,
+   "phrase": "Chez quelques personnes anxieuses, se relaxer fait d'abord monter la tension. Si c'est ton cas, arrête simplement, et parles-en à ton médecin.",
+   "prevu": "parle",
+   "entendu": "parlez"
+  },
+  {
+   "debut": 81.2,
+   "phrase": "Sens le poids de ton corps sur le matelas. Tu n'as rien à retenir.",
+   "prevu": "sen",
+   "entendu": "san"
+  },
+  {
+   "debut": 216.6,
+   "phrase": "À chaque fois, contracte assez pour sentir la tension, jamais au point d'avoir mal.",
+   "prevu": "la tension",
+   "entendu": "l attention"
+  },
+  {
+   "debut": 251.0,
+   "phrase": "Pousse maintenant tes pieds vers l'avant, pour tendre les mollets. Tiens.",
+   "prevu": "mollet",
+   "entendu": "molet"
+  },
+  {
+   "debut": 259.9,
+   "phrase": "Relâche. Tes mollets deviennent souples et lourds.",
+   "prevu": "de mollet",
+   "entendu": "ce molet"
+  },
+  {
+   "debut": 275.1,
+   "phrase": "Serre tes cuisses l'une contre l'autre. Tiens.",
+   "prevu": "serre de cuisse",
+   "entendu": "certe écuise"
+  },
+  {
+   "debut": 327.9,
+   "phrase": "Inspire profondément, et retiens ton souffle en sentant ta poitrine se tendre.",
+   "prevu": "retien don",
+   "entendu": "retient on"
+  },
+  {
+   "debut": 356.6,
+   "phrase": "Serre les poings, et tends les muscles des avant-bras. Tiens.",
+   "prevu": "poing et tend",
+   "entendu": "point étant"
+  },
+  {
+   "debut": 380.3,
+   "phrase": "Maintenant, tends tes bras entiers, de l'épaule jusqu'aux poings. Tiens.",
+   "prevu": "tend",
+   "entendu": "tente"
+  },
+  {
+   "debut": 380.3,
+   "phrase": "Maintenant, tends tes bras entiers, de l'épaule jusqu'aux poings. Tiens.",
+   "prevu": "poing",
+   "entendu": "point"
+  },
+  {
+   "debut": 413.3,
+   "phrase": "Et laisse-les retomber. Sens ta nuque qui se détend.",
+   "prevu": "sen da",
+   "entendu": "san cette"
+  },
+  {
+   "debut": 433.4,
+   "phrase": "Plisse le front, et fronce les sourcils. Tiens.",
+   "prevu": "plisse",
+   "entendu": "pisse"
+  },
+  {
+   "debut": 440.8,
+   "phrase": "Relâche. Ton front devient lisse.",
+   "prevu": "relâche",
+   "entendu": "relèche"
+  },
+  {
+   "debut": 463.9,
+   "phrase": "Et relâche. Laisse ta bouche s'entrouvrir légèrement.",
+   "prevu": "entrouvrir",
+   "entendu": "entreouvrir"
+  },
+  {
+   "debut": 509.4,
+   "phrase": "Tes pieds sont lourds. Tes jambes sont lourdes.",
+   "prevu": "de",
+   "entendu": "le"
+  },
+  {
+   "debut": 520.6,
+   "phrase": "Ton ventre est souple. Tes bras reposent.",
+   "prevu": "don",
+   "entendu": "on"
+  },
+  {
+   "debut": 520.6,
+   "phrase": "Ton ventre est souple. Tes bras reposent.",
+   "prevu": "est",
+   "entendu": "et"
+  },
+  {
+   "debut": 531.6,
+   "phrase": "Tes épaules sont basses. Ton visage est calme.",
+   "prevu": "de",
+   "entendu": "le"
+  },
+  {
+   "debut": 544.5,
+   "phrase": "Tu n'as plus rien à faire. Le matelas te porte entièrement.",
+   "prevu": "matela",
+   "entendu": "matelat"
+  }
+ ],
+ "paroles_hors_sous_titres": [],
+ "bilan_mots": "493/527 mots entendus exactement",
+ "duree_video": 3600.0,
  "duree_short": 61.5,
+ "durees_shorts_extra": [
+  44.8,
+  47.6
+ ],
  "chapitres": [
   "00:00 Introduction",
-  "00:29 Comprendre",
-  "01:35 S'installer",
-  "02:04 Respirer lentement",
-  "04:03 Les pieds et les jambes",
-  "05:35 Le ventre et la poitrine",
-  "06:29 Les bras et les épaules",
-  "07:49 Le visage",
-  "08:44 Tout le corps relâché",
-  "10:06 Glisser vers le sommeil",
-  "10:49 Musique seule pour s'endormir"
+  "01:04 S'installer",
+  "01:31 Respirer lentement",
+  "03:32 Les pieds et les jambes",
+  "04:58 Le ventre et la poitrine",
+  "05:52 Les bras et les épaules",
+  "07:09 Le visage",
+  "08:01 Tout le corps relâché",
+  "09:22 Glisser vers le sommeil",
+  "10:05 Musique seule pour s'endormir"
  ],
- "description": "Relaxation de Jacobson guidée pour s'endormir : une dizaine de minutes de voix douce pour détendre le corps muscle après muscle, des pieds jusqu'au visage, puis de la musique pour dormir (30 minutes en tout).\n\n📖 La relaxation de Jacobson pas à pas et ce que disent les études (article sourcé) : https://www.contactapaisement-mental.fr/relaxation-jacobson/\n🌙 Guide gratuit « Quand le cerveau refuse de dormir » : une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir, un calendrier de 30 jours → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=video&utm_campaign=relaxation-jacobson\n🎧 Audios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/\n\nPour les soirs où ton corps reste crispé : la vidéo commence par 1 minute pour comprendre la méthode (études citées plus bas), puis te guide zone par zone. Contracte assez pour sentir la tension, jamais au point d'avoir mal. Si une zone est blessée ou douloureuse, laisse-la au repos. Si tu t'endors avant la fin, c'est parfait.\n\n00:00 Introduction\n00:29 Comprendre\n01:35 S'installer\n02:04 Respirer lentement\n04:03 Les pieds et les jambes\n05:35 Le ventre et la poitrine\n06:29 Les bras et les épaules\n07:49 Le visage\n08:44 Tout le corps relâché\n10:06 Glisser vers le sommeil\n10:49 Musique seule pour s'endormir\n\nÀ écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. Je ne suis pas professionnel de santé.\n\n🔔 Une nouvelle méditation chaque semaine : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1\n\nSources :\n· Li et al., Frontiers in Public Health, 2026 (Université Putra Malaysia)\n· Xiao et al., Medicine, 2020 (Fujian Medical University Union Hospital)\n· Braith, McCullough et Bush, Journal of Behavior Therapy and Experimental Psychiatry, 1988 (Virginia Commonwealth University)\n\nVoix : voix de synthèse (Chatterbox Multilingual, Resemble AI, licence MIT ; voix de référence française issue du corpus SIWIS, CC BY 4.0).\nMusique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 http://creativecommons.org/licenses/by/4.0/\nPhotos : Unsplash (daniel castillo, Paul Pastourmatzis, Polina Kuzovkova, Mario Häfliger, Colter Olmstead, Emma Harper, Dylan Crawford, Kyle Glenn, Ahmet Yüksek, ji tuneji3_3, Benjamin Voros). Bols chantants : Freesound, domaine public (CC0).\n\n#relaxation #sommeil #méditationguidée"
+ "description": "Relaxation de Jacobson guidée pour s'endormir : une douzaine de minutes de voix douce pour détendre le corps muscle après muscle, des pieds jusqu'au visage, puis de la musique calme pour dormir (1 heure en tout).\n\n📖 La relaxation de Jacobson pas à pas et ce que disent les études (article sourcé) : https://www.contactapaisement-mental.fr/relaxation-jacobson/\n🌙 Guide gratuit « Quand le cerveau refuse de dormir » : une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir, un calendrier de 30 jours → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=video&utm_campaign=relaxation-jacobson\n🎧 Audios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/\n\nPour les soirs où ton corps reste crispé : la voix te guide tout de suite, zone par zone, sans long discours. Contracte assez pour sentir la tension, jamais au point d'avoir mal. Si une zone est blessée ou douloureuse, laisse-la au repos. La méthode suivie (contracter 3 à 5 secondes, relâcher 10 à 15 secondes) et les études sont détaillées dans l'article et dans les sources plus bas. Si tu t'endors avant la fin, c'est parfait : la musique continue jusqu'à 1 heure.\n\n00:00 Introduction\n01:04 S'installer\n01:31 Respirer lentement\n03:32 Les pieds et les jambes\n04:58 Le ventre et la poitrine\n05:52 Les bras et les épaules\n07:09 Le visage\n08:01 Tout le corps relâché\n09:22 Glisser vers le sommeil\n10:05 Musique seule pour s'endormir\n\nÀ écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. Je ne suis pas professionnel de santé.\n\n🔔 Abonne-toi pour recevoir les prochaines méditations : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1\n\nSources :\n· Li et al., Frontiers in Public Health, 2026 (Université Putra Malaysia)\n· Xiao et al., Medicine, 2020 (Fujian Medical University Union Hospital)\n· Braith, McCullough et Bush, Journal of Behavior Therapy and Experimental Psychiatry, 1988 (Virginia Commonwealth University)\n\nVoix : voix de synthèse ElevenLabs (elevenlabs.io), voix « Mila ».\nMusique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 http://creativecommons.org/licenses/by/4.0/\nPhotos : Unsplash (daniel castillo, Polina Kuzovkova, Mario Häfliger, Colter Olmstead, Emma Harper, Dylan Crawford, Kyle Glenn, Ahmet Yüksek, ji tuneji3_3, Benjamin Voros). Bols chantants : Freesound, domaine public (CC0).\n\n#relaxation #sommeil #méditationguidée"
 }
