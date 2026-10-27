@@ -15,6 +15,7 @@ dans l'application) retrouve de la diffusion, en parallèle du robot réduit à 
 | 2 | 1-decompresser-apres-le-travail | article « Calmer son système nerveux » |
 | 2 | 6-dormir-apres-une-dispute | article « Angoisse le soir » |
 | 3 | 2-du-demain-au-maintenant | aucun |
+| 1 (dès maintenant) | 8-video-relaxation-guidee | vidéo YouTube « Relaxation guidée pour dormir » (https://youtu.be/PbuSSZlDu1c) |
 
 Ensuite, Claude prépare de nouveaux kits sur les recherches en hausse (gestion des émotions, système nerveux,
 cortisol, bien dormir).
