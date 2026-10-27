@@ -163,6 +163,17 @@ titre2 « souffler sans culpabiliser » en écriture manuscrite ; personnage cen
 portrait of a woman in her thirties sitting relaxed in a cozy cream armchair, holding a warm cup of tea with both hands,
 eyes gently closed… sage green knit sweater… long beige trousers… ») ; cadre doré avec poudre rose et fleurs séchées.
 
+**27/10/2026** : stock à 0 ; quota Hugging Face revenu. « Culpabilité de se reposer : 5 clés pour souffler » fabriquée
+(`images_cles/culpabilite-repos-5-cles.jpg`, fatiguementale, sans lien) avec le nouvel outil `outils/planche_riche.py`,
+premier visuel qui suit l'analyse du 25/10 : **personne réaliste au centre** (portrait peint réaliste : femme en pull vert
+dans un fauteuil crème, tasse de thé, yeux fermés), une vignette aquarelle par clé (agenda, arrosoir et pousse, sablier,
+plume, tasse de thé), titre à deux niveaux (capitales Playfair + « 5 clés pour souffler » en Dancing Script), fond papier
+crème avec voiles rose poudré et sauge, bandeau sauge « Sauvegarde cette épingle pour… », signature du compte. 6 images
+Hugging Face (graine 681678), aucune écartée ; l'horloge de la 5e vignette affichait des chiffres : seule la tasse a été
+gardée (recadrage). Format `cles` dans pins.json (le robot ne connaît que `exercices` et `cles` : `riche` demanderait de
+modifier pins.yml). Contrôles : anti_doublons.py sans doublon, titre 48 caractères, corps 387, total 465, 8 hashtags ;
+`planche_riche.py` vérifie lui-même les débordements et chevauchements (assertions) ; image relue.
+
 Statistiques des épingles illustrées du robot (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 25/10, lues le 26/10) :
 
 | Épingle | Publiée | Impressions | Clics sur l'épingle | Enregistrements | Clics sortants |
