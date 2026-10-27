@@ -471,7 +471,7 @@ sup a { display: inline-block; padding: 8px 5px; margin: -8px -3px; }
 /* Test de stress et d'anxiété */
 :root[data-theme="clair"] .instrument { --t-leger: #2D6A46; --t-moyen: #6B5B3E; --t-modere: #9A5A16; --t-severe: #A93B2C; }
 :root[data-theme="clair"] .option, :root[data-theme="clair"] .test-bloc, :root[data-theme="clair"] .priorites li { background: rgba(255, 255, 255, 0.7); }
-:root[data-theme="clair"] .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); }
+@media (hover: hover) and (pointer: fine) { :root[data-theme="clair"] .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); } }
 :root[data-theme="clair"] .option[aria-pressed="true"] { background: rgba(58, 95, 67, 0.14); }
 :root[data-theme="clair"] .option .puce { border-color: rgba(45, 106, 70, 0.35); }
 :root[data-theme="clair"] .test-profil { background: linear-gradient(135deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); }
@@ -547,7 +547,7 @@ sup a { display: inline-block; padding: 8px 5px; margin: -8px -3px; }
 /* Test de stress et d'anxiété */
 :root:not([data-theme="sombre"]) .instrument { --t-leger: #2D6A46; --t-moyen: #6B5B3E; --t-modere: #9A5A16; --t-severe: #A93B2C; }
 :root:not([data-theme="sombre"]) .option, :root:not([data-theme="sombre"]) .test-bloc, :root:not([data-theme="sombre"]) .priorites li { background: rgba(255, 255, 255, 0.7); }
-:root:not([data-theme="sombre"]) .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); }
+@media (hover: hover) and (pointer: fine) { :root:not([data-theme="sombre"]) .option:hover { background: linear-gradient(90deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.8)); } }
 :root:not([data-theme="sombre"]) .option[aria-pressed="true"] { background: rgba(58, 95, 67, 0.14); }
 :root:not([data-theme="sombre"]) .option .puce { border-color: rgba(45, 106, 70, 0.35); }
 :root:not([data-theme="sombre"]) .test-profil { background: linear-gradient(135deg, rgba(58, 95, 67, 0.12), rgba(255, 255, 255, 0.7)); }
