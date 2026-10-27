@@ -25,14 +25,13 @@ Nos pages proposées ont toutes été vérifiées en ligne (code 200) le 15/10/2
   - « Mon Agenda du Sommeil Antifatigue » (section sommeil) : https://sanpsy.u-bordeaux.fr/fr/article82/lancement-de-l-application-mon-agenda-du-sommeil-antifatigue
   - « plus facile à comprendre » (Violentomètre, section relations toxiques) : https://www.intimagir-occitanie.org/outils-lcv
 - **Champs** : Nom* (le tien), Prénom* Yacine, Adresse email* yacinenettour@gmail.com, Téléphone (facultatif, laisser vide), Objet*, Message*, case « J'accepte la politique de confidentialité »* à cocher. Pas de captcha visible. Ne rien mettre dans un éventuel champ caché « Name ». Réponse annoncée sous 5 jours ouvrés.
-- **Objet** : Deux liens morts et une ressource gratuite de respiration
+- **Objet** : Un lien mort et une ressource gratuite de respiration
+- **Revérifié le 27/10/2026** : le lien Violentomètre renvoie toujours une erreur 404 (2 essais) ; le site sanpsy.u-bordeaux.fr est « en maintenance » (erreur 503 sur tout le site) : ce n'est pas un lien mort, retiré du message.
 
 ```text
 Bonjour,
 
-En lisant votre page « S'aider soi-même, des outils pour tous » (mise à jour le 29/09/2026), j'ai remarqué deux liens qui renvoient aujourd'hui une erreur 404 :
-– « Mon Agenda du Sommeil Antifatigue » (partie sommeil) : https://sanpsy.u-bordeaux.fr/fr/article82/lancement-de-l-application-mon-agenda-du-sommeil-antifatigue
-– « plus facile à comprendre » (Violentomètre) : https://www.intimagir-occitanie.org/outils-lcv
+En lisant votre page « S'aider soi-même, des outils pour tous » (mise à jour le 29/09/2026), j'ai remarqué un lien qui renvoie aujourd'hui une erreur 404 : « plus facile à comprendre » (Violentomètre, partie sur les relations toxiques) : https://www.intimagir-occitanie.org/outils-lcv
 
 Je tiens un site gratuit, sans publicité, sur le stress et le sommeil. Je ne suis pas professionnel de santé et le site n'a pas encore été relu par un professionnel : chaque article cite ses sources (Inserm, HAS, études publiées) et se termine par une section « Quand consulter ? ».
 
