@@ -146,6 +146,8 @@ Va voir ton médecin si tes difficultés de sommeil ou ta fatigue durent malgré
 - tu remarques des changements physiques inhabituels, comme ceux décrits dans notre article [« Cortisol, hormone du stress »](/cortisol-hormone-du-stress/), car seul un médecin peut prescrire et interpréter les bons examens ;
 - tu envisages un complément alors que tu prends des médicaments, que tu es enceinte, que tu allaites ou que tu as une maladie du foie [8], ou un cocktail « anti-cortisol » alors que tu es suivi pour les reins [7].
 
+Pour des symptômes physiques, commence toujours par ton médecin, qui pourra écarter une autre cause. Ensuite, si le stress reste en toile de fond, un psychologue peut t'aider à le travailler, et tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Si le stress s'accompagne d'idées noires, appelle le 3114, numéro national de prévention du suicide, joignable 24 h/24. En cas de danger immédiat, compose le 15 ou le 112.
 
 ## Questions fréquentes

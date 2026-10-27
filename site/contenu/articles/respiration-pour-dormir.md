@@ -125,9 +125,11 @@ Va voir ton médecin si tes difficultés à t'endormir reviennent au moins trois
 - l'angoisse monte au coucher ou te réveille en pleine nuit, et dans ce cas notre article sur l'[angoisse le soir](/angoisse-le-soir/) t'aide à faire le point ;
 - tu as envie de prendre des somnifères. Ne le fais pas seul, demande conseil à ton médecin [10].
 
+Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24, 7 j/7 [12].
 
-Cet article t'informe, il ne remplace pas l'avis d'un médecin.
+Cet article t'informe, il ne remplace pas l'avis d'un médecin ou d'un psychologue.
 
 ## Questions fréquentes
 

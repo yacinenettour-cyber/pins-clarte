@@ -138,6 +138,8 @@ Va voir ton médecin traitant si tu remarques des changements physiques inhabitu
 
 Si tu prends des corticoïdes, ne les arrête jamais de toi-même : la baisse doit être progressive et décidée avec ton médecin [5].
 
+Pour des symptômes physiques, commence toujours par ton médecin, qui pourra écarter une autre cause. Ensuite, si le stress reste en toile de fond, un psychologue peut t'aider à le travailler, et tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Appelle le 15 (ou le 112) en cas de douleur abdominale sévère, de faiblesse intense ou de malaise : chez une personne atteinte d'insuffisance surrénalienne, ces signes peuvent annoncer une crise surrénalienne [8]. Si le stress s'accompagne d'idées noires, le 3114, numéro national de prévention du suicide, répond 24 h/24.
 
 Aucun questionnaire ne mesure le cortisol. Le [test de stress et d'anxiété](/test-stress-anxiete/) t'aide en revanche à faire le point sur tes symptômes en 2 minutes, avec des repères pour savoir quand consulter. Si ce stress vient surtout du travail, lis aussi les [signes du burn-out et qui consulter](/signes-du-burn-out/).

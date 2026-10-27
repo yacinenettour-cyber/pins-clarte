@@ -173,8 +173,8 @@
     var conseilMedical = n.cle === "severe"
       ? "<p><strong>Prends rendez-vous rapidement avec ton médecin traitant, dans les prochains jours.</strong> Montre-lui ce score : ce questionnaire ne pose pas de diagnostic, mais il l'aidera à faire le point avec toi.</p>"
       : n.cle === "modere"
-      ? "<p><strong>Prends rendez-vous avec ton médecin traitant pour en parler.</strong> Ce questionnaire ne pose pas de diagnostic : seul un professionnel peut le faire, et des solutions efficaces existent.</p>"
-      : "<p>Si tes symptômes durent, s'aggravent ou te gênent au quotidien, parles-en à ton médecin traitant : il est difficile de juger seul de son état.</p>";
+      ? "<p><strong>Prends rendez-vous avec ton médecin traitant pour en parler.</strong> Ce questionnaire ne pose pas de diagnostic : seul un professionnel peut le faire, et des solutions efficaces existent. Tu peux aussi prendre rendez-vous directement avec un psychologue : certaines séances sont remboursées avec <a href=\"https://monsoutienpsy.ameli.fr/\">Mon soutien psy</a>.</p>"
+      : "<p>Si tes symptômes durent, s'aggravent ou te gênent au quotidien, parles-en à ton médecin traitant ou à un psychologue : il est difficile de juger seul de son état.</p>";
 
     compteur.textContent = "Ton résultat";
     barre.style.width = "100%";

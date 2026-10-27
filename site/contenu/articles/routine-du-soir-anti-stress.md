@@ -71,12 +71,15 @@ Deux pièges reviennent souvent :
 - se coucher très tôt « pour rattraper » alors qu'on n'a pas sommeil [1].
 
 ## Quand consulter ?
+
 Va voir ton médecin traitant si tes difficultés de sommeil durent et pèsent sur tes journées, sans attendre qu'elles s'installent, ou si tu luttes contre le sommeil dans la journée. Une routine du soir aide beaucoup de monde, mais elle ne règle pas tout. Parles-en à ton médecin si :
 - tes difficultés de sommeil reviennent souvent et durent : au-delà de trois mois, à plus de trois nuits par semaine, on parle d'insomnie chronique [2], et il vaut mieux en avoir parlé avant ;
 - tu luttes contre le sommeil dans la journée, en particulier au volant (dans ce cas, ne conduis pas) [1] ;
 - on te signale des pauses respiratoires pendant ton sommeil, ou tu restes fatigué et somnolent malgré des nuits complètes : l'apnée du sommeil fait partie des causes possibles [3] ;
 - tu ressens le soir un besoin irrépressible de bouger les jambes, avec des sensations désagréables [3] ;
 - ton moral s'effondre, ou l'anxiété envahit tes journées comme tes nuits.
+
+Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si tu as des idées suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit et joignable 24 h/24 [8]. En cas de danger immédiat, compose le 15.
 

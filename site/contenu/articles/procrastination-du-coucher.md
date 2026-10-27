@@ -94,6 +94,8 @@ Va voir ton médecin si tu mets longtemps à t'endormir même en te couchant plu
 
 Face à une insomnie, l'Inserm indique que les thérapies cognitivo-comportementales (TCC) sont l'approche à privilégier [8].
 
+Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Cet article t'informe, il ne remplace pas un avis médical.
 
 Si tu repousses le coucher parce que le lit rime avec inquiétudes, le [test de stress et d'anxiété](/test-stress-anxiete/) t'aide à y voir plus clair en 2 minutes, sans rien envoyer.

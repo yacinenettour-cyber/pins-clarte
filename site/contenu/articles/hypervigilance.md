@@ -100,6 +100,8 @@ Consulte ton médecin traitant, un psychologue ou un psychiatre si tu restes en 
 
 Le trouble de stress post-traumatique se soigne [1][2]. Sans prise en charge, en revanche, il tend à devenir chronique [1]. Et tu n'as pas besoin de raconter tout ce que tu as vécu pour demander de l'aide. Dire que tu ne dors plus et que tu restes en alerte, ça suffit pour un premier rendez-vous.
 
+Pour ce suivi, tu peux prendre rendez-vous directement avec un psychologue, sans attendre que tout empire. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Si des idées noires apparaissent, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24, 7 j/7 [13]. Si tu es en danger, appelle le 15 ou le 112. Les autres numéros utiles, dont ceux pour les victimes de violences, sont sur notre page [ressources d'urgence](/ressources-urgence/).
 
 Cet article t'informe, il ne remplace pas l'avis d'un médecin ou d'un psychologue.

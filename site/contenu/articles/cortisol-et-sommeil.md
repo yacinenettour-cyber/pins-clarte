@@ -112,6 +112,8 @@ Va voir ton médecin si tes difficultés de sommeil durent et pèsent sur tes jo
 - tu remarques des changements physiques inhabituels, comme un visage qui s'arrondit ou de la graisse qui s'accumule sur le torse : les signes d'un vrai excès de cortisol sont détaillés dans l'article [Cortisol, hormone du stress](/cortisol-hormone-du-stress/) ;
 - ton moral baisse, ou l'anxiété envahit aussi tes journées.
 
+Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit et joignable 24 h/24. En cas de danger immédiat, compose le 15 ou le 112.
 
 Si c'est le stress qui t'empêche de dormir, le [test d'anxiété gratuit (GAD-7)](/test-stress-anxiete/) te donne en 2 minutes un score et des repères pour savoir s'il vaut mieux en parler à ton médecin.

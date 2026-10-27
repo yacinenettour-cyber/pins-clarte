@@ -110,6 +110,8 @@ Va voir ton médecin traitant si l'angoisse revient presque tous les soirs, si t
 
 Le traitement de fond, c'est la thérapie comportementale et cognitive. D'après l'Assurance maladie, elle est efficace pour gérer comme pour prévenir les attaques de panique, en général en 12 à 18 séances, à raison d'une par semaine pendant 3 à 4 mois [2].
 
+Pour ce suivi, tu peux prendre rendez-vous directement avec un psychologue, sans attendre que tout empire. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Une douleur dans la poitrine, un malaise ou un essoufflement inhabituel, c'est le 15 ou le 112. Ne fais pas le diagnostic toi-même. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 [11].
 
 Pour faire le point, le [test de stress et d'anxiété](/test-stress-anxiete/) (questionnaire GAD-7) prend 2 minutes, et tes réponses restent sur ton appareil.

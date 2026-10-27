@@ -114,6 +114,7 @@ Quelques rendez-vous courts suffisent, toujours aux mêmes moments, et ça fait 
 Ajoute un vrai échange avec un proche, même court. Le soir, note ton niveau de tension de 0 à 10. Au bout de deux semaines, tu verras ce qui marche le mieux pour toi. Si tu veux garder une trace sans compte ni inscription, le [journal d'humeur](/journal-humeur/) du site suit aussi ton humeur, ton stress et tes nuits.
 
 ## Quand consulter ?
+
 Va voir ton médecin traitant si ton anxiété dure, revient sous forme de crises ou t'empêche de vivre normalement. Ces techniques aident à passer un pic de stress. Elles ne remplacent pas un avis médical, et cet article non plus. Parles-en à ton médecin si :
 
 - tes symptômes d'anxiété durent : l'Assurance maladie recommande de consulter, car il est difficile de juger seul de son état psychologique [8] ;
@@ -121,6 +122,8 @@ Va voir ton médecin traitant si ton anxiété dure, revient sous forme de crise
 - tu fais des attaques de panique : une peur intense qui arrive brutalement et culmine en une vingtaine de minutes, avec palpitations, sueurs, sensation d'étouffement ou douleur dans la poitrine [8] ;
 - ces crises se répètent et tu évites certaines situations par peur d'en refaire une : c'est le tableau du trouble panique [8] ;
 - l'anxiété a un retentissement important sur ta vie de tous les jours [8].
+
+Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Une douleur dans la poitrine ou un malaise inhabituel, c'est le 15 ou le 112. Ne fais pas le diagnostic toi-même. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 

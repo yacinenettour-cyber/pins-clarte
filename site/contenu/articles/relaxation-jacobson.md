@@ -102,9 +102,11 @@ Consulte aussi si :
 
 Si tu restes éveillé plus de 20 minutes malgré l'exercice, l'INSV conseille de te lever et de faire autre chose, puis de ne revenir te coucher qu'aux premiers signes de sommeil, comme les bâillements, la nuque lourde ou les yeux qui piquent [13].
 
+Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24, 7 j/7 [14].
 
-Cet article t'informe, il ne remplace pas l'avis d'un médecin.
+Cet article t'informe, il ne remplace pas l'avis d'un médecin ou d'un psychologue.
 
 ## Questions fréquentes
 

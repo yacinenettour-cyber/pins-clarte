@@ -115,12 +115,15 @@ C'est une limite médicale. La charge mentale n'est pas un diagnostic, alors que
 Une charge mentale lourde, qui dure, à la maison ou au travail, mérite donc qu'on la prenne au sérieux avant d'en arriver là.
 
 ## Quand consulter ?
+
 Va voir ton médecin traitant si ta fatigue persiste malgré les changements, ou si elle t'empêche d'assurer ton quotidien. Cet article ne remplace pas un avis médical. Prends rendez-vous si [8] :
 
 - ta fatigue persiste après plusieurs jours ou semaines, malgré des changements dans ton quotidien ;
 - l'épuisement t'empêche d'assurer tes occupations de tous les jours ;
 - tu ressens une souffrance psychique, comme de l'angoisse ou une déprime ;
 - la fatigue s'accompagne d'autres symptômes : fièvre, perte ou prise de poids non voulue, douleurs.
+
+Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si ton travail est en cause, tu peux aussi demander à voir le médecin du travail à tout moment, y compris pendant un arrêt, et sans en informer ton employeur si la visite a lieu en dehors des heures de travail [6]. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 

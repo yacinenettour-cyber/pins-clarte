@@ -128,6 +128,7 @@ Va voir ton médecin si la nourriture prend trop de place dans ta tête, ou si t
 
 Le plus souvent, le traitement de ces troubles réunit médecins, psychologues et diététiciens [18]. Si tu as des pensées suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 [19].
 
+Si le stress pèse sur ta façon de manger, un psychologue peut aussi t'aider, et tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 ## Questions fréquentes
 
 ### Que manger contre le stress et l'angoisse ?

@@ -92,6 +92,8 @@ Va voir ton médecin traitant si l'angoisse revient presque tous les matins depu
 
 L'anxiété et la dépression se soignent. D'après l'Assurance maladie, la psychothérapie est recommandée quel que soit le trouble anxieux, et la thérapie comportementale et cognitive est reconnue efficace quand l'anxiété est importante [7]. Ne prends pas d'anxiolytique sans avis médical. L'Assurance maladie rappelle leurs risques, parmi lesquels la somnolence, les troubles de la mémoire et la dépendance [7].
 
+Pour ce suivi, tu peux prendre rendez-vous directement avec un psychologue, sans attendre que tout empire. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 [13]. Une douleur dans la poitrine ou un malaise, c'est le 15 ou le 112.
 
 Pour faire le point, le [test de stress et d'anxiété](/test-stress-anxiete/) (questionnaire GAD-7) prend 2 minutes, et tes réponses restent sur ton appareil.

@@ -112,6 +112,8 @@ Consulte ton médecin traitant si ta boule au ventre revient presque tous les jo
 - tu fais des crises d'angoisse, avec une peur intense et des signes physiques qui arrivent d'un coup [7] ;
 - tu prends de plus en plus de café, de tabac, d'alcool ou de somnifères pour tenir, des comportements que l'INRS range parmi les répercussions du stress [1].
 
+Pour des symptômes physiques, commence toujours par ton médecin, qui pourra écarter une autre cause. Ensuite, si le stress reste en toile de fond, un psychologue peut t'aider à le travailler, et tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+
 Une douleur dans la poitrine qui serre, avec ou sans essoufflement, sueurs, nausées ou malaise, c'est le 15 ou le 112, et dans le doute on appelle [15]. Ne prends pas d'anxiolytique sans avis médical. L'Assurance maladie rappelle leurs risques, dont la somnolence, les troubles de la mémoire et la dépendance [9].
 
 Si des idées noires accompagnent ce stress, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24 et 7 j/7 [14]. Les autres numéros utiles sont sur la page [ressources d'urgence](/ressources-urgence/).

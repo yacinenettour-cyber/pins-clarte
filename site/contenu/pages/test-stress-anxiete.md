@@ -39,7 +39,7 @@ Le score du GAD-7 va de 0 à 21 : chaque réponse compte de 0 (« Jamais ») à 
 |---|---|---|
 | 0 à 4 | Sous le premier seuil | Garder tes repères, et refaire le test en période chargée |
 | 5 à 9 | Symptômes légers | Les gestes de ton profil, et en parler à ton médecin si ça dure |
-| 10 à 14 | Symptômes modérés | Prendre rendez-vous avec ton médecin traitant : c'est le seuil recommandé pour une évaluation [3] |
+| 10 à 14 | Symptômes modérés | Prendre rendez-vous avec ton médecin traitant ou un psychologue : c'est le seuil recommandé pour une évaluation [3] |
 | 15 à 21 | Symptômes sévères | Consulter rapidement : les auteurs y voient un signal d'alerte [3] |
 
 Un score élevé ne veut pas dire que tu as un trouble anxieux : le GAD-7 est un outil de repérage, et seul un professionnel peut poser un diagnostic. À l'inverse, un score bas n'empêche pas de consulter si tu te sens mal : l'Assurance maladie rappelle qu'il est difficile de juger seul de son état psychologique [4].
@@ -77,6 +77,8 @@ Consulte ton médecin traitant si ton score au GAD-7 atteint 10 ou plus [3], ou 
 
 - tes inquiétudes sont excessives, envahissantes et impossibles à contrôler [4] ;
 - tu te sens épuisé(e) par ton travail : si tu es salarié(e), le médecin du travail peut aussi faire le point et envisager un aménagement de poste [6].
+
+Le médecin n'est pas ta seule porte d'entrée : tu peux aussi prendre rendez-vous directement avec un psychologue, qui peut t'aider à comprendre ton anxiété et à la travailler. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 En cas d'urgence médicale (douleur dans la poitrine, essoufflement inhabituel, malaise), appelle le 15 (Samu) ou le 112 [8]. Si tu as des pensées suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7 [9].
 

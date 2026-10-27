@@ -89,12 +89,15 @@ Presque toutes le présentent comme un bouton qu'on pourrait « réinitialiser �
 La méta-analyse sur l'oreille vient de l'Université de Tübingen, en Allemagne, et elle est parue en 2021 dans une revue de psychophysiologie [7]. Tu peux créer des moments de ralentissement dans ta journée, mais il n'existe pas de bouton pour tout remettre à zéro. La fatigue, l'anxiété ou les troubles digestifs ont de nombreuses causes possibles, qui méritent d'être explorées avec un professionnel de santé.
 
 ## Quand consulter ?
+
 Va voir ton médecin si ton stress dure depuis plusieurs semaines, si tu fais des malaises, ou si tu as des symptômes cardiaques ou digestifs inhabituels. Chez la plupart des gens, la respiration lente pose peu de problèmes [2], mais elle ne remplace pas un avis médical. Prends rendez-vous si :
 - ton stress ou ton anxiété dure depuis plusieurs semaines et pèse sur ton travail, tes relations ou ton sommeil ;
 - tu fais des malaises, même brefs, avec perte de connaissance. Le malaise vagal, quand le nerf vague réagit trop fort à la chaleur, à la douleur, au stress ou à la faim, fait partie des causes possibles, mais il faut écarter les autres [1] ;
 - tu ressens des palpitations, un essoufflement inhabituel ou une gêne dans la poitrine (en cas de douleur thoracique, appelle le 15) ;
 - tu as des troubles digestifs qui durent, comme une digestion très lente, car une atteinte du nerf vague peut ralentir la vidange de l'estomac [1] ;
 - tu as un problème cardiaque et tu envisages une exposition intense au froid, comme un bain glacé.
+
+Pour des symptômes physiques, commence toujours par ton médecin, qui pourra écarter une autre cause. Ensuite, si le stress reste en toile de fond, un psychologue peut t'aider à le travailler, et tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si tu as des idées suicidaires, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24 [8].
 
