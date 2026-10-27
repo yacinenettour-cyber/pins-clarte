@@ -1,4 +1,4 @@
-# Mise en ligne à la main : « Relaxation musculaire progressive de Jacobson guidée pour dormir (1 h) »
+# Mise en ligne à la main : « Relaxation guidée pour dormir : relaxation musculaire Jacobson (1 h) »
 
 Voix : **Mila (ElevenLabs)**, choisie par l'utilisateur le 27/10/2026. Contrôles du 27/10 : aucune erreur, score de voix 0.983, 493/527 mots entendus exactement (les écarts restants sont des homophones mal transcrits par Whisper, vérifiés), aucune parole hors des sous-titres.
 
@@ -10,7 +10,7 @@ Dans le zip : `relaxation-jacobson/video.mp4` (vidéo), `relaxation-jacobson/sho
 ⚠️ Ne pas prendre les fichiers des runs précédents (anciennes voix).
 
 ## Vidéo
-- Titre : Relaxation musculaire progressive de Jacobson guidée pour dormir (1 h)
+- Titre : Relaxation guidée pour dormir : relaxation musculaire Jacobson (1 h)
 - Miniature : `miniature.jpg` (ce dossier) — refaite le 27/10 pour YouTube : femme endormie au calme (image générée, Hugging Face gratuit), 3 mots en gros « Relâche tout ton corps », pastille « 1 HEURE », lisible en petit sur mobile ; rien en bas à droite (durée affichée par YouTube)
 - Sous-titres : `sous-titres.srt` (ce dossier), langue français
 - Catégorie : Mode de vie (26) — Public : « Non, cette vidéo n'est pas conçue pour les enfants »

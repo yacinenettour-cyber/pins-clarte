@@ -1,6 +1,6 @@
 {
  "slug": "relaxation-jacobson",
- "statut": "fabriquee",
+ "statut": "publiee",
  "envoi_manuel": true,
  "bloquee": true,
  "publication_prevue": "2026-10-30T18:00:00Z",
@@ -385,7 +385,7 @@
   "bas1": "Relaxation complète (1 h) sur la chaîne"
  },
  "youtube": {
-  "titre": "Relaxation musculaire progressive de Jacobson guidée pour dormir (1 h)",
+  "titre": "Relaxation guidée pour dormir : relaxation musculaire Jacobson (1 h)",
   "accroche": "Relaxation musculaire progressive de Jacobson guidée pour dormir : une douzaine de minutes de voix douce pour détendre le corps muscle après muscle, des pieds jusqu'au visage, puis de la musique calme pour s'endormir (1 heure en tout).",
   "libelle_article": "La relaxation de Jacobson pas à pas et ce que disent les études (article sourcé)",
   "guide": "sommeil",
@@ -438,5 +438,7 @@
    "titre": "Relâche tes bras et tes mains avant de dormir 😴 #relaxation #sommeil",
    "description": "Serre les poings, tends les bras, puis relâche tout. Extrait de la relaxation Jacobson guidée (1 h) sur la chaîne."
   }
- ]
+ ],
+ "video_id": "PbuSSZlDu1c",
+ "lien": "https://youtu.be/PbuSSZlDu1c"
 }
