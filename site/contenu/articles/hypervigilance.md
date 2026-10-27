@@ -3,6 +3,7 @@ titre: Hypervigilance : définition, symptômes et effets sur le sommeil
 titre_seo: Hypervigilance : définition, symptômes et sommeil
 description: Hypervigilance : définition, symptômes, lien avec le stress, l'anxiété et le trauma, effets sur le sommeil, ce qui aide vraiment et quand consulter.
 slug: hypervigilance
+date: 2026-10-19
 mot_cle: hypervigilance
 guide: sommeil
 maj: 2026-10-25

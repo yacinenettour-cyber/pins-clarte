@@ -3,6 +3,7 @@ titre: Respiration pour dormir : 4-7-8, carrée ou lente, ce qui marche vraiment
 titre_seo: Respiration pour dormir : 4-7-8, carrée ou lente ?
 description: Respiration pour dormir : la technique 4-7-8 pas à pas, la respiration carrée, la méthode militaire ou la respiration lente ? Ce que disent les études.
 slug: respiration-pour-dormir
+date: 2026-10-12
 mot_cle: respiration pour dormir
 guide: sommeil
 maj: 2026-10-21

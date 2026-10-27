@@ -3,6 +3,7 @@ titre: Routine du soir pour mieux dormir : le rituel anti-stress en 7 étapes
 titre_seo: Routine du soir pour bien dormir : 7 étapes anti-stress
 description: Routine du soir pour mieux dormir : 7 gestes simples (lumière, écrans, douche, respiration, liste) et des versions de 3, 10 ou 20 minutes, sourcées.
 slug: routine-du-soir-anti-stress
+date: 2026-10-09
 mot_cle: routine du soir
 guide: sommeil
 maj: 2026-10-25

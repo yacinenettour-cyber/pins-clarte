@@ -3,6 +3,7 @@ titre: Symptômes physiques du stress : les signes, de la tête au ventre
 titre_seo: Symptômes physiques du stress : de la tête au ventre
 description: Symptômes physiques du stress, aigu ou chronique : tête, mâchoire, cœur, souffle, ventre, défenses. Les signes zone par zone, et quand consulter vite.
 slug: symptomes-physiques-du-stress
+date: 2026-10-15
 mot_cle: symptômes physiques du stress
 guide: sommeil
 maj: 2026-10-25

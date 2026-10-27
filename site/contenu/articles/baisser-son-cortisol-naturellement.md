@@ -3,6 +3,7 @@ titre: Baisser son cortisol naturellement : ce qui marche vraiment
 titre_seo: Baisser son cortisol naturellement : ce qui marche
 description: Baisser son cortisol naturellement : sommeil, lumière, sport doux, respiration… ce que disent les études, ce qui ne marche pas, et un plan pour ta journée.
 slug: baisser-son-cortisol-naturellement
+date: 2026-10-09
 mot_cle: baisser son cortisol naturellement
 guide: cortisol
 maj: 2026-10-13

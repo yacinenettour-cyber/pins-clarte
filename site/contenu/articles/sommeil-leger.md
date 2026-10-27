@@ -5,6 +5,7 @@ description: Sommeil léger, réveil au moindre bruit ? Ce qui le rend fragile (
 slug: sommeil-leger
 mot_cle: sommeil léger
 guide: sommeil
+date: 2026-10-26
 maj: 2026-10-26
 image: Femme allongée sur le dos dans un lit aux draps clairs, vue d'en haut, les yeux grands ouverts et les bras le long du corps, dans une lumière chaude de chambre le soir
 ---

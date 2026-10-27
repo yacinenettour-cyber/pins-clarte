@@ -3,6 +3,7 @@ titre: Cortisol, hormone du stress : son rôle, son rythme et les idées reçues
 titre_seo: Cortisol, hormone du stress : rôle et rythme sur 24 h
 description: Cortisol, hormone du stress : c'est quoi, quel lien entre le cortisol et le stress, pourquoi il culmine le matin et ce que cache le « visage cortisol ».
 slug: cortisol-hormone-du-stress
+date: 2026-10-09
 mot_cle: cortisol hormone du stress
 guide: cortisol
 maj: 2026-10-25

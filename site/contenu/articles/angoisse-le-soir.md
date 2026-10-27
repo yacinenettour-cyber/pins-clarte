@@ -3,6 +3,7 @@ titre: Angoisse le soir : pourquoi elle monte la nuit et comment la calmer
 titre_seo: Angoisse le soir : pourquoi elle monte et comment la calmer
 description: Angoisse le soir, même sans raison, ou crise qui réveille la nuit : pourquoi l'anxiété monte au coucher, que faire sur le moment et quand consulter.
 slug: angoisse-le-soir
+date: 2026-10-10
 mot_cle: angoisse le soir
 guide: sommeil
 maj: 2026-10-25

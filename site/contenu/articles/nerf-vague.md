@@ -3,6 +3,7 @@ titre: Nerf vague : comment l'activer naturellement, ce qui marche vraiment
 titre_seo: Nerf vague : l'activer naturellement, ce qui marche vraiment
 description: Nerf vague : comment l'activer par la respiration lente, ce que valent le froid ou le chant, ce qui reste à prouver, et deux exercices simples.
 slug: nerf-vague
+date: 2026-10-09
 mot_cle: nerf vague
 guide: sommeil
 maj: 2026-10-25
