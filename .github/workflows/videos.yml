@@ -215,6 +215,18 @@ jobs:
               guide = "cortisol"
           else:
               guide = None if video["theme"] in THEMES_SANS_LIEN else "sommeil"
+          # 27/10/2026 (analyse en profondeur, accord de l'utilisateur « Oui pour videos ») : plus aucun lien
+          # vers les pages de capture lp.contactapaisement-mental.fr, déclassées par Pinterest depuis le
+          # 19/04/2026. Les vidéos n'ont donc plus de lien, et les phrases qui renvoient au guide ou au plan
+          # « en lien » sont retirées de la description (rien ne doit promettre un lien absent).
+          SANS_PAGES_CAPTURE = True
+          if SANS_PAGES_CAPTURE:
+              guide = None
+              m_tags = re.search(r"(\s#\w+(?:\s#\w+)*)\s*$", video["description"])
+              corps_v = video["description"][:m_tags.start()] if m_tags else video["description"]
+              phrases = re.split(r"(?<=[.!?…])\s+", corps_v.strip())
+              garde = [ph for ph in phrases if not re.search(r"(?i)guide|plan anti-cortisol|plan gratuit|en lien|lien en", ph)]
+              video["description"] = " ".join(garde or phrases[:1]) + (m_tags.group(1) if m_tags else "")
           if guide == "cortisol" and video.get("description_guide_cortisol"):
               video["description"] = video["description_guide_cortisol"]
           # Dernière scène qui renvoie vers le guide (champ "fin_avec_lien"), seulement si la
