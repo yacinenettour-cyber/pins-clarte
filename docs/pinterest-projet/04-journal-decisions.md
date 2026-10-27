@@ -1119,3 +1119,20 @@ probable fort / moyen / faible, méthode écrite.
   phrase réécoutée par Whisper et régénérée si texte faux, mots en trop ou durée anormale (testé localement : phrase
   normale acceptée, phrase suivie de paroles en trop rejetée) ; fabrication arrêtée si une phrase reste fausse ;
   cloche de départ 0,35 → 0,12 avec montée de 2 s. Vidéo remise à fabriquer.
+
+## 89. Site : psychologue et Mon soutien psy dans « Quand consulter » (27/10/2026, accord de l'utilisateur)
+
+- **Origine** : 2e suggestion de la psychologue relectrice bénévole (section 88, `docs/relecture-professionnelle.md`) :
+  le site renvoyait presque toujours vers le seul médecin traitant. Demande de l'utilisateur : « Oui, commence les
+  modifications Quand consulter ».
+- **Fait** : un paragraphe ajouté dans « Quand consulter ? » des 20 articles, avant le rappel d'urgence, adapté au
+  sujet : stress/anxiété/ruminations/sommeil → psychologue en accès direct ; symptômes physiques (boule au ventre,
+  symptômes physiques, nerf vague, cortisol) → médecin d'abord pour écarter une autre cause, puis psychologue ;
+  alimentation → psychologue si le stress pèse sur la façon de manger. Phrase finale « …d'un médecin ou d'un
+  psychologue ». Page du test : même paragraphe, tableau des scores (10-14 : médecin ou psychologue), message de
+  résultat modéré et léger ; score ≥ 15 inchangé (médecin rapidement).
+- **Aucun chiffre sur Mon soutien psy** (nombre de séances, montant) : les pages officielles (ameli, Service-Public)
+  n'étaient pas lisibles le 27/10 ; seul le lien vers l'annuaire officiel monsoutienpsy.ameli.fr est donné. Ajouter
+  les chiffres seulement après lecture d'une page officielle.
+- **Vérifié** : W3C (0 erreur hors CSS déjà connues de l'accueil), axe 0 violation sur 4 pages × 2 thèmes, 21 pages en
+  ligne avec le lien, IndexNow 200.
