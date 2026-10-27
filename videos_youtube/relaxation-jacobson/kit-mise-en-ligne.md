@@ -11,7 +11,7 @@ Dans le zip : `relaxation-jacobson/video.mp4` (vidéo), `relaxation-jacobson/sho
 
 ## Vidéo
 - Titre : Relaxation musculaire progressive de Jacobson guidée pour dormir (1 h)
-- Miniature : `miniature.jpg` (ce dossier)
+- Miniature : `miniature.jpg` (ce dossier) — refaite le 27/10 pour YouTube : femme endormie au calme (image générée, Hugging Face gratuit), 3 mots en gros « Relâche tout ton corps », pastille « 1 HEURE », lisible en petit sur mobile ; rien en bas à droite (durée affichée par YouTube)
 - Sous-titres : `sous-titres.srt` (ce dossier), langue français
 - Catégorie : Mode de vie (26) — Public : « Non, cette vidéo n'est pas conçue pour les enfants »
 - Visibilité : programmée le vendredi 30/10 à 19 h (heure de Paris)
