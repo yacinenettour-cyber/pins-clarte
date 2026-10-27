@@ -1158,3 +1158,10 @@ probable fort / moyen / faible, méthode écrite.
 - **YouTube** : la vidéo Jacobson avait été arrêtée par le contrôle sur une seule phrase juste en longueur (similarité
   0,85 à l'arrondi). Seuil assoupli seulement quand la longueur est juste (0,9 à 1,1) ; les paroles inventées restent
   refusées. Vidéo remise à fabriquer.
+- **Épingles reliées (27/10, accord de l'utilisateur « oui pour pins.yml »)** : `ARTICLES_SITE` de `pins.yml` reçoit
+  `sommeil-leger` (3 épingles déjà reliées le 26/10) et `machoire-serree-stress`. L'épingle inédite « Mâchoire serrée
+  par le stress : 3 exercices simples » est réécrite avant d'être reliée : elle affirmait sans source que les exercices
+  « réduisent significativement le bruxisme nocturne » et conseillait la langue au palais, absente de l'article.
+  Nouveau titre « Mâchoire crispée au travail : 3 gestes pour la relâcher » (le premier essai était trop proche de
+  « Poitrine serrée par le stress… », 0,82), points et descriptions alignés sur l'article (NHS, revue de Malmö),
+  description 462 caractères ; `verifier_banque.py` : 0 doublon ; filtre du pipeline : accepté.
