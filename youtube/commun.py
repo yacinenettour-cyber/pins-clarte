@@ -66,6 +66,12 @@ def normaliser(texte):
     return "".join({"tes": "des", "ta": "da", "ton": "don"}.get(m, m).rstrip("sx") for m in mots)
 
 
+def mots_normalises(texte):
+    """Liste de mots comparables un à un (mêmes règles que normaliser(), sans coller les mots)."""
+    mots = re.sub(r"[^a-zàâçéèêëîïôûùüœ ]", " ", texte.lower().replace("’", "'").replace("'", " ").replace("-", " ")).split()
+    return [{"tes": "des", "ta": "da", "ton": "don"}.get(m, m).rstrip("sx") for m in mots]
+
+
 def reconnaissance():
     """Whisper small (gratuit, local, sherpa-onnx), téléchargé par le workflow dans MODELES."""
     import sherpa_onnx
