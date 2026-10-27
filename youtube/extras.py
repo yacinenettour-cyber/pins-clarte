@@ -93,6 +93,7 @@ SW, SH, SFPS = 1080, 1920, 30
 
 
 def short(slug):
+    """Short principal : la première respiration guidée (travail/<slug>/short.mp4)."""
     plan, trav = lire_plan(slug), dossier_travail(slug)
     tl = json.load(open(os.path.join(trav, "timeline.json")))
     if not tl["souffles"]:
@@ -102,8 +103,35 @@ def short(slug):
     cyc = tl["insp"] + tl["exp"]
     d0 = max(0.0, s["debut"] - 16.5)
     d1 = s["debut"] + s["cycles"] * cyc + 5
-    sh = plan.get("short", {})
     ph = next((p for p in plan["photos"] if p.get("short")), plan["photos"][1])
+    return _short(trav, tl, plan.get("short", {}), ph, d0, d1, s, os.path.join(trav, "short.mp4"))
+
+
+def shorts_extra(slug):
+    """Shorts supplémentaires (27/10/2026, 3 Shorts par vidéo : le meilleur moyen pour une chaîne sans abonnés d'être
+    découverte) : un extrait d'une partie de la pratique (plan["shorts_extra"] = [{"partie": titre de la partie,
+    "haut1", "haut2", "bas1", "titre", "description"}]), 60 s au plus, avec la photo de cette partie.
+    Fichiers : travail/<slug>~short2/short.mp4, ~short3… (même motif que le Short principal pour l'artefact du run)."""
+    plan, trav = lire_plan(slug), dossier_travail(slug)
+    tl = json.load(open(os.path.join(trav, "timeline.json")))
+    sorties = []
+    for k, sp in enumerate(plan.get("shorts_extra", []), 2):
+        i = next(j for j, t in enumerate(tl["titres"]) if t["texte"] == sp["partie"])
+        t0 = tl["titres"][i]["debut"]
+        suivant = tl["titres"][i + 1]["debut"] if i + 1 < len(tl["titres"]) else tl["fin_voix"] + 6
+        d0 = max(0.0, t0 - 0.5)
+        # finir après la dernière phrase entièrement dite avant 60 s, avec le temps de relâcher
+        fins = [c["fin"] for c in tl["cues"] if t0 <= c["debut"] and c["fin"] < min(suivant, d0 + 54)]
+        d1 = min(suivant - 0.3, (max(fins) if fins else t0 + 30) + 6, d0 + 60)
+        ph = plan["photos"][i + 1]
+        d = os.path.join(os.path.dirname(trav), f"{slug}~short{k}")
+        os.makedirs(d, exist_ok=True)
+        sorties.append(_short(trav, tl, sp, ph, d0, d1, None, os.path.join(d, "short.mp4")))
+    return sorties
+
+
+def _short(trav, tl, sh, ph, d0, d1, s, sortie):
+    """Short vertical entre d0 et d1 ; s = respiration guidée à animer (cercle), ou None."""
     src = Image.open(os.path.join(trav, "photos", ph["nom"])).convert("RGB")
     r = SH * 1.12 / src.height
     src = src.resize((max(round(src.width * r), int(SW * 1.2)), round(src.height * r)), Image.LANCZOS)
@@ -190,15 +218,17 @@ def short(slug):
         y0 = min(max(0.0, src.height / 2 - ch / 2), src.height - ch)
         img = np.asarray(src.resize((SW, SH), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)), np.float32) * vig
         poser(img, haut, 0, 90, fondu(t, d0 + 0.2, d1 + 9, 0.8))
-        uu = (t - s["debut"]) % cyc if t >= s["debut"] else 0
-        fin = s["debut"] + s["cycles"] * cyc
-        if t < s["debut"] or t > fin:
-            r, txt = 130, ""
-        elif uu < tl["insp"]:
-            r, txt = 130 + 170 * lisse(uu / tl["insp"]), "Inspire"
-        else:
-            r, txt = 300 - 170 * lisse((uu - tl["insp"]) / tl["exp"]), "Expire"
-        poser(img, cercle(int(r), txt), (SW - 900) // 2, 760 - 450, fondu(t, d0 + 1, d1 + 9, 1.2))
+        if s:
+            cyc = tl["insp"] + tl["exp"]
+            uu = (t - s["debut"]) % cyc if t >= s["debut"] else 0
+            fin = s["debut"] + s["cycles"] * cyc
+            if t < s["debut"] or t > fin:
+                r, txt = 130, ""
+            elif uu < tl["insp"]:
+                r, txt = 130 + 170 * lisse(uu / tl["insp"]), "Inspire"
+            else:
+                r, txt = 300 - 170 * lisse((uu - tl["insp"]) / tl["exp"]), "Expire"
+            poser(img, cercle(int(r), txt), (SW - 900) // 2, 760 - 450, fondu(t, d0 + 1, d1 + 9, 1.2))
         for c in tl["cues"]:
             if d0 - 1 < c["debut"] < d1 and c["texte"] not in ("Inspire…", "Expire…") and c["debut"] - 0.3 < t < c["fin"] + 0.9:
                 arr = sous(c["texte"])
@@ -208,7 +238,6 @@ def short(slug):
         return img.clip(0, 255).astype(np.uint8)
 
     dur = d1 - d0
-    sortie = os.path.join(trav, "short.mp4")
     p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{SW}x{SH}", "-r", str(SFPS),
                           "-i", "-", "-ss", f"{d0:.3f}", "-t", f"{dur:.3f}", "-i", os.path.join(trav, "piste.wav"),
                           "-af", f"afade=t=in:d=0.6,afade=t=out:st={dur - 1.5:.3f}:d=1.5",
@@ -224,4 +253,5 @@ def short(slug):
 
 
 if __name__ == "__main__":
-    {"photos": telecharger_photos, "miniature": miniature, "short": short, "srt": sous_titres}[sys.argv[1]](sys.argv[2])
+    {"photos": telecharger_photos, "miniature": miniature, "short": short, "shorts_extra": shorts_extra,
+     "srt": sous_titres}[sys.argv[1]](sys.argv[2])

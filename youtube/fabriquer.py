@@ -108,10 +108,12 @@ def fabriquer(slug):
         return rapport
     video = rendu.fabriquer(slug)
     sh = extras.short(slug)
+    extra = extras.shorts_extra(slug)
     extras.miniature(slug)
     extras.sous_titres(slug)
     d = duree(video)
     rapport.update(duree_video=round(d, 1), duree_short=round(duree(sh), 1) if sh else None,
+                   durees_shorts_extra=[round(duree(x), 1) for x in extra],
                    chapitres=extras.chapitres(tl), description=description(plan, tl))
     if abs(d - tl["duree"]) > 1.0:
         rapport["erreurs"].append(f"durée vidéo {d:.1f} s au lieu de {tl['duree']:.1f} s")

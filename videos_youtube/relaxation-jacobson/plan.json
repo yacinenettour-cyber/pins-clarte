@@ -420,5 +420,23 @@
   ],
   "categorie": "26"
  },
- "voix": "elevenlabs_mila"
+ "voix": "elevenlabs_mila",
+ "shorts_extra": [
+  {
+   "partie": "Le visage",
+   "haut1": "Détends ton visage",
+   "haut2": "avant de dormir",
+   "bas1": "Relaxation complète (1 h) sur la chaîne",
+   "titre": "Détends ton visage en 1 minute avant de dormir 😴 #relaxation #sommeil",
+   "description": "Front, sourcils, mâchoire : contracte quelques secondes, puis relâche. Extrait de la relaxation Jacobson guidée (1 h) sur la chaîne."
+  },
+  {
+   "partie": "Les bras et les épaules",
+   "haut1": "Relâche tes bras",
+   "haut2": "avant de dormir",
+   "bas1": "Relaxation complète (1 h) sur la chaîne",
+   "titre": "Relâche tes bras et tes mains avant de dormir 😴 #relaxation #sommeil",
+   "description": "Serre les poings, tends les bras, puis relâche tout. Extrait de la relaxation Jacobson guidée (1 h) sur la chaîne."
+  }
+ ]
 }
