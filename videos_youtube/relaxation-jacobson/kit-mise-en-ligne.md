@@ -1,4 +1,4 @@
-# Mise en ligne à la main : « Relaxation Jacobson pour dormir 😴 Détends tout ton corps · voix douce (1 h) »
+# Mise en ligne à la main : « Relaxation musculaire progressive de Jacobson guidée pour dormir (1 h) »
 
 Voix : **Mila (ElevenLabs)**, choisie par l'utilisateur le 27/10/2026. Contrôles du 27/10 : aucune erreur, score de voix 0.983, 493/527 mots entendus exactement (les écarts restants sont des homophones mal transcrits par Whisper, vérifiés), aucune parole hors des sous-titres.
 
@@ -10,7 +10,7 @@ Dans le zip : `relaxation-jacobson/video.mp4` (vidéo), `relaxation-jacobson/sho
 ⚠️ Ne pas prendre les fichiers des runs précédents (anciennes voix).
 
 ## Vidéo
-- Titre : Relaxation Jacobson pour dormir 😴 Détends tout ton corps · voix douce (1 h)
+- Titre : Relaxation musculaire progressive de Jacobson guidée pour dormir (1 h)
 - Miniature : `miniature.jpg` (ce dossier)
 - Sous-titres : `sous-titres.srt` (ce dossier), langue français
 - Catégorie : Mode de vie (26) — Public : « Non, cette vidéo n'est pas conçue pour les enfants »
@@ -22,7 +22,7 @@ Dans le zip : `relaxation-jacobson/video.mp4` (vidéo), `relaxation-jacobson/sho
 
 ### Description (à coller telle quelle)
 ```
-Relaxation de Jacobson guidée pour s'endormir : une douzaine de minutes de voix douce pour détendre le corps muscle après muscle, des pieds jusqu'au visage, puis de la musique calme pour dormir (1 heure en tout).
+Relaxation musculaire progressive de Jacobson guidée pour dormir : une douzaine de minutes de voix douce pour détendre le corps muscle après muscle, des pieds jusqu'au visage, puis de la musique calme pour s'endormir (1 heure en tout).
 
 📖 La relaxation de Jacobson pas à pas et ce que disent les études (article sourcé) : https://www.contactapaisement-mental.fr/relaxation-jacobson/
 🌙 Guide gratuit « Quand le cerveau refuse de dormir » : une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir, un calendrier de 30 jours → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=video&utm_campaign=relaxation-jacobson
