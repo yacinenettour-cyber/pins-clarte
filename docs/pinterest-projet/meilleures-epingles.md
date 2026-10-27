@@ -173,6 +173,9 @@ Hugging Face (graine 681678), aucune écartée ; l'horloge de la 5e vignette aff
 gardée (recadrage). Format `cles` dans pins.json (le robot ne connaît que `exercices` et `cles` : `riche` demanderait de
 modifier pins.yml). Contrôles : anti_doublons.py sans doublon, titre 48 caractères, corps 387, total 465, 8 hashtags ;
 `planche_riche.py` vérifie lui-même les débordements et chevauchements (assertions) ; image relue.
+Statistiques relues le 27/10 (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 26/10) : chiffres identiques à ceux du 26/10 ci-dessous
+(Journée chargée 48 impressions, Bas du dos 7, Pensées négatives 5, Lâcher prise 3, Poignets 3, Souffle court 2 ;
+0 enregistrement, 0 clic sortant) : pas encore de données nouvelles.
 
 Statistiques des épingles illustrées du robot (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 25/10, lues le 26/10) :
 
