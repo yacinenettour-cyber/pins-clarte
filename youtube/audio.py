@@ -1,10 +1,10 @@
 """Bande-son : voix Kokoro « B » (choisie par l'utilisateur le 20/10/2026), musique « Deep Relaxation »
 (Kevin MacLeod, CC BY 4.0) baissée sous la voix, bols chantants CC0, puis musique seule jusqu'à la durée visée.
 Produit travail/<slug>/piste.wav, voix.wav (voix seule, pour le contrôle) et timeline.json."""
-import json, os, subprocess, sys
+import difflib, json, os, subprocess, sys
 import numpy as np
 import soundfile as sf
-from commun import DEPOT, SR, MUSIQUE, BOLS, MODELES, charger_audio, dossier_travail, lire_plan
+from commun import DEPOT, SR, normaliser, reconnaissance, transcrire, MUSIQUE, BOLS, MODELES, charger_audio, dossier_travail, lire_plan
 
 INSP, EXP = 4.0, 6.0
 VITESSE = 0.82
@@ -69,28 +69,61 @@ class Voix:
 
 
 class VoixChatterbox:
-    """Même usage que Voix ; chaque phrase est générée une fois (les mots de la respiration reviennent souvent)."""
+    """Même usage que Voix ; chaque phrase est générée une fois (les mots de la respiration reviennent souvent).
+    Chatterbox invente parfois des sons ou des syllabes qui ne sont pas dans le texte (constaté par l'utilisateur le
+    27/10/2026) : chaque phrase est donc réécoutée par Whisper et régénérée avec une autre graine si le texte entendu
+    s'écarte du texte prévu, contient des mots en trop, ou si la phrase dure anormalement longtemps."""
+    ESSAIS = 6
+    VITESSE_MIN = 11.0  # caractères par seconde ; la médiane de cette voix est d'environ 14,5 (vidéo du 26/10)
+
     def __init__(self, reglage):
         from chatterbox.mtl_tts import ChatterboxMultilingualTTS
-        self.r, self.cache = reglage, {}
+        self.r, self.cache, self.douteuses = reglage, {}, []
         self.m = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+        self.rec = reconnaissance()
+
+    def _generer(self, texte, tmp, graine):
+        import torch, torchaudio
+        torch.manual_seed(graine)
+        ref = os.path.join(DEPOT, self.r["reference"]) if self.r.get("reference") else None
+        w = self.m.generate(texte, language_id="fr", exaggeration=self.r["expressivite"], cfg_weight=self.r["rythme"],
+                            temperature=self.r["temperature"], audio_prompt_path=ref)
+        torchaudio.save(tmp, w, self.m.sr)
+        a = charger_audio(tmp)
+        env = np.abs(a).max(axis=1)
+        idx = np.where(env > 0.01)[0]
+        a = a[max(0, idx[0] - 800): idx[-1] + 4000]
+        f = min(len(a) // 4, 1200)
+        a[:f] *= np.linspace(0, 1, f)[:, None]
+        a[-f:] *= np.linspace(1, 0, f)[:, None]
+        return a
+
+    def _verifier(self, texte, a):
+        prevu, entendu = normaliser(texte), normaliser(transcrire(self.rec, a))
+        sim = difflib.SequenceMatcher(None, prevu, entendu).ratio()
+        longueur = len(entendu) / max(1, len(prevu))
+        vitesse = len(texte) / (len(a) / SR)
+        texte_ok = sim >= 0.85 and 0.8 <= longueur <= 1.15
+        ok = texte_ok and (len(texte) < 20 or vitesse >= self.VITESSE_MIN)
+        note = sim - abs(1 - longueur) - max(0, self.VITESSE_MIN - vitesse) / 10
+        return ok, texte_ok, note, (round(sim, 2), round(longueur, 2), round(vitesse, 1))
 
     def dire(self, texte, tmp):
         if texte not in self.cache:
-            import torch, torchaudio
-            torch.manual_seed(self.r["graine"])
-            ref = os.path.join(DEPOT, self.r["reference"]) if self.r.get("reference") else None
-            w = self.m.generate(texte, language_id="fr", exaggeration=self.r["expressivite"], cfg_weight=self.r["rythme"],
-                                temperature=self.r["temperature"], audio_prompt_path=ref)
-            torchaudio.save(tmp, w, self.m.sr)
-            a = charger_audio(tmp)
-            env = np.abs(a).max(axis=1)
-            idx = np.where(env > 0.01)[0]
-            a = a[max(0, idx[0] - 800): idx[-1] + 4000]
-            f = min(len(a) // 4, 1200)
-            a[:f] *= np.linspace(0, 1, f)[:, None]
-            a[-f:] *= np.linspace(1, 0, f)[:, None]
-            self.cache[texte] = a
+            meilleur = None
+            for k in range(self.ESSAIS):
+                a = self._generer(texte, tmp, self.r["graine"] + k)
+                ok, texte_ok, note, mesures = self._verifier(texte, a)
+                # un essai au texte juste passe toujours avant un essai au texte faux, même plus rapide
+                if meilleur is None or (texte_ok, note) > (meilleur[3], meilleur[0]):
+                    meilleur = (note, a, mesures, texte_ok)
+                if ok:
+                    break
+            # une phrase seulement lente (pause naturelle) est gardée ; un texte faux ou des mots en trop arrêtent la vidéo
+            if not meilleur[3]:
+                self.douteuses.append({"texte": texte, "mesures (similarité, longueur, car/s)": meilleur[2]})
+            print(f"voix : {texte[:50]!r} essai {k + 1}, mesures {meilleur[2]}")
+            self.cache[texte] = meilleur[1]
         return self.cache[texte].copy()
 
 
@@ -175,7 +208,10 @@ def fabriquer(slug):
     def poser(b, t0, g):
         i = int(t0 * SR)
         bols[i:i + len(b)] += g * b[: N - i]
-    poser(bol_long, 1.0, 0.35)
+    # cloche de départ : 0,35 → 0,12 avec une montée de 2 s (« la cloche au démarrage est trop forte », 27/10/2026)
+    debut = bol_long.copy()
+    debut[: 2 * SR] *= np.linspace(0, 1, 2 * SR)[:, None]
+    poser(debut, 1.0, 0.12)
     for ti in titres:
         poser(bol_doux, ti["debut"], 0.18)
     poser(bol_long, fin_voix + 2, 0.22)
@@ -188,6 +224,7 @@ def fabriquer(slug):
                     "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", str(SR), os.path.join(trav, "piste.wav")], check=True)
     os.remove(brut)
     tl = {"duree": duree, "fin_voix": fin_voix, "cues": cues, "titres": titres, "souffles": souffles,
+          "voix_douteuses": getattr(voix, "douteuses", []),
           "insp": INSP, "exp": EXP}
     json.dump(tl, open(os.path.join(trav, "timeline.json"), "w"), ensure_ascii=False, indent=1)
     print(f"bande-son : {duree / 60:.1f} min, voix jusqu'à {fin_voix / 60:.1f} min, {len(cues)} sous-titres")

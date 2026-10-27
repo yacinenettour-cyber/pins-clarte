@@ -1114,3 +1114,8 @@ probable fort / moyen / faible, méthode écrite.
   (Chatterbox imitant une voix de référence française faite avec Kokoro ff_siwis) : extraits G/H/I ; choix de
   l'utilisateur : **H** (rythme 0, réglage contre l'accent). Réglage `chatterbox_francais` dans `audio.py`, plan
   relaxation-jacobson remis à fabriquer (sans changement de workflow).
+- **YouTube, 27/10** : sur la vidéo (voix H), l'utilisateur entend des paroles qui ne veulent rien dire et ne sont pas
+  dans les sous-titres (sons inventés par Chatterbox), et trouve la cloche de départ trop forte. Correctif : chaque
+  phrase réécoutée par Whisper et régénérée si texte faux, mots en trop ou durée anormale (testé localement : phrase
+  normale acceptée, phrase suivie de paroles en trop rejetée) ; fabrication arrêtée si une phrase reste fausse ;
+  cloche de départ 0,35 → 0,12 avec montée de 2 s. Vidéo remise à fabriquer.

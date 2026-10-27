@@ -3,7 +3,7 @@ Usage : python3 youtube/fabriquer.py <slug>"""
 import difflib, json, os, re, subprocess, sys
 import numpy as np
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from commun import SITE, CHAINE, MODELES, SR, dossier_plan, dossier_travail, lire_plan, ecrire_plan
+from commun import normaliser, reconnaissance, transcrire, SITE, CHAINE, MODELES, SR, dossier_plan, dossier_travail, lire_plan, ecrire_plan
 import audio, rendu, extras
 from metadonnees import description
 
@@ -33,31 +33,22 @@ def controler_texte(plan):
 
 
 def controler_voix(slug, tl):
-    """Transcrit chaque phrase (Whisper small, gratuit, local) et la compare au texte prévu."""
-    import sherpa_onnx, soundfile as sf
-    import scipy.signal as ss
-    d = os.path.join(MODELES, "sherpa-onnx-whisper-small")
-    rec = sherpa_onnx.OfflineRecognizer.from_whisper(encoder=f"{d}/small-encoder.int8.onnx", decoder=f"{d}/small-decoder.int8.onnx",
-                                                    tokens=f"{d}/small-tokens.txt", language="fr", task="transcribe",
-                                                    num_threads=os.cpu_count() or 2)
+    """Transcrit chaque phrase (Whisper small, gratuit, local) et la compare au texte prévu. Depuis le 27/10/2026, une
+    phrase où Whisper entend nettement plus que le texte (sons ou mots inventés par la voix) compte aussi comme douteuse."""
+    import soundfile as sf
+    rec = reconnaissance()
     v, sr = sf.read(os.path.join(dossier_travail(slug), "voix.wav"), dtype="float32")
-    # comparaison lettre à lettre, homophones neutralisés (Whisper confond « tes » et « des », « pied » et « pieds »)
-    def norm(s):
-        mots = re.sub(r"[^a-zàâçéèêëîïôûùüœ ]", "", s.lower().replace("’", "'").replace("'", " ")).split()
-        return "".join({"tes": "des", "ta": "da", "ton": "don"}.get(m, m).rstrip("sx") for m in mots)
     scores, faibles = [], []
     for c in tl["cues"]:
         if c["texte"] in ("Inspire…", "Expire…"):
             continue
         seg = v[int((c["debut"] - 0.2) * sr): int((c["fin"] + 0.4) * sr)]
-        seg = ss.resample_poly(seg, 1, 3).astype(np.float32)
-        s = rec.create_stream()
-        s.accept_waveform(16000, seg)
-        rec.decode_stream(s)
-        q = difflib.SequenceMatcher(None, norm(c["texte"]), norm(s.result.text)).ratio()
+        entendu = transcrire(rec, seg)
+        prevu, ent = normaliser(c["texte"]), normaliser(entendu)
+        q = difflib.SequenceMatcher(None, prevu, ent).ratio()
         scores.append(q)
-        if q < 0.6:
-            faibles.append({"texte": c["texte"], "entendu": s.result.text, "score": round(q, 2)})
+        if q < 0.6 or len(ent) > 1.2 * len(prevu) + 3:
+            faibles.append({"texte": c["texte"], "entendu": entendu, "score": round(q, 2)})
     return float(np.mean(scores)), faibles
 
 
@@ -75,6 +66,10 @@ def fabriquer(slug):
         return rapport
     extras.telecharger_photos(slug)
     tl = audio.fabriquer(slug)
+    if tl.get("voix_douteuses"):
+        rapport["erreurs"].append(f"{len(tl['voix_douteuses'])} phrase(s) encore douteuse(s) après plusieurs essais de la voix")
+        rapport["voix_douteuses"] = tl["voix_douteuses"]
+        return rapport
     moy, faibles = controler_voix(slug, tl)
     rapport.update(voix_score=round(moy, 3), phrases_douteuses=faibles)
     if moy < 0.85 or len(faibles) > 2:

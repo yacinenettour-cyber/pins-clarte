@@ -19,6 +19,8 @@ Mis en place le 20/10/2026 à la demande de l'utilisateur (« je veux tout autom
 
 **Envoi manuel (26/10/2026)** : avec `"envoi_manuel": true` dans le plan, la vidéo est fabriquée et contrôlée mais rien n'est envoyé (l'envoi par Composio échoue, voir le journal du 22/10) : statut `fabriquee`, vidéo et Short dans l'artefact du run (onglet Actions, 7 jours), miniature et sous-titres dans le dossier du plan ; l'utilisateur met en ligne à la main.
 
+**Voix Chatterbox réécoutée phrase par phrase (27/10/2026)** : l'utilisateur a entendu des sons « qui ne veulent rien dire » et absents des sous-titres. Chaque phrase est transcrite par Whisper dès sa création ; elle est régénérée (graine suivante, 6 essais au plus) si le texte entendu s'écarte du texte (similarité < 0,85), contient des mots en trop (longueur > 115 %) ou si elle est anormalement lente (< 11 caractères/s). Une phrase encore fausse après 6 essais arrête la fabrication (`voix_douteuses` dans `rapport.json`) ; une phrase seulement lente est gardée. Le contrôle final compte aussi les mots en trop. Cloche de départ ramenée de 0,35 à 0,12 avec une montée de 2 s (« trop forte »).
+
 Statuts : `a_fabriquer` → `fabriquee` → `en_ligne_non_repertoriee` → `publiee` (ou `erreur_fabrication`,
 `attente_connexion_youtube`, `attente_quota_youtube`). **Quota YouTube** (constaté le 20/10/2026 : erreur 429 « Video
 Uploads per day », quota du projet Google partagé de Composio) : statut `attente_quota_youtube` et `reessai_apres` =

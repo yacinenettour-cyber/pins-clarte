@@ -4,7 +4,7 @@ Une vidéo = un dossier videos_youtube/<slug>/ avec plan.json (écrit par la tâ
 Les fichiers fabriqués (vidéo, Short, voix) restent dans travail/<slug>/, jamais commités ;
 seuls miniature.jpg, sous-titres.srt, timeline.json et rapport.json sont commités dans le dossier du plan.
 """
-import json, os, subprocess
+import json, os, re, subprocess
 import numpy as np
 
 DEPOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -58,3 +58,29 @@ def fondu(t, d, f, e=1.2):
 
 def mmss(s):
     return f"{int(s // 60):02d}:{int(s % 60):02d}"
+
+
+def normaliser(texte):
+    """Texte comparable lettre à lettre (homophones que Whisper confond neutralisés : « tes »/« des », « pied »/« pieds »)."""
+    mots = re.sub(r"[^a-zàâçéèêëîïôûùüœ ]", "", texte.lower().replace("’", "'").replace("'", " ")).split()
+    return "".join({"tes": "des", "ta": "da", "ton": "don"}.get(m, m).rstrip("sx") for m in mots)
+
+
+def reconnaissance():
+    """Whisper small (gratuit, local, sherpa-onnx), téléchargé par le workflow dans MODELES."""
+    import sherpa_onnx
+    d = os.path.join(MODELES, "sherpa-onnx-whisper-small")
+    return sherpa_onnx.OfflineRecognizer.from_whisper(encoder=f"{d}/small-encoder.int8.onnx", decoder=f"{d}/small-decoder.int8.onnx",
+                                                     tokens=f"{d}/small-tokens.txt", language="fr", task="transcribe",
+                                                     num_threads=os.cpu_count() or 2)
+
+
+def transcrire(rec, a):
+    """a : audio au format du projet (SR, stéréo ou mono) → texte entendu par Whisper."""
+    import scipy.signal as ss
+    m = a.mean(axis=1) if a.ndim == 2 else a
+    m = ss.resample_poly(m, 16000, SR).astype(np.float32)
+    s = rec.create_stream()
+    s.accept_waveform(16000, m)
+    rec.decode_stream(s)
+    return s.result.text
