@@ -178,9 +178,10 @@
    "pourquoi": "Page « Ressources » du kit de vie (méditation, relaxation, annuaires) : des audios de respiration gratuits et une page d'urgence vérifiée s'y ajoutent naturellement.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (et https://www.contactapaisement-mental.fr/ressources-urgence/)",
    "remarque": "Association de référence, active en 2026 ; mais grosse structure aux partenariats officiels (Petit BamBou) et pages du kit de 2022-2023 : chance d'ajout limitée. partenaires@ sert aux partenariats, presse@nightline.fr à la presse ; préférer le formulaire.",
-   "statut": "a_verifier",
+   "statut": "formulaire",
    "domaine": "nightline.fr",
-   "audience": "B : association nationale d'écoute étudiante ; absent du top 1 million Tranco"
+   "audience": "B : association nationale d'écoute étudiante ; absent du top 1 million Tranco",
+   "notes": "27/10 : adresse non affichée sur la page cible ni sur les pages contact/mentions légales lues ; contact par formulaire seulement."
   },
   {
    "site": "Chanez Hendel, psychopraticienne TCC",
@@ -292,9 +293,10 @@
    "pourquoi": "Rubrique « Ressources » pour la santé mentale des jeunes ; le formulaire de contact prévoit explicitement les demandes de conseil sur une ressource.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/journal-humeur/ (et https://www.contactapaisement-mental.fr/exercices-respiration/)",
    "remarque": "Dispositif sérieux (fondation, service civique) actif en 2026 (Journée de la santé mentale positive 2026).",
-   "statut": "a_verifier",
+   "statut": "formulaire",
    "domaine": "ambassadeurs-santementale.fr",
-   "audience": "B : dispositif d'une fondation (ARHM) ; absent du top 1 million Tranco"
+   "audience": "B : dispositif d'une fondation (ARHM) ; absent du top 1 million Tranco",
+   "notes": "27/10 : adresse non affichée sur la page cible ni sur les pages contact/mentions légales lues ; contact par formulaire seulement."
   },
   {
    "site": "Notre santé mentale dans l'Ain (Projet territorial de santé mentale de l'Ain)",
@@ -761,7 +763,7 @@
    "domaine": "semaines-sante-mentale.fr",
    "page_cible": "https://www.semaines-sante-mentale.fr/",
    "email": "sism.contact@gmail.com",
-   "email_verifie": false,
+   "email_verifie": true,
    "source_email": "fiche d'agenda de 2021 — adresse ancienne, à vérifier",
    "formulaire": null,
    "prenom": null,
@@ -769,8 +771,13 @@
    "pourquoi": "37e édition en cours (5-18 octobre 2026) ; le site héberge programme et ressources pour les organisateurs locaux, qui cherchent des outils gratuits à diffuser.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /test-stress-anxiete/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "envoye",
+   "lot": "recherche 2 du 12/10",
+   "date_envoi": "2026-10-27",
+   "thread_id": "1a17d06bc51e3cae",
+   "type": "lien",
+   "sujet": "Deux ressources gratuites pour les organisateurs des SISM (respiration)",
+   "notes": "Adresse affichée sur la page d'accueil. Pas de page de ressources externes : proposition de la fiche respiration et des audios pour les organisateurs d'ateliers."
   },
   {
    "site": "Le Psychodon",
@@ -2262,6 +2269,10 @@
   {
    "date": "2026-10-26",
    "resultat": "Passage du 26/10 (fait l'après-midi, la tâche du matin ayant été interrompue) : réponses lues sur 46 fils ; ne.ch refuse → stop ; Question Santé transfère à l'ONE → repondu. 9 relances (Réseau Morphée, Apsytude, Université Le Havre, Université de Moncton, Université Paris-Saclay, Université de Namur, Santé mentale, Les BURN'ettes, Ghislain Bousseau). Les premiers e-mails citaient encore le métier de l'auteur (écrits avant le 18/10) : relances envoyées en messages neufs « Re: … » sans citation (GMAIL_SEND_EMAIL ignore thread_id : nouveaux fils, notés dans relance_thread_id), aucune mention du métier, vérifiées dans les Envoyés. 1 envoi : DOCcitanie (sitothèque santé mentale, fiche respiration). 10 au total. Incident : un e-mail d'essai « x » envoyé par erreur à x@example.invalid (adresse fictive, revenu en erreur « Adresse introuvable »), aucun destinataire réel."
+  },
+  {
+   "date": "2026-10-27",
+   "resultat": "Réponses lues sur 42 fils : aucune nouvelle (Pélagie Micalet : messages du 26/10 déjà traités). Aucune relance due (les envois du 18/10 le seront le 28/10). 1 envoi (SISM, adresse vérifiée, vu dans les Envoyés) ; Nightline et Ambassadeurs Santé Mentale passés en formulaire (adresse non affichée). Passage écourté : la journée a été consacrée à l'analyse Pinterest demandée par l'utilisateur ; les 11 prospects restants (mutualités, Psychodon, Pro Mente Sana, AQPS, AFA, Bordeaux, Solidarité Paysans) attendent le prochain passage."
   }
  ]
 }
