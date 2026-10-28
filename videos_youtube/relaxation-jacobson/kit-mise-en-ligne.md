@@ -60,6 +60,8 @@ Photos : Unsplash (daniel castillo, Polina Kuzovkova, Mario Häfliger, Colter Ol
 ## Shorts (1 tous les 2 à 3 jours après la vidéo, chacun relié à la vidéo complète)
 Dans YouTube Studio, pour chaque Short : « Vidéo associée » = la vidéo Jacobson.
 
+**Fait : les 3 Shorts ont été mis en ligne par l'utilisateur le 28/10/2026.**
+
 1. **Short 1** (`short.mp4`, 61.5 s) — le 31/10
    - Titre : Respire avec moi avant de relâcher tout ton corps #sommeil #relaxation
    - Description : Respiration 4-6 pour préparer la relaxation musculaire du soir. Relaxation complète (1 h) sur la chaîne.
