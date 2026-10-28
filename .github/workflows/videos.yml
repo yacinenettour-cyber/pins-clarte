@@ -40,7 +40,7 @@ jobs:
           git config user.name "robot-pins"
           git config user.email "robot-pins@users.noreply.github.com"
           python - <<'EOF'
-          import os, json, subprocess, sys, datetime, time, base64
+          import os, json, re, subprocess, sys, datetime, time, base64
           import requests
           from PIL import Image
 
