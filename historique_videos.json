@@ -402,5 +402,22 @@
    "fonds/fond-181.jpg",
    "fonds/fond-181.jpg"
   ]
+ },
+ {
+  "date": "2026-10-28T17:35+00:00",
+  "id": "systemenerveux-expiration-longue",
+  "titre": "Pourquoi expirer plus longtemps qu'inspirer calme ton corps",
+  "video": "videopins/videopin-20261028-173431.mp4",
+  "cover": "videopins/videopin-20261028-173431.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890398768",
+  "photos": [
+   "fonds/pexels-13651250.jpg",
+   "fonds/pexels-13651250.jpg",
+   "fonds/pexels-14500438.jpg",
+   "fonds/pexels-14500438.jpg",
+   "fonds/pexels-1546495.jpg",
+   "fonds/pexels-1546495.jpg"
+  ]
  }
 ]
