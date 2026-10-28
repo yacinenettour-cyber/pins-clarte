@@ -700,7 +700,9 @@
    "date_envoi": "2026-10-18",
    "thread_id": "1a14fd26326f4d8b",
    "sujet": "Votre page « Ressources » : un lien qui ne fonctionne plus",
-   "liens_casses": "18/10 : lien « Site Web » de la Clinique de counseling et d'orientation (https://www.fse.ulaval.ca/counseling/individuel/?eo=individuel&eoe=groupe) en 404 (deux essais) ; signalé. faistonbudget.ca et expandproject.ca sans réponse (pas d'erreur nette, non signalés)."
+   "liens_casses": "18/10 : lien « Site Web » de la Clinique de counseling et d'orientation (https://www.fse.ulaval.ca/counseling/individuel/?eo=individuel&eoe=groupe) en 404 (deux essais) ; signalé. faistonbudget.ca et expandproject.ca sans réponse (pas d'erreur nette, non signalés).",
+   "relance": "2026-10-28",
+   "relance_thread_id": "1a181c928e993079"
   },
   {
    "site": "Université de Fribourg — projet Happy? (Uni-Social)",
@@ -777,7 +779,8 @@
    "thread_id": "1a17d06bc51e3cae",
    "type": "lien",
    "sujet": "Deux ressources gratuites pour les organisateurs des SISM (respiration)",
-   "notes": "Adresse affichée sur la page d'accueil. Pas de page de ressources externes : proposition de la fiche respiration et des audios pour les organisateurs d'ateliers."
+   "notes": "Adresse affichée sur la page d'accueil. Pas de page de ressources externes : proposition de la fiche respiration et des audios pour les organisateurs d'ateliers.",
+   "note": " 27/10 : réponse automatique d'absence (arrêt maladie de la chargée de communication) ; attendre."
   },
   {
    "site": "Le Psychodon",
@@ -1378,7 +1381,9 @@
    "date_envoi": "2026-10-18",
    "thread_id": "1a14fd269db7473e",
    "sujet": "Burn-out des aidants salariés : une page gratuite et sourcée sur les signes du burn-out",
-   "liens_casses": "18/10 : 20 liens testés, aucun cassé"
+   "liens_casses": "18/10 : 20 liens testés, aucun cassé",
+   "relance": "2026-10-28",
+   "relance_thread_id": "1a181c9295a72548"
   },
   {
    "site": "Université Lyon 1 – Service de Santé Étudiante (Ressources / contacts / structures)",
@@ -1400,7 +1405,7 @@
    "thread_id": "1a14fd2648eef0a9",
    "sujet": "Vos ressources en santé mentale : des audios de respiration sans application",
    "liens_casses": "18/10 : 10 liens testés, aucun cassé",
-   "note": "18/10 : réponse automatique Mailinblack (ucbl@mailinblack.univ-lyon1.fr, fil 1a14fd278cefdb5e) : le message n'est remis qu'après validation d'un CAPTCHA (bouton dans l'e-mail) ; à faire à la main par l'utilisateur s'il le souhaite, sinon le message n'est pas arrivé."
+   "note": "18/10 : réponse automatique Mailinblack (ucbl@mailinblack.univ-lyon1.fr, fil 1a14fd278cefdb5e) : le message n'est remis qu'après validation d'un CAPTCHA (bouton dans l'e-mail) ; à faire à la main par l'utilisateur s'il le souhaite, sinon le message n'est pas arrivé. 28/10 : pas de relance (le premier message n'a jamais été remis, CAPTCHA Mailinblack non validé)."
   },
   {
    "site": "Université Grenoble Alpes – Prendre soin de votre santé mentale (portail étudiant)",
@@ -1438,7 +1443,9 @@
    "date_envoi": "2026-10-18",
    "thread_id": "1a14fd2657bde42c",
    "sujet": "Votre page « Lutter contre le stress » : des outils gratuits pour s'entraîner à respirer",
-   "liens_casses": "18/10 : aucun lien cassé"
+   "liens_casses": "18/10 : aucun lien cassé",
+   "relance": "2026-10-28",
+   "relance_thread_id": "1a181c928172b95d"
   },
   {
    "site": "ULB Santé – Santé et bien-être en blocus et examens",
@@ -1539,7 +1546,9 @@
    "date_envoi": "2026-10-18",
    "thread_id": "1a14fd263c395042",
    "sujet": "Votre dossier « Mieux vivre mon stress » : des audios gratuits de respiration lente",
-   "liens_casses": "18/10 : 12 liens testés, aucun cassé"
+   "liens_casses": "18/10 : 12 liens testés, aucun cassé",
+   "relance": "2026-10-28",
+   "relance_thread_id": "1a181c929e21199b"
   },
   {
    "site": "CIUSSS de la Mauricie-et-du-Centre-du-Québec – Services d'aide en santé mentale",
@@ -2276,6 +2285,10 @@
   {
    "date": "2026-10-27",
    "resultat": "Réponses lues sur 42 fils : aucune nouvelle (Pélagie Micalet : messages du 26/10 déjà traités). Aucune relance due (les envois du 18/10 le seront le 28/10). 1 envoi (SISM, adresse vérifiée, vu dans les Envoyés) ; Nightline et Ambassadeurs Santé Mentale passés en formulaire (adresse non affichée). Passage écourté : la journée a été consacrée à l'analyse Pinterest demandée par l'utilisateur ; les 11 prospects restants (mutualités, Psychodon, Pro Mente Sana, AQPS, AFA, Bordeaux, Solidarité Paysans) attendent le prochain passage."
+  },
+  {
+   "date": "2026-10-28",
+   "resultat": "Réponses lues (Gmail, 2 derniers jours) : Pélagie Micalet (psychologue, relecture bénévole du test) donne son accord écrit pour afficher sa relecture avec son nom et le lien de son site : mention publiée le 28/10 (docs/relecture-professionnelle.md) ; SISM : réponse automatique d'absence. 4 relances uniques (Université Laval, Ma Boussole Aidants, ULiège, UQAM), messages neufs « Re: … », sans le métier de l'auteur, vérifiés (libellé SENT). Université Lyon 1 non relancée (premier message bloqué par le CAPTCHA Mailinblack). Psycom : formulaire envoyé par l'utilisateur le 27/10. Aucun nouvel envoi : les 11 prospects à vérifier attendent le prochain passage (journée consacrée à la relecture publiée)."
   }
  ]
 }
