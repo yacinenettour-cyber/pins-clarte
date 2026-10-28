@@ -59,7 +59,7 @@ Je ne suis pas soignant, alors je ne te demande pas de me croire sur parole. Je 
 | Des mises à jour datées | La date de dernière mise à jour est en haut de chaque article |
 | Rien de caché | Pas de publicité, pas de lien affilié, pas d'article payé par une marque |
 
-Le détail de ces règles, l'ordre de priorité des sources et la façon de me signaler une erreur sont dans la [méthode éditoriale](/methode-editoriale/). Aucun professionnel de santé n'a encore relu les articles. J'en cherche un, et j'explique comment dans la [méthode éditoriale](/methode-editoriale/#les-contenus-sont-ils-relus-par-un-professionnel-de-santé).
+Le détail de ces règles, l'ordre de priorité des sources et la façon de me signaler une erreur sont dans la [méthode éditoriale](/methode-editoriale/). Une psychologue clinicienne, Pélagie Micalet, a relu le [test de stress et d'anxiété](/test-stress-anxiete/) ; les articles, eux, n'ont pas encore été relus par un professionnel de santé. Je cherche à étendre cette relecture, et j'explique comment dans la [méthode éditoriale](/methode-editoriale/#les-contenus-sont-ils-relus-par-un-professionnel-de-santé).
 
 ## Ce que ce site n'est pas
 

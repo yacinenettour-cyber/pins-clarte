@@ -592,6 +592,17 @@ def ariane(elements):
     return f'<nav class="ariane" aria-label="Fil d\'Ariane"><ol>{lis}</ol></nav>', schema
 
 
+def relecture_html(entete):
+    """Page relue par un professionnel de santé (champs relu_par, relu_profession, relu_lien, relu_le du front matter) :
+    la mention remplace « pas encore relue » (méthode éditoriale : nom, profession et date de relecture affichés)."""
+    if not entete.get("relu_par"):
+        return ""
+    return ("<strong>Qui écrit ?</strong> " + SITE["auteur"]["nom"] + ", " + SITE["auteur"]["metier"]
+            + ". <strong>Page relue par</strong> <a href=\"" + e(entete["relu_lien"]) + "\">" + e(entete["relu_par"]) + "</a>, "
+            + e(entete["relu_profession"]) + ", le " + date_fr(entete["relu_le"]) + ". Chaque affirmation renvoie à sa source "
+            "(voir la <a href=\"/methode-editoriale/\">méthode éditoriale</a>).")
+
+
 # Qui écrit, rappelé sur chaque article (audit du 13/10/2026 : sujet santé, le lecteur doit le savoir sur la page lue).
 AUTEUR_HTML = ("<strong>Qui écrit ?</strong> " + SITE["auteur"]["nom"] + ", " + SITE["auteur"]["metier"]
                + ". Cet article n'a pas encore été relu par un professionnel de santé : "
@@ -1149,7 +1160,7 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
 {corps_html}
 {faq_html}
 {liste_sources(sources, "la page")}
-<p class="avertissement">{AUTEUR_HTML.replace("Cet article n'a pas encore été relu", "Cette page n'a pas encore été relue")} Cette page donne des repères de bien-être, pas un diagnostic ni un traitement. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
+<p class="avertissement">{relecture_html(entete) or AUTEUR_HTML.replace("Cet article n'a pas encore été relu", "Cette page n'a pas encore été relue")} Cette page donne des repères de bien-être, pas un diagnostic ni un traitement. Si tes symptômes durent, s'aggravent ou t'inquiètent, parles-en à ton médecin.</p>
 {URGENCE_HTML}
 </div>
 {f"<script>{script}</script>" if script else ""}"""
@@ -1157,6 +1168,8 @@ def construire_page_outil(fichier, chemin, nom_court, marqueurs, duree, tete="",
         {"@context": "https://schema.org", "@type": "WebPage", "@id": URL + chemin + "#page", "url": URL + chemin,
          "name": entete["titre"], "description": entete["description"], "inLanguage": SITE["langue"],
          "dateModified": entete["maj"], "author": auteur(), "publisher": editeur(), "isAccessibleForFree": True,
+         **({"reviewedBy": {"@type": "Person", "name": entete["relu_par"], "jobTitle": entete["relu_profession"],
+                            "url": entete["relu_lien"]}, "lastReviewed": entete["relu_le"]} if entete.get("relu_par") else {}),
          "citation": [{"@type": "ScholarlyArticle" if type_source(u)[0] == "etude" else "CreativeWork", "name": t, "url": u}
                       for t, u in sources],
          "publishingPrinciples": URL + "/methode-editoriale/"},

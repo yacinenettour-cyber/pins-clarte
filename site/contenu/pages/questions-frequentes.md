@@ -22,7 +22,7 @@ Les organismes officiels d'abord (Inserm, Haute Autorité de santé, Assurance m
 
 ### Les articles sont-ils relus par un professionnel de santé ?
 
-Pas encore. La démarche prévue (qui relira, ce qui sera relu, ce qui sera affiché) est décrite dans la [méthode éditoriale](/methode-editoriale/#les-contenus-sont-ils-relus-par-un-professionnel-de-santé).
+Une seule page pour l'instant : le [test de stress et d'anxiété](/test-stress-anxiete/), relu par une psychologue clinicienne le 26 octobre 2026. Les articles n'ont pas encore été relus. La démarche (qui relit, ce qui est relu, ce qui est affiché) est décrite dans la [méthode éditoriale](/methode-editoriale/#les-contenus-sont-ils-relus-par-un-professionnel-de-santé).
 
 ### Comment signaler une erreur ?
 

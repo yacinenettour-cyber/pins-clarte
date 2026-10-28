@@ -50,16 +50,16 @@ Clarté Mentale n'affiche **aucune publicité**, ne contient **aucun lien affili
 
 ## Les contenus sont-ils relus par un professionnel de santé ?
 
-Pas encore : à ce jour, aucun professionnel de santé n'a relu les articles de ce site, et je préfère te le dire clairement. Je cherche un relecteur, et voici comment la relecture fonctionnera quand elle commencera :
+Une seule page à ce jour : le [test de stress et d'anxiété](/test-stress-anxiete/) a été relu le 26 octobre 2026 par Pélagie Micalet, psychologue clinicienne (TCC) spécialisée dans les troubles du sommeil et de l'anxiété. Les articles, eux, n'ont pas encore été relus par un professionnel de santé, et je préfère te le dire clairement. Voici comment la relecture fonctionne :
 
 | Point | Ce qui est prévu |
 |---|---|
 | Qui relit | Un professionnel de santé en exercice, de préférence psychologue ou médecin, dont l'inscription professionnelle pourra être vérifiée |
 | Ce qui est relu | L'exactitude des informations, le choix des sources, les limites signalées et la section « Quand consulter ? » |
-| Ce qui sera affiché | Sur chaque article relu : le nom du relecteur, sa profession et la date de relecture ; un article non relu ne portera aucune mention de relecture |
+| Ce qui est affiché | Sur chaque page relue : le nom du relecteur, sa profession et la date de relecture ; une page non relue ne porte aucune mention de relecture |
 | Indépendance | Le relecteur vérifie les informations ; il ne recommande ni le guide gratuit ni le programme payant |
 
-En attendant, chaque article suit la méthode décrite sur cette page, et toute erreur signalée est corrigée.
+Pour les pages non relues, chaque article suit la méthode décrite sur cette page, et toute erreur signalée est corrigée.
 
 ## Comment signaler une erreur ?
 

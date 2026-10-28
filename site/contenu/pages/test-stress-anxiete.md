@@ -2,7 +2,11 @@
 titre: Test de stress et d'anxiété : le GAD-7 et ton profil
 titre_seo: Test de stress et d'anxiété gratuit (GAD-7, 2 minutes)
 description: Test gratuit en 2 minutes : le questionnaire d'anxiété GAD-7, validé scientifiquement, puis ton profil (nuits, travail ou corps) avec des priorités adaptées.
-maj: 2026-10-13
+maj: 2026-10-28
+relu_par: Pélagie Micalet
+relu_profession: psychologue clinicienne (TCC) spécialisée dans les troubles du sommeil et de l'anxiété
+relu_lien: https://www.micaletpsychologueparis17.fr/
+relu_le: 2026-10-26
 ---
 Le GAD-7, un questionnaire validé de 7 questions sur l'anxiété, puis 6 questions sur tes nuits, ton travail et ton corps : environ 2 minutes, sans e-mail. Un repère, pas un avis médical.
 
@@ -71,6 +75,9 @@ L'échelle de stress perçu (*Perceived Stress Scale*, PSS) est un questionnaire
 - ses auteurs précisent que ce n'est pas un instrument de diagnostic et qu'elle n'a pas de seuils : un score ne se compare qu'à ceux d'autres personnes du même groupe [7].
 
 Le GAD-7, lui, est libre de reproduction et dispose de seuils publiés [2, 3], ce qui permet de te donner un repère clair.
+
+## Qui a relu ce test ?
+Cette page a été relue le 26 octobre 2026 par [Pélagie Micalet](https://www.micaletpsychologueparis17.fr/), psychologue clinicienne formée aux thérapies comportementales et cognitives (TCC), spécialisée dans les troubles du sommeil et de l'anxiété, qui reçoit à Paris (17e). Sa relecture porte sur cette page uniquement : le questionnaire, les seuils du score et la partie « Quand consulter ? ». Elle a confirmé que le GAD-7 est l'échelle de référence et a signalé un défaut d'affichage sur téléphone (la réponse choisie semblait déjà cochée à la question suivante), corrigé le 27 octobre 2026. Elle n'est liée ni au guide gratuit ni au programme payant du site.
 
 ## Quand consulter ?
 Consulte ton médecin traitant si ton score au GAD-7 atteint 10 ou plus [3], ou si ton anxiété dure, revient sous forme de crises ou t'empêche de vivre normalement [4]. Parles-en aussi à ton médecin si :
