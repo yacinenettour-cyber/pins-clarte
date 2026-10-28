@@ -58,7 +58,7 @@ Photos : Unsplash (daniel castillo, Polina Kuzovkova, Mario Häfliger, Colter Ol
 ```
 
 ## Shorts (1 tous les 2 à 3 jours après la vidéo, chacun relié à la vidéo complète)
-Dans YouTube Studio, pour chaque Short : « Vidéo associée » = la vidéo Jacobson.
+Dans YouTube Studio, pour chaque Short : « Vidéo associée » (appelée « Vidéo similaire » dans l'application mobile YouTube Studio) = la vidéo Jacobson.
 
 **Fait : les 3 Shorts ont été mis en ligne par l'utilisateur le 28/10/2026.**
 
