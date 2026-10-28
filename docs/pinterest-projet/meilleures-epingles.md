@@ -177,6 +177,8 @@ Statistiques relues le 27/10 (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 26/10) : ch
 (Journée chargée 48 impressions, Bas du dos 7, Pensées négatives 5, Lâcher prise 3, Poignets 3, Souffle court 2 ;
 0 enregistrement, 0 clic sortant) : pas encore de données nouvelles.
 
+**28/10/2026** : stock à 0 ; le matin, outil d'images Hugging Face hors service (connecteur déconnecté), épingle faite l'après-midi à la demande de l'utilisateur. « Gestion des émotions : 5 clés pour retrouver ton calme » (`images_cles/gestion-emotions-5-cles.jpg`, systemenerveux, sans lien : aucun article du site ne traite ce sujet, aucune mention du guide), mot-clé en forte hausse sur Pinterest France (+200 % sur un mois, analyse du 27/10). Format `riche` (`planche_riche.py`) déclaré `cles` dans pins.json comme la précédente. Personne réaliste : femme en pull rose poudré, assise, mains sur la poitrine, yeux fermés ; vignettes : cœur avec étiquette vierge, plume, carnet ouvert vierge, baskets sauge, deux tasses de thé. 6 images Hugging Face (graine 681678), aucune écartée. Sujet relu à la main : deux épingles « Gestion des émotions » non publiées (règle des 90 secondes, gestes contre la colère, format photo que le robot ne publie plus) ont une seule clé en commun (« nommer l'émotion ») : accepté. Contrôles : anti_doublons.py sans doublon, titre 54 caractères, corps 392, total 477, 8 hashtags, verifier_banque.py 0 doublon ; visuel relu.
+
 Statistiques des épingles illustrées du robot (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 25/10, lues le 26/10) :
 
 | Épingle | Publiée | Impressions | Clics sur l'épingle | Enregistrements | Clics sortants |

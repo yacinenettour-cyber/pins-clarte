@@ -1,5 +1,20 @@
 [
  {
+  "titre": "Gestion des émotions : 5 clés pour retrouver ton calme",
+  "texte_image": "5 clés pour te calmer",
+  "points_image": [
+   "Nomme-la",
+   "Expire longtemps",
+   "Écris 5 minutes",
+   "Bouge un peu",
+   "Parles-en"
+  ],
+  "description": "Sauve cette épingle pour les jours où tes émotions prennent toute la place. Cinq clés pour retrouver ton calme : nommer ce que tu ressens, souvent un premier pas pour prendre du recul ; expirer plus longtemps que tu n'inspires ; écrire 5 minutes ce qui t'agite ; marcher quelques minutes ; en parler à une personne de confiance. Si tes émotions débordent souvent, un psychologue peut t'aider. #systemenerveux #emotions #gestiondesemotions #calme #stress #anxiete #bienetre #zen",
+  "theme": "systemenerveux",
+  "image_prete": "images_cles/gestion-emotions-5-cles.jpg",
+  "format": "cles"
+ },
+ {
   "titre": "Culpabilité de se reposer : 5 clés pour souffler",
   "texte_image": "5 clés pour souffler sans culpabiliser",
   "points_image": [
