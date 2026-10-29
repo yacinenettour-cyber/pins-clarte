@@ -144,7 +144,7 @@ message écrit à la main par Yacine, à une seule personne :
 - **Chaque e-mail est différent** : ne jamais réutiliser la même ouverture ni la même phrase d'un e-mail à l'autre ;
   le modèle ci-dessus donne le fond, pas le texte à recopier.
 - **Signature** : « Yacine » seul, puis l'adresse du site sur la ligne suivante. PS « Si ça ne vous intéresse pas, dites-le
-  moi simplement, je ne vous relancerai pas. » (formulation variée d'un e-mail à l'autre).
+  moi simplement et je ne vous écrirai plus. » (cohérent avec la relance unique : un « non » arrête tout) (formulation variée d'un e-mail à l'autre).
 - **Avant chaque envoi**, relire le texte en se demandant « est-ce que Yacine écrirait ça ? » et le passer au crible
   de la liste ci-dessus ; en cas de doute, raccourcir.
 
@@ -167,7 +167,7 @@ Exemple du ton visé (à ne pas recopier) :
 > Yacine
 > www.contactapaisement-mental.fr
 >
-> PS : si ce n'est pas pour vous, pas de souci, je ne vous relancerai pas.
+> PS : si ce n'est pas pour vous, dites-le moi et je ne vous écrirai plus.
 
 ## Ce que je surveille
 
