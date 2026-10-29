@@ -1,6 +1,6 @@
 {
  "slug": "ruminations-soir",
- "statut": "publiee",
+ "statut": "a_fabriquer",
  "publication_prevue": "2026-10-24T03:20:08Z",
  "duree_totale_min": 30,
  "article": "/ruminations-le-soir/",
@@ -344,10 +344,10 @@
   "pastille": "Voix douce + musique"
  },
  "short": {
-  "titre": "Respire avec moi quand ton cerveau ne s'arrête pas la nuit #sommeil #respiration",
-  "description": "Exercice de respiration 4-6 pour calmer les pensées du soir.",
-  "haut1": "Respire avec moi",
-  "haut2": "pour t'endormir",
+  "titre": "Ralentis ton souffle avant de t'endormir 🌙 #sommeil #respiration",
+  "description": "Respiration 4-6 au lit : tu inspires sur 4 temps, tu souffles sur 6. Extrait de la méditation « Ruminations le soir » (30 min) sur la chaîne.",
+  "haut1": "Ralentis ton souffle",
+  "haut2": "avant de t'endormir",
   "bas1": "Méditation complète (30 min) sur la chaîne"
  },
  "youtube": {
@@ -399,5 +399,25 @@
  "bloquee": true,
  "video_id": "SCUS59y5kNs",
  "lien": "https://youtu.be/SCUS59y5kNs",
- "note_29_10": "Vraie vidéo mise en ligne à la main par l'utilisateur (SCUS59y5kNs, publique, vérifiée par l'API le 29/10) ; le bloc « publication » garde la trace de l'envoi raté du 22/10 (Zp-e755b89M, mauvaise chaîne)."
+ "note_29_10": "Vraie vidéo mise en ligne à la main par l'utilisateur (SCUS59y5kNs, publique, vérifiée par l'API le 29/10) ; le bloc « publication » garde la trace de l'envoi raté du 22/10 (Zp-e755b89M, mauvaise chaîne).",
+ "shorts_extra": [
+  {
+   "partie": "Laisser passer les pensées",
+   "haut1": "Tes pensées tournent ?",
+   "haut2": "Laisse-les passer",
+   "bas1": "Méditation complète (30 min) sur la chaîne",
+   "titre": "Laisse passer tes pensées pour t'endormir 😴 #sommeil #méditation",
+   "description": "Imagine chaque pensée comme un nuage qui passe, sans chercher à la chasser. Extrait de la méditation « Ruminations le soir » (30 min) sur la chaîne."
+  },
+  {
+   "partie": "Une scène calme",
+   "haut1": "Un ciel étoilé",
+   "haut2": "pour calmer ton mental",
+   "bas1": "Méditation complète (30 min) sur la chaîne",
+   "titre": "Imagine un ciel étoilé pour calmer ton mental 🌙 #sommeil #méditation",
+   "description": "Une scène calme à imaginer en détail, pour donner autre chose à faire à ton esprit au lit. Extrait de la méditation « Ruminations le soir » (30 min) sur la chaîne."
+  }
+ ],
+ "envoi_manuel": true,
+ "note_shorts_29_10": "29/10 (accord de l'utilisateur « Ok » pour 3 Shorts tirés de cette vidéo) : refabrication avec la même voix Kokoro pour obtenir le Short respiration et 2 extraits (shorts_extra) ; envoi_manuel : rien n'est envoyé, la vidéo publique SCUS59y5kNs reste en place. Après fabrication : remettre statut « publiee » et noter artefact_run."
 }
