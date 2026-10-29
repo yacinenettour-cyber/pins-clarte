@@ -429,7 +429,7 @@ def pied(base="", conteneur="large"):
     colonnes = [
         ("pied-lire", "Lire", [("/articles/", "Tous les articles")]
          + [(f'/{th["slug"]}/', th["nom"]) for th in SITE.get("themes", {}).values()]
-         + [("/questions-frequentes/", "Questions fréquentes"), ("/glossaire/", "Glossaire")]),
+         + [("/videos/", "Vidéos"), ("/questions-frequentes/", "Questions fréquentes"), ("/glossaire/", "Glossaire")]),
         ("pied-outils", "Outils gratuits", [
             ("/test-stress-anxiete/", "Test stress et anxiété"), ("/respiration-guidee/", "Respiration guidée"),
             ("/exercices-respiration/", "Exercices de respiration"), ("/fiche-respiration/", "Fiche respiration à imprimer"),
@@ -1565,7 +1565,7 @@ def construire_index_recherche(articles):
     slugs = {a["slug"] for a in articles}
     themes = {th["slug"] for th in SITE.get("themes", {}).values()}
     outils = {"test-stress-anxiete", "respiration-guidee", "exercices-respiration", "fiche-respiration", "journal-humeur",
-              "ressources-urgence", "ressources-libres"}
+              "ressources-urgence", "ressources-libres", "videos"}
     entrees = []
     for chemin in sorted(glob.glob(os.path.join(SORTIE, "**", "index.html"), recursive=True)):
         rel = "/" + os.path.relpath(os.path.dirname(chemin), SORTIE).replace(os.sep, "/") + "/"
@@ -1767,6 +1767,72 @@ def construire_page_fixe(nom_fichier, chemin, nav=""):
            page(entete.get("titre_seo") or entete["titre"], entete["description"], chemin, contenu, schemas, nav=nav))
 
 
+def videos_publiees():
+    """Vidéos de la chaîne YouTube à montrer sur /videos/ : fiches videos_youtube/<slug>/plan.json qui ont un champ
+    « lien » (adresse YouTube vérifiée de la vidéo en ligne), de la plus récente à la plus ancienne (29/10/2026)."""
+    out = []
+    for chemin in sorted(glob.glob(os.path.join(DEPOT, "videos_youtube", "*", "plan.json"))):
+        p = json.load(open(chemin, encoding="utf-8"))
+        y = p.get("youtube", {})
+        if not p.get("lien") or not y.get("titre"):
+            continue
+        dossier = os.path.dirname(chemin)
+        mini = next((os.path.join(dossier, n) for n in ("miniature.jpg", "miniature-youtube.jpg")
+                     if os.path.exists(os.path.join(dossier, n))), None)
+        out.append({"slug": p["slug"], "titre": y["titre"], "resume": y.get("accroche", ""), "lien": p["lien"],
+                    "article": p.get("article"), "duree": p.get("duree_totale_min"), "miniature": mini,
+                    "publication": p.get("publication_prevue", "")})
+    return sorted(out, key=lambda v: v["publication"], reverse=True)
+
+
+def construire_videos():
+    """Page /videos/ : les relaxations de la chaîne YouTube, miniature et lien (aucun lecteur intégré, donc aucun
+    cookie YouTube sur le site), avec l'article sourcé de chaque vidéo (écosystème site-Pinterest-YouTube)."""
+    from zoneinfo import ZoneInfo
+    maintenant = datetime.datetime.now(datetime.timezone.utc)
+    os.makedirs(os.path.join(SORTIE, "img", "videos"), exist_ok=True)
+    cartes = []
+    for v in videos_publiees():
+        img = ""
+        if v["miniature"]:
+            im = Image.open(v["miniature"]).convert("RGB")
+            im = ImageOps.fit(im, (640, 360), Image.LANCZOS)
+            im.save(os.path.join(SORTIE, "img", "videos", v["slug"] + ".webp"), quality=82)
+            img = f'<img src="/img/videos/{v["slug"]}.webp" width="640" height="360" alt="" loading="lazy" decoding="async">'
+        meta = f'{v["duree"]} min' if v["duree"] and v["duree"] < 60 else "1 h"
+        meta += " · voix douce, puis musique calme"
+        try:
+            quand = datetime.datetime.fromisoformat(v["publication"].replace("Z", "+00:00"))
+        except ValueError:
+            quand = None
+        if quand and quand > maintenant:
+            q = quand.astimezone(ZoneInfo("Europe/Paris"))
+            meta += f" · en ligne le {q.day} {MOIS[q.month - 1]} à {q.hour} h"
+        article = (f'<p><a href="{e(v["article"])}">Lire l\'article sourcé</a></p>' if v["article"] else "")
+        cartes.append(f"""<li><article class="carte video">{img}<div class="corps">
+<h2>{e(v["titre"])}</h2>
+<p class="carte-meta">{e(meta)}</p>
+<p class="resume">{e(v["resume"])}</p>
+<p><a href="{e(v["lien"])}" rel="noopener" target="_blank">Regarder sur YouTube<span class="lecteur-ecran"> (nouvelle fenêtre)</span></a></p>
+{article}</div></article></li>""")
+    nav_html, schema_ariane = ariane([("Accueil", "/"), ("Vidéos", None)])
+    contenu = f"""<div class="large">{nav_html}
+<h1>Relaxations guidées en vidéo</h1>
+<p class="chapo">Pour les soirs où lire ne suffit pas, voici des relaxations à écouter allongé : une voix douce te guide, puis une musique calme continue jusqu'au sommeil. Elles sont gratuites, sur ma <a href="{e(SITE["youtube"])}">chaîne YouTube</a>.</p>
+<ul class="grille" role="list">{"".join(cartes)}</ul>
+<p>Chaque vidéo reprend une méthode expliquée, sources à l'appui, dans un article du site. Pour respirer sans écran, les <a href="/respiration-guidee/">audios de respiration guidée</a> se téléchargent gratuitement.</p>
+<p class="avertissement">À écouter allongé, au calme, jamais en conduisant. Ces vidéos ne remplacent pas un avis médical : si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. Je ne suis pas professionnel de santé.</p>
+</div>"""
+    schema = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Relaxations guidées en vidéo",
+              "url": URL + "/videos/", "inLanguage": SITE["langue"],
+              "mainEntity": {"@type": "ItemList", "itemListElement": [
+                  {"@type": "ListItem", "position": i + 1, "url": v["lien"], "name": v["titre"]}
+                  for i, v in enumerate(videos_publiees())]}}
+    ecrire("videos/index.html", page(f"Relaxations guidées en vidéo pour dormir | {SITE['nom']}",
+                                     "Relaxations guidées pour s'endormir, en vidéo et gratuites : une voix douce, puis une musique calme jusqu'au sommeil. Chaque méthode a son article sourcé.",
+                                     "/videos/", contenu, [schema, schema_ariane]))
+
+
 def construire_404():
     contenu = """<div class="etroit"><h1>Page introuvable</h1>
 <p>Cette page n'existe pas ou a changé d'adresse.</p>
@@ -1832,7 +1898,7 @@ def construire_fichiers_techniques(articles):
     # Dates du plan du site : changement réel du contenu (registre) pour les pages fixes ; pour les articles, la date
     # « maj » affichée et donnée dans dateModified (audit du 13/10/2026 : une seule date par article, partout).
     fixes = ["/", "/articles/", "/la-formation/", "/guides-gratuits/", "/test-stress-anxiete/", "/respiration-guidee/",
-             "/ressources-urgence/", "/exercices-respiration/", "/fiche-respiration/", "/journal-humeur/", "/ressources-libres/", "/glossaire/", "/questions-frequentes/",
+             "/ressources-urgence/", "/exercices-respiration/", "/fiche-respiration/", "/journal-humeur/", "/ressources-libres/", "/videos/", "/glossaire/", "/questions-frequentes/",
              "/accessibilite/", "/a-propos/", "/methode-editoriale/", "/mentions-legales/"]
     fixes += [f"/{th['slug']}/" for th in SITE.get("themes", {}).values()]
     dates = dates_contenu(fixes + [f"/{a['slug']}/" for a in articles])
@@ -1988,6 +2054,7 @@ def main():
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")
     construire_page_fixe("methode-editoriale.md", "/methode-editoriale/")
     construire_page_fixe("ressources-libres.md", "/ressources-libres/")
+    construire_videos()
     mentions = open(os.path.join(RACINE, "contenu", "pages", "mentions-legales.md"), encoding="utf-8").read()
     if balise_mesure() and "n'utilise aucun outil de mesure d'audience" in mentions:
         sys.exit("Mesure d'audience activée : mettre d'abord à jour les mentions légales (elles disent « aucun outil de mesure d'audience »).")
