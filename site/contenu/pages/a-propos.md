@@ -18,11 +18,17 @@ C'est moi, **Yacine**. Je ne suis **ni médecin, ni psychologue, ni professionne
 
 ## Mon histoire
 
-Pendant deux ans, j'ai alterné les nuits compliquées et les nuits blanches. Je me couchais et je n'arrivais pas à couper. Le stress de la journée me revenait en tête, et je ne dormais pas.
+Pendant deux ans, j'ai alterné les nuits compliquées et les nuits blanches. Je n'arrivais pas à trouver un sommeil qui me repose vraiment, et il m'arrivait de me réveiller en pleine nuit sans réussir à me rendormir. Dans ma tête, ça tournait. Je réfléchissais trop. Et plus j'essayais de dormir, plus je me mettais la pression. Le pire, c'était de savoir que j'allais être fatigué le lendemain, et de me demander comment j'allais tenir la journée.
 
 J'ai d'abord essayé des médicaments à base de plantes. Sur moi, ça a très peu marché. Peut-être que ça aide d'autres personnes, je ne sais pas. Dans mon cas, non.
 
-Ce qui m'a aidé, c'est la méditation et la cohérence cardiaque (on respire lentement et régulièrement pendant quelques minutes). Ça n'a pas été immédiat, mais mon stress et mon anxiété ont fini par baisser.
+Je ne voulais plus subir mes nuits sans rien faire. En cherchant des solutions naturelles, j'ai découvert la cohérence cardiaque (on respire lentement et régulièrement pendant quelques minutes) et la méditation. Au début, j'étais un peu sceptique. J'ai quand même pris le temps de pratiquer régulièrement. Rien n'a changé du jour au lendemain. Petit à petit, j'ai appris à mieux gérer mes pensées et à me détendre, et mon stress et mon anxiété ont fini par baisser. C'est en étant régulier que j'ai vraiment compris l'intérêt.
+
+J'ai aussi essayé plein de choses en pensant que ça réglerait le problème vite. J'ai fait attention à mes soirées, j'ai essayé de me détendre avant d'aller au lit. Mais ce n'est pas aussi simple que couper les écrans ou boire une tisane. Même les soirs où je faisais tout comme il faut, mon cerveau continuait parfois à tourner en boucle. J'ai compris qu'il fallait aussi apprendre à calmer le mental, et arrêter de chercher la solution miracle.
+
+Ce qui me mettait le plus la pression, c'était de regarder l'heure pendant la nuit. Je voyais le temps passer et je pensais déjà à la fatigue du lendemain. Au lieu de m'aider, ça augmentait mon stress et me gardait en alerte. Surveiller l'heure et vouloir dormir à tout prix, c'était un cercle vicieux. Ce que j'en retiens, c'est qu'il ne faut pas ajouter de la pression à une situation déjà difficile.
+
+Aujourd'hui, je garde la cohérence cardiaque dans ma routine, surtout le soir, quand je sens que j'ai du mal à décrocher. Je prends quelques minutes pour respirer calmement, en me concentrant sur mon souffle plutôt que sur tout ce qui me passe par la tête. Ça me ralentit un peu, et j'arrive au coucher moins tendu. Je ne le fais pas parfaitement tous les jours, mais j'essaie de garder l'habitude.
 
 J'ai créé ce site pour partager ce que j'ai appris en cherchant des solutions. Sur internet, on lit tout et son contraire, et moi je voulais des informations vérifiées. Alors pour chaque conseil, je cherche la source, un organisme de santé ou une étude, et je la mets en bas de l'article. Si une étude est petite ou pas très solide, je le dis.
 

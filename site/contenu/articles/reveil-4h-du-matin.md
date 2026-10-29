@@ -18,6 +18,8 @@ Le réveil nocturne à 4h du matin, c'est un éveil en fin de nuit, au moment o�
 
 Peut-être que tu connais la scène. Tu ouvres les yeux dans le noir, tu attrapes ton téléphone, il est quatre heures passées. Et c'est parti pour une heure à tourner dans ton lit.
 
+*Un mot de Yacine : regarder l'heure la nuit, c'est ce qui me mettait le plus la pression. Je voyais le temps passer et je pensais déjà à la fatigue du lendemain. Ça me gardait en alerte, et vouloir dormir à tout prix n'arrangeait rien. C'est mon expérience, pas une preuve. La suite s'appuie sur les études. Mon histoire est sur la page [à propos](/a-propos/).*
+
 ## Pourquoi se réveille-t-on à 4h du matin ?
 
 Surtout parce que la fin de nuit est une période de sommeil plus léger [1], et que le cortisol y remonte naturellement [4]. Le stress, l'alcool du soir, la lumière ou un coucher trop précoce fragilisent encore ce moment [3][5].

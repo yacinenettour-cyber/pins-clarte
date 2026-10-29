@@ -17,6 +17,8 @@ image: Chambre le soir éclairée par une petite lampe de chevet à lumière cha
 
 Une routine du soir pour mieux dormir, c'est une poignée de gestes calmes que tu refais chaque soir à la même heure. Tu baisses la lumière, tu coupes les écrans une à deux heures avant de te coucher, tu gardes des horaires réguliers, tu prends ta douche chaude assez tôt, tu notes ce qui t'attend demain et tu respires lentement. Rien d'extraordinaire. Ce qui fait la différence, c'est de le refaire soir après soir, pas de le faire parfaitement.
 
+*Un mot de Yacine : moi aussi, j'ai soigné mes soirées en pensant que ça suffirait. Ce n'était pas aussi simple que couper les écrans ou boire une tisane, et certains soirs mon cerveau continuait de tourner. Une routine aide, mais il faut aussi apprendre à calmer le mental. Mon histoire est sur la page [à propos](/a-propos/).*
+
 ## Pourquoi une routine du soir aide-t-elle à dormir quand on est stressé ?
 Parce qu'elle fait baisser la lumière et les stimulations qui retardent l'endormissement, et qu'elle ménage un sas entre la journée et la nuit [1][4]. Ton horloge interne se cale en bonne partie sur la lumière, explique l'Inserm. Quand il fait noir, le cerveau libère de la mélatonine, l'hormone qui aide le sommeil à se déclencher. Dès que la rétine capte de la lumière, cette production ralentit. Les écrans et les lampes LED, riches en lumière bleue, repoussent donc l'endormissement quand on les utilise tard [3].
 

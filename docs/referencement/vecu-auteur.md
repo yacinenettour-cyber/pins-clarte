@@ -35,6 +35,9 @@ Ses mots (29/10/2026, réponse aux 5 questions sur son vécu ; recopiés tels qu
   stress et me maintenait en état d'alerte. J'ai compris que surveiller l'heure et vouloir absolument dormir pouvait devenir
   un cercle vicieux. Le plus important, c'est d'essayer de ne pas ajouter de pression à une situation déjà difficile. »
 
-Où il est utilisé : page /a-propos/ (« Mon histoire ») et un « mot de Yacine » en italique
-sous l'introduction de /respiration-pour-dormir/, /ruminations-le-soir/ et /calmer-son-systeme-nerveux/.
-Ce qui l'a aidé n'est jamais présenté comme une recommandation : rappel « ne remplace pas l'avis d'un médecin ».
+Où il est utilisé (29/10/2026, texte retravaillé validé par l'utilisateur : « Ok rien ne doit faire IA ») : page
+/a-propos/ (« Mon histoire », version complète) et un « mot de Yacine » en italique, différent dans chaque article :
+/reveil-4h-du-matin/ (l'heure regardée la nuit), /ruminations-le-soir/ (trop réfléchir, la pression de dormir),
+/routine-du-soir-anti-stress/ (écrans et tisane ne suffisaient pas), /respiration-pour-dormir/ (sa routine actuelle de
+cohérence cardiaque), /calmer-son-systeme-nerveux/ (sceptique au début, la régularité). Chaque extrait dit que son
+expérience ne prouve rien et renvoie aux études ; jamais présenté comme une recommandation.
