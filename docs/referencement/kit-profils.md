@@ -10,6 +10,11 @@ Les longueurs ont été vérifiées pour chaque site.
 
 Coche au fur et à mesure, et dis-moi ce qui est fait.
 
+**29/10/2026, décision de l'utilisateur** : « Pour le moment, je préfère rien ajouter d'autre, concentré sur la
+chaîne YouTube. » Seul le profil YouTube est fait ; Quora, Reddit, Medium, LinkedIn et Facebook sont en pause (ne pas
+les relancer sans demande). Quora et Reddit ne peuvent pas être gérés par Claude (aucun accès, publication automatique
+interdite par ces sites).
+
 ---
 
 ## 1. YouTube : onglet « À propos » de ta chaîne (5 min, le plus utile)
