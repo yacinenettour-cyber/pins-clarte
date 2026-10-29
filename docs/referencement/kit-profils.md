@@ -21,16 +21,22 @@ interdite par ces sites).
 
 **Où** : YouTube Studio → Personnalisation → Informations de base.
 
-**Description** (à coller) :
+**Description** (à coller, version du 29/10/2026) :
 
 > Pendant deux ans, j'ai enchaîné les nuits compliquées. Je réfléchissais trop, et plus j'essayais de dormir, plus
 > je me mettais la pression. C'est la cohérence cardiaque et la méditation qui m'ont aidé, petit à petit.
 >
-> Ici, je partage des relaxations guidées pour s'endormir et calmer les pensées qui tournent le soir : une voix
-> douce, puis une musique calme jusqu'au sommeil. À écouter allongé, jamais en conduisant.
+> Tu cherches à calmer tes ruminations du soir, à apaiser ton anxiété ou à retrouver un sommeil plus reposant ? Ici,
+> je partage des relaxations et des méditations guidées pour s'endormir : une voix douce te guide tout de suite, puis
+> une musique calme continue jusqu'au sommeil.
 >
-> Je ne suis pas professionnel de santé. Les méthodes et les études sont expliquées, sources à l'appui, sur mon
-> site : www.contactapaisement-mental.fr (articles, audios de respiration et fiche à imprimer, gratuits).
+> Les méthodes et les études sont expliquées, sources à l'appui, sur mon site, avec des outils gratuits (test de
+> stress, minuteur, audios de respiration) :
+> 👉 https://www.contactapaisement-mental.fr/
+>
+> Je ne suis pas professionnel de santé : ces vidéos sont là pour le bien-être et ne remplacent pas une consultation.
+
+L'API YouTube n'enregistre pas ce texte (essayé le 29/10) : il faut le coller dans YouTube Studio.
 
 **Liens** (bouton « Ajouter un lien ») :
 - Titre `Mon site : articles et audios gratuits` → `https://www.contactapaisement-mental.fr/`

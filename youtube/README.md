@@ -52,3 +52,14 @@ ligne sans refabriquer la vidéo.
 (1 h) » (PbuSSZlDu1c, déjà publique) 2 vues. Shorts du 28/10 : « Détends ton visage… » 202 vues, 6 j'aime ;
 « Respire avec moi… » 133 vues, 6 j'aime ; « Relâche tes bras… » 45 vues, 2 j'aime. 0 commentaire. Les Shorts n'ont
 aucune description (pas de lien vers la vidéo complète) ; aucune des deux vidéos longues n'a de sous-titres envoyés.
+
+**Mis à jour le 29/10/2026 vers 9 h (accord de l'utilisateur « Oui fais A, B et C »), vérifié par l'API** :
+- les 3 Shorts ont une description (une phrase propre à chaque Short, lien vers la relaxation complète
+  PbuSSZlDu1c, lien vers l'article `/relaxation-jacobson/`, rappel « jamais en conduisant », crédits voix et
+  musique) ; titres inchangés ; langue de la vidéo et de l'audio remise sur `fr` (la mise à jour l'avait passée en
+  `en-US`, corrigé : toujours envoyer `defaultLanguage` et `defaultAudioLanguage` dans un `videos.update`) ;
+- sous-titres français envoyés (piste « Français », statut `serving`) sur PbuSSZlDu1c et SCUS59y5kNs ;
+- description « À propos » de la chaîne : **l'API YouTube répond OK mais ne l'enregistre pas** (essayé par
+  `brandingSettings` puis `localizations`, relu après chaque envoi). À coller à la main dans YouTube Studio
+  (texte dans `docs/referencement/kit-profils.md`, section 1). À faire aussi à la main : « Vidéo similaire »
+  sur chaque Short (Studio → le Short → Vidéo similaire → la relaxation complète).

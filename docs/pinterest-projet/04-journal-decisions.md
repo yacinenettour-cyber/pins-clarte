@@ -1238,3 +1238,15 @@ probable fort / moyen / faible, méthode écrite.
 - **C. Tâche « Vidéo YouTube »** : nouvelle étape 7 (dès que l'adresse de la vidéo est connue : `lien` dans le plan,
   phrase vers la vidéo dans l'article, kit d'épingle manuelle vers la vidéo) ; `artefact_run` noté à la fabrication ;
   titres des Shorts vérifiés contre les doublons d'épingles.
+
+## 95. Chaîne YouTube : Shorts, sous-titres, « À propos » (29/10/2026, accord de l'utilisateur « Oui fais A, B et C »)
+
+- **A.** Description des 3 Shorts (BFbPfBX7t9M, fyepx9EElDQ, TlPoYq8bogM) : phrase propre à chaque Short, lien vers la
+  relaxation complète et vers l'article Jacobson, rappel santé, crédits ; titres inchangés. Piège : un
+  `videos.update` sans `defaultAudioLanguage` repasse l'audio en `en-US` ; corrigé en `fr`.
+- **B.** Sous-titres français (SRT relus contre les chapitres) envoyés sur PbuSSZlDu1c et SCUS59y5kNs : pistes
+  « Français », statut `serving`.
+- **C.** Description de la chaîne : l'API accepte l'envoi (200) mais garde l'ancien texte, par `brandingSettings`
+  comme par `localizations` (chaîne en langue par défaut `en`, traduction `en_US`). Texte à coller par
+  l'utilisateur dans YouTube Studio (`kit-profils.md`) ; ne pas retenter par l'API.
+- Restent à la main : « Vidéo similaire » sur chaque Short.
