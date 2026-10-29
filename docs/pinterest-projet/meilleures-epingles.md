@@ -179,6 +179,25 @@ Statistiques relues le 27/10 (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 26/10) : ch
 
 **28/10/2026** : stock à 0 ; le matin, outil d'images Hugging Face hors service (connecteur déconnecté), épingle faite l'après-midi à la demande de l'utilisateur. « Gestion des émotions : 5 clés pour retrouver ton calme » (`images_cles/gestion-emotions-5-cles.jpg`, systemenerveux, sans lien : aucun article du site ne traite ce sujet, aucune mention du guide), mot-clé en forte hausse sur Pinterest France (+200 % sur un mois, analyse du 27/10). Format `riche` (`planche_riche.py`) déclaré `cles` dans pins.json comme la précédente. Personne réaliste : femme en pull rose poudré, assise, mains sur la poitrine, yeux fermés ; vignettes : cœur avec étiquette vierge, plume, carnet ouvert vierge, baskets sauge, deux tasses de thé. 6 images Hugging Face (graine 681678), aucune écartée. Sujet relu à la main : deux épingles « Gestion des émotions » non publiées (règle des 90 secondes, gestes contre la colère, format photo que le robot ne publie plus) ont une seule clé en commun (« nommer l'émotion ») : accepté. Contrôles : anti_doublons.py sans doublon, titre 54 caractères, corps 392, total 477, 8 hashtags, verifier_banque.py 0 doublon ; visuel relu.
 
+**29/10/2026** : stock à 0. Sujet retenu, relié à l'article le plus vu du site sur Google (`/angoisse-le-matin/`, un tiers
+des impressions Search Console) : `cles` (format `riche`) — « Anxiété matinale : 5 clés pour apaiser tes réveils »
+(anti_doublons.py : aucun doublon ; relecture à la main : « Angoisse le matin : le rôle de la veille au soir » a un autre
+angle ; « Sommeil léger… » écarté, sujet déjà couvert par 4 épingles). Thème `systemenerveux`, champ `article` :
+`angoisse-le-matin`. Clés, toutes tirées de l'article (sources Assurance maladie et essai de l'Université de l'Illinois) :
+souffle lent (expirer plus longtemps) ; te lever et ouvrir les volets ; bouger quelques minutes ; noter le souci et lui
+donner rendez-vous plus tard ; moins de café, pas à jeun. Bandeau : « Sauvegarde cette épingle pour les matins où
+l'angoisse se lève avant toi ». Quota Hugging Face épuisé après 2 images, gardées dans le dépôt
+(`photos_attente/riche-anxiete-matinale/`, jamais lu par le robot) : `portrait-homme-main-poitrine.webp` (homme assis au
+bord du lit, main à plat sur la poitrine, yeux fermés, pyjama vert sauge et beige ; vérifié : mains correctes, habillé,
+aucun texte) et `v1-pissenlit.webp` (vignette de la clé « souffle lent »). Restent 4 vignettes à générer au prochain
+passage (graine 681678) : « window with wooden shutters wide open and soft golden morning sunlight », « rolled sage green
+yoga mat », « closed dusty pink notebook with a pencil lying on top », « white cup of coffee on a saucer with a little
+steam » (toutes « Small watercolor illustration of …, isolated on cream paper, no text »).
+Statistiques (PINTEREST_GET_PIN_ANALYTICS, 01/10 → 28/10, jours 27-28 encore en traitement) : Bas du dos 14 impressions,
+2 clics sur l'épingle ; Pensées négatives 5 / 2 ; Lâcher prise 3 / 1 ; Poignets 3 / 0 ; Souffle court 2 / 1 ;
+Culpabilité de se reposer (27/10) et Gestion des émotions (28/10) : pas encore de chiffres. 0 enregistrement et 0 clic
+sortant partout.
+
 Statistiques des épingles illustrées du robot (PINTEREST_GET_PIN_ANALYTICS, 27/09 → 25/10, lues le 26/10) :
 
 | Épingle | Publiée | Impressions | Clics sur l'épingle | Enregistrements | Clics sortants |
