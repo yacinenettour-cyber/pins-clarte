@@ -62,7 +62,7 @@ Pas besoin de tout faire. Prends-en une ou deux, et essaie-les quelques soirs.
 
 ### 1. Programmer un moment pour t'inquiéter, plus tôt dans la soirée
 
-L'idée est de donner à tes soucis un rendez-vous fixe, loin du lit, pour qu'ils ne t'attendent pas sous la couette. Ça peut sembler étrange, mais ça a été testé. En 2006, à l'Université Duke, en Caroline du Nord, Carney et Waters ont suivi 33 étudiants souffrant d'insomnie, dans un travail publié par une revue de médecine du sommeil. Pendant cinq soirs, certains notaient leurs soucis avec des pistes de solution, d'autres se contentaient de noter leurs soucis. Chez les premiers, l'agitation mentale avant le sommeil a baissé davantage [5].
+L'idée est de donner à tes soucis un rendez-vous fixe, loin du lit, pour qu'ils ne t'attendent pas sous la couette. Ça peut sembler étrange, mais ça a été testé. Carney et Waters, à l'Université Duke, en Caroline du Nord, ont suivi 33 étudiants souffrant d'insomnie, dans un travail publié en 2006 par une revue de médecine du sommeil. Pendant cinq soirs, certains notaient leurs soucis avec des pistes de solution, d'autres se contentaient de noter leurs soucis. Chez les premiers, l'agitation mentale avant le sommeil a baissé davantage [5].
 
 1. Choisis un créneau de 10 à 15 minutes en début de soirée, assis à une table.
 2. Note chaque souci sur une feuille.
@@ -125,10 +125,10 @@ Parles-en à ton médecin si :
 - tes difficultés reviennent au moins trois nuits par semaine depuis plus d'un mois, avec des effets dans la journée : fatigue, difficultés de concentration, irritabilité [2] ;
 - elles durent depuis trois mois ou plus : l'Inserm parle alors d'insomnie chronique [1] ;
 - tes pensées du soir s'accompagnent d'une tristesse persistante ou d'une perte d'envie : l'INSV rappelle que l'insomnie peut être le premier signe d'une dépression [2] ;
-- quelqu'un a remarqué des pauses dans ta respiration pendant ton sommeil, ou tu ressens au coucher des sensations désagréables dans les jambes qui t'obligent à bouger [2] ;
+- on t'a fait remarquer que ta respiration s'arrête par moments pendant ton sommeil, ou des sensations désagréables dans les jambes t'obligent à bouger au coucher [2] ;
 - tu envisages de prendre des somnifères : ne le fais pas seul, demande d'abord conseil à ton médecin [2].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Les ruminations se travaillent aussi avec un psychologue, que tu peux consulter directement, sans passer d'abord par ton médecin. Il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy. Tu trouveras les psychologues partenaires sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si tes pensées deviennent des idées noires, appelle le 3114, le numéro national de prévention du suicide : gratuit, joignable 24 h/24 et 7 j/7, avec des infirmiers et des psychologues formés à l'écoute [8].
 
@@ -282,7 +282,7 @@ Consulte ton médecin si tes réveils reviennent au moins trois nuits par semain
 - quelqu'un a remarqué des pauses dans ta respiration pendant ton sommeil, ou tu ressens au coucher des sensations désagréables dans les jambes qui t'obligent à bouger [3] ;
 - tu as envie de prendre des somnifères. Ne le fais pas seul, demande conseil à ton médecin [3].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Quand ce sont les pensées qui te réveillent à 4 h, le médecin n'est pas le seul à pouvoir t'aider. Un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale, et tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie (Mon soutien psy) : l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit, joignable 24 h/24 et 7 j/7, et tu y trouveras des infirmiers et des psychologues formés à l'écoute [8].
 
@@ -369,9 +369,9 @@ En sept étapes, des horaires réguliers jusqu'à la respiration lente une fois 
 
 1. **Fixe ton heure de lever, puis ton heure de coucher.** Couche-toi et lève-toi à heures régulières, le week-end aussi, parce que les grasses matinées dérèglent ton rythme [1][4]. S'il ne fallait garder qu'un seul repère, ce serait l'heure de lever, la même quelle que soit la nuit que tu viens de passer [1]. Côté boissons, plus de café, de thé ni de boissons énergisantes après 14 h [4].
 2. **21 h, tamise la lumière.** Les plafonniers blancs s'éteignent, les petites lampes prennent le relais. Le soir, l'Assurance maladie conseille un éclairage chaud et doux plutôt que des lumières froides [1].
-3. **Entre 21 h et 22 h, passe sous la douche ou dans le bain.** En 2019, Haghayegh et ses collègues, à l'Université du Texas à Austin, ont regroupé les études sur le sujet dans une méta-analyse parue dans une revue de médecine du sommeil. Une douche ou un bain à 40-42,5 °C, 1 à 2 heures avant le coucher, raccourcit le temps qu'on met à s'endormir, même si ça ne dure que 10 minutes [5]. Ce qui aiderait, c'est le refroidissement du corps qui vient ensuite. Les auteurs reconnaissent que la question du bon moment repose encore sur peu d'études [5]. Par contre, le bain brûlant juste avant d'aller au lit est à éviter, car tout ce qui réchauffe le corps gêne l'endormissement [1].
+3. **Entre 21 h et 22 h, passe sous la douche ou dans le bain.** Haghayegh et ses collègues, à l'Université du Texas à Austin, ont regroupé les études sur le sujet dans une méta-analyse publiée en 2019 par une revue de médecine du sommeil. Une douche ou un bain à 40-42,5 °C, 1 à 2 heures avant le coucher, raccourcit le temps qu'on met à s'endormir, même si ça ne dure que 10 minutes [5]. Ce qui aiderait, c'est le refroidissement du corps qui vient ensuite. Les auteurs reconnaissent que la question du bon moment repose encore sur peu d'études [5]. Par contre, le bain brûlant juste avant d'aller au lit est à éviter, car tout ce qui réchauffe le corps gêne l'endormissement [1].
 4. **22 h, éteins les écrans.** L'INSV conseille de décrocher 1 à 2 heures avant le coucher, l'Assurance maladie idéalement une heure avant [1][4]. Le téléphone va dans une autre pièce, notifications coupées [1]. À la place, quelque chose de calme, comme lire, écouter une musique douce, te relaxer ou faire une activité manuelle [4]. Si tu repousses sans cesse ce moment parce que la soirée est ton seul temps libre, lis ce que l'on sait des [causes de la procrastination du sommeil](/procrastination-du-coucher/).
-5. **22 h 30, vide ta tête sur papier.** Prends 5 minutes pour écrire, très précisément, ce que tu as à faire dans les jours qui viennent. En 2018, des chercheurs de l'Université Baylor, au Texas, ont fait dormir 57 jeunes adultes en bonne santé dans leur laboratoire du sommeil, et l'ont publié dans une revue de psychologie expérimentale. Ceux qui notaient leurs tâches à venir s'endormaient plus vite que ceux qui racontaient ce qu'ils avaient déjà fait. Et plus leur liste était détaillée, plus ils s'endormaient vite [6]. Si ta liste est longue tous les soirs, l'article sur la [charge mentale](/charge-mentale/) donne des pistes pour la partager et l'alléger.
+5. **22 h 30, vide ta tête sur papier.** Prends 5 minutes pour écrire, très précisément, ce que tu as à faire dans les jours qui viennent. À l'Université Baylor, au Texas, des chercheurs ont fait dormir 57 jeunes adultes en bonne santé dans leur laboratoire du sommeil (étude de 2018, parue dans une revue de psychologie expérimentale). Ceux qui notaient leurs tâches à venir s'endormaient plus vite que ceux qui racontaient ce qu'ils avaient déjà fait. Et plus leur liste était détaillée, plus ils s'endormaient vite [6]. Si ta liste est longue tous les soirs, l'article sur la [charge mentale](/charge-mentale/) donne des pistes pour la partager et l'alléger.
 6. **22 h 45, prépare ta chambre.** Il faut qu'elle soit sombre et silencieuse, entre 18 et 20 °C, et aérée chaque jour [1][4]. La nuit, la température de ton corps descend toute seule [3]. Une chambre fraîche l'accompagne dans ce sens.
 7. **Au lit, respire lentement.** Inspire par le nez pendant environ 4 secondes, puis souffle doucement pendant environ 6 secondes, et continue quelques minutes. Ça fait à peu près 6 respirations par minute, un rythme qui sollicite le [nerf vague](/nerf-vague/). C'est précisément celui qu'a étudié l'Université allemande du sport de Cologne en 2022, en rassemblant 223 études dans une revue de neurosciences. D'après ce travail, la respiration lente augmente la variabilité cardiaque liée au système nerveux parasympathique, celui du repos [7]. Tu préfères la [technique de respiration 4-7-8 pour dormir](/respiration-pour-dormir/) ? Elle est expliquée pas à pas, avec ce que valent ses études. Si c'est plutôt ton corps qui reste crispé, la [relaxation musculaire progressive de Jacobson](/relaxation-jacobson/) peut remplacer ou suivre cette respiration.
 
@@ -423,7 +423,7 @@ Va voir ton médecin traitant si tes difficultés de sommeil durent et pèsent s
 - tu ressens le soir un besoin irrépressible de bouger les jambes, avec des sensations désagréables [3] ;
 - ton moral s'effondre, ou l'anxiété envahit tes journées comme tes nuits.
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Si, malgré une routine bien installée, le stress du soir ne lâche pas, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous avec lui directement. Avec Mon soutien psy, l'Assurance maladie rembourse certaines séances, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si tu as des idées suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit et joignable 24 h/24 [8]. En cas de danger immédiat, compose le 15.
 
@@ -560,7 +560,7 @@ Va voir ton médecin si tu mets longtemps à t'endormir même en te couchant plu
 
 Face à une insomnie, l'Inserm indique que les thérapies cognitivo-comportementales (TCC) sont l'approche à privilégier [8].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Ce travail, tu peux le faire avec un psychologue, et tu as la possibilité de prendre rendez-vous directement avec lui. Il t'aidera à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. L'Assurance maladie rembourse certaines séances grâce au dispositif Mon soutien psy, et tu trouveras les psychologues partenaires sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Cet article t'informe, il ne remplace pas un avis médical.
 
@@ -652,7 +652,7 @@ Pour le neuroendocrinologue Bruce McEwen, de l'Université Rockefeller, à New Y
 
 Parce qu'il suit un rythme quotidien, avec un taux beaucoup plus élevé tôt le matin que plus tard dans la journée [1]. On parle souvent d'un pic au réveil et d'un creux le soir. Cette montée du réveil est normale. Si c'est justement à ce moment-là que l'angoisse te tombe dessus, lis ce que l'on sait de l'[angoisse le matin](/angoisse-le-matin/).
 
-Cette descente entre le matin et le soir, les chercheurs l'appellent la pente diurne. En 2017, à l'Université Northwestern, aux États-Unis, l'équipe d'Emma Adam a réuni 80 études dans une méta-analyse parue dans une revue de psychoneuroendocrinologie [4]. Une pente plus plate y est associée à une moins bonne santé physique et émotionnelle [4].
+Cette descente entre le matin et le soir, les chercheurs l'appellent la pente diurne. L'équipe d'Emma Adam, à l'Université Northwestern, aux États-Unis, a réuni 80 études dans une méta-analyse publiée en 2017 par une revue de psychoneuroendocrinologie [4]. Une pente plus plate y est associée à une moins bonne santé physique et émotionnelle [4].
 
 | Forme de la courbe | Ce qui se passe | Ce que montrent les études |
 |---|---|---|
@@ -808,7 +808,7 @@ Baisser son cortisol naturellement, ça veut dire aider cette hormone du stress 
 
 Non, pas au sens de le supprimer. Le cortisol t'aide à tenir face aux défis de la journée, et ce qu'on cherche, c'est seulement à protéger sa baisse du soir. Sa production suit le rythme de ton horloge interne [1], et le soir, sa sécrétion entre normalement dans une phase plus calme [2]. Ce creux du soir est fragile.
 
-En 1997, à l'Université de Chicago, Leproult et ses collègues ont privé de jeunes hommes de tout ou partie d'une nuit de sommeil, et publié leurs résultats dans une revue consacrée au sommeil. Le lendemain soir, leur cortisol était plus élevé de 37 à 45 %, et sa phase de repos démarrait au moins une heure plus tard [2]. Pour les auteurs, le manque de sommeil retarde la récupération de l'axe du stress [2]. Ce que tu fais de tes journées et de tes nuits compte donc vraiment.
+À l'Université de Chicago, Leproult et ses collègues ont privé de jeunes hommes de tout ou partie d'une nuit de sommeil, dans une étude parue en 1997 dans une revue consacrée au sommeil. Le lendemain soir, leur cortisol était plus élevé de 37 à 45 %, et sa phase de repos démarrait au moins une heure plus tard [2]. Pour les auteurs, le manque de sommeil retarde la récupération de l'axe du stress [2]. Ce que tu fais de tes journées et de tes nuits compte donc vraiment.
 
 Tu veux d'abord comprendre d'où vient cette hormone et à quoi elle sert ? Lis notre article [« Cortisol, hormone du stress »](/cortisol-hormone-du-stress/). Ici, on s'en tient aux gestes.
 
@@ -837,7 +837,7 @@ Dans la vie de tous les jours, il s'agit d'envoyer à ton horloge des signaux bi
 
 ## Quelle activité physique choisir pour ne pas faire grimper son cortisol ?
 
-Les jours tendus, choisis une activité de faible intensité, comme la marche. L'effort moyen ou intense fait monter le cortisol, l'effort léger non [3]. En 2008, une équipe de l'Université de Caroline du Nord à Chapel Hill a fait pédaler 12 hommes entraînés pendant 30 minutes, à trois intensités différentes, dans une étude parue dans une revue d'endocrinologie.
+Les jours tendus, choisis une activité de faible intensité, comme la marche. L'effort moyen ou intense fait monter le cortisol, l'effort léger non [3]. Une équipe de l'Université de Caroline du Nord à Chapel Hill a fait pédaler 12 hommes entraînés pendant 30 minutes, à trois intensités différentes (étude de 2008, parue dans une revue d'endocrinologie).
 
 | Intensité de l'effort (30 minutes de vélo) | Évolution du cortisol |
 |---|---|
@@ -865,13 +865,13 @@ Si compter te distrait, le [minuteur de respiration](/exercices-respiration/) do
 
 ## Les liens sociaux font-ils vraiment baisser le cortisol ?
 
-Oui, le soutien d'un proche réduit de façon mesurable la réponse de cortisol face à un stress [5]. En 2003, à l'Université de Zurich, Heinrichs et son équipe ont soumis 37 hommes en bonne santé à un test de stress social en laboratoire, dans une étude publiée par une revue de psychiatrie biologique. Ceux qui avaient pu parler avec leur meilleur ami pendant la préparation avaient une réponse de cortisol plus faible [5]. Ceux qui avaient eu à la fois ce soutien et de l'ocytocine en pulvérisation nasale avaient le cortisol le plus bas, et se sentaient plus calmes et moins anxieux [5].
+Oui, le soutien d'un proche réduit de façon mesurable la réponse de cortisol face à un stress [5]. À l'Université de Zurich, l'équipe de Heinrichs a soumis 37 hommes en bonne santé à un test de stress social en laboratoire. L'étude a paru en 2003 dans une revue de psychiatrie biologique. Ceux qui avaient pu parler avec leur meilleur ami pendant la préparation avaient une réponse de cortisol plus faible [5]. Ceux qui avaient eu à la fois ce soutien et de l'ocytocine en pulvérisation nasale avaient le cortisol le plus bas, et se sentaient plus calmes et moins anxieux [5].
 
 L'étude est petite et ne concerne que des hommes. Le geste, lui, est facile à tester. Avant un moment tendu, un entretien ou une réunion par exemple, appelle quelqu'un qui te fait du bien, ou écris-lui. Et garde des moments réguliers avec tes proches, même courts, sans attendre d'aller mal pour les voir.
 
 ## Faut-il arrêter le café pour baisser son cortisol ?
 
-Non, ce n'est pas nécessaire. Le problème, c'est surtout le café pris tard, parce qu'il abîme le sommeil [6]. En 2013, au centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, une équipe a montré dans une revue de médecine du sommeil qu'une forte dose de caféine (400 mg) perturbait le sommeil quel que soit le moment où on la prenait.
+Non, ce n'est pas nécessaire. Le problème, c'est surtout le café pris tard, parce qu'il abîme le sommeil [6]. Au centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, une forte dose de caféine (400 mg) perturbait le sommeil quel que soit le moment où on la prenait, d'après une étude publiée en 2013 dans une revue de médecine du sommeil.
 
 | Prise de 400 mg de caféine | Effet sur le sommeil |
 |---|---|
@@ -995,7 +995,7 @@ Quand tu es stressé, ton corps libère du cortisol, l'[hormone du stress](/cort
 
 ## Le stress change-t-il ce que l'on mange ?
 
-Oui, chez une partie des gens. Le stress peut donner envie de manger plus, et plutôt sucré. En 2001, une équipe de l'Université de Californie à San Francisco a fait passer à 59 femmes en bonne santé deux séances en laboratoire, une stressante et une neutre, à des jours différents, puis a publié ses résultats dans une revue consacrée aux hormones et au psychisme [1].
+Oui, chez une partie des gens. Le stress peut donner envie de manger plus, et plutôt sucré. À l'Université de Californie à San Francisco, une équipe a fait venir 59 femmes en bonne santé au laboratoire deux jours différents, une fois pour une séance stressante, une fois pour une séance neutre. L'étude date de 2001 et a paru dans une revue consacrée aux hormones et au psychisme [1].
 
 - Celles dont le cortisol réagissait le plus au stress ont mangé plus de calories le jour stressant, mais pas plus que les autres le jour neutre [1].
 - Ces mêmes femmes mangeaient nettement plus sucré, quel que soit le jour [1].
@@ -1025,7 +1025,7 @@ Attention, ces études utilisaient des compléments à forte dose [2][3]. Dans l
 
 ### Le magnésium
 
-Le magnésium aide les nerfs et les muscles à fonctionner. On le trouve dans les légumes secs, les fruits à coque, les graines, les céréales complètes et les légumes verts à feuilles, les épinards par exemple [5]. En 2017, à l'Université de Leeds, en Angleterre, une équipe a passé en revue 18 études sur le sujet dans une revue de nutrition [4]. Le bilan est mitigé.
+Le magnésium aide les nerfs et les muscles à fonctionner. On le trouve dans les légumes secs, les fruits à coque, les graines, les céréales complètes et les légumes verts à feuilles, les épinards par exemple [5]. L'Université de Leeds, en Angleterre, a repris 18 études sur le sujet en 2017, pour une synthèse parue dans une revue de nutrition [4]. Le bilan est mitigé.
 
 - Toutes portaient sur des personnes déjà vulnérables à l'anxiété, qu'il s'agisse d'anxiété légère, de syndrome prémenstruel, de la période qui suit l'accouchement ou d'hypertension [4].
 - Les résultats vont dans le sens d'un effet bénéfique sur l'anxiété ressentie, mais la qualité des preuves est jugée faible [4].
@@ -1035,7 +1035,7 @@ Donc non, le magnésium n'est pas un anti-stress prouvé. Le plus sûr reste d'e
 
 ### Moins d'aliments ultra-transformés
 
-Les sodas, beaucoup de biscuits et de plats préparés : ce sont des aliments ultra-transformés, des produits industriels que les chercheurs classent avec la classification Nova [6]. En 2024, des chercheurs de l'Université Deakin, en Australie, ont publié dans une grande revue médicale britannique une synthèse qui rassemble 45 analyses et près de 10 millions de participants [6].
+Les sodas, beaucoup de biscuits et de plats préparés : ce sont des aliments ultra-transformés, des produits industriels que les chercheurs classent avec la classification Nova [6]. Des chercheurs de l'Université Deakin, en Australie, ont rassemblé 45 analyses et près de 10 millions de participants dans une synthèse publiée en 2024 par une grande revue médicale britannique [6].
 
 - Manger plus d'ultra-transformés allait de pair avec plus d'anxiété, avec un niveau de preuve jugé « convaincant » [6].
 - Cela allait aussi avec plus de troubles du sommeil, preuve jugée « très évocatrice » [6].
@@ -1056,7 +1056,7 @@ Le café et l'alcool, quand on en abuse. Le premier parce que la caféine stimul
 
 Pour la caféine, des chercheurs du centre médical des anciens combattants d'Oklahoma City ont suivi 96 jeunes adultes en bonne santé pendant 4 semaines, dans une étude parue en 2005 dans une revue de médecine psychosomatique [8]. Après 5 jours sans caféine, en reprendre a nettement fait monter le cortisol sur toute la journée [8]. Chez ceux qui en prenaient tous les jours, la réponse était plus faible, mais elle ne disparaissait pas [8].
 
-Le sommeil en pâtit aussi. En 2013, à l'hôpital Henry Ford de Détroit, une équipe a donné 400 mg de caféine au coucher, 3 heures avant ou 6 heures avant, et l'a raconté dans une revue de médecine du sommeil. Dans les trois cas, le sommeil était perturbé par rapport à un placebo [9]. Leur conseil : éviter une grosse dose de caféine au moins 6 heures avant d'aller au lit [9]. L'Autorité européenne de sécurité des aliments (EFSA) ajoute qu'une seule dose de 100 mg peut déjà gêner le sommeil de certains adultes si elle est prise près du coucher [10].
+Le sommeil en pâtit aussi. Une équipe de l'hôpital Henry Ford, à Détroit, a donné 400 mg de caféine au coucher, 3 heures avant ou 6 heures avant (étude de 2013, publiée dans une revue de médecine du sommeil). Dans les trois cas, le sommeil était perturbé par rapport à un placebo [9]. Leur conseil : éviter une grosse dose de caféine au moins 6 heures avant d'aller au lit [9]. L'Autorité européenne de sécurité des aliments (EFSA) ajoute qu'une seule dose de 100 mg peut déjà gêner le sommeil de certains adultes si elle est prise près du coucher [10].
 
 ## Comment composer une assiette anti-stress ?
 
@@ -1175,7 +1175,7 @@ On ne peut pas le mesurer directement chez soi. Les chercheurs passent par un in
 
 ## Comment activer le nerf vague par la respiration ?
 
-En respirant lentement, autour de 6 respirations par minute. C'est la façon la mieux démontrée [2]. En 2022, Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont rassemblé 223 études sur la respiration lente volontaire dans une méta-analyse parue dans une revue de neurosciences et de comportement. La variabilité cardiaque liée au nerf vague augmente pendant l'exercice, juste après une séance, et aussi après un programme de plusieurs séances [2].
+En respirant lentement, autour de 6 respirations par minute. C'est la façon la mieux démontrée [2]. À l'Université allemande du sport de Cologne, Laborde et ses collègues ont rassemblé 223 études sur la respiration lente volontaire, dans une méta-analyse parue en 2022 dans une revue de neurosciences et de comportement. La variabilité cardiaque liée au nerf vague augmente pendant l'exercice, juste après une séance, et aussi après un programme de plusieurs séances [2].
 
 | | Respiration spontanée | Respiration lente volontaire |
 |---|---|---|
@@ -1183,7 +1183,7 @@ En respirant lentement, autour de 6 respirations par minute. C'est la façon la 
 | Variabilité cardiaque liée au nerf vague | Point de comparaison | En hausse pendant, juste après et après plusieurs séances [2] |
 | Coût et risques | Sans objet | Technique simple, peu coûteuse, peu d'effets indésirables attendus [2] |
 
-Le chiffre de 6 par minute n'a rien d'arbitraire. Ce rythme tombe autour de 0,1 hertz. Paul Lehrer (Université Rutgers) et Richard Gevirtz (Université Alliant de San Diego) l'expliquent dans une revue de 2014, parue dans une revue scientifique de psychologie : c'est à cette fréquence que les oscillations du rythme cardiaque liées à la respiration sont les plus grandes, et que le cœur se cale sur le souffle [3].
+Le chiffre de 6 par minute n'a rien d'arbitraire. Ce rythme tombe autour de 0,1 hertz. Paul Lehrer (Université Rutgers) et Richard Gevirtz (Université Alliant de San Diego) l'expliquent dans un article de synthèse de 2014, paru dans une revue scientifique de psychologie : c'est à cette fréquence que les oscillations du rythme cardiaque liées à la respiration sont les plus grandes, et que le cœur se cale sur le souffle [3].
 
 Quand tu inspires, ton cœur accélère un tout petit peu, et quand tu expires, il ralentit. C'est un mécanisme normal, qu'on appelle l'[arythmie sinusale respiratoire](/glossaire/#arythmie-sinusale-respiratoire) [3]. Allonger l'expiration a donc du sens. Une équipe de l'Université Stanford l'a testé dans un essai randomisé publié en 2023 dans une revue de recherche médicale (Balban et ses collègues). Cinq minutes par jour de « soupir cyclique », pendant un mois, ont davantage amélioré l'humeur et ralenti la fréquence respiratoire que 5 minutes de méditation de pleine conscience. Les auteurs reconnaissent eux-mêmes les limites de leur travail, mené à distance, sur de petits groupes, avec quatre semaines de suivi [4].
 
@@ -1363,7 +1363,7 @@ C'est une respiration toute bête : deux inspirations par le nez, puis une longu
 Il faut rester honnête sur cette étude. Les groupes étaient petits, la pratique se faisait à distance et le suivi n'a duré qu'un mois [2]. C'est une piste sérieuse. Ce n'est pas une garantie.
 
 ### 2. La respiration lente (5 minutes)
-Respirer lentement, c'est descendre sous les 10 respirations par minute [3]. En 2018, des chercheurs de l'Université de Pise, en Italie, ont passé en revue 15 études sur le sujet dans une revue de neurosciences [3]. Ce rythme va de pair avec une variabilité cardiaque plus élevée et un parasympathique qui prend le dessus, en passant par le [nerf vague](/nerf-vague/). Les gens disaient aussi se sentir plus détendus et moins anxieux [3]. Les auteurs le reconnaissent eux-mêmes : les études restent peu nombreuses et très différentes les unes des autres [3].
+Respirer lentement, c'est descendre sous les 10 respirations par minute [3]. Des chercheurs de l'Université de Pise, en Italie, ont repris 15 études sur le sujet en 2018, dans une synthèse parue dans une revue de neurosciences [3]. Ce rythme va de pair avec une variabilité cardiaque plus élevée et un parasympathique qui prend le dessus, en passant par le [nerf vague](/nerf-vague/). Les gens disaient aussi se sentir plus détendus et moins anxieux [3]. Les auteurs le reconnaissent eux-mêmes : les études restent peu nombreuses et très différentes les unes des autres [3].
 
 Pour essayer, inspire par le nez en comptant 4 secondes, puis expire sur 6 secondes. Ça te fait 6 respirations par minute. Si la tête te tourne un peu, reprends simplement ton rythme naturel. Compter t'agace ? Le [minuteur de respiration](/exercices-respiration/) marque chaque inspiration et chaque expiration d'un bol chantant. Tu peux aussi imprimer la [fiche des 5 exercices de respiration](/fiche-respiration/), soupir physiologique compris, et la garder dans ton sac ou sur ton bureau.
 
@@ -1416,7 +1416,7 @@ Va voir ton médecin traitant si ton anxiété dure, revient sous forme de crise
 - ces crises se répètent et tu évites certaines situations par peur d'en refaire une : c'est le tableau du trouble panique [8] ;
 - l'anxiété a un retentissement important sur ta vie de tous les jours [8].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Pour un système nerveux qui reste en alerte, tu n'es pas obligé de commencer par ton médecin. Tu peux prendre rendez-vous directement avec un psychologue, qui t'aidera à comprendre ce qui entretient cette tension et à la travailler, par exemple avec une thérapie cognitive et comportementale. Avec le dispositif Mon soutien psy, l'Assurance maladie rembourse certaines séances. Les psychologues partenaires sont dans l'annuaire [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Une douleur dans la poitrine ou un malaise inhabituel, c'est le 15 ou le 112. Ne fais pas le diagnostic toi-même. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 
@@ -1596,7 +1596,7 @@ Va voir ton médecin traitant si ta fatigue persiste malgré les changements, ou
 - tu ressens une souffrance psychique, comme de l'angoisse ou une déprime ;
 - la fatigue s'accompagne d'autres symptômes : fièvre, perte ou prise de poids non voulue, douleurs.
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Quand la charge mentale finit par t'user, un psychologue peut t'aider à démêler ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Pas besoin de passer d'abord par ton médecin, tu peux le contacter directement. L'Assurance maladie rembourse certaines séances dans le cadre de Mon soutien psy, et la liste des psychologues partenaires se trouve sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si ton travail est en cause, tu peux aussi demander à voir le médecin du travail à tout moment, y compris pendant un arrêt, et sans en informer ton employeur si la visite a lieu en dehors des heures de travail [6]. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 
@@ -1743,7 +1743,7 @@ Consulte ton médecin traitant ou le médecin du travail dès que ta fatigue per
 - tu as besoin de plus d'alcool, de tabac ou d'autres produits pour tenir [2][3] ;
 - tu ressens des douleurs, des vertiges ou des troubles digestifs sans explication : un bilan s'impose [2].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+À côté du médecin, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre de Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 **En cas d'urgence.** Si tu as des idées suicidaires, ou si tu t'inquiètes pour un proche, appelle le **3114**, le numéro national de prévention du suicide : gratuit, joignable 24 h/24 et 7 j/7, avec un professionnel formé au bout du fil [6]. En cas de danger immédiat, compose le **15** (Samu) ou le **112**. Les personnes sourdes ou malentendantes peuvent joindre le **114**, y compris par SMS [7].
 
@@ -1834,7 +1834,7 @@ Gardons une limite en tête. Ces études portent sur de petits groupes de jeunes
 
 Oui, souvent. D'après l'Assurance maladie, plus de la moitié des insomnies et des difficultés à bien dormir viennent du stress, de l'anxiété et de la dépression [8]. Les études sur les hormones vont dans le même sens.
 
-En 2001, à l'Université d'État de Pennsylvanie, l'équipe de Vgontzas a comparé 11 jeunes adultes souffrant d'insomnie chronique à 13 bons dormeurs, après 4 nuits en laboratoire du sommeil. Les résultats sont parus dans une revue d'endocrinologie clinique [5].
+L'équipe de Vgontzas, à l'Université d'État de Pennsylvanie, a comparé 11 jeunes adultes souffrant d'insomnie chronique à 13 bons dormeurs, après 4 nuits en laboratoire du sommeil. Les résultats sont parus en 2001 dans une revue d'endocrinologie clinique [5].
 
 - sur 24 heures, ils sécrétaient plus d'ACTH, l'hormone qui commande le cortisol, et leur cortisol avait tendance à être plus élevé [5] ;
 - les hausses les plus marquées apparaissaient **le soir et pendant la première moitié de la nuit** [5] ;
@@ -1881,7 +1881,7 @@ Avec des gestes simples, qui aident le cortisol à redescendre le soir et protè
 | Respirer lentement au lit | Autour de 6 respirations par minute, l'activité du nerf vague, le « frein » du corps, augmente [9] | Université allemande du sport de Cologne |
 | Protéger la durée de ta nuit | Une seule nuit écourtée élève le cortisol du soir suivant [2] | Université de Chicago |
 
-Un mot sur la respiration. En 2022, Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont rassemblé 223 études dans une méta-analyse parue dans une revue de neurosciences [9]. Pendant et après une respiration lente volontaire, la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente [9]. Au lit, une fois l'écran éteint, les [audios de respiration guidée](/respiration-guidee/) peuvent te donner ce rythme.
+Un mot sur la respiration. Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont rassemblé 223 études dans une méta-analyse parue en 2022 dans une revue de neurosciences [9]. Pendant et après une respiration lente volontaire, la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente [9]. Au lit, une fois l'écran éteint, les [audios de respiration guidée](/respiration-guidee/) peuvent te donner ce rythme.
 
 Tu préfères avancer pas à pas ? Appuie-toi sur la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/), et sur l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/), qui fait le tri entre ce qui marche et les fausses promesses.
 
@@ -1894,7 +1894,7 @@ Va voir ton médecin si tes difficultés de sommeil durent et pèsent sur tes jo
 - tu remarques des changements physiques inhabituels, comme un visage qui s'arrondit ou de la graisse qui s'accumule sur le torse : les signes d'un vrai excès de cortisol sont détaillés dans l'article [Cortisol, hormone du stress](/cortisol-hormone-du-stress/) ;
 - ton moral baisse, ou l'anxiété envahit aussi tes journées.
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Si c'est le stress qui abîme tes nuits, pense aussi au psychologue. Tu peux prendre rendez-vous avec lui sans passer par ton médecin, et il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Certaines séances sont remboursées par l'Assurance maladie (dispositif Mon soutien psy). L'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit et joignable 24 h/24. En cas de danger immédiat, compose le 15 ou le 112.
 
@@ -1954,7 +1954,7 @@ Tu éteins la lumière, la maison devient silencieuse, et c'est justement là qu
 
 Parce qu'une fois au lit, plus rien n'occupe ton attention, et que l'inquiétude pour la nuit garde ton corps en alerte [5][6].
 
-En 2018, une équipe du centre des troubles du sommeil de l'hôpital Henry Ford, à Détroit, a décrit ce moment dans une revue scientifique consacrée au sommeil. Le temps passé éveillé au lit n'a pas de structure. On y est souvent seul, et l'esprit se met facilement à ressasser [6].
+Le centre des troubles du sommeil de l'hôpital Henry Ford, à Détroit, a décrit ce moment en 2018, dans une revue scientifique consacrée au sommeil. Le temps passé éveillé au lit n'a pas de structure. On y est souvent seul, et l'esprit se met facilement à ressasser [6].
 
 Ensuite, un engrenage peut s'enclencher. Allison Harvey, de l'Université d'Oxford, l'a décrit en 2002 dans son modèle de l'insomnie, publié dans une revue de recherche en thérapie comportementale [5].
 
@@ -1999,7 +1999,7 @@ La personne peut avoir peur de perdre le contrôle, de « devenir folle » ou de
 
 Une crise d'angoisse nocturne, c'est se réveiller en pleine panique. Ce n'est pas un cauchemar, pas non plus une terreur nocturne ou une apnée du sommeil [4].
 
-Chez les personnes qui ont un trouble panique, ces réveils sont fréquents. En 2005, une équipe de l'Université de Californie à Los Angeles a fait le point dans une revue de médecine du sommeil, et 44 à 71 % de ces personnes en avaient vécu au moins un [4]. Ils surviennent pendant le sommeil lent, pas pendant le sommeil paradoxal [4].
+Chez les personnes qui ont un trouble panique, ces réveils sont fréquents. D'après le point fait en 2005 par une équipe de l'Université de Californie à Los Angeles, dans une revue de médecine du sommeil, 44 à 71 % de ces personnes en avaient vécu au moins un [4]. Ils surviennent pendant le sommeil lent, pas pendant le sommeil paradoxal [4].
 
 Le traitement psychologique étudié est la thérapie comportementale et cognitive. Elle travaille sur la façon d'interpréter les sensations d'anxiété, sur la respiration trop rapide (l'hyperventilation) et sur les réactions apprises face aux sensations du corps [4]. Les données récentes vont dans le sens de son efficacité [4].
 
@@ -2026,9 +2026,9 @@ Sors tes soucis de ta tête plus tôt dans la soirée, et entraîne ta respirati
 | Au lit | Respiration lente, attention posée sur le souffle | Détourne l'attention des pensées négatives, selon le Réseau Morphée [8] |
 | Si le sommeil ne vient pas | Te lever, activité calme, revenir quand la somnolence arrive | Conseil de l'INSV [3] |
 
-Respirer lentement s'apprend de jour. En 2023, dans un essai de l'Université Stanford publié dans une revue de médecine, 5 minutes de respiration par jour pendant un mois faisaient baisser l'anxiété après chaque séance [9]. L'étude est racontée en détail dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/). Le [minuteur de respiration](/exercices-respiration/) du site peut t'aider à tenir ce petit rendez-vous dans la journée.
+Respirer lentement s'apprend de jour. Dans un essai de l'Université Stanford paru en 2023 dans une revue de médecine, 5 minutes de respiration par jour pendant un mois faisaient baisser l'anxiété après chaque séance [9]. L'étude est racontée en détail dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/). Le [minuteur de respiration](/exercices-respiration/) du site peut t'aider à tenir ce petit rendez-vous dans la journée.
 
-Le soir, donne à tes soucis un rendez-vous fixe, loin du lit. En 2006, à l'Université Duke, en Caroline du Nord, deux chercheurs ont demandé à 33 étudiants qui souffraient d'insomnie de noter leurs soucis, avec des pistes de solution, pendant cinq soirs. Leur agitation mentale avant le sommeil a diminué, selon l'étude parue dans une revue de médecine comportementale du sommeil [10]. La méthode pas à pas se trouve dans l'article sur les [ruminations le soir](/ruminations-le-soir/).
+Le soir, donne à tes soucis un rendez-vous fixe, loin du lit. À l'Université Duke, en Caroline du Nord, deux chercheurs ont demandé en 2006 à 33 étudiants qui souffraient d'insomnie de noter leurs soucis, avec des pistes de solution, pendant cinq soirs. Leur agitation mentale avant le sommeil a diminué, selon l'étude parue dans une revue de médecine comportementale du sommeil [10]. La méthode pas à pas se trouve dans l'article sur les [ruminations le soir](/ruminations-le-soir/).
 
 Une fois au lit, garde la respiration lente comme point d'appui. Le Réseau Morphée, spécialisé dans les troubles du sommeil, explique sur Santé.fr que travailler sa respiration empêche les pensées de divaguer et aide à se concentrer sur autre chose que les pensées négatives [8].
 
@@ -2109,7 +2109,7 @@ La respiration pour dormir, ce sont des exercices où tu ralentis exprès ton so
 
 Parce que ça renforce l'activité du nerf vague, celui qui ralentit le cœur. Or chez beaucoup de personnes qui dorment mal, le corps reste en mode alerte [1][2].
 
-En 2022, Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont passé en revue 223 études dans une revue de neurosciences et de comportement. La respiration lente volontaire fait monter les indicateurs de l'activité du [nerf vague](/nerf-vague/) pendant l'exercice, juste après une séance, et aussi après plusieurs semaines de pratique [2].
+Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont épluché 223 études pour une synthèse publiée en 2022 dans une revue de neurosciences et de comportement. La respiration lente volontaire fait monter les indicateurs de l'activité du [nerf vague](/nerf-vague/) pendant l'exercice, juste après une séance, et aussi après plusieurs semaines de pratique [2].
 
 Chez les personnes qui dorment mal, ce frein naturel tourne souvent au ralenti. Tsai et ses collègues l'ont observé au centre de recherche sur le sommeil de l'Université nationale Yang-Ming de Taipei, à Taïwan, dans une étude parue en 2015 dans une revue de psychophysiologie. Ils ont comparé 14 personnes qui se plaignaient d'insomnie à 14 bons dormeurs [1] :
 
@@ -2212,7 +2212,7 @@ Va voir ton médecin si tes difficultés à t'endormir reviennent au moins trois
 - l'angoisse monte au coucher ou te réveille en pleine nuit, et dans ce cas notre article sur l'[angoisse le soir](/angoisse-le-soir/) t'aide à faire le point ;
 - tu as envie de prendre des somnifères. Ne le fais pas seul, demande conseil à ton médecin [10].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Et si c'est le mental qui t'empêche de dormir, tu peux aussi voir directement un psychologue. Il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. L'Assurance maladie prend en charge certaines séances dans le cadre de Mon soutien psy. Les psychologues partenaires sont listés sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24, 7 j/7 [12].
 
@@ -2489,7 +2489,7 @@ D'un système d'alarme resté réglé trop haut. Ce peut être une réaction uti
 
 Au départ, c'est une alerte tout à fait normale. Tu as peut-être déjà mal dormi la première nuit dans une chambre d'hôtel ou chez des amis. C'est précisément ce « premier soir » dans un endroit inconnu qu'ont étudié Tamaki et ses collègues, à l'Université Brown, aux États-Unis, dans une étude parue en 2016 dans une revue de biologie. Cette nuit-là, une moitié du cerveau dort moins profondément que l'autre. Elle réagit davantage aux sons inhabituels, qui provoquent alors plus de réveils et des réactions plus rapides. Les nuits suivantes, ces différences avaient disparu [7]. Pour les auteurs, c'est une sorte de « veille de nuit », utile quand l'environnement peut être dangereux [7]. La vigilance protège, donc. Le problème commence quand elle ne s'éteint plus.
 
-L'anxiété, elle, oriente l'attention. En 2007, Bar-Haim et ses collègues, à l'Université de Tel-Aviv, en Israël, ont réuni 172 études dans une méta-analyse parue dans une grande revue de psychologie, soit 2 263 personnes anxieuses et 1 768 qui ne l'étaient pas. Les personnes anxieuses dirigent leur attention vers les signes de menace, même quand les images passent trop vite pour être vues consciemment. L'effet reste modéré, et on ne le retrouve pas chez les personnes non anxieuses [3].
+L'anxiété, elle, oriente l'attention. À l'Université de Tel-Aviv, en Israël, Bar-Haim et ses collègues ont réuni 172 études, soit 2 263 personnes anxieuses et 1 768 qui ne l'étaient pas, dans une méta-analyse parue en 2007 dans une grande revue de psychologie. Les personnes anxieuses dirigent leur attention vers les signes de menace, même quand les images passent trop vite pour être vues consciemment. L'effet reste modéré, et on ne le retrouve pas chez les personnes non anxieuses [3].
 
 Après un traumatisme, c'est encore autre chose. Le trouble de stress post-traumatique peut suivre un événement où l'on a été menacé de mort ou de blessure grave, qu'on en soit la victime ou le témoin. Une agression, un accident, une catastrophe, un combat, ou l'annonce de la mort violente d'un proche [1][2]. La plupart des personnes guérissent de ces troubles dans les 3 mois qui suivent l'événement, rappelle l'Inserm, mais environ 20 % développent une forme chronique. Et les symptômes ne sont pas toujours immédiats : ils peuvent apparaître plus tard, après des semaines, des mois ou des années [1].
 
@@ -2499,13 +2499,13 @@ Parce que pour dormir, il faut baisser la garde. Un cerveau qui continue de surv
 
 Imagine. Tu es couché, la lumière est éteinte, et ton oreille relève chaque craquement du parquet, chaque voiture qui passe dans la rue. Ton corps est au lit, mais une partie de toi monte la garde.
 
-Les études vont dans ce sens. Chez les personnes insomniaques, on mesure un niveau d'activation plus élevé du système nerveux, des hormones et du cerveau, et pas seulement la nuit, le jour aussi. C'est ce que rassemble la revue de Riemann et ses collègues, à l'hôpital universitaire de Fribourg, en Allemagne, publiée en 2010 dans une revue de médecine du sommeil [5]. L'Inserm décrit la même chose chez les personnes qui dorment mal, avec une activité accrue du cerveau et de l'axe hormonal impliqué dans la réponse au stress [6].
+Les études vont dans ce sens. Chez les personnes insomniaques, on mesure un niveau d'activation plus élevé du système nerveux, des hormones et du cerveau, et pas seulement la nuit, le jour aussi. C'est ce que rassemblent Riemann et ses collègues, de l'hôpital universitaire de Fribourg, en Allemagne, dans une synthèse publiée en 2010 par une revue de médecine du sommeil [5]. L'Inserm décrit la même chose chez les personnes qui dorment mal, avec une activité accrue du cerveau et de l'axe hormonal impliqué dans la réponse au stress [6].
 
-Après un traumatisme, le sommeil devient aussi plus léger. Kobayashi, Boarts et Delahanty, de l'Université d'État de Kent, aux États-Unis, ont comparé dans une méta-analyse le sommeil mesuré en laboratoire dans 20 études, publiées en 2007 dans une revue de psychophysiologie. Les personnes avec un TSPT avaient plus de sommeil de stade 1, le plus léger, moins de sommeil lent profond, et plus de mouvements des yeux pendant le sommeil paradoxal que les autres [8].
+Après un traumatisme, le sommeil devient aussi plus léger. Kobayashi, Boarts et Delahanty, de l'Université d'État de Kent, aux États-Unis, ont comparé le sommeil mesuré en laboratoire dans 20 études. Leur méta-analyse est parue en 2007 dans une revue de psychophysiologie. Les personnes avec un TSPT avaient plus de sommeil de stade 1, le plus léger, moins de sommeil lent profond, et plus de mouvements des yeux pendant le sommeil paradoxal que les autres [8].
 
-Il y a enfin la peur de dormir, tout simplement. À l'Université de Californie à San Francisco, on a suivi 45 adultes qui avaient à la fois un TSPT et une insomnie. Chez eux, la peur de s'endormir allait de pair avec des symptômes de TSPT plus sévères, des cauchemars plus fréquents et une hypervigilance plus intense (Kanady et ses collègues, dans une revue de médecine clinique du sommeil, en 2018) [10].
+Il y a enfin la peur de dormir, tout simplement. À l'Université de Californie à San Francisco, on a suivi 45 adultes qui avaient à la fois un TSPT et une insomnie. Chez eux, la peur de s'endormir allait de pair avec des symptômes de TSPT plus sévères, des cauchemars plus fréquents et une hypervigilance plus intense (Kanady et ses collègues, 2018, revue de médecine clinique du sommeil) [10].
 
-Le lien marche dans les deux sens. Dans une revue parue en 2013 dans une revue américaine de psychiatrie, Anne Germain, de l'Université de Pittsburgh, conclut qu'un sommeil perturbé peut contribuer à de mauvaises réactions au stress et au trauma. Ce serait même un facteur sur lequel on peut agir, puisque des traitements ciblés sur le sommeil pourraient accélérer la guérison [9].
+Le lien marche dans les deux sens. Dans une synthèse parue en 2013 dans une revue américaine de psychiatrie, Anne Germain, de l'Université de Pittsburgh, conclut qu'un sommeil perturbé peut contribuer à de mauvaises réactions au stress et au trauma. Ce serait même un facteur sur lequel on peut agir, puisque des traitements ciblés sur le sommeil pourraient accélérer la guérison [9].
 
 Ce sont surtout des pensées qui tournent au moment de te coucher ? Lis notre article sur les [ruminations le soir](/ruminations-le-soir/). Plutôt une peur qui monte, avec le cœur qui bat ? Celui sur l'[angoisse le soir et la nuit](/angoisse-le-soir/) te parlera davantage.
 
@@ -2514,7 +2514,7 @@ Ce sont surtout des pensées qui tournent au moment de te coucher ? Lis notre ar
 D'abord en trouvant la cause, avec un professionnel. Après un traumatisme, les traitements recommandés en premier sont les psychothérapies. Les gestes du quotidien viennent en soutien, jamais à la place [1][2].
 
 1. Après un traumatisme, la base reste une **psychothérapie**. L'Inserm cite en première intention la thérapie cognitivo-comportementale et l'EMDR. Des médicaments peuvent être prescrits en complément, mais leur efficacité est limitée [1]. Le Manuel MSD, lui, présente la thérapie cognitivo-comportementale axée sur le traumatisme comme le traitement le plus efficace du TSPT. Il conseille de chercher quelqu'un de chaleureux et de rassurant, parce que la honte, l'évitement et l'hypervigilance sont fréquents [2].
-2. **Le sommeil se soigne aussi.** À l'Université de Californie à San Francisco, Talbot et ses collègues ont proposé 8 séances de thérapie cognitivo-comportementale de l'insomnie (TCC-I) à 29 adultes avec un TSPT, et les ont comparés à 16 personnes restées en liste d'attente. D'après leur étude, publiée en 2014 dans une revue scientifique consacrée au sommeil, le sommeil s'est amélioré, avec 41 % de rémission complète de l'insomnie contre 0 %, et des gains toujours là 6 mois plus tard [11]. Dans ce même essai, la peur de dormir a diminué après la TCC-I [10]. Pour l'insomnie en général, c'est d'ailleurs l'approche que l'Inserm conseille de privilégier, les thérapies cognitives et comportementales [6].
+2. **Le sommeil se soigne aussi.** À l'Université de Californie à San Francisco, Talbot et ses collègues ont proposé 8 séances de thérapie cognitivo-comportementale de l'insomnie (TCC-I) à 29 adultes avec un TSPT, et les ont comparés à 16 personnes restées en liste d'attente. D'après leur étude (2014, revue scientifique consacrée au sommeil), le sommeil s'est amélioré, avec 41 % de rémission complète de l'insomnie contre 0 %, et des gains toujours là 6 mois plus tard [11]. Dans ce même essai, la peur de dormir a diminué après la TCC-I [10]. Pour l'insomnie en général, c'est d'ailleurs l'approche que l'Inserm conseille de privilégier, les thérapies cognitives et comportementales [6].
 3. Garder des **journées régulières**. Pendant et après une période traumatisante, le Manuel MSD conseille des horaires sains pour manger, dormir et bouger, une routine quotidienne toute simple (se lever, se doucher, s'habiller, sortir marcher), et peu d'alcool ou de médicaments sédatifs [2].
 4. Laisser l'attention se poser, quelques minutes. Le même manuel cite les étirements et l'exercice, mais aussi quelque chose de très simple : rester assis, immobile, à compter ses respirations ou à écouter attentivement les sons autour de soi [2]. Les techniques de respiration lente, avec leurs études, sont détaillées dans notre article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/), et la façon d'[activer le nerf vague par la respiration](/nerf-vague/) dans un article à part.
 5. **Moins d'images qui réactivent l'alerte.** Après un traumatisme, le Manuel MSD conseille d'éviter les reportages d'actualité qui font revivre l'événement [2]. L'Inserm rapporte d'ailleurs qu'après les attentats de 2015, le temps passé devant les images à la télévision était associé à un risque plus élevé de symptômes de stress post-traumatique [1].
@@ -2608,11 +2608,11 @@ D'abord, le cortisol monte, et c'est normal. Trois chercheurs de l'Université t
 
 Cette hausse n'est pas la même pour tout le monde. D'après la même revue, son ampleur varie avec l'état de santé, les habitudes de vie ou la façon de percevoir le stress, et on ne sait pas encore exactement à quoi elle sert [2]. Les auteurs pensent qu'elle prépare la journée qui commence [2].
 
-La journée de la veille compte aussi. En 2006, une équipe de l'Université Northwestern, aux États-Unis, a suivi 156 adultes âgés pendant trois jours, pour une étude parue dans la revue de l'Académie américaine des sciences [4]. Chaque soir, ils notaient leurs émotions. Ils mesuraient aussi leur cortisol dans la salive au réveil, 30 minutes plus tard et au coucher. Ceux qui s'étaient sentis seuls, tristes, menacés ou sans prise sur les événements la veille avaient une hausse plus forte du cortisol le lendemain matin [4]. Dans l'autre sens, en revanche, aucun lien. La hausse du matin ne prédisait pas ces émotions plus tard dans la journée [4].
+La journée de la veille compte aussi. Une équipe de l'Université Northwestern, aux États-Unis, a suivi 156 adultes âgés pendant trois jours. Ses résultats sont parus en 2006 dans la revue de l'Académie américaine des sciences [4]. Chaque soir, ils notaient leurs émotions. Ils mesuraient aussi leur cortisol dans la salive au réveil, 30 minutes plus tard et au coucher. Ceux qui s'étaient sentis seuls, tristes, menacés ou sans prise sur les événements la veille avaient une hausse plus forte du cortisol le lendemain matin [4]. Dans l'autre sens, en revanche, aucun lien. La hausse du matin ne prédisait pas ces émotions plus tard dans la journée [4].
 
-Le stress de fond joue aussi. En 2009, deux chercheurs de l'UCL, à Londres, ont regroupé 147 études tirées de 62 articles dans une revue de biologie et de psychologie [5]. Chez les personnes stressées par leur travail ou par la vie en général, la hausse du cortisol au réveil était plus forte. Elle était plus faible en cas de fatigue, d'épuisement ou de burn-out [5].
+Le stress de fond joue aussi. Deux chercheurs de l'UCL, à Londres, ont regroupé 147 études tirées de 62 articles, dans une synthèse parue en 2009 dans une revue de biologie et de psychologie [5]. Chez les personnes stressées par leur travail ou par la vie en général, la hausse du cortisol au réveil était plus forte. Elle était plus faible en cas de fatigue, d'épuisement ou de burn-out [5].
 
-Pour autant, cette hausse n'a rien d'une ennemie. En 2012, deux chercheurs de l'Université de Southampton, au Royaume-Uni, ont suivi 23 adultes en bonne santé pendant deux jours et publié leurs résultats dans une revue scientifique en libre accès [3]. Ils n'ont trouvé aucun lien entre l'appréhension de la journée, notée au réveil, et la hausse du cortisol. Mieux, une hausse plus forte allait avec des réactions moins vives aux tracas du quotidien [3]. Le cortisol du matin t'aide donc plutôt à faire face. Pas la peine de chercher à le « faire baisser » au réveil.
+Pour autant, cette hausse n'a rien d'une ennemie. À l'Université de Southampton, au Royaume-Uni, deux chercheurs ont suivi 23 adultes en bonne santé pendant deux jours (étude de 2012, publiée dans une revue scientifique en libre accès) [3]. Ils n'ont trouvé aucun lien entre l'appréhension de la journée, notée au réveil, et la hausse du cortisol. Mieux, une hausse plus forte allait avec des réactions moins vives aux tracas du quotidien [3]. Le cortisol du matin t'aide donc plutôt à faire face. Pas la peine de chercher à le « faire baisser » au réveil.
 
 Au lit, en plus, rien n'occupe encore ton attention. Or les inquiétudes anxieuses prennent souvent la forme de « que va-t-il m'arriver ? » ou « je ne pourrai pas supporter… », et peuvent aller jusqu'à de vrais scénarios catastrophes [1]. C'est le même mécanisme que le soir, qu'on décrit dans l'article sur l'[angoisse le soir](/angoisse-le-soir/), sauf qu'ici il se tourne vers la journée qui commence.
 
@@ -2808,7 +2808,7 @@ En entraînant le frein du système nerveux les jours où tout va bien, en bouge
 
 S'entraîner à respirer lentement quand tout va bien, c'est ce qui rend le geste disponible le jour où le ventre se noue. En 2023, une équipe de l'Université Stanford a fait pratiquer 5 minutes d'exercice respiratoire ou de méditation par jour, pendant un mois, à 108 personnes. L'anxiété baissait après chaque séance, dans tous les groupes [11]. L'étude est racontée dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/), avec d'autres gestes rapides.
 
-Bouger compte aussi. En 2023, des chercheurs de l'Université d'Australie-Méridionale ont rassemblé 97 revues d'études dans une revue de médecine du sport. Leur conclusion va dans le sens d'un effet de l'activité physique sur les symptômes d'anxiété [12]. Dix minutes de marche après le repas de midi, c'est déjà un début.
+Bouger compte aussi. Toujours en 2023, des chercheurs de l'Université d'Australie-Méridionale ont rassemblé 97 revues d'études dans une synthèse parue dans une revue de médecine du sport. Leur conclusion va dans le sens d'un effet de l'activité physique sur les symptômes d'anxiété [12]. Dix minutes de marche après le repas de midi, c'est déjà un début.
 
 Et quand ce sont les mêmes soucis qui nouent le ventre jour après jour, tu peux essayer de leur fixer un rendez-vous. Dans un petit essai de l'Université de l'Illinois à Chicago, publié en 2013 dans une revue de thérapie comportementale, réserver chaque jour 30 minutes à ses soucis, à heure fixe, a fait baisser l'inquiétude et l'anxiété en deux semaines. Les auteurs parlent de résultats préliminaires [13]. La méthode est expliquée dans l'article sur l'[angoisse le matin](/angoisse-le-matin/).
 
@@ -2904,13 +2904,13 @@ Tu contractes volontairement un groupe de muscles pendant quelques secondes, tu 
 
 Tout l'exercice repose sur ce contraste. Tu sens la tension, puis la détente qui la remplace, et tu recommences jusqu'à ce que le corps entier soit relâché [7][8].
 
-Pourquoi ça aiderait à dormir ? Les chercheurs avancent une explication sans l'avoir encore démontrée. En 2026, l'équipe de Li, à l'Université Putra de Malaisie, écrit que la méthode pourrait réduire l'état d'alerte du corps, freiner le système nerveux qui accélère et favoriser celui du repos, ce qui faciliterait l'endormissement [1]. C'est la même logique que pour la [respiration lente](/respiration-pour-dormir/), avec les muscles comme porte d'entrée au lieu du souffle.
+Pourquoi ça aiderait à dormir ? Les chercheurs avancent une explication sans l'avoir encore démontrée. L'équipe de Li, à l'Université Putra de Malaisie, écrit en 2026 que la méthode pourrait réduire l'état d'alerte du corps, freiner le système nerveux qui accélère et favoriser celui du repos, ce qui faciliterait l'endormissement [1]. C'est la même logique que pour la [respiration lente](/respiration-pour-dormir/), avec les muscles comme porte d'entrée au lieu du souffle.
 
 ## Ce que disent les études sur la relaxation Jacobson et le sommeil
 
 Les études récentes vont dans le même sens. La relaxation musculaire progressive améliore la qualité du sommeil telle que les gens la ressentent, mais l'ampleur de l'effet change beaucoup selon les études et les personnes [1][2].
 
-En 2026, Li et ses collègues de l'Université Putra de Malaisie ont rassemblé 14 essais et 957 participants dans une méta-analyse parue dans une revue de santé publique [1].
+Li et ses collègues, de l'Université Putra de Malaisie, ont rassemblé 14 essais et 957 participants dans une méta-analyse parue en 2026 dans une revue de santé publique [1].
 
 - La qualité du sommeil s'améliorait, chez des personnes atteintes d'un cancer comme chez les autres [1].
 - Avant 55 ans, le bénéfice était net. Après 55 ans, l'étude n'a pas trouvé d'amélioration significative, et les auteurs jugent l'effet incertain à cet âge [1].
@@ -2926,7 +2926,7 @@ Et chez des personnes qui dorment mal sans autre maladie ? Les résultats sont p
 
 Les trois détendent autant les unes que les autres, d'après ce que ressentent les participants. Dans une petite étude qui les a comparées, la relaxation musculaire et la scène calme imaginée ont en plus fait baisser plus nettement l'activation du corps [7].
 
-En 2021, Toussaint et ses collègues, du Luther College, dans l'Iowa, ont tiré au sort 60 étudiants en bonne santé entre quatre groupes, dans une étude parue dans une revue de médecines complémentaires. Trois groupes suivaient un exercice enregistré de 20 minutes, le quatrième servait de groupe témoin. Pendant ce temps, des capteurs mesuraient la transpiration de la peau, un signe d'activation du corps, et le rythme du cœur [7].
+Au Luther College, dans l'Iowa, Toussaint et ses collègues ont tiré au sort 60 étudiants en bonne santé entre quatre groupes (étude de 2021, parue dans une revue de médecines complémentaires). Trois groupes suivaient un exercice enregistré de 20 minutes, le quatrième servait de groupe témoin. Pendant ce temps, des capteurs mesuraient la transpiration de la peau, un signe d'activation du corps, et le rythme du cœur [7].
 
 | Technique | Ce que tu fais | Ce qu'a mesuré l'étude du Luther College |
 |---|---|---|
@@ -2966,11 +2966,11 @@ Pour te laisser guider toi aussi, la [relaxation Jacobson en vidéo](https://you
 
 Pas toujours. La relaxation musculaire fait partie des traitements reconnus de l'insomnie, mais elle fait moins bien que la thérapie cognitive et comportementale de l'insomnie, qui reste le traitement de référence [3][4][5].
 
-En 2006, Morin et ses collègues, de l'Université Laval, au Québec, ont passé en revue 37 études et 2 246 participants pour l'Académie américaine de médecine du sommeil (dans une revue consacrée au sommeil). La relaxation faisait partie des cinq traitements psychologiques dont l'efficacité contre l'insomnie était jugée établie [3]. En 2021, les recommandations de cette même académie, publiées dans sa revue de médecine du sommeil, proposent la relaxation seule comme option, avec une recommandation dite conditionnelle, c'est-à-dire à adapter à chaque patient. La thérapie cognitive et comportementale, elle, est recommandée avec force [4].
+Pour l'Académie américaine de médecine du sommeil, Morin et ses collègues, de l'Université Laval, au Québec, ont passé en revue 37 études et 2 246 participants en 2006, dans une revue consacrée au sommeil. La relaxation faisait partie des cinq traitements psychologiques dont l'efficacité contre l'insomnie était jugée établie [3]. En 2021, les recommandations de cette même académie, publiées dans sa revue de médecine du sommeil, proposent la relaxation seule comme option, avec une recommandation dite conditionnelle, c'est-à-dire à adapter à chaque patient. La thérapie cognitive et comportementale, elle, est recommandée avec force [4].
 
 La différence se voit dans les chiffres. Au centre médical des anciens combattants de Durham, aux États-Unis, Edinger et ses collègues ont comparé en 2001 trois prises en charge de 6 semaines chez 75 adultes qui se réveillaient la nuit depuis des années (étude publiée dans la revue de l'Association médicale américaine). Le temps passé éveillé en pleine nuit a baissé de 54 % avec la thérapie cognitive et comportementale, de 16 % avec la relaxation musculaire et de 12 % avec une fausse thérapie [5].
 
-Une étude suggère qu'elle aide surtout à s'endormir. En 2003, à la fondation de la clinique Ochsner, à Baton Rouge, en Louisiane, 53 personnes souffrant d'insomnie chronique ont été réparties entre plusieurs traitements pendant 2 semaines (étude parue dans une revue de médecine comportementale du sommeil). La relaxation musculaire, associée à un exercice de distraction mentale, agissait davantage sur l'endormissement, et les méthodes qui règlent les horaires et l'usage du lit agissaient davantage sur les réveils de la nuit. Le somnifère testé en comparaison faisait mieux que les autres traitements sur cette courte période [11].
+Une étude suggère qu'elle aide surtout à s'endormir. À la fondation de la clinique Ochsner, à Baton Rouge, en Louisiane, 53 personnes souffrant d'insomnie chronique ont été réparties entre plusieurs traitements pendant 2 semaines (étude de 2003, parue dans une revue de médecine comportementale du sommeil). La relaxation musculaire, associée à un exercice de distraction mentale, agissait davantage sur l'endormissement, et les méthodes qui règlent les horaires et l'usage du lit agissaient davantage sur les réveils de la nuit. Le somnifère testé en comparaison faisait mieux que les autres traitements sur cette courte période [11].
 
 L'Inserm rappelle que, pour certains patients, des approches douces comme la relaxation peuvent aider en complément de bonnes habitudes de sommeil [12]. Elle trouve donc très bien sa place dans une [routine du soir anti-stress](/routine-du-soir-anti-stress/), mais si tes nuits sont mauvaises depuis des mois, elle ne remplace pas un avis médical.
 
@@ -2986,7 +2986,7 @@ Consulte aussi si :
 
 Si tu restes éveillé plus de 20 minutes malgré l'exercice, l'INSV conseille de te lever et de faire autre chose, puis de ne revenir te coucher qu'aux premiers signes de sommeil, comme les bâillements, la nuque lourde ou les yeux qui piquent [13].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Si la tension revient soir après soir malgré la relaxation, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux le consulter directement, sans passer d'abord par ton médecin. Certaines séances sont remboursées par l'Assurance maladie avec Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24, 7 j/7 [14].
 
@@ -3059,31 +3059,31 @@ L'Inserm rappelle aussi que dormir, c'est perdre la vigilance tout en gardant un
 
 Il y a rarement une seule raison. Le moment de la nuit, l'âge, le niveau de stress, ce que tu bois et le bruit de la chambre jouent ensemble, et parfois un trouble du sommeil s'ajoute.
 
-### Parce que la fin de nuit est plus légère
+### La fin de nuit est plus légère
 
 Les premiers cycles contiennent surtout du sommeil profond, alors que la fin de nuit fait plus de place au sommeil léger et au sommeil paradoxal [1]. Si c'est surtout au petit matin que le moindre bruit te tire du sommeil, c'est en partie normal. L'article sur le [réveil à 4h du matin](/reveil-4h-du-matin/) détaille ce qui se passe à ce moment-là et ce qu'il vaut mieux faire.
 
-### Parce que le sommeil profond diminue avec l'âge
+### Le sommeil profond diminue avec l'âge
 
 Avec les années, la part de sommeil profond baisse et celle de sommeil léger augmente. L'Inserm l'écrit simplement : le sommeil lent profond, très présent pendant la croissance, laisse peu à peu la place à un sommeil plus léger [1].
 
-En 2004, une équipe de l'Université Stanford, aux États-Unis, a rassemblé 65 études et 3 577 personnes de 5 à 102 ans dont le sommeil avait été enregistré pendant toute la nuit, dans une revue consacrée au sommeil. Chez les adultes, la part de sommeil profond diminuait avec l'âge, tandis que la part de sommeil léger et le temps passé éveillé au milieu de la nuit augmentaient [4]. Tu dormais comme une souche à 20 ans et plus du tout à 50 ? C'est en bonne partie cela.
+Une équipe de l'Université Stanford, aux États-Unis, a rassemblé 65 études et 3 577 personnes de 5 à 102 ans dont le sommeil avait été enregistré pendant toute la nuit. Son travail est paru en 2004 dans une revue consacrée au sommeil. Chez les adultes, la part de sommeil profond diminuait avec l'âge, tandis que la part de sommeil léger et le temps passé éveillé au milieu de la nuit augmentaient [4]. Tu dormais comme une souche à 20 ans et plus du tout à 50 ? C'est en bonne partie cela.
 
-### Parce que le cerveau reste en alerte
+### Un cerveau resté en alerte
 
-Quand le stress dure, le cerveau peut rester en état de veille même la nuit. En 2010, une équipe du centre hospitalier universitaire de Fribourg-en-Brisgau, en Allemagne, a fait le point sur ce qu'on appelle l'hyperéveil dans l'insomnie, dans une revue de médecine du sommeil. Les mesures du corps et du cerveau montrent chez les personnes insomniaques un niveau d'éveil plus élevé, la nuit comme le jour. Les auteurs y voient la rencontre d'une fragilité personnelle, de sources de stress et d'habitudes qui entretiennent le problème, dont la tendance à s'inquiéter et à ruminer [5].
+Quand le stress dure, le cerveau peut rester en état de veille même la nuit. Le centre hospitalier universitaire de Fribourg-en-Brisgau, en Allemagne, a fait le point en 2010 sur ce qu'on appelle l'hyperéveil dans l'insomnie, dans une revue de médecine du sommeil. Les mesures du corps et du cerveau montrent chez les personnes insomniaques un niveau d'éveil plus élevé, la nuit comme le jour. Les auteurs y voient la rencontre d'une fragilité personnelle, de sources de stress et d'habitudes qui entretiennent le problème, dont la tendance à s'inquiéter et à ruminer [5].
 
 Si tu te sens sur le qui-vive aussi pendant la journée, l'article sur les [symptômes de l'hypervigilance](/hypervigilance/) peut t'aider à faire le point. Et si ce sont les pensées qui repartent dès que tu ouvres un œil, lis celui sur les [ruminations le soir](/ruminations-le-soir/).
 
-### Parce que le café et l'alcool fragilisent la nuit
+### Le café de l'après-midi, le verre du soir
 
-Le café de l'après-midi peut encore agir au coucher. En 2013, une équipe de l'hôpital Henry Ford, à Détroit, a donné une même dose de caféine (400 mg) à différents moments, puis a mesuré le sommeil à domicile, dans une revue de médecine du sommeil. Prise au coucher, 3 heures avant ou même 6 heures avant, la caféine perturbait le sommeil par rapport à un placebo. Les auteurs conseillent d'éviter une forte dose de caféine au moins 6 heures avant de dormir [6].
+Le café de l'après-midi peut encore agir au coucher. À l'hôpital Henry Ford de Détroit, des chercheurs ont donné une même dose de caféine (400 mg) à différents moments, puis mesuré le sommeil à domicile. L'étude date de 2013 et a paru dans une revue de médecine du sommeil. Prise au coucher, 3 heures avant ou même 6 heures avant, la caféine perturbait le sommeil par rapport à un placebo. Les auteurs conseillent d'éviter une forte dose de caféine au moins 6 heures avant de dormir [6].
 
 L'alcool, lui, trompe. Une revue du London Sleep Centre, publiée en 2013, a passé en revue les études menées chez des volontaires en bonne santé. À toutes les doses, l'alcool aide à s'endormir et rend la première moitié de la nuit plus profonde, mais il augmente les perturbations dans la seconde moitié [7].
 
-### Parce que tout le monde ne réagit pas pareil au bruit
+### Tout le monde ne réagit pas pareil au bruit
 
-C'est une vraie différence d'une personne à l'autre, et elle se voit dans le cerveau. En 2010, des chercheurs de l'École de médecine de Harvard, aux États-Unis, ont enregistré le sommeil de volontaires pendant une nuit calme, puis pendant une nuit avec des bruits, dans une revue de biologie. Ceux qui produisaient le plus de fuseaux du sommeil (de courtes ondes du cerveau endormi) pendant la nuit calme toléraient mieux le bruit la nuit suivante [8]. Si ton conjoint ne se réveille jamais et toi si, ce n'est pas un manque de volonté.
+C'est une vraie différence d'une personne à l'autre, et elle se voit dans le cerveau. Des chercheurs de l'École de médecine de Harvard, aux États-Unis, ont enregistré le sommeil de volontaires pendant une nuit calme, puis pendant une nuit avec des bruits (étude de 2010, publiée dans une revue de biologie). Ceux qui produisaient le plus de fuseaux du sommeil (de courtes ondes du cerveau endormi) pendant la nuit calme toléraient mieux le bruit la nuit suivante [8]. Si ton conjoint ne se réveille jamais et toi si, ce n'est pas un manque de volonté.
 
 Le bruit compte aussi en lui-même. Une revue de l'Université de Pennsylvanie, publiée en 2014 dans une grande revue médicale, rappelle que le bruit de l'environnement perturbe le sommeil et entraîne de la somnolence pendant la journée [9].
 
@@ -3111,7 +3111,7 @@ Ils ont quelques preuves en leur faveur. En 2018, une équipe de l'Université C
 
 ### Le bruit blanc
 
-Il n'a pas encore fait ses preuves. En 2021, une équipe de l'Université de Pennsylvanie a passé en revue 38 études sur le bruit continu (bruit blanc ou proche) pour dormir, dans une revue de médecine du sommeil. Les résultats allaient dans tous les sens, de l'amélioration à la gêne. Selon leurs critères, la qualité des preuves que ce bruit améliore le sommeil est très faible, et il pourrait aussi nuire au sommeil et à l'audition [11]. Si tu l'utilises et qu'il t'aide, garde un volume bas.
+Il n'a pas encore fait ses preuves. Une équipe de l'Université de Pennsylvanie a passé en revue 38 études sur le bruit continu (bruit blanc ou proche) pour dormir, dans une synthèse publiée en 2021 par une revue de médecine du sommeil. Les résultats allaient dans tous les sens, de l'amélioration à la gêne. Selon leurs critères, la qualité des preuves que ce bruit améliore le sommeil est très faible, et il pourrait aussi nuire au sommeil et à l'audition [11]. Si tu l'utilises et qu'il t'aide, garde un volume bas.
 
 ### Ce qu'on peut faire au moment du réveil
 
@@ -3122,10 +3122,10 @@ Si tu ne te rendors pas, ne reste pas des heures à attendre. L'Institut nationa
 Consulte ton médecin si ton sommeil léger te réveille au moins trois nuits par semaine depuis plus d'un mois, avec de la fatigue, des difficultés de concentration ou de l'irritabilité dans la journée [3]. Quelques nuits hachées quand la période est chargée, c'est souvent passager. Parles-en en revanche si :
 
 - ces réveils durent depuis trois mois ou plus (l'Inserm parle alors d'insomnie chronique) [2] ;
-- quelqu'un a remarqué des pauses dans ta respiration pendant ton sommeil, ou tu ressens au coucher des sensations désagréables dans les jambes qui t'obligent à bouger [3] ;
-- tu as envie de prendre des somnifères. Ne le fais pas seul, demande conseil à ton médecin [3].
+- la personne qui dort avec toi t'a vu arrêter de respirer quelques instants, ou tes jambes te gênent au coucher au point de devoir les bouger [3] ;
+- tu penses aux somnifères : parles-en d'abord à ton médecin plutôt que d'en prendre seul [3].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Quand le stress est en toile de fond de ces nuits hachées, tu peux aussi aller voir directement un psychologue. Il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. L'Assurance maladie rembourse certaines séances avec le dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24 et 7 j/7 [12].
 
@@ -3192,11 +3192,11 @@ Parce que les muscles qui servent à mâcher font partie de ceux qui se contract
 
 Le lien se voit aussi dans les études, même s'il reste imparfait. Une méta-analyse de l'Université fédérale du Pará, au Brésil, trouve que les personnes stressées ont environ deux fois plus de risque de serrer ou de grincer des dents, avec une certitude jugée faible par les auteurs eux-mêmes. Notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/) la détaille [7].
 
-Une étude récente montre le phénomène presque en direct. En 2025, une équipe de l'Université de Tel-Aviv a demandé à de jeunes adultes de noter à différents moments de la journée, sur une application, ce que faisait leur mâchoire à cet instant : muscles relâchés, dents en contact, dents serrées. Elle a comparé un groupe interrogé en temps de paix à un autre interrogé pendant la guerre, dans une revue de réhabilitation buccale. Pendant la guerre, la mâchoire était moins souvent relâchée. Et les personnes qui récupéraient le mieux après un événement stressant avaient plus souvent les muscles détendus [8].
+Une étude récente montre le phénomène presque en direct. En 2025, une équipe de l'Université de Tel-Aviv a demandé à de jeunes adultes de noter à différents moments de la journée, sur une application, ce que faisait leur mâchoire à cet instant : muscles relâchés, dents en contact, dents serrées. Elle a comparé un groupe interrogé en temps de paix à un autre interrogé pendant la guerre (étude parue dans une revue de réhabilitation buccale). Pendant la guerre, la mâchoire était moins souvent relâchée. Et les personnes qui récupéraient le mieux après un événement stressant avaient plus souvent les muscles détendus [8].
 
 ## Qu'est-ce que le bruxisme ?
 
-C'est le nom donné au fait de serrer ou de grincer des dents de façon répétée, ou de bloquer et pousser la mâchoire. En 2018, un groupe international d'experts réuni autour du Centre universitaire de médecine dentaire d'Amsterdam en a précisé la définition. Il distingue deux formes : le bruxisme du sommeil, et le bruxisme d'éveil, fait de contacts répétés ou prolongés entre les dents, ou d'une mâchoire qu'on bloque [3].
+C'est le nom donné au fait de serrer ou de grincer des dents de façon répétée, ou de bloquer et pousser la mâchoire. Un groupe international d'experts réuni autour du Centre universitaire de médecine dentaire d'Amsterdam en a précisé la définition en 2018. Il distingue deux formes : le bruxisme du sommeil, et le bruxisme d'éveil, fait de contacts répétés ou prolongés entre les dents, ou d'une mâchoire qu'on bloque [3].
 
 Ces experts ajoutent un point rassurant. Chez une personne par ailleurs en bonne santé, le bruxisme ne doit pas être vu comme une maladie, mais comme un comportement, qui peut parfois avoir des conséquences [3]. On ne cherche donc pas à « guérir » une mâchoire qui se serre de temps en temps, mais à éviter qu'elle fasse mal ou use les dents.
 
@@ -3206,7 +3206,7 @@ C'est la forme la plus liée au stress. Une revue de l'Université de Malmö, en
 
 ### La nuit : grincer des dents en dormant
 
-Elle est un peu moins fréquente. En 2013, une revue de l'Université de Padoue, en Italie, estimait qu'environ 13 % des adultes disent grincer souvent des dents la nuit, contre 22 à 31 % pour la forme de jour. Ces chiffres reposent surtout sur des questionnaires, ce qui les rend fragiles, préviennent les auteurs [4].
+Elle est un peu moins fréquente. Une synthèse de l'Université de Padoue, en Italie, estimait en 2013 qu'environ 13 % des adultes disent grincer souvent des dents la nuit, contre 22 à 31 % pour la forme de jour. Ces chiffres reposent surtout sur des questionnaires, ce qui les rend fragiles, préviennent les auteurs [4].
 
 Comme on dort, on le découvre souvent par quelqu'un d'autre, ou par ses conséquences : mâchoire raide au réveil, maux de tête, dents sensibles [1].
 
@@ -3229,7 +3229,7 @@ Quand la mâchoire elle-même souffre, on parle de troubles de l'articulation te
 
 Le tabac, l'alcool, le café et certains troubles du sommeil reviennent souvent. Le NHS cite aussi certains médicaments pour dormir ou contre la dépression et l'anxiété [1].
 
-En 2001, une équipe de l'Université Stanford, aux États-Unis, a interrogé par téléphone plus de 13 000 personnes au Royaume-Uni, en Allemagne et en Italie, dans une revue de médecine respiratoire. 8,2 % disaient grincer des dents en dormant au moins une fois par semaine. Le risque était plus élevé chez les personnes qui avaient des apnées du sommeil ou qui buvaient beaucoup d'alcool, et dans une moindre mesure chez celles qui ronflaient fort, buvaient du café, fumaient, menaient une vie très stressante ou souffraient d'anxiété [6].
+Une enquête de l'Université Stanford, aux États-Unis, publiée en 2001 dans une revue de médecine respiratoire, a interrogé par téléphone plus de 13 000 personnes au Royaume-Uni, en Allemagne et en Italie. 8,2 % disaient grincer des dents en dormant au moins une fois par semaine. Le risque était plus élevé chez les personnes qui avaient des apnées du sommeil ou qui buvaient beaucoup d'alcool, et dans une moindre mesure chez celles qui ronflaient fort, buvaient du café, fumaient, menaient une vie très stressante ou souffraient d'anxiété [6].
 
 Si un de tes médicaments t'inquiète, ne l'arrête pas de toi-même. Parles-en au médecin qui te l'a prescrit.
 
@@ -3239,7 +3239,7 @@ Commence par le geste le plus simple : en dehors des repas, tes dents ne devraie
 
 ### Se surprendre en train de serrer
 
-Le bruxisme d'éveil passe inaperçu. Le plus utile est souvent de le remarquer. En 2026, une revue de l'Université de Sydney, en Australie, a passé en revue les traitements du bruxisme d'éveil, dans une revue de santé bucco-dentaire. Elle n'a trouvé que 9 études, avec 165 participants au total, et aucune recommandation officielle. Mais ces études allaient plutôt dans le même sens : rappels réguliers, appareils qui signalent la contraction (biofeedback), exercices pour changer l'habitude et conseils pour se prendre en charge semblaient aider [10].
+Le bruxisme d'éveil passe inaperçu. Le plus utile est souvent de le remarquer. L'Université de Sydney, en Australie, a fait le tour des traitements du bruxisme d'éveil dans une synthèse publiée en 2026 par une revue de santé bucco-dentaire. Elle n'a trouvé que 9 études, avec 165 participants au total, et aucune recommandation officielle. Mais ces études allaient plutôt dans le même sens : rappels réguliers, appareils qui signalent la contraction (biofeedback), exercices pour changer l'habitude et conseils pour se prendre en charge semblaient aider [10].
 
 Tu peux faire simple. Choisis un rappel qui revient souvent dans ta journée, une notification, le feu rouge, chaque fois que tu ouvres ta messagerie. À chaque fois, vérifie ta mâchoire et desserre les dents. Les preuves sont limitées, mais l'essai ne coûte rien.
 
