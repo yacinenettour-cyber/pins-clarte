@@ -694,7 +694,7 @@
    "pourquoi": "Page « ressources » du programme de saines habitudes de vie (cours en ligne de gestion du stress, boîte à outils) ; un article de janvier 2026 rappelle la part d'étudiants avec symptômes anxieux.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/ (+ /respiration-guidee/)",
    "audience": "A : domaine dans le top 1 million Tranco (rang 11963, 12/10/2026)",
-   "statut": "envoye",
+   "statut": "repondu",
    "lot": "recherche 2 du 12/10",
    "remarque": " 15/10 : pas de formulaire, adresse lue sur le site ; repasse en a_verifier (envoi par e-mail ; message prêt dans formulaires-a-remplir.md).",
    "date_envoi": "2026-10-18",
@@ -702,7 +702,8 @@
    "sujet": "Votre page « Ressources » : un lien qui ne fonctionne plus",
    "liens_casses": "18/10 : lien « Site Web » de la Clinique de counseling et d'orientation (https://www.fse.ulaval.ca/counseling/individuel/?eo=individuel&eoe=groupe) en 404 (deux essais) ; signalé. faistonbudget.ca et expandproject.ca sans réponse (pas d'erreur nette, non signalés).",
    "relance": "2026-10-28",
-   "relance_thread_id": "1a181c928e993079"
+   "relance_thread_id": "1a181c928e993079",
+   "reponse": "28/10 (après la relance) : remerciements ; refonte complète du site en cours, aucune modification des pages actuelles (elles seront supprimées). Pas de lien. Ne plus écrire."
   },
   {
    "site": "Université de Fribourg — projet Happy? (Uni-Social)",
@@ -1472,7 +1473,10 @@
      "url": "https://actus.ulb.be/fr/actus/enseignement/blocus-assiste-dhiver-toutes-les-infos",
      "code": 404
     }
-   ]
+   ],
+   "relance": "2026-10-29",
+   "relance_message_id": "1a1871b8582eb81e",
+   "relance_note": "Relance unique dans le même fil (GMAIL_REPLY_TO_THREAD), mention des ressources réutilisables /ressources-libres/ ; vérifiée (libellé SENT)."
   },
   {
    "site": "Université de Sherbrooke – Outils et conseils bien-être",
@@ -1525,7 +1529,10 @@
    "remarque": "Piste : étudiants / Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur.",
    "date_envoi": "2026-10-19",
    "thread_id": "1a15403c848b78ad",
-   "sujet": "Gestion du stress : la cohérence cardiaque sans application"
+   "sujet": "Gestion du stress : la cohérence cardiaque sans application",
+   "relance": "2026-10-29",
+   "relance_message_id": "1a1871b881393e95",
+   "relance_note": "Relance unique dans le même fil (GMAIL_REPLY_TO_THREAD), mention des ressources réutilisables /ressources-libres/ ; vérifiée (libellé SENT)."
   },
   {
    "site": "UQAM – Soutien psychologique ([Dossier] Mieux vivre mon stress)",
@@ -1548,7 +1555,8 @@
    "sujet": "Votre dossier « Mieux vivre mon stress » : des audios gratuits de respiration lente",
    "liens_casses": "18/10 : 12 liens testés, aucun cassé",
    "relance": "2026-10-28",
-   "relance_thread_id": "1a181c929e21199b"
+   "relance_thread_id": "1a181c929e21199b",
+   "reponse": "28/10 : accusé de réception automatique après la relance (dossier UQAM#517279725), aucune réponse humaine."
   },
   {
    "site": "CIUSSS de la Mauricie-et-du-Centre-du-Québec – Services d'aide en santé mentale",
@@ -1580,11 +1588,12 @@
    "pourquoi": "Association de soutien aux troubles anxieux avec rubriques ressources / liens utiles : nos audios de respiration sont un outil d'autogestion complémentaire.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : organisme communautaire reconnu (cité dans les pages ressources de Santé Québec) ; absent du top 1 million Tranco",
-   "statut": "envoye",
+   "statut": "repondu",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : angoisse / anxiété (Québec). Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Page ressources précise à choisir à la main (rubrique « Coups de cœur de l'équipe » surtout des vidéos).",
    "date_envoi": "2026-10-22",
-   "thread_id": "1a16428e946ab962"
+   "thread_id": "1a16428e946ab962",
+   "reponse": "28/10 : Angélique Lanthier (directrice générale) remercie, va en discuter avec son équipe pour évaluer la fiche et voir si elle peut l'ajouter à leurs références. Aucune action demandée ; vérifier la page Références dans 2 à 3 semaines."
   },
   {
    "site": "La Clé des champs – réseau d'entraide anxiété",
@@ -1852,7 +1861,7 @@
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-19",
-   "relance": null,
+   "relance": "2026-10-29",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "abonnés Pinterest 19/10",
@@ -1863,7 +1872,9 @@
    "thread_id": "1a1558c31e86ba0b",
    "sujet": "Ton article « Épuisement mental maman » : des audios de respiration gratuits",
    "audience": "B : abonnée Pinterest de Clarté Mentale (5 518 abonnés Pinterest), blog actif ; absent du top Tranco",
-   "type": "lien_ou_article_invite"
+   "type": "lien_ou_article_invite",
+   "relance_message_id": "1a1871b7b672d087",
+   "relance_note": "Relance unique dans le même fil (GMAIL_REPLY_TO_THREAD), mention des ressources réutilisables /ressources-libres/ ; vérifiée (libellé SENT)."
   },
   {
    "email_verifie": true,
@@ -1887,7 +1898,7 @@
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-19",
-   "relance": null,
+   "relance": "2026-10-29",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "abonnés Pinterest 19/10",
@@ -1898,7 +1909,9 @@
    "thread_id": "1a1558c30105b686",
    "sujet": "Une idée d'article sur le sommeil pour votre blog",
    "audience": "C : abonnée Pinterest de Clarté Mentale, petit site de naturopathie ; contact accepté par l'utilisateur le 19/10",
-   "type": "article_invite"
+   "type": "article_invite",
+   "relance_message_id": "1a1871b7f71afbd4",
+   "relance_note": "Relance unique dans le même fil (GMAIL_REPLY_TO_THREAD), mention des ressources réutilisables /ressources-libres/ ; vérifiée (libellé SENT)."
   },
   {
    "email_verifie": true,
@@ -2223,6 +2236,110 @@
    "lot": "recherche articles invités 21/10",
    "audience": "C, ne passe pas la règle C thématique",
    "note": "21/10 : absent du top 1M Tranco ; accepte des auteurs extérieurs (guide pour les auteurs), mais sujet principal neurosciences/psychologie générale (critère a non rempli) et articles « validés par des spécialistes » pour un lectorat de chercheurs et cliniciens. À soumettre à l'utilisateur s'il veut l'élargir."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-29",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 29/10",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : absent du top Tranco non vérifié, critères a-d vérifiés sur le site",
+   "site": "Florence Daudon, relaxologue (Paris 12e)",
+   "domaine": "florencedaudon.fr",
+   "page_cible": "https://www.florencedaudon.fr/ressources/liens/",
+   "email": "contact@florencedaudon.fr",
+   "source_email": "https://www.florencedaudon.fr/ressources/articles/",
+   "prenom": "Florence",
+   "thread_id": "1a1871fc2ad2732d",
+   "sujet": "Un lien de votre page Liens",
+   "pourquoi": "Page Liens (podcasts, audios, vidéos) et pages Articles et Pratiques de relaxation ; ateliers de gestion du stress en entreprise ; pages mises à jour le 22/08/2026 (plan du site).",
+   "liens_casses": [
+    {
+     "texte": "Des audios Nidra le yoga du sommeil, La Canopée",
+     "url": "https://www.atelierlacanopee.com/podcast-nidra/",
+     "code": 404
+    }
+   ]
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-29",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 29/10",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : absent du top Tranco non vérifié, critères a-d vérifiés sur le site",
+   "site": "Sophro Autrement (Nadine, sophrologie en ligne)",
+   "domaine": "sophro-autrement.fr",
+   "page_cible": "https://sophro-autrement.fr/ressources-gratuites/",
+   "email": "contact@sophro-autrement.fr",
+   "source_email": "https://sophro-autrement.fr/contact/",
+   "prenom": "Nadine",
+   "thread_id": "1a1871fc91e39286",
+   "sujet": "Vos 14 jours sur le sommeil",
+   "pourquoi": "Page Ressources gratuites (e-books sommeil), programme de 14 jours sur WhatsApp du 16 au 29/11/2026 pour mieux dormir ; plan du site mis à jour le 26/10/2026."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-29",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 29/10",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : absent du top Tranco non vérifié, critères a-d vérifiés sur le site",
+   "site": "Jean-Marc Atkins, sophrologue et hypnose (Angers)",
+   "domaine": "jeanmarcatkins.fr",
+   "page_cible": "https://jeanmarcatkins.fr/exercice-respiration-sophrologie/",
+   "email": "contact@jeanmarcatkins.fr",
+   "source_email": "https://jeanmarcatkins.fr/tarifs-contact/",
+   "prenom": null,
+   "thread_id": "1a1871fcc357ab2d",
+   "sujet": "Votre article sur les 7 respirations",
+   "pourquoi": "Article « 7 exercices de respiration sophrologie » (cohérence cardiaque en n°5) ; blog actif (articles d'avril, mai, juin et juillet 2026)."
+  },
+  {
+   "site": "Céline Béen, relaxologue",
+   "domaine": "celinebeen.fr",
+   "page_cible": "https://www.celinebeen.fr/blog/",
+   "email": null,
+   "email_verifie": false,
+   "statut": "formulaire",
+   "formulaire": "https://www.celinebeen.fr/contacter-celine-been/",
+   "type": "ressources",
+   "audience": "C thématique",
+   "remarque": "Blog actif (2024-2026), aucune adresse affichée : formulaire seulement (29/10)."
+  },
+  {
+   "site": "Sophro'Lab (Nedia, sophrologue)",
+   "domaine": "sophrolab.com",
+   "page_cible": "https://sophrolab.com/ressources-gratuites/",
+   "email": "contact@sophrolab.com",
+   "email_verifie": true,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "Écarté le 29/10 : plan du site mis à jour pour la dernière fois en septembre 2024 (critère d'activité non rempli)."
+  },
+  {
+   "site": "sophrologuedijon.fr",
+   "domaine": "sophrologuedijon.fr",
+   "page_cible": "https://sophrologuedijon.fr/exercices",
+   "email": "contact@sophrologuedijon.fr",
+   "email_verifie": true,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "Écarté le 29/10 : « site d'information indépendant » sans auteur identifié, page Articles vide (« les premiers articles arrivent bientôt »)."
   }
  ],
  "passages": [
@@ -2289,6 +2406,10 @@
   {
    "date": "2026-10-28",
    "resultat": "Réponses lues (Gmail, 2 derniers jours) : Pélagie Micalet (psychologue, relecture bénévole du test) donne son accord écrit pour afficher sa relecture avec son nom et le lien de son site : mention publiée le 28/10 (docs/relecture-professionnelle.md) ; SISM : réponse automatique d'absence. 4 relances uniques (Université Laval, Ma Boussole Aidants, ULiège, UQAM), messages neufs « Re: … », sans le métier de l'auteur, vérifiés (libellé SENT). Université Lyon 1 non relancée (premier message bloqué par le CAPTCHA Mailinblack). Psycom : formulaire envoyé par l'utilisateur le 27/10. Aucun nouvel envoi : les 11 prospects à vérifier attendent le prochain passage (journée consacrée à la relecture publiée)."
+  },
+  {
+   "date": "2026-10-29",
+   "resultat": "Réponses lues (Gmail, 3 derniers jours) : Phobies-Zéro (directrice générale) va évaluer la fiche avec son équipe pour ses références → repondu ; Mon équilibre ULaval : refonte du site, aucune modification → repondu sans lien ; UQAM : accusé de réception automatique. 4 relances uniques dans le même fil (Keep Cool New Mom, Sheila Naturopathie, ULB Santé avec le lien toujours en 404 revérifié, UQAC), avec mention des ressources réutilisables. 3 nouveaux envois « ressources » (nouvelle approche, style humain, 125 à 130 mots, contrôle par script des formules interdites) : Florence Daudon (lien mort La Canopée signalé en premier), Sophro Autrement (programme sommeil de novembre), Jean-Marc Atkins (article 7 respirations). Céline Béen → formulaire ; Sophro'Lab (inactif depuis 2024) et sophrologuedijon.fr (site anonyme sans articles) écartés ; Pascale Farrugia laissée de côté (propose déjà ses propres audios). 7 envois au total, tous vérifiés dans les Envoyés (libellé SENT, sans signature ajoutée)."
   }
  ]
 }
