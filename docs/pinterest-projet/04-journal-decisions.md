@@ -1217,3 +1217,24 @@ probable fort / moyen / faible, méthode écrite.
   vidéo intégrée (le lecteur YouTube dépose des cookies : interdit sans accord et mise à jour des mentions légales),
   changement de titres (positions 70-90 : le taux de clic n'est pas encore le frein).
 - **Contrôles** : 0 lien cassé, axe 0 violation (4 pages × 2 thèmes), FAQ présentes dans les données structurées.
+
+## 94. Écosystème site + Pinterest + YouTube (29/10/2026, accord de l'utilisateur « Oui fais A, et ok pour B et C »)
+
+- **A. Page `/videos/`** (`construire_videos()` de `construire.py`) : les relaxations de la chaîne, miniature locale
+  (WebP 640×360), titre, durée, accroche, lien « Regarder sur YouTube » et article sourcé ; aucun lecteur intégré
+  (pas de cookie YouTube, mentions légales inchangées) ; la page se remplit seule à partir des fiches
+  `videos_youtube/*/plan.json` qui ont un champ `lien` ; « en ligne le … » tant que l'heure de publication n'est pas
+  passée. Lien « Vidéos » dans le pied de page, plan du site, recherche. La vidéo « Ruminations » n'y est pas encore :
+  l'adresse notée dans son plan (`Zp-e755b89M`) est celle de l'envoi raté du 22/10 sur la mauvaise chaîne ; la vraie
+  adresse de la vidéo mise en ligne à la main sera relevée par l'API YouTube.
+- **B. Shorts → épingles vidéo** (`videos.yml`, accord explicite pour modifier le robot) : un jour sur deux (alternance
+  avec la vidéo fabriquée), ou tout de suite si l'archive expire dans moins de 3 jours, un Short de l'archive
+  `videos-youtube` est lu par plages HTTP (sans télécharger la vidéo longue), publié tel quel sur le tableau sommeil avec
+  un lien vers la vidéo YouTube complète et les crédits (voix ElevenLabs, musique Kevin MacLeod CC BY 4.0) ; seulement
+  après l'heure de publication de la vidéo ; identifiant `short-<slug>-<n>` dans `historique_videos.json`, titre passé
+  à `anti_doublons.py`. Publication et historique regroupés en fonctions communes (`publier_pin_video`,
+  `enregistrer_historique`). `youtube.yml` : archive gardée 30 jours (au lieu de 7). Plan Jacobson :
+  `artefact_run` = 40502575740 (archive de la version voix Mila, expire le 03/11). Les 3 titres testés : aucun doublon.
+- **C. Tâche « Vidéo YouTube »** : nouvelle étape 7 (dès que l'adresse de la vidéo est connue : `lien` dans le plan,
+  phrase vers la vidéo dans l'article, kit d'épingle manuelle vers la vidéo) ; `artefact_run` noté à la fabrication ;
+  titres des Shorts vérifiés contre les doublons d'épingles.
