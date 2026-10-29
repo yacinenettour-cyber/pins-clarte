@@ -1,6 +1,6 @@
 {
  "slug": "ruminations-soir",
- "statut": "fabriquee",
+ "statut": "publiee",
  "publication_prevue": "2026-10-24T03:20:08Z",
  "duree_totale_min": 30,
  "article": "/ruminations-le-soir/",
@@ -419,5 +419,6 @@
   }
  ],
  "envoi_manuel": true,
- "note_shorts_29_10": "29/10 (accord de l'utilisateur « Ok » pour 3 Shorts tirés de cette vidéo) : refabrication avec la même voix Kokoro pour obtenir le Short respiration et 2 extraits (shorts_extra) ; envoi_manuel : rien n'est envoyé, la vidéo publique SCUS59y5kNs reste en place. Après fabrication : remettre statut « publiee » et noter artefact_run."
+ "note_shorts_29_10": "29/10 (accord de l'utilisateur « Ok » pour 3 Shorts tirés de cette vidéo) : refabrication avec la même voix Kokoro pour obtenir le Short respiration et 2 extraits (shorts_extra) ; envoi_manuel : rien n'est envoyé, la vidéo publique SCUS59y5kNs reste en place. Après fabrication : remettre statut « publiee » et noter artefact_run. Fait : run 40921165462 (0 erreur, voix 0,989, 512/532 mots, Shorts 61,5 s, 56,4 s et 49,9 s), statut remis à « publiee ».",
+ "artefact_run": 40921165462
 }
