@@ -3,7 +3,7 @@
  "statut": "publiee",
  "envoi_manuel": true,
  "bloquee": true,
- "publication_prevue": "2026-10-30T18:00:00Z",
+ "publication_prevue": "2026-10-27T17:09:04Z",
  "duree_totale_min": 60,
  "article": "/relaxation-jacobson/",
  "ecran": {
@@ -441,5 +441,6 @@
  ],
  "video_id": "PbuSSZlDu1c",
  "lien": "https://youtu.be/PbuSSZlDu1c",
- "artefact_run": 40502575740
+ "artefact_run": 40502575740,
+ "note_29_10": "Vidéo déjà publique le 29/10 (API YouTube : privacyStatus public) : publication_prevue ramenée à la date de mise en ligne."
 }

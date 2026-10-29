@@ -46,3 +46,9 @@ les chapitres, le rappel santé, l'invitation à s'abonner, les sources et les c
 s'affichent au-dessus du titre. Titre, description et mots-clés du plan sont **réappliqués juste avant le passage en
 public** (`publier.py actualiser`, appelé par `rendre_publiques`) : on peut donc retoucher le plan après la mise en
 ligne sans refabriquer la vidéo.
+
+**Chiffres relevés le 29/10/2026 à 8 h 20 (API YouTube)** : chaîne 2 abonnés. Vidéos longues : « Ruminations le soir ?
+30 min… » (SCUS59y5kNs, publique depuis le 24/10) 37 vues, 2 j'aime ; « Relaxation guidée pour dormir : … Jacobson
+(1 h) » (PbuSSZlDu1c, déjà publique) 2 vues. Shorts du 28/10 : « Détends ton visage… » 202 vues, 6 j'aime ;
+« Respire avec moi… » 133 vues, 6 j'aime ; « Relâche tes bras… » 45 vues, 2 j'aime. 0 commentaire. Les Shorts n'ont
+aucune description (pas de lien vers la vidéo complète) ; aucune des deux vidéos longues n'a de sous-titres envoyés.

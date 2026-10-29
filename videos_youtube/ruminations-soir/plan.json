@@ -1,7 +1,7 @@
 {
  "slug": "ruminations-soir",
- "statut": "en_ligne_non_repertoriee",
- "publication_prevue": "2026-10-23T18:00:00Z",
+ "statut": "publiee",
+ "publication_prevue": "2026-10-24T03:20:08Z",
  "duree_totale_min": 30,
  "article": "/ruminations-le-soir/",
  "ecran": {
@@ -351,7 +351,7 @@
   "bas1": "Méditation complète (30 min) sur la chaîne"
  },
  "youtube": {
-  "titre": "Méditation sommeil : calmer les pensées qui tournent la nuit",
+  "titre": "Ruminations le soir ? 30 min pour calmer le mental et dormir",
   "description": "Pour les soirs où ton cerveau ne s'arrête pas : la vidéo commence par 1 minute pour comprendre pourquoi les pensées tournent au lit (trois études citées plus bas), puis te guide pas à pas. Pas besoin de réussir quoi que ce soit : si tu t'endors avant la fin, c'est parfait.",
   "sources": [
    "Kalmbach et al., Nature and Science of Sleep, 2018 (Henry Ford Health, Détroit)",
@@ -396,5 +396,8 @@
   "short_id": "wN0aaTl45As",
   "probleme": "22/10 : envoyée sur la mauvaise chaîne (PulsePositif, connexion Composio) et « Échec de la mise en ligne : impossible de traiter le fichier » pour la vidéo et le Short (capture de l'utilisateur)."
  },
- "bloquee": true
+ "bloquee": true,
+ "video_id": "SCUS59y5kNs",
+ "lien": "https://youtu.be/SCUS59y5kNs",
+ "note_29_10": "Vraie vidéo mise en ligne à la main par l'utilisateur (SCUS59y5kNs, publique, vérifiée par l'API le 29/10) ; le bloc « publication » garde la trace de l'envoi raté du 22/10 (Zp-e755b89M, mauvaise chaîne)."
 }
