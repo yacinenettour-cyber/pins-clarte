@@ -125,6 +125,50 @@ site personnel tout neuf. Changement de méthode, décidé avec l'utilisateur (�
 > Bonne journée,
 > Yacine — www.contactapaisement-mental.fr
 
+## Style des e-mails : rien ne doit faire IA (consigne de l'utilisateur, 29/10/2026)
+
+« Attention, les emails, quand tu vas envoyer les emails, ça doit pas faire IA. » Chaque e-mail doit se lire comme un
+message écrit à la main par Yacine, à une seule personne :
+
+- **Court** : 70 à 130 mots, 3 ou 4 petits paragraphes. Texte brut, sans gras, sans liste à puces, sans emoji, sans
+  tiret long (—), sans point d'exclamation en série.
+- **Un détail vrai et précis** lu sur leur site dans la première ou la deuxième phrase (le titre d'un article, un
+  exercice qu'ils proposent, un atelier), jamais un compliment vague (« votre super contenu »).
+- **Vouvoiement simple**, phrases de longueurs variées, mots de tous les jours. Une seule demande, à la fin.
+- **Jamais ces formules** : « J'espère que ce message vous trouve bien », « Je me permets de vous contacter »,
+  « N'hésitez pas », « Je serais ravi de », « Dans un monde où », « Voici », « En effet », « Par ailleurs »,
+  « Ainsi », « Il est essentiel », « véritable », « incontournable », « ressource précieuse », « valeur ajoutée »,
+  « synergie », « collaboration gagnant-gagnant », « Bien cordialement » suivi d'un long bloc de signature.
+- **Objet** court et banal, comme entre deux personnes : « Vos ateliers de sophrologie », « Une question sur votre page
+  sommeil », « Des audios pour vos séances ? ». Jamais de majuscule à chaque mot ni d'accroche marketing.
+- **Chaque e-mail est différent** : ne jamais réutiliser la même ouverture ni la même phrase d'un e-mail à l'autre ;
+  le modèle ci-dessus donne le fond, pas le texte à recopier.
+- **Signature** : « Yacine » seul, puis l'adresse du site sur la ligne suivante. PS « Si ça ne vous intéresse pas, dites-le
+  moi simplement, je ne vous relancerai pas. » (formulation variée d'un e-mail à l'autre).
+- **Avant chaque envoi**, relire le texte en se demandant « est-ce que Yacine écrirait ça ? » et le passer au crible
+  de la liste ci-dessus ; en cas de doute, raccourcir.
+
+Exemple du ton visé (à ne pas recopier) :
+
+> Objet : Des audios pour vos séances ?
+>
+> Bonjour Claire,
+>
+> J'ai lu votre article sur la respiration avant le coucher, en particulier le passage sur l'expiration plus longue.
+> C'est exactement ce que j'essaie de transmettre de mon côté.
+>
+> J'ai traversé deux ans de nuits difficiles, et la cohérence cardiaque m'a aidé. J'ai fait trois audios de
+> respiration 4-6 sans voix (3, 5 et 10 minutes) et une fiche à imprimer. Vous pouvez les utiliser en séance ou sur
+> votre site, gratuitement, en citant simplement la source :
+> https://www.contactapaisement-mental.fr/ressources-libres/
+>
+> Je ne suis pas professionnel de santé, donc si vous voyez quelque chose à corriger, ça m'intéresse.
+>
+> Yacine
+> www.contactapaisement-mental.fr
+>
+> PS : si ce n'est pas pour vous, pas de souci, je ne vous relancerai pas.
+
 ## Ce que je surveille
 
 Le bilan du 21/10 regarde aussi les visites venues d'autres sites (Cloudflare Web Analytics, « Referrers »)
