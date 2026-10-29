@@ -6,7 +6,7 @@ slug: symptomes-physiques-du-stress
 date: 2026-10-15
 mot_cle: symptômes physiques du stress
 guide: sommeil
-maj: 2026-10-25
+maj: 2026-10-29
 image: Personne de dos dans un champ au coucher du soleil, une main posée sur la nuque tendue
 ---
 ## L'essentiel
@@ -157,6 +157,9 @@ Oui, l'anxiété peut provoquer des douleurs dans la poitrine et des palpitation
 
 ### Le stress peut-il rendre malade ?
 Un stress qui dure va de pair avec plus de rhumes [10], une baisse de certaines défenses immunitaires [11] et, selon l'INRS, des maladies comme l'hypertension artérielle et les maladies cardiovasculaires [1]. Ce sont des liens observés en moyenne. Rien n'est écrit d'avance.
+
+### Quels sont les symptômes d'un système nerveux surexcité ?
+On parle souvent de système nerveux « surexcité » quand le corps reste en mode alerte. Les signes sont ceux décrits partie par partie dans cet article : tête qui serre, mâchoire et épaules tendues, cœur qui s'emballe, souffle court, ventre noué, sommeil plus difficile. Les gestes pour faire redescendre cette alerte sont dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/).
 
 ### Comment savoir si mes symptômes viennent du stress ?
 Seul un médecin peut le dire, puisque aucun de ces signes n'appartient au stress seul [2][3]. Note depuis quand ils sont là, à quelle fréquence ils reviennent, ce qui les déclenche ou les calme, et parles-en à ton médecin traitant.

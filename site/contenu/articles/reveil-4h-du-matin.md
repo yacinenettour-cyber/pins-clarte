@@ -5,7 +5,7 @@ description: Réveil nocturne à 4h du matin sans pouvoir te rendormir ? Sommeil
 slug: reveil-4h-du-matin
 mot_cle: réveil à 4h du matin
 guide: sommeil
-maj: 2026-10-21
+maj: 2026-10-29
 image: Chambre plongée dans la pénombre bleutée de l'aube, une personne allongée sous la couette, le visage détendu, un réveil retourné face contre la table de nuit et des rideaux épais à peine entrouverts
 ---
 ## L'essentiel
@@ -139,7 +139,7 @@ L'alcool aide d'abord à s'endormir, mais à doses élevées, il peut perturber 
 ### Vaut-il mieux rester au lit pour récupérer ?
 Si tu ne te rendors pas au bout d'une vingtaine de minutes, mieux vaut te lever, faire quelque chose de calme et revenir quand la somnolence revient [3]. Le matin, si tu es réveillé, inutile de prolonger à tout prix [3]. Et après une mauvaise nuit, le sommeil lent de la nuit suivante est plus profond [1], ce qui devrait te rassurer un peu.
 
-### Et pour un réveil à 2 h ou 3 h du matin ?
+### Et pour un réveil à 2 h, 3 h ou 5 h du matin ?
 Les mêmes repères valent. Ce qui compte surtout, c'est de savoir si tu te rendors et comment tu te sens dans la journée. Le stress, l'alcool du soir et la lumière fragilisent le sommeil quelle que soit l'heure [3][5], et les gestes de cet article s'appliquent de la même façon. L'heure précise du réveil n'a pas de signification particulière. Consulte si ces réveils reviennent plusieurs nuits par semaine avec de la fatigue dans la journée [3].
 
 ## Pour aller plus loin

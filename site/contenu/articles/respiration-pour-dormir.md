@@ -6,7 +6,7 @@ slug: respiration-pour-dormir
 date: 2026-10-12
 mot_cle: respiration pour dormir
 guide: sommeil
-maj: 2026-10-21
+maj: 2026-10-29
 image: Personne allongée dans son lit, les yeux fermés, dans une chambre à la lumière douce
 ---
 ## L'essentiel
@@ -137,7 +137,7 @@ Cet article t'informe, il ne remplace pas l'avis d'un médecin ou d'un psycholog
 ### Quelle est la meilleure respiration pour dormir ?
 La mieux étudiée, c'est la respiration lente, autour de 6 respirations par minute, par exemple 4 secondes d'inspiration et 6 d'expiration [1][2]. Les autres techniques, comme la 4-7-8 ou la respiration carrée, ont moins d'études sur le sommeil [4][6].
 
-### Comment faire la respiration 4-7-8 ?
+### Comment faire la respiration 4-7-8, et combien de temps ?
 Inspire par le nez en comptant jusqu'à 4, retiens ton souffle jusqu'à 7, puis expire par la bouche jusqu'à 8. Dans l'étude de l'Université Burapha, les participants étaient allongés et enchaînaient 6 cycles, 3 fois, avec 1 minute de respiration normale entre chaque série [4].
 
 ### La respiration 4-7-8 fait-elle vraiment dormir en une minute ?
@@ -146,8 +146,8 @@ Aucune étude ne l'a montré. Elle fait baisser le rythme du cœur et la tension
 ### Combien de temps faut-il respirer lentement pour s'endormir ?
 Dans l'étude taïwanaise, les participants respiraient lentement pendant 20 minutes avant d'aller dormir [1]. Pour commencer à te calmer, quelques minutes suffisent déjà. Nos [audios de respiration guidée](/respiration-guidee/) durent 3, 5 ou 10 minutes.
 
-### Que faire si la respiration me donne le tournis ?
-Arrête l'exercice et reprends ta respiration habituelle. Les longues pauses, comme les 7 temps de la 4-7-8, ne conviennent pas à tout le monde. Une respiration lente sans blocage, avec une expiration un peu plus longue, est souvent plus confortable.
+### La respiration 4-7-8 est-elle dangereuse ?
+Les études citées ici ne portent pas sur ses risques. Ce qui peut arriver, c'est un tournis ou une gêne : arrête alors l'exercice et reprends ta respiration habituelle. Les longues pauses, comme les 7 temps de la 4-7-8, ne conviennent pas à tout le monde. Une respiration lente sans blocage, avec une expiration un peu plus longue, est souvent plus confortable.
 
 ## Sources
 1. [Efficacy of paced breathing for insomnia: enhances vagal activity and improves sleep quality — Psychophysiology (Tsai et al., Université nationale Yang-Ming, Taipei), 2015](https://pubmed.ncbi.nlm.nih.gov/25234581/)

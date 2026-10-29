@@ -62,6 +62,14 @@ Appelle le 3114 : il répond aussi aux personnes qui veulent aider quelqu'un en 
 
 Oui. Le 3114, le numéro national de prévention du suicide, est gratuit et répond 24 h/24 et 7 j/7 [2]. Si ta vie est en danger, c'est le 15 ou le 112 [1]. Le 3919, pour les violences faites aux femmes, et le 119, pour un enfant en danger, sont eux aussi gratuits et joignables jour et nuit [1]. SOS Amitié écoute 24 h/24 [3]. Le 0 800 235 236 de Fil Santé Jeunes est bien un numéro vert, mais il répond de 9 h à 23 h [5].
 
+### Qui appeler quand ça ne va pas et qu'on a besoin de parler ?
+
+SOS Amitié répond 24 h/24 [3], Suicide Écoute aussi, 24 h/24 et 7 j/7 [4]. Les 12-25 ans peuvent appeler Fil Santé Jeunes, de 9 h à 23 h [5]. Si tu as des pensées suicidaires, appelle le 3114, gratuit et joignable 24 h/24 [2]. En cas de danger immédiat, c'est le 15 ou le 112 [1].
+
+### Peut-on parler à un psychologue gratuitement par téléphone ?
+
+Le 3040 met gratuitement les étudiants en mal-être en relation avec un psychologue ou un travailleur social [1]. Les lignes d'écoute comme SOS Amitié [3] ou Suicide Écoute [4] permettent de parler à quelqu'un sans rendez-vous. Pour un suivi avec un psychologue, Mon soutien psy prend en charge jusqu'à 12 séances par année civile chez un psychologue partenaire [7].
+
 ### Ces numéros sont-ils gratuits ?
 
 Le 3114 [2], Fil Santé Jeunes [5], le 3040, le 3919, le 119 et le 3018 [1] sont gratuits. Un appel à Suicide Écoute coûte le prix d'un appel local [4].

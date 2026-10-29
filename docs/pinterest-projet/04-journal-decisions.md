@@ -1199,3 +1199,21 @@ probable fort / moyen / faible, méthode écrite.
   390 px. En-têtes des articles inchangés (même règle que le 21/10).
 - **Refusé, expliqué à l'utilisateur** : promettre l'invisibilité aux détecteurs, astuces pour les tromper, retrait de
   la mention des outils d'IA. Questions posées à l'utilisateur pour ajouter du vécu réel (seul levier restant).
+
+## 93. Site : SEO longue traîne et résultats Google (29/10/2026)
+
+- **Demande** : « pense au SEO, l'introduction de mots-clés longue traîne, toutes les règles SEO […] et pense aussi à
+  la SERP ».
+- **Audit technique** (42 pages construites) : titres 39-60 caractères et descriptions 125-160, tous uniques ; un seul
+  H1 ; canonique, `max-image-preview:large`, Open Graph, données structurées (Article, FAQPage, BreadcrumbList,
+  AudioObject, Course…) partout ; robots.txt ouvert aux moteurs et assistants IA ; plan du site et IndexNow : rien de
+  bloquant. Ajout : `alternateName` du schéma WebSite (nom du site affiché par Google).
+- **Longue traîne** : 119 couples requête × page de la Search Console (01/10-29/10) croisés avec les intertitres et
+  questions de chaque page ; 11 requêtes réelles reprises mot pour mot dans un intertitre ou une question fréquente,
+  réponses tirées uniquement de faits déjà sourcés dans la page (détail dans `optimisation-mensuelle.md`, lignes du
+  29/10, pour mesurer l'effet le mois prochain). `maj` des 6 articles enrichis au 29/10.
+- **Maillage** : `/sommeil-leger/` (5 liens reçus, le moins relié) reçoit 3 liens contextuels.
+- **SERP, non retenu** : FAQ enrichies (Google ne les affiche plus que pour les sites officiels de santé depuis 2023),
+  vidéo intégrée (le lecteur YouTube dépose des cookies : interdit sans accord et mise à jour des mentions légales),
+  changement de titres (positions 70-90 : le taux de clic n'est pas encore le frein).
+- **Contrôles** : 0 lien cassé, axe 0 violation (4 pages × 2 thèmes), FAQ présentes dans les données structurées.

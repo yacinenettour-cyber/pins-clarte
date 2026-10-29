@@ -60,6 +60,17 @@ Complète le suivi hebdomadaire des positions (`mots-cles.md`) : ici, une passe 
 | 21/10/2026 | réveil précoce (1 impr.) | /reveil-4h-du-matin/ | 27 | 1 | rien : question fréquente déjà ajoutée le 18/10 | |
 | 21/10/2026 | adrenaline cortisol (1 impr.) | /cortisol-hormone-du-stress/ | 34 | 1 | rien : tableau adrénaline/cortisol et question fréquente déjà présents | |
 | 21/10/2026 | se reveiller a 4 heures (1 impr.) | /reveil-4h-du-matin/ | 38 | 1 | rien : question « Est-ce normal de se réveiller à 4 heures du matin ? » déjà présente | |
+| 29/10/2026 | anxiété matinale | /angoisse-le-matin/ | 84 | 12 | intertitre « Anxiété matinale : pourquoi l'angoisse est-elle plus forte le matin ? » (demande de l'utilisateur du 29/10, hors passe mensuelle) | |
+| 29/10/2026 | reveil angoissé / je me reveille angoissée | /angoisse-le-matin/ | 85-89 | 17 | question « Réveil angoissé : que faire tout de suite ? » | |
+| 29/10/2026 | crise angoisse reveil / matin | /angoisse-le-matin/ | 86-91 | 13 | question « Crise d'angoisse au réveil : comment la reconnaître ? » (faits déjà sourcés [1][11]) | |
+| 29/10/2026 | je me sens toujours mal le matin | /angoisse-le-matin/ | 86 | 9 | question du même nom (sources [1][6]) | |
+| 29/10/2026 | cortisol définition | /cortisol-hormone-du-stress/ | 85 | 8 | intertitre « Qu'est-ce que le cortisol ? Définition de l'hormone du stress » | |
+| 29/10/2026 | hormones du stress / hormone du stress | /cortisol-hormone-du-stress/ | 56-93 | 8 | question « Quelles sont les hormones du stress ? » | |
+| 29/10/2026 | respiration 4 7 8 danger / combien de temps | /respiration-pour-dormir/ | 84-86 | 3 | questions « La respiration 4-7-8 est-elle dangereuse ? » et « …et combien de temps ? » | |
+| 29/10/2026 | symptomes dun systeme nerveux surexcite | /symptomes-physiques-du-stress/ | 29 | 1 | question du même nom (renvoi aux signes de l'article) | |
+| 29/10/2026 | calmer ses nerfs | /calmer-son-systeme-nerveux/ | 66-68 | 2 | question « Comment calmer ses nerfs en cas de tension nerveuse ? » | |
+| 29/10/2026 | comment se rendormir à 5h du matin | /reveil-4h-du-matin/ | 99 | 1 | question « Et pour un réveil à 2 h, 3 h ou 5 h du matin ? » | |
+| 29/10/2026 | psy par telephone / a qui parler / numero d'ecoute | /ressources-urgence/ | 46-86 | 12 | questions « Qui appeler quand ça ne va pas… ? » et « Peut-on parler à un psychologue gratuitement par téléphone ? » | |
 
 Données de la 1re passe : 09/10 au 20/10/2026, 57 couples (requête, page) au total ; 4 seulement remplissent le seuil
 de 2 impressions, d'où l'ajout des 4 couples à 1 impression (notés « 1 impr. »). Les autres requêtes du site sont au-delà

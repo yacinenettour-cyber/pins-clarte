@@ -6,7 +6,7 @@ slug: angoisse-le-matin
 mot_cle: angoisse le matin
 guide: sommeil
 date: 2026-10-21
-maj: 2026-10-25
+maj: 2026-10-29
 image: Personne assise au bord de son lit le matin, le visage dans les mains, dans une chambre baignée de lumière douce
 ---
 ## L'essentiel
@@ -18,7 +18,7 @@ image: Personne assise au bord de son lit le matin, le visage dans les mains, da
 
 Les yeux à peine ouverts, et déjà le cœur qui accélère. Une boule au ventre, des pensées qui filent vers tout ce qui t'attend aujourd'hui. C'est ce qu'on appelle l'angoisse le matin, ou angoisse matinale. L'Assurance maladie décrit l'anxiété comme l'appréhension d'un danger, précis ou vague, avec des inquiétudes sur l'avenir, le travail, la santé, les proches ou l'argent [1]. Le réveil est un moment à part, il existe des gestes qui aident sur le coup, et certains signes doivent pousser à consulter.
 
-## Pourquoi l'angoisse est-elle plus forte le matin ?
+## Anxiété matinale : pourquoi l'angoisse est-elle plus forte le matin ?
 
 Parce qu'au réveil, ton corps se met en route d'un coup et ton esprit se tourne vers la journée qui arrive [2][3]. Pour ton cas à toi, les études ne disent pas laquelle de ces raisons pèse le plus. Ce sont des pistes, pas un diagnostic.
 
@@ -109,8 +109,14 @@ Pas forcément, mais ça peut l'être. Dans la dépression, la fatigue est souve
 ### Faut-il faire baisser son cortisol le matin ?
 Non. Sa hausse au réveil est normale [2], et une étude de l'Université de Southampton l'a même associée à des réactions moins vives aux tracas de la journée [3]. Ce qui compte, c'est la courbe sur toute la journée, expliquée dans l'article sur le [cortisol, hormone du stress](/cortisol-hormone-du-stress/).
 
-### Que faire tout de suite quand j'angoisse au réveil ?
+### Réveil angoissé : que faire tout de suite ?
 Ralentis ta respiration [7], en expirant par exemple plus longtemps que tu n'inspires. Ensuite, lève-toi, ouvre les volets et bouge quelques minutes [7][9]. L'inquiétude qui revient, note-la et donne-lui rendez-vous plus tard dans la journée [8].
+
+### Crise d'angoisse au réveil : comment la reconnaître ?
+Une peur intense qui arrive brutalement, avec des palpitations, l'impression d'étouffer ou une douleur dans la poitrine, peut signaler une crise d'angoisse, aussi appelée attaque de panique [1]. Elle dure de quelques minutes à une heure, 20 à 30 minutes en moyenne [11]. Seul un médecin peut poser ce diagnostic, car ces symptômes existent aussi dans d'autres maladies [1]. La première fois, ou s'il y a une douleur dans la poitrine, appelle le 15 ou le 112.
+
+### Je me sens toujours mal le matin : est-ce de l'angoisse ?
+Pas forcément. Une appréhension qui passe vite et ne pèse pas sur ta vie fait partie des angoisses normales [1]. Si ce malaise revient presque tous les matins, déborde sur la journée ou vient avec une grande fatigue dès le réveil et de la tristesse, il peut signaler un trouble anxieux ou une dépression [1][6]. Dans ce cas, parles-en à ton médecin, surtout si cela dure depuis plus de deux semaines [6].
 
 ### Existe-t-il un traitement contre l'angoisse matinale ?
 Quand elle s'installe, oui, et il passe par ton médecin. D'après l'Assurance maladie, une psychothérapie est recommandée quel que soit le trouble anxieux, et la thérapie comportementale et cognitive est reconnue efficace quand l'anxiété est importante [7]. Les anxiolytiques ne se prennent jamais sans avis médical, à cause de leurs risques, dont la dépendance [7]. Si elle vient avec une tristesse ou une perte d'envie presque chaque jour depuis au moins deux semaines, parles-en vite à ton médecin [6].

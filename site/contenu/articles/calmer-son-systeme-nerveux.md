@@ -5,7 +5,7 @@ description: Comment calmer et réguler son système nerveux ? Soupir physiologi
 slug: calmer-son-systeme-nerveux
 mot_cle: calmer son système nerveux
 guide: sommeil
-maj: 2026-10-25
+maj: 2026-10-29
 image: Femme assise près d'une fenêtre en fin de journée, les yeux fermés, une main posée sur le ventre, en train d'expirer lentement dans une lumière douce et chaude
 ---
 ## L'essentiel
@@ -148,7 +148,7 @@ Oui, c'est mieux. Dans l'essai de Stanford, les participants pratiquaient 5 minu
 ### La relaxation peut-elle remplacer un suivi médical ?
 Non. Ce sont de bons outils pour le quotidien, mais ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. Si l'anxiété dure ou si les crises se répètent, consulte [8].
 
-### Que faire en cas de tension nerveuse ?
+### Comment calmer ses nerfs en cas de tension nerveuse ?
 Une tension nerveuse, c'est un corps resté bloqué en mode alerte. Les épaules remontent, la mâchoire se serre, le souffle devient court. L'« accélérateur », le sympathique, a pris le dessus sur le « frein », le parasympathique [1]. Commence par allonger ton expiration quelques minutes [2], puis bouge un peu, 10 minutes de marche par exemple [6]. Si ça dure des semaines ou que l'angoisse s'en mêle, parles-en à ton médecin.
 
 ### Que veut dire « système nerveux en mode survie » ?

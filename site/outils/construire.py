@@ -835,6 +835,8 @@ def construire_accueil(articles):
     faq = faq_accueil(source)
     schemas = [
         {"@context": "https://schema.org", "@type": "WebSite", "@id": URL + "/#site", "name": SITE["nom"],
+         # Nom du site affiché par Google au-dessus des résultats (variantes reconnues du même nom).
+         "alternateName": ["Clarte Mentale", "contactapaisement-mental.fr"],
          "url": URL + "/", "inLanguage": SITE["langue"], "description": DESCRIPTION_ACCUEIL,
          "publisher": {"@id": URL + "/#organisation"}},
         {"@context": "https://schema.org", **editeur(), "description": SITE["description"], "founder": auteur()},

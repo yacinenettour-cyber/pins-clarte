@@ -70,7 +70,7 @@ On voit se dessiner un cercle qui s'entretient tout seul. Le stress active l'axe
 
 ## Le cortisol explique-t-il les réveils à 4 h du matin ?
 
-En partie seulement. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit, et chaque réveil s'accompagne d'une petite hausse [3]. Rien d'anormal là-dedans. Seulement, le stress, l'alcool du soir ou la lumière rendent aussi plus fragile cette période où le sommeil est plus léger. Les causes, et ce qu'on peut faire sur le moment, sont dans l'article [réveil à 4h du matin](/reveil-4h-du-matin/).
+En partie seulement. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit, et chaque réveil s'accompagne d'une petite hausse [3]. Rien d'anormal là-dedans. Seulement, le stress, l'alcool du soir ou la lumière rendent aussi plus fragile cette période où le sommeil est plus léger. Les causes, et ce qu'on peut faire sur le moment, sont dans l'article [réveil à 4h du matin](/reveil-4h-du-matin/). Et si c'est le moindre bruit qui te tire du sommeil, celui sur le [sommeil léger](/sommeil-leger/) explique ce qui le rend si fragile.
 
 ## Cortisol élevé la nuit : est-ce normal ?
 

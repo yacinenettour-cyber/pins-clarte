@@ -6,7 +6,7 @@ slug: cortisol-hormone-du-stress
 date: 2026-10-09
 mot_cle: cortisol hormone du stress
 guide: cortisol
-maj: 2026-10-25
+maj: 2026-10-29
 image: Personne assise au bord de son lit au petit matin, les pieds nus sur un parquet clair, qui s'étire face à une fenêtre où entre une lumière dorée de lever de soleil, ambiance calme et chaleureuse, sans texte
 ---
 ## L'essentiel
@@ -17,7 +17,7 @@ image: Personne assise au bord de son lit au petit matin, les pieds nus sur un p
 
 Le cortisol est une hormone de la famille des glucocorticoïdes. Les glandes surrénales le fabriquent quand le cerveau le leur demande [1]. Son taux est beaucoup plus élevé tôt le matin que plus tard dans la journée [1]. Sur le moment, il aide ton corps à mobiliser son énergie devant un défi, et c'est surtout un stress intense et durable qui peut dérégler cet équilibre [2].
 
-## Qu'est-ce que le cortisol, l'hormone du stress ?
+## Qu'est-ce que le cortisol ? Définition de l'hormone du stress
 
 C'est une hormone glucocorticoïde, produite par la partie externe (le cortex) des glandes surrénales. Ces deux petites glandes sont posées au-dessus des reins [1]. Chacune a deux parties, et elles ne font pas le même travail [1].
 
@@ -155,6 +155,9 @@ Non, il est même indispensable. C'est lui qui fournit au corps l'énergie pour 
 
 ### À quel moment de la journée le cortisol est-il le plus élevé ?
 Tôt le matin. Son taux est beaucoup plus haut en début de journée que plus tard [1], puis il descend peu à peu vers le soir, et c'est tout à fait normal.
+
+### Quelles sont les hormones du stress ?
+On en cite surtout deux, toutes deux produites par les glandes surrénales : l'adrénaline et le cortisol [1]. L'adrénaline agit tout de suite, le cortisol prend le relais peu après si la situation dure [2].
 
 ### Quelle est la différence entre l'adrénaline et le cortisol ?
 L'adrénaline agit tout de suite, pour te préparer à combattre ou à fuir. Le cortisol prend le relais peu après et fournit de l'énergie si la situation dure [2]. Les deux viennent des glandes surrénales, mais pas de la même partie [1].

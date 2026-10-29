@@ -106,6 +106,8 @@ Entre 18 et 20 °C selon les recommandations françaises, dans une pièce sombre
 Ne reste pas à lutter au lit. Lève-toi, fais quelque chose de calme sous une lumière douce, et recouche-toi quand le sommeil revient [1][4]. Évite de regarder l'heure ou ton téléphone [1]. Si ça se reproduit plusieurs fois par semaine pendant des semaines, parles-en à ton médecin [2].
 
 ## Pour aller plus loin
+Tu t'endors, mais le moindre bruit te réveille ensuite ? Lis l'article sur le [sommeil léger](/sommeil-leger/).
+
 Ta routine est en place, mais ton cerveau continue de tourner une fois la lumière éteinte ? Le guide gratuit « Quand le cerveau refuse de dormir » reprend là où cet article s'arrête. Il contient une routine anti-rumination à faire directement au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour installer l'habitude, sans aucun matériel.
 
 ## Sources
