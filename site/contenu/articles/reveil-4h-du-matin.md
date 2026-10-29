@@ -105,7 +105,7 @@ Consulte ton médecin si tes réveils reviennent au moins trois nuits par semain
 - quelqu'un a remarqué des pauses dans ta respiration pendant ton sommeil, ou tu ressens au coucher des sensations désagréables dans les jambes qui t'obligent à bouger [3] ;
 - tu as envie de prendre des somnifères. Ne le fais pas seul, demande conseil à ton médecin [3].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Quand ce sont les pensées qui te réveillent à 4 h, le médecin n'est pas le seul à pouvoir t'aider. Un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale, et tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie (Mon soutien psy) : l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit, joignable 24 h/24 et 7 j/7, et tu y trouveras des infirmiers et des psychologues formés à l'écoute [8].
 

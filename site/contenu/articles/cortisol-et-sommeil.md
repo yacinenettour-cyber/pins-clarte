@@ -52,7 +52,7 @@ Gardons une limite en tête. Ces études portent sur de petits groupes de jeunes
 
 Oui, souvent. D'après l'Assurance maladie, plus de la moitié des insomnies et des difficultés à bien dormir viennent du stress, de l'anxiété et de la dépression [8]. Les études sur les hormones vont dans le même sens.
 
-En 2001, à l'Université d'État de Pennsylvanie, l'équipe de Vgontzas a comparé 11 jeunes adultes souffrant d'insomnie chronique à 13 bons dormeurs, après 4 nuits en laboratoire du sommeil. Les résultats sont parus dans une revue d'endocrinologie clinique [5].
+L'équipe de Vgontzas, à l'Université d'État de Pennsylvanie, a comparé 11 jeunes adultes souffrant d'insomnie chronique à 13 bons dormeurs, après 4 nuits en laboratoire du sommeil. Les résultats sont parus en 2001 dans une revue d'endocrinologie clinique [5].
 
 - sur 24 heures, ils sécrétaient plus d'ACTH, l'hormone qui commande le cortisol, et leur cortisol avait tendance à être plus élevé [5] ;
 - les hausses les plus marquées apparaissaient **le soir et pendant la première moitié de la nuit** [5] ;
@@ -99,7 +99,7 @@ Avec des gestes simples, qui aident le cortisol à redescendre le soir et protè
 | Respirer lentement au lit | Autour de 6 respirations par minute, l'activité du nerf vague, le « frein » du corps, augmente [9] | Université allemande du sport de Cologne |
 | Protéger la durée de ta nuit | Une seule nuit écourtée élève le cortisol du soir suivant [2] | Université de Chicago |
 
-Un mot sur la respiration. En 2022, Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont rassemblé 223 études dans une méta-analyse parue dans une revue de neurosciences [9]. Pendant et après une respiration lente volontaire, la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente [9]. Au lit, une fois l'écran éteint, les [audios de respiration guidée](/respiration-guidee/) peuvent te donner ce rythme.
+Un mot sur la respiration. Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont rassemblé 223 études dans une méta-analyse parue en 2022 dans une revue de neurosciences [9]. Pendant et après une respiration lente volontaire, la variabilité cardiaque liée au [nerf vague](/nerf-vague/) augmente [9]. Au lit, une fois l'écran éteint, les [audios de respiration guidée](/respiration-guidee/) peuvent te donner ce rythme.
 
 Tu préfères avancer pas à pas ? Appuie-toi sur la [routine du soir en 7 étapes](/routine-du-soir-anti-stress/), et sur l'article [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/), qui fait le tri entre ce qui marche et les fausses promesses.
 
@@ -112,7 +112,7 @@ Va voir ton médecin si tes difficultés de sommeil durent et pèsent sur tes jo
 - tu remarques des changements physiques inhabituels, comme un visage qui s'arrondit ou de la graisse qui s'accumule sur le torse : les signes d'un vrai excès de cortisol sont détaillés dans l'article [Cortisol, hormone du stress](/cortisol-hormone-du-stress/) ;
 - ton moral baisse, ou l'anxiété envahit aussi tes journées.
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Si c'est le stress qui abîme tes nuits, pense aussi au psychologue. Tu peux prendre rendez-vous avec lui sans passer par ton médecin, et il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Certaines séances sont remboursées par l'Assurance maladie (dispositif Mon soutien psy). L'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit et joignable 24 h/24. En cas de danger immédiat, compose le 15 ou le 112.
 

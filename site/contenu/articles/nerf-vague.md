@@ -29,7 +29,7 @@ Quand tu es stressé, c'est l'accélérateur qui domine. « Activer le nerf vagu
 On ne peut pas le mesurer directement chez soi. Les chercheurs passent par un indicateur indirect, la [variabilité de la fréquence cardiaque](/glossaire/#variabilité-de-la-fréquence-cardiaque) (VFC). L'intervalle entre deux battements n'est jamais tout à fait le même, et une partie de ces petites variations reflète l'action du nerf vague sur le cœur [2]. Garde donc en tête que la plupart des études mesurent la VFC, et pas directement le stress ressenti.
 
 ## Comment activer le nerf vague par la respiration ?
-En respirant lentement, autour de 6 respirations par minute. C'est la façon la mieux démontrée [2]. En 2022, Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont rassemblé 223 études sur la respiration lente volontaire dans une méta-analyse parue dans une revue de neurosciences et de comportement. La variabilité cardiaque liée au nerf vague augmente pendant l'exercice, juste après une séance, et aussi après un programme de plusieurs séances [2].
+En respirant lentement, autour de 6 respirations par minute. C'est la façon la mieux démontrée [2]. À l'Université allemande du sport de Cologne, Laborde et ses collègues ont rassemblé 223 études sur la respiration lente volontaire, dans une méta-analyse parue en 2022 dans une revue de neurosciences et de comportement. La variabilité cardiaque liée au nerf vague augmente pendant l'exercice, juste après une séance, et aussi après un programme de plusieurs séances [2].
 
 | | Respiration spontanée | Respiration lente volontaire |
 |---|---|---|
@@ -37,7 +37,7 @@ En respirant lentement, autour de 6 respirations par minute. C'est la façon la 
 | Variabilité cardiaque liée au nerf vague | Point de comparaison | En hausse pendant, juste après et après plusieurs séances [2] |
 | Coût et risques | Sans objet | Technique simple, peu coûteuse, peu d'effets indésirables attendus [2] |
 
-Le chiffre de 6 par minute n'a rien d'arbitraire. Ce rythme tombe autour de 0,1 hertz. Paul Lehrer (Université Rutgers) et Richard Gevirtz (Université Alliant de San Diego) l'expliquent dans une revue de 2014, parue dans une revue scientifique de psychologie : c'est à cette fréquence que les oscillations du rythme cardiaque liées à la respiration sont les plus grandes, et que le cœur se cale sur le souffle [3].
+Le chiffre de 6 par minute n'a rien d'arbitraire. Ce rythme tombe autour de 0,1 hertz. Paul Lehrer (Université Rutgers) et Richard Gevirtz (Université Alliant de San Diego) l'expliquent dans un article de synthèse de 2014, paru dans une revue scientifique de psychologie : c'est à cette fréquence que les oscillations du rythme cardiaque liées à la respiration sont les plus grandes, et que le cœur se cale sur le souffle [3].
 
 Quand tu inspires, ton cœur accélère un tout petit peu, et quand tu expires, il ralentit. C'est un mécanisme normal, qu'on appelle l'[arythmie sinusale respiratoire](/glossaire/#arythmie-sinusale-respiratoire) [3]. Allonger l'expiration a donc du sens. Une équipe de l'Université Stanford l'a testé dans un essai randomisé publié en 2023 dans une revue de recherche médicale (Balban et ses collègues). Cinq minutes par jour de « soupir cyclique », pendant un mois, ont davantage amélioré l'humeur et ralenti la fréquence respiratoire que 5 minutes de méditation de pleine conscience. Les auteurs reconnaissent eux-mêmes les limites de leur travail, mené à distance, sur de petits groupes, avec quatre semaines de suivi [4].
 

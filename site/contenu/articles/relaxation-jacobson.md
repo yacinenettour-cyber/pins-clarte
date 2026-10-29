@@ -24,13 +24,13 @@ Tu contractes volontairement un groupe de muscles pendant quelques secondes, tu 
 
 Tout l'exercice repose sur ce contraste. Tu sens la tension, puis la détente qui la remplace, et tu recommences jusqu'à ce que le corps entier soit relâché [7][8].
 
-Pourquoi ça aiderait à dormir ? Les chercheurs avancent une explication sans l'avoir encore démontrée. En 2026, l'équipe de Li, à l'Université Putra de Malaisie, écrit que la méthode pourrait réduire l'état d'alerte du corps, freiner le système nerveux qui accélère et favoriser celui du repos, ce qui faciliterait l'endormissement [1]. C'est la même logique que pour la [respiration lente](/respiration-pour-dormir/), avec les muscles comme porte d'entrée au lieu du souffle.
+Pourquoi ça aiderait à dormir ? Les chercheurs avancent une explication sans l'avoir encore démontrée. L'équipe de Li, à l'Université Putra de Malaisie, écrit en 2026 que la méthode pourrait réduire l'état d'alerte du corps, freiner le système nerveux qui accélère et favoriser celui du repos, ce qui faciliterait l'endormissement [1]. C'est la même logique que pour la [respiration lente](/respiration-pour-dormir/), avec les muscles comme porte d'entrée au lieu du souffle.
 
 ## Ce que disent les études sur la relaxation Jacobson et le sommeil
 
 Les études récentes vont dans le même sens. La relaxation musculaire progressive améliore la qualité du sommeil telle que les gens la ressentent, mais l'ampleur de l'effet change beaucoup selon les études et les personnes [1][2].
 
-En 2026, Li et ses collègues de l'Université Putra de Malaisie ont rassemblé 14 essais et 957 participants dans une méta-analyse parue dans une revue de santé publique [1].
+Li et ses collègues, de l'Université Putra de Malaisie, ont rassemblé 14 essais et 957 participants dans une méta-analyse parue en 2026 dans une revue de santé publique [1].
 
 - La qualité du sommeil s'améliorait, chez des personnes atteintes d'un cancer comme chez les autres [1].
 - Avant 55 ans, le bénéfice était net. Après 55 ans, l'étude n'a pas trouvé d'amélioration significative, et les auteurs jugent l'effet incertain à cet âge [1].
@@ -46,7 +46,7 @@ Et chez des personnes qui dorment mal sans autre maladie ? Les résultats sont p
 
 Les trois détendent autant les unes que les autres, d'après ce que ressentent les participants. Dans une petite étude qui les a comparées, la relaxation musculaire et la scène calme imaginée ont en plus fait baisser plus nettement l'activation du corps [7].
 
-En 2021, Toussaint et ses collègues, du Luther College, dans l'Iowa, ont tiré au sort 60 étudiants en bonne santé entre quatre groupes, dans une étude parue dans une revue de médecines complémentaires. Trois groupes suivaient un exercice enregistré de 20 minutes, le quatrième servait de groupe témoin. Pendant ce temps, des capteurs mesuraient la transpiration de la peau, un signe d'activation du corps, et le rythme du cœur [7].
+Au Luther College, dans l'Iowa, Toussaint et ses collègues ont tiré au sort 60 étudiants en bonne santé entre quatre groupes (étude de 2021, parue dans une revue de médecines complémentaires). Trois groupes suivaient un exercice enregistré de 20 minutes, le quatrième servait de groupe témoin. Pendant ce temps, des capteurs mesuraient la transpiration de la peau, un signe d'activation du corps, et le rythme du cœur [7].
 
 | Technique | Ce que tu fais | Ce qu'a mesuré l'étude du Luther College |
 |---|---|---|
@@ -86,11 +86,11 @@ Pour te laisser guider toi aussi, la [relaxation Jacobson en vidéo](https://you
 
 Pas toujours. La relaxation musculaire fait partie des traitements reconnus de l'insomnie, mais elle fait moins bien que la thérapie cognitive et comportementale de l'insomnie, qui reste le traitement de référence [3][4][5].
 
-En 2006, Morin et ses collègues, de l'Université Laval, au Québec, ont passé en revue 37 études et 2 246 participants pour l'Académie américaine de médecine du sommeil (dans une revue consacrée au sommeil). La relaxation faisait partie des cinq traitements psychologiques dont l'efficacité contre l'insomnie était jugée établie [3]. En 2021, les recommandations de cette même académie, publiées dans sa revue de médecine du sommeil, proposent la relaxation seule comme option, avec une recommandation dite conditionnelle, c'est-à-dire à adapter à chaque patient. La thérapie cognitive et comportementale, elle, est recommandée avec force [4].
+Pour l'Académie américaine de médecine du sommeil, Morin et ses collègues, de l'Université Laval, au Québec, ont passé en revue 37 études et 2 246 participants en 2006, dans une revue consacrée au sommeil. La relaxation faisait partie des cinq traitements psychologiques dont l'efficacité contre l'insomnie était jugée établie [3]. En 2021, les recommandations de cette même académie, publiées dans sa revue de médecine du sommeil, proposent la relaxation seule comme option, avec une recommandation dite conditionnelle, c'est-à-dire à adapter à chaque patient. La thérapie cognitive et comportementale, elle, est recommandée avec force [4].
 
 La différence se voit dans les chiffres. Au centre médical des anciens combattants de Durham, aux États-Unis, Edinger et ses collègues ont comparé en 2001 trois prises en charge de 6 semaines chez 75 adultes qui se réveillaient la nuit depuis des années (étude publiée dans la revue de l'Association médicale américaine). Le temps passé éveillé en pleine nuit a baissé de 54 % avec la thérapie cognitive et comportementale, de 16 % avec la relaxation musculaire et de 12 % avec une fausse thérapie [5].
 
-Une étude suggère qu'elle aide surtout à s'endormir. En 2003, à la fondation de la clinique Ochsner, à Baton Rouge, en Louisiane, 53 personnes souffrant d'insomnie chronique ont été réparties entre plusieurs traitements pendant 2 semaines (étude parue dans une revue de médecine comportementale du sommeil). La relaxation musculaire, associée à un exercice de distraction mentale, agissait davantage sur l'endormissement, et les méthodes qui règlent les horaires et l'usage du lit agissaient davantage sur les réveils de la nuit. Le somnifère testé en comparaison faisait mieux que les autres traitements sur cette courte période [11].
+Une étude suggère qu'elle aide surtout à s'endormir. À la fondation de la clinique Ochsner, à Baton Rouge, en Louisiane, 53 personnes souffrant d'insomnie chronique ont été réparties entre plusieurs traitements pendant 2 semaines (étude de 2003, parue dans une revue de médecine comportementale du sommeil). La relaxation musculaire, associée à un exercice de distraction mentale, agissait davantage sur l'endormissement, et les méthodes qui règlent les horaires et l'usage du lit agissaient davantage sur les réveils de la nuit. Le somnifère testé en comparaison faisait mieux que les autres traitements sur cette courte période [11].
 
 L'Inserm rappelle que, pour certains patients, des approches douces comme la relaxation peuvent aider en complément de bonnes habitudes de sommeil [12]. Elle trouve donc très bien sa place dans une [routine du soir anti-stress](/routine-du-soir-anti-stress/), mais si tes nuits sont mauvaises depuis des mois, elle ne remplace pas un avis médical.
 
@@ -106,7 +106,7 @@ Consulte aussi si :
 
 Si tu restes éveillé plus de 20 minutes malgré l'exercice, l'INSV conseille de te lever et de faire autre chose, puis de ne revenir te coucher qu'aux premiers signes de sommeil, comme les bâillements, la nuque lourde ou les yeux qui piquent [13].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Si la tension revient soir après soir malgré la relaxation, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux le consulter directement, sans passer d'abord par ton médecin. Certaines séances sont remboursées par l'Assurance maladie avec Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24, 7 j/7 [14].
 

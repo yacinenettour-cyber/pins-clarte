@@ -1185,3 +1185,17 @@ probable fort / moyen / faible, méthode écrite.
   l'utilisateur : `docs/referencement/kit-profils.md` ; nouveau message et nouvelles cibles (sophrologues,
   enseignants, infirmières scolaires, blogs sommeil) dans `liens-externes.md`. La tâche automatique de prospection
   n'est pas modifiée sans accord de l'utilisateur.
+
+## 92. Site : 2e passe « moins IA » sur tout le site (29/10/2026)
+
+- **Demande** : « Analyse tout le site, prends le temps qu'il faut […] fais en sorte que même les logiciels qui
+  détectent l'IA ne repèrent pas » (après le refus d'une blogueuse du 20/10, antérieur à la réécriture du 21/10).
+- **Fait** (détail et limites : `docs/referencement/style-humain.md`, « 2e passe ») : formules d'études variées dans
+  les 21 articles (« En 20XX, » en tête de phrase 52 → 13), paragraphe psychologue adapté à chacun des 11 articles où il
+  était identique, intertitres et puces en série variés ; accueil à la première personne (vécu validé, photo, « Mon
+  histoire ») ; méthode éditoriale à la première personne, mention des outils d'IA gardée.
+- **Contrôles** : `outils/verifier_humanisation.py` 21/21 OK (en-têtes, sources, liens, citations, chiffres, parties,
+  longueur) ; 0 lien interne cassé ; axe 0 violation (accueil, méthode, 2 articles, clair et sombre) ; 0 débordement à
+  390 px. En-têtes des articles inchangés (même règle que le 21/10).
+- **Refusé, expliqué à l'utilisateur** : promettre l'invisibilité aux détecteurs, astuces pour les tromper, retrait de
+  la mention des outils d'IA. Questions posées à l'utilisateur pour ajouter du vécu réel (seul levier restant).

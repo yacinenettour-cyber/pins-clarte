@@ -29,31 +29,31 @@ L'Inserm rappelle aussi que dormir, c'est perdre la vigilance tout en gardant un
 
 Il y a rarement une seule raison. Le moment de la nuit, l'âge, le niveau de stress, ce que tu bois et le bruit de la chambre jouent ensemble, et parfois un trouble du sommeil s'ajoute.
 
-### Parce que la fin de nuit est plus légère
+### La fin de nuit est plus légère
 
 Les premiers cycles contiennent surtout du sommeil profond, alors que la fin de nuit fait plus de place au sommeil léger et au sommeil paradoxal [1]. Si c'est surtout au petit matin que le moindre bruit te tire du sommeil, c'est en partie normal. L'article sur le [réveil à 4h du matin](/reveil-4h-du-matin/) détaille ce qui se passe à ce moment-là et ce qu'il vaut mieux faire.
 
-### Parce que le sommeil profond diminue avec l'âge
+### Le sommeil profond diminue avec l'âge
 
 Avec les années, la part de sommeil profond baisse et celle de sommeil léger augmente. L'Inserm l'écrit simplement : le sommeil lent profond, très présent pendant la croissance, laisse peu à peu la place à un sommeil plus léger [1].
 
-En 2004, une équipe de l'Université Stanford, aux États-Unis, a rassemblé 65 études et 3 577 personnes de 5 à 102 ans dont le sommeil avait été enregistré pendant toute la nuit, dans une revue consacrée au sommeil. Chez les adultes, la part de sommeil profond diminuait avec l'âge, tandis que la part de sommeil léger et le temps passé éveillé au milieu de la nuit augmentaient [4]. Tu dormais comme une souche à 20 ans et plus du tout à 50 ? C'est en bonne partie cela.
+Une équipe de l'Université Stanford, aux États-Unis, a rassemblé 65 études et 3 577 personnes de 5 à 102 ans dont le sommeil avait été enregistré pendant toute la nuit. Son travail est paru en 2004 dans une revue consacrée au sommeil. Chez les adultes, la part de sommeil profond diminuait avec l'âge, tandis que la part de sommeil léger et le temps passé éveillé au milieu de la nuit augmentaient [4]. Tu dormais comme une souche à 20 ans et plus du tout à 50 ? C'est en bonne partie cela.
 
-### Parce que le cerveau reste en alerte
+### Un cerveau resté en alerte
 
-Quand le stress dure, le cerveau peut rester en état de veille même la nuit. En 2010, une équipe du centre hospitalier universitaire de Fribourg-en-Brisgau, en Allemagne, a fait le point sur ce qu'on appelle l'hyperéveil dans l'insomnie, dans une revue de médecine du sommeil. Les mesures du corps et du cerveau montrent chez les personnes insomniaques un niveau d'éveil plus élevé, la nuit comme le jour. Les auteurs y voient la rencontre d'une fragilité personnelle, de sources de stress et d'habitudes qui entretiennent le problème, dont la tendance à s'inquiéter et à ruminer [5].
+Quand le stress dure, le cerveau peut rester en état de veille même la nuit. Le centre hospitalier universitaire de Fribourg-en-Brisgau, en Allemagne, a fait le point en 2010 sur ce qu'on appelle l'hyperéveil dans l'insomnie, dans une revue de médecine du sommeil. Les mesures du corps et du cerveau montrent chez les personnes insomniaques un niveau d'éveil plus élevé, la nuit comme le jour. Les auteurs y voient la rencontre d'une fragilité personnelle, de sources de stress et d'habitudes qui entretiennent le problème, dont la tendance à s'inquiéter et à ruminer [5].
 
 Si tu te sens sur le qui-vive aussi pendant la journée, l'article sur les [symptômes de l'hypervigilance](/hypervigilance/) peut t'aider à faire le point. Et si ce sont les pensées qui repartent dès que tu ouvres un œil, lis celui sur les [ruminations le soir](/ruminations-le-soir/).
 
-### Parce que le café et l'alcool fragilisent la nuit
+### Le café de l'après-midi, le verre du soir
 
-Le café de l'après-midi peut encore agir au coucher. En 2013, une équipe de l'hôpital Henry Ford, à Détroit, a donné une même dose de caféine (400 mg) à différents moments, puis a mesuré le sommeil à domicile, dans une revue de médecine du sommeil. Prise au coucher, 3 heures avant ou même 6 heures avant, la caféine perturbait le sommeil par rapport à un placebo. Les auteurs conseillent d'éviter une forte dose de caféine au moins 6 heures avant de dormir [6].
+Le café de l'après-midi peut encore agir au coucher. À l'hôpital Henry Ford de Détroit, des chercheurs ont donné une même dose de caféine (400 mg) à différents moments, puis mesuré le sommeil à domicile. L'étude date de 2013 et a paru dans une revue de médecine du sommeil. Prise au coucher, 3 heures avant ou même 6 heures avant, la caféine perturbait le sommeil par rapport à un placebo. Les auteurs conseillent d'éviter une forte dose de caféine au moins 6 heures avant de dormir [6].
 
 L'alcool, lui, trompe. Une revue du London Sleep Centre, publiée en 2013, a passé en revue les études menées chez des volontaires en bonne santé. À toutes les doses, l'alcool aide à s'endormir et rend la première moitié de la nuit plus profonde, mais il augmente les perturbations dans la seconde moitié [7].
 
-### Parce que tout le monde ne réagit pas pareil au bruit
+### Tout le monde ne réagit pas pareil au bruit
 
-C'est une vraie différence d'une personne à l'autre, et elle se voit dans le cerveau. En 2010, des chercheurs de l'École de médecine de Harvard, aux États-Unis, ont enregistré le sommeil de volontaires pendant une nuit calme, puis pendant une nuit avec des bruits, dans une revue de biologie. Ceux qui produisaient le plus de fuseaux du sommeil (de courtes ondes du cerveau endormi) pendant la nuit calme toléraient mieux le bruit la nuit suivante [8]. Si ton conjoint ne se réveille jamais et toi si, ce n'est pas un manque de volonté.
+C'est une vraie différence d'une personne à l'autre, et elle se voit dans le cerveau. Des chercheurs de l'École de médecine de Harvard, aux États-Unis, ont enregistré le sommeil de volontaires pendant une nuit calme, puis pendant une nuit avec des bruits (étude de 2010, publiée dans une revue de biologie). Ceux qui produisaient le plus de fuseaux du sommeil (de courtes ondes du cerveau endormi) pendant la nuit calme toléraient mieux le bruit la nuit suivante [8]. Si ton conjoint ne se réveille jamais et toi si, ce n'est pas un manque de volonté.
 
 Le bruit compte aussi en lui-même. Une revue de l'Université de Pennsylvanie, publiée en 2014 dans une grande revue médicale, rappelle que le bruit de l'environnement perturbe le sommeil et entraîne de la somnolence pendant la journée [9].
 
@@ -81,7 +81,7 @@ Ils ont quelques preuves en leur faveur. En 2018, une équipe de l'Université C
 
 ### Le bruit blanc
 
-Il n'a pas encore fait ses preuves. En 2021, une équipe de l'Université de Pennsylvanie a passé en revue 38 études sur le bruit continu (bruit blanc ou proche) pour dormir, dans une revue de médecine du sommeil. Les résultats allaient dans tous les sens, de l'amélioration à la gêne. Selon leurs critères, la qualité des preuves que ce bruit améliore le sommeil est très faible, et il pourrait aussi nuire au sommeil et à l'audition [11]. Si tu l'utilises et qu'il t'aide, garde un volume bas.
+Il n'a pas encore fait ses preuves. Une équipe de l'Université de Pennsylvanie a passé en revue 38 études sur le bruit continu (bruit blanc ou proche) pour dormir, dans une synthèse publiée en 2021 par une revue de médecine du sommeil. Les résultats allaient dans tous les sens, de l'amélioration à la gêne. Selon leurs critères, la qualité des preuves que ce bruit améliore le sommeil est très faible, et il pourrait aussi nuire au sommeil et à l'audition [11]. Si tu l'utilises et qu'il t'aide, garde un volume bas.
 
 ### Ce qu'on peut faire au moment du réveil
 
@@ -92,10 +92,10 @@ Si tu ne te rendors pas, ne reste pas des heures à attendre. L'Institut nationa
 Consulte ton médecin si ton sommeil léger te réveille au moins trois nuits par semaine depuis plus d'un mois, avec de la fatigue, des difficultés de concentration ou de l'irritabilité dans la journée [3]. Quelques nuits hachées quand la période est chargée, c'est souvent passager. Parles-en en revanche si :
 
 - ces réveils durent depuis trois mois ou plus (l'Inserm parle alors d'insomnie chronique) [2] ;
-- quelqu'un a remarqué des pauses dans ta respiration pendant ton sommeil, ou tu ressens au coucher des sensations désagréables dans les jambes qui t'obligent à bouger [3] ;
-- tu as envie de prendre des somnifères. Ne le fais pas seul, demande conseil à ton médecin [3].
+- la personne qui dort avec toi t'a vu arrêter de respirer quelques instants, ou tes jambes te gênent au coucher au point de devoir les bouger [3] ;
+- tu penses aux somnifères : parles-en d'abord à ton médecin plutôt que d'en prendre seul [3].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Quand le stress est en toile de fond de ces nuits hachées, tu peux aussi aller voir directement un psychologue. Il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. L'Assurance maladie rembourse certaines séances avec le dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24 et 7 j/7 [12].
 

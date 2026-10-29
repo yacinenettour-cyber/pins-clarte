@@ -21,7 +21,7 @@ Tu éteins la lumière, la maison devient silencieuse, et c'est justement là qu
 
 Parce qu'une fois au lit, plus rien n'occupe ton attention, et que l'inquiétude pour la nuit garde ton corps en alerte [5][6].
 
-En 2018, une équipe du centre des troubles du sommeil de l'hôpital Henry Ford, à Détroit, a décrit ce moment dans une revue scientifique consacrée au sommeil. Le temps passé éveillé au lit n'a pas de structure. On y est souvent seul, et l'esprit se met facilement à ressasser [6].
+Le centre des troubles du sommeil de l'hôpital Henry Ford, à Détroit, a décrit ce moment en 2018, dans une revue scientifique consacrée au sommeil. Le temps passé éveillé au lit n'a pas de structure. On y est souvent seul, et l'esprit se met facilement à ressasser [6].
 
 Ensuite, un engrenage peut s'enclencher. Allison Harvey, de l'Université d'Oxford, l'a décrit en 2002 dans son modèle de l'insomnie, publié dans une revue de recherche en thérapie comportementale [5].
 
@@ -66,7 +66,7 @@ La personne peut avoir peur de perdre le contrôle, de « devenir folle » ou de
 
 Une crise d'angoisse nocturne, c'est se réveiller en pleine panique. Ce n'est pas un cauchemar, pas non plus une terreur nocturne ou une apnée du sommeil [4].
 
-Chez les personnes qui ont un trouble panique, ces réveils sont fréquents. En 2005, une équipe de l'Université de Californie à Los Angeles a fait le point dans une revue de médecine du sommeil, et 44 à 71 % de ces personnes en avaient vécu au moins un [4]. Ils surviennent pendant le sommeil lent, pas pendant le sommeil paradoxal [4].
+Chez les personnes qui ont un trouble panique, ces réveils sont fréquents. D'après le point fait en 2005 par une équipe de l'Université de Californie à Los Angeles, dans une revue de médecine du sommeil, 44 à 71 % de ces personnes en avaient vécu au moins un [4]. Ils surviennent pendant le sommeil lent, pas pendant le sommeil paradoxal [4].
 
 Le traitement psychologique étudié est la thérapie comportementale et cognitive. Elle travaille sur la façon d'interpréter les sensations d'anxiété, sur la respiration trop rapide (l'hyperventilation) et sur les réactions apprises face aux sensations du corps [4]. Les données récentes vont dans le sens de son efficacité [4].
 
@@ -93,9 +93,9 @@ Sors tes soucis de ta tête plus tôt dans la soirée, et entraîne ta respirati
 | Au lit | Respiration lente, attention posée sur le souffle | Détourne l'attention des pensées négatives, selon le Réseau Morphée [8] |
 | Si le sommeil ne vient pas | Te lever, activité calme, revenir quand la somnolence arrive | Conseil de l'INSV [3] |
 
-Respirer lentement s'apprend de jour. En 2023, dans un essai de l'Université Stanford publié dans une revue de médecine, 5 minutes de respiration par jour pendant un mois faisaient baisser l'anxiété après chaque séance [9]. L'étude est racontée en détail dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/). Le [minuteur de respiration](/exercices-respiration/) du site peut t'aider à tenir ce petit rendez-vous dans la journée.
+Respirer lentement s'apprend de jour. Dans un essai de l'Université Stanford paru en 2023 dans une revue de médecine, 5 minutes de respiration par jour pendant un mois faisaient baisser l'anxiété après chaque séance [9]. L'étude est racontée en détail dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/). Le [minuteur de respiration](/exercices-respiration/) du site peut t'aider à tenir ce petit rendez-vous dans la journée.
 
-Le soir, donne à tes soucis un rendez-vous fixe, loin du lit. En 2006, à l'Université Duke, en Caroline du Nord, deux chercheurs ont demandé à 33 étudiants qui souffraient d'insomnie de noter leurs soucis, avec des pistes de solution, pendant cinq soirs. Leur agitation mentale avant le sommeil a diminué, selon l'étude parue dans une revue de médecine comportementale du sommeil [10]. La méthode pas à pas se trouve dans l'article sur les [ruminations le soir](/ruminations-le-soir/).
+Le soir, donne à tes soucis un rendez-vous fixe, loin du lit. À l'Université Duke, en Caroline du Nord, deux chercheurs ont demandé en 2006 à 33 étudiants qui souffraient d'insomnie de noter leurs soucis, avec des pistes de solution, pendant cinq soirs. Leur agitation mentale avant le sommeil a diminué, selon l'étude parue dans une revue de médecine comportementale du sommeil [10]. La méthode pas à pas se trouve dans l'article sur les [ruminations le soir](/ruminations-le-soir/).
 
 Une fois au lit, garde la respiration lente comme point d'appui. Le Réseau Morphée, spécialisé dans les troubles du sommeil, explique sur Santé.fr que travailler sa respiration empêche les pensées de divaguer et aide à se concentrer sur autre chose que les pensées négatives [8].
 

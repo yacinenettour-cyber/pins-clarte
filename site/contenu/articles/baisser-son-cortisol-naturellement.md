@@ -21,7 +21,7 @@ Baisser son cortisol naturellement, ça veut dire aider cette hormone du stress 
 
 Non, pas au sens de le supprimer. Le cortisol t'aide à tenir face aux défis de la journée, et ce qu'on cherche, c'est seulement à protéger sa baisse du soir. Sa production suit le rythme de ton horloge interne [1], et le soir, sa sécrétion entre normalement dans une phase plus calme [2]. Ce creux du soir est fragile.
 
-En 1997, à l'Université de Chicago, Leproult et ses collègues ont privé de jeunes hommes de tout ou partie d'une nuit de sommeil, et publié leurs résultats dans une revue consacrée au sommeil. Le lendemain soir, leur cortisol était plus élevé de 37 à 45 %, et sa phase de repos démarrait au moins une heure plus tard [2]. Pour les auteurs, le manque de sommeil retarde la récupération de l'axe du stress [2]. Ce que tu fais de tes journées et de tes nuits compte donc vraiment.
+À l'Université de Chicago, Leproult et ses collègues ont privé de jeunes hommes de tout ou partie d'une nuit de sommeil, dans une étude parue en 1997 dans une revue consacrée au sommeil. Le lendemain soir, leur cortisol était plus élevé de 37 à 45 %, et sa phase de repos démarrait au moins une heure plus tard [2]. Pour les auteurs, le manque de sommeil retarde la récupération de l'axe du stress [2]. Ce que tu fais de tes journées et de tes nuits compte donc vraiment.
 
 Tu veux d'abord comprendre d'où vient cette hormone et à quoi elle sert ? Lis notre article [« Cortisol, hormone du stress »](/cortisol-hormone-du-stress/). Ici, on s'en tient aux gestes.
 
@@ -50,7 +50,7 @@ Dans la vie de tous les jours, il s'agit d'envoyer à ton horloge des signaux bi
 
 ## Quelle activité physique choisir pour ne pas faire grimper son cortisol ?
 
-Les jours tendus, choisis une activité de faible intensité, comme la marche. L'effort moyen ou intense fait monter le cortisol, l'effort léger non [3]. En 2008, une équipe de l'Université de Caroline du Nord à Chapel Hill a fait pédaler 12 hommes entraînés pendant 30 minutes, à trois intensités différentes, dans une étude parue dans une revue d'endocrinologie.
+Les jours tendus, choisis une activité de faible intensité, comme la marche. L'effort moyen ou intense fait monter le cortisol, l'effort léger non [3]. Une équipe de l'Université de Caroline du Nord à Chapel Hill a fait pédaler 12 hommes entraînés pendant 30 minutes, à trois intensités différentes (étude de 2008, parue dans une revue d'endocrinologie).
 
 | Intensité de l'effort (30 minutes de vélo) | Évolution du cortisol |
 |---|---|
@@ -78,13 +78,13 @@ Si compter te distrait, le [minuteur de respiration](/exercices-respiration/) do
 
 ## Les liens sociaux font-ils vraiment baisser le cortisol ?
 
-Oui, le soutien d'un proche réduit de façon mesurable la réponse de cortisol face à un stress [5]. En 2003, à l'Université de Zurich, Heinrichs et son équipe ont soumis 37 hommes en bonne santé à un test de stress social en laboratoire, dans une étude publiée par une revue de psychiatrie biologique. Ceux qui avaient pu parler avec leur meilleur ami pendant la préparation avaient une réponse de cortisol plus faible [5]. Ceux qui avaient eu à la fois ce soutien et de l'ocytocine en pulvérisation nasale avaient le cortisol le plus bas, et se sentaient plus calmes et moins anxieux [5].
+Oui, le soutien d'un proche réduit de façon mesurable la réponse de cortisol face à un stress [5]. À l'Université de Zurich, l'équipe de Heinrichs a soumis 37 hommes en bonne santé à un test de stress social en laboratoire. L'étude a paru en 2003 dans une revue de psychiatrie biologique. Ceux qui avaient pu parler avec leur meilleur ami pendant la préparation avaient une réponse de cortisol plus faible [5]. Ceux qui avaient eu à la fois ce soutien et de l'ocytocine en pulvérisation nasale avaient le cortisol le plus bas, et se sentaient plus calmes et moins anxieux [5].
 
 L'étude est petite et ne concerne que des hommes. Le geste, lui, est facile à tester. Avant un moment tendu, un entretien ou une réunion par exemple, appelle quelqu'un qui te fait du bien, ou écris-lui. Et garde des moments réguliers avec tes proches, même courts, sans attendre d'aller mal pour les voir.
 
 ## Faut-il arrêter le café pour baisser son cortisol ?
 
-Non, ce n'est pas nécessaire. Le problème, c'est surtout le café pris tard, parce qu'il abîme le sommeil [6]. En 2013, au centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, une équipe a montré dans une revue de médecine du sommeil qu'une forte dose de caféine (400 mg) perturbait le sommeil quel que soit le moment où on la prenait.
+Non, ce n'est pas nécessaire. Le problème, c'est surtout le café pris tard, parce qu'il abîme le sommeil [6]. Au centre des troubles du sommeil de l'hôpital Henry Ford de Détroit, une forte dose de caféine (400 mg) perturbait le sommeil quel que soit le moment où on la prenait, d'après une étude publiée en 2013 dans une revue de médecine du sommeil.
 
 | Prise de 400 mg de caféine | Effet sur le sommeil |
 |---|---|

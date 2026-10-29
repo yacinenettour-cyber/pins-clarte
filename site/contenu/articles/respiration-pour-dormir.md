@@ -23,7 +23,7 @@ La respiration pour dormir, ce sont des exercices où tu ralentis exprès ton so
 
 Parce que ça renforce l'activité du nerf vague, celui qui ralentit le cœur. Or chez beaucoup de personnes qui dorment mal, le corps reste en mode alerte [1][2].
 
-En 2022, Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont passé en revue 223 études dans une revue de neurosciences et de comportement. La respiration lente volontaire fait monter les indicateurs de l'activité du [nerf vague](/nerf-vague/) pendant l'exercice, juste après une séance, et aussi après plusieurs semaines de pratique [2].
+Laborde et ses collègues, à l'Université allemande du sport de Cologne, ont épluché 223 études pour une synthèse publiée en 2022 dans une revue de neurosciences et de comportement. La respiration lente volontaire fait monter les indicateurs de l'activité du [nerf vague](/nerf-vague/) pendant l'exercice, juste après une séance, et aussi après plusieurs semaines de pratique [2].
 
 Chez les personnes qui dorment mal, ce frein naturel tourne souvent au ralenti. Tsai et ses collègues l'ont observé au centre de recherche sur le sommeil de l'Université nationale Yang-Ming de Taipei, à Taïwan, dans une étude parue en 2015 dans une revue de psychophysiologie. Ils ont comparé 14 personnes qui se plaignaient d'insomnie à 14 bons dormeurs [1] :
 
@@ -126,7 +126,7 @@ Va voir ton médecin si tes difficultés à t'endormir reviennent au moins trois
 - l'angoisse monte au coucher ou te réveille en pleine nuit, et dans ce cas notre article sur l'[angoisse le soir](/angoisse-le-soir/) t'aide à faire le point ;
 - tu as envie de prendre des somnifères. Ne le fais pas seul, demande conseil à ton médecin [10].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Et si c'est le mental qui t'empêche de dormir, tu peux aussi voir directement un psychologue. Il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. L'Assurance maladie prend en charge certaines séances dans le cadre de Mon soutien psy. Les psychologues partenaires sont listés sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si des idées noires accompagnent ces nuits, appelle le 3114, le numéro national de prévention du suicide. Il est gratuit et joignable 24 h/24, 7 j/7 [12].
 

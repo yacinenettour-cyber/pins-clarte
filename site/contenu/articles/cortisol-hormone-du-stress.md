@@ -50,7 +50,7 @@ Pour le neuroendocrinologue Bruce McEwen, de l'Université Rockefeller, à New Y
 
 Parce qu'il suit un rythme quotidien, avec un taux beaucoup plus élevé tôt le matin que plus tard dans la journée [1]. On parle souvent d'un pic au réveil et d'un creux le soir. Cette montée du réveil est normale. Si c'est justement à ce moment-là que l'angoisse te tombe dessus, lis ce que l'on sait de l'[angoisse le matin](/angoisse-le-matin/).
 
-Cette descente entre le matin et le soir, les chercheurs l'appellent la pente diurne. En 2017, à l'Université Northwestern, aux États-Unis, l'équipe d'Emma Adam a réuni 80 études dans une méta-analyse parue dans une revue de psychoneuroendocrinologie [4]. Une pente plus plate y est associée à une moins bonne santé physique et émotionnelle [4].
+Cette descente entre le matin et le soir, les chercheurs l'appellent la pente diurne. L'équipe d'Emma Adam, à l'Université Northwestern, aux États-Unis, a réuni 80 études dans une méta-analyse publiée en 2017 par une revue de psychoneuroendocrinologie [4]. Une pente plus plate y est associée à une moins bonne santé physique et émotionnelle [4].
 
 | Forme de la courbe | Ce qui se passe | Ce que montrent les études |
 |---|---|---|

@@ -107,6 +107,9 @@ section { position: relative; z-index: 1; }
 .sous-titre { font-size: clamp(18px, 1.6vw, 21px); color: var(--champagne-doux); max-width: 33.6em; }
 .sous-titre strong { color: var(--champagne); font-weight: 600; }
 .cta-duo { display: flex; flex-wrap: wrap; gap: 12px; }
+.auteur-hero { display: flex; align-items: center; gap: 12px; margin: 0 0 22px; font-size: 15px; color: var(--champagne-doux); }
+.auteur-hero img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex: none; }
+.auteur-hero a { color: var(--champagne); }
 .reassurance { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; color: var(--champagne-doux); }
 .reassurance span { display: inline-flex; align-items: center; gap: 8px; }
 .reassurance span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--brume); box-shadow: 0 0 10px var(--brume); }
@@ -318,9 +321,10 @@ section { position: relative; z-index: 1; }
       <div class="hero-texte">
         <h1>
           <span class="kicker">Stress · <span class="insecable">Système nerveux</span> · Mieux dormir</span>
-          <span class="titre">Ton système nerveux mérite une <em>trêve.</em></span>
+          <span class="titre">Quand le cerveau refuse de <em>s'arrêter</em> le soir.</span>
         </h1>
-        <p class="sous-titre">Le soir, ton corps devrait ralentir : le cortisol, l'hormone du stress, est censé <strong>baisser</strong>. Quand le mental tourne encore au coucher, il redescend mal et le sommeil en pâtit. Fais le point en 2 minutes avec un questionnaire validé, puis essaie les gestes que la science a réellement testés pour <strong>calmer ton système nerveux</strong> et <strong>mieux dormir</strong>.</p>
+        <p class="sous-titre">Pendant deux ans, j'ai alterné les nuits compliquées et les nuits blanches. Le soir, le corps devrait ralentir et le cortisol, l'hormone du stress, <strong>baisser</strong>. Chez moi, le stress de la journée revenait en tête au moment de dormir. J'ai rassemblé ici ce que j'ai appris en cherchant des solutions, avec la source de chaque information, pour <strong>calmer ton système nerveux</strong> et <strong>mieux dormir</strong>.</p>
+        <p class="auteur-hero"><img src="{{B}}/img/yacine.jpg" width="44" height="44" alt="" loading="eager"><span>Yacine, qui écrit ce site. Je ne suis pas professionnel de santé. <a href="{{B}}/a-propos/">Mon histoire</a></span></p>
         <div class="cta-duo">
           <a class="btn btn-or btn-principal" href="#test">Faire le test <span class="fleche" aria-hidden="true">→</span></a>
           <a class="btn btn-verre" href="https://lp.contactapaisement-mental.fr/tonguide?utm_source=site&amp;utm_medium=landing&amp;utm_campaign=score-cortisol&amp;utm_content=hero">Recevoir le guide sommeil gratuit</a>
@@ -358,7 +362,7 @@ section { position: relative; z-index: 1; }
       <div class="entete-section">
         <p class="etiquette">Les gestes qui ont été étudiés</p>
         <h2>Stress et sommeil : 7 gestes anti-stress étudiés</h2>
-        <p>Le cortisol est une hormone produite par les glandes surrénales en réponse au stress ; son taux suit une courbe, haut le matin et bas le soir. Pas de cocktail miracle ni de complément magique : voici les gestes étudiés qui l'aident à suivre cette courbe. Le détail, étude par étude : <a href="{{B}}/baisser-son-cortisol-naturellement/">baisser son cortisol naturellement</a>.</p>
+        <p>Le cortisol est une hormone produite par les glandes surrénales en réponse au stress ; son taux suit une courbe, haut le matin et bas le soir. Je n'ai trouvé ni cocktail miracle ni complément magique. Ce qui existe, ce sont des gestes étudiés qui l'aident à suivre cette courbe. Le détail, étude par étude : <a href="{{B}}/baisser-son-cortisol-naturellement/">baisser son cortisol naturellement</a>.</p>
       </div>
       <ul class="bento" role="list">
         <li class="tuile t-circadien">
@@ -383,7 +387,7 @@ section { position: relative; z-index: 1; }
 
         <li class="tuile t-souffle">
           <div class="icone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M3 9h11a3 3 0 1 0-3-3M3 15h15a3 3 0 1 1-3 3M3 12h8"/></svg></div>
-          <h3>Respiration lente : l'anti-stress naturel le plus simple</h3>
+          <h3>Respiration lente : celle qui m'a aidé</h3>
           <p>Autour de 6 respirations par minute, la variabilité cardiaque liée au nerf vague augmente, d'après 223 études [8].</p>
           <div class="orbe-zone"><div class="orbe" id="orbe">Prêt</div></div>
           <button class="btn btn-verre btn-petit" id="lancer-souffle" type="button">Lancer 1 minute <span class="fleche" aria-hidden="true">→</span></button>
@@ -433,8 +437,8 @@ section { position: relative; z-index: 1; }
     <div class="wrap">
       <div class="entete-section">
         <p class="etiquette">Preuves</p>
-        <h2>Ce que la science mesure vraiment</h2>
-        <p>Chaque chiffre de cette page vient d'une étude publiée ou d'une source de santé publique : l'université, la revue et l'année sont indiquées sous chaque résultat, et les références complètes juste en dessous.</p>
+        <h2>Les chiffres, avec leurs sources</h2>
+        <p>Chaque chiffre de cette page vient d'une étude publiée ou d'une source de santé publique. Sous chaque résultat, tu trouves l'université, la revue et l'année. Les références complètes sont juste en dessous.</p>
       </div>
       <div class="registre">
         <div class="chiffre"><b data-cible="37" data-prefixe="+">+37<small>%</small></b><p>de cortisol le soir qui suit une nuit écourtée, et +45 % après une nuit blanche.</p><cite>Université de Chicago · Sleep, 1997 [1]</cite></div>

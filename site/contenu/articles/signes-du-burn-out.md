@@ -108,7 +108,7 @@ Consulte ton médecin traitant ou le médecin du travail dès que ta fatigue per
 - tu as besoin de plus d'alcool, de tabac ou d'autres produits pour tenir [2][3] ;
 - tu ressens des douleurs, des vertiges ou des troubles digestifs sans explication : un bilan s'impose [2].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+À côté du médecin, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre de Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 **En cas d'urgence.** Si tu as des idées suicidaires, ou si tu t'inquiètes pour un proche, appelle le **3114**, le numéro national de prévention du suicide : gratuit, joignable 24 h/24 et 7 j/7, avec un professionnel formé au bout du fil [6]. En cas de danger immédiat, compose le **15** (Samu) ou le **112**. Les personnes sourdes ou malentendantes peuvent joindre le **114**, y compris par SMS [7].
 

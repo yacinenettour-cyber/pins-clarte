@@ -60,7 +60,7 @@ Pas besoin de tout faire. Prends-en une ou deux, et essaie-les quelques soirs.
 
 ### 1. Programmer un moment pour t'inquiéter, plus tôt dans la soirée
 
-L'idée est de donner à tes soucis un rendez-vous fixe, loin du lit, pour qu'ils ne t'attendent pas sous la couette. Ça peut sembler étrange, mais ça a été testé. En 2006, à l'Université Duke, en Caroline du Nord, Carney et Waters ont suivi 33 étudiants souffrant d'insomnie, dans un travail publié par une revue de médecine du sommeil. Pendant cinq soirs, certains notaient leurs soucis avec des pistes de solution, d'autres se contentaient de noter leurs soucis. Chez les premiers, l'agitation mentale avant le sommeil a baissé davantage [5].
+L'idée est de donner à tes soucis un rendez-vous fixe, loin du lit, pour qu'ils ne t'attendent pas sous la couette. Ça peut sembler étrange, mais ça a été testé. Carney et Waters, à l'Université Duke, en Caroline du Nord, ont suivi 33 étudiants souffrant d'insomnie, dans un travail publié en 2006 par une revue de médecine du sommeil. Pendant cinq soirs, certains notaient leurs soucis avec des pistes de solution, d'autres se contentaient de noter leurs soucis. Chez les premiers, l'agitation mentale avant le sommeil a baissé davantage [5].
 
 1. Choisis un créneau de 10 à 15 minutes en début de soirée, assis à une table.
 2. Note chaque souci sur une feuille.
@@ -123,10 +123,10 @@ Parles-en à ton médecin si :
 - tes difficultés reviennent au moins trois nuits par semaine depuis plus d'un mois, avec des effets dans la journée : fatigue, difficultés de concentration, irritabilité [2] ;
 - elles durent depuis trois mois ou plus : l'Inserm parle alors d'insomnie chronique [1] ;
 - tes pensées du soir s'accompagnent d'une tristesse persistante ou d'une perte d'envie : l'INSV rappelle que l'insomnie peut être le premier signe d'une dépression [2] ;
-- quelqu'un a remarqué des pauses dans ta respiration pendant ton sommeil, ou tu ressens au coucher des sensations désagréables dans les jambes qui t'obligent à bouger [2] ;
+- on t'a fait remarquer que ta respiration s'arrête par moments pendant ton sommeil, ou des sensations désagréables dans les jambes t'obligent à bouger au coucher [2] ;
 - tu envisages de prendre des somnifères : ne le fais pas seul, demande d'abord conseil à ton médecin [2].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Les ruminations se travaillent aussi avec un psychologue, que tu peux consulter directement, sans passer d'abord par ton médecin. Il peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy. Tu trouveras les psychologues partenaires sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Si tes pensées deviennent des idées noires, appelle le 3114, le numéro national de prévention du suicide : gratuit, joignable 24 h/24 et 7 j/7, avec des infirmiers et des psychologues formés à l'écoute [8].
 

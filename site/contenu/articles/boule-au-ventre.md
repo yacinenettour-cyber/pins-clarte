@@ -87,7 +87,7 @@ En entraînant le frein du système nerveux les jours où tout va bien, en bouge
 
 S'entraîner à respirer lentement quand tout va bien, c'est ce qui rend le geste disponible le jour où le ventre se noue. En 2023, une équipe de l'Université Stanford a fait pratiquer 5 minutes d'exercice respiratoire ou de méditation par jour, pendant un mois, à 108 personnes. L'anxiété baissait après chaque séance, dans tous les groupes [11]. L'étude est racontée dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/), avec d'autres gestes rapides.
 
-Bouger compte aussi. En 2023, des chercheurs de l'Université d'Australie-Méridionale ont rassemblé 97 revues d'études dans une revue de médecine du sport. Leur conclusion va dans le sens d'un effet de l'activité physique sur les symptômes d'anxiété [12]. Dix minutes de marche après le repas de midi, c'est déjà un début.
+Bouger compte aussi. Toujours en 2023, des chercheurs de l'Université d'Australie-Méridionale ont rassemblé 97 revues d'études dans une synthèse parue dans une revue de médecine du sport. Leur conclusion va dans le sens d'un effet de l'activité physique sur les symptômes d'anxiété [12]. Dix minutes de marche après le repas de midi, c'est déjà un début.
 
 Et quand ce sont les mêmes soucis qui nouent le ventre jour après jour, tu peux essayer de leur fixer un rendez-vous. Dans un petit essai de l'Université de l'Illinois à Chicago, publié en 2013 dans une revue de thérapie comportementale, réserver chaque jour 30 minutes à ses soucis, à heure fixe, a fait baisser l'inquiétude et l'anxiété en deux semaines. Les auteurs parlent de résultats préliminaires [13]. La méthode est expliquée dans l'article sur l'[angoisse le matin](/angoisse-le-matin/).
 

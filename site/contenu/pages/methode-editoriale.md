@@ -3,11 +3,11 @@ titre: Méthode éditoriale : comment les articles sont écrits et vérifiés
 titre_seo: Méthode éditoriale et choix des sources | Clarté Mentale
 description: Comment Clarté Mentale choisit ses sources (Inserm, HAS, Assurance maladie, études), vérifie chaque affirmation, signale les limites et corrige ses erreurs.
 ---
-La méthode éditoriale de Clarté Mentale est l'ensemble des règles qui encadrent l'écriture de chaque article : partir de sources officielles et d'études publiées, vérifier chaque affirmation dans sa source, dire les limites des études, et indiquer quand consulter un médecin. Cette page les détaille, pour que tu puisses juger par toi-même de la fiabilité de ce que tu lis.
+La méthode éditoriale de Clarté Mentale, ce sont les règles que je suis pour écrire chaque article. Je pars de sources officielles et d'études publiées, je vérifie chaque affirmation dans sa source, je dis les limites des études et j'indique quand consulter un médecin. Je les détaille ici pour que tu puisses juger toi-même de la fiabilité de ce que tu lis.
 
 ## Quelles sources sont utilisées, et dans quel ordre ?
 
-Les sources sont choisies selon une hiérarchie : d'abord les organismes officiels de santé, ensuite les références médicales, puis les études scientifiques publiées.
+Je choisis les sources dans cet ordre. D'abord les organismes officiels de santé, ensuite les références médicales, puis les études scientifiques publiées.
 
 | Niveau | Type de source | Exemples | Ce qu'on y cherche |
 |---|---|---|---|
@@ -17,15 +17,15 @@ Les sources sont choisies selon une hiérarchie : d'abord les organismes officie
 | 4 | Études isolées | Essai de l'Université Stanford sur la respiration (2023), étude de l'Université de Chicago sur le sommeil et le cortisol (1997) | Des pistes précises, toujours présentées avec leurs limites |
 | En complément | Sites d'information spécialisés | Sleep Foundation | Du contexte (l'origine d'une expression, par exemple), jamais comme seule base d'un conseil |
 
-Ne sont jamais utilisés comme preuve : les témoignages, les blogs personnels, les vidéos virales et les tendances des réseaux sociaux. Quand un article en parle, c'est pour les confronter aux sources ci-dessus.
+Je n'utilise jamais comme preuve les témoignages, les blogs personnels, les vidéos virales ou les tendances des réseaux sociaux. Quand un article en parle, c'est pour les confronter aux sources ci-dessus.
 
 ## Comment un article est-il écrit et vérifié ?
 
-Un article suit sept étapes, toujours dans le même ordre :
+J'écris chaque article en sept étapes, toujours dans le même ordre.
 
-1. **Partir d'une vraie question.** Les sujets viennent de ce que les gens cherchent réellement sur Pinterest et sur Google : « réveil à 4 h du matin », « baisser son cortisol », « charge mentale »…
-2. **Chercher les sources dans l'ordre de la hiérarchie** ci-dessus, en commençant par les organismes officiels français.
-3. **Ouvrir et relire chaque source.** Chaque affirmation est vérifiée dans le texte de la source qu'elle cite ; les chiffres sont recopiés tels quels, sans arrondi flatteur.
+1. **Partir d'une vraie question.** Les sujets viennent de ce que les gens cherchent sur Pinterest et sur Google, comme « réveil à 4 h du matin », « baisser son cortisol » ou « charge mentale ».
+2. **Chercher les sources dans l'ordre ci-dessus**, en commençant par les organismes officiels français.
+3. **Ouvrir et relire chaque source.** Chaque affirmation est vérifiée dans le texte de la source qu'elle cite. Les chiffres sont recopiés tels quels, sans arrondi flatteur.
 4. **Nommer les études.** Dans le texte, chaque étude est présentée avec son université ou son hôpital et son année, et le type de revue est décrit en français. Le nom exact de la revue et le lien sont dans la liste des sources. Ces informations sont vérifiées dans les bases scientifiques (Europe PMC, PubMed, Crossref).
 5. **Dire les limites.** Petit nombre de participants, étude menée uniquement chez des hommes, en laboratoire, ou simple association statistique : quand c'est le cas, l'article l'écrit.
 6. **Ajouter une section « Quand consulter ? »**, avec les signes qui justifient un avis médical et les numéros d'urgence (15, 112, 3114).
@@ -33,24 +33,24 @@ Un article suit sept étapes, toujours dans le même ordre :
 
 ## Comment les articles sont-ils présentés ?
 
-Chaque article est construit pour qu'on trouve vite la réponse, puis la preuve :
+J'organise chaque article pour qu'on trouve vite la réponse, puis la preuve.
 
-- **« L'essentiel en 30 secondes »** résume l'article en quatre points ;
-- **chaque partie commence par une réponse directe**, souvent une définition, avant le détail ;
-- **des listes et des tableaux comparatifs** rendent les repères faciles à retenir ;
-- **chaque affirmation importante porte un numéro** qui renvoie à sa source, en bas de page, avec le type de source indiqué (organisme officiel, référence médicale, étude scientifique).
+- « L'essentiel en 30 secondes » résume l'article en quelques points.
+- Chaque partie commence par une réponse directe, souvent une définition, avant le détail.
+- Des listes et des tableaux comparatifs rendent les repères faciles à retenir.
+- Chaque affirmation importante porte un numéro qui renvoie à sa source, en bas de page, avec le type de source indiqué (organisme officiel, référence médicale, étude scientifique).
 
 ## Quels outils sont utilisés ?
 
-La recherche documentaire et la rédaction s'appuient sur des outils numériques, dont des outils d'intelligence artificielle. Ces outils ne sont jamais une source : chaque information publiée renvoie à une source identifiée, ouverte et relue, citée en bas de l'article.
+Pour la recherche documentaire et la rédaction, je m'aide d'outils numériques, dont des outils d'intelligence artificielle. Ces outils ne sont jamais une source : chaque information publiée renvoie à une source identifiée, ouverte et relue, citée en bas de l'article. Mon expérience personnelle, elle, vient de moi seul, et je ne la présente jamais comme une preuve.
 
 ## Quels sont les liens d'intérêt ?
 
-Clarté Mentale n'affiche **aucune publicité**, ne contient **aucun lien affilié** et ne publie **aucun article sponsorisé**. Le site propose un guide gratuit, présenté comme tel à la fin des articles, et un programme payant, « Quand le cerveau refuse de dormir » (37 €), présenté sur sa page et dans les e-mails reçus après l'inscription au guide. Ces ressources sont des outils de bien-être : elles ne sont ni un traitement ni une thérapie, et les articles ne promettent jamais qu'elles guérissent quoi que ce soit.
+Clarté Mentale n'affiche aucune publicité, ne contient aucun lien affilié et ne publie aucun article sponsorisé. Le site propose un guide gratuit, présenté comme tel à la fin des articles, et un programme payant, « Quand le cerveau refuse de dormir » (37 €), présenté sur sa page et dans les e-mails reçus après l'inscription au guide. Ces ressources sont des outils de bien-être : elles ne sont ni un traitement ni une thérapie, et les articles ne promettent jamais qu'elles guérissent quoi que ce soit.
 
 ## Les contenus sont-ils relus par un professionnel de santé ?
 
-Une seule page à ce jour : le [test de stress et d'anxiété](/test-stress-anxiete/) a été relu le 26 octobre 2026 par Pélagie Micalet, psychologue clinicienne (TCC) spécialisée dans les troubles du sommeil et de l'anxiété. Les articles, eux, n'ont pas encore été relus par un professionnel de santé, et je préfère te le dire clairement. Voici comment la relecture fonctionne :
+Une seule page à ce jour : le [test de stress et d'anxiété](/test-stress-anxiete/) a été relu le 26 octobre 2026 par Pélagie Micalet, psychologue clinicienne (TCC) spécialisée dans les troubles du sommeil et de l'anxiété. Les articles, eux, n'ont pas encore été relus par un professionnel de santé, et je préfère te le dire clairement. La relecture fonctionnera ainsi.
 
 | Point | Ce qui est prévu |
 |---|---|
@@ -63,7 +63,7 @@ Pour les pages non relues, chaque article suit la méthode décrite sur cette pa
 
 ## Comment signaler une erreur ?
 
-Écris à [yavo88@hotmail.com](mailto:yavo88@hotmail.com) en précisant l'article et le passage concerné. Si l'erreur est confirmée, l'article est corrigé et sa date de mise à jour change.
+Écris-moi à [yavo88@hotmail.com](mailto:yavo88@hotmail.com) en précisant l'article et le passage concerné. Si l'erreur est confirmée, je corrige l'article et sa date de mise à jour change.
 
 ## Ce que ce site n'est pas
 

@@ -73,3 +73,27 @@ mettre des illustrations, je veux dire. » Tout exercice décrit sur le site (pa
   ou `{{VISUEL:nom}}` dans le texte d'une page) : mêmes durées et même ordre que la consigne écrite, libellés en
   français, `role="img"` avec un titre accessible, `currentColor` et variables du thème (clair et sombre), lisible en noir
   et blanc (motif et libellé par phase, jamais la couleur seule).
+
+## 2e passe (29/10/2026) : formules répétées d'un article à l'autre
+
+Demande de l'utilisateur : « Analyse tout le site […] fais en sorte que même les logiciels qui détectent l'IA ne
+repèrent pas. » Mesure avant/après (script d'audit : tics par 1 000 mots, longueur des phrases, deux-points, gras,
+formules) : les tics de vocabulaire étaient déjà rares depuis le 21/10 ; ce qui restait, c'était la répétition **entre
+les articles** :
+
+- « En 20XX, une équipe de l'Université X, [pays], a … dans une revue de … » : 52 phrases ouvertes par « En 20XX, »,
+  ramenées à 13 ; tournures variées (année au milieu ou en fin, parenthèse « (étude de 2013, parue dans une revue de…) »,
+  sujet = l'université), sans rien retirer : université, revue décrite en français et année restent dans le texte.
+  Phrases bancales corrigées (« a interrogé 13 000 personnes, dans une revue de médecine respiratoire »).
+- Le paragraphe « Le médecin n'est pas ta seule porte d'entrée… » était identique dans 11 articles : une version par
+  article, adaptée au sujet, mêmes faits (psychologue en accès direct, TCC en exemple, Mon soutien psy, annuaire).
+- Intertitres en série (« Parce que… » ×5 dans Sommeil léger) et puces identiques entre articles variés.
+- Accueil : le haut de page parle à la première personne avec le vécu déjà validé (vecu-auteur.md), photo et lien
+  « Mon histoire » ; formules publicitaires retirées (« l'anti-stress naturel le plus simple », « Ce que la science
+  mesure vraiment »). Méthode éditoriale réécrite à la première personne, gras réduit.
+
+**Limites dites à l'utilisateur** : aucun outil ne peut garantir qu'un détecteur d'IA ne signalera rien (ces
+logiciels se trompent souvent, y compris sur des textes écrits à la main) ; pas d'astuces destinées à tromper les
+détecteurs (fautes volontaires, caractères invisibles, synonymes au hasard) : elles abîment la lecture et le
+référencement. La page /methode-editoriale/ continue de dire que des outils d'IA aident à la recherche et à la
+rédaction. Le seul vrai levier restant : du vécu réel de l'auteur, qu'on ne peut pas inventer.

@@ -25,11 +25,11 @@ Parce que les muscles qui servent à mâcher font partie de ceux qui se contract
 
 Le lien se voit aussi dans les études, même s'il reste imparfait. Une méta-analyse de l'Université fédérale du Pará, au Brésil, trouve que les personnes stressées ont environ deux fois plus de risque de serrer ou de grincer des dents, avec une certitude jugée faible par les auteurs eux-mêmes. Notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/) la détaille [7].
 
-Une étude récente montre le phénomène presque en direct. En 2025, une équipe de l'Université de Tel-Aviv a demandé à de jeunes adultes de noter à différents moments de la journée, sur une application, ce que faisait leur mâchoire à cet instant : muscles relâchés, dents en contact, dents serrées. Elle a comparé un groupe interrogé en temps de paix à un autre interrogé pendant la guerre, dans une revue de réhabilitation buccale. Pendant la guerre, la mâchoire était moins souvent relâchée. Et les personnes qui récupéraient le mieux après un événement stressant avaient plus souvent les muscles détendus [8].
+Une étude récente montre le phénomène presque en direct. En 2025, une équipe de l'Université de Tel-Aviv a demandé à de jeunes adultes de noter à différents moments de la journée, sur une application, ce que faisait leur mâchoire à cet instant : muscles relâchés, dents en contact, dents serrées. Elle a comparé un groupe interrogé en temps de paix à un autre interrogé pendant la guerre (étude parue dans une revue de réhabilitation buccale). Pendant la guerre, la mâchoire était moins souvent relâchée. Et les personnes qui récupéraient le mieux après un événement stressant avaient plus souvent les muscles détendus [8].
 
 ## Qu'est-ce que le bruxisme ?
 
-C'est le nom donné au fait de serrer ou de grincer des dents de façon répétée, ou de bloquer et pousser la mâchoire. En 2018, un groupe international d'experts réuni autour du Centre universitaire de médecine dentaire d'Amsterdam en a précisé la définition. Il distingue deux formes : le bruxisme du sommeil, et le bruxisme d'éveil, fait de contacts répétés ou prolongés entre les dents, ou d'une mâchoire qu'on bloque [3].
+C'est le nom donné au fait de serrer ou de grincer des dents de façon répétée, ou de bloquer et pousser la mâchoire. Un groupe international d'experts réuni autour du Centre universitaire de médecine dentaire d'Amsterdam en a précisé la définition en 2018. Il distingue deux formes : le bruxisme du sommeil, et le bruxisme d'éveil, fait de contacts répétés ou prolongés entre les dents, ou d'une mâchoire qu'on bloque [3].
 
 Ces experts ajoutent un point rassurant. Chez une personne par ailleurs en bonne santé, le bruxisme ne doit pas être vu comme une maladie, mais comme un comportement, qui peut parfois avoir des conséquences [3]. On ne cherche donc pas à « guérir » une mâchoire qui se serre de temps en temps, mais à éviter qu'elle fasse mal ou use les dents.
 
@@ -39,7 +39,7 @@ C'est la forme la plus liée au stress. Une revue de l'Université de Malmö, en
 
 ### La nuit : grincer des dents en dormant
 
-Elle est un peu moins fréquente. En 2013, une revue de l'Université de Padoue, en Italie, estimait qu'environ 13 % des adultes disent grincer souvent des dents la nuit, contre 22 à 31 % pour la forme de jour. Ces chiffres reposent surtout sur des questionnaires, ce qui les rend fragiles, préviennent les auteurs [4].
+Elle est un peu moins fréquente. Une synthèse de l'Université de Padoue, en Italie, estimait en 2013 qu'environ 13 % des adultes disent grincer souvent des dents la nuit, contre 22 à 31 % pour la forme de jour. Ces chiffres reposent surtout sur des questionnaires, ce qui les rend fragiles, préviennent les auteurs [4].
 
 Comme on dort, on le découvre souvent par quelqu'un d'autre, ou par ses conséquences : mâchoire raide au réveil, maux de tête, dents sensibles [1].
 
@@ -62,7 +62,7 @@ Quand la mâchoire elle-même souffre, on parle de troubles de l'articulation te
 
 Le tabac, l'alcool, le café et certains troubles du sommeil reviennent souvent. Le NHS cite aussi certains médicaments pour dormir ou contre la dépression et l'anxiété [1].
 
-En 2001, une équipe de l'Université Stanford, aux États-Unis, a interrogé par téléphone plus de 13 000 personnes au Royaume-Uni, en Allemagne et en Italie, dans une revue de médecine respiratoire. 8,2 % disaient grincer des dents en dormant au moins une fois par semaine. Le risque était plus élevé chez les personnes qui avaient des apnées du sommeil ou qui buvaient beaucoup d'alcool, et dans une moindre mesure chez celles qui ronflaient fort, buvaient du café, fumaient, menaient une vie très stressante ou souffraient d'anxiété [6].
+Une enquête de l'Université Stanford, aux États-Unis, publiée en 2001 dans une revue de médecine respiratoire, a interrogé par téléphone plus de 13 000 personnes au Royaume-Uni, en Allemagne et en Italie. 8,2 % disaient grincer des dents en dormant au moins une fois par semaine. Le risque était plus élevé chez les personnes qui avaient des apnées du sommeil ou qui buvaient beaucoup d'alcool, et dans une moindre mesure chez celles qui ronflaient fort, buvaient du café, fumaient, menaient une vie très stressante ou souffraient d'anxiété [6].
 
 Si un de tes médicaments t'inquiète, ne l'arrête pas de toi-même. Parles-en au médecin qui te l'a prescrit.
 
@@ -72,7 +72,7 @@ Commence par le geste le plus simple : en dehors des repas, tes dents ne devraie
 
 ### Se surprendre en train de serrer
 
-Le bruxisme d'éveil passe inaperçu. Le plus utile est souvent de le remarquer. En 2026, une revue de l'Université de Sydney, en Australie, a passé en revue les traitements du bruxisme d'éveil, dans une revue de santé bucco-dentaire. Elle n'a trouvé que 9 études, avec 165 participants au total, et aucune recommandation officielle. Mais ces études allaient plutôt dans le même sens : rappels réguliers, appareils qui signalent la contraction (biofeedback), exercices pour changer l'habitude et conseils pour se prendre en charge semblaient aider [10].
+Le bruxisme d'éveil passe inaperçu. Le plus utile est souvent de le remarquer. L'Université de Sydney, en Australie, a fait le tour des traitements du bruxisme d'éveil dans une synthèse publiée en 2026 par une revue de santé bucco-dentaire. Elle n'a trouvé que 9 études, avec 165 participants au total, et aucune recommandation officielle. Mais ces études allaient plutôt dans le même sens : rappels réguliers, appareils qui signalent la contraction (biofeedback), exercices pour changer l'habitude et conseils pour se prendre en charge semblaient aider [10].
 
 Tu peux faire simple. Choisis un rappel qui revient souvent dans ta journée, une notification, le feu rouge, chaque fois que tu ouvres ta messagerie. À chaque fois, vérifie ta mâchoire et desserre les dents. Les preuves sont limitées, mais l'essai ne coûte rien.
 

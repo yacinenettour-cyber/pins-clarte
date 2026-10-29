@@ -25,7 +25,7 @@ Quand tu es stressé, ton corps libère du cortisol, l'[hormone du stress](/cort
 
 ## Le stress change-t-il ce que l'on mange ?
 
-Oui, chez une partie des gens. Le stress peut donner envie de manger plus, et plutôt sucré. En 2001, une équipe de l'Université de Californie à San Francisco a fait passer à 59 femmes en bonne santé deux séances en laboratoire, une stressante et une neutre, à des jours différents, puis a publié ses résultats dans une revue consacrée aux hormones et au psychisme [1].
+Oui, chez une partie des gens. Le stress peut donner envie de manger plus, et plutôt sucré. À l'Université de Californie à San Francisco, une équipe a fait venir 59 femmes en bonne santé au laboratoire deux jours différents, une fois pour une séance stressante, une fois pour une séance neutre. L'étude date de 2001 et a paru dans une revue consacrée aux hormones et au psychisme [1].
 
 - Celles dont le cortisol réagissait le plus au stress ont mangé plus de calories le jour stressant, mais pas plus que les autres le jour neutre [1].
 - Ces mêmes femmes mangeaient nettement plus sucré, quel que soit le jour [1].
@@ -55,7 +55,7 @@ Attention, ces études utilisaient des compléments à forte dose [2][3]. Dans l
 
 ### Le magnésium
 
-Le magnésium aide les nerfs et les muscles à fonctionner. On le trouve dans les légumes secs, les fruits à coque, les graines, les céréales complètes et les légumes verts à feuilles, les épinards par exemple [5]. En 2017, à l'Université de Leeds, en Angleterre, une équipe a passé en revue 18 études sur le sujet dans une revue de nutrition [4]. Le bilan est mitigé.
+Le magnésium aide les nerfs et les muscles à fonctionner. On le trouve dans les légumes secs, les fruits à coque, les graines, les céréales complètes et les légumes verts à feuilles, les épinards par exemple [5]. L'Université de Leeds, en Angleterre, a repris 18 études sur le sujet en 2017, pour une synthèse parue dans une revue de nutrition [4]. Le bilan est mitigé.
 
 - Toutes portaient sur des personnes déjà vulnérables à l'anxiété, qu'il s'agisse d'anxiété légère, de syndrome prémenstruel, de la période qui suit l'accouchement ou d'hypertension [4].
 - Les résultats vont dans le sens d'un effet bénéfique sur l'anxiété ressentie, mais la qualité des preuves est jugée faible [4].
@@ -65,7 +65,7 @@ Donc non, le magnésium n'est pas un anti-stress prouvé. Le plus sûr reste d'e
 
 ### Moins d'aliments ultra-transformés
 
-Les sodas, beaucoup de biscuits et de plats préparés : ce sont des aliments ultra-transformés, des produits industriels que les chercheurs classent avec la classification Nova [6]. En 2024, des chercheurs de l'Université Deakin, en Australie, ont publié dans une grande revue médicale britannique une synthèse qui rassemble 45 analyses et près de 10 millions de participants [6].
+Les sodas, beaucoup de biscuits et de plats préparés : ce sont des aliments ultra-transformés, des produits industriels que les chercheurs classent avec la classification Nova [6]. Des chercheurs de l'Université Deakin, en Australie, ont rassemblé 45 analyses et près de 10 millions de participants dans une synthèse publiée en 2024 par une grande revue médicale britannique [6].
 
 - Manger plus d'ultra-transformés allait de pair avec plus d'anxiété, avec un niveau de preuve jugé « convaincant » [6].
 - Cela allait aussi avec plus de troubles du sommeil, preuve jugée « très évocatrice » [6].
@@ -86,7 +86,7 @@ Le café et l'alcool, quand on en abuse. Le premier parce que la caféine stimul
 
 Pour la caféine, des chercheurs du centre médical des anciens combattants d'Oklahoma City ont suivi 96 jeunes adultes en bonne santé pendant 4 semaines, dans une étude parue en 2005 dans une revue de médecine psychosomatique [8]. Après 5 jours sans caféine, en reprendre a nettement fait monter le cortisol sur toute la journée [8]. Chez ceux qui en prenaient tous les jours, la réponse était plus faible, mais elle ne disparaissait pas [8].
 
-Le sommeil en pâtit aussi. En 2013, à l'hôpital Henry Ford de Détroit, une équipe a donné 400 mg de caféine au coucher, 3 heures avant ou 6 heures avant, et l'a raconté dans une revue de médecine du sommeil. Dans les trois cas, le sommeil était perturbé par rapport à un placebo [9]. Leur conseil : éviter une grosse dose de caféine au moins 6 heures avant d'aller au lit [9]. L'Autorité européenne de sécurité des aliments (EFSA) ajoute qu'une seule dose de 100 mg peut déjà gêner le sommeil de certains adultes si elle est prise près du coucher [10].
+Le sommeil en pâtit aussi. Une équipe de l'hôpital Henry Ford, à Détroit, a donné 400 mg de caféine au coucher, 3 heures avant ou 6 heures avant (étude de 2013, publiée dans une revue de médecine du sommeil). Dans les trois cas, le sommeil était perturbé par rapport à un placebo [9]. Leur conseil : éviter une grosse dose de caféine au moins 6 heures avant d'aller au lit [9]. L'Autorité européenne de sécurité des aliments (EFSA) ajoute qu'une seule dose de 100 mg peut déjà gêner le sommeil de certains adultes si elle est prise près du coucher [10].
 
 ## Comment composer une assiette anti-stress ?
 

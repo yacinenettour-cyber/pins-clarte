@@ -71,7 +71,7 @@ C'est une respiration toute bête : deux inspirations par le nez, puis une longu
 Il faut rester honnête sur cette étude. Les groupes étaient petits, la pratique se faisait à distance et le suivi n'a duré qu'un mois [2]. C'est une piste sérieuse. Ce n'est pas une garantie.
 
 ### 2. La respiration lente (5 minutes)
-Respirer lentement, c'est descendre sous les 10 respirations par minute [3]. En 2018, des chercheurs de l'Université de Pise, en Italie, ont passé en revue 15 études sur le sujet dans une revue de neurosciences [3]. Ce rythme va de pair avec une variabilité cardiaque plus élevée et un parasympathique qui prend le dessus, en passant par le [nerf vague](/nerf-vague/). Les gens disaient aussi se sentir plus détendus et moins anxieux [3]. Les auteurs le reconnaissent eux-mêmes : les études restent peu nombreuses et très différentes les unes des autres [3].
+Respirer lentement, c'est descendre sous les 10 respirations par minute [3]. Des chercheurs de l'Université de Pise, en Italie, ont repris 15 études sur le sujet en 2018, dans une synthèse parue dans une revue de neurosciences [3]. Ce rythme va de pair avec une variabilité cardiaque plus élevée et un parasympathique qui prend le dessus, en passant par le [nerf vague](/nerf-vague/). Les gens disaient aussi se sentir plus détendus et moins anxieux [3]. Les auteurs le reconnaissent eux-mêmes : les études restent peu nombreuses et très différentes les unes des autres [3].
 
 Pour essayer, inspire par le nez en comptant 4 secondes, puis expire sur 6 secondes. Ça te fait 6 respirations par minute. Si la tête te tourne un peu, reprends simplement ton rythme naturel. Compter t'agace ? Le [minuteur de respiration](/exercices-respiration/) marque chaque inspiration et chaque expiration d'un bol chantant. Tu peux aussi imprimer la [fiche des 5 exercices de respiration](/fiche-respiration/), soupir physiologique compris, et la garder dans ton sac ou sur ton bureau.
 
@@ -123,7 +123,7 @@ Va voir ton médecin traitant si ton anxiété dure, revient sous forme de crise
 - ces crises se répètent et tu évites certaines situations par peur d'en refaire une : c'est le tableau du trouble panique [8] ;
 - l'anxiété a un retentissement important sur ta vie de tous les jours [8].
 
-Le médecin n'est pas ta seule porte d'entrée. Pour le stress, l'anxiété, les ruminations ou un sommeil qui se dérègle à cause du mental, un psychologue peut t'aider à comprendre ce qui se passe et à le travailler, par exemple avec une thérapie cognitive et comportementale. Tu peux prendre rendez-vous directement avec lui. Certaines séances sont remboursées par l'Assurance maladie dans le cadre du dispositif Mon soutien psy, et l'annuaire des psychologues partenaires est sur [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
+Pour un système nerveux qui reste en alerte, tu n'es pas obligé de commencer par ton médecin. Tu peux prendre rendez-vous directement avec un psychologue, qui t'aidera à comprendre ce qui entretient cette tension et à la travailler, par exemple avec une thérapie cognitive et comportementale. Avec le dispositif Mon soutien psy, l'Assurance maladie rembourse certaines séances. Les psychologues partenaires sont dans l'annuaire [monsoutienpsy.ameli.fr](https://monsoutienpsy.ameli.fr/).
 
 Une douleur dans la poitrine ou un malaise inhabituel, c'est le 15 ou le 112. Ne fais pas le diagnostic toi-même. Si tu as des idées noires ou suicidaires, appelle le 3114, le numéro national de prévention du suicide, gratuit, 24 h/24 et 7 j/7.
 
