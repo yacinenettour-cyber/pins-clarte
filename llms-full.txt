@@ -182,7 +182,7 @@ Oui. Ce sont deux noms pour les mêmes pensées qui tournent en boucle sans jama
 # Réveil à 4h du matin : pourquoi ça arrive et que faire sur le moment
 
 Adresse : https://www.contactapaisement-mental.fr/reveil-4h-du-matin/
-Mis à jour le 21 octobre 2026 — par Yacine
+Mis à jour le 29 octobre 2026 — par Yacine
 
 Le réveil nocturne à 4h du matin, c'est un éveil en fin de nuit, au moment où le sommeil devient naturellement plus léger [1]. Il tient souvent à plusieurs choses à la fois. Ton sommeil est plus léger, ton cortisol remonte naturellement, et le stress ou l'alcool de la veille rendent cette période plus fragile. Quelques gestes simples peuvent t'aider à te rendormir, et si ces réveils s'installent, parles-en à ton médecin.
 
@@ -324,7 +324,7 @@ L'alcool aide d'abord à s'endormir, mais à doses élevées, il peut perturber 
 
 Si tu ne te rendors pas au bout d'une vingtaine de minutes, mieux vaut te lever, faire quelque chose de calme et revenir quand la somnolence revient [3]. Le matin, si tu es réveillé, inutile de prolonger à tout prix [3]. Et après une mauvaise nuit, le sommeil lent de la nuit suivante est plus profond [1], ce qui devrait te rassurer un peu.
 
-### Et pour un réveil à 2 h ou 3 h du matin ?
+### Et pour un réveil à 2 h, 3 h ou 5 h du matin ?
 
 Les mêmes repères valent. Ce qui compte surtout, c'est de savoir si tu te rendors et comment tu te sens dans la journée. Le stress, l'alcool du soir et la lumière fragilisent le sommeil quelle que soit l'heure [3][5], et les gestes de cet article s'appliquent de la même façon. L'heure précise du réveil n'a pas de signification particulière. Consulte si ces réveils reviennent plusieurs nuits par semaine avec de la fatigue dans la journée [3].
 
@@ -608,7 +608,7 @@ L'Assurance Maladie déconseille les grasses matinées, qui décalent le rythme 
 # Cortisol, hormone du stress : son rôle, son rythme et les idées reçues
 
 Adresse : https://www.contactapaisement-mental.fr/cortisol-hormone-du-stress/
-Mis à jour le 25 octobre 2026 — par Yacine
+Mis à jour le 29 octobre 2026 — par Yacine
 
 Le cortisol est une hormone de la famille des glucocorticoïdes. Les glandes surrénales le fabriquent quand le cerveau le leur demande [1]. Son taux est beaucoup plus élevé tôt le matin que plus tard dans la journée [1]. Sur le moment, il aide ton corps à mobiliser son énergie devant un défi, et c'est surtout un stress intense et durable qui peut dérégler cet équilibre [2].
 
@@ -619,7 +619,7 @@ Le cortisol est une hormone de la famille des glucocorticoïdes. Les glandes sur
 - Sur le moment, il te donne l'énergie pour faire face. Ce qui peut dérégler l'équilibre, c'est un stress intense et qui dure.
 - Le « visage cortisol » des réseaux ne se juge pas dans un miroir. Les vraies maladies du cortisol, c'est l'affaire du médecin.
 
-## Qu'est-ce que le cortisol, l'hormone du stress ?
+## Qu'est-ce que le cortisol ? Définition de l'hormone du stress
 
 C'est une hormone glucocorticoïde, produite par la partie externe (le cortex) des glandes surrénales. Ces deux petites glandes sont posées au-dessus des reins [1]. Chacune a deux parties, et elles ne font pas le même travail [1].
 
@@ -760,6 +760,10 @@ Non, il est même indispensable. C'est lui qui fournit au corps l'énergie pour 
 ### À quel moment de la journée le cortisol est-il le plus élevé ?
 
 Tôt le matin. Son taux est beaucoup plus haut en début de journée que plus tard [1], puis il descend peu à peu vers le soir, et c'est tout à fait normal.
+
+### Quelles sont les hormones du stress ?
+
+On en cite surtout deux, toutes deux produites par les glandes surrénales : l'adrénaline et le cortisol [1]. L'adrénaline agit tout de suite, le cortisol prend le relais peu après si la situation dure [2].
 
 ### Quelle est la différence entre l'adrénaline et le cortisol ?
 
@@ -1294,7 +1298,7 @@ Pas directement. Les chercheurs se servent de la variabilité de la fréquence c
 # Calmer son système nerveux : 6 gestes pour se calmer rapidement
 
 Adresse : https://www.contactapaisement-mental.fr/calmer-son-systeme-nerveux/
-Mis à jour le 25 octobre 2026 — par Yacine
+Mis à jour le 29 octobre 2026 — par Yacine
 
 Calmer son système nerveux (on dit aussi le réguler), ça veut dire aider le parasympathique, le « frein » de l'organisme, à reprendre le dessus sur le mode alerte. Le geste le plus simple consiste à ralentir ta respiration en allongeant l'expiration, parce que respirer lentement favorise l'activité de ce frein [3]. Le soupir physiologique, la relaxation musculaire ou l'ancrage par les cinq sens peuvent aussi faire redescendre la pression en quelques minutes. On les voit un par un.
 
@@ -1448,7 +1452,7 @@ Oui, c'est mieux. Dans l'essai de Stanford, les participants pratiquaient 5 minu
 
 Non. Ce sont de bons outils pour le quotidien, mais ils ne remplacent pas l'avis d'un médecin ou d'un psychologue. Si l'anxiété dure ou si les crises se répètent, consulte [8].
 
-### Que faire en cas de tension nerveuse ?
+### Comment calmer ses nerfs en cas de tension nerveuse ?
 
 Une tension nerveuse, c'est un corps resté bloqué en mode alerte. Les épaules remontent, la mâchoire se serre, le souffle devient court. L'« accélérateur », le sympathique, a pris le dessus sur le « frein », le parasympathique [1]. Commence par allonger ton expiration quelques minutes [2], puis bouge un peu, 10 minutes de marche par exemple [6]. Si ça dure des semaines ou que l'angoisse s'en mêle, parles-en à ton médecin.
 
@@ -1852,7 +1856,7 @@ On voit se dessiner un cercle qui s'entretient tout seul. Le stress active l'axe
 
 ## Le cortisol explique-t-il les réveils à 4 h du matin ?
 
-En partie seulement. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit, et chaque réveil s'accompagne d'une petite hausse [3]. Rien d'anormal là-dedans. Seulement, le stress, l'alcool du soir ou la lumière rendent aussi plus fragile cette période où le sommeil est plus léger. Les causes, et ce qu'on peut faire sur le moment, sont dans l'article [réveil à 4h du matin](/reveil-4h-du-matin/).
+En partie seulement. Chez tout le monde, le cortisol remonte normalement pendant la seconde moitié de la nuit, et chaque réveil s'accompagne d'une petite hausse [3]. Rien d'anormal là-dedans. Seulement, le stress, l'alcool du soir ou la lumière rendent aussi plus fragile cette période où le sommeil est plus léger. Les causes, et ce qu'on peut faire sur le moment, sont dans l'article [réveil à 4h du matin](/reveil-4h-du-matin/). Et si c'est le moindre bruit qui te tire du sommeil, celui sur le [sommeil léger](/sommeil-leger/) explique ce qui le rend si fragile.
 
 ## Cortisol élevé la nuit : est-ce normal ?
 
@@ -2092,7 +2096,7 @@ Oui. Chez les personnes anxieuses, c'est surtout l'endormissement qui coince [3]
 # Respiration pour dormir : 4-7-8, carrée ou lente, ce qui marche vraiment
 
 Adresse : https://www.contactapaisement-mental.fr/respiration-pour-dormir/
-Mis à jour le 21 octobre 2026 — par Yacine
+Mis à jour le 29 octobre 2026 — par Yacine
 
 La respiration pour dormir, ce sont des exercices où tu ralentis exprès ton souffle au moment du coucher, pour calmer le corps et détourner l'esprit des pensées qui t'empêchent de t'endormir. Le Réseau Morphée, un réseau de santé consacré aux troubles du sommeil, rappelle que travailler sur la respiration empêche les pensées de divaguer et crée un espace de transition entre la journée et la nuit [9]. Les techniques les plus connues s'appellent 4-7-8, respiration carrée, soupir cyclique ou méthode militaire, et elles n'ont pas toutes le même poids dans les études. Tu trouveras aussi, plus bas, une façon simple de t'y mettre dès ce soir.
 
@@ -2224,7 +2228,7 @@ Cet article t'informe, il ne remplace pas l'avis d'un médecin ou d'un psycholog
 
 La mieux étudiée, c'est la respiration lente, autour de 6 respirations par minute, par exemple 4 secondes d'inspiration et 6 d'expiration [1][2]. Les autres techniques, comme la 4-7-8 ou la respiration carrée, ont moins d'études sur le sommeil [4][6].
 
-### Comment faire la respiration 4-7-8 ?
+### Comment faire la respiration 4-7-8, et combien de temps ?
 
 Inspire par le nez en comptant jusqu'à 4, retiens ton souffle jusqu'à 7, puis expire par la bouche jusqu'à 8. Dans l'étude de l'Université Burapha, les participants étaient allongés et enchaînaient 6 cycles, 3 fois, avec 1 minute de respiration normale entre chaque série [4].
 
@@ -2236,9 +2240,9 @@ Aucune étude ne l'a montré. Elle fait baisser le rythme du cœur et la tension
 
 Dans l'étude taïwanaise, les participants respiraient lentement pendant 20 minutes avant d'aller dormir [1]. Pour commencer à te calmer, quelques minutes suffisent déjà. Nos [audios de respiration guidée](/respiration-guidee/) durent 3, 5 ou 10 minutes.
 
-### Que faire si la respiration me donne le tournis ?
+### La respiration 4-7-8 est-elle dangereuse ?
 
-Arrête l'exercice et reprends ta respiration habituelle. Les longues pauses, comme les 7 temps de la 4-7-8, ne conviennent pas à tout le monde. Une respiration lente sans blocage, avec une expiration un peu plus longue, est souvent plus confortable.
+Les études citées ici ne portent pas sur ses risques. Ce qui peut arriver, c'est un tournis ou une gêne : arrête alors l'exercice et reprends ta respiration habituelle. Les longues pauses, comme les 7 temps de la 4-7-8, ne conviennent pas à tout le monde. Une respiration lente sans blocage, avec une expiration un peu plus longue, est souvent plus confortable.
 
 ## Sources
 
@@ -2260,7 +2264,7 @@ Arrête l'exercice et reprends ta respiration habituelle. Les longues pauses, co
 # Symptômes physiques du stress : les signes, de la tête au ventre
 
 Adresse : https://www.contactapaisement-mental.fr/symptomes-physiques-du-stress/
-Mis à jour le 25 octobre 2026 — par Yacine
+Mis à jour le 29 octobre 2026 — par Yacine
 
 Les symptômes physiques du stress, ce sont les signaux que ton corps envoie quand il reste en alerte. Maux de tête, mâchoire serrée, nuque raide, cœur qui s'emballe, souffle court, ventre noué, rhumes qui s'enchaînent. L'Institut national de recherche et de sécurité (INRS) rappelle que le stress n'est pas une maladie en soi. Mais quand il est intense et qu'il dure, il peut avoir des effets graves sur la santé physique et mentale [1]. On passe ici le corps en revue, zone par zone, avec ce qu'en disent les sources médicales et les études, et les signaux qui doivent faire consulter, parfois en urgence.
 
@@ -2415,6 +2419,10 @@ Oui, l'anxiété peut provoquer des douleurs dans la poitrine et des palpitation
 ### Le stress peut-il rendre malade ?
 
 Un stress qui dure va de pair avec plus de rhumes [10], une baisse de certaines défenses immunitaires [11] et, selon l'INRS, des maladies comme l'hypertension artérielle et les maladies cardiovasculaires [1]. Ce sont des liens observés en moyenne. Rien n'est écrit d'avance.
+
+### Quels sont les symptômes d'un système nerveux surexcité ?
+
+On parle souvent de système nerveux « surexcité » quand le corps reste en mode alerte. Les signes sont ceux décrits partie par partie dans cet article : tête qui serre, mâchoire et épaules tendues, cœur qui s'emballe, souffle court, ventre noué, sommeil plus difficile. Les gestes pour faire redescendre cette alerte sont dans l'article pour [calmer son système nerveux](/calmer-son-systeme-nerveux/).
 
 ### Comment savoir si mes symptômes viennent du stress ?
 
@@ -2588,7 +2596,7 @@ Après un traumatisme, la psychothérapie est le traitement recommandé en premi
 # Angoisse le matin au réveil : pourquoi elle arrive et que faire
 
 Adresse : https://www.contactapaisement-mental.fr/angoisse-le-matin/
-Mis à jour le 25 octobre 2026 — par Yacine
+Mis à jour le 29 octobre 2026 — par Yacine
 
 Les yeux à peine ouverts, et déjà le cœur qui accélère. Une boule au ventre, des pensées qui filent vers tout ce qui t'attend aujourd'hui. C'est ce qu'on appelle l'angoisse le matin, ou angoisse matinale. L'Assurance maladie décrit l'anxiété comme l'appréhension d'un danger, précis ou vague, avec des inquiétudes sur l'avenir, le travail, la santé, les proches ou l'argent [1]. Le réveil est un moment à part, il existe des gestes qui aident sur le coup, et certains signes doivent pousser à consulter.
 
@@ -2600,7 +2608,7 @@ Les yeux à peine ouverts, et déjà le cœur qui accélère. Une boule au ventr
 - Sur le moment, ralentir la respiration, se lever, prendre la lumière du jour et bouger aident. À plus long terme, on peut repousser ses soucis à un moment fixe de la journée.
 - Si l'angoisse revient presque chaque matin, avec une grande fatigue ou une tristesse qui dure, parles-en à ton médecin : ce peut être un signe d'anxiété ou de dépression, qui se soignent.
 
-## Pourquoi l'angoisse est-elle plus forte le matin ?
+## Anxiété matinale : pourquoi l'angoisse est-elle plus forte le matin ?
 
 Parce qu'au réveil, ton corps se met en route d'un coup et ton esprit se tourne vers la journée qui arrive [2][3]. Pour ton cas à toi, les études ne disent pas laquelle de ces raisons pèse le plus. Ce sont des pistes, pas un diagnostic.
 
@@ -2694,9 +2702,17 @@ Pas forcément, mais ça peut l'être. Dans la dépression, la fatigue est souve
 
 Non. Sa hausse au réveil est normale [2], et une étude de l'Université de Southampton l'a même associée à des réactions moins vives aux tracas de la journée [3]. Ce qui compte, c'est la courbe sur toute la journée, expliquée dans l'article sur le [cortisol, hormone du stress](/cortisol-hormone-du-stress/).
 
-### Que faire tout de suite quand j'angoisse au réveil ?
+### Réveil angoissé : que faire tout de suite ?
 
 Ralentis ta respiration [7], en expirant par exemple plus longtemps que tu n'inspires. Ensuite, lève-toi, ouvre les volets et bouge quelques minutes [7][9]. L'inquiétude qui revient, note-la et donne-lui rendez-vous plus tard dans la journée [8].
+
+### Crise d'angoisse au réveil : comment la reconnaître ?
+
+Une peur intense qui arrive brutalement, avec des palpitations, l'impression d'étouffer ou une douleur dans la poitrine, peut signaler une crise d'angoisse, aussi appelée attaque de panique [1]. Elle dure de quelques minutes à une heure, 20 à 30 minutes en moyenne [11]. Seul un médecin peut poser ce diagnostic, car ces symptômes existent aussi dans d'autres maladies [1]. La première fois, ou s'il y a une douleur dans la poitrine, appelle le 15 ou le 112.
+
+### Je me sens toujours mal le matin : est-ce de l'angoisse ?
+
+Pas forcément. Une appréhension qui passe vite et ne pèse pas sur ta vie fait partie des angoisses normales [1]. Si ce malaise revient presque tous les matins, déborde sur la journée ou vient avec une grande fatigue dès le réveil et de la tristesse, il peut signaler un trouble anxieux ou une dépression [1][6]. Dans ce cas, parles-en à ton médecin, surtout si cela dure depuis plus de deux semaines [6].
 
 ### Existe-t-il un traitement contre l'angoisse matinale ?
 
