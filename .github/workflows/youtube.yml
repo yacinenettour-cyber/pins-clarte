@@ -104,7 +104,7 @@ jobs:
               pousser "YouTube : $slug non publiée, contrôle échoué (rapport.json)"
             fi
           done
-      - name: Garder la vidéo et le Short 7 jours (téléchargeables depuis l'onglet Actions)
+      - name: Garder la vidéo et les Shorts 30 jours (onglet Actions ; videos.yml y prend les Shorts pour Pinterest)
         if: steps.liste.outputs.slugs != ''
         uses: actions/upload-artifact@v4
         with:
@@ -112,7 +112,7 @@ jobs:
           path: |
             travail/*/video.mp4
             travail/*/short.mp4
-          retention-days: 7
+          retention-days: 30
           if-no-files-found: ignore
       - name: Rendre publiques les vidéos dont l'heure est venue
         if: env.COMPOSIO_API_KEY != ''
