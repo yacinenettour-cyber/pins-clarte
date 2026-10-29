@@ -14,6 +14,7 @@ C'est moi, **Yacine**. Je ne suis **ni médecin, ni psychologue, ni professionne
 - **Formation** : aucune formation en santé. Je ne me présente jamais comme un soignant.
 - **Depuis fin 2025** : je publie sur [Pinterest](https://www.pinterest.com/clartementale/) des fiches courtes sur le stress et le sommeil.
 - **Octobre 2026** : j'ouvre ce site. Une fiche Pinterest, c'est court, alors ici je prends le temps d'expliquer ce qui se passe dans le corps, avec les sources.
+- **Octobre 2026** : j'ouvre aussi une [chaîne YouTube](https://www.youtube.com/@ClarteMentaleFR) de relaxations guidées pour s'endormir (voix de synthèse), à écouter allongé, jamais en conduisant.
 
 ## Mon histoire
 

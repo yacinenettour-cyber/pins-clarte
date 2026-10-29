@@ -437,7 +437,7 @@ def pied(base="", conteneur="large"):
         ("pied-site", "Le site", [
             ("/a-propos/", "À propos"), ("/methode-editoriale/", "Méthode éditoriale"), ("/la-formation/", "La formation"),
             ("/mentions-legales/", "Mentions légales et confidentialité"), ("/accessibilite/", "Accessibilité : partiellement conforme"),
-            (SITE["pinterest"], "Pinterest")]),
+            (SITE["pinterest"], "Pinterest"), (SITE["youtube"], "YouTube")]),
     ]
     def lien(href, texte):
         if href.startswith("http"):
@@ -612,7 +612,7 @@ AUTEUR_HTML = ("<strong>Qui écrit ?</strong> " + SITE["auteur"]["nom"] + ", " +
 def editeur():
     return {"@type": "Organization", "@id": URL + "/#organisation", "name": SITE["nom"], "url": URL + "/",
             "logo": {"@type": "ImageObject", "url": URL + "/logo.png", "width": 512, "height": 512},
-            "sameAs": [SITE["pinterest"]], "publishingPrinciples": URL + "/methode-editoriale/"}
+            "sameAs": [SITE["pinterest"], SITE["youtube"]], "publishingPrinciples": URL + "/methode-editoriale/"}
 
 
 def auteur():
@@ -1794,6 +1794,8 @@ def empreinte_contenu(chemin):
     texte = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", zone))).strip()
     adresses = " ".join(re.findall(r'(?:href|src)="([^"]*)"', zone))
     ld = "".join(re.findall(r'<script type="application/ld\+json">.*?</script>', s, re.S))
+    # Profils de l'éditeur (Pinterest, YouTube…) : communs à toutes les pages, comme le pied de page.
+    ld = re.sub(r'"sameAs":\s*\[[^\]]*\],?', "", ld)
     return hashlib.sha1((texte + "\n" + adresses + "\n" + re.sub(r"\s+", " ", ld)).encode("utf-8")).hexdigest()[:16]
 
 
