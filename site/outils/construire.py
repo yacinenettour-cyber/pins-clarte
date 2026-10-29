@@ -433,7 +433,8 @@ def pied(base="", conteneur="large"):
         ("pied-outils", "Outils gratuits", [
             ("/test-stress-anxiete/", "Test stress et anxiété"), ("/respiration-guidee/", "Respiration guidée"),
             ("/exercices-respiration/", "Exercices de respiration"), ("/fiche-respiration/", "Fiche respiration à imprimer"),
-            ("/journal-humeur/", "Journal d'humeur"), ("/guides-gratuits/", "Guide gratuit"), ("/recherche/", "Rechercher")]),
+            ("/journal-humeur/", "Journal d'humeur"), ("/ressources-libres/", "Ressources à réutiliser"),
+            ("/guides-gratuits/", "Guide gratuit"), ("/recherche/", "Rechercher")]),
         ("pied-site", "Le site", [
             ("/a-propos/", "À propos"), ("/methode-editoriale/", "Méthode éditoriale"), ("/la-formation/", "La formation"),
             ("/mentions-legales/", "Mentions légales et confidentialité"), ("/accessibilite/", "Accessibilité : partiellement conforme"),
@@ -1562,7 +1563,7 @@ def construire_index_recherche(articles):
     slugs = {a["slug"] for a in articles}
     themes = {th["slug"] for th in SITE.get("themes", {}).values()}
     outils = {"test-stress-anxiete", "respiration-guidee", "exercices-respiration", "fiche-respiration", "journal-humeur",
-              "ressources-urgence"}
+              "ressources-urgence", "ressources-libres"}
     entrees = []
     for chemin in sorted(glob.glob(os.path.join(SORTIE, "**", "index.html"), recursive=True)):
         rel = "/" + os.path.relpath(os.path.dirname(chemin), SORTIE).replace(os.sep, "/") + "/"
@@ -1829,7 +1830,7 @@ def construire_fichiers_techniques(articles):
     # Dates du plan du site : changement réel du contenu (registre) pour les pages fixes ; pour les articles, la date
     # « maj » affichée et donnée dans dateModified (audit du 13/10/2026 : une seule date par article, partout).
     fixes = ["/", "/articles/", "/la-formation/", "/guides-gratuits/", "/test-stress-anxiete/", "/respiration-guidee/",
-             "/ressources-urgence/", "/exercices-respiration/", "/fiche-respiration/", "/journal-humeur/", "/glossaire/", "/questions-frequentes/",
+             "/ressources-urgence/", "/exercices-respiration/", "/fiche-respiration/", "/journal-humeur/", "/ressources-libres/", "/glossaire/", "/questions-frequentes/",
              "/accessibilite/", "/a-propos/", "/methode-editoriale/", "/mentions-legales/"]
     fixes += [f"/{th['slug']}/" for th in SITE.get("themes", {}).values()]
     dates = dates_contenu(fixes + [f"/{a['slug']}/" for a in articles])
@@ -1984,6 +1985,7 @@ def main():
         construire_formation()
     construire_page_fixe("a-propos.md", "/a-propos/", nav="/a-propos/")
     construire_page_fixe("methode-editoriale.md", "/methode-editoriale/")
+    construire_page_fixe("ressources-libres.md", "/ressources-libres/")
     mentions = open(os.path.join(RACINE, "contenu", "pages", "mentions-legales.md"), encoding="utf-8").read()
     if balise_mesure() and "n'utilise aucun outil de mesure d'audience" in mentions:
         sys.exit("Mesure d'audience activée : mettre d'abord à jour les mentions légales (elles disent « aucun outil de mesure d'audience »).")

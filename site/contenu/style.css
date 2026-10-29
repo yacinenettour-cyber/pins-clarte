@@ -160,6 +160,9 @@ th { background: rgba(58, 95, 67, 0.35); color: var(--champagne); font-weight: 6
 /* En-têtes de ligne (première colonne) : en gras, sans le fond des en-têtes de colonne. */
 tbody th { background: transparent; }
 blockquote { margin: 20px 0; padding: 12px 18px; background: var(--verre); border-left: 3px solid var(--emeraude); border-radius: 10px; }
+/* Code à copier (crédit des ressources libres) : renvoi à la ligne, jamais de défilement horizontal. */
+pre { margin: 20px 0; padding: 12px 18px; background: var(--verre); border: 1px solid var(--lisere-fort); border-radius: 10px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; }
+pre code { font-family: ui-monospace, Menlo, Consolas, monospace; color: var(--champagne); }
 sup a { font-size: 13px; }
 /* Citations courtes (RGAA 9.4) : guillemets français ajoutés par <q>, pas tapés dans le texte. */
 q { quotes: "«\00a0" "\00a0»"; }

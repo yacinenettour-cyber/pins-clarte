@@ -60,8 +60,8 @@
   "empreinte": "ee9dce7efdf6f77e"
  },
  "/fiche-respiration/": {
-  "date": "2026-10-28",
-  "empreinte": "3cd8d9216b9da69d"
+  "date": "2026-10-29",
+  "empreinte": "202e6257988c252b"
  },
  "/glossaire/": {
   "date": "2026-10-28",
@@ -88,8 +88,8 @@
   "empreinte": "074797a73a1b8b34"
  },
  "/mentions-legales/": {
-  "date": "2026-10-10",
-  "empreinte": "517a32f7ecb3eb0d"
+  "date": "2026-10-29",
+  "empreinte": "3267d39381333271"
  },
  "/methode-editoriale/": {
   "date": "2026-10-28",
@@ -116,12 +116,16 @@
   "empreinte": "20fa1f047450d55f"
  },
  "/respiration-guidee/": {
-  "date": "2026-10-28",
-  "empreinte": "696bb5467bf700bd"
+  "date": "2026-10-29",
+  "empreinte": "8ac88bf0ea6fc563"
  },
  "/respiration-pour-dormir/": {
   "date": "2026-10-28",
   "empreinte": "0e087c013b1ae590"
+ },
+ "/ressources-libres/": {
+  "date": "2026-10-29",
+  "empreinte": "3dbd8655f07d0bfc"
  },
  "/ressources-urgence/": {
   "date": "2026-10-28",

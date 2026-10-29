@@ -1165,3 +1165,23 @@ probable fort / moyen / faible, méthode écrite.
   Nouveau titre « Mâchoire crispée au travail : 3 gestes pour la relâcher » (le premier essai était trop proche de
   « Poitrine serrée par le stress… », 0,82), points et descriptions alignés sur l'article (NHS, revue de Malmö),
   description 462 caractères ; `verifier_banque.py` : 0 doublon ; filtre du pipeline : accepté.
+
+## 91. Site : chaîne YouTube reliée, page « Ressources libres », nouvelle approche des liens externes (29/10/2026)
+
+- **Analyse du site (Search Console, Cloudflare)** : du 09/10 au 28/10, 339 apparitions dans Google, 2 clics, position
+  moyenne 73 ; un tiers des apparitions sur `/angoisse-le-matin/` (position 85, page retouchée le 25/10 : attendre le
+  25/11) ; meilleures places : réveil à 4 h (19-36), respiration 4-7-8 (24), test (28), nerf vague (9). Cloudflare :
+  aucune visite venue de Google, Pinterest ou YouTube. 4 articles « découverts, non indexés » (boule au ventre,
+  Jacobson, sommeil léger, mâchoire) : indexation demandée à la main par l'utilisateur le 29/10.
+- **YouTube sur le site (accord « oui pour les points 1 à 3 »)** : lien « YouTube » dans le pied de page, chaîne dans
+  `sameAs` de l'éditeur, ligne dans « À propos » (`youtube` dans `site.json`). Les profils `sameAs` ne comptent plus
+  dans l'empreinte de contenu (sinon toutes les pages prenaient la date du jour dans le plan du site) ; registre migré.
+- **Liens externes, bilan** : 44 e-mails depuis le 12/10, 0 lien. Changement de méthode (« je te laisse choisir le
+  mieux ») : page **`/ressources-libres/`** (3 audios CC BY 4.0, fiche PDF CC BY-ND 4.0, réutilisables avec un lien
+  vers la source ; texte et code de crédit ; lien dans le pied de page, colonne « Outils gratuits ») ; mentions
+  légales, page des audios (« usage personnel » retiré) et fiche mises en cohérence ; « deux pages A4 » corrigé en
+  trois (le PDF en a 3). Style `pre` ajouté (renvoi à la ligne, sinon 2 452 px de large sur mobile). Contrôles :
+  0 lien interne cassé, 0 débordement à 390 px, axe 0 violation (clair et sombre). Kit de profils à faire par
+  l'utilisateur : `docs/referencement/kit-profils.md` ; nouveau message et nouvelles cibles (sophrologues,
+  enseignants, infirmières scolaires, blogs sommeil) dans `liens-externes.md`. La tâche automatique de prospection
+  n'est pas modifiée sans accord de l'utilisateur.

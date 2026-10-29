@@ -91,6 +91,39 @@ page de ressources ou d'outils. Jamais à des sites qui vendent des remèdes mir
 
 Les e-mails aux sites ressources partent maintenant automatiquement depuis le Gmail de l'utilisateur : au plus 5 par jour ouvré, une relance après 10 jours. Suivi dans `prospection-liens.json` (même dossier), journal section 56. L'utilisateur n'a plus à envoyer le message ci-dessus lui-même.
 
+## Nouvelle approche (29/10/2026) : offrir des ressources réutilisables
+
+Bilan au 29/10 : 44 e-mails envoyés depuis le 12/10, **0 lien obtenu** (9 refus polis, 4 réponses sans lien ;
+une blogueuse a refusé un site qu'elle juge « généré par l'IA »). Les institutions ne relient presque jamais un
+site personnel tout neuf. Changement de méthode, décidé avec l'utilisateur (« je te laisse choisir le mieux ») :
+
+1. **Page `/ressources-libres/`** : les 3 audios de respiration (CC BY 4.0) et la fiche PDF (CC BY-ND 4.0) sont
+   réutilisables librement, à condition de citer la source avec un lien. Texte et code de crédit prêts sur la page.
+   Chaque reprise sur un site crée un lien.
+2. **Kit de profils** (`kit-profils.md`) : YouTube « À propos », Quora, Reddit, Medium, LinkedIn, page Facebook,
+   à faire par l'utilisateur (environ 1 h, une seule fois).
+3. **Cibles du message ci-dessous** : personnes qui ont l'usage concret d'un audio ou d'une fiche et un site avec
+   une page « ressources » ou « outils » : sophrologues, relaxologues, professeurs de yoga, infirmières scolaires,
+   enseignants, animateurs d'ateliers, blogs sur le sommeil. Pas les grandes institutions.
+
+### Message « ressources à réutiliser »
+
+> Objet : Des audios de respiration gratuits pour vos séances (libres de droits)
+>
+> Bonjour [prénom],
+>
+> Je suis tombé sur votre page « [titre] ». Je propose gratuitement trois audios de respiration guidée sans voix
+> (3, 5 et 10 minutes, rythme 4-6, bols chantants et musique douce) et une fiche à imprimer de 5 exercices de
+> respiration. Vous pouvez les utiliser en séance, en atelier, en classe ou sur votre site, y compris dans un cadre
+> professionnel (licence Creative Commons) ; la seule condition est de citer la source avec un lien :
+> https://www.contactapaisement-mental.fr/ressources-libres/
+>
+> Je ne suis pas professionnel de santé : les consignes s'appuient sur les études et les sources officielles citées
+> sur le site. Si vous y voyez une erreur, dites-le-moi, je corrige.
+>
+> Bonne journée,
+> Yacine — www.contactapaisement-mental.fr
+
 ## Ce que je surveille
 
 Le bilan du 21/10 regarde aussi les visites venues d'autres sites (Cloudflare Web Analytics, « Referrers »)

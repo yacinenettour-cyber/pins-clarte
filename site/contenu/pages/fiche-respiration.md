@@ -2,9 +2,9 @@
 titre: 5 exercices de respiration pour se calmer, la fiche à imprimer
 titre_seo: 5 exercices de respiration pour se calmer (fiche PDF)
 description: Fiche gratuite à imprimer : 5 exercices de respiration pour se calmer, expliqués pas à pas, avec ce qu'en disent les études. PDF A4, sans inscription.
-maj: 2026-10-21
+maj: 2026-10-29
 ---
-Cinq façons de ralentir ton souffle quand le stress monte. Pour chacune, les gestes pas à pas, le bon moment pour l'essayer et ce que les études en disent, sans rien enjoliver. La fiche est gratuite et sans inscription. Tu peux l'imprimer, la photocopier et la distribuer telle quelle, à tes proches, à tes étudiants ou aux personnes que tu accompagnes.
+Cinq façons de ralentir ton souffle quand le stress monte. Pour chacune, les gestes pas à pas, le bon moment pour l'essayer et ce que les études en disent, sans rien enjoliver. La fiche est gratuite et sans inscription. Tu peux l'imprimer, la photocopier et la distribuer telle quelle, à tes proches, à tes étudiants ou aux personnes que tu accompagnes (conditions sur la page des [ressources libres d'utilisation](/ressources-libres/)).
 
 {{BOUTONS}}
 

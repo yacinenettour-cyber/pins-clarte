@@ -40,4 +40,4 @@ Les [audios de respiration guidée](/respiration-guidee/) et la musique facultat
 
 ## Propriété intellectuelle
 
-Les textes de ce site sont protégés par le droit d'auteur. Tu peux citer un court extrait en mentionnant la source et le lien vers l'article ; toute autre reproduction nécessite une autorisation écrite.
+Les textes de ce site sont protégés par le droit d'auteur. Tu peux citer un court extrait en mentionnant la source et le lien vers l'article ; toute autre reproduction nécessite une autorisation écrite. Exception : les audios de respiration guidée (licence CC BY 4.0) et la fiche respiration à imprimer (licence CC BY-ND 4.0) sont réutilisables librement, aux conditions indiquées sur la page des [ressources libres d'utilisation](/ressources-libres/).

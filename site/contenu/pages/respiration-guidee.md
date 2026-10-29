@@ -2,7 +2,7 @@
 titre: Respiration guidée 4-6 : 3 audios gratuits pour te calmer
 titre_seo: Respiration guidée gratuite pour se calmer et dormir
 description: Trois audios gratuits de respiration guidée 4-6 (3, 5 et 10 minutes) sur une musique de détente, sans voix : inspire 4 secondes, expire 6 secondes.
-maj: 2026-10-21
+maj: 2026-10-29
 ---
 Inspire 4 secondes, expire 6 secondes : 6 respirations par minute. Ces trois audios gratuits de respiration guidée, sans voix, te guident avec de vrais bols chantants sur une musique douce, à écouter les yeux fermés, même au lit.
 
@@ -48,7 +48,7 @@ Ces audios ont été montés par Clarté Mentale : une musique de détente et de
 | La voix | Aucune |
 
 - Les audios sont gratuits, sans inscription, et tu peux les télécharger pour les écouter hors connexion.
-- Tu préfères le papier ? La [fiche des 5 exercices de respiration](/fiche-respiration/) tient sur deux pages A4, avec les consignes pas à pas, à imprimer ou à télécharger en PDF.
+- Tu préfères le papier ? La [fiche des 5 exercices de respiration](/fiche-respiration/) tient sur trois pages A4, avec les consignes pas à pas, à imprimer ou à télécharger en PDF.
 - Tu préfères suivre un rythme à l'écran ? Les [exercices de respiration](/exercices-respiration/) proposent un minuteur visuel pour la cohérence cardiaque, la respiration carrée et la 4-7-8.
 - Si, une fois au lit, ce sont tes pensées qui tournent, le [guide gratuit](/guides-gratuits/) « Quand le cerveau refuse de dormir » propose une routine anti-rumination à faire au lit et un calendrier de 30 jours.
 
@@ -78,7 +78,7 @@ Pour que rien ne sollicite ton attention : seules la musique et les bols chantan
 
 ### Puis-je télécharger les audios ?
 
-Oui, chaque audio a un lien de téléchargement au format MP3, pour ton usage personnel. Tu peux l'écouter hors connexion, avec ou sans écouteurs.
+Oui, chaque audio a un lien de téléchargement au format MP3. Tu peux l'écouter hors connexion, avec ou sans écouteurs. Tu peux aussi le réutiliser en séance, en classe, dans une vidéo ou sur ton site, en citant la source : les conditions sont sur la page des [ressources libres d'utilisation](/ressources-libres/).
 
 ## Sources
 1. [Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis — Neuroscience & Biobehavioral Reviews (Laborde et al., Université allemande du sport de Cologne), 2022](https://doi.org/10.1016/j.neubiorev.2022.104711)
