@@ -118,8 +118,8 @@ site personnel tout neuf. Changement de méthode, décidé avec l'utilisateur (�
 > professionnel (licence Creative Commons) ; la seule condition est de citer la source avec un lien :
 > https://www.contactapaisement-mental.fr/ressources-libres/
 >
-> J'ai moi-même traversé deux ans de nuits difficiles, et c'est la cohérence cardiaque qui m'a aidé : c'est de là que
-> sont nés ces audios. Je ne suis pas professionnel de santé : les consignes s'appuient sur les études et les sources
+> J'ai moi-même traversé deux ans de nuits difficiles, et la cohérence cardiaque m'a aidé. Je ne suis pas
+> professionnel de santé : les consignes s'appuient sur les études et les sources
 > officielles citées sur le site. Si vous y voyez une erreur, dites-le-moi, je corrige.
 >
 > Bonne journée,
