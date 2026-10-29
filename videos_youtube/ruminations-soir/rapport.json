@@ -1,10 +1,132 @@
 {
  "slug": "ruminations-soir",
  "erreurs": [],
- "voix_score": 0.988,
+ "voix_score": 0.989,
  "phrases_douteuses": [],
+ "mots_ecarts": [
+  {
+   "debut": 12.6,
+   "phrase": "Écoute-la seulement allongé, au calme, jamais en conduisant.",
+   "prevu": "",
+   "entendu": "et"
+  },
+  {
+   "debut": 12.6,
+   "phrase": "Écoute-la seulement allongé, au calme, jamais en conduisant.",
+   "prevu": "allongé",
+   "entendu": "allongée"
+  },
+  {
+   "debut": 23.7,
+   "phrase": "Le soir, au lit, plus rien n'occupe ton attention. Les soucis de la journée prennent alors toute la place.",
+   "prevu": "n",
+   "entendu": ""
+  },
+  {
+   "debut": 32.9,
+   "phrase": "Des chercheurs d'un grand hôpital de Détroit, aux États-Unis, décrivent ce temps passé éveillé au lit comme un moment idéal pour ressasser.",
+   "prevu": "ressasser",
+   "entendu": "resasser"
+  },
+  {
+   "debut": 51.3,
+   "phrase": "Dans une étude de l'université d'Oxford, des personnes qui imaginaient une scène calme et détaillée trouvaient le sommeil plus vite.",
+   "prevu": "imaginaient",
+   "entendu": "imaginait"
+  },
+  {
+   "debut": 62.6,
+   "phrase": "Et à l'université Baylor, de jeunes adultes qui écrivaient leur liste de tâches avant d'éteindre se sont endormis plus vite que ceux qui notaient ce qu'ils avaient déjà fait.",
+   "prevu": "baylor de",
+   "entendu": "bellor deu"
+  },
+  {
+   "debut": 76.0,
+   "phrase": "Si tu as un carnet près de toi, tu peux noter maintenant ce qui te trotte dans la tête. Sinon, ce n'est pas grave : on va s'occuper de ces pensées ensemble.",
+   "prevu": "ce",
+   "entendu": "se"
+  },
+  {
+   "debut": 108.9,
+   "phrase": "Si tu le souhaites, ferme doucement les yeux.",
+   "prevu": "",
+   "entendu": "et"
+  },
+  {
+   "debut": 143.9,
+   "phrase": "Porte maintenant ton attention sur ta respiration, sans chercher à la changer.",
+   "prevu": "porte",
+   "entendu": "borte"
+  },
+  {
+   "debut": 307.0,
+   "phrase": "Tes paupières deviennent lourdes. Ta mâchoire se desserre.",
+   "prevu": "da mâchoire se desserre",
+   "entendu": "tamachoir ce dessert"
+  },
+  {
+   "debut": 367.7,
+   "phrase": "Des pensées vont sûrement revenir. C'est normal, c'est ce que fait un cerveau.",
+   "prevu": "de pensée",
+   "entendu": "et dépenser"
+  },
+  {
+   "debut": 377.7,
+   "phrase": "Tu n'as pas besoin de les chasser, ni de les régler cette nuit.",
+   "prevu": "",
+   "entendu": "ou"
+  },
+  {
+   "debut": 386.2,
+   "phrase": "Imagine que chaque pensée est un nuage dans le ciel de la nuit.",
+   "prevu": "",
+   "entendu": "il"
+  },
+  {
+   "debut": 423.7,
+   "phrase": "Ce qui est important sera encore là demain. Cette nuit, tu peux le poser.",
+   "prevu": "là",
+   "entendu": "la"
+  },
+  {
+   "debut": 465.4,
+   "phrase": "Regarde les couleurs du ciel. Le bleu profond. Les petites lumières des étoiles.",
+   "prevu": "regarde",
+   "entendu": "un regard de"
+  },
+  {
+   "debut": 479.8,
+   "phrase": "Écoute le silence. Peut-être un souffle de vent très léger.",
+   "prevu": "",
+   "entendu": "elle"
+  },
+  {
+   "debut": 479.8,
+   "phrase": "Écoute le silence. Peut-être un souffle de vent très léger.",
+   "prevu": "de vent",
+   "entendu": "devant"
+  },
+  {
+   "debut": 493.7,
+   "phrase": "Sens l'air frais et doux sur ton visage.",
+   "prevu": "sen",
+   "entendu": "san"
+  },
+  {
+   "debut": 530.1,
+   "phrase": "Bientôt, ma voix va se taire. La musique va continuer encore longtemps.",
+   "prevu": "bientôt",
+   "entendu": "bien tôt"
+  }
+ ],
+ "paroles_hors_sous_titres": [],
+ "bilan_mots": "512/532 mots entendus exactement",
  "duree_video": 1800.0,
  "duree_short": 61.5,
+ "durees_shorts_extra": [
+  56.4,
+  49.9
+ ],
  "chapitres": [
   "00:00 Introduction",
   "00:19 Comprendre",
@@ -16,5 +138,5 @@
   "08:46 Glisser vers le sommeil",
   "09:27 Musique seule pour s'endormir"
  ],
- "description": "Méditation guidée pour dormir quand les pensées tournent en boucle : 10 minutes de voix douce (respiration lente, détente du corps, scène calme à imaginer), puis 20 minutes de musique pour t'endormir.\n\n📖 Pourquoi les pensées tournent le soir et comment les apaiser (article sourcé) : https://www.contactapaisement-mental.fr/ruminations-le-soir/\n🌙 Guide gratuit « Quand le cerveau refuse de dormir » : une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir, un calendrier de 30 jours → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=video&utm_campaign=ruminations-soir\n🎧 Audios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/\n\nPour les soirs où ton cerveau ne s'arrête pas : la vidéo commence par 1 minute pour comprendre pourquoi les pensées tournent au lit (trois études citées plus bas), puis te guide pas à pas. Pas besoin de réussir quoi que ce soit : si tu t'endors avant la fin, c'est parfait.\n\n00:00 Introduction\n00:19 Comprendre\n01:32 S'installer\n02:19 Respirer lentement\n04:52 Détendre le corps\n06:03 Laisser passer les pensées\n07:20 Une scène calme\n08:46 Glisser vers le sommeil\n09:27 Musique seule pour s'endormir\n\nÀ écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. Je ne suis pas professionnel de santé.\n\n🔔 Une nouvelle méditation chaque semaine : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1\n\nSources :\n· Kalmbach et al., Nature and Science of Sleep, 2018 (Henry Ford Health, Détroit)\n· Harvey et Payne, Behaviour Research and Therapy, 2002 (Université d'Oxford)\n· Scullin et al., Journal of Experimental Psychology: General, 2018 (Université Baylor)\n\nVoix : voix de synthèse (Kokoro, licence Apache 2.0 ; voix « ff_siwis » issue du corpus SIWIS, CC BY 4.0).\nMusique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 http://creativecommons.org/licenses/by/4.0/\nPhotos : Unsplash (Jeremy Thomas, Lu, Jp Valery, Michael Beier, Pete Nuij, Ganapathy Kumar, Robson Hatsukami Morgan, Georgii Eletskikh, Hubert Lenkiewicz). Bols chantants : Freesound, domaine public (CC0).\n\n#méditation #sommeil #méditationguidée"
+ "description": "Méditation guidée pour dormir quand les pensées tournent en boucle : 10 minutes de voix douce (respiration lente, détente du corps, scène calme à imaginer), puis 20 minutes de musique pour t'endormir.\n\n📖 Pourquoi les pensées tournent le soir et comment les apaiser (article sourcé) : https://www.contactapaisement-mental.fr/ruminations-le-soir/\n🌙 Guide gratuit « Quand le cerveau refuse de dormir » : une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir, un calendrier de 30 jours → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=video&utm_campaign=ruminations-soir\n🎧 Audios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/\n\nPour les soirs où ton cerveau ne s'arrête pas : la vidéo commence par 1 minute pour comprendre pourquoi les pensées tournent au lit (trois études citées plus bas), puis te guide pas à pas. Pas besoin de réussir quoi que ce soit : si tu t'endors avant la fin, c'est parfait.\n\n00:00 Introduction\n00:19 Comprendre\n01:32 S'installer\n02:19 Respirer lentement\n04:52 Détendre le corps\n06:03 Laisser passer les pensées\n07:20 Une scène calme\n08:46 Glisser vers le sommeil\n09:27 Musique seule pour s'endormir\n\nÀ écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si tes difficultés de sommeil durent ou pèsent sur tes journées, parles-en à ton médecin. Je ne suis pas professionnel de santé.\n\n🔔 Abonne-toi pour recevoir les prochaines méditations : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1\n\nSources :\n· Kalmbach et al., Nature and Science of Sleep, 2018 (Henry Ford Health, Détroit)\n· Harvey et Payne, Behaviour Research and Therapy, 2002 (Université d'Oxford)\n· Scullin et al., Journal of Experimental Psychology: General, 2018 (Université Baylor)\n\nVoix : voix de synthèse (Kokoro, licence Apache 2.0 ; voix « ff_siwis » issue du corpus SIWIS, CC BY 4.0).\nMusique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 http://creativecommons.org/licenses/by/4.0/\nPhotos : Unsplash (Jeremy Thomas, Lu, Jp Valery, Michael Beier, Pete Nuij, Ganapathy Kumar, Robson Hatsukami Morgan, Georgii Eletskikh, Hubert Lenkiewicz). Bols chantants : Freesound, domaine public (CC0).\n\n#méditation #sommeil #méditationguidée"
 }
