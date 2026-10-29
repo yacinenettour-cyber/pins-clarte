@@ -232,6 +232,8 @@ q { quotes: "«\00a0" "\00a0»"; }
 .carte:hover .teinte img { filter: saturate(.9) brightness(.96); }
 .carte:hover .teinte::after { opacity: 0; }
 .carte img { aspect-ratio: 3 / 2; object-fit: cover; width: 100%; }
+.carte.video img { aspect-ratio: 16 / 9; }
+.carte.video h2 { font-size: 1.2rem; margin: 0 0 6px; }
 .carte .corps { padding: 16px 20px 18px; display: flex; flex-direction: column; flex: 1; }
 .carte .cat { font-size: 12px; text-transform: uppercase; letter-spacing: .14em; color: var(--brume); font-weight: 700; margin: 0; }
 .carte h2, .carte h3 { font-size: 20px; margin: 6px 0 8px; }
