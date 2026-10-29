@@ -31,7 +31,7 @@ Coche au fur et à mesure, et dis-moi ce qui est fait.
 - Titre `Mon site : articles et audios gratuits` → `https://www.contactapaisement-mental.fr/`
 - Titre `Pinterest` → `https://www.pinterest.com/clartementale/`
 
-- [ ] fait
+- [x] fait (29/10/2026, d'après l'utilisateur ; description à vérifier par l'API YouTube quand le quota partagé revient)
 
 ---
 
