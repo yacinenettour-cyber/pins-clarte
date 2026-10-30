@@ -1265,3 +1265,11 @@ probable fort / moyen / faible, méthode écrite.
   (CC0) ». Les deux vidéos publiées sont refabriquées sans envoi pour obtenir ces versions. Les Shorts YouTube gardent la
   musique (aucune réclamation YouTube à ce jour).
 - Ne jamais republier de musique Kevin MacLeod sur Pinterest. L'épingle muette peut être supprimée à la main.
+
+## 97. ElevenLabs Starter et une vidéo YouTube par semaine (30/10/2026)
+
+L'utilisateur a demandé quoi payer pour améliorer ses vidéos ; recommandation : ElevenLabs Starter seulement (plus de
+voix, usage commercial), le reste gratuit pendant au moins un mois. Il l'a pris (« C'est bon, j'ai pris l'offre starter
+d'Eleven Labs »). Compte vérifié : 3 601 crédits utilisés sur 10 000 avant le changement (voix de la relaxation Jacobson).
+Tâche « Vidéo YouTube » passée de 2 vidéos par mois (1er et 15) à 1 par semaine (dimanche 10 h 06, heure de Paris),
+script de 2 000 à 5 000 caractères. Exception unique à la règle « ne rien payer » (CLAUDE.md).
