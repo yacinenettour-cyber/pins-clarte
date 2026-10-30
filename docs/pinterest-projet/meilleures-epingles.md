@@ -282,3 +282,15 @@ Images de référence dans `photos_attente/ref-top*.jpg` (jamais publiées, seul
 Conséquence pour la fabrication (avec la règle de l'utilisateur du même jour) : personnage central réaliste (portrait
 peint réaliste, habillé), une vignette illustrée par point, titre à deux niveaux avec mot-clé manuscrit, bandeau
 « Sauvegarde cette épingle pour… » et signature du compte ; texte toujours dessiné par PIL (règle 8 du CLAUDE.md).
+
+**30/10/2026** : « Anxiété matinale : 5 clés pour apaiser tes réveils » terminée (`images_cles/anxiete-matinale-5-cles.jpg`,
+systemenerveux, article `angoisse-le-matin`). Les 4 vignettes manquantes (fenêtre aux volets ouverts, tapis de yoga sauge,
+carnet rose et crayon, tasse de café) ont été faites avec **Canva** (`mcp__Canva__generate-image`, quota IA mensuel gratuit du
+compte Canva Free, rien de payé) après l'épuisement du quota Hugging Face, à la demande de l'utilisateur (« Il n'y a pas que
+Hugging Face… regarde les autres connecteurs »). Le connecteur ne rend qu'un aperçu de 200 × 200 px (fichier dans
+tool-results) : suffisant pour les vignettes (128 px), pas pour le portrait. Autres connecteurs vérifiés le 30/10 : Claude
+Imagine 0 crédit (payant), Higgsfield 0,92 crédit, HeyGen gratuit sans crédit, Figma et OpenAI exclus (CLAUDE.md),
+ElevenLabs réservé à la voix. Ordre à suivre : Hugging Face, puis Canva pour les vignettes ; portrait : Hugging Face, sinon
+photo libre Unsplash (personne réelle, habillée, licence Unsplash). Titre « 5 clés pour des réveils doux » sur l'image (la
+première version ne tenait pas en largeur), corps 395 / 398 caractères, anti_doublons sans doublon, verifier_banque.py
+0 doublon, visuel relu.
