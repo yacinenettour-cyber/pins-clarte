@@ -2368,5 +2368,16 @@
   "pin_id": "600175087890427220",
   "md5": "2b6f4fe038f1c0427bd61d6200404cc8",
   "lien": "article:respiration-pour-dormir"
+ },
+ {
+  "date": "2026-10-30T19:07+00:00",
+  "titre": "Anxiété matinale : 5 clés pour apaiser tes réveils",
+  "image": "images/pin-20261030-190752.jpg",
+  "fond": "prete:images_cles/anxiete-matinale-5-cles.jpg",
+  "theme": "systemenerveux",
+  "design": "cles",
+  "pin_id": "600175087890436471",
+  "md5": "b9dd4d9e7e091ec769b18e92d1f14808",
+  "lien": "article:angoisse-le-matin"
  }
 ]
