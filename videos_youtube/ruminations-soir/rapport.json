@@ -1,7 +1,7 @@
 {
  "slug": "ruminations-soir",
  "erreurs": [],
- "voix_score": 0.989,
+ "voix_score": 0.99,
  "phrases_douteuses": [],
  "mots_ecarts": [
   {
@@ -61,11 +61,17 @@
   {
    "debut": 307.0,
    "phrase": "Tes paupières deviennent lourdes. Ta mâchoire se desserre.",
-   "prevu": "da mâchoire se desserre",
-   "entendu": "tamachoir ce dessert"
+   "prevu": "da mâchoire",
+   "entendu": "tamachoir"
   },
   {
-   "debut": 367.7,
+   "debut": 307.0,
+   "phrase": "Tes paupières deviennent lourdes. Ta mâchoire se desserre.",
+   "prevu": "desserre",
+   "entendu": "dessert"
+  },
+  {
+   "debut": 367.8,
    "phrase": "Des pensées vont sûrement revenir. C'est normal, c'est ce que fait un cerveau.",
    "prevu": "de pensée",
    "entendu": "et dépenser"
@@ -77,7 +83,7 @@
    "entendu": "ou"
   },
   {
-   "debut": 386.2,
+   "debut": 386.3,
    "phrase": "Imagine que chaque pensée est un nuage dans le ciel de la nuit.",
    "prevu": "",
    "entendu": "il"
@@ -98,7 +104,7 @@
    "debut": 479.8,
    "phrase": "Écoute le silence. Peut-être un souffle de vent très léger.",
    "prevu": "",
-   "entendu": "elle"
+   "entendu": "et"
   },
   {
    "debut": 479.8,
@@ -120,7 +126,7 @@
   }
  ],
  "paroles_hors_sous_titres": [],
- "bilan_mots": "512/532 mots entendus exactement",
+ "bilan_mots": "513/532 mots entendus exactement",
  "duree_video": 1800.0,
  "duree_short": 61.5,
  "durees_shorts_extra": [
