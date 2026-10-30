@@ -2357,5 +2357,16 @@
   "pin_id": "600175087890395204",
   "md5": "04f197f6140692cb1ea83f730ef29d92",
   "lien": ""
+ },
+ {
+  "date": "2026-10-30T07:07+00:00",
+  "titre": "Respiration pour dormir : 5 étapes à faire au lit",
+  "image": "images/pin-20261030-070748.jpg",
+  "fond": "prete:images_cles/respiration-dormir-5-etapes.jpg",
+  "theme": "sommeil",
+  "design": "cles",
+  "pin_id": "600175087890427220",
+  "md5": "2b6f4fe038f1c0427bd61d6200404cc8",
+  "lien": "article:respiration-pour-dormir"
  }
 ]
