@@ -74,13 +74,13 @@
    "debut": 275.1,
    "phrase": "Serre tes cuisses l'une contre l'autre. Tiens.",
    "prevu": "serre de cuisse",
-   "entendu": "certe écuise"
+   "entendu": "certe écui ce"
   },
   {
    "debut": 327.9,
    "phrase": "Inspire profondément, et retiens ton souffle en sentant ta poitrine se tendre.",
-   "prevu": "retien don",
-   "entendu": "retient on"
+   "prevu": "retien",
+   "entendu": "retient"
   },
   {
    "debut": 356.6,
@@ -153,6 +153,12 @@
    "phrase": "Tu n'as plus rien à faire. Le matelas te porte entièrement.",
    "prevu": "matela",
    "entendu": "matelat"
+  },
+  {
+   "debut": 584.3,
+   "phrase": "Et si tu es encore éveillé, ce n'est pas grave. Le repos compte aussi.",
+   "prevu": "éveillé",
+   "entendu": "éveillée"
   }
  ],
  "paroles_hors_sous_titres": [],
