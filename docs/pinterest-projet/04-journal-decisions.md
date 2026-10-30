@@ -1250,3 +1250,18 @@ probable fort / moyen / faible, méthode écrite.
   comme par `localizations` (chaîne en langue par défaut `en`, traduction `en_US`). Texte à coller par
   l'utilisateur dans YouTube Studio (`kit-profils.md`) ; ne pas retenter par l'API.
 - Restent à la main : « Vidéo similaire » sur chaque Short.
+
+## 96. Pinterest : son coupé sur le premier Short, versions sans musique (30/10/2026)
+
+- 29/10, 17 h 38 : 4 minutes après sa publication par `videos.yml`, l'épingle « Respire avec moi avant de relâcher tout
+  ton corps » (600175087890416402, Short Jacobson 1) est mise en sourdine par Pinterest : « la musique de votre épingle
+  appartient à quelqu'un d'autre ». La musique est « Deep Relaxation » de Kevin MacLeod (CC BY 4.0, créditée), mais ses
+  morceaux sont souvent visés par des réclamations automatiques. Les épingles vidéo fabriquées par `videos.yml` n'utilisent
+  pas ce morceau.
+- A (accord de l'utilisateur « Fais A tout de suite ») : publication des Shorts sur Pinterest mise en pause.
+- B (accord « oui pour B ») : `audio.py` écrit aussi `piste_sans_musique.wav` (voix + bols CC0) ; `extras._short` en tire
+  `short_pinterest.mp4` à côté de chaque `short.mp4` ; `youtube.yml` les garde dans l'archive ; `videos.yml` ne publie plus
+  que `short_pinterest.mp4` (un Short sans cette version n'est jamais publié), crédits voix + « Bols chantants : Freesound
+  (CC0) ». Les deux vidéos publiées sont refabriquées sans envoi pour obtenir ces versions. Les Shorts YouTube gardent la
+  musique (aucune réclamation YouTube à ce jour).
+- Ne jamais republier de musique Kevin MacLeod sur Pinterest. L'épingle muette peut être supprimée à la main.

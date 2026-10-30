@@ -1,6 +1,6 @@
 {
  "slug": "ruminations-soir",
- "statut": "publiee",
+ "statut": "a_fabriquer",
  "publication_prevue": "2026-10-24T03:20:08Z",
  "duree_totale_min": 30,
  "article": "/ruminations-le-soir/",
@@ -425,5 +425,6 @@
   "pensees": "SNPAts9BsQ0",
   "ciel_etoile": "xqYk9Wg9bfg",
   "respiration": "à relever (mis en ligne par l'utilisateur le 30/10, pas encore visible dans la recherche de l'API)"
- }
+ },
+ "note_pinterest_30_10": "30/10 (accord « oui pour B ») : refabrication sans envoi pour obtenir les versions short_pinterest.mp4 sans musique (voix + bols), seules republiées sur Pinterest après le son coupé du 29/10. Après fabrication : artefact_run = nouveau run, statut remis à « publiee »."
 }
