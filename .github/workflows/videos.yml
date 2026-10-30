@@ -267,7 +267,7 @@ jobs:
                       ident = f"short-{p['slug']}-{n}"
                       if ident not in faits:
                           dossier = p["slug"] if n == 1 else f"{p['slug']}~short{n}"
-                          out.append({"id": ident, "plan": p, "short": s, "fichier": f"{dossier}/short.mp4"})
+                          out.append({"id": ident, "plan": p, "short": s, "fichier": f"{dossier}/short_pinterest.mp4"})
               return out
 
           def publier_short():
@@ -313,7 +313,9 @@ jobs:
                       continue
                   p = c["plan"]
                   duree = "1 h" if (p.get("duree_totale_min") or 60) >= 60 else f"{p['duree_totale_min']} min"
-                  credits = "Voix de synthèse ElevenLabs. Musique : Kevin MacLeod (CC BY 4.0)." if str(p.get("voix", "")).startswith("elevenlabs") else "Musique : Kevin MacLeod (CC BY 4.0)."
+                  # version Pinterest sans musique (30/10/2026) : voix + bols chantants seulement
+                  credits = ("Voix de synthèse ElevenLabs. Bols chantants : Freesound (CC0)." if str(p.get("voix", "")).startswith("elevenlabs")
+                             else "Voix de synthèse Kokoro (voix ff_siwis, corpus SIWIS, CC BY 4.0). Bols chantants : Freesound (CC0).")
                   description = (f"{c['short']['description']} La version complète ({duree}, voix douce puis musique calme) "
                                  f"est gratuite sur YouTube : lien de l'épingle. À écouter allongé, jamais en conduisant. {credits} "
                                  "#sommeil #relaxation #endormissement #detente #respiration #stress #soir #calme")
@@ -334,10 +336,11 @@ jobs:
                   return True
               return False
 
-          # 30/10/2026 (accord de l'utilisateur « Fais A tout de suite ») : pause. Pinterest a coupé le son du 1er Short
-          # publié (« la musique appartient à quelqu'un d'autre » : musique Kevin MacLeod, pourtant CC BY). Reprise
-          # seulement avec des versions sans cette musique (voix + bols).
-          SHORTS_EN_PAUSE = True
+          # 30/10/2026 : Pinterest a coupé le son du 1er Short publié (« la musique appartient à quelqu'un d'autre » :
+          # musique Kevin MacLeod, pourtant CC BY). Pause (accord « Fais A tout de suite »), puis reprise avec les seules
+          # versions sans musique short_pinterest.mp4 (voix + bols, fabriquées par youtube.yml) : un Short dont
+          # l'archive ne contient pas cette version n'est jamais publié.
+          SHORTS_EN_PAUSE = False
           if not SHORTS_EN_PAUSE and publier_short():
               sys.exit(0)
 

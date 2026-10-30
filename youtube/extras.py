@@ -249,6 +249,13 @@ def _short(trav, tl, sh, ph, d0, d1, s, sortie):
     if p.wait() != 0:
         raise RuntimeError("ffmpeg a échoué sur le Short")
     print("Short :", sortie, f"{dur:.1f} s")
+    # même Short avec la piste sans musique (voix + bols), seule version republiée sur Pinterest (30/10/2026)
+    sans = os.path.join(trav, "piste_sans_musique.wav")
+    if os.path.exists(sans):
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", sortie, "-ss", f"{d0:.3f}", "-t", f"{dur:.3f}", "-i", sans,
+                        "-map", "0:v", "-map", "1:a", "-af", f"afade=t=in:d=0.6,afade=t=out:st={dur - 1.5:.3f}:d=1.5",
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest",
+                        os.path.join(os.path.dirname(sortie), "short_pinterest.mp4")], check=True)
     return sortie
 
 

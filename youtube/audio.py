@@ -274,6 +274,16 @@ def fabriquer(slug):
         piste[a:a + M] *= 0.89 / pic
     piste.flush()
     del piste, mus
+    # Piste sans musique pour les Shorts republiés sur Pinterest (30/10/2026) : Pinterest a coupé le son du premier
+    # Short (« la musique appartient à quelqu'un d'autre », musique Kevin MacLeod pourtant sous CC BY) ; voix + bols.
+    sm = voixp + bols
+    sm *= 0.89 / max(1e-6, float(np.abs(sm).max()))
+    brut2 = os.path.join(trav, "_sans_musique.f32")
+    sm.astype(np.float32).tofile(brut2)
+    del sm
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ac", "2", "-ar", str(SR), "-i", brut2,
+                    "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", str(SR), os.path.join(trav, "piste_sans_musique.wav")], check=True)
+    os.remove(brut2)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ac", "2", "-ar", str(SR), "-i", brut,
                     "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", str(SR), os.path.join(trav, "piste.wav")], check=True)
     os.remove(brut)
