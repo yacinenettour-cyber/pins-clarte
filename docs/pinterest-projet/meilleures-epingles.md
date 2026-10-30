@@ -294,3 +294,12 @@ ElevenLabs réservé à la voix. Ordre à suivre : Hugging Face, puis Canva pour
 photo libre Unsplash (personne réelle, habillée, licence Unsplash). Titre « 5 clés pour des réveils doux » sur l'image (la
 première version ne tenait pas en largeur), corps 395 / 398 caractères, anti_doublons sans doublon, verifier_banque.py
 0 doublon, visuel relu.
+
+**30/10/2026 (tâche du matin)** : « Respiration pour dormir : 5 étapes à faire au lit » (`images_cles/respiration-dormir-5-etapes.jpg`,
+sommeil, article `respiration-pour-dormir`, format `riche` déclaré `cles`). Étapes reprises de la routine de l'article
+(lumière éteinte et main sur le ventre ; respiration 4-6 pendant 5 minutes ; relâcher le corps zone par zone ; scène calme
+précise ; encore éveillé après 20 minutes : se lever, conseil INSV cité par l'article). Hugging Face de nouveau disponible :
+6 images (graine 681678), aucune écartée : femme allongée en pyjama rose poudré, mains sur le ventre, yeux fermés ;
+vignettes lampe de chevet et croissant de lune, plume, couverture sauge pliée, crique, fauteuil avec livre et lampe
+(images gardées dans `photos_attente/riche-respiration-dormir/`). Contrôles : anti_doublons.py sans doublon, titre
+49 caractères, corps 390 / 381, verifier_banque.py 0 doublon, visuel relu. Stock d'épingles illustrées : 2.
