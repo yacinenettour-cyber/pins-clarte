@@ -334,7 +334,11 @@ jobs:
                   return True
               return False
 
-          if publier_short():
+          # 30/10/2026 (accord de l'utilisateur « Fais A tout de suite ») : pause. Pinterest a coupé le son du 1er Short
+          # publié (« la musique appartient à quelqu'un d'autre » : musique Kevin MacLeod, pourtant CC BY). Reprise
+          # seulement avec des versions sans cette musique (voix + bols).
+          SHORTS_EN_PAUSE = True
+          if not SHORTS_EN_PAUSE and publier_short():
               sys.exit(0)
 
           def preparer_image(chemin_source, chemin_sortie):
