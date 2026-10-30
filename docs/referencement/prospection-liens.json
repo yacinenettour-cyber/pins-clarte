@@ -1933,10 +1933,10 @@
   },
   {
    "email_verifie": true,
-   "statut": "envoye",
+   "statut": "stop",
    "date_envoi": "2026-10-20",
    "relance": null,
-   "reponse": "20/10 04:13 : réponse automatique (répond en général le lundi et le jeudi, hors vacances scolaires). Statut inchangé.",
+   "reponse": "29/10 : Adeline préfère ne pas donner suite à la proposition de lien (refus poli). Ne plus écrire.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
    "site": "Harmonie & Plénitude (Adeline)",
