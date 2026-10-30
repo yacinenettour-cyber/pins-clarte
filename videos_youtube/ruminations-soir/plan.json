@@ -420,5 +420,10 @@
  ],
  "envoi_manuel": true,
  "note_shorts_29_10": "29/10 (accord de l'utilisateur « Ok » pour 3 Shorts tirés de cette vidéo) : refabrication avec la même voix Kokoro pour obtenir le Short respiration et 2 extraits (shorts_extra) ; envoi_manuel : rien n'est envoyé, la vidéo publique SCUS59y5kNs reste en place. Après fabrication : remettre statut « publiee » et noter artefact_run. Fait : run 40921165462 (0 erreur, voix 0,989, 512/532 mots, Shorts 61,5 s, 56,4 s et 49,9 s), statut remis à « publiee ».",
- "artefact_run": 40921165462
+ "artefact_run": 40921165462,
+ "shorts_youtube": {
+  "pensees": "SNPAts9BsQ0",
+  "ciel_etoile": "xqYk9Wg9bfg",
+  "respiration": "à relever (mis en ligne par l'utilisateur le 30/10, pas encore visible dans la recherche de l'API)"
+ }
 }
