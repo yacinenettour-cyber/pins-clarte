@@ -1281,3 +1281,9 @@ script de 2 000 à 5 000 caractères. Exception unique à la règle « ne rien p
 - **A (programmé le 31/10 au matin)** : lien du guide dans la description des 3 Shorts « Ruminations » (quota de l'API YouTube épuisé le 30/10).
 - **B** : non retenu par l'utilisateur pour l'instant.
 - La tâche vidéo hebdomadaire passe au dimanche 18 h 36 (retour de l'utilisation de l'utilisateur le dimanche à 18 h).
+
+## 99. Stock de photos rechargé (30/10/2026, demande de l'utilisateur « au moins 30 »)
+
+- 38 photos Unsplash gratuites téléchargées par `photos.yml`, triées à l'œil sur planches : 32 gardées dans `fonds/` (fatigue mentale 6, énergie 10, procrastination 5, blocage mental 10, somatisation 1), 6 refusées (logo de marque, écran avec texte lisible, pose selfie, deux hors sujet, coucher de soleil quasi jumeau d'un autre).
+- Empreinte comparée aux photos existantes : aucune copie (2 paires proches à l'empreinte vérifiées à l'œil, photos différentes).
+- Cadrage sur la tête : `outils/cadrage_fonds.py` relancé, mais seules les 16 nouvelles entrées détectées sont ajoutées à `fonds_cadrage.json` (le recalcul modifiait 66 cadrages anciens vérifiés à l'œil, laissés tels quels) ; contrôle visuel des 16 cadres.
