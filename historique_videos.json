@@ -430,5 +430,22 @@
   "pin_id": "600175087890416402",
   "short": true,
   "source": "https://youtu.be/PbuSSZlDu1c"
+ },
+ {
+  "date": "2026-10-30T17:33+00:00",
+  "id": "systemenerveux-marche-apres-reunion",
+  "titre": "5 minutes de marche après une réunion tendue changent tout",
+  "video": "videopins/videopin-20261030-173208.mp4",
+  "cover": "videopins/videopin-20261030-173208.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890435013",
+  "photos": [
+   "fonds/pexels-17591209.jpg",
+   "fonds/pexels-17591209.jpg",
+   "fonds/pexels-18168159.jpg",
+   "fonds/pexels-18168159.jpg",
+   "fonds/pexels-18325423.jpg",
+   "fonds/pexels-18325423.jpg"
+  ]
  }
 ]
