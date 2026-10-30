@@ -1915,10 +1915,10 @@
   },
   {
    "email_verifie": true,
-   "statut": "envoye",
+   "statut": "repondu",
    "date_envoi": "2026-10-20",
    "relance": "2026-10-30",
-   "reponse": null,
+   "reponse": "30/10 11:12 : Audrey Bousseau aurait préféré un échange de liens (« qu'ai-je à gagner ? »). Réponse envoyée le 30/10 à la demande de l'utilisateur (message 1a18c97f4e6af1ab) : proposition d'échange, lien vers « Jamais assez bien » (https://macoherence.com/jamais-assez-bien/) dans la partie « Pour aller plus loin » de /charge-mentale/ contre un lien vers /ruminations-le-soir/ ; à ajouter dès son accord, puis lui envoyer l'adresse.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
    "site": "Ma Cohérence (Audrey)",
