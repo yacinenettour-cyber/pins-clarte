@@ -1917,7 +1917,7 @@
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-20",
-   "relance": null,
+   "relance": "2026-10-30",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
@@ -1929,7 +1929,9 @@
    "sujet": "Ton article « Jamais assez bien »",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
-   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /ruminations-le-soir/"
+   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /ruminations-le-soir/",
+   "relance_message_id": "1a18c618279a8f7f",
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
   },
   {
    "email_verifie": true,
@@ -1953,7 +1955,7 @@
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-20",
-   "relance": null,
+   "relance": "2026-10-30",
    "reponse": "20/10 04:13 : réponse automatique (en vacances, retour le 26/10). Pas une vraie réponse ; statut inchangé.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
@@ -1965,13 +1967,15 @@
    "sujet": "Votre article sur les habitudes qui entretiennent l'anxiété",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
-   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /angoisse-le-soir/ (ne pas proposer la respiration comme remède : l'article critique le fait de vouloir se calmer à tout prix)"
+   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /angoisse-le-soir/ (ne pas proposer la respiration comme remède : l'article critique le fait de vouloir se calmer à tout prix)",
+   "relance_message_id": "1a18c6188a3b43ec",
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
   },
   {
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-20",
-   "relance": null,
+   "relance": "2026-10-30",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
@@ -1983,13 +1987,15 @@
    "sujet": "Votre article sur la charge mentale",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
-   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /charge-mentale/"
+   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /charge-mentale/",
+   "relance_message_id": "1a18c618d13fa2da",
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
   },
   {
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-20",
-   "relance": null,
+   "relance": "2026-10-30",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
@@ -2001,7 +2007,9 @@
    "sujet": "Votre infographie sur le stress au travail",
    "audience": "C thématique (règle du 20/10) : trouvé par les abonnés des comptes Pinterest proches",
    "type": "lien",
-   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /exercices-respiration/"
+   "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /exercices-respiration/",
+   "relance_message_id": "1a18c6190facc22a",
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
   },
   {
    "email_verifie": true,
@@ -2025,7 +2033,7 @@
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-20",
-   "relance": null,
+   "relance": "2026-10-30",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
@@ -2037,7 +2045,9 @@
    "sujet": "Ton article « Je souffre émotionnellement »",
    "audience": "C thématique (règle du 20/10), vérifiée le 20/10 sur le site : absent du top 1 million Tranco, critères a-d remplis",
    "type": "lien",
-   "note": "adresse lue sur la page /contact/ ; article publié le 12/09/2026 (mis à jour le 15/09) ; tutoiement ; aucun lien sortant mort ; notre page proposée : /ruminations-le-soir/"
+   "note": "adresse lue sur la page /contact/ ; article publié le 12/09/2026 (mis à jour le 15/09) ; tutoiement ; aucun lien sortant mort ; notre page proposée : /ruminations-le-soir/",
+   "relance_message_id": "1a18c619896fab3f",
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
   },
   {
    "email_verifie": true,
@@ -2061,7 +2071,7 @@
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-20",
-   "relance": null,
+   "relance": "2026-10-30",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
@@ -2073,13 +2083,15 @@
    "sujet": "Votre article « Le nuage magique »",
    "audience": "C thématique (règle du 20/10), vérifiée le 20/10 sur le site : absent du top 1 million Tranco, critères a-d remplis",
    "type": "lien",
-   "note": "adresse affichée sur l'accueil et /blog/ ; blog de sophrologie pour enfants (émotions, relaxation, sommeil) ; article de 2019 mis à jour le 09/09/2026, activité du blog en 09-10/2026 ; boutique de ses propres outils (pas d'articles commandités) ; aucun lien sortant mort ; notre page proposée : /respiration-guidee/ (pour les parents)"
+   "note": "adresse affichée sur l'accueil et /blog/ ; blog de sophrologie pour enfants (émotions, relaxation, sommeil) ; article de 2019 mis à jour le 09/09/2026, activité du blog en 09-10/2026 ; boutique de ses propres outils (pas d'articles commandités) ; aucun lien sortant mort ; notre page proposée : /respiration-guidee/ (pour les parents)",
+   "relance_message_id": "1a18c619cb0fc2d2",
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
   },
   {
    "email_verifie": true,
    "statut": "envoye",
    "date_envoi": "2026-10-20",
-   "relance": null,
+   "relance": "2026-10-30",
    "reponse": null,
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
@@ -2091,7 +2103,9 @@
    "sujet": "Votre article « S'ancrer pour ne plus perdre pied »",
    "audience": "C thématique (règle du 20/10), vérifiée le 20/10 sur le site : absent du top 1 million Tranco, critères a-d remplis",
    "type": "lien",
-   "note": "adresse affichée sur /contact/ et /blog/ ; psychologue et hypnothérapeute (MyPopPsy), blog stress, charge mentale, émotions ; article du 29/01/2026 ; aucun lien sortant dans l'article ; notre page proposée : /calmer-son-systeme-nerveux/"
+   "note": "adresse affichée sur /contact/ et /blog/ ; psychologue et hypnothérapeute (MyPopPsy), blog stress, charge mentale, émotions ; article du 29/01/2026 ; aucun lien sortant dans l'article ; notre page proposée : /calmer-son-systeme-nerveux/",
+   "relance_message_id": "1a18c61a7b75dac9",
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
   },
   {
    "email_verifie": true,
@@ -2340,6 +2354,77 @@
    "type": "ressources",
    "audience": "C",
    "remarque": "Écarté le 29/10 : « site d'information indépendant » sans auteur identifié, page Articles vide (« les premiers articles arrivent bientôt »)."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-30",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 30/10",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : critères a-d vérifiés sur le site",
+   "site": "Yoga et Méditation Paris (école)",
+   "domaine": "yogaetmeditationparis.fr",
+   "page_cible": "https://www.yogaetmeditationparis.fr/pranayama-tout-savoir/",
+   "email": "ecole@yogaetmeditationparis.fr",
+   "thread_id": "1a18c63029594c3b",
+   "sujet": "Votre article sur le pranayama",
+   "pourquoi": "Article pranayama très complet (sécurité, erreurs fréquentes), mis à jour le 06/05/2026 ; cours, stages et retraites."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-10-30",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 30/10",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : critères a-d vérifiés sur le site",
+   "site": "Océane Yoga",
+   "domaine": "oceaneyoga.fr",
+   "page_cible": "https://oceaneyoga.fr/pranayama-mieux-respirer-en-yoga/",
+   "email": "contact@oceaneyoga.fr",
+   "thread_id": "1a18c63090331779",
+   "sujet": "Vos exercices de respiration pour débutants",
+   "pourquoi": "Guide pranayama pour débutants (respiration de l'océan, carrée, alternée), mis à jour le 03/11/2025 ; programmes gratuits."
+  },
+  {
+   "site": "Alain Tanguy, professeur de yoga",
+   "domaine": "alaintanguy-yoga.fr",
+   "page_cible": "https://www.alaintanguy-yoga.fr/la-respiration/",
+   "email": null,
+   "email_verifie": false,
+   "statut": "a_verifier",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "30/10 : deux adresses différentes sur la page contact (alaintanguy@gmx.fr et alaitanguy@gmx.fr) et texte de remplissage sur la page : à vérifier avant tout envoi."
+  },
+  {
+   "site": "Souffle Conscient",
+   "domaine": "souffle-conscient.fr",
+   "page_cible": "https://souffle-conscient.fr/",
+   "email": null,
+   "email_verifie": false,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "30/10 : met en avant un « soin audio » par fréquence 128 Hz (allégation non sourcée) : hors ligne éditoriale."
+  },
+  {
+   "site": "Bruno Vigneault",
+   "domaine": "brunovigneault.com",
+   "page_cible": "https://brunovigneault.com/",
+   "email": null,
+   "email_verifie": false,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "30/10 : site de soins énergétiques : hors ligne éditoriale."
   }
  ],
  "passages": [
@@ -2410,6 +2495,10 @@
   {
    "date": "2026-10-29",
    "resultat": "Réponses lues (Gmail, 3 derniers jours) : Phobies-Zéro (directrice générale) va évaluer la fiche avec son équipe pour ses références → repondu ; Mon équilibre ULaval : refonte du site, aucune modification → repondu sans lien ; UQAM : accusé de réception automatique. 4 relances uniques dans le même fil (Keep Cool New Mom, Sheila Naturopathie, ULB Santé avec le lien toujours en 404 revérifié, UQAC), avec mention des ressources réutilisables. 3 nouveaux envois « ressources » (nouvelle approche, style humain, 125 à 130 mots, contrôle par script des formules interdites) : Florence Daudon (lien mort La Canopée signalé en premier), Sophro Autrement (programme sommeil de novembre), Jean-Marc Atkins (article 7 respirations). Céline Béen → formulaire ; Sophro'Lab (inactif depuis 2024) et sophrologuedijon.fr (site anonyme sans articles) écartés ; Pascale Farrugia laissée de côté (propose déjà ses propres audios). 7 envois au total, tous vérifiés dans les Envoyés (libellé SENT, sans signature ajoutée)."
+  },
+  {
+   "date": "2026-10-30",
+   "resultat": "Réponses lues (Gmail, 2 jours) : aucune nouvelle (Harmonie & Plénitude, Phobies-Zéro, ULaval déjà notées). 7 relances uniques dans le même fil pour les envois du 20/10 (Ma Cohérence, Guérir l'anxiété, Montpellier sophrologie, Relaxation dynamique, Ma psy en ligne chez moi, Sophrospirit, Delphine Basson), avec les ressources réutilisables, ouvertures toutes différentes. 2 nouveaux envois « ressources » (Yoga et Méditation Paris, Océane Yoga), 117 et 124 mots, formules interdites contrôlées. Alain Tanguy à vérifier (deux adresses), Souffle Conscient et Bruno Vigneault écartés (fréquences sonores et soins énergétiques). 9 envois, tous vérifiés (SENT). Le connecteur Gmail direct manque d'une autorisation : envois faits par Composio."
   }
  ]
 }
