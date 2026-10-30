@@ -1273,3 +1273,11 @@ voix, usage commercial), le reste gratuit pendant au moins un mois. Il l'a pris 
 d'Eleven Labs »). Compte vérifié : 3 601 crédits utilisés sur 10 000 avant le changement (voix de la relaxation Jacobson).
 Tâche « Vidéo YouTube » passée de 2 vidéos par mois (1er et 15) à 1 par semaine (dimanche 10 h 06, heure de Paris),
 script de 2 000 à 5 000 caractères. Exception unique à la règle « ne rien payer » (CLAUDE.md).
+
+## 98. Inscriptions au guide : A et C (30/10/2026, accord de l'utilisateur « 1 A C »)
+
+- **Constat** : 2 vraies inscriptions au guide sommeil en octobre ; la page de capture reçoit très peu de visites.
+- **C (appliqué)** : 3 épingles sommeil non publiées sur les ruminations, dont le texte décrit déjà le guide, mènent maintenant au guide au lieu de l'article « ruminations-le-soir » (champ `article` retiré) : « Ruminations : passer du « pourquoi » au « comment » », « Tâches inachevées : pourquoi elles tournent le soir », « Peur de ne pas dormir : 4 étapes pour la désamorcer ». Écartée : « S'endormir sans médicament : 4 visualisations douces » (description qui présente la visualisation comme une alternative aux somnifères, à revoir avant de l'envoyer vers le guide). Stock : 37 épingles sommeil non publiées mènent au guide. `pins.yml` n'a pas été modifié (`POIDS_THEME` à réévaluer le 04/11).
+- **A (programmé le 31/10 au matin)** : lien du guide dans la description des 3 Shorts « Ruminations » (quota de l'API YouTube épuisé le 30/10).
+- **B** : non retenu par l'utilisateur pour l'instant.
+- La tâche vidéo hebdomadaire passe au dimanche 18 h 36 (retour de l'utilisation de l'utilisateur le dimanche à 18 h).
