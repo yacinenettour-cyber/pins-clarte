@@ -1,6 +1,6 @@
 {
  "slug": "ruminations-soir",
- "statut": "fabriquee",
+ "statut": "publiee",
  "publication_prevue": "2026-10-24T03:20:08Z",
  "duree_totale_min": 30,
  "article": "/ruminations-le-soir/",
@@ -420,11 +420,11 @@
  ],
  "envoi_manuel": true,
  "note_shorts_29_10": "29/10 (accord de l'utilisateur « Ok » pour 3 Shorts tirés de cette vidéo) : refabrication avec la même voix Kokoro pour obtenir le Short respiration et 2 extraits (shorts_extra) ; envoi_manuel : rien n'est envoyé, la vidéo publique SCUS59y5kNs reste en place. Après fabrication : remettre statut « publiee » et noter artefact_run. Fait : run 40921165462 (0 erreur, voix 0,989, 512/532 mots, Shorts 61,5 s, 56,4 s et 49,9 s), statut remis à « publiee ».",
- "artefact_run": 40921165462,
+ "artefact_run": 41004012949,
  "shorts_youtube": {
   "pensees": "SNPAts9BsQ0",
   "ciel_etoile": "xqYk9Wg9bfg",
   "respiration": "à relever (mis en ligne par l'utilisateur le 30/10, pas encore visible dans la recherche de l'API)"
  },
- "note_pinterest_30_10": "30/10 (accord « oui pour B ») : refabrication sans envoi pour obtenir les versions short_pinterest.mp4 sans musique (voix + bols), seules republiées sur Pinterest après le son coupé du 29/10. Après fabrication : artefact_run = nouveau run, statut remis à « publiee »."
+ "note_pinterest_30_10": "30/10 (accord « oui pour B ») : refabrication sans envoi pour obtenir les versions short_pinterest.mp4 sans musique (voix + bols), seules republiées sur Pinterest après le son coupé du 29/10. Après fabrication : artefact_run = nouveau run, statut remis à « publiee ». Fait : run 41004012949 (0 erreur), 6 short_pinterest.mp4 dans l'archive (jusqu'au 29/11), son vérifié (voix présente, silence complet entre les phrases : pas de musique)."
 }
