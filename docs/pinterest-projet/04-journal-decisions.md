@@ -1286,4 +1286,5 @@ script de 2 000 à 5 000 caractères. Exception unique à la règle « ne rien p
 
 - 38 photos Unsplash gratuites téléchargées par `photos.yml`, triées à l'œil sur planches : 32 gardées dans `fonds/` (fatigue mentale 6, énergie 10, procrastination 5, blocage mental 10, somatisation 1), 6 refusées (logo de marque, écran avec texte lisible, pose selfie, deux hors sujet, coucher de soleil quasi jumeau d'un autre).
 - Empreinte comparée aux photos existantes : aucune copie (2 paires proches à l'empreinte vérifiées à l'œil, photos différentes).
+- Postures anti-stress (même jour) : 7 photos de plus téléchargées, 3 gardées (bureau, étirement), 4 refusées (gros plan du cou trop suggestif, pose étrange, photo de mode hors sujet, quasi-jumelle d'une autre) ; stock postures : 12 photos inédites pour 8 épingles en attente.
 - Cadrage sur la tête : `outils/cadrage_fonds.py` relancé, mais seules les 16 nouvelles entrées détectées sont ajoutées à `fonds_cadrage.json` (le recalcul modifiait 66 cadrages anciens vérifiés à l'œil, laissés tels quels) ; contrôle visuel des 16 cadres.
