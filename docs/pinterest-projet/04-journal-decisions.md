@@ -1292,3 +1292,4 @@ script de 2 000 à 5 000 caractères. Exception unique à la règle « ne rien p
 ## 100. Article « Fatigue nerveuse » relié aux épingles (31/10/2026, accord de l'utilisateur « Ok »)
 
 - `pins.yml` : `fatigue-nerveuse` ajouté à `ARTICLES_SITE`. Les épingles qui portent `"article": "fatigue-nerveuse"` (pour l'instant « Fatigue nerveuse : 5 clés pour recharger ») mènent à `/fatigue-nerveuse/` avec leur `description_article`, même si le thème `fatiguementale` est sans guide (`article_du_pin()` ne dépend pas du thème). YAML vérifié.
+- Attention : « Fatigue nerveuse : 5 clés pour recharger » a été publiée par le robot le 31/10 à 6 h 07 (pin 600175087890443628), avant cette modification, donc **sans lien**. L'API ne permet pas de modifier une épingle publiée : lien à ajouter à la main par l'utilisateur (https://www.contactapaisement-mental.fr/fatigue-nerveuse/).

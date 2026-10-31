@@ -1953,10 +1953,10 @@
   },
   {
    "email_verifie": true,
-   "statut": "envoye",
+   "statut": "refus",
    "date_envoi": "2026-10-20",
    "relance": "2026-10-30",
-   "reponse": "20/10 04:13 : réponse automatique (en vacances, retour le 26/10). Pas une vraie réponse ; statut inchangé.",
+   "reponse": "20/10 04:13 : réponse automatique (en vacances, retour le 26/10). Pas une vraie réponse ; statut inchangé. 30/10 14:23 : Delphine Couet n'ajoute pas de lien sans rémunération (50 € par lien). Refusé : aucun lien payant (consigne « je ne veux rien payer ») ; ne plus relancer.",
    "lien_obtenu": null,
    "lot": "blogs du même sujet 20/10",
    "site": "Guérir l'anxiété (Delphine Couet)",
