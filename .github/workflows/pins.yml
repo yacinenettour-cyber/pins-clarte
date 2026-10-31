@@ -891,6 +891,7 @@ jobs:
               "relaxation-jacobson": "Relaxation Jacobson pour dormir",
               "sommeil-leger": "Sommeil léger : réveillé au moindre bruit",
               "machoire-serree-stress": "Mâchoire serrée et stress",
+              "fatigue-nerveuse": "Fatigue nerveuse : symptômes et causes",
           }
           # 0,4 → 0,6 le 12/10/2026 (audit des impressions, accord de l'utilisateur) : 132 des 150 épingles
           # avec lien menaient à la même page de capture d'environ 30 mots, alors que Pinterest demande une
