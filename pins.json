@@ -1,5 +1,22 @@
 [
  {
+  "titre": "Fatigue nerveuse : 5 clés pour recharger",
+  "texte_image": "5 clés pour recharger",
+  "points_image": [
+   "Des pauses courtes",
+   "Protège tes nuits",
+   "Bouge un peu",
+   "Allège ta tête",
+   "Ça dure ?"
+  ],
+  "description": "Sauve ces 5 clés pour les jours où tu te sens vidé(e) sans avoir rien fait de physique. Fais des pauses courtes, environ toutes les heures : lever les yeux, boire un verre d'eau. Vise au moins 7 heures de sommeil à horaires réguliers. Marche un peu, à ton rythme. Allège ce qui tourne dans ta tête. Et si la fatigue dure depuis plusieurs semaines sans raison claire, parles-en à ton médecin. #fatiguementale #fatigue #epuisement #energie #stress #pause #sommeil #recuperation",
+  "theme": "fatiguementale",
+  "image_prete": "images_cles/fatigue-nerveuse-5-cles.jpg",
+  "format": "cles",
+  "article": "fatigue-nerveuse",
+  "description_article": "Tête vidée sans avoir rien fait de physique ? La fatigue nerveuse n'est pas un diagnostic, c'est surtout une fatigue mentale. Des pauses courtes toutes les heures, au moins 7 heures de sommeil, un peu de marche à ton rythme et une tête allégée aident souvent. Si la fatigue dure depuis plusieurs semaines, parles-en à ton médecin. Causes, études et différence avec le burn-out : article complet en lien. #fatiguementale #fatigue #epuisement #energie #stress #pause #sommeil #recuperation"
+ },
+ {
   "titre": "Respiration pour dormir : 5 étapes à faire au lit",
   "texte_image": "5 étapes au lit",
   "points_image": [
