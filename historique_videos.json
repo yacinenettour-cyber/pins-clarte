@@ -447,5 +447,16 @@
    "fonds/pexels-18325423.jpg",
    "fonds/pexels-18325423.jpg"
   ]
+ },
+ {
+  "date": "2026-10-31T17:33+00:00",
+  "id": "short-relaxation-jacobson-2",
+  "titre": "Détends ton visage en 1 minute avant de dormir",
+  "video": "videopins/videopin-20261031-173215.mp4",
+  "cover": "videopins/videopin-20261031-173215.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890450384",
+  "short": true,
+  "source": "https://youtu.be/PbuSSZlDu1c"
  }
 ]
