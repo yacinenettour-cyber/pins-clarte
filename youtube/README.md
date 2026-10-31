@@ -65,3 +65,7 @@ aucune description (pas de lien vers la vidéo complète) ; aucune des deux vid�
   `brandingSettings` puis `localizations`, relu après chaque envoi). À coller à la main dans YouTube Studio
   (texte dans `docs/referencement/kit-profils.md`, section 1). À faire aussi à la main : « Vidéo similaire »
   sur chaque Short (Studio → le Short → Vidéo similaire → la relaxation complète).
+
+## Décision du 31/10/2026 : pas d'avatar HeyGen
+
+L'utilisateur a décidé de ne pas utiliser son avatar HeyGen pour la chaîne (« je vais pas utiliser mon avatar pour cette chaîne YouTube »). Raisons : un avatar se repère vite (bouche, mains, regard), ce qui contredit la règle « rien ne doit faire IA » sur un sujet où la confiance compte ; le format méditation s'écoute les yeux fermés ; YouTube demande de signaler un visage réaliste généré ; pas de crédit HeyGen (rien à payer). Ne pas proposer d'avatar (HeyGen ou autre) pour cette chaîne. Pistes possibles si un visage est un jour voulu : l'utilisateur filmé au téléphone, ou des images réelles sans visage.
