@@ -2379,5 +2379,16 @@
   "pin_id": "600175087890436471",
   "md5": "b9dd4d9e7e091ec769b18e92d1f14808",
   "lien": "article:angoisse-le-matin"
+ },
+ {
+  "date": "2026-10-31T06:07+00:00",
+  "titre": "Fatigue nerveuse : 5 clés pour recharger",
+  "image": "images/pin-20261031-060751.jpg",
+  "fond": "prete:images_cles/fatigue-nerveuse-5-cles.jpg",
+  "theme": "fatiguementale",
+  "design": "cles",
+  "pin_id": "600175087890443628",
+  "md5": "2103fb098fb5980230c66c7611c0b83e",
+  "lien": ""
  }
 ]
