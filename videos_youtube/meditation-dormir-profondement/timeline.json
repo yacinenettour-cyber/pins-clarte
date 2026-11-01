@@ -1,0 +1,291 @@
+{
+ "duree": 600,
+ "fin_voix": 454.8154583333334,
+ "cues": [
+  {
+   "debut": 3.0,
+   "fin": 3.7345,
+   "texte": "Bonsoir."
+  },
+  {
+   "debut": 5.234500000000001,
+   "fin": 9.643354166666668,
+   "texte": "Cette méditation t'accompagne pour glisser doucement vers un sommeil profond."
+  },
+  {
+   "debut": 11.643354166666668,
+   "fin": 15.327437500000002,
+   "texte": "Écoute-la seulement allongé, au calme, jamais en conduisant."
+  },
+  {
+   "debut": 17.327437500000002,
+   "fin": 21.42741666666667,
+   "texte": "Tu n'as rien à réussir. Si tu t'endors avant la fin, c'est très bien."
+  },
+  {
+   "debut": 23.92741666666667,
+   "fin": 30.41229166666667,
+   "texte": "On va ralentir le souffle, relâcher le corps, puis poser l'esprit sur une image tranquille."
+  },
+  {
+   "debut": 37.41229166666667,
+   "fin": 40.132875,
+   "texte": "Allonge-toi dans la position où tu dors d'habitude."
+  },
+  {
+   "debut": 44.132875,
+   "fin": 46.522124999999996,
+   "texte": "Si tu le souhaites, ferme doucement les yeux."
+  },
+  {
+   "debut": 50.522125,
+   "fin": 54.15414583333334,
+   "texte": "Laisse le matelas porter ton poids. Tu n'as plus rien à tenir."
+  },
+  {
+   "debut": 60.15414583333334,
+   "fin": 63.79510416666667,
+   "texte": "Écoute un instant les sons autour de toi, sans rien en faire."
+  },
+  {
+   "debut": 74.79510416666668,
+   "fin": 76.79756250000001,
+   "texte": "Maintenant, on ralentit le souffle."
+  },
+  {
+   "debut": 78.79756250000001,
+   "fin": 82.92139583333335,
+   "texte": "Tu inspires par le nez sur quatre temps, et tu souffles lentement sur six temps."
+  },
+  {
+   "debut": 85.92139583333335,
+   "fin": 87.15391666666669,
+   "texte": "Suis simplement le son."
+  },
+  {
+   "debut": 89.3039166666667,
+   "fin": 90.37745833333337,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 93.3039166666667,
+   "fin": 94.3818541666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 99.3039166666667,
+   "fin": 100.37745833333337,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 103.3039166666667,
+   "fin": 104.3818541666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 109.3039166666667,
+   "fin": 110.37745833333337,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 113.3039166666667,
+   "fin": 114.3818541666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 119.3039166666667,
+   "fin": 120.37745833333337,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 123.3039166666667,
+   "fin": 124.3818541666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 130.1539166666667,
+   "fin": 132.17514583333337,
+   "texte": "Continue à ton rythme, sans forcer."
+  },
+  {
+   "debut": 176.17514583333337,
+   "fin": 181.06327083333338,
+   "texte": "Laisse ta respiration redevenir naturelle. Elle sait faire toute seule."
+  },
+  {
+   "debut": 191.06327083333338,
+   "fin": 194.4277916666667,
+   "texte": "Pense à une chose que tu as faite aujourd'hui. Même petite."
+  },
+  {
+   "debut": 200.4277916666667,
+   "fin": 202.61802083333336,
+   "texte": "Dis-toi simplement : c'est fait."
+  },
+  {
+   "debut": 208.61802083333336,
+   "fin": 211.29543750000002,
+   "texte": "Maintenant, pense à une chose qui attendra demain."
+  },
+  {
+   "debut": 216.29543750000002,
+   "fin": 219.27502083333334,
+   "texte": "Imagine que tu la poses sur une table, à côté du lit."
+  },
+  {
+   "debut": 224.27502083333334,
+   "fin": 227.44589583333334,
+   "texte": "Elle sera là demain matin. Pour cette nuit, tu peux la laisser."
+  },
+  {
+   "debut": 235.44589583333334,
+   "fin": 240.11758333333333,
+   "texte": "Si une autre pensée arrive, pose-la au même endroit. Sans te presser."
+  },
+  {
+   "debut": 253.11758333333333,
+   "fin": 256.75947916666667,
+   "texte": "Porte ton attention sur ton front. Laisse-le s'élargir."
+  },
+  {
+   "debut": 262.75947916666667,
+   "fin": 266.115125,
+   "texte": "Desserre la mâchoire. Les dents ne se touchent plus."
+  },
+  {
+   "debut": 272.115125,
+   "fin": 274.58233333333334,
+   "texte": "Laisse tes épaules descendre, encore un peu."
+  },
+  {
+   "debut": 280.58233333333334,
+   "fin": 283.4795625,
+   "texte": "Tes bras deviennent lourds. Tes mains s'ouvrent."
+  },
+  {
+   "debut": 289.4795625,
+   "fin": 292.5229375,
+   "texte": "Ton ventre se soulève et redescend, tout seul."
+  },
+  {
+   "debut": 299.5229375,
+   "fin": 302.4432708333334,
+   "texte": "Tes jambes s'enfoncent dans le matelas, jusqu'aux pieds."
+  },
+  {
+   "debut": 314.4432708333334,
+   "fin": 318.021875,
+   "texte": "Maintenant, imagine un chemin au bord d'un lac, le soir."
+  },
+  {
+   "debut": 323.021875,
+   "fin": 325.5186041666667,
+   "texte": "L'air est frais. L'eau est immobile."
+  },
+  {
+   "debut": 331.5186041666667,
+   "fin": 334.5715,
+   "texte": "Le chemin est doux sous tes pieds. Rien ne presse."
+  },
+  {
+   "debut": 341.5715,
+   "fin": 343.69441666666665,
+   "texte": "Regarde la couleur du ciel au-dessus de l'eau."
+  },
+  {
+   "debut": 350.69441666666665,
+   "fin": 355.2500833333333,
+   "texte": "Écoute le bruit de tes pas sur le chemin. Lents. Réguliers."
+  },
+  {
+   "debut": 363.25008333333335,
+   "fin": 366.00064583333335,
+   "texte": "Au loin, une petite lumière s'allume dans une maison."
+  },
+  {
+   "debut": 373.00064583333335,
+   "fin": 378.8435625,
+   "texte": "Prends le temps de remarquer un détail. Une pierre, une branche, un reflet."
+  },
+  {
+   "debut": 388.8435625,
+   "fin": 392.01641666666666,
+   "texte": "Si ton esprit part ailleurs, reviens doucement au chemin."
+  },
+  {
+   "debut": 406.0164166666667,
+   "fin": 408.0716041666667,
+   "texte": "Maintenant, tu n'as plus rien à faire."
+  },
+  {
+   "debut": 414.0716041666667,
+   "fin": 417.43489583333337,
+   "texte": "Laisse l'image devenir floue, comme un rêve qui commence."
+  },
+  {
+   "debut": 425.43489583333337,
+   "fin": 428.0248541666667,
+   "texte": "Ton souffle est lent. Ton corps est lourd."
+  },
+  {
+   "debut": 436.0248541666667,
+   "fin": 438.3628750000001,
+   "texte": "Chaque expiration t'emmène un peu plus loin."
+  },
+  {
+   "debut": 446.3628750000001,
+   "fin": 449.1838125000001,
+   "texte": "Je vais me taire. Laisse la musique t'accompagner."
+  },
+  {
+   "debut": 454.1838125000001,
+   "fin": 454.8154583333334,
+   "texte": "Bonne nuit."
+  }
+ ],
+ "titres": [
+  {
+   "debut": 33.41229166666667,
+   "fin": 42.41229166666667,
+   "texte": "S'installer"
+  },
+  {
+   "debut": 70.79510416666668,
+   "fin": 79.79510416666668,
+   "texte": "Respirer lentement"
+  },
+  {
+   "debut": 187.06327083333338,
+   "fin": 196.06327083333338,
+   "texte": "Déposer la journée"
+  },
+  {
+   "debut": 249.11758333333333,
+   "fin": 258.1175833333333,
+   "texte": "Relâcher le corps"
+  },
+  {
+   "debut": 310.4432708333334,
+   "fin": 319.4432708333334,
+   "texte": "Une scène calme"
+  },
+  {
+   "debut": 402.0164166666667,
+   "fin": 411.0164166666667,
+   "texte": "Glisser vers le sommeil"
+  }
+ ],
+ "souffles": [
+  {
+   "debut": 89.15391666666669,
+   "cycles": 4
+  },
+  {
+   "debut": 135.17514583333337,
+   "cycles": 4
+  }
+ ],
+ "voix_douteuses": [],
+ "insp": 4.0,
+ "exp": 6.0
+}
