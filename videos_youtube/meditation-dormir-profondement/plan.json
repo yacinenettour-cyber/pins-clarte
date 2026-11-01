@@ -1,8 +1,8 @@
 {
  "slug": "meditation-dormir-profondement",
- "statut": "fabriquee",
+ "statut": "publiee",
  "envoi_manuel": true,
- "publication_prevue": "2026-11-04T19:00:00Z",
+ "publication_prevue": "2026-11-01T17:25:27Z",
  "duree_totale_min": 10,
  "article": "/respiration-pour-dormir/",
  "ecran": {
@@ -406,5 +406,16 @@
  ],
  "note_concurrence_01_11": "01/11 (consigne « appuie-toi sur ce qui fonctionne sur YouTube et espionne la concurrence ») : 5 Shorts au lieu de 3 (les Shorts font plus de 95 % des vues de la chaîne), accroche qui part du ressenti, mots-clés repris des vidéos en tête (docs/referencement/concurrence-youtube.md, section du 01/11).",
  "artefact_run": 41326609809,
- "note_descriptions_01_11": "01/11 : descriptions réécrites à la demande de l'utilisateur (« refais-moi des descriptions mieux que ça et enlève le lien de la vidéo dans les descriptions ») : plus de lien vers la vidéo complète dans les Shorts."
+ "note_descriptions_01_11": "01/11 : descriptions réécrites à la demande de l'utilisateur (« refais-moi des descriptions mieux que ça et enlève le lien de la vidéo dans les descriptions ») : plus de lien vers la vidéo complète dans les Shorts.",
+ "bloquee": true,
+ "video_id": "q0ucVBKNMjM",
+ "lien": "https://youtu.be/q0ucVBKNMjM",
+ "shorts_youtube": {
+  "respiration": "Son6Xv9kRTE",
+  "deposer_journee": "zMkrAhpOung",
+  "relacher_corps": "hxoXllJEZJM",
+  "lac_calme": "pu36HkiVbVk",
+  "matelas": "4C8ee3YZ5co"
+ },
+ "note_mise_en_ligne_01_11": "01/11 : vidéo et 5 Shorts mis en ligne à la main par l'utilisateur, publics tout de suite (pas le 04/11) ; identifiants lus par l'API YouTube ; publication_prevue ramenée à l'heure réelle."
 }
