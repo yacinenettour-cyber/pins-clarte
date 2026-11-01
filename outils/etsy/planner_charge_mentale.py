@@ -1,15 +1,19 @@
 """Produit Etsy n° 1 (31/10/2026) : planner « Alléger sa charge mentale », 4 semaines, A4 à imprimer.
+Version 2 (même jour, pour se démarquer) : volet à deux (qui pense, organise, fait), semaine d'exemple remplie,
+page « Pourquoi ça marche » sourcée, version économe en encre.
 Texte dessiné par PIL (polices OFL de polices/), pages A4 à 200 dpi, PDF multipage + aperçus pour la fiche Etsy.
-Appel : python3 outils/etsy/planner_charge_mentale.py  → etsy/planner-charge-mentale/"""
+Appel : python3 outils/etsy/planner_charge_mentale.py  : etsy/planner-charge-mentale/"""
 import os
 from PIL import Image, ImageDraw, ImageFont
 
 POL = os.path.join(os.path.dirname(__file__), "..", "..", "polices") + "/"
 SORTIE = os.path.join(os.path.dirname(__file__), "..", "..", "etsy", "planner-charge-mentale")
 W, H = 1654, 2339  # A4, 200 dpi
+NB_PAGES = 27
 M = 130  # marge
 CREME = (250, 245, 236); SAUGE = (124, 146, 118); SAUGE_C = (226, 233, 221); ROSE = (196, 120, 116)
 ROSE_C = (244, 226, 220); BRUN = (74, 52, 36); TXT = (70, 62, 54); TRAIT = (205, 194, 178); OR = (176, 128, 52)
+ENCRE = (38, 62, 112)  # « stylo » des pages d'exemple
 f = lambda n, t: ImageFont.truetype(POL + n, t)
 TITRE = lambda t: f("PlayfairDisplay-Bold.ttf", t)
 MAIN = lambda t: f("DancingScript-Bold.ttf", t)
@@ -23,6 +27,8 @@ def page():
 
 
 def lignes(d, t, fo, l):
+    # espace insécable avant « ? : ! » : jamais de ponctuation seule en début de ligne
+    t = t.replace(" ?", "\u00a0?").replace(" :", "\u00a0:").replace(" !", "\u00a0!")
     out, cur = [], ""
     for m in t.split(" "):
         e = (cur + " " + m).strip()
@@ -88,7 +94,8 @@ def couverture():
     y = 1380
     for t in ("Vider sa tête, trier, déléguer,", "et retrouver un peu d'air", "dans sa semaine."):
         centre(d, y, t, TEXTE(58), TXT); y += 84
-    centre(d, 1900, "À imprimer · format A4 · 20 pages", GRAS(42), SAUGE)
+    centre(d, 1800, "avec un volet à deux et une semaine d'exemple", MAIN(54), ROSE)
+    centre(d, 1910, "À imprimer · format A4 · 27 pages", GRAS(42), SAUGE)
     centre(d, 1980, "Clarté Mentale | Stress & Énergie", TEXTE(38), (140, 126, 110))
     return img
 
@@ -120,19 +127,28 @@ def mode_emploi():
     return img
 
 
-def vide_tete(s, num):
+def ecrire(d, x, y_ligne, t, l):
+    """Texte « à la main » posé sur une ligne d'écriture."""
+    fo = MAIN(40)
+    assert d.textlength(t, font=fo) <= l, ("exemple trop long", t)
+    d.text((x, y_ligne - 50), t, font=fo, fill=ENCRE)
+
+
+def vide_tete(s, num, ex=None):
     img, d = page()
-    y = entete(d, f"semaine {s}", "Vide-tête", num)
+    y = entete(d, "exemple rempli" if ex else f"semaine {s}", "Vide-tête", num)
     y = paragraphe(d, M, y, "Tout ce qui tourne dans ta tête : tâches, rendez-vous, soucis, choses à ne pas oublier. "
                    "Sans trier, sans juger.", TEXTE(38), W - 2 * M) + 30
     cadre(d, M, y, W - M, H - 200)
     lignes_ecriture(d, M + 40, y + 10, W - M - 40, H - 240)
+    for k, t in enumerate(ex or []):
+        ecrire(d, M + 60, y + 10 + 78 * (k + 1), t, W - 2 * M - 120)
     return img
 
 
-def tri(s, num):
+def tri(s, num, ex=None):
     img, d = page()
-    y = entete(d, f"semaine {s}", "Le tri", num)
+    y = entete(d, "exemple rempli" if ex else f"semaine {s}", "Le tri", num)
     cases = [("Je m'en occupe", "cette semaine", SAUGE_C), ("Je délègue", "à qui ?", ROSE_C),
              ("Plus tard", "pas cette semaine", ROSE_C), ("Je lâche", "ce n'est pas si important", SAUGE_C)]
     g = 40; lw = (W - 2 * M - g) / 2; lh = (H - 200 - y - g) / 2
@@ -142,12 +158,14 @@ def tri(s, num):
         centre(d, y0 + 35, t, GRAS(50), BRUN, x0, x0 + lw)
         centre(d, y0 + 105, st, MAIN(44), ROSE, x0, x0 + lw)
         lignes_ecriture(d, x0 + 40, y0 + 170, x0 + lw - 40, y0 + lh - 30, pas=74)
+        for i, t in enumerate((ex or [[]] * 4)[k]):
+            ecrire(d, x0 + 50, y0 + 170 + 74 * (i + 1), t, lw - 100)
     return img
 
 
-def semaine(s, num):
+def semaine(s, num, ex=None):
     img, d = page()
-    y = entete(d, f"semaine {s}", "Ma semaine", num)
+    y = entete(d, "exemple rempli" if ex else f"semaine {s}", "Ma semaine", num)
     jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
     g = 26; lw = (W - 2 * M - g) / 2; lh = (H - 200 - y - 3 * g) / 4
     for k, j in enumerate(jours):
@@ -155,11 +173,17 @@ def semaine(s, num):
         cadre(d, x0, y0, x0 + lw, y0 + lh)
         d.text((x0 + 30, y0 + 22), j, font=GRAS(44), fill=BRUN)
         yy = y0 + 95
+        jx = (ex or {}).get(j, [])
         for i in range(3):
             d.rounded_rectangle((x0 + 30, yy + 8, x0 + 62, yy + 40), 6, outline=SAUGE, width=3)
-            d.line((x0 + 80, yy + 40, x0 + lw - 30, yy + 40), fill=TRAIT, width=2); yy += 66
+            d.line((x0 + 80, yy + 40, x0 + lw - 30, yy + 40), fill=TRAIT, width=2)
+            if i < len(jx) - 1:
+                ecrire(d, x0 + 85, yy + 42, jx[i], lw - 120)
+            yy += 66
         d.text((x0 + 30, yy + 4), "Pour moi :", font=MAIN(38), fill=ROSE)
         d.line((x0 + 200, yy + 44, x0 + lw - 30, yy + 44), fill=TRAIT, width=2)
+        if jx:
+            ecrire(d, x0 + 210, yy + 46, jx[-1], lw - 245)
     x0 = M + lw + g; y0 = y + 3 * (lh + g)
     cadre(d, x0, y0, x0 + lw, y0 + lh, fond=SAUGE_C, contour=SAUGE_C)
     centre(d, y0 + 40, "Trois priorités par jour,", GRAS(40), BRUN, x0, x0 + lw)
@@ -213,18 +237,127 @@ def notes(num):
     return img
 
 
+def pourquoi(num):
+    img, d = page()
+    y = entete(d, "ce que disent les recherches", "Pourquoi ça marche", num)
+    blocs = [
+        ("Penser à tout, c'est un travail", "Dès 1984, la sociologue Monique Haicault a décrit ce travail invisible de "
+         "gestion du quotidien : prévoir, organiser, se souvenir, en plus de faire. C'est souvent cette partie "
+         "« penser » qui épuise, parce qu'elle ne s'arrête jamais. D'où les trois colonnes « penser, organiser, "
+         "faire » du volet à deux."),
+        ("Une tâche en suspens revient en tête", "Dans une série d'expériences publiées en 2011 (Masicampo et Baumeister, "
+         "Florida State University, Journal of Personality and Social Psychology), une tâche non terminée revenait "
+         "sans cesse à l'esprit des participants. Ceux qui écrivaient un plan précis pour la réaliser étaient beaucoup "
+         "moins dérangés par ces pensées."),
+        ("Ce que ça change pour toi", "Le vide-tête sort tout de ta tête. Le tri décide de ce qui reste à toi. Et pour "
+         "chaque tâche « je m'en occupe », note quand et comment tu vas la faire : c'est ce petit plan qui laisse "
+         "ta tête tranquille en attendant."),
+    ]
+    for t, txt in blocs:
+        d.text((M, y), t, font=GRAS(50), fill=BRUN)
+        y = paragraphe(d, M, y + 75, txt, TEXTE(38), W - 2 * M) + 60
+    cadre(d, M, y, W - M, y + 170, fond=SAUGE_C, contour=SAUGE_C)
+    centre(d, y + 50, "Pas besoin de tout faire. Juste de tout poser.", MAIN(58), ROSE)
+    return img
+
+
+TACHES_FOYER = ["Repas de la semaine", "Courses", "Linge", "Ménage", "Rendez-vous médicaux", "Papiers et factures",
+                "Budget du mois", "École, devoirs, réunions", "Activités des enfants", "Anniversaires et cadeaux",
+                "Vacances et week-ends", "Réparations, artisans", "Voiture, assurances", "Liens avec la famille",
+                "Animaux", "Imprévus (malade, grève…)", "Stock de la maison", "Sorties et invitations",
+                "Démarches administratives", "Tri, rangement, saisons", "Calendrier commun", "Autre :"]
+
+
+def qui_fait_quoi(num, part):
+    img, d = page()
+    y = entete(d, "le volet à deux", "Qui fait quoi ?", num)
+    if part == 1:
+        y = paragraphe(d, M, y, "Pour chaque domaine, coche qui s'en charge vraiment aujourd'hui : qui y pense, qui "
+                       "organise, qui fait. Remplissez-le chacun de votre côté, puis comparez.", TEXTE(36), W - 2 * M) + 20
+    taches = TACHES_FOYER[:11] if part == 1 else TACHES_FOYER[11:]
+    cols = ["Penser", "Organiser", "Faire"]
+    xt = M; xc = M + 560; cw = (W - M - xc) / 3
+    for i, c in enumerate(cols):
+        centre(d, y, c, GRAS(42), BRUN, xc + i * cw, xc + (i + 1) * cw)
+        centre(d, y + 58, "moi · l'autre", MAIN(34), ROSE, xc + i * cw, xc + (i + 1) * cw)
+    y += 120
+    rh = min(140, (H - 230 - y) / len(taches))
+    for k, t in enumerate(taches):
+        y0 = y + k * rh
+        if k % 2 == 0:
+            d.rounded_rectangle((M - 10, y0, W - M + 10, y0 + rh - 8), 16, fill=SAUGE_C)
+        assert d.textlength(t, font=TEXTE(36)) < xc - xt - 30, t
+        d.text((xt + 10, y0 + rh / 2 - 30), t, font=TEXTE(36), fill=TXT)
+        if t == "Autre :":
+            d.line((xt + 140, y0 + rh / 2 + 14, xc - 30, y0 + rh / 2 + 14), fill=TRAIT, width=2)
+        for i in range(3):
+            cx = xc + i * cw + cw / 2
+            for dx in (-48, 22):
+                d.rounded_rectangle((cx + dx, y0 + rh / 2 - 26, cx + dx + 30, y0 + rh / 2 + 4), 6, outline=SAUGE, width=3)
+    return img
+
+
+def rendez_vous(num):
+    img, d = page()
+    y = entete(d, "le volet à deux", "Le rendez-vous à deux", num)
+    y = paragraphe(d, M, y, "20 minutes, une fois par mois, au calme. Le but n'est pas de compter les points, mais de "
+                   "rendre visible ce qui ne l'est pas, et de choisir ensemble.", TEXTE(38), W - 2 * M) + 40
+    qs = ["1. Comparez vos deux pages « Qui fait quoi ». Où vos réponses diffèrent-elles ?",
+          "2. Quel domaine pèse le plus en ce moment, et pour qui ?",
+          "3. Quel domaine l'autre peut-il prendre en entier : y penser, l'organiser et le faire ?",
+          "4. Qu'est-ce qu'on peut faire moins bien, moins souvent, ou plus du tout ?",
+          "5. Notre prochain rendez-vous : le … à … h."]
+    lh = (H - 230 - y) / len(qs)
+    for k, q in enumerate(qs):
+        y0 = y + k * lh
+        yy = paragraphe(d, M, y0, q, GRAS(38), W - 2 * M, fill=BRUN, inter=1.35)
+        lignes_ecriture(d, M, yy - 20, W - M, y0 + lh - 25, pas=66)
+    centre(d, H - 170, "Une tâche confiée en entier soulage plus que dix coups de main.", MAIN(44), ROSE)
+    return img
+
+
+EX_VIDE = ["Rendez-vous dentiste de Léo", "Racheter du liquide vaisselle", "Répondre au mot de la maîtresse",
+           "Cadeau pour l'anniversaire de maman (samedi)", "Appeler le plombier : fuite sous l'évier",
+           "Finir le dossier pour jeudi", "Les vêtements d'hiver sont trop petits", "Réserver les vacances de février",
+           "Payer la cantine", "Et moi ? Reprendre la marche"]
+EX_TRI = [["Finir le dossier pour jeudi", "Cadeau de maman", "Payer la cantine"],
+          ["Plombier : Karim, en entier", "Liquide vaisselle : drive"],
+          ["Vacances : dimanche 8", "Vêtements d'hiver : le 14"],
+          ["Repasser les draps", "Gâteau maison : acheté"]]
+EX_SEM = {"Lundi": ["Dossier : partie 1 (9 h)", "Appeler le dentiste", "10 min de marche"],
+          "Mardi": ["Payer la cantine", "Dossier : partie 2", "Un épisode, sans culpabiliser"],
+          "Mercredi": ["Mot de la maîtresse", "Commander le cadeau", "Appeler Sophie"],
+          "Jeudi": ["Rendre le dossier", "Coucher tôt"],
+          "Vendredi": ["Courses du drive", "Bain long"],
+          "Samedi": ["Anniversaire de maman", "Marche au parc"],
+          "Dimanche": ["Bilan + vide-tête (10 min)", "Rien de prévu, exprès"]}
+
+
+def encre_econome(img):
+    """Version pour imprimer en noir : niveaux de gris, aplats éclaircis (moins d'encre)."""
+    g = img.convert("L").point(lambda v: int(255 - (255 - v) * 0.55) if v > 150 else v)
+    return g.convert("RGB")
+
+
 def fabriquer():
     os.makedirs(SORTIE, exist_ok=True)
-    pages = [couverture(), mode_emploi()]
-    n = 3
+    pages = [couverture(), mode_emploi(), pourquoi(3),
+             vide_tete(0, 4, EX_VIDE), tri(0, 5, EX_TRI), semaine(0, 6, EX_SEM)]
+    n = 7
     for s in range(1, 5):
         for fn in (vide_tete, tri, semaine, bilan):
             pages.append(fn(s, n)); n += 1
     pages.append(taches_invisibles(n)); n += 1
+    pages.append(qui_fait_quoi(n, 1)); n += 1
+    pages.append(qui_fait_quoi(n, 2)); n += 1
+    pages.append(rendez_vous(n)); n += 1
     pages.append(notes(n))
-    assert len(pages) == 20, len(pages)
+    assert len(pages) == NB_PAGES, len(pages)
     pdf = os.path.join(SORTIE, "planner-alleger-charge-mentale-A4.pdf")
     pages[0].save(pdf, "PDF", resolution=200, save_all=True, append_images=pages[1:])
+    nb = [encre_econome(p) for p in pages]
+    nb[0].save(os.path.join(SORTIE, "planner-alleger-charge-mentale-A4-econome-encre.pdf"), "PDF", resolution=200,
+               save_all=True, append_images=nb[1:])
     for k, p in enumerate(pages):
         p.resize((W // 2, H // 2), Image.LANCZOS).save(os.path.join(SORTIE, f"apercu-{k + 1:02d}.jpg"), quality=85)
     return pdf
