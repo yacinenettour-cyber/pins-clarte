@@ -47,3 +47,26 @@ Source : API YouTube (search, videos, channels), 6 recherches en français, rég
 - Sujet prioritaire : pensées du soir et ruminations (créneau peu occupé hors hypnose, et relié au guide gratuit).
 - Formats : alterner 10 minutes (découverte) et 30 à 60 minutes (recherche et durée de visionnage) ; tester plus tard une version « voix + 2 h de musique ».
 - Fréquence : 1 vidéo par semaine aujourd'hui ; passer à 2 par semaine dès que l'utilisateur le décide (les crédits ElevenLabs Starter le permettent avec des scripts de 3 000 à 3 500 caractères).
+
+## Deuxième passage (01/11/2026, après la vidéo du jour) : ce qui marche maintenant
+
+Source : API YouTube, 5 recherches en français limitées aux vidéos récentes (avril à novembre 2026) et aux Shorts (juillet à novembre), classées par vues par jour ; plus les chiffres de notre chaîne.
+
+**Notre chaîne (01/11)** : les 6 Shorts font 230 à 696 vues chacun (2 857 au total, dont 1 950 pour les 3 Shorts du 30/10, en 2 jours) ; les 2 vidéos longues font 45 et 83 vues. Les Shorts apportent plus de 95 % des vues. Nos Shorts récents (environ 300 vues par jour chacun) font mieux que ceux des petites chaînes de la niche (Aurélien Mizeret 106 par jour, K Yoga 42, Onde respiration 29).
+
+**Ce qui perce aujourd'hui en vidéo longue** :
+- **Voix courte + plusieurs heures de musique** : la nouvelle chaîne « Mieux Dormir » (créée en 2026, 4 vidéos) a 20 300 abonnés ; ses vidéos « 20 min d'hypnose + 10 h de musique » et « 20 min de pleine conscience puis 10 h de musique » font 1 100 à 2 200 vues par jour. C'est le signal le plus fort pour une chaîne jeune : on la laisse tourner toute la nuit, la durée de visionnage explose.
+- Les longues séances de 45 à 140 minutes (Botanique du Cœur, Propageons l'Amour, Julien & Sophie) font 1 000 à 2 700 vues par jour.
+- Les vidéos de 10 à 15 minutes des petites chaînes restent à quelques vues par jour (Marine Debeaumarché : 587 vues en 4 mois pour « Méditation guidée (10 min) - Dormir profondément »). Le format court seul ne suffit pas à une petite chaîne : il marche pour Cédric Michel grâce à ses abonnés.
+- Titres qui marchent : tutoiement et verbe d'action (« Apaise ton corps… », « Débranche ton mental… »), bénéfice clair, quelques mots en capitales. L'hypnose domine ; « cortisol » et « nerf vague » apparaissent dans les titres à succès (nos mots-clés Pinterest).
+- Descriptions : elles commencent par le ressenti du spectateur (« Vous sentez-vous tendu… ? », « Ce mental qui tourne en boucle le soir… »), puis 3 à 4 bénéfices en liste.
+- Mots-clés les plus fréquents chez les vidéos en tête : relaxation, méditation guidée, méditation du soir, méditation pour dormir, lâcher prise, sommeil profond, dormir profondément, mieux dormir, apaiser le mental, calmer les pensées.
+
+**Shorts** : peu de Shorts « méditation sommeil » en français percent ; ceux qui marchent expliquent un « pourquoi » (France Inter, Christophe André sur les réveils nocturnes : 2 300 vues par jour) ou donnent un geste de 20 à 60 secondes.
+
+**Appliqué le 01/11** (vidéo « méditation guidée pour dormir profondément ») : 5 Shorts au lieu de 3, accroche qui part du ressenti, mots-clés repris des vidéos en tête.
+
+**À proposer à l'utilisateur** :
+1. Vidéo du 8/11 : « Méditation du soir n° 1 » au format **voix (15 à 20 min) + plusieurs heures de musique** (durée à fixer selon le temps de fabrication sur GitHub, limité à 6 h par tâche).
+2. **5 Shorts par vidéo** désormais (aucun crédit ElevenLabs de plus : ce sont des extraits de la même voix).
+3. Tester des Shorts « pourquoi » (une explication sourcée de 30 à 45 secondes, par exemple « pourquoi les pensées tournent quand tu te couches »), reliés au guide.

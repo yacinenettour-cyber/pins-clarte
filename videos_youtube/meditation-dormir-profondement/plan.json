@@ -336,7 +336,7 @@
  },
  "youtube": {
   "titre": "Méditation guidée pour dormir profondément et calmer le mental (10 min)",
-  "accroche": "Méditation guidée pour dormir profondément : environ 6 minutes de voix douce (respiration lente, journée déposée, corps relâché, scène calme à imaginer), puis de la musique calme jusqu'à 10 minutes.",
+  "accroche": "Méditation guidée pour dormir profondément, pour les soirs où le corps est fatigué mais où la tête tourne encore : environ 7 minutes de voix douce (respiration lente, journée déposée, corps relâché, scène calme à imaginer), puis de la musique calme jusqu'à 10 minutes.",
   "libelle_article": "Respirer pour mieux dormir : les méthodes et ce que disent les études (article sourcé)",
   "guide": "sommeil",
   "description": "Pour les soirs où tu as besoin d'une vraie coupure avant de dormir. La voix commence tout de suite, sans long discours. Tu ralentis le souffle (inspirer sur 4 temps, souffler sur 6), tu poses ce qui attendra demain, tu relâches le corps, puis tu suis une scène calme au bord d'un lac. Rien à réussir : si tu t'endors avant la fin, c'est parfait.",
@@ -349,16 +349,17 @@
    "méditation guidée pour dormir",
    "méditation sommeil profond",
    "méditation pour dormir",
+   "méditation du soir",
    "méditation guidée 10 minutes",
    "méditation sommeil 10 min",
-   "relaxation pour dormir 10 min",
-   "méditation du soir",
-   "méditation pour s'endormir",
+   "relaxation pour dormir",
+   "dormir profondément",
+   "sommeil profond",
+   "mieux dormir",
+   "calmer les pensées",
+   "apaiser le mental",
+   "lâcher prise",
    "respiration pour dormir",
-   "calmer le mental",
-   "relaxation sommeil",
-   "méditation française",
-   "voix douce",
    "musique pour dormir"
   ],
   "hashtags": [
@@ -385,6 +386,23 @@
    "bas1": "Méditation complète (10 min) sur la chaîne",
    "titre": "Relâche ta mâchoire et tes épaules au lit 😴 #sommeil #relaxation",
    "description": "Front, mâchoire, épaules, bras, ventre, jambes : tout redescend, une zone après l'autre. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+  },
+  {
+   "partie": "Une scène calme",
+   "haut1": "Imagine un lac",
+   "haut2": "le soir, avant de dormir",
+   "bas1": "Méditation complète (10 min) sur la chaîne",
+   "titre": "Imagine un lac calme le soir pour t'endormir 🌙 #sommeil #méditation",
+   "description": "Un chemin au bord de l'eau, une lumière au loin, un détail à remarquer : de quoi occuper doucement ton esprit au lit. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+  },
+  {
+   "partie": "S'installer",
+   "haut1": "Laisse le matelas",
+   "haut2": "porter ton poids",
+   "bas1": "Méditation complète (10 min) sur la chaîne",
+   "titre": "Laisse le matelas porter ton poids 😴 #sommeil #relaxation",
+   "description": "Allongé comme tu dors d'habitude, tu n'as plus rien à tenir : juste écouter les sons autour de toi. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
   }
- ]
+ ],
+ "note_concurrence_01_11": "01/11 (consigne « appuie-toi sur ce qui fonctionne sur YouTube et espionne la concurrence ») : 5 Shorts au lieu de 3 (les Shorts font plus de 95 % des vues de la chaîne), accroche qui part du ressenti, mots-clés repris des vidéos en tête (docs/referencement/concurrence-youtube.md, section du 01/11)."
 }
