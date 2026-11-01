@@ -169,6 +169,46 @@ Exemple du ton visé (à ne pas recopier) :
 >
 > PS : si ce n'est pas pour vous, dites-le moi et je ne vous écrirai plus.
 
+### Plus humain encore (consigne du 01/11/2026 : « Humanise les emails, ça doit pas faire IA »)
+
+Relecture des 6 e-mails du 01/11 : ils suivaient tous le même moule. On y trouvait un article cité, puis le vécu, les
+ressources détaillées entre parenthèses, « Je ne suis pas professionnel de santé », la signature et un PS. Le moule se
+voyait d'un e-mail à l'autre, et c'est ce qui fait « machine ». À partir de maintenant :
+
+- **Plus court : 40 à 90 mots.** Une personne pressée écrit 4 ou 5 phrases, pas un dossier.
+- **Une seule idée par message.** Soit les audios, soit une proposition d'article, jamais les deux. Pas de liste de
+  formats ni de durées entre parenthèses (« 3, 5 et 10 minutes », « CC BY 4.0 »). La page du lien le dit.
+- **L'ordre change à chaque fois.** Parfois une question pour commencer, parfois le vécu, parfois directement l'article
+  lu. Pas toujours de PS. « Je ne suis pas professionnel de santé » (formule imposée, mot pour mot) se glisse dans une
+  phrase naturelle (« Je ne suis pas professionnel de santé, juste quelqu'un qui a cherché pendant ses nuits
+  blanches ») au lieu d'une ligne seule. Le métier n'est jamais cité.
+- **Une réaction vraie à l'article**, comme on en a quand on lit : un passage qui a fait tilt, une question qu'il
+  pose. Pas un résumé de l'article.
+- **Des mots de tous les jours.** Pas de « ressources libres de droits », « contenus QVCT », « sourcé », « inédit »,
+  « lectorat », « pertinent ». On dit « des audios gratuits », « un texte rien que pour vous », « avec les études
+  citées ».
+- **Phrases imparfaites autorisées** : une phrase courte sans verbe, un « bref », un « du coup », une tournure orale.
+  Jamais de fautes d'orthographe.
+- **Objet** en minuscules, comme un message entre deux personnes : « votre article du dimanche soir », « une petite
+  question ».
+- **Relance** : deux phrases au plus, sans rappeler tout le premier message.
+- **Avant l'envoi**, relire à voix haute. Si la phrase ne pourrait pas être dite au téléphone, la réécrire.
+
+Exemple (à ne pas recopier) :
+
+> Objet : votre article du dimanche soir
+>
+> Bonjour,
+>
+> Le passage sur la gorge serrée le dimanche soir m'a parlé. J'ai eu deux ans de nuits comme ça, par périodes.
+>
+> Ce qui m'a aidé, c'est de respirer lentement quelques minutes au lit. J'ai mis des audios gratuits en ligne pour
+> ça. Si un jour ça peut servir à vos lecteurs, ils sont là : https://www.contactapaisement-mental.fr/ressources-libres/
+>
+> Je ne suis pas professionnel de santé, alors si votre équipe voit une erreur, ça m'intéresse.
+>
+> Yacine
+
 ## Ce que je surveille
 
 Le bilan du 21/10 regarde aussi les visites venues d'autres sites (Cloudflare Web Analytics, « Referrers »)

@@ -22,27 +22,23 @@ seulement sans réponse.
 
 ### Voie du Bien-Être (classé A) : https://www.voiedubienetre.fr/contact/
 
-Choisir « Proposer un sujet ». Ce site refuse tout contenu payant et tout échange de liens : le message ne parle donc
-ni de lien ni d'échange.
+Choisir « Proposer un sujet ». Ce site refuse tout contenu payant et tout échange de liens : le message n'en parle pas.
+Texte réécrit le 01/11 selon la consigne « humanise les emails ».
 
 > Bonjour,
 >
-> J'ai lu votre article sur le soupir cyclique et l'essai de Stanford. J'ai aimé le passage qui explique pourquoi ce
-> résultat ne veut pas dire que la méditation est dépassée.
+> Votre article sur le soupir cyclique m'a fait du bien à lire, surtout le passage où vous dites que l'étude ne
+> prouve pas que la méditation est dépassée. C'est rare.
 >
-> Une question me revient souvent, et je n'y ai pas trouvé de réponse honnête : respirer lentement aide-t-il vraiment
-> à s'endormir quand les pensées tournent, ou est-ce qu'on surestime l'effet ? Les études sur l'insomnie qui mesurent
-> l'activité du nerf vague pendant une respiration lente pourraient vous intéresser. Je les ai résumées, sources
-> comprises, ici : https://www.contactapaisement-mental.fr/respiration-pour-dormir/
+> Une question que je me pose depuis mes années de mauvaises nuits : respirer lentement, ça aide vraiment à
+> s'endormir quand la tête tourne, ou on en attend trop ? J'ai rassemblé ce que j'ai trouvé là-dessus ici, si ça peut
+> vous servir de point de départ : https://www.contactapaisement-mental.fr/respiration-pour-dormir/
 >
-> Je ne suis pas professionnel de santé. Si vous traitez le sujet un jour, je vous lirai avec intérêt.
+> Je ne suis pas professionnel de santé, juste quelqu'un qui a beaucoup cherché.
 >
 > Yacine
 
-## Relance type (10 jours sans réponse, une seule fois, dans le même fil)
+## Relance (10 jours sans réponse, une seule fois, dans le même fil)
 
-> Bonjour, je me doute que vous recevez beaucoup de messages. Je repasse juste au cas où le mien serait passé
-> inaperçu : les audios et la fiche restent à votre disposition, gratuitement. Si ce n'est pas pour vous, aucun
-> souci, je n'écrirai plus. Yacine
-
-(À réécrire à chaque fois : jamais deux relances identiques.)
+Deux phrases au plus, différentes à chaque fois. Exemple : « Bonjour, je repasse au cas où mon message se serait
+perdu. Si ce n'est pas pour vous, pas de souci, je n'écrirai plus. Yacine »
