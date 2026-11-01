@@ -458,5 +458,22 @@
   "pin_id": "600175087890450384",
   "short": true,
   "source": "https://youtu.be/PbuSSZlDu1c"
+ },
+ {
+  "date": "2026-11-01T17:34+00:00",
+  "id": "systemenerveux-paumes-sur-les-yeux",
+  "titre": "Paumes chaudes sur les yeux : 30 secondes pour faire baisser la pression",
+  "video": "videopins/videopin-20261101-173316.mp4",
+  "cover": "videopins/videopin-20261101-173316.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890465077",
+  "photos": [
+   "fonds/pexels-18336771.jpg",
+   "fonds/pexels-18336771.jpg",
+   "fonds/pexels-28355033.jpg",
+   "fonds/pexels-28355033.jpg",
+   "fonds/pexels-28928219.jpg",
+   "fonds/pexels-28928219.jpg"
+  ]
  }
 ]
