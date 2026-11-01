@@ -424,7 +424,8 @@
  "shorts_youtube": {
   "pensees": "SNPAts9BsQ0",
   "ciel_etoile": "xqYk9Wg9bfg",
-  "respiration": "à relever (mis en ligne par l'utilisateur le 30/10, pas encore visible dans la recherche de l'API)"
+  "respiration": "gLVj1Q4guCg"
  },
- "note_pinterest_30_10": "30/10 (accord « oui pour B ») : refabrication sans envoi pour obtenir les versions short_pinterest.mp4 sans musique (voix + bols), seules republiées sur Pinterest après le son coupé du 29/10. Après fabrication : artefact_run = nouveau run, statut remis à « publiee ». Fait : run 41004012949 (0 erreur), 6 short_pinterest.mp4 dans l'archive (jusqu'au 29/11), son vérifié (voix présente, silence complet entre les phrases : pas de musique)."
+ "note_pinterest_30_10": "30/10 (accord « oui pour B ») : refabrication sans envoi pour obtenir les versions short_pinterest.mp4 sans musique (voix + bols), seules republiées sur Pinterest après le son coupé du 29/10. Après fabrication : artefact_run = nouveau run, statut remis à « publiee ». Fait : run 41004012949 (0 erreur), 6 short_pinterest.mp4 dans l'archive (jusqu'au 29/11), son vérifié (voix présente, silence complet entre les phrases : pas de musique).",
+ "shorts_lien_guide": "01/11/2026 : lien du guide gratuit ajouté en 2e ligne de la description des 3 Shorts (utm_medium=short), vérifié par l'API"
 }

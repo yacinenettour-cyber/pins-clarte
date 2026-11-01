@@ -69,3 +69,12 @@ aucune description (pas de lien vers la vidéo complète) ; aucune des deux vid�
 ## Décision du 31/10/2026 : pas d'avatar HeyGen
 
 L'utilisateur a décidé de ne pas utiliser son avatar HeyGen pour la chaîne (« je vais pas utiliser mon avatar pour cette chaîne YouTube »). Raisons : un avatar se repère vite (bouche, mains, regard), ce qui contredit la règle « rien ne doit faire IA » sur un sujet où la confiance compte ; le format méditation s'écoute les yeux fermés ; YouTube demande de signaler un visage réaliste généré ; pas de crédit HeyGen (rien à payer). Ne pas proposer d'avatar (HeyGen ou autre) pour cette chaîne. Pistes possibles si un visage est un jour voulu : l'utilisateur filmé au téléphone, ou des images réelles sans visage.
+
+## Concurrence (01/11/2026) : règles pour les prochaines vidéos
+
+Analyse complète : `docs/referencement/concurrence-youtube.md` (65 vidéos, 23 chaînes françaises en tête sur nos mots-clés). À appliquer par la tâche vidéo hebdomadaire :
+- Titre : mot-clé recherché en tête (« Méditation du soir », « Méditation guidée pour dormir »), bénéfice concret sans promesse, durée entre parenthèses ; jamais « soigner », « somnifère », « puissante », « en moins de X minutes », « loi de l'attraction ».
+- À partir de la vidéo du 8 novembre : série numérotée « Méditation du soir n° 1, 2, 3… » pour les vidéos d'endormissement (les plus grosses vidéos de Cédric Michel sont numérotées).
+- Sujet prioritaire : pensées du soir et ruminations (occupé surtout par l'hypnose ; relié au guide gratuit).
+- Alterner 10 minutes et 30 à 60 minutes.
+- Shorts : description avec, en 2e ligne, le lien du guide gratuit quand le sujet est le sommeil ou les ruminations (fait le 01/11 pour les 3 Shorts ruminations).
