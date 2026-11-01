@@ -2390,5 +2390,16 @@
   "pin_id": "600175087890443628",
   "md5": "2103fb098fb5980230c66c7611c0b83e",
   "lien": ""
+ },
+ {
+  "date": "2026-11-01T17:06+00:00",
+  "titre": "Procrastination du coucher : 5 clés pour aller au lit",
+  "image": "images/pin-20261101-170558.jpg",
+  "fond": "prete:images_cles/procrastination-coucher-5-cles.jpg",
+  "theme": "sommeil",
+  "design": "cles",
+  "pin_id": "600175087890464783",
+  "md5": "61cf3abbfefd3719df01ae613e099b50",
+  "lien": "article:procrastination-du-coucher"
  }
 ]
