@@ -1305,3 +1305,16 @@ long (3 h) dès « Méditation du soir n° 1 » (8/11), 5 Shorts par vidéo, Sho
 longues adapté (plan fixe répété par blocs, musique calculée par morceaux), essayé en local. Détail : `youtube/README.md`
 (décisions du 01/11) et `docs/referencement/concurrence-youtube.md`.
 
+
+## 102. Site : 5 articles par semaine, journée d'amélioration, campagne de liens sans envoi automatique (01/11/2026)
+
+Consignes de l'utilisateur : « à partir de ce soir passe à 5 articles par semaine, mais réserve une journée par semaine à
+l'amélioration des anciens contenus et à l'analyse de Search Console » et mission « campagne de 100 prospects de
+backlinks gratuits » (« Ne réalise aucun envoi automatique. Je veux valider les messages avant leur transmission »).
+Fait : tâche des articles passée du lundi, mercredi et vendredi à 5 par semaine (dimanche à jeudi, 19 h 53, premier
+article le 01/11 au soir) ; le vendredi devient la « journée d'amélioration » (Search Console sur 7 et 28 jours,
+indexation des articles de la semaine, au plus 5 anciennes pages retouchées) ; bilan du rythme le 23/11. La tâche
+« Prospection liens » n'envoie plus rien : elle lit les réponses, prépare les relances et attend l'accord de
+l'utilisateur. Audit des 100 sites fournis : `docs/referencement/campagne-backlinks-2026-11/` (README, fichier Excel,
+outil `outils/campagne_backlinks_audit.py`) ; Ahrefs et Semrush payants, donc trafic et autorité « Non disponible »,
+rang Tranco du 31/10/2026 comme seule mesure de popularité.

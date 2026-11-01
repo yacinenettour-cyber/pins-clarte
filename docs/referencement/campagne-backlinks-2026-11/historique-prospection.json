@@ -1,0 +1,82 @@
+{
+ "1": [
+  {
+   "site": "Réseau Morphée (réseau de santé des troubles du sommeil, Île-de-France)",
+   "statut": "envoye",
+   "date_envoi": "2026-10-13",
+   "page_cible": "https://reseau-morphee.fr/le-monde-du-sommeil",
+   "email": "contact@reseau-morphee.fr",
+   "reponse": null
+  }
+ ],
+ "2": [
+  {
+   "site": "Institut National du Sommeil et de la Vigilance (INSV)",
+   "statut": "ecarte",
+   "date_envoi": null,
+   "page_cible": "https://institut-sommeil-vigilance.org/10-recommandations-de-nos-experts-pour-bien-dormir/",
+   "email": "contact@insv.org",
+   "reponse": null
+  }
+ ],
+ "7": [
+  {
+   "site": "France Insomnie",
+   "statut": "envoye",
+   "date_envoi": "2026-10-12",
+   "page_cible": "https://franceinsomnie.fr/troubles-du-sommeil-et-therapies-complementaires/",
+   "email": "contact@franceinsomnie.fr",
+   "reponse": null
+  }
+ ],
+ "24": [
+  {
+   "site": "Santé mentale (revue et site d'actualités)",
+   "statut": "envoye",
+   "date_envoi": "2026-10-14",
+   "page_cible": "https://www.santementale.fr/",
+   "email": "santementale@wanadoo.fr",
+   "reponse": null
+  }
+ ],
+ "25": [
+  {
+   "site": "Psycom – Santé Mentale Info",
+   "statut": "envoye",
+   "date_envoi": "2026-10-27",
+   "page_cible": "https://www.psycom.org/sinformer/lauto-support/ce-quon-peut-faire-pour-sa-sante-mentale/",
+   "email": null,
+   "reponse": null
+  }
+ ],
+ "34": [
+  {
+   "site": "Nightline France (écoute étudiante)",
+   "statut": "formulaire",
+   "date_envoi": null,
+   "page_cible": "https://www.nightline.fr/en/kit-de-vie/resources",
+   "email": "partenaires@nightline.fr",
+   "reponse": null
+  }
+ ],
+ "50": [
+  {
+   "site": "Medoucine",
+   "statut": "formulaire",
+   "date_envoi": null,
+   "page_cible": "https://www.medoucine.com",
+   "email": null,
+   "reponse": null
+  }
+ ],
+ "64": [
+  {
+   "site": "Parlons RH (média RH, revue du web hebdomadaire)",
+   "statut": "formulaire",
+   "date_envoi": null,
+   "page_cible": "https://www.parlonsrh.com/",
+   "email": "contact@parlonsrh.com",
+   "reponse": null
+  }
+ ]
+}
