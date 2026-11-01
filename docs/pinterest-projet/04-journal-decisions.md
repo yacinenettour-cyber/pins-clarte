@@ -1293,3 +1293,15 @@ script de 2 000 à 5 000 caractères. Exception unique à la règle « ne rien p
 
 - `pins.yml` : `fatigue-nerveuse` ajouté à `ARTICLES_SITE`. Les épingles qui portent `"article": "fatigue-nerveuse"` (pour l'instant « Fatigue nerveuse : 5 clés pour recharger ») mènent à `/fatigue-nerveuse/` avec leur `description_article`, même si le thème `fatiguementale` est sans guide (`article_du_pin()` ne dépend pas du thème). YAML vérifié.
 - Attention : « Fatigue nerveuse : 5 clés pour recharger » a été publiée par le robot le 31/10 à 6 h 07 (pin 600175087890443628), avant cette modification, donc **sans lien**. L'API ne permet pas de modifier une épingle publiée : lien ajouté à la main par l'utilisateur le 31/10, vérifié sur Pinterest (PINTEREST_GET_PIN : link = https://www.contactapaisement-mental.fr/fatigue-nerveuse/).
+
+## 101. YouTube : concurrence, 5 Shorts par vidéo et format long (01/11/2026, accord « Oui pour les 3 propositions »)
+
+Consigne : « Appuie-toi sur ce qui fonctionne sur YouTube et espionne la concurrence. » Constats (API YouTube) : les
+Shorts font plus de 95 % des vues de la chaîne (2 857 vues pour 6 Shorts contre 128 pour 2 vidéos longues) ; chez les
+concurrents, le format qui fait percer une chaîne récente est « voix courte + plusieurs heures de musique » (chaîne
+« Mieux Dormir », 2026, 4 vidéos, 20 300 abonnés) ; les vidéos de 10 min des petites chaînes plafonnent.
+Appliqué : vidéo du 4/11 avec 5 Shorts, accroche partant du ressenti, mots-clés des vidéos en tête. Décidé : format
+long (3 h) dès « Méditation du soir n° 1 » (8/11), 5 Shorts par vidéo, Shorts « pourquoi » à tester. Rendu des vidéos
+longues adapté (plan fixe répété par blocs, musique calculée par morceaux), essayé en local. Détail : `youtube/README.md`
+(décisions du 01/11) et `docs/referencement/concurrence-youtube.md`.
+

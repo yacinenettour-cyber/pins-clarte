@@ -76,5 +76,22 @@ Analyse complète : `docs/referencement/concurrence-youtube.md` (65 vidéos, 23 
 - Titre : mot-clé recherché en tête (« Méditation du soir », « Méditation guidée pour dormir »), bénéfice concret sans promesse, durée entre parenthèses ; jamais « soigner », « somnifère », « puissante », « en moins de X minutes », « loi de l'attraction ».
 - À partir de la vidéo du 8 novembre : série numérotée « Méditation du soir n° 1, 2, 3… » pour les vidéos d'endormissement (les plus grosses vidéos de Cédric Michel sont numérotées).
 - Sujet prioritaire : pensées du soir et ruminations (occupé surtout par l'hypnose ; relié au guide gratuit).
-- Alterner 10 minutes et 30 à 60 minutes.
+- ~~Alterner 10 minutes et 30 à 60 minutes.~~ Remplacé le 01/11 par le format long ci-dessous.
 - Shorts : description avec, en 2e ligne, le lien du guide gratuit quand le sujet est le sommeil ou les ruminations (fait le 01/11 pour les 3 Shorts ruminations).
+
+## Décisions du 01/11/2026 (accord de l'utilisateur « Oui pour les 3 propositions »)
+
+Après le 2e passage sur la concurrence (`docs/referencement/concurrence-youtube.md`, section du 01/11) :
+1. **Format long « voix + plusieurs heures de musique »** à partir de « Méditation du soir n° 1 » (8/11) : voix de 15 à
+   20 minutes (script de 4 000 à 5 000 caractères), puis musique ; `"duree_totale_min": 180` (3 h) pour commencer
+   (fichier d'environ 500 Mo, à téléverser à la main). Titre avec la durée réelle, par exemple « … (20 min + 3 h de
+   musique) ». Technique (`youtube/rendu.py`) : 5 min après la fin de la voix, l'image se fige ; ce plan fixe est encodé
+   une fois par bloc de 10 min (3 min de calcul) et répété, puis les 30 dernières secondes sont rendues normalement ;
+   la musique est calculée par morceaux (`youtube/audio.py`), pour ne pas dépasser la mémoire. Essai local du 01/11 :
+   durée exacte, décodage sans erreur, raccords invisibles (écart moyen entre deux images < 1 niveau de gris).
+2. **5 Shorts par vidéo** (le Short respiration + 4 `shorts_extra`, chacun un geste concret d'une partie différente),
+   titres vérifiés par `outils/anti_doublons.py`. Aucun crédit ElevenLabs de plus : ce sont des extraits de la voix.
+3. **Shorts « pourquoi »** à tester : 30 à 45 secondes d'explication sourcée (une étude de l'article relié), par exemple
+   « pourquoi les pensées tournent quand tu te couches », avec le lien du guide gratuit en 2e ligne de la description.
+   Ils demandent des phrases de voix en plus (environ 500 caractères chacun) et un format de Short à ajouter au robot.
+

@@ -11,6 +11,13 @@ FONDU = 5.0
 MOUV = [(1.0, 1.13, -0.4, 0.2), (1.12, 1.0, 0.5, 0.0), (1.0, 1.10, 0.0, -0.4), (1.10, 1.0, -0.5, 0.3),
         (1.0, 1.12, 0.6, 0.0), (1.0, 1.15, 0.0, 0.5), (1.12, 1.0, -0.3, -0.2), (1.0, 1.08, 0.3, 0.0)]
 ETAT = {}
+# Vidéos longues (01/11/2026, accord de l'utilisateur : « voix + plusieurs heures de musique ») : 5 min après la fin de
+# la voix, l'image se fige (photo assombrie) ; ce plan fixe est encodé une seule fois par blocs de 10 min répétés, puis
+# les 30 dernières secondes (adresse du site, fondu au noir) sont rendues normalement. Sans cela, 3 h d'images
+# calculées une par une dépasseraient le temps permis sur GitHub.
+GEL_APRES = float(os.environ.get("GEL_APRES", 300))
+FIN_ANIM = float(os.environ.get("FIN_ANIM", 30))
+BLOC = float(os.environ.get("BLOC", 600))
 
 
 def police(nom, t):
@@ -59,7 +66,9 @@ def preparer(slug):
             fin = tl["titres"][i + 1]["debut"] if i + 1 < len(tl["titres"]) else tl["fin_voix"]
             brume.append((ti["debut"], fin))
     ecran = plan["ecran"]
-    ETAT.update(slug=slug, plan=plan, tl=tl, scenes=scenes, src=src, vignette=vignette, part=part, sprites=sprites,
+    gel = tl["fin_voix"] + GEL_APRES
+    gel = gel if tl["duree"] - FIN_ANIM - gel > 2 * BLOC else None
+    ETAT.update(slug=slug, gel=gel, plan=plan, tl=tl, scenes=scenes, src=src, vignette=vignette, part=part, sprites=sprites,
                 brume_tex=br, brume=brume, cache={},
                 intro=grand_titre(ecran["titre"], 88, ecran.get("sous_titre")),
                 credit=petit(ecran.get("credit", "Musique : « Deep Relaxation », Kevin MacLeod (incompetech.com) · CC BY 4.0 · "
@@ -179,6 +188,7 @@ def image(t):
     tl = ETAT["tl"]
     duree, fin_voix = tl["duree"], tl["fin_voix"]
     img = None
+    tr, t = t, (min(t, ETAT["gel"]) if ETAT.get("gel") else t)  # tr : temps réel (adresse et fondu de la fin)
     for i, (nom, d0, d1) in enumerate(ETAT["scenes"]):
         if d0 - FONDU <= t < d1 + 0.01 or (i == 0 and t < d1):
             a = 1.0 if i == 0 else lisse((t - (d0 - FONDU)) / FONDU)
@@ -221,8 +231,8 @@ def image(t):
         img = img * (1 - 0.6 * lisse((t - fin_voix) / 60))
     # au début, crédits et adresse en haut (les sous-titres occupent le bas) ; à la fin, adresse en bas
     poser(img, ETAT["marque_debut"], fondu(t, 2.5, 12.0, 2.0) * 0.9)
-    poser(img, ETAT["marque"], fondu(t, duree - 25, duree - 1, 3) * 0.9)
-    img = img * (min(1.0, t / 1.5) * min(1.0, (duree - t) / 3.0))
+    poser(img, ETAT["marque"], fondu(tr, duree - 25, duree - 1, 3) * 0.9)
+    img = img * (min(1.0, tr / 1.5) * min(1.0, (duree - tr) / 3.0))
     return img.clip(0, 255).astype(np.uint8)
 
 
@@ -240,22 +250,46 @@ def _morceau(args):
     return sortie
 
 
+def _fixe(png, nb, sortie):
+    """Plan fixe encodé avec les mêmes réglages que les morceaux animés (assemblage sans réencodage)."""
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-framerate", str(FPS), "-i", png, "-frames:v", str(nb),
+                    "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", "-tune", "film",
+                    "-r", str(FPS), sortie], check=True)
+    return sortie
+
+
 def fabriquer(slug, processus=None):
     trav = dossier_travail(slug)
     tl = json.load(open(os.path.join(trav, "timeline.json")))
     n = math.ceil(tl["duree"] * FPS)
     k = processus or max(1, os.cpu_count() or 1)
-    b = [round(n * i / k) for i in range(k + 1)]
-    parts = [os.path.join(trav, f"_part{i}.mp4") for i in range(k)]
+    preparer(slug)
+    gel = ETAT.get("gel")
+    na = math.ceil(gel * FPS) if gel else n
+    b = [round(na * i / k) for i in range(k + 1)]
+    jobs = [(slug, b[i], b[i + 1], os.path.join(trav, f"_part{i}.mp4")) for i in range(k)]
+    fixes = []
+    if gel:
+        nc = n - int(FIN_ANIM * FPS)
+        jobs.append((slug, nc, n, os.path.join(trav, "_fin.mp4")))
+        png = os.path.join(trav, "_fixe.png")
+        Image.fromarray(image(gel)).save(png)
+        nb, reste = int(BLOC * FPS), nc - na
+        bloc = _fixe(png, nb, os.path.join(trav, "_bloc.mp4"))
+        fixes = [bloc] * (reste // nb)
+        if reste % nb:
+            fixes.append(_fixe(png, reste % nb, os.path.join(trav, "_reste.mp4")))
+        print(f"vidéo longue : {na / FPS / 60:.1f} min animées, {reste / FPS / 3600:.2f} h de plan fixe, {FIN_ANIM:.0f} s de fin")
     with Pool(k) as pool:
-        pool.map(_morceau, [(slug, b[i], b[i + 1], parts[i]) for i in range(k)])
+        pool.map(_morceau, jobs)
+    parts = [j[3] for j in jobs[:k]] + fixes + [j[3] for j in jobs[k:]]
     liste = os.path.join(trav, "_liste.txt")
     open(liste, "w").write("".join(f"file '{p}'\n" for p in parts))
     sortie = os.path.join(trav, "video.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", liste, "-i", os.path.join(trav, "piste.wav"),
                     "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart",
                     "-shortest", sortie], check=True)
-    for p in parts:
+    for p in set(parts):
         os.remove(p)
     print("vidéo :", sortie)
     return sortie

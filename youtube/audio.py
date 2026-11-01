@@ -210,21 +210,22 @@ def fabriquer(slug):
     voixp *= reglage["niveau"] / max(1e-6, np.abs(voixp).max())
     sf.write(os.path.join(trav, "voix.wav"), voixp.mean(axis=1), SR)
 
-    # musique bouclée avec fondu enchaîné de 8 s aussi longtemps que nécessaire
+    # musique bouclée avec fondu enchaîné de 8 s aussi longtemps que nécessaire, calculée morceau par morceau
+    # (01/11/2026 : vidéos de plusieurs heures, un tableau complet de 3 h dépasserait la mémoire de la machine)
     mus0 = charger_audio(MUSIQUE)
     mus0 /= max(1e-6, np.abs(mus0).max())
     x, L = 8 * SR, len(mus0)
-    fond = np.linspace(0, 1, x, dtype=np.float32)[:, None]
-    mus = np.empty((N, 2), np.float32)
-    mus[:min(N, L)] = mus0[:min(N, L)]
-    s0 = L - x
-    while s0 < N:
-        k = min(x, N - s0)
-        mus[s0:s0 + k] = mus[s0:s0 + k] * (1 - fond[:k]) + mus0[:k] * fond[:k]
-        k2 = min(L, N - s0)
-        if k2 > x:
-            mus[s0 + x:s0 + k2] = mus0[x:k2]
-        s0 += L - x
+    P = L - x
+
+    def musique(a, b):
+        n = np.arange(a, b)
+        k, r = n // P, n % P
+        out = mus0[r].copy()
+        f = (k >= 1) & (r < x)
+        if f.any():
+            w = (r[f] / (x - 1)).astype(np.float32)[:, None]
+            out[f] = mus0[P + r[f]] * (1 - w) + mus0[r[f]] * w
+        return out
     # volume de la musique calculé toutes les 480 échantillons (100 par seconde), puis appliqué morceau par morceau
     K = 480
     nb = (N + K - 1) // K
@@ -264,7 +265,7 @@ def fabriquer(slug):
     for a in range(0, N, M):
         b = min(N, a + M)
         v = np.repeat(vol[a // K: (b + K - 1) // K], K)[: b - a].astype(np.float32)[:, None]
-        m = mus[a:b] * v
+        m = musique(a, b) * v
         if a < Nv:
             c = min(b, Nv)
             m[: c - a] += voixp[a:c] + bols[a:c]
@@ -273,7 +274,7 @@ def fabriquer(slug):
     for a in range(0, N, M):
         piste[a:a + M] *= 0.89 / pic
     piste.flush()
-    del piste, mus
+    del piste
     # Piste sans musique pour les Shorts republiés sur Pinterest (30/10/2026) : Pinterest a coupé le son du premier
     # Short (« la musique appartient à quelqu'un d'autre », musique Kevin MacLeod pourtant sous CC BY) ; voix + bols.
     sm = voixp + bols
@@ -285,7 +286,7 @@ def fabriquer(slug):
                     "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", str(SR), os.path.join(trav, "piste_sans_musique.wav")], check=True)
     os.remove(brut2)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ac", "2", "-ar", str(SR), "-i", brut,
-                    "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", str(SR), os.path.join(trav, "piste.wav")], check=True)
+                    "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", str(SR), "-rf64", "auto", os.path.join(trav, "piste.wav")], check=True)
     os.remove(brut)
     tl = {"duree": duree, "fin_voix": fin_voix, "cues": cues, "titres": titres, "souffles": souffles,
           "voix_douteuses": getattr(voix, "douteuses", []),
