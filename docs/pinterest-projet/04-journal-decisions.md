@@ -1318,3 +1318,13 @@ indexation des articles de la semaine, au plus 5 anciennes pages retouchées) ; 
 l'utilisateur. Audit des 100 sites fournis : `docs/referencement/campagne-backlinks-2026-11/` (README, fichier Excel,
 outil `outils/campagne_backlinks_audit.py`) ; Ahrefs et Semrush payants, donc trafic et autorité « Non disponible »,
 rang Tranco du 31/10/2026 comme seule mesure de popularité.
+
+## 103. Liens : premiers envois « valeur d'abord » (01/11/2026)
+
+Consigne de l'utilisateur (le même jour, elle remplace l'arrêt des envois de la section 102) : « Envoie des emails aux
+sites que tu juges intéressants pour faire grimper mon site. Ne demande pas immédiatement de liens, apporte de la valeur
+avant », puis « objectif avoir le plus de backlinks de qualité ». Envoyés : FNAPSY, Culture RH, My Happy Job, Esprit
+Yoga, Anxiete.fr, PROSOM (6 e-mails, chacun citant un article réellement lu, offrant les ressources libres ou un article
+inédit gratuit, sans demande de lien). Voie du Bien-Être (classé A) n'a qu'un formulaire : texte prêt pour
+l'utilisateur dans `docs/referencement/campagne-backlinks-2026-11/4-messages.md`. La tâche quotidienne reprend les
+envois (au plus 5 par jour ouvré, même règle « valeur d'abord ») et la relance unique à 10 jours.
