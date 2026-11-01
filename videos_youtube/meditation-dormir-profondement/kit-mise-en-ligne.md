@@ -20,13 +20,17 @@ Dans le zip : `meditation-dormir-profondement/video.mp4` (vidéo) et un `short.m
 
 ### Description (à coller telle quelle)
 ```
-Méditation guidée pour dormir profondément, pour les soirs où le corps est fatigué mais où la tête tourne encore : environ 7 minutes de voix douce (respiration lente, journée déposée, corps relâché, scène calme à imaginer), puis de la musique calme jusqu'à 10 minutes.
+Tu es épuisé, mais ta tête refuse de s'arrêter ? Cette méditation guidée pour dormir profondément t'accompagne pendant 10 minutes : une voix douce d'abord, puis une musique calme pour passer de la journée à la nuit.
 
 📖 Respirer pour mieux dormir : les méthodes et ce que disent les études (article sourcé) : https://www.contactapaisement-mental.fr/respiration-pour-dormir/
 🌙 Guide gratuit « Quand le cerveau refuse de dormir » : une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir, un calendrier de 30 jours → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=video&utm_campaign=meditation-dormir-profondement
 🎧 Audios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/
 
-Pour les soirs où tu as besoin d'une vraie coupure avant de dormir. La voix commence tout de suite, sans long discours. Tu ralentis le souffle (inspirer sur 4 temps, souffler sur 6), tu poses ce qui attendra demain, tu relâches le corps, puis tu suis une scène calme au bord d'un lac. Rien à réussir : si tu t'endors avant la fin, c'est parfait.
+Je l'ai pensée pour les soirs où tout se rejoue dans la tête au moment de dormir. Pas de long discours : on ralentit le souffle (4 temps pour inspirer, 6 pour souffler), on pose ce qui attendra demain, on relâche le corps de la tête aux pieds, puis on se promène au bord d'un lac, le soir.
+
+Rien à réussir. Si tu t'endors avant la fin, c'est très bien comme ça.
+
+Garde-la pour les soirs difficiles, ou écoute-la chaque soir en te couchant. Pour moi, c'est la régularité qui a fait la différence.
 
 00:00 Introduction
 00:33 S'installer
@@ -53,25 +57,64 @@ Photos : Unsplash (Alexandro Fernandez, Anthony Maw, Jamo Images, Jonathan Gagno
 #méditation #sommeil #méditationguidée
 ```
 
-## Shorts (après la vidéo, 1 tous les 1 à 2 jours ; pour chacun, régler « Vidéo similaire » sur la vidéo complète)
+## Shorts (après la vidéo, 1 tous les 1 à 2 jours ; pour chacun, régler « Vidéo similaire » sur la vidéo complète ; aucun lien de vidéo dans la description, consigne du 01/11)
 
-### Short 1 (respiration) : 62 s, fichier `meditation-dormir-profondement/short.mp4`
+### Short 1 (respiration), fichier `meditation-dormir-profondement/short.mp4`
 - Titre : Inspire sur 4 temps, souffle sur 6 avant de dormir 🌙 #sommeil #respiration
-- Description : Inspire sur 4 temps, souffle sur 6, en suivant le son. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne. Méditation complète : (lien de la vidéo une fois en ligne).
+- Description :
+```
+Ton cerveau tourne encore au lit ? Inspire sur 4 temps, souffle sur 6, et laisse le son te guider. Une minute pour ralentir avant d'éteindre la lumière.
 
-### Short 2 (Déposer la journée) : 60 s, fichier `meditation-dormir-profondement~short2/short.mp4`
+🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-dormir-profondement
+
+La méditation complète (10 min) est sur la chaîne.
+À faire au calme, jamais en conduisant. Je ne suis pas professionnel de santé.
+```
+
+### Short 2 (Déposer la journée), fichier `meditation-dormir-profondement~short2/short.mp4`
 - Titre : Dépose ta journée sur la table de nuit 😴 #sommeil #méditation
-- Description : Une chose faite, une chose qui attendra demain : tu la poses à côté du lit pour la nuit. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne. Méditation complète : (lien de la vidéo une fois en ligne).
+- Description :
+```
+Ta journée tourne encore en boucle ? Pense à une chose que tu as faite, puis à une chose qui attendra demain. Pose-la, en pensée, sur la table de nuit. Elle sera encore là demain matin.
 
-### Short 3 (Relâcher le corps) : 60 s, fichier `meditation-dormir-profondement~short3/short.mp4`
+🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-dormir-profondement
+
+La méditation complète (10 min) est sur la chaîne.
+À faire au calme, jamais en conduisant. Je ne suis pas professionnel de santé.
+```
+
+### Short 3 (Relâcher le corps), fichier `meditation-dormir-profondement~short3/short.mp4`
 - Titre : Relâche ta mâchoire et tes épaules au lit 😴 #sommeil #relaxation
-- Description : Front, mâchoire, épaules, bras, ventre, jambes : tout redescend, une zone après l'autre. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne. Méditation complète : (lien de la vidéo une fois en ligne).
+- Description :
+```
+Le corps peut rester tendu même allongé. Front, mâchoire, épaules, bras, ventre, jambes : on relâche tout, une zone après l'autre.
 
-### Short 4 (Une scène calme) : 51 s, fichier `meditation-dormir-profondement~short4/short.mp4`
+🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-dormir-profondement
+
+La méditation complète (10 min) est sur la chaîne.
+À faire au calme, jamais en conduisant. Je ne suis pas professionnel de santé.
+```
+
+### Short 4 (Une scène calme), fichier `meditation-dormir-profondement~short4/short.mp4`
 - Titre : Imagine un lac calme le soir pour t'endormir 🌙 #sommeil #méditation
-- Description : Un chemin au bord de l'eau, une lumière au loin, un détail à remarquer : de quoi occuper doucement ton esprit au lit. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne. Méditation complète : (lien de la vidéo une fois en ligne).
+- Description :
+```
+Quand les pensées tournent, donne à ton esprit autre chose à regarder : un chemin au bord d'un lac, le soir, une petite lumière au loin. Remarque un détail, puis un autre.
 
-### Short 5 (S'installer) : 37 s, fichier `meditation-dormir-profondement~short5/short.mp4`
+🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-dormir-profondement
+
+La méditation complète (10 min) est sur la chaîne.
+À faire au calme, jamais en conduisant. Je ne suis pas professionnel de santé.
+```
+
+### Short 5 (S'installer), fichier `meditation-dormir-profondement~short5/short.mp4`
 - Titre : Laisse le matelas porter ton poids 😴 #sommeil #relaxation
-- Description : Allongé comme tu dors d'habitude, tu n'as plus rien à tenir : juste écouter les sons autour de toi. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne. Méditation complète : (lien de la vidéo une fois en ligne).
+- Description :
+```
+Allonge-toi comme tu dors d'habitude. Laisse le matelas porter ton poids. Ce soir, tu n'as plus rien à tenir.
 
+🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-dormir-profondement
+
+La méditation complète (10 min) est sur la chaîne.
+À faire au calme, jamais en conduisant. Je ne suis pas professionnel de santé.
+```

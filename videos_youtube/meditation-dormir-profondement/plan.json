@@ -329,17 +329,17 @@
  },
  "short": {
   "titre": "Inspire sur 4 temps, souffle sur 6 avant de dormir 🌙 #sommeil #respiration",
-  "description": "Inspire sur 4 temps, souffle sur 6, en suivant le son. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne.",
+  "description": "Ton cerveau tourne encore au lit ? Inspire sur 4 temps, souffle sur 6, et laisse le son te guider. Une minute pour ralentir avant d'éteindre la lumière.",
   "haut1": "Respire lentement",
   "haut2": "avant de dormir",
   "bas1": "Méditation complète (10 min) sur la chaîne"
  },
  "youtube": {
   "titre": "Méditation guidée pour dormir profondément et calmer le mental (10 min)",
-  "accroche": "Méditation guidée pour dormir profondément, pour les soirs où le corps est fatigué mais où la tête tourne encore : environ 7 minutes de voix douce (respiration lente, journée déposée, corps relâché, scène calme à imaginer), puis de la musique calme jusqu'à 10 minutes.",
+  "accroche": "Tu es épuisé, mais ta tête refuse de s'arrêter ? Cette méditation guidée pour dormir profondément t'accompagne pendant 10 minutes : une voix douce d'abord, puis une musique calme pour passer de la journée à la nuit.",
   "libelle_article": "Respirer pour mieux dormir : les méthodes et ce que disent les études (article sourcé)",
   "guide": "sommeil",
-  "description": "Pour les soirs où tu as besoin d'une vraie coupure avant de dormir. La voix commence tout de suite, sans long discours. Tu ralentis le souffle (inspirer sur 4 temps, souffler sur 6), tu poses ce qui attendra demain, tu relâches le corps, puis tu suis une scène calme au bord d'un lac. Rien à réussir : si tu t'endors avant la fin, c'est parfait.",
+  "description": "Je l'ai pensée pour les soirs où tout se rejoue dans la tête au moment de dormir. Pas de long discours : on ralentit le souffle (4 temps pour inspirer, 6 pour souffler), on pose ce qui attendra demain, on relâche le corps de la tête aux pieds, puis on se promène au bord d'un lac, le soir.\n\nRien à réussir. Si tu t'endors avant la fin, c'est très bien comme ça.\n\nGarde-la pour les soirs difficiles, ou écoute-la chaque soir en te couchant. Pour moi, c'est la régularité qui a fait la différence.",
   "sources": [
    "Tsai et al., Psychophysiology, 2015 (Université nationale Yang-Ming, Taipei)",
    "Laborde et al., Neuroscience & Biobehavioral Reviews, 2022 (Université allemande du sport de Cologne)",
@@ -377,7 +377,7 @@
    "haut2": "avant de dormir",
    "bas1": "Méditation complète (10 min) sur la chaîne",
    "titre": "Dépose ta journée sur la table de nuit 😴 #sommeil #méditation",
-   "description": "Une chose faite, une chose qui attendra demain : tu la poses à côté du lit pour la nuit. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+   "description": "Ta journée tourne encore en boucle ? Pense à une chose que tu as faite, puis à une chose qui attendra demain. Pose-la, en pensée, sur la table de nuit. Elle sera encore là demain matin."
   },
   {
    "partie": "Relâcher le corps",
@@ -385,7 +385,7 @@
    "haut2": "du front aux pieds",
    "bas1": "Méditation complète (10 min) sur la chaîne",
    "titre": "Relâche ta mâchoire et tes épaules au lit 😴 #sommeil #relaxation",
-   "description": "Front, mâchoire, épaules, bras, ventre, jambes : tout redescend, une zone après l'autre. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+   "description": "Le corps peut rester tendu même allongé. Front, mâchoire, épaules, bras, ventre, jambes : on relâche tout, une zone après l'autre."
   },
   {
    "partie": "Une scène calme",
@@ -393,7 +393,7 @@
    "haut2": "le soir, avant de dormir",
    "bas1": "Méditation complète (10 min) sur la chaîne",
    "titre": "Imagine un lac calme le soir pour t'endormir 🌙 #sommeil #méditation",
-   "description": "Un chemin au bord de l'eau, une lumière au loin, un détail à remarquer : de quoi occuper doucement ton esprit au lit. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+   "description": "Quand les pensées tournent, donne à ton esprit autre chose à regarder : un chemin au bord d'un lac, le soir, une petite lumière au loin. Remarque un détail, puis un autre."
   },
   {
    "partie": "S'installer",
@@ -401,9 +401,10 @@
    "haut2": "porter ton poids",
    "bas1": "Méditation complète (10 min) sur la chaîne",
    "titre": "Laisse le matelas porter ton poids 😴 #sommeil #relaxation",
-   "description": "Allongé comme tu dors d'habitude, tu n'as plus rien à tenir : juste écouter les sons autour de toi. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+   "description": "Allonge-toi comme tu dors d'habitude. Laisse le matelas porter ton poids. Ce soir, tu n'as plus rien à tenir."
   }
  ],
  "note_concurrence_01_11": "01/11 (consigne « appuie-toi sur ce qui fonctionne sur YouTube et espionne la concurrence ») : 5 Shorts au lieu de 3 (les Shorts font plus de 95 % des vues de la chaîne), accroche qui part du ressenti, mots-clés repris des vidéos en tête (docs/referencement/concurrence-youtube.md, section du 01/11).",
- "artefact_run": 41326609809
+ "artefact_run": 41326609809,
+ "note_descriptions_01_11": "01/11 : descriptions réécrites à la demande de l'utilisateur (« refais-moi des descriptions mieux que ça et enlève le lien de la vidéo dans les descriptions ») : plus de lien vers la vidéo complète dans les Shorts."
 }
