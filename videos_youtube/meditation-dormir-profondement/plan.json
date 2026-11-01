@@ -1,0 +1,390 @@
+{
+ "slug": "meditation-dormir-profondement",
+ "statut": "a_fabriquer",
+ "envoi_manuel": true,
+ "publication_prevue": "2026-11-04T19:00:00Z",
+ "duree_totale_min": 10,
+ "article": "/respiration-pour-dormir/",
+ "ecran": {
+  "titre": "Glisser vers un sommeil profond",
+  "sous_titre": "Méditation guidée pour dormir · voix douce · musique"
+ },
+ "brume": [
+  "Une scène calme"
+ ],
+ "photos": [
+  {
+   "partie": "intro",
+   "nom": "unsplash-Q8t3xiUspGY.jpg",
+   "url": "https://images.unsplash.com/photo-1763084559105-da09d3e33d4c?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Alexandro Fernandez",
+   "lum": 0.9
+  },
+  {
+   "partie": "S'installer",
+   "nom": "unsplash-c9wNU5dFCYk.jpg",
+   "url": "https://images.unsplash.com/photo-1729948847971-78360fa5a2f3?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Anthony Maw",
+   "lum": 0.9
+  },
+  {
+   "partie": "Respirer lentement",
+   "nom": "unsplash-xP3eAhyTq6Q.jpg",
+   "url": "https://images.unsplash.com/photo-1790506013308-dfbd30012b13?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Jamo Images",
+   "lum": 0.9,
+   "short": true
+  },
+  {
+   "partie": "Déposer la journée",
+   "nom": "unsplash-qif-wfvwJGY.jpg",
+   "url": "https://images.unsplash.com/photo-1569266318139-f96482583203?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Jonathan Gagnon",
+   "lum": 0.9
+  },
+  {
+   "partie": "Relâcher le corps",
+   "nom": "unsplash-ZgPTeARvVUQ.jpg",
+   "url": "https://images.unsplash.com/photo-1471085174191-cfe4e115fc4e?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Jamie Street",
+   "lum": 0.9
+  },
+  {
+   "partie": "Une scène calme",
+   "nom": "unsplash-DKix6Un55mw.jpg",
+   "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Johannes Plenio",
+   "lum": 0.9
+  },
+  {
+   "partie": "Glisser vers le sommeil",
+   "nom": "unsplash-njMi2OFoQqQ.jpg",
+   "url": "https://images.unsplash.com/photo-1501418611786-e29f9929fe03?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Aral Tasher",
+   "lum": 0.9
+  },
+  {
+   "partie": "fin",
+   "nom": "unsplash-TPv9dh822VA.jpg",
+   "url": "https://images.unsplash.com/photo-1466853817435-05b43fe45b39?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Štefan Štefančík",
+   "lum": 0.9
+  }
+ ],
+ "script": [
+  [
+   "pause",
+   3
+  ],
+  [
+   "dire",
+   "Bonsoir.",
+   1.5
+  ],
+  [
+   "dire",
+   "Cette méditation t'accompagne pour glisser doucement vers un sommeil profond.",
+   2
+  ],
+  [
+   "dire",
+   "Écoute-la seulement allongé, au calme, jamais en conduisant.",
+   2
+  ],
+  [
+   "dire",
+   "Tu n'as rien à réussir. Si tu t'endors avant la fin, c'est très bien.",
+   2.5
+  ],
+  [
+   "dire",
+   "On va ralentir le souffle, relâcher le corps, puis poser l'esprit sur une image tranquille.",
+   3
+  ],
+  [
+   "titre",
+   "S'installer",
+   4
+  ],
+  [
+   "dire",
+   "Allonge-toi dans la position où tu dors d'habitude.",
+   4
+  ],
+  [
+   "dire",
+   "Si tu le souhaites, ferme doucement les yeux.",
+   4
+  ],
+  [
+   "dire",
+   "Laisse le matelas porter ton poids. Tu n'as plus rien à tenir.",
+   6
+  ],
+  [
+   "dire",
+   "Écoute un instant les sons autour de toi, sans rien en faire.",
+   7
+  ],
+  [
+   "titre",
+   "Respirer lentement",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, on ralentit le souffle.",
+   2
+  ],
+  [
+   "dire",
+   "Tu inspires par le nez sur quatre temps, et tu souffles lentement sur six temps.",
+   3
+  ],
+  [
+   "dire",
+   "Suis simplement le son.",
+   2
+  ],
+  [
+   "souffle",
+   4,
+   true
+  ],
+  [
+   "dire",
+   "Continue à ton rythme, sans forcer.",
+   3
+  ],
+  [
+   "souffle",
+   4,
+   false
+  ],
+  [
+   "dire",
+   "Laisse ta respiration redevenir naturelle. Elle sait faire toute seule.",
+   6
+  ],
+  [
+   "titre",
+   "Déposer la journée",
+   4
+  ],
+  [
+   "dire",
+   "Pense à une chose que tu as faite aujourd'hui. Même petite.",
+   6
+  ],
+  [
+   "dire",
+   "Dis-toi simplement : c'est fait.",
+   6
+  ],
+  [
+   "dire",
+   "Maintenant, pense à une chose qui attendra demain.",
+   5
+  ],
+  [
+   "dire",
+   "Imagine que tu la poses sur une table, à côté du lit.",
+   5
+  ],
+  [
+   "dire",
+   "Elle sera là demain matin. Pour cette nuit, tu peux la laisser.",
+   8
+  ],
+  [
+   "dire",
+   "Si une autre pensée arrive, pose-la au même endroit. Sans te presser.",
+   9
+  ],
+  [
+   "titre",
+   "Relâcher le corps",
+   4
+  ],
+  [
+   "dire",
+   "Porte ton attention sur ton front. Laisse-le s'élargir.",
+   6
+  ],
+  [
+   "dire",
+   "Desserre la mâchoire. Les dents ne se touchent plus.",
+   6
+  ],
+  [
+   "dire",
+   "Laisse tes épaules descendre, encore un peu.",
+   6
+  ],
+  [
+   "dire",
+   "Tes bras deviennent lourds. Tes mains s'ouvrent.",
+   6
+  ],
+  [
+   "dire",
+   "Ton ventre se soulève et redescend, tout seul.",
+   7
+  ],
+  [
+   "dire",
+   "Tes jambes s'enfoncent dans le matelas, jusqu'aux pieds.",
+   8
+  ],
+  [
+   "titre",
+   "Une scène calme",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, imagine un chemin au bord d'un lac, le soir.",
+   5
+  ],
+  [
+   "dire",
+   "L'air est frais. L'eau est immobile.",
+   6
+  ],
+  [
+   "dire",
+   "Le chemin est doux sous tes pieds. Rien ne presse.",
+   7
+  ],
+  [
+   "dire",
+   "Regarde la couleur du ciel au-dessus de l'eau.",
+   7
+  ],
+  [
+   "dire",
+   "Écoute le bruit de tes pas sur le chemin. Lents. Réguliers.",
+   8
+  ],
+  [
+   "dire",
+   "Au loin, une petite lumière s'allume dans une maison.",
+   7
+  ],
+  [
+   "dire",
+   "Prends le temps de remarquer un détail. Une pierre, une branche, un reflet.",
+   10
+  ],
+  [
+   "dire",
+   "Si ton esprit part ailleurs, reviens doucement au chemin.",
+   10
+  ],
+  [
+   "titre",
+   "Glisser vers le sommeil",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, tu n'as plus rien à faire.",
+   6
+  ],
+  [
+   "dire",
+   "Laisse l'image devenir floue, comme un rêve qui commence.",
+   8
+  ],
+  [
+   "dire",
+   "Ton souffle est lent. Ton corps est lourd.",
+   8
+  ],
+  [
+   "dire",
+   "Chaque expiration t'emmène un peu plus loin.",
+   8
+  ],
+  [
+   "dire",
+   "Je vais me taire. Laisse la musique t'accompagner.",
+   5
+  ],
+  [
+   "dire",
+   "Bonne nuit.",
+   4
+  ]
+ ],
+ "miniature": {
+  "photo": "unsplash-Q8t3xiUspGY.jpg",
+  "zoom": 1.3,
+  "cadrage_x": 0.5,
+  "cadrage_y": 0.5,
+  "ligne1": "Dormir",
+  "ligne2": "profondément",
+  "ligne3": "Méditation · 10 min",
+  "pastille": "Voix douce + musique"
+ },
+ "short": {
+  "titre": "Inspire sur 4 temps, souffle sur 6 avant de dormir 🌙 #sommeil #respiration",
+  "description": "Inspire sur 4 temps, souffle sur 6, en suivant le son. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne.",
+  "haut1": "Respire lentement",
+  "haut2": "avant de dormir",
+  "bas1": "Méditation complète (10 min) sur la chaîne"
+ },
+ "youtube": {
+  "titre": "Méditation guidée pour dormir profondément et calmer le mental (10 min)",
+  "accroche": "Méditation guidée pour dormir profondément : environ 6 minutes de voix douce (respiration lente, journée déposée, corps relâché, scène calme à imaginer), puis de la musique calme jusqu'à 10 minutes.",
+  "libelle_article": "Respirer pour mieux dormir : les méthodes et ce que disent les études (article sourcé)",
+  "guide": "sommeil",
+  "description": "Pour les soirs où tu as besoin d'une vraie coupure avant de dormir. La voix commence tout de suite, sans long discours. Tu ralentis le souffle (inspirer sur 4 temps, souffler sur 6), tu poses ce qui attendra demain, tu relâches le corps, puis tu suis une scène calme au bord d'un lac. Rien à réussir : si tu t'endors avant la fin, c'est parfait.",
+  "sources": [
+   "Tsai et al., Psychophysiology, 2015 (Université nationale Yang-Ming, Taipei)",
+   "Laborde et al., Neuroscience & Biobehavioral Reviews, 2022 (Université allemande du sport de Cologne)",
+   "Harvey et Payne, Behaviour Research and Therapy, 2002 (Université d'Oxford)"
+  ],
+  "tags": [
+   "méditation guidée pour dormir",
+   "méditation sommeil profond",
+   "méditation pour dormir",
+   "méditation guidée 10 minutes",
+   "méditation sommeil 10 min",
+   "relaxation pour dormir 10 min",
+   "méditation du soir",
+   "méditation pour s'endormir",
+   "respiration pour dormir",
+   "calmer le mental",
+   "relaxation sommeil",
+   "méditation française",
+   "voix douce",
+   "musique pour dormir"
+  ],
+  "hashtags": [
+   "#méditation",
+   "#sommeil",
+   "#méditationguidée"
+  ],
+  "categorie": "26"
+ },
+ "voix": "elevenlabs_mila",
+ "shorts_extra": [
+  {
+   "partie": "Déposer la journée",
+   "haut1": "Dépose ta journée",
+   "haut2": "avant de dormir",
+   "bas1": "Méditation complète (10 min) sur la chaîne",
+   "titre": "Dépose ta journée sur la table de nuit 😴 #sommeil #méditation",
+   "description": "Une chose faite, une chose qui attendra demain : tu la poses à côté du lit pour la nuit. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+  },
+  {
+   "partie": "Relâcher le corps",
+   "haut1": "Relâche ton corps",
+   "haut2": "du front aux pieds",
+   "bas1": "Méditation complète (10 min) sur la chaîne",
+   "titre": "Relâche ta mâchoire et tes épaules au lit 😴 #sommeil #relaxation",
+   "description": "Front, mâchoire, épaules, bras, ventre, jambes : tout redescend, une zone après l'autre. Extrait de la méditation guidée pour dormir profondément (10 min) sur la chaîne."
+  }
+ ]
+}
