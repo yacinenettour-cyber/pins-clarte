@@ -1,19 +1,27 @@
 """Produit Etsy n° 1 (31/10/2026) : planner « Alléger sa charge mentale », 4 semaines, A4 à imprimer.
-Version 2 (même jour, pour se démarquer) : volet à deux (qui pense, organise, fait), semaine d'exemple remplie,
+Version 3 (01/11, design) : couverture en arche, papier texturé, onglets de classeur, couleur par semaine,
+page d'ouverture par semaine. Version 2 (31/10, pour se démarquer) : volet à deux (qui pense, organise, fait), semaine d'exemple remplie,
 page « Pourquoi ça marche » sourcée, version économe en encre.
 Texte dessiné par PIL (polices OFL de polices/), pages A4 à 200 dpi, PDF multipage + aperçus pour la fiche Etsy.
 Appel : python3 outils/etsy/planner_charge_mentale.py  : etsy/planner-charge-mentale/"""
 import os
-from PIL import Image, ImageDraw, ImageFont
+import math, random
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
 
 POL = os.path.join(os.path.dirname(__file__), "..", "..", "polices") + "/"
 SORTIE = os.path.join(os.path.dirname(__file__), "..", "..", "etsy", "planner-charge-mentale")
 W, H = 1654, 2339  # A4, 200 dpi
-NB_PAGES = 27
+NB_PAGES = 31
 M = 130  # marge
 CREME = (250, 245, 236); SAUGE = (124, 146, 118); SAUGE_C = (226, 233, 221); ROSE = (196, 120, 116)
 ROSE_C = (244, 226, 220); BRUN = (74, 52, 36); TXT = (70, 62, 54); TRAIT = (205, 194, 178); OR = (176, 128, 52)
 ENCRE = (38, 62, 112)  # « stylo » des pages d'exemple
+SABLE = (190, 150, 100); SABLE_C = (242, 230, 210); BRUME = (110, 138, 160); BRUME_C = (222, 230, 237)
+LAVANDE = (140, 120, 160); LAVANDE_C = (234, 228, 240)
+# couleur de chaque section : (foncée, claire) — exemple, semaines 1 à 4, volet à deux
+ACC = {0: (SAUGE, SAUGE_C), 1: (SAUGE, SAUGE_C), 2: (ROSE, ROSE_C), 3: (SABLE, SABLE_C), 4: (BRUME, BRUME_C),
+       "deux": (LAVANDE, LAVANDE_C)}
+ONGLETS = [(0, "Ex."), (1, "S1"), (2, "S2"), (3, "S3"), (4, "S4"), ("deux", "À 2")]
 f = lambda n, t: ImageFont.truetype(POL + n, t)
 TITRE = lambda t: f("PlayfairDisplay-Bold.ttf", t)
 MAIN = lambda t: f("DancingScript-Bold.ttf", t)
@@ -21,9 +29,47 @@ TEXTE = lambda t: f("Lora-Regular.ttf", t)
 GRAS = lambda t: f("Lora-SemiBold.ttf", t)
 
 
-def page():
-    img = Image.new("RGB", (W, H), CREME)
-    return img, ImageDraw.Draw(img)
+_TEXTURE = None
+
+
+def texture():
+    """Papier crème légèrement grainé (même grain sur toutes les pages, graine fixe)."""
+    global _TEXTURE
+    if _TEXTURE is None:
+        random.seed(681678)
+        bruit = Image.effect_noise((W, H), 22).filter(ImageFilter.GaussianBlur(0.7))
+        base = Image.new("RGB", (W, H), CREME)
+        grain = Image.merge("RGB", [bruit.point(lambda v: 236 + v // 16)] * 3)
+        _TEXTURE = ImageChops.multiply(base, grain)
+        # bords très légèrement plus chauds
+        voile = Image.new("L", (W, H), 0); ImageDraw.Draw(voile).rectangle((60, 60, W - 60, H - 60), fill=255)
+        voile = voile.filter(ImageFilter.GaussianBlur(120))
+        chaud = Image.new("RGB", (W, H), (240, 230, 214))
+        _TEXTURE = Image.composite(_TEXTURE, chaud, voile)
+    return _TEXTURE.copy()
+
+
+def onglets(d, actif):
+    """Onglets sur le bord droit, comme un classeur ; l'onglet de la section en cours ressort."""
+    h0, ht, g = 330, 150, 18
+    for k, (cle, lib) in enumerate(ONGLETS):
+        y0 = h0 + k * (ht + g); fort, clair = ACC[cle]
+        x0 = W - 58 if cle == actif else W - 40
+        d.rounded_rectangle((x0, y0, W + 30, y0 + ht), 18, fill=fort if cle == actif else clair)
+        fo = GRAS(26)
+        t = Image.new("RGBA", (ht, 40), (0, 0, 0, 0)); dt = ImageDraw.Draw(t)
+        dt.text(((ht - dt.textlength(lib, font=fo)) / 2, 2), lib, font=fo,
+                fill=(255, 250, 240) if cle == actif else fort)
+        t = t.rotate(90, expand=True)
+        d._image.paste(t, (int(x0 + 8), y0), t)
+
+
+def page(onglet=None):
+    img = texture()
+    d = ImageDraw.Draw(img)
+    if onglet is not None:
+        onglets(d, onglet)
+    return img, d
 
 
 def lignes(d, t, fo, l):
@@ -47,12 +93,27 @@ def centre(d, y, t, fo, fill, x0=0, x1=W):
     d.text((x0 + (x1 - x0 - w) / 2, y), t, font=fo, fill=fill)
 
 
-def entete(d, sur_titre, titre, num):
-    centre(d, M - 20, sur_titre, MAIN(56), ROSE)
-    centre(d, M + 60, titre, TITRE(84), BRUN)
-    d.line((W / 2 - 120, M + 175, W / 2 + 120, M + 175), fill=OR, width=4)
+def centre_esp(d, y, t, fo, fill, x0=0, x1=W, pas=6):
+    """Texte centré avec espacement entre les lettres (capitales d'étiquette)."""
+    w = sum(d.textlength(c, font=fo) for c in t) + pas * (len(t) - 1)
+    assert w <= x1 - x0, ("trop large", t)
+    x = x0 + (x1 - x0 - w) / 2
+    for c in t:
+        d.text((x, y), c, font=fo, fill=fill); x += d.textlength(c, font=fo) + pas
+
+
+def ornement(d, y, couleur=OR, l=150):
+    cx = W / 2
+    d.line((cx - l, y, cx - 22, y), fill=couleur, width=3); d.line((cx + 22, y, cx + l, y), fill=couleur, width=3)
+    d.polygon([(cx, y - 11), (cx + 11, y), (cx, y + 11), (cx - 11, y)], fill=couleur)
+
+
+def entete(d, sur_titre, titre, num, acc=ROSE):
+    centre_esp(d, M - 30, sur_titre.upper(), GRAS(30), acc)
+    centre(d, M + 25, titre, TITRE(88), BRUN)
+    ornement(d, M + 160)
     pied(d, num)
-    return M + 230
+    return M + 220
 
 
 def pied(d, num):
@@ -75,28 +136,104 @@ def paragraphe(d, x, y, t, fo, l, fill=TXT, inter=1.45):
     return y
 
 
+def feuille(d, x, y, ang, lg, larg, couleur):
+    """Feuille dessinée : deux arcs autour d'un axe incliné."""
+    ux, uy = math.cos(ang), math.sin(ang); vx, vy = -uy, ux
+    pts_a, pts_b = [], []
+    for k in range(21):
+        t = k / 20; w = math.sin(math.pi * t) ** 0.9 * larg
+        px, py = x + ux * lg * t, y + uy * lg * t
+        pts_a.append((px + vx * w, py + vy * w)); pts_b.append((px - vx * w, py - vy * w))
+    d.polygon(pts_a + pts_b[::-1], fill=couleur)
+
+
+def brin(d, x, y, hauteur, sens, couleurs):
+    """Tige courbe avec feuilles alternées (dessin vectoriel, aucune image générée)."""
+    pts = []
+    for k in range(41):
+        t = k / 40
+        pts.append((x + sens * 60 * math.sin(t * 2.4), y - hauteur * t))
+    d.line(pts, fill=couleurs[0], width=5, joint="curve")
+    for k in range(4, 40, 5):
+        px, py = pts[k]; t = k / 40; cote = 1 if (k // 5) % 2 else -1
+        ang = -math.pi / 2 + cote * (0.9 - 0.3 * t)
+        feuille(d, px, py, ang, 95 - 40 * t, 24 - 8 * t, couleurs[(k // 5) % 2])
+    feuille(d, pts[-1][0], pts[-1][1], -math.pi / 2 + sens * 0.1, 70, 20, couleurs[0])
+
+
 def couverture():
-    img, d = page()
-    d.rectangle((0, 0, W, H), fill=SAUGE_C)
-    cadre(d, 110, 110, W - 110, H - 110, fond=CREME, contour=OR, r=40)
-    d.rounded_rectangle((140, 140, W - 140, H - 140), 30, outline=OR, width=2)
-    # brins de feuilles dessinés (formes simples, pas d'image générée)
-    for cx, cy, s in ((330, 520, 1), (W - 330, 520, -1)):
-        d.line((cx, cy - 170, cx, cy + 170), fill=SAUGE, width=6)
-        for k in range(-3, 4):
-            y = cy + k * 48
-            d.ellipse((cx + (8 if s > 0 else -78), y - 18, cx + (78 if s > 0 else -8), y + 18), fill=SAUGE)
-            d.ellipse((cx - (78 if s > 0 else -8), y - 4, cx - (8 if s > 0 else -78), y + 32), fill=(150, 170, 142))
-    centre(d, 760, "Planner de 4 semaines", MAIN(92), ROSE)
-    centre(d, 930, "ALLÉGER SA", TITRE(128), BRUN)
-    centre(d, 1090, "CHARGE MENTALE", TITRE(128), BRUN)
-    d.line((W / 2 - 200, 1300, W / 2 + 200, 1300), fill=OR, width=5)
-    y = 1380
-    for t in ("Vider sa tête, trier, déléguer,", "et retrouver un peu d'air", "dans sa semaine."):
-        centre(d, y, t, TEXTE(58), TXT); y += 84
-    centre(d, 1800, "avec un volet à deux et une semaine d'exemple", MAIN(54), ROSE)
-    centre(d, 1910, "À imprimer · format A4 · 27 pages", GRAS(42), SAUGE)
-    centre(d, 1980, "Clarté Mentale | Stress & Énergie", TEXTE(38), (140, 126, 110))
+    img = texture()
+    fond = Image.new("RGB", (W, H), SAUGE_C)
+    img = Image.blend(img, fond, 0.65)
+    d = ImageDraw.Draw(img)
+    # arche crème
+    ax0, ax1, ay0, ay1 = 230, W - 230, 260, H - 260
+    r = (ax1 - ax0) / 2
+    masque = Image.new("L", (W, H), 0); dm = ImageDraw.Draw(masque)
+    dm.ellipse((ax0, ay0, ax1, ay0 + 2 * r), fill=255); dm.rectangle((ax0, ay0 + r, ax1, ay1), fill=255)
+    arche = texture()
+    # lavis aquarelle dans le haut de l'arche (taches floues superposées)
+    lav = Image.new("RGB", (W, H), CREME); dl = ImageDraw.Draw(lav)
+    random.seed(681678)
+    for cx, cy, rr, c in ((W / 2 + 120, ay0 + 330, 260, (238, 205, 195)), (W / 2 - 160, ay0 + 420, 230, (220, 230, 212)),
+                          (W / 2 + 20, ay0 + 250, 180, (244, 222, 200))):
+        for _ in range(6):
+            dx, dy = random.randint(-40, 40), random.randint(-40, 40)
+            dl.ellipse((cx - rr + dx, cy - rr + dy, cx + rr + dx, cy + rr + dy), fill=c)
+    lav = lav.filter(ImageFilter.GaussianBlur(70))
+    bruit = Image.effect_noise((W, H), 40).filter(ImageFilter.GaussianBlur(3)).point(lambda v: 200 + v // 4)
+    lav = ImageChops.multiply(lav, Image.merge("RGB", [bruit] * 3))
+    zone = Image.new("L", (W, H), 0); ImageDraw.Draw(zone).rectangle((0, 0, W, ay0 + 900), fill=255)
+    arche = Image.composite(Image.blend(arche, lav, 0.75), arche, zone.filter(ImageFilter.GaussianBlur(160)))
+    ombre = masque.filter(ImageFilter.GaussianBlur(26))
+    img.paste((150, 160, 140), (14, 22), ombre.point(lambda v: v // 3))
+    img.paste(arche, (0, 0), masque)
+    d = ImageDraw.Draw(img)
+    d.arc((ax0 + 30, ay0 + 30, ax1 - 30, ay0 + 2 * r - 30), 180, 360, fill=OR, width=3)
+    d.line((ax0 + 30, ay0 + r, ax0 + 30, ay1 - 30), fill=OR, width=3)
+    d.line((ax1 - 30, ay0 + r, ax1 - 30, ay1 - 30), fill=OR, width=3)
+    d.line((ax0 + 30, ay1 - 30, ax1 - 30, ay1 - 30), fill=OR, width=3)
+    brin(d, W / 2 - 250, ay0 + 760, 420, 1, (SAUGE, (150, 170, 142)))
+    brin(d, W / 2 + 250, ay0 + 760, 380, -1, ((150, 170, 142), SAUGE))
+    brin(d, W / 2, ay0 + 720, 470, 1, (SAUGE, (120, 142, 116)))
+    centre_esp(d, 1090, "PLANNER DE 4 SEMAINES", GRAS(34), ROSE)
+    centre(d, 1160, "Alléger sa", MAIN(120), ROSE)
+    centre(d, 1300, "CHARGE MENTALE", TITRE(118), BRUN)
+    ornement(d, 1475)
+    y = 1530
+    for t in ("Vider sa tête, trier, déléguer,", "et mieux partager à la maison."):
+        centre(d, y, t, TEXTE(50), TXT); y += 72
+    centre(d, 1760, "avec un volet à deux et une semaine d'exemple", MAIN(52), SAUGE)
+    centre(d, 1900, "Clarté Mentale | Stress & Énergie", TEXTE(36), (140, 126, 110))
+    # pastille
+    cx, cy, rp = ax1 - 30, ay1 - 40, 125
+    d.ellipse((cx - rp, cy - rp, cx + rp, cy + rp), fill=ROSE)
+    d.ellipse((cx - rp + 12, cy - rp + 12, cx + rp - 12, cy + rp - 12), outline=(250, 236, 228), width=2)
+    centre(d, cy - 70, str(NB_PAGES), TITRE(70), (255, 250, 242), cx - rp, cx + rp)
+    centre(d, cy + 10, "pages A4", GRAS(30), (255, 250, 242), cx - rp, cx + rp)
+    centre(d, cy + 48, "2 versions", GRAS(30), (255, 250, 242), cx - rp, cx + rp)
+    return img
+
+
+def ouverture(s, num):
+    """Page d'ouverture de chaque semaine : couleur de la semaine et intention à écrire."""
+    img, d = page(onglet=s)
+    fort, clair = ACC[s]
+    d.rounded_rectangle((M, 300, W - M - 60, 1150), 40, fill=clair)
+    cx = (M + W - M - 60) / 2
+    brin(d, cx - 520, 1110, 330, 1, (fort, SAUGE))
+    brin(d, cx + 520, 1110, 300, -1, (SAUGE, fort))
+    centre_esp(d, 420, "SEMAINE", GRAS(40), fort, M, W - M - 60)
+    centre(d, 480, str(s), TITRE(300), BRUN, M, W - M - 60)
+    centre(d, 870, ["Un pas après l'autre.", "Moins, mais mieux.", "Ce qui compte d'abord.", "Garder ce qui marche."][s - 1],
+           MAIN(66), fort, M, W - M - 60)
+    y = 1260
+    for q in ("Mon intention pour cette semaine :", "Ce que je veux protéger (temps, sommeil, moments) :",
+              "Ce que je m'autorise à ne pas faire :"):
+        d.text((M, y), q, font=GRAS(40), fill=BRUN)
+        lignes_ecriture(d, M, y + 40, W - M - 60, y + 250, pas=70)
+        y += 290
+    pied(d, num)
     return img
 
 
@@ -135,8 +272,8 @@ def ecrire(d, x, y_ligne, t, l):
 
 
 def vide_tete(s, num, ex=None):
-    img, d = page()
-    y = entete(d, "exemple rempli" if ex else f"semaine {s}", "Vide-tête", num)
+    img, d = page(onglet=s)
+    y = entete(d, "exemple rempli" if ex else f"semaine {s} · étape 1", "Vide-tête", num, ACC[s][0])
     y = paragraphe(d, M, y, "Tout ce qui tourne dans ta tête : tâches, rendez-vous, soucis, choses à ne pas oublier. "
                    "Sans trier, sans juger.", TEXTE(38), W - 2 * M) + 30
     cadre(d, M, y, W - M, H - 200)
@@ -147,10 +284,11 @@ def vide_tete(s, num, ex=None):
 
 
 def tri(s, num, ex=None):
-    img, d = page()
-    y = entete(d, "exemple rempli" if ex else f"semaine {s}", "Le tri", num)
-    cases = [("Je m'en occupe", "cette semaine", SAUGE_C), ("Je délègue", "à qui ?", ROSE_C),
-             ("Plus tard", "pas cette semaine", ROSE_C), ("Je lâche", "ce n'est pas si important", SAUGE_C)]
+    img, d = page(onglet=s)
+    y = entete(d, "exemple rempli" if ex else f"semaine {s} · étape 2", "Le tri", num, ACC[s][0])
+    cl = ACC[s][1]
+    cases = [("Je m'en occupe", "cette semaine", cl), ("Je délègue", "à qui ?", (247, 240, 230)),
+             ("Plus tard", "pas cette semaine", (247, 240, 230)), ("Je lâche", "ce n'est pas si important", cl)]
     g = 40; lw = (W - 2 * M - g) / 2; lh = (H - 200 - y - g) / 2
     for k, (t, st, fond) in enumerate(cases):
         x0 = M + (k % 2) * (lw + g); y0 = y + (k // 2) * (lh + g)
@@ -164,8 +302,8 @@ def tri(s, num, ex=None):
 
 
 def semaine(s, num, ex=None):
-    img, d = page()
-    y = entete(d, "exemple rempli" if ex else f"semaine {s}", "Ma semaine", num)
+    img, d = page(onglet=s)
+    y = entete(d, "exemple rempli" if ex else f"semaine {s} · étape 3", "Ma semaine", num, ACC[s][0])
     jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
     g = 26; lw = (W - 2 * M - g) / 2; lh = (H - 200 - y - 3 * g) / 4
     for k, j in enumerate(jours):
@@ -185,7 +323,7 @@ def semaine(s, num, ex=None):
         if jx:
             ecrire(d, x0 + 210, yy + 46, jx[-1], lw - 245)
     x0 = M + lw + g; y0 = y + 3 * (lh + g)
-    cadre(d, x0, y0, x0 + lw, y0 + lh, fond=SAUGE_C, contour=SAUGE_C)
+    cadre(d, x0, y0, x0 + lw, y0 + lh, fond=ACC[s][1], contour=ACC[s][1])
     centre(d, y0 + 40, "Trois priorités par jour,", GRAS(40), BRUN, x0, x0 + lw)
     centre(d, y0 + 100, "pas plus.", GRAS(40), BRUN, x0, x0 + lw)
     centre(d, y0 + 190, "Le reste peut attendre.", MAIN(48), ROSE, x0, x0 + lw)
@@ -193,8 +331,8 @@ def semaine(s, num, ex=None):
 
 
 def bilan(s, num):
-    img, d = page()
-    y = entete(d, f"semaine {s}", "Bilan du dimanche", num)
+    img, d = page(onglet=s)
+    y = entete(d, f"semaine {s} · étape 4", "Bilan du dimanche", num, ACC[s][0])
     qs = ["Ce que j'ai réussi à lâcher cette semaine :", "Ce que j'ai délégué (et comment ça s'est passé) :",
           "Le moment où je me suis senti(e) le plus léger(e) :", "Ce qui m'a pesé le plus :",
           "Une chose que je veux faire autrement la semaine prochaine :"]
@@ -269,8 +407,8 @@ TACHES_FOYER = ["Repas de la semaine", "Courses", "Linge", "Ménage", "Rendez-vo
 
 
 def qui_fait_quoi(num, part):
-    img, d = page()
-    y = entete(d, "le volet à deux", "Qui fait quoi ?", num)
+    img, d = page(onglet="deux")
+    y = entete(d, "le volet à deux", "Qui fait quoi ?", num, LAVANDE)
     if part == 1:
         y = paragraphe(d, M, y, "Pour chaque domaine, coche qui s'en charge vraiment aujourd'hui : qui y pense, qui "
                        "organise, qui fait. Remplissez-le chacun de votre côté, puis comparez.", TEXTE(36), W - 2 * M) + 20
@@ -285,7 +423,7 @@ def qui_fait_quoi(num, part):
     for k, t in enumerate(taches):
         y0 = y + k * rh
         if k % 2 == 0:
-            d.rounded_rectangle((M - 10, y0, W - M + 10, y0 + rh - 8), 16, fill=SAUGE_C)
+            d.rounded_rectangle((M - 10, y0, W - M + 10, y0 + rh - 8), 16, fill=LAVANDE_C)
         assert d.textlength(t, font=TEXTE(36)) < xc - xt - 30, t
         d.text((xt + 10, y0 + rh / 2 - 30), t, font=TEXTE(36), fill=TXT)
         if t == "Autre :":
@@ -298,8 +436,8 @@ def qui_fait_quoi(num, part):
 
 
 def rendez_vous(num):
-    img, d = page()
-    y = entete(d, "le volet à deux", "Le rendez-vous à deux", num)
+    img, d = page(onglet="deux")
+    y = entete(d, "le volet à deux", "Le rendez-vous à deux", num, LAVANDE)
     y = paragraphe(d, M, y, "20 minutes, une fois par mois, au calme. Le but n'est pas de compter les points, mais de "
                    "rendre visible ce qui ne l'est pas, et de choisir ensemble.", TEXTE(38), W - 2 * M) + 40
     qs = ["1. Comparez vos deux pages « Qui fait quoi ». Où vos réponses diffèrent-elles ?",
@@ -345,6 +483,7 @@ def fabriquer():
              vide_tete(0, 4, EX_VIDE), tri(0, 5, EX_TRI), semaine(0, 6, EX_SEM)]
     n = 7
     for s in range(1, 5):
+        pages.append(ouverture(s, n)); n += 1
         for fn in (vide_tete, tri, semaine, bilan):
             pages.append(fn(s, n)); n += 1
     pages.append(taches_invisibles(n)); n += 1
