@@ -11,13 +11,17 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
 POL = os.path.join(os.path.dirname(__file__), "..", "..", "polices") + "/"
 SORTIE = os.path.join(os.path.dirname(__file__), "..", "..", "etsy", "planner-charge-mentale")
 W, H = 1654, 2339  # A4, 200 dpi
-NB_PAGES = 31
+NB_PAGES = 32  # 02/11/2026 : + « Notre mois à deux »
 M = 130  # marge
 CREME = (250, 245, 236); SAUGE = (124, 146, 118); SAUGE_C = (226, 233, 221); ROSE = (196, 120, 116)
 ROSE_C = (244, 226, 220); BRUN = (74, 52, 36); TXT = (70, 62, 54); TRAIT = (205, 194, 178); OR = (176, 128, 52)
 ENCRE = (38, 62, 112)  # « stylo » des pages d'exemple
 SABLE = (190, 150, 100); SABLE_C = (242, 230, 210); BRUME = (110, 138, 160); BRUME_C = (222, 230, 237)
 LAVANDE = (140, 120, 160); LAVANDE_C = (234, 228, 240)
+# 02/11/2026 (« se démarquer », accord « Fais 1 2 3 4 ») : couleur de marque forte pour la couverture, et une couleur
+# par personne dans le volet à deux (A = moi, B = l'autre), reprise dans le kit frigo (C, D pour les autres membres)
+VERT = (40, 66, 54)
+PERS = [(184, 92, 64), (64, 104, 138), (110, 140, 100), (176, 140, 72)]
 # couleur de chaque section : (foncée, claire) — exemple, semaines 1 à 4, volet à deux
 ACC = {0: (SAUGE, SAUGE_C), 1: (SAUGE, SAUGE_C), 2: (ROSE, ROSE_C), 3: (SABLE, SABLE_C), 4: (BRUME, BRUME_C),
        "deux": (LAVANDE, LAVANDE_C)}
@@ -162,10 +166,15 @@ def brin(d, x, y, hauteur, sens, couleurs):
     feuille(d, pts[-1][0], pts[-1][1], -math.pi / 2 + sens * 0.1, 70, 20, couleurs[0])
 
 
-def couverture():
+def fond_couverture(fonce=True):
+    """Fond de couverture : vert profond de la marque (version couleur), sauge clair (version économe en encre)."""
     img = texture()
-    fond = Image.new("RGB", (W, H), SAUGE_C)
-    img = Image.blend(img, fond, 0.65)
+    return Image.blend(img, Image.new("RGB", (W, H), VERT), 0.9) if fonce else \
+        Image.blend(img, Image.new("RGB", (W, H), SAUGE_C), 0.65)
+
+
+def couverture(fonce=True):
+    img = fond_couverture(fonce)
     d = ImageDraw.Draw(img)
     # arche crème
     ax0, ax1, ay0, ay1 = 230, W - 230, 260, H - 260
@@ -187,7 +196,7 @@ def couverture():
     zone = Image.new("L", (W, H), 0); ImageDraw.Draw(zone).rectangle((0, 0, W, ay0 + 900), fill=255)
     arche = Image.composite(Image.blend(arche, lav, 0.75), arche, zone.filter(ImageFilter.GaussianBlur(160)))
     ombre = masque.filter(ImageFilter.GaussianBlur(26))
-    img.paste((150, 160, 140), (14, 22), ombre.point(lambda v: v // 3))
+    img.paste((20, 34, 28) if fonce else (150, 160, 140), (14, 22), ombre.point(lambda v: v // 3))
     img.paste(arche, (0, 0), masque)
     d = ImageDraw.Draw(img)
     d.arc((ax0 + 30, ay0 + 30, ax1 - 30, ay0 + 2 * r - 30), 180, 360, fill=OR, width=3)
@@ -199,20 +208,22 @@ def couverture():
     brin(d, W / 2, ay0 + 720, 470, 1, (SAUGE, (120, 142, 116)))
     centre_esp(d, 1090, "PLANNER DE 4 SEMAINES", GRAS(34), ROSE)
     centre(d, 1160, "Alléger sa", MAIN(120), ROSE)
-    centre(d, 1300, "CHARGE MENTALE", TITRE(118), BRUN)
+    centre(d, 1300, "CHARGE MENTALE", TITRE(118), VERT if fonce else BRUN)
     ornement(d, 1475)
     y = 1530
     for t in ("Vider sa tête, trier, déléguer,", "et mieux partager à la maison."):
         centre(d, y, t, TEXTE(50), TXT); y += 72
     centre(d, 1760, "avec un volet à deux et une semaine d'exemple", MAIN(52), SAUGE)
     centre(d, 1900, "Clarté Mentale | Stress & Énergie", TEXTE(36), (140, 126, 110))
+    if fonce:
+        centre_esp(d, H - 190, "4 SEMAINES  ·  SEUL(E) ET À DEUX", GRAS(34), (236, 226, 204))
     # pastille
     cx, cy, rp = ax1 - 30, ay1 - 40, 125
     d.ellipse((cx - rp, cy - rp, cx + rp, cy + rp), fill=ROSE)
     d.ellipse((cx - rp + 12, cy - rp + 12, cx + rp - 12, cy + rp - 12), outline=(250, 236, 228), width=2)
     centre(d, cy - 70, str(NB_PAGES), TITRE(70), (255, 250, 242), cx - rp, cx + rp)
     centre(d, cy + 10, "pages A4", GRAS(30), (255, 250, 242), cx - rp, cx + rp)
-    centre(d, cy + 48, "2 versions", GRAS(30), (255, 250, 242), cx - rp, cx + rp)
+    centre(d, cy + 48, "3 versions", GRAS(30), (255, 250, 242), cx - rp, cx + rp)
     return img
 
 
@@ -415,12 +426,16 @@ def qui_fait_quoi(num, part):
     if part == 1:
         y = paragraphe(d, M, y, "Pour chaque domaine, coche qui s'en charge vraiment aujourd'hui : qui y pense, qui "
                        "organise, qui fait. Remplissez-le chacun de votre côté, puis comparez.", TEXTE(36), W - 2 * M) + 20
+    legende_deux(d, y)
+    y += 80
     taches = TACHES_FOYER[:11] if part == 1 else TACHES_FOYER[11:]
     cols = ["Penser", "Organiser", "Faire"]
     xt = M; xc = M + 560; cw = (W - M - xc) / 3
     for i, c in enumerate(cols):
         centre(d, y, c, GRAS(42), BRUN, xc + i * cw, xc + (i + 1) * cw)
-        centre(d, y + 58, "moi · l'autre", MAIN(34), ROSE, xc + i * cw, xc + (i + 1) * cw)
+        x_mil = xc + i * cw + cw / 2
+        d.text((x_mil - 8 - d.textlength("moi", font=MAIN(34)), y + 58), "moi", font=MAIN(34), fill=PERS[0])
+        d.text((x_mil + 8, y + 58), "l'autre", font=MAIN(34), fill=PERS[1])
     y += 120
     rh = min(140, (H - 230 - y) / len(taches))
     for k, t in enumerate(taches):
@@ -433,8 +448,150 @@ def qui_fait_quoi(num, part):
             d.line((xt + 140, y0 + rh / 2 + 14, xc - 30, y0 + rh / 2 + 14), fill=TRAIT, width=2)
         for i in range(3):
             cx = xc + i * cw + cw / 2
-            for dx in (-48, 22):
-                d.rounded_rectangle((cx + dx, y0 + rh / 2 - 26, cx + dx + 30, y0 + rh / 2 + 4), 6, outline=SAUGE, width=3)
+            for j, dx in enumerate((-48, 22)):
+                d.rounded_rectangle((cx + dx, y0 + rh / 2 - 26, cx + dx + 30, y0 + rh / 2 + 4), 6, outline=PERS[j], width=4)
+    return img
+
+
+def legende_deux(d, y):
+    """Légende du volet à deux : une couleur par personne, prénom à écrire."""
+    x = M
+    for j, lib in enumerate(("moi", "l'autre")):
+        d.ellipse((x, y + 8, x + 34, y + 42), fill=PERS[j])
+        d.text((x + 50, y), lib + " :", font=GRAS(36), fill=BRUN)
+        x2 = x + 50 + d.textlength(lib + " :", font=GRAS(36)) + 16
+        d.line((x2, y + 40, x2 + 380, y + 40), fill=TRAIT, width=2)
+        x = x2 + 440
+
+
+def mois_a_deux(num):
+    """Tableau de bord du mois : qui a porté chaque domaine, semaine après semaine (version couple)."""
+    img, d = page(onglet="deux")
+    y = entete(d, "le volet à deux", "Notre mois à deux", num, LAVANDE)
+    y = paragraphe(d, M, y, "Chaque dimanche, colorie qui a porté chaque domaine : ta couleur, celle de l'autre, ou "
+                   "les deux. Au bout du mois, vous voyez la répartition bouger.", TEXTE(36), W - 2 * M) + 20
+    legende_deux(d, y)
+    y += 90
+    domaines = ["Repas", "Courses", "Linge", "Ménage", "Rendez-vous médicaux", "Papiers et factures",
+                "École et enfants", "Cadeaux et anniversaires", "Vacances et sorties"]
+    xc = M + 470; cw = (W - M - 150 - xc) / 4
+    for i in range(4):
+        centre(d, y, f"S{i + 1}", GRAS(40), ACC[i + 1][0], xc + i * cw, xc + (i + 1) * cw)
+    centre(d, y, "À revoir", GRAS(30), BRUN, W - M - 150, W - M)
+    y += 70
+    rh = 112
+    for k, dom in enumerate(domaines):
+        y0 = y + k * rh
+        if k % 2 == 0:
+            d.rounded_rectangle((M - 10, y0, W - M + 10, y0 + rh - 10), 16, fill=LAVANDE_C)
+        assert d.textlength(dom, font=TEXTE(34)) < xc - M - 20, dom
+        d.text((M + 10, y0 + rh / 2 - 28), dom, font=TEXTE(34), fill=TXT)
+        for i in range(4):
+            cx = xc + i * cw + cw / 2
+            for j, dx in enumerate((-44, 10)):
+                d.ellipse((cx + dx, y0 + rh / 2 - 22, cx + dx + 34, y0 + rh / 2 + 12), outline=PERS[j], width=4)
+        cx = W - M - 75
+        d.rounded_rectangle((cx - 17, y0 + rh / 2 - 22, cx + 17, y0 + rh / 2 + 12), 6, outline=BRUN, width=3)
+    y0 = y + len(domaines) * rh + 30
+    d.text((M, y0), "Ce qui s'est rééquilibré ce mois-ci :", font=GRAS(40), fill=BRUN)
+    lignes_ecriture(d, M, y0 + 40, W - M, H - 200, pas=72)
+    return img
+
+
+def sommaire():
+    """Sommaire de la version tablette : chaque ligne est un lien (rectangles renvoyés avec l'image)."""
+    img, d = page()
+    y = entete(d, "pour s'y retrouver", "Sommaire", "sommaire")
+    y = paragraphe(d, M, y, "Touche une ligne pour y aller. Les onglets du bord renvoient au début de chaque partie, et "
+                   "le bas de chaque page ramène ici.", TEXTE(36), W - 2 * M) + 30
+    rects = []
+    for lib, cible, coul in SOMMAIRE:
+        d.rounded_rectangle((M, y, W - M, y + 104), 22, fill=ACC.get(coul, (SAUGE, SAUGE_C))[1] if coul is not None else CREME,
+                            outline=TRAIT, width=2)
+        d.text((M + 40, y + 26), lib, font=GRAS(42), fill=BRUN)
+        num = str(cible + 1)
+        d.text((W - M - 40 - d.textlength(num, font=TEXTE(40)), y + 28), num, font=TEXTE(40), fill=TXT)
+        rects.append(((M, y, W - M, y + 104), cible))
+        y += 122
+    assert y < H - 200, y
+    return img, rects
+
+
+# (libellé, index de page dans le planner imprimable, couleur de section) ; décalé de +1 dans la version tablette
+SOMMAIRE = [("Mode d'emploi", 1, None), ("Pourquoi ça marche", 2, None), ("Semaine d'exemple", 3, 0),
+            ("Semaine 1", 6, 1), ("Semaine 2", 11, 2), ("Semaine 3", 16, 3), ("Semaine 4", 21, 4),
+            ("Les tâches invisibles", 26, None), ("Qui fait quoi ?", 27, "deux"), ("Le rendez-vous à deux", 29, "deux"),
+            ("Notre mois à deux", 30, "deux"), ("Notes", 31, None)]
+DEBUT_SECTION = {0: 3, 1: 6, 2: 11, 3: 16, 4: 21, "deux": 27}
+
+
+# ---------------------------------------------------------------- kit frigo (bonus, 02/11/2026)
+def kit_qui_fait_quoi():
+    img, d = page()
+    y = entete(d, "à afficher sur le frigo", "Qui fait quoi cette semaine ?", "kit frigo")
+    xc = M + 520; cw = (W - M - xc) / 4
+    for i in range(4):
+        cx = xc + i * cw + cw / 2
+        d.ellipse((cx - 20, y, cx + 20, y + 40), fill=PERS[i])
+        d.line((cx - cw / 2 + 20, y + 100, cx + cw / 2 - 20, y + 100), fill=TRAIT, width=2)
+    centre(d, y + 115, "un prénom par colonne", MAIN(34), ROSE, xc, W - M)
+    y += 190
+    taches = ["Repas du soir", "Courses", "Linge", "Vaisselle", "Ménage", "Poubelles", "Devoirs", "Trajets",
+              "Rendez-vous", "Animaux, plantes", "", ""]
+    rh = 118
+    for k, ta in enumerate(taches):
+        y0 = y + k * rh
+        if k % 2 == 0:
+            d.rounded_rectangle((M - 10, y0, W - M + 10, y0 + rh - 10), 16, fill=SAUGE_C)
+        if ta:
+            d.text((M + 10, y0 + rh / 2 - 28), ta, font=TEXTE(36), fill=TXT)
+        else:
+            d.line((M + 10, y0 + rh / 2 + 14, xc - 40, y0 + rh / 2 + 14), fill=TRAIT, width=2)
+        for i in range(4):
+            cx = xc + i * cw + cw / 2
+            d.ellipse((cx - 19, y0 + rh / 2 - 24, cx + 19, y0 + rh / 2 + 14), outline=PERS[i], width=4)
+    y0 = y + len(taches) * rh + 20
+    d.text((M, y0), "Cette semaine, on lâche :", font=GRAS(40), fill=BRUN)
+    d.line((M + 520, y0 + 44, W - M, y0 + 44), fill=TRAIT, width=2)
+    return img
+
+
+def kit_semaine():
+    img, d = page()
+    y = entete(d, "à afficher sur le frigo", "Notre semaine", "kit frigo")
+    cols = ["Repas du soir", "Qui fait quoi", "Rendez-vous"]
+    xj = M + 230; cw = (W - M - xj) / 3
+    for i, c in enumerate(cols):
+        centre(d, y, c, GRAS(40), BRUN, xj + i * cw, xj + (i + 1) * cw)
+    y += 70
+    jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+    rh = (H - 260 - y) / 7
+    for k, j in enumerate(jours):
+        y0 = y + k * rh
+        cadre(d, M, y0, W - M, y0 + rh - 16, fond=SAUGE_C if k % 2 == 0 else ROSE_C, contour=CREME)
+        d.text((M + 24, y0 + 22), j, font=GRAS(36), fill=BRUN)
+        for i in range(3):
+            x0 = xj + i * cw + 16
+            for l in range(1, 3):
+                d.line((x0, y0 + l * (rh - 16) / 3 + 10, x0 + cw - 40, y0 + l * (rh - 16) / 3 + 10), fill=TRAIT, width=2)
+    return img
+
+
+def kit_domaines():
+    img, d = page()
+    y = entete(d, "à afficher sur le frigo", "Chacun son domaine", "kit frigo")
+    y = paragraphe(d, M, y, "Un domaine confié en entier, c'est y penser, l'organiser et le faire. Pas un coup de main : "
+                   "une vraie responsabilité, que personne ne vient vérifier.", TEXTE(38), W - 2 * M) + 40
+    lw = (W - 2 * M - 40) / 2
+    for k in range(6):
+        x0 = M + (k % 2) * (lw + 40); y0 = y + (k // 2) * 470
+        cadre(d, x0, y0, x0 + lw, y0 + 430, fond=CREME)
+        d.ellipse((x0 + 30, y0 + 34, x0 + 70, y0 + 74), fill=PERS[k % 4])
+        for n, lib in enumerate(("Domaine :", "Confié à :", "Depuis le :")):
+            yy = y0 + 110 + n * 105
+            d.text((x0 + 30, yy), lib, font=GRAS(36), fill=BRUN)
+            d.line((x0 + 30, yy + 80, x0 + lw - 30, yy + 80), fill=TRAIT, width=2)
+    centre(d, H - 175, "Une tâche confiée en entier soulage plus que dix coups de main.", MAIN(44), ROSE)
     return img
 
 
@@ -477,7 +634,13 @@ EX_SEM = {"Lundi": ["Dossier : partie 1 (9 h)", "Appeler le dentiste", "10 min d
 def encre_econome(img):
     """Version pour imprimer en noir : niveaux de gris, aplats éclaircis (moins d'encre) ; depuis le 02/11/2026,
     le fond papier (très clair) devient blanc pur, pour ne plus imprimer un voile gris sur toute la page."""
-    g = img.convert("L").point(lambda v: 255 if v >= 228 else (int(255 - (255 - v) * 0.55) if v > 150 else v))
+    def courbe(v):  # passage continu vers le blanc (pas de points blancs isolés dans le grain du papier)
+        if v >= 232:
+            return 255
+        if v >= 192:
+            return int(255 - (255 - v) * 0.55 * (232 - v) / 40)
+        return int(255 - (255 - v) * 0.55) if v > 150 else v
+    g = img.convert("L").point(courbe)
     return g.convert("RGB")
 
 
@@ -491,8 +654,8 @@ ZONE_TROUS, ZONE_IMPRIMANTE = 173, 47  # px à 200 dpi : 22 mm et 6 mm
 
 
 def fond_page(couv=False):
-    img = texture()
-    return Image.blend(img, Image.new("RGB", (W, H), SAUGE_C), 0.65) if couv else img
+    """couv : False (page), "fonce" (couverture couleur) ou "clair" (couverture économe en encre)."""
+    return fond_couverture(couv == "fonce") if couv else texture()
 
 
 def mise_en_page_impression(img, couv=False):
@@ -515,6 +678,36 @@ def controle_marges(img, couv=False):
     return {k: int((z > 40).sum()) for k, z in zones.items()}
 
 
+def liens_pdf(chemin, liens):
+    """Ajoute des liens internes (pypdf, libre et gratuit) : liens = [(index_page, rect_px, index_cible)]."""
+    from pypdf import PdfReader, PdfWriter
+    from pypdf.annotations import Link
+    w = PdfWriter(clone_from=PdfReader(chemin))
+    sx = float(w.pages[0].mediabox.width) / W; sy = float(w.pages[0].mediabox.height) / H
+    for p, (x0, y0, x1, y1), cible in liens:
+        w.add_annotation(p, Link(rect=(x0 * sx, (H - y1) * sy, x1 * sx, (H - y0) * sy), target_page_index=cible))
+    with open(chemin, "wb") as fh:
+        w.write(fh)
+
+
+def version_tablette(pages_brutes):
+    """PDF pour tablette (GoodNotes, Notability, Xodo…) : mise en page d'origine, sommaire en page 2, onglets,
+    lignes du sommaire et bas de page cliquables."""
+    som, rects = sommaire()
+    pages = [pages_brutes[0], som] + pages_brutes[1:]
+    chemin = os.path.join(SORTIE, "planner-alleger-charge-mentale-tablette.pdf")
+    pages[0].save(chemin, "PDF", resolution=200, save_all=True, append_images=pages[1:])
+    liens = [(1, rect, cible + 1) for rect, cible in rects]
+    for k in range(2, len(pages)):
+        liens.append((k, (W / 2 - 420, H - 110, W / 2 + 420, H - 45), 1))  # bas de page → sommaire
+        if k - 1 >= 3 and k - 1 not in (26, 31):  # pages avec onglets (pas couverture, mode d'emploi, pourquoi, tâches invisibles, notes)
+            for i, (cle, _) in enumerate(ONGLETS):
+                y0 = 330 + i * 168
+                liens.append((k, (W - 75, y0, W, y0 + 150), DEBUT_SECTION[cle] + 1))
+    liens_pdf(chemin, liens)
+    return chemin, len(liens)
+
+
 def fabriquer():
     os.makedirs(SORTIE, exist_ok=True)
     pages = [couverture(), mode_emploi(), pourquoi(3),
@@ -528,15 +721,25 @@ def fabriquer():
     pages.append(qui_fait_quoi(n, 1)); n += 1
     pages.append(qui_fait_quoi(n, 2)); n += 1
     pages.append(rendez_vous(n)); n += 1
+    pages.append(mois_a_deux(n)); n += 1
     pages.append(notes(n))
     assert len(pages) == NB_PAGES, len(pages)
-    pages = [mise_en_page_impression(p, couv=(k == 0)) for k, p in enumerate(pages)]
+    tab = version_tablette(pages)
+    print("tablette :", tab)
+    brutes = pages
+    pages = [mise_en_page_impression(p, couv="fonce" if k == 0 else False) for k, p in enumerate(brutes)]
     for k, p in enumerate(pages):
-        m = controle_marges(p, couv=(k == 0))
+        m = controle_marges(p, couv="fonce" if k == 0 else False)
         assert all(v == 0 for v in m.values()), (k + 1, m)
+    kit = [mise_en_page_impression(p) for p in (kit_qui_fait_quoi(), kit_semaine(), kit_domaines())]
+    for p in kit:
+        assert all(v == 0 for v in controle_marges(p).values())
+    kit[0].save(os.path.join(SORTIE, "kit-frigo-famille-A4.pdf"), "PDF", resolution=200, save_all=True, append_images=kit[1:])
+    for k, p in enumerate(kit):
+        p.resize((W // 2, H // 2), Image.LANCZOS).save(os.path.join(SORTIE, f"apercu-kit-{k + 1}.jpg"), quality=85)
     pdf = os.path.join(SORTIE, "planner-alleger-charge-mentale-A4.pdf")
     pages[0].save(pdf, "PDF", resolution=200, save_all=True, append_images=pages[1:])
-    nb = [encre_econome(p) for p in pages]
+    nb = [encre_econome(p) for p in [mise_en_page_impression(couverture(False), couv="clair")] + pages[1:]]
     nb[0].save(os.path.join(SORTIE, "planner-alleger-charge-mentale-A4-econome-encre.pdf"), "PDF", resolution=200,
                save_all=True, append_images=nb[1:])
     for k, p in enumerate(pages):

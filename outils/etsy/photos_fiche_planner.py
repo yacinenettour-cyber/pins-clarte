@@ -15,6 +15,10 @@ POL = os.path.join(DEPOT, "polices") + "/"
 DOSSIER = os.path.join(DEPOT, "etsy", "planner-charge-mentale")
 PDF_C = os.path.join(DOSSIER, "planner-alleger-charge-mentale-A4.pdf")
 PDF_E = os.path.join(DOSSIER, "planner-alleger-charge-mentale-A4-econome-encre.pdf")
+PDF_T = os.path.join(DOSSIER, "planner-alleger-charge-mentale-tablette.pdf")
+PDF_K = os.path.join(DOSSIER, "kit-frigo-famille-A4.pdf")
+VERT = (40, 66, 54); PERS = [(184, 92, 64), (64, 104, 138), (110, 140, 100), (176, 140, 72)]
+CREME_TXT = (240, 232, 214)
 W, H = 3000, 2250
 
 CREME = (250, 245, 236); SAUGE = (124, 146, 118); SAUGE_C = (226, 233, 221); ROSE = (196, 120, 116)
@@ -39,6 +43,8 @@ def rendre_pages():
     t = tempfile.mkdtemp()
     subprocess.run(["pdftoppm", "-r", "200", "-png", PDF_C, os.path.join(t, "c")], check=True)
     subprocess.run(["pdftoppm", "-r", "200", "-png", PDF_E, os.path.join(t, "e")], check=True)
+    subprocess.run(["pdftoppm", "-r", "200", "-png", PDF_T, os.path.join(t, "t")], check=True)
+    subprocess.run(["pdftoppm", "-r", "200", "-png", PDF_K, os.path.join(t, "k")], check=True)
     for p in glob.glob(os.path.join(t, "*.png")):
         b = os.path.basename(p)
         _PAGES[(b[0], int(b.split("-")[1].split(".")[0]))] = p
@@ -241,32 +247,31 @@ def enregistrer(im, nom):
 
 # ---------------------------------------------------------------- les 10 photos
 def photo_01_couverture():
-    im = fond((232, 236, 226)).convert("RGBA")
+    im = fond((24, 40, 33), grain=5, vignette=0.18).convert("RGBA")
     d = ImageDraw.Draw(im)
     # éventail de pages derrière la couverture
     coller(im, page(28, 700), (1180, 1040), 3, eleve=0.6)
     coller(im, page(6, 700), (1370, 1090), 9, eleve=0.7)
     coller(im, page(7, 700), (1540, 1160), 15, eleve=0.8)
     coller(im, page(1, 940), (760, 1160), -3, eleve=1.2)
-    brin(d, 120, 2080, 520, -68)
-    brin(d, 230, 2160, 420, -52, couleur=(150, 170, 140), couleur2=SAUGE)
+    brin(d, 120, 2080, 520, -68, couleur=(150, 176, 140), couleur2=(118, 146, 112))
+    brin(d, 230, 2160, 420, -52, couleur=(118, 146, 112), couleur2=(150, 176, 140))
     crayon(im, 1350, 2030, 700, -12)
     d = ImageDraw.Draw(im)
     # panneau de droite
     x0 = 1990
-    d.text((x0, 300), "PLANNER À IMPRIMER", font=GRAS(48), fill=ROSE)
-    d.text((x0, 380), "Alléger sa", font=MAIN(140), fill=ROSE)
-    d.text((x0, 540), "charge", font=TITRE(176), fill=BRUN)
-    d.text((x0, 730), "mentale", font=TITRE(176), fill=BRUN)
-    d.text((x0, 980), "seul(e) et à deux", font=MAIN(96), fill=SAUGE)
-    y = 1160
-    for t, c in (("Volet « Qui fait quoi ? »", ROSE), ("Semaine d'exemple remplie", SAUGE),
-                 ("4 semaines + onglets", (176, 140, 92))):
-        pastille(d, x0, y, t, GRAS(48), fond_c=c)
-        y += 130
-    d.text((x0, y + 40), "31 pages A4  ·  2 versions", font=TEXTE(52), fill=TXT)
-    d.text((x0, y + 120), "PDF en français, à imprimer", font=TEXTE(52), fill=TXT)
-    d.text((x0, y + 200), "autant de fois que tu veux", font=TEXTE(52), fill=TXT)
+    d.text((x0, 260), "PLANNER EN FRANÇAIS", font=GRAS(48), fill=(226, 170, 150))
+    d.text((x0, 340), "Alléger sa", font=MAIN(140), fill=(232, 160, 140))
+    d.text((x0, 500), "charge", font=TITRE(176), fill=CREME_TXT)
+    d.text((x0, 690), "mentale", font=TITRE(176), fill=CREME_TXT)
+    d.text((x0, 940), "seul(e) et à deux", font=MAIN(96), fill=(170, 200, 160))
+    y = 1110
+    for t, c in (("Volet couple en 2 couleurs", PERS[0]), ("Version tablette cliquable", PERS[1]),
+                 ("Bonus : kit frigo famille", (176, 140, 72)), ("Semaine d'exemple remplie", (110, 140, 100))):
+        pastille(d, x0, y, t, GRAS(46), fond_c=c)
+        y += 122
+    d.text((x0, y + 40), "32 pages A4  ·  3 versions", font=TEXTE(52), fill=CREME_TXT)
+    d.text((x0, y + 120), "prêt pour le classeur", font=TEXTE(52), fill=CREME_TXT)
     return enregistrer(im, "fiche-01-couverture.jpg")
 
 
@@ -278,7 +283,7 @@ def photo_02_a_deux():
     coller(im, page(30, 820), (1700, 1420), 4, eleve=1.0)
     d = ImageDraw.Draw(im)
     p28 = page(28, 1654)
-    loupe(im, p28, (1000, 470, 1600, 1070), (470, 1660), 260)
+    loupe(im, p28, (900, 540, 1500, 1140), (470, 1660), 260)
     d = ImageDraw.Draw(im)
     x = 2230
     y = bulle(d, x, 620, "3 colonnes", "Penser, organiser, faire : c'est souvent « y penser » qui épuise.", 640, LAVANDE)
@@ -286,6 +291,58 @@ def photo_02_a_deux():
     bulle(d, x, y + 50, "20 minutes à deux", "5 questions pour choisir ensemble, sans compter les points.", 640, SAUGE)
     signature(d)
     return enregistrer(im, "fiche-02-volet-a-deux.jpg")
+
+
+def photo_mois_a_deux():
+    im = fond((236, 230, 238)).convert("RGBA")
+    d = ImageDraw.Draw(im)
+    entete(d, "nouveau : version couple", "Une couleur chacun", "et la répartition qui bouge, mois après mois")
+    coller(im, page(31, 860), (1050, 1330), -3, eleve=1.0)
+    p = page(31, 1654)
+    loupe(im, p, (300, 560, 1100, 1360), (420, 1720), 250)
+    d = ImageDraw.Draw(im)
+    x = 1700
+    y = bulle(d, x, 560, "Ta couleur, la sienne", "Chaque case se coche dans la couleur de celui qui porte la tâche.", 1100, PERS[0])
+    y = bulle(d, x, y + 50, "Notre mois à deux", "Chaque dimanche, on colorie qui a porté chaque domaine. En 4 semaines, on voit ce qui change.", 1100, PERS[1])
+    bulle(d, x, y + 50, "Sans compter les points", "Un rendez-vous de 20 minutes, 5 questions, pour choisir ensemble.", 1100, (110, 140, 100))
+    signature(d)
+    return enregistrer(im, "fiche-03-mois-a-deux.jpg")
+
+
+def aimant(im, cx, cy, couleur):
+    a = Image.new("RGBA", (90, 90), (0, 0, 0, 0))
+    dd = ImageDraw.Draw(a)
+    dd.ellipse([2, 2, 87, 87], fill=couleur)
+    dd.ellipse([18, 14, 46, 38], fill=tuple(min(255, c + 50) for c in couleur))
+    coller(im, a, (cx, cy), 0, ombre=1.0, eleve=0.3)
+
+
+def photo_kit_frigo():
+    im = fond((226, 232, 234), vignette=0.12).convert("RGBA")
+    d = ImageDraw.Draw(im)
+    entete(d, "bonus inclus", "Le kit frigo pour toute la famille", "3 pages à afficher, un prénom par couleur", couleur_sur=PERS[1])
+    for i, (n, x, ang) in enumerate(((1, 720, -2), (2, 1500, 1), (3, 2280, 2.5))):
+        coller(im, page(n, 700, "k"), (x, 1300), ang, eleve=0.5)
+        aimant(im, x - 10, 1300 - 495, PERS[i])
+    d = ImageDraw.Draw(im)
+    centre(d, "Qui fait quoi cette semaine  ·  Notre semaine  ·  Chacun son domaine", GRAS(56), 2030, couleur=BRUN)
+    return enregistrer(im, "fiche-04-kit-frigo.jpg")
+
+
+def photo_tablette():
+    im = fond((232, 234, 238)).convert("RGBA")
+    d = ImageDraw.Draw(im)
+    entete(d, "version tablette incluse", "Onglets et sommaire cliquables", "GoodNotes, Notability, Xodo… et toute appli de PDF",
+           couleur_sur=PERS[1])
+    coller(im, tablette(page(2, 820, "t"), 820), (1000, 1330), -3, eleve=1.2)
+    coller(im, tablette(page(12, 640, "t"), 640), (1880, 1420), 5, eleve=1.0)
+    stylet(im, 2350, 2000, 560, -60)
+    d = ImageDraw.Draw(im)
+    x = 2330
+    y = bulle(d, x, 600, "Sommaire", "Une ligne touchée, tu y es.", 600, PERS[1])
+    y = bulle(d, x, y + 40, "Onglets", "Exemple, semaines 1 à 4, à deux.", 600, PERS[0])
+    bulle(d, x, y + 40, "Retour", "Le bas de chaque page ramène au sommaire.", 600, (110, 140, 100))
+    return enregistrer(im, "fiche-05-tablette-cliquable.jpg")
 
 
 def photo_03_exemple():
@@ -304,7 +361,7 @@ def photo_03_exemple():
         centre(d, t, GRAS(64), 1990, x - 300, x + 300, BRUN)
     fleche(d, 1180, 2032, 170)
     fleche(d, 1600, 2032, 190)
-    return enregistrer(im, "fiche-03-exemple-rempli.jpg")
+    return enregistrer(im, "fiche-06-exemple-rempli.jpg")
 
 
 def photo_04_parcours():
@@ -324,7 +381,7 @@ def photo_04_parcours():
         if i < 3:
             fleche(d, x + 290, 1562, 100)
     signature(d)
-    return enregistrer(im, "fiche-04-parcours-semaine.jpg")
+    return enregistrer(im, "fiche-07-parcours-semaine.jpg")
 
 
 def photo_05_onglets():
@@ -336,23 +393,23 @@ def photo_05_onglets():
         coller(im, page(n, 780), (720 + i * 520, 1200 + abs(i - 1.5) * 40), ang, eleve=0.6 + 0.15 * i)
     d = ImageDraw.Draw(im)
     centre(d, "Exemple  ·  Semaine 1 à 4  ·  À deux", GRAS(58), 2050, couleur=BRUN)
-    return enregistrer(im, "fiche-05-onglets-couleurs.jpg")
+    return enregistrer(im, "fiche-08-onglets-couleurs.jpg")
 
 
 def photo_06_contenu():
     im = fond((240, 236, 228)).convert("RGBA")
     d = ImageDraw.Draw(im)
-    entete(d, "tout ce que tu reçois", "31 pages, de la méthode au bilan", y=90)
+    entete(d, "tout ce que tu reçois", "32 pages + le kit frigo", y=90)
     cols, lw = 11, 236
     x0 = (W - cols * lw - (cols - 1) * 26) // 2
-    for i in range(31):
+    for i in range(32):
         r, c = divmod(i, cols)
         x = x0 + c * (lw + 26) + lw // 2
         y = 640 + r * 410
         coller(im, page(i + 1, lw), (x, y), 0, ombre=0.7, eleve=0.25)
     d = ImageDraw.Draw(im)
     items = ["Mode d'emploi + « Pourquoi ça marche »", "Semaine d'exemple remplie", "4 semaines × 5 pages",
-             "Les tâches invisibles", "Volet à deux (3 pages)", "Page de notes"]
+             "Les tâches invisibles", "Volet couple (4 pages)", "Bonus : kit frigo (3 pages)"]
     y = 1880
     for k, t in enumerate(items):
         col = k % 2
@@ -361,19 +418,21 @@ def photo_06_contenu():
         d.text((x + 50, y), t, font=TEXTE(50), fill=TXT)
         if col == 1:
             y += 90
-    return enregistrer(im, "fiche-06-contenu-complet.jpg")
+    return enregistrer(im, "fiche-09-contenu-complet.jpg")
 
 
 def photo_07_versions():
     im = fond((236, 234, 230)).convert("RGBA")
     d = ImageDraw.Draw(im)
-    entete(d, "inclus dans ton achat", "2 versions au choix", "imprime comme tu préfères", couleur_sur=SAUGE)
-    coller(im, page(9, 900), (1020, 1250), -3, eleve=1.0)
-    coller(im, page(9, 900, "e"), (1980, 1250), 3, eleve=1.0)
+    entete(d, "inclus dans ton achat", "3 versions + le kit frigo", "imprime ou annote, comme tu préfères", couleur_sur=SAUGE)
+    coller(im, page(9, 720), (640, 1250), -3, eleve=1.0)
+    coller(im, page(9, 720, "e"), (1500, 1250), 0, eleve=1.0)
+    coller(im, tablette(page(10, 640, "t"), 640), (2360, 1250), 3, eleve=1.1)
     d = ImageDraw.Draw(im)
-    pastille(d, 860, 2000, "Couleur", GRAS(60), fond_c=ROSE)
-    pastille(d, 1690, 2000, "Économe en encre", GRAS(60), fond_c=(120, 116, 110))
-    return enregistrer(im, "fiche-07-deux-versions.jpg")
+    for x, lib, c in ((640, "Couleur", ROSE), (1500, "Économe en encre", (120, 116, 110)), (2360, "Tablette", PERS[1])):
+        w = largeur(d, lib, GRAS(56)) + 72
+        pastille(d, x - w / 2, 1980, lib, GRAS(56), fond_c=c)
+    return enregistrer(im, "fiche-10-trois-versions.jpg")
 
 
 def tablette(page_im, largeur_ecran):
@@ -398,19 +457,6 @@ def stylet(im, x, y, longueur, angle):
     coller(im, s, (x, y), angle, ombre=0.8, eleve=0.25)
 
 
-def photo_08_papier_tablette():
-    im = fond((232, 236, 232)).convert("RGBA")
-    d = ImageDraw.Draw(im)
-    entete(d, "comme tu préfères", "Sur papier ou sur tablette", "PDF A4 à imprimer ou à annoter", couleur_sur=BRUME)
-    coller(im, page(6, 840), (960, 1260), -5, eleve=1.0)
-    crayon(im, 1260, 1930, 640, -20)
-    coller(im, tablette(page(10, 780), 780), (2080, 1260), 5, eleve=1.2)
-    stylet(im, 2600, 1850, 620, -58)
-    d = ImageDraw.Draw(im)
-    centre(d, "imprimé chez toi, ou annoté avec une appli de PDF", TEXTE(52), 2040, couleur=TXT)
-    return enregistrer(im, "fiche-08-papier-ou-tablette.jpg")
-
-
 def photo_09_methode():
     im = fond((242, 236, 228)).convert("RGBA")
     d = ImageDraw.Draw(im)
@@ -429,14 +475,14 @@ def photo_09_methode():
     bulle(d, x, y + 50, "Expliqué dans le planner",
           "Une page simple, avec les sources, pour comprendre à quoi sert chaque étape.", 1340, (176, 140, 92))
     centre(d, "« Pas besoin de tout faire. Juste de tout poser. »", MAIN(84), 1830, 1460, 2800, ROSE)
-    return enregistrer(im, "fiche-09-pourquoi-ca-marche.jpg")
+    return enregistrer(im, "fiche-11-pourquoi-ca-marche.jpg")
 
 
 def photo_10_comment():
     im = fond((238, 234, 226)).convert("RGBA")
     d = ImageDraw.Draw(im)
     entete(d, "téléchargement immédiat", "Comment ça marche ?", "aucun envoi postal : tout est en PDF")
-    etapes = [("1", "Achète", "le planner sur Etsy"), ("2", "Télécharge", "les 2 PDF, tout de suite"),
+    etapes = [("1", "Achète", "le planner sur Etsy"), ("2", "Télécharge", "les PDF, tout de suite"),
               ("3", "Imprime", "en A4, perfore, range dans ton classeur"), ("4", "Allège", "une semaine après l'autre")]
     for i, (n, t, s) in enumerate(etapes):
         x = 450 + i * 700
@@ -448,11 +494,13 @@ def photo_10_comment():
     bloc(d, "Pour ton usage personnel. Outil d'organisation, pas un soin : si tu te sens épuisé(e) depuis des semaines, "
             "parles-en à ton médecin.", TEXTE(44), 500, 1700, 2000, couleur=(130, 116, 104), centrer=True)
     signature(d, y=1950)
-    return enregistrer(im, "fiche-10-comment-ca-marche.jpg")
+    return enregistrer(im, "fiche-12-comment-ca-marche.jpg")
 
 
 if __name__ == "__main__":
     rendre_pages()
-    for fn in (photo_01_couverture, photo_02_a_deux, photo_03_exemple, photo_04_parcours, photo_05_onglets,
-               photo_06_contenu, photo_07_versions, photo_08_papier_tablette, photo_09_methode, photo_10_comment):
+    for vieux in glob.glob(os.path.join(DOSSIER, "fiche-*.jpg")):
+        os.remove(vieux)
+    for fn in (photo_01_couverture, photo_02_a_deux, photo_mois_a_deux, photo_kit_frigo, photo_tablette, photo_03_exemple,
+               photo_04_parcours, photo_05_onglets, photo_06_contenu, photo_07_versions, photo_09_methode, photo_10_comment):
         print(fn())

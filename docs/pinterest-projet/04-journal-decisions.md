@@ -1350,3 +1350,21 @@ par jour », celui du lundi part le soir même).
 - Mots-clés : les suggestions YouTube n'étaient pas joignables (proxy) ; titre et tags repris de l'analyse de la
   concurrence du 01/11 (« méditation du soir » en tête). Quota de l'API YouTube épuisé le 02/11 au matin : vues non
   relevées ce jour-là.
+
+## 105. Etsy : planner « Charge mentale » repensé pour se démarquer (02/11/2026, accord « Fais 1 2 3 4 »)
+
+Demandes de l'utilisateur : « Fais-moi des images de présentation hautement qualitatives qui se démarquent de la
+concurrence », puis « Assure-toi que le planner soit compatible pour l'impression et pour le classeur » et « il faut se
+démarquer, pour le moment ça va pas du tout ». Fait (`outils/etsy/planner_charge_mentale.py`,
+`outils/etsy/photos_fiche_planner.py`, fiche `etsy/planner-charge-mentale/fiche-etsy.md`) :
+- impression et classeur : pages réduites à 93,5 % et décalées, rien d'important à moins de 22 mm du bord gauche (trous)
+  ni à moins de 6 mm des autres bords, onglets dans la page, contrôle automatique ; version économe en encre sur fond
+  blanc ; consigne d'impression (A4, 100 %, recto seul) dans le mode d'emploi ;
+- version couple : une couleur par personne (terracotta, bleu) dans « Qui fait quoi ? », nouvelle page « Notre mois à
+  deux » (32 pages) ;
+- kit frigo famille (bonus, 3 pages, `kit-frigo-famille-A4.pdf`) ;
+- version tablette (`planner-alleger-charge-mentale-tablette.pdf`) : sommaire, onglets et bas de page cliquables
+  (205 liens, pypdf, libre et gratuit) ;
+- couverture à la couleur de marque (vert profond) ; 12 photos de fiche, dessinées à partir des vraies pages (aucune IA,
+  rien de payant) ; prix conseillé 9,90 € puis 11,90 €.
+L'utilisateur doit remplacer les fichiers et les photos sur Etsy à la main (aucun accès à Etsy depuis les sessions).
