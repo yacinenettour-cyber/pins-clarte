@@ -1,0 +1,80 @@
+# Ouvrir la boutique Etsy (kit prêt à coller, 02/11/2026)
+
+Demande de l'utilisateur : « J'ai pas encore de boutique Etsy, il me faut un nom, etc. » Visuels :
+`logo-500.png` (icône de boutique, 500 × 500) et `banniere-3360x840.jpg` (grande bannière), fabriqués par
+`outils/etsy/boutique_visuels.py` (terracotta brique, sans vert kaki, aucune IA, rien de payant).
+
+## 1. Le nom de la boutique
+
+Règles Etsy : 4 à 20 caractères, lettres et chiffres seulement, sans espace ni accent. La disponibilité ne se vérifie
+qu'au moment de l'inscription.
+
+| Choix | Nom | Pourquoi |
+|---|---|---|
+| **Recommandé** | **ClarteMentale** | Même nom que la chaîne YouTube, le compte Pinterest et le site : une seule marque, que les gens reconnaissent partout. |
+| Si pris | ClarteMentaleFR | Même chose que la chaîne YouTube (@ClarteMentaleFR). |
+| Autre piste | AtelierClarte | Plus « papeterie », mais on perd le lien avec le reste. |
+| Autre piste | PapierClarte | Idem. |
+
+## 2. Titre de la boutique (affiché sous le nom, 55 caractères au plus)
+
+Planners à imprimer pour alléger la charge mentale
+
+## 3. Annonce (en haut de la boutique)
+
+Bienvenue ! Ici, des planners en français pour sortir la charge mentale de ta tête et mieux la partager, seul(e), à deux
+ou en famille. Tout est en PDF à télécharger tout de suite : à imprimer pour ton classeur, ou à annoter sur tablette.
+
+## 4. « À propos » (histoire de la boutique)
+
+**Titre** : Moins penser à tout, tout le temps
+
+Je m'appelle Yacine. Pendant deux ans, j'ai enchaîné les nuits compliquées : je réfléchissais trop, et plus j'essayais
+de dormir, plus je me mettais la pression. C'est en cherchant des solutions que j'ai découvert la méditation et la
+cohérence cardiaque, et surtout une idée simple : ce qui tourne dans la tête pèse moins une fois posé sur le papier.
+
+Clarté Mentale est né de là : un site, une chaîne YouTube et, ici, des planners pensés pour vider sa tête, trier et
+partager ce qui ne devrait pas reposer sur une seule personne. Chaque planner s'appuie sur des recherches citées, et
+contient un exemple rempli pour ne jamais partir d'une page blanche.
+
+Je ne suis pas professionnel de santé : ces planners sont des outils d'organisation, pas des soins.
+
+Site : https://www.contactapaisement-mental.fr
+
+## 5. Conditions de la boutique (à reprendre dans les champs Etsy)
+
+- **Produits numériques** : téléchargement immédiat après le paiement, depuis « Achats » sur Etsy ; rien n'est envoyé
+  par la poste.
+- **Retours et échanges** : pas de retour possible pour un fichier téléchargé. En cas de souci (fichier illisible,
+  erreur), écris-moi : je corrige ou je renvoie le fichier.
+- **Utilisation** : pour ton usage personnel. La revente, le partage ou la diffusion des fichiers ne sont pas autorisés.
+- **Couleurs** : elles peuvent varier selon l'écran et l'imprimante.
+
+## 6. Questions fréquentes (FAQ de la boutique)
+
+- **Comment je reçois mes fichiers ?** Juste après le paiement, dans ton compte Etsy, rubrique « Achats ». Etsy t'envoie
+  aussi un e-mail avec le lien.
+- **Comment l'imprimer ?** En A4, « taille réelle » (100 %), recto seul. Les marges laissent la place aux trous du
+  classeur à gauche.
+- **Ça marche sur tablette ?** Oui : la version tablette s'ouvre dans GoodNotes, Notability, Xodo ou toute appli
+  d'annotation de PDF, avec sommaire et onglets cliquables.
+- **Je peux l'imprimer plusieurs fois ?** Oui, autant de fois que tu veux, pour ton usage personnel.
+
+## 7. Ouvrir la boutique : étapes (à faire par l'utilisateur, aucune session n'a accès à Etsy)
+
+1. Créer le compte vendeur sur etsy.com/fr/sell (avec yacinenettour@gmail.com ou une adresse dédiée).
+2. Préférences : langue français, pays France, devise euro.
+3. Nom de la boutique (section 1), puis mettre en vente le planner avec `../planner-charge-mentale/fiche-etsy.md`
+   (4 PDF, 12 photos, titre, mots-clés, description, prix 9,90 €).
+4. Paiements : Etsy demande une pièce d'identité et un compte bancaire (IBAN) pour verser les ventes.
+5. Personnaliser : icône (`logo-500.png`), bannière (`banniere-3360x840.jpg`), titre, annonce, « À propos »,
+   conditions, FAQ (sections 2 à 6).
+
+**Frais, à vérifier à l'inscription** (frais Etsy acceptés par l'utilisateur le 31/10/2026) : 0,20 $ par article mis en
+vente, une commission et des frais de paiement sur chaque vente (environ 10 à 12 % au total). Etsy demande parfois des
+frais d'ouverture uniques selon le pays : si c'est le cas, l'écran d'inscription l'indique avant de payer ; ne rien
+valider de plus sans en parler.
+
+**Statut** : Etsy demande si tu vends en particulier ou en professionnel. Vendre régulièrement est une activité
+commerciale : en France, le statut de micro-entrepreneur se déclare gratuitement sur le guichet officiel
+(formalites.entreprises.gouv.fr). En cas de doute, se renseigner auprès de l'URSSAF.
