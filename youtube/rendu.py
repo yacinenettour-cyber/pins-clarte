@@ -18,6 +18,8 @@ ETAT = {}
 GEL_APRES = float(os.environ.get("GEL_APRES", 300))
 FIN_ANIM = float(os.environ.get("FIN_ANIM", 30))
 BLOC = float(os.environ.get("BLOC", 600))
+TRANSITION = float(os.environ.get("TRANSITION", 8))  # fondu entre deux photos de la partie musique
+UNITE_MUSIQUE = float(os.environ.get("UNITE_MUSIQUE", 60))  # morceau de plan fixe encodé une fois puis répété
 
 
 def police(nom, t):
@@ -43,6 +45,14 @@ def preparer(slug):
         im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
         a = np.asarray(im, np.float32) * np.array([0.80, 0.84, 0.95], np.float32) * ph.get("lum", 0.85)
         src[nom] = Image.fromarray(a.clip(0, 255).astype(np.uint8))
+    musique = []
+    for ph in plan.get("photos_musique", []):
+        im = Image.open(os.path.join(trav, "photos", ph["nom"])).convert("RGB")
+        r = max(W * 1.06 / im.width, H * 1.06 / im.height)
+        im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
+        a = np.asarray(im, np.float32) * np.array([0.80, 0.84, 0.95], np.float32) * ph.get("lum", 0.85)
+        x0, y0 = (im.width - W) // 2, (im.height - H) // 2
+        musique.append(a[y0:y0 + H, x0:x0 + W].clip(0, 255).astype(np.uint8))
     yy, xx = np.mgrid[0:H, 0:W]
     vignette = (1 - 0.55 * (((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - H / 2) / (H * 0.62)) ** 2)).clip(0.35, 1).astype(np.float32)[..., None]
     # particules dorées qui montent lentement
@@ -68,7 +78,8 @@ def preparer(slug):
     ecran = plan["ecran"]
     gel = tl["fin_voix"] + GEL_APRES
     gel = gel if tl["duree"] - FIN_ANIM - gel > 2 * BLOC else None
-    ETAT.update(slug=slug, gel=gel, plan=plan, tl=tl, scenes=scenes, src=src, vignette=vignette, part=part, sprites=sprites,
+    n_img = math.ceil(tl["duree"] * FPS)
+    ETAT.update(slug=slug, gel=gel, plan=plan, musique=musique if gel else [], t_fin_musique=(n_img - int(FIN_ANIM * FPS)) / FPS, tl=tl, scenes=scenes, src=src, vignette=vignette, part=part, sprites=sprites,
                 brume_tex=br, brume=brume, cache={},
                 intro=grand_titre(ecran["titre"], 88, ecran.get("sous_titre")),
                 credit=petit(ecran.get("credit", "Musique : « Deep Relaxation », Kevin MacLeod (incompetech.com) · CC BY 4.0 · "
@@ -229,11 +240,49 @@ def image(t):
                   dy=(1 - lisse((t - c["debut"] + 0.25) / 0.6)) * 12)
     if t > fin_voix:
         img = img * (1 - 0.6 * lisse((t - fin_voix) / 60))
+    if ETAT.get("musique") and tr >= ETAT["t_fin_musique"]:
+        img = image_musique(len(ETAT["musique"]) - 1)
     # au début, crédits et adresse en haut (les sous-titres occupent le bas) ; à la fin, adresse en bas
     poser(img, ETAT["marque_debut"], fondu(t, 2.5, 12.0, 2.0) * 0.9)
     poser(img, ETAT["marque"], fondu(tr, duree - 25, duree - 1, 3) * 0.9)
     img = img * (min(1.0, tr / 1.5) * min(1.0, (duree - tr) / 3.0))
     return img.clip(0, 255).astype(np.uint8)
+
+
+def image_musique(k):
+    """Photo k de la partie musique, réglée comme le plan figé de la fin de la voix (vignette, particules, assombrie)."""
+    img = ETAT["musique"][k].astype(np.float32) * ETAT["vignette"]
+    particules(img, ETAT["gel"], 0.2)
+    return img * (1 - 0.6 * lisse(GEL_APRES / 60))
+
+
+def _encodeur(sortie):
+    return subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+                             "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+                             "-tune", "film", "-threads", "1", sortie], stdin=subprocess.PIPE)
+
+
+def _transition(a, b, nb, sortie):
+    """Fondu enchaîné lent entre deux images fixes (mêmes réglages d'encodage que le reste)."""
+    p = _encodeur(sortie)
+    for i in range(nb):
+        u = lisse(i / max(1, nb - 1))
+        p.stdin.write((a * (1 - u) + b * u).clip(0, 255).astype(np.uint8).tobytes())
+    p.stdin.close()
+    if p.wait() != 0:
+        raise RuntimeError(f"ffmpeg a échoué sur {sortie}")
+    return sortie
+
+
+def _plans_fixes(png, nb, prefixe, unite):
+    """nb images d'un plan fixe : un morceau d'une durée « unite » encodé une fois et répété, plus le reste."""
+    morceaux = []
+    if nb >= unite:
+        bloc = _fixe(png, unite, prefixe + "_bloc.mp4")
+        morceaux = [bloc] * (nb // unite)
+    if nb % unite:
+        morceaux.append(_fixe(png, nb % unite, prefixe + "_reste.mp4"))
+    return morceaux
 
 
 def _morceau(args):
@@ -275,11 +324,29 @@ def fabriquer(slug, processus=None):
         png = os.path.join(trav, "_fixe.png")
         Image.fromarray(image(gel)).save(png)
         nb, reste = int(BLOC * FPS), nc - na
-        bloc = _fixe(png, nb, os.path.join(trav, "_bloc.mp4"))
-        fixes = [bloc] * (reste // nb)
-        if reste % nb:
-            fixes.append(_fixe(png, reste % nb, os.path.join(trav, "_reste.mp4")))
-        print(f"vidéo longue : {na / FPS / 60:.1f} min animées, {reste / FPS / 3600:.2f} h de plan fixe, {FIN_ANIM:.0f} s de fin")
+        if ETAT["musique"]:
+            # 02/11/2026 (demande de l'utilisateur : « mets plusieurs images pendant les 3 h de musique ») : le plan figé
+            # puis chaque photo de plan["photos_musique"], à parts égales, reliées par un fondu enchaîné de TRANSITION s.
+            imgs = [np.asarray(Image.open(png), np.float32)] + [image_musique(k) for k in range(len(ETAT["musique"]))]
+            tr_nb, m = int(TRANSITION * FPS), len(imgs) - 1
+            seg = reste // (m + 1)
+            assert seg > 2 * tr_nb, "partie musique trop courte pour autant de photos"
+            for j, a in enumerate(imgs):
+                pj = os.path.join(trav, f"_m{j}")
+                if j:
+                    Image.fromarray(a.clip(0, 255).astype(np.uint8)).save(pj + ".png")
+                fixes += _plans_fixes(png if j == 0 else pj + ".png", (seg - tr_nb) if j < m else reste - m * seg, pj,
+                                      int(UNITE_MUSIQUE * FPS))
+                if j < m:
+                    fixes.append(_transition(a, imgs[j + 1], tr_nb, pj + "_fondu.mp4"))
+            print(f"vidéo longue : {na / FPS / 60:.1f} min animées, {reste / FPS / 3600:.2f} h de musique sur {m + 1} images "
+                  f"({seg / FPS / 60:.1f} min chacune), {FIN_ANIM:.0f} s de fin")
+        else:
+            bloc = _fixe(png, nb, os.path.join(trav, "_bloc.mp4"))
+            fixes = [bloc] * (reste // nb)
+            if reste % nb:
+                fixes.append(_fixe(png, reste % nb, os.path.join(trav, "_reste.mp4")))
+            print(f"vidéo longue : {na / FPS / 60:.1f} min animées, {reste / FPS / 3600:.2f} h de plan fixe, {FIN_ANIM:.0f} s de fin")
     with Pool(k) as pool:
         pool.map(_morceau, jobs)
     parts = [j[3] for j in jobs[:k]] + fixes + [j[3] for j in jobs[k:]]

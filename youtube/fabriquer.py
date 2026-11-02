@@ -125,6 +125,17 @@ def fabriquer(slug):
         from PIL import Image
         if np.asarray(Image.open(img).convert("L")).mean() < 8:
             rapport["erreurs"].append(f"image presque noire à {t:.0f} s")
+    # partie musique (photos_musique, 02/11/2026) : une image par tranche, jamais noire
+    if plan.get("photos_musique"):
+        lum = []
+        for t in np.linspace(tl["fin_voix"] + 400, tl["duree"] - 40, 12):
+            img = os.path.join(trav, "_controle.png")
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.1f}", "-i", video, "-frames:v", "1", "-vf", "scale=192:108", img], check=True)
+            from PIL import Image
+            lum.append(round(float(np.asarray(Image.open(img).convert("L")).mean()), 1))
+        rapport["luminosite_musique"] = lum
+        if min(lum) < 4:
+            rapport["erreurs"].append(f"image presque noire pendant la musique (luminosités {lum})")
     json.dump({k: v for k, v in json.load(open(os.path.join(trav, "timeline.json"))).items()},
               open(os.path.join(dossier_plan(slug), "timeline.json"), "w"), ensure_ascii=False, indent=1)
     return rapport

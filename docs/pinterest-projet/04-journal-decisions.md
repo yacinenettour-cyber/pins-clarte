@@ -1368,3 +1368,14 @@ démarquer, pour le moment ça va pas du tout ». Fait (`outils/etsy/planner_cha
 - couverture à la couleur de marque : d'abord vert profond, remplacé le jour même par un terracotta brique (« Enlève le vert kaki ») ; 12 photos de fiche, dessinées à partir des vraies pages (aucune IA,
   rien de payant) ; prix conseillé 9,90 € puis 11,90 €.
 L'utilisateur doit remplacer les fichiers et les photos sur Etsy à la main (aucun accès à Etsy depuis les sessions).
+
+## 106. YouTube : plusieurs images pendant les 3 h de musique (02/11/2026)
+
+Demande de l'utilisateur : « Mets plusieurs images pendant les 3 h de musique » (la Méditation du soir n° 1 n'avait
+qu'une image fixe pendant 2 h 36). `youtube/rendu.py` lit un nouveau champ `photos_musique` : le plan figé puis
+8 photos Unsplash gratuites (pluie sur une vitre, arbres sous les étoiles, sapins dans la brume, reflets de lune, maison
+dans la neige, lac au crépuscule, vagues la nuit, ciel nuageux sur l'eau), environ 17 min chacune, fondu enchaîné de
+8 s. Photos vérifiées absentes de tout le projet (4 premières candidates écartées car déjà utilisées), luminosité
+égalisée (`lum`). Vidéo refabriquée par le robot (voix ElevenLabs déjà enregistrée : aucun crédit dépensé). La vidéo
+n'était pas encore en ligne : l'utilisateur téléverse la nouvelle version.
+

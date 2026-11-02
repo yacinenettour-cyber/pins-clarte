@@ -89,6 +89,12 @@ Après le 2e passage sur la concurrence (`docs/referencement/concurrence-youtube
    une fois par bloc de 10 min (3 min de calcul) et répété, puis les 30 dernières secondes sont rendues normalement ;
    la musique est calculée par morceaux (`youtube/audio.py`), pour ne pas dépasser la mémoire. Essai local du 01/11 :
    durée exacte, décodage sans erreur, raccords invisibles (écart moyen entre deux images < 1 niveau de gris).
+   **Plusieurs images pendant la musique (02/11/2026, demande de l'utilisateur)** : champ optionnel
+   `"photos_musique"` du plan (photos Unsplash inédites, jamais déjà utilisées ailleurs ; `lum` règle chaque photo pour
+   que toutes aient la luminosité du plan figé). La partie musique est partagée à parts égales entre le plan figé et ces
+   photos, reliées par un fondu enchaîné de 8 s ; chaque plan fixe est encodé par morceaux de 60 s répétés ; les
+   30 dernières secondes gardent la dernière photo. Contrôle : 12 images prises pendant la musique, aucune noire
+   (`luminosite_musique` dans `rapport.json`). Essai local du 02/11 : durée exacte (200 s, 4 800 images), fondus et fin vérifiés à l'œil.
 2. **5 Shorts par vidéo** (le Short respiration + 4 `shorts_extra`, chacun un geste concret d'une partie différente),
    titres vérifiés par `outils/anti_doublons.py`. Aucun crédit ElevenLabs de plus : ce sont des extraits de la voix.
 3. **Shorts « pourquoi »** à tester : 30 à 45 secondes d'explication sourcée (une étude de l'article relié), par exemple

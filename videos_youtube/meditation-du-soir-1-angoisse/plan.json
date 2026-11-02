@@ -1,6 +1,6 @@
 {
  "slug": "meditation-du-soir-1-angoisse",
- "statut": "fabriquee",
+ "statut": "a_fabriquer",
  "envoi_manuel": true,
  "publication_prevue": "2026-11-04T19:00:00Z",
  "duree_totale_min": 180,
@@ -632,5 +632,63 @@
    "description": "Une chaleur douce dans les mains, puis les bras, les épaules, la nuque, le ventre, jusqu'au bout des pieds. Le corps devient lourd et chaud."
   }
  ],
- "artefact_run": 41390548768
+ "artefact_run": 41390548768,
+ "photos_musique": [
+  {
+   "nom": "unsplash-1e60bqR1Ar0.jpg",
+   "url": "https://images.unsplash.com/photo-1643287146701-93c795880dda?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Max van den Oetelaar",
+   "lum": 0.88,
+   "sujet": "pluie sur une vitre, la nuit"
+  },
+  {
+   "nom": "unsplash-0289jpHHk0o.jpg",
+   "url": "https://images.unsplash.com/photo-1595520519880-a86c48ea536c?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Joshua Woroniecki",
+   "lum": 1.25,
+   "sujet": "arbres sous un ciel étoilé"
+  },
+  {
+   "nom": "unsplash-BS-Uxe8wU5Y.jpg",
+   "url": "https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Thomas Griesbeck",
+   "lum": 0.68,
+   "sujet": "sapins dans la brume"
+  },
+  {
+   "nom": "unsplash-kcktKNLD5DI.jpg",
+   "url": "https://images.unsplash.com/photo-1780773568302-59811a3a7600?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Antje Winkler",
+   "lum": 0.81,
+   "sujet": "reflets de lune sur l'eau"
+  },
+  {
+   "nom": "unsplash-F0tQmODBSJ4.jpg",
+   "url": "https://images.unsplash.com/photo-1736173317430-b8043fc4e2d9?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Annie S.",
+   "lum": 1.59,
+   "sujet": "maison dans un champ enneigé"
+  },
+  {
+   "nom": "unsplash-JNnLSBIl884.jpg",
+   "url": "https://images.unsplash.com/photo-1785900110400-9f0a17a1c513?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Zion C",
+   "lum": 0.6,
+   "sujet": "lac au crépuscule, montagnes et lune"
+  },
+  {
+   "nom": "unsplash-Qtun8ytjz_k.jpg",
+   "url": "https://images.unsplash.com/photo-1546757545-d680d414fbbb?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Patrick Williams",
+   "lum": 1.48,
+   "sujet": "vagues la nuit"
+  },
+  {
+   "nom": "unsplash-9KDuSi7dJv4.jpg",
+   "url": "https://images.unsplash.com/photo-1437751059337-ea72d4f73fcf?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Lukas Robertson",
+   "lum": 1.6,
+   "sujet": "eau sous un ciel nuageux, la nuit"
+  }
+ ]
 }

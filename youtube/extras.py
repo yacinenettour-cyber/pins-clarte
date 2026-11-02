@@ -15,7 +15,7 @@ def telecharger_photos(slug):
     plan, trav = lire_plan(slug), dossier_travail(slug)
     d = os.path.join(trav, "photos")
     os.makedirs(d, exist_ok=True)
-    for ph in plan["photos"]:
+    for ph in plan["photos"] + plan.get("photos_musique", []):
         chemin = os.path.join(d, ph["nom"])
         if os.path.exists(chemin):
             continue
@@ -26,7 +26,7 @@ def telecharger_photos(slug):
             im = im.resize((2400, round(im.height * 2400 / im.width)), Image.LANCZOS)
         assert im.width >= 1600, f"photo trop petite : {ph['nom']} ({im.size})"
         im.save(chemin, "JPEG", quality=90)
-    print(len(plan["photos"]), "photos prêtes")
+    print(len(plan["photos"]) + len(plan.get("photos_musique", [])), "photos prêtes")
 
 
 def miniature(slug):
