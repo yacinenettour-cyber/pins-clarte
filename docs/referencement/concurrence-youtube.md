@@ -70,3 +70,12 @@ Source : API YouTube, 5 recherches en français limitées aux vidéos récentes 
 1. Vidéo du 8/11 : « Méditation du soir n° 1 » au format **voix (15 à 20 min) + plusieurs heures de musique** (durée à fixer selon le temps de fabrication sur GitHub, limité à 6 h par tâche).
 2. **5 Shorts par vidéo** désormais (aucun crédit ElevenLabs de plus : ce sont des extraits de la même voix).
 3. Tester des Shorts « pourquoi » (une explication sourcée de 30 à 45 secondes, par exemple « pourquoi les pensées tournent quand tu te couches »), reliés au guide.
+
+## Bilan de la chaîne au 02/11/2026 (YouTube Analytics, données jusqu'au 30/10)
+
+- Vues par jour : 0 à 26 jusqu'au 27/10 (2 vidéos longues seules), puis 382 (28/10), 842 (29/10), 1 569 (30/10) avec les Shorts.
+- Shorts : 2 730 vues (96 %), 18 s regardées en moyenne (28 à 33 % de chaque Short ; meilleur : BFbPfBX7t9M, Jacobson, 49 %), 8 abonnés gagnés (1 perdu).
+- Vidéos longues : 104 vues mais 494 min regardées (70 % du temps total) ; Jacobson 1 h : 61 vues, 5 min 33 en moyenne (9 %) ; Ruminations 30 min : 43 vues, 3 min 54 (13 %). 0 abonné.
+- Provenance : fil des Shorts 2 577, vidéos suggérées 86 (405 min), recherche YouTube 65, sites extérieurs 13.
+- Public : 65 ans et plus 49 %, 55-64 ans 18 % ; France 63 %, puis Belgique, Algérie, La Réunion, Côte d'Ivoire, Maroc.
+- Par vidéo (01/10 → 30/10) : gLVj1Q4guCg 636, xqYk9Wg9bfg 622, SNPAts9BsQ0 555 (Shorts ruminations) ; fyepx9EElDQ 434, TlPoYq8bogM 247, BFbPfBX7t9M 230 (Shorts Jacobson) ; PbuSSZlDu1c 61, SCUS59y5kNs 43.
