@@ -1,7 +1,7 @@
 # Fiche Etsy : planner « Alléger sa charge mentale » (prête à coller)
 
 **Fichiers à téléverser (produit numérique, 2 fichiers)** : `planner-alleger-charge-mentale-A4.pdf` (couleur, 31 pages) et `planner-alleger-charge-mentale-A4-econome-encre.pdf` (même contenu, économe en encre).
-**Photos de la fiche, dans cet ordre** : `etsy-photo-1.jpg`, `etsy-photo-3.jpg`, `etsy-photo-2.jpg`, puis `apercu-28.jpg` (qui fait quoi) et `apercu-07.jpg` (ouverture de semaine).
+**Photos de la fiche, dans cet ordre (02/11/2026)** : `fiche-01-couverture.jpg` à `fiche-10-comment-ca-marche.jpg` (3000 × 2250, 4:3 conseillé par Etsy, fabriquées par `outils/etsy/photos_fiche_planner.py` à partir des vraies pages du PDF, sans IA ni photo payante). Les anciennes `etsy-photo-1` à `3` restent disponibles en secours.
 
 **Prix conseillé** : 6,90 € au lancement (7,90 € à 8,90 € après les premiers avis). Les planners génériques se vendent 1 à 5 € ; celui-ci se place au-dessus par son contenu (volet à deux, méthode, exemple, deux versions) : ne pas brader.
 **Type** : téléchargement numérique · **Catégorie** : Papeterie > Agendas et planners (planners imprimables).
