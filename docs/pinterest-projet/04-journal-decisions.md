@@ -1345,7 +1345,8 @@ par jour », celui du lundi part le soir même).
 - Titres des 5 Shorts vérifiés par `outils/anti_doublons.py` (un titre doublait l'épingle « Le vrai problème quand ton
   mental s'emballe le soir », remplacé).
 - Voix ElevenLabs « Mila » : 80 phrases, une seule prise chacune, environ 4 060 crédits ; les 80 réécoutées par Whisper
-  sans écart.
+  sans écart bloquant. Essai local de la piste (sans musique) : voix 18,2 min, score 0,989, 0 phrase douteuse, 0 parole
+  hors sous-titres ; 8 phrases où Whisper entendait autre chose réécoutées par Scribe : toutes justes.
 - Mots-clés : les suggestions YouTube n'étaient pas joignables (proxy) ; titre et tags repris de l'analyse de la
   concurrence du 01/11 (« méditation du soir » en tête). Quota de l'API YouTube épuisé le 02/11 au matin : vues non
   relevées ce jour-là.
