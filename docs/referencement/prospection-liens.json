@@ -2521,6 +2521,23 @@
    "domaine": "prosom.org",
    "type": "campagne-2026-11 (valeur d'abord, aucune demande de lien)",
    "notes": "Campagne du 01/11 (consigne : « ne demande pas immédiatement de liens, apporte de la valeur avant »). Offre : ressources libres et, si pertinent, article inédit gratuit. Relance unique possible à partir du 11/11."
+  },
+  {
+   "site": "Voie du Bien-Être",
+   "page_cible": "https://www.voiedubienetre.fr/contact/",
+   "email": null,
+   "email_verifie": false,
+   "formulaire": "https://www.voiedubienetre.fr/contact/ (« Proposer un sujet »)",
+   "sujet": "Proposer un sujet : respiration lente et endormissement",
+   "statut": "envoye",
+   "date_envoi": "2026-11-02",
+   "thread_id": null,
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "domaine": "voiedubienetre.fr",
+   "type": "campagne-2026-11 (valeur d'abord, aucune demande de lien)",
+   "notes": "Classé A dans l'audit des 100 sites. Message du formulaire (texte de 4-messages.md, version humanisée du 01/11) envoyé à la main par l'utilisateur le 02/11. Le site refuse tout contenu payant et tout échange de liens. Réponse attendue sur la boîte de l'utilisateur ; relance unique possible à partir du 12/11 si le formulaire le permet."
   }
  ],
  "passages": [

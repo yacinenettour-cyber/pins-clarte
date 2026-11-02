@@ -18,7 +18,9 @@ qualité, gratuitement. »
 Aucune demande de lien. Les textes complets sont dans les fils Gmail. Une seule relance courte, à partir du 11/11 et
 seulement sans réponse.
 
-## À envoyer par formulaire (l'utilisateur, à la main)
+## Envoyé par formulaire (l'utilisateur, à la main)
+
+**Envoyé le 02/11 par l'utilisateur** (texte ci-dessous). Relance unique possible à partir du 12/11 sans réponse.
 
 ### Voie du Bien-Être (classé A) : https://www.voiedubienetre.fr/contact/
 
