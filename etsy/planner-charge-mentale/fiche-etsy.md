@@ -87,3 +87,8 @@ Créé par Clarté Mentale | Stress & Énergie.
 - Sujet distinct de la formation (sommeil, ruminations) et du guide gratuit.
 - Aucune promesse de soin ; rappel de consulter et 3114 dans le mode d'emploi.
 - 02/11/2026 : contrôle automatique des marges sur les 32 pages et les 3 pages du kit (rien dans les 22 mm de gauche ni dans les 6 mm des autres bords) ; 205 liens internes dans la version tablette (sommaire, onglets, bas de page), vérifiés par pypdf.
+
+## Version anglaise
+
+02/11/2026 : proposée (fiche Etsy séparée et planner écrit en anglais, « mental load »), **reportée par l'utilisateur**
+(« ne lance pas la version anglaise pour le moment ») : ne pas la fabriquer sans nouvelle demande.
