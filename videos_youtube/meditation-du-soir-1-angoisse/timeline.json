@@ -1,0 +1,499 @@
+{
+ "duree": 10800,
+ "fin_voix": 1092.0555833333333,
+ "cues": [
+  {
+   "debut": 3.0,
+   "fin": 3.806729166666667,
+   "texte": "Bonsoir."
+  },
+  {
+   "debut": 5.806729166666667,
+   "fin": 10.904270833333333,
+   "texte": "Cette méditation du soir est faite pour les soirs où l'angoisse monte au moment de dormir."
+  },
+  {
+   "debut": 13.404270833333333,
+   "fin": 16.646375,
+   "texte": "Écoute-la allongé, au calme, jamais en conduisant."
+  },
+  {
+   "debut": 18.646375,
+   "fin": 24.11883333333333,
+   "texte": "Si tu ressens une douleur dans la poitrine ou un malaise, arrête l'écoute et appelle le 15."
+  },
+  {
+   "debut": 27.11883333333333,
+   "fin": 32.16983333333333,
+   "texte": "On va ralentir le souffle, revenir dans la pièce, puis laisser le corps se poser."
+  },
+  {
+   "debut": 35.16983333333333,
+   "fin": 38.819041666666664,
+   "texte": "Tu n'as rien à chasser. Si tu t'endors en chemin, c'est très bien."
+  },
+  {
+   "debut": 47.819041666666664,
+   "fin": 51.55314583333333,
+   "texte": "Allonge-toi comme tu dors d'habitude, sur le dos ou sur le côté."
+  },
+  {
+   "debut": 58.55314583333333,
+   "fin": 60.81039583333333,
+   "texte": "Remonte un peu la couverture si tu as froid."
+  },
+  {
+   "debut": 67.81039583333333,
+   "fin": 71.42866666666666,
+   "texte": "Laisse tes bras le long du corps, les paumes comme elles veulent."
+  },
+  {
+   "debut": 79.42866666666666,
+   "fin": 84.3650625,
+   "texte": "Si tu le veux, ferme les yeux. Sinon, pose ton regard sur un point du plafond."
+  },
+  {
+   "debut": 92.3650625,
+   "fin": 94.413125,
+   "texte": "Laisse ta tête s'enfoncer dans l'oreiller."
+  },
+  {
+   "debut": 102.413125,
+   "fin": 104.24974999999999,
+   "texte": "Ce soir, tu n'as plus rien à régler."
+  },
+  {
+   "debut": 118.24974999999999,
+   "fin": 120.20922916666666,
+   "texte": "Maintenant, on ralentit le souffle."
+  },
+  {
+   "debut": 123.20922916666666,
+   "fin": 127.92412499999999,
+   "texte": "Tu inspires par le nez sur quatre temps. Tu souffles doucement sur six temps."
+  },
+  {
+   "debut": 130.924125,
+   "fin": 135.118875,
+   "texte": "Un souffle petit, discret. Pas besoin de remplir les poumons."
+  },
+  {
+   "debut": 138.118875,
+   "fin": 139.59747916666666,
+   "texte": "Laisse-toi guider par le son."
+  },
+  {
+   "debut": 141.74747916666666,
+   "fin": 143.05939583333333,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 145.74747916666666,
+   "fin": 146.90077083333333,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 151.74747916666666,
+   "fin": 153.05939583333333,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 155.74747916666666,
+   "fin": 156.90077083333333,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 161.74747916666666,
+   "fin": 163.05939583333333,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 165.74747916666666,
+   "fin": 166.90077083333333,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 171.74747916666666,
+   "fin": 173.05939583333333,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 175.74747916666666,
+   "fin": 176.90077083333333,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 182.59747916666666,
+   "fin": 184.37937499999998,
+   "texte": "Continue seul, à ton rythme."
+  },
+  {
+   "debut": 228.37937499999998,
+   "fin": 231.92085416666666,
+   "texte": "Si tu perds le compte, ce n'est pas grave. Reprends simplement."
+  },
+  {
+   "debut": 239.92085416666666,
+   "fin": 243.083375,
+   "texte": "Laisse ta respiration reprendre son rythme à elle."
+  },
+  {
+   "debut": 257.083375,
+   "fin": 259.8577916666666,
+   "texte": "Peut-être qu'il reste une inquiétude, quelque part."
+  },
+  {
+   "debut": 267.8577916666667,
+   "fin": 273.45302083333337,
+   "texte": "Cherche où tu la sens dans ton corps. La gorge, la poitrine, le ventre."
+  },
+  {
+   "debut": 283.45302083333337,
+   "fin": 286.7533333333334,
+   "texte": "Tu n'as pas à la faire partir. Remarque-la, simplement."
+  },
+  {
+   "debut": 296.7533333333334,
+   "fin": 298.7479583333334,
+   "texte": "Elle a le droit d'être là quelques minutes."
+  },
+  {
+   "debut": 307.7479583333334,
+   "fin": 309.88362500000005,
+   "texte": "Ce n'est pas un problème à régler maintenant."
+  },
+  {
+   "debut": 318.88362500000005,
+   "fin": 325.1789583333334,
+   "texte": "Nomme-la tout bas. De l'inquiétude. De la peur. De la fatigue, peut-être."
+  },
+  {
+   "debut": 335.1789583333334,
+   "fin": 339.6695625000001,
+   "texte": "Elle monte, elle reste un moment, et le plus souvent, elle redescend d'elle-même."
+  },
+  {
+   "debut": 350.6695625000001,
+   "fin": 353.7417708333334,
+   "texte": "Si des pensées arrivent avec elle, laisse-les passer."
+  },
+  {
+   "debut": 362.7417708333334,
+   "fin": 365.5247916666668,
+   "texte": "Vouloir les bloquer les fait souvent revenir plus fort."
+  },
+  {
+   "debut": 374.5247916666668,
+   "fin": 377.31220833333344,
+   "texte": "Reviens à ton souffle. Lent. Discret."
+  },
+  {
+   "debut": 394.31220833333344,
+   "fin": 397.33214583333347,
+   "texte": "Maintenant, on revient dans la pièce, ici, ce soir."
+  },
+  {
+   "debut": 403.33214583333347,
+   "fin": 408.95250000000016,
+   "texte": "Écoute le son le plus lointain. Une voiture, le vent, le frigo."
+  },
+  {
+   "debut": 418.95250000000016,
+   "fin": 422.70179166666685,
+   "texte": "Puis un son plus proche. Peut-être ta propre respiration."
+  },
+  {
+   "debut": 432.70179166666685,
+   "fin": 434.4603333333335,
+   "texte": "Sens le tissu du drap sous tes doigts."
+  },
+  {
+   "debut": 443.4603333333335,
+   "fin": 447.7597083333335,
+   "texte": "Remarque l'air sur ton visage. Plutôt frais, ou plutôt tiède."
+  },
+  {
+   "debut": 456.7597083333335,
+   "fin": 461.16675000000015,
+   "texte": "Sens le poids de ton corps sur le matelas, partout où il s'appuie."
+  },
+  {
+   "debut": 470.16675000000015,
+   "fin": 472.61670833333346,
+   "texte": "Les talons. Le dos. L'arrière de la tête."
+  },
+  {
+   "debut": 482.61670833333346,
+   "fin": 485.6960208333335,
+   "texte": "Sens tes pieds, sous la couverture ou à l'air."
+  },
+  {
+   "debut": 494.6960208333335,
+   "fin": 499.13585416666683,
+   "texte": "Si l'inquiétude remonte, reviens à un son, ou au contact du drap."
+  },
+  {
+   "debut": 510.13585416666683,
+   "fin": 514.3002708333335,
+   "texte": "Tu es là, dans ton lit, et pour l'instant, il n'y a rien d'autre à faire."
+  },
+  {
+   "debut": 531.3002708333335,
+   "fin": 534.2270208333334,
+   "texte": "Pose une main sur ton ventre, juste sous le nombril."
+  },
+  {
+   "debut": 541.2270208333334,
+   "fin": 544.9278541666667,
+   "texte": "Laisse l'autre main sur ta poitrine, ou le long du corps."
+  },
+  {
+   "debut": 551.9278541666667,
+   "fin": 554.9872916666667,
+   "texte": "Quand tu inspires, la main du ventre se soulève un peu."
+  },
+  {
+   "debut": 561.9872916666667,
+   "fin": 563.9367500000001,
+   "texte": "Quand tu souffles, elle redescend."
+  },
+  {
+   "debut": 570.9367500000001,
+   "fin": 572.8566875,
+   "texte": "La poitrine, elle, bouge à peine."
+  },
+  {
+   "debut": 580.8566875,
+   "fin": 583.6136041666667,
+   "texte": "Tu n'as rien à forcer. Le ventre sait faire."
+  },
+  {
+   "debut": 632.6136041666667,
+   "fin": 635.7764375,
+   "texte": "Sens la main monter et descendre, sans rien changer."
+  },
+  {
+   "debut": 644.7764375,
+   "fin": 647.4878333333334,
+   "texte": "Laisse tes mains se reposer là où elles sont bien."
+  },
+  {
+   "debut": 662.4878333333334,
+   "fin": 664.8045416666666,
+   "texte": "Maintenant, porte ton attention sur tes mains."
+  },
+  {
+   "debut": 671.8045416666666,
+   "fin": 675.1832708333333,
+   "texte": "Imagine qu'une chaleur douce s'y installe, comme près d'un feu."
+  },
+  {
+   "debut": 685.1832708333333,
+   "fin": 687.1760416666666,
+   "texte": "Les doigts deviennent un peu plus lourds."
+  },
+  {
+   "debut": 696.1760416666666,
+   "fin": 699.1679999999999,
+   "texte": "La chaleur monte dans les poignets, puis dans les bras."
+  },
+  {
+   "debut": 709.1679999999999,
+   "fin": 712.7726041666666,
+   "texte": "Elle gagne les épaules. Les épaules descendent un peu."
+  },
+  {
+   "debut": 722.7726041666666,
+   "fin": 725.6600416666666,
+   "texte": "Ta nuque se détend. Ta mâchoire se desserre."
+  },
+  {
+   "debut": 735.6600416666666,
+   "fin": 738.6133125,
+   "texte": "Ton front s'élargit. Tes sourcils se relâchent."
+  },
+  {
+   "debut": 748.6133125,
+   "fin": 751.5323541666667,
+   "texte": "La chaleur descend dans le ventre, puis dans le bas du dos."
+  },
+  {
+   "debut": 761.5323541666667,
+   "fin": 764.165625,
+   "texte": "Elle glisse dans les jambes, jusqu'au bout des pieds."
+  },
+  {
+   "debut": 775.165625,
+   "fin": 776.9853125,
+   "texte": "Ton corps entier est lourd et chaud."
+  },
+  {
+   "debut": 793.9853125,
+   "fin": 797.395375,
+   "texte": "Maintenant, imagine une petite maison en bois, la nuit."
+  },
+  {
+   "debut": 805.395375,
+   "fin": 806.9832916666666,
+   "texte": "Dehors, il pleut doucement."
+  },
+  {
+   "debut": 814.9832916666666,
+   "fin": 818.215125,
+   "texte": "Le bois de la maison sent bon, comme une forêt après l'averse."
+  },
+  {
+   "debut": 828.215125,
+   "fin": 831.9670416666667,
+   "texte": "Tu es à l'intérieur, au chaud, sous une couverture épaisse."
+  },
+  {
+   "debut": 840.9670416666667,
+   "fin": 842.4665208333333,
+   "texte": "Tu la remontes jusqu'au menton."
+  },
+  {
+   "debut": 852.4665208333333,
+   "fin": 855.9566666666667,
+   "texte": "Écoute la pluie sur le toit. Régulière. Tranquille."
+  },
+  {
+   "debut": 866.9566666666667,
+   "fin": 869.6307916666667,
+   "texte": "Elle tombe dehors. Toi, tu es à l'abri."
+  },
+  {
+   "debut": 880.6307916666667,
+   "fin": 883.5447291666667,
+   "texte": "Dans un coin de la pièce, le poêle craque encore un peu."
+  },
+  {
+   "debut": 893.5447291666667,
+   "fin": 895.636125,
+   "texte": "Il n'y a nulle part où aller ce soir."
+  },
+  {
+   "debut": 906.636125,
+   "fin": 908.6959166666667,
+   "texte": "Personne n'attend rien de toi, cette nuit."
+  },
+  {
+   "debut": 919.6959166666667,
+   "fin": 923.2958125,
+   "texte": "Si une pensée revient, elle peut attendre dehors, avec la pluie."
+  },
+  {
+   "debut": 936.2958125,
+   "fin": 939.6777291666667,
+   "texte": "Écoute encore. Une goutte. Puis une autre."
+  },
+  {
+   "debut": 958.6777291666667,
+   "fin": 960.6235,
+   "texte": "Maintenant, tu peux tout laisser aller."
+  },
+  {
+   "debut": 969.6235,
+   "fin": 971.6958125,
+   "texte": "Le bruit de la pluie s'éloigne doucement."
+  },
+  {
+   "debut": 982.6958125,
+   "fin": 985.9377916666666,
+   "texte": "Les sons deviennent flous. Les pensées aussi."
+  },
+  {
+   "debut": 996.9377916666666,
+   "fin": 999.2607916666666,
+   "texte": "Ton souffle est devenu lent, tout seul."
+  },
+  {
+   "debut": 1010.2607916666666,
+   "fin": 1013.1374791666666,
+   "texte": "Chaque expiration t'enfonce un peu plus dans le lit."
+  },
+  {
+   "debut": 1055.1374791666665,
+   "fin": 1060.7057708333332,
+   "texte": "Si tu es encore réveillé, ce n'est pas grave. Reste au chaud, et laisse la musique jouer."
+  },
+  {
+   "debut": 1070.7057708333332,
+   "fin": 1072.242145833333,
+   "texte": "Tu n'as plus besoin de m'écouter."
+  },
+  {
+   "debut": 1081.242145833333,
+   "fin": 1084.3162708333332,
+   "texte": "La musique reste avec toi, aussi longtemps que tu veux."
+  },
+  {
+   "debut": 1091.3162708333332,
+   "fin": 1092.0555833333333,
+   "texte": "Bonne nuit."
+  }
+ ],
+ "titres": [
+  {
+   "debut": 43.819041666666664,
+   "fin": 52.819041666666664,
+   "texte": "S'installer"
+  },
+  {
+   "debut": 114.24974999999999,
+   "fin": 123.24974999999999,
+   "texte": "Respirer lentement"
+  },
+  {
+   "debut": 253.083375,
+   "fin": 262.083375,
+   "texte": "Accueillir l'inquiétude"
+  },
+  {
+   "debut": 390.31220833333344,
+   "fin": 399.31220833333344,
+   "texte": "Revenir dans la pièce"
+  },
+  {
+   "debut": 527.3002708333335,
+   "fin": 536.3002708333335,
+   "texte": "Une main sur le ventre"
+  },
+  {
+   "debut": 658.4878333333334,
+   "fin": 667.4878333333334,
+   "texte": "Le corps se réchauffe"
+  },
+  {
+   "debut": 789.9853125,
+   "fin": 798.9853125,
+   "texte": "La pluie sur le toit"
+  },
+  {
+   "debut": 954.6777291666667,
+   "fin": 963.6777291666667,
+   "texte": "Glisser vers le sommeil"
+  }
+ ],
+ "souffles": [
+  {
+   "debut": 141.59747916666666,
+   "cycles": 4
+  },
+  {
+   "debut": 187.37937499999998,
+   "cycles": 4
+  },
+  {
+   "debut": 591.6136041666667,
+   "cycles": 4
+  },
+  {
+   "debut": 1024.1374791666665,
+   "cycles": 3
+  }
+ ],
+ "voix_douteuses": [],
+ "insp": 4.0,
+ "exp": 6.0
+}
