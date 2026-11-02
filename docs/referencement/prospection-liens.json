@@ -724,7 +724,8 @@
    "date_envoi": "2026-10-21",
    "thread_id": "1a15fb248ccc84fa",
    "sujet": "Projet Happy? : deux outils gratuits pour le portail bien-être",
-   "type": "lien"
+   "type": "lien",
+   "relance": "2026-11-02"
   },
   {
    "site": "Institut National du Sommeil et de la Vigilance (INSV)",
@@ -1231,7 +1232,8 @@
     "http://www.alrtcc.fr/liste-des-membres-de-lalrtcc.html (404)",
     "https://www.centre-hubertine-auclert.fr/sites/default/files/images/violentometre_maj_10072019_web.pdf (404)",
     "https://www.mgen.fr/fileadmin/documents/5_Le_groupe_MGEN/Communiques_de_presse/2014/20141204_Enquete_MGEN_OpinionWay_sante_mentale.pdf (404)"
-   ]
+   ],
+   "relance": "2026-11-02"
   },
   {
    "site": "Canton de Neuchâtel – Office de promotion de la santé et prévention (page santé mentale)",
@@ -1278,7 +1280,8 @@
    "liens_casses": [
     "https://tel-aide-saguenay-lac-saint-jean.org/ (redirige vers cavernsatnaturalbridge.com, domaine sans rapport)",
     "https://cps02.org/ (ne répond plus, 3 essais)"
-   ]
+   ],
+   "relance": "2026-11-02"
   },
   {
    "site": "Santé Québec – Capitale-Nationale (Gestion du stress et de l'anxiété)",
@@ -1406,7 +1409,8 @@
    "thread_id": "1a14fd2648eef0a9",
    "sujet": "Vos ressources en santé mentale : des audios de respiration sans application",
    "liens_casses": "18/10 : 10 liens testés, aucun cassé",
-   "note": "18/10 : réponse automatique Mailinblack (ucbl@mailinblack.univ-lyon1.fr, fil 1a14fd278cefdb5e) : le message n'est remis qu'après validation d'un CAPTCHA (bouton dans l'e-mail) ; à faire à la main par l'utilisateur s'il le souhaite, sinon le message n'est pas arrivé. 28/10 : pas de relance (le premier message n'a jamais été remis, CAPTCHA Mailinblack non validé)."
+   "note": "18/10 : réponse automatique Mailinblack (ucbl@mailinblack.univ-lyon1.fr, fil 1a14fd278cefdb5e) : le message n'est remis qu'après validation d'un CAPTCHA (bouton dans l'e-mail) ; à faire à la main par l'utilisateur s'il le souhaite, sinon le message n'est pas arrivé. 28/10 : pas de relance (le premier message n'a jamais été remis, CAPTCHA Mailinblack non validé). 02/11 : relance envoyée par erreur malgré cette note (message 1a19d193acf2c05f) ; elle restera elle aussi bloquée par le CAPTCHA tant qu'il n'est pas validé à la main. Ne plus rien envoyer à cette adresse.",
+   "relance": "2026-11-02"
   },
   {
    "site": "Université Grenoble Alpes – Prendre soin de votre santé mentale (portail étudiant)",
@@ -1618,7 +1622,8 @@
    "liens_casses": [
     "http://maisonalonzowright.com (404)",
     "http://entrainsm.org (523)"
-   ]
+   ],
+   "relance": "2026-11-02"
   },
   {
    "site": "Fondation Sommeil",

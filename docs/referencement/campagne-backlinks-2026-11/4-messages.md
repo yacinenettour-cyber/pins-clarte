@@ -44,3 +44,10 @@ Texte réécrit le 01/11 selon la consigne « humanise les emails ».
 
 Deux phrases au plus, différentes à chaque fois. Exemple : « Bonjour, je repasse au cas où mon message se serait
 perdu. Si ce n'est pas pour vous, pas de souci, je n'écrirai plus. Yacine »
+
+### Relances envoyées le 02/11 (dans le même fil, dossier « Envoyés » vérifié)
+
+Limite de la routine : 5 envois par jour, relances comprises. Envoyées : Université Lyon 1 (par erreur, voir le registre :
+filtre Mailinblack, premier message jamais remis), Université de Fribourg, CHU de Montpellier, Santé Québec
+Saguenay–Lac-Saint-Jean, La Clé des champs. Restent dues (à partir du 03/11) : Unicaen, Acouphènes Québec, Santé Mentale
+France, FNEPE, SMTI 82, Coup de Blouse, MDA 84, Fontenay-aux-Roses.
