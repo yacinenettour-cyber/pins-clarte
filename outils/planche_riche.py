@@ -93,7 +93,9 @@ def dessiner(D, sortie):
         centre(d, y, l, f1, BRUN); y += 62
     f2 = f("DancingScript-Bold.ttf", 86)
     assert d.textlength(D["titre2"], font=f2) <= W - 100, "titre manuscrit trop large"
-    centre(d, y - 6, D["titre2"], f2, ROSE); y += 100
+    centre(d, y - 6, D["titre2"], f2, ROSE)
+    # 02/11/2026 : le filet doré passe sous les jambages du titre manuscrit (il les traversait : « p », « g »)
+    y = max(y + 100, int(y - 6 + f2.getbbox(D["titre2"])[3] + 12))
     d.line((W / 2 - 90, y, W / 2 + 90, y), fill=OR, width=3); y += 4
     zones.append(("titre", 40, y))
     # portrait au centre, 2 clés à gauche, 2 à droite
