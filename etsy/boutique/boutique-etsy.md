@@ -2,7 +2,9 @@
 
 Demande de l'utilisateur : « J'ai pas encore de boutique Etsy, il me faut un nom, etc. » Visuels :
 `logo-500.png` (icône de boutique, 500 × 500) et `banniere-3360x840.jpg` (grande bannière), fabriqués par
-`outils/etsy/boutique_visuels.py` (terracotta brique, sans vert kaki, aucune IA, rien de payant).
+`outils/etsy/boutique_visuels.py` (terracotta brique, sans vert kaki, aucune IA, rien de payant). Version du
+02/11 (« plus qualitatif, ne marque pas planner ») : monogramme CM dans une arche, botanique au trait fin, filets dorés,
+aucune mention « planner » ; bannière : « Poser ce qui tourne dans la tête, et mieux le partager ».
 
 ## 1. Le nom de la boutique
 
