@@ -89,7 +89,7 @@ def preparer(slug):
 
 
 def sous_titre(txt):
-    f = police("Lora-Regular.ttf", 46)
+    f = police("Lora-SemiBold.ttf", 54)  # 02/11/2026 : plus gros et plus épais (public de 55 ans et plus)
     mots, lignes, cur = txt.split(), [], ""
     for m in mots:
         e = (cur + " " + m).strip()
@@ -99,7 +99,7 @@ def sous_titre(txt):
         else:
             cur = e
     lignes.append(cur)
-    lh = 62
+    lh = 72
     larg = int(max(f.getlength(l) for l in lignes)) + 80
     ht = lh * len(lignes) + 40
     im = Image.new("RGBA", (larg, ht), (0, 0, 0, 0))

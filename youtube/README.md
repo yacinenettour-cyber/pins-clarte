@@ -79,6 +79,28 @@ Analyse complète : `docs/referencement/concurrence-youtube.md` (65 vidéos, 23 
 - ~~Alterner 10 minutes et 30 à 60 minutes.~~ Remplacé le 01/11 par le format long ci-dessous.
 - Shorts : description avec, en 2e ligne, le lien du guide gratuit quand le sujet est le sommeil ou les ruminations (fait le 01/11 pour les 3 Shorts ruminations).
 
+## Décisions du 02/11/2026 : Shorts qui accrochent, public de 55 ans et plus (accord de l'utilisateur « Applique 3 4 »)
+
+Chiffres (YouTube Analytics au 30/10, `docs/referencement/concurrence-youtube.md`) : les Shorts font 96 % des vues mais
+on en regarde 18 s en moyenne (28 à 33 % de Shorts de 50 à 60 s) ; 49 % du public a 65 ans et plus, 18 % 55-64 ans.
+
+**Fait dans le robot** (`youtube/extras.py`, `youtube/rendu.py`) :
+- Shorts de **35 s au plus** (`DUREE_SHORT`) ; Short respiration : une phrase entière puis **2 cycles** (`CYCLES_SHORT`).
+- **Accroche visible dès la 1re image** (plus de fondu au noir, `haut1`/`haut2` affichés tout de suite, son en 0,15 s).
+- **Textes plus gros** : accroche 100 pt (86 avant), sous-titres des Shorts 60 pt en demi-gras (50), bas 48/38 pt,
+  sous-titres de la vidéo longue 54 pt en demi-gras (46).
+
+**À appliquer par la tâche vidéo hebdomadaire** (écriture du plan) :
+- `haut1` + `haut2` = **l'accroche** : une question ou une situation vécue, en 2 à 4 mots par ligne, qui se comprend
+  sans le son (« Réveillé à 3 h ? » / « Essaie ceci », « Angoisse au lit ? » / « Ralentis ton souffle ») ; jamais une
+  promesse de résultat.
+- Les 4 `shorts_extra` : une partie qui contient un geste concret dès les premières secondes (le Short coupe à 35 s).
+- **Public de 55 ans et plus** : phrases courtes, vocabulaire simple, sans anglicismes ; des `pause` plus nombreuses
+  (la voix paraît plus lente) ; sujets qui les concernent en priorité : réveils nocturnes (3 h, 4 h), sommeil qui
+  change avec l'âge, angoisse du soir, ruminations, tensions du corps au coucher, retour au calme après un réveil.
+  Toujours sourcé et prudent (aucune promesse de soin, rappel « parles-en à ton médecin » quand c'est utile).
+  Garder le tutoiement de la chaîne.
+
 ## Décisions du 01/11/2026 (accord de l'utilisateur « Oui pour les 3 propositions »)
 
 Après le 2e passage sur la concurrence (`docs/referencement/concurrence-youtube.md`, section du 01/11) :

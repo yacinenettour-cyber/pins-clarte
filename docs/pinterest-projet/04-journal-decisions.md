@@ -1379,3 +1379,13 @@ dans la neige, lac au crépuscule, vagues la nuit, ciel nuageux sur l'eau), envi
 égalisée (`lum`). Vidéo refabriquée par le robot (voix ElevenLabs déjà enregistrée : aucun crédit dépensé). La vidéo
 n'était pas encore en ligne : l'utilisateur téléverse la nouvelle version.
 
+## 107. YouTube : Shorts qui accrochent et public de 55 ans et plus (02/11/2026, « Applique 3 4 »)
+
+Constat (Analytics au 30/10) : Shorts = 96 % des vues mais 18 s regardées en moyenne (≈ 30 % de Shorts de 50-60 s) ;
+public à 49 % de 65 ans et plus. Fait : Shorts de 35 s au plus (Short respiration : une phrase puis 2 cycles),
+accroche affichée dès la 1re image (plus de fondu au noir), textes agrandis dans les Shorts et les sous-titres de la
+vidéo longue ; règles d'écriture pour la tâche hebdomadaire dans `youtube/README.md` (accroche question/situation,
+phrases courtes, plus de pauses, sujets 55+ : réveils nocturnes, sommeil qui change avec l'âge, angoisse du soir).
+Essai local : Shorts de 34,3 s et 25,5 s, accroche visible à 0 s, 0 chevauchement. S'applique à partir de la prochaine
+vidéo (la Méditation du soir n° 1 en cours de refabrication garde l'ancien réglage).
+

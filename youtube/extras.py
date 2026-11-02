@@ -6,6 +6,10 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from commun import POLICES, SITE, FPS, dossier_plan, dossier_travail, lire_plan, lisse, fondu, mmss
 
 
+DUREE_SHORT = 35.0  # 02/11/2026 : Shorts plus courts (on en regardait 30 % sur 50-60 s)
+CYCLES_SHORT = 2
+
+
 def police(nom, t):
     return ImageFont.truetype(os.path.join(POLICES, nom), t)
 
@@ -99,10 +103,14 @@ def short(slug):
     if not tl["souffles"]:
         print("pas de respiration guidée : pas de Short")
         return None
-    s = tl["souffles"][0]
+    s = dict(tl["souffles"][0])
     cyc = tl["insp"] + tl["exp"]
-    d0 = max(0.0, s["debut"] - 16.5)
-    d1 = s["debut"] + s["cycles"] * cyc + 5
+    # 02/11/2026 (analyse de la chaîne : 18 s regardées en moyenne sur des Shorts de 50 à 60 s) : Short de 35 s au plus,
+    # une phrase entière avant la respiration puis 2 cycles seulement
+    s["cycles"] = min(s["cycles"], CYCLES_SHORT)
+    avant = [c["debut"] for c in tl["cues"] if s["debut"] - 12 <= c["debut"] <= s["debut"] - 1]
+    d0 = max(0.0, (min(avant) - 0.3) if avant else s["debut"] - 6)
+    d1 = s["debut"] + s["cycles"] * cyc + 3
     ph = next((p for p in plan["photos"] if p.get("short")), plan["photos"][1])
     return _short(trav, tl, plan.get("short", {}), ph, d0, d1, s, os.path.join(trav, "short.mp4"))
 
@@ -121,8 +129,8 @@ def shorts_extra(slug):
         suivant = tl["titres"][i + 1]["debut"] if i + 1 < len(tl["titres"]) else tl["fin_voix"] + 6
         d0 = max(0.0, t0 - 0.5)
         # finir après la dernière phrase entièrement dite avant 60 s, avec le temps de relâcher
-        fins = [c["fin"] for c in tl["cues"] if t0 <= c["debut"] and c["fin"] < min(suivant, d0 + 54)]
-        d1 = min(suivant - 0.3, (max(fins) if fins else t0 + 30) + 6, d0 + 60)
+        fins = [c["fin"] for c in tl["cues"] if t0 <= c["debut"] and c["fin"] < min(suivant, d0 + DUREE_SHORT - 4)]
+        d1 = min(suivant - 0.3, (max(fins) if fins else t0 + 25) + 3, d0 + DUREE_SHORT)
         ph = plan["photos"][i + 1]
         d = os.path.join(os.path.dirname(trav), f"{slug}~short{k}")
         os.makedirs(d, exist_ok=True)
@@ -157,26 +165,29 @@ def _short(trav, tl, sh, ph, d0, d1, s, sortie):
         om = Image.new("RGBA", im.size, (0, 0, 0, 0))
         om.putalpha(im.getchannel("A").filter(ImageFilter.GaussianBlur(12)).point(lambda v: int(v * 0.7)))
         return np.array(Image.alpha_composite(om, im), np.float32)
-    haut = bloc([sh.get("haut1", "Respire avec moi"), sh.get("haut2", "pour t'endormir")], [86, 86],
+    haut = bloc([sh.get("haut1", "Respire avec moi"), sh.get("haut2", "pour t'endormir")], [100, 100],
                 [(255, 248, 230, 255), (255, 214, 140, 255)], ["PlayfairDisplay-Bold.ttf"] * 2)
-    bas = bloc([sh.get("bas1", "Méditation complète sur la chaîne"), "contactapaisement-mental.fr"], [42, 34],
+    bas = bloc([sh.get("bas1", "Méditation complète sur la chaîne"), "contactapaisement-mental.fr"], [48, 38],
                [(250, 246, 236, 255), (255, 214, 140, 240)], ["Lora-SemiBold.ttf", "Lora-Regular.ttf"], fond_=(8, 10, 30, 170))
     cache = {}
 
     def sous(txt):
         if txt in cache:
             return cache[txt]
-        f = police("Lora-Regular.ttf", 50)
-        mots, lignes, cur = txt.split(), [], ""
-        for m in mots:
-            e = (cur + " " + m).strip()
-            if f.getlength(e) > 880 and cur:
-                lignes.append(cur)
-                cur = m
-            else:
-                cur = e
-        lignes.append(cur)
-        lh = 68
+        for taille in (60, 54, 48):  # sous-titres plus gros (02/11/2026), 3 lignes au plus pour ne pas toucher le bas
+            f = police("Lora-SemiBold.ttf", taille)
+            mots, lignes, cur = txt.split(), [], ""
+            for m in mots:
+                e = (cur + " " + m).strip()
+                if f.getlength(e) > 900 and cur:
+                    lignes.append(cur)
+                    cur = m
+                else:
+                    cur = e
+            lignes.append(cur)
+            if len(lignes) <= 3:
+                break
+        lh = int(taille * 1.36)
         larg = int(max(f.getlength(l) for l in lignes)) + 70
         ht = lh * len(lignes) + 36
         im = Image.new("RGBA", (larg, ht), (0, 0, 0, 0))
@@ -217,7 +228,7 @@ def _short(trav, tl, sh, ph, d0, d1, s, sortie):
         x0 = min(max(0.0, cx - cw / 2), src.width - cw)
         y0 = min(max(0.0, src.height / 2 - ch / 2), src.height - ch)
         img = np.asarray(src.resize((SW, SH), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + ch)), np.float32) * vig
-        poser(img, haut, 0, 90, fondu(t, d0 + 0.2, d1 + 9, 0.8))
+        poser(img, haut, 0, 90, 1.0 if t < d1 - 1 else fondu(t, d0, d1 + 9, 0.8))  # accroche dès la 1re image
         if s:
             cyc = tl["insp"] + tl["exp"]
             uu = (t - s["debut"]) % cyc if t >= s["debut"] else 0
@@ -234,13 +245,13 @@ def _short(trav, tl, sh, ph, d0, d1, s, sortie):
                 arr = sous(c["texte"])
                 poser(img, arr, (SW - arr.shape[1]) // 2, 1110, fondu(t, c["debut"] - 0.2, c["fin"] + 0.7, 0.35))
         poser(img, bas, 0, 1440, fondu(t, d0 + 1.5, d1 + 9, 0.8))
-        img *= min(1, (t - d0) / 0.6) * min(1, (d1 - t) / 1.0)
+        img *= min(1, (d1 - t) / 1.0)  # pas de fondu au noir au début : l'image et l'accroche sont là tout de suite
         return img.clip(0, 255).astype(np.uint8)
 
     dur = d1 - d0
     p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{SW}x{SH}", "-r", str(SFPS),
                           "-i", "-", "-ss", f"{d0:.3f}", "-t", f"{dur:.3f}", "-i", os.path.join(trav, "piste.wav"),
-                          "-af", f"afade=t=in:d=0.6,afade=t=out:st={dur - 1.5:.3f}:d=1.5",
+                          "-af", f"afade=t=in:d=0.15,afade=t=out:st={dur - 1.5:.3f}:d=1.5",
                           "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
                           "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest", sortie], stdin=subprocess.PIPE)
     for i in range(int(dur * SFPS)):
@@ -253,7 +264,7 @@ def _short(trav, tl, sh, ph, d0, d1, s, sortie):
     sans = os.path.join(trav, "piste_sans_musique.wav")
     if os.path.exists(sans):
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", sortie, "-ss", f"{d0:.3f}", "-t", f"{dur:.3f}", "-i", sans,
-                        "-map", "0:v", "-map", "1:a", "-af", f"afade=t=in:d=0.6,afade=t=out:st={dur - 1.5:.3f}:d=1.5",
+                        "-map", "0:v", "-map", "1:a", "-af", f"afade=t=in:d=0.15,afade=t=out:st={dur - 1.5:.3f}:d=1.5",
                         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-shortest",
                         os.path.join(os.path.dirname(sortie), "short_pinterest.mp4")], check=True)
     return sortie
