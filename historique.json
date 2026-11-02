@@ -2401,5 +2401,16 @@
   "pin_id": "600175087890464783",
   "md5": "61cf3abbfefd3719df01ae613e099b50",
   "lien": "article:procrastination-du-coucher"
+ },
+ {
+  "date": "2026-11-02T06:08+00:00",
+  "titre": "Charge mentale à deux : 5 clés pour mieux partager",
+  "image": "images/pin-20261102-060808.jpg",
+  "fond": "prete:images_cles/charge-mentale-deux-5-cles.jpg",
+  "theme": "fatiguementale",
+  "design": "cles",
+  "pin_id": "600175087890473959",
+  "md5": "5891cd1d488448ca827a5899aa7e4b28",
+  "lien": "article:charge-mentale"
  }
 ]
