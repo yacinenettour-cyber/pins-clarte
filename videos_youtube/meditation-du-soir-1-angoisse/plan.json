@@ -1,0 +1,635 @@
+{
+ "slug": "meditation-du-soir-1-angoisse",
+ "statut": "a_fabriquer",
+ "envoi_manuel": true,
+ "publication_prevue": "2026-11-04T19:00:00Z",
+ "duree_totale_min": 180,
+ "article": "/angoisse-le-soir/",
+ "serie": "Méditation du soir n° 1",
+ "ecran": {
+  "titre": "Quand l'angoisse monte le soir",
+  "sous_titre": "Méditation du soir n° 1 · voix douce · 3 h de musique"
+ },
+ "brume": [
+  "La pluie sur le toit"
+ ],
+ "photos": [
+  {
+   "partie": "intro",
+   "nom": "unsplash-eZXPRcXFcbA.jpg",
+   "url": "https://images.unsplash.com/photo-1720731375441-80fa2aa8e87b?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Nan Zhou",
+   "lum": 1.0
+  },
+  {
+   "partie": "S'installer",
+   "nom": "unsplash-nb04de6m0rM.jpg",
+   "url": "https://images.unsplash.com/photo-1497074367201-25b8d28279e2?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Alexander Possingham",
+   "lum": 0.9
+  },
+  {
+   "partie": "Respirer lentement",
+   "nom": "unsplash-6i1HCUlCnbw.jpg",
+   "url": "https://images.unsplash.com/photo-1783878243322-9cef013222f9?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Marcus L",
+   "lum": 0.9,
+   "short": true
+  },
+  {
+   "partie": "Accueillir l'inquiétude",
+   "nom": "unsplash-Dmfuhect888.jpg",
+   "url": "https://images.unsplash.com/photo-1766308594906-55367d624d79?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Przemyslaw Olczak",
+   "lum": 0.8
+  },
+  {
+   "partie": "Revenir dans la pièce",
+   "nom": "unsplash-1w7zfUFASLQ.jpg",
+   "url": "https://images.unsplash.com/photo-1540853072004-c9f9e2cdc503?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Matteo Maretto",
+   "lum": 1.0
+  },
+  {
+   "partie": "Une main sur le ventre",
+   "nom": "unsplash-FseXc3OsIic.jpg",
+   "url": "https://images.unsplash.com/photo-1518019671582-55004f1bc9ab?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Luca Laurence",
+   "lum": 1.0
+  },
+  {
+   "partie": "Le corps se réchauffe",
+   "nom": "unsplash-axF8pcPd0pc.jpg",
+   "url": "https://images.unsplash.com/photo-1579761804843-f997ade7fa35?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Ricardo Prosperi",
+   "lum": 0.8
+  },
+  {
+   "partie": "La pluie sur le toit",
+   "nom": "unsplash-rapApRZltRA.jpg",
+   "url": "https://images.unsplash.com/photo-1761492745697-8e63967b5deb?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Antoine Gravier",
+   "lum": 1.0
+  },
+  {
+   "partie": "Glisser vers le sommeil",
+   "nom": "unsplash-tT_SrSMhhgE.jpg",
+   "url": "https://images.unsplash.com/photo-1470432581262-e7880e8fe79a?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Glenn Carstens-Peters",
+   "lum": 0.9
+  },
+  {
+   "partie": "fin",
+   "nom": "unsplash-DunSKupQL7g.jpg",
+   "url": "https://images.unsplash.com/photo-1523965422831-c6dcc7272e77?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Mohammad Alizade",
+   "lum": 0.7
+  }
+ ],
+ "script": [
+  [
+   "pause",
+   3
+  ],
+  [
+   "dire",
+   "Bonsoir.",
+   2
+  ],
+  [
+   "dire",
+   "Cette méditation du soir est faite pour les soirs où l'angoisse monte au moment de dormir.",
+   2.5
+  ],
+  [
+   "dire",
+   "Écoute-la allongé, au calme, jamais en conduisant.",
+   2
+  ],
+  [
+   "dire",
+   "Si tu ressens une douleur dans la poitrine ou un malaise, arrête l'écoute et appelle le 15.",
+   3
+  ],
+  [
+   "dire",
+   "On va ralentir le souffle, revenir dans la pièce, puis laisser le corps se poser.",
+   3
+  ],
+  [
+   "dire",
+   "Tu n'as rien à chasser. Si tu t'endors en chemin, c'est très bien.",
+   5
+  ],
+  [
+   "titre",
+   "S'installer",
+   4
+  ],
+  [
+   "dire",
+   "Allonge-toi comme tu dors d'habitude, sur le dos ou sur le côté.",
+   7
+  ],
+  [
+   "dire",
+   "Remonte un peu la couverture si tu as froid.",
+   7
+  ],
+  [
+   "dire",
+   "Laisse tes bras le long du corps, les paumes comme elles veulent.",
+   8
+  ],
+  [
+   "dire",
+   "Si tu le veux, ferme les yeux. Sinon, pose ton regard sur un point du plafond.",
+   8
+  ],
+  [
+   "dire",
+   "Laisse ta tête s'enfoncer dans l'oreiller.",
+   8
+  ],
+  [
+   "dire",
+   "Ce soir, tu n'as plus rien à régler.",
+   10
+  ],
+  [
+   "titre",
+   "Respirer lentement",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, on ralentit le souffle.",
+   3
+  ],
+  [
+   "dire",
+   "Tu inspires par le nez sur quatre temps. Tu souffles doucement sur six temps.",
+   3
+  ],
+  [
+   "dire",
+   "Un souffle petit, discret. Pas besoin de remplir les poumons.",
+   3
+  ],
+  [
+   "dire",
+   "Laisse-toi guider par le son.",
+   2
+  ],
+  [
+   "souffle",
+   4,
+   true
+  ],
+  [
+   "dire",
+   "Continue seul, à ton rythme.",
+   3
+  ],
+  [
+   "souffle",
+   4,
+   false
+  ],
+  [
+   "dire",
+   "Si tu perds le compte, ce n'est pas grave. Reprends simplement.",
+   8
+  ],
+  [
+   "dire",
+   "Laisse ta respiration reprendre son rythme à elle.",
+   10
+  ],
+  [
+   "titre",
+   "Accueillir l'inquiétude",
+   4
+  ],
+  [
+   "dire",
+   "Peut-être qu'il reste une inquiétude, quelque part.",
+   8
+  ],
+  [
+   "dire",
+   "Cherche où tu la sens dans ton corps. La gorge, la poitrine, le ventre.",
+   10
+  ],
+  [
+   "dire",
+   "Tu n'as pas à la faire partir. Remarque-la, simplement.",
+   10
+  ],
+  [
+   "dire",
+   "Elle a le droit d'être là quelques minutes.",
+   9
+  ],
+  [
+   "dire",
+   "Ce n'est pas un problème à régler maintenant.",
+   9
+  ],
+  [
+   "dire",
+   "Nomme-la tout bas. De l'inquiétude. De la peur. De la fatigue, peut-être.",
+   10
+  ],
+  [
+   "dire",
+   "Elle monte, elle reste un moment, et le plus souvent, elle redescend d'elle-même.",
+   11
+  ],
+  [
+   "dire",
+   "Si des pensées arrivent avec elle, laisse-les passer.",
+   9
+  ],
+  [
+   "dire",
+   "Vouloir les bloquer les fait souvent revenir plus fort.",
+   9
+  ],
+  [
+   "dire",
+   "Reviens à ton souffle. Lent. Discret.",
+   13
+  ],
+  [
+   "titre",
+   "Revenir dans la pièce",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, on revient dans la pièce, ici, ce soir.",
+   6
+  ],
+  [
+   "dire",
+   "Écoute le son le plus lointain. Une voiture, le vent, le frigo.",
+   10
+  ],
+  [
+   "dire",
+   "Puis un son plus proche. Peut-être ta propre respiration.",
+   10
+  ],
+  [
+   "dire",
+   "Sens le tissu du drap sous tes doigts.",
+   9
+  ],
+  [
+   "dire",
+   "Remarque l'air sur ton visage. Plutôt frais, ou plutôt tiède.",
+   9
+  ],
+  [
+   "dire",
+   "Sens le poids de ton corps sur le matelas, partout où il s'appuie.",
+   9
+  ],
+  [
+   "dire",
+   "Les talons. Le dos. L'arrière de la tête.",
+   10
+  ],
+  [
+   "dire",
+   "Sens tes pieds, sous la couverture ou à l'air.",
+   9
+  ],
+  [
+   "dire",
+   "Si l'inquiétude remonte, reviens à un son, ou au contact du drap.",
+   11
+  ],
+  [
+   "dire",
+   "Tu es là, dans ton lit, et pour l'instant, il n'y a rien d'autre à faire.",
+   13
+  ],
+  [
+   "titre",
+   "Une main sur le ventre",
+   4
+  ],
+  [
+   "dire",
+   "Pose une main sur ton ventre, juste sous le nombril.",
+   7
+  ],
+  [
+   "dire",
+   "Laisse l'autre main sur ta poitrine, ou le long du corps.",
+   7
+  ],
+  [
+   "dire",
+   "Quand tu inspires, la main du ventre se soulève un peu.",
+   7
+  ],
+  [
+   "dire",
+   "Quand tu souffles, elle redescend.",
+   7
+  ],
+  [
+   "dire",
+   "La poitrine, elle, bouge à peine.",
+   8
+  ],
+  [
+   "dire",
+   "Tu n'as rien à forcer. Le ventre sait faire.",
+   8
+  ],
+  [
+   "souffle",
+   4,
+   false
+  ],
+  [
+   "dire",
+   "Sens la main monter et descendre, sans rien changer.",
+   9
+  ],
+  [
+   "dire",
+   "Laisse tes mains se reposer là où elles sont bien.",
+   11
+  ],
+  [
+   "titre",
+   "Le corps se réchauffe",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, porte ton attention sur tes mains.",
+   7
+  ],
+  [
+   "dire",
+   "Imagine qu'une chaleur douce s'y installe, comme près d'un feu.",
+   10
+  ],
+  [
+   "dire",
+   "Les doigts deviennent un peu plus lourds.",
+   9
+  ],
+  [
+   "dire",
+   "La chaleur monte dans les poignets, puis dans les bras.",
+   10
+  ],
+  [
+   "dire",
+   "Elle gagne les épaules. Les épaules descendent un peu.",
+   10
+  ],
+  [
+   "dire",
+   "Ta nuque se détend. Ta mâchoire se desserre.",
+   10
+  ],
+  [
+   "dire",
+   "Ton front s'élargit. Tes sourcils se relâchent.",
+   10
+  ],
+  [
+   "dire",
+   "La chaleur descend dans le ventre, puis dans le bas du dos.",
+   10
+  ],
+  [
+   "dire",
+   "Elle glisse dans les jambes, jusqu'au bout des pieds.",
+   11
+  ],
+  [
+   "dire",
+   "Ton corps entier est lourd et chaud.",
+   13
+  ],
+  [
+   "titre",
+   "La pluie sur le toit",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, imagine une petite maison en bois, la nuit.",
+   8
+  ],
+  [
+   "dire",
+   "Dehors, il pleut doucement.",
+   8
+  ],
+  [
+   "dire",
+   "Le bois de la maison sent bon, comme une forêt après l'averse.",
+   10
+  ],
+  [
+   "dire",
+   "Tu es à l'intérieur, au chaud, sous une couverture épaisse.",
+   9
+  ],
+  [
+   "dire",
+   "Tu la remontes jusqu'au menton.",
+   10
+  ],
+  [
+   "dire",
+   "Écoute la pluie sur le toit. Régulière. Tranquille.",
+   11
+  ],
+  [
+   "dire",
+   "Elle tombe dehors. Toi, tu es à l'abri.",
+   11
+  ],
+  [
+   "dire",
+   "Dans un coin de la pièce, le poêle craque encore un peu.",
+   10
+  ],
+  [
+   "dire",
+   "Il n'y a nulle part où aller ce soir.",
+   11
+  ],
+  [
+   "dire",
+   "Personne n'attend rien de toi, cette nuit.",
+   11
+  ],
+  [
+   "dire",
+   "Si une pensée revient, elle peut attendre dehors, avec la pluie.",
+   13
+  ],
+  [
+   "dire",
+   "Écoute encore. Une goutte. Puis une autre.",
+   15
+  ],
+  [
+   "titre",
+   "Glisser vers le sommeil",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, tu peux tout laisser aller.",
+   9
+  ],
+  [
+   "dire",
+   "Le bruit de la pluie s'éloigne doucement.",
+   11
+  ],
+  [
+   "dire",
+   "Les sons deviennent flous. Les pensées aussi.",
+   11
+  ],
+  [
+   "dire",
+   "Ton souffle est devenu lent, tout seul.",
+   11
+  ],
+  [
+   "dire",
+   "Chaque expiration t'enfonce un peu plus dans le lit.",
+   11
+  ],
+  [
+   "souffle",
+   3,
+   false
+  ],
+  [
+   "dire",
+   "Si tu es encore réveillé, ce n'est pas grave. Reste au chaud, et laisse la musique jouer.",
+   10
+  ],
+  [
+   "dire",
+   "Tu n'as plus besoin de m'écouter.",
+   9
+  ],
+  [
+   "dire",
+   "La musique reste avec toi, aussi longtemps que tu veux.",
+   7
+  ],
+  [
+   "dire",
+   "Bonne nuit.",
+   4
+  ]
+ ],
+ "miniature": {
+  "photo": "unsplash-eZXPRcXFcbA.jpg",
+  "zoom": 1.2,
+  "cadrage_x": 0.5,
+  "cadrage_y": 0.5,
+  "ligne1": "L'angoisse",
+  "ligne2": "monte le soir ?",
+  "ligne3": "Méditation du soir n° 1",
+  "pastille": "Voix douce + 3 h de musique"
+ },
+ "short": {
+  "titre": "Respire 4 temps, souffle 6 quand l'angoisse monte au lit 🌙 #angoisse #sommeil",
+  "description": "Quand l'angoisse monte au moment de dormir, ralentis ton souffle : 4 temps pour inspirer, 6 pour souffler, un souffle petit et discret.",
+  "haut1": "Angoisse au lit ?",
+  "haut2": "Ralentis ton souffle",
+  "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne"
+ },
+ "youtube": {
+  "titre": "Méditation du soir n° 1 : calmer l'angoisse avant de dormir (18 min + 3 h de musique)",
+  "accroche": "L'angoisse monte dès que tu éteins la lumière ? Cette méditation du soir t'accompagne pendant 18 minutes avec une voix douce, puis laisse 3 heures de musique calme pour la nuit.",
+  "libelle_article": "Angoisse le soir : pourquoi elle monte et comment la calmer (article sourcé)",
+  "guide": "sommeil",
+  "description": "Je l'ai faite pour les soirs où tout va à peu près bien, et où pourtant ça serre dans la poitrine au moment d'éteindre.\n\nOn ne cherche pas à chasser l'angoisse. On ralentit le souffle (4 temps pour inspirer, 6 pour souffler, un souffle petit), on regarde où l'inquiétude se loge dans le corps, on revient dans la pièce par les sons et le contact du drap, une main posée sur le ventre. Ensuite, une chaleur qui descend dans le corps, et une petite maison en bois sous la pluie.\n\nPourquoi ne pas essayer de bloquer les pensées ? Parce que, dans le modèle de l'insomnie décrit en 2002 à l'Université d'Oxford, vouloir contrôler ses pensées fait partie de ce qui entretient le problème. La respiration lente, elle, a été testée à l'Université Stanford en 2023 : 5 minutes par jour pendant un mois faisaient baisser l'anxiété après chaque séance.\n\nSi tu t'endors avant la fin, c'est très bien. La musique continue 3 heures.",
+  "rappel": "À écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si l'angoisse revient presque tous les soirs ou si tu fais des crises d'angoisse, parles-en à ton médecin. Douleur dans la poitrine, malaise ou essoufflement inhabituel : appelle le 15 ou le 112. Idées noires : 3114, gratuit, 24 h/24. Je ne suis pas professionnel de santé.",
+  "sources": [
+   "Harvey, Behaviour Research and Therapy, 2002 (Université d'Oxford)",
+   "Kalmbach et al., Nature and Science of Sleep, 2018 (hôpital Henry Ford, Détroit)",
+   "Balban et al., Cell Reports Medicine, 2023 (Université Stanford)",
+   "Assurance maladie (ameli.fr), Traitement de la crise d'angoisse aiguë et du trouble panique, 2023",
+   "Réseau Morphée sur Santé.fr, La prise en charge non médicamenteuse de l'insomnie, 2016"
+  ],
+  "tags": [
+   "méditation du soir",
+   "méditation guidée pour dormir",
+   "méditation angoisse",
+   "angoisse le soir",
+   "calmer l'angoisse",
+   "méditation pour dormir",
+   "méditation sommeil profond",
+   "relaxation pour dormir",
+   "calmer les pensées",
+   "apaiser le mental",
+   "lâcher prise",
+   "dormir profondément",
+   "mieux dormir",
+   "musique pour dormir",
+   "méditation anxiété"
+  ],
+  "hashtags": [
+   "#méditation",
+   "#angoisse",
+   "#sommeil"
+  ],
+  "categorie": "26"
+ },
+ "voix": "elevenlabs_mila",
+ "shorts_extra": [
+  {
+   "partie": "Accueillir l'inquiétude",
+   "haut1": "Ne chasse pas",
+   "haut2": "ton inquiétude",
+   "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
+   "titre": "Ne chasse pas l'angoisse du soir, observe-la 😴 #angoisse #méditation",
+   "description": "Cherche où l'inquiétude se loge dans ton corps, nomme-la tout bas, puis reviens à ton souffle. Vouloir bloquer les pensées les fait souvent revenir plus fort."
+  },
+  {
+   "partie": "Revenir dans la pièce",
+   "haut1": "Reviens",
+   "haut2": "dans la pièce",
+   "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
+   "titre": "Écoute un son lointain, puis le drap sous tes doigts 🌙 #angoisse #sommeil",
+   "description": "Un son lointain, puis un son proche. Le tissu du drap sous tes doigts, l'air sur ton visage, le poids du corps sur le matelas. Tu reviens ici, ce soir."
+  },
+  {
+   "partie": "Une main sur le ventre",
+   "haut1": "Une main",
+   "haut2": "sur le ventre",
+   "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
+   "titre": "Pose une main sur ton ventre et respire doucement 😴 #respiration #sommeil",
+   "description": "Une main sous le nombril, l'autre sur la poitrine. Quand tu inspires, la main du ventre se soulève un peu ; la poitrine bouge à peine."
+  },
+  {
+   "partie": "Le corps se réchauffe",
+   "haut1": "Une chaleur douce",
+   "haut2": "des mains aux pieds",
+   "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
+   "titre": "Imagine une chaleur qui descend des mains aux pieds 🌙 #relaxation #sommeil",
+   "description": "Une chaleur douce dans les mains, puis les bras, les épaules, la nuque, le ventre, jusqu'au bout des pieds. Le corps devient lourd et chaud."
+  }
+ ]
+}

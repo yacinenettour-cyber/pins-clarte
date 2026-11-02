@@ -1328,3 +1328,24 @@ Yoga, Anxiete.fr, PROSOM (6 e-mails, chacun citant un article réellement lu, of
 inédit gratuit, sans demande de lien). Voie du Bien-Être (classé A) n'a qu'un formulaire : texte prêt pour
 l'utilisateur dans `docs/referencement/campagne-backlinks-2026-11/4-messages.md`. La tâche quotidienne reprend les
 envois (au plus 5 par jour ouvré, même règle « valeur d'abord ») et la relance unique à 10 jours.
+
+## 104. YouTube : « Méditation du soir n° 1 » écrite et voix générée (02/11/2026, tâche du 01/11 arrivée en retard)
+
+La tâche hebdomadaire « Vidéo YouTube » du 01/11 n'est arrivée dans la session que le 02/11 à 4 h 20 (UTC) ; l'utilisateur
+a choisi « a, commence la vidéo maintenant ». L'article du dimanche 01/11 a été sauté (règle « jamais plus d'un article
+par jour », celui du lundi part le soir même).
+- Plan `videos_youtube/meditation-du-soir-1-angoisse/plan.json` : relié à `/angoisse-le-soir/` (pas encore traité en
+  vidéo), format long voix (~18 min, 4 060 caractères, 80 phrases) + 3 h de musique, publication prévue le mercredi
+  04/11 à 20 h (Paris), envoi manuel. Pratique : respiration 4-6 petite et discrète, accueillir l'inquiétude sans la
+  chasser (modèle d'Oxford, Harvey 2002), ancrage par les sons et le contact du drap, main sur le ventre (conseil de
+  l'Assurance maladie), chaleur des mains aux pieds, maison en bois sous la pluie. Rappel « appelle le 15 » en cas de
+  douleur dans la poitrine, dans la voix et la description (avec le 3114).
+- 10 photos Unsplash inédites, un photographe chacune, choisies sur leur description (le serveur d'images Unsplash est
+  bloqué depuis le conteneur : le robot GitHub vérifie qu'aucune image n'est noire).
+- Titres des 5 Shorts vérifiés par `outils/anti_doublons.py` (un titre doublait l'épingle « Le vrai problème quand ton
+  mental s'emballe le soir », remplacé).
+- Voix ElevenLabs « Mila » : 80 phrases, une seule prise chacune, environ 4 060 crédits ; les 80 réécoutées par Whisper
+  sans écart.
+- Mots-clés : les suggestions YouTube n'étaient pas joignables (proxy) ; titre et tags repris de l'analyse de la
+  concurrence du 01/11 (« méditation du soir » en tête). Quota de l'API YouTube épuisé le 02/11 au matin : vues non
+  relevées ce jour-là.
