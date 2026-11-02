@@ -49,6 +49,7 @@ Deux PDF de 31 pages au format A4, à imprimer chez toi autant de fois que tu ve
 
 **À savoir**
 - Produit numérique : rien n'est envoyé par la poste.
+- Prêt pour le classeur : imprime en A4, taille réelle (100 %), recto seul, puis perfore à gauche. Les marges laissent la place aux trous et rien d'important n'est trop près du bord (les imprimantes de maison n'impriment pas jusqu'au bord).
 - Les couleurs peuvent varier selon l'écran et l'imprimante.
 - Pour ton usage personnel : la revente et le partage du fichier ne sont pas autorisés.
 - Outil d'organisation personnelle, pas un soin. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.

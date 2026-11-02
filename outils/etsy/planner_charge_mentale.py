@@ -54,8 +54,9 @@ def onglets(d, actif):
     h0, ht, g = 330, 150, 18
     for k, (cle, lib) in enumerate(ONGLETS):
         y0 = h0 + k * (ht + g); fort, clair = ACC[cle]
-        x0 = W - 58 if cle == actif else W - 40
-        d.rounded_rectangle((x0, y0, W + 30, y0 + ht), 18, fill=fort if cle == actif else clair)
+        # 02/11/2026 : onglets entièrement dans la page (plus de bord perdu), voir mise_en_page_impression()
+        x0 = W - 70 if cle == actif else W - 52
+        d.rounded_rectangle((x0, y0, W - 8, y0 + ht), 18, fill=fort if cle == actif else clair)
         fo = GRAS(26)
         t = Image.new("RGBA", (ht, 40), (0, 0, 0, 0)); dt = ImageDraw.Draw(t)
         dt.text(((ht - dt.textlength(lib, font=fo)) / 2, 2), lib, font=fo,
@@ -261,6 +262,8 @@ def mode_emploi():
     paragraphe(d, M + 50, y + 40, "Ce planner est un outil d'organisation personnelle, pas un soin. Si tu te sens "
                "épuisé(e) depuis des semaines, si tu dors mal ou si tout te paraît trop lourd, parles-en à ton "
                "médecin. En cas d'idées noires : 3114, gratuit, 24 h/24.", TEXTE(36), W - 2 * M - 100)
+    paragraphe(d, M, y + 300, "Pour l'imprimer : A4, « taille réelle » (100 %), recto seul. Les marges laissent la place "
+               "aux trous du classeur à gauche et aux onglets à droite.", TEXTE(34), W - 2 * M, fill=(130, 116, 104))
     return img
 
 
@@ -472,9 +475,44 @@ EX_SEM = {"Lundi": ["Dossier : partie 1 (9 h)", "Appeler le dentiste", "10 min d
 
 
 def encre_econome(img):
-    """Version pour imprimer en noir : niveaux de gris, aplats éclaircis (moins d'encre)."""
-    g = img.convert("L").point(lambda v: int(255 - (255 - v) * 0.55) if v > 150 else v)
+    """Version pour imprimer en noir : niveaux de gris, aplats éclaircis (moins d'encre) ; depuis le 02/11/2026,
+    le fond papier (très clair) devient blanc pur, pour ne plus imprimer un voile gris sur toute la page."""
+    g = img.convert("L").point(lambda v: 255 if v >= 228 else (int(255 - (255 - v) * 0.55) if v > 150 else v))
     return g.convert("RGB")
+
+
+# Impression et classeur (02/11/2026, demande de l'utilisateur : « compatible pour l'impression et pour le classeur ») :
+# chaque page est réduite à 93,5 % et décalée vers la droite sur un fond papier pleine page. Résultat, en mm :
+# rien d'imprimé d'important à moins de 22 mm du bord gauche (trous d'un classeur A4 : centres à ~12 mm, Ø 6 mm),
+# ni à moins de 6 mm des autres bords (zone que les imprimantes de bureau n'impriment pas).
+ECHELLE, DX = 0.935, 53
+DY = (H - round(H * ECHELLE)) // 2
+ZONE_TROUS, ZONE_IMPRIMANTE = 173, 47  # px à 200 dpi : 22 mm et 6 mm
+
+
+def fond_page(couv=False):
+    img = texture()
+    return Image.blend(img, Image.new("RGB", (W, H), SAUGE_C), 0.65) if couv else img
+
+
+def mise_en_page_impression(img, couv=False):
+    petit = img.resize((round(W * ECHELLE), round(H * ECHELLE)), Image.LANCZOS)
+    masque = Image.new("L", petit.size, 0)
+    ImageDraw.Draw(masque).rectangle((22, 22, petit.width - 22, petit.height - 22), fill=255)
+    masque = masque.filter(ImageFilter.GaussianBlur(14))
+    fond = fond_page(couv)
+    fond.paste(petit, (DX, DY), masque)
+    return fond
+
+
+def controle_marges(img, couv=False):
+    """Vérifie que les bandes de bord ne contiennent que le fond papier (écart moyen par colonne/ligne faible)."""
+    import numpy as np
+    a = np.asarray(img, np.int16); b = np.asarray(fond_page(couv), np.int16)
+    ecart = np.abs(a - b).max(axis=2)
+    zones = {"gauche (trous)": ecart[:, :ZONE_TROUS], "droite": ecart[:, W - ZONE_IMPRIMANTE:],
+             "haut": ecart[:ZONE_IMPRIMANTE, :], "bas": ecart[H - ZONE_IMPRIMANTE:, :]}
+    return {k: int((z > 40).sum()) for k, z in zones.items()}
 
 
 def fabriquer():
@@ -492,6 +530,10 @@ def fabriquer():
     pages.append(rendez_vous(n)); n += 1
     pages.append(notes(n))
     assert len(pages) == NB_PAGES, len(pages)
+    pages = [mise_en_page_impression(p, couv=(k == 0)) for k, p in enumerate(pages)]
+    for k, p in enumerate(pages):
+        m = controle_marges(p, couv=(k == 0))
+        assert all(v == 0 for v in m.values()), (k + 1, m)
     pdf = os.path.join(SORTIE, "planner-alleger-charge-mentale-A4.pdf")
     pages[0].save(pdf, "PDF", resolution=200, save_all=True, append_images=pages[1:])
     nb = [encre_econome(p) for p in pages]

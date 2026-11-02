@@ -437,7 +437,7 @@ def photo_10_comment():
     d = ImageDraw.Draw(im)
     entete(d, "téléchargement immédiat", "Comment ça marche ?", "aucun envoi postal : tout est en PDF")
     etapes = [("1", "Achète", "le planner sur Etsy"), ("2", "Télécharge", "les 2 PDF, tout de suite"),
-              ("3", "Imprime", "en A4, ou annote sur tablette"), ("4", "Allège", "une semaine après l'autre")]
+              ("3", "Imprime", "en A4, perfore, range dans ton classeur"), ("4", "Allège", "une semaine après l'autre")]
     for i, (n, t, s) in enumerate(etapes):
         x = 450 + i * 700
         d.rounded_rectangle([x - 290, 700, x + 290, 1500], radius=50, fill=(252, 249, 243), outline=(228, 218, 202), width=3)
