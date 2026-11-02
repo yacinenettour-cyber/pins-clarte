@@ -17,7 +17,7 @@ PDF_C = os.path.join(DOSSIER, "planner-alleger-charge-mentale-A4.pdf")
 PDF_E = os.path.join(DOSSIER, "planner-alleger-charge-mentale-A4-econome-encre.pdf")
 PDF_T = os.path.join(DOSSIER, "planner-alleger-charge-mentale-tablette.pdf")
 PDF_K = os.path.join(DOSSIER, "kit-frigo-famille-A4.pdf")
-VERT = (40, 66, 54); PERS = [(184, 92, 64), (64, 104, 138), (110, 140, 100), (176, 140, 72)]
+PERS = [(184, 92, 64), (64, 104, 138), (110, 140, 100), (176, 140, 72)]
 CREME_TXT = (240, 232, 214)
 W, H = 3000, 2250
 
@@ -247,31 +247,31 @@ def enregistrer(im, nom):
 
 # ---------------------------------------------------------------- les 10 photos
 def photo_01_couverture():
-    im = fond((24, 40, 33), grain=5, vignette=0.18).convert("RGBA")
+    im = fond((244, 236, 226), vignette=0.12).convert("RGBA")
     d = ImageDraw.Draw(im)
     # éventail de pages derrière la couverture
     coller(im, page(28, 700), (1180, 1040), 3, eleve=0.6)
     coller(im, page(6, 700), (1370, 1090), 9, eleve=0.7)
     coller(im, page(7, 700), (1540, 1160), 15, eleve=0.8)
     coller(im, page(1, 940), (760, 1160), -3, eleve=1.2)
-    brin(d, 120, 2080, 520, -68, couleur=(150, 176, 140), couleur2=(118, 146, 112))
-    brin(d, 230, 2160, 420, -52, couleur=(118, 146, 112), couleur2=(150, 176, 140))
+    brin(d, 120, 2080, 520, -68)
+    brin(d, 230, 2160, 420, -52, couleur=(150, 170, 140), couleur2=SAUGE)
     crayon(im, 1350, 2030, 700, -12)
     d = ImageDraw.Draw(im)
     # panneau de droite
     x0 = 1990
-    d.text((x0, 260), "PLANNER EN FRANÇAIS", font=GRAS(48), fill=(226, 170, 150))
-    d.text((x0, 340), "Alléger sa", font=MAIN(140), fill=(232, 160, 140))
-    d.text((x0, 500), "charge", font=TITRE(176), fill=CREME_TXT)
-    d.text((x0, 690), "mentale", font=TITRE(176), fill=CREME_TXT)
-    d.text((x0, 940), "seul(e) et à deux", font=MAIN(96), fill=(170, 200, 160))
+    d.text((x0, 260), "PLANNER EN FRANÇAIS", font=GRAS(48), fill=ROSE)
+    d.text((x0, 340), "Alléger sa", font=MAIN(140), fill=ROSE)
+    d.text((x0, 500), "charge", font=TITRE(176), fill=BRUN)
+    d.text((x0, 690), "mentale", font=TITRE(176), fill=BRUN)
+    d.text((x0, 940), "seul(e) et à deux", font=MAIN(96), fill=(150, 72, 54))
     y = 1110
     for t, c in (("Volet couple en 2 couleurs", PERS[0]), ("Version tablette cliquable", PERS[1]),
-                 ("Bonus : kit frigo famille", (176, 140, 72)), ("Semaine d'exemple remplie", (110, 140, 100))):
+                 ("Bonus : kit frigo famille", (176, 140, 72)), ("Semaine d'exemple remplie", (140, 120, 160))):
         pastille(d, x0, y, t, GRAS(46), fond_c=c)
         y += 122
-    d.text((x0, y + 40), "32 pages A4  ·  3 versions", font=TEXTE(52), fill=CREME_TXT)
-    d.text((x0, y + 120), "prêt pour le classeur", font=TEXTE(52), fill=CREME_TXT)
+    d.text((x0, y + 40), "32 pages A4  ·  3 versions", font=TEXTE(52), fill=TXT)
+    d.text((x0, y + 120), "prêt pour le classeur", font=TEXTE(52), fill=TXT)
     return enregistrer(im, "fiche-01-couverture.jpg")
 
 

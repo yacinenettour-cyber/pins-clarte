@@ -20,7 +20,7 @@ SABLE = (190, 150, 100); SABLE_C = (242, 230, 210); BRUME = (110, 138, 160); BRU
 LAVANDE = (140, 120, 160); LAVANDE_C = (234, 228, 240)
 # 02/11/2026 (« se démarquer », accord « Fais 1 2 3 4 ») : couleur de marque forte pour la couverture, et une couleur
 # par personne dans le volet à deux (A = moi, B = l'autre), reprise dans le kit frigo (C, D pour les autres membres)
-VERT = (40, 66, 54)
+MARQUE = (150, 72, 54)  # terracotta brique (02/11/2026 : « Enlève le vert kaki »)
 PERS = [(184, 92, 64), (64, 104, 138), (110, 140, 100), (176, 140, 72)]
 # couleur de chaque section : (foncée, claire) — exemple, semaines 1 à 4, volet à deux
 ACC = {0: (SAUGE, SAUGE_C), 1: (SAUGE, SAUGE_C), 2: (ROSE, ROSE_C), 3: (SABLE, SABLE_C), 4: (BRUME, BRUME_C),
@@ -167,9 +167,9 @@ def brin(d, x, y, hauteur, sens, couleurs):
 
 
 def fond_couverture(fonce=True):
-    """Fond de couverture : vert profond de la marque (version couleur), sauge clair (version économe en encre)."""
+    """Fond de couverture : terracotta de la marque (version couleur), sauge clair (version économe en encre)."""
     img = texture()
-    return Image.blend(img, Image.new("RGB", (W, H), VERT), 0.9) if fonce else \
+    return Image.blend(img, Image.new("RGB", (W, H), MARQUE), 0.9) if fonce else \
         Image.blend(img, Image.new("RGB", (W, H), SAUGE_C), 0.65)
 
 
@@ -196,7 +196,7 @@ def couverture(fonce=True):
     zone = Image.new("L", (W, H), 0); ImageDraw.Draw(zone).rectangle((0, 0, W, ay0 + 900), fill=255)
     arche = Image.composite(Image.blend(arche, lav, 0.75), arche, zone.filter(ImageFilter.GaussianBlur(160)))
     ombre = masque.filter(ImageFilter.GaussianBlur(26))
-    img.paste((20, 34, 28) if fonce else (150, 160, 140), (14, 22), ombre.point(lambda v: v // 3))
+    img.paste((70, 32, 24) if fonce else (150, 160, 140), (14, 22), ombre.point(lambda v: v // 3))
     img.paste(arche, (0, 0), masque)
     d = ImageDraw.Draw(img)
     d.arc((ax0 + 30, ay0 + 30, ax1 - 30, ay0 + 2 * r - 30), 180, 360, fill=OR, width=3)
@@ -208,7 +208,7 @@ def couverture(fonce=True):
     brin(d, W / 2, ay0 + 720, 470, 1, (SAUGE, (120, 142, 116)))
     centre_esp(d, 1090, "PLANNER DE 4 SEMAINES", GRAS(34), ROSE)
     centre(d, 1160, "Alléger sa", MAIN(120), ROSE)
-    centre(d, 1300, "CHARGE MENTALE", TITRE(118), VERT if fonce else BRUN)
+    centre(d, 1300, "CHARGE MENTALE", TITRE(118), MARQUE if fonce else BRUN)
     ornement(d, 1475)
     y = 1530
     for t in ("Vider sa tête, trier, déléguer,", "et mieux partager à la maison."):

@@ -1365,6 +1365,6 @@ démarquer, pour le moment ça va pas du tout ». Fait (`outils/etsy/planner_cha
 - kit frigo famille (bonus, 3 pages, `kit-frigo-famille-A4.pdf`) ;
 - version tablette (`planner-alleger-charge-mentale-tablette.pdf`) : sommaire, onglets et bas de page cliquables
   (205 liens, pypdf, libre et gratuit) ;
-- couverture à la couleur de marque (vert profond) ; 12 photos de fiche, dessinées à partir des vraies pages (aucune IA,
+- couverture à la couleur de marque : d'abord vert profond, remplacé le jour même par un terracotta brique (« Enlève le vert kaki ») ; 12 photos de fiche, dessinées à partir des vraies pages (aucune IA,
   rien de payant) ; prix conseillé 9,90 € puis 11,90 €.
 L'utilisateur doit remplacer les fichiers et les photos sur Etsy à la main (aucun accès à Etsy depuis les sessions).

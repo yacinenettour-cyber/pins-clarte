@@ -1,8 +1,8 @@
 # Fiche Etsy : planner « Alléger sa charge mentale » (prête à coller)
 
 Version du 02/11/2026 (consigne de l'utilisateur « se démarquer de la concurrence », accord « Fais 1 2 3 4 ») : version
-couple en deux couleurs, version tablette cliquable, kit frigo pour la famille, couverture à la couleur de marque (vert
-profond), mise en page prête pour l'impression et le classeur.
+couple en deux couleurs, version tablette cliquable, kit frigo pour la famille, couverture à la couleur de marque (terracotta
+brique, le vert kaki a été retiré à la demande de l'utilisateur), mise en page prête pour l'impression et le classeur.
 
 **Fichiers à téléverser (produit numérique, 4 fichiers, tous sous 6 Mo ; Etsy en accepte 5 de 20 Mo au plus)** :
 1. `planner-alleger-charge-mentale-A4.pdf` : couleur, 32 pages, à imprimer ;
