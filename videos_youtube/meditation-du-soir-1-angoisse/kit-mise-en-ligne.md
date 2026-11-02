@@ -3,8 +3,9 @@
 Voix : Mila (ElevenLabs). Contrôles du 02/11 : aucune erreur, score de voix 0.99, 740/771 mots entendus exactement (écarts restants : homophones ou erreurs de Whisper, 8 phrases réécoutées avec Scribe : toutes justes), aucune parole hors des sous-titres. Durée totale 3 h (voix 18 min puis musique ; image fixe pendant la musique).
 
 **Téléchargement direct** (liens Composio, sans compte) :
-- Vidéo complète (815 Mo) : https://backend.composio.dev/api/v3/sl/Vux_zHK_QO
-- Shorts 1 à 5 : https://backend.composio.dev/api/v3/sl/LpRsaEVEiQ · https://backend.composio.dev/api/v3/sl/Dx5o0BXSES · https://backend.composio.dev/api/v3/sl/d9-_F36Jn4 · https://backend.composio.dev/api/v3/sl/UsFlpQ6Ys0 · https://backend.composio.dev/api/v3/sl/Rp7hCjhCqg
+- Vidéo complète (815 Mo) : https://backend.composio.dev/api/v3/sl/xcjuXeIigu
+- Shorts 1 à 5 : https://backend.composio.dev/api/v3/sl/DLGGbgz2Pl · https://backend.composio.dev/api/v3/sl/LqQHNfFgMv · https://backend.composio.dev/api/v3/sl/jU6HShrIGa · https://backend.composio.dev/api/v3/sl/lMh3XtFxIR · https://backend.composio.dev/api/v3/sl/pEqgdSEFds
+- (liens refaits le 02/11 à 18 h : les premiers ne marchaient plus ; vérifiés ouverts)
 
 Sinon : onglet Actions de GitHub, run du 02/11, fichier **videos-youtube** (zip de 931 Mo), téléchargeable jusqu'au 02/12 :
 https://github.com/yacinenettour-cyber/pins-clarte/actions/runs/41390548768
