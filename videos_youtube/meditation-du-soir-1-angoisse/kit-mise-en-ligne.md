@@ -74,6 +74,10 @@ Photos : Unsplash (Nan Zhou, Alexander Possingham, Marcus L, Przemyslaw Olczak, 
 ```
 Quand l'angoisse monte au moment de dormir, ralentis ton souffle : 4 temps pour inspirer, 6 pour souffler, un souffle petit et discret.
 
+💬 Et toi, à quelle heure l'angoisse monte-t-elle le plus ?
+
+🔔 Abonne-toi pour une méditation du soir chaque semaine : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1
+
 🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-du-soir-1-angoisse
 
 La méditation complète (18 min + 3 h de musique) est sur la chaîne.
@@ -85,6 +89,10 @@ La méditation complète (18 min + 3 h de musique) est sur la chaîne.
 - Description :
 ```
 Cherche où l'inquiétude se loge dans ton corps, nomme-la tout bas, puis reviens à ton souffle. Vouloir bloquer les pensées les fait souvent revenir plus fort.
+
+💬 Quand l'inquiétude arrive, où la sens-tu dans ton corps ?
+
+🔔 Abonne-toi pour une méditation du soir chaque semaine : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1
 
 🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-du-soir-1-angoisse
 
@@ -98,6 +106,10 @@ La méditation complète (18 min + 3 h de musique) est sur la chaîne.
 ```
 Un son lointain, puis un son proche. Le tissu du drap sous tes doigts, l'air sur ton visage, le poids du corps sur le matelas. Tu reviens ici, ce soir.
 
+💬 Quel son entends-tu en ce moment ?
+
+🔔 Abonne-toi pour une méditation du soir chaque semaine : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1
+
 🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-du-soir-1-angoisse
 
 La méditation complète (18 min + 3 h de musique) est sur la chaîne.
@@ -110,6 +122,10 @@ La méditation complète (18 min + 3 h de musique) est sur la chaîne.
 ```
 Une main sous le nombril, l'autre sur la poitrine. Quand tu inspires, la main du ventre se soulève un peu ; la poitrine bouge à peine.
 
+💬 Tu sens ta main bouger quand tu respires ? Dis-le en commentaire.
+
+🔔 Abonne-toi pour une méditation du soir chaque semaine : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1
+
 🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-du-soir-1-angoisse
 
 La méditation complète (18 min + 3 h de musique) est sur la chaîne.
@@ -121,6 +137,10 @@ La méditation complète (18 min + 3 h de musique) est sur la chaîne.
 - Description :
 ```
 Une chaleur douce dans les mains, puis les bras, les épaules, la nuque, le ventre, jusqu'au bout des pieds. Le corps devient lourd et chaud.
+
+💬 Où sens-tu la chaleur en premier : les mains ou les pieds ?
+
+🔔 Abonne-toi pour une méditation du soir chaque semaine : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1
 
 🌙 Mon guide gratuit pour les soirs où le cerveau refuse de dormir → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=short&utm_campaign=meditation-du-soir-1-angoisse
 

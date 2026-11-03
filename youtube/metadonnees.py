@@ -58,6 +58,20 @@ def description(plan, tl):
     return "\n\n".join(morceaux)
 
 
+def description_short(sh, vid=None):
+    """Description d'un Short (consigne du 03/11/2026 : « ajoute-les aux prochains Shorts », après l'analyse de la chaîne :
+    0 commentaire, 8 abonnés pour 2 737 vues de Shorts) : phrase du Short, question posée aux spectateurs (champ
+    « question » du Short, une question simple à laquelle on répond en une phrase), invitation à s'abonner, lien de la
+    méditation complète si on le connaît."""
+    morceaux = [sh.get("description", "").strip()]
+    if sh.get("question"):
+        morceaux.append("💬 " + sh["question"].strip())
+    morceaux.append(f"🔔 Abonne-toi pour une méditation du soir chaque semaine : https://www.youtube.com/{CHAINE}?sub_confirmation=1")
+    if vid:
+        morceaux.append(f"La méditation complète : https://youtu.be/{vid}")
+    return "\n\n".join(m for m in morceaux if m)
+
+
 def timeline(slug):
     """Timeline gardée dans le dossier du plan par la fabrication (le dossier de travail n'existe plus après)."""
     p = os.path.join(DEPOT, "videos_youtube", slug, "timeline.json")

@@ -79,6 +79,9 @@ Analyse complète : `docs/referencement/concurrence-youtube.md` (65 vidéos, 23 
 - ~~Alterner 10 minutes et 30 à 60 minutes.~~ Remplacé le 01/11 par le format long ci-dessous.
 - Shorts : description avec, en 2e ligne, le lien du guide gratuit quand le sujet est le sommeil ou les ruminations (fait le 01/11 pour les 3 Shorts ruminations).
 
+**Ajout du 03/11/2026 (accord « Oui ajoute-les aux prochains Shorts ») : question et abonnement dans chaque Short.**
+Constat (Analytics au 31/10) : 0 commentaire, 8 abonnés pour 2 737 vues de Shorts (0,3 %). À écrire dans `plan.json` pour chacun des 5 Shorts : un champ `"question"` (une question simple, liée au geste du Short, à laquelle on répond en une phrase, par exemple « Où sens-tu la chaleur en premier : les mains ou les pieds ? » ; jamais de question médicale ni intime). `metadonnees.description_short(sh, vid)` (utilisé par `publier.py`) ajoute alors, sous la phrase du Short, « 💬 <question> » puis « 🔔 Abonne-toi pour une méditation du soir chaque semaine : <lien d'abonnement> » ; le kit de mise en ligne (`kit-mise-en-ligne.md`) reprend ces deux lignes dans la description de chaque Short. Pas de lien vers la vidéo dans les descriptions des Shorts écrites à la main (consigne du 01/11). Appliqué à la Méditation du soir n° 1.
+
 ## Décisions du 02/11/2026 : Shorts qui accrochent, public de 55 ans et plus (accord de l'utilisateur « Applique 3 4 »)
 
 Chiffres (YouTube Analytics au 30/10, `docs/referencement/concurrence-youtube.md`) : les Shorts font 96 % des vues mais

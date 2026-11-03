@@ -557,7 +557,8 @@
   "description": "Quand l'angoisse monte au moment de dormir, ralentis ton souffle : 4 temps pour inspirer, 6 pour souffler, un souffle petit et discret.",
   "haut1": "Angoisse au lit ?",
   "haut2": "Ralentis ton souffle",
-  "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne"
+  "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
+  "question": "Et toi, à quelle heure l'angoisse monte-t-elle le plus ?"
  },
  "youtube": {
   "titre": "Méditation du soir n° 1 : calmer l'angoisse avant de dormir (18 min + 3 h de musique)",
@@ -605,7 +606,8 @@
    "haut2": "ton inquiétude",
    "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
    "titre": "Ne chasse pas l'angoisse du soir, observe-la 😴 #angoisse #méditation",
-   "description": "Cherche où l'inquiétude se loge dans ton corps, nomme-la tout bas, puis reviens à ton souffle. Vouloir bloquer les pensées les fait souvent revenir plus fort."
+   "description": "Cherche où l'inquiétude se loge dans ton corps, nomme-la tout bas, puis reviens à ton souffle. Vouloir bloquer les pensées les fait souvent revenir plus fort.",
+   "question": "Quand l'inquiétude arrive, où la sens-tu dans ton corps ?"
   },
   {
    "partie": "Revenir dans la pièce",
@@ -613,7 +615,8 @@
    "haut2": "dans la pièce",
    "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
    "titre": "Écoute un son lointain, puis le drap sous tes doigts 🌙 #angoisse #sommeil",
-   "description": "Un son lointain, puis un son proche. Le tissu du drap sous tes doigts, l'air sur ton visage, le poids du corps sur le matelas. Tu reviens ici, ce soir."
+   "description": "Un son lointain, puis un son proche. Le tissu du drap sous tes doigts, l'air sur ton visage, le poids du corps sur le matelas. Tu reviens ici, ce soir.",
+   "question": "Quel son entends-tu en ce moment ?"
   },
   {
    "partie": "Une main sur le ventre",
@@ -621,7 +624,8 @@
    "haut2": "sur le ventre",
    "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
    "titre": "Pose une main sur ton ventre et respire doucement 😴 #respiration #sommeil",
-   "description": "Une main sous le nombril, l'autre sur la poitrine. Quand tu inspires, la main du ventre se soulève un peu ; la poitrine bouge à peine."
+   "description": "Une main sous le nombril, l'autre sur la poitrine. Quand tu inspires, la main du ventre se soulève un peu ; la poitrine bouge à peine.",
+   "question": "Tu sens ta main bouger quand tu respires ? Dis-le en commentaire."
   },
   {
    "partie": "Le corps se réchauffe",
@@ -629,7 +633,8 @@
    "haut2": "des mains aux pieds",
    "bas1": "Méditation complète (18 min + 3 h de musique) sur la chaîne",
    "titre": "Imagine une chaleur qui descend des mains aux pieds 🌙 #relaxation #sommeil",
-   "description": "Une chaleur douce dans les mains, puis les bras, les épaules, la nuque, le ventre, jusqu'au bout des pieds. Le corps devient lourd et chaud."
+   "description": "Une chaleur douce dans les mains, puis les bras, les épaules, la nuque, le ventre, jusqu'au bout des pieds. Le corps devient lourd et chaud.",
+   "question": "Où sens-tu la chaleur en premier : les mains ou les pieds ?"
   }
  ],
  "artefact_run": 41494146347,

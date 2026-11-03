@@ -124,7 +124,7 @@ def envoyer(slug):
         try:
             d = executer("YOUTUBE_UPLOAD_VIDEO", {
                 "title": sh.get("titre", "Respire avec moi pour t'endormir #sommeil #respiration")[:100],
-                "description": sh.get("description", "") + f"\n\nLa méditation complète : https://youtu.be/{vid}\n"
+                "description": metadonnees.description_short(sh, vid) + "\n\n"
                                "Plus d'exercices gratuits : https://www.contactapaisement-mental.fr/",
                 "tags": y["tags"][:8], "categoryId": y.get("categorie", "26"), "privacyStatus": "unlisted",
                 "videoFilePath": fichier(os.path.join(trav, "short.mp4"), "YOUTUBE_UPLOAD_VIDEO")})
