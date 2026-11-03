@@ -1,14 +1,14 @@
 # Mise en ligne à la main : « Méditation du soir n° 1 : calmer l'angoisse avant de dormir (18 min + 3 h de musique) »
 
-Voix : Mila (ElevenLabs). Contrôles du 02/11 : aucune erreur, score de voix 0.99, 740/771 mots entendus exactement (écarts restants : homophones ou erreurs de Whisper, 8 phrases réécoutées avec Scribe : toutes justes), aucune parole hors des sous-titres. Durée totale 3 h (voix 18 min puis musique ; image fixe pendant la musique).
+Voix : Mila (ElevenLabs). Contrôles du 02/11 : aucune erreur, score de voix 0.99, 740/771 mots entendus exactement (écarts restants : homophones ou erreurs de Whisper, 8 phrases réécoutées avec Scribe : toutes justes), aucune parole hors des sous-titres. Durée totale 3 h (voix 18 min puis musique ; 9 photos de nuit pendant la musique, fondus de 8 s).
 
 **Téléchargement direct** (liens Composio, sans compte) :
-- Vidéo complète (815 Mo) : https://backend.composio.dev/api/v3/sl/xcjuXeIigu
-- Shorts 1 à 5 : https://backend.composio.dev/api/v3/sl/DLGGbgz2Pl · https://backend.composio.dev/api/v3/sl/LqQHNfFgMv · https://backend.composio.dev/api/v3/sl/jU6HShrIGa · https://backend.composio.dev/api/v3/sl/lMh3XtFxIR · https://backend.composio.dev/api/v3/sl/pEqgdSEFds
-- (liens refaits le 02/11 à 18 h : les premiers ne marchaient plus ; vérifiés ouverts)
+- Vidéo complète (950 Mo, version du 02/11 au soir avec 9 images pendant la musique) : https://backend.composio.dev/api/v3/sl/xrebRNxYk_
+- Shorts 1 à 5 : https://backend.composio.dev/api/v3/sl/YiwDYfT1g5 · https://backend.composio.dev/api/v3/sl/28Bx2RHVWp · https://backend.composio.dev/api/v3/sl/3osNtpe15V · https://backend.composio.dev/api/v3/sl/b4VHp695pM · https://backend.composio.dev/api/v3/sl/HEYD92Dprb
+- (liens refaits le 03/11 : ouverture vérifiée ; les anciens liens donnent l'ancienne version à image fixe)
 
-Sinon : onglet Actions de GitHub, run du 02/11, fichier **videos-youtube** (zip de 931 Mo), téléchargeable jusqu'au 02/12 :
-https://github.com/yacinenettour-cyber/pins-clarte/actions/runs/41390548768
+Sinon : onglet Actions de GitHub, run du 02/11 au soir, fichier **videos-youtube** (zip de 1,08 Go), téléchargeable jusqu'au 02/12 :
+https://github.com/yacinenettour-cyber/pins-clarte/actions/runs/41494146347
 
 ## Vidéo
 - Titre : Méditation du soir n° 1 : calmer l'angoisse avant de dormir (18 min + 3 h de musique)
