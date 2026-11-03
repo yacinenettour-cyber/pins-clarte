@@ -79,3 +79,12 @@ Source : API YouTube, 5 recherches en français limitées aux vidéos récentes 
 - Provenance : fil des Shorts 2 577, vidéos suggérées 86 (405 min), recherche YouTube 65, sites extérieurs 13.
 - Public : 65 ans et plus 49 %, 55-64 ans 18 % ; France 63 %, puis Belgique, Algérie, La Réunion, Côte d'Ivoire, Maroc.
 - Par vidéo (01/10 → 30/10) : gLVj1Q4guCg 636, xqYk9Wg9bfg 622, SNPAts9BsQ0 555 (Shorts ruminations) ; fyepx9EElDQ 434, TlPoYq8bogM 247, BFbPfBX7t9M 230 (Shorts Jacobson) ; PbuSSZlDu1c 61, SCUS59y5kNs 43.
+
+## Bilan de la chaîne au 03/11/2026 (YouTube Analytics, données du 20/10 au 31/10 ; la vidéo du 01/11 et ses Shorts ne sont pas encore comptés)
+
+- Total : 3 021 vues, 886 min regardées, 8 abonnés gagnés / 1 perdu, 35 j'aime, 0 commentaire, 6 partages. Vues par jour : 382 (28/10), 806 (29/10), 1 569 (30/10), puis 193 (31/10, journée peut-être incomplète) : l'effet d'une publication groupée retombe en 2 jours.
+- Provenance : fil des Shorts 2 737 vues (90 %) mais 205 min ; vidéos suggérées 105 vues pour 577 min ; recherche YouTube 73 vues, sur des termes sans rapport (« gad elmaleh 2026 », « sifflement »…) ; sites extérieurs 13.
+- Shorts : 12 à 20 s regardées en moyenne (28 à 33 % ; meilleur : Jacobson BFbPfBX7t9M à 49 %). Vidéos longues : Jacobson 1 h = 81 vues, 6 min 10 s (10 %) ; Ruminations 30 min = 45 vues, 4 min 25 s (15 %).
+- Public : 65 ans et plus 48,5 %, 55-64 ans 18 %, 45-54 ans 15,5 %, 35-44 ans 17,7 %. Appareils : mobile 2 457 vues (425 min, 0,17 min par vue), tablette 330, ordinateur 154 (270 min), télévision 42 vues pour 144 min (3,4 min par vue).
+- Abonnement : 99,7 % des vues viennent de non-abonnés ; 8 abonnés pour 2 737 vues de Shorts (0,3 %).
+- Quota de l'API de données épuisé : totaux en direct non relevés.
