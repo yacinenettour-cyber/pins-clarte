@@ -486,5 +486,22 @@
   "pin_id": "600175087890483269",
   "short": true,
   "source": "https://youtu.be/PbuSSZlDu1c"
+ },
+ {
+  "date": "2026-11-03T17:37+00:00",
+  "id": "systemenerveux-odeur-repere",
+  "titre": "Une odeur repère pour calmer le stress en 10 secondes",
+  "video": "videopins/videopin-20261103-173615.mp4",
+  "cover": "videopins/videopin-20261103-173615.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890500727",
+  "photos": [
+   "fonds/pexels-29558177.jpg",
+   "fonds/pexels-29558177.jpg",
+   "fonds/pexels-32097013.jpg",
+   "fonds/pexels-32097013.jpg",
+   "fonds/pexels-33649865.jpg",
+   "fonds/pexels-33649865.jpg"
+  ]
  }
 ]
