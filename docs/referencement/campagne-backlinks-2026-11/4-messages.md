@@ -51,3 +51,7 @@ Limite de la routine : 5 envois par jour, relances comprises. Envoyées : Univer
 filtre Mailinblack, premier message jamais remis), Université de Fribourg, CHU de Montpellier, Santé Québec
 Saguenay–Lac-Saint-Jean, La Clé des champs. Restent dues (à partir du 03/11) : Unicaen, Acouphènes Québec, Santé Mentale
 France, FNEPE, SMTI 82, Coup de Blouse, MDA 84, Fontenay-aux-Roses.
+
+### Relances envoyées le 03/11 (dans le même fil, envoi confirmé dans « Envoyés »)
+
+Limite : 10 envois par jour ouvré, relances comprises. Envoyées : Même Plus Peur, Coup de Blouse, MDA 84, Acouphènes Québec, FNEPE, SMTI 82, Santé Mentale France, Unicaen, Fontenay-aux-Roses (9 au total). Aucun nouveau contact aujourd'hui : aucune cible de la liste à vérifier n'a été revalidée (audience, adresse affichée), mieux vaut ne rien envoyer. Aucune autre relance prévue pour ces 8 sites.

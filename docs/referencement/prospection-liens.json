@@ -389,7 +389,8 @@
    "domaine": "sses-normandie.unicaen.fr",
    "audience": "B : sous-domaine d'un domaine du top Tranco (unicaen.fr, rang 20386) ; trafic propre inconnu",
    "date_envoi": "2026-10-22",
-   "thread_id": "1a16428df75ac243"
+   "thread_id": "1a16428df75ac243",
+   "relance": "2026-11-03"
   },
   {
    "site": "DOCcitanie (centres de documentation santé d'Occitanie)",
@@ -544,7 +545,8 @@
    "statut": "envoye",
    "lot": "recherche 2 du 12/10",
    "date_envoi": "2026-10-22",
-   "thread_id": "1a1644cc1a4431c6"
+   "thread_id": "1a1644cc1a4431c6",
+   "relance": "2026-11-03"
   },
   {
    "site": "AFA Crohn RCH France",
@@ -761,7 +763,8 @@
    "statut": "envoye",
    "lot": "recherche 2 du 12/10",
    "date_envoi": "2026-10-22",
-   "thread_id": "1a1644cc000c2aaa"
+   "thread_id": "1a1644cc000c2aaa",
+   "relance": "2026-11-03"
   },
   {
    "site": "Semaines d'information sur la santé mentale (SISM)",
@@ -1105,7 +1108,8 @@
    "statut": "envoye",
    "lot": "recherche 2 du 12/10",
    "date_envoi": "2026-10-22",
-   "thread_id": "1a1644cc13c8d428"
+   "thread_id": "1a1644cc13c8d428",
+   "relance": "2026-11-03"
   },
   {
    "site": "Les Petits Plus Zen — podcast de Séverine Feiss",
@@ -1660,7 +1664,8 @@
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : burn-out / santé au travail. ",
    "date_envoi": "2026-10-22",
-   "thread_id": "1a16428de40dd468"
+   "thread_id": "1a16428de40dd468",
+   "relance": "2026-11-03"
   },
   {
    "site": "Présanse Pays de la Loire (fédération des services de santé au travail)",
@@ -1698,7 +1703,8 @@
    "date_envoi": "2026-10-21",
    "thread_id": "1a15fb24e7ce2edb",
    "sujet": "Votre page « J'ai besoin d'aide » : une page sur les signes du burn-out",
-   "type": "lien"
+   "type": "lien",
+   "relance": "2026-11-03"
   },
   {
    "site": "Question Santé ASBL",
@@ -1741,7 +1747,8 @@
    "date_envoi": "2026-10-21",
    "thread_id": "1a15fb24e79f90ae",
    "sujet": "Vos « Liens utiles » : des audios de respiration gratuits",
-   "type": "lien"
+   "type": "lien",
+   "relance": "2026-11-03"
   },
   {
    "site": "Être parents en Vendée (dossier charge mentale)",
@@ -1777,7 +1784,8 @@
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : collectivités / CLSM. Adresse d'accueil générale : demander de transmettre à la coordination du CLSM.",
    "date_envoi": "2026-10-22",
-   "thread_id": "1a16428de680ada6"
+   "thread_id": "1a16428de680ada6",
+   "relance": "2026-11-03"
   },
   {
    "site": "Union étudiante du Québec – Santé psychologique étudiante",
