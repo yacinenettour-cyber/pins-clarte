@@ -14,3 +14,8 @@ Les 5 clés (tout vient de l'article) :
 5. « Manger mou » : pâtes, omelette ou soupe quelques jours quand ça tire.
 Bandeau : « Sauvegarde cette épingle pour les soirs où la mâchoire tire » ; titre1 « Mâchoire serrée », titre2 « 5 clés pour relâcher ».
 Rappel dans la description : douleur qui dure, mâchoire bloquée ou maux de tête forts = dentiste ou médecin (comme l'article).
+
+## Mise à jour du 03/11/2026 : problème de sujet, NE PAS publier tel quel
+`pins.json` contient déjà deux épingles sur la mâchoire : « Bruxisme : 3 signes que c'est ton stress qui serre ta mâchoire » (publiée) et « Mâchoire crispée au travail : 3 gestes pour la relâcher » (en banque, non publiée). Les titres passent `anti_doublons.py` mais le sujet est le même : une 3e épingle serait un doublon de sujet (règle 1 du CLAUDE.md).
+Deux issues : (a) remplacer l'épingle « 3 gestes » non publiée par celle-ci (5 clés illustrées, plus riche) après accord de l'utilisateur ; (b) garder ces images pour un sujet voisin sans doublon. Ne rien publier avant cette décision.
+Vignette v5 « soupe » faite avec ElevenLabs (Recraft V4.1 Flash, 48 crédits ≈ 1 centime) : `v5-soupe-elevenlabs.webp`, aquarelle cohérente avec les 4 autres.
