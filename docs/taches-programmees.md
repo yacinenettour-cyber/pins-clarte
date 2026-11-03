@@ -97,3 +97,7 @@ Suivi hebdomadaire des positions Google du site www.contactapaisement-mental.fr.
 6) Ajouter une ligne au tableau des relevés de mots-cles.md, committer (dont site/outils/dates-contenu.json) et pousser sur main (fetch + merge origin/main avant).
 7) Compte rendu final en français, 4 à 6 lignes : progrès, recherches entrées dans les 3 premières pages, pages améliorées, une seule action utile de l'utilisateur s'il y en a une.
 ```
+
+## Modèle des tâches (consigne de l'utilisateur du 03/11/2026 : « Utilise Opus pour les tâches qui nécessitent du raisonnement »)
+
+Les tâches programmées tournent dans la session de l'utilisateur et gardent son modèle (le réglage de modèle d'une tâche n'agit que pour les tâches qui ouvrent une session neuve). La tâche « Articles : 5 par semaine » confie donc tout son travail à un sous-agent Opus (outil Agent, `model: "opus"`), consigne ajoutée en tête de son texte. À étendre, si l'utilisateur le demande, à : journée d'amélioration du vendredi, suivi hebdomadaire SEO, retouche mensuelle SEO, vidéo YouTube hebdomadaire. Prospection, épingles illustrées et suivis chiffrés : restent dans la session.
