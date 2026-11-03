@@ -1,4 +1,4 @@
-# Relance « Même Plus Peur » (préparée le 03/11/2026, NON ENVOYÉE : à valider par l'utilisateur)
+# Relance « Même Plus Peur » (préparée le 03/11/2026, ENVOYÉE le 03/11/2026 avec l'accord de l'utilisateur, message 1a19fb825218a79d)
 
 Destinataire : clement.memepluspeur@gmail.com (podcast Même Plus Peur) ; même fil Gmail 1a1315989c5c8099 ; relance unique, rien de demandé en échange.
 Contexte : le 13/10, Clément a répondu qu'il aurait préféré un témoignage de vive voix, comprend le choix de l'écrit, propose de garder contact s'il trouve une façon d'utiliser un témoignage écrit et de partager le contact d'un psychologue du sommeil. Trois semaines sans nouvelle.
