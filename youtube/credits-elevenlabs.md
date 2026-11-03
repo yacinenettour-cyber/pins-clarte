@@ -1,6 +1,6 @@
 # Registre des crédits ElevenLabs (abonnement Starter, 30 000 crédits par mois, cycle commencé le 30/10/2026)
 
-Décision de l'utilisateur du 03/11/2026 : « Je veux des images de qualité, n'utilise plus Recraft. Tu as 7 000 crédits par mois pour les images sur ElevenLabs. » Les voix passent AVANT les images. Je ne peux pas lire le solde réel : ce registre est tenu à la main, à chaque génération. **Vérifier le solde dans ElevenLabs avant chaque vidéo du dimanche.**
+Décision de l'utilisateur du 03/11/2026 : « Je veux des images de qualité, n'utilise plus Recraft. Tu as 7 000 crédits par mois pour les images sur ElevenLabs. » ; **plafond final fixé à 4 000 crédits par mois** (« Ok, utilise 4000 alors ») après l'alerte sur la marge des voix. Les voix passent AVANT les images. Je ne peux pas lire le solde réel : ce registre est tenu à la main, à chaque génération. **Vérifier le solde dans ElevenLabs avant chaque vidéo du dimanche.**
 
 ## Coût d'une image (estimation `estimate_only`, 1 image, réglages par défaut 1K, qualité haute)
 | Modèle | Crédits |
@@ -23,4 +23,9 @@ Décision de l'utilisateur du 03/11/2026 : « Je veux des images de qualité, n'
 | **Total estimé** | | **≈ 6 500** |
 
 Prévu jusqu'au renouvellement (≈ 30/11) : 4 vidéos (08, 15, 22 et 29/11) à ≈ 4 060 crédits de voix = ≈ 16 240.
-**Attention** : 30 000 − 6 500 − 7 000 (images) − 16 240 (voix) = ≈ 260 de marge. Si les 7 000 crédits d'images sont pris sur les mêmes 30 000, les scripts doivent rester sous ≈ 4 000 caractères et il ne faut refaire aucune phrase.
+**Marge avec le plafond de 4 000** : 30 000 − 6 500 − 4 000 (images) − 16 240 (voix) = ≈ 3 260 de réserve pour refaire des phrases ou une vidéo plus longue. 4 000 crédits = ≈ 21 images à 190, soit 3 épingles illustrées complètes (6 images chacune = 1 140) ; compter les images déjà générées dans le tableau ci-dessous et s'arrêter à 4 000 sur le cycle (renouvellement vers le 30/11).
+
+## Images générées dans le cycle (plafond 4 000)
+| Date | Image | Modèle | Crédits | Cumul |
+|---|---|---|---|---|
+| 03/11 | vignette soupe (mâchoire serrée) | recraft-v4.1-flash (avant l'exclusion) | 48 | 48 |
