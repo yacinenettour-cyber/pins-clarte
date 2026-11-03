@@ -4670,17 +4670,21 @@
   "theme": "blocagemental"
  },
  {
-  "titre": "Mâchoire crispée au travail : 3 gestes pour la relâcher",
-  "texte_image": "3 gestes pour relâcher une mâchoire serrée",
+  "titre": "Mâchoire serrée : 5 clés qui soulagent",
+  "texte_image": "5 clés pour relâcher",
   "points_image": [
-   "Desserrer les dents, lèvres fermées, plusieurs fois par jour",
-   "Masser doucement les muscles de la mâchoire",
-   "Froid ou chaud dans un torchon quand elle fait mal"
+   "Dents décollées",
+   "Un rappel dans la journée",
+   "Chaud ou froid",
+   "Massage doux",
+   "Manger mou"
   ],
-  "description": "Dents serrées sans t'en rendre compte ? C'est fréquent quand le stress monte : environ une personne sur quatre le fait dans la journée. Premier geste : en dehors des repas, les dents ne se touchent pas. Desserre-les, lèvres fermées. Si la mâchoire fait mal, massage doux, et froid ou chaud dans un torchon. Si ce stress te suit au lit, le guide gratuit aide à calmer le mental du soir. #somatisation #machoire #stress #bruxisme #tension #detente #bienetre #calme",
+  "description": "Dents serrées sans t'en rendre compte ? Sauve ces 5 clés : dents décollées, lèvres fermées, un rappel au feu rouge ou à chaque notification, de la chaleur ou du froid dans un torchon, un massage doux, et des repas mous quelques jours quand ça tire. Si la douleur dure ou si la mâchoire se bloque, parles-en à ton dentiste ou à ton médecin. Si ce stress te suit au lit, le guide gratuit aide à calmer le mental du soir. #somatisation #machoire #stress #bruxisme #tension #detente #bienetre #calme",
   "theme": "somatisation",
+  "image_prete": "images_cles/machoire-serree-5-cles.jpg",
+  "format": "cles",
   "article": "machoire-serree-stress",
-  "description_article": "Dents serrées sans t'en rendre compte ? C'est fréquent quand le stress monte : environ une personne sur quatre le fait dans la journée. Premier geste : en dehors des repas, les dents ne se touchent pas. Desserre-les, lèvres fermées. Si la mâchoire fait mal, massage doux, et froid ou chaud dans un torchon. Pourquoi elle se crispe, et quand voir un dentiste : article complet en lien. #somatisation #machoire #stress #bruxisme #tension #detente #bienetre #calme"
+  "description_article": "Dents serrées sans t'en rendre compte ? Sauve ces 5 clés : dents décollées, lèvres fermées, un rappel au feu rouge ou à chaque notification, de la chaleur ou du froid dans un torchon, un massage doux, et des repas mous quelques jours quand ça tire. Si la douleur dure ou si la mâchoire se bloque, parles-en à ton dentiste ou à ton médecin. Pourquoi elle se crispe, et quand consulter : article complet en lien. #somatisation #machoire #stress #bruxisme #tension #detente #bienetre #calme"
  },
  {
   "titre": "Stress dans les hanches : 3 exercices pour le libérer",
