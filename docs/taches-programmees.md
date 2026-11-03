@@ -31,7 +31,7 @@ Prospection quotidienne de liens externes, autorisée par l'utilisateur le 12/10
    - Si une réponse demande une action (question, accord, demande de modification), ne rien répondre seul : résumer et proposer une réponse dans le compte rendu final.
    - Si un lien est annoncé, le vérifier sur la page et noter lien_obtenu.
 3) Relance unique, courte et polie, dans le même fil, pour les e-mails envoyés depuis 10 jours ou plus sans réponse. Seulement pour les sites d'audience A ou B ; jamais deux relances.
-4) Compléter jusqu'à 5 envois au total ce jour, relances comprises, avec les prospects a_verifier : audience A en priorité, puis B. Jamais un site d'audience C.
+4) Compléter jusqu'à 10 envois au total ce jour, relances comprises (consigne de l'utilisateur du 03/11/2026 « Oui » à 10 par jour ouvré ; la tâche programmée a été mise à jour), avec les prospects a_verifier : audience A en priorité, puis B. Jamais un site d'audience C.
    - Nouveau site : mesurer son audience avec le classement Tranco top 1 million (tranco-list.eu).
    - Vérifier sur le site lui-même (curl, au besoin via l'atelier Composio si le réseau bloque) que la page existe, que le site est actif et que l'adresse e-mail y est affichée ; sinon statut formulaire.
    - Tester les liens sortants de la page visée ; un lien vraiment mort (404, 410, domaine inexistant, confirmé par un second essai) est signalé en premier dans l'e-mail comme un service rendu. Noter les liens cassés dans le registre.
