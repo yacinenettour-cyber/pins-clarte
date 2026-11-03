@@ -2412,5 +2412,16 @@
   "pin_id": "600175087890473959",
   "md5": "5891cd1d488448ca827a5899aa7e4b28",
   "lien": "article:charge-mentale"
+ },
+ {
+  "date": "2026-11-03T06:08+00:00",
+  "titre": "Mâchoire serrée : 5 clés qui soulagent",
+  "image": "images/pin-20261103-060758.jpg",
+  "fond": "prete:images_cles/machoire-serree-5-cles.jpg",
+  "theme": "somatisation",
+  "design": "cles",
+  "pin_id": "600175087890492515",
+  "md5": "9185fc05a846da197be9f932ce3e428a",
+  "lien": "article:machoire-serree-stress"
  }
 ]
