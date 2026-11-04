@@ -893,6 +893,7 @@ jobs:
               "machoire-serree-stress": "Mâchoire serrée et stress",
               "fatigue-nerveuse": "Fatigue nerveuse : symptômes et causes",
               "reveil-fatigue-le-matin": "Réveil fatigué le matin : causes",
+              "ecran-avant-de-dormir": "Écran avant de dormir : quel effet ?",
           }
           # 0,4 → 0,6 le 12/10/2026 (audit des impressions, accord de l'utilisateur) : 132 des 150 épingles
           # avec lien menaient à la même page de capture d'environ 30 mots, alors que Pinterest demande une

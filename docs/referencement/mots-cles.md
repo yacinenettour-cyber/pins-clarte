@@ -29,6 +29,7 @@ des grands médias santé : viser d'abord les variantes.
 | /machoire-serree-stress/ | mâchoire serrée stress | mâchoire serrée stress remède, mâchoire crispée, contractée, bloquée, serrer les dents stress, bruxisme stress (suggestions Google du 15/10) | faible à moyenne (longue traîne) |
 | /fatigue-nerveuse/ | fatigue nerveuse symptômes | fatigue nerveuse, coup de barre, fatigue mentale (suggestions Google du 30/10) | moyenne |
 | /reveil-fatigue-le-matin/ | réveil fatigué le matin | réveil fatigué, réveil toujours fatigué, réveil fatigué et mal de tête, réveil fatigue chronique (suggestions Google du 04/11) | moyenne |
+| /ecran-avant-de-dormir/ | écran avant de dormir adulte | écran avant de dormir, téléphone avant de dormir, impact écran avant de dormir, écran bleu avant de dormir, mode nuit (suggestions Google du 04/11) | moyenne à élevée |
 | /calmer-son-systeme-nerveux/ | calmer son système nerveux | réguler son système nerveux, calmer son système nerveux rapidement, tension nerveuse que faire, système nerveux en mode survie (FAQ du 19/10) | moyenne |
 | /nerf-vague/ | nerf vague | activer le nerf vague naturellement | élevée (mot court) |
 | /charge-mentale/ | charge mentale | signes de charge mentale, alléger sa charge mentale | élevée (mot court) |

@@ -1410,3 +1410,6 @@ Rattrapage demandé par l'utilisateur (« on publie les articles que tu devais p
 puis les sujets suivants de la liste. Correction au passage dans `construire.py` : l'encadré de rappel du guide
 portait le même nom accessible que l'encadré du guide (« Guide gratuit », violation axe `landmark-unique` sur tous les
 articles avec guide) ; il s'appelle désormais « Rappel : guide gratuit ».
+Deuxième article du rattrapage : « Écran avant de dormir : ce qu'il change vraiment sur ton sommeil » (`/ecran-avant-de-dormir/`,
+8 sources : Anses 2019 et 7 études vérifiées dans PubMed, dont Harvard 2015, Bâle 2023 et l'essai sur le mode nuit ;
+photo Unsplash inédite de Jakub Żerdzicki), relié depuis « Routine du soir » et « Procrastination du coucher ».

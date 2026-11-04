@@ -115,6 +115,8 @@ L'Assurance Maladie recommande d'arrêter les écrans idéalement une heure avan
 L'Assurance Maladie déconseille les grasses matinées, qui décalent le rythme de sommeil [6]. Elle recommande plutôt de garder des horaires de coucher et de lever réguliers, même le week-end [6]. Une courte sieste de 5 à 20 minutes en début d'après-midi peut aider à compenser une nuit trop courte [6].
 
 ## Pour aller plus loin
+Si c'est surtout le téléphone qui te retient le soir, l'article sur l'[écran avant de dormir](/ecran-avant-de-dormir/) explique ce que la lumière et les messages changent à ton sommeil.
+
 Si, une fois au lit, ce sont tes pensées qui prennent le relais, le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à passer ce cap. Tu y trouveras une routine anti-rumination à faire directement au lit, des exercices simples pour calmer le mental le soir et un calendrier de 30 jours pour installer ces gestes pas à pas, sans aucun matériel. C'est un appui concret quand le coucher est devenu un moment que tu redoutes.
 
 ## Sources

@@ -99,7 +99,7 @@ Environ 1 à 2 heures avant ton heure de coucher. C'est le moment de baisser la 
 Oui, si elle tombe au bon moment. D'après la méta-analyse de l'Université du Texas, une eau à 40-42,5 °C, 1 à 2 heures avant le coucher, raccourcit le temps d'endormissement, même pour 10 minutes de douche, sans doute grâce au refroidissement du corps qui suit [5]. Un bain très chaud juste avant d'aller au lit risque au contraire de gêner l'endormissement [1].
 
 ### Combien de temps avant de dormir faut-il arrêter les écrans ?
-1 à 2 heures avant le coucher pour l'INSV, idéalement une heure avant pour l'Assurance maladie [1][4]. La lumière des écrans, riche en bleu, retarde l'endormissement [3]. Le plus simple, c'est encore de laisser le téléphone charger dans une autre pièce.
+1 à 2 heures avant le coucher pour l'INSV, idéalement une heure avant pour l'Assurance maladie [1][4]. La lumière des écrans, riche en bleu, retarde l'endormissement [3]. Le plus simple, c'est encore de laisser le téléphone charger dans une autre pièce. Ce que l'écran change vraiment, entre la lumière et ce qu'on y fait, est détaillé dans l'article sur l'[écran avant de dormir](/ecran-avant-de-dormir/).
 
 ### Quelle est la bonne température pour la chambre ?
 Entre 18 et 20 °C selon les recommandations françaises, dans une pièce sombre, calme et aérée tous les jours [1][4]. Une chambre fraîche va dans le sens de ton corps, dont la température baisse naturellement la nuit [3].
