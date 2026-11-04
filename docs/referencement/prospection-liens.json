@@ -2633,6 +2633,126 @@
    "type": "ressources",
    "audience": "C thématique",
    "remarque": "04/11 : article du 11/12/2025 mais aucune adresse e-mail affichée (page de rendez-vous sans adresse) ; formulaire seulement."
+  },
+  {
+   "site": "Emilie Berteau, sophrologue (Fouqueville)",
+   "domaine": "emilie-berteau.fr",
+   "page_cible": "https://emilie-berteau.fr/blog/",
+   "email": "emilieberteau.sophrologue@gmail.com",
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : dernier article du blog le 07/04/2025 (plus de 12 mois), critère b non rempli. À reconsidérer si le blog reprend."
+  },
+  {
+   "site": "Stéphanie Charpentier, sophrologue (Villennes-sur-Seine)",
+   "domaine": "sophrostef.fr",
+   "page_cible": "https://sophrostef.fr/blog/",
+   "email": "stef.charpentier@gmail.com",
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : dernier article du blog le 04/09/2025 (plus de 12 mois). À reconsidérer si le blog reprend."
+  },
+  {
+   "site": "Raphaëlle Daoust, sophrologue (Latresne)",
+   "domaine": "raphaelle-sophrologue.fr",
+   "page_cible": "https://raphaelle-sophrologue.fr/exercices-sophrologie/",
+   "email": null,
+   "statut": "formulaire",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : page exercices stress et sommeil mise à jour le 24/02/2026, mais aucune adresse e-mail affichée, formulaire seulement."
+  },
+  {
+   "site": "Christine Friderich, sophrologue (Clichy)",
+   "domaine": "sophrologie-cfriderich.fr",
+   "page_cible": "https://sophrologie-cfriderich.fr/",
+   "email": "contact@sophrologie-cfriderich.fr",
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : aucun blog ni article, site vitrine (critère b non rempli)."
+  },
+  {
+   "site": "Hugo Rossignol, ostéopathe (Vannes)",
+   "domaine": "osteo.bzh",
+   "page_cible": "https://osteo.bzh/meditations-guidees/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écarté : ostéopathe, page de méditations de 2020 modifiée en 2024, aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Sandrine Delrieu, sophrologue",
+   "domaine": "sandrinedelrieu.com",
+   "page_cible": "https://sandrinedelrieu.com/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : vend ses propres audios (pack de 17 audios), aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Corinne Lasné, naturopathe (Brest)",
+   "domaine": "naturopathe-coach-nutrition.fr",
+   "page_cible": "https://www.naturopathe-coach-nutrition.fr/blog/gestion-du-stress-et-anxiete",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : dernier article avril 2025, aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Patricia Marchal, sophrologue (Paris)",
+   "domaine": "patriciamarchalsophrologue.com",
+   "page_cible": "https://patriciamarchalsophrologue.com/blog",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : dernier article du blog le 30/08/2024, aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Anjayati (yoga nidra, Emmanuelle Mendil)",
+   "domaine": "anjayati.com",
+   "page_cible": "https://anjayati.com/accueil/particuliers/yoga-meditation-relaxation-particuliers/relaxation-par-le-yoga-nidra-origine-et-bienfaits/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : séances payantes et boutique d'encens, aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Flow Life (studio de yoga en ligne)",
+   "domaine": "flow-life.fr",
+   "page_cible": "https://flow-life.fr/yoga-nidra-gratuit/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écarté : propose déjà son propre yoga nidra gratuit, aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Yoga Vision (Paris 11e)",
+   "domaine": "yoga-vision.org",
+   "page_cible": "https://www.yoga-vision.org/blog",
+   "email": "contact@yoga-vision.org",
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écarté : studio de yoga ayurvéda (blog actif mais thèmes éloignés : Agni, santé de la femme), e-mail vu seulement dans un extrait de recherche, non confirmé sur le site."
+  },
+  {
+   "site": "Évolution en Conscience (Chantal d'Aboville)",
+   "domaine": "evolutionenconscience.com",
+   "page_cible": "https://evolutionenconscience.com/qui-je-suis/",
+   "email": "contact@evolutionenconscience.com",
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : écartée : coaching holistique et spirituel, thème éloigné du stress et du sommeil, aucun blog daté trouvé."
   }
  ],
  "passages": [
@@ -2715,6 +2835,10 @@
   {
    "date": "2026-11-04",
    "resultat": "Prospection « ressources » : 3 nouveaux envois (Corinne Vermillard, Chloé Turgis, Stéphanie Hausknecht), e-mails vérifiés sur les sites, textes de 100 à 120 mots sans formule interdite, tous vérifiés SENT par Composio (le connecteur Gmail direct manque toujours d'une permission). Florence Salat (Marseille) et Anne-Chantal Rocher (Le Chesnay) : formulaire seulement, sans e-mail affiché. 3 envois sur 10 : peu de cibles valides trouvées à la première recherche (sites sans e-mail affiché ou déjà contactés)."
+  },
+  {
+   "date": "2026-11-04",
+   "resultat": "Deuxième recherche « ressources » (sophrologues, relaxologues, yoga nidra, naturopathes, 3 recherches web et 14 sites vérifiés) : aucun nouveau prospect valide, donc total du jour limité à 3 envois sur 10. 12 sites enregistrés (écartés ou formulaire) pour ne pas les réétudier : aucune adresse e-mail affichée, blog inactif depuis plus de 12 mois, séances payantes ou thème éloigné. On préfère ne pas baisser les critères (e-mail affiché sur le site, blog actif sur 12 mois, thème stress/sommeil)."
   }
  ]
 }
