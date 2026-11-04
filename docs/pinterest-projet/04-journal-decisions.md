@@ -1413,3 +1413,8 @@ articles avec guide) ; il s'appelle désormais « Rappel : guide gratuit ».
 Deuxième article du rattrapage : « Écran avant de dormir : ce qu'il change vraiment sur ton sommeil » (`/ecran-avant-de-dormir/`,
 8 sources : Anses 2019 et 7 études vérifiées dans PubMed, dont Harvard 2015, Bâle 2023 et l'essai sur le mode nuit ;
 photo Unsplash inédite de Jakub Żerdzicki), relié depuis « Routine du soir » et « Procrastination du coucher ».
+Troisième article du rattrapage : « Gestion des émotions chez l'adulte : ce qui marche vraiment » (`/gestion-des-emotions/`,
+5 études vérifiées dans PubMed : Sheffield 2012, UCLA 2007, Stanford 2003, Yale 2010, Nebraska 2021 ; l'étude de Yoo et al.
+2007 sur le sommeil et l'amygdale a été écartée, son résumé et ses affiliations n'étant pas lisibles ; photo Unsplash
+inédite de Happy & Spice), reliée depuis « Calmer son système nerveux » et « Charge mentale ». Les trois créneaux
+manqués (1er au 3/11) sont rattrapés le 04/11 ; la tâche du soir publiera le sujet suivant de la liste.

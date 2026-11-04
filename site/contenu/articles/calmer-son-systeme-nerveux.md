@@ -155,6 +155,8 @@ Une tension nerveuse, c'est un corps resté bloqué en mode alerte. Les épaules
 C'est une expression grand public, pas un terme médical. Elle désigne un sympathique qui reste activé comme si le danger ne finissait jamais : cœur rapide, digestion ralentie, paumes moites [1]. Tous les gestes de cet article servent justement à aider le frein, le parasympathique, à reprendre la main. Si cet état d'alerte s'éternise, que tu sursautes au moindre bruit et que ton sommeil reste léger, lis notre article sur l'[hypervigilance](/hypervigilance/).
 
 ## Pour aller plus loin
+Si ce sont surtout tes émotions qui s'emballent, l'article sur la [gestion des émotions](/gestion-des-emotions/) explique ce qui aide vraiment, d'après les études.
+
 Peut-être que ce stress te suit jusqu'au lit, et que les pensées se mettent à tourner dès que tu éteins la lumière. Dans ce cas, le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider à passer le cap du soir. C'est un PDF avec une routine anti-rumination à faire directement au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours pour en faire une habitude, sans aucun matériel. Le soupir physiologique pour la journée, le guide pour le moment du coucher.
 
 Pour pratiquer la respiration lente sans regarder l'écran, il y a aussi les [audios de respiration guidée](/respiration-guidee/) de 3, 5 ou 10 minutes.

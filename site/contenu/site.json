@@ -206,6 +206,12 @@
    "image": "unsplash-nKGlH6_PDxk.jpg",
    "alt": "Main qui tient un smartphone allumé dans une chambre sombre, l'écran éclairant les draps d'une lumière bleutée",
    "credit": "Photo : Jakub Żerdzicki / Unsplash"
+  },
+  "gestion-des-emotions": {
+   "categorie": "stress",
+   "image": "unsplash-AywSVPW5vzA.jpg",
+   "alt": "Vue de dessus d'une femme en pull blanc qui écrit dans un carnet sur une table en marbre, à côté d'une tasse de café",
+   "credit": "Photo : Happy & Spice / Unsplash"
   }
  },
  "formation": {
@@ -411,6 +417,10 @@
     [
      "Tu te demandes quoi manger quand tu es stressé(e)",
      "alimentation-anti-stress"
+    ],
+    [
+     "Tes émotions prennent vite toute la place",
+     "gestion-des-emotions"
     ]
    ],
    "guide": "cortisol"

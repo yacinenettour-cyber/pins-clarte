@@ -146,6 +146,8 @@ Une étude en laboratoire du sommeil va dans ce sens. De jeunes adultes qui écr
 Proposez de lister ensemble tout ce qui fait tourner le foyer, sans oublier les étapes qu'on ne voit pas : anticiper, identifier les options, décider, suivre [2]. Le but, c'est de rendre visible ce que l'un des deux porte seul. Ensuite, répartissez-vous des domaines entiers plutôt que des tâches isolées.
 
 ## Pour aller plus loin
+Quand la charge mentale fait déborder les émotions, l'article sur la [gestion des émotions](/gestion-des-emotions/) donne des repères simples pour reprendre la main.
+
 Tu n'as pas à tout changer d'un coup. Ce soir, prends 5 minutes pour vider ta tête sur papier. Puis transforme les trois tâches les plus pressantes en mini-plans, avec quoi, quand, où. Cette semaine, choisis un seul domaine à confier entièrement, avec ses quatre étapes. Et surveille ta fatigue. Si elle s'installe malgré tout ça, il est temps d'en parler à ton médecin.
 
 Si c'est surtout au moment de te coucher que la liste tourne en boucle, le guide gratuit « Quand le cerveau refuse de dormir » peut t'aider. Il contient une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir et un calendrier de 30 jours, sans matériel.
