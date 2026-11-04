@@ -194,6 +194,12 @@
    "image": "unsplash-tgMKcE-Qo5o.jpg",
    "alt": "Femme allongée dans un lit aux draps blancs, les yeux fermés, un bras étendu, dans la lumière du matin",
    "credit": "Photo : iam_os / Unsplash"
+  },
+  "reveil-fatigue-le-matin": {
+   "categorie": "sommeil",
+   "image": "unsplash-SL1nMVBtrrY.jpg",
+   "alt": "Femme assise dans son lit sous une couette rayée, une main sur les yeux pour se protéger du soleil du matin",
+   "credit": "Photo : Gaofeng You / Unsplash"
   }
  },
  "formation": {
@@ -321,6 +327,10 @@
     [
      "Le moindre bruit te réveille, ton sommeil reste léger",
      "sommeil-leger"
+    ],
+    [
+     "Tu te réveilles fatigué(e), même après une nuit complète",
+     "reveil-fatigue-le-matin"
     ],
     [
      "Tu cherches une respiration simple pour t'endormir",

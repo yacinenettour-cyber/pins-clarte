@@ -1389,3 +1389,24 @@ phrases courtes, plus de pauses, sujets 55+ : réveils nocturnes, sommeil qui ch
 Essai local : Shorts de 34,3 s et 25,5 s, accroche visible à 0 s, 0 chevauchement. S'applique à partir de la prochaine
 vidéo (la Méditation du soir n° 1 en cours de refabrication garde l'ancien réglage).
 
+
+## 108. Articles manqués du 1er au 3/11 : cause trouvée, rattrapage (04/11/2026)
+
+Constat de l'utilisateur : aucun article publié les 1er, 2 et 3/11 alors que la tâche « Articles : 5 par semaine »
+était active. Cause établie dans l'historique de la session (03/11) : la tâche s'est déclenchée à 19 h 53, le
+sous-agent Opus a commencé, puis son premier appel à l'atelier Composio (`COMPOSIO_REMOTE_WORKBENCH`, test d'accès à
+PubMed) a demandé une autorisation (`can_use_tool`). Personne n'étant là, la demande est restée en attente jusqu'au
+redémarrage du conteneur à 2 h 36 (`worker_restart`), qui a arrêté le sous-agent. Le « redémarrage » noté le 02/11 et
+le 04/11 n'était que la fin d'une tâche déjà bloquée. Même blocage le 03/11 pour la tâche SEO (attente de 9 h 42 à
+14 h 48). Le 1er/11 : tâche arrivée avec 9 h de retard puis sautée (section 104). Le 02/11 : très probablement la même
+cause, non prouvée. Accès vérifiés le 04/11 : PubMed et les suggestions Google répondent depuis l'atelier Composio,
+pas depuis le conteneur (ameli.fr refuse les deux).
+Correction décidée par l'utilisateur (« Oui, applique l'option 1 ») : autoriser d'avance tous les outils Composio par
+`.claude/settings.json` (`"permissions": {"allow": ["mcp__Composio"]}`). La session ne peut pas modifier ses propres
+autorisations : fichier à créer par l'utilisateur sur GitHub (instructions données le 04/11). ElevenLabs (tâche
+YouTube) n'est pas couvert par cette règle.
+Rattrapage demandé par l'utilisateur (« on publie les articles que tu devais publier ») : « Réveil fatigué le matin »
+(`/reveil-fatigue-le-matin/`, 9 sources vérifiées dans PubMed et sur le NHS, photo Unsplash inédite de Gaofeng You),
+puis les sujets suivants de la liste. Correction au passage dans `construire.py` : l'encadré de rappel du guide
+portait le même nom accessible que l'encadré du guide (« Guide gratuit », violation axe `landmark-unique` sur tous les
+articles avec guide) ; il s'appelle désormais « Rappel : guide gratuit ».

@@ -553,7 +553,7 @@ def rappel_guide(cle, slug, pont=""):
     g = SITE["guides"][cle]
     texte = f"{pont} : {g['rappel'].split(' : ', 1)[1]}" if pont and " : " in g["rappel"] else g["rappel"]
     lien = f"{g['url']}?utm_source=site&utm_medium=article&utm_campaign={slug}&utm_content=milieu"
-    return f"""<aside class="rappel-guide" aria-label="{e(g['type'])}">
+    return f"""<aside class="rappel-guide" aria-label="Rappel : {e(g['type'].lower())}">
 <p><span class="type">{e(g['type'])}</span><strong>{e(g['titre'])}</strong> · {e(texte)}</p>
 <a href="{lien}">{e(g['bouton'])} <span aria-hidden="true">→</span></a>
 </aside>"""
