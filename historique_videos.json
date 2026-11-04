@@ -503,5 +503,16 @@
    "fonds/pexels-33649865.jpg",
    "fonds/pexels-33649865.jpg"
   ]
+ },
+ {
+  "date": "2026-11-04T17:33+00:00",
+  "id": "short-ruminations-soir-1",
+  "titre": "Ralentis ton souffle avant de t'endormir",
+  "video": "videopins/videopin-20261104-173143.mp4",
+  "cover": "videopins/videopin-20261104-173143.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890518180",
+  "short": true,
+  "source": "https://youtu.be/SCUS59y5kNs"
  }
 ]
