@@ -2556,6 +2556,83 @@
    "domaine": "voiedubienetre.fr",
    "type": "campagne-2026-11 (valeur d'abord, aucune demande de lien)",
    "notes": "Classé A dans l'audit des 100 sites. Message du formulaire (texte de 4-messages.md, version humanisée du 01/11) envoyé à la main par l'utilisateur le 02/11. Le site refuse tout contenu payant et tout échange de liens. Réponse attendue sur la boîte de l'utilisateur ; relance unique possible à partir du 12/11 si le formulaire le permet."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-11-04",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 04/11",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : critères a-d vérifiés sur le site le 04/11",
+   "site": "Corinne Vermillard, sophrologue (Trégor)",
+   "domaine": "corinne-vermillard.com",
+   "page_cible": "https://corinne-vermillard.com/apprendre-une-respiration-recuperatrice/",
+   "email": "contact@corinne-vermillard.com",
+   "thread_id": "1a1a4d06207f5df1",
+   "sujet": "Vos conseils de respiration pour le sommeil",
+   "pourquoi": "Article « Retrouver un meilleur sommeil grâce à la respiration en cohérence cardiaque », mis à jour le 06/01/2026 ; e-mail affiché sur la page."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-11-04",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 04/11",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : critères a-d vérifiés sur le site le 04/11",
+   "site": "Chloé Turgis, sophrologie hypnose EFT (Caen)",
+   "domaine": "chloeturgis.com",
+   "page_cible": "https://www.chloeturgis.com/2025/01/03/coherence-cardiaque-exercices/",
+   "email": "contact@chloeturgis.com",
+   "thread_id": "1a1a4d063bd8e6e9",
+   "sujet": "Vos exercices de cohérence cardiaque",
+   "pourquoi": "Page « Cohérence cardiaque : 2 exercices relaxants » (rythme 5/5), mise à jour le 08/08/2026 ; e-mail affiché sur la page Contact."
+  },
+  {
+   "email_verifie": true,
+   "statut": "envoye",
+   "date_envoi": "2026-11-04",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "type": "ressources",
+   "lot": "ressources 04/11",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique (règle du 29/10, cibles « ressources ») : critères a-d vérifiés sur le site le 04/11",
+   "site": "Stéphanie Hausknecht, sophrologue (Ézy-sur-Eure)",
+   "domaine": "stephanie-hausknecht.fr",
+   "page_cible": "https://www.stephanie-hausknecht.fr/blog/articles/coherence-cardiaque",
+   "email": "stephanie.hausknecht@gmail.com",
+   "thread_id": "1a1a4d061f1132ee",
+   "sujet": "Une question sur votre page cohérence cardiaque",
+   "pourquoi": "Article de blog « Cohérence cardiaque » avec exercice de respiration en carré ; blog actif (dernier article 12/07/2026) ; e-mail affiché sur la page de rendez-vous."
+  },
+  {
+   "site": "Florence Salat, sophrologue (Marseille, Zen à Marseille)",
+   "domaine": "sophrologue-marseille.com",
+   "page_cible": "https://sophrologue-marseille.com/stress-des-examens-sophorlogie/",
+   "email": null,
+   "statut": "formulaire",
+   "type": "ressources",
+   "audience": "C thématique",
+   "remarque": "04/11 : site actif (article du 28/05/2026) mais aucune adresse e-mail affichée, seulement un formulaire de contact ; à remplir à la main si on veut."
+  },
+  {
+   "site": "Anne-Chantal Rocher, sophrologue (Le Chesnay)",
+   "domaine": "sophrologue-le-chesnay.fr",
+   "page_cible": "https://www.sophrologue-le-chesnay.fr/blog/articles/comment-la-sophrologie-aide-a-mieux-dormir-et-retrouver-un-sommeil-de-qualite",
+   "email": null,
+   "statut": "formulaire",
+   "type": "ressources",
+   "audience": "C thématique",
+   "remarque": "04/11 : article du 11/12/2025 mais aucune adresse e-mail affichée (page de rendez-vous sans adresse) ; formulaire seulement."
   }
  ],
  "passages": [
@@ -2634,6 +2711,10 @@
   {
    "date": "2026-11-04",
    "resultat": "Réponses lues par Composio (Gmail, du 31/10 au 04/11) : Santé Québec Saguenay–Lac-Saint-Jean a corrigé sa page après le signalement des liens morts (repondu, pas de lien) ; La Clé des champs (corrige ses liens, ne cite que des organismes québécois) et Service sanitaire Unicaen (a ses propres supports) refusent poliment → stop ; FNAPSY : 2 avis de retard de distribution, à revérifier ; Lyon 1 toujours bloqué par le CAPTCHA Mailinblack. Aucune réponse d'Audrey (Ma Cohérence), Même Plus Peur, Phobies-Zéro, Question Santé, Couleur d'âme. Aucun envoi ce passage. Total liens obtenus : 0."
+  },
+  {
+   "date": "2026-11-04",
+   "resultat": "Prospection « ressources » : 3 nouveaux envois (Corinne Vermillard, Chloé Turgis, Stéphanie Hausknecht), e-mails vérifiés sur les sites, textes de 100 à 120 mots sans formule interdite, tous vérifiés SENT par Composio (le connecteur Gmail direct manque toujours d'une permission). Florence Salat (Marseille) et Anne-Chantal Rocher (Le Chesnay) : formulaire seulement, sans e-mail affiché. 3 envois sur 10 : peu de cibles valides trouvées à la première recherche (sites sans e-mail affiché ou déjà contactés)."
   }
  ]
 }
