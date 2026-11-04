@@ -330,3 +330,24 @@ Comparaison des 30 jours du 02/10 au 31/10 avec ceux du 02/09 au 01/10 (`PINTERE
 **Épingle « Mâchoire serrée : 5 clés pour relâcher » commencée le 03/11** (portrait et 4 vignettes prêts dans `photos_attente/riche-machoire-serree/`, vignette « soupe » à générer le 04/11 : quotas gratuits de Canva et de Hugging Face épuisés le 03/11).
 
 **03/11/2026, décision de l'utilisateur** : l'épingle « Mâchoire serrée : 5 clés qui soulagent » (portrait Hugging Face, 4 vignettes Canva, vignette soupe ElevenLabs) remplace dans la banque « Mâchoire crispée au travail : 3 gestes pour la relâcher » (non publiée, même rang). Elle mène à l'article `machoire-serree-stress` (ou au guide si la part d'articles dépasse 40 %).
+
+**04/11/2026** : stock à 0 (les 15 épingles « clés » sont publiées). Une seule épingle fabriquée, à la demande de l'utilisateur :
+`cles` (format `riche`) — « Réveil fatigué : 5 clés pour des matins plus légers » (`images_cles/reveil-fatigue-5-cles.jpg`,
+thème `sommeil`, champ `article` : `reveil-fatigue-le-matin`, article tout neuf du même jour). Clés toutes tirées de
+l'article : au moins 7 heures de sommeil (Inserm) ; horaires de coucher et de lever proches (NHS) ; pas d'alcool juste avant
+de dormir (revue de 2013, seconde moitié de nuit plus agitée) ; reports de réveil sans drame (étude de Stockholm, 31
+personnes, 30 min de reports sans effet sur les tests de réflexion) ; poser ses pensées sur papier avant le coucher.
+Sujets **écartés** car déjà couverts par une épingle publiée ou en banque : écrans avant de dormir (« Écrans le soir : ce
+qui compte vraiment », « Téléphone dans la chambre »…), gestion des émotions (« 5 clés pour retrouver ton calme », « règle
+des 90 secondes »), alcool (« Alcool pour décompresser »), décalage du week-end (« Jet lag social »). Rappel : avec
+« Cortisol du matin : pourquoi tu te réveilles fatigué » (publiée), le sujet « réveil fatigué » est proche mais l'angle
+(leviers du soir) est différent.
+Images : portrait Hugging Face (femme en pyjama vert sauge qui s'étire, assise sur le lit, graine 681678 ; vérifié :
+habillée, mains correctes, aucun texte) ; 4 vignettes Hugging Face (oreiller et plaid, soleil sur les collines, verre de
+vin, masque de sommeil) ; 5e vignette (bougie et carnet) faite avec Canva gratuit, le quota Hugging Face étant épuisé après
+5 images. Une vignette écartée : un réveil rose dont le cadran affichait des chiffres. Crédits ElevenLabs : aucun utilisé
+(les 4 000 crédits d'images du mois restent intacts : 48 dépensés le 03/11). Images gardées dans
+`photos_attente/riche-reveil-fatigue/`.
+Contrôles : anti_doublons.py (aucun doublon), titre 51 caractères, corps 403, total 483, 8 hashtags, `verifier_banque.py` :
+0 doublon (237 titres) ; image relue, aucun texte qui déborde ni chevauche. Au passage, une phrase de l'article, non
+sourcée (« la nuit raccourcit… »), a été remplacée par une formulation neutre.

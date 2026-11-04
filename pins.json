@@ -1,5 +1,22 @@
 [
  {
+  "titre": "Réveil fatigué : 5 clés pour des matins plus légers",
+  "texte_image": "5 clés, matins plus légers",
+  "points_image": [
+   "Dors assez",
+   "Mêmes horaires",
+   "Alcool tôt",
+   "Report permis",
+   "Calme ton soir"
+  ],
+  "description": "Sauve cette épingle pour les matins où tu te traînes. Cinq clés tirées des études : dormir au moins 7 heures ; garder des horaires de coucher et de lever proches, week-end compris ; éviter l'alcool juste avant de dormir ; ne pas culpabiliser pour le bouton « répéter », une petite étude n'y voit pas de mal ; poser tes pensées sur papier avant de te coucher. Si la fatigue dure, parles-en à ton médecin. #sommeil #reveil #fatigue #matin #mieuxdormir #routinedusoir #energie #bienetre",
+  "theme": "sommeil",
+  "image_prete": "images_cles/reveil-fatigue-5-cles.jpg",
+  "format": "cles",
+  "article": "reveil-fatigue-le-matin",
+  "description_article": "Les matins où tu te traînes, cinq clés : dormir au moins 7 heures ; garder des horaires proches, week-end compris ; éviter l'alcool juste avant de dormir ; ne pas culpabiliser pour le bouton « répéter » ; poser tes pensées sur papier avant de te coucher. Pourquoi la tête reste lourde au réveil, ce que disent les études et quand consulter : article complet en lien. #sommeil #reveil #fatigue #matin #mieuxdormir #routinedusoir #energie #bienetre"
+ },
+ {
   "titre": "Charge mentale à deux : 5 clés pour mieux partager",
   "texte_image": "5 clés pour partager",
   "points_image": [
