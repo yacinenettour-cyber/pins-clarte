@@ -385,12 +385,13 @@
    "pourquoi": "Thématique Sommeil avec un guide « Ressources » (2025) pour les étudiants en santé qui animent des actions de prévention.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/routine-du-soir-anti-stress/",
    "remarque": "Sérieux et actif, mais public d'animateurs de prévention qui privilégient les supports institutionnels (Réseau Morphée, Santé publique France).",
-   "statut": "envoye",
+   "statut": "stop",
    "domaine": "sses-normandie.unicaen.fr",
    "audience": "B : sous-domaine d'un domaine du top Tranco (unicaen.fr, rang 20386) ; trafic propre inconnu",
    "date_envoi": "2026-10-22",
    "thread_id": "1a16428df75ac243",
-   "relance": "2026-11-03"
+   "relance": "2026-11-03",
+   "reponse": "03/11 (Pauline Barre, référente régionale) : « nous ne sommes pas intéressés, nous avons nos propres supports ». Refus, ne plus écrire."
   },
   {
    "site": "DOCcitanie (centres de documentation santé d'Occitanie)",
@@ -1275,7 +1276,7 @@
    "pourquoi": "Page « Ressources et liens utiles » avec ~30 organismes externes (Relief, Revivre, Mouvement SMQ, CAP santé mentale…).",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/exercices-respiration/",
    "audience": "A : domaine parent gouv.qc.ca rang 16 860 (Tranco) ; le sous-domaine lui-même n'est pas classé",
-   "statut": "envoye",
+   "statut": "repondu",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : Québec. Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. Adresse générale de l'établissement : la demande risque d'être réacheminée. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /respiration-guidee/.",
    "date_envoi": "2026-10-21",
@@ -1286,7 +1287,8 @@
     "https://tel-aide-saguenay-lac-saint-jean.org/ (redirige vers cavernsatnaturalbridge.com, domaine sans rapport)",
     "https://cps02.org/ (ne répond plus, 3 essais)"
    ],
-   "relance": "2026-11-02"
+   "relance": "2026-11-02",
+   "reponse": "03/11 (Bianca, direction des communications) : page corrigée après le signalement des liens morts ; la suggestion (audios de respiration) a été transmise à l'organisme concerné, sans retour pour l'instant. Pas de lien. Rien à répondre ; ne plus relancer."
   },
   {
    "site": "Santé Québec – Capitale-Nationale (Gestion du stress et de l'anxiété)",
@@ -1415,7 +1417,8 @@
    "sujet": "Vos ressources en santé mentale : des audios de respiration sans application",
    "liens_casses": "18/10 : 10 liens testés, aucun cassé",
    "note": "18/10 : réponse automatique Mailinblack (ucbl@mailinblack.univ-lyon1.fr, fil 1a14fd278cefdb5e) : le message n'est remis qu'après validation d'un CAPTCHA (bouton dans l'e-mail) ; à faire à la main par l'utilisateur s'il le souhaite, sinon le message n'est pas arrivé. 28/10 : pas de relance (le premier message n'a jamais été remis, CAPTCHA Mailinblack non validé). 02/11 : relance envoyée par erreur malgré cette note (message 1a19d193acf2c05f) ; elle restera elle aussi bloquée par le CAPTCHA tant qu'il n'est pas validé à la main. Ne plus rien envoyer à cette adresse.",
-   "relance": "2026-11-02"
+   "relance": "2026-11-02",
+   "reponse": "02/11 : le message est bloqué par le CAPTCHA Mailinblack (aucune réponse humaine) ; pas de relance possible par e-mail."
   },
   {
    "site": "Université Grenoble Alpes – Prendre soin de votre santé mentale (portail étudiant)",
@@ -1617,7 +1620,7 @@
    "pourquoi": "Page « Ressources et références » qui liste ~30 organismes et outils externes.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/",
    "audience": "B : organisme communautaire reconnu ; absent du top 1 million Tranco",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "recherche 3 du 14/10",
    "remarque": "Piste : angoisse / anxiété (Québec). Site hors de France : nos numéros d'urgence (/ressources-urgence/) sont français, ne pas les mettre en avant ; proposer plutôt les audios ou le minuteur. 21/10 : page et adresse vérifiées sur le site, envoyé, vu dans les Envoyés. Ressource proposée : /respiration-guidee/.",
    "date_envoi": "2026-10-21",
@@ -1628,7 +1631,8 @@
     "http://maisonalonzowright.com (404)",
     "http://entrainsm.org (523)"
    ],
-   "relance": "2026-11-02"
+   "relance": "2026-11-02",
+   "reponse": "03/11 (Marc-André Thibault, directeur général) : va corriger les 2 liens cassés signalés ; ne référence que des organismes communautaires du Québec, donc pas de lien vers notre site. Refus poli, ne plus écrire."
   },
   {
    "site": "Fondation Sommeil",
@@ -2450,7 +2454,7 @@
    "date_envoi": "2026-11-01",
    "thread_id": "1a1980f2a67e6169",
    "relance": null,
-   "reponse": null,
+   "reponse": "02-03/11 : 2 avis Gmail de retard de distribution vers contact@fnapsy.org (nouvelles tentatives pendant 47 h) ; pas encore un rejet, à revérifier.",
    "lien_obtenu": null,
    "domaine": "fnapsy.org",
    "type": "campagne-2026-11 (valeur d'abord, aucune demande de lien)",
@@ -2626,6 +2630,10 @@
   {
    "date": "2026-10-30",
    "resultat": "Réponses lues (Gmail, 2 jours) : aucune nouvelle (Harmonie & Plénitude, Phobies-Zéro, ULaval déjà notées). 7 relances uniques dans le même fil pour les envois du 20/10 (Ma Cohérence, Guérir l'anxiété, Montpellier sophrologie, Relaxation dynamique, Ma psy en ligne chez moi, Sophrospirit, Delphine Basson), avec les ressources réutilisables, ouvertures toutes différentes. 2 nouveaux envois « ressources » (Yoga et Méditation Paris, Océane Yoga), 117 et 124 mots, formules interdites contrôlées. Alain Tanguy à vérifier (deux adresses), Souffle Conscient et Bruno Vigneault écartés (fréquences sonores et soins énergétiques). 9 envois, tous vérifiés (SENT). Le connecteur Gmail direct manque d'une autorisation : envois faits par Composio."
+  },
+  {
+   "date": "2026-11-04",
+   "resultat": "Réponses lues par Composio (Gmail, du 31/10 au 04/11) : Santé Québec Saguenay–Lac-Saint-Jean a corrigé sa page après le signalement des liens morts (repondu, pas de lien) ; La Clé des champs (corrige ses liens, ne cite que des organismes québécois) et Service sanitaire Unicaen (a ses propres supports) refusent poliment → stop ; FNAPSY : 2 avis de retard de distribution, à revérifier ; Lyon 1 toujours bloqué par le CAPTCHA Mailinblack. Aucune réponse d'Audrey (Ma Cohérence), Même Plus Peur, Phobies-Zéro, Question Santé, Couleur d'âme. Aucun envoi ce passage. Total liens obtenus : 0."
   }
  ]
 }
