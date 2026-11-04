@@ -1418,3 +1418,11 @@ Troisième article du rattrapage : « Gestion des émotions chez l'adulte : ce q
 2007 sur le sommeil et l'amygdale a été écartée, son résumé et ses affiliations n'étant pas lisibles ; photo Unsplash
 inédite de Happy & Spice), reliée depuis « Calmer son système nerveux » et « Charge mentale ». Les trois créneaux
 manqués (1er au 3/11) sont rattrapés le 04/11 ; la tâche du soir publiera le sujet suivant de la liste.
+
+## 109. Tâche « Articles » du soir du 04/11 : pas d'article, liste complétée (04/11/2026)
+
+La tâche « Articles : 5 par semaine » du 04/11 (19 h 53) n'a rien écrit ni publié : trois articles étaient déjà parus
+ce jour-là (rattrapage, section 108) et la règle reste « jamais plus d'un article par jour ». La liste
+`docs/referencement/articles-a-ecrire.md` a été complétée d'après les suggestions Google lues le 04/11 depuis l'atelier
+Composio (sujets 18 à 25 : déconnecter du travail le soir, heure du dernier café, procrastination et anxiété, stress et
+trous de mémoire, durée de la sieste, alcool et sommeil, acouphènes et stress, sport et anxiété) : 11 sujets « à écrire ».
