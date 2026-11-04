@@ -2753,6 +2753,56 @@
    "type": "ressources",
    "audience": "C",
    "remarque": "04/11 : écartée : coaching holistique et spirituel, thème éloigné du stress et du sommeil, aucun blog daté trouvé."
+  },
+  {
+   "site": "TAP & EPS (blog d'un enseignant d'EPS)",
+   "domaine": "tapeps.fr",
+   "page_cible": "https://tapeps.fr/2026/01/24/coherence-cardiaque/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 (recherche enseignants et infirmières scolaires) : écarté, blog actif (dernier article 25/08/2026, article cohérence cardiaque du 24/01/2026) mais auteur anonyme, aucune adresse e-mail ni page contact."
+  },
+  {
+   "site": "Relaxation concentration (Florence, ex-professeur des écoles)",
+   "domaine": "yogflo.com",
+   "page_cible": "https://yogflo.com/2025/11/24/les-difficultes-de-tous-les-jours-et-les-effets-sur-notre-corps/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 (recherche enseignants et infirmières scolaires) : écarté, blog WordPress.com actif (article du 24/11/2025) sur le calme et la concentration des élèves, thème parfait, mais aucune adresse e-mail ni page contact affichée. À tenter via un commentaire ou un formulaire WordPress si l'utilisateur le souhaite."
+  },
+  {
+   "site": "EPS Régal (Régis, professeur d'EPS)",
+   "domaine": "epsregal.fr",
+   "page_cible": "https://www.epsregal.fr/outils-concrets-ameliorer-concentration-eleves/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 (recherche enseignants et infirmières scolaires) : écarté, dernier article vu en 2022, aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Apprendre à éduquer (Caroline)",
+   "domaine": "apprendreaeduquer.fr",
+   "page_cible": "https://apprendreaeduquer.fr/exercices-respiration-enfants-deconcentres/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 (recherche enseignants et infirmières scolaires) : écarté, article respiration du 02/02/2025 (plus de 12 mois), aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Natalie Gond, sonothérapeute",
+   "domaine": "nataliegond.com",
+   "page_cible": "https://www.nataliegond.com/le-yoga-a-lecole-une-pause-bien-etre-pour-grandir-ensemble/",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 (recherche enseignants et infirmières scolaires) : écarté, 2 articles seulement (dernier 18/12/2024), aucune adresse e-mail affichée."
   }
  ],
  "passages": [
@@ -2839,6 +2889,10 @@
   {
    "date": "2026-11-04",
    "resultat": "Deuxième recherche « ressources » (sophrologues, relaxologues, yoga nidra, naturopathes, 3 recherches web et 14 sites vérifiés) : aucun nouveau prospect valide, donc total du jour limité à 3 envois sur 10. 12 sites enregistrés (écartés ou formulaire) pour ne pas les réétudier : aucune adresse e-mail affichée, blog inactif depuis plus de 12 mois, séances payantes ou thème éloigné. On préfère ne pas baisser les critères (e-mail affiché sur le site, blog actif sur 12 mois, thème stress/sommeil)."
+  },
+  {
+   "date": "2026-11-04",
+   "resultat": "Recherche ciblée infirmières scolaires et enseignants (4 recherches web, 8 sites vérifiés) : aucun envoi. Les infirmières scolaires n'ont pas de site personnel (seulement les pages des académies et du ministère, qui ont systématiquement refusé jusqu'ici) ; les blogs d'enseignants trouvés n'affichent aucune adresse e-mail (TAP & EPS, Relaxation concentration, EPS Régal, etc.). 5 sites enregistrés en « ecarte ». Total du jour : 3 envois."
   }
  ]
 }
