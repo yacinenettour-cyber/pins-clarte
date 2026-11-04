@@ -55,3 +55,13 @@ France, FNEPE, SMTI 82, Coup de Blouse, MDA 84, Fontenay-aux-Roses.
 ### Relances envoyées le 03/11 (dans le même fil, envoi confirmé dans « Envoyés »)
 
 Limite : 10 envois par jour ouvré, relances comprises. Envoyées : Même Plus Peur, Coup de Blouse, MDA 84, Acouphènes Québec, FNEPE, SMTI 82, Santé Mentale France, Unicaen, Fontenay-aux-Roses (9 au total). Aucun nouveau contact aujourd'hui : aucune cible de la liste à vérifier n'a été revalidée (audience, adresse affichée), mieux vaut ne rien envoyer. Aucune autre relance prévue pour ces 8 sites.
+
+### Routine du 04/11 (9 h 58)
+
+Réponse : Santé Mentale France décline la diffusion (statut stop, ne plus écrire). Retard de livraison vers FNAPSY (serveur
+distant injoignable, nouvelles tentatives automatiques de Gmail). Envois déjà faits le matin (3 sophrologues) + 1 nouveau :
+Somnologie.fr (magazine du sommeil, contact@somnologie.fr, objet « Des audios pour votre page respiration », audios 4-6
+sans voix de /ressources-libres/, 102 mots, fil 1a1a669d3180b112, vérifié dans « Envoyés »). Total du jour : 4 sur 10.
+Pas d'autres envois : après vérification sur leur site, Sommeil et Santé (inactif depuis 2023), CREDIR (vend des stages),
+Panda Tea (boutique) et Pro Mente Sana (droits des patients) ne conviennent pas, et les autres cibles « à vérifier » n'ont
+pas d'adresse e-mail affichée. La qualité passe avant le nombre.

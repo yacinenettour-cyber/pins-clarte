@@ -761,11 +761,12 @@
    "pourquoi": "Fédération reconnue d'utilité publique, plus de 250 structures membres, partie prenante des SISM : peut relayer des outils gratuits d'auto-assistance auprès de ses membres.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/respiration-guidee/ (+ /ressources-urgence/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "envoye",
+   "statut": "stop",
    "lot": "recherche 2 du 12/10",
    "date_envoi": "2026-10-22",
    "thread_id": "1a1644cc000c2aaa",
-   "relance": "2026-11-03"
+   "relance": "2026-11-03",
+   "reponse": "04/11/2026 : refus poli (« nous ne sommes malheureusement pas en mesure de donner suite à votre proposition de relais ou de diffusion auprès de notre réseau »). Ne plus jamais écrire."
   },
   {
    "site": "Semaines d'information sur la santé mentale (SISM)",
@@ -891,8 +892,9 @@
    "pourquoi": "Conseil psychosocial et orientation vers les ressources de Suisse romande ; brochures et productions écrites. Le journal d'humeur et les audios sont des outils d'auto-soin à orienter.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/journal-humeur/ (+ /respiration-guidee/)",
    "audience": "B : association, campagne ou organisme national reconnu ; absent du top 1 million Tranco",
-   "statut": "a_verifier",
-   "lot": "recherche 2 du 12/10"
+   "statut": "ecarte",
+   "lot": "recherche 2 du 12/10",
+   "remarque": "04/11 : adresse info@promentesana.org affichée, site actif, mais association centrée sur les droits des patients : peu de rapport avec la respiration et le sommeil."
   },
   {
    "site": "Minds (promotion de la santé mentale, Genève)",
@@ -2803,6 +2805,61 @@
    "type": "ressources",
    "audience": "C",
    "remarque": "04/11 (recherche enseignants et infirmières scolaires) : écarté, 2 articles seulement (dernier 18/12/2024), aucune adresse e-mail affichée."
+  },
+  {
+   "site": "Somnologie.fr (magazine du sommeil)",
+   "domaine": "somnologie.fr",
+   "page_cible": "https://somnologie.fr/respiration-pour-dormir/",
+   "email": "contact@somnologie.fr",
+   "email_verifie": true,
+   "source_email": "page https://somnologie.fr/contact/ (« en nous écrivant directement à contact@somnologie.fr »), lue le 04/11/2026",
+   "formulaire": null,
+   "prenom": null,
+   "signes_trafic": "Magazine du sommeil actif : pages modifiées le 25/10, le 13/10 et le 23/09/2026 (sitemap) ; plus de 200 articles.",
+   "pourquoi": "Magazine francophone sur le sommeil, page « Respiration pour dormir » avec 4 exercices (abdominale, 4-7-8, alternée, lunaire) sans repère sonore : nos audios 4-6 sans voix la complètent. Aucun lien mort sur les pages lues.",
+   "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
+   "audience": "C thématique : magazine francophone dont le sujet principal est le sommeil, mis à jour en octobre 2026, contenu propre, sans vente de liens (critères vérifiés le 04/11)",
+   "statut": "envoye",
+   "type": "campagne-2026-11",
+   "lot": "routine du 04/11 (9 h 58)",
+   "date_envoi": "2026-11-04",
+   "thread_id": "1a1a669d3180b112"
+  },
+  {
+   "site": "Association Sommeil et Santé",
+   "domaine": "sommeilsante.asso.fr",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : site inactif (dernière actualité : journée du sommeil du 17/03/2023)."
+  },
+  {
+   "site": "CREDIR (prévention du burn-out)",
+   "domaine": "credir.org",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : adresse contact@credir.org affichée et blog actif (avril 2026), mais l'association vend des stages, bilans et labellisations : pas de relais gratuit probable."
+  },
+  {
+   "site": "Panda Tea (podcast Murmures Nocturnes)",
+   "domaine": "pandatea.fr",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : boutique de thés, pas un site éditorial."
+  },
+  {
+   "site": "Pro Mente Sana (Suisse romande)",
+   "domaine": "promentesana.org",
+   "email": null,
+   "statut": "ecarte",
+   "type": "ressources",
+   "audience": "C",
+   "remarque": "04/11 : adresse info@promentesana.org affichée, site actif, mais association centrée sur les droits des patients (conseil juridique, pairs-aidants) : peu de rapport avec la respiration et le sommeil."
   }
  ],
  "passages": [
