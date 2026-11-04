@@ -2423,5 +2423,16 @@
   "pin_id": "600175087890492515",
   "md5": "9185fc05a846da197be9f932ce3e428a",
   "lien": "article:machoire-serree-stress"
+ },
+ {
+  "date": "2026-11-04T09:08+00:00",
+  "titre": "Réveil fatigué : 5 clés pour des matins plus légers",
+  "image": "images/pin-20261104-090802.jpg",
+  "fond": "prete:images_cles/reveil-fatigue-5-cles.jpg",
+  "theme": "sommeil",
+  "design": "cles",
+  "pin_id": "600175087890511362",
+  "md5": "fbce6363aad7cb26ba352b0ab8fc7487",
+  "lien": "article:reveil-fatigue-le-matin"
  }
 ]
