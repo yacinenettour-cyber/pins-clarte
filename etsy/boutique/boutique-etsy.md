@@ -116,3 +116,27 @@ charge mentale), la promesse (partager, alléger), un écho au foyer (Hestia) et
 Choix : **« Planners à imprimer : la charge mentale, enfin partagée »** (55 caractères, tous les mots-clés + la promesse).
 Repli si Etsy le refuse : « Partage la charge mentale : planners à imprimer » (47). Variante foyer : « Foyer plus léger : planners à imprimer, charge mentale » (54).
 Ancien choix (50) : « Planners à imprimer pour alléger la charge mentale ».
+
+## 9. Histoire de la boutique HestiaAura (05/11/2026, « raconte l'histoire de la boutique »)
+
+Remplace la section 4. L'ancien texte affirmait que l'auteur avait découvert que « ce qui tourne dans la tête pèse moins une fois posé sur le papier » :
+cette idée ne fait pas partie du vécu donné par l'utilisateur (`docs/referencement/vecu-auteur.md`), elle est retirée. Seuls les faits de ce fichier
+sont repris (deux ans de nuits compliquées par alternance, réveils nocturnes, la pression de dormir, la méditation et la cohérence cardiaque, la
+régularité, couper les écrans ou boire une tisane ne suffisait pas, le site créé pour partager). Jamais de métier. La phrase sur le nom (Hestia, déesse
+du foyer ; aura, souffle, atmosphère) est une explication des mots, pas une intention de l'utilisateur : à confirmer.
+
+**Titre de l'histoire** : Poser ce qui tourne dans la tête
+
+Je m'appelle Yacine. Pendant deux ans, mes nuits ont été compliquées, par périodes. Je dormais mal, je me réveillais au milieu de la nuit sans réussir à me rendormir, et plus j'essayais de dormir, plus je me mettais la pression. Je pensais à beaucoup de choses, je réfléchissais trop.
+
+J'ai cherché des solutions naturelles. J'ai découvert la méditation et la cohérence cardiaque. Rien n'a changé du jour au lendemain. Ce qui a compté, c'est la régularité, et d'arrêter de chercher une solution miracle. Ce n'était pas aussi simple que de couper les écrans ou de boire une tisane : il fallait aussi apprendre à calmer le mental.
+
+J'ai créé mon site, Clarté Mentale, pour partager ce que j'ai appris en cherchant. J'y ai aussi écrit sur la charge mentale : tout ce qu'on porte dans la tête pour faire tourner une maison, et qui ne se partage pas toujours facilement.
+
+HestiaAura est né de là. Ce sont des planners à imprimer, en français, pour poser ce qui tourne dans la tête, trier, et le partager avec les personnes qui vivent sous le même toit. Chacun contient une semaine déjà remplie en exemple, pour ne jamais partir d'une page blanche, et s'appuie sur des recherches citées dans le planner.
+
+Le nom vient de Hestia, la déesse grecque du foyer, et d'aura, le souffle, l'atmosphère d'un lieu. L'idée : un foyer plus léger.
+
+Je ne suis pas professionnel de santé. Ces planners sont des outils d'organisation, pas des soins. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
+
+Mon site : https://www.contactapaisement-mental.fr
