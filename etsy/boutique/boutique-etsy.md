@@ -198,3 +198,10 @@ couture vérifiée par script : écart ≤ 1,2 niveau). Aucune IA générative, 
   et à des annonces payantes (Etsy Ads, exclues : rien de payant en plus des frais Etsy). Concurrent direct : DigitalLaz,
   « Charge Mentale Couple à Imprimer | Répartition des Tâches Ménagères… ».
 - Leviers gratuits : épingles Pinterest vers la fiche, vidéo sur la fiche, 2e et 3e fiches, premiers avis.
+
+## 14. Produit n° 2 : journal « Apprivoiser ses émotions » (05/11/2026)
+
+Choisi par l'utilisateur parmi 4 pistes (journal des émotions, menus, stress au travail, énergie). Marché vérifié le 05/11 :
++ de 1 000 résultats pour « journal des émotions adulte imprimable », surtout des produits pour enfants ou des fiches d'une
+page ; peu de journaux complets pour adultes en français. Tout est dans `etsy/journal-emotions/` (fiche prête à coller :
+`fiche-etsy.md`).
