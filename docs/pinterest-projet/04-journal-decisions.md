@@ -1426,3 +1426,40 @@ ce jour-là (rattrapage, section 108) et la règle reste « jamais plus d'un art
 `docs/referencement/articles-a-ecrire.md` a été complétée d'après les suggestions Google lues le 04/11 depuis l'atelier
 Composio (sujets 18 à 25 : déconnecter du travail le soir, heure du dernier café, procrastination et anxiété, stress et
 trous de mémoire, durée de la sieste, alcool et sommeil, acouphènes et stress, sport et anxiété) : 11 sujets « à écrire ».
+
+## 110. Pourquoi les performances Pinterest baissent (05/11/2026, demande de l'utilisateur)
+
+Demande : « travailler sur Pinterest et regarde pourquoi mes performances sont en baisse ». Données lues le 05/11 via
+Composio : `PINTEREST_GET_ACCOUNT_ANALYTICS` (08/08 → 04/11), `PINTEREST_GET_TOP_PINS` (30 jours),
+`PINTEREST_GET_PIN_ANALYTICS` (24 meilleures épingles et 151 épingles du robot), `PINTEREST_GET_KEYWORD_TRENDS` (France).
+
+**Impressions du compte par semaine** (lundi) : août 8 500 à 9 900 ; 07/09 6 837 ; 14/09 7 795 ; 21/09 11 196 ;
+**28/09 12 459 (pic)** ; 05/10 9 107 ; 12/10 9 025 ; 19/10 7 797 ; 26/10 7 566 ; début novembre ≈ 1 000 par jour.
+Enregistrements : 113 (05/10) → 51 (26/10). Baisse d'environ 40 % depuis le pic, retour au niveau d'août.
+
+**D'où vient la baisse**
+1. **Saisonnalité des recherches (cause principale)** : les recherches du périmètre ont culminé à la rentrée puis
+   reculent (indice Pinterest Trends France, 100 = pic de l'année) : système nerveux 100 (14/09) → 66 ; roue des
+   émotions 100 → 18 ; les émotions 98 → 23 ; anti stress 74 → 30 ; charge mentale 75 → 34 ; sommeil 31 → 19.
+   Le compte vit des anciennes épingles Idea : leurs vues suivent ces recherches.
+2. **Les épingles du robot ne compensent pas** : les 151 épingles lisibles depuis le 28/09 font 500 à 700
+   impressions par semaine au total (moins de 10 % du compte) et 2 enregistrements. Le passage à 1 épingle par jour
+   (27/10, section précédente du plan) n'a donc presque rien retiré.
+3. **Les 24 meilleures anciennes épingles tiennent à peu près** (≈ 5 000 par semaine, −20 % depuis le 21/09) ;
+   « 5 gestes doux pour apaiser le corps dès le matin » passe de 3 289 (semaine du 21/09) à 1 100-1 500. La plus
+   forte chute est dans la longue traîne des autres anciennes épingles (≈ 5 000-7 000 → ≈ 2 100 par semaine).
+4. **Coupure brutale de « 6 étapes pour débloquer ton mental »** (600175087885878234, épingle la plus enregistrée du
+   compte : 1 691 enregistrements à vie) : ≈ 85 impressions par jour jusqu'au 24/10, puis 23 le 25/10 et 1 à 5 par
+   jour depuis. Cause non établie : aucune trace de modification à cette date ; elle porte depuis le 29/09 (ajout à
+   la main) le lien `/tonguide`, destination déclassée (analyse du 27/10). Les deux autres anciennes épingles reliées
+   à `/tonguide` ne chutent pas. Les données quotidiennes de ces trois épingles manquent avant le 09/10.
+
+**À venir** : pic annuel de début janvier (indice 100 la semaine du 05/01/2026 pour sommeil, procrastination, dormir
+aesthetic, sommeil aesthetic ; 4 à 5 fois le niveau actuel). En hausse ce mois-ci : gestion des émotions (+90 %),
+position pour dormir (+40 %), système nerveux (+80 % sur un an).
+
+**Pistes proposées à l'utilisateur (non appliquées, en attente de décision)** : préparer dès maintenant le stock de
+janvier (sommeil, procrastination, bonnes résolutions de calme) pour publier à partir de début décembre ; garder le
+format infographie illustrée ; pour « 6 étapes », vérifier dans l'application si l'épingle affiche un avertissement
+et, avec son accord, retirer le lien `/tonguide` (modification à la main, l'API refuse) ; donner priorité à
+« gestion des émotions » (lien naturel avec le journal Etsy des émotions).
