@@ -151,3 +151,13 @@ musique à droits (vrais bols chantants CC0, `site/sources-audio/bols/`), aucun 
 été vérifiées : se fier à l'écran de téléversement.
 À savoir : la couverture du planner et le pied de page de certaines pages portent encore « Clarté Mentale », alors que la boutique s'appelle HestiaAura
 (l'« À propos » relie les deux). À décider : garder, ou refaire les PDF et les photos avec le nom HestiaAura.
+
+## 11. Analyse de la boutique en ligne (05/11/2026, page publique lue le jour même)
+
+Boutique https://www.etsy.com/shop/HestiaAura ouverte, 1 fiche (https://www.etsy.com/listing/4610269767), 0 vente, 0 avis.
+Fiche conforme : titre de 14 mots, 12 photos, 0 vidéo, description humanisée avec la mention IA, 4 PDF, catégorie
+Calendars & Planners, prix saisi 7,90 € (affiché 9,48 € TTC pour un acheteur français ; prévu dans la fiche : 9,90 €).
+À revoir : le slogan en ligne (« La douceur de penser, le plaisir de partager. ») et l'histoire en ligne ne disent ni « planner » ni
+« charge mentale » (ils parlent de « belles créations » et de cadeaux) ; la méta-description Google de la boutique reprend ce slogan.
+Pas de photo de profil (avatar par défaut), pas de vidéo sur la fiche (`video-hestiaaura-presentation.mp4` disponible),
+PDF encore signés « Clarté Mentale » sur la couverture, une seule fiche.
