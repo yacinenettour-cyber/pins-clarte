@@ -2445,5 +2445,16 @@
   "pin_id": "600175087890526388",
   "md5": "4ff6b8f62991e42686e5548aa82e03e5",
   "lien": "article:hypervigilance"
+ },
+ {
+  "date": "2026-11-05T19:08+00:00",
+  "titre": "Gestion des émotions : ce que chaque émotion te dit",
+  "image": "images/pin-20261105-190809.jpg",
+  "fond": "prete:images_cles/emotions-ce-quelles-disent.jpg",
+  "theme": "blocagemental",
+  "design": "cles",
+  "pin_id": "600175087890536712",
+  "md5": "b06c352f6887d821f46e6afac740fad8",
+  "lien": "article:gestion-des-emotions"
  }
 ]
