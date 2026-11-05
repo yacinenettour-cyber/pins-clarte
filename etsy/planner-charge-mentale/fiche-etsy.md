@@ -35,7 +35,9 @@ listes de tâches à 1 à 5 € ; celui-ci apporte 4 fichiers, un volet couple c
 
 ## Titre (140 caractères maximum)
 
-Planner charge mentale couple, qui fait quoi, kit frigo famille, version tablette cliquable, 4 semaines, A4 PDF français
+Planner charge mentale couple, qui fait quoi à deux, kit frigo famille offert, PDF A4 à imprimer et version tablette GoodNotes
+
+(Titre refait le 05/11/2026, 126 caractères ; ancien titre : « Planner charge mentale couple, qui fait quoi, kit frigo famille, version tablette cliquable, 4 semaines, A4 PDF français ».)
 
 ## Mots-clés (13 tags, 20 caractères maximum chacun)
 
@@ -78,7 +80,9 @@ Tu as l'impression de penser à tout, tout le temps ? Ce planner ne s'arrête pa
 - Pour ton usage personnel : la revente et le partage du fichier ne sont pas autorisés.
 - Outil d'organisation personnelle, pas un soin. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
 
-Créé par Clarté Mentale | Stress & Énergie.
+Conçu par HestiaAura, avec l'aide d'outils d'intelligence artificielle pour la rédaction et la mise en page. Le contenu, la méthode et les sources ont été choisis et relus par moi. Aucune image n'est générée par IA.
+
+(Mention IA ajoutée le 05/11/2026 : les règles d'Etsy, « Creativity Standards », imposent d'indiquer dans la description qu'un article a été créé avec l'aide de l'IA ; dans le formulaire, choisir « Conçu par moi » et non « Fabriqué par moi ».)
 
 ## Contrôles faits
 
