@@ -370,3 +370,7 @@ une petite trace de signature illisible sur la lampe a été effacée pixel par 
 crédit ElevenLabs ni Canva utilisé. Images gardées dans `photos_attente/riche-hypervigilance/`.
 Contrôles : anti_doublons.py (aucun doublon), titre 46 caractères, corps 385, total 469, 8 hashtags ; description d'article 430 ;
 `verifier_banque.py` : 0 doublon (237 titres) ; image relue, rien ne déborde ni ne chevauche.
+Statistiques relevées le 05/11 (PINTEREST_GET_PIN_ANALYTICS, 03/11 → 04/11, le 04/11 encore en traitement) : « Réveil fatigué :
+5 clés pour des matins plus légers » (600175087890511362, publiée le 04/11) : 0 impression, 0 enregistrement, 0 clic ; épingle
+faite à la main « Auto-massage anti-stress : 5 gestes doux » (600175087890491617, publiée le 03/11, sans lien) : 1 impression,
+1 clic sur l'épingle, 0 enregistrement. Trop tôt pour conclure ; suivis à 7 et 14 jours déjà programmés pour l'auto-massage.
