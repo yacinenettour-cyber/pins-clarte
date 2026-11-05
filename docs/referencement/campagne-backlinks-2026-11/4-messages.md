@@ -65,3 +65,13 @@ sans voix de /ressources-libres/, 102 mots, fil 1a1a669d3180b112, vérifié dans
 Pas d'autres envois : après vérification sur leur site, Sommeil et Santé (inactif depuis 2023), CREDIR (vend des stages),
 Panda Tea (boutique) et Pro Mente Sana (droits des patients) ne conviennent pas, et les autres cibles « à vérifier » n'ont
 pas d'adresse e-mail affichée. La qualité passe avant le nombre.
+
+### Vérification du 05/11 (Gmail, retours système)
+
+Correction : l'e-mail à Somnologie.fr du 04/11 n'a **pas** été remis. Le serveur a répondu 550 « No Such User Here » quatre secondes
+après l'envoi : l'adresse contact@somnologie.fr, pourtant affichée sur leur page contact, n'existe pas. Je l'avais d'abord
+noté « envoyé » après avoir vu le message dans « Envoyés », sans regarder les retours système : à partir de maintenant, chaque
+envoi est suivi d'un contrôle des retours (mailer-daemon) quelques minutes plus tard. Statut passé à « erreur » ; autre voie :
+le formulaire de https://somnologie.fr/contact/ (à remplir à la main, même texte). FNAPSY : échec définitif de livraison le
+04/11 à 21 h 07 UTC (serveur injoignable depuis le 02/11) ; statut « erreur », pas de relance. Les 3 envois du matin du 04/11
+(sophrologues) n'ont généré aucun retour ni réponse. Une seule relance due : DOCcitanie (envoyé le 26/10, 10 jours le 05/11).

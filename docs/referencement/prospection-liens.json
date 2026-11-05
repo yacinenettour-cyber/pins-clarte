@@ -2452,7 +2452,7 @@
    "email": "contact@fnapsy.org",
    "email_verifie": true,
    "sujet": "Votre article sur les conversations qui tournent en boucle",
-   "statut": "envoye",
+   "statut": "erreur",
    "date_envoi": "2026-11-01",
    "thread_id": "1a1980f2a67e6169",
    "relance": null,
@@ -2460,7 +2460,8 @@
    "lien_obtenu": null,
    "domaine": "fnapsy.org",
    "type": "campagne-2026-11 (valeur d'abord, aucune demande de lien)",
-   "notes": "Campagne du 01/11 (consigne : « ne demande pas immédiatement de liens, apporte de la valeur avant »). Offre : ressources libres et, si pertinent, article inédit gratuit. Relance unique possible à partir du 11/11."
+   "notes": "Campagne du 01/11 (consigne : « ne demande pas immédiatement de liens, apporte de la valeur avant »). Offre : ressources libres et, si pertinent, article inédit gratuit. Relance unique possible à partir du 11/11.",
+   "note": "04/11 : échec définitif de livraison (serveur fnapsy.org injoignable, délai dépassé après 2 jours de tentatives). Ne pas relancer par e-mail."
   },
   {
    "site": "Culture RH",
@@ -2811,7 +2812,7 @@
    "domaine": "somnologie.fr",
    "page_cible": "https://somnologie.fr/respiration-pour-dormir/",
    "email": "contact@somnologie.fr",
-   "email_verifie": true,
+   "email_verifie": false,
    "source_email": "page https://somnologie.fr/contact/ (« en nous écrivant directement à contact@somnologie.fr »), lue le 04/11/2026",
    "formulaire": null,
    "prenom": null,
@@ -2819,11 +2820,12 @@
    "pourquoi": "Magazine francophone sur le sommeil, page « Respiration pour dormir » avec 4 exercices (abdominale, 4-7-8, alternée, lunaire) sans repère sonore : nos audios 4-6 sans voix la complètent. Aucun lien mort sur les pages lues.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
    "audience": "C thématique : magazine francophone dont le sujet principal est le sommeil, mis à jour en octobre 2026, contenu propre, sans vente de liens (critères vérifiés le 04/11)",
-   "statut": "envoye",
+   "statut": "erreur",
    "type": "campagne-2026-11",
    "lot": "routine du 04/11 (9 h 58)",
    "date_envoi": "2026-11-04",
-   "thread_id": "1a1a669d3180b112"
+   "thread_id": "1a1a669d3180b112",
+   "note": "04/11 : e-mail rejeté le jour même (550 No Such User Here) : l'adresse contact@somnologie.fr affichée sur la page contact n'existe pas côté serveur. Autre voie : le formulaire de https://somnologie.fr/contact/ (nom, e-mail, message), à remplir à la main. Aucune relance par e-mail."
   },
   {
    "site": "Association Sommeil et Santé",
