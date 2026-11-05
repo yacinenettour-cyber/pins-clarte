@@ -161,3 +161,17 @@ Calendars & Planners, prix saisi 7,90 € (affiché 9,48 € TTC pour un acheteu
 « charge mentale » (ils parlent de « belles créations » et de cadeaux) ; la méta-description Google de la boutique reprend ce slogan.
 Pas de photo de profil (avatar par défaut), pas de vidéo sur la fiche (`video-hestiaaura-presentation.mp4` disponible),
 PDF encore signés « Clarté Mentale » sur la couverture, une seule fiche.
+
+## 12. Retour au nom Clarté Mentale (05/11/2026, conseil accepté : « Refais-moi le logo, la bannière et la description »)
+
+Raison : une seule marque avec Pinterest, le site et YouTube ; les PDF sont déjà signés Clarté Mentale. Nom Etsy conseillé :
+**ClarteMentaleFR** (« ClarteMentale » est déjà pris par un membre ; ClarteMentaleFR renvoyait une page introuvable le 05/11).
+Visuels refaits par `python3 outils/etsy/logo_clarte_mentale.py` (SVG dessiné par programme, aucune IA, rien de payant) :
+fenêtre en arche, soleil levant sur une eau calme, halo doré, terracotta et or ; « Clarté » en Playfair, « Mentale » en Dancing Script.
+- `logo-clarte-mentale-icone-500.png` : **icône Etsy** (sans texte, lisible en petit et rognée en rond) ; version 2000 px et SVG ;
+- `logo-clarte-mentale-nom-500.png` : avec le nom, pour les réseaux ; version 2000 px et SVG ;
+- `banniere-clarte-mentale-3360x840.jpg` : médaillon, nom, slogan « Planners à imprimer : la charge mentale, enfin partagée », « SEUL(E) · À DEUX · EN FAMILLE ».
+Slogan : « Planners à imprimer : la charge mentale, enfin partagée » (55). Description de la fiche : « Conçu par Clarté Mentale… ».
+
+**Histoire « À propos » (titre : Poser ce qui tourne dans la tête)** : texte de la section 9 sans le paragraphe sur le nom Hestia, la phrase
+« HestiaAura est né de là » devenant « Cette boutique est née de là ».

@@ -85,7 +85,7 @@ C'est un produit numérique : rien n'arrive par la poste. Les couleurs peuvent u
 
 Ce planner est un outil d'organisation, pas un soin. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
 
-Conçu par HestiaAura, avec l'aide d'outils d'intelligence artificielle pour la rédaction et la mise en page. Le contenu, la méthode et les sources ont été choisis et relus par moi. Aucune image n'est générée par IA.
+Conçu par Clarté Mentale, avec l'aide d'outils d'intelligence artificielle pour la rédaction et la mise en page. Le contenu, la méthode et les sources ont été choisis et relus par moi. Aucune image n'est générée par IA.
 
 ## Contrôles faits
 
