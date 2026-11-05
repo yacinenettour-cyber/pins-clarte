@@ -47,44 +47,43 @@ charge mentale · planner couple · qui fait quoi · kit frigo famille · planne
 
 ## Description
 
-(Réécrite le 05/11/2026 pour le référencement Etsy : mots-clés du titre et des tags dans la première phrase, la seule montrée par Google et en aperçu ; contenu inchangé et fidèle aux PDF.)
+(Réécrite le 05/11/2026, puis rendue plus humaine le même jour à la demande de l'utilisateur, pour le référencement Etsy : mots-clés du titre et des tags dans la première phrase, la seule montrée par Google et en aperçu ; contenu inchangé et fidèle aux PDF.)
 
-Planner charge mentale à imprimer pour couple et famille : un « qui fait quoi » clair pour mieux répartir les tâches à la maison. PDF A4 en français, version tablette GoodNotes et kit frigo famille offert.
+Un planner charge mentale à imprimer, pensé pour le couple et la famille : on pose enfin sur papier qui fait quoi à la maison. En français, en PDF A4, avec une version tablette pour GoodNotes et un kit frigo pour toute la famille.
 
-Tu as l'impression de penser à tout, tout le temps ? Ce planner charge mentale ne s'arrête pas à une liste de choses à faire : il t'aide à sortir la charge mentale de ta tête, à trier, puis à mieux partager les tâches ménagères et l'organisation de la maison avec ton ou ta partenaire et avec toute la famille.
+Tu connais ce moment où tu te couches et où ta tête continue la liste toute seule ? Le rendez-vous chez le pédiatre, le cadeau d'anniversaire, le frigo presque vide… Ce planner est fait pour ça. Pas pour ajouter une liste de plus, mais pour vider ta tête, trier ce qui compte vraiment, et partager les tâches ménagères et l'organisation de la maison avec ton ou ta partenaire, et avec les enfants.
 
-━━ CE QUI LE REND DIFFÉRENT ━━
-✔ Un vrai volet couple, en deux couleurs : « Qui fait quoi ? » en trois colonnes (penser, organiser, faire), une couleur chacun. Puis « Notre mois à deux » : chaque dimanche, vous coloriez qui a porté chaque domaine et vous voyez la répartition des tâches bouger.
-✔ Un kit frigo famille offert : 3 pages à afficher, un prénom et une couleur par personne, pour un planning familial visible de tous.
-✔ Une version tablette cliquable (sommaire, onglets et bas de page cliquables) pour GoodNotes, Notability, Xodo ou toute appli de PDF.
-✔ Une semaine d'exemple déjà remplie, pour démarrer sans la page blanche.
-✔ Une méthode expliquée simplement, appuyée sur des recherches citées dans le planner.
+Ce que tu vas y trouver
 
-━━ CE QUE TU REÇOIS (4 fichiers PDF, en français) ━━
-• Le planner couleur : 32 pages A4 imprimables, à imprimer autant de fois que tu veux.
-• La version économe en encre (fond blanc), même contenu.
-• La version tablette, planner numérique cliquable de 33 pages.
-• Le kit frigo famille : 3 pages A4.
+Un vrai volet pour le couple. Sur la page « Qui fait quoi ? », chacun a sa couleur, et les tâches sont rangées en trois colonnes : penser, organiser, faire. Parce que la charge mentale, c'est souvent la première colonne, celle qu'on ne voit pas. Ensuite, chaque dimanche, vous coloriez ensemble « Notre mois à deux » et vous voyez la répartition des tâches évoluer, sans reproche, juste des faits.
 
-━━ DANS LE PLANNER ━━
-• mode d'emploi en 4 étapes et page « Pourquoi ça marche » ;
-• une semaine d'exemple remplie ;
-• pour chacune des 4 semaines : page d'intention, vide-tête, tri (je m'en occupe, je délègue, plus tard, je lâche), planning de la semaine avec trois priorités par jour et « une chose pour moi », bilan du dimanche ;
-• la liste des tâches invisibles du quotidien ;
-• le volet couple : « Qui fait quoi ? » (2 pages), le rendez-vous à deux, « Notre mois à deux » ;
-• une page de notes.
+Un kit frigo pour la famille, offert. Trois pages à afficher dans la cuisine, avec un prénom et une couleur par personne. Tout le monde voit le planning familial de la semaine, et on arrête de tout demander à la même personne.
 
-━━ COMMENT ÇA MARCHE ━━
-1. Achète le planner.
-2. Télécharge les PDF depuis ton compte Etsy (rubrique « Achats »).
-3. Imprime en A4, taille réelle (100 %), recto seul, perfore à gauche et range dans ton classeur. Ou ouvre la version tablette dans ton appli d'annotation.
+Une version tablette cliquable. Sommaire, onglets et bas de page cliquables, pour GoodNotes, Notability, Xodo ou n'importe quelle appli de PDF.
 
-━━ À SAVOIR ━━
-• Produit numérique : rien n'est envoyé par la poste.
-• Prêt pour le classeur : les marges laissent la place aux trous, rien d'important n'est trop près du bord.
-• Les couleurs peuvent varier selon l'écran et l'imprimante.
-• Pour ton usage personnel : la revente et le partage du fichier ne sont pas autorisés.
-• Outil d'organisation personnelle, pas un soin. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
+Une semaine d'exemple déjà remplie, pour voir comment t'en servir sans rester devant une page blanche.
+
+Et une méthode expliquée simplement, appuyée sur des recherches citées dans le planner.
+
+Dans le détail
+
+Pour chacune des 4 semaines : une page d'intention, un vide-tête, un tri (je m'en occupe, je délègue, plus tard, je lâche), le planning de la semaine avec trois priorités par jour et « une chose pour moi », puis un petit bilan du dimanche. Tu as aussi la liste des tâches invisibles du quotidien, le rendez-vous à deux, le mode d'emploi en 4 étapes, la page « Pourquoi ça marche » et une page de notes.
+
+Tu reçois 4 fichiers PDF :
+- le planner couleur, 32 pages A4 imprimables, à imprimer autant de fois que tu veux ;
+- la même version en économe en encre, sur fond blanc ;
+- la version tablette, un planner numérique cliquable de 33 pages ;
+- le kit frigo famille, 3 pages A4.
+
+Comment ça se passe
+
+Après l'achat, tu télécharges les PDF depuis ton compte Etsy, dans « Achats ». Tu imprimes en A4, taille réelle (100 %), recto seul, tu perfores à gauche et tu ranges dans ton classeur : les marges laissent la place aux trous. Ou tu l'ouvres directement sur ta tablette.
+
+Bon à savoir
+
+C'est un produit numérique : rien n'arrive par la poste. Les couleurs peuvent un peu changer selon ton écran et ton imprimante. Le fichier est pour ton usage personnel, merci de ne pas le revendre ni le partager.
+
+Ce planner est un outil d'organisation, pas un soin. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
 
 Conçu par HestiaAura, avec l'aide d'outils d'intelligence artificielle pour la rédaction et la mise en page. Le contenu, la méthode et les sources ont été choisis et relus par moi. Aucune image n'est générée par IA.
 
