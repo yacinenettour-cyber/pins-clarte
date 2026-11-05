@@ -8856,7 +8856,7 @@
   "url": "https://images.unsplash.com/photo-1788333886466-3b4fe42a949a?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 2097,
-  "statut": "à trier"
+  "statut": "refusée (05/11/2026) : format vertical trop haut pour l'en-tête d'article"
  },
  "unsplash-SFCdN8Z9sBA.jpg": {
   "theme": "systemenerveux",
@@ -8868,7 +8868,7 @@
   "url": "https://images.unsplash.com/photo-1613672710109-d112f6415bb7?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée (05/11/2026) : boit une tasse, ne montre pas une pause respiration"
  },
  "unsplash-maSVWhv-2Og.jpg": {
   "theme": "systemenerveux",
@@ -8880,7 +8880,7 @@
   "url": "https://images.unsplash.com/photo-1665327469722-1878838ee217?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "fonds/unsplash-maSVWhv-2Og.jpg : article « respiration-carree » du site (05/11/2026), réservée au site"
  },
  "unsplash--WKvVXEsohA.jpg": {
   "theme": "systemenerveux",
@@ -8892,6 +8892,6 @@
   "url": "https://images.unsplash.com/photo-1720501829401-8cd9b1419fce?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
   "largeur": 1400,
   "hauteur": 933,
-  "statut": "à trier"
+  "statut": "refusée (05/11/2026) : regard baissé, pas d'idée de respiration"
  }
 }

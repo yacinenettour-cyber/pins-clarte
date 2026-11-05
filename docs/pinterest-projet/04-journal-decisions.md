@@ -1498,3 +1498,32 @@ pause bureau, hiver, dire non) ; grilles « tensions », « pause-bureau » et �
 `photos_attente/`. Contrôles : `verifier_banque.py` 0 doublon (244 titres), titres 43-51 caractères, descriptions
 457-499, premier hashtag = thème, aucune image ne déborde. Mesure prévue : impressions et enregistrements à 7 et
 14 jours, comparés aux épingles « riches » du robot.
+
+## 112. Article « Respiration carrée » (05/11/2026, tâche « Articles : 5 par semaine »)
+
+Sujet n° 15 de `docs/referencement/articles-a-ecrire.md`. Suggestions Google relues le 05/11 depuis l'atelier Composio
+(« respiration carrée bienfaits, danger, combien de temps, combien de fois par jour, anxiété, ou cohérence cardiaque »,
+« respiration au carré ») : aucune page du site ne vise « respiration carrée » (« Respiration pour dormir » garde
+« respiration carrée pour dormir », le minuteur garde « minuteur »). Article `/respiration-carree/` (thème Stress et
+système nerveux, guide sommeil avec un pont honnête), angle « se calmer en journée » : les quatre temps et le schéma
+`carree`, 10 sources dont 7 études vérifiées dans PubMed (titre, revue, année, affiliation lus un par un depuis
+l'atelier) : revue de Galgotias 2026 (8 essais), essai de l'Université d'État du Texas 2026 (66 adultes, texte complet
+lu sur PMC), étude pilote d'Eichstätt-Ingolstadt 2026, Stanford 2023 (protocole lu sur PMC), Brigham Young 2025, méta-
+analyse du Sussex 2023, Cologne 2022 ; NHS (exercice de respiration, trouble anxieux généralisé), 3114. Aucune mention
+« Navy SEALs » ni « forces spéciales » (non sourcé). « Respiration pour dormir » et « Calmer son système nerveux » renvoient
+vers l'article ; ajouté à la page thème.
+- **Photo** : `fonds/unsplash-maSVWhv-2Og.jpg` (Daria Trofimova, Unsplash, gratuite), femme les yeux fermés qui inspire.
+  4 candidates importées par `photos.yml`, 3 refusées (motifs dans `photos_sources.json`). Inédite : empreinte 16×16
+  comparée à 718 images, la plus proche à 50/256 points (tasse de thé, sans rapport). Réservée au site.
+- **Illustration dessinée manquante** : quota gratuit Hugging Face (ZeroGPU) épuisé toute la soirée (4 essais, Z-Image et
+  FLUX). Rien de payant utilisé (ni ElevenLabs ni autre). Le schéma est en place ; l'illustration (homme assis sur un
+  banc, yeux fermés, style aquarelle des fiches) reste à générer quand le quota revient, puis à ajouter à l'article.
+- **Vérifications** : titre 56 caractères, description 142, uniques ; 0 lien interne cassé ; validateur Nu (vnu.jar,
+  moteur du W3C) : 0 erreur sur les 4 pages touchées ; axe-core : 0 violation en clair et en sombre (article et page
+  thème) ; 320 px : aucun débordement. Publié (gh-pages), page en ligne vérifiée (200), IndexNow 200 (4 adresses).
+- **Épingles** : « Respiration en carré : la méthode des forces spéciales » (non publiée) devient « Respiration carrée :
+  mode d'emploi en 4 temps égaux » (51 caractères ; premier titre essayé refusé par `verifier_banque.py`, trop proche
+  d'une épingle en ligne), texte corrigé (plus de « Navy SEALs »), `article` = respiration-carree et
+  `description_article` (462 caractères). `ARTICLES_SITE` complété dans `pins.yml` ; harnais : bon lien, y compris
+  avec 20 liens d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Les 8 fiches-mémo de tête
+  n'ont pas été touchées. Liste des sujets : 10 « à écrire ».

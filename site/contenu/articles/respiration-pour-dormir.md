@@ -85,7 +85,7 @@ Ces résultats sont encourageants, mais ils restent limités. Les groupes sont p
 
 La respiration carrée, ce sont quatre temps égaux (inspirer, bloquer, expirer, bloquer). Le soupir cyclique, ce sont deux inspirations suivies d'une longue expiration. Les deux calment le stress, mais leur effet sur le sommeil n'a pas été démontré [3][6].
 
-Sur la respiration carrée, les essais sont rares. Dujawara, Ali et Kumari, de l'Université Galgotias, en Inde, n'en ont trouvé que 8 qui l'évaluaient vraiment, dans un travail de synthèse publié en 2026 dans une revue de psychophysiologie appliquée. On y voit des bénéfices à court terme sur le stress ressenti, l'anxiété et l'humeur, mais avec des résultats inégaux d'une étude à l'autre [6].
+Sur la respiration carrée, les essais sont rares. Dujawara, Ali et Kumari, de l'Université Galgotias, en Inde, n'en ont trouvé que 8 qui l'évaluaient vraiment, dans un travail de synthèse publié en 2026 dans une revue de psychophysiologie appliquée. On y voit des bénéfices à court terme sur le stress ressenti, l'anxiété et l'humeur, mais avec des résultats inégaux d'une étude à l'autre [6]. Comment la faire, combien de temps et avec quelles précautions : tout est dans l'article sur la [respiration carrée](/respiration-carree/), qui la teste plutôt pour les moments de stress de la journée.
 
 Le soupir cyclique, lui, a été testé à l'Université Stanford, face à la respiration carrée et à la méditation de pleine conscience (Balban et ses collègues, 2023, dans une revue de recherche médicale). Les 108 participants pratiquaient 5 minutes par jour pendant un mois [3].
 

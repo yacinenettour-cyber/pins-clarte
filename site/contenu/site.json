@@ -212,6 +212,12 @@
    "image": "unsplash-AywSVPW5vzA.jpg",
    "alt": "Vue de dessus d'une femme en pull blanc qui écrit dans un carnet sur une table en marbre, à côté d'une tasse de café",
    "credit": "Photo : Happy & Spice / Unsplash"
+  },
+  "respiration-carree": {
+   "categorie": "stress",
+   "image": "unsplash-maSVWhv-2Og.jpg",
+   "alt": "Jeune femme en tee-shirt blanc, les yeux fermés, qui inspire calmement devant un mur clair",
+   "credit": "Photo : Daria Trofimova / Unsplash"
   }
  },
  "formation": {
@@ -405,6 +411,10 @@
     [
      "Tu veux te calmer vite quand la pression monte",
      "calmer-son-systeme-nerveux"
+    ],
+    [
+     "Tu veux une respiration simple pour te poser en pleine journée",
+     "respiration-carree"
     ],
     [
      "Tu restes en alerte, tu sursautes pour un rien et tu dors mal",
