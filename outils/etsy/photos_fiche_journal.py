@@ -40,9 +40,9 @@ def signature(d, y=H - 110):
 
 def p01_couverture():
     im = fond((236, 238, 232), vignette=0.12).convert("RGBA")
-    coller(im, page(4, 700), (1180, 1040), 3, eleve=0.6)
-    coller(im, page(6, 700), (1370, 1090), 9, eleve=0.7)
-    coller(im, page(7, 700), (1540, 1160), 15, eleve=0.8)
+    coller(im, page(5, 700), (1180, 1040), 3, eleve=0.6)
+    coller(im, page(8, 700), (1370, 1090), 9, eleve=0.7)
+    coller(im, page(9, 700), (1540, 1160), 15, eleve=0.8)
     coller(im, page(1, 940), (760, 1160), -3, eleve=1.2)
     d = ImageDraw.Draw(im)
     brin(d, 120, 2080, 520, -68)
@@ -60,8 +60,8 @@ def p01_couverture():
                  ("Version tablette cliquable", J.BRUME[0])):
         pastille(d, x0, y, t, GRAS(46), fond_c=c); y += 122
     assert largeur(d, "ses émotions", J.ITAL(170, 500)) + x0 < W - 40
-    d.text((x0, y + 40), "31 pages A4  ·  3 versions", font=TEXTE(52), fill=TXT)
-    d.text((x0, y + 120), "+ aide-mémoire à découper", font=TEXTE(52), fill=TXT)
+    d.text((x0, y + 40), "40 pages A4  ·  3 versions", font=TEXTE(52), fill=TXT)
+    d.text((x0, y + 120), "+ 3 pages bonus à découper", font=TEXTE(52), fill=TXT)
     assert largeur(d, "Version tablette cliquable", GRAS(46)) + 72 + x0 < W - 40
     return F.enregistrer(im, "fiche-01-couverture.jpg")
 
@@ -70,8 +70,8 @@ def p02_fiche():
     im = fond((240, 232, 226)).convert("RGBA")
     d = ImageDraw.Draw(im)
     entete(d, "le cœur du journal", "Une fiche quand une émotion monte", "remarque, nomme, comprends, choisis")
-    coller(im, page(6, 900), (1000, 1360), -3, eleve=1.0)
-    p6 = page(6, 1654)
+    coller(im, page(9, 900), (1000, 1360), -3, eleve=1.0)
+    p6 = page(9, 1654)
     loupe(im, p6, (110, 740, 900, 1530), (420, 1700), 270)
     d = ImageDraw.Draw(im)
     x = 1760
@@ -80,7 +80,7 @@ def p02_fiche():
     y = bulle(d, x, y + 40, "Pensée et besoin", "Ce que tu t'es dit, et ce dont tu avais besoin.", 1100, LAVANDE)
     bulle(d, x, y + 40, "Une autre façon de voir", "Puis une réponse que tu choisis, au lieu de la subir.", 1100, SAUGE)
     signature(d)
-    return F.enregistrer(im, "fiche-02-fiche-emotion.jpg")
+    return F.enregistrer(im, "fiche-03-fiche-emotion.jpg")
 
 
 def p03_palette():
@@ -89,21 +89,21 @@ def p03_palette():
     entete(d, "pour trouver le mot juste", "48 mots et une carte du corps", "plus le mot est précis, plus c'est clair",
            couleur_sur=LAVANDE)
     coller(im, page(4, 860), (1040, 1360), -4, eleve=1.0)
-    coller(im, page(5, 860), (1960, 1380), 4, eleve=1.0)
+    coller(im, page(7, 860), (1960, 1380), 4, eleve=1.0)
     d = ImageDraw.Draw(im)
     signature(d)
-    return F.enregistrer(im, "fiche-03-palette-corps.jpg")
+    return F.enregistrer(im, "fiche-04-palette-corps.jpg")
 
 
 def p04_mois():
     im = fond((236, 236, 230)).convert("RGBA")
     d = ImageDraw.Draw(im)
     entete(d, "voir ce qui revient", "Ton mois en couleurs", "et un bilan chaque semaine, sommeil compris", couleur_sur=SAUGE)
-    coller(im, page(7, 860), (1040, 1360), -3, eleve=1.0)
-    coller(im, page(12, 860), (1960, 1380), 3, eleve=1.0)
+    coller(im, page(10, 860), (1040, 1360), -3, eleve=1.0)
+    coller(im, page(15, 860), (1960, 1380), 3, eleve=1.0)
     d = ImageDraw.Draw(im)
     signature(d)
-    return F.enregistrer(im, "fiche-04-mois-bilan.jpg")
+    return F.enregistrer(im, "fiche-05-mois-bilan.jpg")
 
 
 def p05_tablette():
@@ -112,29 +112,30 @@ def p05_tablette():
     entete(d, "version tablette incluse", "Onglets et sommaire cliquables", "GoodNotes, Notability, Xodo… et toute appli de PDF",
            couleur_sur=BRUME)
     coller(im, tablette(page(2, 820, "t"), 820), (1000, 1330), -3, eleve=1.2)
-    coller(im, tablette(page(7, 640, "t"), 640), (1880, 1420), 5, eleve=1.0)
+    coller(im, tablette(page(10, 640, "t"), 640), (1880, 1420), 5, eleve=1.0)
     stylet(im, 2350, 2000, 560, -60)
     d = ImageDraw.Draw(im)
     x = 2330
     y = bulle(d, x, 600, "Sommaire", "Une ligne touchée, tu y es.", 600, BRUME)
     y = bulle(d, x, y + 40, "Onglets", "Exemple, semaines 1 à 4, outils.", 600, ROSE)
     bulle(d, x, y + 40, "Retour", "Le bas de chaque page ramène au sommaire.", 600, SAUGE)
-    return F.enregistrer(im, "fiche-05-tablette-cliquable.jpg")
+    return F.enregistrer(im, "fiche-06-tablette-cliquable.jpg")
 
 
 def p06_contenu():
     im = fond((240, 236, 228)).convert("RGBA")
     d = ImageDraw.Draw(im)
-    entete(d, "tout ce que tu reçois", "31 pages + l'aide-mémoire", y=90)
-    cols, lw = 11, 236
+    entete(d, "tout ce que tu reçois", "40 pages + 3 pages bonus", y=90)
+    cols, lw = 10, 210
     x0 = (W - cols * lw - (cols - 1) * 26) // 2
-    for i in range(31):
+    for i in range(40):
         r, c = divmod(i, cols)
-        coller(im, page(i + 1, lw), (x0 + c * (lw + 26) + lw // 2, 640 + r * 410), 0, ombre=0.7, eleve=0.25)
+        coller(im, page(i + 1, lw), (x0 + c * (lw + 26) + lw // 2, 500 + r * 330), 0, ombre=0.7, eleve=0.25)
     d = ImageDraw.Draw(im)
-    items = ["Mode d'emploi + « Pourquoi ça marche »", "Palette de 48 mots, carte du corps", "Une fiche d'exemple remplie",
-             "4 semaines : ouverture, 3 fiches, bilan", "Mois en couleurs, boîte à outils", "Bonus : aide-mémoire (2 pages)"]
-    y = 1880
+    items = ["Mode d'emploi + « Pourquoi ça marche »", "Palette, intensités, messages, carte du corps",
+             "Méthode P.A.U.S.E. + audios offerts", "4 semaines : ouverture, 3 fiches, bilan",
+             "9 outils : déclencheurs, le dire, bons moments…", "Bonus : cartes à découper (3 pages)"]
+    y = 1820
     for k, t in enumerate(items):
         col = k % 2; x = 470 + col * 1180
         d.ellipse([x, y + 18, x + 26, y + 44], fill=[SAUGE, ROSE][col])
@@ -142,23 +143,23 @@ def p06_contenu():
         d.text((x + 50, y), t, font=TEXTE(50), fill=TXT)
         if col == 1:
             y += 90
-    return F.enregistrer(im, "fiche-06-contenu-complet.jpg")
+    return F.enregistrer(im, "fiche-07-contenu-complet.jpg")
 
 
 def p07_versions():
     im = fond((236, 234, 230)).convert("RGBA")
     d = ImageDraw.Draw(im)
-    entete(d, "inclus dans ton achat", "3 versions + l'aide-mémoire", "imprime ou annote, comme tu préfères", couleur_sur=SAUGE)
-    coller(im, page(9, 640), (560, 1250), -3, eleve=1.0)
-    coller(im, page(9, 640, "e"), (1240, 1250), 0, eleve=1.0)
-    coller(im, tablette(page(10, 560, "t"), 560), (1920, 1250), 3, eleve=1.1)
+    entete(d, "inclus dans ton achat", "3 versions + 3 pages bonus", "imprime ou annote, comme tu préfères", couleur_sur=SAUGE)
+    coller(im, page(12, 640), (560, 1250), -3, eleve=1.0)
+    coller(im, page(12, 640, "e"), (1240, 1250), 0, eleve=1.0)
+    coller(im, tablette(page(13, 560, "t"), 560), (1920, 1250), 3, eleve=1.1)
     coller(im, page(1, 600, "k"), (2560, 1250), 4, eleve=1.0)
     d = ImageDraw.Draw(im)
     for x, lib, c in ((560, "Couleur", ROSE), (1240, "Économe en encre", (120, 116, 110)), (1920, "Tablette", BRUME),
                       (2560, "Bonus", (176, 140, 92))):
         w = largeur(d, lib, GRAS(52)) + 72
         pastille(d, x - w / 2, 1980, lib, GRAS(52), fond_c=c)
-    return F.enregistrer(im, "fiche-07-trois-versions.jpg")
+    return F.enregistrer(im, "fiche-08-trois-versions.jpg")
 
 
 def p08_pourquoi():
@@ -178,7 +179,7 @@ def p08_pourquoi():
     bulle(d, x, y + 50, "Ruminer n'aide pas",
           "Université Yale, 2010 : la rumination, stratégie la plus liée à l'anxiété et à la dépression.", 1340, LAVANDE)
     centre(d, "« Pas de bonne ou de mauvaise émotion. Juste des signaux. »", MAIN(70), 1860, 1400, 2900, ROSE)
-    return F.enregistrer(im, "fiche-08-pourquoi-ca-marche.jpg")
+    return F.enregistrer(im, "fiche-09-pourquoi-ca-marche.jpg")
 
 
 def p09_comment():
@@ -198,12 +199,27 @@ def p09_comment():
     bloc(d, "Pour ton usage personnel. Outil pour mieux te connaître, pas un soin : si une émotion déborde souvent, "
             "parles-en à ton médecin ou à un psychologue.", TEXTE(44), 500, 1700, 2000, couleur=(130, 116, 104), centrer=True)
     signature(d, y=1950)
-    return F.enregistrer(im, "fiche-09-comment-ca-marche.jpg")
+    return F.enregistrer(im, "fiche-10-comment-ca-marche.jpg")
+
+
+def p10_plus():
+    im = fond((240, 236, 230)).convert("RGBA")
+    d = ImageDraw.Draw(im)
+    entete(d, "ce que tu ne trouveras pas ailleurs", "Plus qu'un journal : une méthode complète",
+           "créée par Clarté Mentale, en français")
+    for i, (n, ang) in enumerate(zip((8, 5, 6, 34), (-6, -2, 2, 6))):
+        coller(im, page(n, 620), (560 + i * 630, 1180 + abs(i - 1.5) * 30), ang, eleve=0.7 + 0.1 * i)
+    d = ImageDraw.Draw(im)
+    for x, lib, sous in ((560, "P.A.U.S.E.", "quand ça déborde + audios"), (1190, "Les intensités", "agir avant que ça déborde"),
+                         (1820, "Le message", "de chaque émotion"), (2450, "Le dire", "en quatre temps")):
+        centre(d, lib, J.SERIF(68, 600), 1880, x - 320, x + 320, BRUN)
+        centre(d, sous, J.SANS(40, 350), 1970, x - 320, x + 320, TXT)
+    return F.enregistrer(im, "fiche-02-methode-complete.jpg")
 
 
 if __name__ == "__main__":
     rendre_pages()
     for vieux in glob.glob(os.path.join(F.DOSSIER, "fiche-*.jpg")):
         os.remove(vieux)
-    for fn in (p01_couverture, p02_fiche, p03_palette, p04_mois, p05_tablette, p06_contenu, p07_versions, p08_pourquoi, p09_comment):
+    for fn in (p01_couverture, p10_plus, p02_fiche, p03_palette, p04_mois, p05_tablette, p06_contenu, p07_versions, p08_pourquoi, p09_comment):
         print(fn())

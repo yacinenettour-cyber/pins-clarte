@@ -6,12 +6,12 @@ de la formation (ni sommeil ni ruminations du soir comme sujet). Générateurs :
 (sources vérifiées : PubMed 17576282, 22582737, 20015584, 33367799).
 
 **Fichiers à téléverser (4 PDF, tous sous 7 Mo)** :
-1. `journal-apprivoiser-ses-emotions-A4.pdf` : couleur, 31 pages ;
+1. `journal-apprivoiser-ses-emotions-A4.pdf` : couleur, 40 pages ;
 2. `journal-apprivoiser-ses-emotions-A4-econome-encre.pdf` : même contenu, fond blanc ;
-3. `journal-apprivoiser-ses-emotions-tablette.pdf` : 32 pages (sommaire en plus), onglets, sommaire et bas de page cliquables ;
-4. `aide-memoire-emotions-A4.pdf` : bonus, 2 pages (4 cartes à découper, palette de poche en 2 exemplaires).
+3. `journal-apprivoiser-ses-emotions-tablette.pdf` : 41 pages (sommaire en plus), onglets, sommaire et bas de page cliquables ;
+4. `aide-memoire-emotions-A4.pdf` : bonus, 3 pages (4 cartes des étapes, 4 cartes P.A.U.S.E., palette de poche en 2 exemplaires).
 
-**Photos, dans cet ordre** : `fiche-01-couverture.jpg` à `fiche-09-comment-ca-marche.jpg` (3000 × 2250).
+**Photos, dans cet ordre** : `fiche-01-couverture.jpg` à `fiche-10-comment-ca-marche.jpg` (3000 × 2250).
 **Prix conseillé** : 7,90 € (comme le planner), 9,90 € après les premiers avis.
 **Catégorie** : Papeterie > Agendas et planners (ou Journaux / carnets) · téléchargement numérique · « Conçu par moi », mention IA dans la description.
 **Attributs** : largeur 21 cm, hauteur 29,7 cm ; couleur principale beige, couleur secondaire vert.
@@ -36,23 +36,27 @@ Une fiche guidée, le cœur du journal. Les faits, comme une caméra. Le mot jus
 
 Une palette de 48 mots, rangés en six familles : joie, calme, tristesse, colère, peur, honte et gêne. Parce qu'entre « ça ne va pas » et « je suis déçu(e) » ou « je suis à bout », il y a toute la différence.
 
-Une carte du corps, pour repérer où l'émotion se loge : mâchoire serrée, gorge nouée, ventre noué…
+Et des outils que tu ne trouveras pas ailleurs, créés pour ce journal :
+- la méthode P.A.U.S.E., cinq temps pour le moment où ça déborde, avec une carte à glisser dans ton portefeuille ;
+- l'échelle des intensités, pour repérer ton signal d'alerte et agir avant que ça déborde ;
+- le message de chaque émotion : ce qu'elle signale souvent, le besoin derrière, la question à te poser ;
+- « Le dire en quatre temps », pour exprimer ce que tu ressens sans reproche ;
+- « Me parler comme à un ami », pour adoucir la petite voix qui juge ;
+- ta carte des déclencheurs, les fiches express pour les jours pressés, les bons moments et une lettre à toi dans un mois.
 
-Un mois en couleurs : chaque soir, un rond colorié avec l'émotion du jour, et trois petits ronds pour ton sommeil. Au bout du mois, ce qui revient saute aux yeux.
+En cadeau : trois audios de respiration guidée (3, 5 ou 10 minutes), sans voix, à écouter gratuitement en scannant le code de la page P.A.U.S.E.
 
-Une fiche d'exemple déjà remplie, pour voir comment t'en servir sans rester devant une page blanche.
-
-Et une méthode expliquée simplement, appuyée sur des études citées dans le journal.
+Une fiche d'exemple déjà remplie, pour voir comment t'en servir sans rester devant une page blanche. Et une méthode expliquée simplement, appuyée sur des études citées dans le journal.
 
 Dans le détail
 
-Mode d'emploi en 4 étapes, page « Pourquoi ça marche », palette des émotions, carte du corps, fiche d'exemple, mois en couleurs. Puis, pour chacune des 4 semaines : une page d'ouverture, 3 fiches émotion et un bilan de la semaine. Pour finir : ta boîte à outils (des pistes à tester et à cocher), tes repères du mois, une page « Quand en parler » avec les numéros utiles, et une page de notes.
+Mode d'emploi, « Pourquoi ça marche », palette des émotions, échelle des intensités, message de chaque émotion, carte du corps, méthode P.A.U.S.E., fiche d'exemple et mois en couleurs. Puis, pour chacune des 4 semaines : une page d'ouverture, 3 fiches émotion et un bilan. Pour finir : fiches express, carte des déclencheurs, « Me parler comme à un ami », « Le dire en quatre temps », les bons moments, ta boîte à outils, tes repères du mois, une lettre à toi, une page « Quand en parler » avec les numéros utiles, et une page de notes.
 
 Tu reçois 4 fichiers PDF :
-- le journal couleur, 31 pages A4, à imprimer autant de fois que tu veux ;
+- le journal couleur, 40 pages A4, à imprimer autant de fois que tu veux ;
 - la même version en économe en encre, sur fond blanc ;
-- la version tablette, cliquable, de 32 pages ;
-- l'aide-mémoire : 4 cartes à découper et une palette de poche (2 pages).
+- la version tablette, cliquable, de 41 pages ;
+- 3 pages bonus à découper : les 4 étapes, la carte P.A.U.S.E. et la palette de poche.
 
 Comment ça se passe
 
@@ -77,3 +81,9 @@ Conçu par Clarté Mentale, avec l'aide d'outils d'intelligence artificielle pou
   uni, titres serif fins (Cormorant Garamond), petites capitales espacées (Jost), filets fins, couleurs sourdes, couverture
   sauge avec cadre fin et brin au trait ; arche supprimée. Polices ajoutées dans `polices/` (licence OFL, gratuites,
   `LICENSE-CormorantGaramond.txt`, `LICENSE-Jost.txt`). Mêmes contrôles (marges, largeurs de texte, 200 liens tablette).
+- 05/11/2026, valeur ajoutée (consigne : « assure-toi qu'elle se démarque de la concurrence, ajoute énormément de valeur
+  ajoutée, pas de plagiat ») : 9 pages d'outils écrites pour ce journal (échelle des intensités, message de chaque émotion,
+  méthode P.A.U.S.E. créée par Clarté Mentale, fiches express, carte des déclencheurs, « Me parler comme à un ami », « Le dire
+  en quatre temps », bons moments, lettre à soi) + carte P.A.U.S.E. en bonus + QR code vers les 3 audios gratuits du site
+  (page /respiration-guidee/ vérifiée en ligne le 05/11, QR généré par segno, licence libre). Aucun texte ni gabarit repris
+  d'un concurrent : les best-sellers n'ont servi qu'à repérer le style visuel. 40 pages, 272 liens tablette, marges contrôlées.

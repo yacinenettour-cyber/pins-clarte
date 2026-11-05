@@ -45,7 +45,7 @@ FAMILLES = [
 NB_MOTS = sum(len(f[2]) for f in FAMILLES)
 ACC = {0: SAUGE, 1: SAUGE, 2: BLUSH, 3: SABLE, 4: BRUME, "outils": LILAS}
 ONGLETS = [(0, "Exemple"), (1, "Sem. 1"), (2, "Sem. 2"), (3, "Sem. 3"), (4, "Sem. 4"), ("outils", "Outils")]
-NB_PAGES = 31
+NB_PAGES = 40
 
 
 @lru_cache(maxsize=None)
@@ -580,6 +580,296 @@ def notes(num):
     return img
 
 
+
+# ------------------------------------------------------------------ outils en plus (05/11/2026, « ajoute énormément de valeur
+# ajoutée, pas de plagiat ») : textes et méthodes écrits pour ce journal (P.A.U.S.E. est une création de Clarté Mentale)
+URL_AUDIOS = "https://www.contactapaisement-mental.fr/respiration-guidee/"
+
+
+def qr(d, x, y, taille, url=URL_AUDIOS):
+    import segno
+    q = segno.make(url, error="m")
+    mat = list(q.matrix); n = len(mat) + 8
+    c = taille / n
+    d.rectangle((x, y, x + taille, y + taille), fill=PAPIER)
+    for i, rang in enumerate(mat):
+        for j, v in enumerate(rang):
+            if v:
+                d.rectangle((x + (j + 4) * c, y + (i + 4) * c, x + (j + 5) * c - 0.5, y + (i + 5) * c - 0.5), fill=ENC)
+
+
+INTENSITES = [("Joie", SABLE, ["satisfaction", "contentement", "joie", "euphorie"]),
+              ("Calme", SAUGE, ["répit", "détente", "sérénité", "plénitude"]),
+              ("Tristesse", BRUME, ["vague à l'âme", "peine", "tristesse", "désespoir"]),
+              ("Colère", BLUSH, ["agacement", "irritation", "colère", "fureur"]),
+              ("Peur", LILAS, ["inquiétude", "appréhension", "peur", "panique"]),
+              ("Honte et gêne", GREGE, ["gêne", "embarras", "honte", "humiliation"])]
+
+
+def intensites(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "du plus léger au plus fort", "L'échelle des intensités", num, LILAS, date=False)
+    y = para(d, M, y, "Une même émotion a plusieurs degrés. Repérer le tien, c'est pouvoir agir tôt, avant que ça "
+             "déborde.", SANS(33, 350), L - M) + 30
+    xs = [M + 330 + k * (L - M - 330) / 4 for k in range(4)]
+    cw = (L - M - 330) / 4
+    for k, lib in enumerate(("léger", "modéré", "fort", "très fort")):
+        esp(d, 0, y, lib.upper(), SANS(22, 500), TAUPE, pas=3, centre_entre=(xs[k], xs[k] + cw))
+    y += 60
+    rh = 205
+    for i, (nom, (fort, clair), mots) in enumerate(INTENSITES):
+        y0 = y + i * rh
+        ligne(d, M, y0, L, FILET, 1)
+        d.text((M, y0 + 66), nom, font=SERIF(50, 600), fill=ENC)
+        for k, m in enumerate(mots):
+            cx = xs[k] + cw / 2; r = 10 + k * 6
+            couleur = tuple(int(clair[c] + (fort[c] - clair[c]) * (0.35 + 0.65 * k / 3)) for c in range(3))
+            d.ellipse((cx - r, y0 + 80 - r, cx + r, y0 + 80 + r), fill=couleur)
+            assert d.textlength(m, font=SANS(30, 400)) < cw - 10, m
+            centre(d, y0 + 126, m, SANS(31, 400), TXT, xs[k], xs[k] + cw)
+            if k < 3:
+                d.line((cx + r + 14, y0 + 80, xs[k + 1] + cw / 2 - (16 + k * 6) - 14, y0 + 80), fill=FILET, width=2)
+    y = y + len(INTENSITES) * rh
+    ligne(d, M, y, L, FILET, 1)
+    y += 50
+    etiquette(d, M, y, "mon signal d'alerte : à partir de quel degré je fais une pause ?", ENC)
+    lignes_ecriture(d, M, y + 30, L, H - 200, pas=72)
+    assert y + 250 < H - 200
+    return img
+
+
+MESSAGES = [("Joie", SABLE, "Quelque chose qui compte pour moi se passe bien.", "partager, savourer",
+             "Comment faire durer ce moment ?"),
+            ("Calme", SAUGE, "Je suis en sécurité, rien ne presse.", "repos, continuité",
+             "Qu'est-ce qui m'aide à me sentir comme ça ?"),
+            ("Tristesse", BRUME, "Une perte, un manque ou une déception.", "réconfort, lien, temps",
+             "De quoi, ou de qui, ai-je besoin maintenant ?"),
+            ("Colère", BLUSH, "Une limite franchie, une injustice, un obstacle.", "respect, justice, changement",
+             "Quelle limite je veux poser, et comment ?"),
+            ("Peur", LILAS, "Un danger possible, une incertitude.", "sécurité, information, préparation",
+             "Qu'est-ce qui est sûr, ici et maintenant ?"),
+            ("Honte et gêne", GREGE, "La crainte d'être jugé(e) ou mis(e) à l'écart.", "acceptation, bienveillance",
+             "Que dirais-je à un ami à ma place ?")]
+
+
+def messages(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "ce qu'elle essaie de me dire", "Le message de chaque émotion", num, LILAS, date=False)
+    y = para(d, M, y, "Chaque émotion porte souvent un message, et un besoin derrière. Des repères, pas des règles : la "
+             "tienne peut dire autre chose.", SANS(33, 350), L - M) + 30
+    rh = (H - 200 - y) / len(MESSAGES)
+    for i, (nom, (fort, clair), signal, besoin, question) in enumerate(MESSAGES):
+        y0 = y + i * rh
+        boite(d, M, y0, L, y0 + rh - 26, fond=None, contour=FILET)
+        d.rectangle((M + 1, y0 + 24, M + 7, y0 + rh - 50), fill=fort)
+        d.text((M + 44, y0 + 22), nom, font=SERIF(50, 600), fill=ENC)
+        x2 = M + 430
+        etiquette(d, x2, y0 + 30, "elle me signale souvent")
+        para(d, x2, y0 + 64, signal, SANS(31, 350), L - x2 - 40, inter=1.35)
+        etiquette(d, M + 44, y0 + 128, "le besoin derrière")
+        para(d, M + 44, y0 + 160, besoin, SANS(29, 400), x2 - M - 44 - 40, inter=1.25)
+        etiquette(d, x2, y0 + 128, "ma question")
+        d.text((x2, y0 + 158), question, font=ITAL(38, 500), fill=fort)
+        assert x2 + d.textlength(question, font=ITAL(38, 500)) < L - 30, question
+        assert y0 + 160 + 2 * 36 < y0 + rh - 26, rh
+    return img
+
+
+def pause(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "quand ça déborde", "La méthode P.A.U.S.E.", num, BLUSH, date=False)
+    y = para(d, M, y, "Au plus fort de l'émotion, pas besoin d'écrire. Cinq temps, une minute, à faire là où tu es.",
+             SANS(34, 350), L - M) + 40
+    etapes = [("P", "Pose ce que tu fais", "Les mains, la voix, le téléphone : rien ne presse à la seconde près."),
+              ("A", "Allonge ton souffle", "Inspire sur 4 temps, souffle sur 6. Trois ou quatre fois."),
+              ("U", "Un mot", "Dis-toi « là, c'est de la colère », ou de la peur, de la peine…"),
+              ("S", "Sens tes appuis", "Les pieds au sol, le dos contre la chaise, le poids de ton corps."),
+              ("E", "Et maintenant ?", "Choisis la suite : répondre plus tard, sortir, demander de l'aide.")]
+    for lettre, t, txt in etapes:
+        d.text((M, y - 20), lettre, font=SERIF(130, 400), fill=BLUSH[0])
+        d.text((M + 170, y), t, font=SERIF(56, 600), fill=ENC)
+        para(d, M + 170, y + 78, txt, SANS(33, 350), L - M - 170)
+        y += 230
+        ligne(d, M + 170, y - 40, L, FILET, 1)
+    y += 10
+    boite(d, M, y, L, y + 330, fond=TEINTE, contour=TEINTE)
+    qr(d, L - 300, y + 30, 270)
+    etiquette(d, M + 50, y + 44, "offert : respiration guidée", SAUGE[0])
+    para(d, M + 50, y + 94, "Trois audios gratuits de respiration 4-6 (3, 5 ou 10 minutes), sans voix, guidés par des bols "
+         "chantants. Scanne le code avec ton téléphone.", SANS(31, 350), L - M - 420)
+    d.text((M + 50, y + 262), "contactapaisement-mental.fr/respiration-guidee", font=SANS(26, 400), fill=TAUPE)
+    assert y + 330 < H - 140, y
+    return img
+
+
+def fiches_express(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "pour les jours pressés", "Fiches express", num, LILAS, date=False)
+    y = para(d, M, y, "Deux minutes, pas plus. Imprime cette page autant de fois que tu veux.", SANS(33, 350), L - M) + 30
+    bh = (H - 200 - y - 2 * 34) / 3
+    for k in range(3):
+        y0 = y + k * (bh + 34)
+        boite(d, M, y0, L, y0 + bh, contour=FILET)
+        yy = y0 + 34
+        for lib, lg in (("quand", 1), ("le mot juste", 1)):
+            etiquette(d, M + 40, yy, lib)
+            ligne(d, M + 430, yy + 30, L - 40); yy += 74
+        etiquette(d, M + 40, yy + 4, "intensité")
+        for i in range(11):
+            cx = M + 460 + i * 80
+            d.ellipse((cx - 22, yy - 6, cx + 22, yy + 38), outline=LILAS[0], width=2)
+            centre(d, yy + 2, str(i), SANS(22, 400), TXT, cx - 22, cx + 22)
+        yy += 74
+        for lib in ("ce dont j'ai besoin", "ce que je fais"):
+            w = etiquette(d, M + 40, yy, lib)
+            assert M + 40 + w < M + 420, lib
+            ligne(d, M + 430, yy + 30, L - 40); yy += 74
+        assert yy < y0 + bh, (yy, y0 + bh)
+    return img
+
+
+SITUATIONS = ["Travail", "Couple", "Enfants, famille", "Amis", "Argent", "Santé", "Fatigue, sommeil", "Imprévus",
+              "Écrans, infos", "Autre :"]
+
+
+def declencheurs(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "ce qui me fait réagir", "Ma carte des déclencheurs", num, LILAS)
+    y = para(d, M, y, "À chaque fiche, coche une case : la situation, et la famille de l'émotion. Au bout du mois, la "
+             "carte montre ce qui te touche le plus.", SANS(33, 350), L - M) + 30
+    x0 = M + 360; cw = (L - x0) / 6
+    for k, (nom, (fort, _), _) in enumerate(FAMILLES):
+        cx = x0 + k * cw + cw / 2
+        d.ellipse((cx - 14, y, cx + 14, y + 28), fill=fort)
+        nm = nom if nom != "Honte et gêne" else "Honte"
+        centre(d, y + 40, nm, SANS(26, 400), TXT, x0 + k * cw, x0 + (k + 1) * cw)
+    y += 100
+    rh = 128
+    for i, sit in enumerate(SITUATIONS):
+        y0 = y + i * rh
+        ligne(d, M, y0, L, FILET, 1)
+        d.text((M, y0 + 40), sit, font=SANS(32, 400), fill=ENC)
+        if sit == "Autre :":
+            ligne(d, M + 130, y0 + 80, x0 - 30)
+        for k, (_, (fort, _), _) in enumerate(FAMILLES):
+            cx = x0 + k * cw + cw / 2
+            for j in range(4):
+                xx = cx - 50 + j * 26
+                d.rounded_rectangle((xx, y0 + 46, xx + 18, y0 + 64), 4, outline=fort, width=2)
+            for j in range(4):
+                xx = cx - 50 + j * 26
+                d.rounded_rectangle((xx, y0 + 76, xx + 18, y0 + 94), 4, outline=fort, width=2)
+    y = y + len(SITUATIONS) * rh
+    ligne(d, M, y, L, FILET, 1)
+    y += 40
+    etiquette(d, M, y, "mon déclencheur n° 1 ce mois-ci, et ce que je peux y changer", ENC)
+    lignes_ecriture(d, M, y + 30, L, H - 200, pas=72)
+    return img
+
+
+def ami(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "changer de ton", "Me parler comme à un ami", num, SAUGE)
+    y = para(d, M, y, "On se parle souvent plus durement qu'on ne parlerait à quelqu'un qu'on aime. Note la phrase qui "
+             "tourne, puis réécris-la comme pour un ami.", SANS(33, 350), L - M) + 30
+    xm = (M + L) / 2
+    etiquette(d, M, y, "ce que je me dis", BLUSH[0]); etiquette(d, xm + 30, y, "ce que je dirais à un ami", SAUGE[0])
+    y += 50
+    rh = (H - 200 - y) / 6
+    ex = [("Je suis nul(le), j'ai encore crié.", "Tu étais à bout. Tu peux"), ("", "t'excuser, et recommencer demain.")]
+    for i in range(6):
+        y0 = y + i * rh
+        boite(d, M, y0, xm - 15, y0 + rh - 24, contour=FILET)
+        boite(d, xm + 15, y0, L, y0 + rh - 24, fond=SAUGE[1], contour=SAUGE[1])
+        for k in range(1, 3):
+            ligne(d, M + 30, y0 + k * (rh - 24) / 3 + 10, xm - 45, FILET, 1)
+            ligne(d, xm + 45, y0 + k * (rh - 24) / 3 + 10, L - 30, (210, 218, 204), 1)
+        if i == 0:
+            for k, (g, dr) in enumerate(ex):
+                if g:
+                    ecrire(d, M + 34, y0 + (k + 1) * (rh - 24) / 3 + 10, g, xm - M - 70, 34)
+                ecrire(d, xm + 49, y0 + (k + 1) * (rh - 24) / 3 + 10, dr, L - xm - 80, 34)
+    return img
+
+
+def dire(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "en parler sans exploser", "Le dire en quatre temps", num, BRUME)
+    y = para(d, M, y, "Pour exprimer une émotion à quelqu'un sans reproche. Choisis un moment calme, pas au plus fort de "
+             "l'émotion.", SANS(33, 350), L - M) + 30
+    boite(d, M, y, L, y + 200, fond=BRUME[1], contour=BRUME[1])
+    etiquette(d, M + 40, y + 30, "exemple", BRUME[0])
+    para(d, M + 40, y + 70, "« Quand la réunion a été déplacée sans prévenir, je me suis senti(e) agacé(e), parce que j'ai "
+         "besoin de prévoir mes soirées. Est-ce qu'on peut me prévenir la veille ? »", ITAL(36, 500), L - M - 80,
+         fill=ENC, inter=1.3)
+    y += 250
+    temps = [("1", "Ce qui s'est passé", "un fait, comme une caméra, sans « tu fais toujours »"),
+             ("2", "Ce que j'ai ressenti", "le mot juste, en « je »"),
+             ("3", "Ce dont j'ai besoin", "ce qui compte pour moi derrière"),
+             ("4", "Ce que je propose", "une demande précise, que l'autre peut accepter ou refuser")]
+    rh = (H - 200 - y) / 4
+    for i, (n, t, st) in enumerate(temps):
+        y0 = y + i * rh
+        chiffres(d, (M, y0 - 6), n, SERIF(80, 400), BRUME[0])
+        d.text((M + 90, y0 + 4), t, font=SERIF(50, 600), fill=ENC)
+        d.text((M + 90, y0 + 70), st, font=SANS(28, 350), fill=TAUPE)
+        lignes_ecriture(d, M + 90, y0 + 90, L, y0 + rh - 20, pas=70)
+    return img
+
+
+def bons_moments(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "les émotions agréables aussi", "Les bons moments", num, SABLE)
+    y = para(d, M, y, "Les moments qui font du bien passent vite. Les noter aide à les remarquer, et à les refaire.",
+             SANS(33, 350), L - M) + 30
+    cols = [("date", M, M + 170), ("le moment", M + 200, M + 880), ("l'émotion", M + 910, M + 1130), ("à refaire ?", M + 1160, L)]
+    for lib, a, b in cols:
+        etiquette(d, a, y, lib)
+    y += 50
+    rh = (H - 200 - y) / 12
+    for i in range(12):
+        y0 = y + i * rh
+        for lib, a, b in cols:
+            ligne(d, a, y0 + rh - 20, b)
+        cx = M + 1160 + 60
+        d.ellipse((cx - 16, y0 + rh - 64, cx + 16, y0 + rh - 32), outline=SABLE[0], width=2)
+    return img
+
+
+def lettre(num):
+    img, d = page(onglet="outils")
+    y = entete(d, "pour finir le mois", "Une lettre à moi, dans un mois", num, SAUGE)
+    y = para(d, M, y, "Ce que j'ai compris de mes émotions ce mois-ci, ce que je veux garder, et ce que je me souhaite. "
+             "À plier, puis à relire dans un mois.", SANS(33, 350), L - M) + 20
+    d.text((M, y + 10), "Cher moi,", font=ITAL(52, 500), fill=ENC)
+    lignes_ecriture(d, M, y + 40, L, H - 330, pas=76)
+    etiquette(d, M, H - 280, "à relire le")
+    ligne(d, M + 210, H - 250, M + 620)
+    return img
+
+
+def bonus_pause():
+    img, d = page()
+    y = entete(d, "à découper et à garder dans son portefeuille", "La carte P.A.U.S.E.", "bonus", BLUSH, date=False)
+    g = 40; lw = (L - M - g) / 2; lh = (H - 230 - y - g) / 2
+    etapes = [("P", "Pose ce que tu fais"), ("A", "Allonge ton souffle : 4 / 6"), ("U", "Un mot sur l'émotion"),
+              ("S", "Sens tes appuis"), ("E", "Et maintenant, je choisis")]
+    for k in range(4):
+        x0 = M + (k % 2) * (lw + g); y0 = y + (k // 2) * (lh + g)
+        for x in range(int(x0), int(x0 + lw), 26):
+            d.line((x, y0, x + 12, y0), fill=FILET, width=2); d.line((x, y0 + lh, x + 12, y0 + lh), fill=FILET, width=2)
+        for yy in range(int(y0), int(y0 + lh), 26):
+            d.line((x0, yy, x0, yy + 12), fill=FILET, width=2); d.line((x0 + lw, yy, x0 + lw, yy + 12), fill=FILET, width=2)
+        esp(d, 0, y0 + 50, "QUAND ÇA DÉBORDE", SANS(24, 500), BLUSH[0], pas=5, centre_entre=(x0, x0 + lw))
+        yy = y0 + 120
+        for lettre_, t in etapes:
+            d.text((x0 + 60, yy - 14), lettre_, font=SERIF(64, 500), fill=BLUSH[0])
+            assert d.textlength(t, font=SANS(32, 400)) < lw - 190, t
+            d.text((x0 + 140, yy + 6), t, font=SANS(32, 400), fill=ENC)
+            yy += 112
+        assert yy < y0 + lh - 20
+    return img
+
 # ------------------------------------------------------------------ bonus
 def bonus_cartes():
     img, d = page()
@@ -656,11 +946,15 @@ def controle_marges(img, couv=False):
 
 
 SOMMAIRE = [("Mode d'emploi", 1, None), ("Pourquoi ça marche", 2, None), ("La palette des émotions", 3, "outils"),
-            ("La carte du corps", 4, "outils"), ("Exemple rempli", 5, 0), ("Mon mois en couleurs", 6, "outils"),
-            ("Semaine 1", 7, 1), ("Semaine 2", 12, 2), ("Semaine 3", 17, 3), ("Semaine 4", 22, 4),
-            ("Ma boîte à outils", 27, "outils"), ("Mes repères", 28, "outils"), ("Quand en parler", 29, None), ("Notes", 30, None)]
-DEBUT_SECTION = {0: 5, 1: 7, 2: 12, 3: 17, 4: 22, "outils": 3}
-SANS_ONGLET = {0, 1, 2, 29, 30}
+            ("L'échelle des intensités", 4, "outils"), ("Le message des émotions", 5, "outils"),
+            ("La carte du corps", 6, "outils"), ("La méthode P.A.U.S.E.", 7, "outils"), ("Exemple rempli", 8, 0),
+            ("Mon mois en couleurs", 9, "outils"), ("Semaine 1", 10, 1), ("Semaine 2", 15, 2), ("Semaine 3", 20, 3),
+            ("Semaine 4", 25, 4), ("Fiches express", 30, "outils"), ("Carte des déclencheurs", 31, "outils"),
+            ("Me parler comme à un ami", 32, "outils"), ("Le dire en quatre temps", 33, "outils"),
+            ("Les bons moments", 34, "outils"), ("Ma boîte à outils", 35, "outils"), ("Mes repères", 36, "outils"),
+            ("Une lettre à moi", 37, "outils"), ("Quand en parler", 38, None), ("Notes", 39, None)]
+DEBUT_SECTION = {0: 8, 1: 10, 2: 15, 3: 20, 4: 25, "outils": 3}
+SANS_ONGLET = {0, 1, 2, 38, 39}
 
 
 def sommaire():
@@ -669,15 +963,19 @@ def sommaire():
     y = para(d, M, y, "Touche une ligne pour y aller. Les onglets du bord renvoient au début de chaque partie, et le bas "
              "de chaque page ramène ici.", SANS(32, 350), L - M) + 30
     rects = []
-    for lib, cible, coul in SOMMAIRE:
+    g = 50; lw = (L - M - g) / 2; n1 = (len(SOMMAIRE) + 1) // 2; rh = 112
+    for k, (lib, cible, coul) in enumerate(SOMMAIRE):
+        x0 = M + (k // n1) * (lw + g); y0 = y + (k % n1) * rh
         if coul is not None:
-            d.rectangle((M, y + 22, M + 6, y + 74), fill=ACC[coul][0])
-        d.text((M + 34, y + 18), lib, font=SERIF(50, 500), fill=ENC)
+            d.rectangle((x0, y0 + 24, x0 + 6, y0 + 74), fill=ACC[coul][0])
+        fo = SERIF(42, 500)
+        assert d.textlength(lib, font=fo) < lw - 120, lib
+        d.text((x0 + 26, y0 + 22), lib, font=fo, fill=ENC)
         n = f"{cible + 1:02d}"
-        d.text((L - d.textlength(n, font=SANS(32, 400)), y + 30), n, font=SANS(32, 400), fill=TAUPE)
-        ligne(d, M, y + 96, L, FILET, 1)
-        rects.append(((M, y, L, y + 96), cible)); y += 108
-    assert y < H - 200, y
+        d.text((x0 + lw - d.textlength(n, font=SANS(30, 400)), y0 + 32), n, font=SANS(30, 400), fill=TAUPE)
+        ligne(d, x0, y0 + 98, x0 + lw, FILET, 1)
+        rects.append(((x0, y0, x0 + lw, y0 + 98), cible))
+    assert y + n1 * rh < H - 200
     return img, rects
 
 
@@ -699,14 +997,15 @@ def version_tablette(pages_brutes):
 
 def fabriquer():
     os.makedirs(SORTIE, exist_ok=True)
-    pages = [couverture(), mode_emploi(), pourquoi(3), palette(4), carte_corps(5), fiche(0, 6, EX_FICHE), mois_couleurs(7)]
-    n = 8
+    pages = [couverture(), mode_emploi(), pourquoi(3), palette(4), intensites(5), messages(6), carte_corps(7), pause(8),
+             fiche(0, 9, EX_FICHE), mois_couleurs(10)]
+    n = 11
     for s in range(1, 5):
         pages.append(ouverture(s, n)); n += 1
         for _ in range(3):
             pages.append(fiche(s, n)); n += 1
         pages.append(bilan(s, n)); n += 1
-    for fn in (boite_outils, reperes, quand_en_parler, notes):
+    for fn in (fiches_express, declencheurs, ami, dire, bons_moments, boite_outils, reperes, lettre, quand_en_parler, notes):
         pages.append(fn(n)); n += 1
     assert len(pages) == NB_PAGES, len(pages)
     print("tablette :", version_tablette(pages))
@@ -717,7 +1016,7 @@ def fabriquer():
     imp[0].save(os.path.join(SORTIE, f"{NOM}-A4.pdf"), "PDF", resolution=200, save_all=True, append_images=imp[1:])
     nb = [encre_econome(p) for p in [mise_en_page_impression(couverture(False), couv="clair")] + imp[1:]]
     nb[0].save(os.path.join(SORTIE, f"{NOM}-A4-econome-encre.pdf"), "PDF", resolution=200, save_all=True, append_images=nb[1:])
-    bonus = [mise_en_page_impression(p) for p in (bonus_cartes(), bonus_palette())]
+    bonus = [mise_en_page_impression(p) for p in (bonus_cartes(), bonus_pause(), bonus_palette())]
     for p in bonus:
         assert all(v == 0 for v in controle_marges(p).values())
     bonus[0].save(os.path.join(SORTIE, "aide-memoire-emotions-A4.pdf"), "PDF", resolution=200, save_all=True, append_images=bonus[1:])
