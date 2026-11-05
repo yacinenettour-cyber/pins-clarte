@@ -80,3 +80,8 @@ le formulaire de https://somnologie.fr/contact/ (à remplir à la main, même te
 
 Formulaire https://somnologie.fr/contact/, même texte que l'e-mail rejeté du 04/11 (audios 4-6 sans voix de /ressources-libres/,
 102 mots, aucune demande de lien). Relance unique possible à partir du 15/11 sans réponse, par le même formulaire.
+
+### Somnologie.fr : injoignable (05/11)
+
+Le formulaire envoyé à la main le 05/11 a aussi renvoyé « adresse introuvable » : le site n'a qu'une seule adresse, contact@somnologie.fr,
+et elle n'existe pas côté serveur. Statut « sans_contact », plus aucune tentative.
