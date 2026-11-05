@@ -41,7 +41,9 @@ Planner charge mentale couple, qui fait quoi à deux, kit frigo famille offert, 
 
 ## Mots-clés (13 tags, 20 caractères maximum chacun)
 
-charge mentale · planner couple · qui fait quoi · kit frigo famille · planner imprimable · planner numerique · goodnotes planner · planning familial · organisation maison · planner francais · repartition taches · vide tete · planning semaine
+charge mentale · planner couple · qui fait quoi · kit frigo famille · planner imprimable · planner numerique · goodnotes planner · planning familial · organisation maison · planner francais · repartition taches · charge mentale femme · planning semaine
+
+(05/11/2026 : « vide tete », peu recherché, remplacé par « charge mentale femme » ; 13 tags vérifiés par script, 20 caractères au plus, aucun doublon.)
 
 ## Description
 
