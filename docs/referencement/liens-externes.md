@@ -213,3 +213,17 @@ Exemple (à ne pas recopier) :
 
 Le bilan du 21/10 regarde aussi les visites venues d'autres sites (Cloudflare Web Analytics, « Referrers »)
 pour savoir si ces liens apportent du trafic.
+
+## Articles invités (05/11/2026, accord de l'utilisateur « Ok »)
+
+Bilan au 05/11 : 49 e-mails « ressources » envoyés depuis le 12/10, 8 réponses, **0 lien** (site trop jeune pour les
+institutions, aucune contrepartie pour les blogs, un refus « site généré par l'IA », une demande de 50 € refusée).
+La tâche du matin (« Prospection liens : articles invités », du lundi au vendredi à 9 h 58, jusqu'à 10 envois)
+propose désormais **des articles invités gratuits et inédits** à des blogs francophones qui publient déjà des
+contributions extérieures : 2 ou 3 sujets précis, utiles à leur public, sans demande de lien dans le premier
+message ; le lien vient dans la présentation de l'auteur une fois l'article accepté. Chaque article accepté est écrit
+puis montré à l'utilisateur avant tout envoi (`docs/referencement/articles-invites/<domaine>.md`). Premières pistes :
+habitudes-zen.net, leblogdesrapportshumains.fr, coachrelax.fr, secrets-du-sommeil.com, atypiqueworld.com.
+Pistes ouvertes suivies : Ma Cohérence (échange proposé le 30/10), Même Plus Peur (relance du 03/11), Phobies-Zéro
+(page Références à vérifier à partir du 11/11). Indexation vérifiée le 05/11 (Search Console, inspection page par
+page) : 45 pages indexées sur 46, seule `/videos/` « détectée, non indexée ».
