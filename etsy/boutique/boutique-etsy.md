@@ -86,7 +86,7 @@ commerciale : en France, le statut de micro-entrepreneur se déclare gratuitemen
 À l'inscription, l'utilisateur a choisi le nom **HestiaAura** (10 caractères, valide). Le logo et la bannière portaient « Clarté
 Mentale » : de nouvelles versions au même style (arche, botanique au trait fin, terracotta) ont été faites par
 `python3 outils/etsy/boutique_visuels.py hestiaaura` :
-- `logo-hestiaaura-500.png` : monogramme « HA » dans l'arche, nom « HESTIA AURA » dessous ;
+- `logo-hestiaaura-500.png` : monogramme « HA » dans l'arche, nom « HESTIA AURA » dessous (première version, remplacée le jour même, voir plus bas) ;
 - `banniere-hestiaaura-3360x840.jpg` : même texte, « Poser ce qui tourne dans la tête, et mieux le partager ».
 Les fichiers « Clarté Mentale » restent pour une éventuelle seconde boutique.
 
@@ -95,3 +95,10 @@ Les fichiers « Clarté Mentale » restent pour une éventuelle seconde boutique
 
 **« À propos »** : garder le texte de la section 4, en remplaçant « Clarté Mentale est né de là… » par « HestiaAura est né de là, à côté de mon
 site Clarté Mentale : … » pour garder le lien avec le site et la chaîne.
+
+**Logo refait le 05/11/2026 (« fais un effort pour le logo »)** : une flamme de foyer dans une arche (Hestia, déesse du foyer), entourée d'un
+halo de cercles dorés et de points de lumière (l'aura), terracotta et or, avec le nom « Hestia » (Playfair) et « Aura » (écriture dorée).
+Fichiers : `logo-hestiaaura-icone-500.png` (icône seule, **à utiliser pour l'icône Etsy** : lisible jusqu'à 32 px, même rognée en rond),
+`logo-hestiaaura-500.png` (avec le nom, pour les réseaux et l'en-tête), versions 2000 px et SVG (`logo-hestiaaura*.svg`, modifiables).
+Générateur : `outils/etsy/logo_hestiaaura.py`. La bannière `banniere-hestiaaura-3360x840.jpg` garde l'ancien style (botanique) : à refaire avec
+la flamme si l'utilisateur le demande.

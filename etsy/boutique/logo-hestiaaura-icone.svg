@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+<defs>
+<radialGradient id="bg" cx="50%" cy="42%" r="75%"><stop offset="0" stop-color="#9a4c37"/><stop offset="1" stop-color="#6f3223"/></radialGradient>
+<radialGradient id="lueur"><stop offset="0" stop-color="#f6d9a0" stop-opacity="0.55"/><stop offset="1" stop-color="#f6d9a0" stop-opacity="0"/></radialGradient>
+<linearGradient id="feu" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#c99c5c"/><stop offset="1" stop-color="#f1d9ab"/></linearGradient>
+<style>
+@font-face{font-family:PF;src:url(file:///home/user/pins-clarte/polices/PlayfairDisplay-Bold.ttf)}
+@font-face{font-family:DS;src:url(file:///home/user/pins-clarte/polices/DancingScript-Bold.ttf)}
+</style></defs>
+<rect width="1000" height="1000" fill="url(#bg)"/>
+<g transform="translate(500,500) scale(1.0) translate(-500,-500)"><circle cx="500" cy="500" r="338" fill="none" stroke="#e6c48f" stroke-width="4.2" opacity="0.95"/><circle cx="500" cy="500" r="372" fill="none" stroke="#e6c48f" stroke-width="2.8" opacity="0.75"/><circle cx="500" cy="500" r="404" fill="none" stroke="#e6c48f" stroke-width="2.0" opacity="0.5"/><circle cx="686.0" cy="177.8" r="6" fill="#e6c48f"/><circle cx="314.0" cy="177.8" r="6" fill="#e6c48f"/><circle cx="500.0" cy="96.0" r="5" fill="#e6c48f"/><circle cx="776.9" cy="306.1" r="4.5" fill="#e6c48f"/><circle cx="223.1" cy="306.1" r="4.5" fill="#e6c48f"/><circle cx="879.6" cy="638.2" r="4" fill="#e6c48f"/><circle cx="120.4" cy="638.2" r="4" fill="#e6c48f"/><circle cx="863.9" cy="422.7" r="4" fill="#e6c48f"/><circle cx="136.1" cy="422.7" r="4" fill="#e6c48f"/><path d="M335.0,742 L335.0,417.0 A165.0,165.0 0 0 1 665.0,417.0 L665.0,742" fill="none" stroke="#f7f0e4" stroke-width="9" stroke-linecap="round"/><path d="M356.0,742 L356.0,420.0 A144.0,144.0 0 0 1 644.0,420.0 L644.0,742" fill="none" stroke="#e6c48f" stroke-width="3" stroke-linecap="round"/><circle cx="500" cy="560" r="190" fill="url(#lueur)"/><g transform="translate(500,548) scale(1.12)"><path d="M0,-165 C14,-118 70,-78 84,-8 C98,66 54,150 0,165 C-54,150 -98,66 -84,-8 C-76,-46 -48,-70 -34,-104 C-22,-80 -10,-72 2,-72 C-8,-104 -8,-136 0,-165 Z" fill="url(#feu)"/><path d="M0,-28 C10,-2 40,22 40,62 C40,104 18,132 0,142 C-18,132 -40,104 -40,62 C-40,32 -16,14 -8,-6 C-4,6 -2,8 2,8 C-2,-8 -4,-16 0,-28 Z" fill="#f7f0e4"/></g><path d="M295,742 L705,742" stroke="#f7f0e4" stroke-width="9" stroke-linecap="round"/><path d="M375,774 L625,774" stroke="#e6c48f" stroke-width="3" stroke-linecap="round"/></g>
+</svg>
