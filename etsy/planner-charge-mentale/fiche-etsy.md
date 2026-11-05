@@ -35,9 +35,9 @@ listes de tâches à 1 à 5 € ; celui-ci apporte 4 fichiers, un volet couple c
 
 ## Titre (140 caractères maximum)
 
-Planner charge mentale couple et famille : qui fait quoi, PDF A4 imprimable et tablette
+Planner charge mentale couple : qui fait quoi, kit frigo famille, PDF A4 et tablette
 
-(05/11/2026, 2e version, 87 caractères et 14 mots : nouvelle consigne d'Etsy, Seller Handbook « New Guidance for Listing Titles » : titre court et lisible, moins de 15 mots, pas de mots répétés ni de « offert » ; kit frigo et GoodNotes restent dans les tags et la description, qu'Etsy lit aussi pour la recherche. 1re version du jour : « Planner charge mentale couple, qui fait quoi à deux, kit frigo famille offert, PDF A4 à imprimer et version tablette GoodNotes », 126 caractères, 21 mots ; ancien titre : « Planner charge mentale couple, qui fait quoi, kit frigo famille, version tablette cliquable, 4 semaines, A4 PDF français ».)
+(05/11/2026, 3e version, 84 caractères, 14 mots, aucun mot répété ; garde « kit frigo », qui distingue le produit. 2e version : « Planner charge mentale couple et famille : qui fait quoi, PDF A4 imprimable et tablette », 87 caractères et 14 mots : nouvelle consigne d'Etsy, Seller Handbook « New Guidance for Listing Titles » : titre court et lisible, moins de 15 mots, pas de mots répétés ni de « offert » ; kit frigo et GoodNotes restent dans les tags et la description, qu'Etsy lit aussi pour la recherche. 1re version du jour : « Planner charge mentale couple, qui fait quoi à deux, kit frigo famille offert, PDF A4 à imprimer et version tablette GoodNotes », 126 caractères, 21 mots ; ancien titre : « Planner charge mentale couple, qui fait quoi, kit frigo famille, version tablette cliquable, 4 semaines, A4 PDF français ».)
 
 ## Mots-clés (13 tags, 20 caractères maximum chacun)
 
