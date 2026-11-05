@@ -4,6 +4,13 @@ Usage : python3 outils/etsy/photos_fiche_journal.py → etsy/journal-emotions/fi
 import glob, os, subprocess, tempfile
 from PIL import Image, ImageDraw
 import photos_fiche_planner as F
+import journal_emotions as J
+# 05/11/2026 (refonte « plus qualitative ») : même typographie que le journal (Cormorant Garamond + Jost), couleurs sourdes
+F.TITRE = lambda t: J.SERIF(t, 600)
+F.MAIN = lambda t: J.ITAL(t, 500)
+F.TEXTE = lambda t: J.SANS(t, 350)
+F.GRAS = lambda t: J.SANS(t, 500)
+F.ROSE, F.SAUGE, F.LAVANDE, F.BRUME, F.BRUN, F.TXT = J.BLUSH[0], J.SAUGE[0], J.LILAS[0], J.BRUME[0], J.ENC, J.TXT
 from photos_fiche_planner import (W, H, fond, coller, brin, crayon, tasse, centre, bloc, pastille, entete, bulle, loupe, fleche,
                                   tablette, stylet, largeur, TITRE, MAIN, TEXTE, GRAS, ROSE, SAUGE, BRUN, TXT, LAVANDE, BRUME,
                                   SABLE, OR)
@@ -42,14 +49,17 @@ def p01_couverture():
     crayon(im, 1350, 2030, 700, -12)
     d = ImageDraw.Draw(im)
     x0 = 1990
-    d.text((x0, 260), "JOURNAL EN FRANÇAIS", font=GRAS(48), fill=VERT)
-    d.text((x0, 340), "Apprivoiser ses", font=MAIN(124), fill=ROSE)
-    d.text((x0, 520), "émotions", font=TITRE(190), fill=BRUN)
-    d.text((x0, 790), "pour adultes, 4 semaines", font=MAIN(84), fill=VERT)
+    J.esp(d, x0, 270, "JOURNAL EN FRANÇAIS", J.SANS(44, 500), VERT, pas=8)
+    w = J.esp(d, x0, 360, "APPRIVOISER", J.SERIF(122, 500), BRUN, pas=6)
+    assert x0 + w < W - 50, w
+    d.text((x0, 520), "ses émotions", font=J.ITAL(170, 500), fill=BRUN)
+    d.text((x0, 760), "pour adultes, 4 semaines", font=J.ITAL(80, 500), fill=VERT)
+    d.line((x0, 900, x0 + 160, 900), fill=VERT, width=3)
     y = 990
-    for t, c in (("Palette de 48 mots", FAM[0]), ("Fiche émotion guidée", FAM[3]), ("Exemple déjà rempli", SAUGE),
-                 ("Version tablette cliquable", BRUME)):
+    for t, c in (("Palette de 48 mots", J.SABLE[0]), ("Fiche émotion guidée", J.BLUSH[0]), ("Exemple déjà rempli", J.SAUGE[0]),
+                 ("Version tablette cliquable", J.BRUME[0])):
         pastille(d, x0, y, t, GRAS(46), fond_c=c); y += 122
+    assert largeur(d, "ses émotions", J.ITAL(170, 500)) + x0 < W - 40
     d.text((x0, y + 40), "31 pages A4  ·  3 versions", font=TEXTE(52), fill=TXT)
     d.text((x0, y + 120), "+ aide-mémoire à découper", font=TEXTE(52), fill=TXT)
     assert largeur(d, "Version tablette cliquable", GRAS(46)) + 72 + x0 < W - 40
@@ -181,7 +191,8 @@ def p09_comment():
         x = 450 + i * 700
         d.rounded_rectangle([x - 290, 700, x + 290, 1500], radius=50, fill=(252, 249, 243), outline=(228, 218, 202), width=3)
         d.ellipse([x - 110, 790, x + 110, 1010], fill=[SAUGE, ROSE, (176, 140, 92), LAVANDE][i])
-        centre(d, n, TITRE(150), 800, x - 110, x + 110, (255, 255, 255))
+        fo = TITRE(150); wn = d.textlength(n, font=fo, features=["lnum"])
+        d.text((x - wn / 2, 800), n, font=fo, fill=(255, 255, 255), features=["lnum"])
         centre(d, t, TITRE(84), 1100, x - 290, x + 290)
         bloc(d, s, TEXTE(46), x - 250, 1240, 500, centrer=True)
     bloc(d, "Pour ton usage personnel. Outil pour mieux te connaître, pas un soin : si une émotion déborde souvent, "

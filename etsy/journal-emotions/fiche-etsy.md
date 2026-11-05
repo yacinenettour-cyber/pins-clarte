@@ -71,3 +71,9 @@ Conçu par Clarté Mentale, avec l'aide d'outils d'intelligence artificielle pou
 - 31 pages + sommaire tablette + 2 pages bonus ; texte dessiné par programme (polices OFL), aucune image générée par IA ;
   assertions de largeur de texte dans le générateur ; marges d'impression et de classeur vérifiées par script (0 pixel imprimé
   dans les bandes de bord sur les 33 pages) ; 200 liens internes dans la version tablette.
+- 05/11/2026, design v2 (consigne de l'utilisateur : « améliore le design et enlève-moi l'arche… appuie-toi sur la concurrence
+  d'Etsy ») : best-sellers étudiés sur Etsy (recherches « mental health journal printable » et « minimalist wellness journal
+  printable aesthetic » : MarrMarStudio, MorinotoStudio, MieksDesign, The Calm Mind Journal) ; style repris : papier blanc chaud
+  uni, titres serif fins (Cormorant Garamond), petites capitales espacées (Jost), filets fins, couleurs sourdes, couverture
+  sauge avec cadre fin et brin au trait ; arche supprimée. Polices ajoutées dans `polices/` (licence OFL, gratuites,
+  `LICENSE-CormorantGaramond.txt`, `LICENSE-Jost.txt`). Mêmes contrôles (marges, largeurs de texte, 200 liens tablette).
