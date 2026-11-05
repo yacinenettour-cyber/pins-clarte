@@ -351,3 +351,22 @@ vin, masque de sommeil) ; 5e vignette (bougie et carnet) faite avec Canva gratui
 Contrôles : anti_doublons.py (aucun doublon), titre 51 caractères, corps 403, total 483, 8 hashtags, `verifier_banque.py` :
 0 doublon (237 titres) ; image relue, aucun texte qui déborde ni chevauche. Au passage, une phrase de l'article, non
 sourcée (« la nuit raccourcit… »), a été remplacée par une formulation neutre.
+
+**05/11/2026** : stock à 0 (l'épingle « Réveil fatigué : 5 clés pour des matins plus légers » a été publiée par le robot le
+04/11 à 9 h 08 UTC, avec son lien vers l'article). Une épingle fabriquée : `cles` (format `riche`) — « Hypervigilance : 5 signes
+d'un corps en alerte » (`images_cles/hypervigilance-5-signes.jpg`, thème `systemenerveux`, champ `article` :
+`hypervigilance`, qui renvoie à l'article et à son pont honnête vers le guide sommeil). Forme « N signes avec renvoi à un
+professionnel » plutôt que « clés » : l'article aborde le stress post-traumatique, il ne faut pas proposer de gestes à suivre seul.
+Les 5 signes viennent du tableau de l'article (attention qui scrute, sursauts, corps qui s'emballe, irritabilité, sommeil
+difficile) ; la description et le bandeau rappellent que ces signes ne suffisent pas à poser un diagnostic.
+Sujets **écartés** : « Boule au ventre » (3 épingles déjà publiées : « Ventre noué par le stress », « Ventre noué avant un
+rendez-vous », « Boule au ventre au bureau »), Jacobson (« Relaxation au lit : la méthode Jacobson en 4 zones »), burn-out
+(« Burn-out : 3 dimensions pour repérer les signes »), symptômes physiques du stress (même sujet qu'un titre publié).
+L'épingle de la banque « Système nerveux : 4 exercices contre l'hypervigilance » reste, mais mène à un autre article
+(`calmer-son-systeme-nerveux`) avec 4 exercices : angle différent.
+Images : portrait Hugging Face (femme en pull rose poudré sur un canapé, regard en alerte, graine 681678 ; vérifié :
+habillée, mains correctes, aucun texte) et 5 vignettes Hugging Face (loupe, mésange, cœur, bouilloire, lampe), aucune écartée ;
+une petite trace de signature illisible sur la lampe a été effacée pixel par pixel (le contour du pied est intact). Aucun
+crédit ElevenLabs ni Canva utilisé. Images gardées dans `photos_attente/riche-hypervigilance/`.
+Contrôles : anti_doublons.py (aucun doublon), titre 46 caractères, corps 385, total 469, 8 hashtags ; description d'article 430 ;
+`verifier_banque.py` : 0 doublon (237 titres) ; image relue, rien ne déborde ni ne chevauche.
