@@ -140,3 +140,14 @@ Le nom vient de Hestia, la déesse grecque du foyer, et d'aura, le souffle, l'at
 Je ne suis pas professionnel de santé. Ces planners sont des outils d'organisation, pas des soins. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
 
 Mon site : https://www.contactapaisement-mental.fr
+
+## 10. Vidéo de présentation de la boutique (05/11/2026)
+
+Etsy demande une « Vidéo à la une » (accueil de la boutique : « présenter votre processus de travail et donner un aperçu des coulisses »). Faite par
+`python3 outils/etsy/video_boutique.py` (PIL + ffmpeg, aucune IA ni outil payant) : `video-hestiaaura-presentation.mp4` (1920 × 1080, 34 s, 11 Mo)
+et `video-hestiaaura-presentation-720p.mp4` (1280 × 720, version allégée si le téléversement est refusé). 7 scènes en fondu enchaîné : logo et
+slogan, couverture du planner, volet à deux, kit frigo, version tablette cliquable, semaine d'exemple remplie, bannière et promesse. Sans parole ni
+musique à droits (vrais bols chantants CC0, `site/sources-audio/bols/`), aucun lien dans l'image. Les limites exactes de taille et de durée d'Etsy n'ont pas
+été vérifiées : se fier à l'écran de téléversement.
+À savoir : la couverture du planner et le pied de page de certaines pages portent encore « Clarté Mentale », alors que la boutique s'appelle HestiaAura
+(l'« À propos » relie les deux). À décider : garder, ou refaire les PDF et les photos avec le nom HestiaAura.
