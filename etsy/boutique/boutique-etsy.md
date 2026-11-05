@@ -183,3 +183,8 @@ feuilles) et une bannière (galets, lotus, lac au soleil levant), slogan dessin�
 - `logo-clarte-mentale-chatgpt-complet-500.png` (et 2000) : logo avec le nom, marges pour le rognage en rond (réseaux, en-tête) ;
 - `banniere-clarte-mentale-chatgpt-3360x840.jpg` : recadrée en 4:1 (1 464 × 366 px à la source) puis agrandie : un peu douce ; pour plus
   de netteté, redemander à ChatGPT la bannière seule en grand format.
+
+**Photo à la une (05/11/2026)** : `photo-a-la-une-clarte-mentale-3000x2250.jpg` (4:3, format conseillé par Etsy) : mise en scène réelle
+du planner (`fiche-01-couverture.jpg`, côté gauche) + logo ChatGPT Clarté Mentale + « Planners à imprimer, la charge mentale, enfin partagée »,
+« SEUL(E) · À DEUX · EN FAMILLE », « En français · PDF A4 et tablette ». Fond de droite reconstitué (dégradé et texture de la photo,
+couture vérifiée par script : écart ≤ 1,2 niveau). Aucune IA générative, rien de payant.
