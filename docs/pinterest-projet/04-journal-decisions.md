@@ -1472,3 +1472,29 @@ janv. 2 550, févr. 5 745, mars 5 635, avr. 3 206, mai 13 479 (254 épingles) ; 
 vérifiés) n'ont pas été publiés : c'est le levier principal. Proposé : 1 kit par jour publié à la main, Claude tient
 un stock d'au moins 10 kits (sujets en hausse et pic de janvier) ; kit 3 envoyé à l'utilisateur le 05/11. Réserve :
 l'épingle faite à la main le 03/11 n'a que 1 impression à 2 jours ; mesure à 14 jours.
+
+## 111. Concurrence et format « fiche-mémo » mis en stock pour le robot (05/11/2026)
+
+Demande : « Analyse la concurrence, trouve une solution, il faut monter mon compte Pinterest. Tu as le droit d'utiliser
+des crédits sur Eleven Labs pour produire des images, mets des stocks sur GitHub et laisse le robot faire. »
+
+**Concurrence** (recherche Pinterest interne `BaseSearchResource` et widgets publics, depuis l'atelier Composio ;
+10 recherches françaises, 329 épingles) : moitié épingles Idea, moitié images simples ; le compte apparaît 7 fois,
+plus que tout autre (le référencement n'est pas le problème). Enregistrements moyens des 50 dernières épingles :
+pixeliazone (1 403 abonnés, santé) 98,6 dont 5 avec lien ; sobienetrenaturel (28 abonnés, bien-être) 272 (max 9 409) ;
+sarrasaidirespiration 7,2 et laureganisatrice 1,4 (lien sur 50 sur 50) ; clartementale 0,9. Leurs meilleures
+épingles : **une seule image verticale (9:16 ou 2:3), fiche-mémo dense** (gros titre en capitales, 6 à 10 éléments
+illustrés en grille, nom en gras + 1-2 lignes), sans lien, à garder comme référence. Chez nous, avec ou sans lien,
+les épingles du robot font ≈ 10 impressions (le lien n'explique pas l'écart).
+
+**Fait** : gabarit `outils/planche_memo.py` (8 éléments en grille, icônes aquarelle découpées dans une grille 3 × 3
+générée en un seul appel) ; `outils/fiches_memo_novembre.py` ; 11 grilles (2 Hugging Face gratuites, puis quota
+épuisé ; 9 ElevenLabs gpt-image-2.5-sunburst, 1 713 crédits, registre `youtube/credits-elevenlabs.md`), rapatriées par
+l'atelier Composio puis l'API GitHub (le proxy bloque elevenlabsusercontent.com). **8 fiches en tête de `pins.json`**
+(format `cles`, image prête, le robot les publie, 2 par jour au plus) : émotions (article), journaling (article),
+7 types de repos, fêtes de fin d'année, auto-compassion, 5 sens (article), confiance en soi, week-end cocooning.
+Relecture à la main : 7 sujets écartés car déjà en ligne (routine du soir, respiration, tensions, ancrage 5-4-3-2-1,
+pause bureau, hiver, dire non) ; grilles « tensions », « pause-bureau » et « routine-soir » gardées en réserve dans
+`photos_attente/`. Contrôles : `verifier_banque.py` 0 doublon (244 titres), titres 43-51 caractères, descriptions
+457-499, premier hashtag = thème, aucune image ne déborde. Mesure prévue : impressions et enregistrements à 7 et
+14 jours, comparés aux épingles « riches » du robot.

@@ -29,3 +29,4 @@ Prévu jusqu'au renouvellement (≈ 30/11) : 4 vidéos (08, 15, 22 et 29/11) à 
 | Date | Image | Modèle | Crédits | Cumul |
 |---|---|---|---|---|
 | 03/11 | vignette soupe (mâchoire serrée) | recraft-v4.1-flash (avant l'exclusion) | 48 | 48 |
+| 05/11 | 9 grilles d'icônes 3 × 3 pour les fiches-mémo Pinterest (respiration, tensions, ancrage, journaling, pause bureau, repos, hiver, fêtes, limites ; flow « Fiches-mémo Pinterest (novembre 2026) »), autorisé par l'utilisateur le 05/11 | gpt-image-2.5-sunburst | 9 × 190 = 1 713 | 1 761 |

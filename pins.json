@@ -1,5 +1,159 @@
 [
  {
+  "titre": "Gestion des émotions : ce que chaque émotion te dit",
+  "texte_image": "ce que chacune essaie de te dire",
+  "points_image": [
+   "La peur",
+   "La colère",
+   "La tristesse",
+   "La joie",
+   "L'anxiété",
+   "La culpabilité",
+   "Le dégoût",
+   "La surprise"
+  ],
+  "description": "Une émotion n'est ni bonne ni mauvaise : c'est un message. La peur signale un danger possible, la colère une limite franchie, la tristesse une perte, la joie un besoin comblé, l'anxiété une incertitude, la culpabilité une valeur touchée, le dégoût ce qui ne te convient pas, la surprise la nouveauté. Mettre un mot sur ce que tu ressens aide déjà à le calmer. Enregistre cette fiche. #blocagemental #gestiondesemotions #emotions #ressenti #bienetre #mental #psychologie",
+  "theme": "blocagemental",
+  "image_prete": "images_cles/emotions-ce-quelles-disent.jpg",
+  "format": "cles",
+  "article": "gestion-des-emotions",
+  "description_article": "Une émotion n'est ni bonne ni mauvaise : c'est un message. Peur, colère, tristesse, joie, anxiété, culpabilité, dégoût, surprise : chacune signale un besoin ou une limite. Mettre un mot sur ce que tu ressens aide déjà à le calmer, des études l'ont montré, et cela évite de réagir sur le coup. Comment accueillir une émotion forte sans te laisser déborder, avec des exercices simples : article complet en lien. #blocagemental #gestiondesemotions #emotions #ressenti #bienetre #mental #psychologie"
+ },
+ {
+  "titre": "Journaling : 8 questions pour mieux te comprendre",
+  "texte_image": "8 questions pour mieux te comprendre",
+  "points_image": [
+   "Qu'est-ce qui tourne ?",
+   "Je ressens quoi ?",
+   "Qu'est-ce qui dépend de moi ?",
+   "La plus petite étape ?",
+   "J'ai besoin de quoi ?",
+   "Ce qui a été bien ?",
+   "Que lâcher ce soir ?",
+   "Je dirais quoi à une amie ?"
+  ],
+  "description": "Quand les pensées tournent en boucle, les poser sur papier aide à faire de la place. Huit questions pour ton carnet : qu'est-ce qui tourne, qu'est-ce que je ressens, qu'est-ce qui dépend de moi, quelle est la plus petite étape, de quoi ai-je besoin, qu'est-ce qui a été bien, que puis-je lâcher ce soir, que dirais-je à une amie. Dix minutes suffisent, le soir ou au réveil. Enregistre la fiche. #blocagemental #journaling #ruminations #ecriture #mental #introspection #developpementpersonnel #calme",
+  "theme": "blocagemental",
+  "image_prete": "images_cles/journaling-8-questions.jpg",
+  "format": "cles",
+  "article": "ruminations-le-soir",
+  "description_article": "Quand les pensées tournent en boucle, les poser sur papier aide à faire de la place. Huit questions pour ton carnet : ce qui tourne, ce que je ressens, ce qui dépend de moi, la plus petite étape, mon besoin, ce qui a été bien, ce que je lâche ce soir, ce que je dirais à une amie. Dix minutes suffisent. Pourquoi on rumine le soir et ce qui aide vraiment : article complet en lien. #blocagemental #journaling #ruminations #ecriture #mental #introspection #developpementpersonnel #calme"
+ },
+ {
+  "titre": "Repos : les 7 types de repos dont tu as besoin",
+  "texte_image": "dormir ne suffit pas toujours",
+  "points_image": [
+   "Physique",
+   "Mental",
+   "Sensoriel",
+   "Créatif",
+   "Émotionnel",
+   "Social",
+   "Spirituel"
+  ],
+  "description": "Tu dors et tu te réveilles quand même épuisé ? Il te manque peut-être un autre repos. La médecin américaine Saundra Dalton-Smith en décrit sept : physique, mental, sensoriel, créatif, émotionnel, social et spirituel. Repère celui qui te manque cette semaine et offre-toi un petit geste pour le nourrir. Si la fatigue dure depuis des semaines malgré le repos, parles-en à ton médecin. #fatiguementale #repos #fatigue #epuisement #chargementale #selfcare #bienetre #energie",
+  "theme": "fatiguementale",
+  "image_prete": "images_cles/repos-7-types.jpg",
+  "format": "cles",
+  "guide": "aucun"
+ },
+ {
+  "titre": "Fêtes de fin d'année : 8 façons de rester zen",
+  "texte_image": "8 façons de rester zen",
+  "points_image": [
+   "Une seule liste",
+   "Un budget fixé",
+   "Cadeaux simples",
+   "Repas partagé",
+   "Soirées libres",
+   "Pause dehors",
+   "Sommeil protégé",
+   "Un moment à toi"
+  ],
+  "description": "Décembre arrive vite et la charge aussi. Huit façons de rester zen pendant les fêtes de fin d'année : une seule liste pour tout, un budget fixé à l'avance, des cadeaux simples, un repas où chacun apporte un plat, une soirée libre par semaine, une marche entre deux repas, un sommeil protégé et dix minutes au calme rien que pour toi. Tu n'as pas à tout porter seul, ni à tout réussir. #systemenerveux #fetesdefindannee #noel #stress #chargementale #zen #organisation #bienetre",
+  "theme": "systemenerveux",
+  "image_prete": "images_cles/fetes-8-facons-rester-zen.jpg",
+  "format": "cles",
+  "guide": "aucun"
+ },
+ {
+  "titre": "Auto-compassion : 8 phrases douces à te dire",
+  "texte_image": "8 phrases douces à te dire",
+  "points_image": [
+   "« C'est dur, là »",
+   "« Je fais de mon mieux »",
+   "« D'autres vivent ça aussi »",
+   "« J'ai le droit de souffler »",
+   "« Une erreur n'est pas moi »",
+   "« Je me parle avec douceur »",
+   "« Je recommence demain »",
+   "« Je lâche ce qui pèse »"
+  ],
+  "description": "Tu te parles plus durement qu'à n'importe qui d'autre ? L'auto-compassion, étudiée par la chercheuse Kristin Neff (université du Texas à Austin), consiste à te traiter avec la même gentillesse qu'une amie. Huit phrases à te dire : c'est dur, là ; je fais de mon mieux ; d'autres vivent ça aussi ; j'ai le droit de souffler ; une erreur n'est pas moi ; je recommence demain. Enregistre-la. #blocagemental #autocompassion #bienveillance #estimedesoi #mental #douceur #bienetre",
+  "theme": "blocagemental",
+  "image_prete": "images_cles/auto-compassion-8-phrases.jpg",
+  "format": "cles",
+  "guide": "aucun"
+ },
+ {
+  "titre": "Calmer le stress par les 5 sens : 8 gestes simples",
+  "texte_image": "8 gestes pour calmer le stress",
+  "points_image": [
+   "Odorat",
+   "Toucher",
+   "Ouïe",
+   "Goût",
+   "Vue",
+   "Une pierre lisse",
+   "Pieds au sol",
+   "Deux minutes"
+  ],
+  "description": "Quand le mental s'emballe, passer par les sens ramène au présent et aide le corps à ralentir. Huit gestes simples : respirer une odeur que tu aimes, toucher un plaid doux, écouter la pluie ou une musique lente, savourer une tisane, poser ton regard au loin, tenir une pierre lisse, sentir tes pieds au sol, et prendre deux minutes pour un seul sens à la fois. Garde cette fiche. #systemenerveux #antistress #cinqsens #calme #pleineconscience #anxiete #relaxation #bienetre",
+  "theme": "systemenerveux",
+  "image_prete": "images_cles/cinq-sens-8-gestes-anti-stress.jpg",
+  "format": "cles",
+  "article": "calmer-son-systeme-nerveux",
+  "description_article": "Quand le mental s'emballe, passer par les sens ramène au présent et aide le corps à ralentir : une odeur que tu aimes, un plaid doux, la pluie ou une musique lente, une tisane savourée, le regard posé au loin, une pierre lisse, les pieds au sol. Un seul sens à la fois, deux minutes suffisent. Pourquoi ton système nerveux s'emballe et d'autres façons de l'apaiser : article complet en lien. #systemenerveux #antistress #cinqsens #calme #pleineconscience #anxiete #relaxation #bienetre"
+ },
+ {
+  "titre": "Confiance en soi : 8 petits gestes pour la nourrir",
+  "texte_image": "8 petits gestes pour la nourrir",
+  "points_image": [
+   "Tiens une promesse",
+   "Ose un petit pas",
+   "Accepte un compliment",
+   "Note tes réussites",
+   "Compare-toi à hier",
+   "Pose une limite",
+   "Prends soin de toi",
+   "Laisse du temps"
+  ],
+  "description": "La confiance en soi ne tombe pas du ciel : elle se construit par petites preuves. Huit gestes pour la nourrir : tenir une promesse faite à toi-même, oser un petit pas, accepter un compliment sans le minimiser, noter tes réussites, te comparer à toi d'hier plutôt qu'aux autres, poser une limite, prendre soin de ta base (sommeil, repas, mouvement) et te laisser du temps. Choisis-en un aujourd'hui. #blocagemental #confianceensoi #estimedesoi #developpementpersonnel #mental #motivation #bienetre",
+  "theme": "blocagemental",
+  "image_prete": "images_cles/confiance-en-soi-8-gestes.jpg",
+  "format": "cles",
+  "guide": "aucun"
+ },
+ {
+  "titre": "Week-end cocooning : 8 idées pour recharger",
+  "texte_image": "8 idées pour vraiment recharger",
+  "points_image": [
+   "Réveil sans alarme",
+   "Lumière du matin",
+   "Balade au grand air",
+   "Soupe maison",
+   "Un café partagé",
+   "Plaid et livre",
+   "Regarde dehors",
+   "Un créneau vide"
+  ],
+  "description": "Le lundi arrive et tu es aussi fatigué que le vendredi ? Huit idées pour un week-end cocooning qui recharge vraiment : te réveiller sans alarme mais pas trop tard, prendre la lumière du matin, une balade au grand air, une soupe maison cuisinée sans écran, un café avec une personne qui te fait du bien, un plaid et un livre, regarder dehors plutôt que ton téléphone, un créneau vide. #fatiguementale #weekend #cocooning #recharger #repos #slowlife #bienetre",
+  "theme": "fatiguementale",
+  "image_prete": "images_cles/week-end-cocooning-8-idees.jpg",
+  "format": "cles",
+  "guide": "aucun"
+ },
+ {
   "titre": "Hypervigilance : 5 signes d'un corps en alerte",
   "texte_image": "5 signes d'un corps en alerte",
   "points_image": [
