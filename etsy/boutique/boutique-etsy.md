@@ -102,3 +102,11 @@ Fichiers : `logo-hestiaaura-icone-500.png` (icône seule, **à utiliser pour l'i
 `logo-hestiaaura-500.png` (avec le nom, pour les réseaux et l'en-tête), versions 2000 px et SVG (`logo-hestiaaura*.svg`, modifiables).
 Générateur : `outils/etsy/logo_hestiaaura.py`. La bannière `banniere-hestiaaura-3360x840.jpg` garde l'ancien style (botanique) : à refaire avec
 la flamme si l'utilisateur le demande.
+
+**Version ChatGPT retenue (05/11/2026)** : l'utilisateur a fait faire un logo et une bannière par ChatGPT (flamme dans l'arche, branches de laurier
+dorées, lueur ; bannière aquarelle avec feuilles), plus riches que la version dessinée par programme. Fichiers préparés pour Etsy :
+- `logo-hestiaaura-chatgpt-marges-500.png` : logo carré avec marges de sécurité, pour l'icône Etsy (rognée en rond, « Aura » n'est pas coupé) ;
+  `logo-hestiaaura-chatgpt-500.png` / `-2000.png` : simple recadrage carré, sans marge ;
+- `banniere-hestiaaura-chatgpt-3360x840.jpg` : bannière recadrée au format 4:1 puis agrandie à 3360 × 840 (source : 1 529 × 336 px, donc un peu douce).
+Source d'origine : capture à 1 536 × 1 024 px. Pour une meilleure netteté, redemander à ChatGPT le logo en carré 1024 × 1024 et la bannière en grand format.
+Mon logo dessiné par programme reste disponible (`logo-hestiaaura-icone-500.png`, SVG) pour les petits formats.
