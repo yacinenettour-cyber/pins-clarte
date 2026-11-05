@@ -514,5 +514,22 @@
   "pin_id": "600175087890518180",
   "short": true,
   "source": "https://youtu.be/SCUS59y5kNs"
+ },
+ {
+  "date": "2026-11-05T17:33+00:00",
+  "id": "systemenerveux-regard-panoramique",
+  "titre": "Regard panoramique : le réflexe visuel anti-stress",
+  "video": "videopins/videopin-20261105-173225.mp4",
+  "cover": "videopins/videopin-20261105-173225.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890534906",
+  "photos": [
+   "fonds/pexels-8335803.jpg",
+   "fonds/pexels-8335803.jpg",
+   "fonds/unsplash-vagP_ymUXUc.jpg",
+   "fonds/unsplash-vagP_ymUXUc.jpg",
+   "fonds/unsplash-3KRdy9mBu7o.jpg",
+   "fonds/unsplash-3KRdy9mBu7o.jpg"
+  ]
  }
 ]
