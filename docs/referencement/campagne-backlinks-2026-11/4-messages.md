@@ -85,3 +85,10 @@ Formulaire https://somnologie.fr/contact/, même texte que l'e-mail rejeté du 0
 
 Le formulaire envoyé à la main le 05/11 a aussi renvoyé « adresse introuvable » : le site n'a qu'une seule adresse, contact@somnologie.fr,
 et elle n'existe pas côté serveur. Statut « sans_contact », plus aucune tentative.
+
+### Suivi des liens obtenus : relevé du 05/11
+
+Aucun lien obtenu à ce jour. Contrôle fait : (1) les 58 pages cibles des sites contactés (envoyés, répondus, refus, erreurs) lues une par une,
+aucune ne contient « contactapaisement-mental » ; (2) recherches « "contactapaisement-mental.fr" » sur DuckDuckGo et Bing : seuls
+ressortent la chaîne YouTube et un épingle Pinterest du compte lui-même (liens propres, non comptés). Limite : ces recherches ne voient que les
+pages déjà indexées ; le rapport « Liens » de la Search Console (interface seulement, pas d'accès par l'API) est la référence.
