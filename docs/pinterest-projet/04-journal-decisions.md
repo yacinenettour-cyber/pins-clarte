@@ -1463,3 +1463,12 @@ janvier (sommeil, procrastination, bonnes résolutions de calme) pour publier à
 format infographie illustrée ; pour « 6 étapes », vérifier dans l'application si l'épingle affiche un avertissement
 et, avec son accord, retirer le lien `/tonguide` (modification à la main, l'API refuse) ; donner priorité à
 « gestion des émotions » (lien naturel avec le journal Etsy des émotions).
+
+**Suite le 05/11 (« Trouve une solution, je veux plus de vues »)** : relevé complet des 592 épingles par tableau
+(`PINTEREST_LIST_PINS` avec métriques). Médiane d'impressions à vie : épingles Idea faites dans l'application
+janv. 2 550, févr. 5 745, mars 5 635, avr. 3 206, mai 13 479 (254 épingles) ; épingles du robot : sept. 47, oct. 11
+(images) et 10,5 (vidéos), 7 enregistrements en tout sur 280. Depuis juin : 2 épingles Idea en juillet, aucune d'août
+à octobre, 1 le 03/11. Les 8 kits prêts depuis le 27/10 (`kits_idea_pins/`, liens vers des articles existants,
+vérifiés) n'ont pas été publiés : c'est le levier principal. Proposé : 1 kit par jour publié à la main, Claude tient
+un stock d'au moins 10 kits (sujets en hausse et pic de janvier) ; kit 3 envoyé à l'utilisateur le 05/11. Réserve :
+l'épingle faite à la main le 03/11 n'a que 1 impression à 2 jours ; mesure à 14 jours.
