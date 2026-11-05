@@ -8,6 +8,13 @@ import math, os
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+import sys
+# 05/11/2026 : la boutique s'appelle finalement « HestiaAura » (choix de l'utilisateur à l'inscription). Usage :
+#   python3 outils/etsy/boutique_visuels.py            → Clarté Mentale (logo-500.png, banniere-3360x840.jpg)
+#   python3 outils/etsy/boutique_visuels.py hestiaaura → logo-hestiaaura-500.png, banniere-hestiaaura-3360x840.jpg
+MARQUES = {"clarte": ("CM", "CLARTÉ MENTALE", ""), "hestiaaura": ("HA", "HESTIA AURA", "-hestiaaura")}
+CLE = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in MARQUES else "clarte"
+MONO, NOM, SUFFIXE = MARQUES[CLE]
 ICI = os.path.dirname(os.path.abspath(__file__))
 POL = os.path.join(ICI, "..", "..", "polices") + "/"
 SORTIE = os.path.join(ICI, "..", "..", "etsy", "boutique")
@@ -71,15 +78,15 @@ def arche(d, x0, y0, x1, y1, couleur, ep):
 
 
 def monogramme(d, cx, cy, taille, couleur):
-    """« CM » entrelacé : C et M en Playfair, M légèrement décalé sous le C."""
+    """Deux initiales entrelacées (« CM » ou « HA ») en Playfair, la 2e légèrement décalée sous la 1re."""
     fo = TITRE(taille)
-    wc, wm = d.textlength("C", font=fo), d.textlength("M", font=fo)
+    wc, wm = d.textlength(MONO[0], font=fo), d.textlength(MONO[1], font=fo)
     chev = taille * 0.05
     x = cx - (wc + wm - chev) / 2
     hauteur = fo.getbbox("M")[3] - fo.getbbox("M")[1]
     yb = cy - hauteur / 2 - fo.getbbox("M")[1]
-    d.text((x + wc - chev, yb), "M", font=fo, fill=couleur)
-    d.text((x, yb), "C", font=fo, fill=couleur)
+    d.text((x + wc - chev, yb), MONO[1], font=fo, fill=couleur)
+    d.text((x, yb), MONO[0], font=fo, fill=couleur)
 
 
 def losange(d, cx, cy, r, couleur):
@@ -97,7 +104,7 @@ def logo():
     brin_trait(d, n / 2 + 30, 790, 270, 40, OR_C, 5, n=5, taille=0.9)
     monogramme(d, n / 2, 1080, 380, CREME)
     losange(d, n / 2, 1500, 16, OR_C)
-    texte_espace(d, n / 2, 1560, "CLARTÉ MENTALE", GRAS(92), CREME, 26)
+    texte_espace(d, n / 2, 1560, NOM, GRAS(92), CREME, 26)
     return im.resize((500, 500), Image.LANCZOS)
 
 
@@ -112,7 +119,7 @@ def banniere():
     for x, c, s in ((700, 140, 1), (1050, -120, 1), (w - 700, -140, -1), (w - 1050, 120, -1)):
         brin_trait(d, x, h - 160, 1050 if abs(x - cx) > 2700 else 820, c, MARQUE if abs(c) == 140 else SAUGE, 6)
     # titre
-    texte_espace(d, cx, 300, "CLARTÉ MENTALE", TITRE(250), MARQUE, 30)
+    texte_espace(d, cx, 300, NOM, TITRE(250), MARQUE, 30)
     yl = 640
     d.line((cx - 520, yl, cx - 40, yl), fill=OR, width=4); d.line((cx + 40, yl, cx + 520, yl), fill=OR, width=4)
     losange(d, cx, yl, 16, OR)
@@ -124,6 +131,6 @@ def banniere():
 
 if __name__ == "__main__":
     os.makedirs(SORTIE, exist_ok=True)
-    logo().save(os.path.join(SORTIE, "logo-500.png"))
-    banniere().save(os.path.join(SORTIE, "banniere-3360x840.jpg"), quality=93)
+    logo().save(os.path.join(SORTIE, f"logo{SUFFIXE}-500.png"))
+    banniere().save(os.path.join(SORTIE, f"banniere{SUFFIXE}-3360x840.jpg"), quality=93)
     print(SORTIE)

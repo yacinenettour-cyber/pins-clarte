@@ -80,3 +80,18 @@ valider de plus sans en parler.
 **Statut** : Etsy demande si tu vends en particulier ou en professionnel. Vendre régulièrement est une activité
 commerciale : en France, le statut de micro-entrepreneur se déclare gratuitement sur le guichet officiel
 (formalites.entreprises.gouv.fr). En cas de doute, se renseigner auprès de l'URSSAF.
+
+## 8. Mise à jour du 05/11/2026 : la boutique s'appelle « HestiaAura »
+
+À l'inscription, l'utilisateur a choisi le nom **HestiaAura** (10 caractères, valide). Le logo et la bannière portaient « Clarté
+Mentale » : de nouvelles versions au même style (arche, botanique au trait fin, terracotta) ont été faites par
+`python3 outils/etsy/boutique_visuels.py hestiaaura` :
+- `logo-hestiaaura-500.png` : monogramme « HA » dans l'arche, nom « HESTIA AURA » dessous ;
+- `banniere-hestiaaura-3360x840.jpg` : même texte, « Poser ce qui tourne dans la tête, et mieux le partager ».
+Les fichiers « Clarté Mentale » restent pour une éventuelle seconde boutique.
+
+**Slogan** (Etsy : 55 caractères au plus ; ancien « titre de la boutique ») : « Planners à imprimer pour alléger la charge mentale »
+(50 caractères). Pistes : « Planners du foyer pour partager la charge mentale » (50), « Planners à imprimer : moins de charge mentale, à deux » (53).
+
+**« À propos »** : garder le texte de la section 4, en remplaçant « Clarté Mentale est né de là… » par « HestiaAura est né de là, à côté de mon
+site Clarté Mentale : … » pour garder le lien avec le site et la chaîne.
