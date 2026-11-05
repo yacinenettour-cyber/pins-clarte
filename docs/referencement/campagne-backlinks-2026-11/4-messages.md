@@ -75,3 +75,8 @@ envoi est suivi d'un contrôle des retours (mailer-daemon) quelques minutes plus
 le formulaire de https://somnologie.fr/contact/ (à remplir à la main, même texte). FNAPSY : échec définitif de livraison le
 04/11 à 21 h 07 UTC (serveur injoignable depuis le 02/11) ; statut « erreur », pas de relance. Les 3 envois du matin du 04/11
 (sophrologues) n'ont généré aucun retour ni réponse. Une seule relance due : DOCcitanie (envoyé le 26/10, 10 jours le 05/11).
+
+### Somnologie.fr : envoyé par formulaire le 05/11 (l'utilisateur, à la main)
+
+Formulaire https://somnologie.fr/contact/, même texte que l'e-mail rejeté du 04/11 (audios 4-6 sans voix de /ressources-libres/,
+102 mots, aucune demande de lien). Relance unique possible à partir du 15/11 sans réponse, par le même formulaire.

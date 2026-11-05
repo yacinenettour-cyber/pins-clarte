@@ -2814,18 +2814,19 @@
    "email": "contact@somnologie.fr",
    "email_verifie": false,
    "source_email": "page https://somnologie.fr/contact/ (« en nous écrivant directement à contact@somnologie.fr »), lue le 04/11/2026",
-   "formulaire": null,
+   "formulaire": "https://somnologie.fr/contact/",
    "prenom": null,
    "signes_trafic": "Magazine du sommeil actif : pages modifiées le 25/10, le 13/10 et le 23/09/2026 (sitemap) ; plus de 200 articles.",
    "pourquoi": "Magazine francophone sur le sommeil, page « Respiration pour dormir » avec 4 exercices (abdominale, 4-7-8, alternée, lunaire) sans repère sonore : nos audios 4-6 sans voix la complètent. Aucun lien mort sur les pages lues.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-libres/",
    "audience": "C thématique : magazine francophone dont le sujet principal est le sommeil, mis à jour en octobre 2026, contenu propre, sans vente de liens (critères vérifiés le 04/11)",
-   "statut": "erreur",
+   "statut": "envoye",
    "type": "campagne-2026-11",
    "lot": "routine du 04/11 (9 h 58)",
-   "date_envoi": "2026-11-04",
+   "date_envoi": "2026-11-05",
    "thread_id": "1a1a669d3180b112",
-   "note": "04/11 : e-mail rejeté le jour même (550 No Such User Here) : l'adresse contact@somnologie.fr affichée sur la page contact n'existe pas côté serveur. Autre voie : le formulaire de https://somnologie.fr/contact/ (nom, e-mail, message), à remplir à la main. Aucune relance par e-mail."
+   "note": "05/11/2026 : envoyé par l'utilisateur, à la main, via le formulaire de https://somnologie.fr/contact/ (même texte que l'e-mail rejeté le 04/11 : l'adresse contact@somnologie.fr renvoie 550 « No Such User Here »). Relance unique possible à partir du 15/11 sans réponse, par le même formulaire (jamais par e-mail : adresse inexistante).",
+   "canal": "formulaire"
   },
   {
    "site": "Association Sommeil et Santé",
