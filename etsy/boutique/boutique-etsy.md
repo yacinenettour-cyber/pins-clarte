@@ -175,3 +175,11 @@ Slogan : « Planners à imprimer : la charge mentale, enfin partagée » (55). D
 
 **Histoire « À propos » (titre : Poser ce qui tourne dans la tête)** : texte de la section 9 sans le paragraphe sur le nom Hestia, la phrase
 « HestiaAura est né de là » devenant « Cette boutique est née de là ».
+
+**Version ChatGPT Clarté Mentale (05/11/2026)** : l'utilisateur a fait faire par ChatGPT un logo (tête de profil, cerveau lumineux, lotus,
+feuilles) et une bannière (galets, lotus, lac au soleil levant), slogan dessiné « Calmer · Comprendre · S'épanouir ». Source :
+`source-chatgpt-clarte-mentale-1536x1024.png`. Fichiers préparés :
+- `logo-clarte-mentale-chatgpt-icone-500.png` (et 2000) : tête + lotus sans texte, sur fond crème, bords fondus : **icône Etsy** (lisible rognée en rond) ;
+- `logo-clarte-mentale-chatgpt-complet-500.png` (et 2000) : logo avec le nom, marges pour le rognage en rond (réseaux, en-tête) ;
+- `banniere-clarte-mentale-chatgpt-3360x840.jpg` : recadrée en 4:1 (1 464 × 366 px à la source) puis agrandie : un peu douce ; pour plus
+  de netteté, redemander à ChatGPT la bannière seule en grand format.
