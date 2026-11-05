@@ -47,44 +47,46 @@ charge mentale · planner couple · qui fait quoi · kit frigo famille · planne
 
 ## Description
 
-Tu as l'impression de penser à tout, tout le temps ? Ce planner ne s'arrête pas à la liste de choses à faire : il t'aide à sortir la charge mentale de ta tête, à trier, et à mieux la partager à la maison, avec ton ou ta partenaire et avec toute la famille.
+(Réécrite le 05/11/2026 pour le référencement Etsy : mots-clés du titre et des tags dans la première phrase, la seule montrée par Google et en aperçu ; contenu inchangé et fidèle aux PDF.)
 
-**Ce qui le rend différent**
-- Un vrai volet couple, en deux couleurs : « Qui fait quoi ? » en trois colonnes (penser, organiser, faire), une couleur chacun. Puis « Notre mois à deux » : chaque dimanche, vous coloriez qui a porté chaque domaine, et vous voyez la répartition bouger.
-- Un kit frigo offert : 3 pages à afficher pour toute la famille, un prénom et une couleur par personne.
-- Une version tablette cliquable : sommaire, onglets et bas de page cliquables.
-- Une semaine d'exemple déjà remplie, pour voir comment t'en servir sans la page blanche.
-- Une méthode expliquée simplement, appuyée sur des recherches citées dans le planner.
+Planner charge mentale à imprimer pour couple et famille : un « qui fait quoi » clair pour mieux répartir les tâches à la maison. PDF A4 en français, version tablette GoodNotes et kit frigo famille offert.
 
-**Ce que tu reçois (4 fichiers PDF, en français)**
-- Le planner couleur (32 pages A4), à imprimer autant de fois que tu veux.
-- La version économe en encre (fond blanc), même contenu.
-- La version tablette (sommaire et onglets cliquables), pour GoodNotes, Notability, Xodo ou toute appli de PDF.
-- Le kit frigo famille (3 pages A4).
+Tu as l'impression de penser à tout, tout le temps ? Ce planner charge mentale ne s'arrête pas à une liste de choses à faire : il t'aide à sortir la charge mentale de ta tête, à trier, puis à mieux partager les tâches ménagères et l'organisation de la maison avec ton ou ta partenaire et avec toute la famille.
 
-**Dans le planner**
-- mode d'emploi en 4 étapes et page « Pourquoi ça marche » ;
-- la semaine d'exemple remplie ;
-- pour chacune des 4 semaines : une page d'intention, vide-tête, tri (je m'en occupe, je délègue, plus tard, je lâche), planning avec trois priorités par jour et « une chose pour moi », bilan du dimanche ;
-- la liste des tâches invisibles ;
-- le volet couple : « Qui fait quoi ? » (2 pages), le rendez-vous à deux, « Notre mois à deux » ;
-- une page de notes.
+━━ CE QUI LE REND DIFFÉRENT ━━
+✔ Un vrai volet couple, en deux couleurs : « Qui fait quoi ? » en trois colonnes (penser, organiser, faire), une couleur chacun. Puis « Notre mois à deux » : chaque dimanche, vous coloriez qui a porté chaque domaine et vous voyez la répartition des tâches bouger.
+✔ Un kit frigo famille offert : 3 pages à afficher, un prénom et une couleur par personne, pour un planning familial visible de tous.
+✔ Une version tablette cliquable (sommaire, onglets et bas de page cliquables) pour GoodNotes, Notability, Xodo ou toute appli de PDF.
+✔ Une semaine d'exemple déjà remplie, pour démarrer sans la page blanche.
+✔ Une méthode expliquée simplement, appuyée sur des recherches citées dans le planner.
 
-**Comment ça marche**
+━━ CE QUE TU REÇOIS (4 fichiers PDF, en français) ━━
+• Le planner couleur : 32 pages A4 imprimables, à imprimer autant de fois que tu veux.
+• La version économe en encre (fond blanc), même contenu.
+• La version tablette, planner numérique cliquable de 33 pages.
+• Le kit frigo famille : 3 pages A4.
+
+━━ DANS LE PLANNER ━━
+• mode d'emploi en 4 étapes et page « Pourquoi ça marche » ;
+• une semaine d'exemple remplie ;
+• pour chacune des 4 semaines : page d'intention, vide-tête, tri (je m'en occupe, je délègue, plus tard, je lâche), planning de la semaine avec trois priorités par jour et « une chose pour moi », bilan du dimanche ;
+• la liste des tâches invisibles du quotidien ;
+• le volet couple : « Qui fait quoi ? » (2 pages), le rendez-vous à deux, « Notre mois à deux » ;
+• une page de notes.
+
+━━ COMMENT ÇA MARCHE ━━
 1. Achète le planner.
 2. Télécharge les PDF depuis ton compte Etsy (rubrique « Achats »).
 3. Imprime en A4, taille réelle (100 %), recto seul, perfore à gauche et range dans ton classeur. Ou ouvre la version tablette dans ton appli d'annotation.
 
-**À savoir**
-- Produit numérique : rien n'est envoyé par la poste.
-- Prêt pour le classeur : les marges laissent la place aux trous, et rien d'important n'est trop près du bord (les imprimantes de maison n'impriment pas jusqu'au bord).
-- Les couleurs peuvent varier selon l'écran et l'imprimante.
-- Pour ton usage personnel : la revente et le partage du fichier ne sont pas autorisés.
-- Outil d'organisation personnelle, pas un soin. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
+━━ À SAVOIR ━━
+• Produit numérique : rien n'est envoyé par la poste.
+• Prêt pour le classeur : les marges laissent la place aux trous, rien d'important n'est trop près du bord.
+• Les couleurs peuvent varier selon l'écran et l'imprimante.
+• Pour ton usage personnel : la revente et le partage du fichier ne sont pas autorisés.
+• Outil d'organisation personnelle, pas un soin. Si tu te sens épuisé(e) depuis des semaines, parles-en à ton médecin.
 
 Conçu par HestiaAura, avec l'aide d'outils d'intelligence artificielle pour la rédaction et la mise en page. Le contenu, la méthode et les sources ont été choisis et relus par moi. Aucune image n'est générée par IA.
-
-(Mention IA ajoutée le 05/11/2026 : les règles d'Etsy, « Creativity Standards », imposent d'indiquer dans la description qu'un article a été créé avec l'aide de l'IA ; dans le formulaire, choisir « Conçu par moi » et non « Fabriqué par moi ».)
 
 ## Contrôles faits
 
