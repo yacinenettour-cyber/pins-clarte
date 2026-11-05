@@ -188,3 +188,13 @@ feuilles) et une bannière (galets, lotus, lac au soleil levant), slogan dessin�
 du planner (`fiche-01-couverture.jpg`, côté gauche) + logo ChatGPT Clarté Mentale + « Planners à imprimer, la charge mentale, enfin partagée »,
 « SEUL(E) · À DEUX · EN FAMILLE », « En français · PDF A4 et tablette ». Fond de droite reconstitué (dégradé et texture de la photo,
 couture vérifiée par script : écart ≤ 1,2 niveau). Aucune IA générative, rien de payant.
+
+## 13. Pourquoi 0 visite (vérifié le 05/11/2026, recherche Etsy France lue le jour même)
+
+- Fiche publiée le 05/11, quelques heures avant le contrôle : rien d'anormal à 0 visite le premier jour.
+- La fiche est bien indexée : 4e sur 802 résultats pour « planner charge mentale couple qui fait quoi kit frigo » ; boutique déjà
+  renommée **ClarteMentaleFR**.
+- Absente des 24 premiers résultats de « planner charge mentale » (+ de 1 000 résultats) : les premières places vont à des fiches avec avis
+  et à des annonces payantes (Etsy Ads, exclues : rien de payant en plus des frais Etsy). Concurrent direct : DigitalLaz,
+  « Charge Mentale Couple à Imprimer | Répartition des Tâches Ménagères… ».
+- Leviers gratuits : épingles Pinterest vers la fiche, vidéo sur la fiche, 2e et 3e fiches, premiers avis.
