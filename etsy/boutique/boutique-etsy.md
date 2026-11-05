@@ -110,3 +110,9 @@ dorées, lueur ; bannière aquarelle avec feuilles), plus riches que la version 
 - `banniere-hestiaaura-chatgpt-3360x840.jpg` : bannière recadrée au format 4:1 puis agrandie à 3360 × 840 (source : 1 529 × 336 px, donc un peu douce).
 Source d'origine : capture à 1 536 × 1 024 px. Pour une meilleure netteté, redemander à ChatGPT le logo en carré 1024 × 1024 et la bannière en grand format.
 Mon logo dessiné par programme reste disponible (`logo-hestiaaura-icone-500.png`, SVG) pour les petits formats.
+
+**Slogan retravaillé (05/11/2026, « fais un effort pour le slogan »)** : 55 caractères au plus ; critères : dire ce qu'on vend (planner, imprimer,
+charge mentale), la promesse (partager, alléger), un écho au foyer (Hestia) et à la bannière (« poser », « partager »).
+Choix : **« Planners à imprimer : la charge mentale, enfin partagée »** (55 caractères, tous les mots-clés + la promesse).
+Repli si Etsy le refuse : « Partage la charge mentale : planners à imprimer » (47). Variante foyer : « Foyer plus léger : planners à imprimer, charge mentale » (54).
+Ancien choix (50) : « Planners à imprimer pour alléger la charge mentale ».
