@@ -531,5 +531,16 @@
    "fonds/unsplash-3KRdy9mBu7o.jpg",
    "fonds/unsplash-3KRdy9mBu7o.jpg"
   ]
+ },
+ {
+  "date": "2026-11-06T17:33+00:00",
+  "id": "short-ruminations-soir-2",
+  "titre": "Laisse passer tes pensées pour t'endormir",
+  "video": "videopins/videopin-20261106-173157.mp4",
+  "cover": "videopins/videopin-20261106-173157.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890551642",
+  "short": true,
+  "source": "https://youtu.be/SCUS59y5kNs"
  }
 ]
