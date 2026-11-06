@@ -235,6 +235,21 @@ N = [
   corps_article=None,
   tags="#fatiguementale #weekend #cocooning #recharger #repos #slowlife #bienetre"),
 ]
+N.append(dict(slug="nature-stress-8-facons", grille="pause-bureau", theme="systemenerveux", article=None,
+  etiquette="Système nerveux", titre1="Nature et stress", titre2="8 façons de te reconnecter dehors",
+  titre="Nature et stress : 8 façons de te reconnecter dehors",
+  items=[(0, "Marche dehors", "Vingt minutes, à ton rythme, sans te presser."),
+         (5, "Sous un arbre", "Assieds-toi et regarde les feuilles bouger."),
+         (2, "Vue sur le vert", "Pas de sortie possible ? Un paysage par la fenêtre."),
+         (8, "Tes plantes", "Arrose-les, touche la terre, prends ton temps."),
+         (3, "Sons de nature", "Pluie, vagues ou oiseaux, même enregistrés."),
+         (6, "Boisson dehors", "Ton café ou ta tisane au balcon ou sur un banc."),
+         (7, "Note ce que tu vois", "Trois choses remarquées dehors, en détail."),
+         (4, "Air frais", "Quelques respirations lentes avant de rentrer.")],
+  bandeau="Enregistre-la pour ta prochaine journée enfermée",
+  corps="Une journée entière entre quatre murs et devant les écrans, et le stress s'accumule ? Huit façons simples de te reconnecter à la nature : marcher dehors vingt minutes, t'asseoir sous un arbre, regarder un paysage par la fenêtre, t'occuper de tes plantes, écouter la pluie ou les oiseaux, prendre ta boisson au balcon, noter trois choses remarquées dehors, respirer l'air frais. Choisis-en une aujourd'hui.",
+  corps_article=None,
+  tags="#systemenerveux #nature #antistress #pleinair #marche #calme #bienetre #slowlife"))
 F = [x for x in F if x["slug"] in GARDER] + N
 for x in F:
     if x["slug"] == "journaling-8-questions":

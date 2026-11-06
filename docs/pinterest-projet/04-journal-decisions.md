@@ -1527,3 +1527,11 @@ vers l'article ; ajouté à la page thème.
   `description_article` (462 caractères). `ARTICLES_SITE` complété dans `pins.yml` ; harnais : bon lien, y compris
   avec 20 liens d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Les 8 fiches-mémo de tête
   n'ont pas été touchées. Liste des sujets : 10 « à écrire ».
+
+**06/11/2026** (« continue la prospection, ton travail sur Pinterest ») : 9e fiche-mémo « Nature et stress : 8 façons
+de te reconnecter dehors » (grille « pause-bureau » déjà payée, aucun crédit de plus ; anti_doublons et relecture à la
+main : « Bain de forêt : 3 effets… » et « …journée passée dehors » parlent des effets, pas des gestes). Sujets écartés
+car déjà en ligne : soirée sans écran, bain de forêt, télétravail, dos et stress, chaleur. Janvier déjà couvert par
+les 5 épingles de `pins_saisonniers.json` (à insérer le 01/12). Grilles « tensions » et « routine-soir » toujours en
+réserve. Prospection : règle ajoutée à la tâche du matin (une relance ne reprend que ce que proposait le premier
+message), après l'erreur de la relance du 03/11 à Acouphènes Québec.

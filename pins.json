@@ -1,5 +1,24 @@
 [
  {
+  "titre": "Nature et stress : 8 façons de te reconnecter dehors",
+  "texte_image": "8 façons de te reconnecter dehors",
+  "points_image": [
+   "Marche dehors",
+   "Sous un arbre",
+   "Vue sur le vert",
+   "Tes plantes",
+   "Sons de nature",
+   "Boisson dehors",
+   "Note ce que tu vois",
+   "Air frais"
+  ],
+  "description": "Une journée entière entre quatre murs et devant les écrans, et le stress s'accumule ? Huit façons simples de te reconnecter à la nature : marcher dehors vingt minutes, t'asseoir sous un arbre, regarder un paysage par la fenêtre, t'occuper de tes plantes, écouter la pluie ou les oiseaux, prendre ta boisson au balcon, noter trois choses remarquées dehors, respirer l'air frais. Choisis-en une aujourd'hui. #systemenerveux #nature #antistress #pleinair #marche #calme #bienetre #slowlife",
+  "theme": "systemenerveux",
+  "image_prete": "images_cles/nature-stress-8-facons.jpg",
+  "format": "cles",
+  "guide": "aucun"
+ },
+ {
   "titre": "Gestion des émotions : ce que chaque émotion te dit",
   "texte_image": "ce que chacune essaie de te dire",
   "points_image": [
