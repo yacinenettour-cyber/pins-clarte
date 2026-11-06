@@ -79,9 +79,9 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | Fédération nationale des Écoles des parents et des éducateurs (FNEPE) | 2026-10-22 | relancé le 2026-11-03 |
 | SMTI 82 – Service de prévention et de santé au travail… | 2026-10-22 | relancé le 2026-11-03 |
 | Ville de Fontenay-aux-Roses – Conseil local de santé mentale | 2026-10-22 | relancé le 2026-11-03 |
-| DOCcitanie (centres de documentation santé d'Occitanie) | 2026-10-26 | pas encore relancé |
-| Semaines d'information sur la santé mentale (SISM) | 2026-10-27 | pas encore relancé |
-| Psycom – Santé Mentale Info | 2026-10-27 | pas encore relancé |
+| DOCcitanie (centres de documentation santé d'Occitanie) | 2026-10-26 | relancé le 2026-11-06 |
+| Semaines d'information sur la santé mentale (SISM) | 2026-10-27 | relancé le 2026-11-06 |
+| Psycom – Santé Mentale Info | 2026-10-27 | formulaire envoyé par toi ; relance impossible par e-mail |
 | Florence Daudon, relaxologue (Paris 12e) | 2026-10-29 | pas encore relancé |
 | Sophro Autrement (Nadine, sophrologie en ligne) | 2026-10-29 | pas encore relancé |
 | Jean-Marc Atkins, sophrologue et hypnose (Angers) | 2026-10-29 | pas encore relancé |
@@ -105,3 +105,12 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | FNAPSY (Fédération Nationale des Associations de Psychologie) | 2026-11-01 | 02-03/11 : 2 avis Gmail de retard de distribution vers contact@fnapsy.org (nouvelles tentatives pendant 47 h) ; pas encore un rejet, à revérifier. |
 | Somnologie.fr (magazine du sommeil) | 2026-11-05 | 05/11/2026 : injoignable. L'e-mail du 04/11 a été rejeté (550 « No Such User Here »), et le formulaire de https://somnologie.fr/contact/ envoyé à la… |
 
+## Articles invités : blogs évalués le 06/11/2026 (aucun envoi)
+
+| Blog | Pourquoi écarté |
+|---|---|
+| Habitudes Zen | actif (dernier article 18/09/2026), mais aucun contact affiché (pas d'e-mail, /contact/ en 404) ; surtout des traductions de Zen Habits. |
+| Le blog des Rapports Humains | actif (03/11/2026) et publie des articles invités, MAIS a une rubrique « Articles sponsorisés » : vend des articles (règle « sans vente de liens »). |
+| Coach Relax | site d'entreprise de coaching (formations, Qualiopi) ; dernier article invité repéré en 2013, aucun appel à contributions actuel ; formulaire seulement. |
+| Les secrets du sommeil | inactif : dernier article le 05/04/2021. |
+| Atypique World | actif et accepte articles et témoignages (formulaire /proposer-un-article/), mais blog 100 % neurodivergence (TDAH, autisme, MDPH) : le vécu de l'auteur et nos sujets n'y correspondent pas. |

@@ -92,3 +92,27 @@ Aucun lien obtenu à ce jour. Contrôle fait : (1) les 58 pages cibles des sites
 aucune ne contient « contactapaisement-mental » ; (2) recherches « "contactapaisement-mental.fr" » sur DuckDuckGo et Bing : seuls
 ressortent la chaîne YouTube et un épingle Pinterest du compte lui-même (liens propres, non comptés). Limite : ces recherches ne voient que les
 pages déjà indexées ; le rapport « Liens » de la Search Console (interface seulement, pas d'accès par l'API) est la référence.
+
+## 06/11/2026 : relances (règle du 06/11 appliquée : relire le premier message, ne reprendre que ce qu'il proposait)
+
+DOCcitanie (fil 1a178aa088d3385b, message 1a1b015ef9d14b61) :
+> Bonjour,
+>
+> Je me demandais si la fiche de respiration proposée pour votre sitothèque « Santé mentale » avait pu être regardée : https://www.contactapaisement-mental.fr/fiche-respiration/
+>
+> Si elle n'y a pas sa place, aucun souci.
+>
+> Yacine
+
+SISM (fil 1a17d06bc51e3cae, message 1a1b015f3e6c0ca6) :
+> Bonjour,
+>
+> Je reviens juste vers vous pour la fiche de respiration à imprimer, au cas où elle servirait à un stand ou un atelier des SISM : https://www.contactapaisement-mental.fr/fiche-respiration/
+>
+> Sans nouvelles, je n'insisterai pas.
+>
+> Yacine
+
+Contrôle par script : 37 et 40 mots, aucune formule interdite, pas de « — », la seule adresse citée figure dans le premier message.
+Articles invités : 5 blogs évalués, tous écartés (voir synthese-prospection.md) ; aucune proposition envoyée. Recherche de
+nouveaux blogs : DuckDuckGo bloque l'atelier (réponse 202), Bing n'y renvoie que des résultats hors sujet ; à refaire.

@@ -400,7 +400,7 @@
    "email_verifie": true,
    "formulaire": null,
    "prenom": null,
-   "note": 2,
+   "note": "2 06/11 : relance envoyée (message 1a1b015ef9d14b61), ne reprend que la fiche de respiration du premier message (vérifié par script).",
    "pourquoi": "Sitothèque santé mentale : sélection de sites de référence.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-urgence/",
    "remarque": "Sélection documentaire sérieuse, mais réservée en pratique aux sources institutionnelles ; site d'auteur non professionnel peu susceptible d'y entrer.",
@@ -411,7 +411,8 @@
    "thread_id": "1a178aa088d3385b",
    "sujet": "Sitothèque « Santé mentale » : une fiche gratuite de respiration à proposer",
    "liens_casses": "aucun lien mort (21 liens testés le 26/10 ; cmha.ca 403 = blocage des robots) ; orsm-occitanie.fr affiche « Ce site est temporairement fermé » (503), signalé comme simple information",
-   "note_verification": "adresse lue sur https://doccitanie-sante.fr/nos-centres-de-ressources/ ; la page invite à « partager les ressources que vous souhaiteriez voir référencées » ; fiche respiration proposée en premier (règle du 21/10), puis le minuteur"
+   "note_verification": "adresse lue sur https://doccitanie-sante.fr/nos-centres-de-ressources/ ; la page invite à « partager les ressources que vous souhaiteriez voir référencées » ; fiche respiration proposée en premier (règle du 21/10), puis le minuteur",
+   "relance": "2026-11-06"
   },
   {
    "site": "Parlons RH (média RH, revue du web hebdomadaire)",
@@ -788,7 +789,8 @@
    "type": "lien",
    "sujet": "Deux ressources gratuites pour les organisateurs des SISM (respiration)",
    "notes": "Adresse affichée sur la page d'accueil. Pas de page de ressources externes : proposition de la fiche respiration et des audios pour les organisateurs d'ateliers.",
-   "note": " 27/10 : réponse automatique d'absence (arrêt maladie de la chargée de communication) ; attendre."
+   "note": " 27/10 : réponse automatique d'absence (arrêt maladie de la chargée de communication) ; attendre. 06/11 : relance envoyée (message 1a1b015f3e6c0ca6), ne reprend que la fiche de respiration du premier message (vérifié par script).",
+   "relance": "2026-11-06"
   },
   {
    "site": "Le Psychodon",
@@ -1213,7 +1215,7 @@
    "remarque": "Piste : angoisse/anxiété (grand public). La page contact dit répondre sous 5 jours ouvrés ; seul canal général = formulaire (atelier@psycom.org réservé aux ateliers, ne pas l'utiliser). Organisme exigeant : insister sur gratuit, sans inscription, sources citées, auteur non soignant.",
    "date_envoi": "2026-10-27",
    "canal": "formulaire (envoyé par l'utilisateur)",
-   "note": "27/10 : formulaire envoyé par l'utilisateur (objet « Un lien mort et une ressource gratuite de respiration », 1 lien mort signalé : Violentomètre ; sanpsy.u-bordeaux.fr en maintenance, retiré). Réponse attendue sous 5 jours ouvrés, à l'adresse yacinenettour@gmail.com."
+   "note": "27/10 : formulaire envoyé par l'utilisateur (objet « Un lien mort et une ressource gratuite de respiration », 1 lien mort signalé : Violentomètre ; sanpsy.u-bordeaux.fr en maintenance, retiré). Réponse attendue sous 5 jours ouvrés, à l'adresse yacinenettour@gmail.com. 06/11 : pas de relance possible par e-mail (contact par formulaire uniquement) ; aucune réponse vue dans Gmail."
   },
   {
    "site": "CHU de Montpellier – page « Infos psy. »",
@@ -2863,6 +2865,76 @@
    "type": "ressources",
    "audience": "C",
    "remarque": "04/11 : adresse info@promentesana.org affichée, site actif, mais association centrée sur les droits des patients (conseil juridique, pairs-aidants) : peu de rapport avec la respiration et le sommeil."
+  },
+  {
+   "site": "Habitudes Zen",
+   "domaine": "habitudes-zen.net",
+   "type": "article-invite",
+   "statut": "ecarte",
+   "date_evaluation": "2026-11-06",
+   "pourquoi_ecarte": "actif (dernier article 18/09/2026), mais aucun contact affiché (pas d'e-mail, /contact/ en 404) ; surtout des traductions de Zen Habits.",
+   "email": null,
+   "date_envoi": null,
+   "thread_id": null,
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null
+  },
+  {
+   "site": "Le blog des Rapports Humains",
+   "domaine": "leblogdesrapportshumains.fr",
+   "type": "article-invite",
+   "statut": "ecarte",
+   "date_evaluation": "2026-11-06",
+   "pourquoi_ecarte": "actif (03/11/2026) et publie des articles invités, MAIS a une rubrique « Articles sponsorisés » : vend des articles (règle « sans vente de liens »).",
+   "email": null,
+   "date_envoi": null,
+   "thread_id": null,
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null
+  },
+  {
+   "site": "Coach Relax",
+   "domaine": "coachrelax.fr",
+   "type": "article-invite",
+   "statut": "ecarte",
+   "date_evaluation": "2026-11-06",
+   "pourquoi_ecarte": "site d'entreprise de coaching (formations, Qualiopi) ; dernier article invité repéré en 2013, aucun appel à contributions actuel ; formulaire seulement.",
+   "email": null,
+   "date_envoi": null,
+   "thread_id": null,
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null
+  },
+  {
+   "site": "Les secrets du sommeil",
+   "domaine": "secrets-du-sommeil.com",
+   "type": "article-invite",
+   "statut": "ecarte",
+   "date_evaluation": "2026-11-06",
+   "pourquoi_ecarte": "inactif : dernier article le 05/04/2021.",
+   "email": null,
+   "date_envoi": null,
+   "thread_id": null,
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null
+  },
+  {
+   "site": "Atypique World",
+   "domaine": "atypiqueworld.com",
+   "type": "article-invite",
+   "statut": "ecarte",
+   "date_evaluation": "2026-11-06",
+   "pourquoi_ecarte": "actif et accepte articles et témoignages (formulaire /proposer-un-article/), mais blog 100 % neurodivergence (TDAH, autisme, MDPH) : le vécu de l'auteur et nos sujets n'y correspondent pas.",
+   "email": null,
+   "date_envoi": null,
+   "thread_id": null,
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null
   }
  ],
  "passages": [
