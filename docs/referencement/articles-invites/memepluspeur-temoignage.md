@@ -1,4 +1,4 @@
-# Réponse à Clément (podcast Même Plus Peur) : témoignage écrit (préparée le 06/11/2026, NON ENVOYÉE)
+# Réponse à Clément (podcast Même Plus Peur) : témoignage écrit (préparée et ENVOYÉE le 06/11/2026, message 1a1afa8fa0d4a645, accord « choisis le mieux »)
 
 Fil Gmail 1a1315989c5c8099. Clément (05/11, 20 h 53) : « Je serai effectivement intéressé par votre témoignage afin
 de pouvoir me rendre compte de ce que cela représente chez une personne qui l'a vécu et c'est tout à fait l'angle de mon
