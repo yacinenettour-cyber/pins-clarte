@@ -2478,5 +2478,16 @@
   "pin_id": "600175087890553093",
   "md5": "30f675c9e9518ece8099bd47942c1325",
   "lien": ""
+ },
+ {
+  "date": "2026-11-07T07:08+00:00",
+  "titre": "Journaling : 8 questions pour mieux te comprendre",
+  "image": "images/pin-20261107-070803.jpg",
+  "fond": "prete:images_cles/journaling-8-questions.jpg",
+  "theme": "blocagemental",
+  "design": "cles",
+  "pin_id": "600175087890561152",
+  "md5": "83e31dc9a5b1356f7aa5dc124f6092d4",
+  "lien": "article:ruminations-le-soir"
  }
 ]
