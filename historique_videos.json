@@ -542,5 +542,22 @@
   "pin_id": "600175087890551642",
   "short": true,
   "source": "https://youtu.be/SCUS59y5kNs"
+ },
+ {
+  "date": "2026-11-07T17:34+00:00",
+  "id": "systemenerveux-calin-20-secondes",
+  "titre": "Câlin de 20 secondes : l'effet calmant sur ton stress",
+  "video": "videopins/videopin-20261107-173227.mp4",
+  "cover": "videopins/videopin-20261107-173227.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890567817",
+  "photos": [
+   "fonds/unsplash-c4wfPC8gtIU.jpg",
+   "fonds/unsplash-c4wfPC8gtIU.jpg",
+   "fonds/unsplash-gKwGmpqqa6A.jpg",
+   "fonds/unsplash-gKwGmpqqa6A.jpg",
+   "fonds/pexels-9017012.jpg",
+   "fonds/pexels-9017012.jpg"
+  ]
  }
 ]
