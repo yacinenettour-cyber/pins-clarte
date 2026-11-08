@@ -1,0 +1,86 @@
+{
+ "numero": 3,
+ "accroche": "Pourquoi ce nœud\\Nau ventre ?",
+ "mots_cles": [
+  "poing",
+  "réseau",
+  "alerte",
+  "ralenti",
+  "nerf",
+  "vague",
+  "ventre",
+  "quatre",
+  "six",
+  "médecin",
+  "fatigué"
+ ],
+ "phrases": [
+  {
+   "texte": "Ton ventre se serre comme un poing dès que tu stresses ?",
+   "clips": [
+    "45697",
+    "14669"
+   ]
+  },
+  {
+   "texte": "Ton ventre et ton cerveau sont branchés sur le même réseau.",
+   "clips": [
+    "40640",
+    "29495"
+   ]
+  },
+  {
+   "texte": "Sous stress, il passe en alerte : ton cœur accélère, et ta digestion est mise au ralenti.",
+   "clips": [
+    "46365",
+    "50943"
+   ]
+  },
+  {
+   "texte": "Le nerf vague, qui descend du cerveau jusqu'à l'intestin, fait partie du circuit.",
+   "clips": [
+    "22729",
+    "2846"
+   ]
+  },
+  {
+   "texte": "Pour faire redescendre : une main sur le ventre.",
+   "clips": [
+    "18312"
+   ]
+  },
+  {
+   "texte": "Inspire quatre secondes par le nez.",
+   "clips": [
+    "32081"
+   ]
+  },
+  {
+   "texte": "Expire six secondes, bouche fermée.",
+   "clips": [
+    "48919"
+   ]
+  },
+  {
+   "texte": "Sang dans les selles, fièvre, perte de poids : là, ce n'est pas le stress, vois un médecin.",
+   "clips": [
+    "1793",
+    "3112"
+   ]
+  },
+  {
+   "texte": "Prochain épisode : pourquoi tu te réveilles fatigué, même après une nuit complète.",
+   "clips": [
+    "3111",
+    "28886"
+   ]
+  },
+  {
+   "texte": "Abonne-toi pour ne pas le rater.",
+   "clips": [
+    "25377"
+   ]
+  }
+ ],
+ "vitesse": 1.18
+}

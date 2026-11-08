@@ -135,14 +135,13 @@ def plans(cfg, bornes, total, clips, travail):
         if off + d > dc - 0.1:
             off = 0.0
         deja[c] = off + d
-        zin = i % 2 == 0  # alternance zoom avant / arrière
-        z = f"(1.0+0.06*t/{d:.3f})" if zin else f"(1.06-0.06*t/{d:.3f})"
-        vf = (f"scale={W}*{1.08}:{H}*{1.08}:force_original_aspect_ratio=increase,"
-              f"crop={W}*{1.08}:{H}*{1.08},"
-              f"scale=w='trunc({W}*1.08*{z}/2)*2':h=-2:eval=frame,crop={W}:{H},"
+        nb = max(1, round(d * FPS))
+        z = f"1.0+0.07*on/{nb}" if i % 2 == 0 else f"1.07-0.07*on/{nb}"  # alternance zoom avant / arrière
+        vf = (f"fps={FPS},scale={W * 3 // 2}:{H * 3 // 2}:force_original_aspect_ratio=increase,"
+              f"crop={W * 3 // 2}:{H * 3 // 2},"
+              f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
               "eq=brightness=-0.035:contrast=1.06:saturation=0.86,"
-              "colorbalance=rs=0.05:gs=0.01:bs=-0.06:rm=0.04:bm=-0.04,vignette=PI/5,"
-              f"fps={FPS},format=yuv420p")
+              "colorbalance=rs=0.05:gs=0.01:bs=-0.06:rm=0.04:bm=-0.04,vignette=PI/5,format=yuv420p")
         o = os.path.join(travail, f"p{i:02d}.mp4")
         sh("ffmpeg", "-y", "-ss", f"{off:.3f}", "-t", f"{d:.3f}", "-i", f, "-an", "-vf", vf, "-c:v", "libx264",
            "-preset", "medium", "-crf", "17", "-t", f"{d:.3f}", o)

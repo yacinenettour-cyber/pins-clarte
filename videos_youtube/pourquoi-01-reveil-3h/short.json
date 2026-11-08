@@ -1,0 +1,83 @@
+{
+ "numero": 1,
+ "accroche": "Réveillé à 3 h\\Ndu matin ?",
+ "mots_cles": [
+  "trois",
+  "biologie",
+  "léger",
+  "cortisol",
+  "alcool",
+  "l'heure",
+  "quatre",
+  "six",
+  "angoisse"
+ ],
+ "phrases": [
+  {
+   "texte": "Si tu te réveilles toujours vers trois heures du matin, ce n'est pas un message caché.",
+   "clips": [
+    "28897",
+    "51399"
+   ]
+  },
+  {
+   "texte": "C'est ta biologie.",
+   "clips": [
+    "4433"
+   ]
+  },
+  {
+   "texte": "En fin de nuit, ton sommeil devient plus léger : les cycles profonds sont déjà passés.",
+   "clips": [
+    "3111",
+    "31414"
+   ]
+  },
+  {
+   "texte": "Et ton cortisol, l'hormone du stress, recommence à monter.",
+   "clips": [
+    "28901"
+   ]
+  },
+  {
+   "texte": "Un bruit, un souci, un verre d'alcool la veille, et tu te réveilles.",
+   "clips": [
+    "2846",
+    "41257"
+   ]
+  },
+  {
+   "texte": "Alors cette nuit, ne regarde pas l'heure.",
+   "clips": [
+    "28886"
+   ]
+  },
+  {
+   "texte": "Surveiller l'horloge rend le sommeil plus long à revenir.",
+   "clips": [
+    "28893",
+    "3672"
+   ]
+  },
+  {
+   "texte": "Respire lentement : quatre temps, puis six.",
+   "clips": [
+    "48919",
+    "17426"
+   ]
+  },
+  {
+   "texte": "Prochain épisode : pourquoi l'angoisse monte dès que tu éteins la lumière.",
+   "clips": [
+    "3458"
+   ]
+  },
+  {
+   "texte": "Abonne-toi pour ne pas le rater.",
+   "clips": [
+    "48025"
+   ]
+  }
+ ],
+ "vitesse": 1.18
+}

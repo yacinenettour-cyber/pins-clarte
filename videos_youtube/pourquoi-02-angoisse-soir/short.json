@@ -1,0 +1,83 @@
+{
+ "numero": 2,
+ "accroche": "Pourquoi l'angoisse\\Nmonte le soir ?",
+ "mots_cles": [
+  "lumière",
+  "raison",
+  "ressasser",
+  "piège",
+  "alerte",
+  "cœur",
+  "ventre",
+  "respiration",
+  "médecin"
+ ],
+ "phrases": [
+  {
+   "texte": "Tu éteins la lumière, et c'est là que ça monte.",
+   "clips": [
+    "3458",
+    "3112"
+   ]
+  },
+  {
+   "texte": "Il y a une raison.",
+   "clips": [
+    "47299"
+   ]
+  },
+  {
+   "texte": "Au lit, plus rien n'occupe ton attention.",
+   "clips": [
+    "51399"
+   ]
+  },
+  {
+   "texte": "Tu es seul, et ton esprit se met à ressasser.",
+   "clips": [
+    "50943",
+    "40640"
+   ]
+  },
+  {
+   "texte": "Puis le piège se referme.",
+   "clips": [
+    "28901"
+   ]
+  },
+  {
+   "texte": "Tu t'inquiètes pour ta nuit, ton corps passe en alerte, et un battement de cœur un peu fort relance tout.",
+   "clips": [
+    "31414",
+    "46365",
+    "28897"
+   ]
+  },
+  {
+   "texte": "Ce soir, essaie ceci : pose une main sur ton ventre, et ralentis ta respiration.",
+   "clips": [
+    "18312",
+    "41741"
+   ]
+  },
+  {
+   "texte": "Si ça revient presque tous les soirs, parles-en à ton médecin.",
+   "clips": [
+    "4433"
+   ]
+  },
+  {
+   "texte": "Prochain épisode : pourquoi le stress te noue le ventre.",
+   "clips": [
+    "45697"
+   ]
+  },
+  {
+   "texte": "Abonne-toi pour ne pas le rater.",
+   "clips": [
+    "48919"
+   ]
+  }
+ ],
+ "vitesse": 1.18
+}
