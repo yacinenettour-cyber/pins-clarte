@@ -119,3 +119,11 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | Coach Relax | site d'entreprise de coaching (formations, Qualiopi) ; dernier article invité repéré en 2013, aucun appel à contributions actuel ; formulaire seulement. |
 | Les secrets du sommeil | inactif : dernier article le 05/04/2021. |
 | Atypique World | actif et accepte articles et témoignages (formulaire /proposer-un-article/), mais blog 100 % neurodivergence (TDAH, autisme, MDPH) : le vécu de l'auteur et nos sujets n'y correspondent pas. |
+
+## Podcasts et petits créateurs (nouvelle stratégie du 08/11/2026)
+
+| Site | Envoi | Proposition | État |
+|---|---|---|---|
+| Anti Stress de Poche (Thierry Daher) | 2026-11-09 | 3 audios de respiration 4-6 (ressources libres) | Sans réponse ; relance possible à partir du 19/11 |
+| La fabrique du sommeil (Corinne Baudoin) | 2026-11-09 | Témoignage écrit et anonyme | Sans réponse ; relance possible à partir du 19/11 |
+| C'est normal ou pas ? (Karine Agnez) | 2026-11-09 | Fiche gratuite de respiration | Sans réponse ; relance possible à partir du 19/11 |
