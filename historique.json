@@ -2522,5 +2522,16 @@
   "pin_id": "600175087890596914",
   "md5": "739c28958d5eedee781b166ceded2ab6",
   "lien": "etsy:4610269767"
+ },
+ {
+  "date": "2026-11-09T19:08+00:00",
+  "titre": "Calmer le stress par les 5 sens : 8 gestes simples",
+  "image": "images/pin-20261109-190817.jpg",
+  "fond": "prete:images_cles/cinq-sens-8-gestes-anti-stress.jpg",
+  "theme": "systemenerveux",
+  "design": "cles",
+  "pin_id": "600175087890603646",
+  "md5": "2ea6b0094eb80b7fb7e46ea00e7b8ce9",
+  "lien": "article:calmer-son-systeme-nerveux"
  }
 ]
