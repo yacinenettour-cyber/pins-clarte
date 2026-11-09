@@ -121,3 +121,36 @@ Méthode : suggestions de recherche YouTube (hl=fr, gl=FR) sur 20 amorces, puis 
 ## Relevé vidIQ du 09/11/2026 (chaîne reliée, statistiques réelles)
 
 Détail et décisions : `youtube/README.md`, section « Décisions du 09/11/2026 ». Résumé : 90 % des vues viennent du fil des Shorts (6 098 sur 6 762 du 01/10 au 09/11), 3 % de la recherche ; les 4 vidéos longues font 378 vues ; la vidéo de 3 h (35 vues) est regardée 24 min 44 s en moyenne, la plus longue durée par spectateur. Recherche vidIQ « méditation guidée pour dormir » (chaînes de moins de 20 000 abonnés, 6 mois, 15 vidéos) : les vidéos qui dépassent leur chaîne durent de 15 à 60 minutes et portent sur le système nerveux, la charge mentale, l'anxiété et les ruminations.
+
+## Mots-clés YouTube France : volumes et tendances vidIQ (09/11/2026)
+
+Source : vidIQ `vidiq_keyword_research` (4 analyses, 20 crédits). Volumes mensuels estimés, souvent mondiaux ; seuls les gros mots-clés ont un chiffre pour la France (`countryVolume`). « < 750 » = sous le seuil de mesure, pas zéro. Concurrence sur 0-100.
+
+| Recherche | Recherches/mois | Concurrence | Tendance |
+|---|---|---|---|
+| rumination | 55 900 (≈ 12 400 en France) | 47 | **+53 %** |
+| musique pour dormir | 74 700 (≈ 8 600 en France) | 48 | stable |
+| relaxation pour dormir | 6 980 | 38 | stable |
+| sommeil profond | 9 450 | 51 | stable |
+| méditation guidée | 10 290 | 60 | stable |
+| méditation pour dormir | 4 950 | 48 | stable |
+| s'endormir rapidement | 4 950 | 38 | stable |
+| système nerveux | 4 250 | 42 | stable |
+| insomnie | 5 280 | 52 | stable |
+| hypnose pour dormir | 3 390 | 51 | « hypnose » −43 % |
+| pensées négatives | 3 270 | 48 | stable |
+| anxiété | 18 060 | 48 | **−38 %** |
+| sommeil | 25 680 | 59 | **−56 %** |
+| méditation du soir | < 750 | **61** | stable |
+| calmer le système nerveux | < 750 | 25 | stable |
+| arrêter de ruminer | < 750 | 26 | stable |
+| pensées qui tournent | < 750 | 12 | stable |
+| calmer le mental avant de dormir | < 750 | 19 | stable |
+
+**Conclusions** :
+- **Ruminations** : seule demande en hausse (+53 %) ; à viser en priorité, avec « arrêter de ruminer » et « pensées qui tournent » (peu de volume, très peu de concurrence).
+- **« Méditation du soir » est un mauvais mot-clé de titre** (moins de 750 recherches, concurrence 61) : garder « Méditation du soir n° N » comme nom de série, en fin de titre ; commencer le titre par « relaxation pour dormir » (6 980, concurrence 38) ou « méditation pour dormir » (4 950).
+- Dans « calmer le système nerveux », la demande est dans « système nerveux » (4 250).
+- Ne pas miser sur « hypnose », « anxiété » ou « sommeil » seuls : en baisse.
+- La recherche « mots-clés en hausse » (mode `rising`) n'a ramené que « nocturne » (un genre de musique) : inutilisable sur cette niche ; ne pas la relancer telle quelle.
+- Ces chiffres mesurent la demande, pas ce qui marche pour la chaîne : les Shorts de la chaîne restent le meilleur indicateur.
