@@ -3,7 +3,7 @@ import io, json, math, os, subprocess, sys
 import numpy as np
 import requests
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
-from commun import POLICES, SITE, FPS, dossier_plan, dossier_travail, lire_plan, lisse, fondu, mmss
+from commun import DEPOT, POLICES, SITE, FPS, dossier_plan, dossier_travail, lire_plan, lisse, fondu, mmss
 
 
 DUREE_SHORT = 35.0  # 02/11/2026 : Shorts plus courts (on en regardait 30 % sur 50-60 s)
@@ -33,10 +33,63 @@ def telecharger_photos(slug):
     print(len(plan["photos"]) + len(plan.get("photos_musique", [])), "photos prêtes")
 
 
+def miniature_forte(slug, plan, trav, m):
+    """Miniature « forte » (09/11/2026, constat de l'utilisateur : « les vidéos sont très moyennes ») : après comparaison avec
+    les vidéos françaises de respiration qui font 100 000 vues, la miniature précédente (fond sombre, police à empattement,
+    petit texte, aucune personne) ne se démarquait pas. Ici : photo lumineuse avec une personne, un seul mot-clé géant en
+    capitales épaisses (ligne1), un chiffre ou une durée énorme (ligne2), une pastille de couleur (ligne3).
+    Photo : m["url"] (téléchargée) ou m["photo"] (dossier des photos de la vidéo)."""
+    W, H = 1280, 720
+    if m.get("url"):
+        chemin = os.path.join(trav, "photos", "miniature-personne.jpg")
+        os.makedirs(os.path.dirname(chemin), exist_ok=True)
+        rep = requests.get(m["url"], timeout=90, headers={"User-Agent": "Mozilla/5.0 (compatible; pins-clarte/1.0)"})
+        rep.raise_for_status()
+        ph = Image.open(io.BytesIO(rep.content)).convert("RGB")
+        assert ph.width >= 1600, f"photo de miniature trop petite : {ph.size}"
+        ph.save(chemin, "JPEG", quality=92)
+    else:
+        chemin = os.path.join(trav, "photos", m["photo"])
+    im = Image.open(chemin).convert("RGB")
+    r = max(W * m.get("zoom", 1.0) / im.width, H * m.get("zoom", 1.0) / im.height)
+    im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
+    x0 = int((im.width - W) * m.get("cadrage_x", 0.5))
+    y0 = int((im.height - H) * m.get("cadrage_y", 0.5))
+    im = im.crop((x0, y0, x0 + W, y0 + H))
+    a = np.asarray(im, np.float32)
+    a = (a - 128) * 1.12 + 128 + 8  # un peu plus de contraste et de lumière
+    a *= 1 - 0.45 * (np.linspace(1, 0, W)[None, :, None] ** 2.0)  # assombrit seulement le côté du texte
+    im = Image.fromarray(a.clip(0, 255).astype(np.uint8)).convert("RGBA")
+    pol = os.path.join(DEPOT, "Poppins-Bold.ttf")
+    txt = Image.new("RGBA", (W, H))
+    t = ImageDraw.Draw(txt)
+
+    def ajuste(texte, taille, largeur):
+        f = ImageFont.truetype(pol, taille)
+        while f.getlength(texte) > largeur:
+            taille -= 4
+            f = ImageFont.truetype(pol, taille)
+        return f
+    l1, l2, l3 = m["ligne1"].upper(), m["ligne2"].upper(), m["ligne3"].upper()
+    f1, f2, f3 = ajuste(l1, 150, 700), ajuste(l2, 260, 560), ajuste(l3, 58, 640)
+    t.text((60, 60), l1, font=f1, fill=(255, 255, 255, 255), stroke_width=9, stroke_fill=(10, 14, 30, 255))
+    t.text((60, 215), l2, font=f2, fill=(255, 221, 64, 255), stroke_width=11, stroke_fill=(10, 14, 30, 255))
+    lp = int(f3.getlength(l3)) + 60
+    t.rounded_rectangle([60, 560, 60 + lp, 560 + 96], radius=18, fill=(214, 40, 57, 255))
+    t.text((60 + lp / 2, 608), l3, font=f3, fill=(255, 255, 255, 255), anchor="mm")
+    im = Image.alpha_composite(im, txt).convert("RGB")
+    sortie = os.path.join(dossier_plan(slug), "miniature.jpg")
+    im.save(sortie, quality=90)
+    assert os.path.getsize(sortie) < 2_000_000
+    return sortie
+
+
 def miniature(slug):
     """1280×720 : photo choisie, texte en 3 lignes à gauche, pastille dorée."""
     plan, trav = lire_plan(slug), dossier_travail(slug)
     m = plan["miniature"]
+    if m.get("style") == "fort":
+        return miniature_forte(slug, plan, trav, m)
     W, H = 1280, 720
     im = Image.open(os.path.join(trav, "photos", m["photo"])).convert("RGB")
     r = max(W * m.get("zoom", 1.0) / im.width, H * m.get("zoom", 1.0) / im.height)

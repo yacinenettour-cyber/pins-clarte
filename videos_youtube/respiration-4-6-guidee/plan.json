@@ -200,14 +200,15 @@
   ]
  ],
  "miniature": {
-  "photo": "unsplash-dGyshquBzOc.jpg",
-  "zoom": 1.2,
+  "style": "fort",
+  "url": "https://images.unsplash.com/photo-1758274530259-9a3b144acc9e?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+  "photographe": "Vitaly Gariev",
+  "zoom": 1.0,
   "cadrage_x": 0.5,
   "cadrage_y": 0.5,
-  "ligne1": "Respiration 4-6",
-  "ligne2": "guidée",
-  "ligne3": "Suis le cercle",
-  "pastille": "10 min · voix douce"
+  "ligne1": "Nerf vague",
+  "ligne2": "4 · 6",
+  "ligne3": "Respiration guidée"
  },
  "short": {
   "titre": "Souffle plus longtemps que tu inspires : suis le cercle 🌙 #respiration #sommeil",
@@ -218,7 +219,7 @@
   "question": "À quelle heure ton souffle s'accélère-t-il le plus ?"
  },
  "youtube": {
-  "titre": "Respiration 4-6 guidée (10 min) : calmer le souffle avant de dormir",
+  "titre": "Nerf vague : respiration 4-6 guidée (10 min) pour te calmer",
   "accroche": "Le souffle s'accélère le soir et le mental suit ? Dix minutes de respiration guidée : 4 temps pour inspirer, 6 pour souffler, avec un cercle à suivre et une voix douce.",
   "libelle_article": "Respiration pour dormir : 4-6, 4-7-8 ou carrée, ce que disent les études (article sourcé)",
   "guide": "sommeil",
