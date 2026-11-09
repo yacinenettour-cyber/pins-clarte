@@ -8941,5 +8941,41 @@
   "largeur": 1400,
   "hauteur": 879,
   "statut": "refusée (09/11/2026) : halo rouge de douleur sur la poitrine, évoque l'infarctus (sujet santé, pas d'image alarmante)"
+ },
+ "unsplash-v1tFwqtUGEA.jpg": {
+  "theme": "systemenerveux",
+  "description": "femme pensive à la fenêtre, main sous le menton (candidate pour l'article « pensees-intrusives » du site, 09/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/v1tFwqtUGEA",
+  "photographe": "Vitaliy Shevchenko",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1722290247381-5004e2cc4f2b?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 935,
+  "statut": "à trier"
+ },
+ "unsplash-LZ03UAy1SMc.jpg": {
+  "theme": "systemenerveux",
+  "description": "femme assise sur le rebord d'une fenêtre (candidate pour l'article « pensees-intrusives » du site, 09/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/LZ03UAy1SMc",
+  "photographe": "Kelly Sikkema",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1658279366796-e0c28623cd27?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 955,
+  "statut": "à trier"
+ },
+ "unsplash-budEYISRf-U.jpg": {
+  "theme": "systemenerveux",
+  "description": "femme aux cheveux longs qui regarde par une fenêtre (candidate pour l'article « pensees-intrusives » du site, 09/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/budEYISRf-U",
+  "photographe": "Lawrence Chismorie",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1793445988307-698a8e121272?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 951,
+  "statut": "à trier"
  }
 }
