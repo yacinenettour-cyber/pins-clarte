@@ -1,6 +1,6 @@
 # Sites contactés : synthèse de la prospection (06/11/2026)
 
-Tirée du registre `docs/referencement/prospection-liens.json`. **74 sites contactés** depuis le 12/10/2026 ; **0 lien obtenu** pour l'instant.
+Tirée du registre `docs/referencement/prospection-liens.json`. **74 sites contactés** depuis le 12/10/2026 ; **1 lien obtenu** (DOCcitanie, 09/11/2026).
 
 | Catégorie | Nombre |
 |---|---|
@@ -10,6 +10,12 @@ Tirée du registre `docs/referencement/prospection-liens.json`. **74 sites conta
 | Adresse injoignable | 3 |
 
 Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seul contact est un formulaire (messages prêts dans `formulaires-a-remplir.md`, jamais envoyés), 11 « à vérifier », 48 écartés (hors sujet, trop petits ou vendent des liens).
+
+## Lien obtenu (1)
+
+| Site | Envoi | État |
+|---|---|---|
+| DOCcitanie (Promotion Santé Occitanie) | 2026-10-26 | **Premier lien externe, 09/11/2026.** Refus d'entrer dans la sitothèque (sources institutionnelles seulement), mais la fiche respiration est ajoutée à l'outilthèque numérique « Santé mentale », ressources « Tout public » : https://doccitanie-sante.fr/supports-pedagogiques/outiltheque-numerique/outiltheque-numerique-sante-mentale/ (lien vers /fiche-respiration/ présent ; dofollow ou nofollow non vérifié). Remercier une fois, sans rien demander d'autre. |
 
 ## Réponses en cours ou positives (8)
 
@@ -79,7 +85,6 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | Fédération nationale des Écoles des parents et des éducateurs (FNEPE) | 2026-10-22 | relancé le 2026-11-03 |
 | SMTI 82 – Service de prévention et de santé au travail… | 2026-10-22 | relancé le 2026-11-03 |
 | Ville de Fontenay-aux-Roses – Conseil local de santé mentale | 2026-10-22 | relancé le 2026-11-03 |
-| DOCcitanie (centres de documentation santé d'Occitanie) | 2026-10-26 | relancé le 2026-11-06 |
 | Semaines d'information sur la santé mentale (SISM) | 2026-10-27 | relancé le 2026-11-06 |
 | Psycom – Santé Mentale Info | 2026-10-27 | formulaire envoyé par toi ; relance impossible par e-mail |
 | Florence Daudon, relaxologue (Paris 12e) | 2026-10-29 | pas encore relancé |

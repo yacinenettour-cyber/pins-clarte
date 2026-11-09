@@ -404,7 +404,7 @@
    "pourquoi": "Sitothèque santé mentale : sélection de sites de référence.",
    "ressource_proposee": "https://www.contactapaisement-mental.fr/ressources-urgence/",
    "remarque": "Sélection documentaire sérieuse, mais réservée en pratique aux sources institutionnelles ; site d'auteur non professionnel peu susceptible d'y entrer.",
-   "statut": "envoye",
+   "statut": "repondu",
    "domaine": "doccitanie-sante.fr",
    "audience": "B : centres de documentation santé publique ; absent du top 1 million Tranco",
    "date_envoi": "2026-10-26",
@@ -412,7 +412,14 @@
    "sujet": "Sitothèque « Santé mentale » : une fiche gratuite de respiration à proposer",
    "liens_casses": "aucun lien mort (21 liens testés le 26/10 ; cmha.ca 403 = blocage des robots) ; orsm-occitanie.fr affiche « Ce site est temporairement fermé » (503), signalé comme simple information",
    "note_verification": "adresse lue sur https://doccitanie-sante.fr/nos-centres-de-ressources/ ; la page invite à « partager les ressources que vous souhaiteriez voir référencées » ; fiche respiration proposée en premier (règle du 21/10), puis le minuteur",
-   "relance": "2026-11-06"
+   "relance": "2026-11-06",
+   "reponse": "09/11/2026 09:35 (Marjorie Cambon, documentaliste, Promotion Santé Occitanie) : ne référence pas le site (sitothèque réservée aux sources institutionnelles ou professionnelles) mais a ajouté la fiche respiration à l'outilthèque numérique, ressources « Tout public » de l'outilthèque « Santé mentale ».",
+   "lien_obtenu": {
+    "page": "https://doccitanie-sante.fr/supports-pedagogiques/outiltheque-numerique/outiltheque-numerique-sante-mentale/",
+    "cible": "https://www.contactapaisement-mental.fr/fiche-respiration/",
+    "date": "2026-11-09",
+    "attribut_rel": "non vérifié (HTML brut inaccessible depuis l'atelier)"
+   }
   },
   {
    "site": "Parlons RH (média RH, revue du web hebdomadaire)",
