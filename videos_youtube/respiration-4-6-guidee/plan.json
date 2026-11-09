@@ -1,0 +1,276 @@
+{
+ "slug": "respiration-4-6-guidee",
+ "statut": "a_fabriquer",
+ "envoi_manuel": true,
+ "publication_prevue": "2026-11-11T19:00:00Z",
+ "duree_totale_min": 12,
+ "article": "/respiration-pour-dormir/",
+ "serie": "Respiration guidée",
+ "ecran": {
+  "titre": "Respiration 4-6 guidée",
+  "sous_titre": "Suis le cercle · voix douce · 10 minutes"
+ },
+ "brume": [
+  "Laisser le souffle revenir"
+ ],
+ "photos": [
+  {
+   "partie": "intro",
+   "nom": "unsplash-dGyshquBzOc.jpg",
+   "url": "https://images.unsplash.com/photo-1557316655-8715fdecd2d1?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Neil Thomas",
+   "lum": 1.0
+  },
+  {
+   "partie": "Se poser",
+   "nom": "unsplash-5i8JoOz91-Y.jpg",
+   "url": "https://images.unsplash.com/photo-1634023233766-0c16b151bfb0?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Amandine Bataille",
+   "lum": 0.95
+  },
+  {
+   "partie": "Respirer 4-6",
+   "nom": "unsplash-6ArTTluciuA.jpg",
+   "url": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Matt Hardy",
+   "lum": 0.9,
+   "short": true
+  },
+  {
+   "partie": "Suivre le cercle",
+   "nom": "unsplash-QdgC-jkZ7ic.jpg",
+   "url": "https://images.unsplash.com/photo-1792167955298-69a45aaa2f79?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Norbert Buduczki",
+   "lum": 0.9
+  },
+  {
+   "partie": "Laisser le souffle revenir",
+   "nom": "unsplash-KZOylOH8j20.jpg",
+   "url": "https://images.unsplash.com/photo-1769307347983-bc33c3f7213b?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "James Thompson",
+   "lum": 0.9
+  },
+  {
+   "partie": "fin",
+   "nom": "unsplash-TNv-qkpIuSk.jpg",
+   "url": "https://images.unsplash.com/photo-1616699343865-1b6be5ca0db3?ixlib=rb-4.1.0&w=2400&q=85&fm=jpg&fit=max",
+   "photographe": "Marek Piwnicki",
+   "lum": 0.8
+  }
+ ],
+ "script": [
+  [
+   "pause",
+   3
+  ],
+  [
+   "dire",
+   "Bonsoir.",
+   2
+  ],
+  [
+   "dire",
+   "Voici une séance de respiration guidée, pour ralentir avant de dormir.",
+   2.5
+  ],
+  [
+   "dire",
+   "Écoute-la assis ou allongé, au calme, jamais en conduisant.",
+   2
+  ],
+  [
+   "dire",
+   "Si tu te sens étourdi ou mal à l'aise, arrête et respire normalement.",
+   2.5
+  ],
+  [
+   "dire",
+   "Si tu ressens une douleur dans la poitrine, appelle le 15.",
+   3
+  ],
+  [
+   "dire",
+   "Le principe est simple : inspirer sur quatre temps, souffler sur six.",
+   3
+  ],
+  [
+   "dire",
+   "Un souffle petit, sans forcer. Tu n'as rien à réussir.",
+   5
+  ],
+  [
+   "titre",
+   "Se poser",
+   4
+  ],
+  [
+   "dire",
+   "Installe-toi comme tu es bien. Le dos soutenu, les épaules lourdes.",
+   6
+  ],
+  [
+   "dire",
+   "Pose une main sur ton ventre, si tu le souhaites.",
+   6
+  ],
+  [
+   "dire",
+   "Ferme les yeux, ou garde un regard doux sur un point devant toi.",
+   8
+  ],
+  [
+   "dire",
+   "On commence dans un instant. Suis le cercle, et la voix.",
+   6
+  ],
+  [
+   "titre",
+   "Respirer 4-6",
+   4
+  ],
+  [
+   "souffle",
+   6,
+   true
+  ],
+  [
+   "dire",
+   "Continue ainsi. Inspire par le nez, souffle doucement par la bouche.",
+   6
+  ],
+  [
+   "souffle",
+   6,
+   true
+  ],
+  [
+   "dire",
+   "Si ton esprit part ailleurs, ce n'est pas grave. Reviens au souffle.",
+   6
+  ],
+  [
+   "titre",
+   "Suivre le cercle",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, je me tais. Suis seulement le cercle : il grandit quand tu inspires, il rétrécit quand tu souffles.",
+   6
+  ],
+  [
+   "souffle",
+   12,
+   false
+  ],
+  [
+   "dire",
+   "Tu respires à ton rythme. Rien d'autre à faire.",
+   8
+  ],
+  [
+   "souffle",
+   12,
+   false
+  ],
+  [
+   "titre",
+   "Laisser le souffle revenir",
+   4
+  ],
+  [
+   "dire",
+   "Maintenant, laisse ton souffle reprendre son rythme naturel.",
+   8
+  ],
+  [
+   "dire",
+   "Remarque le calme dans ton corps, même s'il est petit.",
+   9
+  ],
+  [
+   "dire",
+   "Si tu es encore réveillé, ce n'est pas grave. Reste au chaud, et laisse la musique jouer.",
+   9
+  ],
+  [
+   "dire",
+   "Bonne nuit.",
+   4
+  ]
+ ],
+ "miniature": {
+  "photo": "unsplash-dGyshquBzOc.jpg",
+  "zoom": 1.2,
+  "cadrage_x": 0.5,
+  "cadrage_y": 0.5,
+  "ligne1": "Respiration 4-6",
+  "ligne2": "guidée",
+  "ligne3": "Suis le cercle",
+  "pastille": "10 min · voix douce"
+ },
+ "short": {
+  "titre": "Souffle plus longtemps que tu inspires : suis le cercle 🌙 #respiration #sommeil",
+  "description": "Inspire 4 temps, souffle 6 temps, un souffle petit et sans forcer. Souffler plus longtemps que l'inspiration est la respiration lente que les études ont le plus examinée.",
+  "haut1": "Suis le cercle",
+  "haut2": "4 temps, 6 temps",
+  "bas1": "Respiration guidée complète (10 min) sur la chaîne",
+  "question": "À quelle heure ton souffle s'accélère-t-il le plus ?"
+ },
+ "youtube": {
+  "titre": "Respiration 4-6 guidée (10 min) : calmer le souffle avant de dormir",
+  "accroche": "Le souffle s'accélère le soir et le mental suit ? Dix minutes de respiration guidée : 4 temps pour inspirer, 6 pour souffler, avec un cercle à suivre et une voix douce.",
+  "libelle_article": "Respiration pour dormir : 4-6, 4-7-8 ou carrée, ce que disent les études (article sourcé)",
+  "guide": "sommeil",
+  "description": "Une séance pour ralentir le souffle le soir : inspirer 4 secondes, souffler 6 secondes, soit 6 respirations par minute, le rythme de la cohérence cardiaque.\n\nOn s'installe, une main posée sur le ventre. Pendant deux minutes, la voix t'accompagne à chaque inspiration et chaque expiration. Ensuite elle se tait : tu suis seulement le cercle, jusqu'à ce que le souffle reprenne son rythme tout seul. Une musique douce reste avec toi à la fin.\n\nPourquoi 4 et 6 ? Souffler plus longtemps qu'on inspire est la respiration lente que les études ont le plus examinée. Une analyse de 223 études (Université allemande du sport de Cologne, 2022) la relie à plus d'activité du nerf vague. Une petite étude de l'Université Yang-Ming de Taipei (2015) a observé un endormissement plus rapide chez des personnes qui dormaient mal.\n\nSi tu es étourdi, reprends une respiration habituelle.",
+  "rappel": "À pratiquer assis ou allongé, au calme, jamais en conduisant. En cas de tournis ou de gêne, arrête et reprends une respiration habituelle. Cette vidéo ne remplace pas un avis médical. Douleur dans la poitrine, malaise ou essoufflement inhabituel : appelle le 15 ou le 112. Idées noires : 3114, gratuit, 24 h/24. Je ne suis pas professionnel de santé.",
+  "sources": [
+   "Tsai et al., Psychophysiology, 2015 (Université nationale Yang-Ming, Taipei)",
+   "Laborde et al., Neuroscience & Biobehavioral Reviews, 2022 (Université allemande du sport de Cologne)"
+  ],
+  "tags": [
+   "respiration guidée",
+   "respiration 4-6",
+   "cohérence cardiaque",
+   "cohérence cardiaque 10 minutes",
+   "respiration pour dormir",
+   "respiration anti stress",
+   "calmer le mental",
+   "respiration sommeil",
+   "exercice de respiration",
+   "nerf vague",
+   "apaiser le mental",
+   "détente avant de dormir",
+   "méditation du soir",
+   "relaxation pour dormir",
+   "mieux dormir"
+  ],
+  "hashtags": [
+   "#respiration",
+   "#sommeil",
+   "#détente"
+  ],
+  "categorie": "26"
+ },
+ "voix": "elevenlabs_mila",
+ "shorts_extra": [
+  {
+   "partie": "Se poser",
+   "haut1": "Pose une main",
+   "haut2": "sur ton ventre",
+   "bas1": "Respiration guidée complète (10 min) sur la chaîne",
+   "titre": "Pose une main sur ton ventre pour sentir ton souffle 😴 #respiration #détente",
+   "description": "Installe-toi, le dos soutenu, les épaules lourdes, une main sur le ventre. Sentir le ventre bouger aide à ralentir le souffle sans forcer.",
+   "question": "Où sens-tu le plus ton souffle : ventre, poitrine ou gorge ?"
+  },
+  {
+   "partie": "Suivre le cercle",
+   "haut1": "Suis le cercle",
+   "haut2": "sans rien forcer",
+   "bas1": "Respiration guidée complète (10 min) sur la chaîne",
+   "titre": "Un cercle qui grandit et rétrécit pour ralentir ton souffle 🌙 #respiration #calme",
+   "description": "Le cercle grandit quand tu inspires et rétrécit quand tu souffles. Tu n'as rien d'autre à faire que le suivre, à ton rythme.",
+   "question": "Combien de respirations as-tu tenues avant que l'esprit parte ailleurs ?"
+  }
+ ]
+}
