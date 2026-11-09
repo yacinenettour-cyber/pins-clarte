@@ -8893,5 +8893,53 @@
   "largeur": 1400,
   "hauteur": 933,
   "statut": "refusée (05/11/2026) : regard baissé, pas d'idée de respiration"
+ },
+ "unsplash-ev1P1gRqhqQ.jpg": {
+  "theme": "systemenerveux",
+  "description": "femme en col roulé blanc, lumière chaude (candidate pour l'article « palpitations-stress » du site, 09/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/ev1P1gRqhqQ",
+  "photographe": "Dmitriy Frantsev",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1577352545581-fb7ffed58570?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 934,
+  "statut": "à trier"
+ },
+ "unsplash-srjGcWroeNI.jpg": {
+  "theme": "systemenerveux",
+  "description": "femme assise sur un canapé, mains jointes (candidate pour l'article « palpitations-stress » du site, 09/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/srjGcWroeNI",
+  "photographe": "Vitaly Gariev",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1714976694541-98e82692d0a6?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 788,
+  "statut": "à trier"
+ },
+ "unsplash-3tazQ5Nx4cw.jpg": {
+  "theme": "systemenerveux",
+  "description": "femme en haut noir à manches longues (candidate pour l'article « palpitations-stress » du site, 09/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/3tazQ5Nx4cw",
+  "photographe": "Timur Romanov",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1566219385717-111e8c88f227?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 933,
+  "statut": "à trier"
+ },
+ "unsplash-Ry5vy9PCsvA.jpg": {
+  "theme": "systemenerveux",
+  "description": "femme une main posée sur la poitrine, fond gris (candidate pour l'article « palpitations-stress » du site, 09/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/Ry5vy9PCsvA",
+  "photographe": "Sasun Bughdaryan",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1778918006813-c2febf4daed9?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 879,
+  "statut": "à trier"
  }
 }
