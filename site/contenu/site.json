@@ -218,6 +218,12 @@
    "image": "unsplash-maSVWhv-2Og.jpg",
    "alt": "Jeune femme en tee-shirt blanc, les yeux fermés, qui inspire calmement devant un mur clair",
    "credit": "Photo : Daria Trofimova / Unsplash"
+  },
+  "palpitations-stress": {
+   "categorie": "stress",
+   "image": "unsplash-srjGcWroeNI.jpg",
+   "alt": "Femme assise sur un canapé gris, les mains jointes posées sur le genou",
+   "credit": "Photo : Vitaly Gariev / Unsplash"
   }
  },
  "formation": {
@@ -395,6 +401,10 @@
     [
      "Ton ventre se noue dès que tu stresses ou que tu angoisses",
      "boule-au-ventre"
+    ],
+    [
+     "Ton cœur s'emballe quand tu es stressé(e)",
+     "palpitations-stress"
     ],
     [
      "Tu serres les dents ou ta mâchoire se crispe quand tu es stressé(e)",

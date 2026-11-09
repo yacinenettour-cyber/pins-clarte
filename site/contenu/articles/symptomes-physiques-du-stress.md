@@ -74,7 +74,7 @@ Pour relâcher ces tensions, la relaxation musculaire progressive est expliquée
 
 ## Le cœur et la poitrine : palpitations et oppression
 
-Le cœur bat plus vite sous l'effet de l'adrénaline, qui fait aussi monter la tension artérielle [1]. Les palpitations et les douleurs dans la poitrine font partie des signes physiques des troubles anxieux [2].
+Le cœur bat plus vite sous l'effet de l'adrénaline, qui fait aussi monter la tension artérielle [1]. Les palpitations et les douleurs dans la poitrine font partie des signes physiques des troubles anxieux [2]. Pour savoir quoi faire quand ton cœur s'emballe, et quels signes doivent faire vérifier ton cœur, lis notre article sur les [palpitations et le stress](/palpitations-stress/).
 
 Sur la durée, le stress ne pèse pas seulement sur l'instant. L'INRS cite l'hypertension artérielle et les maladies cardiovasculaires parmi les pathologies associées au stress chronique au travail [1]. En 2004, l'étude INTERHEART, menée par Rosengren et ses collègues à l'hôpital universitaire Sahlgrenska de Göteborg, en Suède, et publiée dans une grande revue médicale britannique, a comparé 11 119 personnes qui venaient de faire un premier infarctus à 13 648 personnes sans infarctus, dans 52 pays [7].
 

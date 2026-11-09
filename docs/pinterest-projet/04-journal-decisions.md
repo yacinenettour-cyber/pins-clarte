@@ -1535,3 +1535,37 @@ car déjà en ligne : soirée sans écran, bain de forêt, télétravail, dos et
 les 5 épingles de `pins_saisonniers.json` (à insérer le 01/12). Grilles « tensions » et « routine-soir » toujours en
 réserve. Prospection : règle ajoutée à la tâche du matin (une relance ne reprend que ce que proposait le premier
 message), après l'erreur de la relance du 03/11 à Acouphènes Québec.
+
+## 113. Article « Palpitations et stress », rattrapage du 08/11 (publié le 09/11/2026)
+
+Créneau du dimanche 08/11 manqué ; rattrapage demandé par l'utilisateur le 09/11 (« Oui, il rattrape tout le retard ») :
+un seul article, daté du 08/11. L'article du lundi 09/11 reste à la tâche de 19 h 53. Sujet n° 16 de
+`articles-a-ecrire.md` ; suggestions Google relues le 09/11 depuis l'atelier Composio (« palpitations stress angoisse,
+que faire, symptômes, chronique », « palpitations le soir au coucher », « palpitations nuit ») : aucune page du site ne
+vise « palpitations ». Article `/palpitations-stress/` (thème Stress et système nerveux, guide sommeil en pont honnête),
+11 sources : Ameli (3 pages du dossier « Palpitations cardiaques » lues le 09/11 par Firecrawl, ameli.fr refusant
+l'atelier), NHS, INRS (phrase sur l'adrénaline relue), 3114, et 5 études vérifiées une par une dans PubMed (titre, revue,
+année, affiliation et résumé lus) : Weber et Kapoor 1996 (hôpital St. Mary's de Rochester, 190 patients, causes et
+pronostic à 1 an), Barsky et al. 1994 (Harvard et Massachusetts General Hospital, trouble panique et palpitations),
+Lessmeier et al. 1997 (Wayne State, tachycardie prise pour un trouble panique), Adams et al. 2022 (Oxford, 55 études,
+pas de lien entre anxiété et perception des battements), Marcus et al. 2023 (UCSF, café et extrasystoles). Urgence 15/112
+dès l'introduction ; INTERHEART reste détaillée dans « Symptômes physiques du stress », la crise nocturne dans « Angoisse
+le soir » (liens ajoutés depuis ces deux articles ; ajouté à la page thème).
+- **Style** : `outils/controle_style_article.py` : OK, 0 alerte (avant et après la relecture) ; relecture à la main avec une
+  phrase courte et une scène ordinaire par partie, sans fait nouveau.
+- **Photo** : `fonds/unsplash-srjGcWroeNI.jpg` (Vitaly Gariev, Unsplash, gratuite), femme assise sur un canapé, mains jointes.
+  4 candidates importées par `photos.yml`, 3 refusées (dont une avec un halo rouge « douleur » sur la poitrine, trop
+  alarmante). Empreinte 16×16 comparée à 785 images : la plus proche à 40/256 (chambre la nuit, sans rapport). Réservée au
+  site (ajoutée aussi à la liste `photos` du registre, où manquait celle de « respiration-carree »).
+- **Vérifications** : titre 53 caractères, description 147, uniques sur 50 pages ; 0 lien interne cassé ; validateur Nu :
+  0 erreur sur les pages touchées (l'accueil garde ses alertes CSS connues) ; axe-core 0 violation en clair et en sombre
+  (article, page thème, deux articles reliés) ; 320 px sans débordement.
+- **Mise en ligne** : les deux premiers déploiements GitHub Pages ont échoué (tâche `deploy` sautée, sans journal) ;
+  relancer le déploiement de 18 h 07 a suffi. Page en ligne vérifiée (200, bon titre, plan du site, liens entrants),
+  IndexNow 200 (6 adresses).
+- **Épingles** : aucune épingle non publiée ne traitait le sujet (« Sommeil : le geste en 2 temps quand ton cœur cogne »
+  reste reliée à « Angoisse le soir »). Nouvelle épingle « Palpitations et stress : 4 signes à faire vérifier »
+  (systemenerveux, 4 points, description 491 caractères, `description_article` 482) ; sujet distinct des épingles en ligne
+  sur le cœur (gestes pour le calmer). `ARTICLES_SITE` complété ; harnais : bon lien avec et sans 20 liens d'articles sur
+  14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Liste des sujets : sujet 26 ajouté (vertiges et stress), 10
+  « à écrire ».

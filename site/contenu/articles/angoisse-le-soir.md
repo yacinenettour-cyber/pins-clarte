@@ -129,7 +129,7 @@ C'est très désagréable. Mais quand un médecin a confirmé qu'il s'agit d'anx
 De quelques minutes à une heure, avec une moyenne de 20 à 30 minutes [1]. Elle arrive d'un coup, puis les symptômes s'atténuent peu à peu [12].
 
 ### Que faire si je me réveille la nuit avec le cœur qui bat ?
-Assieds-toi, allume une lumière douce et ralentis ta respiration, par le ventre [2]. Si en plus tu as une douleur dans la poitrine ou un malaise, appelle le 15. Si ces réveils reviennent, parles-en à ton médecin. Se réveiller en pleine panique est fréquent dans le trouble panique, et ça se soigne [2][4].
+Assieds-toi, allume une lumière douce et ralentis ta respiration, par le ventre [2]. Si en plus tu as une douleur dans la poitrine ou un malaise, appelle le 15. Si ces réveils reviennent, parles-en à ton médecin. Se réveiller en pleine panique est fréquent dans le trouble panique, et ça se soigne [2][4]. Pour les palpitations en dehors des crises, l'article [palpitations et stress](/palpitations-stress/) dit quand les faire vérifier.
 
 ### L'angoisse du soir peut-elle empêcher de dormir ?
 Oui. Chez les personnes anxieuses, c'est surtout l'endormissement qui coince [3], et l'insomnie et l'anxiété s'entretiennent l'une l'autre [7].
