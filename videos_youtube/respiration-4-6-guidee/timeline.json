@@ -1,0 +1,264 @@
+{
+ "duree": 720,
+ "fin_voix": 554.7310625,
+ "cues": [
+  {
+   "debut": 3.0,
+   "fin": 3.8306875,
+   "texte": "Bonsoir."
+  },
+  {
+   "debut": 5.8306875,
+   "fin": 9.895687500000001,
+   "texte": "Voici une séance de respiration guidée, pour ralentir avant de dormir."
+  },
+  {
+   "debut": 12.395687500000001,
+   "fin": 16.637770833333335,
+   "texte": "Écoute-la assis ou allongé, au calme, jamais en conduisant."
+  },
+  {
+   "debut": 18.637770833333335,
+   "fin": 22.627750000000002,
+   "texte": "Si tu te sens étourdi ou mal à l'aise, arrête et respire normalement."
+  },
+  {
+   "debut": 25.12775,
+   "fin": 28.306895833333332,
+   "texte": "Si tu ressens une douleur dans la poitrine, appelle le 15."
+  },
+  {
+   "debut": 31.306895833333332,
+   "fin": 36.22654166666666,
+   "texte": "Le principe est simple : inspirer sur quatre temps, souffler sur six."
+  },
+  {
+   "debut": 39.22654166666666,
+   "fin": 43.104812499999994,
+   "texte": "Un souffle petit, sans forcer. Tu n'as rien à réussir."
+  },
+  {
+   "debut": 52.104812499999994,
+   "fin": 57.02329166666666,
+   "texte": "Installe-toi comme tu es bien. Le dos soutenu, les épaules lourdes."
+  },
+  {
+   "debut": 63.023291666666665,
+   "fin": 65.379875,
+   "texte": "Pose une main sur ton ventre, si tu le souhaites."
+  },
+  {
+   "debut": 71.379875,
+   "fin": 75.21470833333333,
+   "texte": "Ferme les yeux, ou garde un regard doux sur un point devant toi."
+  },
+  {
+   "debut": 83.21470833333333,
+   "fin": 86.68479166666667,
+   "texte": "On commence dans un instant. Suis le cercle, et la voix."
+  },
+  {
+   "debut": 96.83479166666667,
+   "fin": 97.99043750000001,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 100.83479166666667,
+   "fin": 102.04391666666668,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 106.83479166666667,
+   "fin": 107.99043750000001,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 110.83479166666667,
+   "fin": 112.04391666666668,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 116.83479166666667,
+   "fin": 117.99043750000001,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 120.83479166666667,
+   "fin": 122.04391666666668,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 126.83479166666667,
+   "fin": 127.99043750000001,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 130.83479166666666,
+   "fin": 132.04391666666666,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 136.8347916666667,
+   "fin": 137.9904375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 140.8347916666667,
+   "fin": 142.0439166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 146.8347916666667,
+   "fin": 147.9904375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 150.8347916666667,
+   "fin": 152.0439166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 157.68479166666668,
+   "fin": 163.72579166666668,
+   "texte": "Continue ainsi. Inspire par le nez, souffle doucement par la bouche."
+  },
+  {
+   "debut": 169.8757916666667,
+   "fin": 171.0314375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 173.8757916666667,
+   "fin": 175.0849166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 179.8757916666667,
+   "fin": 181.0314375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 183.8757916666667,
+   "fin": 185.0849166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 189.8757916666667,
+   "fin": 191.0314375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 193.8757916666667,
+   "fin": 195.0849166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 199.8757916666667,
+   "fin": 201.0314375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 203.8757916666667,
+   "fin": 205.0849166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 209.8757916666667,
+   "fin": 211.0314375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 213.8757916666667,
+   "fin": 215.0849166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 219.8757916666667,
+   "fin": 221.0314375,
+   "texte": "Inspire…"
+  },
+  {
+   "debut": 223.8757916666667,
+   "fin": 225.0849166666667,
+   "texte": "Expire…"
+  },
+  {
+   "debut": 230.72579166666668,
+   "fin": 235.01952083333336,
+   "texte": "Si ton esprit part ailleurs, ce n'est pas grave. Reviens au souffle."
+  },
+  {
+   "debut": 245.01952083333336,
+   "fin": 252.6130416666667,
+   "texte": "Maintenant, je me tais. Suis seulement le cercle : il grandit quand tu inspires, il rétrécit quand tu souffles."
+  },
+  {
+   "debut": 379.6130416666667,
+   "fin": 382.69758333333334,
+   "texte": "Tu respires à ton rythme. Rien d'autre à faire."
+  },
+  {
+   "debut": 515.6975833333333,
+   "fin": 519.4029166666667,
+   "texte": "Maintenant, laisse ton souffle reprendre son rythme naturel."
+  },
+  {
+   "debut": 527.4029166666667,
+   "fin": 530.531125,
+   "texte": "Remarque le calme dans ton corps, même s'il est petit."
+  },
+  {
+   "debut": 539.531125,
+   "fin": 545.0994166666667,
+   "texte": "Si tu es encore réveillé, ce n'est pas grave. Reste au chaud, et laisse la musique jouer."
+  },
+  {
+   "debut": 554.0994166666667,
+   "fin": 554.7310625,
+   "texte": "Bonne nuit."
+  }
+ ],
+ "titres": [
+  {
+   "debut": 48.104812499999994,
+   "fin": 57.104812499999994,
+   "texte": "Se poser"
+  },
+  {
+   "debut": 92.68479166666667,
+   "fin": 101.68479166666667,
+   "texte": "Respirer 4-6"
+  },
+  {
+   "debut": 241.01952083333336,
+   "fin": 250.01952083333336,
+   "texte": "Suivre le cercle"
+  },
+  {
+   "debut": 511.69758333333334,
+   "fin": 520.6975833333333,
+   "texte": "Laisser le souffle revenir"
+  }
+ ],
+ "souffles": [
+  {
+   "debut": 96.68479166666667,
+   "cycles": 6
+  },
+  {
+   "debut": 169.72579166666668,
+   "cycles": 6
+  },
+  {
+   "debut": 258.6130416666667,
+   "cycles": 12
+  },
+  {
+   "debut": 390.69758333333334,
+   "cycles": 12
+  }
+ ],
+ "voix_douteuses": [],
+ "insp": 4.0,
+ "exp": 6.0
+}
