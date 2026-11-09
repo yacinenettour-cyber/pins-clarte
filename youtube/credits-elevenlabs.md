@@ -21,7 +21,8 @@ Décision de l'utilisateur du 03/11/2026 : « Je veux des images de qualité, n'
 | 02/11 | Voix Méditation du soir n° 1 (≈ 4 240 caractères) | ≈ 4 240 |
 | 03/11 | Image soupe (Recraft V4.1 Flash, avant la consigne de ne plus l'utiliser) | 48 |
 | 09/11 | Voix « Respiration 4-6 guidée » (16 phrases, 5 reprises de phrases déjà générées) | 1 023 |
-| **Total estimé** | | **≈ 7 523** |
+| 09/11 | Voix Méditation du soir n° 2 (57 phrases générées, 13 reprises de la n° 1 ; 2 transcriptions de contrôle) | ≈ 3 000 |
+| **Total estimé** | | **≈ 10 523** |
 
 Prévu jusqu'au renouvellement (≈ 30/11) : 4 vidéos (08, 15, 22 et 29/11) à ≈ 4 060 crédits de voix = ≈ 16 240.
 **Marge avec le plafond de 4 000** : 30 000 − 6 500 − 4 000 (images) − 16 240 (voix) = ≈ 3 260 de réserve pour refaire des phrases ou une vidéo plus longue. 4 000 crédits = ≈ 21 images à 190, soit 3 épingles illustrées complètes (6 images chacune = 1 140) ; compter les images déjà générées dans le tableau ci-dessous et s'arrêter à 4 000 sur le cycle (renouvellement vers le 30/11).
