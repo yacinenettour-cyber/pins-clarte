@@ -559,5 +559,16 @@
    "fonds/pexels-9017012.jpg",
    "fonds/pexels-9017012.jpg"
   ]
+ },
+ {
+  "date": "2026-11-09T17:32+00:00",
+  "id": "short-ruminations-soir-3",
+  "titre": "Imagine un ciel étoilé pour calmer ton mental",
+  "video": "videopins/videopin-20261109-173155.mp4",
+  "cover": "videopins/videopin-20261109-173155.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890601946",
+  "short": true,
+  "source": "https://youtu.be/SCUS59y5kNs"
  }
 ]
