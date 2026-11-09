@@ -1,0 +1,196 @@
+{
+ "slug": "meditation-du-soir-2-systeme-nerveux",
+ "erreurs": [
+  "image presque noire à 129 s"
+ ],
+ "voix_score": 0.979,
+ "phrases_douteuses": [],
+ "mots_ecarts": [
+  {
+   "debut": 15.3,
+   "phrase": "Écoute-la allongé, au calme, jamais en conduisant.",
+   "prevu": "écoute",
+   "entendu": "ecoute"
+  },
+  {
+   "debut": 15.3,
+   "phrase": "Écoute-la allongé, au calme, jamais en conduisant.",
+   "prevu": "allongé",
+   "entendu": "allonger"
+  },
+  {
+   "debut": 71.3,
+   "phrase": "Pose tes mains là où elles sont bien.",
+   "prevu": "pose de",
+   "entendu": "postez moi le"
+  },
+  {
+   "debut": 79.9,
+   "phrase": "Ferme les yeux, ou garde-les mi-clos.",
+   "prevu": "mi clo",
+   "entendu": "micro"
+  },
+  {
+   "debut": 89.8,
+   "phrase": "Sens le poids de ta tête sur l'oreiller.",
+   "prevu": "sen",
+   "entendu": "san"
+  },
+  {
+   "debut": 89.8,
+   "phrase": "Sens le poids de ta tête sur l'oreiller.",
+   "prevu": "l oreiller",
+   "entendu": "le riz"
+  },
+  {
+   "debut": 151.2,
+   "phrase": "Et un long souffle par la bouche.",
+   "prevu": "long",
+   "entendu": "nom"
+  },
+  {
+   "debut": 198.1,
+   "phrase": "Reviens à une respiration normale.",
+   "prevu": "revien",
+   "entendu": "revient"
+  },
+  {
+   "debut": 206.3,
+   "phrase": "Sens tes épaules qui s'abaissent un peu.",
+   "prevu": "sen",
+   "entendu": "san"
+  },
+  {
+   "debut": 206.3,
+   "phrase": "Sens tes épaules qui s'abaissent un peu.",
+   "prevu": "",
+   "entendu": "c est"
+  },
+  {
+   "debut": 206.3,
+   "phrase": "Sens tes épaules qui s'abaissent un peu.",
+   "prevu": "peu",
+   "entendu": ""
+  },
+  {
+   "debut": 333.2,
+   "phrase": "Si tu perds le fil, reprends doucement, sans te juger.",
+   "prevu": "si",
+   "entendu": "et"
+  },
+  {
+   "debut": 377.3,
+   "phrase": "Relâche en soufflant.",
+   "prevu": "relâche en",
+   "entendu": "relâchant"
+  },
+  {
+   "debut": 391.4,
+   "phrase": "Serre les mollets et les cuisses.",
+   "prevu": "mollet",
+   "entendu": "molet"
+  },
+  {
+   "debut": 436.4,
+   "phrase": "Serre les poings, et tends les bras.",
+   "prevu": "poing et tend",
+   "entendu": "point étant"
+  },
+  {
+   "debut": 481.0,
+   "phrase": "Serre la mâchoire, plisse le front et les yeux.",
+   "prevu": "plisse",
+   "entendu": "plice"
+  },
+  {
+   "debut": 554.2,
+   "phrase": "Repère quatre choses que tu touches, ou qui te touchent. Le drap. La couverture. L'oreiller. Tes propres mains.",
+   "prevu": "touchent",
+   "entendu": "touche"
+  },
+  {
+   "debut": 631.3,
+   "phrase": "Si une pensée t'emporte, reviens à un son, ou au drap sous tes doigts.",
+   "prevu": "revien à",
+   "entendu": "revient"
+  },
+  {
+   "debut": 631.3,
+   "phrase": "Si une pensée t'emporte, reviens à un son, ou au drap sous tes doigts.",
+   "prevu": "au drap",
+   "entendu": "odra"
+  },
+  {
+   "debut": 660.6,
+   "phrase": "Tu es allongé dans l'herbe, au chaud, sous une couverture.",
+   "prevu": "tu e allongé",
+   "entendu": "qui est allongée"
+  },
+  {
+   "debut": 741.9,
+   "phrase": "Regarde-la partir. Puis reviens aux étoiles.",
+   "prevu": "partir",
+   "entendu": "partie"
+  },
+  {
+   "debut": 762.4,
+   "phrase": "Maintenant, tu peux tout laisser aller.",
+   "prevu": "aller",
+   "entendu": "râler"
+  },
+  {
+   "debut": 773.3,
+   "phrase": "Ton souffle est lent, tout seul.",
+   "prevu": "don",
+   "entendu": "qu on"
+  },
+  {
+   "debut": 773.3,
+   "phrase": "Ton souffle est lent, tout seul.",
+   "prevu": "est",
+   "entendu": "et"
+  },
+  {
+   "debut": 785.3,
+   "phrase": "Ton corps est lourd, et chaud sous la couverture.",
+   "prevu": "don",
+   "entendu": "son"
+  }
+ ],
+ "paroles_hors_sous_titres": [],
+ "bilan_mots": "611/645 mots entendus exactement",
+ "duree_video": 1800.0,
+ "duree_short": 34.7,
+ "durees_shorts_extra": [
+  25.4,
+  25.4,
+  21.9,
+  30.2
+ ],
+ "chapitres": [
+  "00:00 Introduction",
+  "00:46 S'installer",
+  "01:52 Le long soupir",
+  "03:38 Respirer lentement",
+  "05:56 Relâcher le corps",
+  "08:45 Revenir au présent",
+  "10:47 Sous le ciel étoilé",
+  "12:38 Glisser vers le sommeil",
+  "14:42 Musique seule pour s'endormir"
+ ],
+ "description": "Ton corps reste en alerte dès que tu t'allonges ? Cette méditation du soir t'accompagne avec une voix douce pour calmer ton système nerveux, puis laisse la musique continuer jusqu'à 30 minutes.\n\n📖 Calmer son système nerveux : 6 gestes pour se calmer rapidement (article sourcé) : https://www.contactapaisement-mental.fr/calmer-son-systeme-nerveux/\n🌙 Guide gratuit « Quand le cerveau refuse de dormir » : une routine anti-rumination à faire au lit, des exercices pour calmer le mental le soir, un calendrier de 30 jours → https://lp.contactapaisement-mental.fr/tonguide?utm_source=youtube&utm_medium=video&utm_campaign=meditation-du-soir-2-systeme-nerveux\n🎧 Audios de respiration guidée gratuits : https://www.contactapaisement-mental.fr/respiration-guidee/\n\nJe l'ai faite pour les soirs où la journée est finie, mais où le corps ne suit pas : le cœur un peu vite, les épaules hautes, la mâchoire serrée.\n\nOn commence par deux petites inspirations par le nez et un long souffle par la bouche. C'est le geste testé à l'Université Stanford en 2023, où 108 personnes ont pratiqué 5 minutes par jour pendant un mois. On ralentit ensuite le souffle (4 temps pour inspirer, 6 pour souffler), on serre puis on relâche chaque partie du corps, on revient dans la pièce par le toucher et les sons, et on finit sous un ciel plein d'étoiles.\n\nPourquoi respirer lentement ? Une synthèse de 15 études de l'Université de Pise (2018) relie un souffle sous 10 respirations par minute à une activité plus forte du « frein » du corps, le système parasympathique. Les auteurs reconnaissent que les études restent peu nombreuses et très différentes les unes des autres. Ce n'est pas une garantie, et ça ne remplace pas un avis médical.\n\nSi tu t'endors avant la fin, c'est très bien. La musique continue après la voix.\n\n00:00 Introduction\n00:46 S'installer\n01:52 Le long soupir\n03:38 Respirer lentement\n05:56 Relâcher le corps\n08:45 Revenir au présent\n10:47 Sous le ciel étoilé\n12:38 Glisser vers le sommeil\n14:42 Musique seule pour s'endormir\n\nÀ écouter allongé, au calme, jamais en conduisant. Cette vidéo ne remplace pas un avis médical : si ton anxiété dure, revient sous forme de crises ou t'empêche de vivre normalement, parles-en à ton médecin. Douleur dans la poitrine, malaise ou essoufflement inhabituel : appelle le 15 ou le 112. Idées noires : 3114, gratuit, 24 h/24. Je ne suis pas professionnel de santé.\n\n🔔 Abonne-toi pour recevoir les prochaines méditations : https://www.youtube.com/@ClarteMentaleFR?sub_confirmation=1\n\nSources :\n· Balban et al., Cell Reports Medicine, 2023 (Université Stanford)\n· Zaccaro et al., Frontiers in Human Neuroscience, 2018 (Université de Pise)\n· Muhammad Khir et al., Psychology Research and Behavior Management, 2024 (Universiti Teknologi Malaysia)\n· Manuels MSD pour le grand public, Présentation du système nerveux autonome, 2025\n· Assurance maladie (ameli.fr), Symptômes et diagnostic des troubles anxieux (anxiété grave), 2025\n\nVoix : voix de synthèse ElevenLabs (elevenlabs.io), voix « Mila ».\nMusique : « Deep Relaxation », Kevin MacLeod (incompetech.com), licence Creative Commons Attribution 4.0 http://creativecommons.org/licenses/by/4.0/\nPhotos : Unsplash (Joel Henry, Dorian Labbe, David Tomaseti, Brett Belcher, Nellie Adamyan, Erbol Zhakenov, Phil Botha, Amit Padhiyar, Fethi Benattallah). Bols chantants : Freesound, domaine public (CC0).\n\n#méditation #sommeil #relaxation",
+ "luminosite_musique": [
+  4.8,
+  4.8,
+  4.8,
+  4.9,
+  4.9,
+  4.9,
+  4.9,
+  5.0,
+  5.0,
+  5.0,
+  5.0,
+  5.0
+ ]
+}
