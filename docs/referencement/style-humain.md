@@ -97,3 +97,20 @@ logiciels se trompent souvent, y compris sur des textes écrits à la main) ; pa
 détecteurs (fautes volontaires, caractères invisibles, synonymes au hasard) : elles abîment la lecture et le
 référencement. La page /methode-editoriale/ continue de dire que des outils d'IA aident à la recherche et à la
 rédaction. Le seul vrai levier restant : du vécu réel de l'auteur, qu'on ne peut pas inventer.
+
+## Contrôle automatique avant publication (09/11/2026, consigne de l'utilisateur : « priorise la création d'articles de qualité humanisés »)
+
+`python3 outils/controle_style_article.py site/contenu/articles/<slug>.md` doit afficher **OK, 0 alerte** avant toute publication
+d'un article neuf ou retouché. Il repère : formules toutes faites de la liste ci-dessus, tirets cadratins (plus de 2), points
+d'exclamation, question rhétorique « Et si… ? », transition « Et si c'est… » répétée, mots anglais, phrases trop régulières
+(variation de longueur sous 0,45), presque aucune phrase courte (moins de 8 % de phrases de 7 mots ou moins), phrase de plus de
+55 mots, deux-points ou points-virgules en série, « Selon une étude… » répété 4 fois ou plus, six phrases qui commencent par les
+mêmes mots. Une alerte se corrige dans le texte (jamais en contournant le script). Le script ne juge ni les faits ni les sources.
+
+Relecture en plus, à la main : lire l'article en entier comme une personne qui parle à une autre ; chaque partie a une scène ou
+un exemple ordinaire ; au moins une phrase courte et sèche par partie ; aucune étude racontée sur le même moule que la précédente.
+
+État au 09/11/2026 sur les 26 articles publiés : 8 à reprendre (fatigue-nerveuse, ecran-avant-de-dormir, gestion-des-emotions,
+respiration-pour-dormir, symptomes-physiques-du-stress, cortisol-hormone-du-stress, nerf-vague, ruminations-le-soir). À reprendre
+lors des journées d'amélioration du vendredi, un ou deux par semaine, sans toucher ni aux faits, ni aux sources, ni aux adresses
+(contrôle `outils/verifier_humanisation.py` contre la version publiée).

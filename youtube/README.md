@@ -144,3 +144,10 @@ Après le 2e passage sur la concurrence (`docs/referencement/concurrence-youtube
 3. **Relier les Shorts à la vidéo longue** (aujourd'hui 90 % des vues sans chemin vers les vidéos longues) : à la main dans YouTube Studio, « Vidéo similaire » sur chaque Short (impossible par l'API) ; commentaire épinglé avec la question du Short.
 4. **Régularité** : une vidéo par semaine sans trou (la tâche « Vidéo YouTube » est désactivée depuis le 06/11 : la réactiver avant le dimanche suivant).
 5. **Mesure chaque lundi** (10 crédits) : `top_videos` et `traffic_sources` depuis la dernière mesure ; noter ici les vues, minutes regardées et abonnés.
+
+## Vidéos en pause (09/11/2026, consigne de l'utilisateur : « priorise la création d'articles de qualité humanisés pour mon site et mets en stand-by les vidéos »)
+
+- La tâche hebdomadaire « Vidéo YouTube » est désactivée : plus de nouveau plan ni de nouvelle voix ElevenLabs tant que l'utilisateur ne relance pas les vidéos.
+- La « Méditation du soir n° 2 » (`meditation-du-soir-2-systeme-nerveux`, test de 30 minutes) a été écrite et sa voix contrôlée avant la pause ; sa fabrication par `youtube.yml` va à son terme (aucun envoi automatique : `envoi_manuel`).
+- **À reprendre à la relance** : appliquer à la n° 2 le titre « Relaxation pour dormir : calmer son système nerveux (n° 2, 30 min) », les tags « sommeil profond » et « relaxation guidée pour dormir », écrire `kit-mise-en-ligne.md`, envoyer la miniature et les Shorts à l'utilisateur, régler « Vidéo similaire » à la main. Analyse des mots-clés : `docs/referencement/concurrence-youtube.md` (section du 09/11/2026).
+- Les workflows `youtube.yml` (cron horaire) et `videos.yml` ne sont pas modifiés.
