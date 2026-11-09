@@ -4038,7 +4038,7 @@ L'Assurance maladie décrit trois façons de les ressentir [1] :
 - des battements isolés, plus forts, comme des coups dans la poitrine ;
 - des battements amples, à un rythme normal ou non.
 
-On les sent dans la poitrine, mais aussi dans la gorge ou le cou, et elles ne durent souvent que quelques secondes ou quelques minutes [1]. Le service de santé public anglais (NHS) parle aussi de battements « en plus » ou « qui sautent », ce qu'on appelle des extrasystoles [4]. Au repos, le cœur d'un adulte bat en moyenne 70 fois par minute [1].
+On les sent dans la poitrine, mais aussi dans la gorge ou le cou, et elles ne durent souvent que quelques secondes ou quelques minutes [1]. Le service de santé public anglais (NHS) parle aussi de battements « en plus » ou « qui sautent », ce qu'on appelle des extrasystoles [4]. Par exemple, un battement qui semble sauter pendant que tu lis au lit, puis plus rien. Au repos, le cœur d'un adulte bat en moyenne 70 fois par minute [1].
 
 Sentir son cœur n'est pas forcément le signe qu'il fonctionne mal. Dans la plupart des cas, les palpitations suivent simplement un effort, une émotion ou une bouffée d'angoisse [1].
 
@@ -4058,7 +4058,7 @@ Les palpitations sont elles-mêmes source d'angoisse, et l'angoisse fait partie 
 
 ## Palpitations de stress ou problème cardiaque : comment faire la différence ?
 
-Seul un médecin peut le dire, parfois avec des examens. Certains signes orientent quand même vers l'urgence, d'autres vers une consultation, d'autres sont plutôt rassurants [2][4].
+Seul un médecin peut le dire, parfois avec des examens. Pas un forum. Certains signes orientent quand même vers l'urgence, d'autres vers une consultation, d'autres sont plutôt rassurants [2][4].
 
 | | Plutôt rassurant | À montrer à ton médecin | Urgence : 15 ou 112 |
 |---|---|---|---|
@@ -4078,13 +4078,13 @@ Parce que certains troubles du rythme ressemblent beaucoup à une crise d'angois
 3. Parmi ces 59 personnes, plus d'une sur deux (54 %) s'étaient entendu dire que leurs symptômes venaient de la panique, de l'anxiété ou du stress. C'était le cas de 65 % des femmes contre 32 % des hommes [7].
 4. Une fois le bon traitement fait, le plus souvent une ablation, les symptômes ont disparu chez 86 % des participants [7].
 
-L'Assurance maladie décrit une de ces tachycardies, la maladie de Bouveret : des crises qui commencent et finissent brusquement, durent plusieurs minutes, s'accompagnent d'une envie d'uriner, et surviennent souvent chez des personnes jeunes, après une émotion [1]. Une émotion peut donc déclencher un vrai trouble du rythme. C'est pour ça que l'Assurance maladie conseille de noter si tes palpitations commencent et s'arrêtent brutalement ou progressivement [2].
+L'Assurance maladie décrit une de ces tachycardies, la maladie de Bouveret : des crises qui commencent et finissent brusquement, durent plusieurs minutes, s'accompagnent d'une envie d'uriner, et surviennent souvent chez des personnes jeunes, après une émotion [1]. Une émotion peut donc déclencher un vrai trouble du rythme. Imagine un cœur qui part d'un coup à toute vitesse pendant une réunion, puis s'arrête net un quart d'heure plus tard. Ce détail compte. C'est pour ça que l'Assurance maladie conseille de noter si tes palpitations commencent et s'arrêtent brutalement ou progressivement [2].
 
 Si c'est ton cas, ce n'est pas de l'hypocondrie de demander qu'on vérifie. C'est une information utile pour ton médecin.
 
 ## Que faire quand le stress donne des palpitations ?
 
-D'abord, vérifier qu'il n'y a aucun signe d'urgence [2]. Ensuite, observer, ralentir, et noter.
+D'abord, vérifier qu'il n'y a aucun signe d'urgence [2]. Ensuite, observer, ralentir, et noter. Disons qu'il est 15 h, que tu en es à ton troisième café et que ton cœur cogne pendant que tu réponds à un message tendu : c'est le bon moment pour prendre des notes.
 
 ### Sur le moment
 
@@ -4109,7 +4109,7 @@ N'arrête jamais un médicament de toi-même parce que tu le soupçonnes de donn
 
 ## Les palpitations dues au stress sont-elles dangereuses ?
 
-Le plus souvent, non. Mais on ne peut le savoir qu'après un bilan quand elles reviennent [1][2].
+Le plus souvent, non. Mais on ne peut le savoir qu'après un bilan quand elles reviennent [1][2]. Peut-être qu'on t'a déjà fait un électrocardiogramme normal, et que ça revient quand même.
 
 Weber et Kapoor, de l'hôpital St. Mary's de Rochester, aux États-Unis, ont suivi pendant un an 190 personnes venues consulter pour des palpitations dans un centre médical universitaire (revue américaine de médecine, 1996) [5]. La cause était cardiaque dans 43 % des cas, psychique dans 31 %, autre dans 10 %, et restait inconnue dans 16 % [5]. Un an plus tard, 1,6 % des participants étaient décédés et 1,1 % avaient fait un accident vasculaire cérébral. Les palpitations étaient revenues chez 75 % d'entre eux, et 89 % disaient que leur santé était stable ou meilleure [5].
 
@@ -4117,7 +4117,7 @@ Des palpitations qui reviennent sont donc fréquentes, et elles gênent : dans l
 
 ## Quels examens pour des palpitations ?
 
-Le médecin commence par t'interroger et t'examiner. Il prend ta tension, ton pouls, et te pose des questions sur le café, l'alcool, le tabac ou les médicaments [3].
+Tu arrives chez le médecin, et bien sûr, plus rien ne bat de travers. C'est courant [3]. Le médecin commence par t'interroger et t'examiner. Il prend ta tension, ton pouls, et te pose des questions sur le café, l'alcool, le tabac ou les médicaments [3].
 
 Selon les cas, il peut ensuite prescrire [3] :
 
@@ -4132,7 +4132,7 @@ Quand le bilan ne trouve rien au cœur et que le stress ou l'anxiété sont en c
 
 ## Palpitations le soir ou la nuit : pourquoi et que faire ?
 
-Les palpitations liées à l'anxiété peuvent réveiller. Dans l'étude de Harvard, les personnes avec un trouble panique étaient plus souvent tirées du sommeil par leurs palpitations [6].
+Tu te couches, la maison est calme, et tu entends ton cœur dans l'oreiller. Ça inquiète. Les palpitations liées à l'anxiété peuvent aussi réveiller. Dans l'étude de Harvard, les personnes avec un trouble panique étaient plus souvent tirées du sommeil par leurs palpitations [6].
 
 Le manque de sommeil fait aussi partie des causes de palpitations [1][4], tout comme l'apnée du sommeil [1]. Des pauses respiratoires pendant le sommeil sont d'ailleurs une raison de consulter [2]. Si tu te réveilles en pleine crise d'angoisse, avec le cœur qui bat, la peur et le souffle court, l'article sur l'[angoisse le soir](/angoisse-le-soir/) explique comment la traverser.
 
