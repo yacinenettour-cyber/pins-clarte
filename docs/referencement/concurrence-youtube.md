@@ -96,3 +96,24 @@ Source : API YouTube. Compositeur norvégien Peder B. Helland, chaîne créée e
 - **Visuels** : miniatures SANS texte, une image de nature très saturée et nette (pivoines, cascade, pleine lune, galets et bambou, pluie sur forêt, cerisier), logo oiseau en bas à gauche, icône « boucle ». Paysages animés en boucle.
 - **Rythme actuel** : 1 à 4 vidéos par mois (3 en juillet, 4 en septembre, 1 en octobre). Vues des 8 vidéos depuis juillet : médiane 104 000 (de 56 000 à 305 000), grâce aux 12 M d'abonnés et à 11 ans d'ancienneté.
 - **À retenir pour notre chaîne** : le style est reproductible (boucle nature + musique douce, longue durée, titre « N heures de musique relaxante pour dormir »), mais ni la musique (originale, protégée) ni l'audience ne le sont ; il faut une musique libre de droits et des visuels de grande qualité. Une chaîne neuve ne peut pas espérer ses chiffres.
+
+### Mots-clés « musique relaxante / pluie / sommeil » en français (analyse du 09/11/2026)
+
+Méthode : suggestions de recherche YouTube (hl=fr, gl=FR) sur 20 amorces, puis 24 recherches (20 premiers résultats, région France) : vues et abonnés des chaînes. « Petits » = chaînes de moins de 30 000 abonnés ayant une vidéo à 50 000 vues ou plus parmi les 20 premiers résultats.
+
+| Mot-clé | Vues médianes (top 20) | Abonnés médians | Petits qui percent | Dont de moins d'un an |
+|---|---|---|---|---|
+| musique pour dormir écran noir | 191 000 | 1 535 | 13 | 0 |
+| pluie pour dormir sans orage | 920 000 | 33 700 | 8 | 0 |
+| musique pour dormir pluie | 2,4 M | 38 900 | 7 | 1 |
+| musique pour dormir sans pub | 1,3 M | 43 300 | 6 | 2 |
+| pluie pour dormir 1h | 3,0 M | 63 950 | 6 | 0 |
+| ambiance pluie forêt | 1,6 M | 80 100 | 6 | 1 |
+| bruit de pluie et orage pour dormir | 1,5 M | 38 900 | 5 | 0 |
+| musique relaxante pour travailler | 5,0 M | 124 000 | 5 | 1 |
+| musique relaxante pour dormir | 5,6 M | 1 384 500 | 2 | 1 |
+| musique douce piano pour dormir | 6,4 M | 1 374 000 | 2 | 0 |
+| musique zen nature | 9,5 M | 1 820 000 | 2 | 0 |
+| musique relaxante 8 heures | 16,6 M | 4 620 000 | 0 | 0 |
+
+À retenir : les mots-clés généraux (« musique relaxante », « piano relaxant », « zen ») sont tenus par des chaînes de plus d'un million d'abonnés ; les créneaux où de petites chaînes ont percé sont les sons de pluie et d'ambiance (pas de droits musicaux à payer), avec les précisions « sans orage », « écran noir », « sans pub », « 8 h ». Mais presque tous ces petits succès ont plus de 4 ans : les exceptions récentes sont « Forêt de Pluie » (118 jours, 3 110 abonnés, 1,4 M de vues, 3 h) et « Moony Dreams » (157 jours, 10 400 abonnés, 1,1 M, 12 h). Précisions les plus cherchées (autocomplétion) : sans pub, écran noir, bébé, enfant, travailler, massage, chat, chien, 8 heures, « sans orage ».
