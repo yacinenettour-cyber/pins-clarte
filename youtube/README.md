@@ -126,3 +126,21 @@ Après le 2e passage sur la concurrence (`docs/referencement/concurrence-youtube
    « pourquoi les pensées tournent quand tu te couches », avec le lien du guide gratuit en 2e ligne de la description.
    Ils demandent des phrases de voix en plus (environ 500 caractères chacun) et un format de Short à ajouter au robot.
 
+
+## Décisions du 09/11/2026 : vidIQ branché, statistiques réelles (délégation de l'utilisateur : « Fais ce qui est le mieux pour améliorer ma chaîne »)
+
+**Outil** : connecteur vidIQ (plan gratuit, 150 crédits par mois, renouvelés le 9 de chaque mois ; 5 crédits par analyse ; compte yacinenettour@gmail.com ; chaîne `UCHDMGJxrRYnRwGZZFJNBpfg` reliée le 09/11). Usage : **recherche et mesure seulement** (`vidiq_channel_analytics`, `vidiq_outliers`, `vidiq_score_title`). Ne pas utiliser `generate_video`, `generate_script`, `generate_music`, `voiceover_generate` : ils consomment les crédits en quelques appels (20 crédits ou plus pour 8 secondes) et produisent du contenu qui se reconnaît comme généré ; consigne « rien ne doit faire IA » et « ne rien payer ».
+
+**Chiffres réels du 01/10 au 09/11 (YouTube Analytics via vidIQ)** :
+- 6 762 vues dont **6 098 par le fil des Shorts (90 %)**, 265 par les vidéos suggérées (4 %), 200 par la recherche (3 %, 62 s regardées en moyenne). 14 abonnés gagnés, soit 0,2 % des vues.
+- Les 4 vidéos longues cumulent **378 vues** : 10 min (q0ucVBKNMjM) 112 vues, 4 min 22 s regardées (44 %) ; Jacobson 1 h (PbuSSZlDu1c) 168 vues, 9 min (15 %) ; ruminations 30 min (SCUS59y5kNs) 63 vues, 5 min (17 %) ; méditation de 3 h (BdW872_POhs) 35 vues, **24 min 44 s regardées par vue** (865 minutes au total, plus que tous les Shorts réunis : 490).
+- Meilleur Short « respiration » (Son6Xv9kRTE, 1 116 vues) : 90 % des spectateurs encore là à 10 % de la durée, **53 % à 20 %** (c'est là que la perte est la plus forte), 36 % à 50 %, 23 % à la fin.
+- **Attention à la lecture** : pour une vidéo d'endormissement, le pourcentage regardé est trompeur (le spectateur s'endort). Juger sur les **minutes regardées par vue** et sur les vues à 7 jours. Sur ce critère, la vidéo de 3 h reste la meilleure, mais avec seulement 35 vues : trop peu pour trancher.
+- Petites chaînes françaises qui décollent (recherche vidIQ du 09/11, 15 vidéos) : durées de 15 à 60 minutes, jamais plus d'une heure ; sujets « système nerveux », « charge mentale », « anxiété », « ruminations », « pression » (exemples : 46 200 vues pour une méditation de 20 min d'une chaîne de 4 500 abonnés ; 6 900 vues pour une méditation anxiété d'1 h à 2 500 abonnés ; 3 200 vues pour « Faire taire les ruminations » à 197 abonnés). Chez les Shorts, deux accroches « situation vécue » à imiter sans copier : « La peur d'aller au lit », « Tu peux aller dormir si… ».
+
+**À appliquer** :
+1. **Test de format** : la vidéo « Méditation du soir n° 2 » dure **30 minutes au total** (voix 15 à 20 min, puis musique jusqu'à 30 min : `"duree_totale_min": 30`, titre « … (xx min) ») au lieu de 3 h ; garder la 3 h pour une vidéo suivante. Comparer ensuite, à 7 jours : vues, minutes regardées par vue, abonnés. Sujet : système nerveux / ruminations du soir, mot-clé en tête.
+2. **Accroche des Shorts** (perte à 10-20 % de la durée) : `haut1`/`haut2` = situation vécue lisible sans le son, geste concret dans les 3 premières secondes, pas de salutation ni de présentation.
+3. **Relier les Shorts à la vidéo longue** (aujourd'hui 90 % des vues sans chemin vers les vidéos longues) : à la main dans YouTube Studio, « Vidéo similaire » sur chaque Short (impossible par l'API) ; commentaire épinglé avec la question du Short.
+4. **Régularité** : une vidéo par semaine sans trou (la tâche « Vidéo YouTube » est désactivée depuis le 06/11 : la réactiver avant le dimanche suivant).
+5. **Mesure chaque lundi** (10 crédits) : `top_videos` et `traffic_sources` depuis la dernière mesure ; noter ici les vues, minutes regardées et abonnés.

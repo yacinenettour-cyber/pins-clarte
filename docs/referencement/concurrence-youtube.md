@@ -117,3 +117,7 @@ Méthode : suggestions de recherche YouTube (hl=fr, gl=FR) sur 20 amorces, puis 
 | musique relaxante 8 heures | 16,6 M | 4 620 000 | 0 | 0 |
 
 À retenir : les mots-clés généraux (« musique relaxante », « piano relaxant », « zen ») sont tenus par des chaînes de plus d'un million d'abonnés ; les créneaux où de petites chaînes ont percé sont les sons de pluie et d'ambiance (pas de droits musicaux à payer), avec les précisions « sans orage », « écran noir », « sans pub », « 8 h ». Mais presque tous ces petits succès ont plus de 4 ans : les exceptions récentes sont « Forêt de Pluie » (118 jours, 3 110 abonnés, 1,4 M de vues, 3 h) et « Moony Dreams » (157 jours, 10 400 abonnés, 1,1 M, 12 h). Précisions les plus cherchées (autocomplétion) : sans pub, écran noir, bébé, enfant, travailler, massage, chat, chien, 8 heures, « sans orage ».
+
+## Relevé vidIQ du 09/11/2026 (chaîne reliée, statistiques réelles)
+
+Détail et décisions : `youtube/README.md`, section « Décisions du 09/11/2026 ». Résumé : 90 % des vues viennent du fil des Shorts (6 098 sur 6 762 du 01/10 au 09/11), 3 % de la recherche ; les 4 vidéos longues font 378 vues ; la vidéo de 3 h (35 vues) est regardée 24 min 44 s en moyenne, la plus longue durée par spectateur. Recherche vidIQ « méditation guidée pour dormir » (chaînes de moins de 20 000 abonnés, 6 mois, 15 vidéos) : les vidéos qui dépassent leur chaîne durent de 15 à 60 minutes et portent sur le système nerveux, la charge mentale, l'anxiété et les ruminations.
