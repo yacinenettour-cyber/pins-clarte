@@ -88,3 +88,11 @@ Source : API YouTube, 5 recherches en français limitées aux vidéos récentes 
 - Public : 65 ans et plus 48,5 %, 55-64 ans 18 %, 45-54 ans 15,5 %, 35-44 ans 17,7 %. Appareils : mobile 2 457 vues (425 min, 0,17 min par vue), tablette 330, ordinateur 154 (270 min), télévision 42 vues pour 144 min (3,4 min par vue).
 - Abonnement : 99,7 % des vues viennent de non-abonnés ; 8 abonnés pour 2 737 vues de Shorts (0,3 %).
 - Quota de l'API de données épuisé : totaux en direct non relevés.
+
+## Chaîne Soothing Relaxation (analyse du 09/11/2026, demande de l'utilisateur : « elle marche, je veux des vidéos dans ce style »)
+
+Source : API YouTube. Compositeur norvégien Peder B. Helland, chaîne créée en 2014 : 12,1 M d'abonnés, 605 vidéos, 5,1 milliards de vues ; « 100 % indépendante, 0 % IA ».
+- **Contenu** : musique instrumentale ORIGINALE (piano, zen, eau, fantasy), sans voix ni parole. **Format** : boucles de 8 à 10 h (26 % des vidéos font 3 h et plus), plus des versions d'1 h ; vidéos suivies d'une pleine journée (série « Monday / Thursday… »). Titres en anglais : « Jour : N Hours of Relaxing X Music | Sleep, Focus, Relax or Meditate ».
+- **Visuels** : miniatures SANS texte, une image de nature très saturée et nette (pivoines, cascade, pleine lune, galets et bambou, pluie sur forêt, cerisier), logo oiseau en bas à gauche, icône « boucle ». Paysages animés en boucle.
+- **Rythme actuel** : 1 à 4 vidéos par mois (3 en juillet, 4 en septembre, 1 en octobre). Vues des 8 vidéos depuis juillet : médiane 104 000 (de 56 000 à 305 000), grâce aux 12 M d'abonnés et à 11 ans d'ancienneté.
+- **À retenir pour notre chaîne** : le style est reproductible (boucle nature + musique douce, longue durée, titre « N heures de musique relaxante pour dormir »), mais ni la musique (originale, protégée) ni l'audience ne le sont ; il faut une musique libre de droits et des visuels de grande qualité. Une chaîne neuve ne peut pas espérer ses chiffres.
