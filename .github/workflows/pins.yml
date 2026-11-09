@@ -56,7 +56,9 @@ jobs:
           # 27/10/2026 (analyse en profondeur, choix de l'utilisateur « Moins mais mieux ») : 263 épingles
           # du robot en 5 semaines pour 4 enregistrements ; Pinterest montre de moins en moins les épingles
           # d'un compte qui en publie beaucoup sans engagement. Au plus 2 par jour (11 h d'écart).
-          ECART_MIN_HEURES = 11
+          # 09/11/2026 (consigne de l'utilisateur : « 3 épingles par jour ») : 11 h → 7,5 h. Avec un
+          # déclenchement toutes les 2 h, cela donne une épingle toutes les 8 h, soit 3 par jour.
+          ECART_MIN_HEURES = 7.5
           if historique and not TEST:
               derniere = max(datetime.datetime.fromisoformat(h["date"]) for h in historique if h.get("date"))
               ecart = (datetime.datetime.now(datetime.timezone.utc) - derniere).total_seconds() / 3600
@@ -922,8 +924,15 @@ jobs:
                       "gratuit, avec ses sources scientifiques")
 
 
-          def lien_du_pin(guide, article, theme, titre):
-              if article:
+          def LIEN_ETSY_OK(pin):
+              # Épingle menant à une fiche produit de la boutique Etsy (09/11/2026, liens donnés par l'utilisateur).
+              return bool(re.fullmatch(r"https://www\.etsy\.com/(fr/)?listing/\d+/[a-z0-9-]+", pin.get("lien_etsy") or ""))
+
+
+          def lien_du_pin(guide, article, theme, titre, etsy=None):
+              if etsy:
+                  lien = etsy
+              elif article:
                   lien = f"{SITE_WEB}/{article}/"
               else:
                   lien = {"sommeil": os.environ["LIEN_PAGE"], "cortisol": LIEN_GUIDE_CORTISOL}.get(guide, "") if guide else ""
@@ -966,7 +975,7 @@ jobs:
           # 6 clics sortants avec 11 épingles, le guide sommeil 2 avec 30 : poids 2 pour les trois,
           # à réévaluer le 04/11.
           POIDS_THEME = {"sommeil": 2.0, "energie": 2.0, "alimentation": 2.0}
-          FORMATS_ILLUSTRES = {"exercices", "cles", "riche"}
+          FORMATS_ILLUSTRES = {"exercices", "cles", "riche", "etsy"}
 
 
           def choisir_pin_equilibre(restants, historique):
@@ -980,13 +989,17 @@ jobs:
               # formats illustrés confondus, espacées d'au moins 8 h ; prioritaires quand ce quota le
               # permet (en alternant les formats), écartées sinon.
               maintenant = datetime.datetime.now(datetime.timezone.utc)
-              exos_faits = [h["date"] for h in historique if h.get("design") in FORMATS_ILLUSTRES and h.get("date")]
+              # Les épingles « etsy » (09/11/2026) ont leur propre rythme (écart minimal global) : elles ne
+              # comptent pas dans le quota des 2 illustrées par 24 h et ne sont jamais écartées par lui.
+              exos_faits = [h["date"] for h in historique
+                            if h.get("design") in FORMATS_ILLUSTRES and h.get("design") != "etsy" and h.get("date")]
               debut_24h = (maintenant - datetime.timedelta(hours=24)).isoformat(timespec="minutes")
               debut_8h = (maintenant - datetime.timedelta(hours=8)).isoformat(timespec="minutes")
               exo_permis = (sum(d >= debut_24h for d in exos_faits) < 2
                             and not any(d >= debut_8h for d in exos_faits))
               if not exo_permis:
-                  restants = [p for p in restants if p.get("format") not in FORMATS_ILLUSTRES] or restants
+                  restants = [p for p in restants
+                              if p.get("format") not in FORMATS_ILLUSTRES or p.get("format") == "etsy"] or restants
               par_theme = {}
               for p in restants:
                   t = deviner_theme(p["description"])
@@ -1059,7 +1072,8 @@ jobs:
           # infographies illustrées (format des épingles du compte qui ont marché). Une épingle sans article
           # ne doit rien promettre (« guide gratuit », « plan ») puisqu'elle n'a plus de lien.
           restants = [p for p in restants if p.get("format") in FORMATS_ILLUSTRES
-                      and ((p.get("article") in ARTICLES_SITE and p.get("description_article"))
+                      and (LIEN_ETSY_OK(p)
+                           or (p.get("article") in ARTICLES_SITE and p.get("description_article"))
                            or not re.search(r"(?i)guide gratuit|plan anti-cortisol|plan gratuit|en lien", p["description"]))]
           if not restants:
               print("Aucune infographie illustrée prête : pas de publication cette fois (on publie moins plutôt que moins bien).")
@@ -1080,14 +1094,17 @@ jobs:
           theme = deviner_theme(pin["description"])
           guide = guide_du_pin(pin, theme)
           article = article_du_pin(pin, guide, historique)
-          if article:
+          etsy = pin.get("lien_etsy") if LIEN_ETSY_OK(pin) else None
+          if etsy:
+              article = guide = None
+          elif article:
               guide = None
               pin["description"] = pin["description_article"]
           elif guide == "cortisol" and pin.get("description_guide_cortisol"):
               pin["description"] = pin["description_guide_cortisol"]
           LIGNES_CARTE = (lignes_carte_article(article) if article
                           else LIGNES_CARTE_CORTISOL if guide == "cortisol" else GUIDE_LIGNES)
-          print("Cible du lien :", ("article " + article) if article else ("guide " + guide) if guide else "aucune")
+          print("Cible du lien :", ("Etsy " + etsy) if etsy else ("article " + article) if article else ("guide " + guide) if guide else "aucune")
 
           hashtags_m = re.search(r"(\s#\w+(?:\s#\w+)*)\s*$", pin["description"])
           hashtags = hashtags_m.group(1).strip() if hashtags_m else ""
@@ -1096,7 +1113,7 @@ jobs:
           phrase = random.choice(PHRASES_ENREGISTRER) if random.random() < 0.5 else ""
           # Ne jamais laisser la phrase d'enregistrement pousser dehors l'appel au guide
           # (troncature du corps) ni s'ajouter après lui.
-          if phrase and (article or re.search(r"(?i)guide|plan (anti-cortisol|gratuit)", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
+          if phrase and (etsy or article or re.search(r"(?i)guide|plan (anti-cortisol|gratuit)", corps) or len(corps) + len(phrase) + len(hashtags) + 2 > 495):
               phrase = ""
           queue = " ".join(p for p in [phrase, hashtags] if p)
           budget_corps = 495 - (len(queue) + 1 if queue else 0)
@@ -1215,7 +1232,7 @@ jobs:
               "energie": "600175156532025122",
           }
 
-          lien = lien_du_pin(guide, article, theme, pin["titre"])
+          lien = lien_du_pin(guide, article, theme, pin["titre"], etsy)
 
           # Publication directe via l'API Composio (comme videos.yml) : permet le texte
           # alternatif et la confirmation réelle du pin avant l'inscription à l'historique.
@@ -1260,7 +1277,7 @@ jobs:
           entree = {"date": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
                     "titre": pin["titre"], "image": chemin, "fond": fond_etiquette, "theme": theme,
                     "design": design, "pin_id": pin_id, "md5": anti_doublons.empreinte(chemin),
-                    "lien": ("article:" + article) if article else ("guide:" + guide) if guide else ""}
+                    "lien": ("etsy:" + etsy.rstrip("/").split("/")[-2]) if etsy else ("article:" + article) if article else ("guide:" + guide) if guide else ""}
           limite = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)
           for n in range(6):
               git("fetch", "origin", "main")
