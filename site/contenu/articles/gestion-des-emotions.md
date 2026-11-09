@@ -109,7 +109,7 @@ Oui. Dans les expériences regroupées par l'Université de Sheffield, on demand
 
 ## Pour aller plus loin
 
-Si tes émotions te suivent jusqu'au lit, l'article sur l'[angoisse le soir](/angoisse-le-soir/) t'aidera à comprendre pourquoi elles semblent plus fortes la nuit. Et si c'est ton corps qui reste en alerte, commence par celui sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/).
+Si tes émotions te suivent jusqu'au lit, l'article sur l'[angoisse le soir](/angoisse-le-soir/) t'aidera à comprendre pourquoi elles semblent plus fortes la nuit. Et si c'est ton corps qui reste en alerte, commence par celui sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/). Quant aux pensées qui dérangent et reviennent malgré toi, elles ont leur propre article, sur les [pensées intrusives](/pensees-intrusives/).
 
 ## Sources
 1. [Dealing with feeling: a meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation — Psychological Bulletin (Webb et al., Université de Sheffield), 2012](https://pubmed.ncbi.nlm.nih.gov/22582737/)

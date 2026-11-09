@@ -224,6 +224,12 @@
    "image": "unsplash-srjGcWroeNI.jpg",
    "alt": "Femme assise sur un canapé gris, les mains jointes posées sur le genou",
    "credit": "Photo : Vitaly Gariev / Unsplash"
+  },
+  "pensees-intrusives": {
+   "categorie": "stress",
+   "image": "unsplash-v1tFwqtUGEA.jpg",
+   "alt": "Femme pensive près d'une fenêtre, la main sous le menton, le regard perdu au loin",
+   "credit": "Photo : Vitaliy Shevchenko / Unsplash"
   }
  },
  "formation": {
@@ -441,6 +447,10 @@
     [
      "Tes émotions prennent vite toute la place",
      "gestion-des-emotions"
+    ],
+    [
+     "Une pensée choquante surgit et tu n'arrives plus à t'en défaire",
+     "pensees-intrusives"
     ]
    ],
    "guide": "cortisol"

@@ -165,6 +165,8 @@ Si tes soirées ressemblent souvent à ce manège, le guide gratuit « Quand le 
 
 Au lit, quand les pensées tournent, l'[audio de respiration guidée de 10 minutes](/respiration-guidee/) peut t'aider à ralentir, les yeux fermés. Et si ce sont tes muscles qui restent tendus, la [relaxation Jacobson](/relaxation-jacobson/) se fait elle aussi au lit, zone par zone.
 
+Une image choquante qui surgit d'un coup, ce n'est pas tout à fait une rumination : l'article sur les [pensées intrusives](/pensees-intrusives/) explique pourquoi elles s'accrochent quand on essaie de les chasser.
+
 ## Sources
 1. [Insomnie — Inserm, 2017](https://www.inserm.fr/dossier/insomnie/)
 2. [L'insomnie (dépliant patient) — Institut national du sommeil et de la vigilance (INSV)](https://institut-sommeil-vigilance.org/wp-content/uploads/2020/02/INSV-Insomnie-3-Volets.pdf)

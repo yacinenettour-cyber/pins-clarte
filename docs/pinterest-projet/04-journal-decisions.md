@@ -1569,3 +1569,34 @@ le soir » (liens ajoutés depuis ces deux articles ; ajouté à la page thème)
   sur le cœur (gestes pour le calmer). `ARTICLES_SITE` complété ; harnais : bon lien avec et sans 20 liens d'articles sur
   14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Liste des sujets : sujet 26 ajouté (vertiges et stress), 10
   « à écrire ».
+
+## 114. Article « Pensées intrusives » (09/11/2026, tâche « Articles : 5 par semaine »)
+
+Article du lundi 09/11 (le créneau du 08/11 avait été rattrapé avec « Palpitations et stress »). Tâche interrompue une fois
+par une limite d'utilisation, reprise le soir même sans rien avoir publié entre-temps. Sujet n° 17 de `articles-a-ecrire.md` ;
+suggestions Google relues le 09/11 depuis l'atelier Composio (« pensées intrusives exemples, anxiété, causes, culpabilité,
+toc, traitement, que faire, post partum », « pensées obsédantes ») : aucune page du site ne vise ce mot-clé (« Ruminations le
+soir » garde les pensées qui tournent en boucle). Article `/pensees-intrusives/` (thème Stress et système nerveux, guide
+sommeil en pont honnête, « il ne traite pas le TOC »), 13 sources : Ameli (3 pages du dossier TOC lues en entier par
+Firecrawl), NHS (page TOC lue en entier), 3114, et 8 études vérifiées une par une, **résumés seulement** (titre, revue,
+année, affiliation lus dans PubMed) : Purdon et Clark 1994 (Nouveau-Brunswick), Wegner et al. 1987 (pas d'affiliation dans
+PubMed, aucune citée), Abramowitz et al. 2001 (Mayo Clinic), Marcks et Woods 2005 (Wisconsin-Milwaukee), Fairbrother et Woody
+2008 (Women's Health Research Institute, Vancouver), Harrington et al. 2021 (York), Öst et al. 2015 (Stockholm et Karolinska) ;
+Radomsky et al. 2014 n'est pas dans PubMed : résumé et début du texte lus dans le PDF déposé par un coauteur (université de
+Caroline du Nord), affiliation donnée seulement comme « menée depuis Montréal » (adresse lue dans le PDF). 3114 dès
+l'introduction. Liens ajoutés depuis « Ruminations le soir » et « Gestion des émotions » et dans la page thème.
+- **Style** : `outils/controle_style_article.py` : OK, 0 alerte (avant et après la relecture à la main : une scène et une phrase
+  courte par partie, récits d'études variés). « Ruminations le soir » et « Gestion des émotions » gardent leurs alertes
+  d'avant (déjà sur la liste des 8 à reprendre), sans aggravation.
+- **Photo** : `fonds/unsplash-v1tFwqtUGEA.jpg` (Vitaliy Shevchenko, Unsplash, gratuite), femme pensive à une fenêtre.
+  3 candidates importées par `photos.yml`, 2 refusées (motifs dans `photos_sources.json`). Empreinte 16×16 comparée à
+  922 images : la plus proche à 48/256. Réservée au site.
+- **Vérifications** : titre 59 caractères, description 143, uniques ; 0 lien interne cassé ; validateur Nu : 0 erreur sur
+  les 5 pages touchées ; axe-core 0 violation en clair et en sombre (article, page thème, deux articles reliés) ; 320 px
+  (cadre de 320 px, Chrome sans interface) sans débordement. Publié (gh-pages, déploiement réussi du premier coup), page en
+  ligne vérifiée (200, bon titre, image, plan du site, liens entrants), IndexNow 200 (6 adresses).
+- **Épingles** : aucune épingle non publiée ne traitait le sujet. Nouvelle épingle « Pensées intrusives : 4 réflexes pour
+  les laisser passer » (systemenerveux, 4 points, description 490 caractères, `description_article` 474), contrôlée par
+  `anti_doublons.est_doublon` contre les épingles en ligne (aucun doublon). `ARTICLES_SITE` complété ; harnais : bon lien
+  sans guide, avec guide et avec 20 liens d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Liste
+  des sujets : 27 (boule dans la gorge) et 28 (tremblements) ajoutés, 11 « à écrire ».
