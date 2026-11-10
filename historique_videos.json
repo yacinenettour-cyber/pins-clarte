@@ -570,5 +570,22 @@
   "pin_id": "600175087890601946",
   "short": true,
   "source": "https://youtu.be/SCUS59y5kNs"
+ },
+ {
+  "date": "2026-11-10T17:33+00:00",
+  "id": "systemenerveux-pousser-le-mur",
+  "titre": "Pousser un mur : 20 secondes pour décharger le stress",
+  "video": "videopins/videopin-20261110-173224.mp4",
+  "cover": "videopins/videopin-20261110-173224.jpg",
+  "theme": "systemenerveux",
+  "pin_id": "600175087890620874",
+  "photos": [
+   "fonds/pexels-7272943.jpg",
+   "fonds/pexels-7272943.jpg",
+   "fonds/pexels-8559956.jpg",
+   "fonds/pexels-8559956.jpg",
+   "fonds/pexels-7500704.jpg",
+   "fonds/pexels-7500704.jpg"
+  ]
  }
 ]
