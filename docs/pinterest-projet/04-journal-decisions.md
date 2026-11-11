@@ -1600,3 +1600,35 @@ l'introduction. Liens ajoutés depuis « Ruminations le soir » et « Gestion de
   `anti_doublons.est_doublon` contre les épingles en ligne (aucun doublon). `ARTICLES_SITE` complété ; harnais : bon lien
   sans guide, avec guide et avec 20 liens d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Liste
   des sujets : 27 (boule dans la gorge) et 28 (tremblements) ajoutés, 11 « à écrire ».
+
+## 115. Article « Déconnecter du travail le soir », rattrapage du 10/11 (publié le 11/11/2026)
+
+Créneau du mardi 10/11 manqué (session interrompue) ; rattrapage demandé par l'utilisateur (« priorise la création
+d'articles de qualité humanisés », « il rattrape tout le retard ») : un seul article, daté du 10/11 ; celui du mercredi 11/11
+reste à la tâche de 19 h 53. Sujet n° 18 de `articles-a-ecrire.md` ; suggestions Google relues le 11/11 depuis l'atelier
+Composio (« déconnecter du travail, décrocher du travail, déconnexion du travail, couper du travail, comment décrocher du
+travail le soir, comment ne plus penser au travail le soir ») : aucune page du site ne vise ces recherches. Article
+`/deconnecter-du-travail/` (thème Charge mentale et burn-out, guide sommeil en pont honnête « il ne traite pas
+l'organisation du travail »), 12 sources : 7 études vérifiées une par une dans PubMed (titre, revue, année, affiliation) ;
+**texte intégral lu en partie** (méthode, tableaux de résultats, discussion pratique) pour Wendsche et Lohmann-Haislah 2016
+(Institut fédéral allemand pour la santé et la sécurité au travail, PMC) ; **résumés seulement** pour Sonnentag et Bayer 2005
+(Constance), Querstret et Cropley 2012 (Surrey), Wendsche, Weigelt et Syrek 2026 (BAuA Dresde, Groningue,
+Bonn-Rhein-Sieg), Karabinski et al. 2021 (Université technique de Dresde), Querstret et al. 2017 (Surrey) ; Masicampo et
+Baumeister 2011 déjà vérifié pour « Charge mentale » (résumé en une phrase, renvoi). Pages officielles lues en entier par
+Firecrawl : ministère du Travail (droit à la déconnexion), Service Public Entreprendre (Cour de cassation, 25/03/2026),
+INRS (stress au travail ; épuisement professionnel, phrases sur les signes et le médecin du travail), 3114.
+- **Style** : `outils/controle_style_article.py` : OK, 0 alerte (avant et après la relecture à la main : une scène et une
+  phrase courte par partie, récits d'études variés). Liens entrants ajoutés dans « Charge mentale », « Signes du burn-out »
+  (OK) et « Ruminations le soir » (garde son alerte d'avant, « Et si c'est… » ×2, sans aggravation) et la page thème.
+- **Photo** : `fonds/unsplash-gVVGVlV753w.jpg` (Resume Genius, Unsplash, gratuite), femme lasse sur un canapé avec un
+  ordinateur portable. 4 candidates importées par `photos.yml`, 3 refusées (motifs dans `photos_sources.json`). Empreinte
+  16×16 comparée à 726 images : la plus proche à 86/256. Réservée au site.
+- **Vérifications** : titre 57 caractères, description 142, uniques sur 51 pages ; 0 lien interne cassé ; validateur Nu :
+  0 erreur sur les 5 pages touchées ; axe-core 0 violation en clair et en sombre (article, page thème, trois articles
+  reliés) ; 320 px sans débordement. Publié (gh-pages, déploiement réussi du premier coup), page en ligne vérifiée (200, bon
+  titre, image, plan du site, liens entrants), IndexNow 200 (6 adresses et le plan du site).
+- **Épingles** : aucune épingle non publiée ne traitait le sujet (les épingles en ligne « Mails du soir », « Le sas de
+  décompression » et « Télétravail et stress » ont déjà pris ces angles). Nouvelle épingle « Tâches pas finies : 3 gestes
+  pour couper le soir » (fatiguementale, 3 points, description 453 caractères, `description_article` 482), contrôlée par
+  `anti_doublons.est_doublon` (aucun doublon). `ARTICLES_SITE` complété ; harnais : bon lien sans guide, avec guide et avec
+  20 liens d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. 10 sujets « à écrire ».

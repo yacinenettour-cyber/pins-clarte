@@ -230,6 +230,12 @@
    "image": "unsplash-v1tFwqtUGEA.jpg",
    "alt": "Femme pensive près d'une fenêtre, la main sous le menton, le regard perdu au loin",
    "credit": "Photo : Vitaliy Shevchenko / Unsplash"
+  },
+  "deconnecter-du-travail": {
+   "categorie": "mental",
+   "image": "unsplash-gVVGVlV753w.jpg",
+   "alt": "Femme assise sur un canapé, un ordinateur portable sur les genoux, la tête appuyée sur la main, l'air las",
+   "credit": "Photo : Resume Genius / Unsplash"
   }
  },
  "formation": {
@@ -477,6 +483,10 @@
     [
      "Tu te sens vidé(e) sans avoir rien fait de physique",
      "fatigue-nerveuse"
+    ],
+    [
+     "Ta tête reste au travail une fois rentré(e) chez toi",
+     "deconnecter-du-travail"
     ],
     [
      "La liste des choses à faire tourne au moment de dormir",

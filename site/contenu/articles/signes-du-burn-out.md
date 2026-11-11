@@ -129,7 +129,7 @@ Non, pas forcément. Tu peux demander une visite quand tu veux, même pendant un
 Non. Les questionnaires connus, comme l'inventaire de burn-out de Maslach, n'ont pas été conçus pour évaluer une personne seule, précise la HAS [2]. Au mieux, ils servent de support pour en discuter avec un médecin, qui fera le lien avec ta situation de travail.
 
 ## Pour aller plus loin
-Si tu as pensé à toi en lisant cet article, la prochaine étape est simple : prendre rendez-vous. Sur une feuille, note les signes que tu remarques, depuis quand ils sont là et ce qui se passe au travail en ce moment. Apporte-la à ton médecin traitant ou au médecin du travail. Si ce premier pas te paraît difficile, commence par en parler à quelqu'un de confiance. Plus tu repères tôt les signes du burn-out, plus tu gardes de choix pour la suite.
+Si tu as pensé à toi en lisant cet article, la prochaine étape est simple : prendre rendez-vous. Sur une feuille, note les signes que tu remarques, depuis quand ils sont là et ce qui se passe au travail en ce moment. Apporte-la à ton médecin traitant ou au médecin du travail. Si ce premier pas te paraît difficile, commence par en parler à quelqu'un de confiance. Plus tu repères tôt les signes du burn-out, plus tu gardes de choix pour la suite. Tu n'arrives plus à couper le soir, même quand tout va à peu près bien ? Un autre article explique pourquoi c'est si difficile de [déconnecter du travail](/deconnecter-du-travail/) et ce qui aide.
 
 ## Sources
 1. [Burn-out an "occupational phenomenon": International Classification of Diseases — Organisation mondiale de la santé (OMS), 2019](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases)
