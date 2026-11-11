@@ -9025,5 +9025,53 @@
   "largeur": 1400,
   "hauteur": 933,
   "statut": "refusée (11/11/2026) : scène très sombre, platine vinyle, sans lien avec le travail"
+ },
+ "unsplash-HGcSgsqjFp8.jpg": {
+  "theme": "sommeil",
+  "description": "femme qui regarde par la fenêtre, une tasse à la main (candidate pour l'article « a-quelle-heure-arreter-le-cafe » du site, 11/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/HGcSgsqjFp8",
+  "photographe": "B S",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1766876767264-0c6d73891a7e?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 933,
+  "statut": "à trier"
+ },
+ "unsplash-y1ObZTkoJHU.jpg": {
+  "theme": "sommeil",
+  "description": "femme qui boit dans une tasse devant une fenêtre (candidate pour l'article « a-quelle-heure-arreter-le-cafe » du site, 11/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/y1ObZTkoJHU",
+  "photographe": "Narissa de Villiers",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1714640816845-90e04e414f6f?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 933,
+  "statut": "à trier"
+ },
+ "unsplash-7w_aPSt-5Lc.jpg": {
+  "theme": "sommeil",
+  "description": "femme assise à une table qui boit une tasse de café (candidate pour l'article « a-quelle-heure-arreter-le-cafe » du site, 11/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/7w_aPSt-5Lc",
+  "photographe": "Narissa de Villiers",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1714640856321-99a204fe40a2?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 933,
+  "statut": "à trier"
+ },
+ "unsplash-eI5yqPjpObU.jpg": {
+  "theme": "sommeil",
+  "description": "femme appuyée contre un mur qui boit un café (candidate pour l'article « a-quelle-heure-arreter-le-cafe » du site, 11/11/2026)",
+  "source": "Unsplash",
+  "page": "https://unsplash.com/photos/eI5yqPjpObU",
+  "photographe": "Candice Picard",
+  "licence": "Licence Unsplash : usage gratuit, commercial autorisé, attribution facultative",
+  "url": "https://images.unsplash.com/photo-1536914464651-b89b0d212872?ixlib=rb-4.1.0&w=1400&q=85&fm=jpg&fit=max",
+  "largeur": 1400,
+  "hauteur": 933,
+  "statut": "à trier"
  }
 }
