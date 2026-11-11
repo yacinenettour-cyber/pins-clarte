@@ -1960,7 +1960,10 @@
    "type": "lien",
    "note": "message prêt dans docs/referencement/messages-blogs-thematiques-20-10.md, à envoyer seulement après l'accord de l'utilisateur ; site vérifié le 20/10 ; notre page : /ruminations-le-soir/",
    "relance_message_id": "1a18c618279a8f7f",
-   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT)."
+   "relance_note": "Relance unique dans le même fil, mention des ressources réutilisables ; vérifiée (SENT).",
+   "relance_2": "2026-11-11",
+   "relance_2_message_id": "1a1ca2a582519b50",
+   "relance_2_note": "Dernière relance, ne plus écrire."
   },
   {
    "email_verifie": true,
@@ -2977,7 +2980,8 @@
    "relance": null,
    "reponse": "09/11 16:59 (Corinne Baudoin) : pas d'accord. Elle demande ce que l'écoute de l'épisode 35 a apporté à Yacine et ce qui motive la proposition de témoignage et ce qu'il en attend. Brouillon de réponse prêt dans docs/referencement/brouillons-prospection-2026-11-11.md, en attente de validation de l'utilisateur.",
    "lien_obtenu": null,
-   "audience": "B : petit podcast francophone indépendant, épisode dans les 3 derniers mois"
+   "audience": "B : petit podcast francophone indépendant, épisode dans les 3 derniers mois",
+   "reponse_envoyee": "11/11/2026 (message 1a1ca2a596057c49) : réponse franche (titre et description lus, épisode non écouté ; motivation = vécu ; attente = adresse du site dans les notes)."
   },
   {
    "site": "C'est normal ou pas ? (podcast, Karine Agnez)",
@@ -3007,13 +3011,13 @@
    "sujet": "Un témoignage sur le stress qui ne passe pas",
    "detail_lu": "titres des épisodes E067 « J'ai tout essayé contre le stress : pourquoi ça ne change rien ? » et E063 « Tu dors mais tu ne te reposes pas » (flux RSS, 14/10/2026)",
    "ressource_proposee": "témoignage écrit et anonyme (vecu-auteur.md)",
-   "statut": "a_envoyer",
-   "date_envoi": null,
-   "thread_id": null,
+   "statut": "envoye",
+   "date_envoi": "2026-11-11",
+   "thread_id": "1a1ca2a58bbf4598",
    "relance": null,
    "reponse": null,
    "lien_obtenu": null,
-   "note": "Texte prêt dans docs/referencement/prospects-a-envoyer-2026-11-10.md ; à envoyer le 10/11 (plafond du 09/11 atteint)."
+   "note": "Envoyé le 11/11/2026 (message 1a1ca2a58bbf4598). Relance possible à partir du 21/11."
   },
   {
    "site": "Make You Happy (podcast, Julie)",

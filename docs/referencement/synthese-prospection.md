@@ -24,7 +24,7 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | Même Plus Peur (podcast) | 2026-10-12 | **En cours, la plus prometteuse.** Clément prépare un épisode anxiété et sommeil ; il a accepté ton témoignage écrit (05/11), envoyé le 06/11. Il attend peut-être le contact d'une psychologue du sommeil. |
 | Université Laval — Mon équilibre UL | 2026-10-18 | Fermé : refonte complète de leur site, pages actuelles supprimées. Ne plus écrire. |
 | Couleur d'âme | 2026-10-19 | En attente : a aimé le site, garde /charge-mentale/ en tête pour une prochaine mise à jour de son article. Aucun engagement. |
-| Ma Cohérence (Audrey) | 2026-10-20 | En attente : voulait un échange de liens ; proposition envoyée le 30/10, pas de réponse depuis. |
+| Ma Cohérence (Audrey) | 2026-10-20 | En attente : voulait un échange de liens ; proposition envoyée le 30/10, relance unique le 11/11. Ne plus écrire. |
 | Santé Québec – Saguenay–Lac-Saint-Jean (Ressources et liens utiles… | 2026-10-21 | Sans suite probable : ont corrigé leurs liens morts grâce à nous, suggestion transmise à un autre service. Ne plus relancer. |
 | Question Santé ASBL | 2026-10-21 | En attente : message transmis à l'ONE (Office de la naissance et de l'enfance), commanditaire de leur publication. |
 | France Acouphènes | 2026-10-22 | Sans suite probable : simple accusé de réception. |
@@ -125,5 +125,6 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | Site | Envoi | Proposition | État |
 |---|---|---|---|
 | Anti Stress de Poche (Thierry Daher) | 2026-11-09 | 3 audios de respiration 4-6 (ressources libres) | Sans réponse ; relance possible à partir du 19/11 |
-| La fabrique du sommeil (Corinne Baudoin) | 2026-11-09 | Témoignage écrit et anonyme | **A répondu le 09/11** sans accord : demande ce que l'épisode t'a apporté et ce que tu attends. Brouillon de réponse dans `brouillons-prospection-2026-11-11.md`, à valider avant envoi |
+| La fabrique du sommeil (Corinne Baudoin) | 2026-11-09 | Témoignage écrit et anonyme | **A répondu le 09/11** sans accord : demande ce que l'épisode t'a apporté et ce que tu attends. Réponse franche envoyée le 11/11 (titre et description lus, épisode non écouté) ; attendre sa réponse |
 | C'est normal ou pas ? (Karine Agnez) | 2026-11-09 | Fiche gratuite de respiration | Sans réponse ; relance possible à partir du 19/11 |
+| Et si tu t'écoutais autrement (Aude Jeandrot) | 2026-11-11 | Témoignage écrit et anonyme | Sans réponse ; relance possible à partir du 21/11 |
