@@ -128,3 +128,5 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | La fabrique du sommeil (Corinne Baudoin) | 2026-11-09 | Témoignage écrit et anonyme | **Refus le 11/11** (« préserver la ligne éditoriale »). Ne plus écrire. |
 | C'est normal ou pas ? (Karine Agnez) | 2026-11-09 | Fiche gratuite de respiration | Sans réponse ; relance possible à partir du 19/11 |
 | Et si tu t'écoutais autrement (Aude Jeandrot) | 2026-11-11 | Témoignage écrit et anonyme | Sans réponse ; relance possible à partir du 21/11 |
+| Make You Happy (Julie) | 2026-11-11 | Article /charge-mentale/ | Sans réponse ; relance possible à partir du 21/11 |
+| Mission Anxiété Zéro (Sandra KiZa) | 2026-11-11 | 3 audios de respiration 4-6 | Sans réponse ; relance possible à partir du 21/11 |
