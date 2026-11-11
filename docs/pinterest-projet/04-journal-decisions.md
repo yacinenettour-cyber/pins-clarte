@@ -1632,3 +1632,37 @@ INRS (stress au travail ; épuisement professionnel, phrases sur les signes et l
   pour couper le soir » (fatiguementale, 3 points, description 453 caractères, `description_article` 482), contrôlée par
   `anti_doublons.est_doublon` (aucun doublon). `ARTICLES_SITE` complété ; harnais : bon lien sans guide, avec guide et avec
   20 liens d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. 10 sujets « à écrire ».
+
+## 116. Article « À quelle heure arrêter le café » (créneau du mercredi 11/11/2026)
+
+Créneau du mercredi 11/11 ; aucun autre créneau dimanche-jeudi manqué depuis le rattrapage du 10/11 (`git log -- site/contenu/articles` :
+08/11, 09/11, 10/11 publiés). Sujet n° 19 de `articles-a-ecrire.md` ; suggestions Google relues le 11/11 depuis l'atelier Composio
+(« à quelle heure arrêter le café pour bien dormir, café le soir empêche de dormir, café sommeil temps, café et sommeil profond, caféine
+sommeil profond, combien de temps dure l'effet de la caféine, café après 16h ») : aucune page du site ne vise ces recherches. Les articles
+« Sommeil léger », « Alimentation anti-stress » et « Baisser son cortisol » donnaient déjà le repère « 6 heures » (Drake 2013) ; l'article
+apporte une réponse plus précise et nouvelle (8 h 48, méta-analyse de 2023), la demi-vie, les différences individuelles et les sources
+cachées, et les trois articles y renvoient désormais (une phrase chacun, contrôle de style toujours OK).
+- **Article** `/a-quelle-heure-arreter-le-cafe/` (thème Mieux dormir, guide sommeil en pont honnête « il ne parle pas de café »),
+  13 sources. Études vérifiées une par une dans PubMed (titre, revue, année, affiliation du premier auteur) : **texte intégral lu en partie**
+  pour Drake et al. 2013 (méthode, résultats, discussion : 12 participants, plus d'une heure de sommeil mesuré perdue à 6 h, perte non
+  significative dans le carnet) et Weibel et al. 2021 (Bâle, discussion) et Grzegorzewski et al. 2021 (Humboldt Berlin, partie tabac et
+  pilule) ; **résumés seulement** pour Gardiner et al. 2023 (Université catholique australienne, Brisbane), Landolt et al. 1995 (Zurich),
+  Clark et Landolt 2017 (Zurich), Robillard et al. 2015 (hôpital du Sacré-Cœur de Montréal). Pages lues en entier : EFSA (caféine,
+  teneurs), Vidal (caféine et médicaments, 25/03/2026 : demi-vie 6 h, 2 à 10 h ; pilule 30 à 40 %), INSV (dépliant insomnie) ; lues par
+  extraits ciblés : Vidal Iprafeine (100 mg de caféine par comprimé), Ameli (troubles anxieux : arrêter les excitants ; palpitations :
+  signes d'urgence). Avis complet de l'EFSA de 2015 non lisible par l'outil (demi-vie prise chez Vidal).
+- **Style** : `outils/controle_style_article.py` : OK, 0 alerte, avant et après la relecture à la main (une scène et une phrase courte
+  par partie, récits d'études variés, titre « Et si… ? » remplacé).
+- **Photo** : `fonds/unsplash-eI5yqPjpObU.jpg` (Candice Picard, Unsplash, gratuite), femme qui boit dans une tasse près d'une
+  fenêtre. 4 candidates importées par `photos.yml`, 3 refusées (motifs dans `photos_sources.json`). Empreinte 16×16 comparée à 782
+  images : la plus proche à 84/256. Réservée au site.
+- **Vérifications** : titre 57 caractères, description 150, uniques sur 52 pages ; 0 lien interne cassé ; validateur Nu : 0 erreur sur les
+  5 pages touchées ; axe-core 0 violation en clair et en sombre (article, page thème, trois articles reliés) ; 320 px sans débordement.
+  Publié (gh-pages), page en ligne vérifiée (200, bon titre, image servie, plan du site, liens entrants sur les 4 pages), IndexNow 200
+  (6 adresses et le plan du site).
+- **Épingles** : aucune épingle non publiée ne traite vraiment l'heure du dernier café (« Sommeil : 4 habitudes de l'après-midi » en fait
+  un point parmi quatre et reste reliée à « Baisser son cortisol »). Nouvelle épingle « Café et sommeil : 3 repères pour ta dernière
+  tasse » (sommeil, 3 points, corps 381 caractères, description 452, `description_article` 494), contrôlée par
+  `anti_doublons.est_doublon` (aucun doublon). `ARTICLES_SITE` complété ; harnais : bon lien sans guide, avec guide et avec 20 liens
+  d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Sujets 29 (démangeaisons et stress) et 30 (cauchemars à
+  répétition) ajoutés d'après les suggestions Google du 11/11 : 11 sujets « à écrire ».

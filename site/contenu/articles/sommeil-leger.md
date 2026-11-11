@@ -47,7 +47,7 @@ Si tu te sens sur le qui-vive aussi pendant la journée, l'article sur les [symp
 
 ### Le café de l'après-midi, le verre du soir
 
-Le café de l'après-midi peut encore agir au coucher. À l'hôpital Henry Ford de Détroit, des chercheurs ont donné une même dose de caféine (400 mg) à différents moments, puis mesuré le sommeil à domicile. L'étude date de 2013 et a paru dans une revue de médecine du sommeil. Prise au coucher, 3 heures avant ou même 6 heures avant, la caféine perturbait le sommeil par rapport à un placebo. Les auteurs conseillent d'éviter une forte dose de caféine au moins 6 heures avant de dormir [6].
+Le café de l'après-midi peut encore agir au coucher. À l'hôpital Henry Ford de Détroit, des chercheurs ont donné une même dose de caféine (400 mg) à différents moments, puis mesuré le sommeil à domicile. L'étude date de 2013 et a paru dans une revue de médecine du sommeil. Prise au coucher, 3 heures avant ou même 6 heures avant, la caféine perturbait le sommeil par rapport à un placebo. Les auteurs conseillent d'éviter une forte dose de caféine au moins 6 heures avant de dormir [6]. Pour calculer l'heure de ton dernier café selon ton coucher, lis [à quelle heure arrêter le café](/a-quelle-heure-arreter-le-cafe/).
 
 L'alcool, lui, trompe. Une revue du London Sleep Centre, publiée en 2013, a passé en revue les études menées chez des volontaires en bonne santé. À toutes les doses, l'alcool aide à s'endormir et rend la première moitié de la nuit plus profonde, mais il augmente les perturbations dans la seconde moitié [7].
 

@@ -92,7 +92,7 @@ Non, ce n'est pas nécessaire. Le problème, c'est surtout le café pris tard, p
 | 3 heures avant | Sommeil perturbé [6] |
 | 6 heures avant | Perte de sommeil encore nette [6] |
 
-Les auteurs conseillent donc d'éviter une dose importante de caféine au moins 6 heures avant de dormir [6].
+Les auteurs conseillent donc d'éviter une dose importante de caféine au moins 6 heures avant de dormir [6]. Une méta-analyse plus récente place ce délai plus tôt encore pour une simple tasse, comme l'explique l'article [À quelle heure arrêter le café ?](/a-quelle-heure-arreter-le-cafe/).
 
 Le lien avec le cortisol est indirect, mais il se tient. Moins de sommeil, c'est un cortisol plus élevé le lendemain soir [2]. Garde ton café pour la matinée et fixe-toi une heure limite en début d'après-midi, sans oublier les autres boissons qui contiennent de la caféine. Pour le reste de l'assiette, va voir ce que les études disent de l'[alimentation anti-stress](/alimentation-anti-stress/).
 
