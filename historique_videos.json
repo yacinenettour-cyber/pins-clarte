@@ -587,5 +587,16 @@
    "fonds/pexels-7500704.jpg",
    "fonds/pexels-7500704.jpg"
   ]
+ },
+ {
+  "date": "2026-11-11T17:33+00:00",
+  "id": "short-meditation-dormir-profondement-1",
+  "titre": "Inspire sur 4 temps, souffle sur 6 avant de dormir",
+  "video": "videopins/videopin-20261111-173153.mp4",
+  "cover": "videopins/videopin-20261111-173153.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890638257",
+  "short": true,
+  "source": "https://youtu.be/q0ucVBKNMjM"
  }
 ]
