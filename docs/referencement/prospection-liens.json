@@ -2974,14 +2974,15 @@
    "sujet": "Un témoignage sur les nuits compliquées",
    "detail_lu": "titre de l'épisode #35 « Vous avez tout essayé pour dormir ? Voici pourquoi les astuces ne suffisent plus toujours » (flux RSS, 06/11/2026)",
    "ressource_proposee": "témoignage écrit et anonyme (vecu-auteur.md)",
-   "statut": "repondu",
+   "statut": "stop",
    "date_envoi": "2026-11-09",
    "thread_id": "1a1bfc8d934e5c81",
    "relance": null,
    "reponse": "09/11 16:59 (Corinne Baudoin) : pas d'accord. Elle demande ce que l'écoute de l'épisode 35 a apporté à Yacine et ce qui motive la proposition de témoignage et ce qu'il en attend. Brouillon de réponse prêt dans docs/referencement/brouillons-prospection-2026-11-11.md, en attente de validation de l'utilisateur.",
    "lien_obtenu": null,
    "audience": "B : petit podcast francophone indépendant, épisode dans les 3 derniers mois",
-   "reponse_envoyee": "11/11/2026 (message 1a1ca2a596057c49) : réponse franche (titre et description lus, épisode non écouté ; motivation = vécu ; attente = adresse du site dans les notes)."
+   "reponse_envoyee": "11/11/2026 (message 1a1ca2a596057c49) : réponse franche (titre et description lus, épisode non écouté ; motivation = vécu ; attente = adresse du site dans les notes).",
+   "reponse_2": "11/11/2026 15:22 (Corinne Baudoin) : refus. « Je tiens à préserver la ligne éditoriale de La Fabrique du Sommeil et décline donc votre proposition. » Ne plus écrire."
   },
   {
    "site": "C'est normal ou pas ? (podcast, Karine Agnez)",

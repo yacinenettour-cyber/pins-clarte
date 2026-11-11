@@ -125,6 +125,6 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | Site | Envoi | Proposition | État |
 |---|---|---|---|
 | Anti Stress de Poche (Thierry Daher) | 2026-11-09 | 3 audios de respiration 4-6 (ressources libres) | Sans réponse ; relance possible à partir du 19/11 |
-| La fabrique du sommeil (Corinne Baudoin) | 2026-11-09 | Témoignage écrit et anonyme | **A répondu le 09/11** sans accord : demande ce que l'épisode t'a apporté et ce que tu attends. Réponse franche envoyée le 11/11 (titre et description lus, épisode non écouté) ; attendre sa réponse |
+| La fabrique du sommeil (Corinne Baudoin) | 2026-11-09 | Témoignage écrit et anonyme | **Refus le 11/11** (« préserver la ligne éditoriale »). Ne plus écrire. |
 | C'est normal ou pas ? (Karine Agnez) | 2026-11-09 | Fiche gratuite de respiration | Sans réponse ; relance possible à partir du 19/11 |
 | Et si tu t'écoutais autrement (Aude Jeandrot) | 2026-11-11 | Témoignage écrit et anonyme | Sans réponse ; relance possible à partir du 21/11 |
