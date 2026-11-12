@@ -2588,5 +2588,16 @@
   "pin_id": "600175087890647289",
   "md5": "3548f86a669bdd4fa28d674ee04fe4bb",
   "lien": "article:angoisse-le-soir"
+ },
+ {
+  "date": "2026-11-12T15:08+00:00",
+  "titre": "Le point du foyer à deux | Répartition des tâches",
+  "image": "images/pin-20261112-150807.jpg",
+  "fond": "prete:images_etsy/le-point-du-foyer-a-deux.jpg",
+  "theme": "fatiguementale",
+  "design": "etsy",
+  "pin_id": "600175087890652977",
+  "md5": "7057bac4f48446934366d11aac0a52f8",
+  "lien": "etsy:4610269767"
  }
 ]
