@@ -598,5 +598,22 @@
   "pin_id": "600175087890638257",
   "short": true,
   "source": "https://youtu.be/q0ucVBKNMjM"
+ },
+ {
+  "date": "2026-11-12T17:35+00:00",
+  "id": "sommeil-training-autogene",
+  "titre": "Training autogène : s'endormir les bras lourds",
+  "video": "videopins/videopin-20261112-173249.mp4",
+  "cover": "videopins/videopin-20261112-173249.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890655035",
+  "photos": [
+   "fonds/pexels-7241264.jpg",
+   "fonds/pexels-7241264.jpg",
+   "fonds/pexels-7493258.jpg",
+   "fonds/pexels-7493258.jpg",
+   "fonds/pexels-9787613.jpg",
+   "fonds/pexels-9787613.jpg"
+  ]
  }
 ]
