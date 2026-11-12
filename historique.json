@@ -2577,5 +2577,16 @@
   "pin_id": "600175087890636005",
   "md5": "888fca357c701221b8f57e73e8183a07",
   "lien": "etsy:4610325459"
+ },
+ {
+  "date": "2026-11-12T06:08+00:00",
+  "titre": "Crise d'angoisse la nuit : 5 étapes pour la traverser",
+  "image": "images/pin-20261112-060811.jpg",
+  "fond": "prete:images_cles/crise-angoisse-nuit-5-etapes.jpg",
+  "theme": "sommeil",
+  "design": "cles",
+  "pin_id": "600175087890647289",
+  "md5": "3548f86a669bdd4fa28d674ee04fe4bb",
+  "lien": "article:angoisse-le-soir"
  }
 ]
