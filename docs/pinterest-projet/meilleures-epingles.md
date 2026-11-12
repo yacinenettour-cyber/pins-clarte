@@ -374,3 +374,46 @@ Statistiques relevées le 05/11 (PINTEREST_GET_PIN_ANALYTICS, 03/11 → 04/11, l
 5 clés pour des matins plus légers » (600175087890511362, publiée le 04/11) : 0 impression, 0 enregistrement, 0 clic ; épingle
 faite à la main « Auto-massage anti-stress : 5 gestes doux » (600175087890491617, publiée le 03/11, sans lien) : 1 impression,
 1 clic sur l'épingle, 0 enregistrement. Trop tôt pour conclure ; suivis à 7 et 14 jours déjà programmés pour l'auto-massage.
+
+**12/11/2026** : stock à 1 (« Week-end cocooning : 8 idées pour recharger », fiche-mémo non publiée). Une épingle fabriquée :
+`cles` (format `riche`) — « Crise d'angoisse la nuit : 5 étapes pour la traverser » (`images_cles/crise-angoisse-nuit-5-etapes.jpg`,
+thème `sommeil`, champ `article` : `angoisse-le-soir` + `description_article`). Les 5 étapes reprennent la section « Que faire
+pendant une crise d'angoisse la nuit ? » de l'article (sources Assurance maladie, INSV, modèle d'Oxford) : une crise dure en
+moyenne 20 à 30 minutes ; respirer lentement par le ventre (4 puis 6) ; lumière douce, changer de pièce si besoin ; ancrage
+(nommer ce qu'on voit, entend, touche) ; ne pas bloquer les pensées. Bandeau : « … 1re crise ou douleur dans la poitrine :
+appelle le 15 », repris dans les deux descriptions ; description principale (si l'article n'est pas choisi) : pont honnête
+vers le guide sommeil. Sujets **écartés** : café (« Café : jusqu'à quelle heure en boire… » publiée, « Café et sommeil :
+3 repères » en banque), angoisse du soir en général (anti_doublons : même sujet que « Angoisse du dimanche soir… »), syndrome
+de l'imposteur (0,78 de « 3 signes qu'il te freine »), perfectionnisme (« viser 80 % » déjà dans une épingle publiée),
+déconnecter du travail, sommeil léger, réveil à 4 h, ruminations (déjà couverts). Proches relus à la main : « Angoisse
+nocturne : pourquoi tout paraît plus grave » (publiée, explications), « Fatigue après une crise d'angoisse » (banque, après la
+crise), « Sommeil : le geste en 2 temps quand ton cœur cogne » (banque, un seul geste) : angles différents.
+Images : 7 appels Hugging Face (graine 681678, quota non épuisé) ; premier portrait (pyjama vert, main sur le ventre) écarté
+car le ventre arrondi pouvait faire penser à une grossesse, gardé dans `photos_attente/riche-crise-angoisse-nuit/` sous
+`non-utilise-…` ; portrait retenu : femme en pyjama rose poudré, assise en tailleur sur le lit, mains sur la poitrine, yeux
+fermés (habillée, mains correctes, aucun texte) ; vignettes vague, moulin à vent, lampe de chevet, galets empilés, nuage.
+Aucune image identique à une image existante (empreintes md5). Aucun crédit ElevenLabs ni Canva utilisé.
+Contrôles : anti_doublons.py (aucun doublon), titre 53 caractères, corps 400 / 387, totaux 487 / 474, 8 hashtags ;
+`verifier_banque.py` : 0 doublon (326 titres) ; image relue, rien ne déborde ni ne chevauche (assertions de `planche_riche.py`).
+
+Statistiques relevées le 12/11 (PINTEREST_GET_PIN_ANALYTICS, compte Composio `pinterest_fluty-blues` — l'autre compte
+connecté, `pinterest_caroba-pectic`, répond 401 ; du 01/11 au 11/11, les 10 et 11/11 encore en traitement) :
+
+| Épingle | Publiée | Impressions | Clics sur l'épingle | Enregistrements | Clics sortants |
+|---|---|---|---|---|---|
+| Auto-compassion : 8 phrases douces à te dire | 08/11 | 37 | 5 | 0 | 0 |
+| Fêtes de fin d'année : 8 façons de rester zen | 07/11 | 35 | 4 | 0 | 0 |
+| Journaling : 8 questions pour mieux te comprendre | 07/11 | 24 | 4 | 0 | 3 |
+| Nature et stress : 8 façons de te reconnecter dehors | 06/11 | 22 | 4 | 0 | 0 |
+| Gestion des émotions : ce que chaque émotion te dit | 05/11 | 17 | 5 | 0 | 1 |
+| Repos : les 7 types de repos dont tu as besoin | 06/11 | 17 | 3 | 0 | 0 |
+| Hypervigilance : 5 signes d'un corps en alerte | 05/11 | 16 | 0 | 0 | 0 |
+| Charge mentale à deux : 5 clés pour mieux partager | 02/11 | 14 | 2 | 0 | 0 |
+| Réveil fatigué : 5 clés pour des matins plus légers | 04/11 | 14 | 2 | 0 | 1 |
+| Procrastination du coucher : 5 clés pour aller au lit | 01/11 | 10 | 2 | 0 | 0 |
+| Mâchoire serrée : 5 clés qui soulagent | 03/11 | 9 | 0 | 0 | 0 |
+| Calmer le stress par les 5 sens : 8 gestes simples | 09/11 | 1 | 0 | 0 | 0 |
+| Confiance en soi : 8 petits gestes pour la nourrir | 10/11 | 0 (pas encore compté) | 0 | 0 | 0 |
+
+Les fiches-mémo à 8 points font un peu mieux que les épingles « 5 clés » dans leurs premiers jours (22 à 37 impressions contre
+9 à 17), mais tout reste très faible et sans aucun enregistrement : le constat du 25/10 tient toujours.
