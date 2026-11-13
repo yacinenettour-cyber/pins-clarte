@@ -99,7 +99,7 @@ Retenir sa réaction sur le moment peut aider [1]. Garder systématiquement tout
 Parce que le manque de sommeil rend l'humeur plus négative et réduit nettement l'humeur positive, d'après une méta-analyse de 64 études [5].
 
 ### Se distraire, est-ce fuir ses émotions ?
-Pas forcément. Penser à autre chose un moment aide à faire baisser une émotion forte [1]. Le risque, c'est d'éviter durablement tout ce qui dérange : l'évitement est lié à plus de symptômes [4].
+Pas forcément. Penser à autre chose un moment aide à faire baisser une émotion forte [1]. Le risque, c'est d'éviter durablement tout ce qui dérange : l'évitement est lié à plus de symptômes [4]. Repousser sans cesse une tâche qui inquiète en est une forme très courante, détaillée dans l'article sur la [procrastination et l'anxiété](/procrastination-anxiete/).
 
 ### Existe-t-il des outils pour apprendre à gérer ses émotions ?
 Un carnet ou le [journal d'humeur](/journal-humeur/) aident à repérer ce qui revient. Pour aller plus loin, un psychologue peut te proposer un travail structuré, par exemple en thérapie cognitive et comportementale [4].

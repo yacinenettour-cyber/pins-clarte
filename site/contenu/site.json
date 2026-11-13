@@ -242,6 +242,12 @@
    "image": "unsplash-eI5yqPjpObU.jpg",
    "alt": "Femme qui boit une tasse de café près d'une fenêtre, le regard tourné vers l'extérieur",
    "credit": "Photo : Candice Picard / Unsplash"
+  },
+  "procrastination-anxiete": {
+   "categorie": "mental",
+   "image": "unsplash-sZQee4bvq3c.jpg",
+   "alt": "Femme assise sur un canapé en cuir, un téléphone dans une main et une tasse dans l'autre, les yeux sur l'écran",
+   "credit": "Photo : Look Studio / Unsplash"
   }
  },
  "formation": {
@@ -493,6 +499,10 @@
     [
      "Tu te sens vidé(e) sans avoir rien fait de physique",
      "fatigue-nerveuse"
+    ],
+    [
+     "Tu repousses ce qui t'inquiète, puis tu t'en veux",
+     "procrastination-anxiete"
     ],
     [
      "Ta tête reste au travail une fois rentré(e) chez toi",

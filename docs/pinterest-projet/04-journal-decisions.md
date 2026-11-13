@@ -1666,3 +1666,38 @@ cachées, et les trois articles y renvoient désormais (une phrase chacun, contr
   `anti_doublons.est_doublon` (aucun doublon). `ARTICLES_SITE` complété ; harnais : bon lien sans guide, avec guide et avec 20 liens
   d'articles sur 14 jours ; YAML valide. `verifier_banque.py` : 0 doublon. Sujets 29 (démangeaisons et stress) et 30 (cauchemars à
   répétition) ajoutés d'après les suggestions Google du 11/11 : 11 sujets « à écrire ».
+
+## 117. Article « Procrastination et anxiété », rattrapage du créneau du jeudi 12/11 (publié le 13/11/2026)
+
+Tâche arrivée le vendredi 13/11 (journée d'amélioration habituelle) ; l'utilisateur veut ses articles en priorité : un seul article de
+rattrapage, rien d'autre. Aucun article publié depuis le 11/11 (`git log -- site/contenu/articles` : dernier 5c20a6b). Sujet n° 20 de
+`articles-a-ecrire.md` ; suggestions Google relues le 13/11 depuis l'atelier Composio (« procrastination anxieuse, procrastination causes
+psychologiques, pourquoi je procrastine tout le temps, procrastination et anxiété, perfectionnisme, peur de l'échec, procrastination
+émotionnelle ») : aucune page du site ne les vise (« Procrastination du coucher » ne traite que l'heure du coucher et y renvoie désormais).
+- **Article** `/procrastination-anxiete/` (thème Charge mentale et burn-out, `guide: aucun`, la procrastination étant hors du périmètre du
+  guide sommeil), 12 sources. Études vérifiées une par une (titre, revue, année, affiliation du premier auteur) dans PubMed, ou dans Crossref,
+  OpenAlex et la page de l'éditeur pour celles que PubMed n'indexe pas : **texte intégral lu en partie** pour Johansson et al. 2023
+  (Université Sophiahemmet : discussion, limites, liens faibles, sens possible dans les deux directions) et Schuenemann et al. 2022
+  (Leuphana Lunebourg : contenu du programme, limites) ; **résumés seulement** pour Steel 2007 (Calgary), Sirois, Molnar et Hirsch 2017
+  (Sheffield), Tice et Baumeister 1997 (Case Western Reserve), Sirois, Stride et Pychyl 2023 (Durham), Sirois 2013 (Bishop's, autocompassion,
+  4 échantillons, 768 personnes), Rozental et al. 2015 et 2018 (Stockholm) ; Sirois et Pychyl 2013 : résumé et affiliations lus sur la page
+  Wiley (Bishop's et Carleton). Écartée faute de résumé lisible : Wohl, Pychyl et Bennett 2010 (pardon de soi). Pages lues : NHS (anxiété
+  généralisée, revue le 22/10/2024), Santé.fr (3114). Ameli bloqué par une vérification anti-robot ce jour-là : non cité.
+- **Style** : `outils/controle_style_article.py` : OK, 0 alerte, avant et après la relecture à la main (affirmations resserrées sur les
+  sources : « plus grande synthèse », effet de l'autocompassion présenté comme une observation et non un essai, phrase non sourcée retirée).
+- **Liens** : depuis « Gestion des émotions » (question sur l'évitement) et « Procrastination du coucher » (Pour aller plus loin), et la page
+  thème ; l'article renvoie vers gestion-des-emotions, procrastination-du-coucher, charge-mentale, ruminations-le-soir et le test.
+  « Gestion des émotions » garde ses 2 alertes de style déjà connues (liste des 8 à reprendre), non aggravées.
+- **Photo** : `fonds/unsplash-sZQee4bvq3c.jpg` (Look Studio, Unsplash, gratuite), femme sur un canapé, téléphone et tasse en main.
+  4 candidates importées par `photos.yml`, 3 refusées (motifs dans `photos_sources.json`). Empreinte 16×16 comparée à 714 images : la plus
+  proche à 67/256. Réservée au site. Note : une autre session travaillant dans le même dossier a inclus par erreur le déplacement des photos
+  (déjà indexé) dans son commit 0887ce8 « Prospection… » ; sans conséquence.
+- **Vérifications** : titre 50 caractères, description 147, uniques sur 53 pages ; 0 lien interne cassé ; validateur Nu : 0 erreur sur
+  l'article, les 2 articles reliés et la page thème (l'accueil garde ses erreurs CSS déjà présentes) ; axe-core 0 violation en clair et en
+  sombre ; 320 px sans débordement. Publié (gh-pages), page en ligne vérifiée (200, bon titre, image servie, plan du site, liens entrants),
+  IndexNow 200 (6 adresses et le plan du site).
+- **Épingles** : 3 épingles non publiées reliées (sujet traité par l'article) : « Procrastination : pourquoi le stress l'aggrave »,
+  « … 3 signes cachés de la peur de l'échec », « … la spirale du « plus tard, demain » », chacune avec une `description_article` à la fin
+  propre (470, 481 et 492 caractères ; la phrase non sourcée « Nommer cette peur suffit… » n'y figure plus). `ARTICLES_SITE` complété ;
+  harnais : bon lien sans guide, avec guide, avec 20 liens d'articles sur 14 jours, aucun sans `description_article` ; YAML valide.
+  `verifier_banque.py` : 0 doublon. 10 sujets restent « à écrire ».
