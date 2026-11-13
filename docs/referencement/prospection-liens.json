@@ -1888,10 +1888,10 @@
   },
   {
    "email_verifie": true,
-   "statut": "envoye",
+   "statut": "repondu",
    "date_envoi": "2026-10-19",
    "relance": "2026-10-29",
-   "reponse": null,
+   "reponse": "12/11/2026 19:52 (Céline, Keep Cool New Mom) : ACCEPTE un article invité sur « Respirer 3 minutes quand tout déborde : ce que disent les études » (sourcé, conseils concrets, pensé pour le quotidien des mamans). Article à écrire (docs/referencement/articles-invites/keepcoolnewmom.md), à montrer à l'utilisateur avant tout envoi.",
    "lien_obtenu": null,
    "lot": "abonnés Pinterest 19/10",
    "site": "Keep Cool New Mom",
