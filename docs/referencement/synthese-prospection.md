@@ -133,3 +133,4 @@ Non comptés : Essentiel Autonomie (aucun contact trouvé), 32 sites dont le seu
 | Retrouve ton Pep's ! (Delphine Pepinster) | 2026-11-12 | Article /deconnecter-du-travail/ | Sans réponse ; relance possible à partir du 22/11 |
 | Anxiété et Toc (Antoine Leroch) | 2026-11-12 | Article /pensees-intrusives/ | Sans réponse ; relance possible à partir du 22/11 |
 | Dépasse-toi ! (Sylvain Viens) | 2026-11-12 | 3 audios de respiration 4-6 | Sans réponse ; relance possible à partir du 22/11 |
+| Keep Cool New Mom (Céline) | accord 12/11 | Article invité « Respirer 3 minutes quand tout déborde » | **Article envoyé le 13/11**, en attente de publication ; vérifier le lien dans 1 à 2 semaines |

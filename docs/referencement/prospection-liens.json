@@ -1903,7 +1903,9 @@
    "audience": "B : abonnée Pinterest de Clarté Mentale (5 518 abonnés Pinterest), blog actif ; absent du top Tranco",
    "type": "lien_ou_article_invite",
    "relance_message_id": "1a1871b7b672d087",
-   "relance_note": "Relance unique dans le même fil (GMAIL_REPLY_TO_THREAD), mention des ressources réutilisables /ressources-libres/ ; vérifiée (libellé SENT)."
+   "relance_note": "Relance unique dans le même fil (GMAIL_REPLY_TO_THREAD), mention des ressources réutilisables /ressources-libres/ ; vérifiée (libellé SENT).",
+   "reponse_envoyee": "13/11/2026 (message 1a1d3404e1850dad) : article invité envoyé après validation de l'utilisateur (« On valide »), collé dans le corps du message, tutoiement. En attente de sa publication ; vérifier le lien (présence, dofollow/nofollow, ancre) dans 1 à 2 semaines.",
+   "note": "Article : docs/referencement/articles-invites/keepcoolnewmom.md. À vérifier après publication."
   },
   {
    "email_verifie": true,
