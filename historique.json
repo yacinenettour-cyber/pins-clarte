@@ -2621,5 +2621,16 @@
   "pin_id": "600175087890670367",
   "md5": "b7934e36c1b6e591182d1855a4ce4ccc",
   "lien": ""
+ },
+ {
+  "date": "2026-11-14T06:08+00:00",
+  "titre": "Le carnet des nuances | Gérer ses émotions",
+  "image": "images/pin-20261114-060816.jpg",
+  "fond": "prete:images_etsy/le-carnet-des-nuances.jpg",
+  "theme": "systemenerveux",
+  "design": "etsy",
+  "pin_id": "600175087890681001",
+  "md5": "31cc14a96cde7067c4965f5304046db6",
+  "lien": "etsy:4610325459"
  }
 ]
