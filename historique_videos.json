@@ -626,5 +626,22 @@
   "pin_id": "600175087890672056",
   "short": true,
   "source": "https://youtu.be/q0ucVBKNMjM"
+ },
+ {
+  "date": "2026-11-14T17:33+00:00",
+  "id": "sommeil-bouton-repetition",
+  "titre": "Bouton répétition du réveil : ce qu'il dit de tes nuits",
+  "video": "videopins/videopin-20261114-173234.mp4",
+  "cover": "videopins/videopin-20261114-173234.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890687813",
+  "photos": [
+   "fonds/pexels-7623557.jpg",
+   "fonds/pexels-7623557.jpg",
+   "fonds/pexels-8947433.jpg",
+   "fonds/pexels-8947433.jpg",
+   "fonds/pexels-9642303.jpg",
+   "fonds/pexels-9642303.jpg"
+  ]
  }
 ]
