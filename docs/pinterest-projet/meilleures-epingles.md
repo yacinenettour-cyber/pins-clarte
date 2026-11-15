@@ -417,3 +417,39 @@ connecté, `pinterest_caroba-pectic`, répond 401 ; du 01/11 au 11/11, les 10 et
 
 Les fiches-mémo à 8 points font un peu mieux que les épingles « 5 clés » dans leurs premiers jours (22 à 37 impressions contre
 9 à 17), mais tout reste très faible et sans aucun enregistrement : le constat du 25/10 tient toujours.
+
+**15/11/2026 (rattrapage, 3 jours manqués)** : stock à 0 épingle illustrée non publiée (« Week-end cocooning » publiée le 13/11).
+Une épingle fabriquée : `cles` (format `riche`) — « Prise de parole : 5 clés pour calmer ton trac »
+(`images_cles/prise-de-parole-5-cles.jpg`, thème `systemenerveux`, sans article : aucun article du site ne traite le trac ;
+lien guide sommeil avec pont honnête « s'il te suit au lit la veille »). Sujet nouveau : aucun titre sur la prise de parole ni
+le trac (proches relus à la main : « Stress avant de parler : pourquoi ta bouche s'assèche » et « Peur du jugement : 3 signes
+qu'elle te fait taire », non publiées, autres angles ; aucune clé sur la bouche sèche). Clés : expirer plus longtemps
+(4 puis 6, comme les articles du site sur la respiration), répéter à voix haute debout, connaître sa première phrase,
+pieds à plat, voir le cœur qui bat vite comme le corps qui se prépare à agir ; renvoi à un professionnel si le trac fait
+tout éviter. Sujets **écartés** car déjà couverts : respiration carrée, pensées intrusives, palpitations, nerf vague,
+cortisol, sommeil léger, Jacobson, réveil à 4 h, boule au ventre, mal de tête, sieste, examen, musique, trajet, lundi.
+Images Hugging Face (graine 681678) : 7 appels ; le premier portrait a été remplacé par le filtre du service par une image
+« maybe not safe » (rien d'utilisable), le second est retenu (femme en pull rose poudré et pantalon sauge, debout devant une
+table de réunion, mains jointes ; habillée, mains correctes, aucun texte) ; vignettes plume, micro, stylo plume, chêne et
+racines, montgolfière ; ballerines écartées (posées de travers, n'évoquent pas l'ancrage), gardées sous `non-utilise-…`.
+Images dans `photos_attente/riche-prise-de-parole/` (empreintes md5 : aucune identique à une image du dépôt). Le quota
+Hugging Face s'est épuisé ensuite : **2e épingle non faite**, sujet vérifié (anti_doublons sans doublon) à fabriquer au
+prochain passage : `cles` — « Peur du téléphone : 5 étapes pour passer l'appel » (thème procrastination, sans lien) :
+noter 3 points à dire, prévoir une phrase pour le répondeur, fixer une heure, appeler dès que c'est prêt, cocher une fois
+fait ; renvoi à un professionnel si l'évitement pèse. Aucun crédit ElevenLabs ni Canva utilisé (dimanche : les voix de la
+vidéo passent avant les images).
+Contrôles : anti_doublons.py (aucun doublon), titre 45 caractères, corps 403, total 487, 8 hashtags, `verifier_banque.py` :
+0 doublon (317 titres) ; image relue, rien ne déborde ni ne chevauche (assertions de `planche_riche.py`).
+
+Statistiques relevées le 15/11 (PINTEREST_GET_PIN_ANALYTICS, compte `pinterest_fluty-blues`, du 01/11 au 15/11, les 14 et
+15/11 encore en traitement) :
+
+| Épingle | Publiée | Impressions | Clics sur l'épingle | Enregistrements | Clics sortants |
+|---|---|---|---|---|---|
+| Auto-compassion : 8 phrases douces à te dire | 08/11 | 37 (26 + 11, puis 0 depuis le 10/11) | 5 | 0 | 0 |
+| Calmer le stress par les 5 sens : 8 gestes simples | 09/11 | 8 | 3 | 0 | 0 |
+| Crise d'angoisse la nuit : 5 étapes pour la traverser | 12/11 | 4 | 1 | 0 | 1 |
+| Confiance en soi : 8 petits gestes pour la nourrir | 10/11 | 3 | 0 | 0 | 0 |
+| Week-end cocooning : 8 idées pour recharger | 13/11 | 1 | 0 | 0 | 0 |
+
+Toujours le même schéma : quelques impressions les deux premiers jours, puis plus rien ; aucun enregistrement.
