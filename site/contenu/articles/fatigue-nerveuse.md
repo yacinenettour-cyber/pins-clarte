@@ -54,7 +54,7 @@ Sources du tableau : [1][4][5].
 Parce que la fatigue ne vient pas seulement des muscles. Le NHS, le service de santé public britannique, classe les causes de fatigue en plusieurs familles : le sommeil, le mode de vie, le stress et les émotions, et certaines maladies ou certains médicaments [4].
 
 ### Le manque de sommeil
-En France, les adultes dormaient en moyenne 6 h 42 par nuit en semaine en 2017, en dessous des 7 heures minimales recommandées, d'après l'Inserm [6]. Une dette de sommeil qui s'accumule se ressent d'abord sur la concentration et l'humeur.
+En France, les adultes dormaient en moyenne 6 h 42 par nuit en semaine en 2017, en dessous des 7 heures minimales recommandées, d'après l'Inserm [6]. Une dette de sommeil qui s'accumule se ressent d'abord sur la concentration et l'humeur. Quand ce sont surtout des oublis qui s'installent, l'article sur le [stress et les trous de mémoire](/stress-trous-de-memoire/) fait le point.
 
 ### Les longues tâches sans pause
 Une étude danoise publiée dans PNAS, menée sur les tests nationaux passés par les élèves, a montré que les résultats baissaient un peu à chaque heure de la journée qui passait. Une pause de 20 à 30 minutes faisait plus que compenser cette baisse [7].

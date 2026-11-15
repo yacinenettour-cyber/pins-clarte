@@ -1701,3 +1701,41 @@ psychologiques, pourquoi je procrastine tout le temps, procrastination et anxié
   propre (470, 481 et 492 caractères ; la phrase non sourcée « Nommer cette peur suffit… » n'y figure plus). `ARTICLES_SITE` complété ;
   harnais : bon lien sans guide, avec guide, avec 20 liens d'articles sur 14 jours, aucun sans `description_article` ; YAML valide.
   `verifier_banque.py` : 0 doublon. 10 sujets restent « à écrire ».
+
+## 118. Article « Stress et trous de mémoire » (créneau du dimanche 15/11/2026)
+
+Aucun article publié depuis le 13/11 (`git log -- site/contenu/articles` : dernier cb8c9b9). Sujet n° 21 de `articles-a-ecrire.md` ;
+suggestions Google relues le 15/11 depuis l'atelier Composio (« stress et trous de mémoire, stress et perte de mémoire, anxiété et perte
+de mémoire, stress perte de mémoire fatigue, stress chronique et perte de mémoire ») : aucune page du site ne les vise (les oublis
+n'étaient qu'une ligne de tableau dans « Charge mentale » et « Cortisol hormone du stress »).
+- **Article** `/stress-trous-de-memoire/` (thème Stress et système nerveux, `guide: sommeil` avec pont honnête : « Il ne traite pas la
+  mémoire elle-même »), 17 sources. Études vérifiées une par une dans PubMed (titre, revue, année, affiliation du premier auteur), **résumés
+  seulement** : de Quervain, Roozendaal et McGaugh 1998 (**Université de Californie à Irvine** : la liste des sujets disait « Zurich »,
+  c'est l'étude humaine de 2000 qui vient de Zurich, non citée faute de résumé dans PubMed), Kuhlmann, Piel et Wolf 2005 (Düsseldorf),
+  Shields et al. 2017 (UC Davis, 113 études), Gagnon et al. 2019 (Stanford), Schoofs, Preuss et Wolf 2008 (Bochum), Moran 2016 (Georgia Tech,
+  et non Emory), Lupien et al. 2009 (Montréal), Yoo et al. 2007 (Harvard), Lim et Dinges 2010 (Pennsylvanie), Ellbin et al. 2018 (Institut
+  de médecine du stress, Göteborg), Hill et al. 2016 (Penn State), Smith, Floerke et Thomas 2016 (Tufts), Ramirez et Beilock 2011 (Chicago).
+  Aucun texte intégral lu : l'article ne cite aucun chiffre absent des résumés (le « 40 % » souvent prêté à Yoo 2007 n'y figure pas).
+  Pages lues : Inserm (dossier Mémoire, modifié le 13/05/2025), NHS (perte de mémoire, revue le 09/10/2023 ; symptômes d'AVC, revue le
+  12/09/2024), Service-Public (numéros d'urgence, vérifié le 25/08/2026). Ameli refusé (403) ce jour-là : non cité.
+- **Style** : `outils/controle_style_article.py` : 1re passe « transition Et si… répétée ×2 », corrigée ; puis OK, 0 alerte, avant et après la
+  relecture à la main (affirmations resserrées sur les résumés : « dans la demi-heure » chez l'humain retiré, épreuve de stress décrite sans
+  détail non lu, « beaucoup d'oublis » ramené à « une partie », lien hippocampe formulé comme dans le résumé de Stanford).
+- **Liens** : depuis « Charge mentale » (sous le tableau des signes), « Cortisol hormone du stress » (sous le tableau INRS), « Fatigue
+  nerveuse » (manque de sommeil) et la page thème ; l'article renvoie vers signes-du-burn-out, ruminations-le-soir, charge-mentale,
+  symptomes-physiques-du-stress, fatigue-nerveuse et le test. Les alertes de style déjà connues de « Cortisol hormone du stress » et
+  « Fatigue nerveuse » (liste des 8 à reprendre) sont inchangées.
+- **Photo** : `fonds/unsplash-3B6RfJQKBEM.jpg` (Anthony Tran, Unsplash, gratuite), jeune femme en pull brun assise sur des marches, la
+  main près des lèvres. 4 candidates importées par `photos.yml`, 3 refusées (motifs dans `photos_sources.json`). Empreinte 16×16 comparée
+  à 797 images : la plus proche à 70/256. Réservée au site.
+- **Vérifications** : titre 52 caractères, description 146, uniques sur 55 pages ; 0 lien interne cassé ; validateur Nu : 0 erreur sur les
+  6 pages touchées ; axe-core 0 violation en clair et en sombre (article, page thème, trois articles reliés) ; 320 px sans débordement.
+  Publié (gh-pages), page en ligne vérifiée (200, bon titre, images servies, plan du site, 4 liens entrants), IndexNow 200 (6 adresses et
+  le plan du site).
+- **Épingles** : « Charge mentale : ces oublis qui n'en sont pas vraiment » (non publiée, sujet = les oublis) reliée au nouvel article au
+  lieu de « Charge mentale » ; nouvelle `description_article` (480 caractères, corps 399, fin propre, premier hashtag `#fatiguementale`
+  inchangé) et 3e point de l'image remplacé (« La mémoire revient quand la charge baisse », promesse non sourcée → « Sous stress, le
+  souvenir remonte moins bien »). `ARTICLES_SITE` complété ; harnais : bon lien sans guide, avec guide, avec 20 liens d'articles sur
+  14 jours, aucune épingle reliée sans `description_article` ; YAML valide. `verifier_banque.py` : 0 doublon.
+- **Sujets** : 2 ajoutés d'après les suggestions Google du 15/11 (n° 31 « sursaut endormissement », n° 32 « fourmillements stress
+  angoisse ») : 11 sujets restent « à écrire ».

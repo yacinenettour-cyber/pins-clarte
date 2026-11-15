@@ -98,6 +98,8 @@ En quelques semaines, un stress chronique peut dérégler le sommeil, l'appétit
 | Pensée | Difficultés de concentration, erreurs, oublis, mal à prendre des décisions |
 | Comportements | Plus de café, d'alcool ou de somnifères, repli sur soi |
 
+Les oublis de la ligne « Pensée » ont leur propre article, sur le [stress et les trous de mémoire](/stress-trous-de-memoire/).
+
 Ces habitudes entretiennent souvent le cercle. Un café de plus pour tenir l'après-midi, un verre le soir pour décrocher. Si la situation se prolonge, le risque de problèmes plus installés augmente, comme l'hypertension, les troubles métaboliques, l'anxiété ou la dépression [2]. L'INRS rappelle tout de même que l'état de stress n'est pas une maladie en soi. Il peut en revanche avoir des effets sérieux sur la santé physique et mentale quand il est intense et durable [2]. Ce que le stress peut provoquer dans le corps, de la tête au ventre, est détaillé dans notre article sur les [symptômes physiques du stress](/symptomes-physiques-du-stress/).
 
 Le lien entre le cortisol et les nuits agitées a son propre article, [cortisol et sommeil](/cortisol-et-sommeil/). Et pour les gestes qui aident à retrouver un rythme plus apaisé (sommeil, lumière du jour, mouvement, respiration, liens sociaux), va voir [baisser son cortisol naturellement](/baisser-son-cortisol-naturellement/).

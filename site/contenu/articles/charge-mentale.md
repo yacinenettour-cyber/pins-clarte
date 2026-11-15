@@ -57,6 +57,8 @@ Ce n'est pas un diagnostic. Mais plusieurs de ces signes ressemblent à ceux que
 | Tu oublies et tu as du mal à te concentrer | Troubles de la mémoire, de l'attention et de la concentration [6] |
 | Tu te couches avec une liste qui tourne | Troubles du sommeil [6] |
 
+Pour les oublis eux-mêmes, prénoms qui s'envolent et rendez-vous ratés, l'article sur le [stress et les trous de mémoire](/stress-trous-de-memoire/) explique ce que la pression fait à la mémoire.
+
 ### Charge mentale : quels symptômes physiques ?
 Ce sont surtout la fatigue, les troubles du sommeil, les maux de tête et les tensions musculaires. La charge mentale n'est pas un diagnostic, donc elle n'a pas de liste officielle de symptômes. Mais quand elle pèse longtemps, ces signes du corps sont ceux que la HAS décrit pour l'épuisement professionnel [6]. Une fatigue qui persiste malgré des changements dans ton quotidien, ou qui s'accompagne de fièvre, de douleurs ou d'une perte de poids non voulue, mérite une consultation [8]. D'autres signaux, du cœur au ventre, sont passés en revue dans notre article sur les [symptômes physiques du stress chronique](/symptomes-physiques-du-stress/).
 
