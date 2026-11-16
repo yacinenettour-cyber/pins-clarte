@@ -3112,6 +3112,63 @@
    "detail_lu": "titre de l'épisode 264 « Repousser l'anxiété et la culpabilité » (flux RSS, 03/11/2026)",
    "ressource_proposee": "3 audios de respiration 4-6 (/ressources-libres/)",
    "thread_id": "1a1cefcde9bee1c8"
+  },
+  {
+   "type": "createur",
+   "email_verifie": true,
+   "source_email": "page article invité du site",
+   "statut": "envoye",
+   "date_envoi": "2026-11-16",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "note": "Envoyé le 16/11/2026 (séance manuelle à la demande de l'utilisateur : « je dois gagner plus de backlinks, c'est la priorité »). Relance possible à partir du 26/11. Si accord : écrire l'article, le montrer à l'utilisateur avant tout envoi.",
+   "site": "Nara Maternité",
+   "domaine": "naramaternite.com",
+   "email": "hello@naramaternite.com",
+   "page_cible": "https://naramaternite.com/ecrire-pour-nara",
+   "sujet": "une idée de texte pour nara",
+   "detail_lu": "page « Écrire pour Nara » (préférence pour l'authenticité plutôt qu'un nombre de mots ; contributions non rémunérées ; bio avec lien vers son site)",
+   "ressource_proposee": "article invité : réveils de nuit après la tétée, respiration lente, études citées, quand en parler à un soignant",
+   "thread_id": "1a1e50a431d32b54"
+  },
+  {
+   "type": "createur",
+   "email_verifie": true,
+   "source_email": "page article invité du site",
+   "statut": "envoye",
+   "date_envoi": "2026-11-16",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "note": "Envoyé le 16/11/2026 (séance manuelle à la demande de l'utilisateur : « je dois gagner plus de backlinks, c'est la priorité »). Relance possible à partir du 26/11. Si accord : écrire l'article, le montrer à l'utilisateur avant tout envoi.",
+   "site": "L'Épopée Ludique",
+   "domaine": "lepopeeludique.fr",
+   "email": "contact@lepopeeludique.fr",
+   "page_cible": "https://lepopeeludique.fr/articles-invites/",
+   "sujet": "un article sur la respiration en jeu",
+   "detail_lu": "article « Comment aider un enfant à verbaliser ses émotions avec le jeu » ; page articles invités (un lien externe dans l'espace auteur, IA acceptée si signalée, mot-clé et plan demandés)",
+   "ressource_proposee": "article invité « Jeux de respiration pour calmer son enfant le soir » (4-10 ans) ; volume du mot-clé et plan à envoyer si le sujet plaît",
+   "thread_id": "1a1e50a4732204ba"
+  },
+  {
+   "type": "createur",
+   "email_verifie": true,
+   "source_email": "page article invité du site",
+   "statut": "envoye",
+   "date_envoi": "2026-11-16",
+   "relance": null,
+   "reponse": null,
+   "lien_obtenu": null,
+   "note": "Envoyé le 16/11/2026 (séance manuelle à la demande de l'utilisateur : « je dois gagner plus de backlinks, c'est la priorité »). Relance possible à partir du 26/11. Si accord : écrire l'article, le montrer à l'utilisateur avant tout envoi.",
+   "site": "Le Blog QVT (AD Conseil)",
+   "domaine": "adconseil.org",
+   "email": "leblogqvt@adconseil.org",
+   "page_cible": "https://adconseil.org/le-blog-qvt-cinq-cles-pour-une-organisation-respectant-le-droit-a-la-deconnexion/",
+   "sujet": "décrocher du travail le soir",
+   "detail_lu": "2 articles sur le droit à la déconnexion (angle organisation) ; contributions bénévoles, sans promotion, licence Creative Commons",
+   "ressource_proposee": "article bénévole sur le détachement psychologique après le travail (côté salarié), études publiées",
+   "thread_id": "1a1e50a4b9c03988"
   }
  ],
  "passages": [
@@ -3202,6 +3259,10 @@
   {
    "date": "2026-11-04",
    "resultat": "Recherche ciblée infirmières scolaires et enseignants (4 recherches web, 8 sites vérifiés) : aucun envoi. Les infirmières scolaires n'ont pas de site personnel (seulement les pages des académies et du ministère, qui ont systématiquement refusé jusqu'ici) ; les blogs d'enseignants trouvés n'affichent aucune adresse e-mail (TAP & EPS, Relaxation concentration, EPS Régal, etc.). 5 sites enregistrés en « ecarte ». Total du jour : 3 envois."
+  },
+  {
+   "date": "2026-11-16",
+   "resultat": "Séance manuelle (le passage de 9 h 58 n'a pas tourné, tâche désactivée la veille puis réactivée). Nouvelle piste : blogs avec une page « article invité » (le seul format qui a donné un oui, Keep Cool New Mom). 3 envois : Nara Maternité, L'Épopée Ludique, Le Blog QVT (AD Conseil). Écartés : A Step to a Gentle Life (inactif depuis 2022), Sommeil Zen (avis de matelas), PenserChanger et Blogastuces (refusent les textes assistés par IA), Adaptogenes (seuil IA 10 %, santé naturelle), 1 Mère 1 Fille à Paris (collaborations payantes possibles), Be by Maman (refuse les articles pour obtenir un lien). Vérifié : lien DOCcitanie toujours en place (sans nofollow) ; Keep Cool New Mom pas encore publié ; demande d'accord envoyée à Pélagie Micalet pour Même Plus Peur."
   }
  ]
 }
