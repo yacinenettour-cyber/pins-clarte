@@ -58,7 +58,10 @@ jobs:
           # d'un compte qui en publie beaucoup sans engagement. Au plus 2 par jour (11 h d'écart).
           # 09/11/2026 (consigne de l'utilisateur : « 3 épingles par jour ») : 11 h → 7,5 h. Avec un
           # déclenchement toutes les 2 h, cela donne une épingle toutes les 8 h, soit 3 par jour.
-          ECART_MIN_HEURES = 7.5
+          # 16/11/2026 (consigne de l'utilisateur : « on passe que par le robot maintenant », Metricool
+          # abandonné) : 7,5 h → 3,9 h. Déclenchements à 6, 7, 8, 9, 11, 13, 15, 17, 19 et 21 h UTC :
+          # épingles vers 6 h, 11 h, 15 h et 19 h UTC, soit 4 par jour.
+          ECART_MIN_HEURES = 3.9
           if historique and not TEST:
               derniere = max(datetime.datetime.fromisoformat(h["date"]) for h in historique if h.get("date"))
               ecart = (datetime.datetime.now(datetime.timezone.utc) - derniere).total_seconds() / 3600
