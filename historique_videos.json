@@ -654,5 +654,22 @@
   "pin_id": "600175087890704081",
   "short": true,
   "source": "https://youtu.be/q0ucVBKNMjM"
+ },
+ {
+  "date": "2026-11-16T17:34+00:00",
+  "id": "sommeil-chauffage-air-sec",
+  "titre": "Chauffage et air sec : 3 signes qu'ils gênent ta nuit",
+  "video": "videopins/videopin-20261116-173322.mp4",
+  "cover": "videopins/videopin-20261116-173322.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890721416",
+  "photos": [
+   "fonds/unsplash-D_6rzmdpebQ.jpg",
+   "fonds/unsplash-D_6rzmdpebQ.jpg",
+   "fonds/unsplash-F2SrBdv9swk.jpg",
+   "fonds/unsplash-F2SrBdv9swk.jpg",
+   "fonds/pexels-9787922.jpg",
+   "fonds/pexels-9787922.jpg"
+  ]
  }
 ]
