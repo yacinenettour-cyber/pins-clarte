@@ -58,10 +58,11 @@ jobs:
           # d'un compte qui en publie beaucoup sans engagement. Au plus 2 par jour (11 h d'écart).
           # 09/11/2026 (consigne de l'utilisateur : « 3 épingles par jour ») : 11 h → 7,5 h. Avec un
           # déclenchement toutes les 2 h, cela donne une épingle toutes les 8 h, soit 3 par jour.
-          # 16/11/2026 (consigne de l'utilisateur : « on passe que par le robot maintenant », Metricool
-          # abandonné) : 7,5 h → 3,9 h. Déclenchements à 6, 7, 8, 9, 11, 13, 15, 17, 19 et 21 h UTC :
-          # épingles vers 6 h, 11 h, 15 h et 19 h UTC, soit 4 par jour.
-          ECART_MIN_HEURES = 3.9
+          # 16/11/2026 : brièvement passé à 3,9 h (4 par jour), puis remis à 7,5 h le même jour (choix de
+          # l'utilisateur « Moins mais mieux ») : depuis septembre, 135 épingles du robot pour 20
+          # enregistrements, contre des dizaines par épingle de janvier à mai ; publier plus aggraverait
+          # le signal de faible engagement du compte. Au plus 2 infographies par 24 h (quota plus bas).
+          ECART_MIN_HEURES = 7.5
           if historique and not TEST:
               derniere = max(datetime.datetime.fromisoformat(h["date"]) for h in historique if h.get("date"))
               ecart = (datetime.datetime.now(datetime.timezone.utc) - derniere).total_seconds() / 3600
@@ -1080,7 +1081,11 @@ jobs:
           # 27/10/2026 (choix de l'utilisateur « Moins mais mieux ») : le robot ne publie plus que des
           # infographies illustrées (format des épingles du compte qui ont marché). Une épingle sans article
           # ne doit rien promettre (« guide gratuit », « plan ») puisqu'elle n'a plus de lien.
-          restants = [p for p in restants if p.get("format") in FORMATS_ILLUSTRES
+          # 16/11/2026 (choix de l'utilisateur « Moins mais mieux ») : plus de fiches « etsy » par le robot.
+          # Du 09 au 16/11, 9 publiées : 32 impressions en tout, 5 à zéro, aucun enregistrement (titres sans
+          # recherche réelle, du type « Notre accord pour la semaine »). Etsy garde son épingle quotidienne
+          # (tâche programmée « Épingle Etsy du jour »).
+          restants = [p for p in restants if p.get("format") in FORMATS_ILLUSTRES and p.get("format") != "etsy"
                       and (LIEN_ETSY_OK(p)
                            or (p.get("article") in ARTICLES_SITE and p.get("description_article"))
                            or not re.search(r"(?i)guide gratuit|plan anti-cortisol|plan gratuit|en lien", p["description"]))]
