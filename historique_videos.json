@@ -682,5 +682,22 @@
   "pin_id": "600175087890739326",
   "short": true,
   "source": "https://youtu.be/q0ucVBKNMjM"
+ },
+ {
+  "date": "2026-11-18T17:34+00:00",
+  "id": "sommeil-langue-relachee",
+  "titre": "Langue relâchée : le détail qui aide à s'endormir",
+  "video": "videopins/videopin-20261118-173238.mp4",
+  "cover": "videopins/videopin-20261118-173238.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890757688",
+  "photos": [
+   "fonds/pexels-7445268.jpg",
+   "fonds/pexels-7445268.jpg",
+   "fonds/pexels-7436480.jpg",
+   "fonds/pexels-7436480.jpg",
+   "fonds/photo_posturesantistress_3771069.jpg",
+   "fonds/photo_posturesantistress_3771069.jpg"
+  ]
  }
 ]
