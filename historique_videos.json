@@ -710,5 +710,22 @@
   "pin_id": "600175087890776229",
   "short": true,
   "source": "https://youtu.be/q0ucVBKNMjM"
+ },
+ {
+  "date": "2026-11-20T17:34+00:00",
+  "id": "sommeil-draps-propres",
+  "titre": "Draps propres : pourquoi ce soir-là on dort mieux",
+  "video": "videopins/videopin-20261120-173324.mp4",
+  "cover": "videopins/videopin-20261120-173324.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890794879",
+  "photos": [
+   "fonds/unsplash-_sLDACA2cHU.jpg",
+   "fonds/unsplash-_sLDACA2cHU.jpg",
+   "fonds/unsplash-qXLFrGa7ZuY.jpg",
+   "fonds/unsplash-qXLFrGa7ZuY.jpg",
+   "fonds/pexels-7269393.jpg",
+   "fonds/pexels-7269393.jpg"
+  ]
  }
 ]
