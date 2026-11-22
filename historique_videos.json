@@ -738,5 +738,22 @@
   "pin_id": "600175087890812415",
   "short": true,
   "source": "https://youtu.be/xQzHeFg3kaw"
+ },
+ {
+  "date": "2026-11-22T17:37+00:00",
+  "id": "sommeil-kiwi-soir",
+  "titre": "Kiwi le soir et sommeil : ce que dit une petite étude",
+  "video": "videopins/videopin-20261122-173234.mp4",
+  "cover": "videopins/videopin-20261122-173234.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890828632",
+  "photos": [
+   "fonds/unsplash-t958JBIQdAM.jpg",
+   "fonds/unsplash-t958JBIQdAM.jpg",
+   "fonds/unsplash-g1kSmrogixY.jpg",
+   "fonds/unsplash-g1kSmrogixY.jpg",
+   "fonds/unsplash-OW3s-tEeD5g.jpg",
+   "fonds/unsplash-OW3s-tEeD5g.jpg"
+  ]
  }
 ]
