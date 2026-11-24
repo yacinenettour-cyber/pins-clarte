@@ -254,6 +254,12 @@
    "image": "unsplash-3B6RfJQKBEM.jpg",
    "alt": "Jeune femme en pull brun assise sur des marches, la main près des lèvres, le regard perdu au loin",
    "credit": "Photo : Anthony Tran / Unsplash"
+  },
+  "dire-non-sans-culpabiliser": {
+   "categorie": "mental",
+   "image": "pexels-34873689.jpg",
+   "alt": "Femme pensive près d'une fenêtre, dans une lumière douce",
+   "credit": "Photo : Pexels"
   }
  },
  "formation": {
@@ -513,6 +519,10 @@
     [
      "Tu repousses ce qui t'inquiète, puis tu t'en veux",
      "procrastination-anxiete"
+    ],
+    [
+     "Tu dis oui par réflexe, puis tu t'en veux",
+     "dire-non-sans-culpabiliser"
     ],
     [
      "Ta tête reste au travail une fois rentré(e) chez toi",
