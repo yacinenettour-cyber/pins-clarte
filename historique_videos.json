@@ -766,5 +766,22 @@
   "pin_id": "600175087890846343",
   "short": true,
   "source": "https://youtu.be/xQzHeFg3kaw"
+ },
+ {
+  "date": "2026-11-24T17:33+00:00",
+  "id": "sommeil-chanson-en-boucle",
+  "titre": "Chanson en boucle au lit : comment la faire taire",
+  "video": "videopins/videopin-20261124-173201.mp4",
+  "cover": "videopins/videopin-20261124-173201.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890864319",
+  "photos": [
+   "fonds/unsplash-jXHzr2qTvn4.jpg",
+   "fonds/unsplash-jXHzr2qTvn4.jpg",
+   "fonds/pexels-6943440.jpg",
+   "fonds/pexels-6943440.jpg",
+   "fonds/pexels-6943999.jpg",
+   "fonds/pexels-6943999.jpg"
+  ]
  }
 ]
