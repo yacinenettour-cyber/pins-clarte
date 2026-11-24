@@ -134,6 +134,8 @@ TYPES_SOURCES = [
     ("efsa.europa.eu", "officiel", "Autorité européenne de sécurité des aliments"),
     ("ods.od.nih.gov", "officiel", "Instituts nationaux de la santé des États-Unis (NIH)"),
     ("nhs.uk", "officiel", "NHS, service de santé publique britannique"),
+    ("nhsinform.scot", "officiel", "NHS Inform, service d'information en santé de l'Écosse"),
+    ("mind.org.uk", "information", "Mind, association britannique de santé mentale"),
     ("institut-sommeil-vigilance.org", "reference", "Institut national du sommeil et de la vigilance"),
     ("msdmanuals.com", "reference", "Manuel médical de référence"),
     ("clevelandclinic.org", "reference", "Cleveland Clinic, centre médical américain"),
