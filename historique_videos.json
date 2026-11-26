@@ -794,5 +794,22 @@
   "pin_id": "600175087890883820",
   "short": true,
   "source": "https://youtu.be/xQzHeFg3kaw"
+ },
+ {
+  "date": "2026-11-26T17:33+00:00",
+  "id": "sommeil-pyjama-reperes",
+  "titre": "Pyjama et sommeil : 3 repères pour moins te réveiller",
+  "video": "videopins/videopin-20261126-173157.mp4",
+  "cover": "videopins/videopin-20261126-173157.jpg",
+  "theme": "sommeil",
+  "pin_id": "600175087890901277",
+  "photos": [
+   "fonds/pexels-8472937.jpg",
+   "fonds/pexels-8472937.jpg",
+   "fonds/pexels-8810538.jpg",
+   "fonds/pexels-8810538.jpg",
+   "fonds/unsplash-JiDjge8d32E.jpg",
+   "fonds/unsplash-JiDjge8d32E.jpg"
+  ]
  }
 ]
